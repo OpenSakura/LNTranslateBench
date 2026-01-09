@@ -1,0 +1,35 @@
+# Environment files
+.env
+secrets.sh
+
+# Stage 1: Private Translation Scripts (Redacted for public release)
+benchmark_translate.py
+translate_all.sh
+translate_custom.sh
+
+
+# Output directories (3-stage workflow)
+# translated_results/
+# comparison_results/
+rankings/
+__pycache__/
+*.pyc
+
+# Python
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

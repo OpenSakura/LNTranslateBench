@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:43:49.402722",
+  "sample": "syosetu.n6753le.ch17",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6753le.ch17.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6753le.ch17.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/syosetu.n6753le.ch17.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2afa7564b8a9514c750f35e65d3d70d2bd5288fd6b1f160d0d59e89ce5f975be",
+    "A": "d52739cc4e8bfb577e49cb0854a868de3eb1b38d830a7b35cfacd1d1391e23cf",
+    "B": "cfe2868e39e1c43108d7a824296859844bd78cdc75309fc0a7d205b422ae76c0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:44:32.206759",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900435074958206CKXiYmck",
+      "judge_response": {
+        "id": "chatcmpl-2026010900435074958206CKXiYmck",
+        "object": "chat.completion",
+        "created": 1767890671,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的对照文本进行的详细评估：\n\n### 详细分析\n\n**1. 准确性与完整性**\n*   **翻译 A**：整体准确度较高，但在第 28 段出现了一个明显的编辑错误，保留了英文单词 \"probably\"（可能是机翻残留或参考了英文底稿），并且添加了原文没有的语气词“该死的”。此外，第 25 段混用了繁体字“著”。\n*   **翻译 B**：存在**灾难性的漏翻**。在第 18 段、74 段、75 段、76 段、77 段中，直接保留了大量的日文原文，未进行翻译。仅凭这一点，其可用性就大打折扣。\n\n**2. 术语与一致性**\n*   **魔术触媒**：原文为“魔術触媒”。A 译为“魔术触媒”，符合奇幻轻小说惯例；B 译为“魔术催化剂”，听起来像化学实验，语境不符。\n*   **转依者/转生者**：原文为“転移者”（Transferrer）。A 准确译为“转移者”；B 译为“转生者”（Reincarnator），含义不同，属于误译。\n*   **魔术 vs 魔法**：原文多用“魔術”。A 保持一致使用“魔术”；B 混用“魔术”和“魔法”。\n\n**3. 流畅性与风格**\n*   **翻译 A**：行文更符合中文轻小说的阅读习惯，口语表达自然。例如第 13 段“狠人”、第 56 段“知识外挂”等词汇的选择非常接地气且贴合题材。对话描写也更生动（如第 8 段“不划算” vs B 的“不经济”）。\n*   **翻译 B**：部分句子生硬，直译痕迹重。例如第 14 段“但可惜不是在莲花的城市”（A 为“可惜这儿不是莲花城”），读起来非常别扭。\n\n**4. 格式与标点**\n*   **翻译 A**：第 28 段标点符号有误（`「治愈『`），且混入了英文单词。\n*   **翻译 B**：保留了日文原文，格式完全未处理好。\n\n### 总结\n虽然翻译 A 在第 28 段有一个明显的校对失误（夹杂英文），但它完成了翻译任务，且在术语选择和文风上都远优于翻译 B。翻译 B 留有大量未翻译的日文段落，属于未完成品，无法作为有效翻译接受。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 1,\n      \"notes\": \"A在第28段有单词残留错误；B有多个段落完全未翻译（保留日文）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A的表达自然，符合轻小说语感；B存在明显的翻译腔和生硬句式。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A使用了'知识外挂'、'狠人'等贴切的词汇；B的'催化剂'、'不经济'显得格格不入。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 6,\n      \"notes\": \"A准确区分了转移者；B错误译为转生者。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 2,\n      \"notes\": \"B因漏翻导致阅读完全中断。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 1,\n      \"notes\": \"A有少量标点和繁简混用问题；B保留了大量源语言文本。\"\n    }\n  },\n  \"key_differences\": [\n    \"B在第18、74-77段完全未翻译，保留了日文原文。\",\n    \"A使用了更地道的轻小说术语（如'魔术触媒'、'知识外挂'），B使用了不恰当的科学术语（'催化剂'）。\",\n    \"A在第28段出现了'probably'的英文残留错误。\",\n    \"A准确翻译了'転移者'（转移者），B误译为'转生者'。\"\n  ],\n  \"final_summary\": \"翻译A在流畅度、术语准确性和风格把握上都表现出色，尽管在第28段有一个明显的校对失误（残留英文单词），但整体质量远高于B。翻译B存在致命缺陷，多个段落完全未翻译直接保留了日文，且术语选择（如'催化剂'）不符合奇幻小说语境，句式也较为生硬。因此A毫无疑问胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6650,
+          "completion_tokens": 4001,
+          "total_tokens": 10651
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 1,
+        "notes": "A在第28段有单词残留错误；B有多个段落完全未翻译（保留日文）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 5,
+        "notes": "A的表达自然，符合轻小说语感；B存在明显的翻译腔和生硬句式。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A使用了'知识外挂'、'狠人'等贴切的词汇；B的'催化剂'、'不经济'显得格格不入。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 6,
+        "notes": "A准确区分了转移者；B错误译为转生者。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 2,
+        "notes": "B因漏翻导致阅读完全中断。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 1,
+        "notes": "A有少量标点和繁简混用问题；B保留了大量源语言文本。"
+      }
+    },
+    "key_differences": [
+      "B在第18、74-77段完全未翻译，保留了日文原文。",
+      "A使用了更地道的轻小说术语（如'魔术触媒'、'知识外挂'），B使用了不恰当的科学术语（'催化剂'）。",
+      "A在第28段出现了'probably'的英文残留错误。",
+      "A准确翻译了'転移者'（转移者），B误译为'转生者'。"
+    ],
+    "final_summary": "翻译A在流畅度、术语准确性和风格把握上都表现出色，尽管在第28段有一个明显的校对失误（残留英文单词），但整体质量远高于B。翻译B存在致命缺陷，多个段落完全未翻译直接保留了日文，且术语选择（如'催化剂'）不符合奇幻小说语境，句式也较为生硬。因此A毫无疑问胜出。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

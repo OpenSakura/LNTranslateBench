@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:27:53.128639",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "21c2269591b36b23eb64492fa291ae0066b3dbaf0c5cfd14f588d34a6419b0bf",
+    "B": "fd56f6ce945082e2eaf081a4f05000e046c931e9e3cc8d751497606ada93bbae"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:28:57.202160",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900275413306894T59Zpfay",
+      "judge_response": {
+        "id": "chatcmpl-2026010900275413306894T59Zpfay",
+        "object": "chat.completion",
+        "created": 1767889737,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的分段文本对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A** 在理解原文意图和特定词汇方面表现出色。\n    *   **段落 22 (关键错误):** 原文「クスミ？」是指角色名「黒墨」(Kurosumi)。A 译为「黑墨？」，正确。B 译为「臭死？」，完全误解了片假名，将其当作形容词或拟声词，这是一个严重的理解错误。\n    *   **段落 43 (关键错误):** 原文「コンタクト」在语境中指「隐形眼镜」（用来模拟魔眼）。A 译为「隐形眼镜」，正确。B 译为「接触」，这是典型的机器翻译错误，完全不符合语境。\n    *   **段落 9:** 原文「タネの分からない」意为「不知其底细/机关/手法」。A 意译为「身份不明」，尚可接受。B 译为「种子都令人摸不着头脑」，将「タネ」(Tane) 直译为植物的「种子」，完全曲解了原意。\n    *   **段落 89:** 原文逻辑是「如果不拿例外中的例外棺木来比较的话，就是前所未有的」。A 准确传达了「若不与之比较」的逻辑。B 的句子结构混乱，未能表达出这一层比较关系。\n\n*   **翻译 B** 犯了多个严重的术语和语境理解错误（如上所述），显示出对上下文和多义词的把握能力较弱。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 A** 的中文表达自然流畅，符合中文阅读习惯。例如段落 49 的吐槽和段落 54 的长句处理都比较通顺。\n*   **翻译 B** 的部分句子结构生硬，有时带有翻译腔。例如段落 9 的句子结构支离破碎，段落 45 的语序「我看见了那个...这么说」略显笨拙。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译 A** 很好地捕捉了轻小说的语气，包括对话的随意感和叙述的节奏。\n*   **翻译 B** 在某些对话中显得过于直白或误译导致语气奇怪（如「臭死？」）。\n\n**4. 术语/名称一致性 (Terminology/Consistency)**\n*   **翻译 A** 保持了一致性。例如「魔法少女棺木」始终如一。\n*   **翻译 B** 存在不一致。段落 6 使用「魔法少女柯芬」，段落 11 却变成了「魔法少女棺木」。此外，段落 23 将「Dark Moon」译为「黑暗月亮」，虽然字面正确，但 A 的「暗月」更符合轻小说命名习惯。\n\n**5. 格式/标点符号 (Formatting)**\n*   两者在标点符号使用上都基本合格，但 A 在对话引用的处理上更自然。\n\n### 最终判决\n\n翻译 A 在各个方面都优于翻译 B。翻译 B 出现了数个导致文意完全错误的“硬伤”（名字误译、多义词误译），这表明 B 可能是质量较低的人工翻译或未修正的机器翻译。翻译 A 则准确理解了语境，术语处理得当，行文流畅。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 4,\n      \"notes\": \"B存在严重误译：将人名Kusumi译为'臭死'，将隐形眼镜Contact译为'接触'，将手法Tane译为'种子'。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A的语句通顺自然；B的部分长句结构混乱，且因误译导致逻辑不通。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A符合轻小说风格；B的用词有时过于生硬或错误。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B在人名（柯芬/棺木）上不一致，且专有名词翻译失误。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"由于B的关键误译，导致部分段落（如隐形眼镜一段）完全无法理解。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"两者格式均可，无重大问题。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落22：A正确识别'Kusumi'为名字'黑墨'，B误译为'臭死'。\",\n    \"段落43：A正确将'Contact'译为'隐形眼镜'，B误译为'接触'。\",\n    \"段落9：A理解了'タネ'的含义，B将其直译为'种子'导致句意不通。\",\n    \"一致性：A对'Coffin'的翻译前后一致，B在'柯芬'和'棺木'间切换。\"\n  ],\n  \"final_summary\": \"翻译A在准确性上具有压倒性优势，正确识别了所有专有名词、多义词和语境逻辑。翻译B犯了多个严重的初级错误（如将人名误译为形容词、将隐形眼镜误译为接触动作），导致部分情节完全违背原意，且术语前后不一致。翻译A是唯一可读且准确的版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7297,
+          "completion_tokens": 5377,
+          "total_tokens": 12674
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 4,
+        "notes": "B存在严重误译：将人名Kusumi译为'臭死'，将隐形眼镜Contact译为'接触'，将手法Tane译为'种子'。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A的语句通顺自然；B的部分长句结构混乱，且因误译导致逻辑不通。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A符合轻小说风格；B的用词有时过于生硬或错误。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在人名（柯芬/棺木）上不一致，且专有名词翻译失误。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 5,
+        "notes": "由于B的关键误译，导致部分段落（如隐形眼镜一段）完全无法理解。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者格式均可，无重大问题。"
+      }
+    },
+    "key_differences": [
+      "段落22：A正确识别'Kusumi'为名字'黑墨'，B误译为'臭死'。",
+      "段落43：A正确将'Contact'译为'隐形眼镜'，B误译为'接触'。",
+      "段落9：A理解了'タネ'的含义，B将其直译为'种子'导致句意不通。",
+      "一致性：A对'Coffin'的翻译前后一致，B在'柯芬'和'棺木'间切换。"
+    ],
+    "final_summary": "翻译A在准确性上具有压倒性优势，正确识别了所有专有名词、多义词和语境逻辑。翻译B犯了多个严重的初级错误（如将人名误译为形容词、将隐形眼镜误译为接触动作），导致部分情节完全违背原意，且术语前后不一致。翻译A是唯一可读且准确的版本。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

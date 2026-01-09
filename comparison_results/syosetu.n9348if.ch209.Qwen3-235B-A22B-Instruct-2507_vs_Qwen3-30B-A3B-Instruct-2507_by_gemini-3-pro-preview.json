@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:44:59.684060",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "d23908ef2d654b9c5e90ad81e2430aa730f98d66f0e42478ef913e483287e34a",
+    "B": "008eb4a16cd270de3ec8d4381e4589644b14f0fa6b80a768500ce7049b4e5fea"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:46:09.354246",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109004500508587894q0JTePPw",
+      "judge_response": {
+        "id": "chatcmpl-20260109004500508587894q0JTePPw",
+        "object": "chat.completion",
+        "created": 1767890769,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的文本段落对翻译A和翻译B的详细评判。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A** 在理解原文意图方面表现更好。\n    *   **段落 14:** 原文“ブッキングしちゃったんだね”意为“撞期了/时间冲突了”（Double booking）。翻译A正确译为“撞期啦”。翻译B译为“我就取消了约定啦”，这是误译，原文并没有说已经取消，只是指出了冲突。\n    *   **段落 25:** 原文“花畑マミィ〜”是角色的昵称。翻译A译为“花田玛咪～”。翻译B**完全未翻译**，直接保留了日文片假名“花畑マミィ〜”，这是一个严重的漏译错误。\n    *   **段落 32:** 原文“自然公園みたいな広い敷地”，翻译A“像自然公园那样的宽敞场地”结构准确。翻译B“占地面积挺大的吧”略显松散。\n    *   **段落 105:** 原文“晩飯にすっから”（因为我要把它当晚饭吃）。翻译A“晚饭吃得精光”和翻译B“晚饭早就吃完了”都未能准确传达“我要吃”这个意图，但翻译A的译法导致逻辑矛盾（吃光了怎么装剩菜？），此处两者均有失误，但B的语境处理稍好一点点。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 A** 的中文表达更自然，符合中文的语言习惯。\n    *   **段落 1:** A“今天更新两话” vs B“今日两话更新”。A更符合中文语序。\n    *   **段落 7:** A“虽说附近” vs B“虽说说是附近”。B的“虽说说是”读起来很拗口。\n    *   **段落 62:** A“这帮家伙该怎么处理啊” vs B“这玩意儿怎么办啊”。用“玩意儿”指代人（虽然是幽默语境）略显生硬，A的处理更自然。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译 A** 更好地捕捉了轻小说主角那种略带玩世不恭、吐槽役的语气。\n    *   **段落 14:** A使用了“爹爹”来对应语境中的抱怨语气，比B的“帕比”更生动。\n    *   **段落 97:** A“不存在的人本来就不存在”很好地还原了原文那种稍微有点哲理/绕口令的感觉。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **翻译 A** 保持了一致性。\n*   **翻译 B** 存在严重的不一致。\n    *   母亲的称呼：B在段落4用“玛米”，段落25用日文原文，段落35用“玛米咿”，段落106用“咪咪”。这种混乱非常影响阅读体验。\n\n**5. 连贯性 (Coherence)**\n*   **翻译 A** 的对话衔接更紧密，逻辑更通顺。\n*   **翻译 B** 由于部分误译和生硬的直译，导致部分段落读起来有些断裂感。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 5,\n      \"notes\": \"A整体准确，仅有极个别细微偏差。B存在严重的漏译（保留日文）和关键动词误译（撞期译为取消）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的中文表达自然流畅。B存在语序僵硬和重复用词（如'虽说说是'）。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A很好地还原了轻小说的吐槽风格。B略显平淡且部分用词不当。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 4,\n      \"notes\": \"B在角色称呼上极度不一致，且出现了未翻译的原文。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的上下文逻辑通顺。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者格式均符合要求。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落25中，B完全漏译了角色名，保留了日文片假名。\",\n    \"段落14中，B将'撞期/时间冲突'误译为'取消了约定'。\",\n    \"B对母亲角色的称呼非常混乱（玛米、玛米咿、咪咪、未翻译）。\",\n    \"A的语言组织更符合中文口语习惯，阅读体验更好。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都明显优于翻译B。A准确理解了原文的含义和语境，译文流畅自然，风格统一。翻译B虽然大部分意思传达正确，但出现了严重的漏译（直接保留日文）、关键语义错误以及术语不一致的问题，极大地影响了阅读体验和专业度。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7610,
+          "completion_tokens": 4964,
+          "total_tokens": 12574
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "A整体准确，仅有极个别细微偏差。B存在严重的漏译（保留日文）和关键动词误译（撞期译为取消）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的中文表达自然流畅。B存在语序僵硬和重复用词（如'虽说说是'）。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A很好地还原了轻小说的吐槽风格。B略显平淡且部分用词不当。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 4,
+        "notes": "B在角色称呼上极度不一致，且出现了未翻译的原文。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的上下文逻辑通顺。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式均符合要求。"
+      }
+    },
+    "key_differences": [
+      "段落25中，B完全漏译了角色名，保留了日文片假名。",
+      "段落14中，B将'撞期/时间冲突'误译为'取消了约定'。",
+      "B对母亲角色的称呼非常混乱（玛米、玛米咿、咪咪、未翻译）。",
+      "A的语言组织更符合中文口语习惯，阅读体验更好。"
+    ],
+    "final_summary": "翻译A在各方面都明显优于翻译B。A准确理解了原文的含义和语境，译文流畅自然，风格统一。翻译B虽然大部分意思传达正确，但出现了严重的漏译（直接保留日文）、关键语义错误以及术语不一致的问题，极大地影响了阅读体验和专业度。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

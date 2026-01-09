@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:28:35.154500",
+  "sample": "hameln.393509.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393509.ch3.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393509.ch3.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.393509.ch3.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d0ee712a22c7dfdd4c4af422942c07b6451fef680b5ae0c656be229b32ac619b",
+    "A": "83fb78c6f04d8661ca44597935297065a169a2b9c804c555a159e1773c20e4fa",
+    "B": "8097505884edfbeebc03e12408f15c63a616683946f162c7f0fb88f690fb34e3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:29:41.941107",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002835838373920JvXQcnlq",
+      "judge_response": {
+        "id": "chatcmpl-20260109002835838373920JvXQcnlq",
+        "object": "chat.completion",
+        "created": 1767889781,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的文本段落进行的详细对比分析和最终判决。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A** 在理解原文语法和语境方面表现出色。\n*   **翻译 B** 出现了几处明显的理解错误（误译）：\n    *   **段落 1:** 原文「部長のイワシロだけど」（我是部长岩白），A 翻译正确，B 译为「部长的伊瓦希罗？」，误以为是在问部长的名字，且将名字音译得很生硬。\n    *   **段落 10:** 原文「来夏目当て」（以来夏为目标/冲着来夏来的）。A 翻译正确。B 译为「冲着来夏目来的」，错误地断句，将「目（me）」当成了名字的一部分（把“来夏”变成了“来夏目”），这是严重的理解错误。\n    *   **段落 79:** 原文「成し遂げられる気が...するんです」（感觉或许能完成）。A 将语序调整为符合中文习惯的表达。B 译为「或许能稍微实现，我感觉到了」，这种倒装在中文里非常生硬，且「感觉到了」通常指感官知觉，而非原文的「预感/觉得」。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 A** 的中文表达自然流畅，符合口语习惯。例如段落 2 的「个性强烈」比 B 的「个性浓」更符合中文搭配。\n*   **翻译 B** 带有较重的翻译腔，有时过于直译。例如段落 2 的「个性浓」（直译了 koi），段落 5 的「感觉不到舞蹈激情」（主语模糊，读起来像你们自己感觉不到），以及段落 27 的「无谋君」（直接保留汉字，中文读者可能不习惯）。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译 A** 很好地捕捉了轻小说的吐槽风格和角色性格。例如段落 39 的「话是这么说...好累啊！唉。」语气传达得很到位。段落 62 的「云明你这家伙……！」也还原了原文被切断的吐槽感。\n*   **翻译 B** 语气较为平淡，有时因选词生硬而丢失了角色的个性。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **翻译 A** 在人名处理上更准确（如段落 10 的来夏）。\n*   **翻译 B** 在段落 10 错误地创造了「来夏目」这个名字。\n\n**5. 连贯性 (Coherence)**\n*   **翻译 A** 的句子之间逻辑连接紧密，读起来像是一个完整的故事。\n*   **翻译 B** 在部分长句中（如段落 79）结构松散，阅读体验稍差。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B在段落1和段落10有严重的断句和理解错误（如将'来夏目当て'误译为'来夏目'）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的中文表达自然；B存在'个性浓'、'无谋君'等生硬直译。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A更好地还原了轻小说的吐槽和对话氛围。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"B在人名识别上出现失误。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的句子结构更符合中文逻辑。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"两者格式均符合要求。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落1中，A正确理解了自我介绍，B误译为疑问句。\",\n    \"段落10中，B错误地分割了单词，导致人名错误（来夏 vs 来夏目）。\",\n    \"段落2中，A使用了地道的'个性强烈'，B使用了生硬的'个性浓'。\",\n    \"整体语感上，A更像成熟的译文，B带有明显的机翻或初学者痕迹。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都明显优于翻译B。A不仅准确理解了原文的语法结构（避免了B在人名和自我介绍上的严重错误），而且译文流畅、用词地道，很好地还原了轻小说的幽默和吐槽风格。翻译B虽然大体意思可懂，但存在关键性的误译（如把'目当て'的一部分当成人名），且部分表达过于直译，不够自然。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7166,
+          "completion_tokens": 3994,
+          "total_tokens": 11160
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "B在段落1和段落10有严重的断句和理解错误（如将'来夏目当て'误译为'来夏目'）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的中文表达自然；B存在'个性浓'、'无谋君'等生硬直译。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地还原了轻小说的吐槽和对话氛围。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 7,
+        "notes": "B在人名识别上出现失误。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的句子结构更符合中文逻辑。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式均符合要求。"
+      }
+    },
+    "key_differences": [
+      "段落1中，A正确理解了自我介绍，B误译为疑问句。",
+      "段落10中，B错误地分割了单词，导致人名错误（来夏 vs 来夏目）。",
+      "段落2中，A使用了地道的'个性强烈'，B使用了生硬的'个性浓'。",
+      "整体语感上，A更像成熟的译文，B带有明显的机翻或初学者痕迹。"
+    ],
+    "final_summary": "翻译A在各方面都明显优于翻译B。A不仅准确理解了原文的语法结构（避免了B在人名和自我介绍上的严重错误），而且译文流畅、用词地道，很好地还原了轻小说的幽默和吐槽风格。翻译B虽然大体意思可懂，但存在关键性的误译（如把'目当て'的一部分当成人名），且部分表达过于直译，不够自然。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

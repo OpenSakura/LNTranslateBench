@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:27:38.042463",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "1e6dea1d7b92622581a652136ba3aa6cf0b09e1261678e4bbd838cfacd6553d0",
+    "B": "7d046b7500b5d44d616ebdb237b9e24972b5f28f1488a2ed13e9f98765375c1d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:28:51.620163",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002739140405504vv2jB4d",
+      "judge_response": {
+        "id": "chatcmpl-20260109002739140405504vv2jB4d",
+        "object": "chat.completion",
+        "created": 1767889731,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是针对提供的轻小说片段翻译（A与B）的详细评判。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A** 在理解原文意思方面表现出色，准确捕捉了人物关系和动作方向。\n*   **翻译B** 存在严重的理解错误：\n    *   **性别误判**：原文中主角自称「俺」（Ore，男性常用），名字「双葉蓮次」（Renji，通常为男性名），且担任线锋/边锋位置。翻译B在第19段将其译为“双叶小姐”，第65段译为“双叶姐”，第72段译为“双叶姐”。这是一个致命的设定错误。\n    *   **动作方向错误**：\n        *   第27段原文「色々と教えてやれ」（去教教他），B译为“教我这些吧”，搞反了授受关系。\n        *   第102段原文「去年誘って入部してくれた蓮次」（去年我邀请入部的莲次），B译为“去年邀请我入部的是莲次吧”，搞反了是谁邀请谁（原作背景是栗田邀请主角）。\n    *   **细节遗漏**：第1段的挣扎声，A的“嗯——”比B的“嗯～”更符合被绑架挣扎的语境。\n\n**2. 流畅性 (Fluency)**\n*   **翻译A** 的中文表达自然流畅，符合轻小说的阅读习惯。句子结构完整，修饰得当。\n*   **翻译B** 的部分句子显得破碎或过于口语化导致语意不清。例如第3段“社团室里美式足球装备乱七八糟”，不如A的“堆满美式足球器材的凌乱部室”更有画面感和连贯性。\n\n**3. 风格/语气 (Style/Tone)**\n*   **蛭魔妖一 (Hiruma)**：原文标志性的笑声「ケケケッ」在A中译为“咯咯咯”，保留了角色的邪恶/独特气质；B译为“嘿嘿”，显得过于普通。A对蛭魔粗鲁语气的把握也更到位（如“操蛋二军的” vs B的“他妈的第二”）。\n*   **双叶莲次 (主角)**：A展现了一个冷静、耐心的前辈形象。B由于性别误判，导致部分对话语气显得奇怪。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **美式足球术语**：两者对Touchdown（达阵）、Line（线锋/线）、Tight End（边锋）等术语的翻译基本正确。A将“Line”译为“线锋”比B的“线”更符合中文体育术语习惯。\n*   **称呼**：A保留了“双叶同学/前辈”，B使用了“双叶小姐/姐”，导致严重的不一致和OOC（Out of Character）。\n\n**5. 连贯性/可读性 (Coherence)**\n*   A在长句的处理上（如第80、82、84段的想象场景描绘）非常有感染力，能够带动读者的情绪，符合原文“热血”的氛围。\n*   B在这些段落的翻译较为平淡，且存在断句琐碎的问题。\n\n### 最终判决\n\n翻译A在各方面都完胜翻译B。翻译B虽然大体意思能看懂，但存在破坏剧情逻辑（谁教谁、谁邀请谁）和人物设定（主角性别）的严重错误，属于不合格的翻译。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 4,\n      \"notes\": \"B存在严重的性别误判（将自称'俺'的男性角色译为女性）以及多处主被动关系搞反的错误。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A的行文流畅自然；B的句子有时显得支离破碎，语序略显生硬。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A很好地还原了蛭魔独特的笑声和说话风格，以及热血的氛围。B的语气较为平淡且角色性格把握不准。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A将'Line'译为'线锋'更准确；B译为'线'略显生硬。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A在长段落的情感渲染上做得很好。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者格式均正常。\"\n    }\n  },\n  \"key_differences\": [\n    \"主角性别设定：A正确识别为男性，B错误译为女性（小姐/姐）。\",\n    \"语法逻辑：B在第27段和102段搞反了动作的主语和宾语（教我vs教他，邀请我vs邀请他）。\",\n    \"角色语气：A还原了蛭魔的'咯咯咯'笑声，B译为普通的'嘿嘿'。\"\n  ],\n  \"final_summary\": \"翻译A在准确性、流畅度和风格把握上均表现优异，完美还原了轻小说的语境和人物性格。翻译B犯了严重的翻译错误，包括将第一人称男主角误译为女性，以及搞反了句子中的施动者和受动者，严重影响了剧情理解。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7663,
+          "completion_tokens": 4649,
+          "total_tokens": 12312
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 4,
+        "notes": "B存在严重的性别误判（将自称'俺'的男性角色译为女性）以及多处主被动关系搞反的错误。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A的行文流畅自然；B的句子有时显得支离破碎，语序略显生硬。"
+      },
+      "style": {
+        "A": 9,
+        "B": 5,
+        "notes": "A很好地还原了蛭魔独特的笑声和说话风格，以及热血的氛围。B的语气较为平淡且角色性格把握不准。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 7,
+        "notes": "A将'Line'译为'线锋'更准确；B译为'线'略显生硬。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "A在长段落的情感渲染上做得很好。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式均正常。"
+      }
+    },
+    "key_differences": [
+      "主角性别设定：A正确识别为男性，B错误译为女性（小姐/姐）。",
+      "语法逻辑：B在第27段和102段搞反了动作的主语和宾语（教我vs教他，邀请我vs邀请他）。",
+      "角色语气：A还原了蛭魔的'咯咯咯'笑声，B译为普通的'嘿嘿'。"
+    ],
+    "final_summary": "翻译A在准确性、流畅度和风格把握上均表现优异，完美还原了轻小说的语境和人物性格。翻译B犯了严重的翻译错误，包括将第一人称男主角误译为女性，以及搞反了句子中的施动者和受动者，严重影响了剧情理解。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:39:26.156876",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "a63e5890235f90841c1f96bb97c7b206621198e1491e5cdfa935ddae188010ae",
+    "B": "8504e1ce7b7fbaaf27e8f78e398bdb30490f439205254a3443aad0da8befca8e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:40:12.822879",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003926810504657z7PR8vdj",
+      "judge_response": {
+        "id": "chatcmpl-20260109003926810504657z7PR8vdj",
+        "object": "chat.completion",
+        "created": 1767890412,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的分段文本对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A** 出现了严重的漏译和未翻译错误。\n    *   **段落 68**: 翻译A完全缺失了译文，留空。\n    *   **段落 127**: 翻译A直接保留了日文原文，未进行翻译。\n    *   **段落 116**: 原文“方輪走行”（单侧轮行驶/侧立行驶），A误译为“方轮行驶”（听起来像方形轮子），这是对汉字“方”（此处意为“片方”即一边）的误解。B译为“侧轮行驶”，准确。\n    *   **段落 36**: 原文“はくちょう”（白鸟号/天鹅号），A译为“白鹳号”（日语是Kounotori），B译为“白鸟”，B更准确对应原文及柯南剧场版设定。\n*   **翻译B** 整体准确度较高，没有明显的漏译或严重误译。\n\n**2. 流畅性 (Fluency)**\n*   **翻译B** 的中文表达更符合汉语习惯，读起来更顺畅。例如段落13，A译为“看着网络新闻喃喃自语”（缺少主语，略显生硬），B译为“我浏览着网络新闻发出沉吟”，更有文学感。\n*   **段落 147**: A的句式结构非常生硬（“……的我是不可能知道的”），B的处理（“……根本没可能注意到”）更自然地融合了长句。\n\n**3. 风格/语气 (Style/Tone)**\n*   原文是同人轻小说，带有轻松、吐槽和“梦女”向的风格。\n*   **翻译B** 更好地捕捉了这种语气。例如段落51的“なぁなぁ”，B译为“那个啊～”比A的“我说啊”更符合对话的亲昵感。\n*   **段落 82**: 笑声的处理，B的“噗噗、噗、啊哈哈哈哈哈哈！”比A更有画面感。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **翻译B** 在柯南相关术语上处理得更好（如“白鸟”、“侧轮行驶”）。\n*   **段落 2**: “ネームレス” (Nameless)，A译为“无名”，B译为“匿名”。在梦小说语境下，“无名”或“不设名”通常更准确，但B的“匿名”也尚可接受。\n*   **段落 114**: “Edge of Ocean”，A保留英文，B意译为“边缘海洋”。两者皆可，视偏好而定。\n\n**5. 格式/标点符号 (Formatting)**\n*   **翻译A** 在标点使用上较为随意，有时缺少句号（如段落50）。\n*   **翻译B** 标点规范，对话使用了中文引号，符合出版规范。A有时混用直角引号和无引号。\n\n### 总结\n翻译B在各个方面都优于翻译A。翻译A存在致命的质量控制问题（漏译、未译、术语误译），而翻译B则提供了一篇流畅、准确且风格恰当的译文。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A存在严重漏译（段落68）和未翻译（段落127）的情况，且有术语误译（方轮行驶）。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的语句更通顺，文学性更强，A部分句子生硬。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B更好地还原了轻小说和同人文的吐槽/亲昵语气。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A误译了探测器名称和特技驾驶术语。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"由于A有漏译，导致阅读中断。\"\n    },\n    \"formatting\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A标点不统一且有缺失。\"\n    }\n  },\n  \"key_differences\": [\n    \"A在段落68和127出现漏译/未译的致命错误。\",\n    \"A将'方輪走行'误译为'方轮行驶'，B正确译为'侧轮行驶'。\",\n    \"A将探测器'はくちょう'误译为'白鹳号'，B正确译为'白鸟'。\",\n    \"B的对话描写和心理描写更自然流畅。\"\n  ],\n  \"final_summary\": \"翻译B是明显的胜者。翻译A虽然在部分简单对话上尚可，但出现了不可接受的漏译（整段空白）和直接保留日文原文的情况，同时存在明显的术语理解错误（如将侧轮行驶译为方轮）。翻译B不仅准确无误，而且文笔流畅，很好地还原了原作的轻小说风格和角色语气。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9594,
+          "completion_tokens": 4169,
+          "total_tokens": 13763
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 9,
+        "notes": "A存在严重漏译（段落68）和未翻译（段落127）的情况，且有术语误译（方轮行驶）。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的语句更通顺，文学性更强，A部分句子生硬。"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B更好地还原了轻小说和同人文的吐槽/亲昵语气。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "A误译了探测器名称和特技驾驶术语。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "由于A有漏译，导致阅读中断。"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A标点不统一且有缺失。"
+      }
+    },
+    "key_differences": [
+      "A在段落68和127出现漏译/未译的致命错误。",
+      "A将'方輪走行'误译为'方轮行驶'，B正确译为'侧轮行驶'。",
+      "A将探测器'はくちょう'误译为'白鹳号'，B正确译为'白鸟'。",
+      "B的对话描写和心理描写更自然流畅。"
+    ],
+    "final_summary": "翻译B是明显的胜者。翻译A虽然在部分简单对话上尚可，但出现了不可接受的漏译（整段空白）和直接保留日文原文的情况，同时存在明显的术语理解错误（如将侧轮行驶译为方轮）。翻译B不仅准确无误，而且文笔流畅，很好地还原了原作的轻小说风格和角色语气。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

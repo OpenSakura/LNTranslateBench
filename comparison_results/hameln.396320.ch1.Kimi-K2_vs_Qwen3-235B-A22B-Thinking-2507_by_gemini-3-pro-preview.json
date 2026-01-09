@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:30:16.567239",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "0a95b6eaf8b3b409a7abce1e2ba329037d970f35a9b5cd96c25eef93b29b64c7",
+    "B": "27b45376a1317d7a26e8aff237137e25b451e9f5b62907acc4daf06b8ef69cba"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:31:08.895212",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003017338949482CIdqXJjA",
+      "judge_response": {
+        "id": "chatcmpl-20260109003017338949482CIdqXJjA",
+        "object": "chat.completion",
+        "created": 1767889868,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对提供的两个翻译版本的详细分析，以下是最终评判结果：\n\n### 详细分析\n\n**1. 术语与ACG文化契合度 (Terminology):**\n*   **Dungeon (`ダンジョン`):** 翻译B使用了**“地下城”**，这是轻小说和RPG类作品中的标准译法。翻译A使用了“地牢”，这通常指关押犯人的监狱，不符合语境。\n*   **Golem (`ゴーレム`):** 翻译B使用了**“魔像”**，这是标准的奇幻游戏术语。翻译A使用了“傀儡”，虽然意思相近，但在游戏术语中通常指Puppet/Marionette。\n*   **Faceless Angel (`顔のない天使`):** 翻译B译为**“无颜天使”**，符合中文修辞习惯。翻译A译为“面无天使”，语感非常生硬且不自然。\n*   **姓名格式:** 翻译B使用了标准的中式人名间隔号（如“如月・梓”），翻译A使用了空格。B更符合出版规范。\n\n**2. 语气与风格 (Style & Tone):**\n*   原文中的主角虽然从事非法行业，但独白使用了敬语（`desu/masu`调），显示出一种冷静、理智甚至略带文雅的“幕后黑手”气质。\n*   **翻译A**使用了大量的口语化和方言词汇（如“大伙儿”、“事儿”、“牛人”、“搞”），使主角听起来像个街头混混，破坏了原文营造的“理性黑市商人”的人设。\n*   **翻译B**的用词更加书面化且自然（如“大家”、“先驱”、“致敬”），更好地还原了轻小说的叙述风格。\n\n**3. 准确性 (Accuracy):**\n*   **Seg 50 (`性欲`):** 原文明确提到`性欲`。翻译B直译为“性欲”，翻译A含蓄地译为“欲望”。B更忠实原文。\n*   **Seg 61:** 翻译B准确理解了组织名称的翻译逻辑，而A的翻译显得直白而笨拙。\n\n**4. 流畅性 (Fluency):**\n*   翻译B的句子结构更符合中文轻小说的阅读习惯，描写部分（如Seg 4的景色描写）更有文学感。\n*   翻译A虽然通顺，但口语感过强，导致在严肃的背景介绍（如Seg 23-25）中显得不够庄重。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 9.5,\n      \"notes\": \"A在大部分意思上是正确的，但在特定词汇（如性欲、组织名）上不如B精准。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 9.5,\n      \"notes\": \"B的文笔更具文学性，符合轻小说阅读体验；A过于口语化。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 9.5,\n      \"notes\": \"A使用了大量儿化音和俗语（牛人、大伙儿），严重偏离了主角冷静理智的人设。B完美把握了'黑市商人'的语调。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 10,\n      \"notes\": \"A将Dungeon译为'地牢'、Golem译为'傀儡'，不符合ACG领域通用规范。B使用了标准的'地下城'和'魔像'。\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 9.5,\n      \"notes\": \"B的叙述逻辑更连贯，标点符号使用更规范。\"\n    },\n    \"formatting\": {\n      \"A\": 7,\n      \"B\": 9.5,\n      \"notes\": \"B正确使用了破折号和人名间隔号。\"\n    }\n  },\n  \"key_differences\": [\n    \"术语规范：B使用了标准的ACG术语（地下城、魔像），A使用了非标准翻译（地牢、傀儡）。\",\n    \"人设语气：A将主角塑造成说话随意的街头风格（使用'咱'、'事儿'），B则保持了原文冷静、略带敬语的独白风格。\",\n    \"专有名词：B对组织名'无颜天使'的翻译远优于A的'面无天使'。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都完胜翻译A。B不仅准确掌握了轻小说和RPG游戏的专用术语（如地下城、魔像），而且在文风上非常贴合原文主角冷静、理智的独白语气。相比之下，翻译A虽然意思传达基本无误，但使用了过多的口语和方言词汇，导致主角形象崩坏，且关键术语翻译不符合目标读者的习惯（将Dungeon译为地牢是硬伤）。B是一个高质量的轻小说翻译，而A更像是随意的口语转述。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8068,
+          "completion_tokens": 4592,
+          "total_tokens": 12660
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "A在大部分意思上是正确的，但在特定词汇（如性欲、组织名）上不如B精准。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B的文笔更具文学性，符合轻小说阅读体验；A过于口语化。"
+      },
+      "style": {
+        "A": 6,
+        "B": 9.5,
+        "notes": "A使用了大量儿化音和俗语（牛人、大伙儿），严重偏离了主角冷静理智的人设。B完美把握了'黑市商人'的语调。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 10,
+        "notes": "A将Dungeon译为'地牢'、Golem译为'傀儡'，不符合ACG领域通用规范。B使用了标准的'地下城'和'魔像'。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B的叙述逻辑更连贯，标点符号使用更规范。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 9.5,
+        "notes": "B正确使用了破折号和人名间隔号。"
+      }
+    },
+    "key_differences": [
+      "术语规范：B使用了标准的ACG术语（地下城、魔像），A使用了非标准翻译（地牢、傀儡）。",
+      "人设语气：A将主角塑造成说话随意的街头风格（使用'咱'、'事儿'），B则保持了原文冷静、略带敬语的独白风格。",
+      "专有名词：B对组织名'无颜天使'的翻译远优于A的'面无天使'。"
+    ],
+    "final_summary": "翻译B在各方面都完胜翻译A。B不仅准确掌握了轻小说和RPG游戏的专用术语（如地下城、魔像），而且在文风上非常贴合原文主角冷静、理智的独白语气。相比之下，翻译A虽然意思传达基本无误，但使用了过多的口语和方言词汇，导致主角形象崩坏，且关键术语翻译不符合目标读者的习惯（将Dungeon译为地牢是硬伤）。B是一个高质量的轻小说翻译，而A更像是随意的口语转述。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

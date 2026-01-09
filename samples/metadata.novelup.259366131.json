@@ -1,0 +1,1440 @@
+{
+  "titleJp": "クラリスとクラーラ　～魔王を倒した勇者に導かれて旅をしていたら大魔王になっていました～",
+  "titleZh": "克菈莉丝与克拉拉　～在打倒魔王的勇者引导下踏上旅途，最终成为了大魔王～",
+  "authors": [
+    {
+      "name": "哀飢え男",
+      "link": "https://novelup.plus/user/552513419/profile"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [],
+  "keywords": [
+    "第5回HJ大賞",
+    "ギャグ",
+    "コメディ",
+    "アクション／バトル",
+    "最強主人公",
+    "女主人公",
+    "魔王",
+    "勇者",
+    "人外",
+    "和風",
+    "ロボット",
+    "R15",
+    "百合",
+    "異能"
+  ],
+  "points": 29450,
+  "totalCharacters": 611818,
+  "introductionJp": "これは、二人の少女の物語。 憧れ、崇拝した末に、歪みに歪みまくった劣情を抱いてしまった二人の少女が、異世界の極東の国を冒険……いや、蹂躙する物語。 一人目の少女の名はクラリス。 規格外の魔力を持ちながら、それを扱う才能がない少女。 二人目の少女の名はクラーラ。 賢者すらひれ伏させる魔法の才能を持ちながら、人並以下の魔力しか持たない少女。 二人は望みを叶えられるのか、それとも、叶えられずに絶望するのか。 ☆注☆ すでに投稿済みの「クラリス＆クラーラ　～最果てに咲く、百合の花～」を再構成、加筆したものです。 イラストはAIで生成しました。",
+  "introductionZh": "这是两个少女的故事。憧憬，崇拜，最终扭曲到极致的两人，带着扭曲的欲望在异世界的极东之国冒险……不对，是蹂躏的故事。 第一个少女的名字是克菈莉丝。 拥有超乎常规的魔力，却缺乏使用才能的少女。 第二个少女的名字是克拉拉。 拥有连贤者都为之折服的魔法才能，却只有常人以下的魔力的少女。 两人究竟能否实现愿望，还是无法实现愿望而陷入绝望呢。 ☆注☆ 本作是已投稿的《克菈莉丝＆克拉拉　～在尽头绽放的百合花～》的重新构成，加笔版。 插画是AI生成的。",
+  "glossary": {
+    "クラリス": "克菈莉丝 #女,她",
+    "クラーラ": "克拉拉 #女,她",
+    "シーラ": "席拉 #女,她",
+    "オオヤシマ": "大八洲",
+    "ブリタニカ": "不列颠尼亚"
+  },
+  "toc": [
+    {
+      "titleJp": "プロローグ　犯したい／犯されたい",
+      "titleZh": "序章　想侵犯／想被侵犯"
+    },
+    {
+      "titleJp": "001　０－１",
+      "titleZh": "001　0－1",
+      "chapterId": "416166588",
+      "createAt": 1736601960
+    },
+    {
+      "titleJp": "002　０－２",
+      "titleZh": "002　0－2",
+      "chapterId": "301029360",
+      "createAt": 1736672400
+    },
+    {
+      "titleJp": "003　０－３",
+      "titleZh": "003　0－3",
+      "chapterId": "686149976",
+      "createAt": 1736758800
+    },
+    {
+      "titleJp": "第一章　異種超級二等武神／虚言の魔女",
+      "titleZh": "第一章　异种超级二等武神／谎言的魔女"
+    },
+    {
+      "titleJp": "004　１－１",
+      "titleZh": "004　1－1",
+      "chapterId": "218413656",
+      "createAt": 1736845200
+    },
+    {
+      "titleJp": "005　１－２",
+      "titleZh": "005　1－2",
+      "chapterId": "534721037",
+      "createAt": 1736931600
+    },
+    {
+      "titleJp": "006　１ー３",
+      "titleZh": "006　1ー3",
+      "chapterId": "274979076",
+      "createAt": 1737018000
+    },
+    {
+      "titleJp": "007　１−４",
+      "titleZh": "007　1−4",
+      "chapterId": "259405845",
+      "createAt": 1737104400
+    },
+    {
+      "titleJp": "008　１ー５",
+      "titleZh": "008　1ー5",
+      "chapterId": "183045326",
+      "createAt": 1737190800
+    },
+    {
+      "titleJp": "009　１−６",
+      "titleZh": "009　1−6",
+      "chapterId": "584005797",
+      "createAt": 1737277200
+    },
+    {
+      "titleJp": "010　１−７",
+      "titleZh": "010　1−7",
+      "chapterId": "250281925",
+      "createAt": 1737363600
+    },
+    {
+      "titleJp": "011　１−８",
+      "titleZh": "011　1−8",
+      "chapterId": "285709102",
+      "createAt": 1737450000
+    },
+    {
+      "titleJp": "012　１−９",
+      "titleZh": "012　1−9",
+      "chapterId": "935302981",
+      "createAt": 1737536400
+    },
+    {
+      "titleJp": "013　１−１０",
+      "titleZh": "013　1−10",
+      "chapterId": "931523616",
+      "createAt": 1737622800
+    },
+    {
+      "titleJp": "第二章　この変態！／変態はあなたです！",
+      "titleZh": "第二章　你这个变态！／变态是你才对！"
+    },
+    {
+      "titleJp": "014　２−１",
+      "titleZh": "014　2−1",
+      "chapterId": "151324134",
+      "createAt": 1737709200
+    },
+    {
+      "titleJp": "015　２−２",
+      "titleZh": "015　2−2",
+      "chapterId": "291194670",
+      "createAt": 1737795600
+    },
+    {
+      "titleJp": "016　２−３",
+      "titleZh": "016　2−3",
+      "chapterId": "944317348",
+      "createAt": 1737882000
+    },
+    {
+      "titleJp": "017　２−４",
+      "titleZh": "017　2−4",
+      "chapterId": "540002364",
+      "createAt": 1737968400
+    },
+    {
+      "titleJp": "018　２−５",
+      "titleZh": "018　2−5",
+      "chapterId": "542634960",
+      "createAt": 1738054800
+    },
+    {
+      "titleJp": "第三章　あたしとクラーラの仲じゃない／親しい訳ではないですが？",
+      "titleZh": "第三章　我和克拉拉不是那种关系／我们关系并没有那么好？"
+    },
+    {
+      "titleJp": "019　３－１",
+      "titleZh": "019　3－1",
+      "chapterId": "784850000",
+      "createAt": 1738141200
+    },
+    {
+      "titleJp": "020　３－２",
+      "titleZh": "020　3－2",
+      "chapterId": "208038136",
+      "createAt": 1738227600
+    },
+    {
+      "titleJp": "021　３－３",
+      "titleZh": "021　3－3",
+      "chapterId": "862344257",
+      "createAt": 1738314000
+    },
+    {
+      "titleJp": "第四章　これって、クラーラの涙なんじゃないの？／断じて、違います",
+      "titleZh": "第四章　这不是克拉拉的眼泪吗？／绝对不是"
+    },
+    {
+      "titleJp": "022　４－１",
+      "titleZh": "022　4－1",
+      "chapterId": "229388465",
+      "createAt": 1738400400
+    },
+    {
+      "titleJp": "023　４－２",
+      "titleZh": "023　4－2",
+      "chapterId": "845390071",
+      "createAt": 1738486800
+    },
+    {
+      "titleJp": "024　４－３",
+      "titleZh": "024　4－3",
+      "chapterId": "437280684",
+      "createAt": 1738573200
+    },
+    {
+      "titleJp": "025　４－４",
+      "titleZh": "025　4－4",
+      "chapterId": "295204395",
+      "createAt": 1738659600
+    },
+    {
+      "titleJp": "026　４－５",
+      "titleZh": "026　4－5",
+      "chapterId": "893839999",
+      "createAt": 1738746000
+    },
+    {
+      "titleJp": "027　４－６",
+      "titleZh": "027　4－6",
+      "chapterId": "585442653",
+      "createAt": 1738918800
+    },
+    {
+      "titleJp": "028　４－７",
+      "titleZh": "028　4－7",
+      "chapterId": "556723069",
+      "createAt": 1739005200
+    },
+    {
+      "titleJp": "第五章　その依頼、クラリスと…… ／クラーラが引き受けました",
+      "titleZh": "第五章　那个委托，克菈莉丝和…… ／克拉拉接受了"
+    },
+    {
+      "titleJp": "029　５－１",
+      "titleZh": "029　5－1",
+      "chapterId": "462075054",
+      "createAt": 1739091600
+    },
+    {
+      "titleJp": "030　５－２",
+      "titleZh": "030　5－2",
+      "chapterId": "622534669",
+      "createAt": 1739178000
+    },
+    {
+      "titleJp": "031　５－３",
+      "titleZh": "031　5－3",
+      "chapterId": "517843744",
+      "createAt": 1739264400
+    },
+    {
+      "titleJp": "032　５－４",
+      "titleZh": "032　5－4",
+      "chapterId": "118874459",
+      "createAt": 1739350800
+    },
+    {
+      "titleJp": "033　５－５",
+      "titleZh": "033　5－5",
+      "chapterId": "462448495",
+      "createAt": 1739437200
+    },
+    {
+      "titleJp": "034　５－６",
+      "titleZh": "034　5－6",
+      "chapterId": "838314863",
+      "createAt": 1739523600
+    },
+    {
+      "titleJp": "035　５－７",
+      "titleZh": "035　5－7",
+      "chapterId": "432286150",
+      "createAt": 1739610000
+    },
+    {
+      "titleJp": "036　５－８",
+      "titleZh": "036　5－8",
+      "chapterId": "612046164",
+      "createAt": 1739696400
+    },
+    {
+      "titleJp": "037　５－９",
+      "titleZh": "037　5－9",
+      "chapterId": "658430353",
+      "createAt": 1739782800
+    },
+    {
+      "titleJp": "038　５－１０",
+      "titleZh": "038　5－10",
+      "chapterId": "697311503",
+      "createAt": 1739869200
+    },
+    {
+      "titleJp": "039　５－１１",
+      "titleZh": "039　5－11",
+      "chapterId": "581117577",
+      "createAt": 1739955600
+    },
+    {
+      "titleJp": "040　５－１２",
+      "titleZh": "040　5－12",
+      "chapterId": "650903331",
+      "createAt": 1740042000
+    },
+    {
+      "titleJp": "041　５－１３",
+      "titleZh": "041　5－13",
+      "chapterId": "899208487",
+      "createAt": 1740128400
+    },
+    {
+      "titleJp": "第6章　きっと魔王にだって負けないよ／神にだって負けません",
+      "titleZh": "第6章　肯定不会输给魔王／肯定不会输给神明"
+    },
+    {
+      "titleJp": "042　６－１",
+      "titleZh": "042　6－1",
+      "chapterId": "233359931",
+      "createAt": 1740214800
+    },
+    {
+      "titleJp": "043　６－２",
+      "titleZh": "043　6－2",
+      "chapterId": "502410678",
+      "createAt": 1740301200
+    },
+    {
+      "titleJp": "044　６－３",
+      "titleZh": "044　6－3",
+      "chapterId": "455893779",
+      "createAt": 1740387600
+    },
+    {
+      "titleJp": "045　６－４",
+      "titleZh": "045　6－4",
+      "chapterId": "861207449",
+      "createAt": 1740474000
+    },
+    {
+      "titleJp": "046　６－５",
+      "titleZh": "046　6－5",
+      "chapterId": "238246811",
+      "createAt": 1740560400
+    },
+    {
+      "titleJp": "047　６－６",
+      "titleZh": "047　6－6",
+      "chapterId": "509657427",
+      "createAt": 1740646800
+    },
+    {
+      "titleJp": "048　６－７",
+      "titleZh": "048　6－7",
+      "chapterId": "598010280",
+      "createAt": 1740733200
+    },
+    {
+      "titleJp": "049　６－８",
+      "titleZh": "049　6－8",
+      "chapterId": "287497057",
+      "createAt": 1740819600
+    },
+    {
+      "titleJp": "050　６－９",
+      "titleZh": "050　6－9",
+      "chapterId": "190080925",
+      "createAt": 1740906000
+    },
+    {
+      "titleJp": "051　６－１０",
+      "titleZh": "051　6－10",
+      "chapterId": "804286450",
+      "createAt": 1740992400
+    },
+    {
+      "titleJp": "052　６－１１",
+      "titleZh": "052　6－11",
+      "chapterId": "209074029",
+      "createAt": 1741078800
+    },
+    {
+      "titleJp": "053　６－１２",
+      "titleZh": "053　6－12",
+      "chapterId": "585435722",
+      "createAt": 1741165200
+    },
+    {
+      "titleJp": "054　６－１３",
+      "titleZh": "054　6－13",
+      "chapterId": "274858012",
+      "createAt": 1741251600
+    },
+    {
+      "titleJp": "055　６－１４",
+      "titleZh": "055　6－14",
+      "chapterId": "815382468",
+      "createAt": 1741338000
+    },
+    {
+      "titleJp": "056　６－１５",
+      "titleZh": "056　6－15",
+      "chapterId": "233624461",
+      "createAt": 1741424400
+    },
+    {
+      "titleJp": "057　６－１６",
+      "titleZh": "057　6－16",
+      "chapterId": "584209464",
+      "createAt": 1741510800
+    },
+    {
+      "titleJp": "058　６－１７",
+      "titleZh": "058　6－17",
+      "chapterId": "125526426",
+      "createAt": 1741597200
+    },
+    {
+      "titleJp": "059　６－１８",
+      "titleZh": "059　6－18",
+      "chapterId": "159953584",
+      "createAt": 1741683600
+    },
+    {
+      "titleJp": "第７章　人間はクソだ／あなたも人間ですが？",
+      "titleZh": "第7章　人类是粪便／你也是人类吧？"
+    },
+    {
+      "titleJp": "060　７－１",
+      "titleZh": "060　7－1",
+      "chapterId": "682874327",
+      "createAt": 1741770000
+    },
+    {
+      "titleJp": "061　７－２",
+      "titleZh": "061　7－2",
+      "chapterId": "370218822",
+      "createAt": 1741856400
+    },
+    {
+      "titleJp": "062　７－３",
+      "titleZh": "062　7－3",
+      "chapterId": "986314347",
+      "createAt": 1741942800
+    },
+    {
+      "titleJp": "063　７－４",
+      "titleZh": "063　7－4",
+      "chapterId": "340977624",
+      "createAt": 1742029200
+    },
+    {
+      "titleJp": "064　７－５",
+      "titleZh": "064　7－5",
+      "chapterId": "989442658",
+      "createAt": 1742115600
+    },
+    {
+      "titleJp": "065　７－６",
+      "titleZh": "065　7－6",
+      "chapterId": "984750643",
+      "createAt": 1742202000
+    },
+    {
+      "titleJp": "066　７－７",
+      "titleZh": "066　7－7",
+      "chapterId": "659729391",
+      "createAt": 1742288400
+    },
+    {
+      "titleJp": "067　７－８",
+      "titleZh": "067　7－8",
+      "chapterId": "401274483",
+      "createAt": 1742374800
+    },
+    {
+      "titleJp": "068　７－９",
+      "titleZh": "068　7－9",
+      "chapterId": "570499010",
+      "createAt": 1742461200
+    },
+    {
+      "titleJp": "069　７－１０",
+      "titleZh": "069　7－10",
+      "chapterId": "341097120",
+      "createAt": 1742547600
+    },
+    {
+      "titleJp": "070　７－１１",
+      "titleZh": "070　7－11",
+      "chapterId": "259168828",
+      "createAt": 1742634000
+    },
+    {
+      "titleJp": "071　７－１２",
+      "titleZh": "071　7－12",
+      "chapterId": "400423091",
+      "createAt": 1742720400
+    },
+    {
+      "titleJp": "072　７－１３",
+      "titleZh": "072　7－13",
+      "chapterId": "453690298",
+      "createAt": 1742806800
+    },
+    {
+      "titleJp": "073　７－１４",
+      "titleZh": "073　7－14",
+      "chapterId": "402303500",
+      "createAt": 1742893200
+    },
+    {
+      "titleJp": "074　７－１５",
+      "titleZh": "074　7－15",
+      "chapterId": "320804703",
+      "createAt": 1742979600
+    },
+    {
+      "titleJp": "075　７－１６",
+      "titleZh": "075　7－16",
+      "chapterId": "264383621",
+      "createAt": 1743066000
+    },
+    {
+      "titleJp": "076　７－１７",
+      "titleZh": "076　7－17",
+      "chapterId": "229789171",
+      "createAt": 1743152400
+    },
+    {
+      "titleJp": "077　７－１８",
+      "titleZh": "077　7－18",
+      "chapterId": "626383124",
+      "createAt": 1743238800
+    },
+    {
+      "titleJp": "078　７－１９",
+      "titleZh": "078　7－19",
+      "chapterId": "949457979",
+      "createAt": 1743325200
+    },
+    {
+      "titleJp": "079　７－２０",
+      "titleZh": "079　7－20",
+      "chapterId": "376920355",
+      "createAt": 1743411600
+    },
+    {
+      "titleJp": "080　７－２１",
+      "titleZh": "080　7－21",
+      "chapterId": "223031944",
+      "createAt": 1743498000
+    },
+    {
+      "titleJp": "081　７－２２",
+      "titleZh": "081　7－22",
+      "chapterId": "264439897",
+      "createAt": 1743584400
+    },
+    {
+      "titleJp": "082　７−２３",
+      "titleZh": "082　7−23",
+      "chapterId": "388239807",
+      "createAt": 1743670800
+    },
+    {
+      "titleJp": "083　７ー２４",
+      "titleZh": "083　7ー24",
+      "chapterId": "283328202",
+      "createAt": 1743757200
+    },
+    {
+      "titleJp": "084　７－２５",
+      "titleZh": "084　7－25",
+      "chapterId": "300222428",
+      "createAt": 1743843600
+    },
+    {
+      "titleJp": "085　７－２６",
+      "titleZh": "085　7－26",
+      "chapterId": "865330785",
+      "createAt": 1743930000
+    },
+    {
+      "titleJp": "086　７－２７",
+      "titleZh": "086　7－27",
+      "chapterId": "998008238",
+      "createAt": 1744016400
+    },
+    {
+      "titleJp": "087　７－２８",
+      "titleZh": "087　7－28",
+      "chapterId": "537309607",
+      "createAt": 1744102800
+    },
+    {
+      "titleJp": "088　７－２９",
+      "titleZh": "088　7－29",
+      "chapterId": "886809179",
+      "createAt": 1744189200
+    },
+    {
+      "titleJp": "第八章　さあ！　あたしのために争って！",
+      "titleZh": "第八章　来吧！　为了我而争斗吧！"
+    },
+    {
+      "titleJp": "089　８－１",
+      "titleZh": "089　8－1",
+      "chapterId": "337199553",
+      "createAt": 1744275600
+    },
+    {
+      "titleJp": "090　８－２",
+      "titleZh": "090　8－2",
+      "chapterId": "634728565",
+      "createAt": 1744362000
+    },
+    {
+      "titleJp": "091　８－３",
+      "titleZh": "091　8－3",
+      "chapterId": "185763657",
+      "createAt": 1744448400
+    },
+    {
+      "titleJp": "092　８－４",
+      "titleZh": "092　8－4",
+      "chapterId": "242610010",
+      "createAt": 1744534800
+    },
+    {
+      "titleJp": "093　８－５",
+      "titleZh": "093　8－5",
+      "chapterId": "554404488",
+      "createAt": 1744621200
+    },
+    {
+      "titleJp": "094　８－６",
+      "titleZh": "094　8－6",
+      "chapterId": "279837326",
+      "createAt": 1744707600
+    },
+    {
+      "titleJp": "095　８－７",
+      "titleZh": "095　8－7",
+      "chapterId": "492694038",
+      "createAt": 1744794000
+    },
+    {
+      "titleJp": "096　８－８",
+      "titleZh": "096　8－8",
+      "chapterId": "797108663",
+      "createAt": 1744880400
+    },
+    {
+      "titleJp": "097　８－９",
+      "titleZh": "097　8－9",
+      "chapterId": "578292675",
+      "createAt": 1744966800
+    },
+    {
+      "titleJp": "098　８－１０",
+      "titleZh": "098　8－10",
+      "chapterId": "968784877",
+      "createAt": 1745053200
+    },
+    {
+      "titleJp": "099　８－１１",
+      "titleZh": "099　8－11",
+      "chapterId": "711456310",
+      "createAt": 1745139600
+    },
+    {
+      "titleJp": "100　８－１２",
+      "titleZh": "100　8－12",
+      "chapterId": "510133799",
+      "createAt": 1745312400
+    },
+    {
+      "titleJp": "101　８－１３",
+      "titleZh": "101　8－13",
+      "chapterId": "264700826",
+      "createAt": 1745485200
+    },
+    {
+      "titleJp": "102　８－１４",
+      "titleZh": "102　8－14",
+      "chapterId": "424071071",
+      "createAt": 1745658000
+    },
+    {
+      "titleJp": "103　８－１５",
+      "titleZh": "103　8－15",
+      "chapterId": "927206444",
+      "createAt": 1745830800
+    },
+    {
+      "titleJp": "104　８－１６",
+      "titleZh": "104　8－16",
+      "chapterId": "237223334",
+      "createAt": 1746003600
+    },
+    {
+      "titleJp": "105　８－１７",
+      "titleZh": "105　8－17",
+      "chapterId": "965990426",
+      "createAt": 1746176400
+    },
+    {
+      "titleJp": "106　８－１８",
+      "titleZh": "106　8－18",
+      "chapterId": "241883931",
+      "createAt": 1746349200
+    },
+    {
+      "titleJp": "107　８－１９",
+      "titleZh": "107　8－19",
+      "chapterId": "962064158",
+      "createAt": 1746521280
+    },
+    {
+      "titleJp": "108　８－２０",
+      "titleZh": "108　8－20",
+      "chapterId": "807863394",
+      "createAt": 1746694800
+    },
+    {
+      "titleJp": "109　８－２１",
+      "titleZh": "109　8－21",
+      "chapterId": "723353083",
+      "createAt": 1746867600
+    },
+    {
+      "titleJp": "第九章　あ、やっと治った／これ、どういう状況ですか？",
+      "titleZh": "第九章　啊，终于治好了／这是什么情况？"
+    },
+    {
+      "titleJp": "110　９－１",
+      "titleZh": "110　9－1",
+      "chapterId": "906806209",
+      "createAt": 1747040400
+    },
+    {
+      "titleJp": "111　９－２",
+      "titleZh": "111　9－2",
+      "chapterId": "281191659",
+      "createAt": 1747213200
+    },
+    {
+      "titleJp": "112　９－３",
+      "titleZh": "112　9－3",
+      "chapterId": "489704559",
+      "createAt": 1747386000
+    },
+    {
+      "titleJp": "113　９－４",
+      "titleZh": "113　9－4",
+      "chapterId": "394312294",
+      "createAt": 1747558800
+    },
+    {
+      "titleJp": "114　９－５",
+      "titleZh": "114　9－5",
+      "chapterId": "920185881",
+      "createAt": 1747731600
+    },
+    {
+      "titleJp": "115　９－６",
+      "titleZh": "115　9－6",
+      "chapterId": "972844824",
+      "createAt": 1747904400
+    },
+    {
+      "titleJp": "116　９－７",
+      "titleZh": "116　9－7",
+      "chapterId": "689731862",
+      "createAt": 1748077200
+    },
+    {
+      "titleJp": "117　９－８",
+      "titleZh": "117　9－8",
+      "chapterId": "613495043",
+      "createAt": 1748250000
+    },
+    {
+      "titleJp": "118　９－９",
+      "titleZh": "118　9－9",
+      "chapterId": "801994555",
+      "createAt": 1748422800
+    },
+    {
+      "titleJp": "119　９－１０",
+      "titleZh": "119　9－10",
+      "chapterId": "721109675",
+      "createAt": 1748595600
+    },
+    {
+      "titleJp": "120　９－１１",
+      "titleZh": "120　9－11",
+      "chapterId": "897195500",
+      "createAt": 1748768400
+    },
+    {
+      "titleJp": "121　９－１２",
+      "titleZh": "121　9－12",
+      "chapterId": "645985084",
+      "createAt": 1748941200
+    },
+    {
+      "titleJp": "122　９－１３",
+      "titleZh": "122　9－13",
+      "chapterId": "323423559",
+      "createAt": 1749114000
+    },
+    {
+      "titleJp": "123　９－１４",
+      "titleZh": "123　9－14",
+      "chapterId": "185339899",
+      "createAt": 1749286800
+    },
+    {
+      "titleJp": "124　９－１５",
+      "titleZh": "124　9－15",
+      "chapterId": "616406829",
+      "createAt": 1749459600
+    },
+    {
+      "titleJp": "125　９－１６",
+      "titleZh": "125　9－16",
+      "chapterId": "427252475",
+      "createAt": 1749632400
+    },
+    {
+      "titleJp": "126　９－１７",
+      "titleZh": "126　9－17",
+      "chapterId": "272879129",
+      "createAt": 1749805200
+    },
+    {
+      "titleJp": "127　９－１８",
+      "titleZh": "127　9－18",
+      "chapterId": "210780367",
+      "createAt": 1749978000
+    },
+    {
+      "titleJp": "128　９－１９",
+      "titleZh": "128　9－19",
+      "chapterId": "280469896",
+      "createAt": 1750150800
+    },
+    {
+      "titleJp": "129　９－２０",
+      "titleZh": "129　9－20",
+      "chapterId": "488620844",
+      "createAt": 1750323600
+    },
+    {
+      "titleJp": "130　９－２１",
+      "titleZh": "130　9－21",
+      "chapterId": "867964699",
+      "createAt": 1750496400
+    },
+    {
+      "titleJp": "131　９－２２",
+      "titleZh": "131　9－22",
+      "chapterId": "613786160",
+      "createAt": 1750669200
+    },
+    {
+      "titleJp": "132　９－２３",
+      "titleZh": "132　9－23",
+      "chapterId": "655379451",
+      "createAt": 1750842000
+    },
+    {
+      "titleJp": "133　９－２４",
+      "titleZh": "133　9－24",
+      "chapterId": "765243056",
+      "createAt": 1751014800
+    },
+    {
+      "titleJp": "134　９－２５",
+      "titleZh": "134　9－25",
+      "chapterId": "585405717",
+      "createAt": 1751187600
+    },
+    {
+      "titleJp": "135　９－２６",
+      "titleZh": "135　9－26",
+      "chapterId": "610293683",
+      "createAt": 1751360400
+    },
+    {
+      "titleJp": "136　９－２７",
+      "titleZh": "136　9－27",
+      "chapterId": "477828860",
+      "createAt": 1751533200
+    },
+    {
+      "titleJp": "137　９－２８",
+      "titleZh": "137　9－28",
+      "chapterId": "565076597",
+      "createAt": 1751706000
+    },
+    {
+      "titleJp": "138　９−２９",
+      "titleZh": "138　9－29",
+      "chapterId": "879640189",
+      "createAt": 1751878800
+    },
+    {
+      "titleJp": "139　９−３０",
+      "titleZh": "139　9－30",
+      "chapterId": "117474404",
+      "createAt": 1752051600
+    },
+    {
+      "titleJp": "140　９－３１",
+      "titleZh": "140　9－31",
+      "chapterId": "985343918",
+      "createAt": 1752224400
+    },
+    {
+      "titleJp": "141　９－３２",
+      "titleZh": "141　9－32",
+      "chapterId": "540560592",
+      "createAt": 1752483600
+    },
+    {
+      "titleJp": "142　９－３３",
+      "titleZh": "142　9－33",
+      "chapterId": "578088769",
+      "createAt": 1752656400
+    },
+    {
+      "titleJp": "143　９－３４",
+      "titleZh": "143　9－34",
+      "chapterId": "953973809",
+      "createAt": 1752829200
+    },
+    {
+      "titleJp": "第十章 ウコチャヌプコロ！ / いきなり何言ってんですか？",
+      "titleZh": "第十章 乌科查努普科罗！ ／ 你突然在说什么啊？"
+    },
+    {
+      "titleJp": "144　１０－１",
+      "titleZh": "144　10－1",
+      "chapterId": "197519502",
+      "createAt": 1753002000
+    },
+    {
+      "titleJp": "145　１０−２",
+      "titleZh": "145　10－2",
+      "chapterId": "177373208",
+      "createAt": 1753174800
+    },
+    {
+      "titleJp": "146　１０－３",
+      "titleZh": "146　10－3",
+      "chapterId": "328131154",
+      "createAt": 1753347600
+    },
+    {
+      "titleJp": "147　１０－４",
+      "titleZh": "147　10－4",
+      "chapterId": "896513919",
+      "createAt": 1753520400
+    },
+    {
+      "titleJp": "148　１０－５",
+      "titleZh": "148　10－5",
+      "chapterId": "134757935",
+      "createAt": 1753693200
+    },
+    {
+      "titleJp": "149　１０－６",
+      "titleZh": "149　10－6",
+      "chapterId": "147686161",
+      "createAt": 1753866000
+    },
+    {
+      "titleJp": "150　１０－７",
+      "titleZh": "150　10－7",
+      "chapterId": "526481500",
+      "createAt": 1754038800
+    },
+    {
+      "titleJp": "151　１０－８",
+      "titleZh": "151　10－8",
+      "chapterId": "193133717",
+      "createAt": 1754211600
+    },
+    {
+      "titleJp": "152　１０－９",
+      "titleZh": "152　10－9",
+      "chapterId": "709416733",
+      "createAt": 1754470800
+    },
+    {
+      "titleJp": "153　１０－１０",
+      "titleZh": "153　10－10",
+      "chapterId": "971994961",
+      "createAt": 1754643600
+    },
+    {
+      "titleJp": "154　１０－１１",
+      "titleZh": "154　10－11",
+      "chapterId": "709611573",
+      "createAt": 1754816400
+    },
+    {
+      "titleJp": "155　１０－１２",
+      "titleZh": "155　10－12",
+      "chapterId": "938124973",
+      "createAt": 1754989200
+    },
+    {
+      "titleJp": "156　１０－１３",
+      "titleZh": "156　10－13",
+      "chapterId": "363855866",
+      "createAt": 1755162000
+    },
+    {
+      "titleJp": "157　１０－１４",
+      "titleZh": "157　10－14",
+      "chapterId": "318561510",
+      "createAt": 1755507600
+    },
+    {
+      "titleJp": "158　１０－１５",
+      "titleZh": "158　10－15",
+      "chapterId": "281965905",
+      "createAt": 1755680400
+    },
+    {
+      "titleJp": "159　１０－１６",
+      "titleZh": "159　10－16",
+      "chapterId": "794411559",
+      "createAt": 1755853200
+    },
+    {
+      "titleJp": "160　１０－１７",
+      "titleZh": "160　10－17",
+      "chapterId": "275395263",
+      "createAt": 1756026000
+    },
+    {
+      "titleJp": "161　１０ー１８",
+      "titleZh": "161　10－18",
+      "chapterId": "879834136",
+      "createAt": 1756285200
+    },
+    {
+      "titleJp": "162　１０−１９",
+      "titleZh": "162　10－19",
+      "chapterId": "888376281",
+      "createAt": 1756458000
+    },
+    {
+      "titleJp": "163　１０－２０",
+      "titleZh": "163　10－20",
+      "chapterId": "560702889",
+      "createAt": 1756630800
+    },
+    {
+      "titleJp": "164　１０－２１",
+      "titleZh": "164　10－21",
+      "chapterId": "920037062",
+      "createAt": 1756890000
+    },
+    {
+      "titleJp": "165　１０－２２",
+      "titleZh": "165　10－22",
+      "chapterId": "134424401",
+      "createAt": 1757149200
+    },
+    {
+      "titleJp": "166　１０－２３",
+      "titleZh": "166　10－23",
+      "chapterId": "708420006",
+      "createAt": 1757322000
+    },
+    {
+      "titleJp": "167　１０−２４",
+      "titleZh": "167　10－24",
+      "chapterId": "170640429",
+      "createAt": 1757494800
+    },
+    {
+      "titleJp": "第十一章　　ねえ、誰と話してるの？／着信拒否されました",
+      "titleZh": "第十一章　　喂，你在和谁说话？／来电已拒接"
+    },
+    {
+      "titleJp": "168　１１−１",
+      "titleZh": "168　11－1",
+      "chapterId": "833652028",
+      "createAt": 1757667600
+    },
+    {
+      "titleJp": "169　１１－２",
+      "titleZh": "169　11－2",
+      "chapterId": "415018374",
+      "createAt": 1757840400
+    },
+    {
+      "titleJp": "170　１１−３",
+      "titleZh": "170　11－3",
+      "chapterId": "947828551",
+      "createAt": 1758013200
+    },
+    {
+      "titleJp": "171　１１－４",
+      "titleZh": "171　11－4",
+      "chapterId": "421509036",
+      "createAt": 1758186000
+    },
+    {
+      "titleJp": "172　１１－５",
+      "titleZh": "172　11－5",
+      "chapterId": "353946287",
+      "createAt": 1758358800
+    },
+    {
+      "titleJp": "173　１１－６",
+      "titleZh": "173　11－6",
+      "chapterId": "432348774",
+      "createAt": 1758531600
+    },
+    {
+      "titleJp": "174　１１−７",
+      "titleZh": "174　11－7",
+      "chapterId": "744815907",
+      "createAt": 1758704400
+    },
+    {
+      "titleJp": "175　１１−８",
+      "titleZh": "175　11－8",
+      "chapterId": "641610410",
+      "createAt": 1758963600
+    },
+    {
+      "titleJp": "176　１１−９",
+      "titleZh": "176　11－9",
+      "chapterId": "988338192",
+      "createAt": 1759136400
+    },
+    {
+      "titleJp": "177　１１−１０",
+      "titleZh": "177　11－10",
+      "chapterId": "862125704",
+      "createAt": 1759309200
+    },
+    {
+      "titleJp": "178　１１－１１",
+      "titleZh": "178　11－11",
+      "chapterId": "956391894",
+      "createAt": 1759482000
+    },
+    {
+      "titleJp": "179　１１ー１２",
+      "titleZh": "179　11－12",
+      "chapterId": "932049403",
+      "createAt": 1759654800
+    },
+    {
+      "titleJp": "180　１１－１３",
+      "titleZh": "180　11－13",
+      "chapterId": "595175595",
+      "createAt": 1759827600
+    },
+    {
+      "titleJp": "181　１１−１４",
+      "titleZh": "181　11－14",
+      "chapterId": "964403311",
+      "createAt": 1760000400
+    },
+    {
+      "titleJp": "182　１１−１５",
+      "titleZh": "182　11－15",
+      "chapterId": "421702816",
+      "createAt": 1760173200
+    },
+    {
+      "titleJp": "183　１１−１６",
+      "titleZh": "183　11－16",
+      "chapterId": "204466575",
+      "createAt": 1760346000
+    },
+    {
+      "titleJp": "184　１１ー１７",
+      "titleZh": "184　11－17",
+      "chapterId": "634375589",
+      "createAt": 1760518800
+    },
+    {
+      "titleJp": "185　１１ー１８",
+      "titleZh": "185　11－18",
+      "chapterId": "720727730",
+      "createAt": 1760691600
+    },
+    {
+      "titleJp": "186　１１−１９",
+      "titleZh": "186　11－19",
+      "chapterId": "754881116",
+      "createAt": 1760864400
+    },
+    {
+      "titleJp": "187　１１−２０",
+      "titleZh": "187　11－20",
+      "chapterId": "603451104",
+      "createAt": 1761037200
+    },
+    {
+      "titleJp": "188　１１−２１",
+      "titleZh": "188　11－21",
+      "chapterId": "193085147",
+      "createAt": 1761296400
+    },
+    {
+      "titleJp": "189　１１−２２",
+      "titleZh": "189　11－22",
+      "chapterId": "385398610",
+      "createAt": 1761382800
+    },
+    {
+      "titleJp": "190　１１−２３",
+      "titleZh": "190　11－23",
+      "chapterId": "730941446",
+      "createAt": 1761555600
+    },
+    {
+      "titleJp": "191　１１−２４",
+      "titleZh": "191　11－24",
+      "chapterId": "502019512",
+      "createAt": 1761728400
+    },
+    {
+      "titleJp": "192　１１−２５",
+      "titleZh": "192　11－25",
+      "chapterId": "650057107",
+      "createAt": 1761901200
+    },
+    {
+      "titleJp": "193　１１ー２６",
+      "titleZh": "193　11－26",
+      "chapterId": "759863141",
+      "createAt": 1762074000
+    },
+    {
+      "titleJp": "194　１１−２７",
+      "titleZh": "194　11－27",
+      "chapterId": "245998936",
+      "createAt": 1762333200
+    },
+    {
+      "titleJp": "195　１１－２８",
+      "titleZh": "195　11－28",
+      "chapterId": "438249377",
+      "createAt": 1762506000
+    },
+    {
+      "titleJp": "196　１１－２９",
+      "titleZh": "196　11－29",
+      "chapterId": "468140799",
+      "createAt": 1762678800
+    },
+    {
+      "titleJp": "第十二章　犯したい／犯されたい",
+      "titleZh": "第十二章　想侵犯／想被侵犯"
+    },
+    {
+      "titleJp": "197　１２－１",
+      "titleZh": "197　12－1",
+      "chapterId": "343874402",
+      "createAt": 1762851600
+    },
+    {
+      "titleJp": "198　１２－２",
+      "titleZh": "198　12－2",
+      "chapterId": "619571378",
+      "createAt": 1763024400
+    },
+    {
+      "titleJp": "199　１２－３",
+      "titleZh": "199　12－3",
+      "chapterId": "537541429",
+      "createAt": 1763197200
+    },
+    {
+      "titleJp": "200　１２－４",
+      "titleZh": "200　12－4",
+      "chapterId": "528938854",
+      "createAt": 1763370000
+    },
+    {
+      "titleJp": "201　１２−５",
+      "titleZh": "201　12－5",
+      "chapterId": "458784021",
+      "createAt": 1763542800
+    },
+    {
+      "titleJp": "202　１２−６",
+      "titleZh": "202　12－6",
+      "chapterId": "235361018",
+      "createAt": 1763715600
+    },
+    {
+      "titleJp": "203　１２－７",
+      "titleZh": "203　12－7",
+      "chapterId": "189873652",
+      "createAt": 1763888400
+    },
+    {
+      "titleJp": "204　１２－８",
+      "titleZh": "204　12－8",
+      "chapterId": "358220540",
+      "createAt": 1764061200
+    },
+    {
+      "titleJp": "205　１２−９",
+      "titleZh": "205　12－9",
+      "chapterId": "195990656",
+      "createAt": 1764234000
+    },
+    {
+      "titleJp": "206　１２−１０",
+      "titleZh": "206　12－10",
+      "chapterId": "189480546",
+      "createAt": 1764406800
+    },
+    {
+      "titleJp": "207　１２－１１",
+      "titleZh": "207　12－11",
+      "chapterId": "500975462",
+      "createAt": 1764579600
+    },
+    {
+      "titleJp": "208　１２－１２",
+      "titleZh": "208　12－12",
+      "chapterId": "162274280",
+      "createAt": 1764752400
+    },
+    {
+      "titleJp": "209　１２－１３",
+      "titleZh": "209　12－13",
+      "chapterId": "452617651",
+      "createAt": 1764925200
+    },
+    {
+      "titleJp": "210　１２－１４",
+      "titleZh": "210　12－14",
+      "chapterId": "607963463",
+      "createAt": 1765098000
+    },
+    {
+      "titleJp": "211　１２－１５",
+      "titleZh": "211　12－15",
+      "chapterId": "400621552",
+      "createAt": 1765270800
+    },
+    {
+      "titleJp": "212　１２－１６",
+      "titleZh": "212　12－16",
+      "chapterId": "717553206",
+      "createAt": 1765443600
+    },
+    {
+      "titleJp": "213　１２－１７",
+      "titleZh": "213　12－17",
+      "chapterId": "548149864",
+      "createAt": 1765618680
+    },
+    {
+      "titleJp": "214　１２－１８",
+      "titleZh": "214　12－18",
+      "chapterId": "926455575",
+      "createAt": 1765789200
+    },
+    {
+      "titleJp": "215　１２－１９",
+      "titleZh": "215　12－19",
+      "chapterId": "868168760",
+      "createAt": 1765962000
+    },
+    {
+      "titleJp": "216　１２－２０",
+      "titleZh": "216　12－20",
+      "chapterId": "186951231",
+      "createAt": 1766134800
+    },
+    {
+      "titleJp": "217　１２－２１",
+      "titleZh": "217　12－21",
+      "chapterId": "760391136",
+      "createAt": 1766307600
+    },
+    {
+      "titleJp": "218　１２－２２",
+      "titleZh": "218　12－22",
+      "chapterId": "497146768",
+      "createAt": 1766480400
+    },
+    {
+      "titleJp": "219　１２－２３",
+      "titleZh": "219　12－23",
+      "chapterId": "917378253",
+      "createAt": 1766653200
+    },
+    {
+      "titleJp": "220　１２－２４",
+      "titleZh": "220　12－24",
+      "chapterId": "452754453",
+      "createAt": 1766826000
+    },
+    {
+      "titleJp": "221　１２－２5",
+      "chapterId": "937770801",
+      "createAt": 1766998800
+    },
+    {
+      "titleJp": "222　１２－２６",
+      "chapterId": "835801500",
+      "createAt": 1767171600
+    },
+    {
+      "titleJp": "223　１２－２７",
+      "chapterId": "651177502",
+      "createAt": 1767430800
+    },
+    {
+      "titleJp": "224　１２－２８",
+      "chapterId": "382275703",
+      "createAt": 1767603600
+    }
+  ],
+  "visited": 160,
+  "syncAt": 1767747335,
+  "jp": 219,
+  "baidu": 0,
+  "youdao": 0,
+  "gpt": 0,
+  "sakura": 217
+}

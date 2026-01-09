@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:36:46.547232",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "c7a9f1dcab34d12ba1b3156317b96a82c2161d1e0be8c4426b45504a5a1c6985",
+    "B": "9f8ea293cf57f767080b96e1994c83d932a78862538b3332a0b2d3e6e5d56092"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:37:55.857912",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003647247251344Wj4Jy9Bl",
+      "judge_response": {
+        "id": "chatcmpl-20260109003647247251344Wj4Jy9Bl",
+        "object": "chat.completion",
+        "created": 1767890275,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是针对翻译A和翻译B的详细评测。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A**：整体准确度非常高，能够准确理解原文的细微差别。例如在段落14中，原文是“Comical Market”（作者故意使用的戏仿名称），A准确译为“Comical Market”，保留了原文的意图。在段落91中，将“サークル”（Circle）正确译为“同人团体”。\n    *   **重大失误**：**段落73的内容完全缺失**。这是一个严重的编辑/复制粘贴错误。\n*   **翻译B**：存在多处严重的误译和“幻觉”。\n    *   **段落14**：将“Comical Market”自作主张地改为现实中的“COMIC MARKET”，破坏了轻小说中常见的戏仿/规避版权的幽默感。\n    *   **段落17**：**严重幻觉**。原文是“Big Sight”（东京国际展示场），B竟然翻译成“大阪展馆”。这是完全错误的地理信息（故事发生在东京）。\n    *   **段落23**：将“男子は知らん”（男生那边我就不管了/不知道了）误译为“男生我不懂”，意思偏差。\n    *   **段落91**：将同人展中的“サークル”（社团/摊位）直译为“圈圈”，在中文语境下非常怪异（通常指形状）。\n\n**2. 流畅性 (Fluency)**\n*   **翻译A**：中文表达自然流畅，符合中文阅读习惯。句子结构紧凑，逻辑清晰。\n*   **翻译B**：部分句子通顺，但经常出现奇怪的语病或不自然的表达。\n    *   **段落108**：**中英夹杂**。B译为“啊，我 **just** 路过这儿”。在没有任何语境提示角色说英语的情况下，直接保留英文单词“just”是极低级的错误，显得非常不专业。\n    *   **段落104**：保留了英文“parody”未翻译，而A译为“恶搞”，A的处理更好。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译A**：很好地把握了轻小说的语气，既有叙述的描述性，又有对话的生动感。角色口吻（如大野前辈的负责、杏奈的随意）还原度高。\n*   **翻译B**：语气不稳定。有时过于口语化（如“圈圈”），有时又出现奇怪的翻译腔。段落108的“just”严重破坏了沉浸感。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **翻译A**：术语处理得当（如Comical Market、同人团体）。\n*   **翻译B**：术语处理糟糕。除了上述的“圈圈”和“大阪展馆”外，对于专有名词的处理显得随意。\n\n**5. 格式/标点符号 (Formatting)**\n*   **翻译A**：标点使用规范，符合中文出版标准。\n*   **翻译B**：标点使用较为随意，有时使用半角引号，有时全角。\n\n### 总结\n**翻译A** 是一位非常称职的译者，对原文理解深刻，表达地道。唯一的缺陷是**段落73缺失**，这属于严重的校对事故，但就已翻译的部分而言，质量极高。\n\n**翻译B** 的质量非常低劣。它不仅包含地理名词的幻觉（东京变大阪），还出现了极其业余的中英夹杂（\"just\"），以及对御宅族术语（Circle）的误解。这看起来像是质量较差的机翻经过了非常敷衍的人工润色，或者是一位非常不负责任的译者。\n\n尽管A缺失了一段，但B的整体质量不仅是不准确，甚至是误导性的。因此，A在整体翻译能力上完胜。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 4,\n      \"notes\": \"A缺失了第73段，扣分；但B存在严重的地理名词幻觉（Big Sight变大阪）和术语错误（Circle变圈圈）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B在段落108中莫名其妙插入英文单词'just'，极不通顺。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A符合轻小说风格；B风格混乱，且随意改动原文的戏仿名称（Comical Market）。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B将同人社团译为'圈圈'，极不专业。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A逻辑清晰；B部分句子逻辑松散。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"A缺失一段内容，属于格式/完整性重大失误。\"\n    }\n  },\n  \"key_differences\": [\n    \"B在段落17中将'Big Sight'（东京）错误幻觉为'大阪展馆'。\",\n    \"B在段落108中使用了'我 just 路过这儿'这种不可接受的中英夹杂。\",\n    \"B在段落91中将'Circle'（社团）误译为'圈圈'。\",\n    \"A保留了原文'Comical Market'的戏仿梗，B将其改为现实名称。\",\n    \"A缺失了段落73的翻译。\"\n  ],\n  \"final_summary\": \"翻译A在准确性、流畅度和术语掌握上远超翻译B。A准确理解了御宅族文化术语（如社团、Comical Market），译文自然流畅。虽然A缺失了第73段（这是一个严重的校对失误），但相比之下，翻译B存在灾难性的错误：包括将东京的地标译为大阪（幻觉）、将'社团'译为'圈圈'（术语错误）、以及在中文句子中直接保留英文单词'just'（低级语病）。B的翻译质量不可接受，A尽管有遗漏，但其已完成部分的质量是专业水准的。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7998,
+          "completion_tokens": 5972,
+          "total_tokens": 13970
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 4,
+        "notes": "A缺失了第73段，扣分；但B存在严重的地理名词幻觉（Big Sight变大阪）和术语错误（Circle变圈圈）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "B在段落108中莫名其妙插入英文单词'just'，极不通顺。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A符合轻小说风格；B风格混乱，且随意改动原文的戏仿名称（Comical Market）。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 5,
+        "notes": "B将同人社团译为'圈圈'，极不专业。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A逻辑清晰；B部分句子逻辑松散。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "A缺失一段内容，属于格式/完整性重大失误。"
+      }
+    },
+    "key_differences": [
+      "B在段落17中将'Big Sight'（东京）错误幻觉为'大阪展馆'。",
+      "B在段落108中使用了'我 just 路过这儿'这种不可接受的中英夹杂。",
+      "B在段落91中将'Circle'（社团）误译为'圈圈'。",
+      "A保留了原文'Comical Market'的戏仿梗，B将其改为现实名称。",
+      "A缺失了段落73的翻译。"
+    ],
+    "final_summary": "翻译A在准确性、流畅度和术语掌握上远超翻译B。A准确理解了御宅族文化术语（如社团、Comical Market），译文自然流畅。虽然A缺失了第73段（这是一个严重的校对失误），但相比之下，翻译B存在灾难性的错误：包括将东京的地标译为大阪（幻觉）、将'社团'译为'圈圈'（术语错误）、以及在中文句子中直接保留英文单词'just'（低级语病）。B的翻译质量不可接受，A尽管有遗漏，但其已完成部分的质量是专业水准的。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

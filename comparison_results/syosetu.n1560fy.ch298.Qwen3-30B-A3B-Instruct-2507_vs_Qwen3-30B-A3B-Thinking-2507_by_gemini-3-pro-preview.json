@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:41:37.768323",
+  "sample": "syosetu.n1560fy.ch298",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n1560fy.ch298.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n1560fy.ch298.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/syosetu.n1560fy.ch298.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9aeb6269094dc80681686c7ce43485d4644d7889a31862f13341d77dfc8671a9",
+    "A": "c628bb36743f5d6d204c9859ce22bc2fb37b7d6d857ce550495009a9ff24bb36",
+    "B": "c571d82b5b4cd7461315e5a987faf54bd4f210baac93039886e519f9c6ab9022"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:42:47.321880",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109004138358729776a60oXtBi",
+      "judge_response": {
+        "id": "chatcmpl-20260109004138358729776a60oXtBi",
+        "object": "chat.completion",
+        "created": 1767890567,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的对照文本进行的详细评测：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **关键错误 (A)**：在段落 29 中，原文『な、めるなァァァぁァァァ！！』是典型的战斗呐喊，意为“别小看人/别太嚣张”（舐めるな）。翻译 A 将其直译为“别、舔啊啊啊啊！！”，这是非常严重的初级错误或机翻痕迹，完全曲解了语境。\n*   **关键错误 (A & B)**：在段落 83 中，原文『しんぞう、刺された。』（心脏，被刺了）。翻译 A 写成“心造”，翻译 B 写成“真造”。两者都未能正确写出“心脏”。A 可能是拼音输入法错误（Xin Zao vs Xin Zang），B 可能是误读了假名（Shin Zou -> 真造?）。结合后文“心脏被刺入的刀刃”，此处显然是指心脏。\n*   **语境理解 (B)**：在段落 22 中，原文关于“耳朵”的描述（はいられた...），A 翻译为“是的，是的”（误将 `hairareta` 拆解为 `hai`），完全不通。B 翻译为“被夹住了”，虽然原文直译是“被进入了/被侵入了”，但 B 根据被压扁的语境进行了意译，比 A 的错误理解要好得多。\n\n**2. 流畅性与术语 (Fluency & Terminology)**\n*   **术语选择**：段落 17 中，原文“変質した神性”。A 译为“变质神性”，听起来像食物变质；B 译为“异化神性”，更符合奇幻/战斗小说的风格。\n*   **量词与修饰**：段落 4 中，原文“３つの神性”。A 译为“三个神灵”，B 译为“三大神性”，B 更具史诗感且贴合原文。\n*   **拟声词**：段落 81 中，刺入肉体的声音“ずちゅ”。A 译为“啧”（表示不屑的声音），B 译为“滋噜”（液体/肉体声音），B 准确。\n\n**3. 格式与标点 (Formatting)**\n*   **括号匹配 (A)**：翻译 A 在对话引用上非常混乱，经常出现 `「……『` 这种前圆后方的不匹配括号（如段落 16, 58, 99, 112）。\n*   **标点 (B)**：翻译 B 的标点符号使用规范，括号匹配正确（`『……』`），阅读体验更好。\n\n**4. 风格 (Style)**\n*   翻译 B 的语气更贴合轻小说风格。例如段落 2 中，B 使用了“嘛”来体现口语感。段落 118 中，B 的“哼，好色呢”比 A 的“嗯”更能传达角色的语气。\n\n### 总结\n翻译 A 存在严重的误译（“别舔”）、格式混乱（括号不匹配）以及语境理解错误。翻译 B 虽然在个别词汇（如“真造”）上有瑕疵，但整体准确度、流畅度、术语选择和格式规范性都远超 A。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 5,\n      \"B\": 8,\n      \"notes\": \"A在段落29将'别小看人'错译为'别舔'，属于严重错误；段落22理解完全错误。两者在段落83均有瑕疵。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的语句更通顺，拟声词处理更准确。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的用词（如'异化'、'三大神性'）更符合轻小说战斗风格。\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"B的术语选择更专业。\"\n    },\n    \"coherence\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A的格式错误影响阅读连贯性。\"\n    },\n    \"formatting\": {\n      \"A\": 3,\n      \"B\": 9,\n      \"notes\": \"A存在大量括号不匹配（「...『）的低级格式错误。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落29：A将'Nameru na'（别小看我）错译为'别舔'，B意译为'别碰我/别小看我'（语境更贴切）。\",\n    \"段落17：A使用'变质'，B使用'异化'（更好）。\",\n    \"格式：A的对话括号前后不一致，B格式规范。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都优于翻译A。A犯了严重的初级翻译错误（如将战斗中的怒吼'别小看人'译为'别舔'），并且标点符号格式极其混乱（括号不匹配）。B虽然在个别假名辨识上可能有一处失误（段落83），但整体流畅、术语准确、风格到位，且没有破坏阅读体验的格式问题。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7663,
+          "completion_tokens": 5541,
+          "total_tokens": 13204
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A在段落29将'别小看人'错译为'别舔'，属于严重错误；段落22理解完全错误。两者在段落83均有瑕疵。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的语句更通顺，拟声词处理更准确。"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的用词（如'异化'、'三大神性'）更符合轻小说战斗风格。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的术语选择更专业。"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 9,
+        "notes": "A的格式错误影响阅读连贯性。"
+      },
+      "formatting": {
+        "A": 3,
+        "B": 9,
+        "notes": "A存在大量括号不匹配（「...『）的低级格式错误。"
+      }
+    },
+    "key_differences": [
+      "段落29：A将'Nameru na'（别小看我）错译为'别舔'，B意译为'别碰我/别小看我'（语境更贴切）。",
+      "段落17：A使用'变质'，B使用'异化'（更好）。",
+      "格式：A的对话括号前后不一致，B格式规范。"
+    ],
+    "final_summary": "翻译B在各方面都优于翻译A。A犯了严重的初级翻译错误（如将战斗中的怒吼'别小看人'译为'别舔'），并且标点符号格式极其混乱（括号不匹配）。B虽然在个别假名辨识上可能有一处失误（段落83），但整体流畅、术语准确、风格到位，且没有破坏阅读体验的格式问题。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

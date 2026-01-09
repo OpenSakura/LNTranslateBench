@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:33:51.566598",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "1b5f016aeb1d06018c103e45b2f5ca973d6056c046831e67be71ee0e4f745baa",
+    "B": "c889af880da602c22823cbddc8a6775c86aefff92440e9622b4bdec2260006d0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:34:43.709566",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003352162092223GES5SIXX",
+      "judge_response": {
+        "id": "chatcmpl-20260109003352162092223GES5SIXX",
+        "object": "chat.completion",
+        "created": 1767890083,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是针对提供的轻小说片段的详细评测。\n\n### 详细分析\n\n**1. 术语与名称一致性 (Terminology & Consistency)**\n这是两个版本之间最显著的差异点，也是决定胜负的关键因素。\n*   **原文中的名字区分**：原文中，旁白（主角）称呼其中一位女性角色为“おタヒ”（Otahi），而该角色的本名似乎是“チケン”（Chiken，见段落5和11）。这通常表现了主角对该角色的昵称或特定称呼习惯。\n*   **翻译A**：处理得非常得当。将“おタヒ”统一译为“塔希”，将“チケン”统一译为“琪肯”。保持了原文的称呼逻辑。\n*   **翻译B**：**严重混乱**。\n    *   段落1：译为“御田妃”。\n    *   段落7：译为“琪肯”（原文是Otahi）。\n    *   段落54：译为“小田姬”。\n    *   段落73：竟然将“おタヒ”（人名）错译为“礼服”（名词）。\n    *   这种对同一角色名称的反复变换（御田妃/琪肯/小田姬/礼服）严重破坏了阅读体验。\n\n**2. 准确性 (Accuracy)**\n*   **翻译A**：整体准确度很高，能够准确理解原文的语境和句意。\n*   **翻译B**：存在明显的误译。\n    *   **段落 73**：原文“おタヒでも着られる防弾チョッキ”（连Otahi也能穿的防弹背心）。B译为“连礼服也能穿的防弹背心”。这是严重的理解错误，完全改变了句意。\n    *   **段落 48**：原文“おタヒとの相性が悪い”（和Otahi的相性很差）。B译为“对琪肯很不利”。虽然意思通顺，但B擅自更改了原文使用的称呼（原文旁白用的是昵称）。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **翻译A**：采用了更符合中文轻小说读者的口语化表达。例如段落1的“补刀”，段落3的“直球”，段落6的“被随意数落”。对话自然，符合角色性格（主角的吐槽役风格）。\n*   **翻译B**：部分句子显得生硬或过于书面化。例如段落1的“乘胜追击般地给我致命一击”略显冗长。段落24使用了“俺们”，这带有强烈的方言色彩，除非主角设定是东北人，否则在普通轻小说中显得突兀。\n\n**4. 格式与标点 (Formatting)**\n*   两者都遵循了基本的对话引用格式。A在处理心理活动和旁白时更自然。\n\n### 总结\n翻译A在各方面都优于翻译B。翻译A准确地保留了角色称呼的区分，行文流畅，符合轻小说语感。翻译B虽然在某些描写句上尚可，但在核心的名词术语一致性上完全崩溃，且出现了严重的误译（把人名译成“礼服”），导致其不可用。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B在段落73将人名'おタヒ'误译为'礼服'，且多次混淆角色称呼。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的语言更自然、口语化，符合轻小说风格。B偶尔出现'俺们'等突兀词汇。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A很好地还原了主角的吐槽语气。B的语气不稳定。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 2,\n      \"notes\": \"A名称统一。B对同一角色使用了'御田妃'、'琪肯'、'小田姬'三种译名，甚至错译为物体。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 4,\n      \"notes\": \"B的名称混乱导致读者难以搞清指代关系。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"两者格式均正常。\"\n    }\n  },\n  \"key_differences\": [\n    \"名称一致性：A始终使用'塔希'对应'おタヒ'；B在'御田妃'、'琪肯'、'小田姬'之间反复横跳。\",\n    \"严重误译：段落73中，B将人名错译为'礼服'。\",\n    \"语感：A更符合现代轻小说的吐槽风格（如'补刀'、'直球'）；B略显生硬。\"\n  ],\n  \"final_summary\": \"翻译A在准确性、流畅性和术语一致性上完胜。翻译B犯了翻译中最忌讳的错误之一：同一角色的名字在短文中出现了四种不同的译法（甚至包括误译为名词），这使得B版本在阅读体验上是灾难性的。A版本则处理得非常专业，保留了原文的幽默感和角色关系。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6948,
+          "completion_tokens": 3658,
+          "total_tokens": 10606
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在段落73将人名'おタヒ'误译为'礼服'，且多次混淆角色称呼。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的语言更自然、口语化，符合轻小说风格。B偶尔出现'俺们'等突兀词汇。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好地还原了主角的吐槽语气。B的语气不稳定。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 2,
+        "notes": "A名称统一。B对同一角色使用了'御田妃'、'琪肯'、'小田姬'三种译名，甚至错译为物体。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 4,
+        "notes": "B的名称混乱导致读者难以搞清指代关系。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式均正常。"
+      }
+    },
+    "key_differences": [
+      "名称一致性：A始终使用'塔希'对应'おタヒ'；B在'御田妃'、'琪肯'、'小田姬'之间反复横跳。",
+      "严重误译：段落73中，B将人名错译为'礼服'。",
+      "语感：A更符合现代轻小说的吐槽风格（如'补刀'、'直球'）；B略显生硬。"
+    ],
+    "final_summary": "翻译A在准确性、流畅性和术语一致性上完胜。翻译B犯了翻译中最忌讳的错误之一：同一角色的名字在短文中出现了四种不同的译法（甚至包括误译为名词），这使得B版本在阅读体验上是灾难性的。A版本则处理得非常专业，保留了原文的幽默感和角色关系。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

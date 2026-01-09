@@ -1,0 +1,369 @@
+{
+  "titleJp": "微睡みの上に花は咲く～大規模異世界転移、掲示板つき～",
+  "titleZh": "浅眠之上花儿绽放～大规模异世界转移，附布告栏～",
+  "authors": [
+    {
+      "name": "初鹿余フツカ",
+      "link": "https://mypage.syosetu.com/1164620/"
+    }
+  ],
+  "type": "已完结",
+  "attentions": [
+    "R15",
+    "残酷描写"
+  ],
+  "keywords": [
+    "異世界転移",
+    "男主人公",
+    "ダンジョン",
+    "ＥＳＮ大賞９",
+    "魔術触媒",
+    "魔術師",
+    "呪文使い",
+    "掲示板",
+    "冒険者"
+  ],
+  "points": 60140,
+  "totalCharacters": 169821,
+  "introductionJp": "「ご案内はあなたで1048人目です。2500人お呼びしたので、もうすぐ折り返しですね」 異世界の神ノアによって2500人が召喚された。好きな能力をくれるといったが、目立ちたくない、とにかく情報交換したい俺は「匿名掲示板」を希望。願いは叶ったが、どういうわけか宝迷宮の下層へ転移させられてしまう。 一向に街へ辿り着けないんですけど！？　でも自分が希望した掲示板があるので、暇が潰せて意外と平和に暮らせてます。 求めた平穏、目立たない、中流の生活は、はたして俺の手に入るのか。",
+  "introductionZh": "「你是第1048位接受指引的人。我召唤了2500人，所以马上就要到一半了。」异世界之神诺亚召唤了2500人。虽然祂说可以给予我们想要的能力，但不想引人注目、只想交换情报的我选择了「匿名布告栏」。愿望虽然实现了，但不知为何却被转移到宝物迷宫的下层。我完全无法抵达城镇耶！？不过因为有自己希望的布告栏，所以可以打发时间，意外地过着和平的生活。我所追求的平稳、不引人注目、中产阶级的生活，究竟会不会落入我的手中呢？（全51话，每天12点更新，已预约完结）",
+  "glossary": {
+    "エリーク": "艾利克",
+    "アスル": "亞斯爾",
+    "ヤーノ": "矢野",
+    "ケン": "健",
+    "ツジ": "辻",
+    "ソーシ": "惣次",
+    "シオン": "紫苑",
+    "ルナリス": "盧那里斯",
+    "ソラリス": "索拉里斯",
+    "ノア": "諾亞"
+  },
+  "toc": [
+    {
+      "titleJp": "1.大規模異世界転移、掲示板つき",
+      "titleZh": "1.大规模异世界转移，附布告栏",
+      "chapterId": "1",
+      "createAt": 1761015720
+    },
+    {
+      "titleJp": "2.【今、なにしてる？】",
+      "titleZh": "2.【现在在做什么？】",
+      "chapterId": "2",
+      "createAt": 1761015780
+    },
+    {
+      "titleJp": "3.三年経ちました",
+      "titleZh": "3.三年过去了",
+      "chapterId": "3",
+      "createAt": 1761015840
+    },
+    {
+      "titleJp": "4.ノアの預言",
+      "titleZh": "4.诺亚的预言",
+      "chapterId": "4",
+      "createAt": 1761015900
+    },
+    {
+      "titleJp": "5.謎の男、治療中",
+      "titleZh": "5.谜之男子，治疗中",
+      "chapterId": "5",
+      "createAt": 1761015960
+    },
+    {
+      "titleJp": "6.名無しの転移者さん",
+      "titleZh": "6.无名的转移者",
+      "chapterId": "6",
+      "createAt": 1761102000
+    },
+    {
+      "titleJp": "7.魔術触媒",
+      "titleZh": "7.魔术触媒",
+      "chapterId": "7",
+      "createAt": 1761188400
+    },
+    {
+      "titleJp": "8.神と話してきた俺",
+      "titleZh": "8.和神对话的我",
+      "chapterId": "8",
+      "createAt": 1761274800
+    },
+    {
+      "titleJp": "9.ワイバーンこわい",
+      "titleZh": "9.飞龙好可怕",
+      "chapterId": "9",
+      "createAt": 1761361200
+    },
+    {
+      "titleJp": "10.街、到着！",
+      "titleZh": "10.抵达城镇！",
+      "chapterId": "10",
+      "createAt": 1761447600
+    },
+    {
+      "titleJp": "11.はじめての街",
+      "titleZh": "11.第一次来到的城镇",
+      "chapterId": "11",
+      "createAt": 1761534000
+    },
+    {
+      "titleJp": "12.スープの出汁にしてた",
+      "titleZh": "12.被当成汤的高汤",
+      "chapterId": "12",
+      "createAt": 1761620400
+    },
+    {
+      "titleJp": "13.迷宮の落とし子",
+      "titleZh": "13.迷宫的弃子",
+      "chapterId": "13",
+      "createAt": 1761706800
+    },
+    {
+      "titleJp": "14.模擬戦",
+      "titleZh": "14.模拟战",
+      "chapterId": "14",
+      "createAt": 1761793200
+    },
+    {
+      "titleJp": "15.鑑定所にて",
+      "titleZh": "15.在鉴定所",
+      "chapterId": "15",
+      "createAt": 1761879600
+    },
+    {
+      "titleJp": "16.魔術触媒屋",
+      "titleZh": "16.魔术触媒店",
+      "chapterId": "16",
+      "createAt": 1761966000
+    },
+    {
+      "titleJp": "17.街の風呂は高級宿",
+      "titleZh": "17.城镇的澡堂在高级旅馆",
+      "chapterId": "17",
+      "createAt": 1762052400
+    },
+    {
+      "titleJp": "18.大変動",
+      "titleZh": "18.大变动",
+      "chapterId": "18",
+      "createAt": 1762138800
+    },
+    {
+      "titleJp": "19.買い物",
+      "titleZh": "19.购物",
+      "chapterId": "19",
+      "createAt": 1762225200
+    },
+    {
+      "titleJp": "20.宝迷宮を攻略しよう",
+      "titleZh": "20.攻略宝物迷宫吧",
+      "chapterId": "20",
+      "createAt": 1762311600
+    },
+    {
+      "titleJp": "21.1層から10層",
+      "titleZh": "21.从第1层到第10层",
+      "chapterId": "21",
+      "createAt": 1762398000
+    },
+    {
+      "titleJp": "22.小休止",
+      "titleZh": "22.小休息",
+      "chapterId": "22",
+      "createAt": 1762484400
+    },
+    {
+      "titleJp": "23.迷宮都市ロータス在住スレ",
+      "titleZh": "23.迷宫都市洛塔斯的居民",
+      "chapterId": "23",
+      "createAt": 1762570800
+    },
+    {
+      "titleJp": "24.11層から20層",
+      "titleZh": "24.11层到20层",
+      "chapterId": "24",
+      "createAt": 1762657200
+    },
+    {
+      "titleJp": "25.ギルドと補充",
+      "titleZh": "25.公会与补充",
+      "chapterId": "25",
+      "createAt": 1762743600
+    },
+    {
+      "titleJp": "26.21層から30層",
+      "titleZh": "26.21层到30层",
+      "chapterId": "26",
+      "createAt": 1762830000
+    },
+    {
+      "titleJp": "27.沼地の守護者",
+      "titleZh": "27.沼泽地的守护者",
+      "chapterId": "27",
+      "createAt": 1762916400
+    },
+    {
+      "titleJp": "28.一週間ぶりの風呂！",
+      "titleZh": "28.一周没洗澡了！",
+      "chapterId": "28",
+      "createAt": 1763002800
+    },
+    {
+      "titleJp": "29.沼地の階層、報告",
+      "titleZh": "29.沼泽地的楼层，报告",
+      "chapterId": "29",
+      "createAt": 1763089200
+    },
+    {
+      "titleJp": "30.エリークへの指名依頼",
+      "titleZh": "30.对艾力克的指名委托",
+      "chapterId": "30",
+      "createAt": 1763175600
+    },
+    {
+      "titleJp": "31.貴族と魔術講座",
+      "titleZh": "31.贵族与魔术讲座",
+      "chapterId": "31",
+      "createAt": 1763262000
+    },
+    {
+      "titleJp": "32.トレントの灰",
+      "titleZh": "32.树精的灰",
+      "chapterId": "32",
+      "createAt": 1763348400
+    },
+    {
+      "titleJp": "33.俺への指名依頼",
+      "titleZh": "33.对我的指名委托",
+      "chapterId": "33",
+      "createAt": 1763434800
+    },
+    {
+      "titleJp": "34.転移者たち",
+      "titleZh": "34.转移者们",
+      "chapterId": "34",
+      "createAt": 1763521200
+    },
+    {
+      "titleJp": "35.魅惑のポテチ",
+      "titleZh": "35.魅惑的薯片",
+      "chapterId": "35",
+      "createAt": 1763607600
+    },
+    {
+      "titleJp": "36.30層から40層",
+      "titleZh": "36.30层到40层",
+      "chapterId": "36",
+      "createAt": 1763694000
+    },
+    {
+      "titleJp": "37.導きの目",
+      "titleZh": "37.引导之眼",
+      "chapterId": "37",
+      "createAt": 1763780400
+    },
+    {
+      "titleJp": "38.40層の守護者",
+      "titleZh": "38.40层的守护者",
+      "chapterId": "38",
+      "createAt": 1763866800
+    },
+    {
+      "titleJp": "39.血統認証",
+      "titleZh": "39.血统认证",
+      "chapterId": "39",
+      "createAt": 1763953200
+    },
+    {
+      "titleJp": "40.新しい装備を作る",
+      "titleZh": "40.制作新装备",
+      "chapterId": "40",
+      "createAt": 1764039600
+    },
+    {
+      "titleJp": "41.指名依頼の交渉",
+      "titleZh": "41.指名委托的交涉",
+      "chapterId": "41",
+      "createAt": 1764126000
+    },
+    {
+      "titleJp": "42.迷子石",
+      "titleZh": "42.迷路石",
+      "chapterId": "42",
+      "createAt": 1764212400
+    },
+    {
+      "titleJp": "43.おそろしいもの",
+      "titleZh": "43.可怕的东西",
+      "chapterId": "43",
+      "createAt": 1764298800
+    },
+    {
+      "titleJp": "44.身ひとつで挑む無謀",
+      "titleZh": "44.只身挑战的鲁莽之举",
+      "chapterId": "44",
+      "createAt": 1764385200
+    },
+    {
+      "titleJp": "45.宝迷宮引きこもり生活",
+      "titleZh": "45. 宝物迷宫闭关生活",
+      "chapterId": "45",
+      "createAt": 1764471600
+    },
+    {
+      "titleJp": "46.睡蓮の宝玉",
+      "titleZh": "46.睡莲的宝玉",
+      "chapterId": "46",
+      "createAt": 1764558000
+    },
+    {
+      "titleJp": "47.希少個体",
+      "titleZh": "47.稀有个体",
+      "chapterId": "47",
+      "createAt": 1764644400
+    },
+    {
+      "titleJp": "48.守護者との戦い",
+      "titleZh": "48.与守护者的战斗",
+      "chapterId": "48",
+      "createAt": 1764730800
+    },
+    {
+      "titleJp": "49.再び、指名依頼",
+      "titleZh": "49.再次，指名委托",
+      "chapterId": "49",
+      "createAt": 1764817200
+    },
+    {
+      "titleJp": "50.あけわたせ",
+      "titleZh": "50.让开",
+      "chapterId": "50",
+      "createAt": 1764903600
+    },
+    {
+      "titleJp": "51.しあわせであれ",
+      "titleZh": "51.要幸福哦",
+      "chapterId": "51",
+      "createAt": 1764903600
+    },
+    {
+      "titleJp": "番外編：魔法鞄と巡り銭",
+      "titleZh": "番外篇：魔法腰包与巡礼钱",
+      "chapterId": "52",
+      "createAt": 1766977200
+    },
+    {
+      "titleJp": "番外編：家内安全、無病息災",
+      "titleZh": "番外篇：家内安全，无病息灾",
+      "chapterId": "53",
+      "createAt": 1767150000
+    }
+  ],
+  "visited": 245,
+  "syncAt": 1767728342,
+  "jp": 53,
+  "baidu": 0,
+  "youdao": 0,
+  "gpt": 0,
+  "sakura": 53
+}

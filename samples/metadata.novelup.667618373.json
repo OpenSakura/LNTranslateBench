@@ -1,0 +1,1402 @@
+{
+  "titleJp": "フロムホライゾン ～水天の白いレイス～",
+  "titleZh": "水天的白色蕾丝",
+  "authors": [
+    {
+      "name": "小鳥遊梓",
+      "link": "https://novelup.plus/user/743441005/profile"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [],
+  "keywords": [
+    "アクション／バトル",
+    "女主人公",
+    "西洋風",
+    "日常",
+    "百合",
+    "騎士",
+    "村",
+    "魔獣",
+    "罪",
+    "赦す",
+    "第6回HJ大賞"
+  ],
+  "points": 908980,
+  "totalCharacters": 549101,
+  "introductionJp": "かつて魔法という奇跡があった。 魔法は人智を超越した現象を起こし、栄えた。しかしそれは、人々の技術の発達により神秘性を失っていき、影を潜めるものとなっていた。 時は流れ鉄と電気の時代。 一人の少女がいた。 名前はエメ。白髪という理由で迫害される、意思の希薄な兵士だった。敵国の王を殺したという不可解な罪で左遷されることとなった彼女は、騎士という称号を得て辺境の村を守護する命を受ける。 彼女はそこで様々な想いと、そして自分の愚かさについて知っていく。自分の無知さと後悔、そして贖罪を。 ※髪色に対して差別表現がありますが、決してそれらを助長するものではありません。",
+  "introductionZh": "曾经有一个叫做魔法的奇迹。魔法引起了超越人智的现象，繁荣了。但是，由于人们技术的发展，它失去了神秘性，成为了隐藏阴影的东西。时间是铁和电的时代。有一个少女。名字是艾美。他是个意志薄弱的士兵。因杀死敌国国王这一不可理解的罪名而被降职的她，得到了骑士这个称号，接受了守护边境村庄的生命。她在那里知道了各种各样的想法和自己的愚蠢。自己的无知和后悔，还有赎罪。※虽然对发色有歧视表现，但绝对不是助长它们的。",
+  "glossary": {
+    "ロラ": "萝拉",
+    "カルム": "卡姆",
+    "フリストレール": "弗里斯特雷",
+    "リーデ": "莉提",
+    "パスカリス": "帕斯卡利斯",
+    "セシル": "塞希尔"
+  },
+  "toc": [
+    {
+      "titleJp": "第一部　水天の白いレイス",
+      "titleZh": "第一部分　水天的白色蕾丝"
+    },
+    {
+      "titleJp": "001　Prologue　意思なき幽霊",
+      "titleZh": "001　Prologue　没有意志的幽灵",
+      "chapterId": "501186085",
+      "createAt": 1674393480
+    },
+    {
+      "titleJp": "002　episode1　「向かいの席は空いているかしら」",
+      "titleZh": "002　episode1　“对面的座位空着吗？”",
+      "chapterId": "200561340",
+      "createAt": 1675229880
+    },
+    {
+      "titleJp": "003　episode2　「そうやって、後ろから罵倒するだけなら」",
+      "titleZh": "003　episode2　“这样，如果只是从后面骂的话。”",
+      "chapterId": "673861465",
+      "createAt": 1673769180
+    },
+    {
+      "titleJp": "004　episode3　「ホントに来たんだ」",
+      "titleZh": "004　episode3　“真的来了。”",
+      "chapterId": "461450510",
+      "createAt": 1677586860
+    },
+    {
+      "titleJp": "005　episode4　「この村は騎士に用なんてねぇんだよ」",
+      "titleZh": "005　episode4　“这个村子对骑士没什么用。”",
+      "chapterId": "877232864",
+      "createAt": 1677168240
+    },
+    {
+      "titleJp": "006　episode5　「だが信用したわけじゃない」",
+      "titleZh": "006　episode5　「但我并没有相信你。」",
+      "chapterId": "691258048",
+      "createAt": 1661508000
+    },
+    {
+      "titleJp": "007　episode6　「だがな、オレらにだって意地がある」",
+      "titleZh": "007　episode6　“但是，我们也有固执。”",
+      "chapterId": "345462312",
+      "createAt": 1661853600
+    },
+    {
+      "titleJp": "008　episode7　「別にお前らが要らなくなったわけじゃねぇ」",
+      "titleZh": "008　episode7　「我并不是不需要你们啦。」",
+      "chapterId": "689902726",
+      "createAt": 1662112800
+    },
+    {
+      "titleJp": "009　episode8　「痛くねぇのか、それ」",
+      "titleZh": "009　episode8　“不痛吗？”",
+      "chapterId": "639014341",
+      "createAt": 1672096140
+    },
+    {
+      "titleJp": "010　episode9　「それはきっとね、あの子が素敵な人だからだよ」",
+      "titleZh": "010　episode9　“那一定是因为那个孩子是个很棒的人。”",
+      "chapterId": "517896015",
+      "createAt": 1675096020
+    },
+    {
+      "titleJp": "011　episode10　「誰かいるはずだけど」",
+      "titleZh": "011　episode10　“应该有人。”",
+      "chapterId": "698874948",
+      "createAt": 1663063200
+    },
+    {
+      "titleJp": "012　episode11　「火は絶やさないようにね」",
+      "titleZh": "012　episode11　“不要让火熄灭。”",
+      "chapterId": "925758088",
+      "createAt": 1663322400
+    },
+    {
+      "titleJp": "013　episode12　「あなたが、今日来たっていう騎士かしら」",
+      "titleZh": "013　episode12　“你是今天来的骑士吗？”",
+      "chapterId": "895995476",
+      "createAt": 1663668000
+    },
+    {
+      "titleJp": "014　episode13　「いいえ、あなたがいるのはずっと仄暗い下のほう」",
+      "titleZh": "014　episode13　「不，你在的地方一直在昏暗的下面。」",
+      "chapterId": "909002984",
+      "createAt": 1675367160
+    },
+    {
+      "titleJp": "015　episode14　＊silencieux",
+      "titleZh": "015　episode14　＊silencieux",
+      "chapterId": "301147548",
+      "createAt": 1664272800
+    },
+    {
+      "titleJp": "016　episode15　＊défense",
+      "titleZh": "016　episode15　＊défense",
+      "chapterId": "167479667",
+      "createAt": 1664532000
+    },
+    {
+      "titleJp": "017　episode16　魔獣",
+      "titleZh": "017　episode16　魔兽",
+      "chapterId": "292468996",
+      "createAt": 1664704800
+    },
+    {
+      "titleJp": "018　episode17　「意外だな。騎士様も冗談が言えるのか」",
+      "titleZh": "018　episode17　「真是意外，骑士大人也会开玩笑吗？」",
+      "chapterId": "956199058",
+      "createAt": 1664877600
+    },
+    {
+      "titleJp": "019　episode18　「そう、平気そうでなによりだわ」",
+      "titleZh": "019　episode18　“是的，你看起来没事，这比什么都好。”",
+      "chapterId": "334125512",
+      "createAt": 1665136800
+    },
+    {
+      "titleJp": "020　episode19　「やっぱりすごい綺麗だから」",
+      "titleZh": "020　episode19　“果然很漂亮。”",
+      "chapterId": "153147325",
+      "createAt": 1665309600
+    },
+    {
+      "titleJp": "021　episode20　「鞘だけを打ちたくない」",
+      "titleZh": "021　episode20　“我不想只打鞘。”",
+      "chapterId": "864894755",
+      "createAt": 1665482400
+    },
+    {
+      "titleJp": "022　episode21　「だが次来るときは、剣は置いて来い」",
+      "titleZh": "022　episode21　“但是下次来的时候，把剑放下。”",
+      "chapterId": "260670070",
+      "createAt": 1665741600
+    },
+    {
+      "titleJp": "023　episode22　「見かけたらでいい。すぐ分かる。なんせ」",
+      "titleZh": "023　episode22　“看见了就好。马上就知道了。”",
+      "chapterId": "505108230",
+      "createAt": 1665914400
+    },
+    {
+      "titleJp": "024　episode23　「どうでもいいだろ、そんなこと」",
+      "titleZh": "024　episode23　「怎么都好吧，那种事。」",
+      "chapterId": "814113439",
+      "createAt": 1666087200
+    },
+    {
+      "titleJp": "025　episode24　「ううん、見たことない髪の色だったよ」",
+      "titleZh": "025　episode24　“不，是没见过的头发的颜色。”",
+      "chapterId": "328611903",
+      "createAt": 1666346400
+    },
+    {
+      "titleJp": "026　episode25　「あぁ兄弟。だが全部脱ぐまで待て」",
+      "titleZh": "026　episode25　「啊，兄弟，但是要等到全部脱下来。」",
+      "chapterId": "826634301",
+      "createAt": 1674443160
+    },
+    {
+      "titleJp": "027　episode26　「……騎士」",
+      "titleZh": "027　episode26　“……骑士”",
+      "chapterId": "693049954",
+      "createAt": 1666692000
+    },
+    {
+      "titleJp": "028　episode27　「誰だ」",
+      "titleZh": "028　episode27　“是谁？”",
+      "chapterId": "549543754",
+      "createAt": 1666951200
+    },
+    {
+      "titleJp": "029　episode28　「一目惚れ、というやつだな。あぁ、嫌になる」",
+      "titleZh": "029　episode28　“真是一见钟情啊。啊，真讨厌。”",
+      "chapterId": "471802380",
+      "createAt": 1675530240
+    },
+    {
+      "titleJp": "030　episode29　「綺麗だ。そう思う感情は人も我らも変わらないだろう」",
+      "titleZh": "030　episode29　“很漂亮。这样想的感情无论是人还是我们都不会改变吧。”",
+      "chapterId": "586853028",
+      "createAt": 1667296800
+    },
+    {
+      "titleJp": "031　episode30　「どうして」",
+      "titleZh": "031　episode30　“为什么？”",
+      "chapterId": "585287129",
+      "createAt": 1667556000
+    },
+    {
+      "titleJp": "032　episode31　「だから、ここから」",
+      "titleZh": "032　episode31　“所以，从这里开始。”",
+      "chapterId": "236219454",
+      "createAt": 1676072700
+    },
+    {
+      "titleJp": "033　episode32　「ただ、そうですね。悪い感情を抱いた者がいるのも事実です」",
+      "titleZh": "033　episode32　“只是，是啊，有人怀有不好的感情也是事实。”",
+      "chapterId": "530376650",
+      "createAt": 1673389380
+    },
+    {
+      "titleJp": "034　episode33　「ってことだ騎士殿。よろしく頼むぜ」",
+      "titleZh": "034　episode33　「我的意思是，骑士殿下，请多关照。」",
+      "chapterId": "560916006",
+      "createAt": 1668160800
+    },
+    {
+      "titleJp": "035　episode34　「騎士殿。鎧が濡れているな」",
+      "titleZh": "035　episode34　“骑士殿，铠甲都湿了。”",
+      "chapterId": "756263028",
+      "createAt": 1671453720
+    },
+    {
+      "titleJp": "036　episode35　「村長としてはどうしても聞いときてぇことがある」",
+      "titleZh": "036　episode35　“作为村长，无论如何都有想问的事情。”",
+      "chapterId": "429179812",
+      "createAt": 1671453900
+    },
+    {
+      "titleJp": "037　episode36　「あまり触れられたくないことでしたか」",
+      "titleZh": "037　episode36　“是不太想被触摸的事情吗？”",
+      "chapterId": "592954130",
+      "createAt": 1672056240
+    },
+    {
+      "titleJp": "038　episode37　「厄介払いかな」",
+      "titleZh": "038　episode37　“真麻烦。”",
+      "chapterId": "437974069",
+      "createAt": 1669111200
+    },
+    {
+      "titleJp": "039　episode38　「さぁ、もう一つどうぞ」",
+      "titleZh": "039　episode38　“再来一个。”",
+      "chapterId": "742674409",
+      "createAt": 1669370400
+    },
+    {
+      "titleJp": "040　episode39　「よほどのことがなければ外に出るというのはありません」",
+      "titleZh": "040　episode39　“如果没有特别的事情，就不会出去。”",
+      "chapterId": "235696541",
+      "createAt": 1669716000
+    },
+    {
+      "titleJp": "041　episode40　「うるせぇから早く顔見せてやれ」",
+      "titleZh": "041　episode40　“太吵了，快给我看看你的脸。”",
+      "chapterId": "130220334",
+      "createAt": 1671530400
+    },
+    {
+      "titleJp": "042　episode41　「何にいま引っかかってるか、ワタシだって分からないのさ」",
+      "titleZh": "042　episode41　“我也不知道我现在被什嚒吸引了。”",
+      "chapterId": "593261938",
+      "createAt": 1673912100
+    },
+    {
+      "titleJp": "043　episode42　「生き急ぎすぎだ、とは思うがね」",
+      "titleZh": "043　episode42　“我觉得你活得太匆忙了。”",
+      "chapterId": "544196900",
+      "createAt": 1672386540
+    },
+    {
+      "titleJp": "044　episode43　「絶対に赦さないもの」",
+      "titleZh": "044　episode43　“绝对不会饶恕的东西”",
+      "chapterId": "745606971",
+      "createAt": 1673389680
+    },
+    {
+      "titleJp": "045　episode44　「私もそちらを使わせて頂きましょう」",
+      "titleZh": "045　episode44　“我也用那个吧。”",
+      "chapterId": "936391390",
+      "createAt": 1672936740
+    },
+    {
+      "titleJp": "046　episode45　「私の世界に貴女を虐げる人はいません」",
+      "titleZh": "046　episode45　“我的世界里没有人欺负你。”",
+      "chapterId": "211055366",
+      "createAt": 1673002800
+    },
+    {
+      "titleJp": "047　episode46　「あなたを呼んでいたのよ」",
+      "titleZh": "047　episode46　「我一直在呼唤你。」",
+      "chapterId": "817115386",
+      "createAt": 1673348400
+    },
+    {
+      "titleJp": "048　episode47　「殺した人のことなんていちいち覚えていないかしら」",
+      "titleZh": "048　episode47　「你不记得杀过他的人吗？」",
+      "chapterId": "505386961",
+      "createAt": 1673983920
+    },
+    {
+      "titleJp": "049　episode48　邂逅",
+      "titleZh": "049　episode48　邂逅",
+      "chapterId": "529018312",
+      "createAt": 1673953200
+    },
+    {
+      "titleJp": "050　episode49　私",
+      "titleZh": "050　episode49　本人",
+      "chapterId": "847357145",
+      "createAt": 1676388180
+    },
+    {
+      "titleJp": "051　episode50　「騎士様」",
+      "titleZh": "051　episode50　“骑士大人”",
+      "chapterId": "221843345",
+      "createAt": 1674558000
+    },
+    {
+      "titleJp": "052　episode51　「痛みと苦しみは誰かに訴えていいはずなのに」",
+      "titleZh": "052　episode51　“痛苦和痛苦应该可以向谁诉说。”",
+      "chapterId": "823671711",
+      "createAt": 1674946800
+    },
+    {
+      "titleJp": "053　episode52　「ねぇ騎士様。あの子を殺すの？」",
+      "titleZh": "053　episode52　「喂，骑士大人，你要杀了那孩子吗？」",
+      "chapterId": "806698196",
+      "createAt": 1675387440
+    },
+    {
+      "titleJp": "054　episode53　「見せてくれ、騎士殿。そして納得させてくれ。」",
+      "titleZh": "054　episode53　“让我看看，骑士殿下，然后让我接受。”",
+      "chapterId": "473749936",
+      "createAt": 1675476180
+    },
+    {
+      "titleJp": "055　episode54　「来ねぇかと思ったぜ」",
+      "titleZh": "055　episode54　“我还以为你不来呢。”",
+      "chapterId": "540740965",
+      "createAt": 1676626800
+    },
+    {
+      "titleJp": "056　episode55　「じゃあ、そいつを見つけないとだね」",
+      "titleZh": "056　episode55　「那嚒，我们得找到他。」",
+      "chapterId": "477012725",
+      "createAt": 1676026800
+    },
+    {
+      "titleJp": "057　episode56　「黒い服の女なら、去年ぐらいに見たな」",
+      "titleZh": "057　episode56　“穿黑色衣服的女人，去年左右就见过了。”",
+      "chapterId": "795213376",
+      "createAt": 1676562060
+    },
+    {
+      "titleJp": "058　episode57　「邪魔だ」",
+      "titleZh": "058　episode57　「打扰了。」",
+      "chapterId": "421667926",
+      "createAt": 1676899680
+    },
+    {
+      "titleJp": "059　episode58　「それまではこれっぽっちも思ってなかった」",
+      "titleZh": "059　episode58　“在那之前我一点也没想到。”",
+      "chapterId": "838265605",
+      "createAt": 1677201660
+    },
+    {
+      "titleJp": "060　episode59　「ここはごめんなさいではなく、ありがとう、と」",
+      "titleZh": "060　episode59　“这里不是对不起，而是谢谢。”",
+      "chapterId": "172260644",
+      "createAt": 1677493560
+    },
+    {
+      "titleJp": "061　episode60　「私は、ここでは亡霊ではなく人でいいのだと」",
+      "titleZh": "061　episode60　“我在这里不是亡灵，而是人就好了。”",
+      "chapterId": "848827597",
+      "createAt": 1677588060
+    },
+    {
+      "titleJp": "062　epilogue　騎士に至りて",
+      "titleZh": "062　epilogue　直到骑士",
+      "chapterId": "524372094",
+      "createAt": 1678029480
+    },
+    {
+      "titleJp": "第二部　烙印の者たち",
+      "titleZh": "第二部分　烙印的人们"
+    },
+    {
+      "titleJp": "063　第一章　怠け蝸牛と白いひと",
+      "titleZh": "063　第一章　懒惰的蜗牛和白色的人",
+      "chapterId": "434285274",
+      "createAt": 1680260400
+    },
+    {
+      "titleJp": "064　episode1　「やっぱり信用されてないんだな」",
+      "titleZh": "064　episode1　“果然还是不被信任啊。”",
+      "chapterId": "275671661",
+      "createAt": 1680606000
+    },
+    {
+      "titleJp": "065　episode2　「しっかり帰ってきてくれ、頼む」",
+      "titleZh": "065　episode2　“请好好回来，拜托了。”",
+      "chapterId": "139110769",
+      "createAt": 1680865200
+    },
+    {
+      "titleJp": "066　episode3　「特別製だから」",
+      "titleZh": "066　episode3　“因为是特制的。”",
+      "chapterId": "723305280",
+      "createAt": 1681470000
+    },
+    {
+      "titleJp": "067　episode4　「動かないのです」",
+      "titleZh": "067　episode4　“不动。”",
+      "chapterId": "700430925",
+      "createAt": 1681815600
+    },
+    {
+      "titleJp": "068　episode5　「ずっと、そこにいたぞ」",
+      "titleZh": "068　episode5　“我一直在那里。”",
+      "chapterId": "551326862",
+      "createAt": 1682074800
+    },
+    {
+      "titleJp": "069　episode6　「血ィ出ないんだな。やっぱり通ってないのか」",
+      "titleZh": "069　episode6　“你不流血啊，还是没通过？”",
+      "chapterId": "620898410",
+      "createAt": 1682420400
+    },
+    {
+      "titleJp": "070　episode7　「其方」",
+      "titleZh": "070　episode7　“那边”",
+      "chapterId": "707950910",
+      "createAt": 1682679600
+    },
+    {
+      "titleJp": "071　episode8　「申し訳ない」",
+      "titleZh": "071　episode8　“对不起。”",
+      "chapterId": "717374410",
+      "createAt": 1683025200
+    },
+    {
+      "titleJp": "072　episode9　「なんだこの有様は」",
+      "titleZh": "072　episode9　“这是什么样子？”",
+      "chapterId": "877387351",
+      "createAt": 1683284400
+    },
+    {
+      "titleJp": "073　episode10　「余は、パレス」",
+      "titleZh": "073　episode10　“我是巴勒斯。”",
+      "chapterId": "234153498",
+      "createAt": 1683630000
+    },
+    {
+      "titleJp": "074　episode11　「あなたが斃していれば」",
+      "titleZh": "074　episode11　“如果你死了。”",
+      "chapterId": "217169415",
+      "createAt": 1683889200
+    },
+    {
+      "titleJp": "075　episode12　＊cerf",
+      "titleZh": "075　episode12　＊cerf",
+      "chapterId": "661689507",
+      "createAt": 1684234800
+    },
+    {
+      "titleJp": "076　episode13　「オレは弱い者いじめが嫌いだ」",
+      "titleZh": "076　episode13　“我讨厌欺负弱者。”",
+      "chapterId": "138198274",
+      "createAt": 1684494000
+    },
+    {
+      "titleJp": "077　episode14　「化け物とお話合いがあるんだろ？」",
+      "titleZh": "077　episode14　“你和怪物有话要说吧？”",
+      "chapterId": "972468093",
+      "createAt": 1684839600
+    },
+    {
+      "titleJp": "078　episode15　＊soif",
+      "titleZh": "078　episode15　＊soif",
+      "chapterId": "662101709",
+      "createAt": 1685098800
+    },
+    {
+      "titleJp": "079　episode16　＊grave",
+      "titleZh": "079　episode16　＊grave",
+      "chapterId": "620165332",
+      "createAt": 1685444400
+    },
+    {
+      "titleJp": "080　episode17　「オウサマ」",
+      "titleZh": "080　episode17　“奥萨马”",
+      "chapterId": "545001626",
+      "createAt": 1685703600
+    },
+    {
+      "titleJp": "081　episode18　「亡霊が下していい独断なんてねぇ」",
+      "titleZh": "081　episode18　“亡灵可以下的独断什么的。”",
+      "chapterId": "739823236",
+      "createAt": 1686049200
+    },
+    {
+      "titleJp": "082　episode19　「断罪してほしい」",
+      "titleZh": "082　episode19　“希望你能定罪。”",
+      "chapterId": "435640232",
+      "createAt": 1686308400
+    },
+    {
+      "titleJp": "083　episode20　「だから余は愚かだったのだろうな」",
+      "titleZh": "083　episode20　“所以我才愚蠢吧。”",
+      "chapterId": "914017990",
+      "createAt": 1686654000
+    },
+    {
+      "titleJp": "084　episode21　「この身は魔力の宿るものしか滅ぼせぬゆえ」",
+      "titleZh": "084　episode21　“因为这个身体只能毁灭有魔力的东西。”",
+      "chapterId": "918077679",
+      "createAt": 1686913200
+    },
+    {
+      "titleJp": "085　episode22　「思いついたぜ」",
+      "titleZh": "085　episode22　“我想到啦。”",
+      "chapterId": "604166910",
+      "createAt": 1687258800
+    },
+    {
+      "titleJp": "086　episode23　「先に地獄で待っているぞ」",
+      "titleZh": "086　episode23　“我先在地狱等你。”",
+      "chapterId": "703864210",
+      "createAt": 1687518000
+    },
+    {
+      "titleJp": "087　終章　怠け蝸牛と白いひと",
+      "titleZh": "087　结束章　懒惰的蜗牛和白色的人",
+      "chapterId": "610650296",
+      "createAt": 1687863600
+    },
+    {
+      "titleJp": "088　第二章　赫怒せり、黒狼",
+      "titleZh": "088　第二章　赫怒拍卖，黑狼",
+      "chapterId": "132075923",
+      "createAt": 1689073200
+    },
+    {
+      "titleJp": "089　episode1　「強力なものであればあるほど」",
+      "titleZh": "089　episode1　“越是强大的东西”",
+      "chapterId": "919064366",
+      "createAt": 1689332400
+    },
+    {
+      "titleJp": "090　episode2　「ロラ、僕はいなくならないよ」",
+      "titleZh": "090　episode2　「萝拉，我不会消失的。」",
+      "chapterId": "565140449",
+      "createAt": 1689678000
+    },
+    {
+      "titleJp": "091　episode3　「しかし何で忘れてたんだろうね」",
+      "titleZh": "091　episode3　“可是为什么忘了呢？”",
+      "chapterId": "883054234",
+      "createAt": 1689937200
+    },
+    {
+      "titleJp": "092　episode4　「戦わなくていいならそれに越したことはねぇよ」",
+      "titleZh": "092　episode4　“如果不战斗也可以的话，那就再好不过了。”",
+      "chapterId": "672453008",
+      "createAt": 1690887600
+    },
+    {
+      "titleJp": "093　episode5　「まさか騎士様に言われるなんて」",
+      "titleZh": "093　episode5　「没想到骑士大人会这嚒说。」",
+      "chapterId": "567621081",
+      "createAt": 1691233200
+    },
+    {
+      "titleJp": "094　episode6　「その話は他の方には話しましたか」",
+      "titleZh": "094　episode6　“那件事你告诉别人了吗？”",
+      "chapterId": "961830010",
+      "createAt": 1691492400
+    },
+    {
+      "titleJp": "095　episode7　「迎え撃ちましょう」",
+      "titleZh": "095　episode7　“迎击吧。”",
+      "chapterId": "884824812",
+      "createAt": 1691751600
+    },
+    {
+      "titleJp": "096　episode8　「さあ騎士様、行きましょう！」",
+      "titleZh": "096　episode8　“来吧，骑士大人，我们走吧！”",
+      "chapterId": "628720303",
+      "createAt": 1692097200
+    },
+    {
+      "titleJp": "097　episode9　「いいですね、さすが」",
+      "titleZh": "097　episode9　“好啊，不愧是。”",
+      "chapterId": "819316468",
+      "createAt": 1692357180
+    },
+    {
+      "titleJp": "098　episode10　「フリストレールの人間であればね」",
+      "titleZh": "098　episode10　“如果你是弗里斯特雷尔的人。”",
+      "chapterId": "492223620",
+      "createAt": 1692702000
+    },
+    {
+      "titleJp": "099　episode11　「それを見捨てるなんて、死んだほうがマシというもの」",
+      "titleZh": "099　episode11　“把它扔掉，还不如死了好。”",
+      "chapterId": "100991148",
+      "createAt": 1692961200
+    },
+    {
+      "titleJp": "100　episode12　邂逅Ⅱ",
+      "titleZh": "100　episode12　邂逅Ⅱ",
+      "chapterId": "681263842",
+      "createAt": 1693911600
+    },
+    {
+      "titleJp": "101　episode13　「少なくとも騎士様のお陰で」",
+      "titleZh": "101　episode13　“至少多亏了骑士大人。”",
+      "chapterId": "187291747",
+      "createAt": 1694257200
+    },
+    {
+      "titleJp": "102　episode14　「騎士様はまだ本調子でないように思います」",
+      "titleZh": "102　episode14　“我觉得骑士大人还不是很正常。”",
+      "chapterId": "959007029",
+      "createAt": 1694518140
+    },
+    {
+      "titleJp": "103　episode15　「それが騎士様の源流に繋がるのではないでしょうか」",
+      "titleZh": "103　episode15　“这不就是骑士的源头吗？”",
+      "chapterId": "290962586",
+      "createAt": 1694775600
+    },
+    {
+      "titleJp": "104　episode16　「自分に無関心になるのはおよしになって」",
+      "titleZh": "104　episode16　“不要对自己不关心。”",
+      "chapterId": "366792785",
+      "createAt": 1695121200
+    },
+    {
+      "titleJp": "105　episode17　「一体何の話だ？」",
+      "titleZh": "105　episode17　“你在说什么？”",
+      "chapterId": "115743793",
+      "createAt": 1695380400
+    },
+    {
+      "titleJp": "106　episode18　「皆勘違いだったって」",
+      "titleZh": "106　episode18　“大家都误会了。”",
+      "chapterId": "831009532",
+      "createAt": 1695726000
+    },
+    {
+      "titleJp": "107　episode19　「昼を告げてしまいましょう」",
+      "titleZh": "107　episode19　“我来告诉你白天吧。”",
+      "chapterId": "547575333",
+      "createAt": 1695985200
+    },
+    {
+      "titleJp": "108　episode20　「この程度で私は屈しないわ」",
+      "titleZh": "108　episode20　“这种程度我不会屈服的。”",
+      "chapterId": "560605539",
+      "createAt": 1696330800
+    },
+    {
+      "titleJp": "109　episode21　「なんでも騎士様と同じ髪の色らしい」",
+      "titleZh": "109　episode21　“好像什么都是和骑士一样头发的颜色。”",
+      "chapterId": "649377432",
+      "createAt": 1696590000
+    },
+    {
+      "titleJp": "110　episode22　「難儀なもんだな」",
+      "titleZh": "110　episode22　“真是麻烦啊。”",
+      "chapterId": "221533152",
+      "createAt": 1696935600
+    },
+    {
+      "titleJp": "111　episode23　「衰えたさ」",
+      "titleZh": "111　episode23　“已经衰弱了。”",
+      "chapterId": "327806922",
+      "createAt": 1697194800
+    },
+    {
+      "titleJp": "112　episode24　「騎士殿には立っててもらわねぇとな」",
+      "titleZh": "112　episode24　「骑士殿下一定要站起来啊。」",
+      "chapterId": "615534344",
+      "createAt": 1697540400
+    },
+    {
+      "titleJp": "113　episode25　「片腕くらいくれてやる」",
+      "titleZh": "113　episode25　“给我一只胳膊。”",
+      "chapterId": "807125798",
+      "createAt": 1697799600
+    },
+    {
+      "titleJp": "114　episode26　「私の父は、お父様は。本当に立派な御方です」",
+      "titleZh": "114　episode26　「我的父亲是您的父亲，您真是位了不起的人。」",
+      "chapterId": "219103303",
+      "createAt": 1698145200
+    },
+    {
+      "titleJp": "115　episode27　「避難したはずの村の皆が」",
+      "titleZh": "115　episode27　“应该避难的村子里的所有人”",
+      "chapterId": "740693258",
+      "createAt": 1698404400
+    },
+    {
+      "titleJp": "116　episode28　「騎士様。流石にお父様もいい歳なので」",
+      "titleZh": "116　episode28　「骑士大人，毕竟您父亲年纪也很大。」",
+      "chapterId": "512253096",
+      "createAt": 1698750000
+    },
+    {
+      "titleJp": "117　episode29　「魔獣は逃げて行ったんだよね？」",
+      "titleZh": "117　episode29　「魔兽已经逃走了吧？」",
+      "chapterId": "745311445",
+      "createAt": 1699013040
+    },
+    {
+      "titleJp": "118　episode30　「ロラさんはどうしました？」",
+      "titleZh": "118　episode30　“萝拉小姐怎么了？”",
+      "chapterId": "228314576",
+      "createAt": 1699354800
+    },
+    {
+      "titleJp": "119　episode31　「簡単じゃないですか」",
+      "titleZh": "119　episode31　“不是很简单吗？”",
+      "chapterId": "700451676",
+      "createAt": 1699700400
+    },
+    {
+      "titleJp": "120　episode32　「いつものあなたなら」",
+      "titleZh": "120　episode32　“如果是平常的你。”",
+      "chapterId": "723996425",
+      "createAt": 1699959600
+    },
+    {
+      "titleJp": "121　episode33　「まだ何も言えていないのです」",
+      "titleZh": "121　episode33　“我还什嚒都没说。”",
+      "chapterId": "332328475",
+      "createAt": 1700650800
+    },
+    {
+      "titleJp": "122　episode34　＊sang",
+      "titleZh": "122　episode34　＊sang",
+      "chapterId": "726979716",
+      "createAt": 1700823600
+    },
+    {
+      "titleJp": "123　episode35　友人",
+      "titleZh": "123　episode35　朋友",
+      "chapterId": "703700874",
+      "createAt": 1701171900
+    },
+    {
+      "titleJp": "124　episode36　「いってらっしゃい」",
+      "titleZh": "124　episode36　“走好。”",
+      "chapterId": "862500912",
+      "createAt": 1701428400
+    },
+    {
+      "titleJp": "125　episode37　「同胞、君は」",
+      "titleZh": "125　episode37　“同胞，你呢？”",
+      "chapterId": "233035748",
+      "createAt": 1701774000
+    },
+    {
+      "titleJp": "126　episode38　「君ならば理解してくれると思った！」",
+      "titleZh": "126　episode38　“我以为你会理解的！”",
+      "chapterId": "537133172",
+      "createAt": 1702033200
+    },
+    {
+      "titleJp": "127　episode39　「それが茨道であるとしても」",
+      "titleZh": "127　episode39　“即使那是一条荆棘。”",
+      "chapterId": "562644974",
+      "createAt": 1702465200
+    },
+    {
+      "titleJp": "128　episode40　「後を頼むよ」",
+      "titleZh": "128　episode40　“拜托你了。”",
+      "chapterId": "972621443",
+      "createAt": 1702638000
+    },
+    {
+      "titleJp": "129　終章　赫怒せり、黒狼",
+      "titleZh": "129　结束章　赫怒拍卖，黑狼",
+      "chapterId": "419686086",
+      "createAt": 1702983600
+    },
+    {
+      "titleJp": "130　第三章　色天の聖女",
+      "titleZh": "130　第三章　色天的圣女",
+      "chapterId": "665805787",
+      "createAt": 1709895600
+    },
+    {
+      "titleJp": "131　episode1　「命を救ってもらったんだから」",
+      "titleZh": "131　episode1　“因为你救了我的命。”",
+      "chapterId": "293728095",
+      "createAt": 1710243000
+    },
+    {
+      "titleJp": "132　episode2　「まったく、しゃあねぇな」",
+      "titleZh": "132　episode2　“真是的，真是太可爱了。”",
+      "chapterId": "425380975",
+      "createAt": 1710500400
+    },
+    {
+      "titleJp": "133　episode3　「あんたを殺してでもここを通る」",
+      "titleZh": "133　episode3　“即使杀了你也要经过这里。”",
+      "chapterId": "829988553",
+      "createAt": 1711191600
+    },
+    {
+      "titleJp": "134　episode4　「化け物みたいな理由だね」",
+      "titleZh": "134　episode4　「这理由好像是怪物。」",
+      "chapterId": "875568062",
+      "createAt": 1712314800
+    },
+    {
+      "titleJp": "135　episode5　「喧嘩は売りたくねぇからよ」",
+      "titleZh": "135　episode5　“因为我不想卖吵架。”",
+      "chapterId": "281404558",
+      "createAt": 1712661600
+    },
+    {
+      "titleJp": "136　episode6　「その者の名を伺ってもよろしいでしょうか」",
+      "titleZh": "136　episode6　“我可以问一下那个人的名字吗？”",
+      "chapterId": "847094573",
+      "createAt": 1713524400
+    },
+    {
+      "titleJp": "137　episode7　「貴女がそうなのですね」",
+      "titleZh": "137　episode7　“你就是这样啊。”",
+      "chapterId": "104684301",
+      "createAt": 1713870000
+    },
+    {
+      "titleJp": "138　episode8　「これはこれは、失敬」",
+      "titleZh": "138　episode8　“这太失礼了。”",
+      "chapterId": "870735104",
+      "createAt": 1714129200
+    },
+    {
+      "titleJp": "139　episode9　「あなた方をお待ちなのでは」",
+      "titleZh": "139　episode9　“我不是在等你们吗？”",
+      "chapterId": "533351948",
+      "createAt": 1714475400
+    },
+    {
+      "titleJp": "140　episode10　「丁重にと」",
+      "titleZh": "140　episode10　“郑重地说。”",
+      "chapterId": "128502366",
+      "createAt": 1714734000
+    },
+    {
+      "titleJp": "141　episode11　「儂は知らん、ということだ」",
+      "titleZh": "141　episode11　“我不知道。”",
+      "chapterId": "444087023",
+      "createAt": 1715166000
+    },
+    {
+      "titleJp": "142　episode12　聖遭",
+      "titleZh": "142　episode12　圣遭",
+      "chapterId": "995540717",
+      "createAt": 1715684700
+    },
+    {
+      "titleJp": "143　episode13　「この御方はクラルスという国そのもの」",
+      "titleZh": "143　episode13　“这位是克拉斯这个国家。”",
+      "chapterId": "890483043",
+      "createAt": 1716030000
+    },
+    {
+      "titleJp": "144　episode14　「中へどうぞ」",
+      "titleZh": "144　episode14　“请进。”",
+      "chapterId": "206655095",
+      "createAt": 1716635100
+    },
+    {
+      "titleJp": "145　episode15　「お探しの方は見つかりましたか」",
+      "titleZh": "145　episode15　“找到找的人了吗？”",
+      "chapterId": "563630483",
+      "createAt": 1716894000
+    },
+    {
+      "titleJp": "146　episode16　「心よりお祈り致します」",
+      "titleZh": "146　episode16　“衷心祈祷”",
+      "chapterId": "940812457",
+      "createAt": 1717240500
+    },
+    {
+      "titleJp": "147　episode17　「何もいないね」",
+      "titleZh": "147　episode17　“什么都没有。”",
+      "chapterId": "340198194",
+      "createAt": 1717498800
+    },
+    {
+      "titleJp": "148　episode18　「ではごゆっくり」",
+      "titleZh": "148　episode18　“那么请慢用。”",
+      "chapterId": "368093051",
+      "createAt": 1718449200
+    },
+    {
+      "titleJp": "149　episode19　「さすればきっと導いてくださる」",
+      "titleZh": "149　episode19　「这样的话一定会指引我的。」",
+      "chapterId": "807048835",
+      "createAt": 1718708400
+    },
+    {
+      "titleJp": "150　episode20　「動かないでね」",
+      "titleZh": "150　episode20　“别动。”",
+      "chapterId": "932325425",
+      "createAt": 1719054000
+    },
+    {
+      "titleJp": "151　episode21　「そんな簡単な話じゃないよね」",
+      "titleZh": "151　episode21　“不是那么简单的事吧。”",
+      "chapterId": "154579563",
+      "createAt": 1719315120
+    },
+    {
+      "titleJp": "152　episode22　「いらぬ。ただの無関心よ」",
+      "titleZh": "152　episode22　“不需要，只是不关心。”",
+      "chapterId": "225446925",
+      "createAt": 1720263600
+    },
+    {
+      "titleJp": "153　episode23　「誰もいなかったかい」",
+      "titleZh": "153　episode23　“谁都不在吗？”",
+      "chapterId": "706628516",
+      "createAt": 1721559960
+    },
+    {
+      "titleJp": "154　episode24　「わたくしの二番目に大切なものを」",
+      "titleZh": "154　episode24　“我的第二重要的东西”",
+      "chapterId": "209468035",
+      "createAt": 1722942120
+    },
+    {
+      "titleJp": "155　episode25　「貴女に宿るそのもう一人の者は」",
+      "titleZh": "155　episode25　「你的另一个人是谁？」",
+      "chapterId": "177184102",
+      "createAt": 1723547100
+    },
+    {
+      "titleJp": "156　episode26　「この部屋に害虫が出たのです」",
+      "titleZh": "156　episode26　“这个房间出了害虫。”",
+      "chapterId": "672905706",
+      "createAt": 1723806000
+    },
+    {
+      "titleJp": "157　episode27　「差し伸べる手すらない」",
+      "titleZh": "157　episode27　“连伸出的手都没有。”",
+      "chapterId": "771878796",
+      "createAt": 1724238480
+    },
+    {
+      "titleJp": "158　eposode28　追憶",
+      "titleZh": "158　eposode28　追忆",
+      "chapterId": "742401860",
+      "createAt": 1724756400
+    },
+    {
+      "titleJp": "159　episode29　「少しだけ、小噺をしてもいいかい」",
+      "titleZh": "159　episode29　“稍微说点小故事也可以吗？”",
+      "chapterId": "740525241",
+      "createAt": 1725362400
+    },
+    {
+      "titleJp": "160　episode30　恋情",
+      "titleZh": "160　episode30　爱情",
+      "chapterId": "966836024",
+      "createAt": 1725970320
+    },
+    {
+      "titleJp": "161　episode31　盲目",
+      "titleZh": "161　episode31　盲目",
+      "chapterId": "315773780",
+      "createAt": 1726659360
+    },
+    {
+      "titleJp": "162　episode32　「好きにならないわけないじゃないか」",
+      "titleZh": "162　episode32　“你怎么可能不喜欢呢？”",
+      "chapterId": "107093375",
+      "createAt": 1727265600
+    },
+    {
+      "titleJp": "163　episode33　＊intrusion",
+      "titleZh": "163　episode33　＊intrusion",
+      "chapterId": "468762691",
+      "createAt": 1727608500
+    },
+    {
+      "titleJp": "164　episode34　「愛しています、リュグズュール」",
+      "titleZh": "164　episode34　“我爱你，吕格斯”",
+      "chapterId": "797760529",
+      "createAt": 1727780400
+    },
+    {
+      "titleJp": "165　episode35　「あの人のものさ」",
+      "titleZh": "165　episode 35　「那个人的东西。」",
+      "chapterId": "745617264",
+      "createAt": 1728126000
+    },
+    {
+      "titleJp": "166　episode36　「もしこれがあの人の字じゃなくても」",
+      "titleZh": "166　episode 36　「就算这不是那个人的字。」",
+      "chapterId": "502070653",
+      "createAt": 1728386100
+    },
+    {
+      "titleJp": "167　episode37　「どうか今日も我らを見守りくださいますよう」",
+      "titleZh": "167　episode 37　「今天也请保佑我们。」",
+      "chapterId": "972005149",
+      "createAt": 1729335600
+    },
+    {
+      "titleJp": "168　episode38　「我が杞憂を打ち払いましょう」",
+      "titleZh": "168　episode 38　「请消除我的杞人忧天。」",
+      "chapterId": "996980775",
+      "createAt": 1729596660
+    },
+    {
+      "titleJp": "169　episode39　「魔獣ではありません」",
+      "titleZh": "169　episode 39　「不是魔兽。」",
+      "chapterId": "997369847",
+      "createAt": 1730289120
+    },
+    {
+      "titleJp": "170　episode40　「この国を赦してはおりません」",
+      "titleZh": "170　episode 40　「我不会原谅这个国家。」",
+      "chapterId": "613779399",
+      "createAt": 1730890800
+    },
+    {
+      "titleJp": "171　episode41　「わたくしには関係のないこと」",
+      "titleZh": "171　episode 41　「与我无关。」",
+      "chapterId": "676539085",
+      "createAt": 1731150000
+    },
+    {
+      "titleJp": "172　episode42　「貴方のせいですよ」",
+      "titleZh": "172　episode 42　「都是你的错。」",
+      "chapterId": "413449614",
+      "createAt": 1732618800
+    },
+    {
+      "titleJp": "173　episode43　「五百年も前の話をしているのですよ？」",
+      "titleZh": "173　episode 43　「那可是五百年前的事哦？」",
+      "chapterId": "641393695",
+      "createAt": 1732964400
+    },
+    {
+      "titleJp": "174　episode44　「大丈夫、ここまで連れてきたのは」",
+      "titleZh": "174　episode 44　「不要紧，带到这里来的是——」",
+      "chapterId": "112275319",
+      "createAt": 1733482800
+    },
+    {
+      "titleJp": "175　episode45　「化け物ではないですか」",
+      "titleZh": "175　episode 45　「根本就是怪物嘛。」",
+      "chapterId": "301504091",
+      "createAt": 1733916300
+    },
+    {
+      "titleJp": "176　episode46　「それがわたくしへの呪いとなってしまった」",
+      "titleZh": "176　episode 46　「结果，那变成了对我的诅咒。」",
+      "chapterId": "678189370",
+      "createAt": 1735124400
+    },
+    {
+      "titleJp": "177　終章　色天の聖女",
+      "titleZh": "177　终章　色天圣女",
+      "chapterId": "875053048",
+      "createAt": 1735902000
+    },
+    {
+      "titleJp": "178　第四章　胴慾波濤帝國(前)",
+      "titleZh": "178　第四章　胴欲波涛帝国（前）",
+      "chapterId": "204303536",
+      "createAt": 1740913200
+    },
+    {
+      "titleJp": "179　episode1　alter ego",
+      "titleZh": "179　episode 1　alter ego",
+      "chapterId": "898668661",
+      "createAt": 1741345200
+    },
+    {
+      "titleJp": "180　episode2　「ただの護衛兵です」",
+      "titleZh": "180　episode 2　「只是护卫兵。」",
+      "chapterId": "786731359",
+      "createAt": 1741690800
+    },
+    {
+      "titleJp": "181　episode3　「どうか老いぼれを助ける気持ちで」",
+      "titleZh": "181　episode3　「请当作是帮助一个老不死的家伙。」",
+      "chapterId": "898995757",
+      "createAt": 1741953000
+    },
+    {
+      "titleJp": "182　episode4　「亡霊め、悪運が強い」",
+      "titleZh": "182　episode4　「该死的亡灵，运气真好。」",
+      "chapterId": "342663388",
+      "createAt": 1742296500
+    },
+    {
+      "titleJp": "183　episode5　＊bras gauche",
+      "titleZh": "183　episode5　＊bras gauche",
+      "chapterId": "271160938",
+      "createAt": 1742986800
+    },
+    {
+      "titleJp": "184　episode6　「走れ、亡霊！」",
+      "titleZh": "184　episode6　「亡灵，快跑！」",
+      "chapterId": "159769083",
+      "createAt": 1743159600
+    },
+    {
+      "titleJp": "185　episode7　「いま開けようとしていたのですよ」",
+      "titleZh": "185　episode7　「我正准备开门。」",
+      "chapterId": "370336693",
+      "createAt": 1743850800
+    },
+    {
+      "titleJp": "186　episode8　「随分とお喋りになったものね」",
+      "titleZh": "186　episode 8　「你变得很爱说话了呢。」",
+      "chapterId": "669325928",
+      "createAt": 1744110000
+    },
+    {
+      "titleJp": "187　episode9　「しらばっくれんなって」",
+      "titleZh": "187　episode 9　「别装傻了。」",
+      "chapterId": "159937171",
+      "createAt": 1744716000
+    },
+    {
+      "titleJp": "188　episode10　「飽き飽きしてるんだ、子守りにゃよ」",
+      "titleZh": "188　episode 10　「我已经厌倦了，不想再当保母了。」",
+      "chapterId": "808461811",
+      "createAt": 1745319600
+    },
+    {
+      "titleJp": "189　episode11　＊cuir",
+      "titleZh": "189　episode11　＊cuir",
+      "chapterId": "790979871",
+      "createAt": 1746184500
+    },
+    {
+      "titleJp": "190　episode12　「売国奴め」",
+      "titleZh": "190　episode12　「卖国贼。」",
+      "chapterId": "836854350",
+      "createAt": 1746615600
+    },
+    {
+      "titleJp": "191　episode13　「連れてきてやるよ」",
+      "titleZh": "191　episode 13　「我带你去吧。」",
+      "chapterId": "102462346",
+      "createAt": 1747221000
+    },
+    {
+      "titleJp": "192　episode14　＊saisir",
+      "titleZh": "192　episode 14　＊saisir",
+      "chapterId": "790111232",
+      "createAt": 1747740300
+    },
+    {
+      "titleJp": "193　episode15　「揺らげ」",
+      "titleZh": "193　episode 15　「动摇吧。」",
+      "chapterId": "748587183",
+      "createAt": 1748170800
+    },
+    {
+      "titleJp": "194　episode16　「とにかく夢中だったから、気づけなかった」",
+      "titleZh": "194　episode 16　「总之我太投入了，所以没注意到。」",
+      "chapterId": "650826039",
+      "createAt": 1749553200
+    },
+    {
+      "titleJp": "195　episode17　にゃあ",
+      "titleZh": "195　episode 17　喵。",
+      "chapterId": "391149682",
+      "createAt": 1750419000
+    },
+    {
+      "titleJp": "196　episode18　「爺のくだらない言い訳にゃ」",
+      "titleZh": "196　episode 18　「老头子的无聊借口喵。」",
+      "chapterId": "274512040",
+      "createAt": 1751022600
+    },
+    {
+      "titleJp": "197　episode19　「僕は僕の中で、当然のことをしたまでなんだから」",
+      "titleZh": "197　episode 19　「我只是做了自己该做的事而已。」",
+      "chapterId": "706909424",
+      "createAt": 1751713200
+    },
+    {
+      "titleJp": "198　episode20　「普通なら」",
+      "titleZh": "198　episode 20　「一般来说。」",
+      "chapterId": "424510250",
+      "createAt": 1752318000
+    },
+    {
+      "titleJp": "199　episode21　「にゃあは知っている」",
+      "titleZh": "199　episode 21　「喵知道。」",
+      "chapterId": "431265294",
+      "createAt": 1752922800
+    },
+    {
+      "titleJp": "200　episode22　「まだあるかは、分からないがにゃ」",
+      "titleZh": "200　episode 22　「虽然不知道还有没有喵。」",
+      "chapterId": "537411756",
+      "createAt": 1753530000
+    },
+    {
+      "titleJp": "201　episode23　「シロ、お手」",
+      "titleZh": "201　episode 23　「小白，握手。」",
+      "chapterId": "860590694",
+      "createAt": 1754133000
+    },
+    {
+      "titleJp": "202　episode24　「オレ様は知りたいんだよ」",
+      "titleZh": "202　episode 24　「本大爷想知道。」",
+      "chapterId": "451535506",
+      "createAt": 1754652000
+    },
+    {
+      "titleJp": "203　episode25　＊ivresse",
+      "titleZh": "203　episode 25　＊醉汉",
+      "chapterId": "396843348",
+      "createAt": 1754996400
+    },
+    {
+      "titleJp": "204　episode26　「化け物だ！」",
+      "titleZh": "204　episode 26　「怪物！」",
+      "chapterId": "459153702",
+      "createAt": 1755947880
+    },
+    {
+      "titleJp": "205　episode27　「なんで信じてくれないの」",
+      "titleZh": "205　episode 27　「为什么你就是不肯相信我？」",
+      "chapterId": "179838005",
+      "createAt": 1757070000
+    },
+    {
+      "titleJp": "206　episode28　＊frénésie",
+      "titleZh": "206　episode 28　＊frénésie",
+      "chapterId": "723404061",
+      "createAt": 1758884400
+    },
+    {
+      "titleJp": "207　episode29　「大した奴だ」",
+      "titleZh": "207　episode 29　「了不起的家伙。」",
+      "chapterId": "188231134",
+      "createAt": 1759230000
+    },
+    {
+      "titleJp": "208　episode30　「違うにゃ」",
+      "titleZh": "208　episode 30　「不对喵。」",
+      "chapterId": "395154168",
+      "createAt": 1759489200
+    },
+    {
+      "titleJp": "209　episode31　「お前は弱いからいいわね」",
+      "titleZh": "209　episode31　「你很弱，所以才无所谓。」",
+      "chapterId": "356424453",
+      "createAt": 1760180400
+    },
+    {
+      "titleJp": "210　episode32　＊ombre d'un arbre",
+      "titleZh": "210　episode32　＊ombre d'un arbre",
+      "chapterId": "146063946",
+      "createAt": 1761304560
+    },
+    {
+      "titleJp": "211　episode33　「相変わらず聞き分けだけはいい奴だ」",
+      "titleZh": "211　episode33　「你这家伙还是老样子，只有听话这点可取。」",
+      "chapterId": "824418608",
+      "createAt": 1761735900
+    },
+    {
+      "titleJp": "212　episode34　＊destruction",
+      "titleZh": "212　episode34　＊destruction",
+      "chapterId": "492208104",
+      "createAt": 1761995400
+    },
+    {
+      "titleJp": "213　episode35　「通れるならば通るがいい」",
+      "titleZh": "213　episode35　「能过就过吧。」",
+      "chapterId": "411277656",
+      "createAt": 1762513200
+    },
+    {
+      "titleJp": "214　episode36　「儂は何も、ここを通さぬ」",
+      "titleZh": "214　episode36　「老夫不会让你们通过。」",
+      "chapterId": "743102812",
+      "createAt": 1763465700
+    },
+    {
+      "titleJp": "215　episode37　＊rembobiner",
+      "titleZh": "215　episode37　＊rembobiner",
+      "chapterId": "727125776",
+      "createAt": 1763895600
+    },
+    {
+      "titleJp": "216　episode38　「外見で優劣をつけるのは、」",
+      "titleZh": "216　episode 38　「以貌取人，」",
+      "chapterId": "892890696",
+      "createAt": 1764156300
+    },
+    {
+      "titleJp": "217　episode39　「弱くなったものですね」",
+      "titleZh": "217　episode 39　「是弱者才会做的事。」",
+      "chapterId": "345134605",
+      "createAt": 1764328200
+    },
+    {
+      "titleJp": "218　episode40　「まだいらっしゃったのですか」",
+      "titleZh": "218　episode 40　「你还在啊？」",
+      "chapterId": "262209735",
+      "createAt": 1764760200
+    },
+    {
+      "titleJp": "219　episode41　＊enterrement",
+      "titleZh": "219　episode 41　＊丧礼",
+      "chapterId": "703942147",
+      "createAt": 1764933600
+    },
+    {
+      "titleJp": "220　episode42　「耳には入ってきているぞ」",
+      "titleZh": "220　episode42　「我可是有听到哦。」",
+      "chapterId": "605578923",
+      "createAt": 1765278300
+    },
+    {
+      "titleJp": "221　episode43　仇",
+      "titleZh": "221　episode43　仇",
+      "chapterId": "892223829",
+      "createAt": 1765538100
+    },
+    {
+      "titleJp": "222　episode44　「戴冠せしエリザベットが問う」",
+      "titleZh": "222　episode44　「加冕的伊丽莎白问道。」",
+      "chapterId": "892576303",
+      "createAt": 1765969380
+    },
+    {
+      "titleJp": "223　episode45　「何もかも信用ならないのは、この者でございます」",
+      "titleZh": "223　episode 45　「最不能信任的人，就是他。」",
+      "chapterId": "325312567",
+      "createAt": 1766488080
+    },
+    {
+      "titleJp": "224　episode46　心なんて、持ちたくなかった。",
+      "chapterId": "504347883",
+      "createAt": 1766746800
+    },
+    {
+      "titleJp": "225　episode47　「それがお互いの為だわ」",
+      "chapterId": "147664398",
+      "createAt": 1767178800
+    }
+  ],
+  "visited": 837,
+  "syncAt": 1767747302,
+  "jp": 226,
+  "baidu": 164,
+  "youdao": 0,
+  "gpt": 204,
+  "sakura": 222
+}

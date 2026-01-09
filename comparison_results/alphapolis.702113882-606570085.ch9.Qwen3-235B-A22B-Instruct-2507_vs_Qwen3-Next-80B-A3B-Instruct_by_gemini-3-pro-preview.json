@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:25:37.377990",
+  "sample": "alphapolis.702113882-606570085.ch9",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.702113882-606570085.ch9.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.702113882-606570085.ch9.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.702113882-606570085.ch9.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "94e0afca2a13b9ef3eb38a3006f8e43e09b053f57d4bf1e18799972cc381124c",
+    "A": "9acd1df74fbfe02a2561d7b219a68c31636d64fe1cf69517c714a88b897075bf",
+    "B": "afe21a9714dcd744fc108830b1183fcac80de51520f5c715ee8d60ce7fa226d9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:26:36.072053",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002538357973234LyBtxhAi",
+      "judge_response": {
+        "id": "chatcmpl-20260109002538357973234LyBtxhAi",
+        "object": "chat.completion",
+        "created": 1767889595,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的分段文本对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性与完整性**\n*   **翻译A**：整体意思传达准确，能够很好地理解原文的语境和细微差别（如Segment 101的心理活动）。但是，A存在明显的**漏翻/未处理字符**问题。在Segment 6、10中保留了原文的“ちゃん”（未翻译成“酱”或去除），在Segment 38中保留了假名“て”。这显示了校对工作的疏忽。\n*   **翻译B**：存在**致命的缺失**。Segment 68和Segment 83的内容完全为空，导致信息丢失。此外，Segment 101将天照的内心独白（抱怨蒂娜仗着身高摸头）误译为蒂娜说的话（“说她比我高”），改变了原意。\n\n**2. 术语与一致性**\n*   **翻译A**：\n    *   **加护 (Kago)**：译为“加护”，这是轻小说/游戏语境下的标准译法。\n    *   **名字**：Tina译为“蒂娜”。虽然“缇娜”更常见，但“蒂娜”也可接受。\n    *   **称呼**：前期保留“ちゃん”，后期译为“酱”，前后不一致。\n*   **翻译B**：\n    *   **加护 (Kago)**：译为“护符”。这是错误的，“护符”通常指物品（Amulet），而原文是指神赋予的祝福/保护能力。\n    *   **名字**：Tina译为“缇娜”，译名较标准。\n    *   **称呼**：有时直呼其名，有时加“小姐”（Seg 110），不一致。\n\n**3. 流畅性与风格**\n*   **翻译A**：句式结构更符合中文轻小说的阅读习惯。例如Segment 21“被各种阻碍所‘压抑’”，读起来比B顺畅。对话语气也更贴合角色性格（如天照的抱怨）。\n*   **翻译B**：部分句子略显生硬。Segment 1的引号使用奇怪（『\"\"...\"\"』）。Segment 38试图将拟声词“てへ”（Tehe）音译为“特呵”，在中文中显得非常怪异，不如A意译为“呵呵”自然。\n\n**4. 格式与标点**\n*   **翻译A**：保留了原文的『』引号风格，这在轻小说汉化中很常见。\n*   **翻译B**：引号使用混乱，有时是双引号，有时是单引号，且有缺失文本的情况。\n\n### 最终判决\n\n尽管翻译A在前期留有未翻译的日文假名（ちゃん、て），这是一个明显的编辑失误，但**翻译B存在严重的漏翻（整句缺失）和术语错误（加护译为护符）**。翻译A在句子的连贯性、语境理解（特别是内心独白）以及核心术语的准确性上都优于翻译B。A的错误属于“未清理干净”，而B的错误属于“翻译缺失和理解错误”。因此，A整体质量更高。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 5,\n      \"notes\": \"A整体准确，但有未翻译的残留字符。B有两段完全漏翻（Seg 68, 83），且Seg 101误译了内心独白。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"A的语句更通顺自然。B的部分拟声词翻译（如“特呵”）很生硬。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A较好地还原了轻小说的对话风格。B的标点符号使用混乱。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A正确翻译了“加护”。B将其错译为“护符”。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B由于漏翻导致上下文断裂。\"\n    },\n    \"formatting\": {\n      \"A\": 7,\n      \"B\": 6,\n      \"notes\": \"A保留了日文引号但未处理部分假名。B引号格式不统一。\"\n    }\n  },\n  \"key_differences\": [\n    \"B在Segment 68和83中丢失了整段文本。\",\n    \"A使用了正确的术语“加护”，B错误地译为“护符”。\",\n    \"A在开头几段未将“ちゃん”翻译成中文，属于校对失误。\",\n    \"B误解了Segment 101的句意，将心理描写错当成对话。\"\n  ],\n  \"final_summary\": \"翻译A虽然有明显的校对疏忽（保留了部分日文尾缀），但在核心的翻译准确度、术语正确性（如'加护'）和流畅度上均优于B。翻译B存在致命的整句漏翻问题，且将关键术语译错，部分段落理解有误，因此A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8837,
+          "completion_tokens": 4856,
+          "total_tokens": 13693
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "A整体准确，但有未翻译的残留字符。B有两段完全漏翻（Seg 68, 83），且Seg 101误译了内心独白。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的语句更通顺自然。B的部分拟声词翻译（如“特呵”）很生硬。"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A较好地还原了轻小说的对话风格。B的标点符号使用混乱。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 6,
+        "notes": "A正确翻译了“加护”。B将其错译为“护符”。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 5,
+        "notes": "B由于漏翻导致上下文断裂。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A保留了日文引号但未处理部分假名。B引号格式不统一。"
+      }
+    },
+    "key_differences": [
+      "B在Segment 68和83中丢失了整段文本。",
+      "A使用了正确的术语“加护”，B错误地译为“护符”。",
+      "A在开头几段未将“ちゃん”翻译成中文，属于校对失误。",
+      "B误解了Segment 101的句意，将心理描写错当成对话。"
+    ],
+    "final_summary": "翻译A虽然有明显的校对疏忽（保留了部分日文尾缀），但在核心的翻译准确度、术语正确性（如'加护'）和流畅度上均优于B。翻译B存在致命的整句漏翻问题，且将关键术语译错，部分段落理解有误，因此A胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

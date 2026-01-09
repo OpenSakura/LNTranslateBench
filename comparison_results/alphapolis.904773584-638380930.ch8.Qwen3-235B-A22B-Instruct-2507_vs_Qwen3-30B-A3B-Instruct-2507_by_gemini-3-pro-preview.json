@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:25:46.533891",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "664a0b4f7819f75aaec8d08eb7fcbb0fc4b6869e129826e1a2516373e26bd6be",
+    "B": "a94d27f64189b9ec46b4713ac90138285410aba96344bbfa527dffaed730b481"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:26:39.641011",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002547949427960E9ldIjCC",
+      "judge_response": {
+        "id": "chatcmpl-20260109002547949427960E9ldIjCC",
+        "object": "chat.completion",
+        "created": 1767889599,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的文本段落对翻译A和翻译B的详细评判。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A (严重缺陷):** 翻译A犯了翻译中最忌讳的错误之一：**漏译**。在多个段落（如3, 7, 9, 13段），A直接保留了原文的片假名（如 `アウルベア`, `アシッドスライム`），没有将其转换为中文。此外，A存在严重的**幻觉翻译**：\n    *   段落23：将 `クリムゾンブル` (Crimson Bull/深红牛) 译为“深红之暴”，完全丢失了“牛”的含义。\n    *   段落83：将 `ベジトレント` (Veggie Treant/蔬菜树人) 译为“蔬菜兔”，原文根本没有兔子的意思。\n    *   段落102：将 `ボア` (Boar/野猪) 译为“水獭”。这是完全错误的理解。\n*   **翻译B (尚可，有瑕疵):** 翻译B翻译了所有的标题。虽然在段落102中，B将 `ボア` (Boar) 误译为“蟒蛇/Boa”（因为日语片假名ボア既可以指Boar野猪，也可以指Boa蚺蛇），忽略了后文中提到的“牙”和“Uriboa”（瓜坊/小野猪）的语境线索，但相比A的“水獭”和大量漏译，B的准确度要高得多。\n\n**2. 流畅性 (Fluency)**\n*   **翻译A:** 由于夹杂了大量未翻译的日文片假名，阅读体验极差，根本无法作为中文文本通读。\n*   **翻译B:** 句子结构通顺，符合中文表达习惯。例如段落2中，B使用了“受……因素影响”，比A的直译更自然。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译A:** 风格混乱，术语不统一。\n*   **翻译B:** 保持了“怪物图鉴/笔记”的风格，语言简洁明了。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **翻译A:** 极差。`Treant` 译为“特伦特”（音译），`Dullahan` 忽而译为“杜拉汉”忽而译为“德鲁亚加”（段落93，严重不一致）。\n*   **翻译B:** 较好。使用了RPG常用的标准译名，如 `Treant` -> “树人” 或 “藤”（虽然后者略有偏差，但比音译好），`Dullahan` -> “无头骑士/杜拉汉”。\n\n**5. 格式/标点符号 (Formatting)**\n*   **翻译A:** 保留了日文的中黑点（・），未转换为中文标点。\n*   **翻译B:** 使用了中文标点或空格，格式更规范。\n\n### 最终判决\n\n翻译A是一个**未完成且充满错误**的草稿，保留了大量原文未译，且在翻译的部分出现了离奇的幻觉（如把树人看成兔子，把野猪看成水獭）。翻译B虽然在“野猪(Boar)”这个词上因为片假名歧义犯了错（译成了蟒蛇），但整体是一个完整、可读且大部分准确的翻译。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 2,\n      \"B\": 8,\n      \"notes\": \"A保留了大量日文原文未翻译，且存在将'牛'译为'暴'、'树人'译为'兔'、'野猪'译为'水獭'等严重错误。B虽然将'野猪'误译为'蟒蛇'（受片假名歧义影响），但整体准确度远高于A。\"\n    },\n    \"fluency\": {\n      \"A\": 3,\n      \"B\": 9,\n      \"notes\": \"A夹杂日文，无法阅读。B行文流畅自然。\"\n    },\n    \"style\": {\n      \"A\": 4,\n      \"B\": 8,\n      \"notes\": \"B符合轻小说设定集的风格。A风格支离破碎。\"\n    },\n    \"terminology\": {\n      \"A\": 3,\n      \"B\": 8,\n      \"notes\": \"A多用生硬音译（特伦特）或不翻译。B使用了较为通用的RPG术语（树人、史莱姆）。\"\n    },\n    \"coherence\": {\n      \"A\": 2,\n      \"B\": 9,\n      \"notes\": \"A因未翻译部分导致完全不连贯。\"\n    },\n    \"formatting\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A保留日文标点，B转换为中文标点。\"\n    }\n  },\n  \"key_differences\": [\n    \"A有大量标题直接保留日文片假名未翻译（如アウルベア、ウルフ等）。\",\n    \"A存在严重的幻觉错译（段落83将'蔬菜树人'译为'蔬菜兔'，段落102将'野猪'译为'水獭'）。\",\n    \"B采用了意译和通用术语（如'树人'），A多用音译（如'特伦特'）。\",\n    \"B虽然在段落102将'Boar'(野猪)误判为'Boa'(蚺蛇)，但相比A的错误，B的整体质量是压倒性的。\"\n  ],\n  \"final_summary\": \"翻译A属于不可用的废稿，存在大量未翻译的日文原文，且已翻译部分包含离谱的错误（如将树人译为兔子）。翻译B虽然在个别多义词（Boar/Boa）上判断失误，但整体翻译完整、流畅，术语使用得当，是唯一合格的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8340,
+          "completion_tokens": 4547,
+          "total_tokens": 12887
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 2,
+        "B": 8,
+        "notes": "A保留了大量日文原文未翻译，且存在将'牛'译为'暴'、'树人'译为'兔'、'野猪'译为'水獭'等严重错误。B虽然将'野猪'误译为'蟒蛇'（受片假名歧义影响），但整体准确度远高于A。"
+      },
+      "fluency": {
+        "A": 3,
+        "B": 9,
+        "notes": "A夹杂日文，无法阅读。B行文流畅自然。"
+      },
+      "style": {
+        "A": 4,
+        "B": 8,
+        "notes": "B符合轻小说设定集的风格。A风格支离破碎。"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 8,
+        "notes": "A多用生硬音译（特伦特）或不翻译。B使用了较为通用的RPG术语（树人、史莱姆）。"
+      },
+      "coherence": {
+        "A": 2,
+        "B": 9,
+        "notes": "A因未翻译部分导致完全不连贯。"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A保留日文标点，B转换为中文标点。"
+      }
+    },
+    "key_differences": [
+      "A有大量标题直接保留日文片假名未翻译（如アウルベア、ウルフ等）。",
+      "A存在严重的幻觉错译（段落83将'蔬菜树人'译为'蔬菜兔'，段落102将'野猪'译为'水獭'）。",
+      "B采用了意译和通用术语（如'树人'），A多用音译（如'特伦特'）。",
+      "B虽然在段落102将'Boar'(野猪)误判为'Boa'(蚺蛇)，但相比A的错误，B的整体质量是压倒性的。"
+    ],
+    "final_summary": "翻译A属于不可用的废稿，存在大量未翻译的日文原文，且已翻译部分包含离谱的错误（如将树人译为兔子）。翻译B虽然在个别多义词（Boar/Boa）上判断失误，但整体翻译完整、流畅，术语使用得当，是唯一合格的翻译。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

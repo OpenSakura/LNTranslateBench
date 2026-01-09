@@ -1,0 +1,298 @@
+{
+  "titleJp": "ノリで秘密結社立ち上げたら入ってくるやつ全員秘密しかなかった",
+  "titleZh": "一时兴起创立了秘密结社，结果加入的成员全都有不可告人的秘密",
+  "authors": [
+    {
+      "name": "恋狸",
+      "link": "https://syosetu.org/user/365210/"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [],
+  "keywords": [
+    "現代",
+    "コメディ",
+    "秘密結社",
+    "勘違い",
+    "ギャグ",
+    "コメディ",
+    "ハメ匿"
+  ],
+  "points": 19758,
+  "totalCharacters": 130960,
+  "introductionJp": "イカれたメンバーを紹介するぜ！！ ・裏社会の傭兵エルフ、 ・脱走した実験体 ・天然魔法使い ・俺(ただの一般人) ※書籍化決定しました。",
+  "introductionZh": "来介绍下我的疯狂成员吧！！ ・黑社会的精灵佣兵， ・逃出来的实验体， ・天然魔法使， ・我（普通人类）",
+  "glossary": {
+    "プロトコル・ゼロ": "零号协议",
+    "シャルミナ": "夏露米娜",
+    "ゴンくん": "权君",
+    "ゴンさん": "权桑",
+    "アキラ": "阿明",
+    "マチュピチュ": "马丘比丘",
+    "ナイン": "娜茵",
+    "ボス": "Boss",
+    "ヤニおっさん": "烟味大叔",
+    "ゲ◯ドウポーズ": "◯堂姿势"
+  },
+  "toc": [
+    {
+      "titleJp": "傭兵エルフと一般人",
+      "titleZh": "佣兵精灵与一般人"
+    },
+    {
+      "titleJp": "ノリで秘密結社を立ち上げてみた",
+      "titleZh": "一时兴起创立了秘密结社",
+      "chapterId": "1",
+      "createAt": 1756884180
+    },
+    {
+      "titleJp": "なんかやけに設定凝ったヤツがやってきた",
+      "titleZh": "来了个设定特别讲究的家伙",
+      "chapterId": "2",
+      "createAt": 1757024640
+    },
+    {
+      "titleJp": "食えない男",
+      "titleZh": "难对付的男人",
+      "chapterId": "3",
+      "createAt": 1757111280
+    },
+    {
+      "titleJp": "バイト兼構成員、ゲットだぜ！！",
+      "titleZh": "打工兼组织成员，到手了！！",
+      "chapterId": "4",
+      "createAt": 1757224260
+    },
+    {
+      "titleJp": "入社記念だひゃっほい",
+      "titleZh": "入社纪念日万岁",
+      "chapterId": "5",
+      "createAt": 1757318340
+    },
+    {
+      "titleJp": "寂れた喫茶店のエルフ店員",
+      "titleZh": "冷清咖啡厅的精灵店员",
+      "chapterId": "6",
+      "createAt": 1757396520
+    },
+    {
+      "titleJp": "厨二病レーダー",
+      "titleZh": "中二病雷达",
+      "chapterId": "7",
+      "createAt": 1757486100
+    },
+    {
+      "titleJp": "三者三様",
+      "titleZh": "三人三种反应",
+      "chapterId": "8",
+      "createAt": 1757575860
+    },
+    {
+      "titleJp": "破産RTAの喫茶店",
+      "titleZh": "破产RTA的咖啡厅",
+      "chapterId": "9",
+      "createAt": 1757658660
+    },
+    {
+      "titleJp": "敵か味方か",
+      "titleZh": "敌是友？",
+      "chapterId": "10",
+      "createAt": 1757744760
+    },
+    {
+      "titleJp": "勘違い・THE・WORLD",
+      "titleZh": "误会・THE・WORLD",
+      "chapterId": "11",
+      "createAt": 1757832240
+    },
+    {
+      "titleJp": "出陣",
+      "titleZh": "出阵",
+      "chapterId": "12",
+      "createAt": 1757918280
+    },
+    {
+      "titleJp": "一網打尽",
+      "titleZh": "一网打尽",
+      "chapterId": "13",
+      "createAt": 1758005220
+    },
+    {
+      "titleJp": "紫煙",
+      "titleZh": "紫烟",
+      "chapterId": "14",
+      "createAt": 1758089700
+    },
+    {
+      "titleJp": "試練",
+      "titleZh": "试炼",
+      "chapterId": "15",
+      "createAt": 1758267000
+    },
+    {
+      "titleJp": "焼き尽くされた過去を乗り越えて",
+      "titleZh": "跨越被烧毁的过去",
+      "chapterId": "16",
+      "createAt": 1758513240
+    },
+    {
+      "titleJp": "とある骨董屋の日記帳",
+      "titleZh": "某骨董店的日记簿",
+      "chapterId": "17",
+      "createAt": 1758553920
+    },
+    {
+      "titleJp": "目がぁぁぁあ！！",
+      "titleZh": "我的眼睛啊啊啊啊！！",
+      "chapterId": "18",
+      "createAt": 1758711720
+    },
+    {
+      "titleJp": "実験体と一般人",
+      "titleZh": "实验体与普通人"
+    },
+    {
+      "titleJp": "歳の離れた友人(主人公視点)",
+      "titleZh": "年龄相差甚远的朋友（主角视角）",
+      "chapterId": "19",
+      "createAt": 1758809040
+    },
+    {
+      "titleJp": "厨二病は厨二病を呼ぶ",
+      "titleZh": "中二病会引来中二病",
+      "chapterId": "20",
+      "createAt": 1758884580
+    },
+    {
+      "titleJp": "涙の理由は",
+      "titleZh": "流泪的理由",
+      "chapterId": "21",
+      "createAt": 1758995220
+    },
+    {
+      "titleJp": "No.９",
+      "titleZh": "9",
+      "chapterId": "22",
+      "createAt": 1759134540
+    },
+    {
+      "titleJp": "調査の灯火",
+      "titleZh": "调查的灯火",
+      "chapterId": "23",
+      "createAt": 1759255860
+    },
+    {
+      "titleJp": "疑念",
+      "titleZh": "疑念",
+      "chapterId": "24",
+      "createAt": 1759319280
+    },
+    {
+      "titleJp": "バッドエンドは許しません",
+      "titleZh": "不接受坏结局",
+      "chapterId": "25",
+      "createAt": 1759609680
+    },
+    {
+      "titleJp": "ボスと煙",
+      "titleZh": "老大与烟",
+      "chapterId": "26",
+      "createAt": 1759926120
+    },
+    {
+      "titleJp": "最高の展開",
+      "titleZh": "最棒的发展",
+      "chapterId": "27",
+      "createAt": 1760102280
+    },
+    {
+      "titleJp": "顔合わせ",
+      "titleZh": "初次见面",
+      "chapterId": "28",
+      "createAt": 1760351040
+    },
+    {
+      "titleJp": "水とエルフ。されど見据える方向は同じ",
+      "titleZh": "水与精灵。然而，注视的方向相同。",
+      "chapterId": "29",
+      "createAt": 1760470680
+    },
+    {
+      "titleJp": "目潰しは鉄則",
+      "titleZh": "戳眼睛是铁则。",
+      "chapterId": "30",
+      "createAt": 1760777100
+    },
+    {
+      "titleJp": "油断したヤツほど負けるバトル漫画みたいな世界線",
+      "titleZh": "这世界线的战斗漫画，越是大意的家伙越容易输。",
+      "chapterId": "31",
+      "createAt": 1760871420
+    },
+    {
+      "titleJp": "圧倒的な光",
+      "titleZh": "压倒性的光芒。",
+      "chapterId": "32",
+      "createAt": 1760955240
+    },
+    {
+      "titleJp": "超人武術──止境の構え……しか知らん",
+      "titleZh": "超人武术——止境之构……我只知道这个。",
+      "chapterId": "33",
+      "createAt": 1761045360
+    },
+    {
+      "titleJp": "抱擁",
+      "titleZh": "拥抱",
+      "chapterId": "34",
+      "createAt": 1761516600
+    },
+    {
+      "titleJp": "金。感覚の違い",
+      "titleZh": "金钱。感觉的差异。",
+      "chapterId": "35",
+      "createAt": 1761735900
+    },
+    {
+      "titleJp": "天然魔法使いと一般人",
+      "titleZh": "天然魔法师与普通人"
+    },
+    {
+      "titleJp": "闇夜に彷徨う影",
+      "titleZh": "徘徊于暗夜的影子",
+      "chapterId": "36",
+      "createAt": 1762245360
+    },
+    {
+      "titleJp": "手掛かり",
+      "titleZh": "线索",
+      "chapterId": "37",
+      "createAt": 1762848660
+    },
+    {
+      "titleJp": "トラウマ級の羞恥",
+      "titleZh": "羞耻到留下心理阴影",
+      "chapterId": "38",
+      "createAt": 1764282780
+    },
+    {
+      "titleJp": "演者の数と配置が尋常じゃない",
+      "titleZh": "演员的数量和配置都非比寻常。",
+      "chapterId": "39",
+      "createAt": 1765461900
+    },
+    {
+      "titleJp": "シャルミナ調査ファイル：ゴン",
+      "titleZh": "夏露米娜调查档案：权",
+      "chapterId": "40",
+      "createAt": 1767255060
+    }
+  ],
+  "visited": 3031,
+  "syncAt": 1767721666,
+  "jp": 40,
+  "baidu": 0,
+  "youdao": 38,
+  "gpt": 3,
+  "sakura": 40
+}

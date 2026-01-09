@@ -1,0 +1,1349 @@
+{
+  "titleJp": "私の能力はゲームプレイ、異世界で貴族の牢屋に入れられたけどゲームの能力で自由に外出してたら幽霊騒ぎになってた",
+  "titleZh": "能力是游戏玩家的我，虽然在异世界被关进了贵族的牢房，但靠着游戏的能力自由地外出，结果成为了灵异事件。",
+  "authors": [
+    {
+      "name": "さらし",
+      "link": "https://mypage.syosetu.com/2571796/"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [],
+  "keywords": [
+    "異世界転移",
+    "ギャグ",
+    "女主人公",
+    "チート",
+    "魔法",
+    "冒険",
+    "ゲーム",
+    "超能力",
+    "ダンジョン",
+    "異世界でゲーム",
+    "コメディ"
+  ],
+  "points": 8244,
+  "totalCharacters": 735363,
+  "introductionJp": "「なんか能力貰えないっスかね？」「能力は自分で作りやがれ！」 　遠い場所で発生したエネルギーと融合してしまった私は、超越者という神のような存在になってしまい、世界の壁を無意識のうちに破壊してしまったらしい。　世界を循環させていたガラの悪い超越者が私の力を封印してくれたが、元の世界は修復中で帰れない。　超越者としての力を暴走させずに制御出来るまで、異世界に放り込まれることになった。　 私が今使える力を使って作ったのが、異世界でゲームをするという能力。そしてプレイしたゲームの能力をセットする事により異能が使えるようにした。「コレは壁を壊された嫌がらせだ」「あのヤンキー神！　子供の体にしやがった！」 　子供にされたうえ豚貴族の上に落っこちてしまったせいで、異世界早々に牢屋に入れられてしまうことに。しかも言葉も通じていない。 　「おや、メシも出るし牢屋生活も悪くない」ゲームをプレイして手に入れた能力で自由に外出、そして牢屋に帰ってくる。 　これは小物臭くて口が悪い幼女が異世界でゲームをする物語。",
+  "introductionZh": "「能不能给我什么能力啊？」「能力给我自己创造！」　我似乎和远方发生的能量融合，成为超越者这种神一般的存在，无意识地破坏了世界的墙壁。　让世界循环的凶神恶煞超越者封印了我的力量，但原本的世界正在修复中，无法回去。在控制超越者之力不使其失控之前，我被丢进了异世界。　我用现在能使用的力量创造的能力，是在异世界玩游戏。然后借由设定玩过的游戏能力，变得能够使用异能。「这是墙壁被破坏的恶作剧。」「那个流氓神！把我变成小孩的身体！」　因为变成小孩，还掉到猪贵族身上，我一到异世界就被关进牢房。而且语言也不通。　「哎呀，还有饭吃，牢房生活也不坏。」我用玩游戏得到的能力自由外出，然后回到牢房。　这是个微不足道、嘴巴很坏的幼女在异世界玩游戏的故事。",
+  "glossary": {
+    "コメット": "彗星",
+    "ガバス": "賈巴斯",
+    "ハリウッドメガネ": "好萊塢眼鏡仔",
+    "どーも私です": "大家好，是我呦",
+    "エルテ": "愛露媞",
+    "ドリームランド": "幻梦境",
+    "オバケ": "妖怪",
+    "ラリアードール": "拉莉亚娃娃",
+    "オリジン": "原型",
+    "アムネシア": "艾姆妮西亚",
+    "幼女ちゃん": "幼女酱",
+    "三つ編みちゃん": "三股辫酱",
+    "白髪ちゃん": "白发酱"
+  },
+  "toc": [
+    {
+      "titleJp": "世界の壁を壊しました。ヤンキーに怒られてます。",
+      "titleZh": "打破了世界的墙壁。被流氓骂了。",
+      "chapterId": "1",
+      "createAt": 1684858200
+    },
+    {
+      "titleJp": "異世界に行ってまでゲームか",
+      "titleZh": "到异世界去玩游戏吗",
+      "chapterId": "2",
+      "createAt": 1684861860
+    },
+    {
+      "titleJp": "クッションは豚貴族",
+      "titleZh": "靠垫是猪贵族",
+      "chapterId": "3",
+      "createAt": 1684865640
+    },
+    {
+      "titleJp": "領域の能力",
+      "titleZh": "区域能力",
+      "chapterId": "4",
+      "createAt": 1684872360
+    },
+    {
+      "titleJp": "slit ースリットー　隙間に入り込む能力",
+      "titleZh": "slit 隔都　进入缝隙的能力",
+      "chapterId": "5",
+      "createAt": 1684962480
+    },
+    {
+      "titleJp": "牢屋から脱出せよ！　そして戻れ！",
+      "titleZh": "逃离监狱！　然后回去！",
+      "chapterId": "6",
+      "createAt": 1684985280
+    },
+    {
+      "titleJp": "時計お借りしますね？",
+      "titleZh": "借一下表吧？",
+      "chapterId": "7",
+      "createAt": 1685052240
+    },
+    {
+      "titleJp": "面白いゲームは時間を忘れる",
+      "titleZh": "有趣的游戏忘记时间",
+      "chapterId": "8",
+      "createAt": 1685113680
+    },
+    {
+      "titleJp": "ムービーの多いゲームは映画と見分けがつかない",
+      "titleZh": "电影多的游戏和电影分不清",
+      "chapterId": "9",
+      "createAt": 1685200500
+    },
+    {
+      "titleJp": "slitースリットー、ゲームクリア",
+      "titleZh": "slit隔都，游戏清除",
+      "chapterId": "10",
+      "createAt": 1685298300
+    },
+    {
+      "titleJp": "検索と能力のバージョンアップ",
+      "titleZh": "搜索和能力升级",
+      "chapterId": "11",
+      "createAt": 1685381580
+    },
+    {
+      "titleJp": "初めまして世界",
+      "titleZh": "你好世界",
+      "chapterId": "12",
+      "createAt": 1685477160
+    },
+    {
+      "titleJp": "引っ越しとリフォーム",
+      "titleZh": "搬家和装修",
+      "chapterId": "13",
+      "createAt": 1685567400
+    },
+    {
+      "titleJp": "お手軽パズルゲーム",
+      "titleZh": "轻松益智游戏",
+      "chapterId": "14",
+      "createAt": 1685660640
+    },
+    {
+      "titleJp": "スーパー妖怪殲滅2〜アヤカシ球を生成する能力",
+      "titleZh": "超级妖怪歼灭2：生成彩球的能力",
+      "chapterId": "15",
+      "createAt": 1685722260
+    },
+    {
+      "titleJp": "言葉の通じない交渉",
+      "titleZh": "语言不通的谈判",
+      "chapterId": "16",
+      "createAt": 1685812620
+    },
+    {
+      "titleJp": "だいぶ怪しい拡大解釈",
+      "titleZh": "很奇怪的扩大解释",
+      "chapterId": "17",
+      "createAt": 1685909160
+    },
+    {
+      "titleJp": "探偵ファーマル　言語理解の能力",
+      "titleZh": "侦探法马尔　语言理解能力",
+      "chapterId": "18",
+      "createAt": 1685996100
+    },
+    {
+      "titleJp": "笑顔の宣戦布告",
+      "titleZh": "微笑的宣战",
+      "chapterId": "19",
+      "createAt": 1686080160
+    },
+    {
+      "titleJp": "火の玉ロード",
+      "titleZh": "火球路",
+      "chapterId": "20",
+      "createAt": 1686182460
+    },
+    {
+      "titleJp": "作られた静寂",
+      "titleZh": "制造的寂静",
+      "chapterId": "21",
+      "createAt": 1686269340
+    },
+    {
+      "titleJp": "増える逃亡者と追跡者",
+      "titleZh": "越来越多的逃犯和追捕者",
+      "chapterId": "22",
+      "createAt": 1686355980
+    },
+    {
+      "titleJp": "豚と少女の醜い会話",
+      "titleZh": "猪和女孩的丑陋对话",
+      "chapterId": "23",
+      "createAt": 1686436740
+    },
+    {
+      "titleJp": "プロですから油断しません",
+      "titleZh": "我是专业人士，不会大意的",
+      "chapterId": "24",
+      "createAt": 1686530760
+    },
+    {
+      "titleJp": "悪事に加担？　知りませんわそんなん",
+      "titleZh": "帮凶？　我不知道那种事",
+      "chapterId": "25",
+      "createAt": 1686611280
+    },
+    {
+      "titleJp": "レースゲームはリアル志向",
+      "titleZh": "赛车游戏以现实为导向",
+      "chapterId": "26",
+      "createAt": 1686697440
+    },
+    {
+      "titleJp": "専用コントローラーを使えば上手くなるという訳ではない",
+      "titleZh": "使用专用控制器并不会变得更好",
+      "chapterId": "27",
+      "createAt": 1686784140
+    },
+    {
+      "titleJp": "コメット⭐︎キングダムコンペ　ジェットブーツの能力",
+      "titleZh": "彗星⭐︎王国竞赛　喷气靴的能力",
+      "chapterId": "28",
+      "createAt": 1686873900
+    },
+    {
+      "titleJp": "デリケートってツラかよ",
+      "titleZh": "你是说精致吗",
+      "chapterId": "29",
+      "createAt": 1686956820
+    },
+    {
+      "titleJp": "サイコパス鬼畜執事",
+      "titleZh": "精神变态者鬼畜执事",
+      "chapterId": "30",
+      "createAt": 1687043400
+    },
+    {
+      "titleJp": "高級なお店で紅茶を吹き出す",
+      "titleZh": "在高级商店里吹红茶",
+      "chapterId": "31",
+      "createAt": 1687129740
+    },
+    {
+      "titleJp": "殺人鬼プレジール　ヴィイの噂",
+      "titleZh": "杀人魔普雷吉尔　维伊的谣言",
+      "chapterId": "32",
+      "createAt": 1687216260
+    },
+    {
+      "titleJp": "クソゲーかどうかはアナタ次第",
+      "titleZh": "是不是该死的游戏取决于你",
+      "chapterId": "33",
+      "createAt": 1687302600
+    },
+    {
+      "titleJp": "花を愛でる趣味はない",
+      "titleZh": "我没有爱好花",
+      "chapterId": "34",
+      "createAt": 1687392240
+    },
+    {
+      "titleJp": "オープンワールドゲームはいきなりオープニングが始まる",
+      "titleZh": "开放世界游戏突然开始",
+      "chapterId": "35",
+      "createAt": 1687478580
+    },
+    {
+      "titleJp": "能力の宝庫",
+      "titleZh": "能力的宝库",
+      "chapterId": "36",
+      "createAt": 1687565100
+    },
+    {
+      "titleJp": "こんな小娘に何を怯えているんだ？",
+      "titleZh": "你怕这个小姑娘怕什么？",
+      "chapterId": "37",
+      "createAt": 1687651440
+    },
+    {
+      "titleJp": "抜け出す準備とイケメン息子",
+      "titleZh": "准备出去和漂亮的儿子",
+      "chapterId": "38",
+      "createAt": 1687737720
+    },
+    {
+      "titleJp": "交渉決裂！　空気を読まないトコロテン",
+      "titleZh": "谈判破裂！　不察言观色的地方",
+      "chapterId": "39",
+      "createAt": 1687824360
+    },
+    {
+      "titleJp": "石橋を叩いて砕く",
+      "titleZh": "敲石桥敲碎",
+      "chapterId": "40",
+      "createAt": 1687910640
+    },
+    {
+      "titleJp": "この世界の常識とか知ったことか",
+      "titleZh": "你知道这个世界的常识吗",
+      "chapterId": "41",
+      "createAt": 1687996980
+    },
+    {
+      "titleJp": "いらねぇだろ？",
+      "titleZh": "不需要吧？",
+      "chapterId": "42",
+      "createAt": 1688084880
+    },
+    {
+      "titleJp": "不器用な親と不出来な子",
+      "titleZh": "笨拙的父母和不争气的孩子",
+      "chapterId": "43",
+      "createAt": 1688169720
+    },
+    {
+      "titleJp": "ゲームクラッシュ！",
+      "titleZh": "游戏崩溃！",
+      "chapterId": "44",
+      "createAt": 1688256360
+    },
+    {
+      "titleJp": "コンテニューは受け付けない",
+      "titleZh": "不接受分镜",
+      "chapterId": "45",
+      "createAt": 1688342700
+    },
+    {
+      "titleJp": "領主館の幽霊",
+      "titleZh": "领主宅邸的幽灵",
+      "chapterId": "46",
+      "createAt": 1688428920
+    },
+    {
+      "titleJp": "渦巻く噂話と、いわれのない風評被害",
+      "titleZh": "铺天盖地的流言蜚语和毫无来由的风评被害",
+      "chapterId": "47",
+      "createAt": 1688515560
+    },
+    {
+      "titleJp": "パラサイトガール",
+      "titleZh": "寄生虫女孩",
+      "chapterId": "48",
+      "createAt": 1688601720
+    },
+    {
+      "titleJp": "一人で人狼ゲーム",
+      "titleZh": "狼人独自游戏",
+      "chapterId": "49",
+      "createAt": 1688688120
+    },
+    {
+      "titleJp": "いつの間にか隣に立つ少女",
+      "titleZh": "不知何时站在身旁的少女",
+      "chapterId": "50",
+      "createAt": 1688774520
+    },
+    {
+      "titleJp": "ニコニコ地味な姉ちゃん",
+      "titleZh": "笑眯眯的朴素姐姐",
+      "chapterId": "51",
+      "createAt": 1688947440
+    },
+    {
+      "titleJp": "そら補導されるわ",
+      "titleZh": "你看会被辅导的",
+      "chapterId": "52",
+      "createAt": 1689033780
+    },
+    {
+      "titleJp": "門番兵士の書けない報告書",
+      "titleZh": "守门人写不出的报告",
+      "chapterId": "53",
+      "createAt": 1689206520
+    },
+    {
+      "titleJp": "白髪親子の同居人",
+      "titleZh": "白发母子同住人",
+      "chapterId": "54",
+      "createAt": 1689292980
+    },
+    {
+      "titleJp": "微妙な距離感",
+      "titleZh": "微妙的距离感",
+      "chapterId": "55",
+      "createAt": 1689465780
+    },
+    {
+      "titleJp": "怯えているのはどっち？",
+      "titleZh": "谁在害怕？",
+      "chapterId": "56",
+      "createAt": 1689552180
+    },
+    {
+      "titleJp": "どーも誘拐犯の一味です",
+      "titleZh": "是绑架犯的同伙",
+      "chapterId": "57",
+      "createAt": 1689724920
+    },
+    {
+      "titleJp": "白髪ママは教育ママ",
+      "titleZh": "白发妈妈是教育妈妈",
+      "chapterId": "58",
+      "createAt": 1689811380
+    },
+    {
+      "titleJp": "経営ゲームは主人公の負担か大きい",
+      "titleZh": "经营游戏对主人公的负担很大",
+      "chapterId": "59",
+      "createAt": 1689984300
+    },
+    {
+      "titleJp": "Sea frame シーフレーム　水槽を表示する能力",
+      "titleZh": "sea frame 海盗船　查看水族馆的能力",
+      "chapterId": "60",
+      "createAt": 1690070580
+    },
+    {
+      "titleJp": "白髪ママの懺悔室",
+      "titleZh": "白发妈妈的忏悔室",
+      "chapterId": "61",
+      "createAt": 1690243320
+    },
+    {
+      "titleJp": "ただのモニターだから！",
+      "titleZh": "因为它只是一个监视器！",
+      "chapterId": "62",
+      "createAt": 1690329840
+    },
+    {
+      "titleJp": "反面教師",
+      "titleZh": "反面教材",
+      "chapterId": "63",
+      "createAt": 1690502580
+    },
+    {
+      "titleJp": "開かれた扉",
+      "titleZh": "敞开的门",
+      "chapterId": "64",
+      "createAt": 1690588980
+    },
+    {
+      "titleJp": "誘拐先は…",
+      "titleZh": "绑架地点是…",
+      "chapterId": "65",
+      "createAt": 1690761840
+    },
+    {
+      "titleJp": "正体不明の活用法",
+      "titleZh": "身份不明的活用法",
+      "chapterId": "66",
+      "createAt": 1690934640
+    },
+    {
+      "titleJp": "誘拐犯はてめぇだ",
+      "titleZh": "绑架犯是你",
+      "chapterId": "67",
+      "createAt": 1691107320
+    },
+    {
+      "titleJp": "格ゲーのストーリーって説明不足じゃない？",
+      "titleZh": "格游戏的故事说明不足吧？",
+      "chapterId": "68",
+      "createAt": 1691280120
+    },
+    {
+      "titleJp": "闇に生きるモノ　霧化の能力",
+      "titleZh": "生活在黑暗中的人　雾化能力",
+      "chapterId": "69",
+      "createAt": 1691452980
+    },
+    {
+      "titleJp": "知らないお連れの方",
+      "titleZh": "不知道的同行",
+      "chapterId": "70",
+      "createAt": 1691625780
+    },
+    {
+      "titleJp": "ただ光ってるだけ",
+      "titleZh": "只是发光而已",
+      "chapterId": "71",
+      "createAt": 1691798580
+    },
+    {
+      "titleJp": "幽霊は自慢したい",
+      "titleZh": "我想夸耀幽灵",
+      "chapterId": "72",
+      "createAt": 1691971380
+    },
+    {
+      "titleJp": "レアカード二枚だぞ。喜べよ",
+      "titleZh": "是两张稀有卡哦。高兴吧",
+      "chapterId": "73",
+      "createAt": 1692144180
+    },
+    {
+      "titleJp": "シュレディンガーの幼女ちゃん",
+      "titleZh": "薛定谔的幼女酱",
+      "chapterId": "74",
+      "createAt": 1692316920
+    },
+    {
+      "titleJp": "メンタルブレイクなら得意なんすけどね",
+      "titleZh": "我很擅长精神崩溃",
+      "chapterId": "75",
+      "createAt": 1692489720
+    },
+    {
+      "titleJp": "安心と信頼のセキュリティ",
+      "titleZh": "安全和可靠的安全性",
+      "chapterId": "76",
+      "createAt": 1692662640
+    },
+    {
+      "titleJp": "ステキな笑顔ですね",
+      "titleZh": "好美的笑容啊",
+      "chapterId": "77",
+      "createAt": 1692835380
+    },
+    {
+      "titleJp": "封印が解ける",
+      "titleZh": "封印解除",
+      "chapterId": "78",
+      "createAt": 1693009080
+    },
+    {
+      "titleJp": "私は舐めてた……",
+      "titleZh": "我舔了……",
+      "chapterId": "79",
+      "createAt": 1693181100
+    },
+    {
+      "titleJp": "コースターパニック",
+      "titleZh": "过山车恐慌",
+      "chapterId": "80",
+      "createAt": 1693353780
+    },
+    {
+      "titleJp": "誰が為に鐘は鳴る",
+      "titleZh": "钟声为谁而鸣",
+      "chapterId": "81",
+      "createAt": 1693526580
+    },
+    {
+      "titleJp": "きれいな神様",
+      "titleZh": "美丽的神",
+      "chapterId": "82",
+      "createAt": 1693699500
+    },
+    {
+      "titleJp": "よく考えると怖いメルヘン",
+      "titleZh": "仔细想想，恐怖童话",
+      "chapterId": "83",
+      "createAt": 1693872120
+    },
+    {
+      "titleJp": "巨悪",
+      "titleZh": "巨恶",
+      "chapterId": "84",
+      "createAt": 1694053440
+    },
+    {
+      "titleJp": "殺すのは母の想い",
+      "titleZh": "杀死母亲的想法",
+      "chapterId": "85",
+      "createAt": 1694217840
+    },
+    {
+      "titleJp": "そして少女達は歩き出す",
+      "titleZh": "然后少女们开始迈步",
+      "chapterId": "86",
+      "createAt": 1694390520
+    },
+    {
+      "titleJp": "酔った女に声かけようぜ",
+      "titleZh": "去找醉酒的女人吧",
+      "chapterId": "87",
+      "createAt": 1695427320
+    },
+    {
+      "titleJp": "OL女の愚痴",
+      "titleZh": "白领女性的抱怨",
+      "chapterId": "88",
+      "createAt": 1696032180
+    },
+    {
+      "titleJp": "商人との交渉",
+      "titleZh": "与商人谈判",
+      "chapterId": "89",
+      "createAt": 1696636920
+    },
+    {
+      "titleJp": "知らない方がいい事もある",
+      "titleZh": "有些事还是不知道比较好",
+      "chapterId": "90",
+      "createAt": 1697241720
+    },
+    {
+      "titleJp": "ワシ鼻マキヒゲ副店長",
+      "titleZh": "鹰鼻卷胡子副店长",
+      "chapterId": "91",
+      "createAt": 1697245320
+    },
+    {
+      "titleJp": "真夜中の宝石店でバレエを踊る",
+      "titleZh": "午夜在珠宝店跳芭蕾舞",
+      "chapterId": "92",
+      "createAt": 1697846580
+    },
+    {
+      "titleJp": "手の内は隠そう",
+      "titleZh": "把底牌藏起来吧",
+      "chapterId": "93",
+      "createAt": 1698451320
+    },
+    {
+      "titleJp": "形のない商品",
+      "titleZh": "无形的商品",
+      "chapterId": "94",
+      "createAt": 1699056180
+    },
+    {
+      "titleJp": "ガチャっとガーディアン　監視カメラの能力",
+      "titleZh": "嘎嘎特守护者　监控摄像头的能力",
+      "chapterId": "95",
+      "createAt": 1699660980
+    },
+    {
+      "titleJp": "外に畑を作ろう",
+      "titleZh": "在外面种田地吧",
+      "chapterId": "96",
+      "createAt": 1700265780
+    },
+    {
+      "titleJp": "OL女と白髪幼女のお話し合い",
+      "titleZh": "OL女与白发幼女的对话",
+      "chapterId": "97",
+      "createAt": 1700870520
+    },
+    {
+      "titleJp": "領域畑に足りないもの",
+      "titleZh": "领域领域不足的东西",
+      "chapterId": "98",
+      "createAt": 1701475260
+    },
+    {
+      "titleJp": "泣く彫刻",
+      "titleZh": "哭泣雕塑",
+      "chapterId": "99",
+      "createAt": 1702080000
+    },
+    {
+      "titleJp": "目先の利益に囚われない……それが農家！",
+      "titleZh": "不囿于眼前的利益……这就是农民！",
+      "chapterId": "100",
+      "createAt": 1702684800
+    },
+    {
+      "titleJp": "ゲームリンク",
+      "titleZh": "游戏链接",
+      "chapterId": "101",
+      "createAt": 1703289600
+    },
+    {
+      "titleJp": "伝え忘れてた情報",
+      "titleZh": "忘记告诉你的信息",
+      "chapterId": "102",
+      "createAt": 1703894400
+    },
+    {
+      "titleJp": "証拠の証拠",
+      "titleZh": "证据的证据",
+      "chapterId": "103",
+      "createAt": 1704499200
+    },
+    {
+      "titleJp": "話し合いましょう副店長",
+      "titleZh": "来谈谈吧副店长",
+      "chapterId": "104",
+      "createAt": 1705104000
+    },
+    {
+      "titleJp": "入り込んでいた盗賊団",
+      "titleZh": "潜入的盗贼团",
+      "chapterId": "105",
+      "createAt": 1705708800
+    },
+    {
+      "titleJp": "もうボッチとは言わせない",
+      "titleZh": "我不会再让你说孤零零了",
+      "chapterId": "106",
+      "createAt": 1706313600
+    },
+    {
+      "titleJp": "これはホラーゲームだからね",
+      "titleZh": "因为这是恐怖游戏",
+      "chapterId": "107",
+      "createAt": 1706918400
+    },
+    {
+      "titleJp": "居るけどいない",
+      "titleZh": "既存在又不在",
+      "chapterId": "108",
+      "createAt": 1707523200
+    },
+    {
+      "titleJp": "運のいい女",
+      "titleZh": "运气好的女人",
+      "chapterId": "109",
+      "createAt": 1708128000
+    },
+    {
+      "titleJp": "子供は船に乗るだけで大変だ",
+      "titleZh": "小孩子光是坐船就够呛",
+      "chapterId": "110",
+      "createAt": 1708732800
+    },
+    {
+      "titleJp": "快適な堕落",
+      "titleZh": "舒适的堕落",
+      "chapterId": "111",
+      "createAt": 1709337600
+    },
+    {
+      "titleJp": "子供には不可能なゲーム",
+      "titleZh": "孩子们不可能的游戏",
+      "chapterId": "112",
+      "createAt": 1709942400
+    },
+    {
+      "titleJp": "VRリズム剣豪MOD有　踊る能力",
+      "titleZh": "VR节奏剑豪MOD有　舞蹈能力",
+      "chapterId": "113",
+      "createAt": 1710547200
+    },
+    {
+      "titleJp": "マフィアお嬢",
+      "titleZh": "黑手党小姐",
+      "chapterId": "114",
+      "createAt": 1711152000
+    },
+    {
+      "titleJp": "膝がーー！！　オデコがーー！！",
+      "titleZh": "膝盖！ ！　额头啊！ ！",
+      "chapterId": "115",
+      "createAt": 1711756800
+    },
+    {
+      "titleJp": "舞ですかぁ……",
+      "titleZh": "舞啊……",
+      "chapterId": "116",
+      "createAt": 1712361600
+    },
+    {
+      "titleJp": "中途半端な脅しは反撃の素",
+      "titleZh": "半吊子的威胁是反击的基础",
+      "chapterId": "117",
+      "createAt": 1712965800
+    },
+    {
+      "titleJp": "ペットのシロと野良",
+      "titleZh": "宠物小白和野猫",
+      "chapterId": "118",
+      "createAt": 1713571200
+    },
+    {
+      "titleJp": "王領　クロックシティー",
+      "titleZh": "王属　时钟城",
+      "chapterId": "119",
+      "createAt": 1714176000
+    },
+    {
+      "titleJp": "ファーーーーー！！！！！",
+      "titleZh": "呵呵~ ~ ~！！！！！",
+      "chapterId": "120",
+      "createAt": 1714780800
+    },
+    {
+      "titleJp": "何もなかったよね？",
+      "titleZh": "什么都没有吧？",
+      "chapterId": "121",
+      "createAt": 1715385600
+    },
+    {
+      "titleJp": "お気に入りかもしれないけど、気に入られてはいない",
+      "titleZh": "可能是喜欢，但不喜欢",
+      "chapterId": "122",
+      "createAt": 1715990400
+    },
+    {
+      "titleJp": "これはマフィアですわぁ……",
+      "titleZh": "这是黑手党啊……",
+      "chapterId": "123",
+      "createAt": 1716595200
+    },
+    {
+      "titleJp": "自宅で飼ってるペットの得体が知れないんですけど……",
+      "titleZh": "家里养的宠物来路不明……",
+      "chapterId": "124",
+      "createAt": 1717200000
+    },
+    {
+      "titleJp": "全自動お化け屋敷",
+      "titleZh": "全自动鬼屋",
+      "chapterId": "125",
+      "createAt": 1717804800
+    },
+    {
+      "titleJp": "パワーバランス",
+      "titleZh": "功率平衡",
+      "chapterId": "126",
+      "createAt": 1718409600
+    },
+    {
+      "titleJp": "鳥を飛び立たせない方法",
+      "titleZh": "不让鸟飞起来的方法",
+      "chapterId": "127",
+      "createAt": 1719014400
+    },
+    {
+      "titleJp": "ロケットパーンチ！",
+      "titleZh": "火箭发射！",
+      "chapterId": "128",
+      "createAt": 1719619200
+    },
+    {
+      "titleJp": "物理を演算してんだよ",
+      "titleZh": "我在计算物理",
+      "chapterId": "129",
+      "createAt": 1720224000
+    },
+    {
+      "titleJp": "類は友を呼ぶけど、友達じゃなくても類ではある",
+      "titleZh": "物以类聚，但即使不是朋友也是类。",
+      "chapterId": "130",
+      "createAt": 1720828800
+    },
+    {
+      "titleJp": "モンスターよりモンスター",
+      "titleZh": "比怪物更怪物",
+      "chapterId": "131",
+      "createAt": 1721433600
+    },
+    {
+      "titleJp": "化け物の倒し方",
+      "titleZh": "打倒怪物的方法",
+      "chapterId": "132",
+      "createAt": 1722038400
+    },
+    {
+      "titleJp": "コンテニュー",
+      "titleZh": "分镜",
+      "chapterId": "133",
+      "createAt": 1722643200
+    },
+    {
+      "titleJp": "世界の終わりで踊り狂う少女",
+      "titleZh": "在世界尽头疯狂跳舞的少女",
+      "chapterId": "134",
+      "createAt": 1723248000
+    },
+    {
+      "titleJp": "逃亡幼女",
+      "titleZh": "逃亡幼女",
+      "chapterId": "135",
+      "createAt": 1723852800
+    },
+    {
+      "titleJp": "ゴーストタウンのゴースト",
+      "titleZh": "鬼城幽灵",
+      "chapterId": "136",
+      "createAt": 1724457600
+    },
+    {
+      "titleJp": "拒絶の合鍵",
+      "titleZh": "拒绝的备用钥匙",
+      "chapterId": "137",
+      "createAt": 1725062400
+    },
+    {
+      "titleJp": "負け犬",
+      "titleZh": "丧家犬",
+      "chapterId": "138",
+      "createAt": 1725667200
+    },
+    {
+      "titleJp": "人間に都合のいい自然物",
+      "titleZh": "适合人类的自然物",
+      "chapterId": "139",
+      "createAt": 1726272000
+    },
+    {
+      "titleJp": "説明しよう！",
+      "titleZh": "让我们解释一下！",
+      "chapterId": "140",
+      "createAt": 1726876800
+    },
+    {
+      "titleJp": "ハーメルンの笛吹き大魔王　ダンジョンを作る能力",
+      "titleZh": "哈梅林之笛大魔王　建造地牢的能力",
+      "chapterId": "141",
+      "createAt": 1727481600
+    },
+    {
+      "titleJp": "強力な悪霊に目をつけられた！",
+      "titleZh": "被强力的恶灵盯上了！",
+      "chapterId": "142",
+      "createAt": 1728086400
+    },
+    {
+      "titleJp": "逃げることと、立ち止まること",
+      "titleZh": "逃跑与停下脚步",
+      "chapterId": "143",
+      "createAt": 1728691200
+    },
+    {
+      "titleJp": "傷ついた心に優しさは毒",
+      "titleZh": "温柔是伤害心灵的毒药",
+      "chapterId": "144",
+      "createAt": 1729296000
+    },
+    {
+      "titleJp": "いんふぉめ〜しょん",
+      "titleZh": "信息",
+      "chapterId": "145",
+      "createAt": 1729900800
+    },
+    {
+      "titleJp": "一風変わったダンジョンです！",
+      "titleZh": "这是一个不同寻常的迷宫！",
+      "chapterId": "146",
+      "createAt": 1730505600
+    },
+    {
+      "titleJp": "ドリームランド",
+      "titleZh": "梦幻乐园",
+      "chapterId": "147",
+      "createAt": 1731110400
+    },
+    {
+      "titleJp": "戦士　オバサン主婦　フライパンの剣",
+      "titleZh": "战士　阿姨家庭主妇　平底锅剑",
+      "chapterId": "148",
+      "createAt": 1731715200
+    },
+    {
+      "titleJp": "君に『教育に悪い』の称号を与えよう",
+      "titleZh": "给你一个‘不好教育’的称号吧",
+      "chapterId": "149",
+      "createAt": 1732320000
+    },
+    {
+      "titleJp": "み　た　な",
+      "titleZh": "试　的　的",
+      "chapterId": "150",
+      "createAt": 1732924800
+    },
+    {
+      "titleJp": "ポケットパペット",
+      "titleZh": "口袋木偶",
+      "chapterId": "151",
+      "createAt": 1733529600
+    },
+    {
+      "titleJp": "ダンジョン産ではありません",
+      "titleZh": "不是地牢产的",
+      "chapterId": "152",
+      "createAt": 1734134400
+    },
+    {
+      "titleJp": "曲がり角で出会うのが美少女とは限らない",
+      "titleZh": "在转角遇到的不一定是美少女",
+      "chapterId": "153",
+      "createAt": 1734739200
+    },
+    {
+      "titleJp": "契約書？　ねぇよ？",
+      "titleZh": "合同？　没有啊？",
+      "chapterId": "154",
+      "createAt": 1735344000
+    },
+    {
+      "titleJp": "忘れ物",
+      "titleZh": "遗忘的东西",
+      "chapterId": "155",
+      "createAt": 1735948800
+    },
+    {
+      "titleJp": "閉店セール",
+      "titleZh": "闭店销售",
+      "chapterId": "156",
+      "createAt": 1736553600
+    },
+    {
+      "titleJp": "帽子",
+      "titleZh": "帽子",
+      "chapterId": "157",
+      "createAt": 1737158400
+    },
+    {
+      "titleJp": "いただきます……。",
+      "titleZh": "我开动了……。",
+      "chapterId": "158",
+      "createAt": 1737763200
+    },
+    {
+      "titleJp": "入園チケットはお持ちかな？",
+      "titleZh": "你有门票吗？",
+      "chapterId": "159",
+      "createAt": 1738368000
+    },
+    {
+      "titleJp": "新たな勢力候補",
+      "titleZh": "新的势力候补",
+      "chapterId": "160",
+      "createAt": 1738972800
+    },
+    {
+      "titleJp": "キモノお嬢と祈りの巫女",
+      "titleZh": "和服大小姐与祈祷的巫女",
+      "chapterId": "161",
+      "createAt": 1739577600
+    },
+    {
+      "titleJp": "第一発見者が思うこと",
+      "titleZh": "第一发现者的想法",
+      "chapterId": "162",
+      "createAt": 1740182400
+    },
+    {
+      "titleJp": "ハイテンション町長",
+      "titleZh": "情绪高昂的镇长",
+      "chapterId": "163",
+      "createAt": 1740787200
+    },
+    {
+      "titleJp": "ストリーマー型町長は人気取りに必死",
+      "titleZh": "直播主型镇长拼命博取人气。",
+      "chapterId": "164",
+      "createAt": 1741392000
+    },
+    {
+      "titleJp": "なんか小ちゃいビル生やしたんだけど……何その能力？",
+      "titleZh": "他好像长出了一栋小楼……那是什么能力？",
+      "chapterId": "165",
+      "createAt": 1741996800
+    },
+    {
+      "titleJp": "路地裏運動会",
+      "titleZh": "小巷里的运动会",
+      "chapterId": "166",
+      "createAt": 1742601600
+    },
+    {
+      "titleJp": "化け物クラスの町長さん",
+      "titleZh": "怪物级的镇长",
+      "chapterId": "167",
+      "createAt": 1743203400
+    },
+    {
+      "titleJp": "人気者は身バレのリスクを背負う",
+      "titleZh": "受欢迎的人要背负身份曝光的风险",
+      "chapterId": "168",
+      "createAt": 1743206400
+    },
+    {
+      "titleJp": "子供らしさ",
+      "titleZh": "孩子气",
+      "chapterId": "169",
+      "createAt": 1743811200
+    },
+    {
+      "titleJp": "暖房が効きすぎな車両",
+      "titleZh": "暖气太强的车厢",
+      "chapterId": "170",
+      "createAt": 1744416000
+    },
+    {
+      "titleJp": "虎の威を借る幼女",
+      "titleZh": "狐假虎威的小女孩",
+      "chapterId": "171",
+      "createAt": 1745010900
+    },
+    {
+      "titleJp": "モーゼかな？",
+      "titleZh": "你是摩西吗？",
+      "chapterId": "172",
+      "createAt": 1745020200
+    },
+    {
+      "titleJp": "百点の答え",
+      "titleZh": "满分的答案",
+      "chapterId": "173",
+      "createAt": 1745625600
+    },
+    {
+      "titleJp": "ハムスターボール",
+      "titleZh": "仓鼠球。",
+      "chapterId": "174",
+      "createAt": 1746230400
+    },
+    {
+      "titleJp": "吸着ボールを生み出す能力",
+      "titleZh": "产生吸着球的能力。",
+      "chapterId": "175",
+      "createAt": 1746834000
+    },
+    {
+      "titleJp": "陽キャパーティーの物語とか知らんし……",
+      "titleZh": "我根本不知道什么阳光角色团体的故事……",
+      "chapterId": "176",
+      "createAt": 1747438200
+    },
+    {
+      "titleJp": "巫女さんが追って来た",
+      "titleZh": "巫女小姐追上来了",
+      "chapterId": "177",
+      "createAt": 1748034660
+    },
+    {
+      "titleJp": "仕立て上げられた英雄",
+      "titleZh": "被塑造出来的英雄",
+      "chapterId": "178",
+      "createAt": 1748042400
+    },
+    {
+      "titleJp": "パーカー兄貴、無言の槍磨き",
+      "titleZh": "帽T大哥默默地磨枪。",
+      "chapterId": "179",
+      "createAt": 1748649600
+    },
+    {
+      "titleJp": "負け犬ニーサンってパワハラしやすそうな顔してるよね",
+      "titleZh": "败犬大哥，你那张脸看起来就很好被职权骚扰呢。",
+      "chapterId": "180",
+      "createAt": 1749253800
+    },
+    {
+      "titleJp": "杜撰な推理ショー",
+      "titleZh": "杜撰的推理秀",
+      "chapterId": "181",
+      "createAt": 1749858660
+    },
+    {
+      "titleJp": "嘘つき",
+      "titleZh": "骗子",
+      "chapterId": "182",
+      "createAt": 1750457640
+    },
+    {
+      "titleJp": "負け犬の遠吠え",
+      "titleZh": "丧家犬的虚张声势",
+      "chapterId": "183",
+      "createAt": 1750458840
+    },
+    {
+      "titleJp": "お前はなった……",
+      "titleZh": "你已经……",
+      "chapterId": "184",
+      "createAt": 1751068800
+    },
+    {
+      "titleJp": "お前にだけは言われたくねぇ！！",
+      "titleZh": "你最没资格说我！！",
+      "chapterId": "185",
+      "createAt": 1751674260
+    },
+    {
+      "titleJp": "ぐ〜るぐる",
+      "titleZh": "咕咕咕咕",
+      "chapterId": "186",
+      "createAt": 1752278400
+    },
+    {
+      "titleJp": "どーでもいい事",
+      "titleZh": "无关紧要的事",
+      "chapterId": "187",
+      "createAt": 1752883200
+    },
+    {
+      "titleJp": "嫌どす。ほっといて下さい",
+      "titleZh": "不要，别管我。",
+      "chapterId": "188",
+      "createAt": 1753487400
+    },
+    {
+      "titleJp": "町長だから……",
+      "titleZh": "因为是镇长……",
+      "chapterId": "189",
+      "createAt": 1754084760
+    },
+    {
+      "titleJp": "番外編　現在の簡単な強さTier表",
+      "titleZh": "番外篇　目前简单的强度分级表",
+      "chapterId": "190",
+      "createAt": 1754087040
+    },
+    {
+      "titleJp": "うしろの正面だぁれ",
+      "titleZh": "背后是正面",
+      "chapterId": "191",
+      "createAt": 1754089320
+    },
+    {
+      "titleJp": "ショータイム",
+      "titleZh": "表演时间",
+      "chapterId": "192",
+      "createAt": 1754695560
+    },
+    {
+      "titleJp": "崩壊するバベルの塔",
+      "titleZh": "崩坏的巴别塔",
+      "chapterId": "193",
+      "createAt": 1755294660
+    },
+    {
+      "titleJp": "それでも朝日は昇る",
+      "titleZh": "即便如此，太阳依旧会升起",
+      "chapterId": "194",
+      "createAt": 1755907200
+    },
+    {
+      "titleJp": "異物（妹）",
+      "titleZh": "异物（妹妹）",
+      "chapterId": "195",
+      "createAt": 1756512000
+    },
+    {
+      "titleJp": "縄張りを持たない新勢力『小悪魔』",
+      "titleZh": "没有地盘的新势力「小恶魔」。",
+      "chapterId": "196",
+      "createAt": 1757116800
+    },
+    {
+      "titleJp": "忘れちゃったの？　お姉ちゃん！",
+      "titleZh": "你忘了吗？　姐姐！",
+      "chapterId": "197",
+      "createAt": 1757721600
+    },
+    {
+      "titleJp": "やっぱ居ねぇよ！",
+      "titleZh": "果然不在！",
+      "chapterId": "198",
+      "createAt": 1758326400
+    },
+    {
+      "titleJp": "エンドレスシチュー",
+      "titleZh": "无尽炖菜",
+      "chapterId": "199",
+      "createAt": 1758931200
+    },
+    {
+      "titleJp": "ファイッ！！",
+      "titleZh": "加油！！",
+      "chapterId": "200",
+      "createAt": 1759530600
+    },
+    {
+      "titleJp": "背後霊",
+      "titleZh": "背后灵",
+      "chapterId": "201",
+      "createAt": 1759531200
+    },
+    {
+      "titleJp": "【ロストグラウンド】〜lost ground〜",
+      "titleZh": "【失落之地】～lost ground～",
+      "chapterId": "202",
+      "createAt": 1760140800
+    },
+    {
+      "titleJp": "飛ぶ能力",
+      "titleZh": "飞行能力。",
+      "chapterId": "203",
+      "createAt": 1760745600
+    },
+    {
+      "titleJp": "入り口がなければ作ればいいじゃない",
+      "titleZh": "没有入口的话，自己做一个不就好了？",
+      "chapterId": "204",
+      "createAt": 1761350400
+    },
+    {
+      "titleJp": "子供騙し（そのままの意味）",
+      "titleZh": "骗小孩（字面上的意思）。",
+      "chapterId": "205",
+      "createAt": 1761955200
+    },
+    {
+      "titleJp": "アムネシアの非日常",
+      "titleZh": "艾姆妮西亚的非日常",
+      "chapterId": "206",
+      "createAt": 1762560000
+    },
+    {
+      "titleJp": "友達？　なにそれ食えるの？",
+      "titleZh": "朋友？　那是什么，能吃吗？",
+      "chapterId": "207",
+      "createAt": 1763161320
+    },
+    {
+      "titleJp": "この世界ってガキも十分ヤベェよね",
+      "titleZh": "这世界的小鬼头也太可怕了吧。",
+      "chapterId": "208",
+      "createAt": 1763767380
+    },
+    {
+      "titleJp": "タッパでお持ち帰り",
+      "titleZh": "身高够高，打包回家",
+      "chapterId": "209",
+      "createAt": 1764367800
+    },
+    {
+      "titleJp": "ある出版社にて……",
+      "titleZh": "在某间出版社……",
+      "chapterId": "210",
+      "createAt": 1764371400
+    },
+    {
+      "titleJp": "よき親とは、気づかない事",
+      "titleZh": "所谓的好父母，就是不会发现这件事。",
+      "chapterId": "211",
+      "createAt": 1764979200
+    },
+    {
+      "titleJp": "本当の怪異",
+      "titleZh": "真正的怪异。",
+      "chapterId": "212",
+      "createAt": 1765581300
+    },
+    {
+      "titleJp": "【Vertex】 バーテックス",
+      "titleZh": "【Vertex】 顶点",
+      "chapterId": "213",
+      "createAt": 1766187900
+    },
+    {
+      "titleJp": "裏で起こる事件",
+      "titleZh": "暗地里发生的事件",
+      "chapterId": "214",
+      "createAt": 1766790600
+    },
+    {
+      "titleJp": "偽りの日常",
+      "titleZh": "虚假的日常",
+      "chapterId": "215",
+      "createAt": 1766793000
+    },
+    {
+      "titleJp": "悪霊たちに狙われた一般家庭",
+      "titleZh": "被恶灵盯上的普通家庭",
+      "chapterId": "216",
+      "createAt": 1767397920
+    }
+  ],
+  "visited": 4572,
+  "syncAt": 1767733329,
+  "jp": 217,
+  "baidu": 125,
+  "youdao": 186,
+  "gpt": 126,
+  "sakura": 216
+}

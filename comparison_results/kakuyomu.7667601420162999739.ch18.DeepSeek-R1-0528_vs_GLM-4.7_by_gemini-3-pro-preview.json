@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:34:15.313735",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.GLM-4.7.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "82d11bb2fc3532390c93f3492edeb22c733429c197304975aa2de29a9578d9f4",
+    "B": "e935818b7938da3a9329a8496a076470b5d3853b22614b42e81d808d89ff6e08"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:35:03.721616",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202601090034164781068706OuPyUGc",
+      "judge_response": {
+        "id": "chatcmpl-202601090034164781068706OuPyUGc",
+        "object": "chat.completion",
+        "created": 1767890103,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对两条翻译的详细分析，以下是最终评判：\n\n### 详细分析\n\n**1. 准确性与术语 (Accuracy & Terminology)**\n*   **翻译 A** 在理解原文意图方面表现出色。例如，将“ドラムバッグ”（Drum bag/Duffle bag）正确翻译为“圆筒包”。\n*   **翻译 B** 犯了一个严重的术语错误，将“ドラムバッグ”翻译为“鼓包”（Segment 3）。在中文里，“鼓包”通常指皮肤上的肿块或物体表面的凸起，而不是一种包袋。此外，在 Segment 13 中，原文“イレギュラー”（Irregular）指情况异常，A 译为“异常”，B 译为“不规则”（通常用于几何形状），A 更符合语境。\n\n**2. 流畅性与语法 (Fluency & Grammar)**\n*   **翻译 A** 的中文表达非常自然，符合中文的叙述习惯。它正确处理了日语中的连接词和条件形式。例如在 Segment 4 中，原文“～渡してやれば”（...gave her half, and then...），A 译为“分了她一半，蒂亚就……”，这是标准的叙述体；而 B 译为“分了一半给她的话”，这是对日语假定形的直译，在中文叙述过去发生的动作时显得非常生硬且不合逻辑。\n*   **翻译 B** 带有明显的“翻译腔”，语序经常照搬日语，导致句子读起来像机器翻译或初学者作品。\n\n**3. 风格与语气 (Style & Tone)**\n*   **翻译 A** 很好地捕捉了轻小说的语调。蒂亚的台词既有异世界人的好奇，又有对不喜欢的人的冷淡（如 Segment 33，“无礼强行推销”比 B 的“无礼推销”更生动）。透的内心独白也更接地气（如“这玩意儿”、“没啥真实感”）。\n*   **翻译 B** 的语气较为平淡、僵硬，缺乏角色个性。\n\n**4. 格式与标点 (Formatting & Punctuation)**\n*   **翻译 B** 在 Segment 38 结尾多出了一个未闭合的引号 `『`，这是一个明显的格式错误。\n\n### 总结\n翻译 A 是一篇高质量的译文，读起来像原本就是用中文写的小说。翻译 B 虽然大体意思正确，但在选词（如“鼓包”）、语法（如条件句处理）和流畅度上存在明显缺陷，读起来非常生硬。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B在Segment 3中将'圆筒包'误译为'鼓包'（肿块），严重影响理解；Segment 13的'不规则'也不如A的'异常'准确。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A的中文非常自然。B经常使用日式直译句式，如Segment 4中将叙述性的'～ば'错误地译为假设语气的'……的话'。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A很好地还原了轻小说的口语化和角色性格；B的对话显得机械。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B的'鼓包'是重大失误。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A的句子连接顺畅；B由于直译导致逻辑断裂。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"B在Segment 38末尾有标点错误。\"\n    }\n  },\n  \"key_differences\": [\n    \"B将'ドラムバッグ'（圆筒包）误译为'鼓包'。\",\n    \"B在叙述过去发生的动作时，错误地保留了日语的条件形式（……的话），导致语句不通。\",\n    \"A的用词更符合中文口语习惯（如'这玩意儿' vs '这个叫……的东西'）。\",\n    \"B存在标点符号错误。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都远胜于翻译B。A的译文流畅、自然，准确把握了原文的语境和轻小说的文风。翻译B存在明显的直译痕迹（翻译腔），并在关键名词上出现了令人困惑的误译（如将包译为身体上的肿块），且存在语法生硬和标点错误的问题。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7990,
+          "completion_tokens": 4482,
+          "total_tokens": 12472
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "B在Segment 3中将'圆筒包'误译为'鼓包'（肿块），严重影响理解；Segment 13的'不规则'也不如A的'异常'准确。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 5,
+        "notes": "A的中文非常自然。B经常使用日式直译句式，如Segment 4中将叙述性的'～ば'错误地译为假设语气的'……的话'。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好地还原了轻小说的口语化和角色性格；B的对话显得机械。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 5,
+        "notes": "B的'鼓包'是重大失误。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "A的句子连接顺畅；B由于直译导致逻辑断裂。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 8,
+        "notes": "B在Segment 38末尾有标点错误。"
+      }
+    },
+    "key_differences": [
+      "B将'ドラムバッグ'（圆筒包）误译为'鼓包'。",
+      "B在叙述过去发生的动作时，错误地保留了日语的条件形式（……的话），导致语句不通。",
+      "A的用词更符合中文口语习惯（如'这玩意儿' vs '这个叫……的东西'）。",
+      "B存在标点符号错误。"
+    ],
+    "final_summary": "翻译A在各方面都远胜于翻译B。A的译文流畅、自然，准确把握了原文的语境和轻小说的文风。翻译B存在明显的直译痕迹（翻译腔），并在关键名词上出现了令人困惑的误译（如将包译为身体上的肿块），且存在语法生硬和标点错误的问题。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

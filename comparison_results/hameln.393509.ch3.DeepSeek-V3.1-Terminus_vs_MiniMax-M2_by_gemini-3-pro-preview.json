@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:28:09.344857",
+  "sample": "hameln.393509.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393509.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393509.ch3.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.393509.ch3.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d0ee712a22c7dfdd4c4af422942c07b6451fef680b5ae0c656be229b32ac619b",
+    "A": "ae09d5ec471bbfadc45c1a1d27c1ee27e727c32d28e7afbfc290f36b3106f72c",
+    "B": "c0b8d41923e549e6b649d138ea85f5aacf3fbd2e7da9fba33761b4a27098e046"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:29:02.329809",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900281013126496E4uY6pg9",
+      "judge_response": {
+        "id": "chatcmpl-2026010900281013126496E4uY6pg9",
+        "object": "chat.completion",
+        "created": 1767889742,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A**: 存在严重的误译和理解错误。\n    *   **段落 41**: 将网络用语「案件」（意为商业推广/恰饭）直译为法律术语“案件”，导致上下文完全不通。\n    *   **段落 68**: 原文是笹波说完话后要离开，A 翻译成“我说……”，弄错了主语。\n    *   **段落 52**: 对“顶上的景色”这一比喻的翻译语序混乱，难以理解。\n*   **翻译 B**: 准确理解了原文的含义，包括语境中的梗。\n    *   **段落 41**: 正确翻译为“商业合作”，符合上下文关于网红/企业形象的讨论。\n    *   **段落 68**: 正确理解了动作主语是笹波。\n\n**2. 术语与名称一致性 (Terminology & Consistency)**\n*   **翻译 A**: **极差**。对核心角色“笹波（Sasanami）”的名字处理极其混乱，先后出现了“萨萨米”（段落7）、“Sasanami”（段落16，直接用罗马音）、“竹波”（段落53, 60）。这种不一致严重破坏了阅读体验。\n*   **翻译 B**: 保持了高度一致性，始终使用“笹波”、“木曾路”、“忍原”等汉字名称，符合中文轻小说规范。\n\n**3. 格式与标点 (Formatting & Punctuation)**\n*   **翻译 A**: **有重大失误**。\n    *   **段落 16**: 罗列信息时完全没有标点符号，导致整段文字变成了一串无法阅读的长句（“……从舞蹈部不久后我们整理了了解到的信息这段时间她没有来练习成了幽灵社员……”）。\n*   **翻译 B**: 标点使用规范，分句清晰，阅读流畅。\n\n**4. 流畅性与风格 (Fluency & Style)**\n*   **翻译 A**: 许多句子读起来像机翻，语序生硬，缺乏润色。例如段落 79 关于雷门中学的长句，结构支离破碎。\n*   **翻译 B**: 语言自然，使用了恰当的成语和口语表达（如“心有灵犀”、“拒之门外”、“死缠烂打”），很好地还原了轻小说的校园对话风格。\n\n**5. 连贯性 (Coherence)**\n*   由于 A 在名字上的混乱和关键句的误译，导致读者很难跟上剧情（比如突然出现的“竹波”是谁？“案件”是什么意思？）。B 则提供了连贯的阅读体验。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A误译了'案件'（推广）为法律案件，弄错了对话主语，且名字翻译极其混乱。\"\n    },\n    \"fluency\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A的句式生硬，甚至有语病；B自然流畅，符合中文习惯。\"\n    },\n    \"style\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"B很好地捕捉了轻小说的语气；A显得机械且缺乏润色。\"\n    },\n    \"terminology\": {\n      \"A\": 1,\n      \"B\": 10,\n      \"notes\": \"A对同一角色使用了'萨萨米'、'Sasanami'、'竹波'三种称呼，这是致命错误。\"\n    },\n    \"coherence\": {\n      \"A\": 3,\n      \"B\": 9,\n      \"notes\": \"A的名称不一致和标点缺失（段落16）严重影响阅读。\"\n    },\n    \"formatting\": {\n      \"A\": 3,\n      \"B\": 9,\n      \"notes\": \"A在段落16中完全丢失了标点符号。\"\n    }\n  },\n  \"key_differences\": [\n    \"名称一致性：A对主角之一的名字有三种不同的错误翻译（萨萨米/Sasanami/竹波），B始终使用正确的'笹波'。\",\n    \"术语理解：原文'案件'指网红接广告，A错译为'案件'（法律），B正确译为'商业合作'。\",\n    \"格式错误：A在段落16中完全没有标点符号，导致无法阅读。\",\n    \"主语归属：段落68中，A将笹波说的话误认为是叙述者说的。\"\n  ],\n  \"final_summary\": \"翻译B在所有方面都完胜翻译A。翻译A表现出明显的机器翻译痕迹或极度缺乏校对，存在致命的名称不一致问题（同一角色出现三个名字）、严重的格式错误（缺失标点）以及关键术语的误译。翻译B则准确、流畅，风格地道，是一份高质量的轻小说翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7083,
+          "completion_tokens": 4226,
+          "total_tokens": 11309
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 9,
+        "notes": "A误译了'案件'（推广）为法律案件，弄错了对话主语，且名字翻译极其混乱。"
+      },
+      "fluency": {
+        "A": 4,
+        "B": 9,
+        "notes": "A的句式生硬，甚至有语病；B自然流畅，符合中文习惯。"
+      },
+      "style": {
+        "A": 4,
+        "B": 9,
+        "notes": "B很好地捕捉了轻小说的语气；A显得机械且缺乏润色。"
+      },
+      "terminology": {
+        "A": 1,
+        "B": 10,
+        "notes": "A对同一角色使用了'萨萨米'、'Sasanami'、'竹波'三种称呼，这是致命错误。"
+      },
+      "coherence": {
+        "A": 3,
+        "B": 9,
+        "notes": "A的名称不一致和标点缺失（段落16）严重影响阅读。"
+      },
+      "formatting": {
+        "A": 3,
+        "B": 9,
+        "notes": "A在段落16中完全丢失了标点符号。"
+      }
+    },
+    "key_differences": [
+      "名称一致性：A对主角之一的名字有三种不同的错误翻译（萨萨米/Sasanami/竹波），B始终使用正确的'笹波'。",
+      "术语理解：原文'案件'指网红接广告，A错译为'案件'（法律），B正确译为'商业合作'。",
+      "格式错误：A在段落16中完全没有标点符号，导致无法阅读。",
+      "主语归属：段落68中，A将笹波说的话误认为是叙述者说的。"
+    ],
+    "final_summary": "翻译B在所有方面都完胜翻译A。翻译A表现出明显的机器翻译痕迹或极度缺乏校对，存在致命的名称不一致问题（同一角色出现三个名字）、严重的格式错误（缺失标点）以及关键术语的误译。翻译B则准确、流畅，风格地道，是一份高质量的轻小说翻译。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,806 @@
+{
+  "wenkuId": "6795f0b230df633a1c4b652a",
+  "titleJp": "【書籍化】学校一の美少女と親友同士の恋愛相談に乗っていたら、いつのまにか彼女が誰よりも近い存在になってた件【WEB版】",
+  "titleZh": "和学校第一的美少女支持同是挚友之间的恋爱，不知不觉中她成为了比谁都要亲近的存在~虽然是单纯的共同战斗，但她却变得温柔起来，露出了真面目。",
+  "authors": [
+    {
+      "name": "鉄人じゅす",
+      "link": "https://mypage.syosetu.com/1472085/"
+    }
+  ],
+  "type": "已完结",
+  "attentions": [
+    "R15"
+  ],
+  "keywords": [
+    "男主人公",
+    "青春",
+    "スクールラブ",
+    "幼馴染",
+    "恋相談",
+    "ポンコツヒロイン",
+    "ラブコメディ",
+    "集英社小説大賞４"
+  ],
+  "points": 24192,
+  "totalCharacters": 328586,
+  "introductionJp": "第4回集英社WEB小説大賞の銀賞を受賞しました！ 書籍はダッシュエックス文庫より発売中。 予約や購入はページ一番下のカバーイラストから集英社のサイトに飛べるので好きな所から購入することができます！ 普通の男子高校生、小暮涼真（こぐれりょうま）は幼馴染で親友の平沢獅子（ひらさわれお）が恋に悩んでいると相談を受ける。 その相手はクラスでも余り目立たない女の子、大月雫（おおつきしずく）であった。 情報を得るため雫に近づきすぎた涼真はある時、学校一の美少女に呼び出されることになる 彼女の名は朝比奈(あさひな）アリサ。雫の大親友である彼女は涼真が雫を好きだと勘違いをしてしまうことになる。 アリサの勘違いにより別方向の恋愛相談が発生し、本来の恋愛相談と並行し、涼真は奔走するはめとなってしまった。 涼真とアリサ。奔走した先に待っている結末。 親友の恋愛相談に乗っていたらいつのまにかヒロインが誰よりも近い存在になっていた。そんなお話。 2023年7月4日　ジャンル別日間1位",
+  "introductionZh": "普通的高中男生小暮凉真因为青梅竹马的好友平泽狮子为恋爱而烦恼而接受了咨询。那个人是在班上也不怎么显眼的女孩子，大月雫。为了得到情报而过于接近雫的凉真，有一次被学校第一的美少女叫了出来，她的名字叫朝比奈亚莉莎。作为雫的挚友的她误以为凉真喜欢雫。由于亚莉莎的误会，发生了其他方向的恋爱咨询，凉真陷入了与本来的恋爱咨询并行，四处奔走的境地。凉真和亚莉莎。奔走的前方是等待的结局。参加好友的恋爱咨询，不知不觉中女主角成了最亲近的存在。这样的故事。",
+  "glossary": {
+    "アリサ": "亚莉莎",
+    "しずく": "雫",
+    "紬": "紬",
+    "ひより": "日和",
+    "ひー": "日和",
+    "りょうま": "凉真",
+    "にーにー": "葛格",
+    "れお": "狮子",
+    "朝比奈さん": "朝比奈同学",
+    "大月さん": "大月同学",
+    "小暮っち": "小暮亲",
+    "水原さん": "水原同学"
+  },
+  "toc": [
+    {
+      "titleJp": "1章",
+      "titleZh": "第一章"
+    },
+    {
+      "titleJp": "01　空気な僕",
+      "titleZh": "01　空气的我",
+      "chapterId": "1",
+      "createAt": 1684980000
+    },
+    {
+      "titleJp": "02　親友の好きな人",
+      "titleZh": "02　好友喜欢的人",
+      "chapterId": "2",
+      "createAt": 1684983780
+    },
+    {
+      "titleJp": "03　小柄で物静かな女の子",
+      "titleZh": "03　娇小文静的女生",
+      "chapterId": "3",
+      "createAt": 1685001600
+    },
+    {
+      "titleJp": "04　親友の好きな人は僕に似ている",
+      "titleZh": "04　好友喜欢的人和我很像",
+      "chapterId": "4",
+      "createAt": 1685016000
+    },
+    {
+      "titleJp": "05　学校一人気のあるボスに目をつけられた件①",
+      "titleZh": "05　被学校最受欢迎的头目盯上①",
+      "chapterId": "5",
+      "createAt": 1685052000
+    },
+    {
+      "titleJp": "06　学校一人気のあるボスに目をつけられた件②",
+      "titleZh": "06　被学校最受欢迎的头目盯上②",
+      "chapterId": "6",
+      "createAt": 1685070000
+    },
+    {
+      "titleJp": "07　学校一人気のあるボスに目をつけられた件③",
+      "titleZh": "07　被学校最受欢迎的头目盯上③",
+      "chapterId": "7",
+      "createAt": 1685088000
+    },
+    {
+      "titleJp": "08　学校一人気のあるボスに目をつけられた件④",
+      "titleZh": "08　被学校最受欢迎的头目盯上④",
+      "chapterId": "8",
+      "createAt": 1685138520
+    },
+    {
+      "titleJp": "09　学校一人気のあるボスに目をつけられた件⑤",
+      "titleZh": "09　被学校最受欢迎的头目盯上⑤",
+      "chapterId": "9",
+      "createAt": 1685174400
+    },
+    {
+      "titleJp": "10　学校一人気のあるボスに目をつけられた件⑥",
+      "titleZh": "10　被学校最受欢迎的头目盯上⑥",
+      "chapterId": "10",
+      "createAt": 1685224800
+    },
+    {
+      "titleJp": "11　学校一人気のあるボスに目をつけられた件⑦",
+      "titleZh": "11　被学校最受欢迎的头目盯上⑦",
+      "chapterId": "11",
+      "createAt": 1685260800
+    },
+    {
+      "titleJp": "12　寂しがり屋な子①（※アリサ視点）",
+      "titleZh": "12　怕寂寞的孩子①（※亚莉莎视角）",
+      "chapterId": "12",
+      "createAt": 1685311200
+    },
+    {
+      "titleJp": "13　寂しがり屋な子②（※アリサ視点）",
+      "titleZh": "13　怕寂寞的孩子②（※亚莉莎视角）",
+      "chapterId": "13",
+      "createAt": 1685347200
+    },
+    {
+      "titleJp": "14　ぼく達は幼馴染の才覚に嫉妬している……でも",
+      "titleZh": "14　我们嫉妒青梅竹马的才能……但是",
+      "chapterId": "14",
+      "createAt": 1685415600
+    },
+    {
+      "titleJp": "15　空気な僕は親友が少ない",
+      "titleZh": "15　空气的我朋友很少",
+      "chapterId": "15",
+      "createAt": 1685502000
+    },
+    {
+      "titleJp": "16　犬猿の仲",
+      "titleZh": "16　水火不容",
+      "chapterId": "16",
+      "createAt": 1685588400
+    },
+    {
+      "titleJp": "17　再びカフェでアリサと・・・・・・",
+      "titleZh": "17　再次在咖啡厅和亚莉莎……",
+      "chapterId": "17",
+      "createAt": 1685674800
+    },
+    {
+      "titleJp": "18　集合",
+      "titleZh": "18　集合",
+      "chapterId": "18",
+      "createAt": 1685761200
+    },
+    {
+      "titleJp": "19　僕と天使とポンコツ美少女①",
+      "titleZh": "19　我和天使和废柴美少女①",
+      "chapterId": "19",
+      "createAt": 1685847600
+    },
+    {
+      "titleJp": "20　僕と天使とポンコツ美少女②",
+      "titleZh": "20　我和天使和废柴美少女②",
+      "chapterId": "20",
+      "createAt": 1685934000
+    },
+    {
+      "titleJp": "21　僕と天使とポンコツ美少女③",
+      "titleZh": "21　我和天使和废柴美少女③",
+      "chapterId": "21",
+      "createAt": 1686020400
+    },
+    {
+      "titleJp": "22　僕と天使とポンコツ美少女④",
+      "titleZh": "22　我和天使和废柴美少女④",
+      "chapterId": "22",
+      "createAt": 1686106800
+    },
+    {
+      "titleJp": "23　僕と天使とポンコツ美少女⑤",
+      "titleZh": "23　我和天使和废柴美少女⑤",
+      "chapterId": "23",
+      "createAt": 1686193200
+    },
+    {
+      "titleJp": "24　僕と天使とポンコツ美少女⑥",
+      "titleZh": "24　我和天使和废柴美少女⑥",
+      "chapterId": "24",
+      "createAt": 1686279600
+    },
+    {
+      "titleJp": "25　雨（※アリサ視点）",
+      "titleZh": "25　雨（※亚莉莎视角）",
+      "chapterId": "25",
+      "createAt": 1686366000
+    },
+    {
+      "titleJp": "26　信頼（※アリサ視点）",
+      "titleZh": "26　信赖（※亚莉莎视角）",
+      "chapterId": "26",
+      "createAt": 1686452400
+    },
+    {
+      "titleJp": "27　二人きりの夜①",
+      "titleZh": "27　两人独处的夜晚①",
+      "chapterId": "27",
+      "createAt": 1686538800
+    },
+    {
+      "titleJp": "28　二人きりの夜②",
+      "titleZh": "28　两人独处的夜晚②",
+      "chapterId": "28",
+      "createAt": 1686625200
+    },
+    {
+      "titleJp": "29　二人きりの夜③",
+      "titleZh": "29　两人独处的夜晚③",
+      "chapterId": "29",
+      "createAt": 1686711600
+    },
+    {
+      "titleJp": "30　雨上がりの朝①",
+      "titleZh": "30　雨后的早晨①",
+      "chapterId": "30",
+      "createAt": 1686798000
+    },
+    {
+      "titleJp": "31　雨上がりの朝②",
+      "titleZh": "31　雨后的早晨②",
+      "chapterId": "31",
+      "createAt": 1686884400
+    },
+    {
+      "titleJp": "32　仲直り①（※アリサ視点）",
+      "titleZh": "32　和好①（※亚莉莎视角）",
+      "chapterId": "32",
+      "createAt": 1686970800
+    },
+    {
+      "titleJp": "33　仲直り②（※アリサ視点）",
+      "titleZh": "33　和好②（※亚莉莎视角）",
+      "chapterId": "33",
+      "createAt": 1687057200
+    },
+    {
+      "titleJp": "34　恋愛相談再始動①",
+      "titleZh": "34　恋爱咨询重启①",
+      "chapterId": "34",
+      "createAt": 1687143600
+    },
+    {
+      "titleJp": "35　恋愛相談再始動②",
+      "titleZh": "35　恋爱咨询重启②",
+      "chapterId": "35",
+      "createAt": 1687230000
+    },
+    {
+      "titleJp": "36　恋愛相談再始動③",
+      "titleZh": "36　恋爱咨询重启③",
+      "chapterId": "36",
+      "createAt": 1687316400
+    },
+    {
+      "titleJp": "37　恋愛相談再始動④",
+      "titleZh": "37　恋爱咨询重启④",
+      "chapterId": "37",
+      "createAt": 1687402800
+    },
+    {
+      "titleJp": "38　恋愛相談再始動⑤",
+      "titleZh": "38　恋爱咨询重启⑤",
+      "chapterId": "38",
+      "createAt": 1687489200
+    },
+    {
+      "titleJp": "39　恋愛相談再始動⑥",
+      "titleZh": "39　恋爱咨询重启⑥",
+      "chapterId": "39",
+      "createAt": 1687575600
+    },
+    {
+      "titleJp": "40　お昼過ぎて二人きり①",
+      "titleZh": "40　中午过后两人独处①",
+      "chapterId": "40",
+      "createAt": 1687662000
+    },
+    {
+      "titleJp": "41　お昼過ぎて二人きり②",
+      "titleZh": "41　中午过后两人独处②",
+      "chapterId": "41",
+      "createAt": 1687748400
+    },
+    {
+      "titleJp": "42　好き？①（※アリサ視点）",
+      "titleZh": "42　喜欢？①（※亚莉莎视角）",
+      "chapterId": "42",
+      "createAt": 1687834800
+    },
+    {
+      "titleJp": "43　好き？②（※アリサ視点）",
+      "titleZh": "43　喜欢？②（※亚莉莎视角）",
+      "chapterId": "43",
+      "createAt": 1687921200
+    },
+    {
+      "titleJp": "44　好き？③（※アリサ視点）",
+      "titleZh": "44　喜欢？③（※亚莉莎视角）",
+      "chapterId": "44",
+      "createAt": 1688007600
+    },
+    {
+      "titleJp": "45　好き？④（※アリサ視点）",
+      "titleZh": "45　喜欢？④（※亚莉莎视角）",
+      "chapterId": "45",
+      "createAt": 1688094000
+    },
+    {
+      "titleJp": "46　告白①",
+      "titleZh": "46　告白①",
+      "chapterId": "46",
+      "createAt": 1688180400
+    },
+    {
+      "titleJp": "47　告白②",
+      "titleZh": "47　告白②",
+      "chapterId": "47",
+      "createAt": 1688266800
+    },
+    {
+      "titleJp": "47+α　自覚",
+      "titleZh": "47+α　自觉",
+      "chapterId": "48",
+      "createAt": 1688353200
+    },
+    {
+      "titleJp": "48　僕とアリサのこれから",
+      "titleZh": "48　我和亚莉莎的未来",
+      "chapterId": "49",
+      "createAt": 1688439600
+    },
+    {
+      "titleJp": "2章",
+      "titleZh": "2章"
+    },
+    {
+      "titleJp": "49　違い",
+      "titleZh": "49　不同",
+      "chapterId": "50",
+      "createAt": 1688698800
+    },
+    {
+      "titleJp": "50　カップル",
+      "titleZh": "50　情侣",
+      "chapterId": "51",
+      "createAt": 1688785200
+    },
+    {
+      "titleJp": "51　カフェ①",
+      "titleZh": "51　咖啡厅①",
+      "chapterId": "52",
+      "createAt": 1688871600
+    },
+    {
+      "titleJp": "52　カフェ②",
+      "titleZh": "52　咖啡厅②",
+      "chapterId": "53",
+      "createAt": 1688958000
+    },
+    {
+      "titleJp": "53　あなたに甘えたい（※アリサ視点）",
+      "titleZh": "53　想要向你撒娇（※亚莉莎视角）",
+      "chapterId": "54",
+      "createAt": 1689044400
+    },
+    {
+      "titleJp": "54　お仕事①",
+      "titleZh": "54　工作①",
+      "chapterId": "55",
+      "createAt": 1689130800
+    },
+    {
+      "titleJp": "55　お仕事②",
+      "titleZh": "55　工作②",
+      "chapterId": "56",
+      "createAt": 1689217200
+    },
+    {
+      "titleJp": "56　再会",
+      "titleZh": "56　再会",
+      "chapterId": "57",
+      "createAt": 1689303600
+    },
+    {
+      "titleJp": "57　ケンカのわけ",
+      "titleZh": "57　吵架的原因",
+      "chapterId": "58",
+      "createAt": 1694142420
+    },
+    {
+      "titleJp": "58　次の日の朝",
+      "titleZh": "58　第二天早上",
+      "chapterId": "59",
+      "createAt": 1712459400
+    },
+    {
+      "titleJp": "59　僕の幼馴染達",
+      "titleZh": "59　我的青梅竹马们",
+      "chapterId": "60",
+      "createAt": 1712546400
+    },
+    {
+      "titleJp": "60　評価",
+      "titleZh": "60　评价",
+      "chapterId": "61",
+      "createAt": 1712632800
+    },
+    {
+      "titleJp": "61　下校",
+      "titleZh": "61　放学",
+      "chapterId": "62",
+      "createAt": 1713150000
+    },
+    {
+      "titleJp": "62　紬と二人で",
+      "titleZh": "62　和紬两个人",
+      "chapterId": "63",
+      "createAt": 1713236400
+    },
+    {
+      "titleJp": "63　作戦会議（※アリサ視点）",
+      "titleZh": "63　作战会议（※亚莉莎视角）",
+      "chapterId": "64",
+      "createAt": 1713322800
+    },
+    {
+      "titleJp": "64　にゃんにゃんアリサ",
+      "titleZh": "64　喵喵亚莉莎",
+      "chapterId": "65",
+      "createAt": 1713409200
+    },
+    {
+      "titleJp": "65　ごはんを食べよう",
+      "titleZh": "65　吃饭吧",
+      "chapterId": "66",
+      "createAt": 1713495600
+    },
+    {
+      "titleJp": "66　紬と一緒に①　※アリサ視点",
+      "titleZh": "66　和紬在一起①　※亚莉莎视角",
+      "chapterId": "67",
+      "createAt": 1713582000
+    },
+    {
+      "titleJp": "67　紬と一緒に②　※アリサ視点",
+      "titleZh": "67　和紬在一起②　※亚莉莎视角",
+      "chapterId": "68",
+      "createAt": 1713668400
+    },
+    {
+      "titleJp": "68　紬と一緒に③　※アリサ視点",
+      "titleZh": "68　和紬在一起③　※亚莉莎视角",
+      "chapterId": "69",
+      "createAt": 1713754800
+    },
+    {
+      "titleJp": "69　紬と一緒に④　※アリサ視点",
+      "titleZh": "69　和紬在一起④　※亚莉莎视角",
+      "chapterId": "70",
+      "createAt": 1713841200
+    },
+    {
+      "titleJp": "70　帰り道",
+      "titleZh": "70　回家的路上",
+      "chapterId": "71",
+      "createAt": 1713927600
+    },
+    {
+      "titleJp": "71　親友の恋人",
+      "titleZh": "71　挚友的恋人",
+      "chapterId": "72",
+      "createAt": 1714014000
+    },
+    {
+      "titleJp": "72　爆弾発言",
+      "titleZh": "72　爆炸性发言",
+      "chapterId": "73",
+      "createAt": 1714100400
+    },
+    {
+      "titleJp": "73　直視できない",
+      "titleZh": "73　无法直视",
+      "chapterId": "74",
+      "createAt": 1714186800
+    },
+    {
+      "titleJp": "74　僕とアリサ",
+      "titleZh": "74　我和亚莉莎",
+      "chapterId": "75",
+      "createAt": 1714273200
+    },
+    {
+      "titleJp": "75　お兄ちゃん",
+      "titleZh": "75　哥哥",
+      "chapterId": "76",
+      "createAt": 1727146800
+    },
+    {
+      "titleJp": "76　アリサの部屋で①",
+      "titleZh": "76　在亚莉莎的房间①",
+      "chapterId": "77",
+      "createAt": 1727233200
+    },
+    {
+      "titleJp": "77　アリサの部屋で②",
+      "titleZh": "77　在亚莉莎的房间②",
+      "chapterId": "78",
+      "createAt": 1727319600
+    },
+    {
+      "titleJp": "78　紬の噂",
+      "titleZh": "78　紬的传闻",
+      "chapterId": "79",
+      "createAt": 1727751600
+    },
+    {
+      "titleJp": "79　その距離",
+      "titleZh": "79　那个距离",
+      "chapterId": "80",
+      "createAt": 1727838000
+    },
+    {
+      "titleJp": "80　紬の評判",
+      "titleZh": "80　紬的评价",
+      "chapterId": "81",
+      "createAt": 1727924400
+    },
+    {
+      "titleJp": "81　紬の危機①",
+      "titleZh": "81　紬的危机①",
+      "chapterId": "82",
+      "createAt": 1728010800
+    },
+    {
+      "titleJp": "82　紬の危機②",
+      "titleZh": "82　紬的危机②",
+      "chapterId": "83",
+      "createAt": 1728097200
+    },
+    {
+      "titleJp": "83　頼りになる親友達①",
+      "titleZh": "83　可靠的挚友们①",
+      "chapterId": "84",
+      "createAt": 1728183600
+    },
+    {
+      "titleJp": "84　頼りになる親友②",
+      "titleZh": "84　可靠的挚友②",
+      "chapterId": "85",
+      "createAt": 1728270000
+    },
+    {
+      "titleJp": "85　紬の10年（紬視点）",
+      "titleZh": "85　紬的十年（紬视角）",
+      "chapterId": "86",
+      "createAt": 1728356400
+    },
+    {
+      "titleJp": "86　わたしの幼馴染み達①（紬視点）",
+      "titleZh": "86　我的青梅竹马们①（紬视角）",
+      "chapterId": "87",
+      "createAt": 1728442800
+    },
+    {
+      "titleJp": "87　わたしの幼馴染み達②",
+      "titleZh": "87　我的青梅竹马们②",
+      "chapterId": "88",
+      "createAt": 1728529200
+    },
+    {
+      "titleJp": "88　負けるもんか①（紬視点）",
+      "titleZh": "88　怎么能输①（紬视角）",
+      "chapterId": "89",
+      "createAt": 1728615600
+    },
+    {
+      "titleJp": "89　負けるもんか②（紬視点）",
+      "titleZh": "89　怎么能输②（紬视角）",
+      "chapterId": "90",
+      "createAt": 1728702000
+    },
+    {
+      "titleJp": "90　プール・レクリエーション①",
+      "titleZh": "90　泳池·娱乐①",
+      "chapterId": "91",
+      "createAt": 1728788400
+    },
+    {
+      "titleJp": "91　プール・レクリエーション②",
+      "titleZh": "91　泳池·娱乐②",
+      "chapterId": "92",
+      "createAt": 1728874800
+    },
+    {
+      "titleJp": "92　プール・レクリエーション③",
+      "titleZh": "92　泳池·娱乐③",
+      "chapterId": "93",
+      "createAt": 1728961200
+    },
+    {
+      "titleJp": "93　プール・レクリエーション④",
+      "titleZh": "93　泳池·娱乐④",
+      "chapterId": "94",
+      "createAt": 1729047600
+    },
+    {
+      "titleJp": "94　プール・レクリエーション⑤",
+      "titleZh": "94　泳池·娱乐⑤",
+      "chapterId": "95",
+      "createAt": 1729134000
+    },
+    {
+      "titleJp": "95　プール・レクリエーション⑥",
+      "titleZh": "95　泳池·娱乐⑥",
+      "chapterId": "96",
+      "createAt": 1729220400
+    },
+    {
+      "titleJp": "96　プール・レクリエーション⑦",
+      "titleZh": "96　泳池·娱乐⑦",
+      "chapterId": "97",
+      "createAt": 1729307400
+    },
+    {
+      "titleJp": "97　プール・レクリエーション⑧",
+      "titleZh": "97　泳池·娱乐⑧",
+      "chapterId": "98",
+      "createAt": 1729393200
+    },
+    {
+      "titleJp": "98　プール・レクリエーション⑨",
+      "titleZh": "98　泳池·娱乐⑨",
+      "chapterId": "99",
+      "createAt": 1729479600
+    },
+    {
+      "titleJp": "99　プール・レクリエーション⑩",
+      "titleZh": "99　泳池·娱乐⑩",
+      "chapterId": "100",
+      "createAt": 1729566000
+    },
+    {
+      "titleJp": "100　因縁",
+      "titleZh": "100　因缘",
+      "chapterId": "101",
+      "createAt": 1729652400
+    },
+    {
+      "titleJp": "101　事実と真実①（アリサ視点）",
+      "titleZh": "101　事实和真实①（亚莉莎视角）",
+      "chapterId": "102",
+      "createAt": 1730170800
+    },
+    {
+      "titleJp": "102　事実と真実②（アリサ視点）",
+      "titleZh": "102　事实和真实②（亚莉莎视角）",
+      "chapterId": "103",
+      "createAt": 1730257200
+    },
+    {
+      "titleJp": "103　事実と真実③（アリサ視点）",
+      "titleZh": "103　事实和真实③（亚莉莎视角）",
+      "chapterId": "104",
+      "createAt": 1730430000
+    },
+    {
+      "titleJp": "104　壁を乗り越えるためには",
+      "titleZh": "104　为了跨越那道墙",
+      "chapterId": "105",
+      "createAt": 1730516400
+    },
+    {
+      "titleJp": "過去章",
+      "titleZh": "过去章"
+    },
+    {
+      "titleJp": "105　恋の始まり、夢の終わり①",
+      "titleZh": "105　恋情的开始，梦想的终结①",
+      "chapterId": "106",
+      "createAt": 1746155400
+    },
+    {
+      "titleJp": "106　恋の始まり、夢の終わり②",
+      "titleZh": "106　恋情的开始，梦想的终结②",
+      "chapterId": "107",
+      "createAt": 1746241800
+    },
+    {
+      "titleJp": "107　恋の始まり、夢の終わり③",
+      "titleZh": "107　恋情的开始，梦想的终结③",
+      "chapterId": "108",
+      "createAt": 1746328200
+    },
+    {
+      "titleJp": "108　恋の始まり、夢の終わり④",
+      "titleZh": "108　恋情的开始，梦想的终结④",
+      "chapterId": "109",
+      "createAt": 1746414600
+    },
+    {
+      "titleJp": "109　恋の始まり、夢の終わり⑤",
+      "titleZh": "109　恋情的开始，梦想的终结⑤",
+      "chapterId": "110",
+      "createAt": 1746501000
+    },
+    {
+      "titleJp": "終章",
+      "titleZh": "终章"
+    },
+    {
+      "titleJp": "110　僕に出来る全力①",
+      "titleZh": "110　我能做到的全力①",
+      "chapterId": "111",
+      "createAt": 1746587400
+    },
+    {
+      "titleJp": "111　僕に出来る全力②（※アリサ視点）",
+      "titleZh": "111　我能做到的全力②（※亚莉莎视角）",
+      "chapterId": "112",
+      "createAt": 1746673800
+    },
+    {
+      "titleJp": "112　僕に出来る全力③",
+      "titleZh": "112　我能做到的全力③",
+      "chapterId": "113",
+      "createAt": 1746760200
+    },
+    {
+      "titleJp": "113　僕に出来る全力④",
+      "titleZh": "113　我能做到的全力④",
+      "chapterId": "114",
+      "createAt": 1746846600
+    },
+    {
+      "titleJp": "114　僕に出来る全力⑤※アリサ視点",
+      "titleZh": "114　我能做到的全力⑤※亚莉莎视角",
+      "chapterId": "115",
+      "createAt": 1746933000
+    },
+    {
+      "titleJp": "115　想い交差する文化祭①※咲夜視点",
+      "titleZh": "115　交错的思念的文化祭①※咲夜视角",
+      "chapterId": "116",
+      "createAt": 1747019400
+    },
+    {
+      "titleJp": "116　想い交差する文化祭②",
+      "titleZh": "116　交错的思念的文化祭②",
+      "chapterId": "117",
+      "createAt": 1747105800
+    },
+    {
+      "titleJp": "117　想い交差する文化祭③",
+      "titleZh": "117　交错的思念的文化祭③",
+      "chapterId": "118",
+      "createAt": 1747192200
+    },
+    {
+      "titleJp": "118　想い交差する文化祭④※紬視点",
+      "titleZh": "118　交错的思念的文化祭④※紬视角",
+      "chapterId": "119",
+      "createAt": 1747278600
+    },
+    {
+      "titleJp": "119　想い交差する文化祭⑤※紬視点",
+      "titleZh": "119　交错的思念的文化祭⑤※紬视角",
+      "chapterId": "120",
+      "createAt": 1747365000
+    },
+    {
+      "titleJp": "120　想い交差する文化祭⑥",
+      "titleZh": "120　交错的思念的文化祭⑥",
+      "chapterId": "121",
+      "createAt": 1747451400
+    },
+    {
+      "titleJp": "121　想い交差する文化祭⑦",
+      "titleZh": "121　交错的思念的文化祭⑦",
+      "chapterId": "122",
+      "createAt": 1747537800
+    },
+    {
+      "titleJp": "122　僕とアリサは互いに誰よりも近い存在になった（終）",
+      "titleZh": "122　我和亚莉莎成为了比任何人都要亲近的存在（完）",
+      "chapterId": "123",
+      "createAt": 1747624200
+    }
+  ],
+  "visited": 3702,
+  "syncAt": 1767706831,
+  "jp": 124,
+  "baidu": 57,
+  "youdao": 123,
+  "gpt": 123,
+  "sakura": 124
+}

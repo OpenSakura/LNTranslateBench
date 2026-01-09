@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:26:06.365303",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "06a630f6188c488b84233bd7041408146109f964990733912a90077400f6a00d",
+    "B": "984fc2d5108dfeaa091ee718c9f6471ada65f0dd58785951f4e2d9d6406a15b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:27:04.186335",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002607105680885C9cgBiJx",
+      "judge_response": {
+        "id": "chatcmpl-20260109002607105680885C9cgBiJx",
+        "object": "chat.completion",
+        "created": 1767889624,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **严重错误 (A)**：在段落 102 中，原文 \"ボア\" (Boar, 野猪) 被翻译A错译为 \"蟒蛇\" (Boa)。这导致后续描述（牙齿、肉、瓜坊/小野猪）在逻辑上完全崩塌。这是一个基于片假名拼写相似性（Boa vs Boar）但忽略上下文的严重错误。\n*   **理解错误 (A)**：在段落 28 中，原文 \"毛側\" (kegawa, 毛皮/皮毛) 被A直译为 \"毛侧\"，这在中文中不知所云。B 正确理解为 \"毛皮\"。\n*   **术语理解 (A vs B)**：\n    *   **Treant (树人)**：A 音译为 \"特伦特\"，对于奇幻轻小说来说，这显得生硬且缺乏意象。B 意译为 \"树人\"，符合通俗用法。\n    *   **Owlbear (枭熊)**：A 译为 \"猫头鹰熊\"，B 译为 \"枭熊\"。B 使用了D&D/奇幻文学的标准译名。\n    *   **Coat Wolf**：A 音译为 \"科特狼\"，B 意译为 \"毛皮狼\"。考虑到描述重点在于其毛皮，B 的处理更好。\n    *   **Bicorn (双角兽)**：A 意译为 \"双角兽\"（正确），B 音译为 \"鲍科恩\"（较差）。这是B的一个失分点，但相比A把野猪译成蛇，B的错误较轻。\n\n**2. 流畅性与风格 (Fluency & Style)**\n*   **B** 的行文更符合游戏图鉴或轻小说设定的风格。例如段落 2 中，B 使用 \"受……左右\" 比 A 的 \"由……决定\" 更贴合原文 \"左右される\" 的语境。\n*   **A** 的句子有时显得过于口语化或直白，缺乏润色。例如段落 66，A 保留了原文可能的长音符号错误 \"睡眠鹿—\"，显得不专业。\n\n**3. 术语一致性 (Terminology Consistency)**\n*   **A** 在段落 74 译为 \"杜拉汉加洛普\"，在段落 93 又变为 \"无头骑士奔腾\"。前后不一致。\n*   **B** 保持了一致性。\n\n**4. 细节处理**\n*   **段落 101**：原文 \"買った\" (bought) 极大概率是 \"狩った\" (hunted) 的误字。两名译者都忠实翻译为 \"买\"，这在原则上是可以接受的（虽然优秀的译者可能会加注）。\n*   **段落 4**：原文 \"意外と\" (surprisingly)，B 译出 \"意外地\"，A 漏译。\n\n### 总结\n翻译B在绝大多数方面都优于翻译A。翻译A犯了一个致命的上下文理解错误（将野猪译为蟒蛇），并且在处理奇幻生物名称时倾向于生硬的音译（特伦特、科特），导致阅读体验不佳。翻译B虽然在 \"双角兽\" 的翻译上选择了奇怪的音译，但整体对奇幻术语的掌握（枭熊、树人、短吻鳄）更加专业，且文笔更流畅自然。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A将'Boar'(野猪)误译为蟒蛇，严重失分；A对'毛側'等词理解有误。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的语言组织更符合中文阅读习惯，且更有轻小说风味。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B使用了标准的奇幻游戏/小说术语（如枭熊、树人），A多用生硬音译。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 8,\n      \"notes\": \"B在绝大多数术语上更准确，唯独'Bicorn'音译不佳；A术语前后不一且多处误译。\"\n    },\n    \"coherence\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A因误译导致部分段落逻辑不通（如蛇长獠牙）。\"\n    },\n    \"formatting\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"A保留了原文的排版瑕疵（如长音符号）。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落102：A将'Boar'(野猪)错译为'蟒蛇'，B正确译为'野猪'。\",\n    \"段落78：A将'Treant'音译为'特伦特'，B意译为'树人'。\",\n    \"段落3：A译为'猫头鹰熊'，B使用标准译名'枭熊'。\",\n    \"段落27：A将'Coat Wolf'音译为'科特狼'，B意译为'毛皮狼'。\"\n  ],\n  \"final_summary\": \"翻译B在准确性、术语专业度和流畅度上均大幅领先。翻译A存在严重的理解错误（将野猪译为蛇），且对奇幻专有名词的处理显得业余（大量生硬音译）。B虽然在个别词（如双角兽）的处理上略显瑕疵，但整体质量远高于A，是更合格的轻小说翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8041,
+          "completion_tokens": 5185,
+          "total_tokens": 13226
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A将'Boar'(野猪)误译为蟒蛇，严重失分；A对'毛側'等词理解有误。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的语言组织更符合中文阅读习惯，且更有轻小说风味。"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B使用了标准的奇幻游戏/小说术语（如枭熊、树人），A多用生硬音译。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "B在绝大多数术语上更准确，唯独'Bicorn'音译不佳；A术语前后不一且多处误译。"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 9,
+        "notes": "A因误译导致部分段落逻辑不通（如蛇长獠牙）。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 9,
+        "notes": "A保留了原文的排版瑕疵（如长音符号）。"
+      }
+    },
+    "key_differences": [
+      "段落102：A将'Boar'(野猪)错译为'蟒蛇'，B正确译为'野猪'。",
+      "段落78：A将'Treant'音译为'特伦特'，B意译为'树人'。",
+      "段落3：A译为'猫头鹰熊'，B使用标准译名'枭熊'。",
+      "段落27：A将'Coat Wolf'音译为'科特狼'，B意译为'毛皮狼'。"
+    ],
+    "final_summary": "翻译B在准确性、术语专业度和流畅度上均大幅领先。翻译A存在严重的理解错误（将野猪译为蛇），且对奇幻专有名词的处理显得业余（大量生硬音译）。B虽然在个别词（如双角兽）的处理上略显瑕疵，但整体质量远高于A，是更合格的轻小说翻译。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

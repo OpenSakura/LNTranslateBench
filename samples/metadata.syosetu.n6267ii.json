@@ -1,0 +1,5196 @@
+{
+  "titleJp": "【第十四章開始】人の才能が見えるようになりました。～幸運な俺はいい才能を持つみんなと一緒に世界を救う～",
+  "titleZh": "我看得见人的才能。～幸运的我培育优良的才能～",
+  "authors": [
+    {
+      "name": "犬型大",
+      "link": "https://mypage.syosetu.com/1569516/"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [
+    "R15"
+  ],
+  "keywords": [
+    "男主人公",
+    "ハーレム",
+    "魔法",
+    "超能力",
+    "ダンジョン",
+    "ＥＳＮ大賞９",
+    "集英社小説大賞６",
+    "123大賞6",
+    "スピアノベルス大賞1",
+    "パッシュ大賞",
+    "ヒューマンドラマ"
+  ],
+  "points": 16230,
+  "totalCharacters": 1701765,
+  "introductionJp": "突如として変わった世界。 塔やゲートが現れて強いものが偉くてお金も稼げる世の中になった。 弱いことは才能がないことであるとみなされて、弱いことは役立たずであるとののしられる。 けれども違ったのだ。 この世の中、強い奴ほど才能がなかった。 これからの時代は本当に才能があるやつが強くなる。 見抜いて、育てる。 育てて、恩を売って、いい暮らしをする。 誰もが知らない才能を見抜け。 そしてこの世界を生き残れ。 カクヨムでも掲載。 更新不定期",
+  "introductionZh": "世界突然变了。高塔和传送门出现，强者当道，有钱赚的世界。弱小被视为没有才能，弱小被骂没用。但其实不是这样。这个世界，越强的家伙越没有才能。今后的时代，真正有才能的家伙会变强。看穿、培育。培育、卖人情、过好日子。看穿没人知道的才能。然后在这个世界存活下来。在カクヨム也有刊載。更新不定期，为了网络小说初学者而公开的作品。",
+  "glossary": {
+    "カレン": "卡莲",
+    "フィーネ": "菲妮",
+    "ゴブリン": "哥布林",
+    "カイ": "凯",
+    "ステータス": "能力值",
+    "ヴェルター": "维鲁达",
+    "ウルフ": "野狼",
+    "ストーンゴーレム": "岩石魔像",
+    "クオルカンティカート": "库欧尔坎迪卡特",
+    "マティオ": "马提欧",
+    "ゴーレム": "魔像",
+    "ヘルカト": "地狱猫",
+    "ヒーラー": "治疗师",
+    "毒棒君": "毒棒君",
+    "RSI": "RSI",
+    "バイペッドディア": "二足鹿",
+    "リウ・カイ": "劉凱"
+  },
+  "toc": [
+    {
+      "titleJp": "第一章",
+      "titleZh": "第一章"
+    },
+    {
+      "titleJp": "危機的状況１",
+      "titleZh": "危机状况1",
+      "chapterId": "1",
+      "createAt": 1690707600
+    },
+    {
+      "titleJp": "危機的状況２",
+      "titleZh": "危机状况2",
+      "chapterId": "2",
+      "createAt": 1690794000
+    },
+    {
+      "titleJp": "危機的状況３",
+      "titleZh": "危机状况3",
+      "chapterId": "3",
+      "createAt": 1690880400
+    },
+    {
+      "titleJp": "危機的状況４",
+      "titleZh": "危机状况4",
+      "chapterId": "4",
+      "createAt": 1690966800
+    },
+    {
+      "titleJp": "捨てる神あれば１",
+      "titleZh": "有神扔出神谕1",
+      "chapterId": "5",
+      "createAt": 1691053200
+    },
+    {
+      "titleJp": "捨てる神あれば2",
+      "titleZh": "有神扔出神谕2",
+      "chapterId": "6",
+      "createAt": 1691139600
+    },
+    {
+      "titleJp": "捨てる神あれば３",
+      "titleZh": "有神扔出神谕3",
+      "chapterId": "7",
+      "createAt": 1691226000
+    },
+    {
+      "titleJp": "捨てる神あれば4",
+      "titleZh": "有神扔出神谕4",
+      "chapterId": "8",
+      "createAt": 1691398800
+    },
+    {
+      "titleJp": "捨てる神あれば5",
+      "titleZh": "有神扔出神谕5",
+      "chapterId": "9",
+      "createAt": 1691485200
+    },
+    {
+      "titleJp": "神話級の幸運1",
+      "titleZh": "神话级的幸运1",
+      "chapterId": "10",
+      "createAt": 1691658000
+    },
+    {
+      "titleJp": "神話級の幸運２",
+      "titleZh": "神话级的幸运2",
+      "chapterId": "11",
+      "createAt": 1691830800
+    },
+    {
+      "titleJp": "神話級の幸運３",
+      "titleZh": "神话级的幸运3",
+      "chapterId": "12",
+      "createAt": 1691917200
+    },
+    {
+      "titleJp": "神話級の幸運4",
+      "titleZh": "神话级的幸运4",
+      "chapterId": "13",
+      "createAt": 1692003600
+    },
+    {
+      "titleJp": "神話級の幸運5",
+      "titleZh": "神话级的幸运5",
+      "chapterId": "14",
+      "createAt": 1692176400
+    },
+    {
+      "titleJp": "神話級の幸運6",
+      "titleZh": "神话级的幸运6",
+      "chapterId": "15",
+      "createAt": 1692262800
+    },
+    {
+      "titleJp": "レベルアップ1",
+      "titleZh": "升级1",
+      "chapterId": "16",
+      "createAt": 1692349200
+    },
+    {
+      "titleJp": "レベルアップ２",
+      "titleZh": "升级2",
+      "chapterId": "17",
+      "createAt": 1695369780
+    },
+    {
+      "titleJp": "レベルアップ３",
+      "titleZh": "升级3",
+      "chapterId": "18",
+      "createAt": 1692435600
+    },
+    {
+      "titleJp": "レベルアップ４",
+      "titleZh": "升级4",
+      "chapterId": "19",
+      "createAt": 1692522000
+    },
+    {
+      "titleJp": "フィールドワークもするのさ1",
+      "titleZh": "田野调查也是工作之一1",
+      "chapterId": "20",
+      "createAt": 1692694800
+    },
+    {
+      "titleJp": "フィールドワークもするのさ2",
+      "titleZh": "田野调查也是工作之一2",
+      "chapterId": "21",
+      "createAt": 1692781200
+    },
+    {
+      "titleJp": "フィールドワークもするのさ3",
+      "titleZh": "田野调查也是工作之一3",
+      "chapterId": "22",
+      "createAt": 1692954000
+    },
+    {
+      "titleJp": "フィールドワークもするのさ4",
+      "titleZh": "田野调查也是工作之一4",
+      "chapterId": "23",
+      "createAt": 1693040400
+    },
+    {
+      "titleJp": "フィールドワークもするのさ5",
+      "titleZh": "田野调查也是工作之一5",
+      "chapterId": "24",
+      "createAt": 1693126800
+    },
+    {
+      "titleJp": "フィールドワークもするのさ6",
+      "titleZh": "田野调查也是工作之一6",
+      "chapterId": "25",
+      "createAt": 1693213200
+    },
+    {
+      "titleJp": "幸運の始まり1",
+      "titleZh": "幸运的开始1",
+      "chapterId": "26",
+      "createAt": 1693386000
+    },
+    {
+      "titleJp": "幸運の始まり2",
+      "titleZh": "幸运的开始2",
+      "chapterId": "27",
+      "createAt": 1693472400
+    },
+    {
+      "titleJp": "幸運の始まり3",
+      "titleZh": "幸运的开始3",
+      "chapterId": "28",
+      "createAt": 1693558800
+    },
+    {
+      "titleJp": "幸運の始まり4",
+      "titleZh": "幸运的开始4",
+      "chapterId": "29",
+      "createAt": 1693645200
+    },
+    {
+      "titleJp": "幸運の始まり5",
+      "titleZh": "幸运的开始5",
+      "chapterId": "30",
+      "createAt": 1693731600
+    },
+    {
+      "titleJp": "俺にだって守れるんだ1",
+      "titleZh": "我也有办法保护1",
+      "chapterId": "31",
+      "createAt": 1693818000
+    },
+    {
+      "titleJp": "俺にだって守れるんだ2",
+      "titleZh": "我也有办法保护2",
+      "chapterId": "32",
+      "createAt": 1693904400
+    },
+    {
+      "titleJp": "俺にだって守れるんだ3",
+      "titleZh": "我也有办法保护3",
+      "chapterId": "33",
+      "createAt": 1694077200
+    },
+    {
+      "titleJp": "俺にだって守れるんだ4",
+      "titleZh": "我也有办法保护4",
+      "chapterId": "34",
+      "createAt": 1694163600
+    },
+    {
+      "titleJp": "風の始まり1",
+      "titleZh": "风的开始1",
+      "chapterId": "35",
+      "createAt": 1694250000
+    },
+    {
+      "titleJp": "風の始まり2",
+      "titleZh": "风的开始2",
+      "chapterId": "36",
+      "createAt": 1694336400
+    },
+    {
+      "titleJp": "風の始まり3",
+      "titleZh": "风的开始3",
+      "chapterId": "37",
+      "createAt": 1694422800
+    },
+    {
+      "titleJp": "風の始まり4",
+      "titleZh": "风的开始4",
+      "chapterId": "38",
+      "createAt": 1694509200
+    },
+    {
+      "titleJp": "風の始まり5",
+      "titleZh": "风的开始5",
+      "chapterId": "39",
+      "createAt": 1694595600
+    },
+    {
+      "titleJp": "風の始まり6",
+      "titleZh": "风的开始6",
+      "chapterId": "40",
+      "createAt": 1694682000
+    },
+    {
+      "titleJp": "暗い会話",
+      "titleZh": "黑暗的对话",
+      "chapterId": "41",
+      "createAt": 1694768400
+    },
+    {
+      "titleJp": "大いなる野望",
+      "titleZh": "伟大的野心",
+      "chapterId": "42",
+      "createAt": 1694854800
+    },
+    {
+      "titleJp": "レッツレベルアップ1",
+      "titleZh": "Let's level up1",
+      "chapterId": "43",
+      "createAt": 1695027600
+    },
+    {
+      "titleJp": "レッツレベルアップ2",
+      "titleZh": "Let's level up2",
+      "chapterId": "44",
+      "createAt": 1695114000
+    },
+    {
+      "titleJp": "レッツレベルアップ3",
+      "titleZh": "Let's level up3",
+      "chapterId": "45",
+      "createAt": 1695200400
+    },
+    {
+      "titleJp": "飛び始めた小鳥を狙う闇1",
+      "titleZh": "开始飞翔的小鸟遭到狙击1",
+      "chapterId": "46",
+      "createAt": 1695286800
+    },
+    {
+      "titleJp": "飛び始めた小鳥を狙う闇2",
+      "titleZh": "开始飞翔的小鸟遭到狙击2",
+      "chapterId": "47",
+      "createAt": 1695373200
+    },
+    {
+      "titleJp": "飛び始めた小鳥を狙う闇3",
+      "titleZh": "开始飞翔的小鸟遭到狙击3",
+      "chapterId": "48",
+      "createAt": 1695453540
+    },
+    {
+      "titleJp": "飛び始めた小鳥を狙う闇4",
+      "titleZh": "开始飞翔的小鸟遭到狙击4",
+      "chapterId": "49",
+      "createAt": 1695546000
+    },
+    {
+      "titleJp": "飛び始めた小鳥を狙う闇5",
+      "titleZh": "开始飞翔的小鸟遭到狙击5",
+      "chapterId": "50",
+      "createAt": 1695632400
+    },
+    {
+      "titleJp": "飛び始めた小鳥を狙う闇6",
+      "titleZh": "开始飞翔的小鸟遭到狙击6",
+      "chapterId": "51",
+      "createAt": 1695805200
+    },
+    {
+      "titleJp": "闇は払われた",
+      "titleZh": "黑暗被驱散了",
+      "chapterId": "52",
+      "createAt": 1695891600
+    },
+    {
+      "titleJp": "ヒーローたち",
+      "titleZh": "英雄们",
+      "chapterId": "53",
+      "createAt": 1695978000
+    },
+    {
+      "titleJp": "幸運なのか、不幸なのか",
+      "titleZh": "是幸运还是不幸",
+      "chapterId": "54",
+      "createAt": 1696064400
+    },
+    {
+      "titleJp": "第二章",
+      "titleZh": "第二章"
+    },
+    {
+      "titleJp": "少しは強くなりました1",
+      "titleZh": "稍微变强了1",
+      "chapterId": "55",
+      "createAt": 1696150800
+    },
+    {
+      "titleJp": "少しは強くなりました2",
+      "titleZh": "稍微变强了2",
+      "chapterId": "56",
+      "createAt": 1696237200
+    },
+    {
+      "titleJp": "少しは強くなりました3",
+      "titleZh": "稍微变强了3",
+      "chapterId": "57",
+      "createAt": 1696323600
+    },
+    {
+      "titleJp": "少しは強くなりました4",
+      "titleZh": "稍微变强了4",
+      "chapterId": "58",
+      "createAt": 1696410000
+    },
+    {
+      "titleJp": "見抜く将来性1",
+      "titleZh": "看穿的将来性1",
+      "chapterId": "59",
+      "createAt": 1696496400
+    },
+    {
+      "titleJp": "見抜く将来性2",
+      "titleZh": "看穿的将来性2",
+      "chapterId": "60",
+      "createAt": 1696582800
+    },
+    {
+      "titleJp": "見抜く将来性3",
+      "titleZh": "看穿的将来性3",
+      "chapterId": "61",
+      "createAt": 1696669200
+    },
+    {
+      "titleJp": "見抜く将来性4",
+      "titleZh": "看穿的将来性4",
+      "chapterId": "62",
+      "createAt": 1696842000
+    },
+    {
+      "titleJp": "見抜く将来性5",
+      "titleZh": "看穿的将来性5",
+      "chapterId": "63",
+      "createAt": 1696928400
+    },
+    {
+      "titleJp": "工房の問題1",
+      "titleZh": "工房的问题1",
+      "chapterId": "64",
+      "createAt": 1697014800
+    },
+    {
+      "titleJp": "工房の問題2",
+      "titleZh": "工房的问题2",
+      "chapterId": "65",
+      "createAt": 1697101200
+    },
+    {
+      "titleJp": "工房の問題3",
+      "titleZh": "工房的问题3",
+      "chapterId": "66",
+      "createAt": 1697187600
+    },
+    {
+      "titleJp": "ブラックマーケット1",
+      "titleZh": "黑市1",
+      "chapterId": "67",
+      "createAt": 1697274000
+    },
+    {
+      "titleJp": "ブラックマーケット2",
+      "titleZh": "黑市2",
+      "chapterId": "68",
+      "createAt": 1697446800
+    },
+    {
+      "titleJp": "闇のオークション1",
+      "titleZh": "黑暗的拍卖会1",
+      "chapterId": "69",
+      "createAt": 1697533200
+    },
+    {
+      "titleJp": "闇のオークション2",
+      "titleZh": "黑暗的拍卖会2",
+      "chapterId": "70",
+      "createAt": 1697619600
+    },
+    {
+      "titleJp": "闇のオークション3",
+      "titleZh": "黑暗的拍卖会3",
+      "chapterId": "71",
+      "createAt": 1697706000
+    },
+    {
+      "titleJp": "闇のオークション4",
+      "titleZh": "黑暗的拍卖会4",
+      "chapterId": "72",
+      "createAt": 1697792400
+    },
+    {
+      "titleJp": "闇のオークション5",
+      "titleZh": "黑暗的拍卖会5",
+      "chapterId": "73",
+      "createAt": 1697878800
+    },
+    {
+      "titleJp": "あなたが欲しい1",
+      "titleZh": "你想要什么1",
+      "chapterId": "74",
+      "createAt": 1697965740
+    },
+    {
+      "titleJp": "あなたが欲しい2",
+      "titleZh": "你想要什么2",
+      "chapterId": "75",
+      "createAt": 1698051600
+    },
+    {
+      "titleJp": "あなたが欲しい3",
+      "titleZh": "你想要什么3",
+      "chapterId": "76",
+      "createAt": 1698138000
+    },
+    {
+      "titleJp": "小嶋金融1",
+      "titleZh": "小嶋金融1",
+      "chapterId": "77",
+      "createAt": 1698224400
+    },
+    {
+      "titleJp": "小嶋金融2",
+      "titleZh": "小嶋金融2",
+      "chapterId": "78",
+      "createAt": 1698310800
+    },
+    {
+      "titleJp": "小嶋金融3",
+      "titleZh": "小嶋金融3",
+      "chapterId": "79",
+      "createAt": 1698397200
+    },
+    {
+      "titleJp": "小嶋金融4",
+      "titleZh": "小嶋金融4",
+      "chapterId": "80",
+      "createAt": 1698483600
+    },
+    {
+      "titleJp": "カレンと爺さん1",
+      "titleZh": "卡莲与老爷爷1",
+      "chapterId": "81",
+      "createAt": 1698656400
+    },
+    {
+      "titleJp": "カレンと爺さん2",
+      "titleZh": "卡莲与老爷爷2",
+      "chapterId": "82",
+      "createAt": 1698742800
+    },
+    {
+      "titleJp": "ゲート1日攻略権1",
+      "titleZh": "Gate1日攻略权1",
+      "chapterId": "83",
+      "createAt": 1698829200
+    },
+    {
+      "titleJp": "ゲート1日攻略権2",
+      "titleZh": "Gate1日攻略权2",
+      "chapterId": "84",
+      "createAt": 1698915600
+    },
+    {
+      "titleJp": "ゲート1日攻略権3",
+      "titleZh": "Gate1日攻略权3",
+      "chapterId": "85",
+      "createAt": 1699002000
+    },
+    {
+      "titleJp": "ゲート1日攻略権4",
+      "titleZh": "Gate1日攻略权4",
+      "chapterId": "86",
+      "createAt": 1699088400
+    },
+    {
+      "titleJp": "閑話・凶悪な捕食者1",
+      "titleZh": "闲话・凶恶的捕食者1",
+      "chapterId": "87",
+      "createAt": 1699174800
+    },
+    {
+      "titleJp": "閑話・凶悪な捕食者2",
+      "titleZh": "闲话・凶恶的捕食者2",
+      "chapterId": "88",
+      "createAt": 1699268160
+    },
+    {
+      "titleJp": "蛇と呼ばれる男、虎と呼ばれる男1",
+      "titleZh": "被称为蛇的男人，被称为虎的男人1",
+      "chapterId": "89",
+      "createAt": 1699347600
+    },
+    {
+      "titleJp": "蛇と呼ばれる男、虎と呼ばれる男2",
+      "titleZh": "被称为蛇的男人，被称为虎的男人2",
+      "chapterId": "90",
+      "createAt": 1699434000
+    },
+    {
+      "titleJp": "蛇と呼ばれる男、虎と呼ばれる男3",
+      "titleZh": "被称为蛇的男人，被称为虎的男人3",
+      "chapterId": "91",
+      "createAt": 1699520400
+    },
+    {
+      "titleJp": "蛇と呼ばれる男、虎と呼ばれる男4",
+      "titleZh": "被称为蛇的男人，被称为虎的男人4",
+      "chapterId": "92",
+      "createAt": 1699606800
+    },
+    {
+      "titleJp": "蛇と呼ばれる男、虎と呼ばれる男5",
+      "titleZh": "被称为蛇的男人，被称为虎的男人5",
+      "chapterId": "93",
+      "createAt": 1699693200
+    },
+    {
+      "titleJp": "蛇と呼ばれる男、虎と呼ばれる男6",
+      "titleZh": "被称为蛇的男人，被称为虎的男人6",
+      "chapterId": "94",
+      "createAt": 1699779600
+    },
+    {
+      "titleJp": "蛇と呼ばれる男、虎と呼ばれる男7",
+      "titleZh": "被称为蛇的男人，被称为虎的男人7",
+      "chapterId": "95",
+      "createAt": 1699866000
+    },
+    {
+      "titleJp": "猛るシカと戦って1",
+      "titleZh": "与凶猛的鹿战斗1",
+      "chapterId": "96",
+      "createAt": 1699952400
+    },
+    {
+      "titleJp": "猛るシカと戦って2",
+      "titleZh": "与凶猛的鹿战斗2",
+      "chapterId": "97",
+      "createAt": 1700038800
+    },
+    {
+      "titleJp": "猛るシカと戦って3",
+      "titleZh": "与凶猛的鹿战斗3",
+      "chapterId": "98",
+      "createAt": 1700125200
+    },
+    {
+      "titleJp": "病室での会話1",
+      "titleZh": "在病房的对话1",
+      "chapterId": "99",
+      "createAt": 1700211600
+    },
+    {
+      "titleJp": "病室での会話2",
+      "titleZh": "在病房的对话2",
+      "chapterId": "100",
+      "createAt": 1700298000
+    },
+    {
+      "titleJp": "蛇の行方",
+      "titleZh": "蛇的去向",
+      "chapterId": "101",
+      "createAt": 1700384400
+    },
+    {
+      "titleJp": "幸運な仲間達と",
+      "titleZh": "幸运的伙伴们",
+      "chapterId": "102",
+      "createAt": 1700470800
+    },
+    {
+      "titleJp": "第三章",
+      "titleZh": "第三章"
+    },
+    {
+      "titleJp": "共同研究の誘い1",
+      "titleZh": "共同研究的邀请1",
+      "chapterId": "103",
+      "createAt": 1700557200
+    },
+    {
+      "titleJp": "共同研究の誘い2",
+      "titleZh": "共同研究的邀请2",
+      "chapterId": "104",
+      "createAt": 1700643600
+    },
+    {
+      "titleJp": "共同研究の誘い3",
+      "titleZh": "共同研究的邀请3",
+      "chapterId": "105",
+      "createAt": 1700730000
+    },
+    {
+      "titleJp": "酷い人たち1",
+      "titleZh": "过分的人们1",
+      "chapterId": "106",
+      "createAt": 1700902800
+    },
+    {
+      "titleJp": "酷い人たち2",
+      "titleZh": "过分的人们2",
+      "chapterId": "107",
+      "createAt": 1700989200
+    },
+    {
+      "titleJp": "酷い人たち3",
+      "titleZh": "过分的人们3",
+      "chapterId": "108",
+      "createAt": 1701075600
+    },
+    {
+      "titleJp": "酷い人たち4",
+      "titleZh": "过分的人们4",
+      "chapterId": "109",
+      "createAt": 1701248400
+    },
+    {
+      "titleJp": "酷い人たち5",
+      "titleZh": "过分的人们5",
+      "chapterId": "110",
+      "createAt": 1701319140
+    },
+    {
+      "titleJp": "信頼できる人",
+      "titleZh": "可以信赖的人",
+      "chapterId": "111",
+      "createAt": 1701421200
+    },
+    {
+      "titleJp": "お願い、依頼1",
+      "titleZh": "拜托、委托1",
+      "chapterId": "112",
+      "createAt": 1701507600
+    },
+    {
+      "titleJp": "お願い、依頼2",
+      "titleZh": "拜托、委托2",
+      "chapterId": "113",
+      "createAt": 1701594000
+    },
+    {
+      "titleJp": "悲しみは怒りに",
+      "titleZh": "悲伤化为愤怒",
+      "chapterId": "114",
+      "createAt": 1701680400
+    },
+    {
+      "titleJp": "始動",
+      "titleZh": "开始行动",
+      "chapterId": "115",
+      "createAt": 1701766800
+    },
+    {
+      "titleJp": "奇妙なステータス1",
+      "titleZh": "奇妙的能力值1",
+      "chapterId": "116",
+      "createAt": 1701853200
+    },
+    {
+      "titleJp": "奇妙なステータス2",
+      "titleZh": "奇妙的能力值2",
+      "chapterId": "117",
+      "createAt": 1701939600
+    },
+    {
+      "titleJp": "言いたい気持ち、言えない気持ち",
+      "titleZh": "想说的心情，说不出的心情",
+      "chapterId": "118",
+      "createAt": 1702026000
+    },
+    {
+      "titleJp": "悪魔の力1",
+      "titleZh": "恶魔的力量1",
+      "chapterId": "119",
+      "createAt": 1702112400
+    },
+    {
+      "titleJp": "悪魔の力2",
+      "titleZh": "恶魔的力量2",
+      "chapterId": "120",
+      "createAt": 1702198800
+    },
+    {
+      "titleJp": "ヴェルターという男",
+      "titleZh": "维鲁达那男人",
+      "chapterId": "121",
+      "createAt": 1702285200
+    },
+    {
+      "titleJp": "麻痺ん棒1",
+      "titleZh": "麻痹棍1",
+      "chapterId": "122",
+      "createAt": 1702371600
+    },
+    {
+      "titleJp": "麻痺ん棒2",
+      "titleZh": "麻痹棍2",
+      "chapterId": "123",
+      "createAt": 1702458000
+    },
+    {
+      "titleJp": "麻痺ん棒3",
+      "titleZh": "麻痹棍3",
+      "chapterId": "124",
+      "createAt": 1702544400
+    },
+    {
+      "titleJp": "不穏な潜入1",
+      "titleZh": "危险的潜入1",
+      "chapterId": "125",
+      "createAt": 1702630800
+    },
+    {
+      "titleJp": "不穏な潜入2",
+      "titleZh": "危险的潜入2",
+      "chapterId": "126",
+      "createAt": 1702717200
+    },
+    {
+      "titleJp": "真面目な警官のお願い",
+      "titleZh": "认真的警官的请求",
+      "chapterId": "127",
+      "createAt": 1702803600
+    },
+    {
+      "titleJp": "デカ目玉1",
+      "titleZh": "大眼球1",
+      "chapterId": "128",
+      "createAt": 1702890000
+    },
+    {
+      "titleJp": "デカ目玉2",
+      "titleZh": "大眼球2",
+      "chapterId": "129",
+      "createAt": 1702973820
+    },
+    {
+      "titleJp": "デカ目玉3",
+      "titleZh": "大眼球3",
+      "chapterId": "130",
+      "createAt": 1703062800
+    },
+    {
+      "titleJp": "デカ目玉4",
+      "titleZh": "大眼球4",
+      "chapterId": "131",
+      "createAt": 1703149200
+    },
+    {
+      "titleJp": "デカ目玉5",
+      "titleZh": "大眼球5",
+      "chapterId": "132",
+      "createAt": 1703235600
+    },
+    {
+      "titleJp": "三つ巴の混乱1",
+      "titleZh": "三者相克的混乱1",
+      "chapterId": "133",
+      "createAt": 1703322000
+    },
+    {
+      "titleJp": "三つ巴の混乱2",
+      "titleZh": "三者相克的混乱2",
+      "chapterId": "134",
+      "createAt": 1703408400
+    },
+    {
+      "titleJp": "三つ巴の混乱3",
+      "titleZh": "三者相克的混乱3",
+      "chapterId": "135",
+      "createAt": 1703494800
+    },
+    {
+      "titleJp": "三つ巴の混乱4",
+      "titleZh": "三者相克的混乱4",
+      "chapterId": "136",
+      "createAt": 1703552400
+    },
+    {
+      "titleJp": "三つ巴の混乱5",
+      "titleZh": "三者相克的混乱5",
+      "chapterId": "137",
+      "createAt": 1703581200
+    },
+    {
+      "titleJp": "三つ巴の混乱6",
+      "titleZh": "三者相克的混乱6",
+      "chapterId": "138",
+      "createAt": 1703667600
+    },
+    {
+      "titleJp": "三つ巴の混乱7",
+      "titleZh": "三者相克的混乱7",
+      "chapterId": "139",
+      "createAt": 1703754000
+    },
+    {
+      "titleJp": "三つ巴の混乱8",
+      "titleZh": "三者相克的混乱8",
+      "chapterId": "140",
+      "createAt": 1703844000
+    },
+    {
+      "titleJp": "救急車で運ばれて",
+      "titleZh": "被救护车送走",
+      "chapterId": "141",
+      "createAt": 1703926800
+    },
+    {
+      "titleJp": "日常、平和",
+      "titleZh": "日常、和平",
+      "chapterId": "142",
+      "createAt": 1704013200
+    },
+    {
+      "titleJp": "将来を考えて1",
+      "titleZh": "考虑将来1",
+      "chapterId": "143",
+      "createAt": 1704099600
+    },
+    {
+      "titleJp": "将来を考えて2",
+      "titleZh": "考虑将来2",
+      "chapterId": "144",
+      "createAt": 1704191040
+    },
+    {
+      "titleJp": "閑話・遠き地にて",
+      "titleZh": "闲话・在遥远的地方",
+      "chapterId": "145",
+      "createAt": 1704272400
+    },
+    {
+      "titleJp": "閑話・裏切りの代償",
+      "titleZh": "闲话・背叛的代价",
+      "chapterId": "146",
+      "createAt": 1704358800
+    },
+    {
+      "titleJp": "小問題、大問題1",
+      "titleZh": "小问题、大问题1",
+      "chapterId": "147",
+      "createAt": 1704445200
+    },
+    {
+      "titleJp": "小問題、大問題2",
+      "titleZh": "小问题、大问题2",
+      "chapterId": "148",
+      "createAt": 1704531600
+    },
+    {
+      "titleJp": "小問題、大問題3",
+      "titleZh": "小问题、大问题3",
+      "chapterId": "149",
+      "createAt": 1704618000
+    },
+    {
+      "titleJp": "第四章",
+      "titleZh": "第四章"
+    },
+    {
+      "titleJp": "犯罪覚醒者1",
+      "titleZh": "犯罪觉醒者1",
+      "chapterId": "150",
+      "createAt": 1704704400
+    },
+    {
+      "titleJp": "犯罪覚醒者2",
+      "titleZh": "犯罪觉醒者2",
+      "chapterId": "151",
+      "createAt": 1704790800
+    },
+    {
+      "titleJp": "犯罪覚醒者3",
+      "titleZh": "犯罪觉醒者3",
+      "chapterId": "152",
+      "createAt": 1704891540
+    },
+    {
+      "titleJp": "犯罪覚醒者4",
+      "titleZh": "犯罪觉醒者4",
+      "chapterId": "153",
+      "createAt": 1704963600
+    },
+    {
+      "titleJp": "犯罪覚醒者5",
+      "titleZh": "犯罪觉醒者5",
+      "chapterId": "154",
+      "createAt": 1705050000
+    },
+    {
+      "titleJp": "犯罪覚醒者6",
+      "titleZh": "犯罪觉醒者6",
+      "chapterId": "155",
+      "createAt": 1705136400
+    },
+    {
+      "titleJp": "犯罪覚醒者7",
+      "titleZh": "犯罪觉醒者7",
+      "chapterId": "156",
+      "createAt": 1705222800
+    },
+    {
+      "titleJp": "犯罪覚醒者8",
+      "titleZh": "犯罪觉醒者8",
+      "chapterId": "157",
+      "createAt": 1705309200
+    },
+    {
+      "titleJp": "犯罪覚醒者9",
+      "titleZh": "犯罪觉醒者9",
+      "chapterId": "158",
+      "createAt": 1705395600
+    },
+    {
+      "titleJp": "犯罪覚醒者10",
+      "titleZh": "犯罪觉醒者10",
+      "chapterId": "159",
+      "createAt": 1705482000
+    },
+    {
+      "titleJp": "怖い女性たち1",
+      "titleZh": "恐怖的女性们1",
+      "chapterId": "160",
+      "createAt": 1705568400
+    },
+    {
+      "titleJp": "怖い女性たち2",
+      "titleZh": "恐怖的女性们2",
+      "chapterId": "161",
+      "createAt": 1705654800
+    },
+    {
+      "titleJp": "怖い女性たち3",
+      "titleZh": "恐怖的女性们3",
+      "chapterId": "162",
+      "createAt": 1705741200
+    },
+    {
+      "titleJp": "秘密多き塔1",
+      "titleZh": "秘密之塔1",
+      "chapterId": "163",
+      "createAt": 1705827600
+    },
+    {
+      "titleJp": "秘密多き塔2",
+      "titleZh": "秘密之塔2",
+      "chapterId": "164",
+      "createAt": 1705914000
+    },
+    {
+      "titleJp": "秘密多き塔3",
+      "titleZh": "秘密之塔3",
+      "chapterId": "165",
+      "createAt": 1706000400
+    },
+    {
+      "titleJp": "秘密多き塔4",
+      "titleZh": "秘密之塔4",
+      "chapterId": "166",
+      "createAt": 1706086800
+    },
+    {
+      "titleJp": "秘密多き塔5",
+      "titleZh": "秘密之塔5",
+      "chapterId": "167",
+      "createAt": 1706173200
+    },
+    {
+      "titleJp": "ゴブリンパニック1",
+      "titleZh": "哥布林恐慌1",
+      "chapterId": "168",
+      "createAt": 1706259600
+    },
+    {
+      "titleJp": "ゴブリンパニック2",
+      "titleZh": "哥布林恐慌2",
+      "chapterId": "169",
+      "createAt": 1706346000
+    },
+    {
+      "titleJp": "ゴブリンパニック3",
+      "titleZh": "哥布林恐慌3",
+      "chapterId": "170",
+      "createAt": 1706432400
+    },
+    {
+      "titleJp": "大王ゴブリン戦1",
+      "titleZh": "大王哥布林战1",
+      "chapterId": "171",
+      "createAt": 1706518800
+    },
+    {
+      "titleJp": "大王ゴブリン戦2",
+      "titleZh": "大王哥布林战2",
+      "chapterId": "172",
+      "createAt": 1706605200
+    },
+    {
+      "titleJp": "大王ゴブリン戦3",
+      "titleZh": "大王哥布林战3",
+      "chapterId": "173",
+      "createAt": 1706691600
+    },
+    {
+      "titleJp": "性格ゴブリン戦",
+      "titleZh": "性格哥布林战",
+      "chapterId": "174",
+      "createAt": 1706778000
+    },
+    {
+      "titleJp": "性格ゴブリン戦2",
+      "titleZh": "性格哥布林战2",
+      "chapterId": "175",
+      "createAt": 1706864400
+    },
+    {
+      "titleJp": "報酬確認",
+      "titleZh": "确认报酬",
+      "chapterId": "176",
+      "createAt": 1706950800
+    },
+    {
+      "titleJp": "シークレットな情報",
+      "titleZh": "秘密情报",
+      "chapterId": "177",
+      "createAt": 1707037200
+    },
+    {
+      "titleJp": "某国の接触1",
+      "titleZh": "某国的接触1",
+      "chapterId": "178",
+      "createAt": 1707094800
+    },
+    {
+      "titleJp": "某国の接触2",
+      "titleZh": "某国的接触2",
+      "chapterId": "179",
+      "createAt": 1707123600
+    },
+    {
+      "titleJp": "使いすぎにもご用心1",
+      "titleZh": "使用过度也要小心1",
+      "chapterId": "180",
+      "createAt": 1707210000
+    },
+    {
+      "titleJp": "使いすぎにもご用心2",
+      "titleZh": "使用过度也要小心2",
+      "chapterId": "181",
+      "createAt": 1707296400
+    },
+    {
+      "titleJp": "使いすぎにもご用心3",
+      "titleZh": "使用过度也要小心3",
+      "chapterId": "182",
+      "createAt": 1707382800
+    },
+    {
+      "titleJp": "使いすぎにもご用心4",
+      "titleZh": "使用过度也要小心4",
+      "chapterId": "183",
+      "createAt": 1707469200
+    },
+    {
+      "titleJp": "優先すべきは仲間である1",
+      "titleZh": "应该优先的是同伴1",
+      "chapterId": "184",
+      "createAt": 1707555600
+    },
+    {
+      "titleJp": "優先すべきは仲間である2",
+      "titleZh": "应该优先的是同伴2",
+      "chapterId": "185",
+      "createAt": 1707642000
+    },
+    {
+      "titleJp": "モンスターイータージャパニーズ1",
+      "titleZh": "怪物吞噬者JAPAN1",
+      "chapterId": "186",
+      "createAt": 1707728400
+    },
+    {
+      "titleJp": "モンスターイータージャパニーズ2",
+      "titleZh": "怪物吞噬者JAPAN2",
+      "chapterId": "187",
+      "createAt": 1707814800
+    },
+    {
+      "titleJp": "モンスターイータージャパニーズ3",
+      "titleZh": "怪物吞噬者JAPAN3",
+      "chapterId": "188",
+      "createAt": 1707901200
+    },
+    {
+      "titleJp": "ゴーレム製作者の望み1",
+      "titleZh": "魔像制作者的愿望1",
+      "chapterId": "189",
+      "createAt": 1707987600
+    },
+    {
+      "titleJp": "ゴーレム製作者の望み2",
+      "titleZh": "魔像制作者的愿望2",
+      "chapterId": "190",
+      "createAt": 1708074000
+    },
+    {
+      "titleJp": "ゴーレム製作者の望み3",
+      "titleZh": "魔像制作者的愿望3",
+      "chapterId": "191",
+      "createAt": 1708155600
+    },
+    {
+      "titleJp": "ゴーレム製作者の望み4",
+      "titleZh": "魔像制作者的愿望4",
+      "chapterId": "192",
+      "createAt": 1708246800
+    },
+    {
+      "titleJp": "ゴーレム製作者の望み5",
+      "titleZh": "魔像制作者的愿望5",
+      "chapterId": "193",
+      "createAt": 1708333200
+    },
+    {
+      "titleJp": "ゴーレム製作者の望み6",
+      "titleZh": "魔像制作者的愿望6",
+      "chapterId": "194",
+      "createAt": 1708419600
+    },
+    {
+      "titleJp": "フィーネの初めて見る世界1",
+      "titleZh": "菲妮初次见到的世界1",
+      "chapterId": "195",
+      "createAt": 1708500360
+    },
+    {
+      "titleJp": "フィーネの初めて見る世界2",
+      "titleZh": "菲妮初次见到的世界2",
+      "chapterId": "196",
+      "createAt": 1708592400
+    },
+    {
+      "titleJp": "フィーネの初めて見る世界3",
+      "titleZh": "菲妮初次见到的世界3",
+      "chapterId": "197",
+      "createAt": 1708678800
+    },
+    {
+      "titleJp": "日常＋フィーネ1",
+      "titleZh": "日常＋菲妮1",
+      "chapterId": "198",
+      "createAt": 1708765200
+    },
+    {
+      "titleJp": "日常＋フィーネ2",
+      "titleZh": "日常＋菲妮2",
+      "chapterId": "199",
+      "createAt": 1708851600
+    },
+    {
+      "titleJp": "日常＋フィーネ3",
+      "titleZh": "日常＋菲妮3",
+      "chapterId": "200",
+      "createAt": 1708938000
+    },
+    {
+      "titleJp": "やはり塔は謎である1",
+      "titleZh": "塔果然充满谜团1",
+      "chapterId": "201",
+      "createAt": 1709024400
+    },
+    {
+      "titleJp": "やはり塔は謎である2",
+      "titleZh": "塔果然充满谜团2",
+      "chapterId": "202",
+      "createAt": 1709110800
+    },
+    {
+      "titleJp": "やはり塔は謎である3",
+      "titleZh": "塔果然充满谜团3",
+      "chapterId": "203",
+      "createAt": 1709197200
+    },
+    {
+      "titleJp": "やはり塔は謎である4",
+      "titleZh": "塔果然充满谜团4",
+      "chapterId": "204",
+      "createAt": 1709283600
+    },
+    {
+      "titleJp": "やはり塔は謎である5",
+      "titleZh": "塔果然充满谜团5",
+      "chapterId": "205",
+      "createAt": 1709370000
+    },
+    {
+      "titleJp": "やはり塔は謎である6",
+      "titleZh": "塔果然充满谜团6",
+      "chapterId": "206",
+      "createAt": 1709456400
+    },
+    {
+      "titleJp": "第五章",
+      "titleZh": "第五章"
+    },
+    {
+      "titleJp": "覚醒者の義務1",
+      "titleZh": "觉醒者的义务1",
+      "chapterId": "207",
+      "createAt": 1709542800
+    },
+    {
+      "titleJp": "覚醒者の義務2",
+      "titleZh": "觉醒者的义务2",
+      "chapterId": "208",
+      "createAt": 1709629200
+    },
+    {
+      "titleJp": "覚醒者の義務3",
+      "titleZh": "觉醒者的义务3",
+      "chapterId": "209",
+      "createAt": 1709715600
+    },
+    {
+      "titleJp": "ボランティア活動1",
+      "titleZh": "义工活动1",
+      "chapterId": "210",
+      "createAt": 1709802000
+    },
+    {
+      "titleJp": "ボランティア活動2",
+      "titleZh": "义工活动2",
+      "chapterId": "211",
+      "createAt": 1709888400
+    },
+    {
+      "titleJp": "ボランティア活動3",
+      "titleZh": "义工活动3",
+      "chapterId": "212",
+      "createAt": 1709974800
+    },
+    {
+      "titleJp": "ボランティア活動4",
+      "titleZh": "义工活动4",
+      "chapterId": "213",
+      "createAt": 1710061200
+    },
+    {
+      "titleJp": "闇に包まれた孤児院1",
+      "titleZh": "被黑暗笼罩的孤儿院1",
+      "chapterId": "214",
+      "createAt": 1710147600
+    },
+    {
+      "titleJp": "闇に包まれた孤児院2",
+      "titleZh": "被黑暗笼罩的孤儿院2",
+      "chapterId": "215",
+      "createAt": 1710240240
+    },
+    {
+      "titleJp": "闇に包まれた孤児院3",
+      "titleZh": "被黑暗笼罩的孤儿院3",
+      "chapterId": "216",
+      "createAt": 1710320400
+    },
+    {
+      "titleJp": "薫姫を探せ！1",
+      "titleZh": "寻找薰姬！1",
+      "chapterId": "217",
+      "createAt": 1710464400
+    },
+    {
+      "titleJp": "薫姫を探せ！2",
+      "titleZh": "寻找薰姬！2",
+      "chapterId": "218",
+      "createAt": 1710493200
+    },
+    {
+      "titleJp": "薫姫を探せ！3",
+      "titleZh": "寻找薰姬！3",
+      "chapterId": "219",
+      "createAt": 1710579600
+    },
+    {
+      "titleJp": "薫姫を探せ！4",
+      "titleZh": "寻找薰姬！4",
+      "chapterId": "220",
+      "createAt": 1710666000
+    },
+    {
+      "titleJp": "メスの思惑",
+      "titleZh": "雌性的盘算",
+      "chapterId": "221",
+      "createAt": 1710752400
+    },
+    {
+      "titleJp": "薫、怒りの決戦！1",
+      "titleZh": "薰，愤怒的决战！1",
+      "chapterId": "222",
+      "createAt": 1710838800
+    },
+    {
+      "titleJp": "薫、怒りの決戦！2",
+      "titleZh": "薰，愤怒的决战！2",
+      "chapterId": "223",
+      "createAt": 1710925200
+    },
+    {
+      "titleJp": "薫、怒りの決戦！3",
+      "titleZh": "薰，愤怒的决战！3",
+      "chapterId": "224",
+      "createAt": 1711011600
+    },
+    {
+      "titleJp": "薫、怒りの決戦！4",
+      "titleZh": "薰，愤怒的决战！4",
+      "chapterId": "225",
+      "createAt": 1711098000
+    },
+    {
+      "titleJp": "僕はヒーラーになったんだ",
+      "titleZh": "我成为治疗师了",
+      "chapterId": "226",
+      "createAt": 1711184400
+    },
+    {
+      "titleJp": "ヒーラースカウト1",
+      "titleZh": "治疗师挖角1",
+      "chapterId": "227",
+      "createAt": 1711270800
+    },
+    {
+      "titleJp": "ヒーラースカウト2",
+      "titleZh": "治疗师挖角2",
+      "chapterId": "228",
+      "createAt": 1711357200
+    },
+    {
+      "titleJp": "ご両親に呼び出され1",
+      "titleZh": "被父母叫去1",
+      "chapterId": "229",
+      "createAt": 1711443600
+    },
+    {
+      "titleJp": "ご両親に呼び出され2",
+      "titleZh": "被父母叫去2",
+      "chapterId": "230",
+      "createAt": 1711530000
+    },
+    {
+      "titleJp": "ご両親に呼び出され3",
+      "titleZh": "被父母叫去3",
+      "chapterId": "231",
+      "createAt": 1711616400
+    },
+    {
+      "titleJp": "ご両親に呼び出され4",
+      "titleZh": "被父母叫去4",
+      "chapterId": "232",
+      "createAt": 1711702800
+    },
+    {
+      "titleJp": "歓迎、薫は男の子です",
+      "titleZh": "欢迎，薰是男孩子",
+      "chapterId": "233",
+      "createAt": 1711789200
+    },
+    {
+      "titleJp": "最も不幸で、最も幸運な者1",
+      "titleZh": "最不幸，也是最幸运的人1",
+      "chapterId": "234",
+      "createAt": 1711875600
+    },
+    {
+      "titleJp": "最も不幸で、最も幸運な者2",
+      "titleZh": "最不幸，也是最幸运的人2",
+      "chapterId": "235",
+      "createAt": 1711962000
+    },
+    {
+      "titleJp": "最も不幸で、最も幸運な者3",
+      "titleZh": "最不幸，也是最幸运的人3",
+      "chapterId": "236",
+      "createAt": 1712048400
+    },
+    {
+      "titleJp": "最も不幸で、最も幸運な者4",
+      "titleZh": "最不幸，也是最幸运的人4",
+      "chapterId": "237",
+      "createAt": 1712134800
+    },
+    {
+      "titleJp": "最も不幸で、最も幸運な者5",
+      "titleZh": "最不幸，也是最幸运的人5",
+      "chapterId": "238",
+      "createAt": 1712221200
+    },
+    {
+      "titleJp": "最も不幸で、最も幸運な者6",
+      "titleZh": "最不幸，也是最幸运的人6",
+      "chapterId": "239",
+      "createAt": 1712307600
+    },
+    {
+      "titleJp": "最も不幸で、最も幸運な者7",
+      "titleZh": "最不幸，也是最幸运的人7",
+      "chapterId": "240",
+      "createAt": 1712394000
+    },
+    {
+      "titleJp": "神に届く才能",
+      "titleZh": "直达天听的才能",
+      "chapterId": "241",
+      "createAt": 1712480400
+    },
+    {
+      "titleJp": "あくまでもウシです1",
+      "titleZh": "终究是头牛1",
+      "chapterId": "242",
+      "createAt": 1712566800
+    },
+    {
+      "titleJp": "あくまでもウシです2",
+      "titleZh": "终究是头牛2",
+      "chapterId": "243",
+      "createAt": 1712653200
+    },
+    {
+      "titleJp": "あくまでもウシです3",
+      "titleZh": "终究是头牛3",
+      "chapterId": "244",
+      "createAt": 1712739600
+    },
+    {
+      "titleJp": "太羽島モンスターウェーブ1",
+      "titleZh": "太羽岛怪物浪潮1",
+      "chapterId": "245",
+      "createAt": 1712826000
+    },
+    {
+      "titleJp": "太羽島モンスターウェーブ2",
+      "titleZh": "太羽岛怪物浪潮2",
+      "chapterId": "246",
+      "createAt": 1712912400
+    },
+    {
+      "titleJp": "太羽島モンスターウェーブ3",
+      "titleZh": "太羽岛怪物浪潮3",
+      "chapterId": "247",
+      "createAt": 1712998800
+    },
+    {
+      "titleJp": "大人たちの会話",
+      "titleZh": "大人们的对话",
+      "chapterId": "248",
+      "createAt": 1713085200
+    },
+    {
+      "titleJp": "世界を救いたい神々1",
+      "titleZh": "想拯救世界的诸神1",
+      "chapterId": "249",
+      "createAt": 1713171600
+    },
+    {
+      "titleJp": "世界を救いたい神々2",
+      "titleZh": "想拯救世界的诸神2",
+      "chapterId": "250",
+      "createAt": 1713258000
+    },
+    {
+      "titleJp": "みんなまだまだ成長中1",
+      "titleZh": "大家还在成长中1",
+      "chapterId": "251",
+      "createAt": 1713344400
+    },
+    {
+      "titleJp": "みんなまだまだ成長中2",
+      "titleZh": "大家还在成长中2",
+      "chapterId": "252",
+      "createAt": 1713430800
+    },
+    {
+      "titleJp": "ブラックマーケットデート1",
+      "titleZh": "黑市约会1",
+      "chapterId": "253",
+      "createAt": 1713517200
+    },
+    {
+      "titleJp": "ブラックマーケットデート2",
+      "titleZh": "黑市约会2",
+      "chapterId": "254",
+      "createAt": 1713603600
+    },
+    {
+      "titleJp": "ブラックマーケットデート3",
+      "titleZh": "黑市约会3",
+      "chapterId": "255",
+      "createAt": 1713690000
+    },
+    {
+      "titleJp": "あっちの薫からの連絡",
+      "titleZh": "那边的薰的联络",
+      "chapterId": "256",
+      "createAt": 1713776400
+    },
+    {
+      "titleJp": "神に翻弄された悪魔と人々1",
+      "titleZh": "被神玩弄的恶魔与人们1",
+      "chapterId": "257",
+      "createAt": 1713862800
+    },
+    {
+      "titleJp": "神に翻弄された悪魔と人々2",
+      "titleZh": "被神玩弄的恶魔与人们2",
+      "chapterId": "258",
+      "createAt": 1713949200
+    },
+    {
+      "titleJp": "神に翻弄された悪魔と人々3",
+      "titleZh": "被神玩弄的恶魔与人们3",
+      "chapterId": "259",
+      "createAt": 1714035600
+    },
+    {
+      "titleJp": "神に翻弄された悪魔と人々4",
+      "titleZh": "被神玩弄的恶魔与人们4",
+      "chapterId": "260",
+      "createAt": 1714122000
+    },
+    {
+      "titleJp": "倒して出るか、死んで終わるか1",
+      "titleZh": "打倒之后，是生是死1",
+      "chapterId": "261",
+      "createAt": 1714208400
+    },
+    {
+      "titleJp": "倒して出るか、死んで終わるか2",
+      "titleZh": "打倒之后，是生是死2",
+      "chapterId": "262",
+      "createAt": 1714294800
+    },
+    {
+      "titleJp": "倒して出るか、死んで終わるか3",
+      "titleZh": "打倒之后，是生是死3",
+      "chapterId": "263",
+      "createAt": 1714381200
+    },
+    {
+      "titleJp": "倒して出るか、死んで終わるか4",
+      "titleZh": "打倒之后，是生是死4",
+      "chapterId": "264",
+      "createAt": 1714467600
+    },
+    {
+      "titleJp": "倒して出るか、死んで終わるか5",
+      "titleZh": "打倒之后，是生是死5",
+      "chapterId": "265",
+      "createAt": 1714554000
+    },
+    {
+      "titleJp": "囚われた王女1",
+      "titleZh": "被囚禁的公主1",
+      "chapterId": "266",
+      "createAt": 1714640400
+    },
+    {
+      "titleJp": "囚われた王女2",
+      "titleZh": "被囚禁的公主2",
+      "chapterId": "267",
+      "createAt": 1714726800
+    },
+    {
+      "titleJp": "囚われた王女3",
+      "titleZh": "被囚禁的公主3",
+      "chapterId": "268",
+      "createAt": 1714813200
+    },
+    {
+      "titleJp": "囚われた王女4",
+      "titleZh": "被囚禁的公主4",
+      "chapterId": "269",
+      "createAt": 1714899600
+    },
+    {
+      "titleJp": "囚われた王女5",
+      "titleZh": "被囚禁的公主5",
+      "chapterId": "270",
+      "createAt": 1714986000
+    },
+    {
+      "titleJp": "愛する人よ、共に逝こう1",
+      "titleZh": "心爱的人啊，一起逝去吧1",
+      "chapterId": "271",
+      "createAt": 1715072400
+    },
+    {
+      "titleJp": "愛する人よ、共に逝こう2",
+      "titleZh": "心爱的人啊，一起逝去吧2",
+      "chapterId": "272",
+      "createAt": 1715158800
+    },
+    {
+      "titleJp": "おねだり1",
+      "titleZh": "请求1",
+      "chapterId": "273",
+      "createAt": 1715245200
+    },
+    {
+      "titleJp": "おねだり2",
+      "titleZh": "请求2",
+      "chapterId": "274",
+      "createAt": 1715331600
+    },
+    {
+      "titleJp": "第六章",
+      "titleZh": "第六章"
+    },
+    {
+      "titleJp": "フィーネも一緒に行きたいのだ",
+      "titleZh": "菲妮也想一起去",
+      "chapterId": "275",
+      "createAt": 1715418000
+    },
+    {
+      "titleJp": "カレンの悩みのタネ",
+      "titleZh": "卡莲烦恼的根源",
+      "chapterId": "276",
+      "createAt": 1715504400
+    },
+    {
+      "titleJp": "カエルは鶏肉の味らしい1",
+      "titleZh": "青蛙似乎有鸡肉的味道1",
+      "chapterId": "277",
+      "createAt": 1715590800
+    },
+    {
+      "titleJp": "カエルは鶏肉の味らしい2",
+      "titleZh": "青蛙似乎有鸡肉的味道2",
+      "chapterId": "278",
+      "createAt": 1715677200
+    },
+    {
+      "titleJp": "カエルは鶏肉の味らしい3",
+      "titleZh": "青蛙似乎有鸡肉的味道3",
+      "chapterId": "279",
+      "createAt": 1715763600
+    },
+    {
+      "titleJp": "カエルは鶏肉の味らしい4",
+      "titleZh": "青蛙似乎有鸡肉的味道4",
+      "chapterId": "280",
+      "createAt": 1715850000
+    },
+    {
+      "titleJp": "カエルは鶏肉の味らしい5",
+      "titleZh": "青蛙似乎有鸡肉的味道5",
+      "chapterId": "281",
+      "createAt": 1715936400
+    },
+    {
+      "titleJp": "失踪の噂",
+      "titleZh": "失踪的传闻",
+      "chapterId": "282",
+      "createAt": 1716022800
+    },
+    {
+      "titleJp": "薬草を探せ！1",
+      "titleZh": "寻找药草！1",
+      "chapterId": "283",
+      "createAt": 1716109200
+    },
+    {
+      "titleJp": "薬草を探せ！2",
+      "titleZh": "寻找药草！2",
+      "chapterId": "284",
+      "createAt": 1716195600
+    },
+    {
+      "titleJp": "薬草を探せ！3",
+      "titleZh": "寻找药草！3",
+      "chapterId": "285",
+      "createAt": 1716282000
+    },
+    {
+      "titleJp": "薬草を探せ！4",
+      "titleZh": "寻找药草！4",
+      "chapterId": "286",
+      "createAt": 1716368400
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏1",
+      "titleZh": "血之斗争，虚假女神的平稳1",
+      "chapterId": "287",
+      "createAt": 1716454800
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏2",
+      "titleZh": "血之斗争，虚假女神的平稳2",
+      "chapterId": "288",
+      "createAt": 1716541200
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏3",
+      "titleZh": "血之斗争，虚假女神的平稳3",
+      "chapterId": "289",
+      "createAt": 1716627600
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏4",
+      "titleZh": "血之斗争，虚假女神的平稳4",
+      "chapterId": "290",
+      "createAt": 1716685200
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏5",
+      "titleZh": "血之斗争，虚假女神的平稳5",
+      "chapterId": "291",
+      "createAt": 1716800400
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏6",
+      "titleZh": "血之斗争，虚假女神的平稳6",
+      "chapterId": "292",
+      "createAt": 1716886800
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏7",
+      "titleZh": "血之斗争，虚假女神的平稳7",
+      "chapterId": "293",
+      "createAt": 1716973200
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏8",
+      "titleZh": "血之斗争，虚假女神的平稳8",
+      "chapterId": "294",
+      "createAt": 1717059600
+    },
+    {
+      "titleJp": "血の争い、偽の女神の平穏9",
+      "titleZh": "血之斗争，虚假女神的平稳9",
+      "chapterId": "295",
+      "createAt": 1717146000
+    },
+    {
+      "titleJp": "女神様の贈り物1",
+      "titleZh": "女神大人的赠礼1",
+      "chapterId": "296",
+      "createAt": 1717232400
+    },
+    {
+      "titleJp": "女神様の贈り物2",
+      "titleZh": "女神大人的赠礼2",
+      "chapterId": "297",
+      "createAt": 1717318800
+    },
+    {
+      "titleJp": "村雨圭、逮捕1",
+      "titleZh": "村雨圭，逮捕1",
+      "chapterId": "298",
+      "createAt": 1717405200
+    },
+    {
+      "titleJp": "村雨圭、逮捕2",
+      "titleZh": "村雨圭，逮捕2",
+      "chapterId": "299",
+      "createAt": 1717491600
+    },
+    {
+      "titleJp": "モンスターを呼び出す怪しい連中1",
+      "titleZh": "召唤怪物的可疑分子1",
+      "chapterId": "300",
+      "createAt": 1717578000
+    },
+    {
+      "titleJp": "モンスターを呼び出す怪しい連中2",
+      "titleZh": "召唤怪物的可疑分子2",
+      "chapterId": "301",
+      "createAt": 1717664400
+    },
+    {
+      "titleJp": "モンスターを呼び出す怪しい連中3",
+      "titleZh": "召唤怪物的可疑分子3",
+      "chapterId": "302",
+      "createAt": 1717750800
+    },
+    {
+      "titleJp": "終末教、怪しい連中",
+      "titleZh": "末日教，可疑分子",
+      "chapterId": "303",
+      "createAt": 1717837200
+    },
+    {
+      "titleJp": "終末にトンカツはあるか",
+      "titleZh": "末日里有猪排吗？",
+      "chapterId": "304",
+      "createAt": 1717923600
+    },
+    {
+      "titleJp": "人工ブレイキングゲート1",
+      "titleZh": "人工破坏大门1",
+      "chapterId": "305",
+      "createAt": 1718010000
+    },
+    {
+      "titleJp": "人工ブレイキングゲート2",
+      "titleZh": "人工破坏大门2",
+      "chapterId": "306",
+      "createAt": 1718096400
+    },
+    {
+      "titleJp": "人工ブレイキングゲート3",
+      "titleZh": "人工破坏大门3",
+      "chapterId": "307",
+      "createAt": 1718182800
+    },
+    {
+      "titleJp": "人工ブレイキングゲート4",
+      "titleZh": "人工破坏大门4",
+      "chapterId": "308",
+      "createAt": 1718269200
+    },
+    {
+      "titleJp": "人工ブレイキングゲート5",
+      "titleZh": "人工破坏大门5",
+      "chapterId": "309",
+      "createAt": 1718355600
+    },
+    {
+      "titleJp": "人工ブレイキングゲート6",
+      "titleZh": "人工破坏大门6",
+      "chapterId": "310",
+      "createAt": 1718442000
+    },
+    {
+      "titleJp": "人工ブレイキングゲート7",
+      "titleZh": "人工破坏大门7",
+      "chapterId": "311",
+      "createAt": 1718528400
+    },
+    {
+      "titleJp": "裏切り者、裏切られる1",
+      "titleZh": "叛徒，被背叛1",
+      "chapterId": "312",
+      "createAt": 1718614800
+    },
+    {
+      "titleJp": "裏切り者、裏切られる2",
+      "titleZh": "叛徒，被背叛2",
+      "chapterId": "313",
+      "createAt": 1718701200
+    },
+    {
+      "titleJp": "裏切り者、裏切られる3",
+      "titleZh": "叛徒，被背叛3",
+      "chapterId": "314",
+      "createAt": 1718787600
+    },
+    {
+      "titleJp": "裏切り者、裏切られる4",
+      "titleZh": "叛徒，被背叛4",
+      "chapterId": "315",
+      "createAt": 1718874000
+    },
+    {
+      "titleJp": "裏切り者、裏切られる5",
+      "titleZh": "叛徒，被背叛5",
+      "chapterId": "316",
+      "createAt": 1718960400
+    },
+    {
+      "titleJp": "海の女王1",
+      "titleZh": "海之女王1",
+      "chapterId": "317",
+      "createAt": 1719046800
+    },
+    {
+      "titleJp": "海の女王2",
+      "titleZh": "海之女王2",
+      "chapterId": "318",
+      "createAt": 1719133200
+    },
+    {
+      "titleJp": "海の女王3",
+      "titleZh": "海之女王3",
+      "chapterId": "319",
+      "createAt": 1719219600
+    },
+    {
+      "titleJp": "海の案内人1",
+      "titleZh": "海之向导1",
+      "chapterId": "320",
+      "createAt": 1719306000
+    },
+    {
+      "titleJp": "海の案内人2",
+      "titleZh": "海之向导2",
+      "chapterId": "321",
+      "createAt": 1719392400
+    },
+    {
+      "titleJp": "海の案内人3",
+      "titleZh": "海之向导3",
+      "chapterId": "322",
+      "createAt": 1719478800
+    },
+    {
+      "titleJp": "第七章",
+      "titleZh": "第七章"
+    },
+    {
+      "titleJp": "塔を登ろう1",
+      "titleZh": "登塔1",
+      "chapterId": "323",
+      "createAt": 1719565200
+    },
+    {
+      "titleJp": "塔を登ろう2",
+      "titleZh": "登塔2",
+      "chapterId": "324",
+      "createAt": 1719652020
+    },
+    {
+      "titleJp": "塔を登ろう3",
+      "titleZh": "登塔3",
+      "chapterId": "325",
+      "createAt": 1719738000
+    },
+    {
+      "titleJp": "塔を登ろう4.",
+      "titleZh": "登塔4",
+      "chapterId": "326",
+      "createAt": 1719824400
+    },
+    {
+      "titleJp": "うるさい魚1",
+      "titleZh": "吵死人的鱼1",
+      "chapterId": "327",
+      "createAt": 1719910800
+    },
+    {
+      "titleJp": "うるさい魚2",
+      "titleZh": "吵死人的鱼2",
+      "chapterId": "328",
+      "createAt": 1719997200
+    },
+    {
+      "titleJp": "うるさい魚3",
+      "titleZh": "吵死人的鱼3",
+      "chapterId": "329",
+      "createAt": 1720083600
+    },
+    {
+      "titleJp": "うるさい魚4",
+      "titleZh": "吵死人的鱼4",
+      "chapterId": "330",
+      "createAt": 1720170000
+    },
+    {
+      "titleJp": "うるさい魚5",
+      "titleZh": "吵死人的鱼5",
+      "chapterId": "331",
+      "createAt": 1720256400
+    },
+    {
+      "titleJp": "マンドラゴラ……ダイコン1",
+      "titleZh": "曼德拉草……萝卜1",
+      "chapterId": "332",
+      "createAt": 1720342800
+    },
+    {
+      "titleJp": "マンドラゴラ……ダイコン2",
+      "titleZh": "曼德拉草……萝卜2",
+      "chapterId": "333",
+      "createAt": 1720429200
+    },
+    {
+      "titleJp": "マンドラゴラ……ダイコン3",
+      "titleZh": "曼德拉草……萝卜3",
+      "chapterId": "334",
+      "createAt": 1720515600
+    },
+    {
+      "titleJp": "やっぱりダイコンだった",
+      "titleZh": "果然是萝卜",
+      "chapterId": "335",
+      "createAt": 1720602000
+    },
+    {
+      "titleJp": "出会い、あり1",
+      "titleZh": "邂逅，有1",
+      "chapterId": "336",
+      "createAt": 1720688400
+    },
+    {
+      "titleJp": "出会い、あり2",
+      "titleZh": "邂逅，有2",
+      "chapterId": "337",
+      "createAt": 1720774800
+    },
+    {
+      "titleJp": "出会い、あり3",
+      "titleZh": "邂逅，有3",
+      "chapterId": "338",
+      "createAt": 1720863240
+    },
+    {
+      "titleJp": "出会い、あり4",
+      "titleZh": "邂逅，有4",
+      "chapterId": "339",
+      "createAt": 1720947600
+    },
+    {
+      "titleJp": "出会い、あり5",
+      "titleZh": "邂逅，有5",
+      "chapterId": "340",
+      "createAt": 1721120400
+    },
+    {
+      "titleJp": "出会い、あり6",
+      "titleZh": "邂逅，有6",
+      "chapterId": "341",
+      "createAt": 1721206800
+    },
+    {
+      "titleJp": "出会い、あり7",
+      "titleZh": "邂逅，有7",
+      "chapterId": "342",
+      "createAt": 1721293200
+    },
+    {
+      "titleJp": "出会い、あり8",
+      "titleZh": "邂逅，有8",
+      "chapterId": "343",
+      "createAt": 1721379600
+    },
+    {
+      "titleJp": "逃げてきた悪魔の使徒1",
+      "titleZh": "逃过来的恶魔使徒1",
+      "chapterId": "344",
+      "createAt": 1721462460
+    },
+    {
+      "titleJp": "逃げてきた悪魔の使徒2",
+      "titleZh": "逃过来的恶魔使徒2",
+      "chapterId": "345",
+      "createAt": 1721466000
+    },
+    {
+      "titleJp": "逃げてきた悪魔の使徒3",
+      "titleZh": "逃过来的恶魔使徒3",
+      "chapterId": "346",
+      "createAt": 1721638800
+    },
+    {
+      "titleJp": "逃げてきた悪魔の使徒4",
+      "titleZh": "逃过来的恶魔使徒4",
+      "chapterId": "347",
+      "createAt": 1721725200
+    },
+    {
+      "titleJp": "逃げてきた悪魔の使徒5",
+      "titleZh": "逃过来的恶魔使徒5",
+      "chapterId": "348",
+      "createAt": 1721811600
+    },
+    {
+      "titleJp": "裸の付き合い",
+      "titleZh": "坦诚相见",
+      "chapterId": "349",
+      "createAt": 1721898000
+    },
+    {
+      "titleJp": "煮物とニュース",
+      "titleZh": "炖菜与新闻",
+      "chapterId": "350",
+      "createAt": 1721984400
+    },
+    {
+      "titleJp": "異世界の賢き魔王1",
+      "titleZh": "异世界之贤明魔王1",
+      "chapterId": "351",
+      "createAt": 1722070800
+    },
+    {
+      "titleJp": "異世界の賢き魔王2",
+      "titleZh": "异世界之贤明魔王2",
+      "chapterId": "352",
+      "createAt": 1722157200
+    },
+    {
+      "titleJp": "異世界の賢き魔王3",
+      "titleZh": "异世界之贤明魔王3",
+      "chapterId": "353",
+      "createAt": 1722243600
+    },
+    {
+      "titleJp": "異世界の賢き魔王4",
+      "titleZh": "异世界之贤明魔王4",
+      "chapterId": "354",
+      "createAt": 1722330000
+    },
+    {
+      "titleJp": "異世界の賢き魔王5",
+      "titleZh": "异世界之贤明魔王5",
+      "chapterId": "355",
+      "createAt": 1722416400
+    },
+    {
+      "titleJp": "色々な思い1",
+      "titleZh": "各种思绪1",
+      "chapterId": "356",
+      "createAt": 1722502800
+    },
+    {
+      "titleJp": "色々な思い2",
+      "titleZh": "各种思绪2",
+      "chapterId": "357",
+      "createAt": 1722589200
+    },
+    {
+      "titleJp": "第一次太羽島奪還攻略作戦1",
+      "titleZh": "第一次太羽岛夺还攻略作战1",
+      "chapterId": "358",
+      "createAt": 1722675600
+    },
+    {
+      "titleJp": "第一次太羽島奪還攻略作戦2",
+      "titleZh": "第一次太羽岛夺还攻略作战2",
+      "chapterId": "359",
+      "createAt": 1722762000
+    },
+    {
+      "titleJp": "覚醒者チュートリアル1",
+      "titleZh": "觉醒者教学1",
+      "chapterId": "360",
+      "createAt": 1722848400
+    },
+    {
+      "titleJp": "覚醒者チュートリアル2",
+      "titleZh": "觉醒者教学2",
+      "chapterId": "361",
+      "createAt": 1722934800
+    },
+    {
+      "titleJp": "覚醒者チュートリアル3",
+      "titleZh": "觉醒者教学3",
+      "chapterId": "362",
+      "createAt": 1723021200
+    },
+    {
+      "titleJp": "覚醒者チュートリアル4",
+      "titleZh": "觉醒者教学4",
+      "chapterId": "363",
+      "createAt": 1723107600
+    },
+    {
+      "titleJp": "覚醒者チュートリアル5",
+      "titleZh": "觉醒者教学5",
+      "chapterId": "364",
+      "createAt": 1723194000
+    },
+    {
+      "titleJp": "覚醒者チュートリアル6",
+      "titleZh": "觉醒者教学6",
+      "chapterId": "365",
+      "createAt": 1723280400
+    },
+    {
+      "titleJp": "覚醒者チュートリアル7",
+      "titleZh": "觉醒者教学7",
+      "chapterId": "366",
+      "createAt": 1723366800
+    },
+    {
+      "titleJp": "妹分を助けろ1",
+      "titleZh": "救救小妹1",
+      "chapterId": "367",
+      "createAt": 1723453200
+    },
+    {
+      "titleJp": "妹分を助けろ2",
+      "titleZh": "救救小妹2",
+      "chapterId": "368",
+      "createAt": 1723539600
+    },
+    {
+      "titleJp": "妹分を助けろ3",
+      "titleZh": "救救小妹3",
+      "chapterId": "369",
+      "createAt": 1723626000
+    },
+    {
+      "titleJp": "妹分を助けろ4",
+      "titleZh": "救救小妹4",
+      "chapterId": "370",
+      "createAt": 1723712400
+    },
+    {
+      "titleJp": "妹分を助けろ5",
+      "titleZh": "救救小妹5",
+      "chapterId": "371",
+      "createAt": 1723798800
+    },
+    {
+      "titleJp": "妹分を助けろ6",
+      "titleZh": "救救小妹6",
+      "chapterId": "372",
+      "createAt": 1723885200
+    },
+    {
+      "titleJp": "妹分を助けろ7",
+      "titleZh": "救救小妹7",
+      "chapterId": "373",
+      "createAt": 1723971600
+    },
+    {
+      "titleJp": "圧倒的な悪魔的力",
+      "titleZh": "压倒性的恶魔之力",
+      "chapterId": "374",
+      "createAt": 1724058000
+    },
+    {
+      "titleJp": "居候、増える",
+      "titleZh": "食客，增加",
+      "chapterId": "375",
+      "createAt": 1724144400
+    },
+    {
+      "titleJp": "悪魔会談",
+      "titleZh": "恶魔会谈",
+      "chapterId": "376",
+      "createAt": 1724230800
+    },
+    {
+      "titleJp": "第八章",
+      "titleZh": "第八章"
+    },
+    {
+      "titleJp": "第三次太羽島奪還攻略作戦1",
+      "titleZh": "第三次太羽岛夺回攻略作战1",
+      "chapterId": "377",
+      "createAt": 1724317200
+    },
+    {
+      "titleJp": "第三次対羽島奪還攻略作戦2",
+      "titleZh": "第三次对羽岛夺回攻略作战2",
+      "chapterId": "378",
+      "createAt": 1724403600
+    },
+    {
+      "titleJp": "アツアツ、モフモフ1",
+      "titleZh": "热腾腾、毛茸茸1",
+      "chapterId": "379",
+      "createAt": 1724490000
+    },
+    {
+      "titleJp": "アツアツ、モフモフ2",
+      "titleZh": "热腾腾、毛茸茸2",
+      "chapterId": "380",
+      "createAt": 1724576400
+    },
+    {
+      "titleJp": "アツアツ、モフモフ3",
+      "titleZh": "热腾腾、毛茸茸3",
+      "chapterId": "381",
+      "createAt": 1724662800
+    },
+    {
+      "titleJp": "アツアツ、モフモフ4",
+      "titleZh": "热腾腾、毛茸茸4",
+      "chapterId": "382",
+      "createAt": 1724749200
+    },
+    {
+      "titleJp": "アツアツ、モフモフ5",
+      "titleZh": "热腾腾、毛茸茸5",
+      "chapterId": "383",
+      "createAt": 1724835600
+    },
+    {
+      "titleJp": "アツアツ、モフモフ6",
+      "titleZh": "热腾腾、毛茸茸6",
+      "chapterId": "384",
+      "createAt": 1724922000
+    },
+    {
+      "titleJp": "アツアツ、モフモフ7",
+      "titleZh": "热腾腾，毛茸茸7",
+      "chapterId": "385",
+      "createAt": 1725008400
+    },
+    {
+      "titleJp": "アツアツ、モフモフ8",
+      "titleZh": "热热，毛茸茸8",
+      "chapterId": "386",
+      "createAt": 1725094800
+    },
+    {
+      "titleJp": "封印を解いて1",
+      "titleZh": "解开封印1",
+      "chapterId": "387",
+      "createAt": 1725181320
+    },
+    {
+      "titleJp": "封印を解いて2",
+      "titleZh": "解开封印2",
+      "chapterId": "388",
+      "createAt": 1725267600
+    },
+    {
+      "titleJp": "封印を解いて3",
+      "titleZh": "解开封印3",
+      "chapterId": "389",
+      "createAt": 1725354000
+    },
+    {
+      "titleJp": "封印を解いて4",
+      "titleZh": "解开封印4",
+      "chapterId": "390",
+      "createAt": 1725440400
+    },
+    {
+      "titleJp": "封印を解いて5",
+      "titleZh": "解开封印5",
+      "chapterId": "391",
+      "createAt": 1725526800
+    },
+    {
+      "titleJp": "封印を解いて5",
+      "titleZh": "解开封印5",
+      "chapterId": "392",
+      "createAt": 1725613200
+    },
+    {
+      "titleJp": "封印を解いて6",
+      "titleZh": "解开封印6",
+      "chapterId": "393",
+      "createAt": 1725699600
+    },
+    {
+      "titleJp": "封印を解いて7",
+      "titleZh": "封印解码 7",
+      "chapterId": "394",
+      "createAt": 1725786000
+    },
+    {
+      "titleJp": "封印を解いて8",
+      "titleZh": "封印解码 8",
+      "chapterId": "395",
+      "createAt": 1725872400
+    },
+    {
+      "titleJp": "封印を解いて9",
+      "titleZh": "封印解码 9",
+      "chapterId": "396",
+      "createAt": 1725945840
+    },
+    {
+      "titleJp": "封印を解いて10",
+      "titleZh": "封印解码10",
+      "chapterId": "397",
+      "createAt": 1726045200
+    },
+    {
+      "titleJp": "封印を解いて11",
+      "titleZh": "封印解码11",
+      "chapterId": "398",
+      "createAt": 1726131600
+    },
+    {
+      "titleJp": "封印を解いて12",
+      "titleZh": "封印解体12",
+      "chapterId": "399",
+      "createAt": 1726218000
+    },
+    {
+      "titleJp": "封印を解いて13",
+      "titleZh": "封印解体13",
+      "chapterId": "400",
+      "createAt": 1726304400
+    },
+    {
+      "titleJp": "堕ちた天女1",
+      "titleZh": "堕落的天女 1",
+      "chapterId": "401",
+      "createAt": 1726390800
+    },
+    {
+      "titleJp": "堕ちた天女2",
+      "titleZh": "堕落的天女 2",
+      "chapterId": "402",
+      "createAt": 1726477200
+    },
+    {
+      "titleJp": "堕ちた天女3",
+      "titleZh": "堕落的天女 3",
+      "chapterId": "403",
+      "createAt": 1726563600
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて1",
+      "titleZh": "阻止污秽魔力的天女 1",
+      "chapterId": "404",
+      "createAt": 1726650000
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて2",
+      "titleZh": "阻止污秽魔力的天女 2",
+      "chapterId": "405",
+      "createAt": 1726736400
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて3",
+      "titleZh": "阻止污秽魔力的天女 3",
+      "chapterId": "406",
+      "createAt": 1726822800
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて4",
+      "titleZh": "阻止肮脏魔力的仙女4",
+      "chapterId": "407",
+      "createAt": 1726909200
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて5",
+      "titleZh": "阻止秽土的魔力天女 5",
+      "chapterId": "408",
+      "createAt": 1726995600
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて6",
+      "titleZh": "阻止秽土的魔力天女 6",
+      "chapterId": "409",
+      "createAt": 1727082000
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて7",
+      "titleZh": "阻止秽土的魔力天女 7",
+      "chapterId": "410",
+      "createAt": 1727168400
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて8",
+      "titleZh": "阻止秽土的魔力天女 8",
+      "chapterId": "411",
+      "createAt": 1727254800
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて9",
+      "titleZh": "阻止秽土的魔力天女 9",
+      "chapterId": "412",
+      "createAt": 1727341200
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて10",
+      "titleZh": "阻止秽土的魔力天女 10",
+      "chapterId": "413",
+      "createAt": 1727427600
+    },
+    {
+      "titleJp": "汚れた魔力の天女を止めて11",
+      "titleZh": "阻止秽土的魔力天女 11",
+      "chapterId": "414",
+      "createAt": 1727514000
+    },
+    {
+      "titleJp": "ダンテのお願い1",
+      "titleZh": "但丁的请求1",
+      "chapterId": "415",
+      "createAt": 1727600400
+    },
+    {
+      "titleJp": "ダンテのお願い2",
+      "titleZh": "但丁的愿望 2",
+      "chapterId": "416",
+      "createAt": 1727686800
+    },
+    {
+      "titleJp": "食事会への招待",
+      "titleZh": "受邀参加餐会",
+      "chapterId": "417",
+      "createAt": 1727773200
+    },
+    {
+      "titleJp": "一緒になれない青紅剣1",
+      "titleZh": "无法在一起的青红剑 1",
+      "chapterId": "418",
+      "createAt": 1727859600
+    },
+    {
+      "titleJp": "一緒になれない青紅剣2",
+      "titleZh": "无法在一起的青红剑 2",
+      "chapterId": "419",
+      "createAt": 1727946000
+    },
+    {
+      "titleJp": "一緒になれない青紅剣3",
+      "titleZh": "无法在一起的青红剑 3",
+      "chapterId": "420",
+      "createAt": 1728032400
+    },
+    {
+      "titleJp": "暴食の悪魔の悪魔的所業",
+      "titleZh": "暴食恶魔的恶魔行径",
+      "chapterId": "421",
+      "createAt": 1728118800
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城1",
+      "titleZh": "潜入，暴食恶魔的城堡 1",
+      "chapterId": "422",
+      "createAt": 1728205200
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城2",
+      "titleZh": "潜入，暴食恶魔的城堡 2",
+      "chapterId": "423",
+      "createAt": 1728291600
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城3",
+      "titleZh": "潜入，暴食恶魔的城堡 3",
+      "chapterId": "424",
+      "createAt": 1728378000
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城4",
+      "titleZh": "潜入，暴食恶魔的城堡 4",
+      "chapterId": "425",
+      "createAt": 1728459120
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城5",
+      "titleZh": "潜入，暴食恶魔的城堡 5",
+      "chapterId": "426",
+      "createAt": 1728550800
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城6",
+      "titleZh": "潜入，暴食恶魔的城堡 6",
+      "chapterId": "427",
+      "createAt": 1728637200
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城7",
+      "titleZh": "潜入，暴食的恶魔之城7",
+      "chapterId": "428",
+      "createAt": 1728723600
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城8",
+      "titleZh": "潜入暴食恶魔之城8",
+      "chapterId": "429",
+      "createAt": 1728810000
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城9",
+      "titleZh": "潜入暴食恶魔之城9",
+      "chapterId": "430",
+      "createAt": 1728896400
+    },
+    {
+      "titleJp": "潜入、暴食の悪魔の城10",
+      "titleZh": "潜入暴食恶魔之城10",
+      "chapterId": "431",
+      "createAt": 1728982800
+    },
+    {
+      "titleJp": "暴食の悪魔1",
+      "titleZh": "暴食恶魔1",
+      "chapterId": "432",
+      "createAt": 1729069200
+    },
+    {
+      "titleJp": "暴食の悪魔2",
+      "titleZh": "暴食恶魔2",
+      "chapterId": "433",
+      "createAt": 1729155600
+    },
+    {
+      "titleJp": "暴食の悪魔3",
+      "titleZh": "暴食恶魔3",
+      "chapterId": "434",
+      "createAt": 1729242000
+    },
+    {
+      "titleJp": "第九章",
+      "titleZh": "第九章"
+    },
+    {
+      "titleJp": "魔界に堕ち1",
+      "titleZh": "堕入魔界1",
+      "chapterId": "435",
+      "createAt": 1729330200
+    },
+    {
+      "titleJp": "魔界に堕ち2",
+      "titleZh": "堕入魔界2",
+      "chapterId": "436",
+      "createAt": 1729414800
+    },
+    {
+      "titleJp": "魔界に堕ち3",
+      "titleZh": "堕入魔界3",
+      "chapterId": "437",
+      "createAt": 1729501200
+    },
+    {
+      "titleJp": "魔界に堕ち4",
+      "titleZh": "堕入魔界4",
+      "chapterId": "438",
+      "createAt": 1729587600
+    },
+    {
+      "titleJp": "魔界に堕ち5",
+      "titleZh": "堕入魔界5",
+      "chapterId": "439",
+      "createAt": 1729674000
+    },
+    {
+      "titleJp": "噴き上がる風1",
+      "titleZh": "喷出的风1",
+      "chapterId": "440",
+      "createAt": 1729760400
+    },
+    {
+      "titleJp": "噴き上がる風2",
+      "titleZh": "喷出的风2",
+      "chapterId": "441",
+      "createAt": 1729846800
+    },
+    {
+      "titleJp": "噴き上がる風3",
+      "titleZh": "喷出的风3",
+      "chapterId": "442",
+      "createAt": 1729933200
+    },
+    {
+      "titleJp": "噴き上がる風4",
+      "titleZh": "喷出的风4",
+      "chapterId": "443",
+      "createAt": 1730019600
+    },
+    {
+      "titleJp": "噴き上がる風5",
+      "titleZh": "喷出的风5",
+      "chapterId": "444",
+      "createAt": 1730106000
+    },
+    {
+      "titleJp": "噴き上がる風6",
+      "titleZh": "喷出的风6",
+      "chapterId": "445",
+      "createAt": 1730192400
+    },
+    {
+      "titleJp": "門を探して1",
+      "titleZh": "寻找门1",
+      "chapterId": "446",
+      "createAt": 1730278800
+    },
+    {
+      "titleJp": "門を探して2",
+      "titleZh": "寻找门2",
+      "chapterId": "447",
+      "createAt": 1730365200
+    },
+    {
+      "titleJp": "門を探して3",
+      "titleZh": "寻找门3",
+      "chapterId": "448",
+      "createAt": 1730451600
+    },
+    {
+      "titleJp": "影響ここにもあり1",
+      "titleZh": "影响也在这里1",
+      "chapterId": "449",
+      "createAt": 1730538000
+    },
+    {
+      "titleJp": "影響ここにもあり2",
+      "titleZh": "影响也在这里2",
+      "chapterId": "450",
+      "createAt": 1730624400
+    },
+    {
+      "titleJp": "影響ここにもあり3",
+      "titleZh": "影响也在这里3",
+      "chapterId": "451",
+      "createAt": 1730710800
+    },
+    {
+      "titleJp": "影響ここにもあり4",
+      "titleZh": "影响也在这里4",
+      "chapterId": "452",
+      "createAt": 1730797200
+    },
+    {
+      "titleJp": "あの時の",
+      "titleZh": "那个时候",
+      "chapterId": "453",
+      "createAt": 1730862480
+    },
+    {
+      "titleJp": "父あるいは母の面影1",
+      "titleZh": "父亲或母亲的面容1",
+      "chapterId": "454",
+      "createAt": 1730970000
+    },
+    {
+      "titleJp": "父あるいは母の面影2",
+      "titleZh": "父亲或母亲的面容2",
+      "chapterId": "455",
+      "createAt": 1731056400
+    },
+    {
+      "titleJp": "父あるいは母の面影3",
+      "titleZh": "父亲或母亲的面容3",
+      "chapterId": "456",
+      "createAt": 1731142800
+    },
+    {
+      "titleJp": "父あるいは母の面影4",
+      "titleZh": "父亲或母亲的面容4",
+      "chapterId": "457",
+      "createAt": 1731229200
+    },
+    {
+      "titleJp": "父あるいは母の面影5",
+      "titleZh": "父亲或母亲的面容5",
+      "chapterId": "458",
+      "createAt": 1731315600
+    },
+    {
+      "titleJp": "第四階層の門の位置",
+      "titleZh": "第四层的门的位置",
+      "chapterId": "459",
+      "createAt": 1731402000
+    },
+    {
+      "titleJp": "憤怒の悪魔1",
+      "titleZh": "愤怒恶魔1",
+      "chapterId": "460",
+      "createAt": 1731488400
+    },
+    {
+      "titleJp": "憤怒の悪魔2",
+      "titleZh": "愤怒恶魔2",
+      "chapterId": "461",
+      "createAt": 1731574800
+    },
+    {
+      "titleJp": "憤怒の悪魔3",
+      "titleZh": "愤怒恶魔3",
+      "chapterId": "462",
+      "createAt": 1731661200
+    },
+    {
+      "titleJp": "憤怒の悪魔4",
+      "titleZh": "愤怒恶魔4",
+      "chapterId": "463",
+      "createAt": 1731751200
+    },
+    {
+      "titleJp": "憤怒の悪魔5",
+      "titleZh": "愤怒恶魔5",
+      "chapterId": "464",
+      "createAt": 1731834000
+    },
+    {
+      "titleJp": "憤怒の悪魔6",
+      "titleZh": "愤怒的恶魔6",
+      "chapterId": "465",
+      "createAt": 1731920400
+    },
+    {
+      "titleJp": "憤怒の悪魔7",
+      "titleZh": "愤怒的恶魔7",
+      "chapterId": "466",
+      "createAt": 1732006800
+    },
+    {
+      "titleJp": "現世に帰って1",
+      "titleZh": "回到这个世界1",
+      "chapterId": "467",
+      "createAt": 1732093200
+    },
+    {
+      "titleJp": "現世に帰って2",
+      "titleZh": "回到现世2",
+      "chapterId": "468",
+      "createAt": 1732179600
+    },
+    {
+      "titleJp": "現在に帰って3",
+      "titleZh": "回到现在3",
+      "chapterId": "469",
+      "createAt": 1732266000
+    },
+    {
+      "titleJp": "ようやく帰れる1",
+      "titleZh": "终于能回去1",
+      "chapterId": "470",
+      "createAt": 1732352400
+    },
+    {
+      "titleJp": "ようやく帰れる2",
+      "titleZh": "终于能回家了 2",
+      "chapterId": "471",
+      "createAt": 1732438800
+    },
+    {
+      "titleJp": "シャリンは圭には任された",
+      "titleZh": "夏琳交给圭了",
+      "chapterId": "472",
+      "createAt": 1732525200
+    },
+    {
+      "titleJp": "おかえり、圭1",
+      "titleZh": "欢迎回来，圭 1",
+      "chapterId": "473",
+      "createAt": 1732611600
+    },
+    {
+      "titleJp": "おかえり、圭2",
+      "titleZh": "欢迎回来，圭 2",
+      "chapterId": "474",
+      "createAt": 1732698000
+    },
+    {
+      "titleJp": "神の仲間",
+      "titleZh": "神的伙伴",
+      "chapterId": "475",
+      "createAt": 1732784400
+    },
+    {
+      "titleJp": "圭の能力1",
+      "titleZh": "圭的能力1",
+      "chapterId": "476",
+      "createAt": 1732870800
+    },
+    {
+      "titleJp": "圭の能力2",
+      "titleZh": "圭的能力2",
+      "chapterId": "477",
+      "createAt": 1732957320
+    },
+    {
+      "titleJp": "第十章",
+      "titleZh": "第十章"
+    },
+    {
+      "titleJp": "リーダビリティギルド再始動",
+      "titleZh": "可读性公会再次启动",
+      "chapterId": "478",
+      "createAt": 1733043600
+    },
+    {
+      "titleJp": "魔王の集まり",
+      "titleZh": "魔王的聚会",
+      "chapterId": "479",
+      "createAt": 1733130000
+    },
+    {
+      "titleJp": "シャリンパンチ！1",
+      "titleZh": "锵铃拳！1",
+      "chapterId": "480",
+      "createAt": 1733216400
+    },
+    {
+      "titleJp": "シャリンパンチ！2",
+      "titleZh": "锵铃拳！2",
+      "chapterId": "481",
+      "createAt": 1733302800
+    },
+    {
+      "titleJp": "シャリンパンチ！3",
+      "titleZh": "夏琳拳！3",
+      "chapterId": "482",
+      "createAt": 1733389200
+    },
+    {
+      "titleJp": "再び塔へ1",
+      "titleZh": "再次于高塔相遇 1",
+      "chapterId": "483",
+      "createAt": 1733562000
+    },
+    {
+      "titleJp": "再び塔へ2",
+      "titleZh": "再次于高塔相遇 2",
+      "chapterId": "484",
+      "createAt": 1733648400
+    },
+    {
+      "titleJp": "再び塔へ3",
+      "titleZh": "再次前往高塔3",
+      "chapterId": "485",
+      "createAt": 1733734800
+    },
+    {
+      "titleJp": "再び塔へ4",
+      "titleZh": "再次前往高塔4",
+      "chapterId": "486",
+      "createAt": 1733821200
+    },
+    {
+      "titleJp": "不幸を背負う者1",
+      "titleZh": "背负不幸之人1",
+      "chapterId": "487",
+      "createAt": 1733907600
+    },
+    {
+      "titleJp": "不幸を背負う者2",
+      "titleZh": "背负不幸者2",
+      "chapterId": "488",
+      "createAt": 1733994000
+    },
+    {
+      "titleJp": "不幸を背負う者3",
+      "titleZh": "背负灾厄之子3",
+      "chapterId": "489",
+      "createAt": 1734080400
+    },
+    {
+      "titleJp": "不幸を背負う者4",
+      "titleZh": "背负不幸者4",
+      "chapterId": "490",
+      "createAt": 1734166800
+    },
+    {
+      "titleJp": "不幸を背負う者5",
+      "titleZh": "背负不幸的人5",
+      "chapterId": "491",
+      "createAt": 1734253200
+    },
+    {
+      "titleJp": "不幸を背負う者6",
+      "titleZh": "背负不幸之人 6",
+      "chapterId": "492",
+      "createAt": 1734339600
+    },
+    {
+      "titleJp": "不幸を背負う者7",
+      "titleZh": "背负不幸之人7",
+      "chapterId": "493",
+      "createAt": 1734426000
+    },
+    {
+      "titleJp": "不幸を背負う者8",
+      "titleZh": "背负不幸的人8",
+      "chapterId": "494",
+      "createAt": 1734512400
+    },
+    {
+      "titleJp": "不幸を背負う者9",
+      "titleZh": "背负不幸的人9",
+      "chapterId": "495",
+      "createAt": 1734598800
+    },
+    {
+      "titleJp": "剣を直すのに必要なもの1",
+      "titleZh": "修复剑所需的物品1",
+      "chapterId": "496",
+      "createAt": 1734685200
+    },
+    {
+      "titleJp": "剣を直すのに必要なもの2",
+      "titleZh": "修复剑的必要物品2",
+      "chapterId": "497",
+      "createAt": 1734771600
+    },
+    {
+      "titleJp": "剣を直すのに必要なもの3",
+      "titleZh": "修复剑所需的物品3",
+      "chapterId": "498",
+      "createAt": 1734858000
+    },
+    {
+      "titleJp": "色々と考えることも必要なものもある",
+      "titleZh": "需要考虑的事情和需要做的事情都很多",
+      "chapterId": "499",
+      "createAt": 1734944400
+    },
+    {
+      "titleJp": "鉄鋼竜の心臓1",
+      "titleZh": "钢铁龙的心脏1",
+      "chapterId": "500",
+      "createAt": 1735030800
+    },
+    {
+      "titleJp": "鉄鋼竜の心臓2",
+      "titleZh": "钢铁龙的心脏2",
+      "chapterId": "501",
+      "createAt": 1735117200
+    },
+    {
+      "titleJp": "心臓と酒",
+      "titleZh": "心脏与酒",
+      "chapterId": "502",
+      "createAt": 1735203600
+    },
+    {
+      "titleJp": "戦乙女の協力1",
+      "titleZh": "女武神的协助1",
+      "chapterId": "503",
+      "createAt": 1735290000
+    },
+    {
+      "titleJp": "戦乙女の協力2",
+      "titleZh": "女武神的协助2",
+      "chapterId": "504",
+      "createAt": 1735376400
+    },
+    {
+      "titleJp": "お酒の使い道",
+      "titleZh": "酒的用途",
+      "chapterId": "505",
+      "createAt": 1735549200
+    },
+    {
+      "titleJp": "未曾有の危機",
+      "titleZh": "前所未有的危机",
+      "chapterId": "506",
+      "createAt": 1735635600
+    },
+    {
+      "titleJp": "心臓を捧げよ1",
+      "titleZh": "献上心脏给吸血鬼1",
+      "chapterId": "507",
+      "createAt": 1735722000
+    },
+    {
+      "titleJp": "心臓を捧げよ2",
+      "titleZh": "献上心脏的你2",
+      "chapterId": "508",
+      "createAt": 1735808400
+    },
+    {
+      "titleJp": "心臓を捧げよ3",
+      "titleZh": "献上心脏的仪式3",
+      "chapterId": "509",
+      "createAt": 1735894800
+    },
+    {
+      "titleJp": "心臓を捧げよ4",
+      "titleZh": "献上心脏4",
+      "chapterId": "510",
+      "createAt": 1735981200
+    },
+    {
+      "titleJp": "因縁あり1",
+      "titleZh": "因缘1",
+      "chapterId": "511",
+      "createAt": 1736067600
+    },
+    {
+      "titleJp": "因縁あり2",
+      "titleZh": "因缘2",
+      "chapterId": "512",
+      "createAt": 1736154000
+    },
+    {
+      "titleJp": "因縁あり　3",
+      "titleZh": "因缘　3",
+      "chapterId": "513",
+      "createAt": 1736240400
+    },
+    {
+      "titleJp": "護衛依頼",
+      "titleZh": "护卫委托",
+      "chapterId": "514",
+      "createAt": 1736326800
+    },
+    {
+      "titleJp": "女神だけど女神じゃない",
+      "titleZh": "虽然是女神却不是女神",
+      "chapterId": "515",
+      "createAt": 1736413200
+    },
+    {
+      "titleJp": "十一階の秘密1",
+      "titleZh": "十一楼的秘密1",
+      "chapterId": "516",
+      "createAt": 1736499600
+    },
+    {
+      "titleJp": "十一階の秘密2",
+      "titleZh": "十一楼的秘密2",
+      "chapterId": "517",
+      "createAt": 1736586000
+    },
+    {
+      "titleJp": "十一階を見学しよう1",
+      "titleZh": "去十一层参观吧1",
+      "chapterId": "518",
+      "createAt": 1736672400
+    },
+    {
+      "titleJp": "十一階を見学しよう2",
+      "titleZh": "参观十一楼2",
+      "chapterId": "519",
+      "createAt": 1736845200
+    },
+    {
+      "titleJp": "火と金属と戦う姿",
+      "titleZh": "与火与金属战斗的身影",
+      "chapterId": "520",
+      "createAt": 1736931600
+    },
+    {
+      "titleJp": "時に囚われぬ者1",
+      "titleZh": "不被定义者1",
+      "chapterId": "521",
+      "createAt": 1737018000
+    },
+    {
+      "titleJp": "時に囚われぬ者2",
+      "titleZh": "不被时间束缚之人2",
+      "chapterId": "522",
+      "createAt": 1737104400
+    },
+    {
+      "titleJp": "時に囚われぬ者3",
+      "titleZh": "不被定义者3",
+      "chapterId": "523",
+      "createAt": 1737190800
+    },
+    {
+      "titleJp": "時に囚われぬ者4",
+      "titleZh": "不被定义者4",
+      "chapterId": "524",
+      "createAt": 1737277200
+    },
+    {
+      "titleJp": "時に囚われぬ者5",
+      "titleZh": "不被定义者5",
+      "chapterId": "525",
+      "createAt": 1737450000
+    },
+    {
+      "titleJp": "時に囚われぬ者6",
+      "titleZh": "不被定义者6",
+      "chapterId": "526",
+      "createAt": 1737536400
+    },
+    {
+      "titleJp": "時に囚われぬ者7",
+      "titleZh": "不被定义者7",
+      "chapterId": "527",
+      "createAt": 1737622800
+    },
+    {
+      "titleJp": "時に囚われぬ苦しみ1",
+      "titleZh": "不受时间束缚的痛苦1",
+      "chapterId": "528",
+      "createAt": 1737709200
+    },
+    {
+      "titleJp": "時に囚われぬ苦しみ2",
+      "titleZh": "不受时间束缚的痛苦2",
+      "chapterId": "529",
+      "createAt": 1737795600
+    },
+    {
+      "titleJp": "時に囚われぬ苦しみ3",
+      "titleZh": "不受时间束缚的痛苦3",
+      "chapterId": "530",
+      "createAt": 1737882000
+    },
+    {
+      "titleJp": "時に囚われぬ苦しみ4",
+      "titleZh": "不受时间束缚的痛苦4",
+      "chapterId": "531",
+      "createAt": 1737968400
+    },
+    {
+      "titleJp": "時に囚われぬ苦しみ5",
+      "titleZh": "不受时间束缚的痛苦5",
+      "chapterId": "532",
+      "createAt": 1738054800
+    },
+    {
+      "titleJp": "陰謀の気配1",
+      "titleZh": "阴谋的气息1",
+      "chapterId": "533",
+      "createAt": 1738141200
+    },
+    {
+      "titleJp": "陰謀の気配2",
+      "titleZh": "阴谋的气息2",
+      "chapterId": "534",
+      "createAt": 1738227600
+    },
+    {
+      "titleJp": "陰謀の気配3",
+      "titleZh": "阴谋的气息3",
+      "chapterId": "535",
+      "createAt": 1738314000
+    },
+    {
+      "titleJp": "暗殺を止めろ！1",
+      "titleZh": "暗杀者停止暗杀！1",
+      "chapterId": "536",
+      "createAt": 1738400400
+    },
+    {
+      "titleJp": "暗殺を止めろ！2",
+      "titleZh": "暗杀者停止杀人！ 2",
+      "chapterId": "537",
+      "createAt": 1738486800
+    },
+    {
+      "titleJp": "暗殺を止めろ！3",
+      "titleZh": "暗杀者停止杀人！ 3",
+      "chapterId": "538",
+      "createAt": 1738573200
+    },
+    {
+      "titleJp": "暗殺を止めろ！4",
+      "titleZh": "暗杀者停止杀人！ 4",
+      "chapterId": "539",
+      "createAt": 1738659600
+    },
+    {
+      "titleJp": "暗殺を止めろ！5",
+      "titleZh": "暗杀者停止杀人！5",
+      "chapterId": "540",
+      "createAt": 1738746000
+    },
+    {
+      "titleJp": "暗殺を止めろ！6",
+      "titleZh": "暗杀者停止杀人！ 6",
+      "chapterId": "541",
+      "createAt": 1738832400
+    },
+    {
+      "titleJp": "暗殺を止めろ！7",
+      "titleZh": "暗杀者停止杀人！7",
+      "chapterId": "542",
+      "createAt": 1738918800
+    },
+    {
+      "titleJp": "暗殺を止めろ！8",
+      "titleZh": "暗杀令 8",
+      "chapterId": "543",
+      "createAt": 1739005200
+    },
+    {
+      "titleJp": "お姫様を探せ！1",
+      "titleZh": "寻找公主殿下！ 1",
+      "chapterId": "544",
+      "createAt": 1739091600
+    },
+    {
+      "titleJp": "お姫様を探せ！2",
+      "titleZh": "寻找公主殿下！ 2",
+      "chapterId": "545",
+      "createAt": 1739178000
+    },
+    {
+      "titleJp": "お姫様を探せ！3",
+      "titleZh": "寻找公主殿下！ 3",
+      "chapterId": "546",
+      "createAt": 1739264400
+    },
+    {
+      "titleJp": "お姫様を探せ！4",
+      "titleZh": "寻找公主！ 4",
+      "chapterId": "547",
+      "createAt": 1739350800
+    },
+    {
+      "titleJp": "時の神殿を探せ！1",
+      "titleZh": "寻找时之神殿！ 1",
+      "chapterId": "548",
+      "createAt": 1739437200
+    },
+    {
+      "titleJp": "時の神殿を探せ！2",
+      "titleZh": "寻找时之神殿！ 2",
+      "chapterId": "549",
+      "createAt": 1739523600
+    },
+    {
+      "titleJp": "時の神殿を探せ！3",
+      "titleZh": "寻找时之神殿！ 3",
+      "chapterId": "550",
+      "createAt": 1739610000
+    },
+    {
+      "titleJp": "時の神殿を探せ！4",
+      "titleZh": "时之神殿的探索者！ 4",
+      "chapterId": "551",
+      "createAt": 1739696400
+    },
+    {
+      "titleJp": "時の神殿を探せ！5",
+      "titleZh": "寻找时之神殿！5",
+      "chapterId": "552",
+      "createAt": 1739782800
+    },
+    {
+      "titleJp": "時の神殿を探せ！6",
+      "titleZh": "寻找时之神殿！ 6",
+      "chapterId": "553",
+      "createAt": 1739869200
+    },
+    {
+      "titleJp": "時の神殿を探せ！7",
+      "titleZh": "寻找时之神殿！ 7",
+      "chapterId": "554",
+      "createAt": 1739955600
+    },
+    {
+      "titleJp": "時の神殿を探せ！8",
+      "titleZh": "寻找时之神殿！ 8",
+      "chapterId": "555",
+      "createAt": 1740042000
+    },
+    {
+      "titleJp": "敵は中心にあり1",
+      "titleZh": "敌人在中心1",
+      "chapterId": "556",
+      "createAt": 1740128400
+    },
+    {
+      "titleJp": "敵は中心にあり2",
+      "titleZh": "敌人就在中心2",
+      "chapterId": "557",
+      "createAt": 1740214800
+    },
+    {
+      "titleJp": "敵は中心にあり3",
+      "titleZh": "敌人在中心3",
+      "chapterId": "558",
+      "createAt": 1740301200
+    },
+    {
+      "titleJp": "敵は中心にあり4",
+      "titleZh": "敌人在中心4",
+      "chapterId": "559",
+      "createAt": 1740387600
+    },
+    {
+      "titleJp": "敵は中心にあり5",
+      "titleZh": "敌是中心5",
+      "chapterId": "560",
+      "createAt": 1740474000
+    },
+    {
+      "titleJp": "敵は中心にあり6",
+      "titleZh": "敌是中心6",
+      "chapterId": "561",
+      "createAt": 1740560400
+    },
+    {
+      "titleJp": "敵は中心にあり7",
+      "titleZh": "敌人在中心7",
+      "chapterId": "562",
+      "createAt": 1740646800
+    },
+    {
+      "titleJp": "敵は中心にあり8",
+      "titleZh": "敌人在中心8",
+      "chapterId": "563",
+      "createAt": 1740733200
+    },
+    {
+      "titleJp": "敵は中心にあり9",
+      "titleZh": "敌人在中心9",
+      "chapterId": "564",
+      "createAt": 1740819600
+    },
+    {
+      "titleJp": "決死の作戦1",
+      "titleZh": "决死的作战1",
+      "chapterId": "565",
+      "createAt": 1740906000
+    },
+    {
+      "titleJp": "決死の作戦2",
+      "titleZh": "决死的作战2",
+      "chapterId": "566",
+      "createAt": 1740992400
+    },
+    {
+      "titleJp": "決死の作戦3",
+      "titleZh": "决死的作战3",
+      "chapterId": "567",
+      "createAt": 1741078800
+    },
+    {
+      "titleJp": "決死の作戦4",
+      "titleZh": "决死的作战4",
+      "chapterId": "568",
+      "createAt": 1741165200
+    },
+    {
+      "titleJp": "決死の作戦5",
+      "titleZh": "决死作战5",
+      "chapterId": "569",
+      "createAt": 1741251600
+    },
+    {
+      "titleJp": "決死の作戦6",
+      "titleZh": "决死的作战6",
+      "chapterId": "570",
+      "createAt": 1741338000
+    },
+    {
+      "titleJp": "決死の作戦7",
+      "titleZh": "决死的作战7",
+      "chapterId": "571",
+      "createAt": 1741424400
+    },
+    {
+      "titleJp": "決死の作戦8",
+      "titleZh": "决死的作战8",
+      "chapterId": "572",
+      "createAt": 1741510800
+    },
+    {
+      "titleJp": "決死の作戦9",
+      "titleZh": "决死的作战9",
+      "chapterId": "573",
+      "createAt": 1741597200
+    },
+    {
+      "titleJp": "次のループを考える1",
+      "titleZh": "思考下一次轮回1",
+      "chapterId": "574",
+      "createAt": 1741683600
+    },
+    {
+      "titleJp": "次のループを考える2",
+      "titleZh": "思考下一次轮回2",
+      "chapterId": "575",
+      "createAt": 1741770000
+    },
+    {
+      "titleJp": "反撃の狼煙1",
+      "titleZh": "反击的狼烟1",
+      "chapterId": "576",
+      "createAt": 1741856400
+    },
+    {
+      "titleJp": "反撃の狼煙2",
+      "titleZh": "反击的狼烟2",
+      "chapterId": "577",
+      "createAt": 1741942800
+    },
+    {
+      "titleJp": "城に巣食うモンスター1",
+      "titleZh": "盘踞在城里的怪物1",
+      "chapterId": "578",
+      "createAt": 1742029200
+    },
+    {
+      "titleJp": "城に巣食うモンスター2",
+      "titleZh": "盘踞在城里的怪物2",
+      "chapterId": "579",
+      "createAt": 1742115600
+    },
+    {
+      "titleJp": "城に巣食うモンスター3",
+      "titleZh": "盘据城内的怪物3",
+      "chapterId": "580",
+      "createAt": 1742202000
+    },
+    {
+      "titleJp": "城に巣食うモンスター4",
+      "titleZh": "占据城堡的怪物4",
+      "chapterId": "581",
+      "createAt": 1742288400
+    },
+    {
+      "titleJp": "城に巣食うモンスター5",
+      "titleZh": "盘踞在城里的怪物5",
+      "chapterId": "582",
+      "createAt": 1742374800
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる1",
+      "titleZh": "为国着想，举旗谋反1",
+      "chapterId": "583",
+      "createAt": 1742461200
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる2",
+      "titleZh": "为国为民而举旗谋反2",
+      "chapterId": "584",
+      "createAt": 1742547600
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる3",
+      "titleZh": "为国为民而举旗谋反3",
+      "chapterId": "585",
+      "createAt": 1742634000
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる4",
+      "titleZh": "为国献身的谋反旗帜4",
+      "chapterId": "586",
+      "createAt": 1742720400
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる5",
+      "titleZh": "为国为民，揭竿而起5",
+      "chapterId": "587",
+      "createAt": 1742806800
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる6",
+      "titleZh": "忧国志士揭竿而起 6",
+      "chapterId": "588",
+      "createAt": 1742893200
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる7",
+      "titleZh": "为国为民，揭竿而起7",
+      "chapterId": "589",
+      "createAt": 1742979600
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる8",
+      "titleZh": "忧国志士举旗谋反 8",
+      "chapterId": "590",
+      "createAt": 1743066000
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる9",
+      "titleZh": "为国着想，举旗谋反9",
+      "chapterId": "591",
+      "createAt": 1743152400
+    },
+    {
+      "titleJp": "国を思えば謀反の旗が上がる10",
+      "titleZh": "为国着想，举旗谋反10",
+      "chapterId": "592",
+      "createAt": 1743238800
+    },
+    {
+      "titleJp": "十一階、最終決戦1",
+      "titleZh": "第十一章　最终决战1",
+      "chapterId": "593",
+      "createAt": 1743325200
+    },
+    {
+      "titleJp": "十一階、最終決戦2",
+      "titleZh": "第十一章　最终决战2",
+      "chapterId": "594",
+      "createAt": 1743411600
+    },
+    {
+      "titleJp": "十一階、最終決戦3",
+      "titleZh": "第十一章　最终决战3",
+      "chapterId": "595",
+      "createAt": 1743498000
+    },
+    {
+      "titleJp": "十一階、最終決戦4",
+      "titleZh": "第十一章　最终决战4",
+      "chapterId": "596",
+      "createAt": 1743584400
+    },
+    {
+      "titleJp": "前に進み始めた世界1",
+      "titleZh": "开始前进的世界1",
+      "chapterId": "597",
+      "createAt": 1743670800
+    },
+    {
+      "titleJp": "前に進み始めた世界2",
+      "titleZh": "开始前进的世界2",
+      "chapterId": "598",
+      "createAt": 1743757200
+    },
+    {
+      "titleJp": "第十一章",
+      "titleZh": "第十一章"
+    },
+    {
+      "titleJp": "超大型ゲート1",
+      "titleZh": "超大型传送门1",
+      "chapterId": "599",
+      "createAt": 1743843600
+    },
+    {
+      "titleJp": "超大型ゲート2",
+      "titleZh": "超大型传送门2",
+      "chapterId": "600",
+      "createAt": 1743930000
+    },
+    {
+      "titleJp": "幸運な剣",
+      "titleZh": "幸运之剑",
+      "chapterId": "601",
+      "createAt": 1744016400
+    },
+    {
+      "titleJp": "和輝の頼み1",
+      "titleZh": "和辉的请求1",
+      "chapterId": "602",
+      "createAt": 1744102800
+    },
+    {
+      "titleJp": "和輝の頼み2",
+      "titleZh": "和辉的请求2",
+      "chapterId": "603",
+      "createAt": 1744189200
+    },
+    {
+      "titleJp": "和輝の頼み3",
+      "titleZh": "和辉的请求3",
+      "chapterId": "604",
+      "createAt": 1744275600
+    },
+    {
+      "titleJp": "研究者を狙って1",
+      "titleZh": "以研究者为目标1",
+      "chapterId": "605",
+      "createAt": 1744362000
+    },
+    {
+      "titleJp": "研究者を狙って2",
+      "titleZh": "以研究者为目标2",
+      "chapterId": "606",
+      "createAt": 1744448400
+    },
+    {
+      "titleJp": "研究者を狙って3",
+      "titleZh": "狙う研究者を 3",
+      "chapterId": "607",
+      "createAt": 1744534800
+    },
+    {
+      "titleJp": "研究者を狙って4",
+      "titleZh": "狙う研究者を 4",
+      "chapterId": "608",
+      "createAt": 1744621200
+    },
+    {
+      "titleJp": "研究者を狙って5",
+      "titleZh": "狙う研究者を 5",
+      "chapterId": "609",
+      "createAt": 1744707600
+    },
+    {
+      "titleJp": "顔を奪う覚醒者1",
+      "titleZh": "夺脸的觉醒者 1",
+      "chapterId": "610",
+      "createAt": 1744794000
+    },
+    {
+      "titleJp": "顔を奪う覚醒者2",
+      "titleZh": "夺脸的觉醒者2",
+      "chapterId": "611",
+      "createAt": 1744880400
+    },
+    {
+      "titleJp": "顔を奪う覚醒者3",
+      "titleZh": "夺面觉醒者3",
+      "chapterId": "612",
+      "createAt": 1744966800
+    },
+    {
+      "titleJp": "顔を奪う覚醒者4",
+      "titleZh": "夺脸的觉醒者 4",
+      "chapterId": "613",
+      "createAt": 1745053200
+    },
+    {
+      "titleJp": "顔を奪う覚醒者5",
+      "titleZh": "夺脸的觉醒者 5",
+      "chapterId": "614",
+      "createAt": 1745139600
+    },
+    {
+      "titleJp": "顔を奪う覚醒者6",
+      "titleZh": "夺脸的觉醒者 6",
+      "chapterId": "615",
+      "createAt": 1745226000
+    },
+    {
+      "titleJp": "顔を奪う覚醒者7",
+      "titleZh": "夺脸的觉醒者7",
+      "chapterId": "616",
+      "createAt": 1745312400
+    },
+    {
+      "titleJp": "顔を奪う覚醒者8",
+      "titleZh": "夺面者 8",
+      "chapterId": "617",
+      "createAt": 1745398800
+    },
+    {
+      "titleJp": "顔を奪う覚醒者9",
+      "titleZh": "夺面者 9",
+      "chapterId": "618",
+      "createAt": 1745485200
+    },
+    {
+      "titleJp": "顔を奪う覚醒者10",
+      "titleZh": "夺脸的觉醒者 10",
+      "chapterId": "619",
+      "createAt": 1745571600
+    },
+    {
+      "titleJp": "顔を奪う覚醒者11",
+      "titleZh": "夺脸的觉醒者 11",
+      "chapterId": "620",
+      "createAt": 1745744400
+    },
+    {
+      "titleJp": "閑話・自分の顔が嫌いな女",
+      "titleZh": "闲谈・讨厌自己长相的女人",
+      "chapterId": "621",
+      "createAt": 1745830800
+    },
+    {
+      "titleJp": "何があったのか1",
+      "titleZh": "发生了什么事1",
+      "chapterId": "622",
+      "createAt": 1745917200
+    },
+    {
+      "titleJp": "何があったのか2",
+      "titleZh": "发生了什么事2",
+      "chapterId": "623",
+      "createAt": 1746003600
+    },
+    {
+      "titleJp": "最後まで",
+      "titleZh": "直到最后。",
+      "chapterId": "624",
+      "createAt": 1746090000
+    },
+    {
+      "titleJp": "異常値測定1",
+      "titleZh": "异常值测定1",
+      "chapterId": "625",
+      "createAt": 1746176400
+    },
+    {
+      "titleJp": "異常値測定2",
+      "titleZh": "异常值测定2",
+      "chapterId": "626",
+      "createAt": 1746262800
+    },
+    {
+      "titleJp": "異常値測定3",
+      "titleZh": "异常值测定3",
+      "chapterId": "627",
+      "createAt": 1746349200
+    },
+    {
+      "titleJp": "危険な予兆1",
+      "titleZh": "危险的预兆1",
+      "chapterId": "628",
+      "createAt": 1746435600
+    },
+    {
+      "titleJp": "危険な予兆2",
+      "titleZh": "危险的预兆2",
+      "chapterId": "629",
+      "createAt": 1746522000
+    },
+    {
+      "titleJp": "目が必要1",
+      "titleZh": "眼睛是必要的1",
+      "chapterId": "630",
+      "createAt": 1746608400
+    },
+    {
+      "titleJp": "目が必要2",
+      "titleZh": "眼睛是必要的2",
+      "chapterId": "631",
+      "createAt": 1746694800
+    },
+    {
+      "titleJp": "生活の変化1",
+      "titleZh": "生活的变化1",
+      "chapterId": "632",
+      "createAt": 1746781200
+    },
+    {
+      "titleJp": "生活の変化2",
+      "titleZh": "生活的变化2",
+      "chapterId": "633",
+      "createAt": 1746867780
+    },
+    {
+      "titleJp": "再びインドへ1",
+      "titleZh": "再度前往印度1",
+      "chapterId": "634",
+      "createAt": 1746954000
+    },
+    {
+      "titleJp": "再びインドへ2",
+      "titleZh": "再度前往印度2",
+      "chapterId": "635",
+      "createAt": 1747040400
+    },
+    {
+      "titleJp": "再びインドへ3",
+      "titleZh": "再次前往印度3",
+      "chapterId": "636",
+      "createAt": 1747126800
+    },
+    {
+      "titleJp": "霧をも見通す目1",
+      "titleZh": "能看穿迷雾的双眼1",
+      "chapterId": "637",
+      "createAt": 1747213200
+    },
+    {
+      "titleJp": "霧をも見通す目2",
+      "titleZh": "能看透浓雾的眼睛2",
+      "chapterId": "638",
+      "createAt": 1747299600
+    },
+    {
+      "titleJp": "霧をも見通す目3",
+      "titleZh": "能看透浓雾之眼3",
+      "chapterId": "639",
+      "createAt": 1747386000
+    },
+    {
+      "titleJp": "霧をも見通す目4",
+      "titleZh": "能看透浓雾之眼4",
+      "chapterId": "640",
+      "createAt": 1747472400
+    },
+    {
+      "titleJp": "霧をも見通す目5",
+      "titleZh": "能看透浓雾之眼5",
+      "chapterId": "641",
+      "createAt": 1747558800
+    },
+    {
+      "titleJp": "助けを求める声",
+      "titleZh": "求救的声音。",
+      "chapterId": "642",
+      "createAt": 1747645200
+    },
+    {
+      "titleJp": "遭難者を探せ1",
+      "titleZh": "寻找遇难者1",
+      "chapterId": "643",
+      "createAt": 1747731600
+    },
+    {
+      "titleJp": "遭難者を探せ2",
+      "titleZh": "寻找遇难者2",
+      "chapterId": "644",
+      "createAt": 1747818000
+    },
+    {
+      "titleJp": "遭難者を探せ3",
+      "titleZh": "寻找遇难者3",
+      "chapterId": "645",
+      "createAt": 1747904400
+    },
+    {
+      "titleJp": "遭難者を探せ4",
+      "titleZh": "寻找遇难者4",
+      "chapterId": "646",
+      "createAt": 1747990800
+    },
+    {
+      "titleJp": "遭難者を探せ5",
+      "titleZh": "寻找遇难者5",
+      "chapterId": "647",
+      "createAt": 1748077200
+    },
+    {
+      "titleJp": "第三勢力1",
+      "titleZh": "第三势力1",
+      "chapterId": "648",
+      "createAt": 1748163600
+    },
+    {
+      "titleJp": "第三勢力2",
+      "titleZh": "第三势力2",
+      "chapterId": "649",
+      "createAt": 1748250000
+    },
+    {
+      "titleJp": "第三勢力3",
+      "titleZh": "第三势力3",
+      "chapterId": "650",
+      "createAt": 1748336400
+    },
+    {
+      "titleJp": "第三勢力4",
+      "titleZh": "第三势力4",
+      "chapterId": "651",
+      "createAt": 1748422800
+    },
+    {
+      "titleJp": "第三勢力5",
+      "titleZh": "第三势力5",
+      "chapterId": "652",
+      "createAt": 1748509200
+    },
+    {
+      "titleJp": "第三勢力6",
+      "titleZh": "第三势力6",
+      "chapterId": "653",
+      "createAt": 1748595600
+    },
+    {
+      "titleJp": "第三勢力7",
+      "titleZh": "第三势力7",
+      "chapterId": "654",
+      "createAt": 1748682000
+    },
+    {
+      "titleJp": "第三勢力8",
+      "titleZh": "第三势力8",
+      "chapterId": "655",
+      "createAt": 1748768400
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼1",
+      "titleZh": "人类、吸血鬼、狼人1",
+      "chapterId": "656",
+      "createAt": 1748854800
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼2",
+      "titleZh": "人类、吸血鬼、狼人2",
+      "chapterId": "657",
+      "createAt": 1748941200
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼3",
+      "titleZh": "人类、吸血鬼、狼人3",
+      "chapterId": "658",
+      "createAt": 1749027600
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼4",
+      "titleZh": "人类、吸血鬼、狼人4",
+      "chapterId": "659",
+      "createAt": 1749114000
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼5",
+      "titleZh": "人类、吸血鬼、人狼5",
+      "chapterId": "660",
+      "createAt": 1749200400
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼6",
+      "titleZh": "人类、吸血鬼、狼人 6",
+      "chapterId": "661",
+      "createAt": 1749286800
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼7",
+      "titleZh": "人类、吸血鬼、狼人 7",
+      "chapterId": "662",
+      "createAt": 1749373200
+    },
+    {
+      "titleJp": "人間、吸血鬼、人狼8",
+      "titleZh": "人类、吸血鬼、狼人8",
+      "chapterId": "663",
+      "createAt": 1749459600
+    },
+    {
+      "titleJp": "人間の秘策1",
+      "titleZh": "人类的秘策1",
+      "chapterId": "664",
+      "createAt": 1749546000
+    },
+    {
+      "titleJp": "人間の秘策2",
+      "titleZh": "人类的秘策2",
+      "chapterId": "665",
+      "createAt": 1749632400
+    },
+    {
+      "titleJp": "人間の秘策3",
+      "titleZh": "人类的秘策3",
+      "chapterId": "666",
+      "createAt": 1749718800
+    },
+    {
+      "titleJp": "人間の秘策4",
+      "titleZh": "人类的秘策4",
+      "chapterId": "667",
+      "createAt": 1749805200
+    },
+    {
+      "titleJp": "人間の秘策　5",
+      "titleZh": "人类的秘策　5",
+      "chapterId": "668",
+      "createAt": 1749891600
+    },
+    {
+      "titleJp": "人間の秘策6",
+      "titleZh": "人类的秘策6",
+      "chapterId": "669",
+      "createAt": 1749978000
+    },
+    {
+      "titleJp": "選択1",
+      "titleZh": "选项1",
+      "chapterId": "670",
+      "createAt": 1750064400
+    },
+    {
+      "titleJp": "選択2",
+      "titleZh": "选择2",
+      "chapterId": "671",
+      "createAt": 1750150800
+    },
+    {
+      "titleJp": "選択3",
+      "titleZh": "选择3",
+      "chapterId": "672",
+      "createAt": 1750237200
+    },
+    {
+      "titleJp": "選択4",
+      "titleZh": "选项4",
+      "chapterId": "673",
+      "createAt": 1750323600
+    },
+    {
+      "titleJp": "選択5",
+      "titleZh": "选择5",
+      "chapterId": "674",
+      "createAt": 1750410000
+    },
+    {
+      "titleJp": "ガルーを受け入れるか1",
+      "titleZh": "是否接受卡鲁？",
+      "chapterId": "675",
+      "createAt": 1750496400
+    },
+    {
+      "titleJp": "ガルーを受け入れるか2",
+      "titleZh": "是否接受卡鲁？2",
+      "chapterId": "676",
+      "createAt": 1750582800
+    },
+    {
+      "titleJp": "ガルーを受け入れるか3",
+      "titleZh": "是否接受卡鲁？3",
+      "chapterId": "677",
+      "createAt": 1750669200
+    },
+    {
+      "titleJp": "カルチャーショック1",
+      "titleZh": "文化冲击1",
+      "chapterId": "678",
+      "createAt": 1750755600
+    },
+    {
+      "titleJp": "カルチャーショック2",
+      "titleZh": "文化冲击2",
+      "chapterId": "679",
+      "createAt": 1750842000
+    },
+    {
+      "titleJp": "第十二章",
+      "titleZh": "第十二章"
+    },
+    {
+      "titleJp": "明るいニュース、暗いニュース1",
+      "titleZh": "好消息，坏消息1",
+      "chapterId": "680",
+      "createAt": 1750928400
+    },
+    {
+      "titleJp": "明るいニュース、暗いニュース2",
+      "titleZh": "好消息，坏消息2",
+      "chapterId": "681",
+      "createAt": 1751014800
+    },
+    {
+      "titleJp": "上に立つ者の度量1",
+      "titleZh": "领导者的度量1",
+      "chapterId": "682",
+      "createAt": 1751101200
+    },
+    {
+      "titleJp": "上に立つ者の度量2",
+      "titleZh": "领导者的度量2",
+      "chapterId": "683",
+      "createAt": 1751187600
+    },
+    {
+      "titleJp": "上に立つ者の度量3",
+      "titleZh": "领导者的度量3",
+      "chapterId": "684",
+      "createAt": 1751274000
+    },
+    {
+      "titleJp": "塔の友1",
+      "titleZh": "塔之友1",
+      "chapterId": "685",
+      "createAt": 1751360400
+    },
+    {
+      "titleJp": "塔の友2",
+      "titleZh": "塔之友2",
+      "chapterId": "686",
+      "createAt": 1751446800
+    },
+    {
+      "titleJp": "塔の友3",
+      "titleZh": "塔之友3",
+      "chapterId": "687",
+      "createAt": 1751533200
+    },
+    {
+      "titleJp": "まずは下調べ",
+      "titleZh": "先做调查",
+      "chapterId": "688",
+      "createAt": 1751619600
+    },
+    {
+      "titleJp": "女神の騎士たち1",
+      "titleZh": "女神的骑士们 1",
+      "chapterId": "689",
+      "createAt": 1751706000
+    },
+    {
+      "titleJp": "女神の騎士たち2",
+      "titleZh": "女神的骑士们 2",
+      "chapterId": "690",
+      "createAt": 1751878800
+    },
+    {
+      "titleJp": "女神の騎士たち3",
+      "titleZh": "女神的骑士们 3",
+      "chapterId": "691",
+      "createAt": 1751965200
+    },
+    {
+      "titleJp": "女神の騎士たち4",
+      "titleZh": "女神的骑士们 4",
+      "chapterId": "692",
+      "createAt": 1752051600
+    },
+    {
+      "titleJp": "女神の騎士たち5",
+      "titleZh": "女神的骑士们 5",
+      "chapterId": "693",
+      "createAt": 1752138000
+    },
+    {
+      "titleJp": "女神の騎士たち6",
+      "titleZh": "女神的骑士们 6",
+      "chapterId": "694",
+      "createAt": 1752224400
+    },
+    {
+      "titleJp": "女神の介入1",
+      "titleZh": "女神的介入1",
+      "chapterId": "695",
+      "createAt": 1752310800
+    },
+    {
+      "titleJp": "女神の介入2",
+      "titleZh": "女神的介入2",
+      "chapterId": "696",
+      "createAt": 1752483600
+    },
+    {
+      "titleJp": "女神の介入3",
+      "titleZh": "女神的介入3",
+      "chapterId": "697",
+      "createAt": 1752656400
+    },
+    {
+      "titleJp": "女神の介入4",
+      "titleZh": "女神的介入4",
+      "chapterId": "698",
+      "createAt": 1752742800
+    },
+    {
+      "titleJp": "四番目、本当の騎士1",
+      "titleZh": "第四章　真正的骑士1",
+      "chapterId": "699",
+      "createAt": 1752827880
+    },
+    {
+      "titleJp": "四番目、本当の騎士2",
+      "titleZh": "第四章　真正的骑士2",
+      "chapterId": "700",
+      "createAt": 1752915600
+    },
+    {
+      "titleJp": "四番目、本当の騎士3",
+      "titleZh": "第四章　真正的骑士3",
+      "chapterId": "701",
+      "createAt": 1753002000
+    },
+    {
+      "titleJp": "四番目、本当の騎士4",
+      "titleZh": "第四章　真正的骑士4",
+      "chapterId": "702",
+      "createAt": 1753092000
+    },
+    {
+      "titleJp": "四番目、本当の騎士5",
+      "titleZh": "第四章　真正的骑士5",
+      "chapterId": "703",
+      "createAt": 1753174800
+    },
+    {
+      "titleJp": "四番目、本当の騎士6",
+      "titleZh": "第四章　真正的骑士6",
+      "chapterId": "704",
+      "createAt": 1753261200
+    },
+    {
+      "titleJp": "四番目、本当の騎士7",
+      "titleZh": "第四章　真正的骑士7",
+      "chapterId": "705",
+      "createAt": 1753347600
+    },
+    {
+      "titleJp": "四番目、本当の騎士8",
+      "titleZh": "第四章　真正的骑士8",
+      "chapterId": "706",
+      "createAt": 1753434000
+    },
+    {
+      "titleJp": "四番目、本当の騎士9",
+      "titleZh": "第四章　真正的骑士9",
+      "chapterId": "707",
+      "createAt": 1753520400
+    },
+    {
+      "titleJp": "女神を倒して得たもの",
+      "titleZh": "打倒女神得到的东西",
+      "chapterId": "708",
+      "createAt": 1753606800
+    },
+    {
+      "titleJp": "ひとときの休息",
+      "titleZh": "短暂的休息",
+      "chapterId": "709",
+      "createAt": 1753693200
+    },
+    {
+      "titleJp": "塔外の問題",
+      "titleZh": "塔外的问题",
+      "chapterId": "710",
+      "createAt": 1753779600
+    },
+    {
+      "titleJp": "フェンリルの恩返し　1",
+      "titleZh": "芬里尔的报恩　1",
+      "chapterId": "711",
+      "createAt": 1753866000
+    },
+    {
+      "titleJp": "フェンリルの恩返し2",
+      "titleZh": "芬里尔的报恩2",
+      "chapterId": "712",
+      "createAt": 1753952400
+    },
+    {
+      "titleJp": "フェンリルの恩返し3",
+      "titleZh": "芬里尔的报恩 3",
+      "chapterId": "713",
+      "createAt": 1754038800
+    },
+    {
+      "titleJp": "フェンリルの恩返し4",
+      "titleZh": "芬里尔的报恩 4",
+      "chapterId": "714",
+      "createAt": 1754126100
+    },
+    {
+      "titleJp": "フェンリルの恩返し5",
+      "titleZh": "芬里尔的报恩 5",
+      "chapterId": "715",
+      "createAt": 1754211600
+    },
+    {
+      "titleJp": "英雄軍師、フェンリルを呼び出す1",
+      "titleZh": "英雄军师，召唤芬里尔1",
+      "chapterId": "716",
+      "createAt": 1754298000
+    },
+    {
+      "titleJp": "英雄軍師、フェンリルを呼び出す2",
+      "titleZh": "英雄军师，召唤芬里尔2",
+      "chapterId": "717",
+      "createAt": 1754384400
+    },
+    {
+      "titleJp": "閑話・仲良しこよし",
+      "titleZh": "闲话　感情融洽",
+      "chapterId": "718",
+      "createAt": 1754470800
+    },
+    {
+      "titleJp": "第四次太羽島攻略作戦1",
+      "titleZh": "第四次太羽岛攻略作战1",
+      "chapterId": "719",
+      "createAt": 1754557200
+    },
+    {
+      "titleJp": "第四次太羽島攻略作戦2",
+      "titleZh": "第四次太羽岛攻略作战2",
+      "chapterId": "720",
+      "createAt": 1754643600
+    },
+    {
+      "titleJp": "第四次太羽島攻略作戦3",
+      "titleZh": "第四次太羽岛攻略作战3",
+      "chapterId": "721",
+      "createAt": 1754730000
+    },
+    {
+      "titleJp": "第四次太羽島攻略作戦4",
+      "titleZh": "第四次太羽岛攻略作战4",
+      "chapterId": "722",
+      "createAt": 1754817300
+    },
+    {
+      "titleJp": "次世代のアラクネ1",
+      "titleZh": "下一代的阿剌克涅1",
+      "chapterId": "723",
+      "createAt": 1754903220
+    },
+    {
+      "titleJp": "次世代のアラクネ2",
+      "titleZh": "次世代的阿剌克涅2",
+      "chapterId": "724",
+      "createAt": 1754989200
+    },
+    {
+      "titleJp": "次世代のアラクネ3",
+      "titleZh": "次世代的阿拉克涅3",
+      "chapterId": "725",
+      "createAt": 1755075600
+    },
+    {
+      "titleJp": "次世代のアラクネ4",
+      "titleZh": "次世代的阿拉克涅4",
+      "chapterId": "726",
+      "createAt": 1755162000
+    },
+    {
+      "titleJp": "次世代のアラクネ5",
+      "titleZh": "次世代的阿拉克涅5",
+      "chapterId": "727",
+      "createAt": 1755248400
+    },
+    {
+      "titleJp": "次世代のアラクネ6",
+      "titleZh": "次世代的阿拉克涅6",
+      "chapterId": "728",
+      "createAt": 1755334800
+    },
+    {
+      "titleJp": "裏切り者の英雄",
+      "titleZh": "背叛者的英雄。",
+      "chapterId": "729",
+      "createAt": 1755421200
+    },
+    {
+      "titleJp": "英雄失墜す",
+      "titleZh": "英雄失势",
+      "chapterId": "730",
+      "createAt": 1755507600
+    },
+    {
+      "titleJp": "第十三章",
+      "titleZh": "第十三章"
+    },
+    {
+      "titleJp": "挑めるまでになりました1",
+      "titleZh": "终于到了挑战的时刻1",
+      "chapterId": "731",
+      "createAt": 1755594000
+    },
+    {
+      "titleJp": "挑めるまでになりました2",
+      "titleZh": "终于到了挑战的时刻2",
+      "chapterId": "732",
+      "createAt": 1755766800
+    },
+    {
+      "titleJp": "挑めるまでになりました3",
+      "titleZh": "终于到了挑战的时刻3",
+      "chapterId": "733",
+      "createAt": 1755853200
+    },
+    {
+      "titleJp": "挑めるまでになりました4",
+      "titleZh": "终于到了挑战的时刻4",
+      "chapterId": "734",
+      "createAt": 1755939600
+    },
+    {
+      "titleJp": "金の気配",
+      "titleZh": "金钱的气息",
+      "chapterId": "735",
+      "createAt": 1756026000
+    },
+    {
+      "titleJp": "抗争勃発1",
+      "titleZh": "抗争爆发1",
+      "chapterId": "736",
+      "createAt": 1756112400
+    },
+    {
+      "titleJp": "抗争勃発2",
+      "titleZh": "抗争爆发2",
+      "chapterId": "737",
+      "createAt": 1756198800
+    },
+    {
+      "titleJp": "抗争勃発3",
+      "titleZh": "抗争爆发3",
+      "chapterId": "738",
+      "createAt": 1756285200
+    },
+    {
+      "titleJp": "抗争勃発4",
+      "titleZh": "抗争爆发4",
+      "chapterId": "739",
+      "createAt": 1756371600
+    },
+    {
+      "titleJp": "意外と近かった1",
+      "titleZh": "意外地近1",
+      "chapterId": "740",
+      "createAt": 1756458000
+    },
+    {
+      "titleJp": "意外と近かった2",
+      "titleZh": "意外地近2",
+      "chapterId": "741",
+      "createAt": 1756544400
+    },
+    {
+      "titleJp": "意外と近かった3",
+      "titleZh": "意外地近3",
+      "chapterId": "742",
+      "createAt": 1756630800
+    },
+    {
+      "titleJp": "意外と近かった4",
+      "titleZh": "意外地近4",
+      "chapterId": "743",
+      "createAt": 1756717200
+    },
+    {
+      "titleJp": "金と暴力1",
+      "titleZh": "金钱与暴力1",
+      "chapterId": "744",
+      "createAt": 1756803600
+    },
+    {
+      "titleJp": "金と暴力2",
+      "titleZh": "金钱与暴力 2",
+      "chapterId": "745",
+      "createAt": 1756890000
+    },
+    {
+      "titleJp": "金と暴力3",
+      "titleZh": "金钱与暴力 3",
+      "chapterId": "746",
+      "createAt": 1756976400
+    },
+    {
+      "titleJp": "金と暴力4",
+      "titleZh": "金钱与暴力 4",
+      "chapterId": "747",
+      "createAt": 1757062800
+    },
+    {
+      "titleJp": "金と暴力5",
+      "titleZh": "金钱与暴力 5",
+      "chapterId": "748",
+      "createAt": 1757149200
+    },
+    {
+      "titleJp": "金と暴力6",
+      "titleZh": "金钱与暴力 6",
+      "chapterId": "749",
+      "createAt": 1757235600
+    },
+    {
+      "titleJp": "なんか漏れてるかもしれない1",
+      "titleZh": "好像漏出来了1",
+      "chapterId": "750",
+      "createAt": 1757322000
+    },
+    {
+      "titleJp": "なんか漏れてるかもしれない2",
+      "titleZh": "好像漏出来了2",
+      "chapterId": "751",
+      "createAt": 1757408400
+    },
+    {
+      "titleJp": "なんか漏れてるかもしれない3",
+      "titleZh": "好像漏出来了3",
+      "chapterId": "752",
+      "createAt": 1757494800
+    },
+    {
+      "titleJp": "微妙な雰囲気",
+      "titleZh": "微妙的气氛",
+      "chapterId": "753",
+      "createAt": 1757581200
+    },
+    {
+      "titleJp": "再び三つ巴の戦い1",
+      "titleZh": "三方混战再次上演1",
+      "chapterId": "754",
+      "createAt": 1757667600
+    },
+    {
+      "titleJp": "再び三つ巴の戦い2",
+      "titleZh": "三者相争之再战2",
+      "chapterId": "755",
+      "createAt": 1757754600
+    },
+    {
+      "titleJp": "再び三つ巴の戦い3",
+      "titleZh": "新三国志 3",
+      "chapterId": "756",
+      "createAt": 1757840400
+    },
+    {
+      "titleJp": "再び三つ巴の戦い4",
+      "titleZh": "三者相克的战斗4",
+      "chapterId": "757",
+      "createAt": 1757926800
+    },
+    {
+      "titleJp": "再び三つ巴の戦い5",
+      "titleZh": "三者相克的战斗5",
+      "chapterId": "758",
+      "createAt": 1758013200
+    },
+    {
+      "titleJp": "再び三つ巴の戦い6",
+      "titleZh": "三者相争之再战 6",
+      "chapterId": "759",
+      "createAt": 1758099600
+    },
+    {
+      "titleJp": "別れ1",
+      "titleZh": "别离1",
+      "chapterId": "760",
+      "createAt": 1758186000
+    },
+    {
+      "titleJp": "別れ2",
+      "titleZh": "别离2",
+      "chapterId": "761",
+      "createAt": 1758272400
+    },
+    {
+      "titleJp": "希望あり",
+      "titleZh": "有希望",
+      "chapterId": "762",
+      "createAt": 1758358800
+    },
+    {
+      "titleJp": "再会の希望",
+      "titleZh": "重逢的希望",
+      "chapterId": "763",
+      "createAt": 1758445200
+    },
+    {
+      "titleJp": "夢を見る1",
+      "titleZh": "梦见1",
+      "chapterId": "764",
+      "createAt": 1758531600
+    },
+    {
+      "titleJp": "夢を見る2",
+      "titleZh": "梦2",
+      "chapterId": "765",
+      "createAt": 1758618000
+    },
+    {
+      "titleJp": "夢を見る3",
+      "titleZh": "梦3",
+      "chapterId": "766",
+      "createAt": 1758704400
+    },
+    {
+      "titleJp": "夢を乗り越えて",
+      "titleZh": "跨越梦想",
+      "chapterId": "767",
+      "createAt": 1758790800
+    },
+    {
+      "titleJp": "ブラックマーケットの依頼1",
+      "titleZh": "黑市委托1",
+      "chapterId": "768",
+      "createAt": 1758877200
+    },
+    {
+      "titleJp": "ブラックマーケットの依頼2",
+      "titleZh": "黑市委托2",
+      "chapterId": "769",
+      "createAt": 1758963600
+    },
+    {
+      "titleJp": "ブラックマーケットの依頼3",
+      "titleZh": "黑市委托3",
+      "chapterId": "770",
+      "createAt": 1759050000
+    },
+    {
+      "titleJp": "古代遺跡1",
+      "titleZh": "古代遗迹1",
+      "chapterId": "771",
+      "createAt": 1759136400
+    },
+    {
+      "titleJp": "古代遺跡2",
+      "titleZh": "古代遗迹2",
+      "chapterId": "772",
+      "createAt": 1759222800
+    },
+    {
+      "titleJp": "古代遺跡3",
+      "titleZh": "古代遗迹3",
+      "chapterId": "773",
+      "createAt": 1759309200
+    },
+    {
+      "titleJp": "古代遺跡4",
+      "titleZh": "古代遗迹4",
+      "chapterId": "774",
+      "createAt": 1759395600
+    },
+    {
+      "titleJp": "何かの研究所1",
+      "titleZh": "某种研究所1",
+      "chapterId": "775",
+      "createAt": 1759482000
+    },
+    {
+      "titleJp": "何かの研究所2",
+      "titleZh": "某研究所2",
+      "chapterId": "776",
+      "createAt": 1759568400
+    },
+    {
+      "titleJp": "何かの研究所3",
+      "titleZh": "某研究所3",
+      "chapterId": "777",
+      "createAt": 1759651920
+    },
+    {
+      "titleJp": "何かの研究所4",
+      "titleZh": "某研究机构4",
+      "chapterId": "778",
+      "createAt": 1759741200
+    },
+    {
+      "titleJp": "何かの研究所5",
+      "titleZh": "某研究所5",
+      "chapterId": "779",
+      "createAt": 1759827600
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ1",
+      "titleZh": "取回古代遗物1",
+      "chapterId": "780",
+      "createAt": 1759914000
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ2",
+      "titleZh": "取回古代遗物2",
+      "chapterId": "781",
+      "createAt": 1760000400
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ3",
+      "titleZh": "古代遗物回收记 3",
+      "chapterId": "782",
+      "createAt": 1760173200
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ4",
+      "titleZh": "取回古代遗物4",
+      "chapterId": "783",
+      "createAt": 1760259600
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ5",
+      "titleZh": "取回古代遗物5",
+      "chapterId": "784",
+      "createAt": 1760346000
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ6",
+      "titleZh": "取回古代遗物6",
+      "chapterId": "785",
+      "createAt": 1760432400
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ7",
+      "titleZh": "取回古代遗物7",
+      "chapterId": "786",
+      "createAt": 1760691600
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ8",
+      "titleZh": "取回古代遗物8",
+      "chapterId": "787",
+      "createAt": 1760691600
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ9",
+      "titleZh": "取回古代遗物9",
+      "chapterId": "788",
+      "createAt": 1760778000
+    },
+    {
+      "titleJp": "古代の遺物を取り戻せ10",
+      "titleZh": "取回古代遗物 10",
+      "chapterId": "789",
+      "createAt": 1760864400
+    },
+    {
+      "titleJp": "親子の再会1",
+      "titleZh": "母女重逢1",
+      "chapterId": "790",
+      "createAt": 1760950800
+    },
+    {
+      "titleJp": "親子の再会2",
+      "titleZh": "母女重逢2",
+      "chapterId": "791",
+      "createAt": 1761037200
+    },
+    {
+      "titleJp": "アンデッドと悪魔1",
+      "titleZh": "不死者与恶魔1",
+      "chapterId": "792",
+      "createAt": 1761123600
+    },
+    {
+      "titleJp": "アンデッドと悪魔2",
+      "titleZh": "不死生物与恶魔2",
+      "chapterId": "793",
+      "createAt": 1761296400
+    },
+    {
+      "titleJp": "第十四章",
+      "titleZh": "第十四章"
+    },
+    {
+      "titleJp": "影と戦って",
+      "titleZh": "与影子战斗",
+      "chapterId": "794",
+      "createAt": 1761382800
+    },
+    {
+      "titleJp": "シャリンを呼び出せ！1",
+      "titleZh": "叫出夏琳！1",
+      "chapterId": "795",
+      "createAt": 1761555600
+    },
+    {
+      "titleJp": "シャリンを呼び出せ！2",
+      "titleZh": "召唤夏琳！ 2",
+      "chapterId": "796",
+      "createAt": 1761642000
+    },
+    {
+      "titleJp": "シャリンを呼び出せ！3",
+      "titleZh": "把莎琳叫出来！ 3",
+      "chapterId": "797",
+      "createAt": 1762160400
+    },
+    {
+      "titleJp": "シャリンを呼び出せ！4",
+      "titleZh": "把莎琳叫出来！ 4",
+      "chapterId": "798",
+      "createAt": 1762246800
+    },
+    {
+      "titleJp": "シャリンを呼び出せ！5",
+      "titleZh": "把莎琳叫出来！ 5",
+      "chapterId": "799",
+      "createAt": 1762333200
+    },
+    {
+      "titleJp": "決意、新たに",
+      "titleZh": "新的决心",
+      "chapterId": "800",
+      "createAt": 1762506000
+    },
+    {
+      "titleJp": "力に飲み込まれた男1",
+      "titleZh": "被力量吞噬的男人1",
+      "chapterId": "801",
+      "createAt": 1762592400
+    },
+    {
+      "titleJp": "力に飲み込まれた男2",
+      "titleZh": "被力量吞噬的男人2",
+      "chapterId": "802",
+      "createAt": 1762765200
+    },
+    {
+      "titleJp": "力に飲み込まれた男3",
+      "titleZh": "被力量吞噬的男人3",
+      "chapterId": "803",
+      "createAt": 1762851600
+    },
+    {
+      "titleJp": "力に飲み込まれた男4",
+      "titleZh": "被力量吞噬的男人 4",
+      "chapterId": "804",
+      "createAt": 1762938000
+    },
+    {
+      "titleJp": "力に飲み込まれた男5",
+      "titleZh": "被力量吞噬的男人 5",
+      "chapterId": "805",
+      "createAt": 1763024400
+    },
+    {
+      "titleJp": "力に飲み込まれた男6",
+      "titleZh": "被力量吞噬的男人 6",
+      "chapterId": "806",
+      "createAt": 1763110800
+    },
+    {
+      "titleJp": "ずるい時間稼ぎ",
+      "titleZh": "狡猾的拖延战术",
+      "chapterId": "807",
+      "createAt": 1763197200
+    },
+    {
+      "titleJp": "神々の争い1",
+      "titleZh": "众神的争斗1",
+      "chapterId": "808",
+      "createAt": 1763370960
+    },
+    {
+      "titleJp": "神々の争い2",
+      "titleZh": "众神的争斗2",
+      "chapterId": "809",
+      "createAt": 1763456400
+    },
+    {
+      "titleJp": "リッチを浄化せよ1",
+      "titleZh": "净化邪恶巫妖王 1",
+      "chapterId": "810",
+      "createAt": 1763629200
+    },
+    {
+      "titleJp": "リッチを浄化せよ2",
+      "titleZh": "净化邪恶巫妖2",
+      "chapterId": "811",
+      "createAt": 1763888400
+    },
+    {
+      "titleJp": "リッチを浄化せよ3",
+      "titleZh": "净化僵尸3",
+      "chapterId": "812",
+      "createAt": 1763974800
+    },
+    {
+      "titleJp": "リッチを浄化せよ4",
+      "titleZh": "净化邪恶巫师4",
+      "chapterId": "813",
+      "createAt": 1764061200
+    },
+    {
+      "titleJp": "リッチを浄化せよ5",
+      "titleZh": "净化邪恶巫师5",
+      "chapterId": "814",
+      "createAt": 1764147600
+    },
+    {
+      "titleJp": "追い詰められていく世界",
+      "titleZh": "逐渐被逼入绝境的世界",
+      "chapterId": "815",
+      "createAt": 1764234000
+    },
+    {
+      "titleJp": "良いニュースと悪いニュース",
+      "titleZh": "好消息与坏消息",
+      "chapterId": "816",
+      "createAt": 1764406800
+    },
+    {
+      "titleJp": "ブラックドラゴン戦1",
+      "titleZh": "黑龙战1",
+      "chapterId": "817",
+      "createAt": 1764493200
+    },
+    {
+      "titleJp": "ブラックドラゴン戦2",
+      "titleZh": "黑龙战2",
+      "chapterId": "818",
+      "createAt": 1764579600
+    },
+    {
+      "titleJp": "ブラックドラゴン戦3",
+      "titleZh": "黑龙战3",
+      "chapterId": "819",
+      "createAt": 1764668400
+    },
+    {
+      "titleJp": "ブラックドラゴン戦4",
+      "titleZh": "黑龙战4",
+      "chapterId": "820",
+      "createAt": 1764753660
+    },
+    {
+      "titleJp": "ブラックドラゴン戦5",
+      "titleZh": "黑龙战5",
+      "chapterId": "821",
+      "createAt": 1764838800
+    },
+    {
+      "titleJp": "反省",
+      "titleZh": "反省",
+      "chapterId": "822",
+      "createAt": 1764925200
+    },
+    {
+      "titleJp": "光明1",
+      "titleZh": "光明1",
+      "chapterId": "823",
+      "createAt": 1765098000
+    },
+    {
+      "titleJp": "光明2",
+      "titleZh": "光明2",
+      "chapterId": "824",
+      "createAt": 1765184400
+    },
+    {
+      "titleJp": "多重ゲート1",
+      "titleZh": "多重门1",
+      "chapterId": "825",
+      "createAt": 1765270800
+    },
+    {
+      "titleJp": "多重ゲート2",
+      "titleZh": "多重门2",
+      "chapterId": "826",
+      "createAt": 1765445220
+    },
+    {
+      "titleJp": "多重ゲート3",
+      "titleZh": "多重门3",
+      "chapterId": "827",
+      "createAt": 1765616400
+    },
+    {
+      "titleJp": "多重ゲート4",
+      "titleZh": "多重门4",
+      "chapterId": "828",
+      "createAt": 1765702800
+    },
+    {
+      "titleJp": "勇者を救え1",
+      "titleZh": "拯救勇者 1",
+      "chapterId": "829",
+      "createAt": 1765876380
+    },
+    {
+      "titleJp": "勇者を救え2",
+      "titleZh": "拯救勇者2",
+      "chapterId": "830",
+      "createAt": 1765962000
+    },
+    {
+      "titleJp": "勇者を救え3",
+      "titleZh": "拯救勇者3",
+      "chapterId": "831",
+      "createAt": 1766052720
+    },
+    {
+      "titleJp": "勇者を救え4",
+      "titleZh": "救了勇者之后 4",
+      "chapterId": "832",
+      "createAt": 1766134800
+    },
+    {
+      "titleJp": "勇者を救え5",
+      "titleZh": "救了勇者之后 5",
+      "chapterId": "833",
+      "createAt": 1766221200
+    },
+    {
+      "titleJp": "勇者を救え6",
+      "titleZh": "拯救勇者6",
+      "chapterId": "834",
+      "createAt": 1766394000
+    },
+    {
+      "titleJp": "勇者を救え7",
+      "titleZh": "拯救勇者7",
+      "chapterId": "835",
+      "createAt": 1766480400
+    },
+    {
+      "titleJp": "暗黒竜撃退戦1",
+      "titleZh": "击退暗黑龙战1",
+      "chapterId": "836",
+      "createAt": 1766566800
+    },
+    {
+      "titleJp": "暗黒竜撃退戦2",
+      "titleZh": "击退暗黑龙战2",
+      "chapterId": "837",
+      "createAt": 1766653200
+    },
+    {
+      "titleJp": "暗黒竜撃退戦3",
+      "titleZh": "击退暗黑龙战3",
+      "chapterId": "838",
+      "createAt": 1766739600
+    },
+    {
+      "titleJp": "暗黒竜撃退戦4",
+      "titleZh": "击退暗黑龙战4",
+      "chapterId": "839",
+      "createAt": 1766912400
+    },
+    {
+      "titleJp": "暗黒竜撃退戦5",
+      "titleZh": "击退暗黑龙战5",
+      "chapterId": "840",
+      "createAt": 1767085200
+    },
+    {
+      "titleJp": "暗黒竜撃退戦6",
+      "titleZh": "击退暗黑龙战6",
+      "chapterId": "841",
+      "createAt": 1767171600
+    },
+    {
+      "titleJp": "暗黒竜撃退戦7",
+      "titleZh": "击退暗黑龙战7",
+      "chapterId": "842",
+      "createAt": 1767259800
+    },
+    {
+      "titleJp": "無事終わりました",
+      "titleZh": "顺利结束了",
+      "chapterId": "843",
+      "createAt": 1767344400
+    },
+    {
+      "titleJp": "決戦、暗黒竜1",
+      "titleZh": "决战，暗黑龙1",
+      "chapterId": "844",
+      "createAt": 1767430800
+    },
+    {
+      "titleJp": "決戦、暗黒竜2",
+      "titleZh": "决战，暗黑龙2",
+      "chapterId": "845",
+      "createAt": 1767517200
+    },
+    {
+      "titleJp": "決戦、暗黒竜3",
+      "titleZh": "决战，暗黑龙3",
+      "chapterId": "846",
+      "createAt": 1767603600
+    },
+    {
+      "titleJp": "決戦、暗黒竜4",
+      "chapterId": "847",
+      "createAt": 1767690000
+    }
+  ],
+  "visited": 3319,
+  "syncAt": 1767747317,
+  "jp": 846,
+  "baidu": 0,
+  "youdao": 838,
+  "gpt": 0,
+  "sakura": 846
+}

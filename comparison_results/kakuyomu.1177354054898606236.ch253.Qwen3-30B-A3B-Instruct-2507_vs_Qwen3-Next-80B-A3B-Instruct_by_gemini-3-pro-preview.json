@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:31:44.678893",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "eb366e73b1d7a8db46d3b86c014db4d3f8b1c98b1d879b4996f9653b18772c87",
+    "B": "cf8c329b22ef182dbe50032ed4bc863fbb38846deafec3b277244e7987f226e6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:32:59.118073",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900314563719974238p0mYFJ",
+      "judge_response": {
+        "id": "chatcmpl-2026010900314563719974238p0mYFJ",
+        "object": "chat.completion",
+        "created": 1767889978,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **A** 总体上准确把握了原文的含义，但在一个关键的术语上出现了明显的上下文错误。在第42段和46段中，原文的“センターポリス”（Center Polis）指的是一个名为“中心都市”的区域或城市核心，A将其误译为“中央警察”（Central Police）。考虑到后文提到的“住宅需求”和“企业进驻”，将其理解为城市开发区（Polis）而非警察机构（Police）才是正确的。\n*   **B** 正确地将“センターポリス”译为“中心都市”。然而，B在第8段出现了重复和杂糅：“帝国级叶卡捷琳娜级”（原文：インペラトリーツァ・エカテリーナ級，即叶卡捷琳娜女皇级），这里的“帝国级”是多余且错误的。此外，B在第15段将“物理的に...いない”直译为“物理性缺席”，虽然意思准确，但在中文语境下显得生硬。\n\n**2. 流畅性 (Fluency)**\n*   **A** 的行文非常流畅，符合中文轻小说的阅读习惯。句子结构自然，用词考究（如“凝望”、“不予置评”的语境处理）。\n*   **B** 的部分句子带有明显的翻译腔。例如第15段的“物理性缺席”，以及第76段结尾用问号处理原文的“でしょう？”（原文是反问/确认语气，A处理为陈述句加语气词更自然）。\n\n**3. 风格与语气 (Style/Tone)**\n*   **A** 很好地还原了政治/军事轻小说的严肃与高雅感。对于皇帝和高官的对话，语气把握得当。\n*   **B** 略显平淡，且由于简繁混杂（见下文），阅读体验受到严重影响。\n\n**4. 术语与名称 (Terminology)**\n*   **人名译法：** 原文中的“ゲオルク”（Georg）是德语名。A译为“格奧爾格”（德式音译），B译为“乔治”（英式音译）。考虑到文中出现的“威廉明娜”、“莱希腾巴赫”等德式地名，A的译法更具文化一致性。\n*   **奇怪的共性：** 两者都将“ピヴォワーヌ”（Pivoine，意为牡丹）译为“匹柏爾斯”。这在语音上差距巨大（Pivoine vs Peebles?），可能是两者参考了同一份（可能错误的）术语表或机器翻译底稿，但这不影响两者之间的相对排名。\n\n**5. 格式与一致性 (Formatting & Consistency)**\n*   **A** 始终使用繁体中文，标点符号使用规范（如使用直角引号「」）。\n*   **B** 存在严重的简繁体混用问题。例如，第1段是简体，第18段突然出现繁体“匹柏爾斯”，第33段“柳井義久”（繁体），第75段又变回简体。这种不一致性在专业翻译中是重大失误。\n\n### 结论\n翻译A在整体可读性、风格统一性和格式规范性上远胜于翻译B。尽管A在“Center Polis”一词上犯了上下文理解错误（译为警察），但翻译B的简繁混杂、生硬直译以及第8段的低级错误（帝国级叶卡捷琳娜级）使其整体质量大打折扣。A更像是一个经过润色的成品，而B像是一个未完成的草稿。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"A误译了'Center Polis'为中央警察；B正确译为中心都市，但在第8段有'帝国级叶卡捷琳娜级'的冗余错误。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A行文自然流畅；B存在'物理性缺席'等生硬直译。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A更符合轻小说风格；B语感较平。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A采用了更符合背景的德式音译（格奥尔格）；B使用了英式（乔治）。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A逻辑连贯；B因简繁混杂导致阅读割裂。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"B严重混用了简体和繁体中文，这是重大扣分项。\"\n    }\n  },\n  \"key_differences\": [\n    \"术语理解：A将'Center Polis'误译为'中央警察'，B正确译为'中心都市'。\",\n    \"格式一致性：A为纯正繁体；B简繁混杂，极不规范。\",\n    \"翻译风格：A更自然（如'长期不在'）；B偏直译（如'物理性缺席'）。\",\n    \"人名处理：A使用德式音译更贴合帝国背景。\"\n  ],\n  \"final_summary\": \"翻译A在流畅度、风格把控和格式规范性上表现优异，读起来像成熟的轻小说译文。尽管A将'Center Polis'误译为'中央警察'是一个明显的上下文错误，但相比之下，翻译B存在严重的简繁体混用问题，且包含生硬的直译（如'物理性缺席'）和明显的语病（如'帝国级叶卡捷琳娜级'）。因此，A整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8335,
+          "completion_tokens": 6482,
+          "total_tokens": 14817
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 8,
+        "notes": "A误译了'Center Polis'为中央警察；B正确译为中心都市，但在第8段有'帝国级叶卡捷琳娜级'的冗余错误。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A行文自然流畅；B存在'物理性缺席'等生硬直译。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更符合轻小说风格；B语感较平。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A采用了更符合背景的德式音译（格奥尔格）；B使用了英式（乔治）。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A逻辑连贯；B因简繁混杂导致阅读割裂。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 4,
+        "notes": "B严重混用了简体和繁体中文，这是重大扣分项。"
+      }
+    },
+    "key_differences": [
+      "术语理解：A将'Center Polis'误译为'中央警察'，B正确译为'中心都市'。",
+      "格式一致性：A为纯正繁体；B简繁混杂，极不规范。",
+      "翻译风格：A更自然（如'长期不在'）；B偏直译（如'物理性缺席'）。",
+      "人名处理：A使用德式音译更贴合帝国背景。"
+    ],
+    "final_summary": "翻译A在流畅度、风格把控和格式规范性上表现优异，读起来像成熟的轻小说译文。尽管A将'Center Polis'误译为'中央警察'是一个明显的上下文错误，但相比之下，翻译B存在严重的简繁体混用问题，且包含生硬的直译（如'物理性缺席'）和明显的语病（如'帝国级叶卡捷琳娜级'）。因此，A整体质量更高。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

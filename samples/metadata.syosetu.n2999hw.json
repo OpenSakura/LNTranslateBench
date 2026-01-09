@@ -1,0 +1,1381 @@
+{
+  "titleJp": "どうやら世界の命運はカードゲームが握っているらしい",
+  "titleZh": "看来世界的命运掌握在纸牌游戏手中",
+  "authors": [
+    {
+      "name": "てしモシカ",
+      "link": "https://mypage.syosetu.com/1271177/"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [],
+  "keywords": [
+    "異世界転生",
+    "ギャグ",
+    "シリアス",
+    "女主人公",
+    "現代",
+    "異能力バトル",
+    "カードバトル",
+    "カクヨムにも掲載",
+    "リアルファイトもあり",
+    "TCG",
+    "恋愛要素あり",
+    "執着系キャラあり",
+    "暴力表現",
+    "鬱要素あり",
+    "本編完結済み"
+  ],
+  "points": 1658,
+  "totalCharacters": 1184594,
+  "introductionJp": "【本編完結済！　番外編不定期に更新中！】 「１枚のカードが新たな地球を創造し、今のネオアースが誕生したのです」 「先生、ちょっと何言ってるか理解できません」 気づけば赤ん坊になっていた私。どうやら流行りの異世界転生をしたらしい。 けれどここ、普通じゃない。地位も名誉も命すらも、すべてカードで決まるカードバトル系アニメの世界だった！？ ──でも、私、カードゲームなんてやったことないんですけど！？ アニメ知識ゼロ、カードゲーム経験ゼロの元一般人が、なぜかこの世界の主人公たちと共に、悪の組織と戦うことに。 カードで勝てなきゃ終わりの世界で、生き残る道はただひとつ。 運命のカードを引き、未来を変えろ！ カード×バトル×異世界で贈る、予測不能な逆転劇！ 平凡を望んだ少女の行く先に待つのは、世界を揺るがす真実だった！！",
+  "introductionZh": "第一部完结了!第二部开始了!“一张卡片创造了新的地球，于是就有了现在的新地球。”“老师，我听不懂你在说什么。”明明没有死亡的记忆，醒来却发现自己变成了婴儿。好像是做了流行的异世界转生。而且转生处是一个全部由卡决定的卡战斗系动画风格的世界。呃?我没玩过纸牌游戏啊? ?这样的动画也没看过? ? ?希望平凡生活的少女，一边被卡牌游戏系动画般的世界的飞一般的常识摆布，一边(几乎是强制性的)对抗这个世界的主人公般的人们和恶的组织的故事。",
+  "glossary": {
+    "ハナビ": "花火",
+    "タイヨウ": "太阳",
+    "ドライグ": "德莱格",
+    "サチコ": "佐智子",
+    "影薄": "影薄",
+    "サモンマッチ": "召唤对战",
+    "アチェリー": "阿切利",
+    "ヒョウガ": "冰河",
+    "ユカリ": "悠香里",
+    "ママヲ": "马马沃",
+    "セツオ": "节雄"
+  },
+  "toc": [
+    {
+      "titleJp": "第一部",
+      "titleZh": "第一部"
+    },
+    {
+      "titleJp": "プロローグ",
+      "titleZh": "序言",
+      "chapterId": "1",
+      "createAt": 1664712600
+    },
+    {
+      "titleJp": "第１章　出会い編",
+      "titleZh": "第1章　邂逅篇"
+    },
+    {
+      "titleJp": "ph1　転生者は異世界を受け入れる",
+      "titleZh": "ph1　转生者接受异世界",
+      "chapterId": "2",
+      "createAt": 1664751600
+    },
+    {
+      "titleJp": "ph2　サチコVSタイヨウ",
+      "titleZh": "ph2　幸子VS太阳",
+      "chapterId": "3",
+      "createAt": 1664838000
+    },
+    {
+      "titleJp": "ph3　黒髪の少年に絡まれる",
+      "titleZh": "ph3　被黑发少年缠住",
+      "chapterId": "4",
+      "createAt": 1664924400
+    },
+    {
+      "titleJp": "ph4　黒髪の少年と再開",
+      "titleZh": "ph 4　与黑发少年重新开始",
+      "chapterId": "5",
+      "createAt": 1665010800
+    },
+    {
+      "titleJp": "ph5　サチコVSクロガネ",
+      "titleZh": "ph 5　幸子VS黑金根",
+      "chapterId": "6",
+      "createAt": 1665212400
+    },
+    {
+      "titleJp": "ph6　クロガネとの決着",
+      "titleZh": "ph值6　与黑金的了断",
+      "chapterId": "7",
+      "createAt": 1665381600
+    },
+    {
+      "titleJp": "ph7　今日は女子会の日",
+      "titleZh": "ph7　今天是女子会的日子",
+      "chapterId": "8",
+      "createAt": 1665442800
+    },
+    {
+      "titleJp": "ph8　仲直り",
+      "titleZh": "ph值8　和好",
+      "chapterId": "9",
+      "createAt": 1665529200
+    },
+    {
+      "titleJp": "ph9　白髪の少年に絡まれる",
+      "titleZh": "ph9　被白发少年缠住",
+      "chapterId": "10",
+      "createAt": 1665615600
+    },
+    {
+      "titleJp": "第２章　SSC編",
+      "titleZh": "第2章　ssc篇"
+    },
+    {
+      "titleJp": "ph10　大会出場への勧誘",
+      "titleZh": "ph10　参加大会的劝告",
+      "chapterId": "11",
+      "createAt": 1665702000
+    },
+    {
+      "titleJp": "ph11　クロガネ先輩とデッキ強化と",
+      "titleZh": "ph值11　黑金前辈和卡组强化",
+      "chapterId": "12",
+      "createAt": 1665788400
+    },
+    {
+      "titleJp": "閑話１ーsideクロガネー",
+      "titleZh": "闲话1 - side黑伽奈",
+      "chapterId": "13",
+      "createAt": 1665874800
+    },
+    {
+      "titleJp": "ph12　SSC開催",
+      "titleZh": "ph值12　举办SSC",
+      "chapterId": "14",
+      "createAt": 1665961200
+    },
+    {
+      "titleJp": "ph13　サチコの提案",
+      "titleZh": "ph 13　幸子的建议",
+      "chapterId": "15",
+      "createAt": 1666047600
+    },
+    {
+      "titleJp": "ph14　ヒョウガVSイセキ",
+      "titleZh": "ph 14　火加VS转会",
+      "chapterId": "16",
+      "createAt": 1666134000
+    },
+    {
+      "titleJp": "ph15　大会でハプニングはつきもの",
+      "titleZh": "ph15　大会上难免有突发事件",
+      "chapterId": "17",
+      "createAt": 1666216800
+    },
+    {
+      "titleJp": "ph16　遅刻する主人公ーsideタイヨウー",
+      "titleZh": "ph16　迟到的主人公side太阳",
+      "chapterId": "18",
+      "createAt": 1666303200
+    },
+    {
+      "titleJp": "ph17　五金親子の会話ーsideシロガネー",
+      "titleZh": "ph17　五金父子的对话- side白伽奈",
+      "chapterId": "19",
+      "createAt": 1666389600
+    },
+    {
+      "titleJp": "ph18　ヒョウガとセンとーsideヒョウガー",
+      "titleZh": "ph 18　火加与森托side",
+      "chapterId": "20",
+      "createAt": 1666476000
+    },
+    {
+      "titleJp": "ph19　主人公は遅れてやってくる",
+      "titleZh": "ph19　主人公姗姗来迟",
+      "chapterId": "21",
+      "createAt": 1666562400
+    },
+    {
+      "titleJp": "ph20　医務室にて",
+      "titleZh": "ph 20　在医务室",
+      "chapterId": "22",
+      "createAt": 1666648800
+    },
+    {
+      "titleJp": "ph21　温泉での邂逅",
+      "titleZh": "ph 21　温泉邂逅",
+      "chapterId": "23",
+      "createAt": 1666735200
+    },
+    {
+      "titleJp": "ph22　ヒョウガくんと夜景と",
+      "titleZh": "ph 22　火贺和夜景",
+      "chapterId": "24",
+      "createAt": 1666821600
+    },
+    {
+      "titleJp": "ph23　SSC本選開始",
+      "titleZh": "ph23　SSC正式比赛开始",
+      "chapterId": "25",
+      "createAt": 1666908000
+    },
+    {
+      "titleJp": "ph24　タイヨウVSオクル",
+      "titleZh": "ph24　太阳VS送",
+      "chapterId": "26",
+      "createAt": 1667030400
+    },
+    {
+      "titleJp": "ph25　シロガネくんのプチ嫉妬",
+      "titleZh": "ph25　白金君的小小嫉妒",
+      "chapterId": "27",
+      "createAt": 1667080800
+    },
+    {
+      "titleJp": "ph26　シロガネVSカケル",
+      "titleZh": "ph26　白金VS小驰",
+      "chapterId": "28",
+      "createAt": 1667293200
+    },
+    {
+      "titleJp": "ph27　主人公が歩けばトラブルに当たる",
+      "titleZh": "ph27　主人公走路就会遇到麻烦",
+      "chapterId": "29",
+      "createAt": 1667358000
+    },
+    {
+      "titleJp": "ph28　悪役からの正論",
+      "titleZh": "ph28　来自反面人物的正论",
+      "chapterId": "30",
+      "createAt": 1667430000
+    },
+    {
+      "titleJp": "ph29　悪役の逃げ足の速さは異常",
+      "titleZh": "ph29　反派的逃跑速度异常",
+      "chapterId": "31",
+      "createAt": 1667512800
+    },
+    {
+      "titleJp": "ph30　医務室での話し合い",
+      "titleZh": "ph30　在医务室的谈话",
+      "chapterId": "32",
+      "createAt": 1667646000
+    },
+    {
+      "titleJp": "ph31　敵地に潜入ーsideシロガネー",
+      "titleZh": "ph31　潜入敌营- side白伽内",
+      "chapterId": "33",
+      "createAt": 1667714400
+    },
+    {
+      "titleJp": "ph32　敵地に潜入ーsideヒョウガー",
+      "titleZh": "ph 32　潜入敌营- side评格",
+      "chapterId": "34",
+      "createAt": 1667772000
+    },
+    {
+      "titleJp": "ph33　一方その頃サチコは",
+      "titleZh": "ph 33　与此同时，幸子",
+      "chapterId": "35",
+      "createAt": 1667858400
+    },
+    {
+      "titleJp": "ph34　タイヨウVSエンーsideタイヨウー",
+      "titleZh": "ph 34　太阳VS太阳",
+      "chapterId": "36",
+      "createAt": 1667962800
+    },
+    {
+      "titleJp": "ph35　タイヨウVSエンの決着ーsideタイヨウー",
+      "titleZh": "ph35　太阳VS圆的终结- side太阳",
+      "chapterId": "37",
+      "createAt": 1668081600
+    },
+    {
+      "titleJp": "ph36　サチコの戦い",
+      "titleZh": "ph36　幸子战役",
+      "chapterId": "38",
+      "createAt": 1668223080
+    },
+    {
+      "titleJp": "ph37　ヒョウガVSセンーsideヒョウガー",
+      "titleZh": "ph37　豹加VS森side豹格",
+      "chapterId": "39",
+      "createAt": 1668331200
+    },
+    {
+      "titleJp": "ph38　地下室で見たものーsideクロガネー",
+      "titleZh": "ph38　我在地下室看到的side黑伽内",
+      "chapterId": "40",
+      "createAt": 1668463200
+    },
+    {
+      "titleJp": "ph39　ヒョウガVSセンの決着ーsideヒョウガー",
+      "titleZh": "ph39　火加VS战的终结- side火加",
+      "chapterId": "41",
+      "createAt": 1668672000
+    },
+    {
+      "titleJp": "ph40　サチコの時間稼ぎの行方",
+      "titleZh": "ph 40　幸子拖延时间的方法",
+      "chapterId": "42",
+      "createAt": 1668816480
+    },
+    {
+      "titleJp": "ph41　SSC終了",
+      "titleZh": "ph41　SSC结束",
+      "chapterId": "43",
+      "createAt": 1668903720
+    },
+    {
+      "titleJp": "ph42　一難去っても終わらない一難",
+      "titleZh": "ph42　一波未平的一波",
+      "chapterId": "44",
+      "createAt": 1668999600
+    },
+    {
+      "titleJp": "ph43　五金コガネとのトーキングタイム",
+      "titleZh": "ph43　与五金子的谈话时间",
+      "chapterId": "45",
+      "createAt": 1669158000
+    },
+    {
+      "titleJp": "第３章　SSSC前修行編",
+      "titleZh": "第3章　SSSC前修行篇"
+    },
+    {
+      "titleJp": "ph44　特訓開始",
+      "titleZh": "ph44　特训开始",
+      "chapterId": "46",
+      "createAt": 1669299840
+    },
+    {
+      "titleJp": "ph45　マナ使いとしての第一歩",
+      "titleZh": "ph 45　作为礼仪使者的第一步",
+      "chapterId": "47",
+      "createAt": 1669449600
+    },
+    {
+      "titleJp": "ph46　グループトーク",
+      "titleZh": "ph46　集体谈话",
+      "chapterId": "48",
+      "createAt": 1669705200
+    },
+    {
+      "titleJp": "ph47　ヒョウガの相談",
+      "titleZh": "ph47　冰河的商谈",
+      "chapterId": "49",
+      "createAt": 1669900680
+    },
+    {
+      "titleJp": "ph48　レベルアップ",
+      "titleZh": "ph 48　水平的提高",
+      "chapterId": "50",
+      "createAt": 1670219160
+    },
+    {
+      "titleJp": "ph49　レベルアップ訓練開始",
+      "titleZh": "ph 49　升级训练开始",
+      "chapterId": "51",
+      "createAt": 1670751600
+    },
+    {
+      "titleJp": "ph50　SSSCまで残り３日",
+      "titleZh": "ph 50　离SSSC还有3天",
+      "chapterId": "52",
+      "createAt": 1671120360
+    },
+    {
+      "titleJp": "ph51　五金コガネの決定",
+      "titleZh": "ph 51　五金两金的决定",
+      "chapterId": "53",
+      "createAt": 1671577560
+    },
+    {
+      "titleJp": "ph52　シロガネの葛藤ーsideシロガネー",
+      "titleZh": "ph 52　白金之纠结- side白金之纠结",
+      "chapterId": "54",
+      "createAt": 1671688800
+    },
+    {
+      "titleJp": "ph53　サチコVSシロガネ",
+      "titleZh": "ph 53　幸子VS白金根",
+      "chapterId": "55",
+      "createAt": 1672221900
+    },
+    {
+      "titleJp": "ph54　サチコVSシロガネの決着",
+      "titleZh": "ph54　幸子VS白金的了断",
+      "chapterId": "56",
+      "createAt": 1672324380
+    },
+    {
+      "titleJp": "ph55　襲撃",
+      "titleZh": "ph55　袭击",
+      "chapterId": "57",
+      "createAt": 1672460220
+    },
+    {
+      "titleJp": "ph56　襲撃後",
+      "titleZh": "ph 56　袭击后",
+      "chapterId": "58",
+      "createAt": 1673251980
+    },
+    {
+      "titleJp": "ph57　SSSC当日の朝",
+      "titleZh": "ph 57　SSSC当天的早上",
+      "chapterId": "59",
+      "createAt": 1673994120
+    },
+    {
+      "titleJp": "第４章　SSSC編",
+      "titleZh": "第4章　sssc篇"
+    },
+    {
+      "titleJp": "ph58　SSSC開催",
+      "titleZh": "ph58　举办SSSC",
+      "chapterId": "60",
+      "createAt": 1675029480
+    },
+    {
+      "titleJp": "ph59　ダビデル島",
+      "titleZh": "ph59　大卫岛",
+      "chapterId": "61",
+      "createAt": 1675853160
+    },
+    {
+      "titleJp": "ph60　不機嫌ーsideクロガネー",
+      "titleZh": "ph60　不高兴side黑伽奈",
+      "chapterId": "62",
+      "createAt": 1676734080
+    },
+    {
+      "titleJp": "ph61　サチコと合流ーsideヒョウガー",
+      "titleZh": "ph61　与幸子会合- side",
+      "chapterId": "63",
+      "createAt": 1678912140
+    },
+    {
+      "titleJp": "ph62　火山エリア",
+      "titleZh": "ph62　火山区域",
+      "chapterId": "64",
+      "createAt": 1680928740
+    },
+    {
+      "titleJp": "ph63　ヒョウガくんとタッグマッチ",
+      "titleZh": "ph值63　和火贺搭档比赛",
+      "chapterId": "65",
+      "createAt": 1681738560
+    },
+    {
+      "titleJp": "ph64　ヒョウガくんとタッグマッチ２",
+      "titleZh": "ph值64　火贺搭档赛2",
+      "chapterId": "66",
+      "createAt": 1683342360
+    },
+    {
+      "titleJp": "ph65　影法師が見つけた場所",
+      "titleZh": "ph65　影法师发现的地方",
+      "chapterId": "67",
+      "createAt": 1684245660
+    },
+    {
+      "titleJp": "ph66　先輩との通信",
+      "titleZh": "ph66　和前辈的通信",
+      "chapterId": "68",
+      "createAt": 1684572060
+    },
+    {
+      "titleJp": "閑話２　約束ーsideタイヨウー",
+      "titleZh": "闲话2　约定- side太阳",
+      "chapterId": "69",
+      "createAt": 1686022800
+    },
+    {
+      "titleJp": "ph67　鉱山エリア",
+      "titleZh": "ph67　矿山区",
+      "chapterId": "70",
+      "createAt": 1686193680
+    },
+    {
+      "titleJp": "ph68　湖沼エリア",
+      "titleZh": "ph68　湖沼区域",
+      "chapterId": "71",
+      "createAt": 1686600780
+    },
+    {
+      "titleJp": "ph69　宝船アスカ",
+      "titleZh": "ph69　宝船明日香",
+      "chapterId": "72",
+      "createAt": 1686779580
+    },
+    {
+      "titleJp": "ph70　タイヨウVSアスカ",
+      "titleZh": "ph值70　太阳VS明日香",
+      "chapterId": "73",
+      "createAt": 1687569300
+    },
+    {
+      "titleJp": "ph71　３つめの刻印",
+      "titleZh": "ph值71　第三个刻印",
+      "chapterId": "74",
+      "createAt": 1687882320
+    },
+    {
+      "titleJp": "ph72　タイヨウVSアスカの決着",
+      "titleZh": "ph值72　太阳VS明日香的终结",
+      "chapterId": "75",
+      "createAt": 1688588820
+    },
+    {
+      "titleJp": "ph73　氷山エリアに向かってダッシュ",
+      "titleZh": "ph73　向冰山区域冲刺",
+      "chapterId": "76",
+      "createAt": 1688888640
+    },
+    {
+      "titleJp": "ph74　SSSC本選前日",
+      "titleZh": "ph值74　SSSC决赛前一天",
+      "chapterId": "77",
+      "createAt": 1689330300
+    },
+    {
+      "titleJp": "ph75　RSE事件跡地への潜入ーsideクロガネー",
+      "titleZh": "ph75　潜入RSE遗址- side黑伽内",
+      "chapterId": "78",
+      "createAt": 1689863640
+    },
+    {
+      "titleJp": "ph76　クロガネからの情報",
+      "titleZh": "ph76　来自黑金的情报",
+      "chapterId": "79",
+      "createAt": 1690369200
+    },
+    {
+      "titleJp": "ph77　SSSC本選会場に集まった４チーム",
+      "titleZh": "ph77　聚集在SSSC决赛现场的4支队伍",
+      "chapterId": "80",
+      "createAt": 1690723680
+    },
+    {
+      "titleJp": "第５章　サタン編",
+      "titleZh": "第5章　撒旦篇"
+    },
+    {
+      "titleJp": "ph78　宣言されない本選開始の合図",
+      "titleZh": "ph值78　尚未宣布的正式比赛开始的信号",
+      "chapterId": "81",
+      "createAt": 1691204580
+    },
+    {
+      "titleJp": "ph79　残されたカードーsideヒョウガー",
+      "titleZh": "ph值79　剩下的卡多side",
+      "chapterId": "82",
+      "createAt": 1691301900
+    },
+    {
+      "titleJp": "ph80　飛ばされた場所",
+      "titleZh": "ph值80　被撞飞的地方",
+      "chapterId": "83",
+      "createAt": 1691499000
+    },
+    {
+      "titleJp": "ph81　集う御三家ーsideケイー",
+      "titleZh": "ph值81　聚集的御三家- side家",
+      "chapterId": "84",
+      "createAt": 1691754300
+    },
+    {
+      "titleJp": "ph82　変化ーsideクロガネー",
+      "titleZh": "ph值82　变化- side黑伽奈",
+      "chapterId": "85",
+      "createAt": 1691882160
+    },
+    {
+      "titleJp": "ph83　それぞれの敵",
+      "titleZh": "ph值83　各自的敌人",
+      "chapterId": "86",
+      "createAt": 1692186600
+    },
+    {
+      "titleJp": "ph84　クロガネVSエンーsideクロガネー",
+      "titleZh": "ph值84　黑金纳VS恩side黑金纳",
+      "chapterId": "87",
+      "createAt": 1692426240
+    },
+    {
+      "titleJp": "ph85　ケイVSアレスーsideケイー",
+      "titleZh": "ph85　凯VS阿勒苏side凯",
+      "chapterId": "88",
+      "createAt": 1692709860
+    },
+    {
+      "titleJp": "ph86　ケイVSアレスの決着ーsideケイー",
+      "titleZh": "ph86　凯VS战神的终结- side凯",
+      "chapterId": "89",
+      "createAt": 1693668060
+    },
+    {
+      "titleJp": "ph87　ヒョウガVS？？？ーsideヒョウガー",
+      "titleZh": "ph值87　火加VS ? ? ?side评格",
+      "chapterId": "90",
+      "createAt": 1694636760
+    },
+    {
+      "titleJp": "ph88　ヒョウガVSコユキーsideヒョウガー",
+      "titleZh": "ph88　火加VS小尤基side",
+      "chapterId": "91",
+      "createAt": 1695351780
+    },
+    {
+      "titleJp": "ph89　ヒョウガVSコユキの決着ーsideヒョウガー",
+      "titleZh": "ph89　冰河VS小雪的终结- side冰河",
+      "chapterId": "92",
+      "createAt": 1695745260
+    },
+    {
+      "titleJp": "ph90　傷だらけのミカエルーsideタイヨウー",
+      "titleZh": "ph值90　伤痕累累的side太阳",
+      "chapterId": "93",
+      "createAt": 1696652160
+    },
+    {
+      "titleJp": "ph91　タイヨウVSシロガネーsideタイヨウー",
+      "titleZh": "ph91　太阳VS白翎side太阳",
+      "chapterId": "94",
+      "createAt": 1697890140
+    },
+    {
+      "titleJp": "ph92　タイヨウVSシロガネ決着ーsideタイヨウー",
+      "titleZh": "ph值92　太阳VS白金终结side太阳",
+      "chapterId": "95",
+      "createAt": 1698545400
+    },
+    {
+      "titleJp": "ph93　砂漠エリア",
+      "titleZh": "ph93　沙漠地区",
+      "chapterId": "96",
+      "createAt": 1699092120
+    },
+    {
+      "titleJp": "ph94　サチコVSセン",
+      "titleZh": "ph值94　幸子VS战",
+      "chapterId": "97",
+      "createAt": 1701033540
+    },
+    {
+      "titleJp": "ph95　サチコVSセン決着",
+      "titleZh": "ph95　幸子VS战决",
+      "chapterId": "98",
+      "createAt": 1702209900
+    },
+    {
+      "titleJp": "ph96　クロガネとの合流",
+      "titleZh": "ph值96　与黑金的合流",
+      "chapterId": "99",
+      "createAt": 1703302440
+    },
+    {
+      "titleJp": "ph97　五金コガネと氷川ヒョウケツーsideセンリー",
+      "titleZh": "ph值97　五金戈金与冰川冰河",
+      "chapterId": "100",
+      "createAt": 1703601480
+    },
+    {
+      "titleJp": "ph98　サタン討伐作戦会議",
+      "titleZh": "ph98　反撒旦行动会议",
+      "chapterId": "101",
+      "createAt": 1703849760
+    },
+    {
+      "titleJp": "ph99　封印チーム",
+      "titleZh": "ph值99　封印队",
+      "chapterId": "102",
+      "createAt": 1704714360
+    },
+    {
+      "titleJp": "ph100　討伐チームーsideヒョウガー",
+      "titleZh": "ph值100　讨伐队side评格",
+      "chapterId": "103",
+      "createAt": 1706162580
+    },
+    {
+      "titleJp": "ph101　VSサタンーsideシロガネー",
+      "titleZh": "ph101　沙坦side白伽内",
+      "chapterId": "104",
+      "createAt": 1706273700
+    },
+    {
+      "titleJp": "ph102　精霊界にて",
+      "titleZh": "ph值102　在精灵界",
+      "chapterId": "105",
+      "createAt": 1706326800
+    },
+    {
+      "titleJp": "ph103　VSサタン決着ーsideタイヨウー",
+      "titleZh": "ph值103　撒旦终结side太阳",
+      "chapterId": "106",
+      "createAt": 1706455560
+    },
+    {
+      "titleJp": "ph104　サタンを封印せよ",
+      "titleZh": "ph104　封印撒旦",
+      "chapterId": "107",
+      "createAt": 1707132600
+    },
+    {
+      "titleJp": "ph105　花火の夜に",
+      "titleZh": "ph值105　在烟花之夜",
+      "chapterId": "108",
+      "createAt": 1707227940
+    },
+    {
+      "titleJp": "第二部",
+      "titleZh": "第二部"
+    },
+    {
+      "titleJp": "プロローグ",
+      "titleZh": "序言",
+      "chapterId": "109",
+      "createAt": 1707564000
+    },
+    {
+      "titleJp": "第１章　アイギス編",
+      "titleZh": "第1章　艾吉斯篇"
+    },
+    {
+      "titleJp": "ph106　始まる二学期",
+      "titleZh": "ph值106　开始的第二学期",
+      "chapterId": "110",
+      "createAt": 1707580920
+    },
+    {
+      "titleJp": "ph107　カードの製法",
+      "titleZh": "ph值107　卡片的制法",
+      "chapterId": "111",
+      "createAt": 1707785580
+    },
+    {
+      "titleJp": "ph108　大地属性を持つ竜",
+      "titleZh": "ph值108　拥有大地属性的龙",
+      "chapterId": "112",
+      "createAt": 1708134360
+    },
+    {
+      "titleJp": "ph109　新たな相棒",
+      "titleZh": "ph值109　新的伙伴",
+      "chapterId": "113",
+      "createAt": 1708210140
+    },
+    {
+      "titleJp": "ph110　天眼家",
+      "titleZh": "ph值110　天眼家",
+      "chapterId": "114",
+      "createAt": 1708609920
+    },
+    {
+      "titleJp": "ph111　ハナビの相談",
+      "titleZh": "ph值111　烟花的商量",
+      "chapterId": "115",
+      "createAt": 1708955520
+    },
+    {
+      "titleJp": "ph112　天眼家とのやり取りーsideクロガネー",
+      "titleZh": "ph值112　与天眼家的交换- side黑伽奈",
+      "chapterId": "116",
+      "createAt": 1709045280
+    },
+    {
+      "titleJp": "ph113　黒いマナを纏う精霊",
+      "titleZh": "ph值113　披着黑色外衣的精灵",
+      "chapterId": "117",
+      "createAt": 1709119800
+    },
+    {
+      "titleJp": "ph114　休憩できないおやつタイム",
+      "titleZh": "ph114　不能休息的点心时间",
+      "chapterId": "118",
+      "createAt": 1709701740
+    },
+    {
+      "titleJp": "ph115　黒いマナの精霊の調査",
+      "titleZh": "ph115　黑玛娜精灵的调查",
+      "chapterId": "119",
+      "createAt": 1709857380
+    },
+    {
+      "titleJp": "ph116　毒の湖",
+      "titleZh": "ph116　毒湖",
+      "chapterId": "120",
+      "createAt": 1710160860
+    },
+    {
+      "titleJp": "ph117　敵か味方か",
+      "titleZh": "ph值117　是敌是友",
+      "chapterId": "121",
+      "createAt": 1710517260
+    },
+    {
+      "titleJp": "ph118　新たな決意と新たな思い",
+      "titleZh": "ph值118　新的决心和新的想法",
+      "chapterId": "122",
+      "createAt": 1710685860
+    },
+    {
+      "titleJp": "ph119　交渉",
+      "titleZh": "ph值119　谈判",
+      "chapterId": "123",
+      "createAt": 1711175160
+    },
+    {
+      "titleJp": "ph120　新たな協力者",
+      "titleZh": "ph值120　新的合作者",
+      "chapterId": "124",
+      "createAt": 1711371840
+    },
+    {
+      "titleJp": "ph121　カード＝万物",
+      "titleZh": "ph值121　卡=万物",
+      "chapterId": "125",
+      "createAt": 1712088960
+    },
+    {
+      "titleJp": "ph122　ユカリちゃんとの任務",
+      "titleZh": "ph122　和由香里的任务",
+      "chapterId": "126",
+      "createAt": 1713458220
+    },
+    {
+      "titleJp": "ph123　攫われたハナビ",
+      "titleZh": "ph123　被掳走的烟花",
+      "chapterId": "127",
+      "createAt": 1714458960
+    },
+    {
+      "titleJp": "ph124　黒いマナを持つ青年",
+      "titleZh": "ph124　拿着黑眼睛的青年",
+      "chapterId": "128",
+      "createAt": 1716051120
+    },
+    {
+      "titleJp": "ph125　タイヨウVSハナビーsideタイヨウー",
+      "titleZh": "ph值125　太阳VS太阳side",
+      "chapterId": "129",
+      "createAt": 1717336020
+    },
+    {
+      "titleJp": "ph126　コガネとクロガネのやり取りーsideクロガネー",
+      "titleZh": "ph126　小金人与黑金人的交换",
+      "chapterId": "130",
+      "createAt": 1718106420
+    },
+    {
+      "titleJp": "ph127　情報共有",
+      "titleZh": "ph127　信息共享",
+      "chapterId": "131",
+      "createAt": 1718631060
+    },
+    {
+      "titleJp": "ph128　未来視でみた未来",
+      "titleZh": "ph128　以未来视角看到的未来",
+      "chapterId": "132",
+      "createAt": 1719118080
+    },
+    {
+      "titleJp": "ph129　強化訓練に向けた決意",
+      "titleZh": "ph值129　强化训练的决心",
+      "chapterId": "133",
+      "createAt": 1719675900
+    },
+    {
+      "titleJp": "第２章　強化訓練編",
+      "titleZh": "第2章　强化训练篇"
+    },
+    {
+      "titleJp": "ph130　特別訓練教官",
+      "titleZh": "ph130　特别训练教官",
+      "chapterId": "134",
+      "createAt": 1719761520
+    },
+    {
+      "titleJp": "ph131　Ｂルームにて",
+      "titleZh": "ph值131　在B房间",
+      "chapterId": "135",
+      "createAt": 1720613460
+    },
+    {
+      "titleJp": "ph132　クロガネの限界",
+      "titleZh": "ph值132　黑金的极限",
+      "chapterId": "136",
+      "createAt": 1721111880
+    },
+    {
+      "titleJp": "ph133　目覚めたハナビ",
+      "titleZh": "ph133　醒来的烟花",
+      "chapterId": "137",
+      "createAt": 1721828940
+    },
+    {
+      "titleJp": "ph134　女子会",
+      "titleZh": "ph值134　女子会",
+      "chapterId": "138",
+      "createAt": 1722145320
+    },
+    {
+      "titleJp": "ph135　自主練にて",
+      "titleZh": "ph135　通过自主训练",
+      "chapterId": "139",
+      "createAt": 1723423920
+    },
+    {
+      "titleJp": "ph136　センとの任務",
+      "titleZh": "ph136　前线的任务",
+      "chapterId": "140",
+      "createAt": 1724420280
+    },
+    {
+      "titleJp": "ph137　蟲の蔓延る地下室にて",
+      "titleZh": "ph值137　在虫猖獗的地下室里",
+      "chapterId": "141",
+      "createAt": 1724659080
+    },
+    {
+      "titleJp": "ph138　VS黒忌蟲と歪みとそれと",
+      "titleZh": "ph值138　黑忌虫，虫，虫，虫",
+      "chapterId": "142",
+      "createAt": 1725024120
+    },
+    {
+      "titleJp": "ph139　先祖返り",
+      "titleZh": "ph139　返祖",
+      "chapterId": "143",
+      "createAt": 1725611160
+    },
+    {
+      "titleJp": "ph140　最悪な朝",
+      "titleZh": "ph140　最糟糕的早晨",
+      "chapterId": "144",
+      "createAt": 1725807240
+    },
+    {
+      "titleJp": "ph141　光に導かれて",
+      "titleZh": "ph141　在光的引导下",
+      "chapterId": "145",
+      "createAt": 1726155300
+    },
+    {
+      "titleJp": "ph142　天上世界にてーsideシロガネー",
+      "titleZh": "ph142　天上人间side白伽内",
+      "chapterId": "146",
+      "createAt": 1726882440
+    },
+    {
+      "titleJp": "ph143　ヨハンを追いかけてーsideタイヨウー",
+      "titleZh": "ph143　追逐约翰的side太阳",
+      "chapterId": "147",
+      "createAt": 1727877360
+    },
+    {
+      "titleJp": "ph144　岩塊の中で",
+      "titleZh": "ph值144　在岩石中",
+      "chapterId": "148",
+      "createAt": 1728757380
+    },
+    {
+      "titleJp": "ph145　ヒョウガくんからの着信",
+      "titleZh": "ph145　冰河君的来信",
+      "chapterId": "149",
+      "createAt": 1729230480
+    },
+    {
+      "titleJp": "ph146　夜の説教部屋にて",
+      "titleZh": "ph146　夜晚的说教房间",
+      "chapterId": "150",
+      "createAt": 1729833480
+    },
+    {
+      "titleJp": "ph147　チーム分け",
+      "titleZh": "ph147　分组",
+      "chapterId": "151",
+      "createAt": 1730274000
+    },
+    {
+      "titleJp": "ph148　驚きのランチタイム",
+      "titleZh": "ph148　令人惊讶的午餐时间",
+      "chapterId": "152",
+      "createAt": 1730305320
+    },
+    {
+      "titleJp": "ph149　ヒョウガくんとお見舞い",
+      "titleZh": "ph149　和冰河一起去探病",
+      "chapterId": "153",
+      "createAt": 1730543040
+    },
+    {
+      "titleJp": "ph150　ネオアース",
+      "titleZh": "ph150　新地球",
+      "chapterId": "154",
+      "createAt": 1730612340
+    },
+    {
+      "titleJp": "ph151　苛立ちーsideセンー",
+      "titleZh": "ph151　烦躁side 感",
+      "chapterId": "155",
+      "createAt": 1730675340
+    },
+    {
+      "titleJp": "閑話3　確かにあったひとつの未来ーsideセンー",
+      "titleZh": "闲话3　确实存在的一个未来——side",
+      "chapterId": "156",
+      "createAt": 1730769240
+    },
+    {
+      "titleJp": "ph152　力を持つ重さ",
+      "titleZh": "ph152　具有力量的重量",
+      "chapterId": "157",
+      "createAt": 1731419880
+    },
+    {
+      "titleJp": "ph153　先輩と私と",
+      "titleZh": "ph153　学长和我",
+      "chapterId": "158",
+      "createAt": 1732337940
+    },
+    {
+      "titleJp": "ph154　消えた先輩",
+      "titleZh": "ph154　消失的学长",
+      "chapterId": "159",
+      "createAt": 1732721280
+    },
+    {
+      "titleJp": "ph155　無意識下にあった本音",
+      "titleZh": "ph155　潜意识中的真心话",
+      "chapterId": "160",
+      "createAt": 1732979280
+    },
+    {
+      "titleJp": "第３章　七大魔王編",
+      "titleZh": "第3章　七大魔王篇"
+    },
+    {
+      "titleJp": "ph156　目覚めたアオガネ",
+      "titleZh": "ph156　觉醒的青之炼金",
+      "chapterId": "161",
+      "createAt": 1733622780
+    },
+    {
+      "titleJp": "ph157　開戦の火蓋ーsideタイヨウー",
+      "titleZh": "ph值157　开战之火- side太阳",
+      "chapterId": "162",
+      "createAt": 1735041240
+    },
+    {
+      "titleJp": "ph158　天眼家までの道中ーsideユカリー",
+      "titleZh": "ph值158　通往天眼家的路上- side由克里",
+      "chapterId": "163",
+      "createAt": 1735811820
+    },
+    {
+      "titleJp": "ph159　VSタローマティーsideアスカー",
+      "titleZh": "ph159　VS罗马茶side阿斯卡",
+      "chapterId": "164",
+      "createAt": 1737035400
+    },
+    {
+      "titleJp": "ph160　VSタローマティとの決着ーsideセバスティアナー",
+      "titleZh": "ph160　与塔罗马蒂的对决-塞巴斯蒂亚纳",
+      "chapterId": "165",
+      "createAt": 1737202200
+    },
+    {
+      "titleJp": "ph161　VSザリチューsideヒョウガー",
+      "titleZh": "ph值161　VS赛冰虎",
+      "chapterId": "166",
+      "createAt": 1737902520
+    },
+    {
+      "titleJp": "ph162　VSザリチュとの決着ーsideヒョウガー",
+      "titleZh": "ph值162　与萨奇的对决- side豹",
+      "chapterId": "167",
+      "createAt": 1738275600
+    },
+    {
+      "titleJp": "ph163　VSドゥルジーsideコガネー",
+      "titleZh": "ph163　杜尔西VS科加涅",
+      "chapterId": "168",
+      "createAt": 1739030820
+    },
+    {
+      "titleJp": "ph164　VSドゥルジとの決着ーsideコガネー",
+      "titleZh": "ph164　与杜尔吉的对决- side kogne",
+      "chapterId": "169",
+      "createAt": 1739140380
+    },
+    {
+      "titleJp": "ph165　歪みの中で",
+      "titleZh": "ph165　扭曲之中",
+      "chapterId": "170",
+      "createAt": 1739447340
+    },
+    {
+      "titleJp": "ph166　VSタルウィーsideアボウー",
+      "titleZh": "ph166　VS塔尔威side阿波",
+      "chapterId": "171",
+      "createAt": 1741213800
+    },
+    {
+      "titleJp": "ph167　VSタルウィ決着ーsideアボウー",
+      "titleZh": "ph167　VS塔尔威决胜负side阿波",
+      "chapterId": "172",
+      "createAt": 1741528620
+    },
+    {
+      "titleJp": "ph168　クロガネの決意ーsideクロガネー",
+      "titleZh": "ph168　黑铁的决心side黑鉄",
+      "chapterId": "173",
+      "createAt": 1742024520
+    },
+    {
+      "titleJp": "ph169　天眼家本家にてーsideエンラー",
+      "titleZh": "ph169　天眼家本家side焰",
+      "chapterId": "174",
+      "createAt": 1742610120
+    },
+    {
+      "titleJp": "ph170　VSサルワーsideシロガネー",
+      "titleZh": "ph170　VS萨乌拉side银鉄",
+      "chapterId": "175",
+      "createAt": 1744080960
+    },
+    {
+      "titleJp": "ph171　VSサルワ決着ーsideシロガネー",
+      "titleZh": "ph171　VS萨乌拉决斗side银鉄",
+      "chapterId": "176",
+      "createAt": 1744147620
+    },
+    {
+      "titleJp": "ph172　この手で守るためにーsideハナビー",
+      "titleZh": "ph172　为了亲手守护side烟火",
+      "chapterId": "177",
+      "createAt": 1744350480
+    },
+    {
+      "titleJp": "ph173　君を支えたくてーsideハナビー",
+      "titleZh": "ph173　想要支持你side烟火",
+      "chapterId": "178",
+      "createAt": 1744448700
+    },
+    {
+      "titleJp": "ph174　建前だけじゃ守れない",
+      "titleZh": "ph174　光靠表面功夫是无法守护的",
+      "chapterId": "179",
+      "createAt": 1744645740
+    },
+    {
+      "titleJp": "ph175　VSマナフーsideセンー",
+      "titleZh": "ph175　VS玛娜夫side千",
+      "chapterId": "180",
+      "createAt": 1745855520
+    },
+    {
+      "titleJp": "ph176　VSマナフ決着ーsideセンー",
+      "titleZh": "ph176　VS玛娜夫决斗side千",
+      "chapterId": "181",
+      "createAt": 1745988540
+    },
+    {
+      "titleJp": "ph177　もう迷わないーsideタイヨウー",
+      "titleZh": "ph177　不再迷茫side太阳",
+      "chapterId": "182",
+      "createAt": 1746494280
+    },
+    {
+      "titleJp": "ph178　VSクロガネ",
+      "titleZh": "ph178　VS黑铁",
+      "chapterId": "183",
+      "createAt": 1747174500
+    },
+    {
+      "titleJp": "ph179　クロガネとの決着",
+      "titleZh": "ph179　与黑铁的决战",
+      "chapterId": "184",
+      "createAt": 1747564500
+    },
+    {
+      "titleJp": "ph180　君にしか還れない",
+      "titleZh": "ph180　只有你才能回去",
+      "chapterId": "185",
+      "createAt": 1747665720
+    },
+    {
+      "titleJp": "ph181　タイヨウ、決戦の地へーsideタイヨウー",
+      "titleZh": "ph181　太阳，前往决战之地side太阳",
+      "chapterId": "186",
+      "createAt": 1748963940
+    },
+    {
+      "titleJp": "ph182　燃え尽きるまで、立ち続けろーsideタイヨウー",
+      "titleZh": "ph182　直到燃烧殆尽为止，都要坚持下去side太阳",
+      "chapterId": "187",
+      "createAt": 1749247200
+    },
+    {
+      "titleJp": "ph183　君の知らない未来へーsideタイヨウー",
+      "titleZh": "ph183　前往你所不知道的未来 side太阳",
+      "chapterId": "188",
+      "createAt": 1749727980
+    },
+    {
+      "titleJp": "ph184　これから",
+      "titleZh": "ph184　接下来",
+      "chapterId": "189",
+      "createAt": 1750487940
+    },
+    {
+      "titleJp": "第４章　別れ編",
+      "titleZh": "第4章　离别篇"
+    },
+    {
+      "titleJp": "ph185　寄り道の先で",
+      "titleZh": "ph185　绕道而行",
+      "chapterId": "190",
+      "createAt": 1750560780
+    },
+    {
+      "titleJp": "ph186　ダイレクトアタック不可避",
+      "titleZh": "ph186　无法避免的直击",
+      "chapterId": "191",
+      "createAt": 1750659060
+    },
+    {
+      "titleJp": "ph187　日常は戻ってきたけれど",
+      "titleZh": "ph187　虽然回到了日常",
+      "chapterId": "192",
+      "createAt": 1750753740
+    },
+    {
+      "titleJp": "ph188　迷いを越えて並び立つ",
+      "titleZh": "ph188　跨越迷茫并肩而立",
+      "chapterId": "193",
+      "createAt": 1751032620
+    },
+    {
+      "titleJp": "ph189　1次予選通過と全国放送の悪夢",
+      "titleZh": "ph189　通过第一次预选赛和全国直播的噩梦",
+      "chapterId": "194",
+      "createAt": 1751245500
+    },
+    {
+      "titleJp": "ph190　話題の中心とかほんと無理",
+      "titleZh": "ph190　话题的中心什么的真的不行",
+      "chapterId": "195",
+      "createAt": 1751669760
+    },
+    {
+      "titleJp": "ph191　レートも空気も重い",
+      "titleZh": "ph191　汇率和气氛都很沉重",
+      "chapterId": "196",
+      "createAt": 1751819520
+    },
+    {
+      "titleJp": "ph192　空に落ちて、君に落ちる",
+      "titleZh": "ph192　从天空坠落，坠入你的心",
+      "chapterId": "197",
+      "createAt": 1751935500
+    },
+    {
+      "titleJp": "ph193　地雷三択、正解なし",
+      "titleZh": "ph193　地雷三选一，没有正确答案",
+      "chapterId": "198",
+      "createAt": 1752060120
+    },
+    {
+      "titleJp": "ph194　差し出した手、返した拳",
+      "titleZh": "ph194　伸出的手，回击的拳头",
+      "chapterId": "199",
+      "createAt": 1752330900
+    },
+    {
+      "titleJp": "ph195　RSG本戦開幕！　仲間と煽りとファンの声と",
+      "titleZh": "ph195　RSG正式赛开幕！　伙伴、挑衅、粉丝的声音",
+      "chapterId": "200",
+      "createAt": 1752827640
+    },
+    {
+      "titleJp": "ph196　凡夫とデータと１％の執念",
+      "titleZh": "ph196　凡夫、资料与1％的执念",
+      "chapterId": "201",
+      "createAt": 1753192200
+    },
+    {
+      "titleJp": "ph197　仮面の裏側で笑う人",
+      "titleZh": "ph197　在面具底下微笑的人",
+      "chapterId": "202",
+      "createAt": 1753609920
+    },
+    {
+      "titleJp": "ph198　光に笑った影",
+      "titleZh": "ph198　被光所笑的影子",
+      "chapterId": "203",
+      "createAt": 1753794360
+    },
+    {
+      "titleJp": "ph199　最強を決める日",
+      "titleZh": "ph199　决定最强之日",
+      "chapterId": "204",
+      "createAt": 1753928940
+    },
+    {
+      "titleJp": "ph200　転生者は異世界を受け入れる",
+      "titleZh": "ph200　转生者接受异世界",
+      "chapterId": "205",
+      "createAt": 1754048700
+    },
+    {
+      "titleJp": "エピローグ",
+      "titleZh": "终章",
+      "chapterId": "206",
+      "createAt": 1754103900
+    },
+    {
+      "titleJp": "あとがき",
+      "titleZh": "后记",
+      "chapterId": "207",
+      "createAt": 1754103960
+    },
+    {
+      "titleJp": "番外編　本編読破後推奨",
+      "titleZh": "番外篇　建议阅读完本篇后再行阅读"
+    },
+    {
+      "titleJp": "【日常】クロガネの受難",
+      "titleZh": "【日常】黑铁的受难",
+      "chapterId": "208",
+      "createAt": 1759270140
+    },
+    {
+      "titleJp": "【未来ifルート】アイギス本部の日常",
+      "titleZh": "【未来if路线】埃吉斯总部的日常",
+      "chapterId": "209",
+      "createAt": 1760951100
+    },
+    {
+      "titleJp": "【日常】支配の計略",
+      "titleZh": "【日常】支配的计略",
+      "chapterId": "210",
+      "createAt": 1762171380
+    },
+    {
+      "titleJp": "【本編if】もしもサチコが精霊狩りだったら",
+      "titleZh": "【本篇if】如果佐智子是精灵猎人的话",
+      "chapterId": "211",
+      "createAt": 1763223060
+    },
+    {
+      "titleJp": "【日常】精霊の相性",
+      "titleZh": "【日常】精灵的契合度",
+      "chapterId": "212",
+      "createAt": 1765722180
+    },
+    {
+      "titleJp": "【閑話３　番外】君に見つけて欲しくて",
+      "titleZh": "【闲谈3　番外】希望你能找到",
+      "chapterId": "213",
+      "createAt": 1766294640
+    }
+  ],
+  "visited": 684,
+  "syncAt": 1767712034,
+  "jp": 214,
+  "baidu": 0,
+  "youdao": 16,
+  "gpt": 0,
+  "sakura": 213
+}

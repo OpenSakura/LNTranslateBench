@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:40:34.542351",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "3adf26a5b1aeace74171da3a70f44c5c9a403bea744fa07b208a1b863eac6fce",
+    "B": "5368d637dffdb8876d40d1a9ee8684e817eb5d6e3bbd847c5e27c89b8661facc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:41:37.766911",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109004035290485997s9R4mhnX",
+      "judge_response": {
+        "id": "chatcmpl-20260109004035290485997s9R4mhnX",
+        "object": "chat.completion",
+        "created": 1767890497,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A** 存在几处明显的误译和过度解读。\n    *   **段落 92 (严重错误):** 原文“スパダリモドキ女”（Supadari-modoki onna），意为“伪装成完美男友（Super Darling）的女人”。A 译为“冒牌女蜘蛛侠”，这显然是将“Supadari”误读或联想成了“Supaidaman”（蜘蛛侠）。B 译为“伪女保镖”，虽然没有完全传达“Super Darling”的恋爱游戏术语含义，但至少在语境上（保护者）是通顺的。\n    *   **段落 7 & 66 & 115 (人称代词):** 原文使用“ボク”(Boku) 或 “私”(Watashi)。A 在多处（包括对话和独白）将其译为“大叔我”。虽然主角内心可能是一个大叔（根据上下文暗示），但在段落 7 的对话中，主角对艾玛自称“大叔我”极有可能违背了故事设定（通常这类文风暗示主角在隐藏身份或性别）。B 保持了中性的“我”，更忠实于原文且避免了剧情逻辑漏洞。\n    *   **段落 86:** 原文“ノンデリ”（Non-deli），是“Non-delicacy”的缩写，意为没神经、不体贴。A 译为“傻不拉几”，B 译为“懒惰”。两者都未精准命中，但“傻”比“懒惰”稍微接近一点“不懂读空气”的感觉。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 B** 的中文表达明显更自然、老练。\n    *   **段落 21:** A 译为“将基调为黑色的追踪用外套穿上袖子”，这是典型的日式翻译腔（把袖子穿过去）。B 译为“穿上以黑色为主的追踪用大衣”，符合中文习惯。\n    *   **段落 100:** 这是一个长难句。A 的断句较少，读起来略显累赘（“……导致原本的计划几乎一点都没完成，话说回来……”）。B 将其拆分为更自然的逻辑分句，使用了分号，阅读体验更好。\n    *   **段落 12:** A “时间差让报纸染上了咖啡色”略显生硬。B “过了一会儿，报纸渐渐染上了咖啡色”更有画面感。\n\n**3. 风格与语气 (Style/Tone)**\n*   **翻译 B** 更贴合轻小说的文风。\n    *   **术语:** 段落 13 中，原文“ブレーキ役”（Brake role），B 译为“刹车役”，这是ACG圈内常用的术语，指负责制止暴走角色的吐槽役。A 译为“兼当刹车作用的”，略显啰嗦。\n    *   **对话:** B 的对话更口语化。例如段落 31，B 的“黑衣人”比 A 的“全黑打扮人士”更简洁有力。\n\n**4. 格式与标点 (Formatting)**\n*   **翻译 A** 在书名号上使用了《》，符合中文规范；B 使用了『』，这在轻小说翻译中也很常见。\n*   **翻译 B** 的标点使用更成熟，特别是在长句的停顿处理上。\n\n### 总结\n翻译 B 在整体流畅度、准确性和轻小说语感的把握上都优于翻译 A。翻译 A 虽然也能理解大意，但出现了“蜘蛛侠”这样的幻觉性误译，且在人称代词的处理上加入了过多的主观添加（在对话中自称大叔），这可能会破坏故事的沉浸感或逻辑。\n\n---\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"A在段落92将'Supadari'(完美男友)误译为'蜘蛛侠'，且在对话中强行加入'大叔'自称，存在逻辑风险。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的中文表达更自然，消除了日式翻译腔（如段落21的穿衣描写）。\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B使用了更地道的轻小说术语（如'刹车役'），对话节奏感更好。\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"A对ACG俚语的处理较生疏。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B在长难句（如段落100）的处理上逻辑更清晰。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"两者格式均可接受。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落92：A误译'Supadari'为'蜘蛛侠'，B译为'保镖'（虽不完美但逻辑通顺）。\",\n    \"人称代词：A在对话和独白中均将'我'译为'大叔我'，B保持为'我'。考虑到主角可能在隐藏身份，A的处理在对话中是不妥的。\",\n    \"句式结构：B更擅长将日文长句转化为符合中文逻辑的短句。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都胜过翻译A。B的译文流畅自然，准确把握了轻小说的幽默语调和术语（如'刹车役'）。相比之下，A存在明显的误译（如将'完美男友'属性误译为'蜘蛛侠'），并且生硬地在对话中添加'大叔'这一自称，这极有可能违背了原文的角色扮演设定。B的阅读体验更佳，更像是一部成熟的轻小说译作。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9738,
+          "completion_tokens": 5344,
+          "total_tokens": 15082
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落92将'Supadari'(完美男友)误译为'蜘蛛侠'，且在对话中强行加入'大叔'自称，存在逻辑风险。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文表达更自然，消除了日式翻译腔（如段落21的穿衣描写）。"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B使用了更地道的轻小说术语（如'刹车役'），对话节奏感更好。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A对ACG俚语的处理较生疏。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B在长难句（如段落100）的处理上逻辑更清晰。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式均可接受。"
+      }
+    },
+    "key_differences": [
+      "段落92：A误译'Supadari'为'蜘蛛侠'，B译为'保镖'（虽不完美但逻辑通顺）。",
+      "人称代词：A在对话和独白中均将'我'译为'大叔我'，B保持为'我'。考虑到主角可能在隐藏身份，A的处理在对话中是不妥的。",
+      "句式结构：B更擅长将日文长句转化为符合中文逻辑的短句。"
+    ],
+    "final_summary": "翻译B在各方面都胜过翻译A。B的译文流畅自然，准确把握了轻小说的幽默语调和术语（如'刹车役'）。相比之下，A存在明显的误译（如将'完美男友'属性误译为'蜘蛛侠'），并且生硬地在对话中添加'大叔'这一自称，这极有可能违背了原文的角色扮演设定。B的阅读体验更佳，更像是一部成熟的轻小说译作。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

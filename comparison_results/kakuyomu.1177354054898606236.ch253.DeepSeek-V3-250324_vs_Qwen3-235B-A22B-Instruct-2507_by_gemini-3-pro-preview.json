@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:31:57.212238",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "1d384605b0faf0051510063ee0852984552705492295f278528396997a3fc31a",
+    "B": "5837f2f84608e65ad59653c1278611083297cf446f2d23429af6d90f99c2e303"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:33:00.457321",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900315878970399F1EG6UNl",
+      "judge_response": {
+        "id": "chatcmpl-2026010900315878970399F1EG6UNl",
+        "object": "chat.completion",
+        "created": 1767889980,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评测：\n\n### 详细分析\n\n**1. 准确性与术语 (Accuracy & Terminology)**\n*   **地名与人名：**\n    *   **维尔赫米娜 (Wilhelmina):** 原文为“ヴィルヘルミーナ”。A译为“维尔赫米娜”，B译为“维尔赫尔米娜”。B更准确地还原了“l”的音节（hel），更符合通用译名规范。\n    *   **莱亨巴赫 (Reichenbach):** 原文为“ライヒェンバッハ”。A译为“莱亨巴赫”（标准），B译为“莱希滕巴赫”（多了一个t音，可能是误读为Reichtenbach）。A胜出。\n    *   **罗伯特/罗贝尔 (Robert):** 原文“ロベール”是法语读音。A译为英语式的“罗伯特”，B译为法语式的“罗贝尔”。考虑到名字“卡米尤/卡米尔”，B在文化背景还原上更细致。\n    *   **舰名 (Imperatritsa Ekaterina):** A意译为“女皇叶卡捷琳娜”，B音译为“因佩拉特里察・叶卡捷琳娜”。A的做法在小说中更利于阅读，B虽然还原了片假名，但对于中文读者来说略显冗长且不明其意。\n    *   **舰级 (Seg 8):** 原文“インペラトリーツァ・エカテリーナ級”。A译为“女皇叶卡捷琳娜级”，清晰明了。B译为“皇帝级・叶卡捷琳娜级”，这里处理得很奇怪，似乎把Imperatritsa拆解翻译了，造成了混淆。A胜出。\n\n**2. 流畅性与句式 (Fluency & Sentence Structure)**\n*   **长句处理 (Seg 7):** 原文描述战舰历史的长句。A将修饰语处理得很通顺：“担任近卫军司令长官时由先帝……赐予的战舰”。B的结构“赐予当时担任近卫军司令长官的她”也正确，但整体节奏略逊于A。\n*   **冗余与语病 (Seg 43):** B译文：“为重点应对今后的企业进驻等需求为核心要点。” 出现了“为重点……为核心要点”的句式杂糅/重复，读起来非常别扭。A译文简洁清晰。\n*   **对话自然度 (Seg 81):** 外交大臣的威胁。A：“再继续这种发言，我们可以视作……哦？” 很好地传达了威胁的语气。B：“这种程度的发言，我可以理解为……吗？” 变成了一个疑问句，削弱了原文“我完全可以把你当做干涉内政（所以你闭嘴）”的压迫感。\n\n**3. 风格与语气 (Style & Tone)**\n*   **政治/军事术语：** A倾向于使用更符合中文语境的成语或习惯用法，如“不成气候”（Seg 63）、“僵局”（Seg 19）。B有时直译痕迹较重，如“不值一提”（Seg 63，虽然也没错，但语势稍弱）。\n*   **数字处理：** 原文使用汉字数字（如四〇パーセント）。A转换为阿拉伯数字（40%），B转换为中文概数（四成）。两者皆可，B更具中文政治评论风味，但A在科技/军事参数上可能更精确。\n\n### 总结\n翻译A在整体的可读性、句子结构的把控以及术语的一致性上表现更好。它避免了明显的语病（如B在Seg 43的重复），并且在舰名等专有名词的处理上更照顾读者体验。翻译B虽然在某些音译（如Wilhelmina, Robert）上可能更考究，但在其他地方出现了明显的失误（如Reichenbach的拼写错误、Seg 8的舰级翻译混乱），且部分句子略显啰嗦。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A在舰级名称和地名（莱亨巴赫）上更准确；B在Seg 8和Seg 38有明显失误，但在Seg 3的音译上更精准。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的行文非常流畅，符合中文阅读习惯。B在Seg 43出现了明显的句式杂糅，部分长句略显生硬。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A的对话语气更自然，尤其是在表达威胁或讽刺时（Seg 81）。\"\n    },\n    \"terminology\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"互有胜负。A采用了意译舰名更易读，B采用了法语人名音译更贴切，但B错译了Reichenbach。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A的逻辑连接更紧密。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者格式均良好。\"\n    }\n  },\n  \"key_differences\": [\n    \"舰名翻译：A采用意译（女皇叶卡捷琳娜），B采用音译（因佩拉特里察），且B在Seg 8的舰级翻译中出现了混乱。\",\n    \"地名准确性：B将Reichenbach误译为莱希滕巴赫（多了一个t音），A正确。\",\n    \"句式语病：B在Seg 43出现了“为重点...为核心要点”的重复语病。\",\n    \"语气把控：A在Seg 81的威胁语气还原得比B更到位。\"\n  ],\n  \"final_summary\": \"翻译A整体质量更高。它在流畅度和可读性上明显优于B，句子结构更符合中文习惯，且没有明显的语病。B虽然在部分人名/地名的音译上可能更还原原文发音（如Wilhelmina, Robert），但在关键的术语翻译（如舰级命名）和地名拼写（Reichenbach）上出现了错误，且Seg 43存在明显的句式杂糅。因此A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8159,
+          "completion_tokens": 5554,
+          "total_tokens": 13713
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A在舰级名称和地名（莱亨巴赫）上更准确；B在Seg 8和Seg 38有明显失误，但在Seg 3的音译上更精准。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的行文非常流畅，符合中文阅读习惯。B在Seg 43出现了明显的句式杂糅，部分长句略显生硬。"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的对话语气更自然，尤其是在表达威胁或讽刺时（Seg 81）。"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "互有胜负。A采用了意译舰名更易读，B采用了法语人名音译更贴切，但B错译了Reichenbach。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的逻辑连接更紧密。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式均良好。"
+      }
+    },
+    "key_differences": [
+      "舰名翻译：A采用意译（女皇叶卡捷琳娜），B采用音译（因佩拉特里察），且B在Seg 8的舰级翻译中出现了混乱。",
+      "地名准确性：B将Reichenbach误译为莱希滕巴赫（多了一个t音），A正确。",
+      "句式语病：B在Seg 43出现了“为重点...为核心要点”的重复语病。",
+      "语气把控：A在Seg 81的威胁语气还原得比B更到位。"
+    ],
+    "final_summary": "翻译A整体质量更高。它在流畅度和可读性上明显优于B，句子结构更符合中文习惯，且没有明显的语病。B虽然在部分人名/地名的音译上可能更还原原文发音（如Wilhelmina, Robert），但在关键的术语翻译（如舰级命名）和地名拼写（Reichenbach）上出现了错误，且Seg 43存在明显的句式杂糅。因此A胜出。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

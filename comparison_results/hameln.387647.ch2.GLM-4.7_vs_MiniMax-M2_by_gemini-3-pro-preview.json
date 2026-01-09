@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:27:10.485293",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.GLM-4.7.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "d3bb281f14e4f0b458a2005f00d729245cdc268659c7d8b4f2bc1b3a7810e4d6",
+    "B": "ca67ac0f5a48408e4fae0e6eea57ea3d5bfc2bf3cf8d4e52bb2bddaf1702c412"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:27:54.617969",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002711396980424kSraXLJl",
+      "judge_response": {
+        "id": "chatcmpl-20260109002711396980424kSraXLJl",
+        "object": "chat.completion",
+        "created": 1767889674,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对提供的两段翻译文本的详细分析，以下是最终评判结果：\n\n### 详细分析\n\n**1. 准确性 (Accuracy):**\n*   **翻译A** 对原文的理解非常准确，正确把握了人物关系和对话的主语/宾语。例如在段落27中，原文Hiruma让Renji教Sena（\"色々と教えてやれ\"），A翻译正确（\"各种教教他吧\"），而B完全搞反了意思（\"快把所有东西都教给我\"）。\n*   **翻译B** 存在多处严重误译。\n    *   段落3：保留了日语语序（\"……学生在\"），不符合中文语法。\n    *   段落53：将跑卫描述为\"防守时拿着球跑\"，这是美式足球规则的根本性错误（跑卫是进攻组）。\n    *   段落95：\"天然人誑し\"（天生的笼络人心者/人贩子）是Hiruma评价Renji善于拉人入伙，A译为\"天然呆忽悠家\"虽有发挥但意图正确，B译为\"天真的人，被骗得很惨吧？\"完全误解了句意。\n\n**2. 流畅性 (Fluency):**\n*   **翻译A** 的中文表达自然流畅，符合轻小说的阅读习惯。\n*   **翻译B** 经常出现生硬的翻译腔，如段落3的倒装句，以及段落101的逻辑混乱。\n\n**3. 格式与标点 (Formatting):**\n*   **翻译A** 格式正确，对话使用引号，旁白叙述不使用引号。\n*   **翻译B** 犯了严重的格式错误。在段落93、94、100等处，将**旁白叙述**也括在了引号「」内，导致读者无法区分这是角色的心理活动、对话还是旁白。\n\n**4. 术语与风格 (Terminology & Style):**\n*   **翻译A** 对美式足球术语（如跑卫、外接员、边锋）的处理很标准。Hiruma的语气（\"嘻嘻嘻\"、\"圈养\"）也还原得很好。\n*   **翻译B** 术语尚可，但语气把握不准。例如段落6将Hiruma的语气译为\"超牛的\"，略显违和。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 10,\n      \"B\": 5,\n      \"notes\": \"B在段落27（教谁）、段落53（攻防规则）、段落95（句意理解）均出现严重误译。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B存在明显的日语语序残留（如段落3），读起来不通顺。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A很好地还原了Hiruma粗鲁但敏锐的风格以及Renji的引导语气。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"两者术语基本一致，但B在解释规则时出现了逻辑错误。\"\n    },\n    \"coherence\": {\n      \"A\": 10,\n      \"B\": 6,\n      \"notes\": \"B的误译导致部分对话逻辑断裂（如段落101）。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 2,\n      \"notes\": \"B错误地将旁白叙述放在了对话引号内（段落93, 94, 100），这是严重的格式失误。\"\n    }\n  },\n  \"key_differences\": [\n    \"B错误地将旁白部分加上了引号，导致阅读混乱。\",\n    \"B在关键剧情点出现主语/宾语混淆（如Hiruma命令Renji教Sena，B译成了教自己）。\",\n    \"B对美式足球规则的描述有误（暗示跑卫在防守时持球）。\",\n    \"A的语言组织更符合中文小说规范，没有翻译腔。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都完胜。它准确理解了原文的语境、人物关系和美式足球规则，行文流畅自然。翻译B虽然大致意思能看懂，但存在致命的格式错误（旁白加引号）和多处严重的误译（搞反教学对象、误解规则、误解人物评价），这表明B可能过度依赖机翻或对原文语法理解不足。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7948,
+          "completion_tokens": 3355,
+          "total_tokens": 11303
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 10,
+        "B": 5,
+        "notes": "B在段落27（教谁）、段落53（攻防规则）、段落95（句意理解）均出现严重误译。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "B存在明显的日语语序残留（如段落3），读起来不通顺。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好地还原了Hiruma粗鲁但敏锐的风格以及Renji的引导语气。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 8,
+        "notes": "两者术语基本一致，但B在解释规则时出现了逻辑错误。"
+      },
+      "coherence": {
+        "A": 10,
+        "B": 6,
+        "notes": "B的误译导致部分对话逻辑断裂（如段落101）。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 2,
+        "notes": "B错误地将旁白叙述放在了对话引号内（段落93, 94, 100），这是严重的格式失误。"
+      }
+    },
+    "key_differences": [
+      "B错误地将旁白部分加上了引号，导致阅读混乱。",
+      "B在关键剧情点出现主语/宾语混淆（如Hiruma命令Renji教Sena，B译成了教自己）。",
+      "B对美式足球规则的描述有误（暗示跑卫在防守时持球）。",
+      "A的语言组织更符合中文小说规范，没有翻译腔。"
+    ],
+    "final_summary": "翻译A在各方面都完胜。它准确理解了原文的语境、人物关系和美式足球规则，行文流畅自然。翻译B虽然大致意思能看懂，但存在致命的格式错误（旁白加引号）和多处严重的误译（搞反教学对象、误解规则、误解人物评价），这表明B可能过度依赖机翻或对原文语法理解不足。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

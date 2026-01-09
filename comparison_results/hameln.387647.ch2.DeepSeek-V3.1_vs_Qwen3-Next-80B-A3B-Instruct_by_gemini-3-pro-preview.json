@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:27:36.592683",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "aedeef7098841724d5a8b199e0e58fee544f15d6705feab386864b29046dc63a",
+    "B": "be99c7f15924f83867df0d15c9539b4e5f14d0393a2666e41bc34547b0981802"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:28:33.091875",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002737339431596VD5g7VmA",
+      "judge_response": {
+        "id": "chatcmpl-20260109002737339431596VD5g7VmA",
+        "object": "chat.completion",
+        "created": 1767889712,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B在原文理解的精确度上略胜一筹，A在第102段出现了明显的主语/对象理解错误（栗田邀请莲次 vs 莲次拉‘我’），且在第25段遗留了未翻译的英文单词'position'。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A的中文表达非常地道、流畅，符合中文阅读习惯。B的译文充斥着“翻译腔”，句式生硬，经常照搬日语语序（如第53段、98段），阅读体验较差。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A很好地还原了轻小说的语感，人物语气（如蛭魔的粗鲁、濑那的怯懦）刻画生动。B的语气较为平淡，缺乏感染力。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B将'Line'译为'线锋'更准确，A译为'线'略显生硬。两者对Running Back的翻译（跑卫/跑锋）均可接受。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A的段落衔接自然。B由于句式结构复杂且缺乏润色，导致部分长句逻辑显得混乱（如第84段）。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 3,\n      \"notes\": \"B存在严重的格式问题：绝大多数对话和短句末尾缺失句号（如段落11-13, 21-28等），这是极大的扣分项。\"\n    }\n  },\n  \"key_differences\": [\n    \"格式规范：A标点符号使用规范；B在大量句子末尾丢失句号，显得非常不专业。\",\n    \"语言自然度：A使用了自然的中文口语（如“忽悠”、“翻脸”、“不得了”）；B则倾向于直译日语结构（如第98段“比起强行逼迫导致被讨厌美式足球我更厌恶那样”），读起来非常拗口。\",\n    \"错误类型：A主要是个别理解错误（第102段）和疏忽（第25段留有英文）；B则是系统性的语感生硬和格式错误。\"\n  ],\n  \"final_summary\": \"翻译A在整体阅读体验上完胜。A的译文流畅、生动，极富轻小说的画面感和人物个性，虽然在第102段有误译且第25段有一处漏译（保留了英文单词），但这些瑕疵可以通过校对轻松修正。相比之下，翻译B虽然在字面意思的准确性上较为严谨（没有出现A那样的理解偏差），但其致命伤在于严重的格式错误（大量缺失句号）以及极度生硬的“翻译腔”中文表达，导致文本几乎难以作为文学作品阅读。因此，A是更优秀的译本。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7965,
+          "completion_tokens": 4941,
+          "total_tokens": 12906
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在原文理解的精确度上略胜一筹，A在第102段出现了明显的主语/对象理解错误（栗田邀请莲次 vs 莲次拉‘我’），且在第25段遗留了未翻译的英文单词'position'。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 5,
+        "notes": "A的中文表达非常地道、流畅，符合中文阅读习惯。B的译文充斥着“翻译腔”，句式生硬，经常照搬日语语序（如第53段、98段），阅读体验较差。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好地还原了轻小说的语感，人物语气（如蛭魔的粗鲁、濑那的怯懦）刻画生动。B的语气较为平淡，缺乏感染力。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B将'Line'译为'线锋'更准确，A译为'线'略显生硬。两者对Running Back的翻译（跑卫/跑锋）均可接受。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "A的段落衔接自然。B由于句式结构复杂且缺乏润色，导致部分长句逻辑显得混乱（如第84段）。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 3,
+        "notes": "B存在严重的格式问题：绝大多数对话和短句末尾缺失句号（如段落11-13, 21-28等），这是极大的扣分项。"
+      }
+    },
+    "key_differences": [
+      "格式规范：A标点符号使用规范；B在大量句子末尾丢失句号，显得非常不专业。",
+      "语言自然度：A使用了自然的中文口语（如“忽悠”、“翻脸”、“不得了”）；B则倾向于直译日语结构（如第98段“比起强行逼迫导致被讨厌美式足球我更厌恶那样”），读起来非常拗口。",
+      "错误类型：A主要是个别理解错误（第102段）和疏忽（第25段留有英文）；B则是系统性的语感生硬和格式错误。"
+    ],
+    "final_summary": "翻译A在整体阅读体验上完胜。A的译文流畅、生动，极富轻小说的画面感和人物个性，虽然在第102段有误译且第25段有一处漏译（保留了英文单词），但这些瑕疵可以通过校对轻松修正。相比之下，翻译B虽然在字面意思的准确性上较为严谨（没有出现A那样的理解偏差），但其致命伤在于严重的格式错误（大量缺失句号）以及极度生硬的“翻译腔”中文表达，导致文本几乎难以作为文学作品阅读。因此，A是更优秀的译本。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:35:09.199383",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.Kimi-K2.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "012261733ef3055d439bbe06aaefc1ba20eb727a55e9e7a7d1fbb7bd753ba225",
+    "B": "87e6c486b6aeec429670283da6dbf8a117f5d27bbef3d253c2d41e94af1171c8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:36:11.515567",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900351023172938mHbXeBS1",
+      "judge_response": {
+        "id": "chatcmpl-2026010900351023172938mHbXeBS1",
+        "object": "chat.completion",
+        "created": 1767890171,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是针对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性与术语 (Accuracy & Terminology)**\n*   **地名错误 (A):** 在段落9中，原文是“ウエノ魔物園”（上野魔物园），A翻译为“乌野”，这明显是误译（可能是看错或者联想到了《排球少年》的乌野高中）。B正确翻译为“上野”。\n*   **人名处理 (B的重大失误):**\n    *   **未翻译:** B在段落21、24、28等处，直接保留了英文/罗马音“Wadatsumi”、“Sataniel”。在中文轻小说翻译中，除非特殊设定，否则应当翻译为汉字（如：绵津见、萨塔尼尔）。这是严重的本地化失误。\n    *   **幻觉/不一致:** 在段落49中，原文提到的“マタタビ”（Matatabi/木天蓼），B竟然翻译成了“小松菜”（Komatsuna）。这是一个完全无法解释的错误，可能是机器翻译的干扰或者是译者混淆了角色。\n    *   **读音错误:** 段落40中，原文“ハチロウ”（Hachirou/八郎），B翻译为“八重郎”，这是读音错误。\n*   **人名处理 (A):** A将“マタタビ”意译为“木天蓼”，这在奇幻作品中是可接受的（如果是种族名或代号），但也可能是名字。A将“ナリヒラ”误译为“成原”（原文Narihira通常对应业平，如在原业平），B译为“成平”较接近。\n\n**2. 风格与语气 (Style & Tone)**\n*   **叙述者口吻:** 原文叙述者（克拉拉）使用敬语（desu/masu），表现出一种冷静、理智甚至略带AI/机械感的性格。\n    *   **A:** 语气非常口语化，甚至有些轻浮（“亲妈”、“压根”、“呗”、“超不妙”）。虽然读起来很顺畅，但这破坏了叙述者原本冷静理智的人设。\n    *   **B:** 语气相对正式，更贴近原文的敬语风格，但由于上述的术语错误，阅读体验被割裂。\n*   **流畅度:** A的中文表达非常自然流畅，使用了许多接地气的词汇（“开挂”、“窝里斗”），虽然牺牲了部分原文的语气，但作为网文/轻小说阅读感很好。B的句子结构有时略显生硬（如段落7“我没有进行时间穿越” vs A的“我压根没穿越时间”）。\n\n**3. 连贯性 (Coherence)**\n*   B由于在文中夹杂英文单词以及人名翻译的前后不一致（玛塔塔比 -> 小松菜），严重影响了阅读的连贯性。\n*   A尽管有地名误译，但整体逻辑通顺，术语在自身体系内保持了一致。\n\n### 结论\n虽然A在“上野”这个词上犯了错，且语气可能过于口语化（OOC风险），但B犯了翻译中的大忌：**在目标语言文本中保留源语言发音的拉丁字母**以及**严重的专有名词幻觉（把猫薄荷翻译成小松菜）**。这使得B看起来像是一个未完成的草稿或质量低劣的机翻润色。相比之下，A是一个更成熟、可读性更强的译本。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 4,\n      \"notes\": \"A有少量误译（乌野），但B存在严重的人名未翻译（保留英文）和幻觉错误（木天蓼变小松菜）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A的中文非常地道流畅；B的句式较生硬，且夹杂英文破坏语流。\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 5,\n      \"notes\": \"A略显过于口语化，不太符合叙述者原本的冷静敬语人设；B试图保持正式感但被术语错误毁了。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 2,\n      \"notes\": \"B在中文文本中保留Sataniel/Wadatsumi等英文拼写是严重扣分项，且人名翻译前后不一致。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B的错误导致阅读体验断裂。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 6,\n      \"notes\": \"B包含未转换的拉丁字母。\"\n    }\n  },\n  \"key_differences\": [\n    \"B在文中直接保留了英文/罗马音人名（Sataniel, Wadatsumi），这是严重的本地化失误。\",\n    \"B出现了莫名其妙的名词替换错误（段落49将'Matatabi'译为'小松菜'）。\",\n    \"A将'上野'误译为'乌野'，但整体可读性远高于B。\",\n    \"A的语气非常口语化（'亲妈'、'咋办'），B较正式但僵硬。\"\n  ],\n  \"final_summary\": \"翻译A在整体可读性和完成度上远胜于B。尽管A将'上野'误译为'乌野'且语气略显过于随意，但B存在致命的质量问题：包括在中文译文中直接保留英文人名（Sataniel等），以及严重的术语前后不一致（将'木天蓼'突然改译为'小松菜'）。B的这些错误使其看起来像是一个未完成或低质量的机翻修饰稿，而A则是一个流畅的轻小说译本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7360,
+          "completion_tokens": 5123,
+          "total_tokens": 12483
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 4,
+        "notes": "A有少量误译（乌野），但B存在严重的人名未翻译（保留英文）和幻觉错误（木天蓼变小松菜）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A的中文非常地道流畅；B的句式较生硬，且夹杂英文破坏语流。"
+      },
+      "style": {
+        "A": 7,
+        "B": 5,
+        "notes": "A略显过于口语化，不太符合叙述者原本的冷静敬语人设；B试图保持正式感但被术语错误毁了。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 2,
+        "notes": "B在中文文本中保留Sataniel/Wadatsumi等英文拼写是严重扣分项，且人名翻译前后不一致。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 5,
+        "notes": "B的错误导致阅读体验断裂。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 6,
+        "notes": "B包含未转换的拉丁字母。"
+      }
+    },
+    "key_differences": [
+      "B在文中直接保留了英文/罗马音人名（Sataniel, Wadatsumi），这是严重的本地化失误。",
+      "B出现了莫名其妙的名词替换错误（段落49将'Matatabi'译为'小松菜'）。",
+      "A将'上野'误译为'乌野'，但整体可读性远高于B。",
+      "A的语气非常口语化（'亲妈'、'咋办'），B较正式但僵硬。"
+    ],
+    "final_summary": "翻译A在整体可读性和完成度上远胜于B。尽管A将'上野'误译为'乌野'且语气略显过于随意，但B存在致命的质量问题：包括在中文译文中直接保留英文人名（Sataniel等），以及严重的术语前后不一致（将'木天蓼'突然改译为'小松菜'）。B的这些错误使其看起来像是一个未完成或低质量的机翻修饰稿，而A则是一个流畅的轻小说译本。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

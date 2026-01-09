@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:27:54.619199",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "1bd5c971f0ad270a6782cc3ebccae603607441c9b3fc530c45ec718330b3b48d",
+    "B": "c5b0858bfe74d949c73adaa0a24215e8ea4f5f2913ad55f334fbd3349aca52e7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:28:42.883546",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002756917427858PnYKKM8T",
+      "judge_response": {
+        "id": "chatcmpl-20260109002756917427858PnYKKM8T",
+        "object": "chat.completion",
+        "created": 1767889722,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 7,\n      \"B\": 10,\n      \"notes\": \"A在关键细节上有误译。例如段落2将'数少ない'（为数不多）译为'仅有的'，改变了设定；段落9将'タネの分からない'（不知其手法/玄机）误解为'拥有不明种子'；段落13将人名'比果比五子'错误缩减。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"A的语言风格较为口语化，有时略显随意。B的表达更加稳重且流畅，符合轻小说叙述风格。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B更好地把握了原文的语气，特别是在描述魔法少女设定的段落中，用词更精准（如'认知阻碍'、'造诣'）。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 10,\n      \"notes\": \"A在人名翻译上不一致（段落13），且对某些术语的理解有偏差。\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B在处理长难句（如段落59、89）时逻辑更清晰。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 10,\n      \"notes\": \"A在段落55丢失了对话引号。\"\n    }\n  },\n  \"key_differences\": [\n    \"准确性差异：A在段落2（S级数量）、段落9（能力描述）和段落13（人名）出现明显误译，B则准确还原了原文含义。\",\n    \"术语理解：段落34中原文'造形'疑为'造詣'（造诣）的误字，B正确推断并翻译为'造诣'，A则译为'了解'，虽通顺但B更精准。\",\n    \"格式细节：A在部分对话段落（如55）遗漏了引号，影响阅读体验。\"\n  ],\n  \"final_summary\": \"翻译B在准确性、流畅性和术语一致性上全面优于翻译A。翻译A虽然整体通顺，但在关键信息的理解上存在多处错误（如将'少数'译为'仅有'，误译'タネ'为植物种子而非魔术手法，以及人名缩写错误），且有格式疏漏。翻译B不仅准确传达了原文的含义和细微差别，文笔也更符合轻小说的风格，处理长难句时逻辑更为清晰。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7159,
+          "completion_tokens": 3865,
+          "total_tokens": 11024
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 10,
+        "notes": "A在关键细节上有误译。例如段落2将'数少ない'（为数不多）译为'仅有的'，改变了设定；段落9将'タネの分からない'（不知其手法/玄机）误解为'拥有不明种子'；段落13将人名'比果比五子'错误缩减。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "A的语言风格较为口语化，有时略显随意。B的表达更加稳重且流畅，符合轻小说叙述风格。"
+      },
+      "style": {
+        "A": 8,
+        "B": 9,
+        "notes": "B更好地把握了原文的语气，特别是在描述魔法少女设定的段落中，用词更精准（如'认知阻碍'、'造诣'）。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 10,
+        "notes": "A在人名翻译上不一致（段落13），且对某些术语的理解有偏差。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在处理长难句（如段落59、89）时逻辑更清晰。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 10,
+        "notes": "A在段落55丢失了对话引号。"
+      }
+    },
+    "key_differences": [
+      "准确性差异：A在段落2（S级数量）、段落9（能力描述）和段落13（人名）出现明显误译，B则准确还原了原文含义。",
+      "术语理解：段落34中原文'造形'疑为'造詣'（造诣）的误字，B正确推断并翻译为'造诣'，A则译为'了解'，虽通顺但B更精准。",
+      "格式细节：A在部分对话段落（如55）遗漏了引号，影响阅读体验。"
+    ],
+    "final_summary": "翻译B在准确性、流畅性和术语一致性上全面优于翻译A。翻译A虽然整体通顺，但在关键信息的理解上存在多处错误（如将'少数'译为'仅有'，误译'タネ'为植物种子而非魔术手法，以及人名缩写错误），且有格式疏漏。翻译B不仅准确传达了原文的含义和细微差别，文笔也更符合轻小说的风格，处理长难句时逻辑更为清晰。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

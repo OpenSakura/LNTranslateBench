@@ -1,0 +1,576 @@
+{
+  "titleJp": "泥門の2番手",
+  "titleZh": "泥门的第二名",
+  "authors": [
+    {
+      "name": "実らない稲穂",
+      "link": "https://syosetu.org/user/496572/"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [
+    "R15"
+  ],
+  "keywords": [
+    "アイシールド21",
+    "アメフト",
+    "スポーツ",
+    "小早川セナ",
+    "蛭魔妖一",
+    "栗田良寛",
+    "処女作",
+    "オリ主",
+    "アンチ・ヘイト"
+  ],
+  "points": 8833,
+  "totalCharacters": 299930,
+  "introductionJp": "アメリカンフットボール、略してアメフト 闘いを制するのはパワー、タクティクス、そして…スピード アメフトにはポジションがあり、一芸に秀でた専門職がポジションについて闘いを制する しかしこの男はどのポジションについても2番目 パワー、タクティクス、スピード……アメフトに限らず2番目の男 この物語は泥門デビルバッツに所属する2番の男が高校アメフトで日本一全国制覇を目指す為に奮闘する物語である",
+  "introductionZh": "美式足球，简称美式足球，控制战斗的是力量、战术和…速度美式足球有位置，有一技之长的专业人员在位置上控制战斗，但是这个男人在任何位置上都是第二位力量、战术、速度……不限于美式足球第二个男人这个故事是属于泥门恶魔蝙蝠队的第二个男人为了高中美式足球日本第一全国称霸而奋斗的故事",
+  "glossary": {
+    "ヒル魔": "蛭魔 #男",
+    "主務": "主務",
+    "パシリ": "跑腿",
+    "姉崎": "姉崎 #女",
+    "アイシールド21": "Eyeshield 21",
+    "セナ": "瀨那",
+    "ホワイトナイツ": "白騎士",
+    "先輩": "前輩",
+    "デビルバッツ": "惡魔蝙蝠",
+    "タイトエンド": "邊鋒",
+    "ラインマン": "線鋒",
+    "ライン": "線",
+    "ラインバッカー": "線衛",
+    "オフタックル": "進攻",
+    "パワーオフタックル": "動力進攻",
+    "リードブロック": "前導掩護",
+    "アイシールド": "Eyeshield",
+    "コーナーバック": "角衛",
+    "ホーマー": "荷馬",
+    "シャトルパス": "太空梭傳球"
+  },
+  "toc": [
+    {
+      "titleJp": "2番手の男",
+      "titleZh": "第二个男人",
+      "chapterId": "1",
+      "createAt": 1758461520
+    },
+    {
+      "titleJp": "黄金の脚",
+      "titleZh": "黄金腿",
+      "chapterId": "2",
+      "createAt": 1758632400
+    },
+    {
+      "titleJp": "アイシールド21",
+      "titleZh": "眼罩21",
+      "chapterId": "3",
+      "createAt": 1758718500
+    },
+    {
+      "titleJp": "春大会へ向けて",
+      "titleZh": "面向春季大会",
+      "chapterId": "4",
+      "createAt": 1758812400
+    },
+    {
+      "titleJp": "初試合",
+      "titleZh": "第一场比赛",
+      "chapterId": "5",
+      "createAt": 1758896160
+    },
+    {
+      "titleJp": "恋ケ浜キューピッド戦",
+      "titleZh": "丘比特之战",
+      "chapterId": "6",
+      "createAt": 1758986100
+    },
+    {
+      "titleJp": "勝利への仕込み",
+      "titleZh": "为胜利做准备",
+      "chapterId": "7",
+      "createAt": 1759071480
+    },
+    {
+      "titleJp": "足を引っ張らない様に",
+      "titleZh": "不要拖后腿",
+      "chapterId": "8",
+      "createAt": 1759153800
+    },
+    {
+      "titleJp": "白銀を目指せ",
+      "titleZh": "以白银为目标",
+      "chapterId": "9",
+      "createAt": 1759240440
+    },
+    {
+      "titleJp": "王城ホワイトナイツ戦その1",
+      "titleZh": "王城白色骑士之战第1集",
+      "chapterId": "10",
+      "createAt": 1759326900
+    },
+    {
+      "titleJp": "王城ホワイトナイツ戦その2",
+      "titleZh": "城堡白色骑士之战2",
+      "chapterId": "11",
+      "createAt": 1759413180
+    },
+    {
+      "titleJp": "王城ホワイトナイツ戦その3",
+      "titleZh": "王城白色骑士之战3",
+      "chapterId": "12",
+      "createAt": 1759503600
+    },
+    {
+      "titleJp": "勝者は居ない",
+      "titleZh": "没有赢家",
+      "chapterId": "13",
+      "createAt": 1759581180
+    },
+    {
+      "titleJp": "epilogue　of　Prologue(序章最終話)",
+      "titleZh": "epilogue　of　Prologue（序章最终话）",
+      "chapterId": "14",
+      "createAt": 1759748400
+    },
+    {
+      "titleJp": "折れても折れぬ心",
+      "titleZh": "百折不挠的心",
+      "chapterId": "15",
+      "createAt": 1759837320
+    },
+    {
+      "titleJp": "未だ熱は冷めない",
+      "titleZh": "热度还没有退",
+      "chapterId": "16",
+      "createAt": 1759928760
+    },
+    {
+      "titleJp": "熱の伝道",
+      "titleZh": "热的传道",
+      "chapterId": "17",
+      "createAt": 1760010300
+    },
+    {
+      "titleJp": "正式加入者",
+      "titleZh": "正式用户",
+      "chapterId": "18",
+      "createAt": 1760105940
+    },
+    {
+      "titleJp": "骨抜きの宣伝試合",
+      "titleZh": "虚张声势的宣传比赛",
+      "chapterId": "19",
+      "createAt": 1760189700
+    },
+    {
+      "titleJp": "賊学カメレオンズ戦",
+      "titleZh": "贼学变色龙战",
+      "chapterId": "20",
+      "createAt": 1760269980
+    },
+    {
+      "titleJp": "賊学カメレオンズ戦その2",
+      "titleZh": "贼学变色龙之战2",
+      "chapterId": "21",
+      "createAt": 1760360760
+    },
+    {
+      "titleJp": "ヘルタワー",
+      "titleZh": "海尔塔",
+      "chapterId": "22",
+      "createAt": 1760445180
+    },
+    {
+      "titleJp": "ヘブンタワー",
+      "titleZh": "天堂塔",
+      "chapterId": "23",
+      "createAt": 1760536500
+    },
+    {
+      "titleJp": "ファミリー・ファミリー…無謀",
+      "titleZh": "家庭家庭…盲目",
+      "chapterId": "24",
+      "createAt": 1760622240
+    },
+    {
+      "titleJp": "日本代表決定戦",
+      "titleZh": "日本代表决定战",
+      "chapterId": "25",
+      "createAt": 1760708160
+    },
+    {
+      "titleJp": "太陽スフィンクス戦",
+      "titleZh": "太阳斯芬克斯战役",
+      "chapterId": "26",
+      "createAt": 1760797980
+    },
+    {
+      "titleJp": "太陽スフィンクス戦その2",
+      "titleZh": "太阳狮身人面像之战2",
+      "chapterId": "27",
+      "createAt": 1760884620
+    },
+    {
+      "titleJp": "太陽スフィンクス戦その3",
+      "titleZh": "太阳狮身人面像之战3",
+      "chapterId": "28",
+      "createAt": 1760968500
+    },
+    {
+      "titleJp": "王の陥落",
+      "titleZh": "王的陷落",
+      "chapterId": "29",
+      "createAt": 1761055800
+    },
+    {
+      "titleJp": "神を穿つ球",
+      "titleZh": "穿神之球",
+      "chapterId": "30",
+      "createAt": 1761139440
+    },
+    {
+      "titleJp": "「姉崎、細かいことを気にしてはいけない」",
+      "titleZh": "「姉崎，不要在意细节」",
+      "chapterId": "31",
+      "createAt": 1761228060
+    },
+    {
+      "titleJp": "地獄の合宿",
+      "titleZh": "地狱合宿",
+      "chapterId": "32",
+      "createAt": 1761315420
+    },
+    {
+      "titleJp": "地獄の合宿その2",
+      "titleZh": "地狱合宿2",
+      "chapterId": "33",
+      "createAt": 1761399720
+    },
+    {
+      "titleJp": "日米決戦",
+      "titleZh": "日美决战",
+      "chapterId": "34",
+      "createAt": 1761532980
+    },
+    {
+      "titleJp": "NASAエイリアンズ戦",
+      "titleZh": "NASA外星人战",
+      "chapterId": "35",
+      "createAt": 1761652320
+    },
+    {
+      "titleJp": "NASAエイリアンズ戦その2",
+      "titleZh": "NASA外星人战2",
+      "chapterId": "36",
+      "createAt": 1761741060
+    },
+    {
+      "titleJp": "NASAエイリアンズ戦その3",
+      "titleZh": "NASA外星人战3",
+      "chapterId": "37",
+      "createAt": 1761832260
+    },
+    {
+      "titleJp": "NASAエイリアンズ戦その4",
+      "titleZh": "NASA外星人战4",
+      "chapterId": "38",
+      "createAt": 1761922800
+    },
+    {
+      "titleJp": "NASAエイリアンズ戦その5",
+      "titleZh": "NASA外星人战5",
+      "chapterId": "39",
+      "createAt": 1762009200
+    },
+    {
+      "titleJp": "NEXT　SEASON　USA",
+      "titleZh": "NEXT　SEASON　USA",
+      "chapterId": "40",
+      "createAt": 1762090920
+    },
+    {
+      "titleJp": "デビルバッツ　IN　USA",
+      "titleZh": "恶魔蝙蝠　IN　USA",
+      "chapterId": "41",
+      "createAt": 1762177260
+    },
+    {
+      "titleJp": "デスマーチをして強くなれるなら…",
+      "titleZh": "如果通过死亡行军能变强的话…",
+      "chapterId": "42",
+      "createAt": 1762264560
+    },
+    {
+      "titleJp": "死の行軍その1",
+      "titleZh": "死亡行军1",
+      "chapterId": "43",
+      "createAt": 1762350540
+    },
+    {
+      "titleJp": "死の行軍その2",
+      "titleZh": "死亡行军2",
+      "chapterId": "44",
+      "createAt": 1762435860
+    },
+    {
+      "titleJp": "死の行軍その3",
+      "titleZh": "死亡行军3",
+      "chapterId": "45",
+      "createAt": 1762526400
+    },
+    {
+      "titleJp": "ラスベガスで一儲け",
+      "titleZh": "在拉斯维加斯大赚一笔",
+      "chapterId": "46",
+      "createAt": 1762612200
+    },
+    {
+      "titleJp": "秋大会へ向けて",
+      "titleZh": "向着秋季大赛",
+      "chapterId": "47",
+      "createAt": 1762696860
+    },
+    {
+      "titleJp": "大会前日",
+      "titleZh": "大赛前一天",
+      "chapterId": "48",
+      "createAt": 1762783260
+    },
+    {
+      "titleJp": "秋大会　開幕",
+      "titleZh": "秋季大赛　开幕",
+      "chapterId": "49",
+      "createAt": 1762869600
+    },
+    {
+      "titleJp": "網乃サイボーグス戦",
+      "titleZh": "网乃机器娘战",
+      "chapterId": "50",
+      "createAt": 1762956600
+    },
+    {
+      "titleJp": "網乃サイボーグス戦その2",
+      "titleZh": "网乃机器娘战2",
+      "chapterId": "51",
+      "createAt": 1763041380
+    },
+    {
+      "titleJp": "試合を終えてから",
+      "titleZh": "比赛结束之后",
+      "chapterId": "52",
+      "createAt": 1763128800
+    },
+    {
+      "titleJp": "１％の確率",
+      "titleZh": "1%的概率",
+      "chapterId": "53",
+      "createAt": 1763215200
+    },
+    {
+      "titleJp": "1年の双葉蓮次",
+      "titleZh": "一年级的双叶莲次",
+      "chapterId": "54",
+      "createAt": 1763302500
+    },
+    {
+      "titleJp": "夕陽ガッツ戦",
+      "titleZh": "夕阳Guts战",
+      "chapterId": "55",
+      "createAt": 1763388060
+    },
+    {
+      "titleJp": "試合終わり",
+      "titleZh": "比赛结束",
+      "chapterId": "56",
+      "createAt": 1763509320
+    },
+    {
+      "titleJp": "土壇場の実験",
+      "titleZh": "最后关头的实验",
+      "chapterId": "57",
+      "createAt": 1763560500
+    },
+    {
+      "titleJp": "独播スコーピオンズ戦",
+      "titleZh": "独播毒蝎战",
+      "chapterId": "58",
+      "createAt": 1763646600
+    },
+    {
+      "titleJp": "試合終わり",
+      "titleZh": "比赛结束",
+      "chapterId": "59",
+      "createAt": 1763733960
+    },
+    {
+      "titleJp": "潜入調査！！",
+      "titleZh": "潜入调查！！",
+      "chapterId": "60",
+      "createAt": 1763820900
+    },
+    {
+      "titleJp": "巨深戦へ向けて",
+      "titleZh": "向着巨深战",
+      "chapterId": "61",
+      "createAt": 1764042780
+    },
+    {
+      "titleJp": "巨深ポセイドン戦",
+      "titleZh": "巨深波塞冬战",
+      "chapterId": "62",
+      "createAt": 1764165060
+    },
+    {
+      "titleJp": "巨深ポセイドン戦その2",
+      "titleZh": "巨深波塞冬战2",
+      "chapterId": "63",
+      "createAt": 1764252000
+    },
+    {
+      "titleJp": "巨深ポセイドン戦その3",
+      "titleZh": "巨深波塞冬战3",
+      "chapterId": "64",
+      "createAt": 1764338100
+    },
+    {
+      "titleJp": "巨深ポセイドン戦その4",
+      "titleZh": "巨深波塞冬战4",
+      "chapterId": "65",
+      "createAt": 1764425760
+    },
+    {
+      "titleJp": "巨深ポセイドン戦その5",
+      "titleZh": "巨深波塞冬战5",
+      "chapterId": "66",
+      "createAt": 1764511080
+    },
+    {
+      "titleJp": "試合終わり",
+      "titleZh": "比赛结束",
+      "chapterId": "67",
+      "createAt": 1764597000
+    },
+    {
+      "titleJp": "BUMP　SIPM　GANS",
+      "titleZh": "BUMP　SIPM　GANS",
+      "chapterId": "68",
+      "createAt": 1764684000
+    },
+    {
+      "titleJp": "西部ワイルドガンマンズ戦その1",
+      "titleZh": "西部狂野枪手战1",
+      "chapterId": "69",
+      "createAt": 1764770400
+    },
+    {
+      "titleJp": "西部ワイルドガンマンズ戦その2",
+      "titleZh": "西部狂野枪手战2",
+      "chapterId": "70",
+      "createAt": 1764856440
+    },
+    {
+      "titleJp": "西部ワイルドガンマンズ戦その3",
+      "titleZh": "西部狂野枪手战3",
+      "chapterId": "71",
+      "createAt": 1764943140
+    },
+    {
+      "titleJp": "西部ワイルドガンマンズ戦その4",
+      "titleZh": "西部狂野枪手战4",
+      "chapterId": "72",
+      "createAt": 1765114740
+    },
+    {
+      "titleJp": "西部ワイルドガンマンズ戦その5",
+      "titleZh": "西部狂野枪手战5",
+      "chapterId": "73",
+      "createAt": 1765201200
+    },
+    {
+      "titleJp": "西部ワイルドガンマンズ戦その6",
+      "titleZh": "西部狂野枪手战6",
+      "chapterId": "74",
+      "createAt": 1765288500
+    },
+    {
+      "titleJp": "西部ワイルドガンマンズ戦その7",
+      "titleZh": "西部荒野枪手队战　其之7",
+      "chapterId": "75",
+      "createAt": 1765375440
+    },
+    {
+      "titleJp": "試合終わり",
+      "titleZh": "比赛结束",
+      "chapterId": "76",
+      "createAt": 1765461900
+    },
+    {
+      "titleJp": "裸の付き合い(男)",
+      "titleZh": "裸裎相对（男）",
+      "chapterId": "77",
+      "createAt": 1765548840
+    },
+    {
+      "titleJp": "裸の付き合い(女)",
+      "titleZh": "裸裎相对（女）",
+      "chapterId": "78",
+      "createAt": 1765633320
+    },
+    {
+      "titleJp": "出直し",
+      "titleZh": "重新来过",
+      "chapterId": "79",
+      "createAt": 1765720260
+    },
+    {
+      "titleJp": "3位決定戦",
+      "titleZh": "季军争夺战",
+      "chapterId": "80",
+      "createAt": 1765806780
+    },
+    {
+      "titleJp": "盤戸スパイダーズ戦",
+      "titleZh": "盘户蜘蛛队战",
+      "chapterId": "81",
+      "createAt": 1765893600
+    },
+    {
+      "titleJp": "盤戸スパイダーズ戦その2",
+      "titleZh": "盘户蜘蛛队战　其之2",
+      "chapterId": "82",
+      "createAt": 1765980540
+    },
+    {
+      "titleJp": "盤戸スパイダーズ戦その3",
+      "titleZh": "盘户蜘蛛队战　其之3",
+      "chapterId": "83",
+      "createAt": 1766066400
+    },
+    {
+      "titleJp": "盤戸スパイダーズ戦その4",
+      "titleZh": "盘户蜘蛛队战　其之4",
+      "chapterId": "84",
+      "createAt": 1766153640
+    },
+    {
+      "titleJp": "epilogue　of　Tokyo　Stage",
+      "titleZh": "epilogue　of　Tokyo　Stage",
+      "chapterId": "85",
+      "createAt": 1766239020
+    },
+    {
+      "titleJp": "突撃取材！",
+      "titleZh": "突击采访！",
+      "chapterId": "86",
+      "createAt": 1766570400
+    }
+  ],
+  "visited": 94,
+  "syncAt": 1767204488,
+  "jp": 85,
+  "baidu": 0,
+  "youdao": 28,
+  "gpt": 0,
+  "sakura": 85
+}

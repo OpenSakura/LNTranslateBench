@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:38:35.313960",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.GLM-4.7.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "8b5f8c1e69d4efb33812e59b0f1bab3a3db4b34212da4a24e5ae44e0c2d82856",
+    "B": "44ca65a6e0c4684b7290d49ae9ee6caaeb2ccc156d206d2868228c5023e7a3cc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:39:23.521598",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202601090038362733701184Je5TjUZ",
+      "judge_response": {
+        "id": "chatcmpl-202601090038362733701184Je5TjUZ",
+        "object": "chat.completion",
+        "created": 1767890363,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的分段文本进行的详细评测：\n\n### 详细分析\n\n**1. 准确性与术语 (Accuracy & Terminology)**\n*   **关键地名与物品（身延馒头）：** 这是本段文本中最核心的术语。原文是「みのぶまんじゅう」（Minobu Manju），源自地名「身延」。\n    *   **翻译A**：大部分时间正确翻译为“身延馒头”，但在第59段突然变成了“美浓馒头”（可能是手误）。\n    *   **翻译B**：表现灾难级。第23段译为“苇乃ぶ馒头”（似乎是把平假名误读或OCR错误），第25段同上，第59段变为“蓑衣馒头”，第74段变为“美乃滨馒头”。同一个词出现了四种不同的错误译法，且完全没有查证地名。\n*   **Max Coffee（マッ缶）：**\n    *   **翻译A**：译为“魔罐”。这是《春物》粉丝圈对Max Coffee的常用昵称，体现了译者对原作背景的了解。\n    *   **翻译B**：译为“马口铁罐”。这是对“マッ（Max）”和“缶（Can）”的误解，完全丢失了原文指代特定饮料的含义。\n*   **其他细节：**\n    *   第51段原文“くしくも”（讽刺的是/奇怪的是），A译为“讽刺的是”，B译为“偏偏”，A更准确传达了语境。\n\n**2. 流畅性与风格 (Fluency & Style)**\n*   **大老师（比企谷八幡）的语调：**\n    *   原文是大老师的第一人称视角，带有特有的自我吐槽和理智分析。\n    *   **翻译A**：语序更符合中文习惯，长句处理得当。例如第51段的心理描写，A将长句拆分得更有逻辑。\n    *   **翻译B**：部分句子略显生硬，且由于术语错误导致阅读时的割裂感很强。\n*   **对话自然度：**\n    *   两者的对话部分都算自然，但A在处理斋藤和八幡的互动时，语气词的选择（如“真懂行啊” vs “知道得真详细呢”）略微更贴近高中生的口语。\n\n**3. 格式与标点 (Formatting)**\n*   两者格式基本一致，都保留了原文的对话框形式。\n\n**4. 致命伤 (Critical Issues)**\n*   **翻译B**在核心名词“身延馒头”上的反复错误和不一致是致命的。对于一篇涉及圣地巡礼（《摇曳露营》x《春物》）的同人或联动文，地名和特产名的准确性至关重要。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A对核心名词（身延、Max Coffee）理解准确。B在核心名词上出现了严重的理解错误和OCR/机翻痕迹。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的中文表达更老练，长句逻辑清晰。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A使用了'魔罐'等圈内术语，更贴合《春物》读者的习惯。\"\n    },\n    \"terminology\": {\n      \"A\": 8,\n      \"B\": 2,\n      \"notes\": \"B在'身延馒头'一词上出现了'苇乃ぶ'、'蓑衣'、'美乃滨'三种错误译法，极度不一致。A仅有一处笔误（美浓）。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B的术语跳变严重影响阅读连贯性。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者均符合规范。\"\n    }\n  },\n  \"key_differences\": [\n    \"术语准确性：A正确翻译了地名'身延'和特产'身延馒头'；B完全错误且前后不一。\",\n    \"背景知识：A识别出了'マッ缶'为'魔罐'（Max Coffee），B误译为'马口铁罐'。\",\n    \"句法结构：A在处理第51段等长难句时，逻辑关系处理得比B更清晰。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都优于翻译B，尤其是在术语准确性和背景知识方面。翻译B犯了严重的翻译错误，未能识别出基础地名'身延'（Minobu），导致将核心道具'身延馒头'翻译成了乱码般的'苇乃ぶ'或毫无关联的'蓑衣/美乃滨'，这在轻小说翻译中是不可接受的失误。此外，A对《春物》特有的梗（如Max Coffee）也有更好的还原。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7546,
+          "completion_tokens": 3906,
+          "total_tokens": 11452
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "A对核心名词（身延、Max Coffee）理解准确。B在核心名词上出现了严重的理解错误和OCR/机翻痕迹。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的中文表达更老练，长句逻辑清晰。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A使用了'魔罐'等圈内术语，更贴合《春物》读者的习惯。"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 2,
+        "notes": "B在'身延馒头'一词上出现了'苇乃ぶ'、'蓑衣'、'美乃滨'三种错误译法，极度不一致。A仅有一处笔误（美浓）。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "B的术语跳变严重影响阅读连贯性。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者均符合规范。"
+      }
+    },
+    "key_differences": [
+      "术语准确性：A正确翻译了地名'身延'和特产'身延馒头'；B完全错误且前后不一。",
+      "背景知识：A识别出了'マッ缶'为'魔罐'（Max Coffee），B误译为'马口铁罐'。",
+      "句法结构：A在处理第51段等长难句时，逻辑关系处理得比B更清晰。"
+    ],
+    "final_summary": "翻译A在各方面都优于翻译B，尤其是在术语准确性和背景知识方面。翻译B犯了严重的翻译错误，未能识别出基础地名'身延'（Minobu），导致将核心道具'身延馒头'翻译成了乱码般的'苇乃ぶ'或毫无关联的'蓑衣/美乃滨'，这在轻小说翻译中是不可接受的失误。此外，A对《春物》特有的梗（如Max Coffee）也有更好的还原。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

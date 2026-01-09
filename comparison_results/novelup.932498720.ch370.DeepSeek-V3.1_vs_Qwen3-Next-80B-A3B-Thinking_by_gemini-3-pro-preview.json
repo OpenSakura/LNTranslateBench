@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:36:45.190363",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "a7f70f74368a5952ed3abb2afd1a630b861ba4373d505ce7b5edf47c30e92745",
+    "B": "efce45329d4ea19514d19f1eca40113be6751feacb550b130d1a90f26f71fb26"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:37:40.357521",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003645821956967K2Lmt0PH",
+      "judge_response": {
+        "id": "chatcmpl-20260109003645821956967K2Lmt0PH",
+        "object": "chat.completion",
+        "created": 1767890260,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的分段文本进行的详细评测：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A** 在理解原文意思方面表现出色，几乎没有误译。它准确捕捉了原文的细节和修饰语。\n*   **翻译 B** 存在几处严重的理解错误：\n    *   **段落 66:** 将人名「ゆらぎ」(Yuragi) 译为「波动」。虽然字面意思是波动/摇曳，但在人名中通常译为「摇」或音译。「御神乐波动」听起来像招式名而不是人名。A 译为「摇」更妥当。\n    *   **段落 91:** 将 Comiket 术语「サークル」(Circle，即同人社团) 译为「圈圈」。这是极大的术语错误，完全曲解了语境。A 译为「同人团体」正确。\n    *   **段落 95:** 将「アイチさん」(Aichi-san) 译为「爱知先生」。结合后文（段落104）提到她是「魔法少女」，这里显然应该用女性称呼。B 误判了角色性别。\n    *   **段落 103:** 再次使用男性代词「他」指代爱知，而 A 正确使用了「她」。\n\n**2. 术语与文化背景 (Terminology & Culture)**\n*   **翻译 A** 对御宅族文化（Otaku culture）和轻小说术语非常熟悉。\n    *   它保留了原文对 Comiket 的戏仿名称「Comima」和「Comical Market」（段落 13-14），这忠实于原文的设定。\n    *   它正确理解了「岛」（Island）和「社团」（Circle）的概念。\n*   **翻译 B** 倾向于将术语“本地化”或直接搞错。\n    *   它将「Comima」直接改为现实中的「Comiket」，虽然便于理解，但破坏了原文的戏仿感。\n    *   如前所述，「圈圈」是严重的术语失误。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **翻译 A** 的文笔更符合轻小说的叙述风格，句子结构完整，修饰语丰富，读起来有“小说感”。例如段落 18 对阳光和沥青反光的描写，A 的用词更具文学性。\n*   **翻译 B** 的风格非常口语化，有时过于随意，导致叙述部分读起来像流水账。例如段落 19「泳完之后」，原文是「海水浴のあと」（海水浴之后），B 的表达略显生硬。\n\n**4. 角色语气 (Character Voice)**\n*   **翻译 A** 较好地还原了不同角色的语气。大野前辈的关心、男生的轻浮、伦悟的内心独白都处理得当。\n*   **翻译 B** 的对话有时过于简略，丢失了原文的一些语气助词传达的微妙情感。\n\n### 关键差异点举例\n*   **人名翻译:** A「御神乐摇」 vs B「御神乐波动」（B 像机翻或直译）。\n*   **专业术语:** A「同人团体」 vs B「圈圈」（B 错误）。\n*   **性别判断:** A「爱知小姐/她」 vs B「爱知先生/他」（B 错误）。\n*   **原文戏仿:** A「Comical Market」 vs B「Comiket」（A 忠实原文）。\n\n### 最终判决\n\n翻译 A 在准确性、术语掌握和文学风格上完胜。翻译 B 虽然在某些短对话上比较自然，但存在致命的术语错误和对角色性别的误判，显示出译者可能不熟悉御宅族文化或未仔细阅读上下文。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B存在严重误译：将人名意译为'波动'，将'Circle'(社团)译为'圈圈'，且弄错了女性角色的性别（称呼为先生/他）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的叙述语言更优美，符合轻小说风格。B过于口语化，部分表达（如'泳完'）略显生硬。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A保留了原文的戏仿名称（Comical Market），B直接替换为现实名称，损失了原文风味。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"B在Comiket相关术语上完全不及格（'圈圈'）。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B由于性别代词错误，导致上下文逻辑（魔法少女 vs 先生）出现矛盾。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者格式均正常。\"\n    }\n  },\n  \"key_differences\": [\n    \"B将女性角色Aichi误译为男性（先生/他），A正确译为女性。\",\n    \"B将同人展术语'Circle'（社团）误译为形状'圈圈'。\",\n    \"B将人名'Yuragi'意译为'波动'，A译为更像人名的'摇'。\",\n    \"A保留了原文对Comiket的戏仿称呼，B将其本地化为现实名称。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都明显优于翻译B。A展现了扎实的日语理解能力和对轻小说/御宅族题材术语的熟悉度，文笔流畅且准确。翻译B虽然通顺，但犯了几个致命错误：包括搞错角色性别、将人名奇怪地意译、以及对核心术语（Circle）的完全误解。这些错误严重影响了阅读体验和对剧情的理解。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7760,
+          "completion_tokens": 4341,
+          "total_tokens": 12101
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "B存在严重误译：将人名意译为'波动'，将'Circle'(社团)译为'圈圈'，且弄错了女性角色的性别（称呼为先生/他）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的叙述语言更优美，符合轻小说风格。B过于口语化，部分表达（如'泳完'）略显生硬。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A保留了原文的戏仿名称（Comical Market），B直接替换为现实名称，损失了原文风味。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 4,
+        "notes": "B在Comiket相关术语上完全不及格（'圈圈'）。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "B由于性别代词错误，导致上下文逻辑（魔法少女 vs 先生）出现矛盾。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式均正常。"
+      }
+    },
+    "key_differences": [
+      "B将女性角色Aichi误译为男性（先生/他），A正确译为女性。",
+      "B将同人展术语'Circle'（社团）误译为形状'圈圈'。",
+      "B将人名'Yuragi'意译为'波动'，A译为更像人名的'摇'。",
+      "A保留了原文对Comiket的戏仿称呼，B将其本地化为现实名称。"
+    ],
+    "final_summary": "翻译A在各方面都明显优于翻译B。A展现了扎实的日语理解能力和对轻小说/御宅族题材术语的熟悉度，文笔流畅且准确。翻译B虽然通顺，但犯了几个致命错误：包括搞错角色性别、将人名奇怪地意译、以及对核心术语（Circle）的完全误解。这些错误严重影响了阅读体验和对剧情的理解。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:39:29.103327",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.MiniMax-M2.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "930773dbe42d8470d604b51effc26ba8520ec5b71275bdc7134f64eb80ae400b",
+    "B": "1859286afbc1662e570f6465a3038ad6ef59376ce5d59028951ba722163c285e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:40:37.572308",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003929844636167U1RSwibe",
+      "judge_response": {
+        "id": "chatcmpl-20260109003929844636167U1RSwibe",
+        "object": "chat.completion",
+        "created": 1767890437,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 8,\n      \"notes\": \"A在第83段完全未翻译，保留了日文原文。此外，A在第17段将关键的称呼修正（君/酱）搞反了，破坏了剧情逻辑。A在第11段、14段、62段也有明显的误译。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"B的中文表达更自然，符合轻小说的语感。A有些句子读起来比较生硬（如第2段）。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"B更好地把握了同人/轻小说的术语（如'救济'、'腐向'）。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"B正确使用了同人圈术语（如'救济'对应救済）。A对'ゲストの時意外'（除了当嘉宾时）理解错误。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"由于A有一段未翻译，严重影响连贯性。\"\n    },\n    \"formatting\": {\n      \"A\": 7,\n      \"B\": 7,\n      \"notes\": \"两者都保留了原文的对话框格式，B混用了『』和「」，但这是轻小说常见风格。\"\n    }\n  },\n  \"key_differences\": [\n    \"致命错误：翻译A在第83段完全保留了日文原文，未进行翻译。\",\n    \"关键剧情误译：第17段中，主角抱怨被叫'酱'（女性化），希望能被叫'君'（男性化）。A译为'至少叫我萩下酱吧'（意思反了），B译为'至少该叫我萩下君吧'（正确）。\",\n    \"漏译：第14段A漏掉了'忘了我没有朋友'这一句。\",\n    \"术语：第5段'救済'，B译为'救济'（同人常用语），A译为'救助'。\",\n    \"B的瑕疵：第74段'女子盛り'在食堂语境下应指'女生分量'（A译对），B误译为'女孩子盛装打扮'。\"\n  ],\n  \"final_summary\": \"翻译B在整体质量上远超翻译A。最主要的原因是翻译A在第83段出现了严重的漏翻事故（直接保留了日文）。此外，A在理解原文关键剧情点（如第17段的称呼性别纠正）和语法结构（如第11段的'意外'、第14段的句末）上存在多处明显错误。尽管B在第74段有一个关于'女子盛り'（女生分量）的误译，但瑕不掩瑜，B的流畅度、术语准确性和完整性都更好。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7678,
+          "completion_tokens": 5942,
+          "total_tokens": 13620
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 8,
+        "notes": "A在第83段完全未翻译，保留了日文原文。此外，A在第17段将关键的称呼修正（君/酱）搞反了，破坏了剧情逻辑。A在第11段、14段、62段也有明显的误译。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的中文表达更自然，符合轻小说的语感。A有些句子读起来比较生硬（如第2段）。"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地把握了同人/轻小说的术语（如'救济'、'腐向'）。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "B正确使用了同人圈术语（如'救济'对应救済）。A对'ゲストの時意外'（除了当嘉宾时）理解错误。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "由于A有一段未翻译，严重影响连贯性。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都保留了原文的对话框格式，B混用了『』和「」，但这是轻小说常见风格。"
+      }
+    },
+    "key_differences": [
+      "致命错误：翻译A在第83段完全保留了日文原文，未进行翻译。",
+      "关键剧情误译：第17段中，主角抱怨被叫'酱'（女性化），希望能被叫'君'（男性化）。A译为'至少叫我萩下酱吧'（意思反了），B译为'至少该叫我萩下君吧'（正确）。",
+      "漏译：第14段A漏掉了'忘了我没有朋友'这一句。",
+      "术语：第5段'救済'，B译为'救济'（同人常用语），A译为'救助'。",
+      "B的瑕疵：第74段'女子盛り'在食堂语境下应指'女生分量'（A译对），B误译为'女孩子盛装打扮'。"
+    ],
+    "final_summary": "翻译B在整体质量上远超翻译A。最主要的原因是翻译A在第83段出现了严重的漏翻事故（直接保留了日文）。此外，A在理解原文关键剧情点（如第17段的称呼性别纠正）和语法结构（如第11段的'意外'、第14段的句末）上存在多处明显错误。尽管B在第74段有一个关于'女子盛り'（女生分量）的误译，但瑕不掩瑜，B的流畅度、术语准确性和完整性都更好。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

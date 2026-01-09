@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenSakura Light Novel Translation Benchmark</title>
+  <link rel="icon" href="/OpenSakura_64.png" type="image/png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-title">OpenSakura Light Novel Translation Benchmark</div>
+      <div class="brand-subtitle">Elo + judge drilldowns</div>
+    </div>
+
+
+
+    <div class="controls">
+      <label class="control">
+        <span>Judge</span>
+        <select id="judgeSelect"></select>
+      </label>
+      <button id="reloadBtn" class="btn">Reload</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="banner" class="banner hidden"></section>
+
+    <!-- PAGE 1: OVERVIEW -->
+    <div id="pageOverview" class="page-section">
+      <section id="summaryCards" class="cards">
+        <div class="card">
+          <div class="card-k">Selected judge</div>
+          <div id="cardJudge" class="card-v">—</div>
+        </div>
+        <div class="card">
+          <div class="card-k">Models</div>
+          <div id="cardModels" class="card-v">—</div>
+        </div>
+        <div class="card">
+          <div class="card-k">Matches</div>
+          <div id="cardMatches" class="card-v">—</div>
+        </div>
+        <div class="card">
+          <div class="card-k">Loaded at</div>
+          <div id="cardLoadedAt" class="card-v">—</div>
+        </div>
+      </section>
+
+      <div class="overview-grid">
+        <!-- Left Col: Table + Bar Plot -->
+        <div class="overview-left">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Elo leaderboard</h2>
+            </div>
+            <div class="table-wrap">
+              <table id="leaderboard">
+                <thead>
+                  <tr>
+                    <th class="col-rank">#</th>
+                    <th>Model</th>
+                    <th class="col-num">Elo</th>
+                    <th class="col-num">Games</th>
+                  </tr>
+                </thead>
+                <tbody id="leaderboardBody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Elo scores</h2>
+            </div>
+            <div id="barPlot" class="chart"></div>
+          </section>
+        </div>
+
+        <!-- Right Col: Heatmap -->
+        <div class="overview-right">
+          <section class="panel h-full">
+            <div class="panel-header">
+              <h2>Pairwise heatmap</h2>
+              <label class="control-inline">
+                <select id="heatmapMetric">
+                  <option value="expected">Elo expected win prob</option>
+                  <option value="observed">Observed win rate</option>
+                </select>
+              </label>
+            </div>
+            <div id="heatmapWrap" class="heatmap-wrap">
+              <div id="heatmap" class="heatmap-grid"></div>
+            </div>
+            <div class="legend">
+              <div class="legend-label">0</div>
+              <div class="legend-bar" aria-hidden="true"></div>
+              <div class="legend-label">1</div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 2: DETAILS -->
+    <div id="pageDetails" class="page-section hidden">
+      <div class="details-grid">
+        <!-- Col 1: Chapters -->
+        <section class="panel p-0 col-chapters">
+          <div class="panel-header p-sm">
+            <h2>Chapters</h2>
+            <input id="chapterSearch" class="input input-sm" placeholder="Search..." />
+          </div>
+          <div id="chapterList" class="list-group"></div>
+        </section>
+
+        <!-- Col 2: Matches -->
+        <section class="panel p-0 col-matches">
+          <div class="panel-header p-sm">
+            <h2>Matches</h2>
+            <div id="matchCount" class="muted"></div>
+          </div>
+          <div id="matchList" class="list-group"></div>
+        </section>
+
+        <!-- Col 3: Result -->
+        <section class="panel p-0 col-result">
+          <div class="panel-header p-sm">
+            <h2>Match Result</h2>
+          </div>
+          <div id="matchDetail" class="detail-view">
+            <div class="placeholder-text">Select a chapter and a match to view details.</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <button id="pageSwitcher" class="side-switcher" title="Switch Page">
+    <span class="arrow">»</span>
+    <span class="label">Detailed View</span>
+  </button>
+
+  <div id="tooltip" class="tooltip hidden" role="status" aria-live="polite"></div>
+
+  <script src="/app.js" defer></script>
+</body>
+
+</html>

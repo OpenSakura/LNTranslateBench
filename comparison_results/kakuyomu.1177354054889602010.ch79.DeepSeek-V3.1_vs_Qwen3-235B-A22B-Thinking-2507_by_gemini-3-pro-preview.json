@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:31:16.705151",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "e60a37eb75c4a2e02d2fa717db93b635ca64a9ec41ff5ba9056c6a50b285882e",
+    "B": "fb57e1153499694def84144129528076dceea3d6c29f8a3598454e6a035450ae"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:32:22.365473",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900311846088022dPlBKQSA",
+      "judge_response": {
+        "id": "chatcmpl-2026010900311846088022dPlBKQSA",
+        "object": "chat.completion",
+        "created": 1767889942,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **重大错误 (A):**\n    *   **段落 4:** 翻译A完全漏掉了原文的第二句话“そうなってくるとやはり気になるのは戦利品だ。”（既然如此那最让人在意的就是战利品了）。这是一个严重的遗漏。\n    *   **段落 42:** 原文“倍の一万の兵力”（倍增的一万兵力），翻译A错误地翻译为“两万的兵力”。原文意指相对于第一阵的5000，第二阵是倍增后的10000。翻译B正确翻译为“一万”。\n*   **细微差别:**\n    *   **段落 98:** 原文“大賢者マゼルを、息子を追うぞ！”（去追大贤者玛泽尔，[我的]儿子！）。这里是同位语，玛泽尔就是儿子。翻译B处理为“玛泽尔和他儿子”，理解可能有误（以为是两个人），但翻译A“追大贤者玛泽尔，追儿子去”虽然结构保留了，但表达生硬。考虑到A在前文的硬伤，B的这个瑕疵相对较小。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 A:** 很多句子带有明显的“翻译腔”，语序生硬，直译痕迹重。例如段落14“但戈布拉，嗯，摸着下巴”，读起来非常不自然。段落61“雷突然突击过来”也很拗口。\n*   **翻译 B:** 语言非常自然流畅，符合中文表达习惯。例如段落14“摸着下巴说「唔嗯」”，段落33“喂，你这不就是重大失误吗？”，读起来很有轻小说的语感。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译 B:** 很好地还原了轻小说的风格。哥布林国王的傲慢、部下的惊慌、以及吐槽的语气都处理得很到位。例如段落20“全灭是什么意思！这怎么可能！”比A更有张力。\n*   **翻译 A:** 语气平淡，缺乏角色个性。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **名称处理:**\n    *   原文中有一个配角叫“ゴーブラ”（Gobra）。翻译A音译为“戈布拉”。翻译B在后文中将其意译/改写为“哥布林队长”（段落19, 24等）。虽然B的做法偏离了原文的专有名词，但在中文语境下有效区分了国王（Gobral）和手下（Gobra），避免了名字过于相似造成的混淆，算是一种聪明的本地化处理。\n    *   翻译A在段落95突然使用了繁体字“瑪澤爾”，显示出输入法或校对的不一致。\n\n**5. 连贯性/可读性 (Coherence)**\n*   翻译B在连接词的使用和句子切分上更胜一筹，逻辑清晰。翻译A由于直译，有时逻辑显得断裂（如段落32）。\n\n### 总结\n翻译B在准确性（没有漏句和数字错误）、流畅度和文学性上都远超翻译A。翻译A存在明显的漏译和数字翻译错误，且文笔生硬。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A在段落4漏译了一整句，在段落42将1万错译为2万。\"\n    },\n    \"fluency\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A直译痕迹严重，语序僵硬；B自然通顺。\"\n    },\n    \"style\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"B很好地捕捉了轻小说的对话语气和角色性格。\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"A出现了繁简混用（段落95）；B将配角名意译为队长虽有改动但增加了清晰度。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"B的叙述逻辑连贯。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"均符合规范。\"\n    }\n  },\n  \"key_differences\": [\n    \"A存在严重的漏译（段落4）和数字误译（段落42）。\",\n    \"B的语言表达远比A自然，A多处出现生硬的直译（如段落14）。\",\n    \"B对角色语气的把握更符合轻小说风格。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都表现出色，提供了准确、流畅且风格恰当的译文。相比之下，翻译A存在致命的准确性错误（漏句、数字错误），且行文生硬，缺乏润色，阅读体验较差。翻译B是明显的胜者。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8765,
+          "completion_tokens": 5634,
+          "total_tokens": 14399
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A在段落4漏译了一整句，在段落42将1万错译为2万。"
+      },
+      "fluency": {
+        "A": 5,
+        "B": 9,
+        "notes": "A直译痕迹严重，语序僵硬；B自然通顺。"
+      },
+      "style": {
+        "A": 5,
+        "B": 9,
+        "notes": "B很好地捕捉了轻小说的对话语气和角色性格。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A出现了繁简混用（段落95）；B将配角名意译为队长虽有改动但增加了清晰度。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "B的叙述逻辑连贯。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "均符合规范。"
+      }
+    },
+    "key_differences": [
+      "A存在严重的漏译（段落4）和数字误译（段落42）。",
+      "B的语言表达远比A自然，A多处出现生硬的直译（如段落14）。",
+      "B对角色语气的把握更符合轻小说风格。"
+    ],
+    "final_summary": "翻译B在各方面都表现出色，提供了准确、流畅且风格恰当的译文。相比之下，翻译A存在致命的准确性错误（漏句、数字错误），且行文生硬，缺乏润色，阅读体验较差。翻译B是明显的胜者。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

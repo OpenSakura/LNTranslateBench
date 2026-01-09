@@ -1,0 +1,403 @@
+{
+  "titleJp": "不死鳥少女は逆境を楽しむ〜不幸な少女はドMで不死鳥を継承する〜",
+  "titleZh": "不死鸟少女享受逆境～不幸的少女是被虐狂且继承不死鸟～",
+  "authors": [
+    {
+      "name": "オリテアント",
+      "link": "https://mypage.syosetu.com/2821813/"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [],
+  "keywords": [
+    "ガールズラブ",
+    "ドリコム大賞４",
+    "ネトコン14",
+    "なろう感想企画",
+    "女主人公",
+    "中世",
+    "チート",
+    "冒険",
+    "オリジナル戦記",
+    "ＥＳＮ大賞９",
+    "SQEXノベル大賞２",
+    "不死鳥",
+    "R-15",
+    "ネトコン14感想"
+  ],
+  "points": 86,
+  "totalCharacters": 501441,
+  "introductionJp": "幼少期の虐待によって心が壊れて、幼くしてマゾヒズムに目覚めた少女は奴隷として売られ、不老不死の幻獣である不死鳥を捕獲する生け贄に使われてしまう。 不死鳥に食べられても幸せだった彼女は不死鳥の卵より炎と共に生まれ出て不死鳥の力を継承していた！ 不死身となったドMな彼女、スザクは死と再生には絶頂と快楽が伴うことを知り、更なるスリル(死による快楽)を求めて暴走する！？",
+  "introductionZh": "由于幼年期的虐待导致心灵崩溃，年幼时便觉醒被虐狂的少女被当成奴隶卖掉，被当成活祭品用来捕获不老不死的幻兽不死鸟。即使被不死鸟吃掉也感到幸福的她，从不死鸟的蛋中与火焰一同诞生，继承了不死鸟的力量！成为不死之身的被虐狂少女朱雀，得知死亡与再生伴随着高潮与快乐，为了追求更大的刺激（死亡带来的快乐）而失控！？",
+  "glossary": {
+    "スザク": "朱雀 #女",
+    "アメジス": "阿梅吉斯 #女",
+    "メイナス": "梅纳斯 #男",
+    "ルアーネ": "卢阿涅",
+    "レイラ": "蕾拉 #女",
+    "ミエナ": "米埃娜"
+  },
+  "toc": [
+    {
+      "titleJp": "最期に見るのは不老不死",
+      "titleZh": "最后看见的是不老不死",
+      "chapterId": "1",
+      "createAt": 1737181740
+    },
+    {
+      "titleJp": "二百年後…そこはパンドラの森",
+      "titleZh": "两百年后……那里是潘多拉之森",
+      "chapterId": "2",
+      "createAt": 1737302220
+    },
+    {
+      "titleJp": "フェニックスの伝説は蘇る",
+      "titleZh": "不死鸟的传说复苏",
+      "chapterId": "3",
+      "createAt": 1737462600
+    },
+    {
+      "titleJp": "新たな伝説は飛び立つ",
+      "titleZh": "新的传说展翅高飞",
+      "chapterId": "4",
+      "createAt": 1737701100
+    },
+    {
+      "titleJp": "不死鳥は不服？",
+      "titleZh": "不死鸟不服？",
+      "chapterId": "5",
+      "createAt": 1738421040
+    },
+    {
+      "titleJp": "フェニックスは不死身でも…",
+      "titleZh": "不死鸟即使不死……",
+      "chapterId": "6",
+      "createAt": 1739023320
+    },
+    {
+      "titleJp": "暗い未来は唐突に終わる",
+      "titleZh": "黑暗的未来唐突地结束",
+      "chapterId": "7",
+      "createAt": 1739541180
+    },
+    {
+      "titleJp": "採取クエストは危険な香り",
+      "titleZh": "采集任务有危险的香气",
+      "chapterId": "8",
+      "createAt": 1740148740
+    },
+    {
+      "titleJp": "新種のスライムは暴飲暴食",
+      "titleZh": "新种史莱姆暴饮暴食",
+      "chapterId": "9",
+      "createAt": 1740746040
+    },
+    {
+      "titleJp": "スライムのレシピは何の法則？",
+      "titleZh": "史莱姆的食谱有什么法则？",
+      "chapterId": "10",
+      "createAt": 1741674240
+    },
+    {
+      "titleJp": "秘密は隅々まで",
+      "titleZh": "秘密无所不在",
+      "chapterId": "11",
+      "createAt": 1742120880
+    },
+    {
+      "titleJp": "予兆は這い寄ってくる",
+      "titleZh": "预兆悄悄接近",
+      "chapterId": "12",
+      "createAt": 1742299800
+    },
+    {
+      "titleJp": "タイムリミットと道のりは常に厳しい",
+      "titleZh": "时限与路程总是严苛",
+      "chapterId": "13",
+      "createAt": 1742632680
+    },
+    {
+      "titleJp": "入学準備は己で済ませるべし",
+      "titleZh": "入学准备应该自己完成",
+      "chapterId": "14",
+      "createAt": 1742996340
+    },
+    {
+      "titleJp": "苦い罠と甘い蜜は紙一重",
+      "titleZh": "苦涩的陷阱与甜蜜的蜜只有一线之隔",
+      "chapterId": "15",
+      "createAt": 1743162120
+    },
+    {
+      "titleJp": "召喚魔法で何が出るかはお楽しみ",
+      "titleZh": "召唤魔法会叫出什么，敬请期待",
+      "chapterId": "16",
+      "createAt": 1743473040
+    },
+    {
+      "titleJp": "Sランクモンスターは一体だけじゃない",
+      "titleZh": "S级怪物不只一只",
+      "chapterId": "17",
+      "createAt": 1743770460
+    },
+    {
+      "titleJp": "バジリスクは迷宮入り",
+      "titleZh": "蛇尾鸡进入迷宫",
+      "chapterId": "18",
+      "createAt": 1744037100
+    },
+    {
+      "titleJp": "一寸先は罠だらけ",
+      "titleZh": "前方尽是陷阱",
+      "chapterId": "19",
+      "createAt": 1744215180
+    },
+    {
+      "titleJp": "最悪の敵はフェニックス",
+      "titleZh": "最糟的敌人是不死鸟",
+      "chapterId": "20",
+      "createAt": 1744438560
+    },
+    {
+      "titleJp": "覚醒めたのは無限地獄",
+      "titleZh": "觉醒的是无限地狱",
+      "chapterId": "21",
+      "createAt": 1744530000
+    },
+    {
+      "titleJp": "獣人を奴隷にするのは許さない",
+      "titleZh": "不允许兽人成为奴隶",
+      "chapterId": "22",
+      "createAt": 1744876080
+    },
+    {
+      "titleJp": "穏やかな雰囲気は恐怖の前兆",
+      "titleZh": "平稳的气氛是恐怖的前兆",
+      "chapterId": "23",
+      "createAt": 1745065800
+    },
+    {
+      "titleJp": "アンデッドは安らかに眠れない",
+      "titleZh": "不死族无法安眠",
+      "chapterId": "24",
+      "createAt": 1745392680
+    },
+    {
+      "titleJp": "不死身の力は何を持ってして成り立つのか",
+      "titleZh": "不死之身的力量是建立在什么之上？",
+      "chapterId": "25",
+      "createAt": 1745822940
+    },
+    {
+      "titleJp": "お人好しは常に手のひらで踊らされる",
+      "titleZh": "滥好人总是被玩弄于股掌之间",
+      "chapterId": "26",
+      "createAt": 1746192780
+    },
+    {
+      "titleJp": "操り糸では抑えきれない",
+      "titleZh": "操纵的丝线无法完全控制",
+      "chapterId": "27",
+      "createAt": 1746508200
+    },
+    {
+      "titleJp": "閉ざされていたのは何なのか？",
+      "titleZh": "被封闭的是什么？",
+      "chapterId": "28",
+      "createAt": 1746794820
+    },
+    {
+      "titleJp": "不死鳥は勉強が出来ない",
+      "titleZh": "不死鸟不会念书",
+      "chapterId": "29",
+      "createAt": 1747188780
+    },
+    {
+      "titleJp": "タイトルはヒ・ミ・ツ",
+      "titleZh": "标题是秘・密",
+      "chapterId": "30",
+      "createAt": 1747659660
+    },
+    {
+      "titleJp": "試練の戦士は歴史の記憶から",
+      "titleZh": "试炼的战士从历史的记忆中",
+      "chapterId": "31",
+      "createAt": 1748162340
+    },
+    {
+      "titleJp": "試練の法則は快感を得ること？",
+      "titleZh": "试炼的法则就是得到快感？",
+      "chapterId": "32",
+      "createAt": 1748503080
+    },
+    {
+      "titleJp": "スフィンクスはイジワルが好き",
+      "titleZh": "斯芬克斯喜欢使坏",
+      "chapterId": "33",
+      "createAt": 1748950200
+    },
+    {
+      "titleJp": "『考えるな感じろ』は彼女のためにある",
+      "titleZh": "『不要思考，去感受』是为了她而存在",
+      "chapterId": "34",
+      "createAt": 1749300960
+    },
+    {
+      "titleJp": "学園長は何者？",
+      "titleZh": "学园长是谁？",
+      "chapterId": "35",
+      "createAt": 1749565260
+    },
+    {
+      "titleJp": "手掛かり少女は中々尻尾を出さない",
+      "titleZh": "线索少女迟迟不肯露出狐狸尾巴",
+      "chapterId": "36",
+      "createAt": 1750161540
+    },
+    {
+      "titleJp": "ドMな少女の逆襲はドSで過激",
+      "titleZh": "被虐狂少女的反击是虐待狂的激进",
+      "chapterId": "37",
+      "createAt": 1750769700
+    },
+    {
+      "titleJp": "難解な問題には納得の答えが付き物",
+      "titleZh": "难解的问题总是伴随着令人满意的答案",
+      "chapterId": "38",
+      "createAt": 1751807160
+    },
+    {
+      "titleJp": "危険な旅は道連れ情け無用",
+      "titleZh": "危险的旅行需要旅伴，不需要同情",
+      "chapterId": "39",
+      "createAt": 1752498600
+    },
+    {
+      "titleJp": "猛毒は酒乱の味",
+      "titleZh": "猛毒是酒鬼的味道",
+      "chapterId": "40",
+      "createAt": 1753003080
+    },
+    {
+      "titleJp": "蜃気楼は砂漠の罠",
+      "titleZh": "海市蜃楼是沙漠的陷阱",
+      "chapterId": "41",
+      "createAt": 1753883760
+    },
+    {
+      "titleJp": "不死鳥は囚われの身",
+      "titleZh": "不死鸟是被囚禁之身",
+      "chapterId": "42",
+      "createAt": 1754307540
+    },
+    {
+      "titleJp": "ケンタウロスは余所者が嫌い",
+      "titleZh": "半人马讨厌外来者",
+      "chapterId": "43",
+      "createAt": 1754888880
+    },
+    {
+      "titleJp": "砂漠の夜は違った光景を見せてくれる",
+      "titleZh": "沙漠的夜晚会呈现出不同的光景",
+      "chapterId": "44",
+      "createAt": 1755268620
+    },
+    {
+      "titleJp": "脱走の鍵は誰の手に？",
+      "titleZh": "逃脱的关键在谁的手上？",
+      "chapterId": "45",
+      "createAt": 1755870480
+    },
+    {
+      "titleJp": "好機と危機は表裏一体",
+      "titleZh": "好机会与危机是一体两面",
+      "chapterId": "46",
+      "createAt": 1756635300
+    },
+    {
+      "titleJp": "長い物には巻かれろ",
+      "titleZh": "识时务者为俊杰",
+      "chapterId": "47",
+      "createAt": 1757493540
+    },
+    {
+      "titleJp": "甘く熱い愛は身を焦がす",
+      "titleZh": "甜蜜的爱意令人焦躁难耐",
+      "chapterId": "48",
+      "createAt": 1758288360
+    },
+    {
+      "titleJp": "家族とは不思議なもの",
+      "titleZh": "家人真是不可思议",
+      "chapterId": "49",
+      "createAt": 1758718200
+    },
+    {
+      "titleJp": "異変は自ずと誘ってくる",
+      "titleZh": "异变自然会吸引你",
+      "chapterId": "50",
+      "createAt": 1759325520
+    },
+    {
+      "titleJp": "ゼリータウンは決して甘くない",
+      "titleZh": "杰莉小镇绝不简单",
+      "chapterId": "51",
+      "createAt": 1760012700
+    },
+    {
+      "titleJp": "作戦会議は女子会ムード",
+      "titleZh": "作战会议是女生聚会的气氛",
+      "chapterId": "52",
+      "createAt": 1760788320
+    },
+    {
+      "titleJp": "内なる敵はすぐそこに",
+      "titleZh": "内敌近在眼前",
+      "chapterId": "53",
+      "createAt": 1761572520
+    },
+    {
+      "titleJp": "逆転の口火は激しく燃える",
+      "titleZh": "逆转的导火线猛烈燃烧",
+      "chapterId": "54",
+      "createAt": 1762660080
+    },
+    {
+      "titleJp": "下着ではないから恥ずかしくない！",
+      "titleZh": "不是内衣所以不害羞！",
+      "chapterId": "55",
+      "createAt": 1763639340
+    },
+    {
+      "titleJp": "水底に眠る秘密は背筋も凍る",
+      "titleZh": "沉眠于水底的秘密令人背脊发凉",
+      "chapterId": "56",
+      "createAt": 1764752880
+    },
+    {
+      "titleJp": "海流は気まぐれ",
+      "titleZh": "海流善变",
+      "chapterId": "57",
+      "createAt": 1765807560
+    },
+    {
+      "titleJp": "舞台は更なる深淵へ",
+      "titleZh": "舞台迈向更深的深渊",
+      "chapterId": "58",
+      "createAt": 1766566740
+    },
+    {
+      "titleJp": "フルコースは不死身の活け造り",
+      "titleZh": "全餐是不死身的活鱼生吃",
+      "chapterId": "59",
+      "createAt": 1767353400
+    }
+  ],
+  "visited": 130,
+  "syncAt": 1767712103,
+  "jp": 59,
+  "baidu": 0,
+  "youdao": 50,
+  "gpt": 0,
+  "sakura": 59
+}

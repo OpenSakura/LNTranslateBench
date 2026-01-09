@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:24:18.948671",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "140faaeec4ff483484f131c50c3fb4fed4f004d48922f940b5ee89db900948c7",
+    "B": "fb68595e689ebf15ac0032ab9034285135231bffb0a01d9d825a9aaa89e74ae3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:25:41.772247",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002423411682062bR0jK6fT",
+      "judge_response": {
+        "id": "chatcmpl-20260109002423411682062bR0jK6fT",
+        "object": "chat.completion",
+        "created": 1767889541,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评测：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **名称翻译：**\n    *   **段落 23 (Silver):** 原文是「シルバー」(Shirubaa, Silver)。翻译A译为“西尔弗”（正确）；翻译B译为“希尔芙”（Sylph，通常对应シルフ）。这是一个明显的片假名误读或过度联想，B在此处失分。\n    *   **段落 21 (従魔):** 原文「従魔」。A译为“随从”（更像Follower/Retainer）；B译为“使魔”（Familiar/Tamed Beast）。在轻小说/游戏语境下，B的用词更准确。\n*   **语法与句意：**\n    *   **段落 1:** 原文「反対され」（被动）。A保留了被动语态“被老爸反对”，中文读起来略显生硬。B改为主动语态“父亲反对我”，更符合中文习惯。\n    *   **段落 33:** 原文「妹に...聞いた」（从妹妹那里听说/听说关于妹妹的事）。A处理为第二人称“听说你...”，将叙述变成了对话；B处理为“听说妹妹...”，保持了叙述视角。B更准确。\n    *   **段落 72:** 原文意为“出现的魔物不会那么凑巧地改变（变回贝希摩斯）”。A的翻译“魔物哪会这么巧，每次出现的都一成不变啊”意思有些拧巴，甚至相反。B的翻译“才不会那么凑巧地改变呢”逻辑更通顺。\n\n**2. 流畅性 (Fluency)**\n*   **A** 的语言风格非常口语化（如“老爸”、“咱俩”、“干掉”），这在一定程度上符合年轻女性主角的第一人称视角，但有时显得过于随意，且部分句子结构（如段落1）有翻译腔。\n*   **B** 的行文更具文学性，句子连接更自然。例如段落56“因那夸张的体型而战栗，果断改变策略”，比A的“被这体型吓到了，干脆改策略”更有轻小说的叙述感。\n\n**3. 风格/语气 (Style/Tone)**\n*   **A** 倾向于“假小子”或非常随意的语气。\n*   **B** 保持了轻小说常见的“平易近人但略带书面语”的叙述风格。\n*   **术语本地化：** 段落99的作者感言中，A译为“添加了最爱”（UI直译），B译为“收藏本书”（网文圈通用术语），B更接地气。\n\n**4. 格式与标点**\n*   两者都处理得当，符合中文规范。\n\n### 总结\n*   **翻译A** 的优点是抓住了主角随意的口吻，且在专有名词（Silver）上没有出错。缺点是部分句子结构生硬（被动句），且在叙述视角转换上（段落33）不够严谨。\n*   **翻译B** 的整体文笔优于A，阅读体验更流畅，术语（使魔、道具箱、收藏）更符合轻小说/网文习惯。逻辑处理（段落72）也更清晰。唯一的重大失误是将“Silver”错译为“希尔芙”。\n\n尽管B有一个名词错误，但从整篇文本的可读性、句式结构和语境把握来看，B的翻译质量更高。名词错误可以通过校对轻松修正，而A的句式生硬则需要更大规模的润色。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.8,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A在专有名词(Silver)上正确，B误译为Sylph。但在句意逻辑(段落33, 72)上B更准确。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的中文表达更自然，A保留了较多日式被动语态和生硬的口语结构。\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B更符合轻小说/网文的阅读习惯，术语使用（使魔、收藏）更地道。\"\n    },\n    \"terminology\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"A赢在人名，B赢在游戏/奇幻术语。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的叙述逻辑连贯，视角统一。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者均良好。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落23：A正确翻译了'Silver'，B误译为'希尔芙'。\",\n    \"段落21：B使用了更准确的奇幻术语'使魔'，A使用了'随从'。\",\n    \"段落33：B保持了正确的第三人称叙述视角，A错误地转为第二人称。\",\n    \"整体风格：B的文笔更润色，A偏向过于直白的口语。\"\n  ],\n  \"final_summary\": \"翻译B在整体流畅度、文学性以及轻小说术语的运用上明显优于翻译A。B的句子结构更符合中文习惯，逻辑更清晰。虽然B犯了一个专有名词错误（将Silver错译为希尔芙），但这属于校对层面的小问题，不掩盖其在翻译质量上的整体优势。A的翻译虽然在名词上准确，但句式较为生硬，且存在视角转换的瑕疵。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6979,
+          "completion_tokens": 5680,
+          "total_tokens": 12659
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.8,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A在专有名词(Silver)上正确，B误译为Sylph。但在句意逻辑(段落33, 72)上B更准确。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文表达更自然，A保留了较多日式被动语态和生硬的口语结构。"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更符合轻小说/网文的阅读习惯，术语使用（使魔、收藏）更地道。"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "A赢在人名，B赢在游戏/奇幻术语。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的叙述逻辑连贯，视角统一。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者均良好。"
+      }
+    },
+    "key_differences": [
+      "段落23：A正确翻译了'Silver'，B误译为'希尔芙'。",
+      "段落21：B使用了更准确的奇幻术语'使魔'，A使用了'随从'。",
+      "段落33：B保持了正确的第三人称叙述视角，A错误地转为第二人称。",
+      "整体风格：B的文笔更润色，A偏向过于直白的口语。"
+    ],
+    "final_summary": "翻译B在整体流畅度、文学性以及轻小说术语的运用上明显优于翻译A。B的句子结构更符合中文习惯，逻辑更清晰。虽然B犯了一个专有名词错误（将Silver错译为希尔芙），但这属于校对层面的小问题，不掩盖其在翻译质量上的整体优势。A的翻译虽然在名词上准确，但句式较为生硬，且存在视角转换的瑕疵。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

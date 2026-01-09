@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:37:35.766447",
+  "sample": "pixiv.14074697.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14074697.ch6.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14074697.ch6.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.14074697.ch6.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2aaa1771168c77ee4570d21e2a44b5dc90fdfabb9a6cc3e628ed6bb3c8239389",
+    "A": "8ca3a24894a4226ab63eeda3f1a0adf21589c91beb57c59113a0c7f353c1c131",
+    "B": "3c7815fe963db36b5be34817b46a379e621e1673fea6ce886467cfa85ae37c44"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:38:28.916460",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003736677961477D6iCy6uL",
+      "judge_response": {
+        "id": "chatcmpl-20260109003736677961477D6iCy6uL",
+        "object": "chat.completion",
+        "created": 1767890308,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对提供的两个翻译版本的详细分析，以下是最终评判结果：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A (严重失误):**\n    *   **段落 31 缺失:** 翻译A完全遗漏了段落31的翻译，这是一个致命的完整性错误。\n    *   **段落 33 误译:** 原文“捜一”（搜查一课）被A错译为“新一”（人名）。这是非常严重的术语/名词错误，完全改变了句意。\n    *   **段落 42 误译:** 原文“舐め腐った”（瞧不起人、极其嚣张）被A直译/误译为“舔着脸”（通常指厚颜无耻地讨好），语境完全相反。\n    *   **段落 58 结构错误:** 原文是“被称为‘组对的公主’的悍马（野丫头）”，A译为“被称为‘组对的野马’”，搞错了修饰关系。\n*   **翻译 B (优秀):**\n    *   准确理解了“捜一”（搜查一课）、“舐め腐った”（嚣张态度）等词汇。\n    *   完整翻译了所有段落。\n\n**2. 流畅性与风格 (Fluency & Style)**\n*   **翻译 A:** 措辞较为生硬，带有明显的“翻译腔”。例如段落4“角色崩坏的可能性存在”（典型的日文被动语序直译），段落9“没有比无知更可怕，同时又更幸福的东西”。\n*   **翻译 B:** 语言非常自然，符合中文轻小说/同人文的阅读习惯。使用了“挂了”、“吐槽”、“搞砸”、“大猩猩”等口语化词汇。例如段落4“角色可能崩坏”，段落9“没有比无知更可怕又更幸福的”。\n\n**3. 术语与一致性 (Terminology)**\n*   **翻译 A:** 将“組対”（组织犯罪对策部）有时译为“组织”（容易与柯南中的黑衣组织混淆），有时译为“特搜队”。术语不统一且不准确。\n*   **翻译 B:** 使用“组对”、“暴対课”、“排爆班”，更符合警匪题材的术语习惯，且语境清晰。\n\n**4. 连贯性 (Coherence)**\n*   **翻译 A:** 由于存在误译和生硬的句式，阅读体验经常被打断。\n*   **翻译 B:** 叙述流畅，主角的内心独白（吐槽役风格）表现得非常到位。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A遗漏了整段文本（段落31），并将'搜查一课'误译为'新一'（段落33），属于严重失误。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的语言更符合中文口语和轻小说风格，A较为生硬且有翻译腔。\"\n    },\n    \"style\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"B很好地还原了主角吐槽和内心独白的语气，A显得过于严肃板正。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 8,\n      \"notes\": \"A对警察机构术语（如组对、搜一）处理不当。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A的误译导致部分对话逻辑不通。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"两者格式均可，B的标点使用更符合语气。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落31：A完全缺失，B完整翻译。\",\n    \"段落33：原文'捜一'（搜查一课），A误译为'新一'，B正确译为'搜查一课'。\",\n    \"段落42：原文'舐め腐った'，A误译为'舔着脸'，B正确意译为'嚣张'。\",\n    \"语体风格：A偏向直译，语序僵硬；B使用了'挂了'、'啥'、'吐槽'等词汇，非常接地气。\"\n  ],\n  \"final_summary\": \"翻译B在所有维度上都完胜翻译A。翻译A存在致命的漏译（段落31）和严重的术语误译（将警察部门误译为人名），且文风生硬，难以阅读。翻译B不仅准确无误，而且生动地还原了轻小说的幽默和吐槽风格，用词地道，阅读体验极佳。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8514,
+          "completion_tokens": 4441,
+          "total_tokens": 12955
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 9,
+        "notes": "A遗漏了整段文本（段落31），并将'搜查一课'误译为'新一'（段落33），属于严重失误。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的语言更符合中文口语和轻小说风格，A较为生硬且有翻译腔。"
+      },
+      "style": {
+        "A": 5,
+        "B": 9,
+        "notes": "B很好地还原了主角吐槽和内心独白的语气，A显得过于严肃板正。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A对警察机构术语（如组对、搜一）处理不当。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "A的误译导致部分对话逻辑不通。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "两者格式均可，B的标点使用更符合语气。"
+      }
+    },
+    "key_differences": [
+      "段落31：A完全缺失，B完整翻译。",
+      "段落33：原文'捜一'（搜查一课），A误译为'新一'，B正确译为'搜查一课'。",
+      "段落42：原文'舐め腐った'，A误译为'舔着脸'，B正确意译为'嚣张'。",
+      "语体风格：A偏向直译，语序僵硬；B使用了'挂了'、'啥'、'吐槽'等词汇，非常接地气。"
+    ],
+    "final_summary": "翻译B在所有维度上都完胜翻译A。翻译A存在致命的漏译（段落31）和严重的术语误译（将警察部门误译为人名），且文风生硬，难以阅读。翻译B不仅准确无误，而且生动地还原了轻小说的幽默和吐槽风格，用词地道，阅读体验极佳。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

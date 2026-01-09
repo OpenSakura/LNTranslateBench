@@ -1,0 +1,1969 @@
+{
+  "titleJp": "凡人探索者のたのしい現代ダンジョンライフ　【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】",
+  "titleZh": "凡人探索者快乐的现代迷宫生活【书籍2卷8月25日发售】",
+  "authors": [
+    {
+      "name": "しば犬部隊",
+      "link": "https://mypage.syosetu.com/1382581/"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [
+    "R15",
+    "残酷描写"
+  ],
+  "keywords": [
+    "男主人公",
+    "冒険",
+    "日常",
+    "グルメ",
+    "ダンジョン",
+    "伝奇",
+    "ラブコメ",
+    "天災",
+    "現代ダンジョン",
+    "怪物",
+    "モンスター",
+    "オープンワールド",
+    "ハクスラ",
+    "金髪",
+    "OVL大賞7M"
+  ],
+  "points": 109603,
+  "totalCharacters": 2214590,
+  "introductionJp": "現代ダンジョン！　探索者道具！　モンスター食材！　オカルト！　ショッピング！　金策！　クラフトandハックandスラッシュ！　ラブコメ！ 現代ダンジョンを生き抜く凡人の探索者が3年後に迫る自分の死期をぶち壊すために強くなろうとします。 主人公は怪物が三体以上ならば、逃げるか隠れるか、追い払うかしか出来ません。そこから強くなる為に、ダンジョンに潜り化け物ぶっ倒して経験点稼いだり、オカルト食材を食べて力を得ます。 周りの連中がチートアイテムでキャッキャしてる中、主人公はココア飲んだりカレーやら餃子食べてパワーアップします。 凡人の探索者だけに聞こえるダンジョンのヒントを武器に恐ろしい怪物達と渡り合い、たのしい現代ダンジョンライフを送ります。 書籍情報 神イラストと、WEB版とはかなり違う書き下ろしストーリーでオーバーラップ文庫より発売中！ コミカライズも企画されてるので是非チェックしてみて頂ければ幸いです。",
+  "introductionZh": "现代迷宫!探索者道具!怪物食材!怪诞!购物!金策!工艺与破解与斜线!爱情喜剧!在现代迷宫中生存的凡人探索者为了打破3年后即将到来的自己的死期而努力变强。如果有三个以上的怪物，主人公只能逃跑、躲藏或驱赶。为了从那里变强，潜入迷宫打倒怪物赚取经验点，吃超自然食材得到力量。周围的人都在为各种各样的小道具而烦恼时，主人公喝可可、吃咖喱和饺子来提升自己的力量。以只有凡人的探索者才能听到的迷宫的提示为武器与可怕的怪物们交锋，度过愉快的现代迷宫生活。※如果说中意的话，\"凡人solo探索者\"和，\"广岛缔出缔生存\"也请一定看的话万幸。鸡皮疙瘩点会变高。※90话左右开始变得那样的感觉，不过，作者是重度的大团圆结局主义者请放心。准备了半吊子心情舒畅的宣泄等着您。",
+  "glossary": {
+    "タダヒトー": "只人",
+    "味山只人": "味山只人",
+    "タダ": "只人",
+    "ウォーカー": "沃克",
+    "グレン": "葛倫",
+    "アレタ": "亚蕾塔",
+    "アシュフィールド": "艾修菲尔德",
+    "クラーク": "克菈克",
+    "ソフィ": "苏菲",
+    "タダヒト": "只人",
+    "ソフィ・M・クラーク": "苏菲・M・克菈克",
+    "貴崎 凛": "貴崎 凛",
+    "アジヤマ": "味山",
+    "リン": "凛"
+  },
+  "toc": [
+    {
+      "titleJp": "味山只人のたのしい現代ダンジョンライフ",
+      "titleZh": "味山只人的愉快现代迷宫生活"
+    },
+    {
+      "titleJp": "スタート画面",
+      "titleZh": "启动画面",
+      "chapterId": "1",
+      "createAt": 1577525760
+    },
+    {
+      "titleJp": "1話 TIPS€ それは少なくともお前の2倍は強い",
+      "titleZh": "1话 TIPS€ 至少比你强上两倍",
+      "chapterId": "2",
+      "createAt": 1577526000
+    },
+    {
+      "titleJp": "1話後編　それは信じられない速度で空を飛び、たまに透明になる",
+      "titleZh": "1话后篇　以令人难以置信的速度在空中飞翔，偶尔会变得透明",
+      "chapterId": "3",
+      "createAt": 1607379600
+    },
+    {
+      "titleJp": "2話 酒と飯と会話",
+      "titleZh": "2话 酒与饭与对话",
+      "chapterId": "4",
+      "createAt": 1577526060
+    },
+    {
+      "titleJp": "3話 女子トイレにて",
+      "titleZh": "3话 在女厕",
+      "chapterId": "5",
+      "createAt": 1577527500
+    },
+    {
+      "titleJp": "4話 1日の終わりと女の戦い",
+      "titleZh": "4话 一天的结束与女人的战斗",
+      "chapterId": "6",
+      "createAt": 1577540880
+    },
+    {
+      "titleJp": "5話 渓流の夢",
+      "titleZh": "5话 溪流之梦",
+      "chapterId": "7",
+      "createAt": 1577579700
+    },
+    {
+      "titleJp": "6話 休日",
+      "titleZh": "6话 假日",
+      "chapterId": "8",
+      "createAt": 1577626140
+    },
+    {
+      "titleJp": "7話 耳の使い方とたのしいショッピング",
+      "titleZh": "7话 耳朵的使用方法与愉快的购物",
+      "chapterId": "9",
+      "createAt": 1577711220
+    },
+    {
+      "titleJp": "8話　デートアライブ・ライブ",
+      "titleZh": "8话　约会大作战・Live",
+      "chapterId": "10",
+      "createAt": 1577798520
+    },
+    {
+      "titleJp": "9話 星と凡人",
+      "titleZh": "9话 星星与凡人",
+      "chapterId": "11",
+      "createAt": 1577870520
+    },
+    {
+      "titleJp": "10話　デート・アフター・スター",
+      "titleZh": "10话　约会・After・Star",
+      "chapterId": "12",
+      "createAt": 1577881680
+    },
+    {
+      "titleJp": "11話　ソロ探索",
+      "titleZh": "11话　单人探索",
+      "chapterId": "13",
+      "createAt": 1577959800
+    },
+    {
+      "titleJp": "12話　味山の仕事、経験点の使い方",
+      "titleZh": "12话　味山的工作与经验点的使用方法",
+      "chapterId": "14",
+      "createAt": 1578133440
+    },
+    {
+      "titleJp": "13話　セーフハウス・イン・ホラー",
+      "titleZh": "13话　Safe House・In・Horror",
+      "chapterId": "15",
+      "createAt": 1578227820
+    },
+    {
+      "titleJp": "14話　恐怖を殺す者",
+      "titleZh": "14话　杀死恐惧之人",
+      "chapterId": "16",
+      "createAt": 1578306720
+    },
+    {
+      "titleJp": "15話　酔い",
+      "titleZh": "15话　醉意",
+      "chapterId": "17",
+      "createAt": 1578395220
+    },
+    {
+      "titleJp": "16話　VS樹原希、あるいはただの肉人形",
+      "titleZh": "16话　VS树原希，或者只是个肉人偶",
+      "chapterId": "18",
+      "createAt": 1578483480
+    },
+    {
+      "titleJp": "17話　味山は男友達と遊びにいくようです",
+      "titleZh": "17话　味山似乎要和男性朋友去玩",
+      "chapterId": "19",
+      "createAt": 1578568320
+    },
+    {
+      "titleJp": "18話　和服美人に会いに行こう",
+      "titleZh": "18话　去见和服美人吧",
+      "chapterId": "20",
+      "createAt": 1578655020
+    },
+    {
+      "titleJp": "19話　和服美人と遊ぼう！",
+      "titleZh": "19话　和服美人一起玩吧！",
+      "chapterId": "21",
+      "createAt": 1578741720
+    },
+    {
+      "titleJp": "20話　かぐや姫ゲーム",
+      "titleZh": "20话　辉夜姬游戏",
+      "chapterId": "22",
+      "createAt": 1578827700
+    },
+    {
+      "titleJp": "21話　水は冷たく、星屑は試されていた。",
+      "titleZh": "21话　水很冰冷，星屑受到考验。",
+      "chapterId": "23",
+      "createAt": 1579000320
+    },
+    {
+      "titleJp": "指名依頼”上級探索者、遠山鳴人捜索任務”",
+      "titleZh": "指名委托「上级探索者，远山鸣人搜索任务」"
+    },
+    {
+      "titleJp": "22話　上級探索者、遠山鳴人の遺体は発見出来ず",
+      "titleZh": "22话　上级探索者，远山鸣人的遗体未能发现",
+      "chapterId": "24",
+      "createAt": 1580081520
+    },
+    {
+      "titleJp": "23話　新たなる依頼",
+      "titleZh": "23话　新的委托",
+      "chapterId": "25",
+      "createAt": 1580220780
+    },
+    {
+      "titleJp": "24話　アリーシャ・ブルームーン",
+      "titleZh": "24话　艾莉莎・布鲁姆ーン",
+      "chapterId": "26",
+      "createAt": 1580544840
+    },
+    {
+      "titleJp": "25話　ミーティング、そのあと主人公は海釣りに行きました。",
+      "titleZh": "25话　会议，之后主角去海钓了。",
+      "chapterId": "27",
+      "createAt": 1581124680
+    },
+    {
+      "titleJp": "26話　裏ミーティング、主人公は呑気に海釣りしてます。割と釣れたのでその場で捌いて食べてました。",
+      "titleZh": "26话　秘密会议，主角悠哉地在海钓。因为钓到不少，所以当场处理后吃掉了。",
+      "chapterId": "28",
+      "createAt": 1581414840
+    },
+    {
+      "titleJp": "27話　集まれ！　あじやまのゆめ",
+      "titleZh": "27话　集合吧！　味山与麻的梦",
+      "chapterId": "29",
+      "createAt": 1581506520
+    },
+    {
+      "titleJp": "28話　死地まであと、2時間",
+      "titleZh": "28话　距离死地，还有两小时",
+      "chapterId": "30",
+      "createAt": 1581597180
+    },
+    {
+      "titleJp": "29話　遭遇戦",
+      "titleZh": "29话　遭遇战",
+      "chapterId": "31",
+      "createAt": 1581680040
+    },
+    {
+      "titleJp": "30話　銃撃戦",
+      "titleZh": "30话　枪战",
+      "chapterId": "32",
+      "createAt": 1581723720
+    },
+    {
+      "titleJp": "31話　ホットスポット",
+      "titleZh": "31话　热点",
+      "chapterId": "33",
+      "createAt": 1581941100
+    },
+    {
+      "titleJp": "32話ボス戦",
+      "titleZh": "32话头目战",
+      "chapterId": "34",
+      "createAt": 1582623900
+    },
+    {
+      "titleJp": "33話　アレフチーム撤退戦",
+      "titleZh": "33话　亚雷夫队撤退战",
+      "chapterId": "35",
+      "createAt": 1582716600
+    },
+    {
+      "titleJp": "３４話　アレフチーム撤退戦　その２",
+      "titleZh": "３４话　亚雷夫队撤退战　其2",
+      "chapterId": "36",
+      "createAt": 1582807200
+    },
+    {
+      "titleJp": "35話　TIPS€",
+      "titleZh": "35话　TIPS€",
+      "chapterId": "37",
+      "createAt": 1582989000
+    },
+    {
+      "titleJp": "36話　分岐点α→",
+      "titleZh": "36话　分歧点α→",
+      "chapterId": "38",
+      "createAt": 1583150940
+    },
+    {
+      "titleJp": "37話　Eルート",
+      "titleZh": "37话　E路线",
+      "chapterId": "39",
+      "createAt": 1583324460
+    },
+    {
+      "titleJp": "38話　飛び出せ！　あじやまのゆめ",
+      "titleZh": "38话　冲出去！　味山与麻的梦",
+      "chapterId": "40",
+      "createAt": 1583499780
+    },
+    {
+      "titleJp": "39話　侵食、そして凡人は扉を叩く。",
+      "titleZh": "39话　侵蚀，然后凡人敲门。",
+      "chapterId": "41",
+      "createAt": 1583579580
+    },
+    {
+      "titleJp": "40話　ハ！カ！タ！のソルト！　そして、探索の全う。",
+      "titleZh": "40话　H！A！K！A！的盐！　然后，探索完成。",
+      "chapterId": "42",
+      "createAt": 1583760360
+    },
+    {
+      "titleJp": "レベルアップ、スタンドアップ、エンド",
+      "titleZh": "升级，站起来，结束"
+    },
+    {
+      "titleJp": "41話　そして蠢く世界には",
+      "titleZh": "41话　然后在蠢动的世界里",
+      "chapterId": "43",
+      "createAt": 1584011280
+    },
+    {
+      "titleJp": "42話　修羅場から逃げよう！",
+      "titleZh": "42话　逃离修罗场！",
+      "chapterId": "44",
+      "createAt": 1584447540
+    },
+    {
+      "titleJp": "43話　トーク・トーク・トーク",
+      "titleZh": "43话　Talk・Talk・Talk",
+      "chapterId": "45",
+      "createAt": 1586520240
+    },
+    {
+      "titleJp": "44話　集え！　あじやまのゆめ！",
+      "titleZh": "44话　集合！　味山的梦！",
+      "chapterId": "46",
+      "createAt": 1586560080
+    },
+    {
+      "titleJp": "45話　戦う力をマジで我が手に",
+      "titleZh": "45话　战斗的力量真的在我手中",
+      "chapterId": "47",
+      "createAt": 1586608380
+    },
+    {
+      "titleJp": "46話　キサキ・イン・デート",
+      "titleZh": "46话　如月・in・约会",
+      "chapterId": "48",
+      "createAt": 1586776080
+    },
+    {
+      "titleJp": "47話　キサキ・イン・ヒストリー",
+      "titleZh": "47话　如月・in・历史",
+      "chapterId": "49",
+      "createAt": 1587806220
+    },
+    {
+      "titleJp": "48話　帰路ニテ",
+      "titleZh": "48话　归途",
+      "chapterId": "50",
+      "createAt": 1587892320
+    },
+    {
+      "titleJp": "49話　鬼裂　渓流　再会",
+      "titleZh": "49话　鬼裂　溪流　再会",
+      "chapterId": "51",
+      "createAt": 1587978900
+    },
+    {
+      "titleJp": "50話　神秘の残り滓、\"鬼を裂くモノ\"",
+      "titleZh": "50话　神秘的残渣，「裂鬼者」",
+      "chapterId": "52",
+      "createAt": 1588065600
+    },
+    {
+      "titleJp": "51話　2028年、9月23日ノ朝",
+      "titleZh": "51话　2028年，9月23日的早晨",
+      "chapterId": "53",
+      "createAt": 1588151340
+    },
+    {
+      "titleJp": "バベル・イン・アクター",
+      "titleZh": "巴别・in・演员"
+    },
+    {
+      "titleJp": "52話　バベル・イン・アクター　そのI",
+      "titleZh": "52话　巴别・in・演员　其1",
+      "chapterId": "54",
+      "createAt": 1588497720
+    },
+    {
+      "titleJp": "53話　バベル・イン・アクター II",
+      "titleZh": "53话　巴别・in・演员 2",
+      "chapterId": "55",
+      "createAt": 1589189040
+    },
+    {
+      "titleJp": "54話　バベル・イン・アクターⅢ",
+      "titleZh": "54话　巴别・in・演员3",
+      "chapterId": "56",
+      "createAt": 1590056460
+    },
+    {
+      "titleJp": "55話　バベル・イン・アクター　Ⅳ",
+      "titleZh": "55话　巴别・in・演员　4",
+      "chapterId": "57",
+      "createAt": 1591175580
+    },
+    {
+      "titleJp": "56話　バベル・イン・アクターⅤ",
+      "titleZh": "56话　巴别・in・演员5",
+      "chapterId": "58",
+      "createAt": 1591409280
+    },
+    {
+      "titleJp": "57話　バベル・イン・アクターⅥ",
+      "titleZh": "57话　巴别・in・演员6",
+      "chapterId": "59",
+      "createAt": 1591610760
+    },
+    {
+      "titleJp": "58話　バベル・イン・アクターⅦ",
+      "titleZh": "58话　巴别・in・演员7",
+      "chapterId": "60",
+      "createAt": 1591700580
+    },
+    {
+      "titleJp": "凡人探索者のたのしい現代ダンジョンライフ、最後の日常",
+      "titleZh": "凡人探索者的愉快现代迷宫生活，最后的日常"
+    },
+    {
+      "titleJp": "59話　バベルちゃんねる:実況スレ",
+      "titleZh": "59话　巴别频道:实况串",
+      "chapterId": "61",
+      "createAt": 1591866540
+    },
+    {
+      "titleJp": "60話　夕焼けのこちら側で&アレフチーム女子パジャマ会",
+      "titleZh": "60话　夕阳西下这一侧&亚雷夫队女生睡衣会",
+      "chapterId": "62",
+      "createAt": 1592656260
+    },
+    {
+      "titleJp": "61話　凡人探索者ダイアリー",
+      "titleZh": "61话　凡人探索者日记",
+      "chapterId": "63",
+      "createAt": 1593083340
+    },
+    {
+      "titleJp": "62話　凡人探索者ダイアリーⅡ",
+      "titleZh": "62话　凡人探索者日记2",
+      "chapterId": "64",
+      "createAt": 1593512460
+    },
+    {
+      "titleJp": "63話　合コンに行こう！",
+      "titleZh": "63话　去联谊吧！",
+      "chapterId": "65",
+      "createAt": 1593601740
+    },
+    {
+      "titleJp": "64話　合コンに行こう！(死闘)",
+      "titleZh": "64话　去联谊吧！（死斗）",
+      "chapterId": "66",
+      "createAt": 1593684480
+    },
+    {
+      "titleJp": "65話　合コンに行こう！(決着)",
+      "titleZh": "65话　去联谊吧！（决胜）",
+      "chapterId": "67",
+      "createAt": 1593864360
+    },
+    {
+      "titleJp": "67話　ユートン・イン・ドリンク　そのⅠ",
+      "titleZh": "67话　尤顿・in・饮料　其1",
+      "chapterId": "68",
+      "createAt": 1594807740
+    },
+    {
+      "titleJp": "68話　ユートン・イン・ドリンク　そのⅡ",
+      "titleZh": "68话　尤顿・in・饮料　其2",
+      "chapterId": "69",
+      "createAt": 1595414220
+    },
+    {
+      "titleJp": "66話　深い夜",
+      "titleZh": "66话　深夜",
+      "chapterId": "70",
+      "createAt": 1595572440
+    },
+    {
+      "titleJp": "ライアン・フロディの日記　その1",
+      "titleZh": "莱安・弗洛迪的日记　其1",
+      "chapterId": "71",
+      "createAt": 1595578680
+    },
+    {
+      "titleJp": "69話　ある日の指定探索者たち",
+      "titleZh": "69话　某天的指定探索者们",
+      "chapterId": "72",
+      "createAt": 1596624720
+    },
+    {
+      "titleJp": "ライアン・フロディの日記　その2",
+      "titleZh": "莱安・弗洛迪的日记　其2",
+      "chapterId": "73",
+      "createAt": 1596692880
+    },
+    {
+      "titleJp": "70話　実食！　はじまりの火葬者＆公文書館での１日",
+      "titleZh": "70话　实食！　起始的火葬者＆在公文书馆的一天",
+      "chapterId": "74",
+      "createAt": 1596791160
+    },
+    {
+      "titleJp": "ソフィ・ダイアリー",
+      "titleZh": "苏菲・日记",
+      "chapterId": "75",
+      "createAt": 1596860460
+    },
+    {
+      "titleJp": "71話　繰り返し、繰り返し、ここに来たりて。",
+      "titleZh": "71话　反复，反复，来到这里。",
+      "chapterId": "76",
+      "createAt": 1597569660
+    },
+    {
+      "titleJp": "72話　キサキ・イン・バトルwithユキシロ",
+      "titleZh": "72话　如月・in・战斗with雪希洛",
+      "chapterId": "77",
+      "createAt": 1597656300
+    },
+    {
+      "titleJp": "73話　キサキ・イン・バトルwithユキシロ　その2",
+      "titleZh": "73话　如月・in・战斗with雪希洛　其2",
+      "chapterId": "78",
+      "createAt": 1597828920
+    },
+    {
+      "titleJp": "キサキ・ハートブレイク",
+      "titleZh": "如月・心碎",
+      "chapterId": "79",
+      "createAt": 1597928580
+    },
+    {
+      "titleJp": "74話　キサキ・イン・バトル　その3",
+      "titleZh": "74话　如月・in・战斗　其3",
+      "chapterId": "80",
+      "createAt": 1598357460
+    },
+    {
+      "titleJp": "75話　汝、只の人なりて・貴崎凛の場合。",
+      "titleZh": "75话　汝，只是一介凡人・贵崎凛的情况。",
+      "chapterId": "81",
+      "createAt": 1600164600
+    },
+    {
+      "titleJp": "76話　どすこい！　あじやまの夢",
+      "titleZh": "76话　嘿咻！　味山的梦",
+      "chapterId": "82",
+      "createAt": 1600344480
+    },
+    {
+      "titleJp": "シンショク",
+      "titleZh": "新章",
+      "chapterId": "83",
+      "createAt": 1600773480
+    },
+    {
+      "titleJp": "77話『いまわの際を役立てろ』",
+      "titleZh": "77话『临终之际派上用场吧』",
+      "chapterId": "84",
+      "createAt": 1602502740
+    },
+    {
+      "titleJp": "78話　アレフ・ザ・TVショウ！",
+      "titleZh": "78话　亚雷夫・the・TV秀！",
+      "chapterId": "85",
+      "createAt": 1603884120
+    },
+    {
+      "titleJp": "79話　アレタ・キサキ・ユートン・イン・パーティ　そのI",
+      "titleZh": "79话　亚雷塔・如月・尤顿・in・派对　其1",
+      "chapterId": "86",
+      "createAt": 1604489880
+    },
+    {
+      "titleJp": "80話　アレタ・キサキ・ユートン・イン・パーティ　そのⅡ",
+      "titleZh": "80话　亚雷塔・如月・尤顿・in・派对　其2",
+      "chapterId": "87",
+      "createAt": 1605874620
+    },
+    {
+      "titleJp": "ライアン・フロディの日記　その3",
+      "titleZh": "莱安・弗洛迪的日记　其3",
+      "chapterId": "88",
+      "createAt": 1605962700
+    },
+    {
+      "titleJp": "味山只人のメモ",
+      "titleZh": "味山只人的笔记",
+      "chapterId": "89",
+      "createAt": 1606036080
+    },
+    {
+      "titleJp": "81話　アレタ・キサキ・ユートン・イン・パーティそのⅢ",
+      "titleZh": "81话　亚雷塔・如月・尤顿・in・派对其Ⅲ",
+      "chapterId": "90",
+      "createAt": 1606052220
+    },
+    {
+      "titleJp": "82話　アレタ・キサキ・ユートン・イン・パーティーそのⅣ",
+      "titleZh": "82话　亚雷塔・如月・尤顿・in・派对其Ⅳ",
+      "chapterId": "91",
+      "createAt": 1606136940
+    },
+    {
+      "titleJp": "83話　アレタ・キサキ・ユートン・イン・パーティ そのⅤ",
+      "titleZh": "83话　亚雷塔・如月・尤顿・in・派对 其Ⅴ",
+      "chapterId": "92",
+      "createAt": 1606655460
+    },
+    {
+      "titleJp": "84話　罪名、1.5部",
+      "titleZh": "84话　罪名，1.5部",
+      "chapterId": "93",
+      "createAt": 1607252940
+    },
+    {
+      "titleJp": "ある日、グレンと鮫島と訓練。",
+      "titleZh": "某天，和葛伦与鲛岛一起训练。",
+      "chapterId": "94",
+      "createAt": 1607262780
+    },
+    {
+      "titleJp": "85話　アレタ・キサキ・ユートン・イン・パーティーそのⅥ",
+      "titleZh": "85话　亚雷塔・如月・尤顿・in・派对其Ⅵ",
+      "chapterId": "95",
+      "createAt": 1607347440
+    },
+    {
+      "titleJp": "86話　アレタ・キサキ・ユートン・イン・パーティー　そのⅦ",
+      "titleZh": "86话　亚雷塔・如月・尤顿・in・派对　其Ⅶ",
+      "chapterId": "96",
+      "createAt": 1607434620
+    },
+    {
+      "titleJp": "スカイ・ルーンの憂鬱",
+      "titleZh": "史凯・伦的忧郁",
+      "chapterId": "97",
+      "createAt": 1607520240
+    },
+    {
+      "titleJp": "87話　アレタ・キサキ・ユートン・イン・パーティー　そのⅧ　&　キサキ・トージョー",
+      "titleZh": "87话　亚雷塔・如月・尤顿・in・派对　其Ⅷ　&　如月・进化",
+      "chapterId": "98",
+      "createAt": 1607610180
+    },
+    {
+      "titleJp": "88話　アレタ・ユー・アー・マイン&アレフ・マイ・トレジャー",
+      "titleZh": "88话　亚雷塔・you・are・mine&亚雷夫・my・treasure",
+      "chapterId": "99",
+      "createAt": 1607789340
+    },
+    {
+      "titleJp": "89話　11月25日まで。戦力状況。",
+      "titleZh": "89话　到11月25日为止的战力状况。",
+      "chapterId": "100",
+      "createAt": 1607845140
+    },
+    {
+      "titleJp": "部位戦争、\"耳対脳みそ、内臓",
+      "titleZh": "部位战争，「耳朵对脑浆，内脏」"
+    },
+    {
+      "titleJp": "90話　11月26日",
+      "titleZh": "90话　11月26日",
+      "chapterId": "101",
+      "createAt": 1607865660
+    },
+    {
+      "titleJp": "91話　バベル島攻略戦",
+      "titleZh": "91话　巴别岛攻略战",
+      "chapterId": "102",
+      "createAt": 1607954820
+    },
+    {
+      "titleJp": "92話　耳の血肉と2人目の火葬者",
+      "titleZh": "92话　耳朵的血肉与第二位火葬者",
+      "chapterId": "103",
+      "createAt": 1608039420
+    },
+    {
+      "titleJp": "93話　貴崎からの手紙と、プランーー",
+      "titleZh": "93话　来自贵崎的信，以及计划——",
+      "chapterId": "104",
+      "createAt": 1608128520
+    },
+    {
+      "titleJp": "94話　プランC\"IQ3000の超てんさいてきな頭脳による最強無敵計画、その名は",
+      "titleZh": "94话　计划C「IQ3000的超天才头脑所策划的最强无敌计划，其名为",
+      "chapterId": "105",
+      "createAt": 1608210600
+    },
+    {
+      "titleJp": "95話　祭りだ！　あじやまのゆめ",
+      "titleZh": "95话　祭典！」　味山与麻的梦",
+      "chapterId": "106",
+      "createAt": 1608300540
+    },
+    {
+      "titleJp": "ライアン・フロディの日記その4　才能と遺物",
+      "titleZh": "莱安・弗洛迪的日记其4　才能与遗物",
+      "chapterId": "107",
+      "createAt": 1608380400
+    },
+    {
+      "titleJp": "96話　空からあいつはやってくる",
+      "titleZh": "96话　那家伙从天而降",
+      "chapterId": "108",
+      "createAt": 1608448920
+    },
+    {
+      "titleJp": "97話　耳たぶビラビラやってくる",
+      "titleZh": "97话　耳垂轻飘飘地飞来",
+      "chapterId": "109",
+      "createAt": 1608469560
+    },
+    {
+      "titleJp": "98話　見た目は化け物、心は人間",
+      "titleZh": "98话　外表是怪物，内心是人类",
+      "chapterId": "110",
+      "createAt": 1608557400
+    },
+    {
+      "titleJp": "98話　その名は",
+      "titleZh": "98话　其名为",
+      "chapterId": "111",
+      "createAt": 1608643920
+    },
+    {
+      "titleJp": "99話　ユートン・イン………スパァァァルタアアア！！",
+      "titleZh": "99话　尤顿・in……斯巴达！！",
+      "chapterId": "112",
+      "createAt": 1608729720
+    },
+    {
+      "titleJp": "100話　汝、只の人なりて　〜雨桐の場合〜",
+      "titleZh": "100话　汝，只是一介凡人　～雨桐的情况～",
+      "chapterId": "113",
+      "createAt": 1608818880
+    },
+    {
+      "titleJp": "101話　慈愛、進撃",
+      "titleZh": "101话　慈爱，进击",
+      "chapterId": "114",
+      "createAt": 1608989520
+    },
+    {
+      "titleJp": "102話　\"ALIVE\"",
+      "titleZh": "102话　「ALIVE」",
+      "chapterId": "115",
+      "createAt": 1609080600
+    },
+    {
+      "titleJp": "103話　\"ストーム・ルーラー\"",
+      "titleZh": "103话　「风暴驭者」",
+      "chapterId": "116",
+      "createAt": 1609403700
+    },
+    {
+      "titleJp": "104話　プロトコル・スター",
+      "titleZh": "104话　协议・星",
+      "chapterId": "117",
+      "createAt": 1609450440
+    },
+    {
+      "titleJp": "105話　凡人・英雄・慈愛",
+      "titleZh": "105话　凡人・英雄・慈爱",
+      "chapterId": "118",
+      "createAt": 1609497060
+    },
+    {
+      "titleJp": "106話　(笑)、w、草",
+      "titleZh": "106话　（笑）、w、笑死",
+      "chapterId": "119",
+      "createAt": 1609579740
+    },
+    {
+      "titleJp": "107話　そして恐怖の記憶を思い出せ",
+      "titleZh": "107话　然后回想起恐怖的记忆",
+      "chapterId": "120",
+      "createAt": 1609668180
+    },
+    {
+      "titleJp": "108話　追撃、昼メシ、探索開始",
+      "titleZh": "108话　追击、午餐、开始探索",
+      "chapterId": "121",
+      "createAt": 1610025900
+    },
+    {
+      "titleJp": "109話　上級探索者、貴崎凛の最期",
+      "titleZh": "109话　上级探索者，贵崎凛的末路",
+      "chapterId": "122",
+      "createAt": 1610200080
+    },
+    {
+      "titleJp": "110話　味山只人と坂田時臣",
+      "titleZh": "110话　味山只人与坂田时臣",
+      "chapterId": "123",
+      "createAt": 1610276700
+    },
+    {
+      "titleJp": "111話　上級探索者、貴崎凛の最期　その2",
+      "titleZh": "111话　上级探索者，贵崎凛的末路　其2",
+      "chapterId": "124",
+      "createAt": 1610351400
+    },
+    {
+      "titleJp": "112話　上級探索者、貴崎凛の最期　その3",
+      "titleZh": "112话　上级探索者，贵崎凛的末路　其3",
+      "chapterId": "125",
+      "createAt": 1610457720
+    },
+    {
+      "titleJp": "113話　EDナンバー28肉人形、貴崎凛の願　　　　　　　　　　　　　　　　それ全部なしで",
+      "titleZh": "113话　ED编号28肉人偶，贵崎凛的愿望　　　　　　　　　　　　　　　　全部取消",
+      "chapterId": "126",
+      "createAt": 1610791920
+    },
+    {
+      "titleJp": "114話　部位戦争　九千坊球磨川絵巻物語",
+      "titleZh": "114话　部位战争　九千坊球磨川绘卷物语",
+      "chapterId": "127",
+      "createAt": 1610878620
+    },
+    {
+      "titleJp": "115話　部位戦争、味山と人知竜",
+      "titleZh": "115话　部位战争，味山与人知龙",
+      "chapterId": "128",
+      "createAt": 1610885580
+    },
+    {
+      "titleJp": "116話　部位戦争　神話魔術式攻略",
+      "titleZh": "116话　部位战争　神话魔术式攻略",
+      "chapterId": "129",
+      "createAt": 1611056700
+    },
+    {
+      "titleJp": "117話　部位戦争、\"耳\"対\"脳みそ、内臓\"",
+      "titleZh": "117话　部位战争，「耳朵」对「脑浆，内脏」",
+      "chapterId": "130",
+      "createAt": 1611396360
+    },
+    {
+      "titleJp": "118話　燃えかすの報酬、そして、ENJOY！！",
+      "titleZh": "118话　余烬的报酬，然后，ENJOY！！",
+      "chapterId": "131",
+      "createAt": 1611457620
+    },
+    {
+      "titleJp": "119話　\"耳\"対\"耳男\"",
+      "titleZh": "119话　「耳朵」对「耳男」",
+      "chapterId": "132",
+      "createAt": 1611664320
+    },
+    {
+      "titleJp": "120話　暴力、暴力、暴力",
+      "titleZh": "120话　暴力，暴力，暴力",
+      "chapterId": "133",
+      "createAt": 1612001880
+    },
+    {
+      "titleJp": "121話　バベル島防衛戦、及び部位戦争、戦果発表　都市伝説と戦場伝説",
+      "titleZh": "121话　巴别岛防卫战，以及部位战争，战果发表　都市传说与战场传说",
+      "chapterId": "134",
+      "createAt": 1612084200
+    },
+    {
+      "titleJp": "最終章　凡人探索者たちのたのしい現代ダンジョンライフ",
+      "titleZh": "最终章　凡人探索者们的愉快现代迷宫生活"
+    },
+    {
+      "titleJp": "122話　敗北ヒロインズ",
+      "titleZh": "122话　败北女角们",
+      "chapterId": "135",
+      "createAt": 1612094940
+    },
+    {
+      "titleJp": "123話　本当のほんとにとびだせ！　味山のゆめ！",
+      "titleZh": "123话　真的真的要冲了！　味山的梦想！",
+      "chapterId": "136",
+      "createAt": 1613038440
+    },
+    {
+      "titleJp": "124話　いざヒロシマ",
+      "titleZh": "124话　前往广岛",
+      "chapterId": "137",
+      "createAt": 1613210940
+    },
+    {
+      "titleJp": "125話　ヒロシマ・セーフ・トラベラーand サウナ・イン・ボンジン",
+      "titleZh": "125话　广岛・安全・旅行and 桑拿・in・自焚",
+      "chapterId": "138",
+      "createAt": 1613294760
+    },
+    {
+      "titleJp": "126話　ふゆやすみ",
+      "titleZh": "126话　冬假",
+      "chapterId": "139",
+      "createAt": 1613477280
+    },
+    {
+      "titleJp": "127話　ふゆやすみがおわった",
+      "titleZh": "127话　寒假结束了",
+      "chapterId": "140",
+      "createAt": 1613821200
+    },
+    {
+      "titleJp": "128話　味山只人の逆襲",
+      "titleZh": "128话　味山只人的逆袭",
+      "chapterId": "141",
+      "createAt": 1613912640
+    },
+    {
+      "titleJp": "129話　完璧な世界",
+      "titleZh": "129话　完美的世界",
+      "chapterId": "142",
+      "createAt": 1614157980
+    },
+    {
+      "titleJp": "130話　バベルちゃんねる考察板。そして、インターホンを鳴らして",
+      "titleZh": "130话　巴别讨论板。然后，按响门铃",
+      "chapterId": "143",
+      "createAt": 1614500700
+    },
+    {
+      "titleJp": "131話　\"A\"",
+      "titleZh": "131话　「A」",
+      "chapterId": "144",
+      "createAt": 1614514020
+    },
+    {
+      "titleJp": "132話　明日",
+      "titleZh": "132话　明日",
+      "chapterId": "145",
+      "createAt": 1615637220
+    },
+    {
+      "titleJp": "133話　火を点けろ",
+      "titleZh": "133话　点燃火焰",
+      "chapterId": "146",
+      "createAt": 1615727220
+    },
+    {
+      "titleJp": "135話　青い月と金の星、あと腹を空かした石ころと卵かけご飯",
+      "titleZh": "135话　蓝色月亮与金色星星，还有肚子饿的石头与鸡蛋拌饭",
+      "chapterId": "147",
+      "createAt": 1615976160
+    },
+    {
+      "titleJp": "136話　夜に駆ける(物理)",
+      "titleZh": "136话　在夜晚奔驰（物理）",
+      "chapterId": "148",
+      "createAt": 1616314440
+    },
+    {
+      "titleJp": "137話　銀河装甲車両の夜",
+      "titleZh": "137话　银河装甲车的夜晚",
+      "chapterId": "149",
+      "createAt": 1616497920
+    },
+    {
+      "titleJp": "138話　再誕祭の空に",
+      "titleZh": "138话　在重生祭的天空",
+      "chapterId": "150",
+      "createAt": 1616933700
+    },
+    {
+      "titleJp": "139話　#\"耳\"祭り",
+      "titleZh": "139话　「耳朵」祭",
+      "chapterId": "151",
+      "createAt": 1617415320
+    },
+    {
+      "titleJp": "140話　更に前へ",
+      "titleZh": "140话　更向前",
+      "chapterId": "152",
+      "createAt": 1618650360
+    },
+    {
+      "titleJp": "141話　前へ、前へ、前へ前へ前へまえへまえ前まえまえまえまえ",
+      "titleZh": "141话　向前，向前，向前向前向前向前向前",
+      "chapterId": "153",
+      "createAt": 1618738020
+    },
+    {
+      "titleJp": "ーーを、ここに",
+      "titleZh": "——于此",
+      "chapterId": "154",
+      "createAt": 1618834140
+    },
+    {
+      "titleJp": "142話",
+      "titleZh": "142话",
+      "chapterId": "155",
+      "createAt": 1618919220
+    },
+    {
+      "titleJp": "143話　\"嵐\"に立ち向かう者",
+      "titleZh": "143话　面对「风暴」之人",
+      "chapterId": "156",
+      "createAt": 1619008500
+    },
+    {
+      "titleJp": "144話　嵐の世界と味山只人",
+      "titleZh": "144话　风暴的世界与味山只人",
+      "chapterId": "157",
+      "createAt": 1619184540
+    },
+    {
+      "titleJp": "145話　人間奇跡　【前進】",
+      "titleZh": "145话　人类奇迹　【前进】",
+      "chapterId": "158",
+      "createAt": 1619353980
+    },
+    {
+      "titleJp": "146話　人間奇跡【前進】 その2",
+      "titleZh": "146话　人类奇迹【前进】 其2",
+      "chapterId": "159",
+      "createAt": 1619518500
+    },
+    {
+      "titleJp": "147話　英雄VS耳男",
+      "titleZh": "147话　英雄VS耳男",
+      "chapterId": "160",
+      "createAt": 1619688720
+    },
+    {
+      "titleJp": "汝、只の人なりて　",
+      "titleZh": "汝，只是一介凡人　",
+      "chapterId": "161",
+      "createAt": 1619965260
+    },
+    {
+      "titleJp": "149話　凡人探索者達のたのしい現代ダンジョンライフ",
+      "titleZh": "149话　凡人探索者们的愉快现代迷宫生活",
+      "chapterId": "162",
+      "createAt": 1620127680
+    },
+    {
+      "titleJp": "150話　大いなる罪よ、神を嗤え",
+      "titleZh": "150话　伟大的罪恶啊，嘲笑神吧",
+      "chapterId": "163",
+      "createAt": 1620216240
+    },
+    {
+      "titleJp": "151話　約定をここにーー",
+      "titleZh": "151话　约定于此——",
+      "chapterId": "164",
+      "createAt": 1621069500
+    },
+    {
+      "titleJp": "152話　探索者",
+      "titleZh": "152话　探索者",
+      "chapterId": "165",
+      "createAt": 1621253280
+    },
+    {
+      "titleJp": "153話　アレフチーム",
+      "titleZh": "153话　亚雷夫队",
+      "chapterId": "166",
+      "createAt": 1621656360
+    },
+    {
+      "titleJp": "最終話　ver2.0\"レベル・アップ\" そして探索者たちは最深を目指し、ミュージックを再生する",
+      "titleZh": "最终话　ver2.0「等级・提升」 然后探索者们以最深处为目标，开始播放音乐",
+      "chapterId": "167",
+      "createAt": 1621685760
+    },
+    {
+      "titleJp": "ED.No163【鮫がはじめに飛び込み、鯨がやってきて、最後に海で出来上がる】",
+      "titleZh": "ED编号163【鲨鱼率先跳入，鲸鱼随后而来，最后在海中完成】",
+      "chapterId": "168",
+      "createAt": 1621771620
+    },
+    {
+      "titleJp": "ED.No58 【世界の中心で咲く華に】",
+      "titleZh": "ED编号58 【在世界的中心绽放的花】",
+      "chapterId": "169",
+      "createAt": 1621855440
+    },
+    {
+      "titleJp": "ED.No77 【北ヒロシマ秘密基地から、遥か彼方の君へ】",
+      "titleZh": "ED编号77 【从北广岛秘密基地，致遥远彼方的你】",
+      "chapterId": "170",
+      "createAt": 1621863000
+    },
+    {
+      "titleJp": "ED.No56【生命の詩、子守唄となりて大地に捧ぐ】",
+      "titleZh": "ED编号56【生命的诗，化为摇篮曲献给大地】",
+      "chapterId": "171",
+      "createAt": 1621944900
+    },
+    {
+      "titleJp": "ED.No？？？　あるいはある日のはじまり【冒険都市　商業区　リーゼ通り裏道】",
+      "titleZh": "ED编号？？？　又或是某天的开始【冒险都市　商业区　丽姿路小巷】",
+      "chapterId": "172",
+      "createAt": 1622027640
+    },
+    {
+      "titleJp": "ED.No2689 【ニッポン対ダンジョン　凡人総理のニホン防衛RTA攻略記(2689回目)】",
+      "titleZh": "ED编号2689 【日本对迷宫　凡人首相的日本防卫RTA攻略记（第2689次）】",
+      "chapterId": "173",
+      "createAt": 1622279160
+    },
+    {
+      "titleJp": "ED.No44【ヨリマシ、ワミタマ、ツグモノ、ツギヒト、かしこみ、かしこみ、たてまつれ】",
+      "titleZh": "ED编号44【神明，灵魂，传承，后继，敬畏，敬畏，供奉】",
+      "chapterId": "174",
+      "createAt": 1622362140
+    },
+    {
+      "titleJp": "ED.No84【探索者、貴崎凛の気付き】",
+      "titleZh": "ED编号84【探索者，贵崎凛的发现】",
+      "chapterId": "175",
+      "createAt": 1622367540
+    },
+    {
+      "titleJp": "extra ED No 【ワールド・スタンピード 結果発表】",
+      "titleZh": "extra ED No 【世界大游行 结果发表】",
+      "chapterId": "176",
+      "createAt": 1622457240
+    },
+    {
+      "titleJp": "EDナンバー033 【耳】",
+      "titleZh": "ED编号033 【耳朵】",
+      "chapterId": "177",
+      "createAt": 1622461020
+    },
+    {
+      "titleJp": "トゥルーED【焚き火】",
+      "titleZh": "TrueED【篝火】",
+      "chapterId": "178",
+      "createAt": 1622472060
+    },
+    {
+      "titleJp": "2023お正月短編　ゲームで遊ぼう",
+      "titleZh": "2023年新年短篇　来玩游戏吧"
+    },
+    {
+      "titleJp": "２０２２年　年越し短編【アレフ・プレイ・ゲームその１　”ソフィ・M・クラークの決意”】",
+      "titleZh": "2022年　跨年短篇【A play game其1　“苏菲・M・克拉克的决心”】",
+      "chapterId": "179",
+      "createAt": 1672229580
+    },
+    {
+      "titleJp": "2022・2023年跨ぎ記念【アレフ・プレイ・ゲームその2・グレン・ウォーカーの悲恋】",
+      "titleZh": "2022・2023年跨年纪念【A play game其2・格伦・沃克的悲恋】",
+      "chapterId": "180",
+      "createAt": 1672499220
+    },
+    {
+      "titleJp": "正月短編。ライフ・フィールド TGS2027 プロモーションPV第一弾　その１",
+      "titleZh": "新年短篇。Life・Field TGS2027 宣传PV第一弹　其1",
+      "chapterId": "181",
+      "createAt": 1672546980
+    },
+    {
+      "titleJp": "正月特別短編【アレフ・プレイ・ゲームその３・アレタ・ルーン・トーク】",
+      "titleZh": "正月特别短篇【A play game其3・Another・Rule・Talk】",
+      "chapterId": "182",
+      "createAt": 1672573080
+    },
+    {
+      "titleJp": "正月特別短編・【アレフ・プレイ・ゲーム　その４　アレタ・アシュフィールドの帰還】",
+      "titleZh": "正月特别短篇・【A play game　其4　Another・Ashfield’s Return】",
+      "chapterId": "183",
+      "createAt": 1672734360
+    },
+    {
+      "titleJp": "さよなら三が日記念【アレフ・プレイ・ゲームその5・ロンリネス・オンリー・フォア・ミー】",
+      "titleZh": "再见，三日日记念【A play game其5・Loneliness・Only・For・Me】",
+      "chapterId": "184",
+      "createAt": 1672830840
+    },
+    {
+      "titleJp": "特別短編【アレフ・プレイ・ゲーム　その６　英雄と主人公】",
+      "titleZh": "特别短篇【A play game　其6　英雄与主人公】",
+      "chapterId": "185",
+      "createAt": 1673089740
+    },
+    {
+      "titleJp": "探索、再開",
+      "titleZh": "探索，再开"
+    },
+    {
+      "titleJp": "1話　白飯・アジヒモ・タンサクサイカイ",
+      "titleZh": "1话　白饭・竹荚鱼干・探索者大会",
+      "chapterId": "186",
+      "createAt": 1677659340
+    },
+    {
+      "titleJp": "2話　《あ、どうも、現代ダンジョン、バベルの大穴です》",
+      "titleZh": "2话　《啊，大家好，这里是现代迷宫，巴比伦的大洞》",
+      "chapterId": "187",
+      "createAt": 1677918780
+    },
+    {
+      "titleJp": "3話　ラウンドアバウト",
+      "titleZh": "3话　Roundabout",
+      "chapterId": "188",
+      "createAt": 1678532880
+    },
+    {
+      "titleJp": "4話　バカ1名、イズにて。重たい女2名、トウキョウにて",
+      "titleZh": "4话　笨蛋1名，is。沉重的女人2名，东京",
+      "chapterId": "189",
+      "createAt": 1679042640
+    },
+    {
+      "titleJp": "5話　味山只人冒険隊、暗黒の魔境イズ王国の集落にて！　神秘種アサマの闇を見た！　その1",
+      "titleZh": "5话　味山只人冒险队，暗黑魔境IZ王国的聚落！　看到了神秘种味山只人的黑暗！　其1",
+      "chapterId": "190",
+      "createAt": 1679393700
+    },
+    {
+      "titleJp": "6話　ホテルフロア・イン・ホラー",
+      "titleZh": "6话　Hotel floor in horror",
+      "chapterId": "191",
+      "createAt": 1679656140
+    },
+    {
+      "titleJp": "凡人探索者・書籍版連動作品・《アレタ・THE・52nd STAR★》",
+      "titleZh": "凡人探索者・书籍版联动作品・《Another・THE・52nd STAR★》",
+      "chapterId": "192",
+      "createAt": 1680257220
+    },
+    {
+      "titleJp": "136話　おやま、あじやま",
+      "titleZh": "136话　哦呀，味山只人",
+      "chapterId": "193",
+      "createAt": 1682078760
+    },
+    {
+      "titleJp": "137話　”人よ、神に逆らうべからず”・熊野ミサキの敗北とイズ高校オカルト部の最期の場合",
+      "titleZh": "137话　“人啊，不可违抗神”・熊野美咲的败北与IZ高中超自然研究社的末日",
+      "chapterId": "194",
+      "createAt": 1682758680
+    },
+    {
+      "titleJp": "137話　絶望",
+      "titleZh": "137话　绝望",
+      "chapterId": "195",
+      "createAt": 1685787120
+    },
+    {
+      "titleJp": "書籍連動番外編《STORY OF DEATH》・カタリナ・ラスト　その１",
+      "titleZh": "书籍联动番外篇《STORY OF DEATH》・卡塔丽娜・Last　其1",
+      "chapterId": "196",
+      "createAt": 1685873520
+    },
+    {
+      "titleJp": "138話　熊野ミサキと神と化け物",
+      "titleZh": "138话　熊野美咲与神与怪物",
+      "chapterId": "197",
+      "createAt": 1686402360
+    },
+    {
+      "titleJp": "139話　ある男の帰還",
+      "titleZh": "139话　某个男人的归来",
+      "chapterId": "198",
+      "createAt": 1686737880
+    },
+    {
+      "titleJp": "140話　バカバトル",
+      "titleZh": "140话　笨蛋大战",
+      "chapterId": "199",
+      "createAt": 1687083180
+    },
+    {
+      "titleJp": "141話　オオバカバトル",
+      "titleZh": "141话　大笨蛋大战",
+      "chapterId": "200",
+      "createAt": 1687608300
+    },
+    {
+      "titleJp": "142話　沼に、落ちた",
+      "titleZh": "142话　掉进了，沼泽",
+      "chapterId": "201",
+      "createAt": 1687863900
+    },
+    {
+      "titleJp": "143話　逆さ富士登頂戦　その1",
+      "titleZh": "143话　逆富士登顶战　其1",
+      "chapterId": "202",
+      "createAt": 1688815320
+    },
+    {
+      "titleJp": "144話　逆さ富士登頂戦　その2",
+      "titleZh": "144话　逆富士登顶战　其2",
+      "chapterId": "203",
+      "createAt": 1688897640
+    },
+    {
+      "titleJp": "145話　逆さ富士登頂戦　その3",
+      "titleZh": "145话　逆富士登顶战　其3",
+      "chapterId": "204",
+      "createAt": 1689503160
+    },
+    {
+      "titleJp": "146話　ビターエンドルート　一つの犠牲ーー",
+      "titleZh": "146话　Bitter end route　一个牺牲ーー",
+      "chapterId": "205",
+      "createAt": 1690118580
+    },
+    {
+      "titleJp": "147話　イズ王国・全員生存エンド　”凡人と神”",
+      "titleZh": "147话　IZ王国・全员生存END　“凡人与神”",
+      "chapterId": "206",
+      "createAt": 1690622220
+    },
+    {
+      "titleJp": "148話　夜明け・ver2.0味山只人戦力状況",
+      "titleZh": "148话　黎明・ver2.0味山只人战力状况",
+      "chapterId": "207",
+      "createAt": 1691147340
+    },
+    {
+      "titleJp": "149話　貴崎凛の正念",
+      "titleZh": "149话　贵崎凛的正念",
+      "chapterId": "208",
+      "createAt": 1691230920
+    },
+    {
+      "titleJp": "150話　2032年8月31日　あとさんかい",
+      "titleZh": "150话　2032年8月31日　后记",
+      "chapterId": "209",
+      "createAt": 1691751120
+    },
+    {
+      "titleJp": "151話　2032年8月31日　その２",
+      "titleZh": "151话　2032年8月31日　其2",
+      "chapterId": "210",
+      "createAt": 1691836620
+    },
+    {
+      "titleJp": "152話　希望が絶える音",
+      "titleZh": "152话　希望断绝的声音",
+      "chapterId": "211",
+      "createAt": 1691929260
+    },
+    {
+      "titleJp": "153話　ロスト",
+      "titleZh": "153话　Lost",
+      "chapterId": "212",
+      "createAt": 1692444900
+    },
+    {
+      "titleJp": "154話　IQ3000",
+      "titleZh": "154话　IQ3000",
+      "chapterId": "213",
+      "createAt": 1692534300
+    },
+    {
+      "titleJp": "155話　神秘の天敵",
+      "titleZh": "155话　神秘的天敌",
+      "chapterId": "214",
+      "createAt": 1692882060
+    },
+    {
+      "titleJp": "156話　化身",
+      "titleZh": "156话　化身",
+      "chapterId": "215",
+      "createAt": 1694255760
+    },
+    {
+      "titleJp": "157話　お前もかよ",
+      "titleZh": "157话　你也是吗",
+      "chapterId": "216",
+      "createAt": 1694953440
+    },
+    {
+      "titleJp": "アレフチーム逆襲編",
+      "titleZh": "阿雷夫队逆袭篇"
+    },
+    {
+      "titleJp": "凡人探索者のたのしい現代ダンジョンライフ／最終部・味山只人は最強の怪物ビルドで難易度ナイトメアのクソダンジョン世界を踏破し、全ての神話と最悪ＢＡＤエンドをボコボコにするようです",
+      "titleZh": "凡人探索者的愉快现代迷宫生活／最终部・味山只人以最强怪物的加点方式通关难度噩梦的垃圾迷宫世界，痛扁所有神话和最坏的BAD END",
+      "chapterId": "217",
+      "createAt": 1698238680
+    },
+    {
+      "titleJp": "2話　渓流×サキモリ×異常存在ソイ、ソイ、ソォイ！！",
+      "titleZh": "2话　溪流×Sakimori×异常存在Soi，Soi，Soi！！",
+      "chapterId": "218",
+      "createAt": 1699026720
+    },
+    {
+      "titleJp": "3話　昔々、アレフチームで",
+      "titleZh": "3话　很久很久以前，阿雷夫队里",
+      "chapterId": "219",
+      "createAt": 1699105500
+    },
+    {
+      "titleJp": "４話　最悪の力と",
+      "titleZh": "４话　最可怕的力量",
+      "chapterId": "220",
+      "createAt": 1699792620
+    },
+    {
+      "titleJp": "《お前がやらかし、後回しにした》間話　そのいち",
+      "titleZh": "《你搞砸了，往后拖延》间话　其之一",
+      "chapterId": "221",
+      "createAt": 1700309820
+    },
+    {
+      "titleJp": "５話　\"U R MY SPECIAL\"",
+      "titleZh": "５话　\"U R MY SPECIAL\"",
+      "chapterId": "222",
+      "createAt": 1700396880
+    },
+    {
+      "titleJp": "6話　ぷるぷる、俺は悪い怪物じゃないのに",
+      "titleZh": "6话　颤抖颤抖，我明明不是坏怪物",
+      "chapterId": "223",
+      "createAt": 1701003600
+    },
+    {
+      "titleJp": "７話　アジヤマ〆アウト〆サバイバル",
+      "titleZh": "７话　日本〆Out〆生存战",
+      "chapterId": "224",
+      "createAt": 1701596040
+    },
+    {
+      "titleJp": "8話　VSシエラチーム　その1",
+      "titleZh": "8话　VS希耶拉队　其1",
+      "chapterId": "225",
+      "createAt": 1701814320
+    },
+    {
+      "titleJp": "9話　VSシエラチーム　その2",
+      "titleZh": "9话　VS希耶拉队　其2",
+      "chapterId": "226",
+      "createAt": 1702204560
+    },
+    {
+      "titleJp": "10話　1945.08.15",
+      "titleZh": "10话　1945.08.15",
+      "chapterId": "227",
+      "createAt": 1702804680
+    },
+    {
+      "titleJp": "11話　生贄の流儀",
+      "titleZh": "11话　活祭的规矩",
+      "chapterId": "228",
+      "createAt": 1703334000
+    },
+    {
+      "titleJp": "《お前は導き、放り出した》間話　そのに",
+      "titleZh": "《你引导了，放任了》间话　其之二",
+      "chapterId": "229",
+      "createAt": 1703494020
+    },
+    {
+      "titleJp": "八島作戦　序",
+      "titleZh": "八岛作战　序"
+    },
+    {
+      "titleJp": "12話　営業プレゼン国会首級チェケラッチョ",
+      "titleZh": "12话　业务报告国会首级ChecKerLaTo",
+      "chapterId": "230",
+      "createAt": 1704022320
+    },
+    {
+      "titleJp": "13話　会議ぶっ壊グランド爆撃校舎全壊ボンバー",
+      "titleZh": "13话　会议破坏Grand爆击校舍全毁炸弹",
+      "chapterId": "231",
+      "createAt": 1704632280
+    },
+    {
+      "titleJp": "14話　本当に賢い人達の会話　",
+      "titleZh": "14话　真正聪明人们的对话　",
+      "chapterId": "232",
+      "createAt": 1705237860
+    },
+    {
+      "titleJp": "15話　VSアカデミー　その1",
+      "titleZh": "15话　VS学院　其1",
+      "chapterId": "233",
+      "createAt": 1705830360
+    },
+    {
+      "titleJp": "16話　VSアカデミーその2 対味山只人戦術における最適解の模索",
+      "titleZh": "16话　VS学院其2 对味山只人战术的最优解的探索",
+      "chapterId": "234",
+      "createAt": 1706360580
+    },
+    {
+      "titleJp": "17話　VSアカデミーその3 倉庫の前で",
+      "titleZh": "17话　VS学院其3 仓库前",
+      "chapterId": "235",
+      "createAt": 1707038400
+    },
+    {
+      "titleJp": "18話　超自我",
+      "titleZh": "18话　超自我",
+      "chapterId": "236",
+      "createAt": 1707640140
+    },
+    {
+      "titleJp": "19話　がんばれ、あまのじゃくちゃん",
+      "titleZh": "19话　加油，爱闹别扭的小妹妹",
+      "chapterId": "237",
+      "createAt": 1707912300
+    },
+    {
+      "titleJp": "20話　完敗・襲撃・探索者",
+      "titleZh": "20话　完败・袭击・探索者",
+      "chapterId": "238",
+      "createAt": 1708260000
+    },
+    {
+      "titleJp": "21話　探索者の戦い方",
+      "titleZh": "21话　探索者的战斗方式",
+      "chapterId": "239",
+      "createAt": 1708858140
+    },
+    {
+      "titleJp": "22話　共同戦線",
+      "titleZh": "22话　共同战线",
+      "chapterId": "240",
+      "createAt": 1709460540
+    },
+    {
+      "titleJp": "23話　耳の創作",
+      "titleZh": "23话　耳朵的创作",
+      "chapterId": "241",
+      "createAt": 1710072900
+    },
+    {
+      "titleJp": "24話　決着",
+      "titleZh": "24话　决出胜负",
+      "chapterId": "242",
+      "createAt": 1710679740
+    },
+    {
+      "titleJp": "戦闘結果",
+      "titleZh": "战斗结果",
+      "chapterId": "243",
+      "createAt": 1711884180
+    },
+    {
+      "titleJp": "26話　ver2.0 ラブコメ日常回のはじまり",
+      "titleZh": "26话　ver2.0 恋爱喜剧日常篇的开始",
+      "chapterId": "244",
+      "createAt": 1712481420
+    },
+    {
+      "titleJp": "27話　ver2.0 ラブコメ日常回のはじまり　その２",
+      "titleZh": "27话　ver2.0 恋爱喜剧日常篇的开始　其2",
+      "chapterId": "245",
+      "createAt": 1713092460
+    },
+    {
+      "titleJp": "28話　コミュコミュコミュ日常回",
+      "titleZh": "28话　交流交流交流日常篇",
+      "chapterId": "246",
+      "createAt": 1715948100
+    },
+    {
+      "titleJp": "29話　月の下、剣鬼とIQ３０００　その１",
+      "titleZh": "29话　月下，剑鬼与IQ3000　其1",
+      "chapterId": "247",
+      "createAt": 1716109920
+    },
+    {
+      "titleJp": "30話　月の下、剣鬼とIQ３０００　その2",
+      "titleZh": "30话　月下，剑鬼与IQ3000　其2",
+      "chapterId": "248",
+      "createAt": 1716555360
+    },
+    {
+      "titleJp": "28話　月の下、剣鬼とIQ３０００　その3",
+      "titleZh": "28话　月下，剑鬼与IQ3000　其3",
+      "chapterId": "249",
+      "createAt": 1717240920
+    },
+    {
+      "titleJp": "29話　味山の夜",
+      "titleZh": "29话　味山之夜",
+      "chapterId": "250",
+      "createAt": 1717843500
+    },
+    {
+      "titleJp": "30話　お前の力を我が手に《天邪鬼交流禄》",
+      "titleZh": "30话　你的力量为我所用《天邪鬼交流禄》",
+      "chapterId": "251",
+      "createAt": 1718531760
+    },
+    {
+      "titleJp": "31話　ダンジョン酔い",
+      "titleZh": "31话　迷宫晕",
+      "chapterId": "252",
+      "createAt": 1718889780
+    },
+    {
+      "titleJp": "32話　凡人VS英雄と天才　その1",
+      "titleZh": "32话　凡人VS英雄与天才　其1",
+      "chapterId": "253",
+      "createAt": 1719060240
+    },
+    {
+      "titleJp": "33話　凡人探索者VS英雄と天才　その２",
+      "titleZh": "33话　凡人探索者VS英雄与天才　其2",
+      "chapterId": "254",
+      "createAt": 1719492600
+    },
+    {
+      "titleJp": "33話　予行演習と希望の訪れ",
+      "titleZh": "33话　预演与希望的来访",
+      "chapterId": "255",
+      "createAt": 1719752640
+    },
+    {
+      "titleJp": "34話　希望の告白",
+      "titleZh": "34话　希望的告白",
+      "chapterId": "256",
+      "createAt": 1720096260
+    },
+    {
+      "titleJp": "３５話　世界の車窓から　永世継続繁栄都市オリュンポス　その１",
+      "titleZh": "３５话　世界之窗　永世繁荣都市奥林帕斯　其1",
+      "chapterId": "257",
+      "createAt": 1720349700
+    },
+    {
+      "titleJp": "36話　世界の車窓から　永世継続繁栄都市オリュンポス　その２　《パンドラコミュ》",
+      "titleZh": "36话　世界之窗　永世繁荣都市奥林帕斯　其2　《潘多拉通讯》",
+      "chapterId": "258",
+      "createAt": 1720865400
+    },
+    {
+      "titleJp": "37話　神と英雄　その１　アレタと正論ガン詰め神様パンドラちゃん",
+      "titleZh": "37话　神与英雄　其1　阿蕾塔与说教神潘多拉酱",
+      "chapterId": "259",
+      "createAt": 1721035920
+    },
+    {
+      "titleJp": "38話　神と英雄　その２　貴崎と恋愛つよつよパンドラちゃん",
+      "titleZh": "38话　神与英雄　其2　贵崎与恋爱强强神潘多拉酱",
+      "chapterId": "260",
+      "createAt": 1721299380
+    },
+    {
+      "titleJp": "39話　アジヤマ・デート・ウィズ・パンドラ　その１",
+      "titleZh": "39话　日亚约会with潘多拉　其1",
+      "chapterId": "261",
+      "createAt": 1721470380
+    },
+    {
+      "titleJp": "40話　神の国",
+      "titleZh": "40话　神之国",
+      "chapterId": "262",
+      "createAt": 1721648520
+    },
+    {
+      "titleJp": "41話　神の国の神、神の国の人、神の国の探索者、え！？　くっ殺銀髪エルフ女騎士！？！？？？",
+      "titleZh": "41话　神之国的神，神之国的人，神之国的探索者，诶！？　杀杀银发精灵女骑士！？！？！？",
+      "chapterId": "263",
+      "createAt": 1722168060
+    },
+    {
+      "titleJp": "42話　魔犬狩り",
+      "titleZh": "42话　狩猎魔犬",
+      "chapterId": "264",
+      "createAt": 1722676560
+    },
+    {
+      "titleJp": "43話　ゼウスという神　その1",
+      "titleZh": "43话　名为宙斯的神　其1",
+      "chapterId": "265",
+      "createAt": 1723021920
+    },
+    {
+      "titleJp": "44話　ゼウスという神　その２",
+      "titleZh": "44话　名为宙斯的神　其2",
+      "chapterId": "266",
+      "createAt": 1723294380
+    },
+    {
+      "titleJp": "凡人探索者４巻　バベル島防衛戦：SIDEストーリー【ある家族のありふれた悲劇】8月25日発売予定",
+      "titleZh": "凡人探索者4卷　巴比伦岛防卫战：Side Story【某个家庭的平凡悲剧】8月25日发售预定",
+      "chapterId": "267",
+      "createAt": 1723633800
+    },
+    {
+      "titleJp": "45話　味山只人とオリュンポスの子供達",
+      "titleZh": "45话　味山只人与奥林帕斯的孩子们",
+      "chapterId": "268",
+      "createAt": 1723892580
+    },
+    {
+      "titleJp": "凡人探索者４巻　バベル島防衛戦：SIDEストーリー【サカタトキオミの苦悩】8月25日発売予定",
+      "titleZh": "凡人探索者4卷　巴比伦岛防卫战：Side Story【坂田辰五郎的苦恼】8月25日发售预定",
+      "chapterId": "269",
+      "createAt": 1724242080
+    },
+    {
+      "titleJp": "凡人探索者４巻　バベル島防衛戦：SIDEストーリー【カタリナの願い】8月25日発売予定",
+      "titleZh": "凡人探索者4卷　巴比伦岛防卫战：Side Story【卡塔莉娜的愿望】8月25日发售预定",
+      "chapterId": "270",
+      "createAt": 1724584620
+    },
+    {
+      "titleJp": "第47話　凡人問答　その1",
+      "titleZh": "第47话　凡人问答　其1",
+      "chapterId": "271",
+      "createAt": 1726408800
+    },
+    {
+      "titleJp": "48話　凡人問答　その2",
+      "titleZh": "48话　凡人问答　其2",
+      "chapterId": "272",
+      "createAt": 1726484940
+    },
+    {
+      "titleJp": "49話　分岐点Δ",
+      "titleZh": "49话　分歧点Δ",
+      "chapterId": "273",
+      "createAt": 1726915020
+    },
+    {
+      "titleJp": "50話　記者会見",
+      "titleZh": "50话　记者会",
+      "chapterId": "274",
+      "createAt": 1727084400
+    },
+    {
+      "titleJp": "51話　記者会見　その2",
+      "titleZh": "51话　记者会　其2",
+      "chapterId": "275",
+      "createAt": 1727517840
+    },
+    {
+      "titleJp": "52話　記者会見　その３",
+      "titleZh": "52话　记者会　其3",
+      "chapterId": "276",
+      "createAt": 1727605500
+    },
+    {
+      "titleJp": "53話　カウカーソス山にて",
+      "titleZh": "53话　在考卡西斯山",
+      "chapterId": "277",
+      "createAt": 1728462840
+    },
+    {
+      "titleJp": "54話　味山会見",
+      "titleZh": "54话　味山记者会",
+      "chapterId": "278",
+      "createAt": 1728731640
+    },
+    {
+      "titleJp": "55話　人の輝き",
+      "titleZh": "55话　人的光辉",
+      "chapterId": "279",
+      "createAt": 1729429560
+    },
+    {
+      "titleJp": "56話　神秘の行進",
+      "titleZh": "56话　神秘的行进",
+      "chapterId": "280",
+      "createAt": 1731500460
+    },
+    {
+      "titleJp": "57話　変な掲示板",
+      "titleZh": "57话　奇怪的留言板",
+      "chapterId": "281",
+      "createAt": 1731677460
+    },
+    {
+      "titleJp": "58話　たのしい配信",
+      "titleZh": "58话　愉快的直播",
+      "chapterId": "282",
+      "createAt": 1732440240
+    },
+    {
+      "titleJp": "59話　神秘との距離",
+      "titleZh": "59话　与神秘的距离",
+      "chapterId": "283",
+      "createAt": 1732893240
+    },
+    {
+      "titleJp": "60話　不倶戴天",
+      "titleZh": "60话　不共戴天",
+      "chapterId": "284",
+      "createAt": 1733573940
+    },
+    {
+      "titleJp": "61話　部位と神秘種",
+      "titleZh": "61话　部位与神秘种",
+      "chapterId": "285",
+      "createAt": 1735310460
+    },
+    {
+      "titleJp": "2024年年末特別SS　凡人ソロ探索者の現代ダンジョン【人を殺さない方がいい理由】",
+      "titleZh": "2024年年末特别SS　凡人独行探索者的现代迷宫【不杀人的理由】",
+      "chapterId": "286",
+      "createAt": 1735646760
+    },
+    {
+      "titleJp": "62話　運命の死を超えて",
+      "titleZh": "62话　超越命运之死",
+      "chapterId": "287",
+      "createAt": 1737204240
+    },
+    {
+      "titleJp": "63話　決着と平原",
+      "titleZh": "63话　决战与平原",
+      "chapterId": "288",
+      "createAt": 1737824820
+    },
+    {
+      "titleJp": "味山只人のはるやすみ：モテ期",
+      "titleZh": "味山只人的春假：桃花期"
+    },
+    {
+      "titleJp": "64話　”Via Dolorosa”",
+      "titleZh": "64话　“Via Dolorosa”",
+      "chapterId": "289",
+      "createAt": 1738503960
+    },
+    {
+      "titleJp": "65話　味山只人対策本部会議室のみんなの反応集",
+      "titleZh": "65话　味山只人对策总部会议室的大家的反应集",
+      "chapterId": "290",
+      "createAt": 1740301200
+    },
+    {
+      "titleJp": "66話　パンドラの契約",
+      "titleZh": "66话　潘多拉的契约",
+      "chapterId": "291",
+      "createAt": 1742645400
+    },
+    {
+      "titleJp": "67話　戦後処理　その1",
+      "titleZh": "67话　战后处理　其1",
+      "chapterId": "292",
+      "createAt": 1743161520
+    },
+    {
+      "titleJp": "2025年番外編【元社畜、味山只人が語る新社会人サバイバルプラン】",
+      "titleZh": "2025年番外篇【前社畜味山只人讲述新社会人求生计划】",
+      "chapterId": "293",
+      "createAt": 1743506520
+    },
+    {
+      "titleJp": "68話　エルフとの交渉、夜の時間を楽しもう",
+      "titleZh": "68话　与精灵的交涉，享受夜晚时光",
+      "chapterId": "294",
+      "createAt": 1744372860
+    },
+    {
+      "titleJp": "69話　サウナ・イン・ゼウス",
+      "titleZh": "69话　桑拿・in・宙斯",
+      "chapterId": "295",
+      "createAt": 1745323560
+    },
+    {
+      "titleJp": "4月25日：凡人探索者5巻：特別SSその１：味山只人に幼少期に脳を弱火で焼かれ続けた女の末路",
+      "titleZh": "4月25日：凡人探索者5卷：特别SS其1：味山只人讲述幼年期大脑持续被弱火灼烧的女人的末路",
+      "chapterId": "296",
+      "createAt": 1745663520
+    },
+    {
+      "titleJp": "70話　耳の役割",
+      "titleZh": "70话　耳朵的职责",
+      "chapterId": "297",
+      "createAt": 1746274380
+    },
+    {
+      "titleJp": "71話　凡人ソロ探索者の現代ダンジョンライフ：序",
+      "titleZh": "71话　凡人单打探索者的现代迷宫生活：序",
+      "chapterId": "298",
+      "createAt": 1747476900
+    },
+    {
+      "titleJp": "72話　異分域:バベル島防衛戦　その１",
+      "titleZh": "72话　异分域：巴比伦防卫战　其1",
+      "chapterId": "299",
+      "createAt": 1748853960
+    },
+    {
+      "titleJp": "73話　異聞域：オワオワオワオワリ",
+      "titleZh": "73话　异闻域：欧瓦欧瓦欧瓦欧瓦利",
+      "chapterId": "300",
+      "createAt": 1749991140
+    },
+    {
+      "titleJp": "74話　異聞域　52番目の星",
+      "titleZh": "74话　异闻域　第五十二颗星球",
+      "chapterId": "301",
+      "createAt": 1751205240
+    },
+    {
+      "titleJp": "75話　異聞域　VSアレフチーム　その１",
+      "titleZh": "75话　异闻域　VS阿雷夫队　其1",
+      "chapterId": "302",
+      "createAt": 1752238140
+    },
+    {
+      "titleJp": "凡人探索者5巻特別SS 【おさななじみのはいぼく】書籍5巻空野一夏大勝利ＥＮＤ",
+      "titleZh": "凡人探索者5卷特别SS 【青梅竹马的黑历史】书籍5卷空野一夏大胜利END",
+      "chapterId": "303",
+      "createAt": 1752327780
+    },
+    {
+      "titleJp": "75話　異聞域　VSアレフチーム　その２",
+      "titleZh": "75话　异闻域　VS阿雷夫队　其2",
+      "chapterId": "304",
+      "createAt": 1754221680
+    },
+    {
+      "titleJp": "76話　遥か彼方のワタシから、最前の君へ",
+      "titleZh": "76话　来自遥远彼方的我，致最前方的你",
+      "chapterId": "305",
+      "createAt": 1754735700
+    },
+    {
+      "titleJp": "77話　凡人探索者はキャラ小説です",
+      "titleZh": "77话　凡人探索者是角色小说",
+      "chapterId": "306",
+      "createAt": 1760180580
+    },
+    {
+      "titleJp": "78話　ラブコメ接待",
+      "titleZh": "78话　爱情喜剧接待",
+      "chapterId": "307",
+      "createAt": 1764511860
+    },
+    {
+      "titleJp": "79話　ホスト接待の結果、なんかうまく行き始めた。",
+      "titleZh": "79话　牛郎招待的结果，好像开始顺利了。",
+      "chapterId": "308",
+      "createAt": 1764763800
+    },
+    {
+      "titleJp": "80話　こんにちは、トゥスク",
+      "titleZh": "80话　你好，图斯克",
+      "chapterId": "309",
+      "createAt": 1766240160
+    },
+    {
+      "titleJp": "81話　良き隣人よ、我が願いの為に",
+      "titleZh": "81话　善良的邻人啊，为了我的愿望",
+      "chapterId": "310",
+      "createAt": 1767179220
+    }
+  ],
+  "visited": 1104,
+  "syncAt": 1767746577,
+  "jp": 310,
+  "baidu": 235,
+  "youdao": 309,
+  "gpt": 0,
+  "sakura": 309
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:28:57.203429",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "9e5bf82766b6729a6b4a0f252e081058f401c803a52d2643c795136078283a82",
+    "B": "868ddc87ee107bcc5df6201668d3d3a3612475a8ead7bba97968e8dd6e96377d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:30:02.458322",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002858532073484BGfGuDUH",
+      "judge_response": {
+        "id": "chatcmpl-20260109002858532073484BGfGuDUH",
+        "object": "chat.completion",
+        "created": 1767889802,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是针对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 风格与语气 (Style & Tone)**\n*   **原文基调**：这是一部带有军事、战略要素的奇幻轻小说。主角（公主）性格冷酷、理性、讲究效率；部下（约阿希姆）对她既敬畏又忠诚。文风应当是严肃、略带压抑但逻辑严密的。\n*   **翻译A**：很好地把握了轻小说的文风。用词正式、洗练，符合军事题材的严肃感。例如将“寡兵”译为“以少敌多”，将“高潔な姫君”译为“高洁的公主”。\n*   **翻译B**：整体语气过于口语化，甚至有些轻浮，严重破坏了原文的氛围。\n    *   例如段落53，将“高潔な姫君”（高洁/高尚的公主）译为“人品超好的公主”。这在中文语境中非常现代且随意，完全不符合奇幻战争背景下的贵族描述。\n    *   段落9将“生活を律する”（约束/规范生活）译为“过日子嘛”，过于市井气。\n    *   段落29用“搞心理战”、“啥的”，读起来像闲聊而非武器说明。\n\n**2. 准确性 (Accuracy)**\n*   **意思传达**：两版在剧情大意上都没有严重偏差，但在细微处的理解上A更精准。\n    *   段落32：原文“効率性を重視して”，A译为“优先考虑效率”，B译为“为了省事”。虽然意思相近，但“效率”是主角的核心人设，“省事”则显得懒散，B未能准确传达角色的动机。\n    *   段落60：原文“無理な追撃”，A译为“疯狂追击”，B译为“无理的追击”。在中文军事语境下，“无理”通常指没有道理/粗鲁，而此处是指战术上不合理、勉强的追击，A的意译更符合语境。\n*   **术语准确性**：\n    *   **钟表术语（关键点）**：段落42原文“脱進”（Escapement）。A直接使用了日文汉字“脱进”，这在中文钟表术语中是不规范的；B使用了正确的中文专业术语“擒纵”。**这是B唯一显著优于A的地方。**\n\n**3. 流畅性与词汇 (Fluency & Vocabulary)**\n*   **翻译A**：行文流畅，成语和四字格的使用恰到好处（如“稀松平常”、“以少敌多”、“甚至连...都...”）。对话部分符合人物身份，公主的语气威严冷淡。\n*   **翻译B**：句子结构有时显得松散，像是由短语拼凑而成（如段落6“把所有这些都串起来的东西...为此，重要的武器”）。对话缺乏“贵族感”。\n\n**4. 格式与标点**\n*   A的标点使用规范。\n*   B在部分段落结尾漏掉了句号（如段落14、16、39），且引号使用有时不一致。\n\n### 关键差异示例\n\n*   **段落 3 (军事描述)**\n    *   原文: 寡兵で大軍と戦うことが多かった\n    *   A: 经常以少敌多 (使用了恰当的军事成语，简练)\n    *   B: 老是用少量兵力打大军 (过于口语化，啰嗦)\n*   **段落 53 (人物评价)**\n    *   原文: 城にあっては高潔な姫君であった\n    *   A: 在城堡里，则是高洁的公主 (符合文风)\n    *   B: 宫里是人品超好的公主 (严重出戏，像现代学生评价同学)\n*   **段落 42 (技术术语)**\n    *   原文: 脱進\n    *   A: 脱进 (照搬日文汉字，中文不通用)\n    *   B: 擒纵 (正确的中文钟表机械术语)\n\n### 最终判决\n\n尽管翻译B在“擒纵机构”这一专业术语上翻译正确，但其整体风格过于随意、口语化，严重偏离了严肃战争轻小说的基调（尤其是“人品超好”这种翻译是致命伤）。翻译A虽然在那个专业术语上略有瑕疵，但整篇的文笔、语气把握、军事词汇的运用都远超B，读起来更像是一部出版级的轻小说。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A captures the nuance of military strategy better. B is generally accurate but misses the nuance of 'efficiency' vs 'laziness'.\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A flows like a novel. B sounds like a rough draft or casual conversation.\"\n    },\n    \"style\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"B fails significantly here. Using '人品超好' for 'noble/high-minded' breaks immersion completely. A is perfectly tonal.\"\n    },\n    \"terminology\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"A wins on military terms (以少敌多 vs 少量兵力). B wins on the specific clock term (擒纵 vs 脱进).\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A connects ideas logically. B has some fragmented sentences.\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"B misses several periods at the end of sentences.\"\n    }\n  },\n  \"key_differences\": [\n    \"Tone: A is formal and literary; B is overly colloquial and slangy.\",\n    \"Vocabulary: A uses appropriate military/noble idioms; B uses modern casual speech (e.g., '人品超好').\",\n    \"Technical Term: B correctly identified 'Escapement' as '擒纵', while A used the Japanese Kanji '脱进'.\"\n  ],\n  \"final_summary\": \"翻译A在整体质量上具有压倒性优势。它准确地还原了轻小说的叙事风格，人物语气符合身份（冷酷、理性的公主与敬畏的部下），用词考究且富有文学性。翻译B虽然正确翻译了钟表术语“擒纵”，但其整体文风过于口语化（如使用“人品超好”、“搞”、“啥的”），导致角色形象崩塌，且存在标点缺失问题。对于读者而言，A提供了沉浸式的阅读体验，而B则显得出戏。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7957,
+          "completion_tokens": 4543,
+          "total_tokens": 12500
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A captures the nuance of military strategy better. B is generally accurate but misses the nuance of 'efficiency' vs 'laziness'."
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A flows like a novel. B sounds like a rough draft or casual conversation."
+      },
+      "style": {
+        "A": 10,
+        "B": 4,
+        "notes": "B fails significantly here. Using '人品超好' for 'noble/high-minded' breaks immersion completely. A is perfectly tonal."
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "A wins on military terms (以少敌多 vs 少量兵力). B wins on the specific clock term (擒纵 vs 脱进)."
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A connects ideas logically. B has some fragmented sentences."
+      },
+      "formatting": {
+        "A": 10,
+        "B": 8,
+        "notes": "B misses several periods at the end of sentences."
+      }
+    },
+    "key_differences": [
+      "Tone: A is formal and literary; B is overly colloquial and slangy.",
+      "Vocabulary: A uses appropriate military/noble idioms; B uses modern casual speech (e.g., '人品超好').",
+      "Technical Term: B correctly identified 'Escapement' as '擒纵', while A used the Japanese Kanji '脱进'."
+    ],
+    "final_summary": "翻译A在整体质量上具有压倒性优势。它准确地还原了轻小说的叙事风格，人物语气符合身份（冷酷、理性的公主与敬畏的部下），用词考究且富有文学性。翻译B虽然正确翻译了钟表术语“擒纵”，但其整体文风过于口语化（如使用“人品超好”、“搞”、“啥的”），导致角色形象崩塌，且存在标点缺失问题。对于读者而言，A提供了沉浸式的阅读体验，而B则显得出戏。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

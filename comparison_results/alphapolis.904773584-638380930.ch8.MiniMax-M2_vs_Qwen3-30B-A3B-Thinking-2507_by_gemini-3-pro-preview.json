@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:25:54.593004",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.MiniMax-M2.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "7d357175142883f9aac9afa84ba20725d583558a57870fa853009f7bf0c943bd",
+    "B": "a15394bc58a0663cb3961233b7dd9c5c8afc9dba3c9836f7e77eefcd674971bf"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:26:58.206063",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002555857615379xizt2R4x",
+      "judge_response": {
+        "id": "chatcmpl-20260109002555857615379xizt2R4x",
+        "object": "chat.completion",
+        "created": 1767889618,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是针对翻译A和翻译B的详细评测。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A**：整体准确度较高。能够正确识别并翻译绝大多数魔物名称（如 Owlbear -> 奥鲁贝亚/猫头鹰熊，Boar -> 野猪）。在第101段中，原文有明显的同音字陷阱/错别字（“買った”意为“买”，但在野兽捕食的语境下应为“狩った”即“狩猎”），A译者根据语境正确修正为“抓到的猎物”，体现了优秀的理解力。\n*   **翻译B**：存在**灾难性**的准确性问题。\n    *   **漏译**：第3段将“アウルベア”（Owlbear）直接保留为片假名未翻译。\n    *   **严重误译**：\n        *   第45段将“Treant”（树精）错译为“藤”。\n        *   第82、83段突然产生幻觉，将“Treant”（树精）翻译成了“兔”（Snow Rabbit/Veggie Rabbit），完全脱离原文。\n        *   第102段将“Boar”（野猪）错译为“貂”（Marten/Sable），导致后续对“猪猪”的描述变成了“乌利貂”，这是物种层面的根本错误。\n        *   第25段将“尤も”（最/极其）误解为“尤其是”，导致句意偏差。\n        *   第101段直译了原文的错别字“购买的猎物”，在描述野兽习性时显得不合逻辑。\n\n**2. 术语/名称一致性 (Terminology)**\n*   **翻译A**：大部分名称处理得当，但在“Treant”一词上略有摇摆，第46段译为“树精”，第78段译为“特伦特”。虽然不一致，但至少都在描述树木类生物。\n*   **翻译B**：术语极其混乱且错误。同一个“Treant”在不同段落被译为“藤”、“特伦特”和“兔”。“Boar”被译为“貂”。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **翻译A**：文风平实，符合“个人笔记”的设定。句子结构通顺，虽然部分长句（如第43段）略显啰嗦，但意思传达清晰。\n*   **翻译B**：在没有出现名词错误的段落中（如第2段、第18段），B的句式往往比A更优美、更符合中文习惯（例如用“取决于”代替“受...左右”）。然而，由于核心名词的错误太多，导致整体阅读体验极差。\n\n**4. 格式与标点 (Formatting)**\n*   **翻译A**：使用了日式中点（・），这在中文排版中通常应替换为间隔号（·）。\n*   **翻译B**：标点符号使用更符合中文规范。\n\n### 总结\n虽然翻译B在部分句子的润色上表现出更好的中文语感（如句式结构更紧凑），但它在**核心名词翻译**上犯了不可原谅的错误（将野猪译为貂，将树精译为兔子，保留片假名不译）。相比之下，翻译A虽然在术语统一性上稍有瑕疵（树精/特伦特），但它正确识别了所有物种，并能根据语境修正原文的错别字，是一份合格的翻译。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 2,\n      \"notes\": \"A正确理解了语境（如修正'买'为'猎'）。B存在大量严重的物种误译（野猪->貂，树精->兔）。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 7,\n      \"notes\": \"B在非误译段落的句式其实优于A，但整体被名词错误破坏。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 5,\n      \"notes\": \"A符合笔记风格。B因名词错误导致风格怪异。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 1,\n      \"notes\": \"A存在'树精/特伦特'的不一致。B完全错误，将Treant译为兔子，Boar译为貂，Owlbear未翻译。\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 4,\n      \"notes\": \"B的错误导致上下文逻辑断裂（如树木怪物掉落物品却被称为兔子）。\"\n    },\n    \"formatting\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的标点符号更符合中文规范。\"\n    }\n  },\n  \"key_differences\": [\n    \"B将'アウルベア'(Owlbear)保留为片假名未翻译。\",\n    \"B将'Boar'(野猪)误译为'貂'。\",\n    \"B在后半部分将'Treant'(树精)误译为'兔'。\",\n    \"A根据语境正确将第101段的'买的猎物'(原文笔误)修正为'抓到的猎物'，B则直译了错误。\"\n  ],\n  \"final_summary\": \"翻译A在准确性上完胜。翻译B虽然在部分句子的语言组织上显得更自然，但犯了多个致命的术语错误（如将野猪翻译成貂，将树精翻译成兔子，以及漏译片假名）。对于百科/图鉴类文本，准确识别物种是核心要求，因此A是唯一可用的译本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8040,
+          "completion_tokens": 5846,
+          "total_tokens": 13886
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 2,
+        "notes": "A正确理解了语境（如修正'买'为'猎'）。B存在大量严重的物种误译（野猪->貂，树精->兔）。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "B在非误译段落的句式其实优于A，但整体被名词错误破坏。"
+      },
+      "style": {
+        "A": 8,
+        "B": 5,
+        "notes": "A符合笔记风格。B因名词错误导致风格怪异。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 1,
+        "notes": "A存在'树精/特伦特'的不一致。B完全错误，将Treant译为兔子，Boar译为貂，Owlbear未翻译。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 4,
+        "notes": "B的错误导致上下文逻辑断裂（如树木怪物掉落物品却被称为兔子）。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的标点符号更符合中文规范。"
+      }
+    },
+    "key_differences": [
+      "B将'アウルベア'(Owlbear)保留为片假名未翻译。",
+      "B将'Boar'(野猪)误译为'貂'。",
+      "B在后半部分将'Treant'(树精)误译为'兔'。",
+      "A根据语境正确将第101段的'买的猎物'(原文笔误)修正为'抓到的猎物'，B则直译了错误。"
+    ],
+    "final_summary": "翻译A在准确性上完胜。翻译B虽然在部分句子的语言组织上显得更自然，但犯了多个致命的术语错误（如将野猪翻译成貂，将树精翻译成兔子，以及漏译片假名）。对于百科/图鉴类文本，准确识别物种是核心要求，因此A是唯一可用的译本。"
+  },
+  "outcome": "MiniMax-M2_win",
+  "winner_model": "MiniMax-M2"
+}

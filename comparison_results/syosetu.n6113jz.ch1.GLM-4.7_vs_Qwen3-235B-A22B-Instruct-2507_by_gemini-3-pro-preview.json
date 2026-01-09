@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:43:07.632614",
+  "sample": "syosetu.n6113jz.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6113jz.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6113jz.ch1.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n6113jz.ch1.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "202d88e951c365c1b6224fa97be1f2152793d07174bcd127ad73eaa546de66e6",
+    "A": "870ecf27a7a2a04072312018e70c5ee57b79c487f2c66469adc062ed8ba16e13",
+    "B": "0ffa6765b5469a54ca3d55b687d5163693a69a034ee842195e7e2a7bb6755f72"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:43:57.202231",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109004309331119027ox011pSW",
+      "judge_response": {
+        "id": "chatcmpl-20260109004309331119027ox011pSW",
+        "object": "chat.completion",
+        "created": 1767890637,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的分段文本进行的详细对比分析：\n\n### 详细分析\n\n**1. 准确性与完整性 (Accuracy & Completeness)**\n*   **翻译 A 的重大失误**：翻译 A 在文中留下了未翻译的英文单词，这在翻译任务中是严重的质量问题。\n    *   **段落 10**: \"所以好像心里 **somewhere** 坏掉了。\"（原文：心のどっかが...）\n    *   **段落 36**: \"外形 **reminiscent** 孔雀般的身躯...\"（原文：クジャクを彷彿とさせる...）\n*   **翻译 B**：完整翻译了所有内容，没有遗漏或残留外语单词。对原文意思的理解准确，例如段落 58 中将“トサカに来ており”（怒发冲冠/暴怒）正确理解为“暴走/发怒”的状态。\n\n**2. 拟声词与音效 (Onomatopoeia)**\n*   **原文**: 『ケエエエエン！』 (Phoenix cry)\n*   **翻译 A**: 处理非常混乱。有时译为“喀啊啊啊恩！”，有时直接保留罗马音/英文拼写“KEEEEEEN！”（段落 57, 64）。这破坏了阅读的沉浸感。\n*   **翻译 B**: 统一译为“嘎啊啊啊啊！”或“嘎——！”，符合中文对鸟类/怪兽叫声的拟声习惯，读起来自然。\n\n**3. 流畅性与语感 (Fluency & Flow)**\n*   **段落 1**: A 译作“几个人类”，原文是“数人の人間”，在中文语境下，小说叙述中用“几个人”比“几个人类”更自然，除非是以非人类视角叙述。B 的“几个人”更通顺。\n*   **段落 30**: 原文描述少女因妄想而露出“蕩けきった顔”（融化般的/陶醉的表情）。A 的“失神陶醉”和 B 的“迷乱”都算准确，但 B 的整体句式“与其说是...不如说是...”连接得更紧凑。\n*   **段落 86**: 描写被吞噬的感觉。B 的“让人精神崩溃...的快感”比 A 的“达到死亡般的境界”更贴合原文“精神崩壊するほど”的含义。\n\n**4. 风格与语气 (Style & Tone)**\n*   **对话**: 两个版本对佣兵粗鲁口吻的处理都还可以（如“喂，别磨磨蹭蹭的”）。\n*   **少女的独白**: 少女是受虐狂（M属性）角色。B 在段落 62、65、81 等处的用词（如“一下解决我”、“好舒服”）更能体现这种病态的狂热感。\n*   **叙述**: B 的叙述更具文学性。例如段落 17，B 用“不可思议的是”对应“不思議と”，比 A 的“奇怪的是”更有奇幻小说的氛围。\n\n**5. 术语一致性 (Terminology)**\n*   **翻译 A**：最大的问题是拟声词不一致。\n*   **翻译 B**：保持了高度的一致性。\n\n### 总结\n**翻译 A** 出现了不可接受的低级错误（夹杂英文单词、未翻译的拟声词），这表明它可能是一个未经过人工校对的机器翻译初稿，或者翻译过程极不严谨。\n**翻译 B** 是一篇合格甚至优秀的轻小说翻译，语言流畅，用词准确，很好地还原了原文的黑暗奇幻氛围和角色的变态心理。\n\n***\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A在段落10和36中留下了未翻译的英文单词（somewhere, reminiscent），属于严重失误。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的中文表达更自然，A略显生硬且有语病。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B更好地捕捉了轻小说的叙述语调和角色的病态心理。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A对拟声词的处理极不统一，甚至直接保留了'KEEEEEEN'。\"\n    },\n    \"coherence\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的句子连接更紧密，逻辑更通顺。\"\n    },\n    \"formatting\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A在拟声词格式上混乱。\"\n    }\n  },\n  \"key_differences\": [\n    \"翻译A在文中夹杂了未翻译的英文单词（如'somewhere', 'reminiscent'），这是致命错误。\",\n    \"翻译A未能将拟声词本地化，多次出现'KEEEEEEN'，而翻译B使用了自然的中文拟声词（如'嘎——'）。\",\n    \"翻译B的句式结构更符合中文阅读习惯，描写更具画面感。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都完胜。翻译A存在明显的质量控制问题，包括在中文译文中残留英文单词以及未翻译的罗马音拟声词，这严重影响了阅读体验和准确性。翻译B不仅准确无误，而且文笔流畅，很好地还原了轻小说的风格和角色的性格特征。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8849,
+          "completion_tokens": 3853,
+          "total_tokens": 12702
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 9,
+        "notes": "A在段落10和36中留下了未翻译的英文单词（somewhere, reminiscent），属于严重失误。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的中文表达更自然，A略显生硬且有语病。"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B更好地捕捉了轻小说的叙述语调和角色的病态心理。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "A对拟声词的处理极不统一，甚至直接保留了'KEEEEEEN'。"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的句子连接更紧密，逻辑更通顺。"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A在拟声词格式上混乱。"
+      }
+    },
+    "key_differences": [
+      "翻译A在文中夹杂了未翻译的英文单词（如'somewhere', 'reminiscent'），这是致命错误。",
+      "翻译A未能将拟声词本地化，多次出现'KEEEEEEN'，而翻译B使用了自然的中文拟声词（如'嘎——'）。",
+      "翻译B的句式结构更符合中文阅读习惯，描写更具画面感。"
+    ],
+    "final_summary": "翻译B在各方面都完胜。翻译A存在明显的质量控制问题，包括在中文译文中残留英文单词以及未翻译的罗马音拟声词，这严重影响了阅读体验和准确性。翻译B不仅准确无误，而且文笔流畅，很好地还原了轻小说的风格和角色的性格特征。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

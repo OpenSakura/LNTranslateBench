@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:27:04.187213",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.Kimi-K2.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "a754b9b7292c4a29fa076b9b4a7d4cd71907e6c0cdbdbcbba040a7aebb0fc974",
+    "B": "59efdf566fe84f73c8a9e556a7f2841e2532e1f4773d2ec95a352baa43f9a5ac"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:28:09.344122",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002705147891770wC8UpFEt",
+      "judge_response": {
+        "id": "chatcmpl-20260109002705147891770wC8UpFEt",
+        "object": "chat.completion",
+        "created": 1767889689,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性与语境理解**\n*   **A翻译**展现了对原文语境的良好理解，特别是在处理角色昵称和侮辱性称呼上。例如，Segment 27中原文“Fucking Second”（ファッキンセカンド），A正确翻译为“他妈的二年级”（蛭魔对主角的蔑称），而B将其音译为“法金·塞肯德”，将其误认为是一个人名，这是严重的理解错误。\n*   **B翻译**存在多处直译导致的生硬或错误。例如Segment 22“Line wa kubi”，A译为“线锋个屁”（意译了被开除/不再担任该位置的语气），B译为“线被开除了”，不仅读起来奇怪，而且“线”作为位置名称在中文里不准确。\n*   **性别误判**：Segment 65中，主角（自称“俺”，名“莲次”）被濑那称为“双叶さん”。A译为“双叶姐”，B译为“双叶小姐”。鉴于主角使用男性自称且名字男性化，这很可能是两位译者（或机器翻译引擎）的共同误判。虽然两者都错了，但A在其他方面的准确性远高于B。\n\n**2. 术语与专业词汇**\n*   **A翻译**将美式足球术语进行了标准的中文本地化。例如：Running Back -> 跑卫，Quarterback -> 四分卫，Wide Receiver -> 外接手，Line -> 线锋。\n*   **B翻译**保留了大量的英文原文（Running Back, Quarterback等），这在中文轻小说翻译中通常是不推荐的，因为它破坏了阅读的流畅性，且对于不熟悉英语的读者不友好。此外，B将“Line”直译为“线”，而不是专有名词“线锋”或“攻防线”，显得不专业。\n\n**3. 流畅性与风格**\n*   **A翻译**的语言非常自然，符合轻小说的口语化风格。蛭魔的语气（粗鲁、带有黑帮气息）被很好地还原（如“嘿嘿嘿”、“这货”、“咱”）。对话流畅，符合中文表达习惯。\n*   **B翻译**充斥着翻译腔，语序僵硬。例如Segment 32“决定在上面放茶并解释”，Segment 82“全体队员朝着小早川跑过来，为了分享胜利”（典型的日文倒装句直译）。蛭魔的笑声“Ke-ke-ke”被B译为“咯咯咯”，在中文语境下显得奇怪（通常用于形容母鸡或女性笑声），而A的“嘿嘿嘿”更贴切。\n\n**4. 格式与标点**\n*   A的标点使用规范，符合中文出版物标准。\n*   B在某些地方标点使用略显随意，且夹杂英文单词使得版面不整洁。\n\n### 关键差异点举例\n*   **Segment 27 (昵称):**\n    *   原文: 「ファッキンセカンド」\n    *   A: 「他妈的二年级」 (正确，理解了这是骂人的话)\n    *   B: 「法金·塞肯德」 (错误，当成了人名)\n*   **Segment 53 (术语):**\n    *   原文: ランニングバック...\n    *   A: 跑卫 (标准中文术语)\n    *   B: running back (未翻译)\n*   **Segment 95 (语意):**\n    *   原文: 天然人誑し\n    *   A: 忽悠天然呆 (意译，虽然稍微偏离原意“天生的诱惑者”，但在语境中通顺)\n    *   B: 天然呆骗局 (不知所云)\n\n### 最终判决\n\nA翻译在准确性、流畅度、术语本地化以及角色语气把握上全面优于B。B翻译不仅保留了未翻译的英文术语，还出现了将侮辱性绰号误译为人名的严重错误，显示出对语境缺乏理解。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 4,\n      \"notes\": \"A理解了语境和昵称（如'他妈的二年级'）。B将侮辱性绰号错译为人名（'法金·塞肯德'），且存在多处直译错误。两者都在Segment 65出现了性别误判。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A读起来像自然的小说文本。B充满了生硬的翻译腔和倒装句。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A很好地还原了蛭魔粗鲁的口吻和轻小说的叙述风格。B的语气平淡且怪异（如'咯咯咯'）。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 3,\n      \"notes\": \"A使用了标准的中文美式足球术语（跑卫、线锋）。B保留了英文单词，且将Line误译为'线'。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A的逻辑连贯。B由于术语未翻译和句式生硬，阅读体验较差。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A格式标准。B夹杂英文，影响观感。\"\n    }\n  },\n  \"key_differences\": [\n    \"B将'Fucking Second'（该死的二年级）误译为人名'法金·塞肯德'，这是致命错误。\",\n    \"A将美式足球术语（Running Back等）翻译为中文，B保留英文。\",\n    \"A的对话更符合角色性格（如蛭魔的粗口），B则过于书面或直译。\",\n    \"B将'Line'（线锋）直译为'线'，令人费解。\"\n  ],\n  \"final_summary\": \"翻译A在各个方面都远胜于翻译B。A不仅正确翻译了专业术语，还准确捕捉了角色的性格色彩（特别是蛭魔的说话方式），并将原文的侮辱性昵称正确意译，而非像B那样荒谬地音译为人名。B的翻译显得生硬、术语未本地化，且存在严重的理解错误。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7867,
+          "completion_tokens": 5374,
+          "total_tokens": 13241
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 4,
+        "notes": "A理解了语境和昵称（如'他妈的二年级'）。B将侮辱性绰号错译为人名（'法金·塞肯德'），且存在多处直译错误。两者都在Segment 65出现了性别误判。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 5,
+        "notes": "A读起来像自然的小说文本。B充满了生硬的翻译腔和倒装句。"
+      },
+      "style": {
+        "A": 9,
+        "B": 5,
+        "notes": "A很好地还原了蛭魔粗鲁的口吻和轻小说的叙述风格。B的语气平淡且怪异（如'咯咯咯'）。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 3,
+        "notes": "A使用了标准的中文美式足球术语（跑卫、线锋）。B保留了英文单词，且将Line误译为'线'。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 5,
+        "notes": "A的逻辑连贯。B由于术语未翻译和句式生硬，阅读体验较差。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A格式标准。B夹杂英文，影响观感。"
+      }
+    },
+    "key_differences": [
+      "B将'Fucking Second'（该死的二年级）误译为人名'法金·塞肯德'，这是致命错误。",
+      "A将美式足球术语（Running Back等）翻译为中文，B保留英文。",
+      "A的对话更符合角色性格（如蛭魔的粗口），B则过于书面或直译。",
+      "B将'Line'（线锋）直译为'线'，令人费解。"
+    ],
+    "final_summary": "翻译A在各个方面都远胜于翻译B。A不仅正确翻译了专业术语，还准确捕捉了角色的性格色彩（特别是蛭魔的说话方式），并将原文的侮辱性昵称正确意译，而非像B那样荒谬地音译为人名。B的翻译显得生硬、术语未本地化，且存在严重的理解错误。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

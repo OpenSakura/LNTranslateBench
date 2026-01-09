@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:31:54.145950",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "c2a76b8ab0ffd188c761f06b49c6f0e3ccbe5559234c1b93035e5e8bcefb1e86",
+    "B": "8ff8a8df5e2b17987ae0cd8e76f88c62ff9c317b5b5074c82d8a5197b1964e59"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:33:08.887398",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109003154857518617CJz37qJa",
+      "judge_response": {
+        "id": "chatcmpl-20260109003154857518617CJz37qJa",
+        "object": "chat.completion",
+        "created": 1767889988,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的对照文本进行的详细评测：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A**：存在明显的误译。最严重的是在段落 42 和 46 中，将“センターポリス”（Center Polis，意为中心城/中心都市）误译为“中央警察”（Central Police）。结合上下文（扩建计划、企业入驻、住宅需求），“警察”完全不符合逻辑，这是一个严重的理解错误。此外，段落 79 中省略了原文关于“意识形态”（イデオロギー）的描述，简化为“脑子僵化”。\n*   **翻译 B**：整体准确度较高。正确理解了“Center Polis”为“中心城”。在段落 79 中完整保留了“意识形态僵化”的含义。段落 6 中对长句的结构解析也比 A 更清晰（A 的“皇帝和侍从们陪着”容易产生歧义，原文是柳井陪同皇帝）。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 A**：部分句子读起来略显生硬，语序偏向日式直译。例如段落 4 的“吧？为了配合……”，起始助词处理得不自然。\n*   **翻译 B**：对话部分非常自然，符合中文口语习惯（如段落 5 的“是吧？”）。叙述部分的语流也更顺畅。不过，段落 15 的叙述语气（“人家”、“吓人”、“变天”）略显过于口语化/江湖气，不太符合严肃轻小说的旁白风格，但整体可读性强于 A。\n\n**3. 术语与名称 (Terminology/Names)**\n*   **翻译 A**：将“ヴィルヘルミーナ”（Wilhelmina）译为“维尔赫米尔娜”，读音略显拗口且不符合惯例。\n*   **翻译 B**：译为“维尔赫尔米娜”，符合标准音译。\n*   **共同点**：两者都将“ピヴォワーヌ”（Pivoine，意为牡丹）译为“匹柏尔斯”（Pipals），这看起来像是一个共同的错误来源或特定的机器翻译幻觉，因为发音相差较远。\n*   **胜出者**：B 在“Center Polis”和“Wilhelmina”的处理上胜出。\n\n**4. 格式与标点 (Formatting/Punctuation)**\n*   **翻译 A**：格式非常统一。始终使用直角引号「」，数字处理也保持一致（多用汉字数字）。\n*   **翻译 B**：格式极其混乱。引号在双引号“ ”、单引号‘ ’和直角引号「 」之间随机切换（如段落 4 用双引号，段落 9 用单引号，段落 16 用直角引号）。时间格式也不统一（“10时00分” vs “10点43分”）。此外，段落 18 中出现了繁体字“爾”，显示校对不严。\n\n**5. 风格 (Style)**\n*   **翻译 A**：风格平稳，偏向书面语，虽然有时略显呆板，但符合一般轻小说翻译的规范。\n*   **翻译 B**：风格活泼，但有时用力过猛（如段落 15）。不过在对话描写上，B 更能体现人物的情绪和语气。\n\n### 总结判决\n\n尽管 **翻译 B** 在格式规范性上表现糟糕（标点混乱、繁简混杂），但作为翻译的核心——**对原文意思的理解和表达**——它明显优于 A。翻译 A 将“城市扩建”误译为“警察扩建”，属于严重的语境理解错误，直接影响了剧情逻辑。因此，在修正格式错误后，B 是更有用的译文。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.8,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A将'Center Polis'(中心城)误译为'中央警察'，严重失分；B理解准确。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B的对话更自然，A略显生硬。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A风格统一；B叙述部分有时过于口语化（如'人家'、'变天'）。\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B使用了更标准的音译（维尔赫尔米娜）且正确处理了片假名术语。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B的句子结构逻辑更清晰。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 4,\n      \"notes\": \"B的标点符号极其混乱（混用各种引号），且夹杂繁体字。\"\n    }\n  },\n  \"key_differences\": [\n    \"关键术语：原文'センターポリス'(Center Polis)在A中误译为'中央警察'，B正确译为'中心城'。\",\n    \"标点符号：A统一使用「」，B混乱混用“”、‘’和「」。\",\n    \"细节准确度：B保留了原文中关于'意识形态'的描述，A进行了删减。\",\n    \"人名音译：B的'维尔赫尔米娜'比A的'维尔赫米尔娜'更符合惯例。\"\n  ],\n  \"final_summary\": \"翻译B在理解原文和中文表达的自然度上明显优于翻译A。A存在严重的术语误译（将城市规划背景下的Polis译为Police），导致逻辑不通。尽管B在标点符号的使用上非常不规范且不统一（这是其主要扣分点），但从翻译的准确性和可读性来看，B是更好的译本。建议采用B的文本但需进行彻底的标点和格式校对。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7728,
+          "completion_tokens": 6434,
+          "total_tokens": 14162
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.8,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A将'Center Polis'(中心城)误译为'中央警察'，严重失分；B理解准确。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话更自然，A略显生硬。"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A风格统一；B叙述部分有时过于口语化（如'人家'、'变天'）。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "B使用了更标准的音译（维尔赫尔米娜）且正确处理了片假名术语。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的句子结构逻辑更清晰。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B的标点符号极其混乱（混用各种引号），且夹杂繁体字。"
+      }
+    },
+    "key_differences": [
+      "关键术语：原文'センターポリス'(Center Polis)在A中误译为'中央警察'，B正确译为'中心城'。",
+      "标点符号：A统一使用「」，B混乱混用“”、‘’和「」。",
+      "细节准确度：B保留了原文中关于'意识形态'的描述，A进行了删减。",
+      "人名音译：B的'维尔赫尔米娜'比A的'维尔赫米尔娜'更符合惯例。"
+    ],
+    "final_summary": "翻译B在理解原文和中文表达的自然度上明显优于翻译A。A存在严重的术语误译（将城市规划背景下的Polis译为Police），导致逻辑不通。尽管B在标点符号的使用上非常不规范且不统一（这是其主要扣分点），但从翻译的准确性和可读性来看，B是更好的译本。建议采用B的文本但需进行彻底的标点和格式校对。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

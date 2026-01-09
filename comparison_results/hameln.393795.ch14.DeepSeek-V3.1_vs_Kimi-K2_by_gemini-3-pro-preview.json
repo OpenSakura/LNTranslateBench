@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:28:51.620791",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.Kimi-K2.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "7e14ca7c6aafe17765938371c5c4257b2d704f82cefab466035aea166da6cc1a",
+    "B": "f51a17f3a68d8b8243ed03b450e8370693d6009e668b2f9ebea1f160b1d92648"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:29:56.890853",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002852385050144Lw0jiMPi",
+      "judge_response": {
+        "id": "chatcmpl-20260109002852385050144Lw0jiMPi",
+        "object": "chat.completion",
+        "created": 1767889796,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于所提供文本的详细评判：\n\n### 详细分析\n\n**1. 准确性与完整性**\n*   **Translation A** 在意思传达上非常准确，没有遗漏。\n*   **Translation B** 存在重大失误。在 **段落 54** 中，B 的文本显示为 `@@@LUA_PLACEHOLDER@@@`，这意味着该段落完全缺失或生成错误。此外，在 **段落 80** 中，原文仅提到“口吐白沫”（泡を吹いた），B 增加了“昏了过去”，属于过度译意。\n*   **术语准确性**：原文背景为“公爵领”，统治者为“大公”。**段落 25** 中原文为“公都”，A 译为“公都”（正确），B 译为“王都”（错误，暗示是王国）。\n\n**2. 风格与语气**\n*   **Translation A** 采用了非常口语化、接地气甚至带有江湖气的风格（如“撑场子”、“老天爷给脸”、“那玩意儿”）。这种风格赋予了角色鲜明的个性（可能暗示主角前世是现代人或性格豪爽），读起来非常流畅生动，但在某些应当严肃的战略描述（如“天时地利”）中使用俚语可能略显轻浮。\n*   **Translation B** 采用了更标准的轻小说/奇幻小说翻译风格，用词较为正式（如“最为重要的资源”、“天时”、“地利”）。这种风格通常更符合“公主”这一身份的刻板印象。然而，其行文有时略显生硬（如“轻松产生一小时误差”）。\n\n**3. 流畅性与可读性**\n*   **Translation A** 的中文表达非常自然，节奏感强，特别是在后半部分描述残酷场景时（段落 45-50），动词的使用非常有力度。\n*   **Translation B** 整体通顺，但部分句子结构受日文原文影响较重（翻译腔），例如段落 62 “串刺在长枪上”，原文仅为“串に刺して”（串起来/穿刺），B 补充了“长枪”，虽合逻辑但略显累赘。\n\n**4. 格式与标点**\n*   **Translation A** 使用了标准的中文标点符号（双引号 “”）。\n*   **Translation B** 保留了日式直角引号（「」），这在中文出版物中通常是不规范的，但在网络汉化中常见。\n\n### 最终判决\n\n**Translation A** 胜出。尽管 A 的语气选择（过于口语化）可能因读者口味而异，但它在完整性（没有缺失段落）、术语准确性（公都 vs 王都）和文本流畅度上都优于 B。B 的致命伤在于段落 54 的缺失以及术语错误。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B在段落54出现占位符错误（缺失文本），且在段落25将'公都'误译为'王都'，段落80过度翻译。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A读起来非常地道流畅；B略显生硬，带有翻译腔。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"A风格鲜明但略显随意（使用俚语）；B风格稳重但略显沉闷。取决于对角色性格的理解，两者各有千秋，但A的一致性更好。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"A正确使用了'公都'；B错误使用了'王都'。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"B的缺失段落破坏了连贯性。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"A使用标准中文标点；B使用日式引号。\"\n    }\n  },\n  \"key_differences\": [\n    \"B在段落54有严重的文本缺失错误。\",\n    \"A将'公都'正确译为'公都'，B误译为'王都'。\",\n    \"A的语气非常口语化（如'老天爷给脸'），B偏向书面语（如'天时'）。\",\n    \"A使用中文引号，B使用日式引号。\"\n  ],\n  \"final_summary\": \"翻译A在整体质量上明显优于翻译B。A不仅准确还原了特定的名词术语（如'公都'），而且行文流畅，生动地传达了原文的残酷与冷峻感。翻译B存在严重的质量控制问题（段落54缺失），且有术语错误（王都）和过度意译（昏了过去）。尽管A的某些口语化表达（如将'天时地利'译为俚语）可能稍显激进，但相比B的客观错误，A是更好的选择。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7964,
+          "completion_tokens": 5806,
+          "total_tokens": 13770
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "B在段落54出现占位符错误（缺失文本），且在段落25将'公都'误译为'王都'，段落80过度翻译。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A读起来非常地道流畅；B略显生硬，带有翻译腔。"
+      },
+      "style": {
+        "A": 8,
+        "B": 8,
+        "notes": "A风格鲜明但略显随意（使用俚语）；B风格稳重但略显沉闷。取决于对角色性格的理解，两者各有千秋，但A的一致性更好。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 8,
+        "notes": "A正确使用了'公都'；B错误使用了'王都'。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "B的缺失段落破坏了连贯性。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 8,
+        "notes": "A使用标准中文标点；B使用日式引号。"
+      }
+    },
+    "key_differences": [
+      "B在段落54有严重的文本缺失错误。",
+      "A将'公都'正确译为'公都'，B误译为'王都'。",
+      "A的语气非常口语化（如'老天爷给脸'），B偏向书面语（如'天时'）。",
+      "A使用中文引号，B使用日式引号。"
+    ],
+    "final_summary": "翻译A在整体质量上明显优于翻译B。A不仅准确还原了特定的名词术语（如'公都'），而且行文流畅，生动地传达了原文的残酷与冷峻感。翻译B存在严重的质量控制问题（段落54缺失），且有术语错误（王都）和过度意译（昏了过去）。尽管A的某些口语化表达（如将'天时地利'译为俚语）可能稍显激进，但相比B的客观错误，A是更好的选择。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

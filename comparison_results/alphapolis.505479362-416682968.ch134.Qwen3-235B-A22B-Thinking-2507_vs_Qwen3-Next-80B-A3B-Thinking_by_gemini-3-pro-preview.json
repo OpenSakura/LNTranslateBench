@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:24:18.959799",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "ff5d14cc78cacb0cfe9ce19bdb4b0d3544bb94947cd1efdaa2e7f5a313c6292b",
+    "B": "5258be2c9cef42b518a4915805f7a2187828570b3e10649a008607313e97e3ed"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:25:41.801959",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260109002422223326918fMSLMU0A",
+      "judge_response": {
+        "id": "chatcmpl-20260109002422223326918fMSLMU0A",
+        "object": "chat.completion",
+        "created": 1767889541,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性与意思保留**\n*   **Segment 1 (カミングアウト - Coming Out):** 原文语境是主角向女性朋友揭露自己的真实实力和秘密。\n    *   **A** 译为“坦白”，非常准确且符合语境。\n    *   **B** 译为“出柜”。虽然原文确实是借用词 *Coming Out*，但在中文语境中，“出柜”几乎专指LGBTQ性取向公开。在这里使用会造成误解或显得过于网络俚语化，不符合轻小说的一般叙述风格。\n*   **Segment 9 (アイテムボックス - Item Box):**\n    *   **A** 译为“道具箱”，这是游戏/异世界题材的标准术语。\n    *   **B** 译为“物品框”。“框”通常指 Frame/Border，用来指代 Box (箱/盒) 比较奇怪。\n*   **Segment 25 (ボエルが構えもしないでうるさいからって):** 意思是“因为波耶尔连架势都不摆，还在那里吵吵闹闹/抱怨”。\n    *   **A** “波耶尔连姿势都不摆还吵个不停”，理解正确。\n    *   **B** “波耶尔连架都没摆就说吵死了”。B将“うるさい”理解为波耶尔说的话（“说吵死了”），这是误译。原文是叙述者认为波耶尔很吵。\n*   **Segment 60 (何も言えなかった):** 主语省略，指在场的人都说不出话。\n    *   **A** 补足主语为“我”（“我就说不出话了”）。考虑到叙述视角通常是第三人称（尽管紧贴主角），用“我”略显突兀，但情感通顺。\n    *   **B** 译为“没人能说什么”，更符合第三人称全知/旁观视角。\n\n**2. 流畅性与风格**\n*   **对话自然度:**\n    *   **A** 的对话更符合中文口语习惯。例如 Seg 20 “是真家伙？！”，Seg 61 哭声用“呜……”。\n    *   **B** 有时略显生硬或选词奇怪。例如 Seg 20 “是真剑啊！？”，Seg 61 哭声用“吸溜”（这通常是吃面或流鼻涕的声音，用在感人的哭泣场景不太合适）。\n*   **语气:**\n    *   原文主角说话带有“～”符号，语气轻挑、撒娇。两版翻译都保留了波浪号，还原度都不错。\n    *   **A** 在 Seg 79 结尾使用了“出柜闹大了”，这里虽然与 Seg 1 的“坦白”不一致，但在总结性吐槽中使用网络用语尚可接受。\n\n**3. 术语与一致性**\n*   **A** 在游戏术语（道具箱）和一般用语（坦白）的选择上更老练，符合轻小说读者的阅读习惯。\n*   **B** 的“物品框”和“出柜”是明显的减分项。\n\n### 最终判决\n\n**A** 胜出。A版翻译在准确性（特别是避免了B在Seg 25的误译）、术语标准化（道具箱 vs 物品框）以及语境本土化（坦白 vs 出柜）方面表现更好。B版虽然整体通顺，但在关键词的选择上容易产生歧义，且存在对原文句法结构的误解。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"B在第25段存在误译（将形容词误判为台词）；B在第1段对'Coming out'的处理过于直译俚语，不合语境。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A的对话更自然（如'真家伙' vs '真剑'）。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A对哭声的处理（呜）比B（吸溜）更得体。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 6,\n      \"notes\": \"A使用了标准的'道具箱'；B使用了奇怪的'物品框'。A将'Coming out'译为'坦白'更准确，B译为'出柜'有歧义。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A整体连贯，但在第60段突然使用第一人称'我'略有瑕疵，但整体优于B。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者格式均良好。\"\n    }\n  },\n  \"key_differences\": [\n    \"术语选择：A使用'坦白'和'道具箱'，B使用'出柜'和'物品框'。\",\n    \"误译：B在第25段误解了句法结构，将'吵闹'这一状态误译为波耶尔的台词。\",\n    \"拟声词：A处理哭声更自然，B使用了略带喜剧效果的'吸溜'。\"\n  ],\n  \"final_summary\": \"翻译A在整体质量上明显优于翻译B。A准确理解了原文的语境，将'Coming out'正确译为'坦白'，避免了B版'出柜'可能带来的性取向误解。此外，A使用了标准的轻小说/游戏术语（如'道具箱'），而B的'物品框'显得生造。最重要的是，B在第25段存在明显的句意理解错误。A的对话描写也更具代入感和自然感。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6458,
+          "completion_tokens": 4974,
+          "total_tokens": 11432
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "B在第25段存在误译（将形容词误判为台词）；B在第1段对'Coming out'的处理过于直译俚语，不合语境。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的对话更自然（如'真家伙' vs '真剑'）。"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A对哭声的处理（呜）比B（吸溜）更得体。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 6,
+        "notes": "A使用了标准的'道具箱'；B使用了奇怪的'物品框'。A将'Coming out'译为'坦白'更准确，B译为'出柜'有歧义。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体连贯，但在第60段突然使用第一人称'我'略有瑕疵，但整体优于B。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式均良好。"
+      }
+    },
+    "key_differences": [
+      "术语选择：A使用'坦白'和'道具箱'，B使用'出柜'和'物品框'。",
+      "误译：B在第25段误解了句法结构，将'吵闹'这一状态误译为波耶尔的台词。",
+      "拟声词：A处理哭声更自然，B使用了略带喜剧效果的'吸溜'。"
+    ],
+    "final_summary": "翻译A在整体质量上明显优于翻译B。A准确理解了原文的语境，将'Coming out'正确译为'坦白'，避免了B版'出柜'可能带来的性取向误解。此外，A使用了标准的轻小说/游戏术语（如'道具箱'），而B的'物品框'显得生造。最重要的是，B在第25段存在明显的句意理解错误。A的对话描写也更具代入感和自然感。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

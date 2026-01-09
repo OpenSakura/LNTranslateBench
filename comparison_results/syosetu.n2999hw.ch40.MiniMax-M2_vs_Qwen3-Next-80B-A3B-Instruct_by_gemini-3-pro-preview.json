@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:41:54.392568",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "d45137f26ab9c3351921b80a2bbf3cddf2c07ec4bd261bcd05aa4d99c0f1946f",
+    "B": "7f761b910590839b0386d427c8d91a98242d2f8ddf5404a2a89c3a40aaec4200"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:42:38.054430",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026010900415544869290wlxLhtBC",
+      "judge_response": {
+        "id": "chatcmpl-2026010900415544869290wlxLhtBC",
+        "object": "chat.completion",
+        "created": 1767890557,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性与完整性 (Accuracy & Completeness)**\n*   **翻译A**：整体准确理解了原文的意思。能够正确翻译大部分剧情和对话。\n*   **翻译B**：存在严重问题。\n    *   **未翻译原文**：B经常直接保留日文片假名，例如“プレゲトーン”（Seg 9, 13, 15, 33等）、“ラルヴァナ”（Seg 98）。这对中文读者来说是完全不可读的。\n    *   **乱码/幻觉**：在Seg 92中，B输出了“вида？”，这是俄语字符，属于严重的机器翻译故障。\n    *   **错译**：Seg 59中，原文是白银盯着恩（Antagonist），B翻译成“瞪着我们”，搞错了对象。\n\n**2. 术语与游戏机制 (Terminology & Mechanics)**\n*   **翻译A**：\n    *   *Phase* -> “阶段”。这是卡牌游戏（如游戏王）中的标准术语。\n    *   *Deck* -> “牌组”。标准翻译。\n    *   *Cost* -> “成本/消耗”。\n*   **翻译B**：\n    *   *Phase* -> “相位”。这是物理学或科幻术语，用在卡牌游戏中非常违和。\n    *   *Deck* -> “deck”。直接保留英文，未翻译。\n    *   *MP1* -> “MP1消耗”。语序生硬，像是逐字对译。\n\n**3. 名称一致性 (Consistency)**\n*   **翻译A**：存在明显的不一致问题，这是A最大的扣分点。\n    *   *Shirogane*：先是“白银”（Seg 49），后来变成了“白金”（Seg 65）。\n    *   *Phlegethon*：先是“普雷格通”（Seg 8），变成“普雷格顿”（Seg 9），又变成“普莱盖顿”（Seg 33）。\n*   **翻译B**：名称完全混乱且未翻译。\n    *   保留日文（プレゲトーン）。\n    *   保留英文（Michael -> 迈克尔，Seg 87）。\n    *   保留日文敬语（太阳くん，Seg 100）。\n\n**4. 流畅性与风格 (Fluency & Style)**\n*   **翻译A**：读起来像轻小说。对话自然，语气符合角色性格（例如恩的戏谑语气）。虽然Seg 22出现了一个奇怪的“creepy 地”（中英夹杂），但整体文笔通顺。\n*   **翻译B**：读起来像劣质机翻。语序生硬（如Seg 19“用手牌中的热铁屑用魔炎斧破坏”），缺乏润色。\n\n**5. 格式与标点 (Formatting)**\n*   **翻译A**：使用了中文引号，标点规范。\n*   **翻译B**：标点混乱，有时漏掉引号，有时保留日文标点。\n\n### 结论\n**翻译A** 尽管在人名翻译一致性上有瑕疵（白银/白金，怪兽名多变），但它是一篇可读的中文翻译，使用了正确的游戏术语。\n**翻译B** 是不可接受的。它保留了大量日文原文、英文单词，甚至出现了俄文乱码，且游戏术语翻译错误（相位），基本属于未完成的机翻草稿。\n\n***\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 2,\n      \"notes\": \"B保留了大量日文片假名未翻译，并在Seg 92出现了俄语乱码。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 4,\n      \"notes\": \"A的文笔流畅符合轻小说风格；B语序生硬，像未润色的机翻。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 3,\n      \"notes\": \"A正确使用了卡牌游戏术语（阶段、牌组）；B使用了物理术语（相位）并保留英文（deck）。\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 1,\n      \"notes\": \"A存在严重的前后不一致（白银/白金，普雷格通/普莱盖顿）；但B完全未翻译术语，得分为最低。\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 3,\n      \"notes\": \"B的未翻译部分导致阅读完全中断。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 4,\n      \"notes\": \"B混用了日文敬语后缀（くん）和英文单词。\"\n    }\n  },\n  \"key_differences\": [\n    \"B在文中大量保留日文原文（如プレゲトーン）和英文单词（deck），甚至出现俄文乱码，导致无法阅读。\",\n    \"A正确翻译了游戏术语（Phase=阶段），而B翻译为“相位”（物理学术语）。\",\n    \"A的译名在后半段出现不一致（白银变白金），但相比B的完全未翻译，A仍是唯一可用的版本。\"\n  ],\n  \"final_summary\": \"翻译A是明显的胜者。尽管A在人名和怪兽名的一致性上需要校对（如白银/白金的混用），但它提供了流畅、准确且符合语境的翻译。相比之下，翻译B质量极差，不仅将“Phase”错译为“相位”，还保留了大量未翻译的日文片假名、英文单词，甚至在第92段出现了俄语字符幻觉，属于完全不可用的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8918,
+          "completion_tokens": 3389,
+          "total_tokens": 12307
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 2,
+        "notes": "B保留了大量日文片假名未翻译，并在Seg 92出现了俄语乱码。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 4,
+        "notes": "A的文笔流畅符合轻小说风格；B语序生硬，像未润色的机翻。"
+      },
+      "style": {
+        "A": 8,
+        "B": 3,
+        "notes": "A正确使用了卡牌游戏术语（阶段、牌组）；B使用了物理术语（相位）并保留英文（deck）。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 1,
+        "notes": "A存在严重的前后不一致（白银/白金，普雷格通/普莱盖顿）；但B完全未翻译术语，得分为最低。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 3,
+        "notes": "B的未翻译部分导致阅读完全中断。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 4,
+        "notes": "B混用了日文敬语后缀（くん）和英文单词。"
+      }
+    },
+    "key_differences": [
+      "B在文中大量保留日文原文（如プレゲトーン）和英文单词（deck），甚至出现俄文乱码，导致无法阅读。",
+      "A正确翻译了游戏术语（Phase=阶段），而B翻译为“相位”（物理学术语）。",
+      "A的译名在后半段出现不一致（白银变白金），但相比B的完全未翻译，A仍是唯一可用的版本。"
+    ],
+    "final_summary": "翻译A是明显的胜者。尽管A在人名和怪兽名的一致性上需要校对（如白银/白金的混用），但它提供了流畅、准确且符合语境的翻译。相比之下，翻译B质量极差，不仅将“Phase”错译为“相位”，还保留了大量未翻译的日文片假名、英文单词，甚至在第92段出现了俄语字符幻觉，属于完全不可用的翻译。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

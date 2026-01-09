@@ -1,0 +1,2309 @@
+{
+  "titleJp": "エルフさんの魔法料理店",
+  "titleZh": "精灵小姐的魔法料理店",
+  "authors": [
+    {
+      "name": "夜塊織夢"
+    }
+  ],
+  "type": "连载中",
+  "attentions": [
+    "R15",
+    "残酷描写"
+  ],
+  "keywords": [
+    "異世界転生",
+    "小さいエルフ　健康",
+    "ほのぼの　食いしん坊",
+    "スローライフ　日常",
+    "病魔退散　精霊の子",
+    "甘えん坊　泣き虫",
+    "妖精さん　友だち",
+    "ＴＳ",
+    "ESN大賞３",
+    "書籍化"
+  ],
+  "points": 44730,
+  "totalCharacters": 1539381,
+  "introductionJp": "【コミカライズされました！小夏ゆーた先生の描く、キュートなメルちゃんを是非ご覧ください】 森川樹生は生来の虚弱体質で、幼い頃から入退院を繰り返してきた。 そのうえ家族の手厚いケアも虚しく、高校一年生（１６歳）という若さで死を迎えてしまう。 無念のうちに生涯を終えた樹生が目を覚ますと、そこは魔法を使えるファンタジーな世界だった。 しかも樹生の身体は、推定年齢４歳のエルフ女児に変わっていた。 言葉の通じない異世界で、親も居なければ右も左も分からない。 当初は戸惑うばかりの樹生だったが、今世では健康を約束してくれる素晴らしいスキルを授かっていた。 頑張って楽しく生きなければ、前世の自分に申し訳が立たない。 転生したメジエール村でメルと名付けられた樹生は、酒場を経営する夫婦のもとに引き取られ、元気いっぱい、お腹いっぱい、今日も美味しいご飯を頂くのだった。 タイトルを変更しました。 （健やかエルフさん⇒エルフさんの魔法料理店） たいへん申し訳ありませんが、『残酷な描写あり』にチェックを入れさせて頂きました。 敢えて残酷なシーンを書く予定はありません。 それでも残酷と判断される可能性を考慮しての、保険です。 誤字報告をして下さる方々へ感謝。とても助かっています。 皆さまの感想やレビューをお待ちしています。 ※あニキ様より、メルちゃんの素敵なイラストを頂きました。 【メルの掃除屋さん】に、こっそりと置いてあります。 サブタイに☆をつけておきました。 カクヨムにも、掲載を始めました。 本編、完結しました。 読者の皆さま、これまでメルをおうえんしてくださり、ありがとうございます。",
+  "introductionZh": "【漫画化决定。在竹书房，精灵小姐的魔法料理店要出漫画了。敬请期待……】 森川树生天生体弱多病，自幼就反复住院出院。 但家人的悉心照料也徒劳无功，他年仅十六岁就英年早逝。 树生带着遗憾离开人世，醒来后发现自己身处能使用魔法的奇幻世界。 而且他的身体还变成了四岁左右的精灵女孩。 在语言不通的异世界，他无依无靠，举目无亲。 树生起初不知所措，但今生获得了能保证健康的优秀技能。 他必须努力快乐地活下去，否则对不起前世的自己。 树生在转生的梅吉耶尔村被取名为梅尔，被经营酒馆的夫妇收养，今天也活力十足、吃饱喝足，享用美味的饭菜。 标题变更。 （健康精灵小姐⇒精灵小姐的魔法料理店） 非常抱歉，我勾选了「有残酷描写」。 我不打算刻意描写残酷的场景。 但考虑到可能会被判断为残酷，所以勾选了这个选项，以防万一。 感谢各位指出错字，非常有帮助。 等待各位的感想和评论。 ※あニキ老师画了梅尔的精美插图。 我悄悄放在【梅尔的清洁工】。 标题加上了☆。 也开始在kakuyomu连载。",
+  "glossary": {
+    "エルフ": "精灵",
+    "メル": "梅尔",
+    "クロ": "库罗",
+    "ミケ": "三毛",
+    "タリサ": "塔莉莎",
+    "ティナ": "蒂娜",
+    "ティッキー": "提可",
+    "メジエール村": "梅吉尔村",
+    "ファブリス": "法布利斯",
+    "ウスベルク帝国": "乌斯贝尔克帝国",
+    "フレッド": "弗瑞德",
+    "酔いどれ亭": "醉醺醺亭",
+    "トンキー": "当叽",
+    "アビーは": "艾比丝",
+    "ウィルヘルム": "威尔海姆",
+    "クルト": "库德",
+    "ミッティア": "米提亚",
+    "ウスベルク": "乌斯贝尔克",
+    "ダヴィ": "戴维",
+    "ラヴィニア": "乐薇妮亚"
+  },
+  "toc": [
+    {
+      "titleJp": "第一部",
+      "titleZh": "第一部"
+    },
+    {
+      "titleJp": "旅立ちの日",
+      "titleZh": "启程之日",
+      "chapterId": "1",
+      "createAt": 1589432400
+    },
+    {
+      "titleJp": "精霊の子",
+      "titleZh": "精灵之子",
+      "chapterId": "2",
+      "createAt": 1589436000
+    },
+    {
+      "titleJp": "メルの能力",
+      "titleZh": "梅尔的能力",
+      "chapterId": "3",
+      "createAt": 1589446800
+    },
+    {
+      "titleJp": "色々と学習するメル",
+      "titleZh": "学习各种各样的东西",
+      "chapterId": "4",
+      "createAt": 1589454000
+    },
+    {
+      "titleJp": "お風呂ギライ",
+      "titleZh": "讨厌洗澡",
+      "chapterId": "5",
+      "createAt": 1589461200
+    },
+    {
+      "titleJp": "タブレットPC",
+      "titleZh": "平板电脑",
+      "chapterId": "6",
+      "createAt": 1589500800
+    },
+    {
+      "titleJp": "メルと大きなワンコ",
+      "titleZh": "梅尔和大汪",
+      "chapterId": "7",
+      "createAt": 1589511600
+    },
+    {
+      "titleJp": "タリサ襲来",
+      "titleZh": "塔里萨入侵",
+      "chapterId": "8",
+      "createAt": 1589526000
+    },
+    {
+      "titleJp": "豚飼いの悩み",
+      "titleZh": "养猪人的烦恼",
+      "chapterId": "9",
+      "createAt": 1589598000
+    },
+    {
+      "titleJp": "メルと豚飼い",
+      "titleZh": "梅尔和猪倌",
+      "chapterId": "10",
+      "createAt": 1589673600
+    },
+    {
+      "titleJp": "小さなメルと大きなブタさん",
+      "titleZh": "小梅尔和大猪",
+      "chapterId": "11",
+      "createAt": 1589770800
+    },
+    {
+      "titleJp": "メルの覚悟",
+      "titleZh": "梅尔的觉悟",
+      "chapterId": "12",
+      "createAt": 1589842800
+    },
+    {
+      "titleJp": "☆メルの掃除屋さん",
+      "titleZh": "☆梅尔的清扫店",
+      "chapterId": "13",
+      "createAt": 1589878800
+    },
+    {
+      "titleJp": "マジカル七輪を使う",
+      "titleZh": "使用魔法炭炉",
+      "chapterId": "14",
+      "createAt": 1589904000
+    },
+    {
+      "titleJp": "大人げないアビー",
+      "titleZh": "幼稚的abby",
+      "chapterId": "15",
+      "createAt": 1589929200
+    },
+    {
+      "titleJp": "魔女さまの頼みごと",
+      "titleZh": "魔女的请求",
+      "chapterId": "16",
+      "createAt": 1589990400
+    },
+    {
+      "titleJp": "荷馬車に再挑戦",
+      "titleZh": "再次挑战运货马车",
+      "chapterId": "17",
+      "createAt": 1590015600
+    },
+    {
+      "titleJp": "囚われの妖精さん",
+      "titleZh": "被囚禁的妖精",
+      "chapterId": "18",
+      "createAt": 1590044400
+    },
+    {
+      "titleJp": "運命の出会い",
+      "titleZh": "命运的相遇",
+      "chapterId": "19",
+      "createAt": 1590127200
+    },
+    {
+      "titleJp": "妖精パワーだよ",
+      "titleZh": "妖精的力量。",
+      "chapterId": "20",
+      "createAt": 1590217200
+    },
+    {
+      "titleJp": "秘密の鉱脈",
+      "titleZh": "秘密矿脉",
+      "chapterId": "21",
+      "createAt": 1590307200
+    },
+    {
+      "titleJp": "カレーライスの日",
+      "titleZh": "咖喱饭日",
+      "chapterId": "22",
+      "createAt": 1590400800
+    },
+    {
+      "titleJp": "導かれたハンス",
+      "titleZh": "被引导的汉斯",
+      "chapterId": "23",
+      "createAt": 1590440400
+    },
+    {
+      "titleJp": "初めてのお客さま",
+      "titleZh": "初次见面的客人",
+      "chapterId": "24",
+      "createAt": 1590465600
+    },
+    {
+      "titleJp": "メジエール村の自浄作用",
+      "titleZh": "梅济耶尔村的自净作用",
+      "chapterId": "25",
+      "createAt": 1590526800
+    },
+    {
+      "titleJp": "家族会議が開かれた",
+      "titleZh": "召开了家庭会议",
+      "chapterId": "26",
+      "createAt": 1590555660
+    },
+    {
+      "titleJp": "魔法のコックさん",
+      "titleZh": "魔法厨师",
+      "chapterId": "27",
+      "createAt": 1590613200
+    },
+    {
+      "titleJp": "家族でカレーライス",
+      "titleZh": "全家咖喱饭",
+      "chapterId": "28",
+      "createAt": 1590638400
+    },
+    {
+      "titleJp": "メルの気まぐれ魔法料理",
+      "titleZh": "梅尔反复无常的魔法料理",
+      "chapterId": "29",
+      "createAt": 1590710400
+    },
+    {
+      "titleJp": "妖精猫族の王子さま",
+      "titleZh": "妖精猫族的王子",
+      "chapterId": "30",
+      "createAt": 1590818400
+    },
+    {
+      "titleJp": "プールとアイスとお友だち",
+      "titleZh": "游泳池、冰淇淋和朋友",
+      "chapterId": "31",
+      "createAt": 1590904800
+    },
+    {
+      "titleJp": "暗闇に蠢くやつら",
+      "titleZh": "在黑暗中蠢动的家伙",
+      "chapterId": "32",
+      "createAt": 1591045200
+    },
+    {
+      "titleJp": "テロリスト殲滅作戦",
+      "titleZh": "歼灭恐怖分子行动",
+      "chapterId": "33",
+      "createAt": 1591084800
+    },
+    {
+      "titleJp": "うちの子になったミケ",
+      "titleZh": "成为我家孩子的三家",
+      "chapterId": "34",
+      "createAt": 1591131600
+    },
+    {
+      "titleJp": "父親って奴は…。",
+      "titleZh": "父亲这家伙…。",
+      "chapterId": "35",
+      "createAt": 1591171200
+    },
+    {
+      "titleJp": "メルちゃんのお店",
+      "titleZh": "小梅尔的店",
+      "chapterId": "36",
+      "createAt": 1591221600
+    },
+    {
+      "titleJp": "精霊祭がやって来る",
+      "titleZh": "精灵节来了",
+      "chapterId": "37",
+      "createAt": 1591257600
+    },
+    {
+      "titleJp": "精霊祭が始まった",
+      "titleZh": "精灵节开始了",
+      "chapterId": "38",
+      "createAt": 1591344000
+    },
+    {
+      "titleJp": "過去とのお別れ",
+      "titleZh": "与过去告别",
+      "chapterId": "39",
+      "createAt": 1591441200
+    },
+    {
+      "titleJp": "メルの祈り",
+      "titleZh": "梅尔的祈祷",
+      "chapterId": "40",
+      "createAt": 1591650000
+    },
+    {
+      "titleJp": "森川家の騒動",
+      "titleZh": "森川家的骚动",
+      "chapterId": "41",
+      "createAt": 1591689600
+    },
+    {
+      "titleJp": "メルとトンキー",
+      "titleZh": "麦尔和汤奇",
+      "chapterId": "42",
+      "createAt": 1591740000
+    },
+    {
+      "titleJp": "石焼き芋は、ご馳走です",
+      "titleZh": "烤红薯是很好吃的",
+      "chapterId": "43",
+      "createAt": 1591776000
+    },
+    {
+      "titleJp": "ウスベルク帝国よりの使者",
+      "titleZh": "乌斯堡帝国的使者",
+      "chapterId": "44",
+      "createAt": 1591830000
+    },
+    {
+      "titleJp": "帝国は来ない？",
+      "titleZh": "帝国不会到来?",
+      "chapterId": "45",
+      "createAt": 1591955820
+    },
+    {
+      "titleJp": "穏やかなエルフ",
+      "titleZh": "温和的精灵",
+      "chapterId": "46",
+      "createAt": 1592046000
+    },
+    {
+      "titleJp": "アーロンの喜び",
+      "titleZh": "艾伦的喜悦",
+      "chapterId": "47",
+      "createAt": 1592258400
+    },
+    {
+      "titleJp": "おもてなしに燃える幼児",
+      "titleZh": "热情好客的幼儿",
+      "chapterId": "48",
+      "createAt": 1592294400
+    },
+    {
+      "titleJp": "甘いお汁粉",
+      "titleZh": "甜的小豆汤",
+      "chapterId": "49",
+      "createAt": 1592344800
+    },
+    {
+      "titleJp": "帝都の窮状",
+      "titleZh": "帝都的窘境",
+      "chapterId": "50",
+      "createAt": 1592427600
+    },
+    {
+      "titleJp": "強制イベント",
+      "titleZh": "强制活动",
+      "chapterId": "51",
+      "createAt": 1592514000
+    },
+    {
+      "titleJp": "メルにできること",
+      "titleZh": "梅尔能做的事",
+      "chapterId": "52",
+      "createAt": 1592722800
+    },
+    {
+      "titleJp": "四歳児には難しい",
+      "titleZh": "对四岁的孩子来说很难",
+      "chapterId": "53",
+      "createAt": 1592859600
+    },
+    {
+      "titleJp": "新しいスキル",
+      "titleZh": "新技能",
+      "chapterId": "54",
+      "createAt": 1592899200
+    },
+    {
+      "titleJp": "アーロン、帝都に戻る",
+      "titleZh": "艾伦回到帝都",
+      "chapterId": "55",
+      "createAt": 1592953200
+    },
+    {
+      "titleJp": "魔女さまの正体",
+      "titleZh": "魔女的真面目",
+      "chapterId": "56",
+      "createAt": 1592985600
+    },
+    {
+      "titleJp": "夢の中に棲む少女",
+      "titleZh": "住在梦里的少女",
+      "chapterId": "57",
+      "createAt": 1593036000
+    },
+    {
+      "titleJp": "フレッドと仲間たち",
+      "titleZh": "弗雷德和他的伙伴们",
+      "chapterId": "58",
+      "createAt": 1593244800
+    },
+    {
+      "titleJp": "帝都へ",
+      "titleZh": "前往帝都",
+      "chapterId": "59",
+      "createAt": 1593493200
+    },
+    {
+      "titleJp": "船上の焼きおにぎり",
+      "titleZh": "船上的烤饭团",
+      "chapterId": "60",
+      "createAt": 1593554520
+    },
+    {
+      "titleJp": "異世界の旅",
+      "titleZh": "异世界之旅",
+      "chapterId": "61",
+      "createAt": 1593590400
+    },
+    {
+      "titleJp": "精霊ってなに…？",
+      "titleZh": "精灵是什么…?",
+      "chapterId": "62",
+      "createAt": 1593641340
+    },
+    {
+      "titleJp": "白銀のオーガ",
+      "titleZh": "白银的橡树",
+      "chapterId": "63",
+      "createAt": 1593925200
+    },
+    {
+      "titleJp": "変装するのです",
+      "titleZh": "伪装。",
+      "chapterId": "64",
+      "createAt": 1594080000
+    },
+    {
+      "titleJp": "帝都の景色",
+      "titleZh": "帝都的景色",
+      "chapterId": "65",
+      "createAt": 1594108800
+    },
+    {
+      "titleJp": "消えた晩餐会",
+      "titleZh": "消失的晚宴",
+      "chapterId": "66",
+      "createAt": 1594155600
+    },
+    {
+      "titleJp": "エーベルヴァイン城にて…",
+      "titleZh": "在艾贝尔维恩城…",
+      "chapterId": "67",
+      "createAt": 1594195260
+    },
+    {
+      "titleJp": "レベリング",
+      "titleZh": "分级",
+      "chapterId": "68",
+      "createAt": 1594242000
+    },
+    {
+      "titleJp": "妖精たちと作戦会議",
+      "titleZh": "与妖精们的作战会议",
+      "chapterId": "69",
+      "createAt": 1594281600
+    },
+    {
+      "titleJp": "精霊召喚",
+      "titleZh": "精灵召唤",
+      "chapterId": "70",
+      "createAt": 1594540800
+    },
+    {
+      "titleJp": "ヤクザになろう",
+      "titleZh": "当流氓吧",
+      "chapterId": "71",
+      "createAt": 1594674000
+    },
+    {
+      "titleJp": "覚醒する女児",
+      "titleZh": "觉醒的女孩",
+      "chapterId": "72",
+      "createAt": 1594760400
+    },
+    {
+      "titleJp": "眠り姫",
+      "titleZh": "睡美人",
+      "chapterId": "73",
+      "createAt": 1594803600
+    },
+    {
+      "titleJp": "これが心霊治療だ",
+      "titleZh": "这就是心灵治疗",
+      "chapterId": "74",
+      "createAt": 1594850400
+    },
+    {
+      "titleJp": "立ち塞がる襲撃者",
+      "titleZh": "拦路的袭击者",
+      "chapterId": "75",
+      "createAt": 1594887420
+    },
+    {
+      "titleJp": "命令するなよ！",
+      "titleZh": "不要命令我!",
+      "chapterId": "76",
+      "createAt": 1595077200
+    },
+    {
+      "titleJp": "迫りくる危機",
+      "titleZh": "迫近的危机",
+      "chapterId": "77",
+      "createAt": 1595232000
+    },
+    {
+      "titleJp": "狂気の死霊魔術師",
+      "titleZh": "疯狂的死灵魔术师",
+      "chapterId": "78",
+      "createAt": 1595279040
+    },
+    {
+      "titleJp": "呪縛からの解放",
+      "titleZh": "从符咒中解放",
+      "chapterId": "79",
+      "createAt": 1595365200
+    },
+    {
+      "titleJp": "とってもブルー",
+      "titleZh": "非常蓝",
+      "chapterId": "80",
+      "createAt": 1595404800
+    },
+    {
+      "titleJp": "メルには難しい",
+      "titleZh": "对梅尔来说很难",
+      "chapterId": "81",
+      "createAt": 1595458800
+    },
+    {
+      "titleJp": "人で溢れた観光名所",
+      "titleZh": "人满为患的旅游胜地",
+      "chapterId": "82",
+      "createAt": 1595502000
+    },
+    {
+      "titleJp": "アーロンの店",
+      "titleZh": "艾伦的店",
+      "chapterId": "83",
+      "createAt": 1595664000
+    },
+    {
+      "titleJp": "腹ペコ幼児",
+      "titleZh": "饥饿的幼儿",
+      "chapterId": "84",
+      "createAt": 1595883600
+    },
+    {
+      "titleJp": "アーロンの失態",
+      "titleZh": "艾伦的失态",
+      "chapterId": "85",
+      "createAt": 1595991600
+    },
+    {
+      "titleJp": "フレッドの依頼",
+      "titleZh": "弗雷德的委托",
+      "chapterId": "86",
+      "createAt": 1596178800
+    },
+    {
+      "titleJp": "ミッティア魔法王国のエージェント",
+      "titleZh": "米提亚魔法王国的代理",
+      "chapterId": "87",
+      "createAt": 1596430800
+    },
+    {
+      "titleJp": "楽しい朝食",
+      "titleZh": "愉快的早餐",
+      "chapterId": "88",
+      "createAt": 1596488400
+    },
+    {
+      "titleJp": "夜間飛行",
+      "titleZh": "夜间飞行",
+      "chapterId": "89",
+      "createAt": 1596528000
+    },
+    {
+      "titleJp": "さよなら、帝都ウルリッヒ",
+      "titleZh": "再见，帝都乌尔里希",
+      "chapterId": "90",
+      "createAt": 1596574800
+    },
+    {
+      "titleJp": "地上の楽園",
+      "titleZh": "人间乐园",
+      "chapterId": "91",
+      "createAt": 1596625200
+    },
+    {
+      "titleJp": "尽くし系のミケ王子",
+      "titleZh": "尽系的三家王子",
+      "chapterId": "92",
+      "createAt": 1596665100
+    },
+    {
+      "titleJp": "二本目が生えた！",
+      "titleZh": "长出第二根了!",
+      "chapterId": "93",
+      "createAt": 1596708000
+    },
+    {
+      "titleJp": "お値段は秘密です",
+      "titleZh": "价钱是秘密",
+      "chapterId": "94",
+      "createAt": 1596855600
+    },
+    {
+      "titleJp": "アップデートです",
+      "titleZh": "更新。",
+      "chapterId": "95",
+      "createAt": 1597096800
+    },
+    {
+      "titleJp": "メルの魔法料理店",
+      "titleZh": "梅尔的魔法餐厅",
+      "chapterId": "96",
+      "createAt": 1597136400
+    },
+    {
+      "titleJp": "モーニングタイムは食べ放題",
+      "titleZh": "早餐时间自助",
+      "chapterId": "97",
+      "createAt": 1597183200
+    },
+    {
+      "titleJp": "精霊樹の守り役",
+      "titleZh": "精灵树的守护者",
+      "chapterId": "98",
+      "createAt": 1597269840
+    },
+    {
+      "titleJp": "ピンクのあいつ",
+      "titleZh": "粉红色的家伙",
+      "chapterId": "99",
+      "createAt": 1597356000
+    },
+    {
+      "titleJp": "崖っぷちの皇帝陛下",
+      "titleZh": "悬崖边上的皇帝陛下",
+      "chapterId": "100",
+      "createAt": 1597701600
+    },
+    {
+      "titleJp": "ちょっと目を離した隙に",
+      "titleZh": "趁我稍微移开视线的间隙",
+      "chapterId": "101",
+      "createAt": 1597737600
+    },
+    {
+      "titleJp": "天衣無縫なちみっ子",
+      "titleZh": "天衣无缝的孩子",
+      "chapterId": "102",
+      "createAt": 1597784400
+    },
+    {
+      "titleJp": "いざっ、帝都へ！",
+      "titleZh": "快去帝都!",
+      "chapterId": "103",
+      "createAt": 1597824120
+    },
+    {
+      "titleJp": "地下迷宮を守れ！",
+      "titleZh": "保护地下迷宫!",
+      "chapterId": "104",
+      "createAt": 1597910400
+    },
+    {
+      "titleJp": "新天地…。",
+      "titleZh": "新天地…。",
+      "chapterId": "105",
+      "createAt": 1598256000
+    },
+    {
+      "titleJp": "地雷を踏んだアーロン",
+      "titleZh": "踩到地雷的艾伦",
+      "chapterId": "106",
+      "createAt": 1598324400
+    },
+    {
+      "titleJp": "初心者ママさん",
+      "titleZh": "新手妈妈",
+      "chapterId": "107",
+      "createAt": 1598389200
+    },
+    {
+      "titleJp": "タリサの思いつき",
+      "titleZh": "塔丽莎的主意",
+      "chapterId": "108",
+      "createAt": 1598482800
+    },
+    {
+      "titleJp": "アーロンに忍び寄る危機",
+      "titleZh": "潜伏在艾伦身边的危机",
+      "chapterId": "109",
+      "createAt": 1598612400
+    },
+    {
+      "titleJp": "女王陛下のミケ王子",
+      "titleZh": "女王陛下的御家王子",
+      "chapterId": "110",
+      "createAt": 1598763600
+    },
+    {
+      "titleJp": "人を呪わば…",
+      "titleZh": "害人害己…",
+      "chapterId": "111",
+      "createAt": 1598904000
+    },
+    {
+      "titleJp": "さよならアーロン！",
+      "titleZh": "再见，艾伦!",
+      "chapterId": "112",
+      "createAt": 1599005100
+    },
+    {
+      "titleJp": "暑い夏は冷製デス…",
+      "titleZh": "炎热的夏天是冷制的…",
+      "chapterId": "113",
+      "createAt": 1599084000
+    },
+    {
+      "titleJp": "子どもパワー",
+      "titleZh": "儿童力量",
+      "chapterId": "114",
+      "createAt": 1599127200
+    },
+    {
+      "titleJp": "ラヴィニア姫と幼児ーズ",
+      "titleZh": "拉维尼亚公主与婴儿",
+      "chapterId": "115",
+      "createAt": 1599390000
+    },
+    {
+      "titleJp": "ツルツル滑る肉料理",
+      "titleZh": "滑溜的肉菜",
+      "chapterId": "116",
+      "createAt": 1599537780
+    },
+    {
+      "titleJp": "生い立つところが難しい",
+      "titleZh": "成长经历很难",
+      "chapterId": "117",
+      "createAt": 1599602940
+    },
+    {
+      "titleJp": "走れハンテン",
+      "titleZh": "奔跑的反转",
+      "chapterId": "118",
+      "createAt": 1599652800
+    },
+    {
+      "titleJp": "幼児ーズの入団式",
+      "titleZh": "幼儿的入团仪式",
+      "chapterId": "119",
+      "createAt": 1599710400
+    },
+    {
+      "titleJp": "ラヴィニア姫が壊れた",
+      "titleZh": "拉维尼亚公主坏了",
+      "chapterId": "120",
+      "createAt": 1599818400
+    },
+    {
+      "titleJp": "ミッティア魔法王国の精鋭たち",
+      "titleZh": "米提亚魔法王国的精锐",
+      "chapterId": "121",
+      "createAt": 1600117200
+    },
+    {
+      "titleJp": "新しいネグラ",
+      "titleZh": "新夜宿地",
+      "chapterId": "122",
+      "createAt": 1600156800
+    },
+    {
+      "titleJp": "ラヴィニア姫の努力",
+      "titleZh": "拉维尼亚公主的努力",
+      "chapterId": "123",
+      "createAt": 1600232820
+    },
+    {
+      "titleJp": "妖精たちの好奇心",
+      "titleZh": "妖精们的好奇心",
+      "chapterId": "124",
+      "createAt": 1600297200
+    },
+    {
+      "titleJp": "ラヴィニア姫とタケウマ",
+      "titleZh": "拉维尼亚公主与武马",
+      "chapterId": "125",
+      "createAt": 1600336800
+    },
+    {
+      "titleJp": "怖れを知る者、知らぬ者",
+      "titleZh": "知道恐惧的人和不知道恐惧的人",
+      "chapterId": "126",
+      "createAt": 1600722000
+    },
+    {
+      "titleJp": "襲われた孤児たち",
+      "titleZh": "被袭击的孤儿们",
+      "chapterId": "127",
+      "createAt": 1600772400
+    },
+    {
+      "titleJp": "緊急イベント発生",
+      "titleZh": "发生紧急事件",
+      "chapterId": "128",
+      "createAt": 1600830000
+    },
+    {
+      "titleJp": "招かれざる幼児",
+      "titleZh": "不请自来的幼儿",
+      "chapterId": "129",
+      "createAt": 1600876800
+    },
+    {
+      "titleJp": "躓くと弱いタイプ",
+      "titleZh": "容易受挫的类型",
+      "chapterId": "130",
+      "createAt": 1601172000
+    },
+    {
+      "titleJp": "辱めを受けたエリートたち",
+      "titleZh": "受到羞辱的精英们",
+      "chapterId": "131",
+      "createAt": 1601362800
+    },
+    {
+      "titleJp": "孤児たちとメル",
+      "titleZh": "和孤儿们团聚",
+      "chapterId": "132",
+      "createAt": 1601434800
+    },
+    {
+      "titleJp": "地下迷宮でゴハン",
+      "titleZh": "在地下迷宫吃饭",
+      "chapterId": "133",
+      "createAt": 1601517600
+    },
+    {
+      "titleJp": "哀愁のフレッド",
+      "titleZh": "哀愁的弗雷德",
+      "chapterId": "134",
+      "createAt": 1601683200
+    },
+    {
+      "titleJp": "記憶の欠落",
+      "titleZh": "记忆的缺失",
+      "chapterId": "135",
+      "createAt": 1601964000
+    },
+    {
+      "titleJp": "だらしないよね",
+      "titleZh": "真没出息啊",
+      "chapterId": "136",
+      "createAt": 1602104400
+    },
+    {
+      "titleJp": "ラヴィニア姫と記憶",
+      "titleZh": "拉维尼亚公主与记忆",
+      "chapterId": "137",
+      "createAt": 1602583200
+    },
+    {
+      "titleJp": "ちっぷす",
+      "titleZh": "芯片",
+      "chapterId": "138",
+      "createAt": 1602727200
+    },
+    {
+      "titleJp": "ラヴィニア姫の苦悩",
+      "titleZh": "拉维尼亚公主的苦恼",
+      "chapterId": "139",
+      "createAt": 1603188000
+    },
+    {
+      "titleJp": "感動の再会",
+      "titleZh": "感动的重逢",
+      "chapterId": "140",
+      "createAt": 1603328400
+    },
+    {
+      "titleJp": "内緒の話",
+      "titleZh": "悄悄话",
+      "chapterId": "141",
+      "createAt": 1603771200
+    },
+    {
+      "titleJp": "メルの処世術",
+      "titleZh": "梅尔的处世之道",
+      "chapterId": "142",
+      "createAt": 1603857720
+    },
+    {
+      "titleJp": "ピンポンキャッチ",
+      "titleZh": "乒乓球接球",
+      "chapterId": "143",
+      "createAt": 1603872060
+    },
+    {
+      "titleJp": "今年もやって来た精霊祭",
+      "titleZh": "今年又来了精灵节",
+      "chapterId": "144",
+      "createAt": 1604361600
+    },
+    {
+      "titleJp": "アーロンの友人",
+      "titleZh": "艾伦的朋友",
+      "chapterId": "145",
+      "createAt": 1604977200
+    },
+    {
+      "titleJp": "さよなら赤ちゃん時代",
+      "titleZh": "再见，婴儿时代",
+      "chapterId": "146",
+      "createAt": 1605250800
+    },
+    {
+      "titleJp": "父、帰る",
+      "titleZh": "父亲，回来了",
+      "chapterId": "147",
+      "createAt": 1605747600
+    },
+    {
+      "titleJp": "気になるお年頃",
+      "titleZh": "令人在意的年龄",
+      "chapterId": "148",
+      "createAt": 1606204800
+    },
+    {
+      "titleJp": "学校…",
+      "titleZh": "学校…",
+      "chapterId": "149",
+      "createAt": 1606982400
+    },
+    {
+      "titleJp": "調停者さまは偉かった",
+      "titleZh": "调停者大人很了不起",
+      "chapterId": "150",
+      "createAt": 1607598000
+    },
+    {
+      "titleJp": "行きとぉないわ！",
+      "titleZh": "走吧!",
+      "chapterId": "151",
+      "createAt": 1608181200
+    },
+    {
+      "titleJp": "幸運のネズミさん",
+      "titleZh": "幸运的老鼠",
+      "chapterId": "152",
+      "createAt": 1608779040
+    },
+    {
+      "titleJp": "腐り果てた冒険者たち",
+      "titleZh": "腐朽的冒险者们",
+      "chapterId": "153",
+      "createAt": 1609326000
+    },
+    {
+      "titleJp": "お披露目",
+      "titleZh": "披露",
+      "chapterId": "154",
+      "createAt": 1609995600
+    },
+    {
+      "titleJp": "メルとラヴィニア姫",
+      "titleZh": "梅尔与拉维尼亚公主",
+      "chapterId": "155",
+      "createAt": 1610604000
+    },
+    {
+      "titleJp": "メルは考えた…",
+      "titleZh": "梅尔想…",
+      "chapterId": "156",
+      "createAt": 1611226800
+    },
+    {
+      "titleJp": "ウィルヘルム皇帝陛下の企み",
+      "titleZh": "威廉皇帝的企图",
+      "chapterId": "157",
+      "createAt": 1612220400
+    },
+    {
+      "titleJp": "ラヴィニア姫、覚醒する",
+      "titleZh": "拉维尼亚公主觉醒",
+      "chapterId": "158",
+      "createAt": 1612432800
+    },
+    {
+      "titleJp": "幕間",
+      "titleZh": "幕间休息"
+    },
+    {
+      "titleJp": "マルティン商会",
+      "titleZh": "马丁洋行",
+      "chapterId": "159",
+      "createAt": 1613019600
+    },
+    {
+      "titleJp": "魔法学校を建てよう",
+      "titleZh": "建一所魔法学校",
+      "chapterId": "160",
+      "createAt": 1613617200
+    },
+    {
+      "titleJp": "魔法学校の開校日",
+      "titleZh": "魔法学校的开学日",
+      "chapterId": "161",
+      "createAt": 1614214800
+    },
+    {
+      "titleJp": "見えざる一手",
+      "titleZh": "看不见的一步",
+      "chapterId": "162",
+      "createAt": 1614708000
+    },
+    {
+      "titleJp": "タケウマ先生",
+      "titleZh": "武马老师",
+      "chapterId": "163",
+      "createAt": 1614808800
+    },
+    {
+      "titleJp": "第二部",
+      "titleZh": "第二部"
+    },
+    {
+      "titleJp": "新しい家族",
+      "titleZh": "新家庭",
+      "chapterId": "164",
+      "createAt": 1615410000
+    },
+    {
+      "titleJp": "友だちって…",
+      "titleZh": "所谓朋友…",
+      "chapterId": "165",
+      "createAt": 1615507200
+    },
+    {
+      "titleJp": "舌が足らない",
+      "titleZh": "舌头不够用",
+      "chapterId": "166",
+      "createAt": 1615881600
+    },
+    {
+      "titleJp": "ワル",
+      "titleZh": "瓦尔",
+      "chapterId": "167",
+      "createAt": 1616468400
+    },
+    {
+      "titleJp": "イカサマ",
+      "titleZh": "乌贼",
+      "chapterId": "168",
+      "createAt": 1616540400
+    },
+    {
+      "titleJp": "ありがとうを言おう",
+      "titleZh": "说声谢谢吧",
+      "chapterId": "169",
+      "createAt": 1616626800
+    },
+    {
+      "titleJp": "虐げられた人々",
+      "titleZh": "被欺压的人们",
+      "chapterId": "170",
+      "createAt": 1617145200
+    },
+    {
+      "titleJp": "精霊魔法を学ぼう",
+      "titleZh": "学习精灵魔法",
+      "chapterId": "171",
+      "createAt": 1617231600
+    },
+    {
+      "titleJp": "相容れません",
+      "titleZh": "不相容",
+      "chapterId": "172",
+      "createAt": 1617318000
+    },
+    {
+      "titleJp": "色々と漏れている",
+      "titleZh": "遗漏了很多",
+      "chapterId": "173",
+      "createAt": 1617750000
+    },
+    {
+      "titleJp": "メルに分らせたい大人たち",
+      "titleZh": "想让梅尔明白的大人们",
+      "chapterId": "174",
+      "createAt": 1617858000
+    },
+    {
+      "titleJp": "怒れる女児",
+      "titleZh": "愤怒的女孩",
+      "chapterId": "175",
+      "createAt": 1618300800
+    },
+    {
+      "titleJp": "お仕置だべェー",
+      "titleZh": "这是老一套啊",
+      "chapterId": "176",
+      "createAt": 1618387200
+    },
+    {
+      "titleJp": "勝負になりません",
+      "titleZh": "无法分出胜负。",
+      "chapterId": "177",
+      "createAt": 1618455600
+    },
+    {
+      "titleJp": "和のゴハン",
+      "titleZh": "和式的饭",
+      "chapterId": "178",
+      "createAt": 1618906080
+    },
+    {
+      "titleJp": "漂白された男たち",
+      "titleZh": "被漂白的男人们",
+      "chapterId": "179",
+      "createAt": 1618981200
+    },
+    {
+      "titleJp": "お仕置の副作用",
+      "titleZh": "放任不管的副作用",
+      "chapterId": "180",
+      "createAt": 1619060400
+    },
+    {
+      "titleJp": "暴君メル",
+      "titleZh": "暴君梅尔",
+      "chapterId": "181",
+      "createAt": 1619492820
+    },
+    {
+      "titleJp": "お食事会だよ",
+      "titleZh": "聚餐啦",
+      "chapterId": "182",
+      "createAt": 1619643600
+    },
+    {
+      "titleJp": "お食事会を終えて",
+      "titleZh": "聚餐结束后，",
+      "chapterId": "183",
+      "createAt": 1620115200
+    },
+    {
+      "titleJp": "フレッドのしくじり",
+      "titleZh": "弗雷德的失败",
+      "chapterId": "184",
+      "createAt": 1620270000
+    },
+    {
+      "titleJp": "盗み食いはダメ！",
+      "titleZh": "不能偷吃!",
+      "chapterId": "185",
+      "createAt": 1620691200
+    },
+    {
+      "titleJp": "聖地グラナック",
+      "titleZh": "格拉纳克圣地",
+      "chapterId": "186",
+      "createAt": 1620871200
+    },
+    {
+      "titleJp": "打ちひしがれる斎王",
+      "titleZh": "被打倒的斋王",
+      "chapterId": "187",
+      "createAt": 1621400400
+    },
+    {
+      "titleJp": "斎王の謝罪",
+      "titleZh": "斋王的谢罪",
+      "chapterId": "188",
+      "createAt": 1621494300
+    },
+    {
+      "titleJp": "ミッティア魔法王国の女王",
+      "titleZh": "米提亚魔法王国女王",
+      "chapterId": "189",
+      "createAt": 1621933200
+    },
+    {
+      "titleJp": "聖剣エクスカリボー",
+      "titleZh": "圣剑",
+      "chapterId": "190",
+      "createAt": 1622073600
+    },
+    {
+      "titleJp": "精霊復活祭だよ",
+      "titleZh": "精灵复活节。",
+      "chapterId": "191",
+      "createAt": 1622617680
+    },
+    {
+      "titleJp": "解放された遊民たち",
+      "titleZh": "被解放的游民们",
+      "chapterId": "192",
+      "createAt": 1622703600
+    },
+    {
+      "titleJp": "斎王ドルレアックの我儘",
+      "titleZh": "斋王的任性",
+      "chapterId": "193",
+      "createAt": 1623124800
+    },
+    {
+      "titleJp": "ほくそ笑むクリスタ",
+      "titleZh": "克里斯塔暗自一笑",
+      "chapterId": "194",
+      "createAt": 1623301200
+    },
+    {
+      "titleJp": "未知との遭遇",
+      "titleZh": "与未知的遭遇",
+      "chapterId": "195",
+      "createAt": 1623899400
+    },
+    {
+      "titleJp": "幼児ーズの悩み",
+      "titleZh": "幼儿的烦恼",
+      "chapterId": "196",
+      "createAt": 1624399200
+    },
+    {
+      "titleJp": "幼児ーズのお願い",
+      "titleZh": "幼儿的请求",
+      "chapterId": "197",
+      "createAt": 1624521840
+    },
+    {
+      "titleJp": "泳げなくても大丈夫",
+      "titleZh": "不会游泳也没关系",
+      "chapterId": "198",
+      "createAt": 1625036700
+    },
+    {
+      "titleJp": "うっかり忘れてました",
+      "titleZh": "不小心忘记了",
+      "chapterId": "199",
+      "createAt": 1625569200
+    },
+    {
+      "titleJp": "痺れを切らせた皇帝陛下",
+      "titleZh": "麻痹的皇帝陛下",
+      "chapterId": "200",
+      "createAt": 1625720400
+    },
+    {
+      "titleJp": "ギルベルト・ヴォルフの帰還",
+      "titleZh": "吉尔伯特·沃尔夫归来",
+      "chapterId": "201",
+      "createAt": 1626491100
+    },
+    {
+      "titleJp": "ギルベルトの復讐",
+      "titleZh": "吉尔伯特的复仇",
+      "chapterId": "202",
+      "createAt": 1626937200
+    },
+    {
+      "titleJp": "無垢な心",
+      "titleZh": "纯洁的心",
+      "chapterId": "203",
+      "createAt": 1630555200
+    },
+    {
+      "titleJp": "精霊たちの街",
+      "titleZh": "精灵们的街道",
+      "chapterId": "204",
+      "createAt": 1631070000
+    },
+    {
+      "titleJp": "大人の階段で、血を噴いた！",
+      "titleZh": "在大人的楼梯上，喷出了血!",
+      "chapterId": "205",
+      "createAt": 1635822000
+    },
+    {
+      "titleJp": "斎王ドルレアックと蛟の姫",
+      "titleZh": "斋王和蛟之姬",
+      "chapterId": "206",
+      "createAt": 1636174800
+    },
+    {
+      "titleJp": "エーベルヴァイン城にて",
+      "titleZh": "在埃贝尔温城堡",
+      "chapterId": "207",
+      "createAt": 1636412400
+    },
+    {
+      "titleJp": "ルイーザとファビオラ",
+      "titleZh": "路易莎和法中提琴",
+      "chapterId": "208",
+      "createAt": 1636498800
+    },
+    {
+      "titleJp": "手に負えない真実",
+      "titleZh": "无法控制的真相",
+      "chapterId": "209",
+      "createAt": 1637218800
+    },
+    {
+      "titleJp": "本気を見せます！",
+      "titleZh": "让你看到我的真心!",
+      "chapterId": "210",
+      "createAt": 1637830800
+    },
+    {
+      "titleJp": "楽しい精霊バトル",
+      "titleZh": "快乐的精灵战斗",
+      "chapterId": "211",
+      "createAt": 1638327600
+    },
+    {
+      "titleJp": "ドワーフもいた",
+      "titleZh": "还有矮人。",
+      "chapterId": "212",
+      "createAt": 1639018800
+    },
+    {
+      "titleJp": "エルフたちの里",
+      "titleZh": "精灵们的故乡",
+      "chapterId": "213",
+      "createAt": 1640730780
+    },
+    {
+      "titleJp": "凍てつく大地を温めよう",
+      "titleZh": "温暖冻僵的大地",
+      "chapterId": "214",
+      "createAt": 1641351600
+    },
+    {
+      "titleJp": "エルフさんのケータリング",
+      "titleZh": "精灵的餐饮",
+      "chapterId": "215",
+      "createAt": 1641979860
+    },
+    {
+      "titleJp": "ドワーフ族との契約",
+      "titleZh": "与矮人的契约",
+      "chapterId": "216",
+      "createAt": 1642640400
+    },
+    {
+      "titleJp": "魔鉱石を巡って",
+      "titleZh": "围绕着魔矿石",
+      "chapterId": "217",
+      "createAt": 1643272200
+    },
+    {
+      "titleJp": "実のところ強制参加です",
+      "titleZh": "事实上，这是强制性的。",
+      "chapterId": "218",
+      "createAt": 1644469200
+    },
+    {
+      "titleJp": "コレじゃない！",
+      "titleZh": "不是这个!",
+      "chapterId": "219",
+      "createAt": 1644981480
+    },
+    {
+      "titleJp": "試食会",
+      "titleZh": "试吃会",
+      "chapterId": "220",
+      "createAt": 1645052400
+    },
+    {
+      "titleJp": "エルフの郵便屋さん",
+      "titleZh": "精灵邮差",
+      "chapterId": "221",
+      "createAt": 1645675320
+    },
+    {
+      "titleJp": "アーロンの心労",
+      "titleZh": "艾伦的劳心劳力",
+      "chapterId": "222",
+      "createAt": 1646175660
+    },
+    {
+      "titleJp": "ウィルヘルム皇帝陛下の苦境",
+      "titleZh": "威廉皇帝陛下的困境",
+      "chapterId": "223",
+      "createAt": 1646689560
+    },
+    {
+      "titleJp": "手配書",
+      "titleZh": "通缉令",
+      "chapterId": "224",
+      "createAt": 1647076140
+    },
+    {
+      "titleJp": "魂のデトックス",
+      "titleZh": "灵魂排毒",
+      "chapterId": "225",
+      "createAt": 1647479340
+    },
+    {
+      "titleJp": "呪いデス",
+      "titleZh": "诅咒。",
+      "chapterId": "226",
+      "createAt": 1648108860
+    },
+    {
+      "titleJp": "パワー飯",
+      "titleZh": "能量饭",
+      "chapterId": "227",
+      "createAt": 1649326260
+    },
+    {
+      "titleJp": "悪党は逃がしません",
+      "titleZh": "我们不会让歹徒逃走。",
+      "chapterId": "228",
+      "createAt": 1649928060
+    },
+    {
+      "titleJp": "狂人",
+      "titleZh": "疯子",
+      "chapterId": "229",
+      "createAt": 1651025400
+    },
+    {
+      "titleJp": "ジェンガで勝負だ",
+      "titleZh": "胜负在性别上",
+      "chapterId": "230",
+      "createAt": 1651095240
+    },
+    {
+      "titleJp": "あの子の家に続く道",
+      "titleZh": "通往那个孩子家的路",
+      "chapterId": "231",
+      "createAt": 1651612200
+    },
+    {
+      "titleJp": "デートを断られて",
+      "titleZh": "约会被拒绝了，",
+      "chapterId": "232",
+      "createAt": 1651746900
+    },
+    {
+      "titleJp": "哀愁のハイエルフ",
+      "titleZh": "哀愁的精灵",
+      "chapterId": "233",
+      "createAt": 1652355000
+    },
+    {
+      "titleJp": "三輪バギー、バラバラ事件の顛末",
+      "titleZh": "三轮巴基，七零八落事件始末",
+      "chapterId": "234",
+      "createAt": 1652758560
+    },
+    {
+      "titleJp": "ライトニング・ベア",
+      "titleZh": "闪电熊",
+      "chapterId": "235",
+      "createAt": 1652948820
+    },
+    {
+      "titleJp": "家族の食卓",
+      "titleZh": "家人的餐桌",
+      "chapterId": "236",
+      "createAt": 1653555480
+    },
+    {
+      "titleJp": "ＢＢＱでウェーイ！",
+      "titleZh": "BBQ来袭!",
+      "chapterId": "237",
+      "createAt": 1654141920
+    },
+    {
+      "titleJp": "学習能力はニャイ",
+      "titleZh": "学习能力差",
+      "chapterId": "238",
+      "createAt": 1654759020
+    },
+    {
+      "titleJp": "誘惑に負けたメル",
+      "titleZh": "抵挡不住诱惑的梅尔",
+      "chapterId": "239",
+      "createAt": 1655333460
+    },
+    {
+      "titleJp": "ダヴィ坊やが付いてきた",
+      "titleZh": "达维跟了过来。",
+      "chapterId": "240",
+      "createAt": 1655959920
+    },
+    {
+      "titleJp": "領都ルッカ",
+      "titleZh": "领都卢卡",
+      "chapterId": "241",
+      "createAt": 1656454800
+    },
+    {
+      "titleJp": "港湾施設にて",
+      "titleZh": "在港口设施",
+      "chapterId": "242",
+      "createAt": 1656555180
+    },
+    {
+      "titleJp": "光り輝くメル",
+      "titleZh": "闪耀的梅尔",
+      "chapterId": "243",
+      "createAt": 1656992820
+    },
+    {
+      "titleJp": "俺たち卒業しました",
+      "titleZh": "我们毕业了。",
+      "chapterId": "244",
+      "createAt": 1657098600
+    },
+    {
+      "titleJp": "伝説の妖精郷",
+      "titleZh": "传说中的妖精乡",
+      "chapterId": "245",
+      "createAt": 1657687140
+    },
+    {
+      "titleJp": "妖精女王陛下のコイン",
+      "titleZh": "精灵女王的硬币",
+      "chapterId": "246",
+      "createAt": 1658394780
+    },
+    {
+      "titleJp": "仲間外れはダメ！",
+      "titleZh": "不可以被孤立!",
+      "chapterId": "247",
+      "createAt": 1658875020
+    },
+    {
+      "titleJp": "河原でゴハン",
+      "titleZh": "河滩上吃饭",
+      "chapterId": "248",
+      "createAt": 1658980140
+    },
+    {
+      "titleJp": "恐ろしい事実",
+      "titleZh": "可怕的事实",
+      "chapterId": "249",
+      "createAt": 1659595980
+    },
+    {
+      "titleJp": "マリーズ・レノア中尉の受難",
+      "titleZh": "玛丽兹·雷诺亚中尉受难",
+      "chapterId": "250",
+      "createAt": 1660203900
+    },
+    {
+      "titleJp": "チョコレートが買えない",
+      "titleZh": "买不到巧克力",
+      "chapterId": "251",
+      "createAt": 1660699200
+    },
+    {
+      "titleJp": "心を折られたエルフたち",
+      "titleZh": "心灵被折断的精灵们",
+      "chapterId": "252",
+      "createAt": 1662010500
+    },
+    {
+      "titleJp": "気遣って欲しい男の娘",
+      "titleZh": "希望你关心的男人的女儿",
+      "chapterId": "253",
+      "createAt": 1662515820
+    },
+    {
+      "titleJp": "大きなお友だち",
+      "titleZh": "大朋友",
+      "chapterId": "254",
+      "createAt": 1663119240
+    },
+    {
+      "titleJp": "お姉ちゃんが好き",
+      "titleZh": "喜欢姐姐",
+      "chapterId": "255",
+      "createAt": 1663832580
+    },
+    {
+      "titleJp": "ビンス老人の弟子",
+      "titleZh": "文斯老人的弟子",
+      "chapterId": "256",
+      "createAt": 1665576000
+    },
+    {
+      "titleJp": "女王陛下には見えません",
+      "titleZh": "女王陛下看不见。",
+      "chapterId": "257",
+      "createAt": 1666414500
+    },
+    {
+      "titleJp": "女の子はイメージが大事",
+      "titleZh": "女孩子的形象很重要",
+      "chapterId": "258",
+      "createAt": 1666773000
+    },
+    {
+      "titleJp": "プライド",
+      "titleZh": "自尊",
+      "chapterId": "259",
+      "createAt": 1667379600
+    },
+    {
+      "titleJp": "メルの達人",
+      "titleZh": "梅尔达人",
+      "chapterId": "260",
+      "createAt": 1668057360
+    },
+    {
+      "titleJp": "怨嗟の連鎖",
+      "titleZh": "怨声的连锁反应",
+      "chapterId": "261",
+      "createAt": 1669253400
+    },
+    {
+      "titleJp": "ナチュラルに強者",
+      "titleZh": "天然强者",
+      "chapterId": "262",
+      "createAt": 1669790700
+    },
+    {
+      "titleJp": "秘密会談",
+      "titleZh": "秘密会谈",
+      "chapterId": "263",
+      "createAt": 1670468100
+    },
+    {
+      "titleJp": "モンスターカードのレア",
+      "titleZh": "怪物卡的稀有",
+      "chapterId": "264",
+      "createAt": 1671592980
+    },
+    {
+      "titleJp": "ドラゴンズ・ヘブン",
+      "titleZh": "龙之海文",
+      "chapterId": "265",
+      "createAt": 1672900860
+    },
+    {
+      "titleJp": "えっ、わらしが孝行娘？",
+      "titleZh": "啊，稻草是孝女?",
+      "chapterId": "266",
+      "createAt": 1674279120
+    },
+    {
+      "titleJp": "邪魔者は蹴散らします",
+      "titleZh": "我们会驱散那些碍事的人。",
+      "chapterId": "267",
+      "createAt": 1675806180
+    },
+    {
+      "titleJp": "隠し事が下手すぎる",
+      "titleZh": "不善于隐瞒",
+      "chapterId": "268",
+      "createAt": 1676343600
+    },
+    {
+      "titleJp": "エルフさんの温泉宿",
+      "titleZh": "精灵的温泉旅馆",
+      "chapterId": "269",
+      "createAt": 1677110340
+    },
+    {
+      "titleJp": "ジュディットは待っていた",
+      "titleZh": "朱迪特一直在等待。",
+      "chapterId": "270",
+      "createAt": 1678239900
+    },
+    {
+      "titleJp": "ラッコの事情",
+      "titleZh": "海獭的情况",
+      "chapterId": "271",
+      "createAt": 1679371140
+    },
+    {
+      "titleJp": "古き約定",
+      "titleZh": "旧约定",
+      "chapterId": "272",
+      "createAt": 1680765780
+    },
+    {
+      "titleJp": "心の狭いエルフさん",
+      "titleZh": "心胸狭窄的精灵",
+      "chapterId": "273",
+      "createAt": 1681252440
+    },
+    {
+      "titleJp": "思いがけぬ出会い",
+      "titleZh": "意外的相遇",
+      "chapterId": "274",
+      "createAt": 1681861740
+    },
+    {
+      "titleJp": "ついてきた人魚さん",
+      "titleZh": "跟来的人鱼小姐",
+      "chapterId": "275",
+      "createAt": 1682589000
+    },
+    {
+      "titleJp": "嵐のまえに餅パーティー",
+      "titleZh": "暴风雨前的糕饼派对",
+      "chapterId": "276",
+      "createAt": 1683677880
+    },
+    {
+      "titleJp": "リスクと向き合う男たち",
+      "titleZh": "直面风险的男人们",
+      "chapterId": "277",
+      "createAt": 1685003940
+    },
+    {
+      "titleJp": "大きくて強い",
+      "titleZh": "又大又强",
+      "chapterId": "278",
+      "createAt": 1685577120
+    },
+    {
+      "titleJp": "もっと大きくて強かった",
+      "titleZh": "更大更强",
+      "chapterId": "279",
+      "createAt": 1686210240
+    },
+    {
+      "titleJp": "森がヤバかった",
+      "titleZh": "森林很糟糕",
+      "chapterId": "280",
+      "createAt": 1687419240
+    },
+    {
+      "titleJp": "ワレ幼女の手中に有りて、敗北は認めがたし！",
+      "titleZh": "在我幼女手中，我绝不认输!",
+      "chapterId": "281",
+      "createAt": 1689764700
+    },
+    {
+      "titleJp": "鎮魂ビジネスから産まれた霊蔵壺",
+      "titleZh": "镇魂商务诞生的灵藏壶",
+      "chapterId": "282",
+      "createAt": 1690068120
+    },
+    {
+      "titleJp": "叱られたって構いません",
+      "titleZh": "被批评也没关系",
+      "chapterId": "283",
+      "createAt": 1690441680
+    },
+    {
+      "titleJp": "悪役幼女、爆誕",
+      "titleZh": "反派幼女，爆诞",
+      "chapterId": "284",
+      "createAt": 1691629020
+    },
+    {
+      "titleJp": "この子は、どこの子？",
+      "titleZh": "这孩子是哪里的?",
+      "chapterId": "285",
+      "createAt": 1692766680
+    },
+    {
+      "titleJp": "夜更かしする幼児",
+      "titleZh": "熬夜的幼儿",
+      "chapterId": "286",
+      "createAt": 1694049960
+    },
+    {
+      "titleJp": "ピザが食べたい",
+      "titleZh": "想吃披萨",
+      "chapterId": "287",
+      "createAt": 1697670720
+    },
+    {
+      "titleJp": "それは多分、ピザじゃない！",
+      "titleZh": "那多半不是披萨!",
+      "chapterId": "288",
+      "createAt": 1698100440
+    },
+    {
+      "titleJp": "決戦間近",
+      "titleZh": "决战在即",
+      "chapterId": "289",
+      "createAt": 1700121420
+    },
+    {
+      "titleJp": "腹に据えかねて",
+      "titleZh": "憋不住气",
+      "chapterId": "290",
+      "createAt": 1701843540
+    },
+    {
+      "titleJp": "ガジガジ蟲が巣食う城",
+      "titleZh": "咕嘟咕嘟的虫子盘踞的城堡",
+      "chapterId": "291",
+      "createAt": 1702449300
+    },
+    {
+      "titleJp": "刻至る",
+      "titleZh": "至刻",
+      "chapterId": "292",
+      "createAt": 1703727420
+    },
+    {
+      "titleJp": "察してあげる",
+      "titleZh": "体谅你",
+      "chapterId": "293",
+      "createAt": 1704267840
+    },
+    {
+      "titleJp": "資金が足りない",
+      "titleZh": "资金不够",
+      "chapterId": "294",
+      "createAt": 1704772560
+    },
+    {
+      "titleJp": "絶品エルフ娘、動画サイトで生配信！",
+      "titleZh": "极品森精娘，视频网站直播!",
+      "chapterId": "295",
+      "createAt": 1705380420
+    },
+    {
+      "titleJp": "衝撃の暴露。ハンテン実戦投入！！",
+      "titleZh": "令人震惊的揭露。反天实战投入! !",
+      "chapterId": "296",
+      "createAt": 1706081580
+    },
+    {
+      "titleJp": "ＣＧじゃないよ！",
+      "titleZh": "不是CG !",
+      "chapterId": "297",
+      "createAt": 1706567340
+    },
+    {
+      "titleJp": "鮮血のマルグリット、呪われた地にて復活を遂げる",
+      "titleZh": "鲜血的玛格丽特，在被诅咒的土地上复活",
+      "chapterId": "298",
+      "createAt": 1709611020
+    },
+    {
+      "titleJp": "忌み地に飛来せしもの",
+      "titleZh": "飞临忌地者",
+      "chapterId": "299",
+      "createAt": 1710467580
+    },
+    {
+      "titleJp": "呪われた男",
+      "titleZh": "被诅咒的男人",
+      "chapterId": "300",
+      "createAt": 1711408500
+    },
+    {
+      "titleJp": "再来する暗黒時代の悪夢",
+      "titleZh": "再次降临的黑暗时代的噩梦",
+      "chapterId": "301",
+      "createAt": 1712810400
+    },
+    {
+      "titleJp": "窮地に立たされた暴君",
+      "titleZh": "走投无路的暴君",
+      "chapterId": "302",
+      "createAt": 1713840780
+    },
+    {
+      "titleJp": "これは異世界で撮影された動画です！",
+      "titleZh": "这是在异世界拍摄的视频!",
+      "chapterId": "303",
+      "createAt": 1714012860
+    },
+    {
+      "titleJp": "妖精女王陛下は秘密兵器",
+      "titleZh": "妖精女王陛下是秘密武器",
+      "chapterId": "304",
+      "createAt": 1715119200
+    },
+    {
+      "titleJp": "輸送船団を襲った悪夢",
+      "titleZh": "袭击运输船队的噩梦",
+      "chapterId": "305",
+      "createAt": 1716916560
+    },
+    {
+      "titleJp": "死者の都",
+      "titleZh": "死者之都",
+      "chapterId": "306",
+      "createAt": 1717580880
+    },
+    {
+      "titleJp": "斎王さまの底力",
+      "titleZh": "斋王的潜力",
+      "chapterId": "307",
+      "createAt": 1718275200
+    },
+    {
+      "titleJp": "黒太母",
+      "titleZh": "黑太母",
+      "chapterId": "308",
+      "createAt": 1719355860
+    },
+    {
+      "titleJp": "陰に潜む者",
+      "titleZh": "躲在暗处的人",
+      "chapterId": "309",
+      "createAt": 1720504800
+    },
+    {
+      "titleJp": "グウェンドリーヌ、英断する",
+      "titleZh": "格温德林，英明决断",
+      "chapterId": "310",
+      "createAt": 1720670460
+    },
+    {
+      "titleJp": "妖精たちが喜ぶので……",
+      "titleZh": "妖精们会很高兴的……",
+      "chapterId": "311",
+      "createAt": 1721263140
+    },
+    {
+      "titleJp": "ディートヘルムとピクニック",
+      "titleZh": "与迪特黑尔姆郊游",
+      "chapterId": "312",
+      "createAt": 1721890560
+    },
+    {
+      "titleJp": "ミッティア魔法王国の衰退",
+      "titleZh": "米提亚魔法王国的衰退",
+      "chapterId": "313",
+      "createAt": 1722492240
+    },
+    {
+      "titleJp": "魔法料理のユニークスキルが生えた",
+      "titleZh": "有了魔法料理的独特技能",
+      "chapterId": "314",
+      "createAt": 1723081800
+    },
+    {
+      "titleJp": "貢物は罠！？",
+      "titleZh": "贡品是陷阱!?",
+      "chapterId": "315",
+      "createAt": 1723690860
+    },
+    {
+      "titleJp": "ママンのお古は着たくない",
+      "titleZh": "不想穿老一套的旧衣服",
+      "chapterId": "316",
+      "createAt": 1723765740
+    },
+    {
+      "titleJp": "大人になって分かること",
+      "titleZh": "长大后明白的事",
+      "chapterId": "317",
+      "createAt": 1724279220
+    },
+    {
+      "titleJp": "メルのツボ",
+      "titleZh": "梅尔的穴位",
+      "chapterId": "318",
+      "createAt": 1724848860
+    },
+    {
+      "titleJp": "アビーの気苦労",
+      "titleZh": "艾比的辛劳",
+      "chapterId": "319",
+      "createAt": 1725522720
+    },
+    {
+      "titleJp": "ヤル気スイッチ",
+      "titleZh": "干劲开关",
+      "chapterId": "320",
+      "createAt": 1726132560
+    },
+    {
+      "titleJp": "天才料理ネコ",
+      "titleZh": "天才料理猫",
+      "chapterId": "321",
+      "createAt": 1726698000
+    },
+    {
+      "titleJp": "妖精女王の休日",
+      "titleZh": "妖精女王的假日",
+      "chapterId": "322",
+      "createAt": 1727310960
+    },
+    {
+      "titleJp": "良かれと思ってしたのデス！",
+      "titleZh": "自以为是！",
+      "chapterId": "323",
+      "createAt": 1728382620
+    },
+    {
+      "titleJp": "建国式典の余波",
+      "titleZh": "建国典礼的余波",
+      "chapterId": "324",
+      "createAt": 1728972120
+    },
+    {
+      "titleJp": "乙女心は難しい",
+      "titleZh": "少女心真难懂",
+      "chapterId": "325",
+      "createAt": 1730363400
+    },
+    {
+      "titleJp": "アーロンの提案",
+      "titleZh": "亚隆的提议",
+      "chapterId": "326",
+      "createAt": 1732169580
+    },
+    {
+      "titleJp": "よい子から、わるい子へ",
+      "titleZh": "从乖孩子变成坏孩子",
+      "chapterId": "327",
+      "createAt": 1733350740
+    },
+    {
+      "titleJp": "ラヴィニア姫、大人の階段を上る",
+      "titleZh": "乐薇妮亚公主，登上大人的阶梯",
+      "chapterId": "328",
+      "createAt": 1735186080
+    },
+    {
+      "titleJp": "本番は舞踏会だ",
+      "titleZh": "正式演出是舞会",
+      "chapterId": "329",
+      "createAt": 1737525900
+    },
+    {
+      "titleJp": "精霊樹のドレス",
+      "titleZh": "精灵树连衣裙",
+      "chapterId": "330",
+      "createAt": 1737602640
+    },
+    {
+      "titleJp": "タリサとティナの活躍",
+      "titleZh": "塔莉莎与蒂娜的活跃",
+      "chapterId": "331",
+      "createAt": 1738046280
+    },
+    {
+      "titleJp": "妖精女王陛下の度量",
+      "titleZh": "妖精女王陛下的度量",
+      "chapterId": "332",
+      "createAt": 1738817760
+    },
+    {
+      "titleJp": "ミッティア魔法王国の現状",
+      "titleZh": "米蒂亚魔法王国的现状",
+      "chapterId": "333",
+      "createAt": 1739417580
+    },
+    {
+      "titleJp": "ゴーレムアーマー試運転",
+      "titleZh": "魔像盔甲试驾",
+      "chapterId": "334",
+      "createAt": 1740026820
+    },
+    {
+      "titleJp": "舞い降りた特攻部隊",
+      "titleZh": "特攻部队降临",
+      "chapterId": "335",
+      "createAt": 1741661640
+    },
+    {
+      "titleJp": "予期せぬ敵",
+      "titleZh": "意料之外的敌人",
+      "chapterId": "336",
+      "createAt": 1744272660
+    },
+    {
+      "titleJp": "それは前世の縁",
+      "titleZh": "那是前世的缘分。",
+      "chapterId": "337",
+      "createAt": 1744867200
+    },
+    {
+      "titleJp": "懐かしの我が家",
+      "titleZh": "令人怀念的家",
+      "chapterId": "338",
+      "createAt": 1745477940
+    },
+    {
+      "titleJp": "こんなところに悪人が！？",
+      "titleZh": "这种地方竟然有坏人！？",
+      "chapterId": "339",
+      "createAt": 1745910120
+    },
+    {
+      "titleJp": "それぞれの決意",
+      "titleZh": "各自的决意",
+      "chapterId": "340",
+      "createAt": 1746076380
+    },
+    {
+      "titleJp": "メルとネット民",
+      "titleZh": "梅露与网友",
+      "chapterId": "341",
+      "createAt": 1746498900
+    },
+    {
+      "titleJp": "ちっちゃい天使、オフ会に降臨す！",
+      "titleZh": "小小天使降临网聚！",
+      "chapterId": "342",
+      "createAt": 1746661620
+    },
+    {
+      "titleJp": "兎だぴょん♪",
+      "titleZh": "兔子蹦蹦跳♪",
+      "chapterId": "343",
+      "createAt": 1747108560
+    },
+    {
+      "titleJp": "ＩＴ界の巨人、ブライアンの攻撃",
+      "titleZh": "IT界的巨人，布赖恩的攻击。",
+      "chapterId": "344",
+      "createAt": 1747778100
+    },
+    {
+      "titleJp": "森川家の引っ越し",
+      "titleZh": "森川家搬家",
+      "chapterId": "345",
+      "createAt": 1748503920
+    },
+    {
+      "titleJp": "心霊スポット巡り",
+      "titleZh": "灵异地点巡礼",
+      "chapterId": "346",
+      "createAt": 1749089460
+    },
+    {
+      "titleJp": "おんぶでＧＯ！",
+      "titleZh": "背背GO！",
+      "chapterId": "347",
+      "createAt": 1750243920
+    },
+    {
+      "titleJp": "【わくわくエルフチャンネル】オカルト編",
+      "titleZh": "【精灵频道】超自然篇",
+      "chapterId": "348",
+      "createAt": 1750790700
+    },
+    {
+      "titleJp": "巻き込まれた心霊系動画配信者",
+      "titleZh": "被卷入的灵异系视频发布者",
+      "chapterId": "349",
+      "createAt": 1750902240
+    },
+    {
+      "titleJp": "悪臭に満ちた社",
+      "titleZh": "充满恶臭的神社",
+      "chapterId": "350",
+      "createAt": 1751445480
+    },
+    {
+      "titleJp": "麻酔の効かない体質デス",
+      "titleZh": "对麻醉药无效的体质",
+      "chapterId": "351",
+      "createAt": 1751542620
+    },
+    {
+      "titleJp": "マイケル・タナカの最期",
+      "titleZh": "麦可・田中之死",
+      "chapterId": "352",
+      "createAt": 1752021960
+    },
+    {
+      "titleJp": "誤った選択",
+      "titleZh": "错误的选择",
+      "chapterId": "353",
+      "createAt": 1752098460
+    },
+    {
+      "titleJp": "悪神誕生",
+      "titleZh": "恶神诞生",
+      "chapterId": "354",
+      "createAt": 1752693780
+    },
+    {
+      "titleJp": "怯えるブライアン",
+      "titleZh": "胆战心惊的布莱安",
+      "chapterId": "355",
+      "createAt": 1753161840
+    },
+    {
+      "titleJp": "時間のズレ",
+      "titleZh": "时间的偏差",
+      "chapterId": "356",
+      "createAt": 1753781100
+    },
+    {
+      "titleJp": "怯える遭難者",
+      "titleZh": "害怕的遇难者",
+      "chapterId": "357",
+      "createAt": 1753919520
+    },
+    {
+      "titleJp": "メルはウイザード",
+      "titleZh": "梅尔是巫师",
+      "chapterId": "358",
+      "createAt": 1754379900
+    },
+    {
+      "titleJp": "江藤との別れ",
+      "titleZh": "与江藤的分别",
+      "chapterId": "359",
+      "createAt": 1754548020
+    },
+    {
+      "titleJp": "強いラヴィニア姫は好きですか？",
+      "titleZh": "你喜欢强大的乐薇妮亚公主吗？",
+      "chapterId": "360",
+      "createAt": 1754961540
+    },
+    {
+      "titleJp": "ブライアンの計略",
+      "titleZh": "布赖恩的计谋",
+      "chapterId": "361",
+      "createAt": 1755091320
+    },
+    {
+      "titleJp": "クリスタの怒り",
+      "titleZh": "克丽丝塔的愤怒",
+      "chapterId": "362",
+      "createAt": 1755573540
+    },
+    {
+      "titleJp": "母の懺悔",
+      "titleZh": "母亲的忏悔",
+      "chapterId": "363",
+      "createAt": 1755664200
+    },
+    {
+      "titleJp": "故郷への帰還",
+      "titleZh": "返回故乡",
+      "chapterId": "364",
+      "createAt": 1756192860
+    },
+    {
+      "titleJp": "父親の役目",
+      "titleZh": "父亲的职责",
+      "chapterId": "365",
+      "createAt": 1756260000
+    },
+    {
+      "titleJp": "母娘の絆",
+      "titleZh": "母女的羁绊",
+      "chapterId": "366",
+      "createAt": 1756331700
+    },
+    {
+      "titleJp": "自然の中で……",
+      "titleZh": "在大自然中……",
+      "chapterId": "367",
+      "createAt": 1756782960
+    },
+    {
+      "titleJp": "期間限定品に弱い体質",
+      "titleZh": "对期间限定商品没抵抗力",
+      "chapterId": "368",
+      "createAt": 1756868580
+    },
+    {
+      "titleJp": "光り輝け一番星",
+      "titleZh": "闪耀的明星",
+      "chapterId": "369",
+      "createAt": 1756958340
+    },
+    {
+      "titleJp": "アウトサイドストーリ",
+      "titleZh": "Outsider Story"
+    },
+    {
+      "titleJp": "新年を迎えるにあたり",
+      "titleZh": "新年将至",
+      "chapterId": "370",
+      "createAt": 1766018040
+    },
+    {
+      "titleJp": "聖夜",
+      "titleZh": "圣诞夜",
+      "chapterId": "371",
+      "createAt": 1766465640
+    },
+    {
+      "titleJp": "頭が上がらない相手",
+      "titleZh": "抬不起头的对象",
+      "chapterId": "372",
+      "createAt": 1767150060
+    }
+  ],
+  "visited": 802,
+  "syncAt": 1767682446,
+  "jp": 372,
+  "baidu": 6,
+  "youdao": 330,
+  "gpt": 0,
+  "sakura": 372
+}

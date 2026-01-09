@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-08T16:31:41.585341",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.GLM-4.6.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "f29e68433b642fe156f22460238028f4103a2e6f3a4a95ae642ede721408a2a8",
+    "B": "2b4de2f3d0615181b4cc4c4139b4e88929ed7f5687bd2a0d43002faa306037f0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-08T16:32:45.218715",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202601090031427941920490qDblU4e",
+      "judge_response": {
+        "id": "chatcmpl-202601090031427941920490qDblU4e",
+        "object": "chat.completion",
+        "created": 1767889965,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"winner\": \"B\",\n  \"confidence\": 0.8,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"A在第16段有明显误译，将'雌性当然要留'（牝は勿論だが）译为'雌性当然留不住'，违背了哥布林想要掠夺女性的上下文。A还将人名'Namonai'意译为'无关紧要'，作为章节头不太合适。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"两者的流畅度都相当不错，中文表达自然。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"两者都较好地还原了轻小说的语气，B在某些反问句和傲慢语气的处理上略微贴切。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B准确使用了'钓野伏'（釣り野伏せ）这一专门术语，且人名音译更准确（Gobral->哥布拉尔）。A将人名Namonai译为形容词'无关紧要'，容易引起误解。\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"均连贯。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 5,\n      \"notes\": \"B在最后几段（85, 91, 92）出现了严重的标点符号和括号混乱错误，这是明显的扣分项。\"\n    }\n  },\n  \"key_differences\": [\n    \"准确性：A在第16段误解了原文逻辑，导致意思相反（关于是否保留女性）。\",\n    \"人名翻译：B采用音译（哥布拉尔、那莫纳伊），A采用音译或意译（戈布兰、无关紧要），其中A对Namonai的处理作为角色名显得突兀。\",\n    \"术语：B使用了正确的历史战术术语'钓野伏'，A使用了描述性翻译'钓鱼埋伏'。\",\n    \"格式：B在结尾处有明显的排版/标点错误。\"\n  ],\n  \"final_summary\": \"翻译B在准确性和术语处理上优于翻译A。A在第16段出现了一处关键的逻辑误译，改变了角色的意图，且将人名'Namonai'意译为'无关紧要'略显不妥。B正确理解了原文的语法结构（如'牝は勿論だが'）和专有名词。然而，B在最后部分的格式处理非常粗糙，出现了乱码般的标点符号错误。尽管如此，鉴于翻译的核心在于准确传达原文意思，B在内容质量上胜出，建议选用B的文本但必须修正结尾的标点格式。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9076,
+          "completion_tokens": 5094,
+          "total_tokens": 14170
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.8,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "A在第16段有明显误译，将'雌性当然要留'（牝は勿論だが）译为'雌性当然留不住'，违背了哥布林想要掠夺女性的上下文。A还将人名'Namonai'意译为'无关紧要'，作为章节头不太合适。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者的流畅度都相当不错，中文表达自然。"
+      },
+      "style": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者都较好地还原了轻小说的语气，B在某些反问句和傲慢语气的处理上略微贴切。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 9,
+        "notes": "B准确使用了'钓野伏'（釣り野伏せ）这一专门术语，且人名音译更准确（Gobral->哥布拉尔）。A将人名Namonai译为形容词'无关紧要'，容易引起误解。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "均连贯。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 5,
+        "notes": "B在最后几段（85, 91, 92）出现了严重的标点符号和括号混乱错误，这是明显的扣分项。"
+      }
+    },
+    "key_differences": [
+      "准确性：A在第16段误解了原文逻辑，导致意思相反（关于是否保留女性）。",
+      "人名翻译：B采用音译（哥布拉尔、那莫纳伊），A采用音译或意译（戈布兰、无关紧要），其中A对Namonai的处理作为角色名显得突兀。",
+      "术语：B使用了正确的历史战术术语'钓野伏'，A使用了描述性翻译'钓鱼埋伏'。",
+      "格式：B在结尾处有明显的排版/标点错误。"
+    ],
+    "final_summary": "翻译B在准确性和术语处理上优于翻译A。A在第16段出现了一处关键的逻辑误译，改变了角色的意图，且将人名'Namonai'意译为'无关紧要'略显不妥。B正确理解了原文的语法结构（如'牝は勿論だが'）和专有名词。然而，B在最后部分的格式处理非常粗糙，出现了乱码般的标点符号错误。尽管如此，鉴于翻译的核心在于准确传达原文意思，B在内容质量上胜出，建议选用B的文本但必须修正结尾的标点格式。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}
