@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:29:55.448741",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.MiniMax-M2.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "b57929c763c9fbd658ffd53c11c6ff203e779ccec65192f51d5ecbc195d991c4",
+    "B": "6dd3b4acfc667a42940b8a805eda2ee45576e379e2b43622c481b4f13cb5411b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:30:49.784079",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "885059a5-8726-446e-9c73-3d6dab9c0e0b",
+      "judge_response": {
+        "id": "885059a5-8726-446e-9c73-3d6dab9c0e0b",
+        "object": "chat.completion",
+        "created": 1769610649,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落6**: A\"所以我们对士兵也尽量不要马上把女人杀掉\"语法混乱，原意是\"吩咐士兵不要杀女人\"；B正确理解为\"吩咐士兵们\"\n- **段落44**: A译\"哈！\"错误，「は！」在此语境是应答词；B译\"是！\"正确\n- **段落97**: A出现严重错误\"左右森林的夹击也上一篇 went well\"，出现英文碎片\n- **段落98**: A译\"去追大贤者玛泽尔的儿子\"理解有误，原文是追マゼル本人\n\n### 流畅性分析\n- **段落7**: A\"从现在起就很期待\"生硬；B\"真是令人期待啊\"更自然\n- **段落8**: A\"没问题\"过于现代口语化；B\"无妨\"更符合帝王语气\n- **段落19**: A\"流着黏糊糊的汗\"表达不佳；B\"大汗淋漓，汗珠滴滴答答\"更生动\n- **段落31**: A\"怎么说的？\"不自然；B\"此话怎讲？\"更符合语境\n\n### 风格/语气分析\n- B整体更符合轻小说的叙事风格，对话更有角色感\n- A部分对话过于直译，缺乏角色个性\n\n### 术语一致性\n- A在ゴーブラ翻译上不一致（段落14用戈布拉，段落19用哥布拉）\n- **段落94**: A未翻译\"ナモナイ\"，B译为\"无名\"\n- B全程使用\"全军覆没\"，更符合军事语境\n\n### 格式问题\n- 两者格式基本相当\n- A段落97有致命的英文残留错误\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有多处理解错误，段落97出现英文碎片，段落6语法混乱\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B表达更自然流畅，A多处直译生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更好地体现帝王语气和轻小说对话风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A名称翻译不一致，段落94未翻译ナモナイ\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B叙事连贯性更好，A部分段落衔接生硬\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A段落97出现英文残留是严重格式问题\"}\n  },\n  \"key_differences\": [\n    \"A段落97出现英文碎片'went well'严重错误\",\n    \"A段落94未翻译ナモナイ，B译为无名\",\n    \"A段落44将は译为哈而非是\",\n    \"B整体语气更符合轻小说帝王/将军角色\",\n    \"B用词如'无妨''此话怎讲'更有古典感\"\n  ],\n  \"final_summary\": \"B翻译在准确性、流畅性和风格把握上均优于A。A存在多处明显错误，尤其是段落97出现英文残留、段落94未翻译人名、以及多处语法和理解问题。B更好地呈现了帝王和将军的说话风格，叙事连贯自然。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12914,
+          "completion_tokens": 1970,
+          "total_tokens": 14884
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有多处理解错误，段落97出现英文碎片，段落6语法混乱"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B表达更自然流畅，A多处直译生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地体现帝王语气和轻小说对话风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A名称翻译不一致，段落94未翻译ナモナイ"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B叙事连贯性更好，A部分段落衔接生硬"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A段落97出现英文残留是严重格式问题"
+      }
+    },
+    "key_differences": [
+      "A段落97出现英文碎片'went well'严重错误",
+      "A段落94未翻译ナモナイ，B译为无名",
+      "A段落44将は译为哈而非是",
+      "B整体语气更符合轻小说帝王/将军角色",
+      "B用词如'无妨''此话怎讲'更有古典感"
+    ],
+    "final_summary": "B翻译在准确性、流畅性和风格把握上均优于A。A存在多处明显错误，尤其是段落97出现英文残留、段落94未翻译人名、以及多处语法和理解问题。B更好地呈现了帝王和将军的说话风格，叙事连贯自然。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

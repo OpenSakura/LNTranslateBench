@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:43:12.801057",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.GLM-4.5.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "3ed4f333955e4e27142a5ff0c96e5bf5cb3276ca6579f4f4a94992d02018d007",
+    "B": "e4ff4fdba7e66cd83e9fdf14a4c46e971eabe41788b1c3b607968818d3ad2b96"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:44:12.500053",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "629e8821-4727-4d70-a430-bd5b8fe3011d",
+      "judge_response": {
+        "id": "629e8821-4727-4d70-a430-bd5b8fe3011d",
+        "object": "chat.completion",
+        "created": 1768423452,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n- **段落26**: \"気が逸っている\"意为\"心急/迫不及待\"。A译为\"心不在焉\"是误译，B译为\"很兴奋\"更接近原意。\n- **段落62**: \"うちはいいから\"中的\"うち\"是关西方言的\"我\"。A译\"我就不用管啦\"正确，B译\"我们家就不用管了\"误解了意思。\n- **段落73**: \"男の娘\"是\"伪娘\"(男扮女装)。A译\"伪娘路线\"正确，B译\"男装少女\"完全反了意思。\n- **段落31**: \"凄い人\"在此指人数多，A译为\"好厉害的人\"略有歧义，B同样如此。\n\n### 流畅性分析\n- A整体语句更自然流畅，如段落7\"轻浮地说着\"比B\"轻描淡写地说着\"更贴合原文语气。\n- B在部分句子较简洁，如段落11\"被这番正论说服，男生们老实了\"比A更干练。\n\n### 风格/语气分析\n- A在对话中保留了更多语气词（\"哦\"\"呢\"\"嘛\"），更符合轻小说对话风格。\n- B部分对话稍显生硬。\n\n### 术语一致性\n- A在称呼上混用\"学姐/前辈\"（段落24用\"学姐\"，段落71用\"前辈\"），不够一致。\n- B统一使用\"前辈\"，但第71段错用\"学长\"（黑泽是女性）。\n- 作品名翻译：A用\"特斯拉达因\"，B用\"Tesla Dyne\"，A更统一为中文。\n\n### 格式/标点符号\n- **B有严重格式问题**：段落21、43、74、95-101等处缺少开头引号。\n- A在段落95-101混用了中日引号，但B直接缺失引号问题更大。\n\n### 关键差异\n| 段落 | 问题 | A表现 | B表现 |\n|------|------|-------|-------|\n| 26 | 词义理解 | 错误 | 正确 |\n| 62 | 方言理解 | 正确 | 错误 |\n| 73 | 术语翻译 | 正确 | 严重错误 |\n| 多处 | 引号格式 | 基本完整 | 多处缺失 |\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A在段落26有误译，但B在62、73有更严重的理解错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A语句更自然流畅，对话感更强\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好地保留了轻小说对话的活泼语气\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"两者都有称呼不一致问题，但B的'男装少女'是严重术语错误\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相近\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B有多处引号缺失的严重格式问题\"}\n  },\n  \"key_differences\": [\n    \"B在段落73将'男の娘'(伪娘)误译为'男装少女'，意思完全相反\",\n    \"B在段落62将'うち'(我)误译为'我们家'\",\n    \"B多处缺少对话开头引号(段落21、43、74等)\",\n    \"A在段落26将'気が逸っている'误译为'心不在焉'\"\n  ],\n  \"final_summary\": \"A在整体翻译质量上略胜一筹。虽然A在段落26有一处误译，但B存在更严重的问题：关键术语'男の娘'翻译完全错误，方言'うち'理解有误，且多处缺少引号的格式问题影响阅读。A的语言风格也更贴合轻小说的活泼语气。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12113,
+          "completion_tokens": 2625,
+          "total_tokens": 14738
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A在段落26有误译，但B在62、73有更严重的理解错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A语句更自然流畅，对话感更强"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好地保留了轻小说对话的活泼语气"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "两者都有称呼不一致问题，但B的'男装少女'是严重术语错误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相近"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有多处引号缺失的严重格式问题"
+      }
+    },
+    "key_differences": [
+      "B在段落73将'男の娘'(伪娘)误译为'男装少女'，意思完全相反",
+      "B在段落62将'うち'(我)误译为'我们家'",
+      "B多处缺少对话开头引号(段落21、43、74等)",
+      "A在段落26将'気が逸っている'误译为'心不在焉'"
+    ],
+    "final_summary": "A在整体翻译质量上略胜一筹。虽然A在段落26有一处误译，但B存在更严重的问题：关键术语'男の娘'翻译完全错误，方言'うち'理解有误，且多处缺少引号的格式问题影响阅读。A的语言风格也更贴合轻小说的活泼语气。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

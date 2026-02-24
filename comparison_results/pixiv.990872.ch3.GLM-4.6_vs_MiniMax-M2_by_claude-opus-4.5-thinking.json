@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:02:19.484356",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.MiniMax-M2.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "930773dbe42d8470d604b51effc26ba8520ec5b71275bdc7134f64eb80ae400b",
+    "B": "6758e18ded39c09e8ab6aba82872ab1e1f736cfc06c36078665f73eba506aa52"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:03:01.067024",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "eeff8562-6894-4fed-a28e-712679ebd41d",
+      "judge_response": {
+        "id": "eeff8562-6894-4fed-a28e-712679ebd41d",
+        "object": "chat.completion",
+        "created": 1768431780,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐段对比分析\n\n### 准确性问题\n\n**段落2**: A译\"像小孩的侦探梦\"丢失了\"名探偵\"中的\"名\"字；B译\"名侦探\"更准确。\n\n**段落11**: A译\"客串时也一直在发声\"对\"ゲストの時意外\"理解有误；B译\"当嘉宾的时候不也意外地一直在用声音吗\"更贴近原意。\n\n**段落14**: A译\"直接冲出澡堂\"\"老乡朋友\"均有误译；B译\"秒速就冲出浴室\"\"忘了我没有朋友了\"更准确。\n\n**段落17**: A译\"至少叫我'萩下酱'吧\"逻辑混乱（原文要求叫くん而非ちゃん）；B译\"萩下君\"正确。\n\n**段落83**: **A出现严重错误**，保留大量未翻译的日文原文；B完整翻译。\n\n### 流畅性与风格\n\n**段落10**: B的\"好困啊\"、\"开始紧张了\"、\"点名时喉咙都干了\"比A的概括性描述更生动自然。\n\n**段落12**: B\"做梦也没想到\"比A\"在这里根本没想到\"更符合中文口语习惯。\n\n**段落50**: B\"你说啥！\"比A\"啥呀\"更好地传达了角色的激动情绪。\n\n### 术语/称呼处理\n\n**段落15/30**: A译\"萩下酱\"，B译\"萩下同学/小萩下\"。B对不同称呼的处理更多样化。\n\n**段落54**: A用中文\"穆尔西埃拉戈/普锐斯\"，B保留英文\"Murciélago/Prius\"——两种处理各有考量。\n\n### 格式问题\n\n**段落35/36**: A的引号使用不一致（中英文引号混用），B较统一。\n\n**段落62**: A末尾引号错误\"『\"。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有多处误译，段落14、17、83问题明显；B整体更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B的口语化表达更自然，如对话语气、感叹词处理更地道\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更好地保留了轻小说的轻松吐槽风格和角色个性\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者对人名、称呼处理各有特色，总体相当\"},\n    \"coherence\": {\"A\": 5, \"B\": 8, \"notes\": \"A段落83未翻译严重影响可读性；B连贯流畅\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A存在引号错误和未翻译内容；B格式较规范\"}\n  },\n  \"key_differences\": [\n    \"段落83：A保留大量日文未翻译，B完整翻译\",\n    \"段落14：A误译'フォロー'和结尾，B准确传达\",\n    \"段落17：A对'くん/ちゃん'称呼处理混乱，B正确区分\",\n    \"对话语气：B更好地捕捉了角色的情绪和口吻\",\n    \"口语表达：B使用更自然的中文网络/口语表达\"\n  ],\n  \"final_summary\": \"B译在准确性、流畅性和风格把握上均优于A。A存在多处误译（段落14、17）和一处严重的未翻译错误（段落83），严重影响整体质量。B的译文更好地传达了原作轻小说的轻松吐槽风格，对话翻译生动自然，整体可读性更强。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12030,
+          "completion_tokens": 1711,
+          "total_tokens": 13741
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有多处误译，段落14、17、83问题明显；B整体更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的口语化表达更自然，如对话语气、感叹词处理更地道"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地保留了轻小说的轻松吐槽风格和角色个性"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者对人名、称呼处理各有特色，总体相当"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 8,
+        "notes": "A段落83未翻译严重影响可读性；B连贯流畅"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A存在引号错误和未翻译内容；B格式较规范"
+      }
+    },
+    "key_differences": [
+      "段落83：A保留大量日文未翻译，B完整翻译",
+      "段落14：A误译'フォロー'和结尾，B准确传达",
+      "段落17：A对'くん/ちゃん'称呼处理混乱，B正确区分",
+      "对话语气：B更好地捕捉了角色的情绪和口吻",
+      "口语表达：B使用更自然的中文网络/口语表达"
+    ],
+    "final_summary": "B译在准确性、流畅性和风格把握上均优于A。A存在多处误译（段落14、17）和一处严重的未翻译错误（段落83），严重影响整体质量。B的译文更好地传达了原作轻小说的轻松吐槽风格，对话翻译生动自然，整体可读性更强。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

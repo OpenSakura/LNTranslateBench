@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:12:06.674916",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "aedeef7098841724d5a8b199e0e58fee544f15d6705feab386864b29046dc63a",
+    "B": "319fa3e672e44d0c6a3c6f44e820b7022de32846170695c4cd40e10ba0c5da2c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:12:50.669855",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6ca01db1-6b79-42fc-a09e-7870086b8a0b",
+      "judge_response": {
+        "id": "6ca01db1-6b79-42fc-a09e-7870086b8a0b",
+        "object": "chat.completion",
+        "created": 1768421570,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**段落40关键错误**：\n- 原文：「小早川の頭に手を当てて撫でた」（叙述者摸了小早川的头）\n- A：「我伸手摸了摸小早川的头」✓\n- B：「小早川把手放在他头上摸了摸」✗（主语错误，意思完全颠倒）\n\n**段落19称呼问题**：\n- A：「双叶小姐」— 双叶蓮次是男性角色，用\"小姐\"是错误的\n- B：「双叶前辈」— 更合适\n\n**段落95「天然人誑し」**：\n- 意思是\"天生的骗子/迷人者\"\n- A：「天然呆骗」— 误解\n- B：「欺骗天然呆」— 也误解\n\n### 流畅性分析\n\n**段落25**：\n- A：「边锋是啥活都干的 position」— 突兀地混入英文\n- B：「边锋是打杂的位置」— 自然\n\n**段落3**：\n- A：语序略生硬\n- B：「到处乱堆」更好地表达了「ごちゃごちゃ」\n\n### 格式问题\n\n- A：段落41-48使用西式引号\"\"而非「」，不一致\n- B：段落36缺少引号、段落88缺少开头引号\n\n### 术语一致性\n\n- A：「黄金双腿」「跑卫」一致\n- B：段落106用「跑后卫」而非之前的「跑卫」，不一致\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B在段落40有严重主语错误；A的称呼错误（小姐）也是问题\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更自然，A偶有生硬处和混入英文\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好地保持了轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"B在段落106术语不一致（跑后卫vs跑卫）\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B的段落40错误影响上下文理解\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A引号风格不一致；B有少量缺失引号\"}\n  },\n  \"key_differences\": [\n    \"段落40：B将主语完全翻译错误，这是关键性错误\",\n    \"段落19：A用「小姐」称呼男性角色不当，B用「前辈」更合适\",\n    \"段落25：A混入英文position，B更自然\",\n    \"段落41-48：A引号格式不一致\",\n    \"段落106：B术语不一致\"\n  ],\n  \"final_summary\": \"两个翻译各有优缺点。A的主要问题是称呼错误和偶尔混入英文；B在流畅性上略胜，但段落40的主语错误是严重的准确性问题，直接改变了叙事内容。综合考虑，准确性错误比流畅性问题更严重，因此A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11857,
+          "completion_tokens": 1922,
+          "total_tokens": 13779
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B在段落40有严重主语错误；A的称呼错误（小姐）也是问题"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更自然，A偶有生硬处和混入英文"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好地保持了轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "B在段落106术语不一致（跑后卫vs跑卫）"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B的段落40错误影响上下文理解"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A引号风格不一致；B有少量缺失引号"
+      }
+    },
+    "key_differences": [
+      "段落40：B将主语完全翻译错误，这是关键性错误",
+      "段落19：A用「小姐」称呼男性角色不当，B用「前辈」更合适",
+      "段落25：A混入英文position，B更自然",
+      "段落41-48：A引号格式不一致",
+      "段落106：B术语不一致"
+    ],
+    "final_summary": "两个翻译各有优缺点。A的主要问题是称呼错误和偶尔混入英文；B在流畅性上略胜，但段落40的主语错误是严重的准确性问题，直接改变了叙事内容。综合考虑，准确性错误比流畅性问题更严重，因此A略胜。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

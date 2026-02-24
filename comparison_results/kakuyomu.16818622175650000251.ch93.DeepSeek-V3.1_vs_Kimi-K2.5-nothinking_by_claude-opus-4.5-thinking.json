@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:30:50.837490",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "131778c77f649ca7d3f70d928caf93d6e36ccc7886ec304e19806f529182b937",
+    "B": "3f5a6bfc60f28ef26c2517907239e94f29e7a5d8b915b07d941ef0659ce54799"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:31:27.368743",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ddef2762-3181-4b7f-a511-3cf845336daa",
+      "judge_response": {
+        "id": "ddef2762-3181-4b7f-a511-3cf845336daa",
+        "object": "chat.completion",
+        "created": 1769610687,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n#### 1. 人名/术语一致性问题\n- **翻译A**：「おタヒ」处理不一致，有时译为\"奥塔希\"，有时保留原文，段落7错误译为\"琪肯\"（チケン是另一个角色）\n- **翻译B**：「おタヒ」处理更混乱，使用\"小死神\"\"小塔希\"\"阿嘁\"等多种译法，部分保留原文\n\n#### 2. 关键术语错误\n- 段落47-48：「追い剥ぎ」意为\"拦路抢劫者/强盗\"\n  - A译\"强盗\"✓\n  - B译\"追兵\"✗（意思完全不同）\n\n#### 3. 段落34理解差异\n- 原文「なんかアレ毒草じゃないの？」表示\"那个不是毒草吗？\"\n  - A：\"是不是那种有毒的草啊？\"（略有偏差）\n  - B：\"看起来不像是那种毒草吧？\"（理解相反）\n\n#### 4. 流畅度对比\n- B整体口语化更自然：\"说得还真直白啊\"\"快住手啊\"\"这是奖赏啊\"\n- A部分表达略显生硬：\"喜悦让我差点笑逐颜开\"\"若无其事地说出戳人痛处的话\"\n\n#### 5. 语气还原\n- 段落52：「ゲッ……」\n  - A：\"呃……\"（较弱）\n  - B：\"啧……\"（更符合惊讶/厌恶语气）\n\n#### 6. 拟声词处理\n- B使用『窸窣窣』『扭动』等标记，增加表现力\n- A使用\"唰地\"\"噼里啪啦\"也较生动\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B将'追い剥ぎ'误译为'追兵'，段落34理解相反；A段落7人名错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，对话感更强\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说轻松吐槽风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"A人名偶有错误但术语基本正确；B人名混乱且关键术语'追い剥ぎ'全错\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B人名不统一影响阅读连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式基本规范\"}\n  },\n  \"key_differences\": [\n    \"「追い剥ぎ」翻译：A正确译为'强盗'，B错误译为'追兵'\",\n    \"「おタヒ」人名处理：A较统一但有误，B使用多种译名造成混乱\",\n    \"段落34毒草判断：A基本正确，B理解相反\",\n    \"整体语言风格：B更口语化自然，A略显正式\"\n  ],\n  \"final_summary\": \"B在流畅度和轻小说风格上略胜一筹，但存在严重的术语错误（'追い剥ぎ'全部误译为'追兵'）和人名不统一问题，这些错误影响了故事理解。A虽然表达略显生硬，但核心术语翻译正确，整体准确性更高。考虑到准确性是翻译的基础，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10703,
+          "completion_tokens": 1674,
+          "total_tokens": 12377
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B将'追い剥ぎ'误译为'追兵'，段落34理解相反；A段落7人名错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，对话感更强"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说轻松吐槽风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "A人名偶有错误但术语基本正确；B人名混乱且关键术语'追い剥ぎ'全错"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B人名不统一影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式基本规范"
+      }
+    },
+    "key_differences": [
+      "「追い剥ぎ」翻译：A正确译为'强盗'，B错误译为'追兵'",
+      "「おタヒ」人名处理：A较统一但有误，B使用多种译名造成混乱",
+      "段落34毒草判断：A基本正确，B理解相反",
+      "整体语言风格：B更口语化自然，A略显正式"
+    ],
+    "final_summary": "B在流畅度和轻小说风格上略胜一筹，但存在严重的术语错误（'追い剥ぎ'全部误译为'追兵'）和人名不统一问题，这些错误影响了故事理解。A虽然表达略显生硬，但核心术语翻译正确，整体准确性更高。考虑到准确性是翻译的基础，A略胜。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:21:03.503552",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "008eb4a16cd270de3ec8d4381e4589644b14f0fa6b80a768500ce7049b4e5fea",
+    "B": "d23908ef2d654b9c5e90ad81e2430aa730f98d66f0e42478ef913e483287e34a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:22:03.914735",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d9f3e7f6-b034-4c7a-994f-e83218a97f3e",
+      "judge_response": {
+        "id": "d9f3e7f6-b034-4c7a-994f-e83218a97f3e",
+        "object": "chat.completion",
+        "created": 1768432923,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐项对比分析\n\n**准确性方面：**\n- 段落14：原文「ブッキング」是\"撞期/冲突\"的意思。A译为\"我就取消了约定\"属于误译；B译为\"就给撞期啦\"准确。\n- 段落22：原文意思是\"你们替我和幼女酱好好享受\"。A译为\"我就和幼女酱的份一起好好享受\"完全反了；B正确。\n- 段落33：「惚気ている」是\"秀恩爱\"。A译为\"沉迷的夫妇\"不准确；B译为\"秀恩爱的夫妻\"准确。\n- 段落52：「おそまつ」是\"招待不周\"的谦辞。A译为\"慢用\"（用于餐前）不当；B译为\"慢待了\"更佳。\n- 段落105：「晩飯にすっから」意为\"用作晚饭\"。A译为\"晚饭早就吃完了\"误译；B译为\"晚饭吃得精光\"也有误。\n\n**术语/名称一致性：**\n- A在名称处理上不一致：有时保留日文（段落24、25、31的マミィ〜/パピィ〜），有时翻译（段落4的帕比、玛米）\n- B全程统一翻译为\"帕皮/玛咪\"，一致性更好\n\n**流畅性与风格：**\n- 段落8：A的\"虽然过分在意也有些过分\"拗口；B的\"或许太谨慎了点，但还是小心为上\"更自然\n- 段落67：A\"彻底傻眼了\"；B\"全都退避三舍\"。B更符合「ドン引き」的含义\n- 段落70：B的\"死死抓住衣服，她双眼充血地逼问\"比A更生动\n\n**格式方面：**\n- 段落17：B少了空格「「诶？可以吗？」」，A格式正确\n- 段落68：B少了右引号，有瑕疵\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落14、22、33有明显误译；B仅段落105有小误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B表达更自然，A有些句子略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的轻小说语气更活泼自然，如'嘻嘻嘻''啦'等\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A名称翻译极不一致，时而保留日文时而翻译；B统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体阅读更连贯流畅\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B有个别标点缺失问题\"}\n  },\n  \"key_differences\": [\n    \"段落14「ブッキング」：A误译为取消约定，B正确译为撞期\",\n    \"段落22方向性错误：A把'替我们享受'译成了'我来享受'\",\n    \"段落33「惚気」：A译为沉迷，B正确译为秀恩爱\",\n    \"人名一致性：A时而保留日文时而翻译，B全程统一翻译\"\n  ],\n  \"final_summary\": \"B在准确性和术语一致性上明显优于A，特别是避免了A的几处关键误译。B的语言风格也更符合轻小说的活泼基调。虽然B有个别标点符号问题，但整体质量更佳。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11262,
+          "completion_tokens": 2678,
+          "total_tokens": 13940
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落14、22、33有明显误译；B仅段落105有小误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B表达更自然，A有些句子略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的轻小说语气更活泼自然，如'嘻嘻嘻''啦'等"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A名称翻译极不一致，时而保留日文时而翻译；B统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体阅读更连贯流畅"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B有个别标点缺失问题"
+      }
+    },
+    "key_differences": [
+      "段落14「ブッキング」：A误译为取消约定，B正确译为撞期",
+      "段落22方向性错误：A把'替我们享受'译成了'我来享受'",
+      "段落33「惚気」：A译为沉迷，B正确译为秀恩爱",
+      "人名一致性：A时而保留日文时而翻译，B全程统一翻译"
+    ],
+    "final_summary": "B在准确性和术语一致性上明显优于A，特别是避免了A的几处关键误译。B的语言风格也更符合轻小说的活泼基调。虽然B有个别标点符号问题，但整体质量更佳。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

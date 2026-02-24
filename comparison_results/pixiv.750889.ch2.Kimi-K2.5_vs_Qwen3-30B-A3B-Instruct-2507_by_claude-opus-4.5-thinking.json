@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:22:25.061944",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "07f236595af87ba388fe9ef1fe6ff79c67d251ed3b7db18d70af9dc422944749",
+    "B": "46dabb72388f126b7663220e69e4e29afc0a5619b694779002ac929006a4ddc1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:23:07.290102",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "05d8dae7-dfd1-4322-8183-0fcb4170a446",
+      "judge_response": {
+        "id": "05d8dae7-dfd1-4322-8183-0fcb4170a446",
+        "object": "chat.completion",
+        "created": 1769610187,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 关键差异分析\n\n### 1. 人名翻译（致命错误）\n- **段落15/22/27**: 「彼方」是主角的名字\n  - A译为\"对面的大哥哥\"/\"那边的哥哥\" ❌ （误将人名当作方位词）\n  - B译为\"彼方哥哥\" ✓\n- **段落36**: A将「吉田彼方」错译为\"吉田步美\" ❌\n\n### 2. 术语翻译\n- 「オリ主」: A=\"原主\" / B=\"原创主角\" → B更准确清晰\n- 「サザエさん時空」: A=\"萨扎埃小姐\" / B=\"海螺小姐\" → B使用官方译名\n- 「サバゲー」: A=\"潜伏射击游戏\" / B=\"生存游戏\" → B正确\n- 「ガラケー」: A=\"老人机\" / B=\"翻盖手机\" → 两者都可接受\n\n### 3. 句意理解\n- **段落8**: 原文是\"从步美那里听说转校来的少年\"\n  - A误译为\"步美小姐转校而来\" ❌\n  - B正确理解句子结构 ✓\n\n### 4. 风格与流畅度\n- A整体偏书面化，有些地方略显生硬\n- B更口语化，符合轻小说第一人称叙述风格\n- 段落35: B保留了「骗人的吧」的心理活动，A省略了\n\n### 5. 格式处理\n- 两者标点符号使用都较规范\n- B对对话的处理更自然\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 9, \"notes\": \"A多次将人名「彼方」误译为方位词，段落36将角色名完全搞错，段落8句子理解有误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，符合第一人称轻小说风格；A部分句子略生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B的语气更贴合原文轻松诙谐的叙述风格，对话处理更自然\"},\n    \"terminology\": {\"A\": 5, \"B\": 9, \"notes\": \"A「サバゲー」译错，「サザエさん」未使用官方译名，「オリ主」翻译不够明确\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A因人名翻译错误导致读者会困惑主角是谁；B整体叙述连贯\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"两者格式都可接受，B对话标点处理略优\"}\n  },\n  \"key_differences\": [\n    \"人名「彼方」：A反复误译为方位词，B正确保留为人名\",\n    \"段落36：A将主角名错写为「吉田步美」，B正确为「吉田彼方」\",\n    \"段落8句意理解：A误解为步美转校，B正确理解为从步美处听闻\",\n    \"サバゲー术语：A错译为「潜伏射击游戏」，B正确译为「生存游戏」\",\n    \"整体风格：B更贴合轻小说口语化叙述，A偏书面化\"\n  ],\n  \"final_summary\": \"翻译B明显优于A。A存在多处致命的人名翻译错误（将主角名字「彼方」反复误译为方位词），以及段落36将角色名完全搞错的严重失误，这对于轻小说翻译是不可接受的。此外A在术语翻译和句意理解上也有明显问题。B在准确性、术语一致性和风格把握上都表现更好，更符合轻小说的阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9931,
+          "completion_tokens": 1983,
+          "total_tokens": 11914
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A多次将人名「彼方」误译为方位词，段落36将角色名完全搞错，段落8句子理解有误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，符合第一人称轻小说风格；A部分句子略生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的语气更贴合原文轻松诙谐的叙述风格，对话处理更自然"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "A「サバゲー」译错，「サザエさん」未使用官方译名，「オリ主」翻译不够明确"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A因人名翻译错误导致读者会困惑主角是谁；B整体叙述连贯"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者格式都可接受，B对话标点处理略优"
+      }
+    },
+    "key_differences": [
+      "人名「彼方」：A反复误译为方位词，B正确保留为人名",
+      "段落36：A将主角名错写为「吉田步美」，B正确为「吉田彼方」",
+      "段落8句意理解：A误解为步美转校，B正确理解为从步美处听闻",
+      "サバゲー术语：A错译为「潜伏射击游戏」，B正确译为「生存游戏」",
+      "整体风格：B更贴合轻小说口语化叙述，A偏书面化"
+    ],
+    "final_summary": "翻译B明显优于A。A存在多处致命的人名翻译错误（将主角名字「彼方」反复误译为方位词），以及段落36将角色名完全搞错的严重失误，这对于轻小说翻译是不可接受的。此外A在术语翻译和句意理解上也有明显问题。B在准确性、术语一致性和风格把握上都表现更好，更符合轻小说的阅读体验。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

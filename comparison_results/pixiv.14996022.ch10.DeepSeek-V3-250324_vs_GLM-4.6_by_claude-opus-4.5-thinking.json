@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:47:47.957139",
+  "sample": "pixiv.14996022.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14996022.ch10.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14996022.ch10.GLM-4.6.translated.txt",
+    "B": "translated_results/pixiv.14996022.ch10.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "97840b0ea25b900611e3fd1bca8d95c19b711a6d9a5b445298a5ca51f9d44473",
+    "A": "34a951416ce35b532e972d4bf11471f042313d33110b339932a736f628866b09",
+    "B": "ba30d063242b59891abbccbdfd95224a3c4113aa8dcb2b32b82ccb24b1cd1ba6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:48:38.911902",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e883b50a-32f2-4a7a-9e6b-364c724c9756",
+      "judge_response": {
+        "id": "e883b50a-32f2-4a7a-9e6b-364c724c9756",
+        "object": "chat.completion",
+        "created": 1768423718,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 关键差异分析\n\n**1. 重大翻译错误**\n- **段落9、11、13**：B版多处出现\"大叔我\"的翻译，但エマ(艾玛)是女性角色，使用\"大叔\"完全错误。A版在段落13也出现一次，但B版错误更频繁。\n\n**2. 术语翻译**\n- **タメ口**：A译为\"大白话\"（不够准确），B译为\"平辈语气\"（更准确）\n- **解像度の低いセリフ**（段落5）：A译\"略显粗劣的台词\"（意译合理），B译\"分辨率较低\"（过于直译，不自然）\n- **後日談**：A\"后日谈\"（标准用语），B\"后续故事\"（可接受但不如A常见）\n\n**3. 作品名处理**\n- A：保留日文「魔法少女ノ魔女裁判」\n- B：翻译为《魔法少女的魔女审判》（对中文读者更友好）\n\n**4. 角色称呼一致性**\n- A：メルルちゃん时用\"梅露露\"时用\"梅露露酱\"，略有不一致\n- B：较一致使用\"梅露露酱\"\n\n**5. 语气表达**\n- 段落8的长句：A的\"破坏力加倍、可爱、我最喜欢...\"较自然；B的\"破坏力MAX超可爱最喜欢\"稍显堆砌\n- 段落51：两版理解都有偏差，但A更接近原意\n\n**6. 对话自然度**\n- 两版整体对话流畅度相近\n- B在部分地方更口语化，但\"大叔我\"的错误严重破坏了角色形象\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B多次将女性角色自称译为'大叔我'是重大错误；A的'大白话'译タメ口不够准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两版整体流畅度相近，B段落5直译'分辨率'不自然\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"轻小说风格表达两版都把握较好，感叹语气到位\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"B的'平辈语气'比A的'大白话'更准确，但B保留日文较少\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B的'大叔我'严重破坏角色一致性和阅读体验\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两版格式标点处理相当\"}\n  },\n  \"key_differences\": [\n    \"B版多次将女主自称误译为'大叔我'，A版仅一处\",\n    \"タメ口翻译：A用'大白话'不够准确，B用'平辈语气'更好\",\n    \"作品名：A保留日文，B翻译成中文\",\n    \"解像度の低い：A意译合理，B直译生硬\"\n  ],\n  \"final_summary\": \"A版虽在'タメ口'翻译上不如B准确，但避免了B版反复出现的'大叔我'这一严重角色性别错误。综合准确性和角色一致性考虑，A版整体质量更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11976,
+          "completion_tokens": 2167,
+          "total_tokens": 14143
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B多次将女性角色自称译为'大叔我'是重大错误；A的'大白话'译タメ口不够准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两版整体流畅度相近，B段落5直译'分辨率'不自然"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "轻小说风格表达两版都把握较好，感叹语气到位"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "B的'平辈语气'比A的'大白话'更准确，但B保留日文较少"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B的'大叔我'严重破坏角色一致性和阅读体验"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两版格式标点处理相当"
+      }
+    },
+    "key_differences": [
+      "B版多次将女主自称误译为'大叔我'，A版仅一处",
+      "タメ口翻译：A用'大白话'不够准确，B用'平辈语气'更好",
+      "作品名：A保留日文，B翻译成中文",
+      "解像度の低い：A意译合理，B直译生硬"
+    ],
+    "final_summary": "A版虽在'タメ口'翻译上不如B准确，但避免了B版反复出现的'大叔我'这一严重角色性别错误。综合准确性和角色一致性考虑，A版整体质量更优。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:47:08.696906",
+  "sample": "pixiv.14996022.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14996022.ch10.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14996022.ch10.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.14996022.ch10.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "97840b0ea25b900611e3fd1bca8d95c19b711a6d9a5b445298a5ca51f9d44473",
+    "A": "25f08924c2877f458a080320015c739181cdd52efe682b0dab2764531a615dad",
+    "B": "658cee7c120c08e485254b28e049b5481858d0ace18054a29cda81faeb632e12"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:48:00.942722",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "235ff15c-6f5b-4366-b8be-36ec782b44ce",
+      "judge_response": {
+        "id": "235ff15c-6f5b-4366-b8be-36ec782b44ce",
+        "object": "chat.completion",
+        "created": 1768423680,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**关键差异：**\n\n1. **段落2** 标题翻译：A译为「魔法少女的魔女审判」（意译ノ），B保留「魔法少女诺魔女裁判」（音译ノ）。作为作品名，两种处理均可接受。\n\n2. **段落10** 人名：A译为\"冰上梅露露\"（完整翻译），B保留原文「氷上メルル」。A更符合翻译规范。\n\n3. **段落15** 拟声词：A保留「ぴょわっ」，B译为\"噗哇\"。B处理更一致。\n\n4. **段落51** 关键数量：\"何人所か何百人\"——A译为\"好几个女孩\"，B译为\"几百个女孩子\"。**B更准确**，原文明确提到\"何百人\"（几百人）。\n\n5. **段落60** 严重错误：「タメ口の私。気に入ったかな？」\n   - A译为：\"用敬语对我可不习惯呢\"——**完全错误**，タメ口是\"平辈语气/随意口吻\"，与敬语意思相反\n   - B译为：\"用平辈语气说话的我，喜欢吗？\"——**正确**\n\n### 流畅性与风格分析\n\n- A的表达有时略显生硬（如\"破坏力十足又可爱得不得了\"）\n- B的口语感更自然，更贴合轻小说女主角的活泼语气\n- B的\"酱\"后缀使用更符合二次元翻译惯例\n\n### 术语一致性\n\n- A在称呼上混用\"梅露露\"和\"梅露露酱\"\n- B始终使用\"梅露露酱\"，一致性更好\n- A在段落60出现术语翻译错误\n\n### 格式问题\n\n- B在段落15、21、32等处缺少结尾引号\n- A格式完整度略好\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落60将タメ口错译为敬语，属严重语义错误；段落51数量翻译不准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的口语化表达更自然流畅，更符合角色活泼的性格\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的轻小说风格把握更好，'酱'后缀使用恰当\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"A人称后缀不一致，且关键术语翻译错误\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"两者可读性都不错，B略胜一筹\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处对话缺少结尾引号\"}\n  },\n  \"key_differences\": [\n    \"段落60：A将タメ口错译为敬语（致命错误），B正确译为平辈语气\",\n    \"段落51：A译为'好几个'，B正确译为'几百个'\",\n    \"段落10：A翻译人名，B保留日文原文\",\n    \"整体称呼风格：A混用，B统一使用'酱'\",\n    \"格式：B多处缺少结尾引号\"\n  ],\n  \"final_summary\": \"B在准确性上明显优于A，特别是段落60的关键术语翻译A完全错误（将'平辈语气'译为'敬语'），直接颠倒了原意。B的语言风格也更贴合轻小说调性。虽然B存在引号缺失的格式问题，但不影响理解，综合来看B更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12132,
+          "completion_tokens": 2295,
+          "total_tokens": 14427
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落60将タメ口错译为敬语，属严重语义错误；段落51数量翻译不准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的口语化表达更自然流畅，更符合角色活泼的性格"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的轻小说风格把握更好，'酱'后缀使用恰当"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A人称后缀不一致，且关键术语翻译错误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者可读性都不错，B略胜一筹"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处对话缺少结尾引号"
+      }
+    },
+    "key_differences": [
+      "段落60：A将タメ口错译为敬语（致命错误），B正确译为平辈语气",
+      "段落51：A译为'好几个'，B正确译为'几百个'",
+      "段落10：A翻译人名，B保留日文原文",
+      "整体称呼风格：A混用，B统一使用'酱'",
+      "格式：B多处缺少结尾引号"
+    ],
+    "final_summary": "B在准确性上明显优于A，特别是段落60的关键术语翻译A完全错误（将'平辈语气'译为'敬语'），直接颠倒了原意。B的语言风格也更贴合轻小说调性。虽然B存在引号缺失的格式问题，但不影响理解，综合来看B更胜一筹。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

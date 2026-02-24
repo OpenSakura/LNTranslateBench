@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:12:50.670543",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "DeepSeek-V3.1"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "21c2269591b36b23eb64492fa291ae0066b3dbaf0c5cfd14f588d34a6419b0bf",
+    "B": "8310afb02202eed3f2f224199897eeecde93495d0ee6778d6481815c10747e05"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:13:35.508949",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7f3eda9d-7431-4b69-bea8-7f01ed9b3f06",
+      "judge_response": {
+        "id": "7f3eda9d-7431-4b69-bea8-7f01ed9b3f06",
+        "object": "chat.completion",
+        "created": 1768421615,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n- **段落9**: A将「タネの分からない」译为\"身份不明的\"，B译为\"连种子都搞不清的\"。「タネ」此处指\"底细/来历\"，A更准确。\n- **段落16**: A\"最后谱系之物\" vs B\"最后血脉\"。原文「系譜」确指谱系，A更精确。\n- **段落40**: A将\"特例的な処置\"译为\"因特殊处置而显眼的权能\"语句更完整；B\"特例处置明显的权能搞情报\"表述生硬。\n- **段落63**: B\"被认为会在那里集中分散发送\"语序混乱，A\"将分散派遣到世界各地的个体数量集中到该区域\"更清晰。\n\n### 2. 流畅性分析\n- A整体句式更流畅自然，如段落54: A\"因为觉得应付起来太麻烦\"比B\"因为处理起来很麻烦\"更口语化。\n- 段落72: A\"连犹豫着不想让人碰手机的工夫都没有\"比B更通顺。\n\n### 3. 风格/语气分析\n- B在对话处过于口语化，如段落44\"超牛技巧\"、段落46\"啥都能干\"与轻小说的叙事氛围不符。\n- A保持了较为统一的轻小说语感，如段落41使用「」保持对话格式，B却用了\"\"。\n\n### 4. 术语/名称一致性\n- 两者魔法少女名称翻译一致。\n- 段落37: B突然用\"Dark Moon\"而非\"暗月\"，破坏一致性。\n\n### 5. 格式/标点\n- A在对话中始终使用「」，B在段落41、43-50等处混用「」和\"\"，格式不统一。\n- A部分段落缺少逗号（如段落15、18、19），但整体标点更规范。\n\n### 6. 关键差异\n- 段落67: A\"被人请求就会忍不住用言行回绝的天才\"理解有误，原意应是\"她的言行让人想拒绝一切请求\"；B表述虽别扭但意思更接近。\n- 段落82: A\"从而完成了复活\"语义略偏，B\"她得以复活了\"更自然。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在关键词如「タネ」「系譜」的翻译更准确，B在段落63等处语序混乱\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A句式更通顺，B部分句子生硬如段落40、63\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A保持轻小说语感，B过度口语化如'超牛技巧''啥都能干'\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"B在段落37突然使用Dark Moon破坏一致性\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯性更佳，B部分逻辑表述混乱\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A引号使用统一「」，B混用「」和\\\"\\\"\"}\n  },\n  \"key_differences\": [\n    \"A整体语言风格更符合轻小说规范，B过于口语化\",\n    \"A对关键术语翻译更精准（タネ、系譜等）\",\n    \"B格式不统一，引号混用问题明显\",\n    \"A在长难句处理上更流畅，B有语序混乱现象\"\n  ],\n  \"final_summary\": \"A翻译在准确性、流畅性、风格一致性和格式规范方面均优于B。虽然A在个别句子（如段落67）存在轻微理解偏差，但整体质量明显更高，更适合轻小说的阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11043,
+          "completion_tokens": 1799,
+          "total_tokens": 12842
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在关键词如「タネ」「系譜」的翻译更准确，B在段落63等处语序混乱"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A句式更通顺，B部分句子生硬如段落40、63"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A保持轻小说语感，B过度口语化如'超牛技巧''啥都能干'"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "B在段落37突然使用Dark Moon破坏一致性"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯性更佳，B部分逻辑表述混乱"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A引号使用统一「」，B混用「」和\"\""
+      }
+    },
+    "key_differences": [
+      "A整体语言风格更符合轻小说规范，B过于口语化",
+      "A对关键术语翻译更精准（タネ、系譜等）",
+      "B格式不统一，引号混用问题明显",
+      "A在长难句处理上更流畅，B有语序混乱现象"
+    ],
+    "final_summary": "A翻译在准确性、流畅性、风格一致性和格式规范方面均优于B。虽然A在个别句子（如段落67）存在轻微理解偏差，但整体质量明显更高，更适合轻小说的阅读体验。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

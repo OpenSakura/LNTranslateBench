@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:23:12.879384",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.Kimi-K2.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "7cc974fe34d76c9765bca6ccace6e9e8a3eccc891f1443be9fa0e842489f4b0f",
+    "B": "afbe4bc06559f7709d708b40200f5d3e2048512553e22310853e52a1f35153fa"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:24:00.965705",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "627e372d-2ad1-454c-8587-75e7f51c3166",
+      "judge_response": {
+        "id": "627e372d-2ad1-454c-8587-75e7f51c3166",
+        "object": "chat.completion",
+        "created": 1768422240,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n- **A译**：整体忠实原文，但段落68中保留了大量日文原文未翻译（「リカルド・エルトロ・ファーレン・デ・オーファンラント国王陛下」），属重大翻译失误。\n- **B译**：准确翻译了所有内容，段落68完整音译了国王名字。\n\n### 2. 流畅性分析\n- **A译**：口语化更强，如\"整一支防卫军\"、\"凑合\"、\"扔给\"等表达自然活泼。\n- **B译**：略显书面化，但也通顺流畅。\n\n### 3. 风格/语气分析\n- **A译**：保留了「」对话符号，符合轻小说格式；语气更轻松俏皮。\n- **B译**：多处对话丢失引号（段落2、3、4、6、8、9等），时而用「」时而用\"\"，格式混乱，严重影响轻小说对话感。\n\n### 4. 术语/名称一致性\n- **A译**：トリエン翻译不一致（特利恩/塔莉恩/托里恩），问题较大。\n- **B译**：トリエン基本一致（特里恩），但段落25出现\"特里安\"；トリシア后期变成\"特莉希娅\"（段落74-77）。\n\n### 5. 连贯性/可读性\n- **A译**：对话清晰，读感流畅。\n- **B译**：因引号缺失，难以区分对话与叙述。\n\n### 6. 格式/标点\n- **A译**：格式规范，标点正确。\n- **B译**：引号使用严重不一致，约20+处对话丢失引号。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 9, \"notes\": \"A在段落68保留大量日文未译；B完整翻译\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A口语化更自然；B略书面化\"},\n    \"style\": {\"A\": 9, \"B\": 5, \"notes\": \"B大量对话丢失引号，严重破坏轻小说格式\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A地名严重不一致；B后期人名有变化\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B因格式问题影响对话辨识\"},\n    \"formatting\": {\"A\": 9, \"B\": 4, \"notes\": \"B引号使用极度混乱，约20+处对话无引号\"}\n  },\n  \"key_differences\": [\n    \"A在段落68保留日文原文未翻译（重大失误）\",\n    \"B大量对话行丢失引号（约20+处），格式严重不规范\",\n    \"A地名翻译不一致（特利恩/塔莉恩/托里恩）\",\n    \"A语言更口语化活泼，B更书面正式\",\n    \"ゴーレムホース：A译'魔像马'（意译）vs B译'戈雷姆马'（音译）\"\n  ],\n  \"final_summary\": \"两译各有明显缺陷。A的段落68保留日文是重大错误，地名也不一致；但B的对话引号大量缺失对轻小说格式是致命伤，严重影响阅读体验。综合考量，A的格式规范和轻小说风格把握更好，虽有局部硬伤但整体质量略优于B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10851,
+          "completion_tokens": 2057,
+          "total_tokens": 12908
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "A在段落68保留大量日文未译；B完整翻译"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A口语化更自然；B略书面化"
+      },
+      "style": {
+        "A": 9,
+        "B": 5,
+        "notes": "B大量对话丢失引号，严重破坏轻小说格式"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A地名严重不一致；B后期人名有变化"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B因格式问题影响对话辨识"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B引号使用极度混乱，约20+处对话无引号"
+      }
+    },
+    "key_differences": [
+      "A在段落68保留日文原文未翻译（重大失误）",
+      "B大量对话行丢失引号（约20+处），格式严重不规范",
+      "A地名翻译不一致（特利恩/塔莉恩/托里恩）",
+      "A语言更口语化活泼，B更书面正式",
+      "ゴーレムホース：A译'魔像马'（意译）vs B译'戈雷姆马'（音译）"
+    ],
+    "final_summary": "两译各有明显缺陷。A的段落68保留日文是重大错误，地名也不一致；但B的对话引号大量缺失对轻小说格式是致命伤，严重影响阅读体验。综合考量，A的格式规范和轻小说风格把握更好，虽有局部硬伤但整体质量略优于B。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

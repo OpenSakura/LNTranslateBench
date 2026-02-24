@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:03:57.263419",
+  "sample": "pixiv.s26712391.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26712391.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26712391.ch1.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/pixiv.s26712391.ch1.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f704bc6475e324efffb4fa390733d8170d454e4947204c1dc291d3ec83d24451",
+    "A": "75e314cf894e717668b93efe306ca301d47868dbf5aff1c9e6ee29ffce7d9ac8",
+    "B": "5eecf0b5bde2073c69042f69a622683e1052bca47316fa6feee0a04ba221c77a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:06:22.031987",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2a71dfd6-6d3a-4b5c-a4f8-18b506eb3562",
+      "judge_response": {
+        "id": "2a71dfd6-6d3a-4b5c-a4f8-18b506eb3562",
+        "object": "chat.completion",
+        "created": 1768431884,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段关键差异分析\n\n### 准确性问题\n\n**段落1** - 关键误译\n- 原文「飛び込んできたのは」主语是\"光景\"（映入眼帘的景象）\n- A「闯入眼帘的」✓ 正确理解\n- B「冲进去后看到的」✗ 误解为人冲进去\n\n**段落29** - 严重缺失\n- A完全缺失这一整段翻译！这是重大扣分项\n\n**段落62** - 意思相反\n- 原文「嘘と本当は両立するものだ」= 谎言与真实可以共存\n- A「本就可以共存」✓ 正确\n- B「是无法共存的」✗ 完全相反\n\n### 风格/术语一致性\n\n**人称称呼**：\n- A在对话中有时省略\"酱\"（如段落45「艾玛！」vs B「艾玛酱！」）\n- B保持更一致的\"酱\"用法\n\n**段落37「ボク」**：\n- A译为\"人家\" - 试图体现女性用僕自称的特殊性\n- B译为\"我\" - 较为普通\n\n**段落39「鬼ごっこ」**：\n- A「捉鬼游戏」更接近原意\n- B「捉迷藏」不够准确（かくれんぼ才是捉迷藏）\n\n### 流畅性比较\n\n**段落8**：\n- A「想陪伴着被杀害的朋友」较顺畅\n- B「对于已经杀死的朋友，我只想靠近她」稍显拗口\n\n**段落84**：\n- A保留了原文的碎片感和情绪\n- B稍微整理过，但略失原味\n\n---\n\n## 综合评估\n\nA的致命伤是**段落29完全缺失**，这是整段内容的遗漏，严重影响完整性。\n\nB的主要问题是**段落1和62的误译**，尤其段落62意思完全相反。\n\n两者各有优劣，但缺失整段内容比个别误译更严重。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落29缺失严重；B段落1、62有误译，各有问题\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相当，都保持了轻小说的阅读感\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更保留原文碎片化情绪感；B稍显平整\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A称呼不一致（酱的使用）；B较统一\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A缺失段落29严重影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式标点都较规范\"}\n  },\n  \"key_differences\": [\n    \"A完全缺失段落29的翻译（关于希罗酱从小上兴趣班的重要背景）\",\n    \"B在段落1误解句子结构（飛び込んできた的主语）\",\n    \"B在段落62将意思翻译成完全相反\",\n    \"A对「ボク」译为\"人家\"更有特色，B译为普通的\"我\"\",\n    \"A对鬼ごっこ译为「捉鬼游戏」更准确\"\n  ],\n  \"final_summary\": \"两者各有明显问题。A的致命伤是完全遗漏段落29，影响故事完整性和人物背景理解；B的问题是段落1和62的误译。综合考虑，遗漏整段内容比个别句子误译更严重，因为读者无法从其他地方补全信息，而误译至少提供了可阅读的内容。B以微弱优势胜出，但置信度不高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11996,
+          "completion_tokens": 1897,
+          "total_tokens": 13893
+        }
+      },
+      "status": "failed",
+      "error": "Expecting ',' delimiter: line 16 column 15 (char 576)"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "4fb37330-4d74-49a5-837c-fcb509d0af12",
+      "judge_response": {
+        "id": "4fb37330-4d74-49a5-837c-fcb509d0af12",
+        "object": "chat.completion",
+        "created": 1768431981,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐段关键差异分析\n\n### 段落1\n- 原文「飛び込んできたのは」表示\"映入眼帘\"\n- A正确理解为视觉主体的切入\n- B误译为\"冲进去后看到的\"，改变了主语\n\n### 段落8\n- 原文「殺してしまった友達」指\"已经犯下杀人罪的朋友\"\n- A译为\"被杀害的朋友\"（理解有误）\n- B译为\"已经杀死的朋友\"（歧义但更接近）\n\n### 段落24\n- 原文「か弱い」意为\"孱弱/柔弱\"\n- A\"孱弱\"准确\n- B\"懦弱\"语义偏差\n\n### 段落29 【严重问题】\n- **A完全漏译了这整段**\n- B完整翻译\n\n### 段落39/49\n- 原文「鬼ごっこ」是\"捉鬼游戏/抓人游戏\"\n- A正确翻译\n- B误译为\"捉迷藏\"\n\n### 段落62 【严重错误】\n- 原文「嘘と本当は両立するものだ」意为\"谎言与真实可以共存\"\n- A正确\n- **B翻译成完全相反的意思\"无法共存\"**\n\n### 段落63\n- 原文「正しくなる」意为\"变得正确\"\n- A误译为\"成为真实\"\n- B正确\n\n### 名称一致性\n- A在部分对话中省略了\"酱\"（如段落45\"艾玛\"vs\"艾玛酱\"）\n- B保持较好的敬称一致性\n\n## 评分\n\n```json\n{\n  \"winner\": \"tie\",\n  \"confidence\": 0.55,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 6, \"notes\": \"A漏译段落29；B在段落62翻译成相反意思，段落39/49误译鬼ごっこ；A在段落63误译。各有严重失误\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相当，都符合中文表达习惯\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B在情感表达上略显自然，保留了更多原文的语气停顿\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A正确翻译鬼ごっこ和死亡回归；B保留了ちゃん后缀更一致，但术语处理略逊\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A因漏译影响上下文连贯；B段落62错误影响逻辑理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式标点处理相当规范\"}\n  },\n  \"key_differences\": [\n    \"A漏译了段落29整段内容（希罗酱从小上兴趣班的回忆）\",\n    \"B在段落62将'谎言与真实可以共存'翻译成相反意思'无法共存'\",\n    \"A在段落63误译'正しくなる'为'成为真实'而非'变得正确'\",\n    \"B将'鬼ごっこ'(捉鬼游戏)误译为'捉迷藏'\",\n    \"B在人称后缀保留上更一致（酱的使用）\"\n  ],\n  \"final_summary\": \"两个翻译各有严重缺陷：A漏译了完整段落且在关键术语上有错误；B在关键语义上出现反向翻译错误且有术语误译。A的漏译虽严重但不影响理解主线；B的段落62错误直接影响叙事逻辑。综合考虑，两者整体质量相近，各有明显短板，判定为平局。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11996,
+          "completion_tokens": 4573,
+          "total_tokens": 16569
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "tie",
+    "confidence": 0.55,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 6,
+        "notes": "A漏译段落29；B在段落62翻译成相反意思，段落39/49误译鬼ごっこ；A在段落63误译。各有严重失误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相当，都符合中文表达习惯"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在情感表达上略显自然，保留了更多原文的语气停顿"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A正确翻译鬼ごっこ和死亡回归；B保留了ちゃん后缀更一致，但术语处理略逊"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A因漏译影响上下文连贯；B段落62错误影响逻辑理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式标点处理相当规范"
+      }
+    },
+    "key_differences": [
+      "A漏译了段落29整段内容（希罗酱从小上兴趣班的回忆）",
+      "B在段落62将'谎言与真实可以共存'翻译成相反意思'无法共存'",
+      "A在段落63误译'正しくなる'为'成为真实'而非'变得正确'",
+      "B将'鬼ごっこ'(捉鬼游戏)误译为'捉迷藏'",
+      "B在人称后缀保留上更一致（酱的使用）"
+    ],
+    "final_summary": "两个翻译各有严重缺陷：A漏译了完整段落且在关键术语上有错误；B在关键语义上出现反向翻译错误且有术语误译。A的漏译虽严重但不影响理解主线；B的段落62错误直接影响叙事逻辑。综合考虑，两者整体质量相近，各有明显短板，判定为平局。"
+  },
+  "outcome": "tie",
+  "winner_model": null
+}

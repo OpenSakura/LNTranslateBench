@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:34:15.528866",
+  "sample": "syosetu.n6113jz.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6113jz.ch1.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6113jz.ch1.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n6113jz.ch1.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "202d88e951c365c1b6224fa97be1f2152793d07174bcd127ad73eaa546de66e6",
+    "A": "870ecf27a7a2a04072312018e70c5ee57b79c487f2c66469adc062ed8ba16e13",
+    "B": "beef8ad9c1c0f850fed6b3a908647dcb6a4b929c9002172d3effed291677903f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:34:53.496870",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "44f02951-26e4-478f-995e-e055186c9f13",
+      "judge_response": {
+        "id": "44f02951-26e4-478f-995e-e055186c9f13",
+        "object": "chat.completion",
+        "created": 1769610893,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题识别\n\n**翻译A的严重问题：**\n1. **段落10**：\"心里 somewhere 坏掉了\" - 出现英语词汇混入，严重错误\n2. **段落36**：\"外形 reminiscent 孔雀般的身躯\" - 再次出现英语混入\n3. **段落33**：漏译后半句\"神殿から溢れ出る炎は意志を持つかのように動き、やがて真の姿を現すのだった\"\n\n**翻译B的问题：**\n1. **段落72、76**：将\"フェニックス\"译为\"朱雀\"，与前后文\"凤凰/菲尼克斯\"不一致\n2. **段落80、83、87**：格式错误，出现「叽——！『这样引号不匹配的问题\n3. 鸣叫声拟声词翻译不够统一\n\n### 各方面对比\n\n**准确性**：A有漏译和英语混入；B基本完整但有个别术语偏差\n**流畅性**：B整体更自然通顺，如\"艰难地行走\"比\"沿着...前行\"更生动\n**风格**：B的对话更口语化，符合轻小说风格（如\"老大\"vs\"队长\"）\n**术语**：A的\"凤凰\"一致性好但有致命英语混入；B有\"朱雀\"的不一致\n**格式**：A标点较规范；B有引号格式错误\n\n### 具体段落对比亮点\n\n- 段落5：B的\"咳咳……呜嘿嘿\"比A的\"咯呵呵…嘻嘻\"更准确还原\"げほげほ\"（咳嗽声）\n- 段落22：A\"被从神殿内涌出的火焰吞没\"准确；B\"从神殿中出来后\"理解有误\n- 段落50：B\"扭扭捏捏\"比A\"扭动\"更生动准确\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 7, \"notes\": \"A有漏译(段落33)和英语混入(段落10、36)；B段落22理解略有偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更自然流畅，用词更生动\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B对话更口语化，符合轻小说风格\"},\n    \"terminology\": {\"A\": 4, \"B\": 6, \"notes\": \"A英语混入致命；B有'朱雀'不一致问题\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A漏译影响连贯；B整体可读性更好\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"B有多处引号格式错误(段落80、83、87)\"}\n  },\n  \"key_differences\": [\n    \"A出现英语词汇混入(somewhere, reminiscent)是致命错误\",\n    \"A段落33漏译关于火焰显露真身的重要内容\",\n    \"B将フェニックス在个别地方误译为朱雀\",\n    \"B有引号格式不匹配问题\",\n    \"B整体语言更自然生动\"\n  ],\n  \"final_summary\": \"虽然B存在术语不一致和格式问题，但A出现的英语混入和漏译是更严重的翻译错误，直接影响读者理解和阅读体验。B在流畅性和风格把握上也略胜一筹，综合评判B更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13427,
+          "completion_tokens": 1824,
+          "total_tokens": 15251
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 7,
+        "notes": "A有漏译(段落33)和英语混入(段落10、36)；B段落22理解略有偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更自然流畅，用词更生动"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对话更口语化，符合轻小说风格"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 6,
+        "notes": "A英语混入致命；B有'朱雀'不一致问题"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A漏译影响连贯；B整体可读性更好"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有多处引号格式错误(段落80、83、87)"
+      }
+    },
+    "key_differences": [
+      "A出现英语词汇混入(somewhere, reminiscent)是致命错误",
+      "A段落33漏译关于火焰显露真身的重要内容",
+      "B将フェニックス在个别地方误译为朱雀",
+      "B有引号格式不匹配问题",
+      "B整体语言更自然生动"
+    ],
+    "final_summary": "虽然B存在术语不一致和格式问题，但A出现的英语混入和漏译是更严重的翻译错误，直接影响读者理解和阅读体验。B在流畅性和风格把握上也略胜一筹，综合评判B更优。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:00:31.086505",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "6166114dec57a1eb220412657fb9e2eca25848db85216cd5ca4eb88581e98f25",
+    "B": "2adee7241c64b419d6e24530f825ec1c0e7c97a8c8acfab75c634bfa3a6b1850"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:01:19.182161",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "3887302e-6754-45ee-876c-3e400c450433",
+      "judge_response": {
+        "id": "3887302e-6754-45ee-876c-3e400c450433",
+        "object": "chat.completion",
+        "created": 1768431679,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项分析\n\n### 1. 准确性\n**段落2**: \"ネームレス夢小説\" - A译为\"无CP梦小说\"（不准确），B译为\"匿名梦小说\"（更接近\"无名\"的字面意思，但在梦小说语境下应指\"主角无名\"）\n\n**段落3**: \"オリ主\" - A译为\"原创作者\"（错误），B译为\"原创主角\"（正确，オリ主=オリジナル主人公）\n\n**段落21**: \"煮卵\" - A译为\"卤蛋\"，B译为\"溏心蛋\"（B更准确）\n\n**段落55**: \"それ聞きます？\" - A译为\"这你都要问？\"（准确），B译为\"你听说那个吗？\"（理解错误）\n\n**段落105**: B出现主语错误，将\"私\"误译为\"他\"\n\n**段落124-126**: B段落124内容不完整，段落125和126内容顺序颠倒\n\n**段落136**: \"顔が上がった\" - A译为\"抬起了头\"（正确），B译为\"笑逐颜开\"（严重误译）\n\n### 2. 流畅性\n- A整体语言更自然流畅\n- B部分句子较生硬，如段落4\"被改编成顺应情节的方便主义\"\n- 段落147：A的\"我正慌张着，根本不知道这些\"比B的\"我慌张得根本不知道自己慌了\"更通顺\n\n### 3. 风格/语气\n- A更好地保留了轻小说的口语化风格\n- A的语气词处理更自然，如\"呐呐\"vs\"喂喂\"\n- 对话格式：B使用「」符号更符合日式排版，A多用\"\"\n\n### 4. 术语一致性\n- 两者对\"Triple Face\"\"公安\"\"警校组\"等核心术语翻译一致\n- A将\"ゆりかもめ\"译为\"百合鸥\"，B译为\"百合海鸥线\"（B更准确）\n\n### 5. 连贯性\n- B在段落92和116的翻译较为混乱\n- A的叙事衔接更流畅\n\n### 6. 格式\n- B有段落内容缺失（段落124）\n- A标点符号使用更规范统一\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B有多处误译：段落3的'原创作者'、段落55的理解错误、段落136的严重误译、段落105主语错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A语言更自然流畅，B部分句子生硬拗口\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好保留轻小说口语化风格，B对话格式更符合日式排版\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"核心术语翻译一致，各有小差异\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"B有内容缺失和顺序颠倒问题（段落124-126）\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"B段落124内容不完整，A标点更统一\"}\n  },\n  \"key_differences\": [\n    \"段落3 オリ主翻译：A错译为'原创作者'，B正确译为'原创主角'\",\n    \"段落55理解差异：A正确理解为反问，B误解为询问\",\n    \"段落124-126：B出现内容缺失和顺序颠倒\",\n    \"段落136：B将'抬起头'严重误译为'笑逐颜开'\",\n    \"整体流畅度：A更自然，B部分句子生硬\"\n  ],\n  \"final_summary\": \"A在整体流畅性和准确性上表现更优，虽然段落3有一处明显错误，但B存在多处严重问题：段落136的关键误译、段落124内容缺失、段落55理解错误等。A的轻小说风格把握更好，叙事连贯性更强。综合评估A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14216,
+          "completion_tokens": 2242,
+          "total_tokens": 16458
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有多处误译：段落3的'原创作者'、段落55的理解错误、段落136的严重误译、段落105主语错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A语言更自然流畅，B部分句子生硬拗口"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好保留轻小说口语化风格，B对话格式更符合日式排版"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "核心术语翻译一致，各有小差异"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有内容缺失和顺序颠倒问题（段落124-126）"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "B段落124内容不完整，A标点更统一"
+      }
+    },
+    "key_differences": [
+      "段落3 オリ主翻译：A错译为'原创作者'，B正确译为'原创主角'",
+      "段落55理解差异：A正确理解为反问，B误解为询问",
+      "段落124-126：B出现内容缺失和顺序颠倒",
+      "段落136：B将'抬起头'严重误译为'笑逐颜开'",
+      "整体流畅度：A更自然，B部分句子生硬"
+    ],
+    "final_summary": "A在整体流畅性和准确性上表现更优，虽然段落3有一处明显错误，但B存在多处严重问题：段落136的关键误译、段落124内容缺失、段落55理解错误等。A的轻小说风格把握更好，叙事连贯性更强。综合评估A胜出。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

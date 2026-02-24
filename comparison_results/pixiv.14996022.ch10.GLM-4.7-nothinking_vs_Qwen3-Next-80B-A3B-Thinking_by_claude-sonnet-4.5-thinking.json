@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:24:59.504691",
+  "sample": "pixiv.14996022.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14996022.ch10.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14996022.ch10.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/pixiv.14996022.ch10.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "97840b0ea25b900611e3fd1bca8d95c19b711a6d9a5b445298a5ca51f9d44473",
+    "A": "6bac39324d58833085bc9dd00c797a758a446a9e0bfd20e1b99660488d02dde5",
+    "B": "4cd0b51cdaef90313cd160d6a15cb1c9d13a6ded2337489d77c06c38f77b7dcb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:25:54.723902",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f3d0128d-c04d-45b9-926c-88fa1ce77504",
+      "judge_response": {
+        "id": "f3d0128d-c04d-45b9-926c-88fa1ce77504",
+        "object": "chat.completion",
+        "created": 1768487154,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 详细分析\n\n## 准确性对比\n\n**翻译A的严重错误**：\n- 段落23：\"人尽可夫\"是严重误译。原文\"人には言えないこと\"意为\"不能告诉别人的事\"，与\"人尽可夫\"（形容女子不守贞操）毫无关系。\n- 段落4：保留英文\"character\"显得不够本地化。\n\n**翻译B的问题**：\n- 段落51：保留了未翻译的日文\"何人所か\"（应译为\"不知多少人\"或\"几十个\"）\n\n翻译B在准确性上明显优于A，A的错误属于意思完全偏离的严重问题。\n\n## 流畅性对比\n\n**翻译A**：\n- 段落3：\"请在了解后尽情欣赏\" - 过于正式书面\n- 段落8：\"破坏力マシマシ\" - 保留日文片假名不够自然\n\n**翻译B**：\n- 段落3：\"理解后再看吧\" - 更口语自然\n- 段落8：\"杀伤力MAX\" - 符合中文网络用语习惯\n- 段落12：\"超靠谱\" - 更贴近轻小说语感\n\n## 风格/语气对比\n\n**轻小说特征**（需要活泼、轻快、口语化）：\n\n翻译A倾向于文雅正式：\n- \"顺利地刻进了我的脑子里\"\n- \"真是太好了\"\n\n翻译B更符合轻小说风格：\n- \"已经把那晚的场景刻进我脑子里了\"\n- \"太好了\"\n- \"超喜欢\"、\"超厉害\"等网络用语\n\n## 术语一致性\n\n**\"タメ口\"的翻译**：\n- A：段落27\"随口语\"、段落60\"非敬语\" - 不统一\n- B：段落27\"平语\"、段落60\"随意语气\" - 相对统一，且\"平语\"是标准术语\n\n**人称代词**：\n- 段落14：A\"艾玛小姐\"，B\"艾玛姐\" - B更贴近角色关系\n\n## 格式/标点\n\n**对话格式**：\n- A使用「」（日式）\n- B使用\"\"和：（中文标准）\n\nB的标点更符合中文出版规范。\n\n## 关键差异总结\n\n1. **致命错误**：A的\"人尽可夫\"是无法接受的严重误译\n2. **文体差异**：B更符合轻小说的轻快风格，A过于正式\n3. **术语处理**：B对\"タメ口\"等术语翻译更专业\n4. **标点规范**：B使用标准中文标点\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 3,\n      \"B\": 8,\n      \"notes\": \"A存在严重误译（段落23'人尽可夫'），完全曲解原意。B除段落51保留日文外，准确度较高。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A过于书面正式，不够口语化。B更自然流畅，符合中文阅读习惯。\"\n    },\n    \"style\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"轻小说需要活泼轻快的语气。A偏文雅正式，B使用'超''MAX'等网络用语更贴合轻小说风格。\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"A对'タメ口'翻译不统一（随口语/非敬语），保留英文'character'。B使用标准术语'平语'，更专业。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"两者连贯性都不错，B稍简洁一些，阅读体验更好。\"\n    },\n    \"formatting\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"A使用日式「」，B使用标准中文标点\\\"\\\"和：，更符合中文出版规范。\"\n    }\n  },\n  \"key_differences\": [\n    \"A在段落23出现严重误译'人尽可夫'，完全曲解原意为'不能告诉别人的事'\",\n    \"B的语言风格更符合轻小说特征，使用'杀伤力MAX''超靠谱'等轻快表达\",\n    \"B的标点符号使用中文标准格式，A混用日式标点\",\n    \"A对'タメ口'翻译不统一，B使用专业术语'平语'\",\n    \"B整体更口语化自然，A偏向书面正式\"\n  ],\n  \"final_summary\": \"翻译B明显优于翻译A。A存在不可接受的严重误译（'人尽可夫'），且整体风格过于正式，不符合轻小说的文体特征。B虽有个别小瑕疵（段落51未翻译日文），但准确度高，语言风格活泼轻快，更贴合轻小说的叙事语气，标点使用也更规范。在轻小说翻译中，B展现出更好的文体把握和本地化处理能力。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11348,
+          "completion_tokens": 2469,
+          "total_tokens": 13817
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 3,
+        "B": 8,
+        "notes": "A存在严重误译（段落23'人尽可夫'），完全曲解原意。B除段落51保留日文外，准确度较高。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "A过于书面正式，不够口语化。B更自然流畅，符合中文阅读习惯。"
+      },
+      "style": {
+        "A": 5,
+        "B": 9,
+        "notes": "轻小说需要活泼轻快的语气。A偏文雅正式，B使用'超''MAX'等网络用语更贴合轻小说风格。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A对'タメ口'翻译不统一（随口语/非敬语），保留英文'character'。B使用标准术语'平语'，更专业。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者连贯性都不错，B稍简洁一些，阅读体验更好。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 9,
+        "notes": "A使用日式「」，B使用标准中文标点\"\"和：，更符合中文出版规范。"
+      }
+    },
+    "key_differences": [
+      "A在段落23出现严重误译'人尽可夫'，完全曲解原意为'不能告诉别人的事'",
+      "B的语言风格更符合轻小说特征，使用'杀伤力MAX''超靠谱'等轻快表达",
+      "B的标点符号使用中文标准格式，A混用日式标点",
+      "A对'タメ口'翻译不统一，B使用专业术语'平语'",
+      "B整体更口语化自然，A偏向书面正式"
+    ],
+    "final_summary": "翻译B明显优于翻译A。A存在不可接受的严重误译（'人尽可夫'），且整体风格过于正式，不符合轻小说的文体特征。B虽有个别小瑕疵（段落51未翻译日文），但准确度高，语言风格活泼轻快，更贴合轻小说的叙事语气，标点使用也更规范。在轻小说翻译中，B展现出更好的文体把握和本地化处理能力。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

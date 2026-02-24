@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:49:29.004625",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "1d207c4156fff839a43b6e5c742ef2bde935a94cc9c24564d24dbd15056e7b08",
+    "B": "153d38fe693b7f4b52beff66570b54870a34715fc1e0b32a536a5a3bca13b50a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:50:18.754117",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "da83b216-3ee6-4560-96e6-59c12fdb42b4",
+      "judge_response": {
+        "id": "da83b216-3ee6-4560-96e6-59c12fdb42b4",
+        "object": "chat.completion",
+        "created": 1768423818,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性\n**段落2**: A\"原创主角注意\"正确翻译\"オリ主\"(原创主角)，B\"原创者注意\"理解有误。\n\n**段落11**: A\"海螺小姐时空\"正确，B\"矶部桑的时空\"错误——サザエさん是《海螺小姐》。\n\n**段落15**: A\"彼方哥哥\"正确（彼方是名字），B\"那边的老哥\"严重错误，把名字误解为方位词。\n\n**段落32-33**: B出现严重误译。\"わかれという方が無理な話だ\"应为\"想让人分辨出来才是不可能的事\"，B译为\"说要分手的一方不合理\"完全曲解原意。\n\n**段落38**: A有严重格式错误\"お因为\"，日中混杂。\n\n### 流畅性\n**段落6**: A\"被蹦蹦地跳过\"生硬，B\"情节跳转得很频繁\"更自然。\n\n**段落12**: B\"像快马一样匆匆溜过去\"略显冗余，A\"快速流逝\"更简洁。\n\n### 格式问题\n**段落22-23**: A完全保留日语未翻译，这是明显失误。\n\n**段落37-39**: A有部分日语未翻译且存在混杂问题。B翻译完整但部分对话标点缺失。\n\n### 术语一致性\n**段落13**: A\"翻盖手机\"vs B\"功能机\"——B更准确翻译\"ガラケー\"。\n\n**段落5**: A\"meta或话题\"不如B\"元叙事或梗\"地道，\"ネタ\"译为\"梗\"更贴切。\n\n### 风格\nA整体保持轻小说叙述风格，用词较正式。B口语化更强，但有时过于随意（如段落47\"偷偷说\"）。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B在段落15、32-33出现严重误译（彼方误译、わかれ理解错误），A虽有小问题但无致命错误\"},\n    \"fluency\": {\"A\": 6, \"B\": 7, \"notes\": \"B整体更流畅自然，A部分表达生硬如'蹦蹦地跳过'\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者均能体现轻小说风格，各有特色\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A正确翻译オリ主、サザエさん等，B功能机更准确但关键术语有误\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体连贯性较好，B因误译造成上下文理解障碍\"},\n    \"formatting\": {\"A\": 4, \"B\": 7, \"notes\": \"A多处保留日语未翻译（段落22-23、38等），存在日中混杂错误\"}\n  },\n  \"key_differences\": [\n    \"B将人名'彼方'误译为方位词'那边'（段落15）\",\n    \"B严重误解'わかれという方が無理'为'分手'而非'分辨'（段落32-33）\",\n    \"A在多处保留日语未翻译，格式问题严重\",\n    \"A准确翻译'サザエさん'为海螺小姐，B错译为矶部桑\",\n    \"B在日常用语翻译上更自然（如ガラケー→功能机）\"\n  ],\n  \"final_summary\": \"A在准确性上明显优于B，尤其是关键情节和人名的翻译；B虽然流畅性更好且格式更完整，但存在多处严重误译（人名、关键句子理解错误）导致读者无法正确理解剧情。综合考虑，准确性的权重更高，A获胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9704,
+          "completion_tokens": 2120,
+          "total_tokens": 11824
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B在段落15、32-33出现严重误译（彼方误译、わかれ理解错误），A虽有小问题但无致命错误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 7,
+        "notes": "B整体更流畅自然，A部分表达生硬如'蹦蹦地跳过'"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者均能体现轻小说风格，各有特色"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A正确翻译オリ主、サザエさん等，B功能机更准确但关键术语有误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体连贯性较好，B因误译造成上下文理解障碍"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 7,
+        "notes": "A多处保留日语未翻译（段落22-23、38等），存在日中混杂错误"
+      }
+    },
+    "key_differences": [
+      "B将人名'彼方'误译为方位词'那边'（段落15）",
+      "B严重误解'わかれという方が無理'为'分手'而非'分辨'（段落32-33）",
+      "A在多处保留日语未翻译，格式问题严重",
+      "A准确翻译'サザエさん'为海螺小姐，B错译为矶部桑",
+      "B在日常用语翻译上更自然（如ガラケー→功能机）"
+    ],
+    "final_summary": "A在准确性上明显优于B，尤其是关键情节和人名的翻译；B虽然流畅性更好且格式更完整，但存在多处严重误译（人名、关键句子理解错误）导致读者无法正确理解剧情。综合考虑，准确性的权重更高，A获胜。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

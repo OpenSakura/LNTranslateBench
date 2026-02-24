@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:48:46.491486",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "14b5335bc673266f373e029b53e406f7b9113877155e9af46e26ac924bd4b108",
+    "B": "8b5f8c1e69d4efb33812e59b0f1bab3a3db4b34212da4a24e5ae44e0c2d82856"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:49:29.003876",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4fefc1d3-1328-4640-8f47-1a456dd1937f",
+      "judge_response": {
+        "id": "4fefc1d3-1328-4640-8f47-1a456dd1937f",
+        "object": "chat.completion",
+        "created": 1768423768,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**关键差异：**\n- **段落2**：「マッ缶」A译\"马罐\"，B译\"魔罐\"——都是对MAX咖啡罐的处理，均可接受\n- **段落23/25/30**：「みのぶまんじゅう」A的译法极度混乱（\"峯武馒头\"\"迷你馒头\"\"三峰馒头\"），B统一译为\"身延馒头\"，准确指代地名\n- **段落54**：A出现严重错误\"他 just 坐在旁边\"，明显翻译失误\n- **段落59**：A译\"三峰馒头\"，B译\"美浓馒头\"，两者都有问题，但B整体更统一\n\n### 2. 流畅性分析\n\n- A在某些口语表达上更自然（如\"嗖一下就冲过去\"）\n- B整体语句更完整流畅，保留了更多原文的句子结构\n- A的段落54出现中英混杂是致命硬伤\n\n### 3. 风格/语气分析\n\n- B更好地保留了轻小说的叙事节奏，如段落25描写馒头口感的细腻程度\n- 段落51/52：B的抒情表达更贴合原文的感慨氛围\n\n### 4. 术语一致性\n\n- A：齐藤（一致），但\"みのぶまんじゅう\"完全混乱\n- B：斋藤（一致），\"身延馒头\"（一致）\n- B明显胜出\n\n### 5. 格式/标点\n\n- A在段落17-20、53、60-61处**漏掉对话引号**，与其他段落格式不统一\n- B全程保持引号格式一致\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A的'みのぶまんじゅう'翻译混乱（峯武/迷你/三峰），B统一为身延；A段落54出现'他 just'严重错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"A口语感稍强但有硬伤；B整体更流畅完整\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好保留轻小说的叙事节奏和抒情氛围\"},\n    \"terminology\": {\"A\": 4, \"B\": 9, \"notes\": \"A术语极不一致，同一和菓子出现三种译法；B保持高度一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的术语混乱和翻译失误影响连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 9, \"notes\": \"A多处对话漏掉引号；B格式统一规范\"}\n  },\n  \"key_differences\": [\n    \"A的'みのぶまんじゅう'翻译出现三种不同译法，B统一为'身延馒头'\",\n    \"A段落54出现中英混杂错误'他 just 坐在旁边'\",\n    \"A多处对话缺少引号（段落17-20, 53, 60-61等），B格式一致\",\n    \"B在描写性段落（如段落25口感描述）更细腻完整\"\n  ],\n  \"final_summary\": \"B在术语一致性、格式规范和准确性方面明显优于A。A存在严重的术语混乱问题（同一和菓子三种译法）和明显的翻译错误（中英混杂），且对话格式不统一。虽然A在某些口语表达上略显自然，但整体质量不及B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11149,
+          "completion_tokens": 1805,
+          "total_tokens": 12954
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的'みのぶまんじゅう'翻译混乱（峯武/迷你/三峰），B统一为身延；A段落54出现'他 just'严重错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "A口语感稍强但有硬伤；B整体更流畅完整"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好保留轻小说的叙事节奏和抒情氛围"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 9,
+        "notes": "A术语极不一致，同一和菓子出现三种译法；B保持高度一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的术语混乱和翻译失误影响连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 9,
+        "notes": "A多处对话漏掉引号；B格式统一规范"
+      }
+    },
+    "key_differences": [
+      "A的'みのぶまんじゅう'翻译出现三种不同译法，B统一为'身延馒头'",
+      "A段落54出现中英混杂错误'他 just 坐在旁边'",
+      "A多处对话缺少引号（段落17-20, 53, 60-61等），B格式一致",
+      "B在描写性段落（如段落25口感描述）更细腻完整"
+    ],
+    "final_summary": "B在术语一致性、格式规范和准确性方面明显优于A。A存在严重的术语混乱问题（同一和菓子三种译法）和明显的翻译错误（中英混杂），且对话格式不统一。虽然A在某些口语表达上略显自然，但整体质量不及B。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:59:50.091021",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "61a5acb3601a813e4f6e3903be58b772fa278572794b262c6c84df93ab38f445",
+    "B": "ac0f8c4c383bf034e7ee42d1cef7aebb1b7c2c3787464c316d69fe440777c4d2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:00:31.084938",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "907bbdd4-2fd4-477d-80ed-c2b22fb29086",
+      "judge_response": {
+        "id": "907bbdd4-2fd4-477d-80ed-c2b22fb29086",
+        "object": "chat.completion",
+        "created": 1768431630,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n- **段落8/14**：B将「巡査部長」错误译为\"警部补\"，实际应为\"巡查部长\"（A正确）。警部补和巡查部长是不同警衔，这是重大术语错误。\n- **段落35**：B将\"萩原\"误写为\"荻原\"，人名错误。\n- **段落6**：「問題の種」A译为\"问题的苗头\"更贴近原意，B译为\"潜在的问题人员\"偏离原意。\n- **段落21**：B的\"逆向追踪\"比A的\"逆行探测\"更准确自然。\n\n### 流畅性分析\n- B整体句式更自然口语化，如段落4\"上头判断\"\"冷静一下头脑\"\n- A部分句子稍显生硬，如段落45\"应该过得都不是人样\"表达不当\n- B段落1句子过长，可读性下降\n\n### 风格/格式分析\n- B保留日式引号「」，更符合轻小说原作风格\n- A多处遗漏对话引号（段落11、16、17、18、47、48等），破坏对话格式\n- B段落30末尾多余引号\n\n### 术语一致性\n- A对\"佐藤ちゃん\"的翻译不一致（佐藤酱/佐藤小姐）\n- B较为一致使用\"佐藤\"\n- A正确翻译警衔术语，B有关键错误\n\n### 连贯性\n- 两者整体连贯性相近\n- B的表达更有整体感和对话感\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有警衔术语重大错误（巡查部长→警部补）和人名错误（萩原→荻原）\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语自然，A部分表达生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留日式引号更符合轻小说风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B警衔翻译错误是致命问题，A术语基本正确\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者连贯性相近\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处遗漏对话引号，B基本保持格式完整\"}\n  },\n  \"key_differences\": [\n    \"B将'巡査部長'错误译为'警部补'（段落8、14），这是警衔术语的重大错误\",\n    \"B将人名'萩原'误写为'荻原'（段落35）\",\n    \"A多处遗漏对话引号，破坏原文格式\",\n    \"B整体语言更流畅自然，A部分表达较生硬\",\n    \"B保留日式引号「」更贴合轻小说风格\"\n  ],\n  \"final_summary\": \"A在准确性和术语翻译上更胜一筹，特别是正确翻译了关键警衔术语；B虽然在流畅性和风格上表现更好，但警衔术语的重大错误（将巡查部长译为警部补）和人名错误是致命缺陷。考虑到轻小说翻译中准确性和术语正确性的重要性，A整体略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11653,
+          "completion_tokens": 1868,
+          "total_tokens": 13521
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有警衔术语重大错误（巡查部长→警部补）和人名错误（萩原→荻原）"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留日式引号更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B警衔翻译错误是致命问题，A术语基本正确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者连贯性相近"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处遗漏对话引号，B基本保持格式完整"
+      }
+    },
+    "key_differences": [
+      "B将'巡査部長'错误译为'警部补'（段落8、14），这是警衔术语的重大错误",
+      "B将人名'萩原'误写为'荻原'（段落35）",
+      "A多处遗漏对话引号，破坏原文格式",
+      "B整体语言更流畅自然，A部分表达较生硬",
+      "B保留日式引号「」更贴合轻小说风格"
+    ],
+    "final_summary": "A在准确性和术语翻译上更胜一筹，特别是正确翻译了关键警衔术语；B虽然在流畅性和风格上表现更好，但警衔术语的重大错误（将巡查部长译为警部补）和人名错误是致命缺陷。考虑到轻小说翻译中准确性和术语正确性的重要性，A整体略优。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

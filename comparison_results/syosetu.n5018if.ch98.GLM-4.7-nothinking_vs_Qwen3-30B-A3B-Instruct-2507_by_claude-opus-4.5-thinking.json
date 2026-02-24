@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:11:03.301896",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "595740c1626cd01f139cd164c66285fb53d732c9a2be1fb0b2675c48588dc5d2",
+    "B": "985ddf3367fb36953b6baa1dd9c61f66cc87b267566af2424b0007131d566411"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:12:05.778374",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6429a6ef-6aaf-407e-ae69-946aef45f524",
+      "judge_response": {
+        "id": "6429a6ef-6aaf-407e-ae69-946aef45f524",
+        "object": "chat.completion",
+        "created": 1768432325,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 段落逐一分析\n\n**术语准确性问题：**\n- 段落1：「ラッシュガード」A译\"紧身泳衣\"有误，B译\"防晒衣\"正确（防磨衣/水母衣）\n- 段落50/52/74/77：「ローション」在涂防晒场景中，A译\"润滑剂\"严重错误，B译\"精油\"也不对，应为\"防晒乳液\"。B在段落77改正为\"防晒乳\"\n- 段落72：「足」B译\"腿\"比A的\"脚/小腿\"更符合上下文\n\n**意思理解问题：**\n- 段落13：原文是亚莉莎抱怨男主夸了䌷却不夸自己。A理解有偏差，B也不够清晰\n- 段落15：A的\"可爱得让人快受不了这种感觉，完全没产生\"语义混乱；B\"可爱过头了，完全不会让人觉得糟糕\"更通顺\n- 段落16：A添加了\"谁的面子都不给\"，偏离原意；B\"才不会说是为了谁这种煞风景的话\"准确\n- 段落31：A完全误译；B\"随口说了涂防晒霜真是不好\"正确\n- 段落103：「内」A译\"自己人\"有误，B译\"在家里\"正确\n\n**流畅度对比：**\n- 段落92：A\"真是凉真的笨蛋\"语法别扭；B\"凉真大笨蛋\"自然\n- 段落100：A\"不准挠痒痒\"比B\"挠痒痒禁止\"更自然\n- 段落78：B\"发出了直冲下体的声音\"比A\"在胯间回响的呻吟\"更贴合原意\n\n**格式问题：**\n- 段落22：B缺少对话引号「」\n\n**风格把握：**\n- 两者都保持了轻小说的叙事风格\n- B的拟声词处理如\"呀呜\"更贴近日语原文\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有多处关键误译(ラッシュガード、ローション→润滑剂、段落31完全误解)；B整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相近，各有优劣处\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好地保持了轻小说风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A的专业术语翻译(防晒衣、防晒乳)有明显错误；B更准确\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B在段落22缺少对话引号\"}\n  },\n  \"key_differences\": [\n    \"ラッシュガード：A误译为紧身泳衣，B正确译为防晒衣\",\n    \"ローション：A错译为润滑剂(严重错误)，B译为精油/防晒乳\",\n    \"段落31理解：A完全误解原意，B正确\",\n    \"段落103「内」：A译自己人有误，B译在家里正确\",\n    \"段落16：A添加了原文没有的内容\"\n  ],\n  \"final_summary\": \"B在准确性方面明显优于A，尤其是关键术语(ラッシュガード、ローション)和语义理解(段落31、103)。A存在多处影响阅读理解的误译。虽然A在个别表达上更自然，但整体准确性的差距使B成为更好的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11155,
+          "completion_tokens": 2283,
+          "total_tokens": 13438
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有多处关键误译(ラッシュガード、ローション→润滑剂、段落31完全误解)；B整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相近，各有优劣处"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好地保持了轻小说风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A的专业术语翻译(防晒衣、防晒乳)有明显错误；B更准确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B在段落22缺少对话引号"
+      }
+    },
+    "key_differences": [
+      "ラッシュガード：A误译为紧身泳衣，B正确译为防晒衣",
+      "ローション：A错译为润滑剂(严重错误)，B译为精油/防晒乳",
+      "段落31理解：A完全误解原意，B正确",
+      "段落103「内」：A译自己人有误，B译在家里正确",
+      "段落16：A添加了原文没有的内容"
+    ],
+    "final_summary": "B在准确性方面明显优于A，尤其是关键术语(ラッシュガード、ローション)和语义理解(段落31、103)。A存在多处影响阅读理解的误译。虽然A在个别表达上更自然，但整体准确性的差距使B成为更好的翻译。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

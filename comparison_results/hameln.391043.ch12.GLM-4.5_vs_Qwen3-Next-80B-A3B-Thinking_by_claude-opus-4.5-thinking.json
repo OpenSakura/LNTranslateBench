@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:13:07.643846",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "bd4a06e005fbe321bbdd442566acfaac80923ab91c8da55462f5f2c8b5b3a8fa",
+    "B": "9f7761dd2aa6e2bdacc91c93866afbc603900d0a1970e6eff9d2734971f3cf1b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:13:44.445157",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f7a58eb9-9053-463f-a1e8-78afc6722482",
+      "judge_response": {
+        "id": "f7a58eb9-9053-463f-a1e8-78afc6722482",
+        "object": "chat.completion",
+        "created": 1768421624,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性方面：**\n- 段落29：B将「ダークムーンには考えられなかった」误译为\"想不到'暗月'竟然会知道\"，实际应是\"暗月无法想象（有人知道这件事）\"。A的理解正确。\n- 段落37：A将「食い下がる」译为\"退缩\"，完全错误。该词意为\"穷追不舍/不依不饶\"，B正确。\n- 段落67：A将主语理解反了，原文说的是\"她是那种一被人拜托就想拒绝的天才\"，而非\"别人一求她\"。B的理解更准确。\n- 段落9：A将「保有する魔法とタネの分からない」理解为两个独立特点，B合并处理略有模糊，但A更接近原意。\n\n**流畅性方面：**\n- A整体采用口语化风格，读来轻快，但有时过于简略导致信息丢失\n- B更书面化，句式完整但有时显得冗长\n\n**风格方面：**\n- A的对话如「太扎眼了」「关注度爆表」更符合轻小说活泼调性\n- B如「备受瞩目」「来路不明」更正式，但保留了更多原文结构\n\n**术语一致性：**\n- 段落4：B保留日文原名「朝桜」「竜星」，A统一用中文「朝樱」「龙星」——A更符合中文阅读习惯\n- 「認識阻害」：A用\"认知阻碍\"，B混用\"认知阻碍/认知妨碍\"，A更一致\n\n**格式方面：**\n- B在段落8、9等处使用英文句号(.)而非中文句号(。)，有格式问题\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落37关键动词误译；B在段落29有理解偏差，但A整体遗漏细节更多\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化流畅但有时过简；B完整但稍显冗长\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说活泼调性；B偏正式\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A术语统一用中文；B混用日中文且有不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留更完整的逻辑链条；A省略过多影响连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处使用英文句号，格式问题明显\"}\n  },\n  \"key_differences\": [\n    \"段落37「食い下がる」：A错译为退缩，B正确译为穷追不舍\",\n    \"段落29理解：B误解了主语关系\",\n    \"整体风格：A口语简洁 vs B书面完整\",\n    \"人名处理：A中文化 vs B保留日文\",\n    \"B存在标点格式问题（英文句号）\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A流畅活泼但存在关键误译（段落37）和信息省略；B准确完整但风格偏正式且有格式问题。综合考量，B在准确性和连贯性上的优势略大于其格式缺陷，而A的关键误译较为严重，故B略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10757,
+          "completion_tokens": 1421,
+          "total_tokens": 12178
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落37关键动词误译；B在段落29有理解偏差，但A整体遗漏细节更多"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化流畅但有时过简；B完整但稍显冗长"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说活泼调性；B偏正式"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A术语统一用中文；B混用日中文且有不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留更完整的逻辑链条；A省略过多影响连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处使用英文句号，格式问题明显"
+      }
+    },
+    "key_differences": [
+      "段落37「食い下がる」：A错译为退缩，B正确译为穷追不舍",
+      "段落29理解：B误解了主语关系",
+      "整体风格：A口语简洁 vs B书面完整",
+      "人名处理：A中文化 vs B保留日文",
+      "B存在标点格式问题（英文句号）"
+    ],
+    "final_summary": "两译本各有优劣。A流畅活泼但存在关键误译（段落37）和信息省略；B准确完整但风格偏正式且有格式问题。综合考量，B在准确性和连贯性上的优势略大于其格式缺陷，而A的关键误译较为严重，故B略胜。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

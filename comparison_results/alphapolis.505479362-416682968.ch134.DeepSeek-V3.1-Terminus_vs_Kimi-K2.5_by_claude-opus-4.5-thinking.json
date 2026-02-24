@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:17:18.454518",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.Kimi-K2.5.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "525f4b437cfb3947918d1150992edcbc0d470dc2454eab2692550ae3fd636616",
+    "B": "a6059f2f1ada9b955785b75a3fc93ff273660577b4794b36b7589ef04650144f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:17:58.474936",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c6ecc27b-2914-4d3a-9ce0-3bf30af7d645",
+      "judge_response": {
+        "id": "c6ecc27b-2914-4d3a-9ce0-3bf30af7d645",
+        "object": "chat.completion",
+        "created": 1769609878,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**段落2**: A的\"从13岁到15岁做专属女仆\"主语清晰（波耶尔做女仆）；B的\"让她从13岁到15岁担任专属女仆\"改变了主语关系，产生歧义。\n**段落3**: \"騙してやがった\"A译\"骗我\"比B的\"瞒着我\"更贴合原文语气。\n**段落32**: A严重错误——\"半分の速度\"译为\"半价的速度\"，应为\"一半速度\"。B正确。\n**段落15**: \"ヒョロヒョロの剣\"A译\"细不拉几\"、B译\"细得像根面条\"，A更自然准确。\n\n### 2. 流畅性\nB整体更口语化流畅，如\"瘫软\"、\"勃然大怒\"、\"绰绰有余\"等用词更自然。\nA部分表达较生硬，如\"关于一个人打倒迷宫里的龙的话题呢\"（段落44）。\n\n### 3. 风格/语气\n**段落5**: B\"人家一开始就道歉了嘛～\"更符合撒娇口吻；A\"我一开始\"较平淡。\n**段落20**: B\"这他妈是真剑啊\"更符合惊讶粗犷的语气。\n**段落23**: B\"好嘞，你死定啦～\"更活泼，A\"好，死了～\"略显生硬。\n**段落11**: A用\"5年级\"，B用\"五年级\"和\"老爸\"更口语化。\n\n### 4. 术语一致性\n- ダンジョン: A译\"迷宫\"，B译\"地下城\"——两者皆可接受\n- アイテムボックス: A\"物品箱\"，B\"道具箱\"——A更准确\n- 两者人名统一\n\n### 5. 连贯性/可读性\n两者都保持了良好的连贯性。B的叙述节奏更流畅自然。\n\n### 6. 格式/标点\n**段落27**: B缺少右引号\"」\"，格式错误明显。\n其余基本一致。\n\n## 关键差异总结\n1. A在段落32有明显翻译错误（\"半价\"应为\"一半\"）\n2. B在段落27有格式缺失\n3. B语言风格更活泼，更符合轻小说口吻\n4. A在段落2主语关系更准确\n5. B整体流畅度更高\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落32有'半价'严重翻译错误；B在段落2主语理解略有偏差但整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B用词更口语化自然，如'瘫软''绰绰有余'等表达更流畅\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B的'人家''这他妈''好嘞'等更符合轻小说撒娇/粗犷的语气风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者术语处理相当，A的'物品箱'略优于B的'道具箱'\"},\n    \"coherence\": {\"A\": 8, \"B\": 8, \"notes\": \"两者连贯性相当，可读性良好\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"B在段落27缺少右引号，A格式完整\"}\n  },\n  \"key_differences\": [\n    \"A在段落32将'半分の速度'误译为'半价的速度'（严重错误）\",\n    \"B在段落27缺少右引号（格式错误）\",\n    \"B语言风格更活泼口语化，更贴合轻小说特点\",\n    \"A在段落2对主语关系的理解更准确\"\n  ],\n  \"final_summary\": \"B在整体流畅性和轻小说风格把握上优于A，语言更生动活泼。虽然B有格式小瑕疵，但A的'半价'翻译错误更为严重。综合考量，B略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10033,
+          "completion_tokens": 2067,
+          "total_tokens": 12100
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落32有'半价'严重翻译错误；B在段落2主语理解略有偏差但整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B用词更口语化自然，如'瘫软''绰绰有余'等表达更流畅"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的'人家''这他妈''好嘞'等更符合轻小说撒娇/粗犷的语气风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者术语处理相当，A的'物品箱'略优于B的'道具箱'"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者连贯性相当，可读性良好"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "B在段落27缺少右引号，A格式完整"
+      }
+    },
+    "key_differences": [
+      "A在段落32将'半分の速度'误译为'半价的速度'（严重错误）",
+      "B在段落27缺少右引号（格式错误）",
+      "B语言风格更活泼口语化，更贴合轻小说特点",
+      "A在段落2对主语关系的理解更准确"
+    ],
+    "final_summary": "B在整体流畅性和轻小说风格把握上优于A，语言更生动活泼。虽然B有格式小瑕疵，但A的'半价'翻译错误更为严重。综合考量，B略胜一筹。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:27.689620",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "43f568b3b09abb3e7a728370ba3ae453689d818704756f788cda5c47627e3ccd",
+    "B": "8ff8a8df5e2b17987ae0cd8e76f88c62ff9c317b5b5074c82d8a5197b1964e59"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:48.185278",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DPL6bh4UqfqaUChKQPdmqYEDvjC",
+      "judge_response": {
+        "id": "chatcmpl-89DPL6bh4UqfqaUChKQPdmqYEDvjC",
+        "object": "chat.completion",
+        "created": 1768426907,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"ヴィルヘルミーナ軍港 インペラトリーツァ・エカテリーナ 翻訳 OR 女皇叶卡捷琳娜号\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"ベルセフォニア共和国 OR ベルセフォニア OR 汎人類共和国 轻小说 OR 小说\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"柳井義久 皇帝メアリーⅠ世 轻小说\"\n> 📊 **Results requested:** 5\n\n> 🔍 **1 results found**\n\n> [🔗 \"エカテリーナ - 英訳 – Linguee辞書\" Linguee](https://www.linguee.jp/%E6%97%A5%E6%9C%AC%E8%AA%9E-%E8%8B%B1%E8%AA%9E/%E7%BF%BB%E8%A8%B3/%E3%82%A8%E3%82%AB%E3%83%86%E3%83%AA%E3%83%BC%E3%83%8A.html)\n\n> 🔍 **10 results found**\n\n> [🔗 \"小说列表-SF轻小说\" SF轻小说](https://book.sfacg.com/List?tid=21)\n> [🔗 \"银河英雄传说 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-cn/%E9%8A%80%E6%B2%B3%E8%8B%B1%E9%9B%84%E5%82%B3%E8%AA%AA)\n> [🔗 \"全网最强同人文，轻小说当之无愧的霸主！_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1sQ4y117tR)\n> [🔗 \"轻小说-轻之国度-专注分享的NACG社群\" Lightnovel](https://www.lightnovel.fun/cn/category/3/106?type=1)\n> [🔗 \"科幻宇宙：我银河帝国文明被曝光最新章节_飞卢小说网\" Faloo](https://b.faloo.com/html_1086_1086326)\n> [🔗 \"轻小说 第二卷 | No Game No Life 游戏人生 Wiki | Fandom\" Fandom](https://ngnl.fandom.com/zh/wiki/%E8%BD%BB%E5%B0%8F%E8%AF%B4_%E7%AC%AC%E4%BA%8C%E5%8D%B7)\n> [🔗 \"银河英雄传说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E9%93%B6%E6%B2%B3%E8%8B%B1%E9%9B%84%E4%BC%A0%E8%AF%B4)\n> [🔗 \"没有\" Douban](https://m.douban.com/book/review/8832148)\n> [🔗 \"资讯-轻之国度-专注分享的NACG社群\" Lightnovel](https://www.lightnovel.fun/cn/category/1/0?type=0)\n> [🔗 \"日系科幻有哪些值得推荐的作品？ - 知乎\" Zhihu](https://www.zhihu.com/question/38097191)\n\n> 🔍 **10 results found**\n\n> [🔗 \"皇帝陛下の懐刀――帝国宰相・柳井義久（山﨑 孝明） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054898606236)\n> [🔗 \"魔笔小说 | 轻小说 资源收集\" Mobinovels](https://mobinovels.com/)\n> [🔗 \"Redirecting...\" Lightnovel](https://www.lightnovel.us/)\n> [🔗 \"小说列表-SF轻小说\" SF轻小说](https://book.sfacg.com/List?tid=21)\n> [🔗 \"轻小说-轻之国度-专注分享的NACG社群\" Lightnovel](https://www.lightnovel.us/cn/category/3/108?type=1)\n> [🔗 \"轻小说 - Hikarinagi\" Hikarinagi](https://www.hikarinagi.org/lightnovel)\n> [🔗 \"【86】 - 书旗小说\" ShuQi](https://www.shuqi.com/store?fc=86&page=8&st=0&sz=0&tm=3&wd=10)\n> [🔗 \"轻小说合集目录【20180619更新】\" Wordpress](https://homeworkkun.wordpress.com/2018/01/01/lightnovelnames)\n> [🔗 \"图书详情\" Cmread](https://m.cmread.com/nap/501236728/index.htm?vt=3&z=1)\n> [🔗 \"豆瓣图书标签: 轻小说\" Douban](https://book.douban.com/tag/%E8%BD%BB%E5%B0%8F%E8%AF%B4?start=140&type=S)\n\n\n这是一个来自《皇帝陛下の懐刀――帝国宰相・柳井義久》（或类似标题）的轻小说片段，带有强烈的太空歌剧/政治阴谋/军事科幻风格，叙述冷静、对话正式但带轻小说常见的内心吐槽与细腻描写。\n\n**详细分析**（逐关键方面）：\n\n1. **准确性（意思保留）**：\n   - A 整体更忠实于原文结构和细节。例如段落6：A 用“陪同皇帝与侍从一行人，柳井正仰望着...——女皇叶卡捷琳娜号”，精确对应“付き添って...を見上げていた”。B 用“在皇帝和侍从团的陪同下”，主语稍移位，但意思相近。\n   - 专有名词处理：A 在“ヴィルヘルミーナ”用“维尔赫米娜”（接近德语系Wilhelmina），B 用“维尔赫尔米娜”（更接近英语系Wilhelmina），但原文是德风，A 稍准；“インペラトリーツァ・エカテリーナ”A 用“女皇叶卡捷琳娜号”，B 同，但A 在多处保持一致。\n   - 段落8：A “不牺牲机动性和火力”，忠实“不落とさない”；B “也不落下”，稍口语但准。\n   - 段落15：A “压制着真正的政治格局”，对应“政局らしい政局を押さえ込んでいた”；B “整个政局都让他一手捏着”，更生动但稍夸张。\n   - A 在复杂长句（如段落7、20）保留原文逻辑层次更好；B 偶尔简化或改写导致细微偏差（如段落20 B “据说能扭转局面的唯一办法就是解散举行大选”稍省略原文的“まことしやかに流布するほど”谣言感）。\n   → A 略胜。\n\n2. **流畅性（中文自然表达）**：\n   - A 用词较文雅、书面（如“相称的通信能力与防御力兼备”“积累为今后建造...提供宝贵的运作实绩”），适合严肃政治/军事叙述，但部分句子稍长、稍硬（如段落15）。\n   - B 更口语化、生活化（如“改装效果也很不错呢”“家里就交给你了”“非得变天不可”“黔驴技穷了”），读起来轻松、亲切，符合轻小说对话/内心戏的节奏，许多地方像日常中文小说。\n   - B 在对话部分特别自然（如段落27 B “千万别冲动啊”对应“短慮は禁物です”，生动）；A 更直译“切忌短虑”，正式但少趣味。\n   → B 明显更流畅，尤其对中文读者。\n\n3. **风格/语气（轻小说叙述/对话）**：\n   - 轻小说常混正式叙述+吐槽/口语对话。A 保持较统一的文雅语气，叙述严谨，像传统翻译；对话也偏正式（如“有什么顾虑吗？”）。\n   - B 对话更活泼、带调侃/接地气（如段落15 B “政治分量重得吓人”“非得变天不可”，段落16 B “一个月内局势就大变？我才不信呢”），捕捉到原文皇帝/柳井的微妙吐槽与政治家间的微妙张力，更有轻小说“吐槽系”感觉。\n   - 叙述部分B 也更轻松（如段落45 B “人生真是难料啊，他就像看热闹似的感慨着”）。\n   → B 更贴近轻小说风格。\n\n4. **术语/名称一致性**：\n   - 专名：A “维尔赫米娜”“女皇叶卡捷琳娜号”“贝尔塞福尼亚”“莱维加塔”“中心城邦”“泛人类共和国”较一致；B “维尔赫尔米娜”“叶卡捷琳娜号”“贝尔塞福尼亚”“雷维加塔”“中心城”“泛人类共和国”也基本一致，但A 在“センターポリス”用“中心城邦”更贴“polis”城市国家感，B “中心城”稍简。\n   - 时间/数字：A 多用“〇时〇分”“一〇时”，保留日式；B 改“10时00分”“10点43分”，更现代中文习惯。\n   - 政治术语：A “不成文的规定”“不文律”；B “老规矩”，B 更口语但一致。\n   → 两者均高一致，A 稍保守保留原文形式，B 更汉化。\n\n5. **连贯性/可读性**：\n   - A 长句多，逻辑严密，但偶尔读起来稍累（如段落8、20）。\n   - B 句子短促、节奏快，段落间过渡自然，对话生动，整段阅读更顺畅，尤其政治说明部分不枯燥。\n   → B 胜出。\n\n6. **格式/标点符号**：\n   - A 引号统一「」，时间用“时”，较规范。\n   - B 用“”混用‘’，时间用“点”，部分对话后有。/，但整体标点更灵活，符合中文小说习惯。\n   - 两者均无重大错误，A 更统一。\n   → 平手或A 微胜。\n\n**总体**：A 在准确性、忠实度和正式叙述上更强，适合追求“原汁原味”的读者；B 在流畅性、风格贴合轻小说（口语化、趣味性、可读性）上大幅领先，尤其对话和政治调侃部分更活泼自然。作为轻小说翻译，中文读者更在意“读着爽不爽”“像不像中文小说”，B 整体体验更好，胜出差距明显。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A 更忠实原文结构与细微含义，B 偶有轻微改写或简化，但无大错\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"A 书面优雅但稍硬，B 自然口语化，阅读舒适度高\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B 更好捕捉轻小说对话的活泼、吐槽与政治微妙张力，A 偏正式\"},\n    \"terminology\": {\"A\": 9, \"B\": 8.5, \"notes\": \"两者一致性高，A 保留原文形式更多（如〇时），B 汉化更彻底但无误\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B 节奏更好、句子短促，连贯可读性强\"},\n    \"formatting\": {\"A\": 9, \"B\": 8.5, \"notes\": \"A 引号/时间格式更统一，B 灵活但稍杂\"}\n  },\n  \"key_differences\": [\n    \"A 更直译、正式、文雅，适合忠实派\",\n    \"B 更口语、接地气、节奏快，中文阅读感强，尤其对话生动\",\n    \"B 在政治/内心描写上增加轻微趣味化（如'非得变天不可' '黔驴技穷'），贴合轻小说风格\",\n    \"专名/时间格式 A 保留日式更多，B 更现代化\"\n  ],\n  \"final_summary\": \"虽然A在准确性和正式感上略优，但作为轻小说翻译，B的流畅性、对话自然度和整体可读性更胜一筹，更能让中文读者沉浸其中，整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12671,
+          "completion_tokens": 3970,
+          "total_tokens": 16641
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A 更忠实原文结构与细微含义，B 偶有轻微改写或简化，但无大错"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "A 书面优雅但稍硬，B 自然口语化，阅读舒适度高"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B 更好捕捉轻小说对话的活泼、吐槽与政治微妙张力，A 偏正式"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "两者一致性高，A 保留原文形式更多（如〇时），B 汉化更彻底但无误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B 节奏更好、句子短促，连贯可读性强"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "A 引号/时间格式更统一，B 灵活但稍杂"
+      }
+    },
+    "key_differences": [
+      "A 更直译、正式、文雅，适合忠实派",
+      "B 更口语、接地气、节奏快，中文阅读感强，尤其对话生动",
+      "B 在政治/内心描写上增加轻微趣味化（如'非得变天不可' '黔驴技穷'），贴合轻小说风格",
+      "专名/时间格式 A 保留日式更多，B 更现代化"
+    ],
+    "final_summary": "虽然A在准确性和正式感上略优，但作为轻小说翻译，B的流畅性、对话自然度和整体可读性更胜一筹，更能让中文读者沉浸其中，整体质量更高。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

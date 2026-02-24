@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:21:38.302151",
+  "sample": "novelup.916197286.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.916197286.ch19.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.916197286.ch19.Kimi-K2.5.translated.txt",
+    "B": "translated_results/novelup.916197286.ch19.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "555d1a41f6993dc9f3cb5fc90218bd40f549c3b95e2e9706edd270d42780783c",
+    "A": "d9baefeac731780966a855c72c7ac13ce9c6125e4d79bacdf53ca6c6426236f3",
+    "B": "3714611cecd08087fa955e54dce1abe7cd1aa337812023b963049d4f51c49703"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:22:13.153913",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ed5d0c3a-1232-464c-ad63-b067432b6ef8",
+      "judge_response": {
+        "id": "ed5d0c3a-1232-464c-ad63-b067432b6ef8",
+        "object": "chat.completion",
+        "created": 1769610133,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落1**: B\"为了明天做好准备\"更完整地传达了\"備えて\"的含义，A省略了\"备\"的意思\n- **段落6**: A\"扭扭捏捏\"更符合\"ゴニョゴニョ\"（害羞嘟囔）的语境，B\"咕啾咕啾\"偏离原意\n- **段落24**: B\"精灵使\"比A\"精灵使者\"更准确\n- **段落33**: A\"做爱\"准确翻译了\"エッチ\"，B\"做吧\"过于含糊\n- **段落41**: B缺失开头引号「，格式错误\n- **段落121**: B\"看穿了这一招，击中了对方\"比A\"看准时机\"更准确传达\"見切り\"\n\n### 流畅性分析\n- **段落4**: A\"是我家啦\"比B\"我家呀\"更自然流畅\n- **段落26**: B\"遗迹依然没有出现在视野中\"过于书面，A\"还没看到遗迹\"更口语化\n- **段落31**: B\"让我平静下来\"比A\"冷静下来\"更自然\n- **段落162**: B\"无奈地问道\"比A\"呆然地问道\"更准确翻译\"呆れて\"\n\n### 术语一致性\n- A在段落127/131突然将\"艾西亚\"写成\"艾西娅\"，一致性问题\n- A用\"浮士德\"，B用\"法乌斯特\"；A更符合常见译法\n- 段落157: A\"库兰\"与前文\"克兰\"不一致\n\n### 风格/语气\n- A的语气词处理更自然（如段落39\"诶诶\"vs\"嘿咻嘿咻\"）\n- B的句末标点过多使用句号，稍显生硬\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A对エッチ、ゴニョゴニョ等词翻译更准确；B对見切り翻译更好\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体更口语化自然，B部分句子过于书面\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的轻小说对话语气更到位，B句末标点略生硬\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A有艾西亚/艾西娅、克兰/库兰不一致问题；B精灵使译法更准确\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者连贯性相近\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落41缺失开头引号，格式错误较严重\"}\n  },\n  \"key_differences\": [\n    \"A术语不一致(艾西亚/艾西娅、克兰/库兰)，B有格式错误(缺引号)\",\n    \"A对色情相关词汇翻译更直接准确，B有时过于含蓄\",\n    \"A整体语气更符合轻小说风格，B稍显书面\",\n    \"B对'精灵使'等专业术语翻译更准确\"\n  ],\n  \"final_summary\": \"A在流畅性、风格和关键词翻译准确性上略胜一筹，尽管存在人名不一致问题。B的格式错误（缺失引号）和部分翻译过于含糊拉低了整体评分。综合考虑，A以微弱优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12195,
+          "completion_tokens": 1704,
+          "total_tokens": 13899
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对エッチ、ゴニョゴニョ等词翻译更准确；B对見切り翻译更好"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体更口语化自然，B部分句子过于书面"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的轻小说对话语气更到位，B句末标点略生硬"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有艾西亚/艾西娅、克兰/库兰不一致问题；B精灵使译法更准确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者连贯性相近"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落41缺失开头引号，格式错误较严重"
+      }
+    },
+    "key_differences": [
+      "A术语不一致(艾西亚/艾西娅、克兰/库兰)，B有格式错误(缺引号)",
+      "A对色情相关词汇翻译更直接准确，B有时过于含蓄",
+      "A整体语气更符合轻小说风格，B稍显书面",
+      "B对'精灵使'等专业术语翻译更准确"
+    ],
+    "final_summary": "A在流畅性、风格和关键词翻译准确性上略胜一筹，尽管存在人名不一致问题。B的格式错误（缺失引号）和部分翻译过于含糊拉低了整体评分。综合考虑，A以微弱优势胜出。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

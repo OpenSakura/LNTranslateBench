@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:26:46.903386",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "668805adc28b3aaf9c919416e073989672c57d6ad3a654bf2d5387fb4ff9744e",
+    "B": "f200760617753f359ad95d87ae25b6b0b211d82949b07e63c0b6105b471dc571"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:27:25.879390",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2b4b2149-838c-446b-9717-4c2567ac7109",
+      "judge_response": {
+        "id": "2b4b2149-838c-446b-9717-4c2567ac7109",
+        "object": "chat.completion",
+        "created": 1768422445,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性\n**A** 整体忠实原文，但有时过于直译（如段落13「有种要出事的氛围弥漫着」较生硬）。\n**B** 意译更灵活，但段落47、102、109-111将「フェスタ」误译为「祭典」「庆典」，这是人名而非普通词汇。\n\n### 2. 流畅性\n**B** 整体更口语化自然（如段落6「挺在意周围视线」、段落31「让人嗨起来的话题」）。\n**A** 部分表达较生硬（如段落10「浮现出严峻的表情」不如B「脸色沉了下来」自然）。\n\n### 3. 术语/名称一致性\n**A** 问题：N：Blue/N：布鲁不统一；段落4、12保留日文「アン：Ger」未翻译。\n**B** 问题更严重：フェスタ翻译混乱（费斯塔→祭典→庆典→祭→菲斯塔），人名翻译极不一致。\n\n### 4. 格式/标点\n**A** 段落36、43-46、64-66等处引号格式混乱（「」与\"\"混用）。\n**B** 段落49-52、71-73等处也有引号不一致问题。\n\n### 5. 风格\n**B** 轻小说对话风格更地道（如段落35「太离谱了吧」、段落52「加班加到死」）。\n**A** 部分对话略显书面化。\n\n### 关键问题对比\n| 问题类型 | A | B |\n|---------|---|---|\n| 人名一致性 | 中等问题 | 严重问题 |\n| 未翻译日文 | 有（アン：Ger等） | 无 |\n| 口语自然度 | 一般 | 较好 |\n| 引号格式 | 混乱 | 混乱 |\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"B将人名フェスタ误译为祭典/庆典等普通名词，影响理解\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，A部分表达生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B轻小说对话风格更到位\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"A有未翻译日文和不一致；B人名翻译极混乱（フェスタ有5种译法）\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B人名混乱影响角色辨识和阅读连贯性\"},\n    \"formatting\": {\"A\": 5, \"B\": 6, \"notes\": \"两者引号均不一致，A问题稍多\"}\n  },\n  \"key_differences\": [\n    \"B将フェスタ（人名）译为费斯塔/祭典/庆典/祭/菲斯塔等多种形式，严重破坏一致性\",\n    \"A保留部分日文未翻译（アン：Ger）\",\n    \"B整体口语化程度和轻小说风格更佳\",\n    \"两者引号格式均有混乱\"\n  ],\n  \"final_summary\": \"B在流畅度和风格上更胜一筹，但人名翻译的严重不一致（尤其是主要角色フェスタ有5种不同译法）是轻小说翻译的致命伤，直接影响读者对角色的辨识。A虽然表达略生硬且有部分未翻译内容，但基本保持了人名一致性。综合考虑，A略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12920,
+          "completion_tokens": 1698,
+          "total_tokens": 14618
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "B将人名フェスタ误译为祭典/庆典等普通名词，影响理解"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B轻小说对话风格更到位"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "A有未翻译日文和不一致；B人名翻译极混乱（フェスタ有5种译法）"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B人名混乱影响角色辨识和阅读连贯性"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 6,
+        "notes": "两者引号均不一致，A问题稍多"
+      }
+    },
+    "key_differences": [
+      "B将フェスタ（人名）译为费斯塔/祭典/庆典/祭/菲斯塔等多种形式，严重破坏一致性",
+      "A保留部分日文未翻译（アン：Ger）",
+      "B整体口语化程度和轻小说风格更佳",
+      "两者引号格式均有混乱"
+    ],
+    "final_summary": "B在流畅度和风格上更胜一筹，但人名翻译的严重不一致（尤其是主要角色フェスタ有5种不同译法）是轻小说翻译的致命伤，直接影响读者对角色的辨识。A虽然表达略生硬且有部分未翻译内容，但基本保持了人名一致性。综合考虑，A略优。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

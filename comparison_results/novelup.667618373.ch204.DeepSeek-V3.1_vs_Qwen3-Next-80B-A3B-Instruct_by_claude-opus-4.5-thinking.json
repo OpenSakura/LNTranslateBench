@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:39:56.047438",
+  "sample": "novelup.667618373.ch204",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.667618373.ch204.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.667618373.ch204.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/novelup.667618373.ch204.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "a7b9bc8920e64499b0c9853279cbb23c63b9a906b15bfa6f4389c678948cdad3",
+    "A": "8ac2352060271864a13f3e2f8bf7326db61222ca7beb0e8bcd2999ac2a04e5d8",
+    "B": "60f33a79d4838cdca1f2455c33ad2a0ad56b0915c588f2d0b2baa11ca35b90ba"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:41:02.252915",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b0047784-a65a-421a-a235-afdb74743e65",
+      "judge_response": {
+        "id": "b0047784-a65a-421a-a235-afdb74743e65",
+        "object": "chat.completion",
+        "created": 1768423261,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性分析\n\n**段落2**: A的「没错」误解原意，原文「間違えではない」指的是\"这样做没有错\"，B的「这并没有错」更准确。A用了生造词「烦恶」。\n\n**段落19**: A「这种场合绝不会喝酒」错误理解原意，原文「愉快な場で」是\"愉快的场合\"，B正确理解为\"本以为不会在愉快的场合饮酒\"。\n\n**段落32**: A「真他娘的美味」严重失误，原文「美味しゅうございます」是极其礼貌的敬语表达，B「非常好喝」准确。\n\n**段落35**: A「叫你这么做的」人称错误，应为「叫我这么做」，B正确。\n\n**段落38**: A「被坑了」不准确，「面を喰った」意为吃惊/愣住，B「吃了一惊」正确。\n\n**段落40**: A「兄长」与原文「義兄様」不符，B「义兄大人」更准确。\n\n### 2. 流畅性分析\n\nA整体更口语化，读起来较顺畅，但有时过于随意。B语言较为正式书面，部分表达略生硬（如「果然如此果然如此」）。\n\n### 3. 风格/语气分析\n\n**段落4**: A「老子」过于粗俗，B「本大爷」更符合「オレ様」的傲慢语气。\n\n**段落21**: A「嬉皮笑脸」合适，B「淫笑」翻译过度。\n\n**段落32**: A「真他娘的美味」完全破坏了主角的谦恭语气，这是重大风格错误。\n\n### 4. 术语/名称一致性\n\nA多次出现「義兄」未翻译的问题（段落13、16、44），B保持了一致的「义兄」翻译。\n\n### 5. 格式/标点符号\n\nB保持了日式「」引号格式，整体更统一；A混用中式引号和未翻译原文。\n\n---\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有多处理解错误（段落19、32、35、38、40），B整体更忠实原文\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A口语化流畅但有时过头，B正式但偶有生硬\"},\n    \"style\": {\"A\": 5, \"B\": 7, \"notes\": \"A段落32严重破坏敬语语气，段落4用词过于粗俗；B整体把握更好\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A多处義兄未翻译，术语不一致；B一致性好\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 5, \"B\": 8, \"notes\": \"A混用格式且有未翻译文字，B引号格式统一\"}\n  },\n  \"key_differences\": [\n    \"A段落32将敬语「美味しゅうございます」译为粗俗的「真他娘的美味」，严重风格错误\",\n    \"A段落19误解原意，将「愉快的场合」理解反了\",\n    \"A多处保留未翻译的「義兄」\",\n    \"B整体更忠实原文意思和语气\",\n    \"B格式更统一规范\"\n  ],\n  \"final_summary\": \"B在准确性、风格把握和格式一致性上明显优于A。A虽然口语化较流畅，但存在多处理解错误，特别是段落32将极敬语译为粗话是重大失误，严重破坏了角色的谦恭态度。B虽有个别表达略生硬，但整体翻译质量更可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9373,
+          "completion_tokens": 3045,
+          "total_tokens": 12418
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有多处理解错误（段落19、32、35、38、40），B整体更忠实原文"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A口语化流畅但有时过头，B正式但偶有生硬"
+      },
+      "style": {
+        "A": 5,
+        "B": 7,
+        "notes": "A段落32严重破坏敬语语气，段落4用词过于粗俗；B整体把握更好"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A多处義兄未翻译，术语不一致；B一致性好"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 8,
+        "notes": "A混用格式且有未翻译文字，B引号格式统一"
+      }
+    },
+    "key_differences": [
+      "A段落32将敬语「美味しゅうございます」译为粗俗的「真他娘的美味」，严重风格错误",
+      "A段落19误解原意，将「愉快的场合」理解反了",
+      "A多处保留未翻译的「義兄」",
+      "B整体更忠实原文意思和语气",
+      "B格式更统一规范"
+    ],
+    "final_summary": "B在准确性、风格把握和格式一致性上明显优于A。A虽然口语化较流畅，但存在多处理解错误，特别是段落32将极敬语译为粗话是重大失误，严重破坏了角色的谦恭态度。B虽有个别表达略生硬，但整体翻译质量更可靠。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:21:07.143470",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "7bfb685a29a61b441d1565ffef5e8a75f3e5165ae2b045bd4df5d79ccd7433c0",
+    "B": "392c41c500e9aa7857282e614745fbf7b2f3ed07cde14ffe2b5ea503fcec6fa2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:21:54.443492",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "8a03bf36-92c8-421a-8251-12a0fce45fba",
+      "judge_response": {
+        "id": "8a03bf36-92c8-421a-8251-12a0fce45fba",
+        "object": "chat.completion",
+        "created": 1768432914,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估\n\n## 详细分析\n\n### 准确性问题\n\n**翻译A的问题：**\n- 段落1：正确理解\"二話更新\"为\"更新两话\"\n- 段落14：\"ブッキング\"译为\"取消了\"错误，应为\"时间冲突\"\n- 段落46：\"送った\"译为\"寄来的\"不准确，应为\"送的\"\n- 段落52：\"おそまつ\"译为\"先走一步\"完全错误，这是对\"ごちそうさま\"的回应\n\n**翻译B的问题：**\n- 段落1：将\"二話更新\"误译为\"更新第二话\"\n- 段落7：\"なるべく避けたいから\"译为\"不想尽量外出\"语序错误\n- 段落8：出现\"念为啥\"这种不完整/错误翻译\n- 段落63/67：将\"床\"（地板）误译为\"床\"，\"床に蹲った\"译成\"跪在床上\"\n\n### 术语一致性\n\n**翻译A：** 统一使用\"帕比~/玛米~\"\n**翻译B：** 部分保留日文\"マミィ〜/パピィ〜\"，不一致\n\n### 格式问题\n\n- B在段落72有格式错误：「……嗯〜『（引号未闭合）\n- B在段落81翻译不完整\n\n### 风格表现\n\n- A的语气更贴近轻小说的口语化风格\n- B部分对话感较生硬\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A误译ブッキング和おそまつ；B误译床(地板)为床、段落1理解错误、段落8不完整\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A整体更自然流畅；B有语序问题和不完整句子\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更贴合轻小说口语风格；B部分对话略生硬\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"A名称统一；B混用日文原名和翻译名\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A可读性更好；B有断裂感\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B有引号未闭合和翻译不完整问题\"}\n  },\n  \"key_differences\": [\n    \"段落1：A正确理解'更新两话'，B误译为'更新第二话'\",\n    \"段落52：A将おそまつ错译为'先走一步'，B正确译为'招待不周'\",\n    \"段落63/67：B将床(地板)误译为床，A正确译为地上\",\n    \"段落14：B正确理解ブッキング为'时间冲突'，A误译为'取消'\",\n    \"名称一致性：A统一翻译，B混用日文原名\"\n  ],\n  \"final_summary\": \"两个翻译各有优缺点。A在整体流畅性、风格把握和术语一致性上表现更好，但有个别关键词误译（如おそまつ）。B虽然在某些词汇理解上更准确（如ブッキング），但存在更多结构性问题：床的误译、名称不一致、不完整翻译等。综合考量，A的整体阅读体验更佳，错误影响相对较小。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10842,
+          "completion_tokens": 1923,
+          "total_tokens": 12765
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A误译ブッキング和おそまつ；B误译床(地板)为床、段落1理解错误、段落8不完整"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A整体更自然流畅；B有语序问题和不完整句子"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更贴合轻小说口语风格；B部分对话略生硬"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "A名称统一；B混用日文原名和翻译名"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A可读性更好；B有断裂感"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有引号未闭合和翻译不完整问题"
+      }
+    },
+    "key_differences": [
+      "段落1：A正确理解'更新两话'，B误译为'更新第二话'",
+      "段落52：A将おそまつ错译为'先走一步'，B正确译为'招待不周'",
+      "段落63/67：B将床(地板)误译为床，A正确译为地上",
+      "段落14：B正确理解ブッキング为'时间冲突'，A误译为'取消'",
+      "名称一致性：A统一翻译，B混用日文原名"
+    ],
+    "final_summary": "两个翻译各有优缺点。A在整体流畅性、风格把握和术语一致性上表现更好，但有个别关键词误译（如おそまつ）。B虽然在某些词汇理解上更准确（如ブッキング），但存在更多结构性问题：床的误译、名称不一致、不完整翻译等。综合考量，A的整体阅读体验更佳，错误影响相对较小。"
+  },
+  "outcome": "Qwen3-30B-A3B-Thinking-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Thinking-2507"
+}

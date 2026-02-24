@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:21:17.793286",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "828e68f5f82cd44eb41ebe423dc7b4b485f7491a41910f86068b020656ee3e6a",
+    "B": "db0b1f6f942f8c11fecead88065b4cf2fb47a7c8ebc6343445cf31cf9d3a9b07"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:22:00.753014",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "73c6cff4-a937-4b94-a12d-9a44a34f59a6",
+      "judge_response": {
+        "id": "73c6cff4-a937-4b94-a12d-9a44a34f59a6",
+        "object": "chat.completion",
+        "created": 1768432920,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落4**: A简化了\"さもいい事を思いついたぞとばかりに\"和\"花の咲くような声\"，B完整保留了比喻和修辞\n- **段落8**: \"ほとぼりもさめた\"B译为\"风平浪静\"更准确，A译为\"过了这阵子\"略显模糊\n- **段落33**: \"惚気ている\"意为\"秀恩爱\"，B译\"恩爱的夫妻\"准确，A译\"炫耀\"语义偏移\n- **段落42**: \"寝覚め悪い\"意为\"良心不安/睡不安稳\"，B正确，A译\"太蠢了\"错误\n- **段落103**: \"弁当の残り\"是野餐便当的剩余，A译\"便当\"正确，B译\"晚饭\"有误\n\n### 2. 流畅性\n- B整体更自然流畅，如段落7\"虽说就在附近，但我还是尽量不想出门\"\n- A部分句子过于简略，如段落4\"晚餐时爹地～一说想到好点子\"读起来略显生硬\n\n### 3. 风格/语气\n- B更好地保留了轻小说口语感和角色语气（如\"咋办\"等口语化表达）\n- A部分内心独白缺少引号标记，与对话混淆\n\n### 4. 术语/名称一致性\n- A：パピィ〜/マミィ〜译法不统一（帕比/帕皮、玛咪/马米）\n- B：较一致地译为\"爸爸/妈妈\"或\"帕皮/玛米\"\n- 人名ティミット：A不统一（缇密特/提米特），B统一为\"蒂米特\"\n\n### 5. 连贯性/可读性\n- B的内心独白和对话区分更清晰\n- A有时省略标点导致阅读困惑\n\n### 6. 格式/标点符号\n- B保留日式引号「」，A使用中式引号\"\"，两者各有市场偏好\n- B波浪号使用更贴合原文风格\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A多处意译丢失原意（段落42误译），B偶有小误（段落103）但整体更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更自然流畅，A部分句子过于简略或生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更好保留轻小说口语感和角色语气特征\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A人名译法不统一（缇密特/提米特），B较一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B内心独白与对话区分更清晰\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B标点符号使用更贴合原文风格\"}\n  },\n  \"key_differences\": [\n    \"B完整保留修辞比喻，A常简化处理\",\n    \"段落42关键词汇翻译：A错误，B正确\",\n    \"人名一致性：B优于A\",\n    \"内心独白标记：B更清晰区分\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性和风格把握上整体优于A。A虽然简洁但丢失了部分原文意境和细节，且存在关键误译。B更忠实地呈现了轻小说的叙述风格和角色特色。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10787,
+          "completion_tokens": 1860,
+          "total_tokens": 12647
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A多处意译丢失原意（段落42误译），B偶有小误（段落103）但整体更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更自然流畅，A部分句子过于简略或生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好保留轻小说口语感和角色语气特征"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A人名译法不统一（缇密特/提米特），B较一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B内心独白与对话区分更清晰"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B标点符号使用更贴合原文风格"
+      }
+    },
+    "key_differences": [
+      "B完整保留修辞比喻，A常简化处理",
+      "段落42关键词汇翻译：A错误，B正确",
+      "人名一致性：B优于A",
+      "内心独白标记：B更清晰区分"
+    ],
+    "final_summary": "B在准确性、流畅性和风格把握上整体优于A。A虽然简洁但丢失了部分原文意境和细节，且存在关键误译。B更忠实地呈现了轻小说的叙述风格和角色特色。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

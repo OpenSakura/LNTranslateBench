@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:40:45.296954",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "1bb9fb58f5676b235b7f3deb03c0cbe719facda8823832b2431c5cfaa53b53fc",
+    "B": "82adf10f33cb366c841781b56eb8e8a699e322dfdea5b07f709a315186e58bf6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:07.975086",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DZloh9Zxk4mxqSpvUkxlCB0Du8L",
+      "judge_response": {
+        "id": "chatcmpl-89DZloh9Zxk4mxqSpvUkxlCB0Du8L",
+        "object": "chat.completion",
+        "created": 1768426867,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 日翻中 常见翻译用词 ダンジョン 魔石 巴别塔 地下城\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"日文轻小说翻译成中文 ダンジョン 通常翻译为 地下城 OR 迷宫\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"性别逆转世界 轻小说 常见设定 翻译风格\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [zh.wikipedia.org](https://zh.wikipedia.org/wiki/巴别塔)\n> 📋 **Task:** 提取中文中对“巴别塔”的标准译名，以及在圣经语境中的常见表达。\n\n> 🔍 **Searching for:** \"site:weibo.com OR site:bilibili.com 轻小说翻译 ダンジョン \"地下城\" OR \"迷宫\"\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"GitHub - SakuraLLM/SakuraLLM: 适配轻小说/Galgame的日中翻译大模型\" GitHub](https://github.com/SakuraLLM/SakuraLLM)\n> [🔗 \"在地下城寻求邂逅是否搞错了什么 - 维基百科，自...\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%B0%8B%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%8C%AF%E4%BA%86%E4%BB%80%E9%BA%BC)\n> [🔗 \"轻小说机翻机器人 - ACG盒子\" ACG盒子](https://www.acgbox.link/h/2398.html)\n> [🔗 \"《在地下城寻求邂逅是否搞错了什么》 - 白鸟acg\" Bnacg](https://www.bnacg.com/dm/12133.html)\n> [🔗 \"我用600多本轻小说训练了中日翻译模型_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1b44y1F7VL)\n> [🔗 \"有没有好用的轻小说翻译软件？ - 知乎\" Zhihu](https://www.zhihu.com/question/495645217/answer/3088203689)\n> [🔗 \"关于机翻轻小说的简单教程 - 知乎\" Zhihu](https://zhuanlan.zhihu.com/p/1887585362961995705)\n> [🔗 \"GitHub - auto-novel/auto-novel: 轻小说机翻网站，支持网...\" GitHub](https://github.com/FishHawk/auto-novel)\n> [🔗 \"在地下城尋求邂逅是否搞錯了什麼 01 (豆瓣)\" Douban](https://book.douban.com/subject/25732605)\n> [🔗 \"分享一个通过获取日本源网站，轻小说翻译的网站一一轻小说机翻机器人_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1nT4y1W7ri)\n\n> 🔍 **10 results found**\n\n> [🔗 \"在地下城寻求邂逅是否搞错了什么 - 萌娘百科 ...\" Moegirl](https://zh.moegirl.org.cn/%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%AF%BB%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%94%99%E4%BA%86%E4%BB%80%E4%B9%88)\n> [🔗 \"期待在地下城邂逅有错吗 - 维基百科，自由的百科...\" Wikipedia](https://zh.wikipedia.org/zh-my/%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%B0%8B%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%8C%AF%E4%BA%86%E4%BB%80%E9%BA%BC)\n> [🔗 \"我被潜伏在地下城的有病女人杀死无数次漫画_ダンジョンに潜むヤンデレな彼女に俺は何度も殺される漫画_野村エージ×北川ニキタ - 看漫画手机版\" Manhua Gui](https://m.manhuagui.com/comic/48605)\n> [🔗 \"在地下城尋求邂逅是否搞錯了什麼 01 (豆瓣)\" Douban](https://book.douban.com/subject/25732605)\n> [🔗 \"在地下城尋求邂逅是否搞錯了什麼 - 萌娘百科 萬物皆可萌的百科全書\" Moegirl](https://zh.moegirl.tw/%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%AF%BB%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%94%99%E4%BA%86%E4%BB%80%E4%B9%88)\n> [🔗 \"在地下城寻求邂逅是否搞错了什么 (动画) - ...\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%B0%8B%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%8C%AF%E4%BA%86%E4%BB%80%E9%BA%BC_(%E5%8B%95%E7%95%AB))\n> [🔗 \"在地下城寻求邂逅是否搞错了什么（大森藤野著作...\" Baidu Baike](https://baike.baidu.com/item/%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%AF%BB%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%94%99%E4%BA%86%E4%BB%80%E4%B9%88/13008106)\n> [🔗 \"地下城的真正秘密何在？《迷宫饭》背景世界推想 | 机核 GCORES\" GCORES](https://www.gcores.com/articles/100471)\n> [🔗 \"在地下城寻求邂逅是否搞错了什么 - 萌娘百科_万...\" Moegirl](https://moegirl.uk/%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%AF%BB%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%94%99%E4%BA%86%E4%BB%80%E4%B9%88)\n> [🔗 \"阿斯特莉亚·回忆录 在地下城寻求邂逅是否搞错了...\" Moegirl](https://zh.moegirl.org.cn/%E9%98%BF%E6%96%AF%E7%89%B9%E8%8E%89%E4%BA%9A%C2%B7%E5%9B%9E%E5%BF%86%E5%BD%95_%E5%9C%A8%E5%9C%B0%E4%B8%8B%E5%9F%8E%E5%AF%BB%E6%B1%82%E9%82%82%E9%80%85%E6%98%AF%E5%90%A6%E6%90%9E%E9%94%99%E4%BA%86%E4%BB%80%E4%B9%88_%E8%8B%B1%E9%9B%84%E8%B0%AD)\n\n> 🔍 **10 results found**\n\n> [🔗 \"性别观念逆转世界的小说 - 起点中文网手机端\" Qidian](https://m.qidian.com/ask/tvxurnjhvcl)\n> [🔗 \"性转成为龙女的异界生活_轻小说_柠檬色的秋天_轻之文库\" Linovel](https://www.linovel.net/book/118237.html)\n> [🔗 \"性转 小说 推荐 - 起点中文网手机端\" Qidian](https://m.qidian.com/ask/twzjdzfycjd)\n> [🔗 \"性别转换按钮!!! - 01 - 小说全文阅读 - SF轻小说\" SFACG](https://book.sfacg.com/Novel/53452/104003/766261)\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"性别转换按钮!!! - 11 - 小说全文阅读 - SF轻小说\" SFACG](https://book.sfacg.com/Novel/53452/104003/777306)\n> [🔗 \"性别转换系统的小说排行榜 - 起点中文网手机端\" Qidian](https://m.qidian.com/ask/tycdynjcljdam)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" MoeGirl](https://zh.moegirl.org.cn/zh-hans/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"变身小说_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E5%8F%98%E8%BA%AB%E5%B0%8F%E8%AF%B4/2293388)\n> [🔗 \"性别转换\" Baidu Baike](https://baike.baidu.com/item/%E6%80%A7%E8%BD%AC%E6%8D%A2/10715791)\n\n> 🔍 **1 results found**\n\n> [📚 \"巴別塔 - 维基百科，自由的百科全书\" zh.wikipedia.org](https://zh.wikipedia.org/wiki/%E5%B7%B4%E5%88%AB%E5%A1%94)\n\n> 🔍 **10 results found**\n\n> [🔗 \"安卓+PC 爆款RPG 迷宫里的笨蛋女孩 ダンジョンウィズガール Ver1.1.0_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1zK411e76a)\n> [🔗 \"[公主连结日服]新地下城EX7四彩灵峰简易攻略（前几层多配置参考）_游戏热门视频\" Bilibili](https://www.bilibili.com/video/BV1pz42127Hm)\n> [🔗 \"（含有剧透 慎入）结果不是漫评，是科普 - 哔哩哔哩专栏\" Bilibili](https://www.bilibili.com/read/cv3182928)\n> [🔗 \"轻小说 | 在地下城寻求邂逅不仅没有错还能开后宫！ - 哔哩哔哩\" Bilibili](https://www.bilibili.com/read/cv1436697)\n> [🔗 \"[轻小说资源] 在地下城寻求邂逅是否搞错了什么 不限速epub下载 - 哔哩哔哩\" Bilibili](https://www.bilibili.com/read/cv20943326)\n> [🔗 \"剑姬神圣谭 在地下城寻求邂逅是否搞错了什么 外传\" Bilibili](https://www.bilibili.com/bangumi/media/md28228037)\n> [🔗 \"FF4最终幻想4正传PSP完全版全收集低等级通关（试炼洞窟）4. 巨大魔界花图鉴_单机游戏热门视频\" Bilibili](https://www.bilibili.com/video/BV1kBayeqE6G)\n> [🔗 \"[PC游戏] 地牢迷宫与笨蛋女孩 Ver1.02 [爆款肉鸽RPG/1.9G]\" Bilibili](https://www.bilibili.com/video/BV15k4y1P7CD)\n> [🔗 \"【ARPG游戏推荐】治愈使与受诅咒的地下城_哔哩哔哩bilibili_游戏推荐\" Bilibili](https://www.bilibili.com/video/BV1gM4y1K7Sj)\n> [🔗 \"地错 第21卷 在地下城寻求邂逅是否搞错了什么 有声小说 奇幻 战斗 冒险 期待在地下城邂逅有错吗 AI翻译_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1XW4WzMEDZ)\n\n\n以下是对翻译A与翻译B的详细比较分析。作为轻小说（尤其是带有奇幻、异世界、性别逆转设定）的中译版本，我会重点关注日→中翻译的常见习惯（如《在地下城寻求邂逅是否搞错了什么》等热门作品中，“ダンジョン”几乎统一译为**“地下城”**，而非“迷宫”；“魔石”常译为“魔石”；巴别塔标准译为“巴别塔”等）。整体评估基于准确性、流畅性、轻小说风格（轻松吐槽+内心独白+叙述节奏）、术语一致性、连贯性及格式。\n\n### 详细分析\n\n**1. 准确性（意思保留）**  \nA在大多数地方更忠实原文，例如段落4的“ふと眺めた時”译为“蓦然眺望”（捕捉“突然”感更准），段落6/13/14/18/22/31/32等处统一使用“地下城”而非混用“迷宫”，避免误导读者世界观（地下城是特定专有名词，而非普通迷宫）。  \nB偶尔意译过度或遗漏细微差别，如段落4“窓の外をふと眺めた時”→“偶然眺望”（“偶然”稍弱于“ふと”的突发感）；段落18有明显标点/空格错误导致句子断裂；段落50的“**”处理相同但整体更简略。  \n→ **A更准确**，尤其在专有名词与细节上。\n\n**2. 流畅性（中文自然表达）**  \n两者中文都很自然，符合轻小说口语化风格。但A的句子节奏更好、更符合现代中文阅读习惯，例如段落2的“真没想到自己也会有说这种故事开头常见台词的一天呢”比B的“真没想到有一天自己会说出这种故事里常见的开场白呢”更顺口、轻快。  \nB有些地方稍显生硬或重复，如段落55“一位红发特征的女性”不如A的“那位悄无声息推开房门进来的红发女性”流畅。  \n→ **A略胜**，阅读起来更舒服。\n\n**3. 风格/语气（轻小说叙述/对话感）**  \n轻小说强调第一人称内心吐槽、轻松调侃、戏剧性反差（尤其是性别逆转后的荒诞感）。A更好地保留了这种“呢”“吧”“嘛”等轻小说常用语气助词，以及叙述的节奏感（如段落20/47/82的反复强调“世界改变了”的冲击力）。  \nB在部分地方语气更平淡，或用词稍正式（如段落8“大概可以说是” vs A的“或许该称之为”更带吐槽味）。结尾的荒诞商业桥段A也处理得更幽默。  \n→ **A更符合轻小说风格**。\n\n**4. 术语/名称一致性**  \n这是最大差别：  \n- A全程统一“地下城”（符合行业标准，如《地错》官方/民间译本）；  \n- B混用“地下城”“迷宫”“地牢”，极不一致（段落13/14/18/22/31/32/73等切换频繁），严重影响世界观连贯性；  \n- “ダンジョン”在奇幻轻小说中几乎100%译“地下城”，而“迷宫”多用于更古典的迷宫设定。B的混用是重大失误。  \n其他如“魔石”“巴别塔”“冒险者”两版基本一致，但B整体不稳。  \n→ **A完胜**。\n\n**5. 连贯性/可读性**  \nA全文连贯，段落间过渡自然，适合一口气阅读。B有几处明显问题，如段落18句子结构残缺（“只要取得「冒险者『资格谁都能进入”缺少闭合引号/空格混乱），段落66/68等也出现多余空格或awkward断句，影响沉浸感。  \n→ **A更连贯、可读**。\n\n**6. 格式/标点符号**  \nA的破折号（───）、引号、感叹号使用规范，一致性强。  \nB出现多处格式错误：引号不闭合（段落18）、空格滥用（段落18/19/66等）、破折号不统一等。  \n→ **A明显更好**。\n\n### 关键差异总结\n- 术语一致性（尤其是“地下城” vs 混用“迷宫/地牢”）是决定性因素，B在此严重扣分；\n- A整体更忠实、流畅、风格到位，适合轻小说爱好者；\n- B虽在个别句子更简洁，但累计小问题（不一致+格式错误）拉低质量。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A更忠实原文细节与语气，B偶有细微偏差\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A句子更自然流畅，B部分稍显生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更好地保留轻小说吐槽与节奏感，B偏平淡\"},\n    \"terminology\": {\"A\": 10, \"B\": 4, \"notes\": \"A统一'地下城'等专有名词，B混用'地下城/迷宫/地牢'严重不一致，是重大缺陷\"},\n    \"coherence\": {\"A\": 9, \"B\": 7, \"notes\": \"A全文连贯，B部分句子结构/过渡有问题\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"A标点规范，B多处引号/空格错误\"}\n  },\n  \"key_differences\": [\n    \"术语一致性：A全程统一'地下城'，符合轻小说业界标准；B频繁混用'迷宫/地牢'，破坏世界观\",\n    \"格式与标点：B存在明显排版错误（如引号不闭合、异常空格），A干净规范\",\n    \"叙述风格：A更贴近轻小说轻松吐槽调性，B部分显得较为直白\"\n  ],\n  \"final_summary\": \"翻译A在准确性、风格贴合度、术语一致性与整体可读性上全面优于B，尤其是'地下城'统一使用是关键优势。B虽个别句子简洁，但累计缺陷（特别是术语混乱与格式问题）使其整体质量明显落后。推荐A作为更优秀的轻小说中译版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13030,
+          "completion_tokens": 5985,
+          "total_tokens": 19015
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更忠实原文细节与语气，B偶有细微偏差"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A句子更自然流畅，B部分稍显生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地保留轻小说吐槽与节奏感，B偏平淡"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 4,
+        "notes": "A统一'地下城'等专有名词，B混用'地下城/迷宫/地牢'严重不一致，是重大缺陷"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A全文连贯，B部分句子结构/过渡有问题"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "A标点规范，B多处引号/空格错误"
+      }
+    },
+    "key_differences": [
+      "术语一致性：A全程统一'地下城'，符合轻小说业界标准；B频繁混用'迷宫/地牢'，破坏世界观",
+      "格式与标点：B存在明显排版错误（如引号不闭合、异常空格），A干净规范",
+      "叙述风格：A更贴近轻小说轻松吐槽调性，B部分显得较为直白"
+    ],
+    "final_summary": "翻译A在准确性、风格贴合度、术语一致性与整体可读性上全面优于B，尤其是'地下城'统一使用是关键优势。B虽个别句子简洁，但累计缺陷（特别是术语混乱与格式问题）使其整体质量明显落后。推荐A作为更优秀的轻小说中译版本。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

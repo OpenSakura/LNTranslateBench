@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-02-13T00:11:20.549354",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-5"
+  },
+  "presentation": {
+    "A": "GLM-5",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.GLM-5.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "1c4da08fe618e6c0ddc471e3b1e9794fe2ba1b49cf6228a6fb286ab442dd2be7",
+    "B": "12b764ad96ee6f12358603049141d3473c46f148c7784aa92306fd270ed5f573"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.6-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-02-13T00:21:02.767957",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "status": "failed",
+      "error": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>whitemirrors.ai | 524: A timeout occurred</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" />\n</head>\n<body>\n<div id=\"cf-wrapper\">\n    <div id=\"cf-error-details\" class=\"p-0\">\n        <header class=\"mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8\">\n            <h1 class=\"inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2\">\n                <span class=\"inline-block\">A timeout occurred</span>\n                <span class=\"code-label\">Error code 524</span>\n            </h1>\n            <div>\n                Visit <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&utm_campaign=llm.whitemirrors.ai\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a> for more information.\n            </div>\n            <div class=\"mt-3\">2026-02-13 00:17:37 UTC</div>\n        </header>\n        <div class=\"my-8 bg-gradient-gray\">\n            <div class=\"w-240 lg:w-full mx-auto\">\n                <div class=\"clearfix md:px-8\">\n                    <div id=\"cf-browser-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class=\"cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4\"></span>\n    \n  </div>\n  <span class=\"md:block w-full truncate\">You</span>\n  <h3 class=\"md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3\">\n  \n    Browser\n  \n  </h3>\n  \n  <span class=\"leading-1.3 text-2xl text-green-success\">Working</span>\n  \n</div>\n                    <div id=\"cf-cloudflare-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&#38;utm_campaign=llm.whitemirrors.ai\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <span class=\"cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class=\"cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4\"></span>\n    </a>\n  </div>\n  <span class=\"md:block w-full truncate\">London</span>\n  <h3 class=\"md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3\">\n  <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&utm_campaign=llm.whitemirrors.ai\" target=\"_blank\" rel=\"noopener noreferrer\">\n    Cloudflare\n  </a>\n  </h3>\n  \n  <span class=\"leading-1.3 text-2xl text-green-success\">Working</span>\n  \n</div>\n                    <div id=\"cf-host-status\" class=\"cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-server block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class=\"cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4\"></span>\n    \n  </div>\n  <span class=\"md:block w-full truncate\">llm.whitemirrors.ai</span>\n  <h3 class=\"md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3\">\n  \n    Host\n  \n  </h3>\n  \n  <span class=\"leading-1.3 text-2xl text-red-error\">Error</span>\n  \n</div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"w-240 lg:w-full mx-auto mb-8 lg:px-8\">\n            <div class=\"clearfix\">\n                <div class=\"w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed\">\n                    <h2 class=\"text-3xl font-normal leading-1.3 mb-4\">What happened?</h2>\n                    <p class=\"mb-2\">The origin web server timed out responding to this request.</p><p>The likely cause is an overloaded background task, database or application, stressing the resources on the host web server.</p>\n                </div>\n                <div class=\"w-1/2 md:w-full float-left leading-relaxed\">\n                    <h2 class=\"text-3xl font-normal leading-1.3 mb-4\">What can I do?</h2>\n                    \n              <h3 class=\"text-15 font-semibold mb-2\">If you're a visitor of this website:</h3>\n              <p class=\"mb-6\">Please try again in a few minutes.</p>\n\n              <h3 class=\"text-15 font-semibold mb-2\">If you're the owner of this website:</h3>\n              <p>Please refer to the <a rel=\"noopener noreferrer\" href=\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-524/\">Error 524</a> article:</p>\n              <ul class=\"ml-4\">\n                <li>Contact your hosting provider; check for long-running processes or an overloaded web server.</li>\n                <li>Use status polling of large HTTP processes to avoid this error.</li>\n                <li>Run the long-running scripts on a <a rel=\"noopener noreferrer\" href=\"https://developers.cloudflare.com/dns/proxy-status/#dns-only-records\">grey-clouded subdomain</a>.</li>\n                <li>Enterprise customers can <a rel=\"noopener noreferrer\" href=\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-524/#resolution-on-cloudflare\">increase the timeout setting</a> globally or for specific requests using Cache Rules.</li>\n              </ul>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300\">\n    <p class=\"text-13\">\n      <span class=\"cf-footer-item sm:block sm:mb-1\">Cloudflare Ray ID: <strong class=\"font-semibold\">9cd021c48d77adda</strong></span>\n      <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      <span id=\"cf-footer-item-ip\" class=\"cf-footer-item hidden sm:block sm:mb-1\">\n        Your IP:\n        <button type=\"button\" id=\"cf-footer-ip-reveal\" class=\"cf-footer-ip-reveal-btn\">Click to reveal</button>\n        <span class=\"hidden\" id=\"cf-footer-ip\">2a01:4b00:c11f:3400:8b7a:d280:9715:1660</span>\n        <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      </span>\n      <span class=\"cf-footer-item sm:block sm:mb-1\"><span>Performance &amp; security by</span> <a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&#38;utm_campaign=llm.whitemirrors.ai\" id=\"brand_link\" target=\"_blank\">Cloudflare</a></span>\n      \n    </p>\n    <script>(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();</script>\n  </div><!-- /.error-footer -->\n\n    </div>\n</div>\n</body>\n</html>"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "5d658cea-075f-447c-9496-f6d9f8473ee5",
+      "judge_response": {
+        "id": "5d658cea-075f-447c-9496-f6d9f8473ee5",
+        "object": "chat.completion",
+        "created": 1770942062,
+        "model": "claude-opus-4-6-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性\n\n**段落2**：A「没想到这种像是故事开篇司空见惯的台词，竟然真会有从我自己嘴里说出来的一天呢」更忠实地还原了原文\"物語の導入にありがちな言葉をまさか自分が口にする日がくる\"的语序和信息层次。B采用倒装结构，虽然可读，但将\"这种故事开头常见的台词\"后置为补充说明，语感略显生硬。\n\n**段落15**：「切っても切れない」A译为\"密不可分\"，是对应的成语，精准自然。B译为\"绝非可以切断的\"，虽忠实于字面，但在中文里非常生硬。\n\n**段落16**：「命をかけた」A\"赌上性命的\"准确（かける＝下注/冒险），B\"献出生命\"偏离原意，暗示已死亡。\n\n**段落28**：「変わりましたね」A用\"呢\"对应ね（确认/感叹），B用\"吧\"（不确定），A更准确。\n\n**段落43**：A\"我只能不得不接受\"存在语义重复（只能+不得不），B\"我只能不情愿地接受这一切\"更自然。\n\n**段落73**：原文「売りに言った」应为「売りに行った」的笔误。A正确理解为\"去卖的\"，B加了\"声称\"（言った的字面义），属于误译。\n\n**段落74**：A\"之前给了试用品，那位对使用手感很满意的老主顾发来联络说想要，应该已经派梓过去了才对\"清晰流畅。B\"因为收到一位曾作为试用品试用、并对其良好易用性感到满意的老主顾想要购买的联络，理应派遣梓小姐前往处理才对\"极为臃肿。\n\n**段落82**：「何度でも言いましょう」意为\"说多少遍都行\"。A\"我就再说一次吧\"虽简化但尚可，B\"我不介意再说一次\"添加了原文没有的主观态度。\n\n### 流畅性\n\nA整体行文更流畅自然。B在个别段落（74、15）存在明显的翻译腔。但B在某些表达上也有亮点：段落37\"简直快要疯掉了\"比A的\"脑袋都快变得不正常了\"更地道；段落33\"严重失衡\"比\"严重的偏差\"更凝练。\n\n### 风格/语气\n\n叙述者使用です/ます体，语气正式但带有轻松自嘲。两者都基本把握了这一基调。A在对话中更自然口语化，B稍显书面。\n\n### 术语/名称\n\n- A称\"梓\"（省略敬称），B称\"梓小姐\"（对应さん）——B更忠实于原文的礼貌用语。\n- B使用中间点\"如月・梓\"\"早乙女・夏树\"，这是日文惯例，中文翻译中不常见，A直接连写更符合中文习惯。\n- 段落14：ゴーレム A\"哥雷姆\"（音译），B\"魔像\"（意译）——B更符合中文轻小说惯用译法。\n- 两者在ダンジョン的翻译上都有\"地下城\"和\"迷宫\"混用的现象。\n\n### 格式\n\n**关键差异**：A全篇对话统一使用「」，B在段落53、56等处突然切换为\"\"，格式不统一，这是一个明显的扣分点。\n\n### 连贯性\n\n段落1与段落45使用了相同的原文\"世界が変わった\"。A在段落1译为\"世界改变了\"、段落45译为\"世界变了\"；B恰好相反。虽然两者都不完全一致，但这属于小问题。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在多处关键表达（密不可分、赌上性命、段落73/74）更准确；B在段落73误译，段落16偏离原意，但B在敬称还原上更忠实\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体行文更流畅，B段落15和74存在翻译腔；但B在段落37、41等处有更地道的表达\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"两者都基本把握了正式自嘲的叙述语气，A的对话更口语化自然\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"B的敬称处理和'魔像'更佳，A的人名格式更符合中文惯例，两者各有优劣\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A前后衔接更连贯，B段落74的长句影响可读性\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A全篇格式统一，B在对话标点上出现「」与\\\"\\\"混用，格式不一致是显著问题\"}\n  },\n  \"key_differences\": [\n    \"A在惯用表达上更自然（密不可分 vs 绝非可以切断的）\",\n    \"B格式不统一（对话标点混用「」和\\\"\\\"）\",\n    \"段落73：A正确理解为'去卖'，B误加'声称'\",\n    \"段落74：A清晰简洁，B极为臃肿\",\n    \"B在敬称还原（梓小姐）和部分译词（魔像、疯掉）上更优\",\n    \"A有一处语义重复（只能不得不）\"\n  ],\n  \"final_summary\": \"A在整体准确性、流畅性和格式一致性上优于B，尤其在关键段落（15、73、74）的处理上更为出色。B虽然在敬称还原、个别词汇选择上有亮点，但格式不统一、部分段落翻译腔较重以及段落73的误译拉低了整体质量。综合来看A更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12540,
+          "completion_tokens": 3787,
+          "total_tokens": 16327
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在多处关键表达（密不可分、赌上性命、段落73/74）更准确；B在段落73误译，段落16偏离原意，但B在敬称还原上更忠实"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体行文更流畅，B段落15和74存在翻译腔；但B在段落37、41等处有更地道的表达"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者都基本把握了正式自嘲的叙述语气，A的对话更口语化自然"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "B的敬称处理和'魔像'更佳，A的人名格式更符合中文惯例，两者各有优劣"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A前后衔接更连贯，B段落74的长句影响可读性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A全篇格式统一，B在对话标点上出现「」与\"\"混用，格式不一致是显著问题"
+      }
+    },
+    "key_differences": [
+      "A在惯用表达上更自然（密不可分 vs 绝非可以切断的）",
+      "B格式不统一（对话标点混用「」和\"\"）",
+      "段落73：A正确理解为'去卖'，B误加'声称'",
+      "段落74：A清晰简洁，B极为臃肿",
+      "B在敬称还原（梓小姐）和部分译词（魔像、疯掉）上更优",
+      "A有一处语义重复（只能不得不）"
+    ],
+    "final_summary": "A在整体准确性、流畅性和格式一致性上优于B，尤其在关键段落（15、73、74）的处理上更为出色。B虽然在敬称还原、个别词汇选择上有亮点，但格式不统一、部分段落翻译腔较重以及段落73的误译拉低了整体质量。综合来看A更胜一筹。"
+  },
+  "outcome": "GLM-5_win",
+  "winner_model": "GLM-5"
+}

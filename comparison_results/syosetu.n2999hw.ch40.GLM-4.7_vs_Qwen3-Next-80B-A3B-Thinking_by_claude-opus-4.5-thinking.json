@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:09:36.352588",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.GLM-4.7.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "52adaff302a4fc4dc1bde568a110fda9d1cb334d9b52717bdb9b12cc25025ac2",
+    "B": "773d4f78fa6abf47bb211b632d6308ffa7d2b952f092e8c132c4d096f25c0da3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:10:13.081621",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e9748206-75e0-412f-bf3a-76167c064541",
+      "judge_response": {
+        "id": "e9748206-75e0-412f-bf3a-76167c064541",
+        "object": "chat.completion",
+        "created": 1768432212,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性方面：**\n- A在保留原文细节上更完整，如段落7\"为了平复那咚咚吵闘的心脏\"保留了原文的目的关系\n- B有时过度简化，如段落7省略了\"うるさい\"（吵闹）的含义\n- 段落10：A\"不负他信赖的对战\"准确对应\"信頼に恥じないマッチ\"，B改写为\"不能让他失望\"略有偏离\n\n**术语一致性（严重问题）：**\n- B对シロガネ的翻译混乱：出现\"白金\"、\"白钢\"、\"西罗加内\"三种译法\n- B对エン的翻译也不一致：\"恩\"和\"艾恩\"混用\n- A始终使用\"白银\"和\"恩\"，一致性好\n\n**格式问题：**\n- B在多处将叙述文字错误地加上「」引号（如段落99、101、104、108），这是明显错误\n- A的引号使用规范\n\n**风格流畅性：**\n- B更口语化简洁，如\"打中就赢了\"比A\"只要这一击命中就是我的胜利\"更符合战斗紧张感\n- A在对话中保留更多语气词（\"哟\"、\"呢\"），贴近原文风格\n\n**关键差异：**\n- 段落6技能名：\"承继意志\"(A) vs \"传承的意志\"(B)\n- 段落22：\"咧嘴阴森地笑\"(A) vs \"坏笑\"(B) - A更准确传达\"ニヤリと不気味に\"\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A保留更多细节和语气，B有时过度简化\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更简洁自然，A偶尔略显冗长\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A保留更多轻小说语气词，B偏口语化\"},\n    \"terminology\": {\"A\": 8, \"B\": 4, \"notes\": \"B对シロガネ使用三种不同译法，严重不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A整体连贯，B因名称混乱影响阅读\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处将叙述错误加上对话引号\"}\n  },\n  \"key_differences\": [\n    \"B的人名翻译严重不一致（白金/白钢/西罗加内）\",\n    \"B多处格式错误，将叙述放入引号\",\n    \"A更完整保留原文细节和语气\",\n    \"B更简洁但有时丢失信息\"\n  ],\n  \"final_summary\": \"虽然B在流畅度上略有优势，但其术语一致性问题（同一角色三种译名）和格式错误（叙述加引号）是严重的翻译缺陷。A虽然偶尔冗长，但保持了良好的一致性和准确性，整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12790,
+          "completion_tokens": 1388,
+          "total_tokens": 14178
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A保留更多细节和语气，B有时过度简化"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更简洁自然，A偶尔略显冗长"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A保留更多轻小说语气词，B偏口语化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 4,
+        "notes": "B对シロガネ使用三种不同译法，严重不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A整体连贯，B因名称混乱影响阅读"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处将叙述错误加上对话引号"
+      }
+    },
+    "key_differences": [
+      "B的人名翻译严重不一致（白金/白钢/西罗加内）",
+      "B多处格式错误，将叙述放入引号",
+      "A更完整保留原文细节和语气",
+      "B更简洁但有时丢失信息"
+    ],
+    "final_summary": "虽然B在流畅度上略有优势，但其术语一致性问题（同一角色三种译名）和格式错误（叙述加引号）是严重的翻译缺陷。A虽然偶尔冗长，但保持了良好的一致性和准确性，整体质量更高。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

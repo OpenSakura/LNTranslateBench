@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:44:12.501941",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "a04e40c96c9e3da16da8ce1d5813afbf760839542e8ca4029169ffefed75a61b",
+    "B": "dd8327bdd4d3fd8f96aa104a1b6a9cb0c1f7679b71ac0745363e74148be8268b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:45:22.011136",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "8a3c7e49-d1eb-47cf-9ee9-9a5b9b665a75",
+      "judge_response": {
+        "id": "8a3c7e49-d1eb-47cf-9ee9-9a5b9b665a75",
+        "object": "chat.completion",
+        "created": 1768423521,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n\n**A的问题：**\n- 段落7、8：将\"航\"翻译成\"hiro\"，这是严重错误，应保持中文名\n- 段落14：\"全看我们俩了\"有误，原文\"2人次第\"指佐藤和松田两人\n- 段落46：\"忘了也没关系\"翻译反了，原文是\"不忘也可以\"\n\n**B的问题：**\n- 段落39：严重误译，\"諸伏作の夕食\"应是\"诸伏做的晚饭\"，B译成\"诸伏作的晚饭\"且\"最早完全作为...\"句子混乱\n- 段落42：人称混淆，原文是描述松田的感受，不是第一人称\n- 段落27：\"估计你也知道\"理解有误，原文指松田可能已察觉\n\n### 流畅性分析\n- A整体句子较完整，但偶有生硬\n- B更口语化简洁，但有时过于简略丢失信息\n\n### 格式/标点分析\n- A：引号使用混乱（中西式混用），但对话基本保留引号\n- B：多处对话省略引号（段落3、4、5、6等），格式不规范\n\n### 风格分析\n- A保留了更多原文语气助词和敬语层次感\n- B更简练但有时失去轻小说特有的对话感\n\n### 术语一致性\n- A：\"佐藤酱\"/\"佐藤小姐\"/\"佐藤\"混用\n- B：\"佐藤\"/\"佐藤酱\"相对一致\n- A用\"FAX\"，B用\"传真\"（B更本地化）\n\n### 重要差异\n- 段落30：A\"脸皮厚\"比B\"嚣张\"更准确翻译\"ふてぶてしい\"\n- 段落41：B\"振作起来了\"比A\"安全了\"更准确翻译\"持ち直した\"\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有hiro错误和个别误译；B在段落39有严重误译，段落42人称混乱\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A较完整但偶有生硬；B简洁但有时过于省略\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"A保留更多轻小说对话感；B省略引号影响对话氛围\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A人名hiro错误严重；B术语更一致本地化\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A叙述更完整连贯；B段落39句子混乱\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A引号中西混用；B多处对话省略引号\"}\n  },\n  \"key_differences\": [\n    \"A将'航'错译为'hiro'（段落7、8），B正确保留\",\n    \"B段落39严重误译'諸伏作の夕食'和句子结构\",\n    \"B多处省略对话引号，A基本保留\",\n    \"B更口语简洁，A更完整但偶有生硬\"\n  ],\n  \"final_summary\": \"两译本各有明显缺陷。A的'hiro'错误虽严重但局限于两段，B的段落39误译影响整体理解且多处格式问题。A在准确性和对话格式保持上略胜一筹，尽管存在人名拼写错误。综合考量，A整体质量稍优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10869,
+          "completion_tokens": 3057,
+          "total_tokens": 13926
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有hiro错误和个别误译；B在段落39有严重误译，段落42人称混乱"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A较完整但偶有生硬；B简洁但有时过于省略"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "A保留更多轻小说对话感；B省略引号影响对话氛围"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A人名hiro错误严重；B术语更一致本地化"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A叙述更完整连贯；B段落39句子混乱"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A引号中西混用；B多处对话省略引号"
+      }
+    },
+    "key_differences": [
+      "A将'航'错译为'hiro'（段落7、8），B正确保留",
+      "B段落39严重误译'諸伏作の夕食'和句子结构",
+      "B多处省略对话引号，A基本保留",
+      "B更口语简洁，A更完整但偶有生硬"
+    ],
+    "final_summary": "两译本各有明显缺陷。A的'hiro'错误虽严重但局限于两段，B的段落39误译影响整体理解且多处格式问题。A在准确性和对话格式保持上略胜一筹，尽管存在人名拼写错误。综合考量，A整体质量稍优。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

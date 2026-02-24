@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:45:13.110703",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.GLM-4.7.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "c9ba10e82d478cad7437cd0c01bb9e8b44754e4b78ef4a6b1e35a07dd6390fee",
+    "B": "de9996ffb6aede92b320172663d86014cd1ca39c687ddb46ba8ae878a96405ee"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:45:52.265026",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "491a7055-acc3-47bc-a99e-5191b07c8234",
+      "judge_response": {
+        "id": "491a7055-acc3-47bc-a99e-5191b07c8234",
+        "object": "chat.completion",
+        "created": 1768423552,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落7**: A译\"援護する\"为\"替他撑腰\"略有偏差；B译为\"补充说明\"更准确\n- **段落21**: A有明显错字\"事件的件的当事人\"\n- **段落42**: \"生きた心地がしなかった\"，A译\"觉得自己不像活着\"较准确；B译\"生不如死\"过于强烈\n- **段落44**: 原文说\"俺\"（我）嘟囔，A正确；B错误地将说话者改为诸伏\n- **段落43/45**: B将\"萩原\"误写为\"荻原\"，属于人名错误\n\n### 流畅性分析\n- A整体句式较通顺，如段落6\"惹麻烦的苗头\"比B的\"问题的种子\"更地道\n- B部分表达更简洁自然，如段落56\"家里蹲\"比\"尼特族\"更口语化\n\n### 风格/语气分析\n- A在敬称使用上更一致（佐藤小姐/佐藤酱）\n- B部分对话更活泼自然，如段落53\"简单做出来啦\"\n\n### 术语/名称一致性\n- A保持\"萩原\"一致\n- B在段落43、45出现\"荻原\"错误\n\n### 格式/标点\n- 两者都存在「」和\"\"混用问题\n- A段落9使用「」，B使用\"\"；后续段落两者时有切换\n- B段落30末尾多余引号\n\n### 关键差异总结\n1. B有致命的人名错误（萩原→荻原）\n2. B在段落44存在理解错误（说话者弄错）\n3. A有笔误但不影响理解\n4. 两者引号使用都不够统一\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B在段落44有理解错误，A有小笔误\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有优劣，整体持平\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"轻小说风格把握相近\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B将萩原误写为荻原，严重扣分\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B的人名错误影响连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 6, \"notes\": \"两者引号使用均不统一\"}\n  },\n  \"key_differences\": [\n    \"B将角色名'萩原'误写为'荻原'（段落43/45）\",\n    \"B在段落44将说话者弄错\",\n    \"A在段落24有笔误'事件的件的当事人'\",\n    \"段落42对'生きた心地がしなかった'理解不同\"\n  ],\n  \"final_summary\": \"A虽有小笔误，但整体准确性和术语一致性更好。B存在人名错误和关键段落理解偏差，这些是较严重的翻译问题。综合考量，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11921,
+          "completion_tokens": 1685,
+          "total_tokens": 13606
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B在段落44有理解错误，A有小笔误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有优劣，整体持平"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "轻小说风格把握相近"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B将萩原误写为荻原，严重扣分"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B的人名错误影响连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 6,
+        "notes": "两者引号使用均不统一"
+      }
+    },
+    "key_differences": [
+      "B将角色名'萩原'误写为'荻原'（段落43/45）",
+      "B在段落44将说话者弄错",
+      "A在段落24有笔误'事件的件的当事人'",
+      "段落42对'生きた心地がしなかった'理解不同"
+    ],
+    "final_summary": "A虽有小笔误，但整体准确性和术语一致性更好。B存在人名错误和关键段落理解偏差，这些是较严重的翻译问题。综合考量，A略胜一筹。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

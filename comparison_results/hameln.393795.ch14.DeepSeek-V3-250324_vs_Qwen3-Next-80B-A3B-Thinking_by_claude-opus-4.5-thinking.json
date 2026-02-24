@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:15:53.714923",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "f26d14fb19a0b942e10ed721d35d5751c42d8909cb04d25585a2b5b8650c1353",
+    "B": "93626d84e49c348e6440d4102d7b30bd207b28305703984a0ec74491f80d2a28"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:16:49.236573",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "39b168e1-7d91-4bb5-ba78-3d1a1b879ff6",
+      "judge_response": {
+        "id": "39b168e1-7d91-4bb5-ba78-3d1a1b879ff6",
+        "object": "chat.completion",
+        "created": 1768421808,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落4**: 原文「将兵の結束」，A译\"士兵们齐心\"漏掉了\"将\"，B译\"将士的团结\"更准确\n- **段落25**: 原文「公都」，A正确译为\"公都\"，B错译为\"王都\"（大公领应为公都非王都）\n- **段落50**: B将女性主角错译为\"他\"（原文是姫様/公主），A无此问题\n- **段落13**: 原文「分刻みの連携」是\"按分钟配合\"，B译\"分秒不差\"略有夸大\n\n### 2. 流畅性\n- A整体口语化，读起来轻快但有时过于随意（如段落1\"这玩意儿\"）\n- B部分句子较生硬，如段落6\"为此的重要武器\"结构突兀\n- 段落58: A\"抓到了故意留缺口放跑的公爵一家\"语序混乱；B也有类似问题\n\n### 3. 风格/语气\n- A偏口语化，有时过于轻佻（段落12\"想都别想、绝望了\"）\n- B更贴合轻小说叙事风格，但部分对话略显生硬\n- 段落45: A\"就算我是主子\"错译了视角关系；B\"虽说是我的主君\"正确\n\n### 4. 术语一致性\n- A: 公都（正确）、摆钟、擒纵\n- B: 王都（错误）、摆钟、擒纵\n- 两者人名译法一致：约阿希姆/佛基斯\n\n### 5. 格式/标点\n- 段落36-39: B使用西式引号\"\"与其他段落「」不统一\n- A格式较为一致\n- B段落81缺少结尾标点\n\n### 6. 连贯性\n- A在长段落（如段落29、61）有时过于简略，丢失细节\n- B保留更多原文信息，但偶有冗余\n\n## 关键差异\n1. **性别错误**：B在段落50将公主误译为\"他\"\n2. **地名错误**：B将\"公都\"错译为\"王都\"\n3. **格式不一致**：B引号使用不统一\n4. **语体风格**：A偏口语，B偏书面\n5. **完整度**：B保留更多细节，A有时删减\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B有性别错误(他/她)及地名错误(公都→王都)；A段落4漏译'将'\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A口语流畅但有时过随意；B部分句子结构生硬\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"B更符合轻小说叙事风格；A偶尔过于口语化\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"B地名翻译错误(王都)影响一致性\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体连贯，各有优劣\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B引号格式不统一，段落81缺标点\"}\n  },\n  \"key_differences\": [\n    \"B将公主误译为'他'(段落50)\",\n    \"B将'公都'错译为'王都'(段落25-26)\",\n    \"B引号格式不一致(段落36-39)\",\n    \"A语体偏口语化，B偏正式\",\n    \"A偶有删减细节，B保留更完整\"\n  ],\n  \"final_summary\": \"两译本各有优劣，但B存在关键性错误：性别错误（将女主角译为'他'）、地名错误（公都→王都）及格式不统一问题。A虽然语体偏口语、偶有细节删减，但无重大硬伤。综合考量，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11299,
+          "completion_tokens": 2259,
+          "total_tokens": 13558
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B有性别错误(他/她)及地名错误(公都→王都)；A段落4漏译'将'"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A口语流畅但有时过随意；B部分句子结构生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "B更符合轻小说叙事风格；A偶尔过于口语化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "B地名翻译错误(王都)影响一致性"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体连贯，各有优劣"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B引号格式不统一，段落81缺标点"
+      }
+    },
+    "key_differences": [
+      "B将公主误译为'他'(段落50)",
+      "B将'公都'错译为'王都'(段落25-26)",
+      "B引号格式不一致(段落36-39)",
+      "A语体偏口语化，B偏正式",
+      "A偶有删减细节，B保留更完整"
+    ],
+    "final_summary": "两译本各有优劣，但B存在关键性错误：性别错误（将女主角译为'他'）、地名错误（公都→王都）及格式不统一问题。A虽然语体偏口语、偶有细节删减，但无重大硬伤。综合考量，A略胜一筹。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

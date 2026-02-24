@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:24:47.661540",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "43b78448c8404b97c4324c63ba13a58aded0ada1b1ebf8be1b5577409983e95c",
+    "B": "d5dcad02bc6b8dd57c82f5d0e3de791c795e392c914da2746259ded02293952b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:25:33.622337",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5c4d723d-659b-4cb1-8d9a-b8b23ba828f3",
+      "judge_response": {
+        "id": "5c4d723d-659b-4cb1-8d9a-b8b23ba828f3",
+        "object": "chat.completion",
+        "created": 1768422333,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项对比分析\n\n### 1. 准确性\n- **段落1**: A保留日语\"sideゴブラル\"未翻译；B译为\"side哥布林王\"，更准确传达含义\n- **段落19**: 原文\"脂汗\"指冷汗/虚汗，A译\"油脂汗\"不准确，B译\"冷汗\"正确；\"ダラダラ\"表示流淌状，B的\"哗啦啦\"比A的\"黏糊糊\"更准确\n- **段落94**: A保留\"ナモナイ\"未翻译，B译为\"无名\"，体现名字含义\n- **段落98**: 原文\"息子を追う\"指追自己的儿子，A理解正确但表达略awkward，B误译为\"他儿子\"\n\n### 2. 流畅性\n- **段落33**: A\"大概就是这么回事？你这可是重大失误吧？\"较平淡；B\"\"就是这么回事吧\"个鬼啊！你这不就是重大失误吗？\"更口语化生动\n- **段落42**: B的\"听好了？...能奏效一次绝不可能奏效第二次！\"比A更流畅自然\n- **段落92**: B\"糟！左右两边冒出人类部队，中计了！\"比A更紧凑有力\n\n### 3. 风格/语气\n- **段落2**: B\"属下有要事禀报\"比A\"向您报告\"更符合王国臣子的语气\n- **段落4**: B\"战事已毕，定是来报告...\"更有轻小说叙述感\n- **段落35**: B\"畏首畏尾\"比A\"怯懦\"用词更精炼\n\n### 4. 术语一致性\n- A在段落56使用\"父亲大人\"，B使用\"父王\"——因主角是王子，\"父王\"更恰当\n- 名称翻译：两者都用\"瑪澤爾\"/\"哥布拉\"，基本一致\n\n### 5. 连贯性\n- B整体行文更连贯，特别是战斗场景描写节奏感更好\n- A有时句子略显生硬，如段落77\"我作为将军让全员奋起\"\n\n### 6. 格式\n- 段落94：A保留空格\"side ナモナイ\"，B处理更干净\n- 两者标点符号使用基本规范\n\n## 主要差异总结\n1. B更积极地翻译保留的日语元素\n2. B的口语表达更自然生动\n3. B对情绪性语句的处理更到位\n4. A在段落98的理解更准确，但B在段落19/42等处更准确\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在关键词如脂汗等处更准确，但段落98理解有误；A保留未翻译内容扣分\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B的中文表达更自然流畅，口语化处理更佳\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地把握了轻小说的叙事节奏和角色语气\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B使用'父王'等更符合设定的称谓\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体阅读体验更顺畅\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"A有未翻译内容和多余空格\"}\n  },\n  \"key_differences\": [\n    \"B积极翻译日语保留元素(side标题/名字)，A部分保留原文\",\n    \"B的情绪表达更生动(如段落33的吐槽)\",\n    \"B的战斗场景描写节奏感更好\",\n    \"B在'脂汗'等关键词处更准确\",\n    \"A在段落98对原文关系理解更正确\"\n  ],\n  \"final_summary\": \"翻译B在流畅性、风格把握和整体阅读体验上明显优于A，更好地呈现了轻小说的叙事特色。虽然B在个别细节(如段落98)存在理解偏差，但A保留过多未翻译内容且整体表达较生硬，综合来看B质量更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12876,
+          "completion_tokens": 1986,
+          "total_tokens": 14862
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在关键词如脂汗等处更准确，但段落98理解有误；A保留未翻译内容扣分"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文表达更自然流畅，口语化处理更佳"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地把握了轻小说的叙事节奏和角色语气"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B使用'父王'等更符合设定的称谓"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体阅读体验更顺畅"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有未翻译内容和多余空格"
+      }
+    },
+    "key_differences": [
+      "B积极翻译日语保留元素(side标题/名字)，A部分保留原文",
+      "B的情绪表达更生动(如段落33的吐槽)",
+      "B的战斗场景描写节奏感更好",
+      "B在'脂汗'等关键词处更准确",
+      "A在段落98对原文关系理解更正确"
+    ],
+    "final_summary": "翻译B在流畅性、风格把握和整体阅读体验上明显优于A，更好地呈现了轻小说的叙事特色。虽然B在个别细节(如段落98)存在理解偏差，但A保留过多未翻译内容且整体表达较生硬，综合来看B质量更优。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

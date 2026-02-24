@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:14:30.208745",
+  "sample": "hameln.393509.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393509.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393509.ch3.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/hameln.393509.ch3.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d0ee712a22c7dfdd4c4af422942c07b6451fef680b5ae0c656be229b32ac619b",
+    "A": "c0b8d41923e549e6b649d138ea85f5aacf3fbd2e7da9fba33761b4a27098e046",
+    "B": "9756b0637ea846dc06511780786abf26cd4ffc126671dd03e631f49132d1e8b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:15:16.160661",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4ed1fec2-f692-4098-8548-f0fccbcdeeff",
+      "judge_response": {
+        "id": "4ed1fec2-f692-4098-8548-f0fccbcdeeff",
+        "object": "chat.completion",
+        "created": 1768421715,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性\n- **段落1**: A正确译为\"岩代\"，B错译为\"岩城\"（イワシロ→岩代）\n- **段落20**: B将\"忍原来夏\"错译为\"忍本来夏\"，严重名称错误\n- **段落39**: 原文\"部活より学業の時間のほうが長い\"意为\"学业时间比社团长\"，A译反了，B译对了\n- **段落56**: 两者都将女性\"忍原先輩\"误译为\"学长\"\n\n### 2. 流畅性\n- A整体更书面化，有时略显生硬（如段落2\"难道不招个性强烈的人就入不了学吗\"）\n- B更口语化自然（如\"卡壳\"\"人设浓\"\"搞不懂\"）\n\n### 3. 风格/语气\n- A保持敬语层次感更好（\"您是\"\"拜托您了\"）\n- B更符合轻小说对话的轻松感（\"为啥\"\"呵呵\"\"嘛\"）\n- 段落41: A将\"案件\"意译为\"商业合作\"合理；B保留\"案件\"在中文网络语境也可接受\n\n### 4. 术语/名称一致性\n- A统一使用\"学姊\"\"社\"（台式用法），人名带敬称\n- B混用\"学姊/学姐\"\"部/队\"，敬称不统一\n- B有两处关键名称错误（岩城、忍本）\n\n### 5. 连贯性\n- 段落53: B\"隐约、笹波君想说什么明白了\"语序混乱，A更通顺\n\n### 6. 格式\n- 两者标点使用基本合规\n- A更注重保留原文语气词的细微差异\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有两处人名错误（岩城/忍本），但A在段落39译反了意思\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，A偶有书面化僵硬感\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的轻小说对话感更强，A敬语层次更清晰\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B名称错误严重，混用学姊/学姐、部/队/社\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯，B段落53语序混乱\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"两者相近，A语气词处理更细腻\"}\n  },\n  \"key_differences\": [\n    \"B有关键人名错误：岩城（应为岩代）、忍本（应为忍原）\",\n    \"A风格偏台式书面，B偏大陆口语\",\n    \"A敬称使用一致，B时有省略\",\n    \"段落39 A译反了原意，B正确\"\n  ],\n  \"final_summary\": \"A在准确性和术语一致性上表现更好，尤其避免了B的关键人名错误；B在流畅度和轻小说风格上略胜，但名称错误是翻译硬伤。综合考虑，A的整体可靠性更高，故判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10531,
+          "completion_tokens": 1889,
+          "total_tokens": 12420
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有两处人名错误（岩城/忍本），但A在段落39译反了意思"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，A偶有书面化僵硬感"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的轻小说对话感更强，A敬语层次更清晰"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B名称错误严重，混用学姊/学姐、部/队/社"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯，B段落53语序混乱"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者相近，A语气词处理更细腻"
+      }
+    },
+    "key_differences": [
+      "B有关键人名错误：岩城（应为岩代）、忍本（应为忍原）",
+      "A风格偏台式书面，B偏大陆口语",
+      "A敬称使用一致，B时有省略",
+      "段落39 A译反了原意，B正确"
+    ],
+    "final_summary": "A在准确性和术语一致性上表现更好，尤其避免了B的关键人名错误；B在流畅度和轻小说风格上略胜，但名称错误是翻译硬伤。综合考虑，A的整体可靠性更高，故判A胜出。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

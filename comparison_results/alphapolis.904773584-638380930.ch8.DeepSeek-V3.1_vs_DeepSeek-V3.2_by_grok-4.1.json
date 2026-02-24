@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:39:03.435501",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "883361bbca9d4275243550107e91e13ca24084e687ae2aa5465a523780b2d1e1",
+    "B": "a1d741874c948eeaf13f233896f62935a03d400178c9b02bb662808edfbb9102"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:23.011734",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DVKqtw6p0ukMhtmIFFpeDW85JaZ",
+      "judge_response": {
+        "id": "chatcmpl-89DVKqtw6p0ukMhtmIFFpeDW85JaZ",
+        "object": "chat.completion",
+        "created": 1768426762,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 魔物图鉴 枭熊 アウルベア\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"轻小说 魔物 コートウルフ 绵绒狼 OR 棉绒战狼\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"日文轻小说常见魔物翻译 中文 クリムゾンブル 绯红公牛 OR 赤红巨牛\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"轻小说 モンスター名 中文翻译 ジュエルホーン 珠宝角兽 OR 宝石角兽\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [zh.moegirl.org.cn](https://zh.moegirl.org.cn/)\n> 📋 **Task:** 查找轻小说或异世界作品中常见魔物如アウルベア、クリムゾンブル、ジュエルホーン等的中文译名惯例。\n\n> 🔍 **10 results found**\n\n> [🔗 \"龙与地下城3E版怪物资料——枭熊 - 暗黑秘影中文站\" Chinadd2](https://www.chinadd2.com/dnd-owlbear.html)\n> [🔗 \"【Bestiary I】枭熊（Owlbear）\" Goddessfantasy](https://www.goddessfantasy.net/bbs/index.php?topic=59931.0)\n> [🔗 \"枭熊（Owlbear）_龙与地下城_新浪博客\" Sina Blog](https://blog.sina.com.cn/s/blog_621fc6790100elvn.html)\n> [🔗 \"《龙与地下城侠盗荣耀》怪物考第1期：枭熊 | 机核 GCORES\" GCORES](https://www.gcores.com/articles/164305)\n> [🔗 \"【Bestiary 1】枭熊 Owlbear\" Goddessfantasy](https://www.goddessfantasy.net/bbs?topic=121366.0)\n> [🔗 \"枭熊（Owlbear Rodeo）平台2.0版简明指南 -- 来自游研社\" Yystv](https://www.yystv.cn/n/994175)\n> [🔗 \"枭熊: r/BaldursGate3\" Reddit](https://www.reddit.com/r/BaldursGate3/comments/16cchas/owlbear)\n> [🔗 \"枭熊 _博德之门3生物 - VG百科\" Vgbaike](https://www.vgbaike.com/baldurs_gate_3/item32091)\n> [🔗 \"角色/物品图鉴wiki|GameKee\" GameKee](https://www.gamekee.com/zsca2/second/194491)\n> [🔗 \"鸮熊 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%B4%9E%E7%86%8A)\n\n> 🔍 **1 results found**\n\n> [🔗 \"萌娘百科 万物皆可萌的百科全书 - zh.moegirl.org.cn\" zh.moegirl.org.cn](https://zh.moegirl.org.cn/)\n\n\n**详细分析**\n\n翻译A和B都是针对轻小说风格的魔物图鉴/笔记体裁进行的中文翻译，整体上两者都相当优秀，保留了原文的简洁、信息性叙述风格，同时使用了常见的异世界轻小说术语（如史莱姆、哥布林、魔石等）。两者差异主要体现在用词的精炼度、自然度、语气轻快感、专有名词的直译/意译平衡，以及个别句子的流畅性与可读性上。下面按评估维度逐一比较：\n\n1. **准确性（意思保留）**  \n   两者在核心意思上都高度忠实于原文，几乎没有明显误译。少数细微差异如：  \n   - 段落4：A“头部像猫头鹰”，B“头如猫头鹰”——两者均准确，但B更简洁诗意。  \n   - 段落11：A“廷帕因”，B“汀帕因”——地名音译不同，但无对错（常见音译为廷帕因/汀帕因均可接受）。  \n   - 段落76：A对“首を毟り取ろうとする”的描述较准确（扯掉脑袋），B稍柔化（撕咬颈部）。  \n   - 段落82：A“雪树人或者冰树人”，B“雪巨人和冰巨人”——B明显偏离（トレント是树精，不是巨人），准确性扣分。  \n   总体A在细节保留上略胜。\n\n2. **流畅性（目标语言自然表达）**  \n   B在很多地方更简洁、节奏更好，读起来像母语者写的笔记（例如段落2 B“常受…影响”、段落10 B“栖于河畔湿地”、段落18 B“与其说是巨型猿猴更接近大猩猩”）。  \n   A有时稍显冗长或书面化（如段落4 A“即使在夜晚也看得非常清楚” vs B“即使在夜间视力也极佳”更自然）。  \n   B整体更符合现代中文阅读习惯，流畅性占优。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   轻小说魔物图鉴常带点吐槽、轻松、随性的笔记感（如“意外と素早い”“実は結構美味しい”“割とどこにでもいる”）。  \n   A更倾向保留这种“个人笔记”的随意感（如“其实肉质相当美味”“算是相当随处可见”“这家伙能在暴风雪中活动”）。  \n   B有时更中性/正式（如段落30 B“算是随处可见”少了“相当”的强调感，段落67 B“小鹿斑比”比A“可爱的斑比”稍正式）。  \n   A的语气更贴近原文的轻快个人视角。\n\n4. **术语/名称一致性**  \n   - 魔物名：A更倾向意译/美化（如“绵绒狼”“珠宝角兽”“雪树精”“杀人黄蜂”），B有时更直白/加后缀（如“棉绒战狼”“宝石角兽”“雪原狼”“杀人黄蜂”相同）。  \n   - 但B在トレント系上出现较大不一致（如雪树精→雪巨人、冰树精→冰巨人），破坏了系列感；A保持了“雪树精/冰树精”的一致性。  \n   - 常见种如枭熊、史莱姆、哥布林等两者一致，“枭熊”已是中文圈D&D/异世界通用译名。  \n   术语一致性A明显更好。\n\n5. **连贯性/可读性**  \n   作为整篇“个人笔记”，A的表述更统一，像同一个人随手写的（用词习惯较一致，如常使用“其实”“算是”“相当”等口语化词）。  \n   B在某些段落更精炼，但偶尔出现风格跳跃（如巨人化树精）。整体可读性两者接近，B因简洁稍胜，但A连贯性更强。\n\n6. **格式/标点符号**  \n   两者格式基本一致，使用·分隔、括号补充，标点使用规范。无明显问题，平分。\n\n**总体判断**：  \nB在流畅性与个别句子美感上略占优势，读起来更爽快；但A在准确性、术语一致性、轻小说随性笔记语气上更胜一筹，尤其避免了B在树精系列上的重大意译偏差。考虑到轻小说图鉴类文本更注重“世界观一致性”与“个人手记感”，A的整体质量更高。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体忠实度更高，B在トレント系翻译出现明显偏差\"},\n    \"fluency\": {\"A\": 8, \"B\": 9, \"notes\": \"B用词更简洁自然，A稍显书面但仍流畅\"},\n    \"style\": {\"A\": 9, \"B\": 8, \"notes\": \"A更好地保留了原文个人笔记的随意吐槽感\"},\n    \"terminology\": {\"A\": 9, \"B\": 7, \"notes\": \"A名称一致性强，B部分意译导致系列断裂（如树精→巨人）\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A全篇语气更统一，像同一人手记\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者格式与标点均规范，无明显差异\"}\n  },\n  \"key_differences\": [\n    \"B句子更短更爽，但牺牲部分原文语气与准确细节\",\n    \"A在魔物名称体系上更一致（尤其是树精系列）\",\n    \"B个别地方美化过度（如棉绒战狼、赤红巨牛），A更贴近常见译名与原文直感\",\n    \"A的口语化表达（如『这家伙』『算是相当』）更符合轻小说笔记风格\"\n  ],\n  \"final_summary\": \"虽然B在阅读流畅度上略胜，但A在准确性、一致性与轻小说个人手记风格的还原度上更全面、更适合作为完整魔物图鉴翻译，因此判定A整体优胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12707,
+          "completion_tokens": 3079,
+          "total_tokens": 15786
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体忠实度更高，B在トレント系翻译出现明显偏差"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B用词更简洁自然，A稍显书面但仍流畅"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更好地保留了原文个人笔记的随意吐槽感"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 7,
+        "notes": "A名称一致性强，B部分意译导致系列断裂（如树精→巨人）"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A全篇语气更统一，像同一人手记"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式与标点均规范，无明显差异"
+      }
+    },
+    "key_differences": [
+      "B句子更短更爽，但牺牲部分原文语气与准确细节",
+      "A在魔物名称体系上更一致（尤其是树精系列）",
+      "B个别地方美化过度（如棉绒战狼、赤红巨牛），A更贴近常见译名与原文直感",
+      "A的口语化表达（如『这家伙』『算是相当』）更符合轻小说笔记风格"
+    ],
+    "final_summary": "虽然B在阅读流畅度上略胜，但A在准确性、一致性与轻小说个人手记风格的还原度上更全面、更适合作为完整魔物图鉴翻译，因此判定A整体优胜。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

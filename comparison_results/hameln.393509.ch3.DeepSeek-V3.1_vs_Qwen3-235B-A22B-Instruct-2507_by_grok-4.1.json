@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:40:02.372317",
+  "sample": "hameln.393509.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393509.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393509.ch3.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.393509.ch3.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d0ee712a22c7dfdd4c4af422942c07b6451fef680b5ae0c656be229b32ac619b",
+    "A": "3466c248e67c314366a09e3a6db9b52466fa58597e836779404c46916ad8721b",
+    "B": "8b7aa351af5a77a027d23a1d451470060d6868d0496f9f53db09d21b549bf96b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:40:21.248496",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DKyaNPwkL686n6MqDfmqoxGa4wO",
+      "judge_response": {
+        "id": "chatcmpl-89DKyaNPwkL686n6MqDfmqoxGa4wO",
+        "object": "chat.completion",
+        "created": 1768426820,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"雷門中 サッカー部 円堂守\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"いわしろ 部長 ダンス部 軽小説\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"忍原来夏 ダンス部 軽小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"イナズマイレブンの登場人物 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)\n> [🔗 \"雷門イレブン\" Pixiv](https://dic.pixiv.net/a/%E9%9B%B7%E9%96%80%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3)\n> [🔗 \"雷門中学校 - アニヲタWiki(仮)\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/23236.html)\n> [🔗 \"湊：１.雷門中学サッカー部\" Ameba](https://ameblo.jp/sakura-tetsudo/entry-12655507753.html)\n> [🔗 \"第1話 サッカーやろうぜ！ - イナズマイレブン フットボールフロンティア編｜ネットもテレ東\" TV Tokyo](https://video.tv-tokyo.co.jp/inazuma-world/episode/00112384.html)\n> [🔗 \"円堂はなぜ、雷門中に入学したんですか？イナズマイレブンの質問です。円堂守はなぜ、雷門中に入学したんですか？雷門中って私立... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1065359180)\n> [🔗 \"円堂 守とは何？ わかりやすく解説 Weblio辞書\" Weblio](https://weblio.jp/content/%E5%86%86%E5%A0%82+%E5%AE%88)\n> [🔗 \"イナズマイレブン（1～13話）感想 : メロンソーダ高場の本拠地\" Livedoor](https://takaba1192.livedoor.blog/archives/2003241.html)\n> [🔗 \"雷門中サッカー部、さすがに補強しすぎ説！鬼道、一之瀬などの途中加入キャラがいなかったらFF優勝できるのか！？ イナズマイレブンGOストライカーズ 2013 【イナスト2013】 - YouTube\" YouTube](https://www.youtube.com/watch?v=_Q5zFrmzioQ)\n> [🔗 \"イナズマイレブンについてこの前の円堂達の卒業式の回で誰かが栗松にフットボールフロンティア三連覇がかかっていると言っていたような気がするん... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1360651748)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ダンス部 部長南原 / DANCE☆MAN Lyrics (72288) - PetitLyrics\" PetitLyrics](https://petitlyrics.com/lyrics/72288)\n> [🔗 \"登美丘高校キャプテンが伊原六花として芸能界デビュー！ダンス部界初のヒロインに独占インタビュー！ | ダンスク！\" D-s-k](https://d-s-k.jp/interview/30825)\n> [🔗 \"ダンス部 部長南原 歌詞 DANCE☆MAN( ダンス☆マン ) ※ Mojim.com\" MOJIM](https://mojim.com/jpy111417x1x13.htm)\n> [🔗 \"岩代俊明 (いわしろとしあき)とは【ピクシブ百科...\" Pixiv](https://dic.pixiv.net/a/%E5%B2%A9%E4%BB%A3%E4%BF%8A%E6%98%8E)\n> [🔗 \"ダンス部 部長南原 - ダンス  マン - Shazam\" Shazam](https://www.shazam.com/ja/track/40869045/-)\n> [🔗 \"豊田大谷高校・ダンス部\" Facebook](https://www.facebook.com/p/%E8%B1%8A%E7%94%B0%E5%A4%A7%E8%B0%B7%E9%AB%98%E6%A0%A1%E3%83%80%E3%83%B3%E3%82%B9%E9%83%A8-100042581486696?locale=ja_JP)\n> [🔗 \"【ダンス部】小説・夢小説一覧 (9件以上) | ...\" Teller](https://teller.jp/tag/%E3%83%80%E3%83%B3%E3%82%B9%E9%83%A8)\n> [🔗 \"岩代俊明 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E5%B2%A9%E4%BB%A3%E4%BF%8A%E6%98%8E)\n> [🔗 \"検索結果 | 集英社 ― SHUEISHA ―\" Shueisha](https://www.shueisha.co.jp/books/search/search.html?titleauthor=%E5%B2%A9%E4%BB%A3+%E4%BF%8A%E6%98%8E)\n> [🔗 \"ワンダンス - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%AF%E3%83%B3%E3%83%80%E3%83%B3%E3%82%B9)\n\n> 🔍 **10 results found**\n\n> [🔗 \"忍原来夏\" Pixiv](https://dic.pixiv.net/a/%E5%BF%8D%E5%8E%9F%E6%9D%A5%E5%A4%8F)\n> [🔗 \"忍原来夏 登場シーン プレイ動画まとめ【イナズマイレブン 英雄たちのヴィクトリーロード】 - YouTube\" YouTube](https://www.youtube.com/watch?v=itFR0tL3JW4)\n> [🔗 \"忍原来夏とはただの幼馴染みです………それだけですが？ - ハーメルン\" Syosetu](https://syosetu.org/novel/394034)\n> [🔗 \"Popular illustrations and manga tagged \"忍原来夏\" | pixiv\" pixiv](https://www.pixiv.net/tags/%E5%BF%8D%E5%8E%9F%E6%9D%A5%E5%A4%8F)\n> [🔗 \"『イナズマイレブン 英雄たちのヴィクトリーロード』人気キャラ「来夏」のダンスモーション担当者に驚きの声（Game Spark） - Yahoo!ニュース\" Yahoo!ニュース](https://news.yahoo.co.jp/articles/76df2a70f33b58fe5c5ab246a092deb499aec9fc)\n> [🔗 \"忍原来夏が可愛いすぎる。 #イナズマイレブン #忍原来夏 - YouTube\" YouTube](https://www.youtube.com/watch?v=2JzYlpzH8s8)\n> [🔗 \"【イナイレV】忍原 来夏の入手方法・キャラ情報【ヴィクトリーロード】 | AppMedia\" AppMedia](https://appmedia.jp/victory-road/79480571)\n> [🔗 \"忍原来夏の評価と育成論【イナズマイレブン英雄たちのヴィクトリーロード】 | GAME攻略BOX\" Gamekoryakubox](https://gamekoryakubox.com/inazumav_mainchara_shinohara)\n> [🔗 \"【イナイレV】忍原来夏の性能と入手方法【イナズマイレブン英雄たちのヴィクトリーロード】｜ゲームエイト\" Game8](https://game8.jp/inazuma-victory-road/742096)\n> [🔗 \"【イナイレV】忍原来夏の好きなところ雑談【毎日カウントダウン配信アーカイブ】 - YouTube\" YouTube](https://www.youtube.com/watch?v=a-Fz1XtBVjw)\n\n\n**详细分析：**\n\n这是一个典型的轻小说风格文本，带有校园社团、吐槽内心独白、夸张角色个性、热血对话等元素。整体氛围轻松幽默，带有一些模仿《イナズマイレブン》（雷门中学、圆堂守的传说等梗）的致敬。翻译需要保留日式轻小说特有的口语化、吐槽感、角色个性鲜明感，同时中文要读起来自然流畅。\n\n**逐段比较要点总结（重点差异段落）：**\n\n- **名称一致性**：A统一使用「岩白」「忍原·来夏」「木曽路」「笹波」等，格式较规范（人名加·，学姐/君等）。B使用「岩代」「忍原来夏」「木曾路」「笹波」，但有时缺少·，整体较随意。A在专有名词处理更稳定一致（尤其是「忍原·来夏」这种常见中译格式）。\n\n- **准确性**：两者都基本准确，但B在某些地方稍有偏差或省略，如段落39 B把「部活より学業の時間のほうが長い」翻译成「社团活动时间都比学习时间短」（完全反了，原意是社团时间比学习长，更辛苦）。这是重大失误。A正确翻译为「待在社团的時間還比上課時間長」。\n\n- **流畅性 & 可读性**：A整体句子更顺畅、自然，像日常中文轻小说阅读体验（「又是个性强烈的社长啊」「果然近看真的可愛得不得了啊」）。B有时稍显生硬或awkward，如段落33 B的「踏进教室瞬间那股冰冷的空气简直成了心理阴影 大家明明都瞥来了一眼视线 却马上装作没事般继续聊天」（缺少标点，读起来卡顿）。A的处理更连贯。\n\n- **风格/语气**：轻小说需要活泼、吐槽味、少年感。A在内心吐槽和对话上更贴近（如段落7、26、45的吐槽感强，口语化自然）。B有时语气偏平淡或书面化（如段落9 B「我这颗为舞蹈献身的心」稍显中二过头但不自然，A「难道感受不到我对舞蹈的这份真心吗？」更符合主角装酷失败的搞笑感）。A的部长角色毒舌、傲娇感更突出。\n\n- **术语**：社团相关「体験入部」A统一「体验入部」，B混用「体验入社」「入社」，不一致。「どん底」A多用「谷底/底層」，B多用「谷底/垫底/低谷」，但整体A更统一。「幽霊部員」两者都译「幽灵部员」，无大差别。\n\n- **格式/标点**：A标点使用规范，波浪号、破折号、省略号都合适。B有些地方缺少空格或标点（如段落33、36），影响阅读。\n\n**总体评价**：  \nA在准确性、名称一致性、流畅性、轻小说风格的再现上全面占优。只有极少数地方B的表达稍显直白或不同选择，但B在段落39的重大误译直接拉低分数。两者差异明显，**A整体质量更高**。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 6, \"notes\": \"B在关键段落（如39）出现严重意思相反的误译，影响较大；其他地方基本准确但偶有小偏差\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A中文更自然流畅，口语感强；B部分句子生硬、缺少适当断句\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更好地保留了轻小说吐槽、搞笑、角色个性与热血感；B语气有时偏平\"},\n    \"terminology\": {\"A\": 9, \"B\": 7, \"notes\": \"A在人名、社团用语一致性更好（如统一『体验入部』、人名格式）；B混用且偶有不统一\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体连贯可读性强；B个别段落因标点/句子结构影响连贯\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"A标点、空格、格式规范；B有较多小问题（如缺少标点、挤在一起）\"}\n  },\n  \"key_differences\": [\n    \"B在段落39误译社团时间与学习时间长短关系（重大准确性失误）\",\n    \"A在名称格式（如『忍原·来夏』）和社团术语更一致规范\",\n    \"A的对话与内心独白更具轻小说特色的活泼吐槽感与节奏\",\n    \"B部分表达稍显生硬或中二过头，整体阅读体验不如A流畅\"\n  ],\n  \"final_summary\": \"A整体更准确、自然、风格贴合轻小说阅读需求，B虽有可取之处但受关键误译与细节问题拖累，A明显胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11479,
+          "completion_tokens": 4122,
+          "total_tokens": 15601
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "B在关键段落（如39）出现严重意思相反的误译，影响较大；其他地方基本准确但偶有小偏差"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A中文更自然流畅，口语感强；B部分句子生硬、缺少适当断句"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地保留了轻小说吐槽、搞笑、角色个性与热血感；B语气有时偏平"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 7,
+        "notes": "A在人名、社团用语一致性更好（如统一『体验入部』、人名格式）；B混用且偶有不统一"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体连贯可读性强；B个别段落因标点/句子结构影响连贯"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A标点、空格、格式规范；B有较多小问题（如缺少标点、挤在一起）"
+      }
+    },
+    "key_differences": [
+      "B在段落39误译社团时间与学习时间长短关系（重大准确性失误）",
+      "A在名称格式（如『忍原·来夏』）和社团术语更一致规范",
+      "A的对话与内心独白更具轻小说特色的活泼吐槽感与节奏",
+      "B部分表达稍显生硬或中二过头，整体阅读体验不如A流畅"
+    ],
+    "final_summary": "A整体更准确、自然、风格贴合轻小说阅读需求，B虽有可取之处但受关键误译与细节问题拖累，A明显胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

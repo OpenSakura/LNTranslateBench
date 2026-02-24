@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:10.207869",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "0ed49b0f11b5afbc64a84fb08cb08a46911cb331795d4823ba4e31c69c64d05f",
+    "B": "07dc0e8673b19b49ecef30ae09b468a38e02c2b0eb69a39d3520bf25ab65b990"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:02:53.945785",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b5f19231-b801-4ace-b21b-f1d869439343",
+      "judge_response": {
+        "id": "b5f19231-b801-4ace-b21b-f1d869439343",
+        "object": "chat.completion",
+        "created": 1768420973,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n- **段落2**: A译\"家里的老家\"明显冗余，B译\"老家\"更准确\n- **段落45**: 原文\"魔物に刺されば\"意思是\"枪刺中魔物\"，A译\"被魔物刺中\"和B译\"被魔物刺中\"均误译\n- **段落27**: A译\"无法传达可爱角色刺绣的优点\"语义混乱，B译\"没get到可爱角色刺绣的点\"更准确\n- **段落29**: A译\"Shugen\"未翻译人名，B译\"修源先生\"更规范\n\n### 2. 流畅性分析\n- B版整体用语更口语化自然，如\"干掉\"\"搞定\"\"塞进\"\n- A版部分句子较生硬，如段落39\"露出为难的表情表示反对\"\n\n### 3. 风格/语气分析\n- B版对话更活泼符合轻小说风格\n- A版使用中文引号\"\"，B版混用日式引号「」，格式不统一\n- 段落12/14等B版保留日式引号影响阅读体验\n\n### 4. 术语一致性\n- **人名**: A版统一用\"小雫\"，B版用\"希兹库酱\"（音译，不常见）\n- **专有名词**: A版\"从魔/迷宫\"，B版\"使魔/地牢\"——两者都可接受\n- **魔石**: A译\"雷光球\"，B译\"闪电球\"——B更贴近Thunder Ball原意\n\n### 5. 连贯性/可读性\n- A版整体阅读更顺畅，引号使用统一\n- B版口语化但日式引号干扰阅读\n\n### 6. 格式分析\n- A版标点规范统一\n- B版日式引号「」不符合中文规范\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有误译(段落45)，A段落2冗余，B段落27更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B版口语化更自然流畅\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A版语气适中，B版活泼但部分过于随意\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A人名统一(小雫)，B音译(希兹库)不常见；A未译Shugen扣分\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A版整体连贯，B版日式引号影响阅读\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"A版标点规范，B版日式引号「」不符合中文规范\"}\n  },\n  \"key_differences\": [\n    \"引号格式：A用中文引号，B混用日式引号\",\n    \"人名处理：A用小雫，B用希兹库酱\",\n    \"语言风格：A较正式，B更口语化\",\n    \"段落2：A冗余，B简洁准确\",\n    \"段落29人名：A未译，B译为修源先生\"\n  ],\n  \"final_summary\": \"两版各有优劣。B版在流畅性和部分准确性上略胜，但日式引号的大量使用严重影响中文阅读规范。A版格式规范、人名统一，虽有少量冗余表达，但整体更符合中文轻小说翻译标准。综合考虑格式规范的重要性，A版略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10284,
+          "completion_tokens": 1723,
+          "total_tokens": 12007
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有误译(段落45)，A段落2冗余，B段落27更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B版口语化更自然流畅"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A版语气适中，B版活泼但部分过于随意"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A人名统一(小雫)，B音译(希兹库)不常见；A未译Shugen扣分"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A版整体连贯，B版日式引号影响阅读"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "A版标点规范，B版日式引号「」不符合中文规范"
+      }
+    },
+    "key_differences": [
+      "引号格式：A用中文引号，B混用日式引号",
+      "人名处理：A用小雫，B用希兹库酱",
+      "语言风格：A较正式，B更口语化",
+      "段落2：A冗余，B简洁准确",
+      "段落29人名：A未译，B译为修源先生"
+    ],
+    "final_summary": "两版各有优劣。B版在流畅性和部分准确性上略胜，但日式引号的大量使用严重影响中文阅读规范。A版格式规范、人名统一，虽有少量冗余表达，但整体更符合中文轻小说翻译标准。综合考虑格式规范的重要性，A版略胜。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

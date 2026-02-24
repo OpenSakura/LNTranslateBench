@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:19:22.988803",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "6469e810e9165942b38022841ec098308956d3d7da5988bfde2e073237ca5f48",
+    "B": "c9857b656bde3ecb1573397d15862e857d0a24e1a85c79f2285214443654bdfc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:20:08.774352",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1327516c-3a26-493d-bcc4-7bc500e9cd2c",
+      "judge_response": {
+        "id": "1327516c-3a26-493d-bcc4-7bc500e9cd2c",
+        "object": "chat.completion",
+        "created": 1768422008,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n- **段落3**: B使用\"入社申请\"是错误的，应为\"入部申请\"（足球部不是公司）；A正确\n- **段落8**: A将\"トップツー\"译为\"主力前锋二人组\"有误，这指的是\"前二名/双王牌\"；B的\"王牌前二\"更准确\n- **段落20**: A出现严重错误，将\"ハル\"译为\"哈尔\"（前面一直是\"晴\"），造成前后不一致；B保持一致\n- **段落44-47**: B出现严重错误，将\"リン\"译为\"凪\"而非\"凛\"，多处名字混淆（如45段、47段）\n- **段落62**: A的\"传球顺利连接到已上前线的樱咲学长\"加了原文没有的\"学长\"\n\n### 流畅性分析\n- B整体更口语化自然，如\"拼命拜托\"\"强太多了\"\"被全场嘘\"等表达生动\n- A部分句子较拗口，如段落24\"本该如此，却未能如愿\"略显文绉绉\n- B段落36的排比句\"射门被挡，懊恼；想突破被拦，懊恼\"节奏感更好\n\n### 风格/语气分析\n- B更符合轻小说的活泼对话风格，如\"那也太滑头了吧\"\"好咧！！\"\n- A部分对话较正式，如\"这、这太耍赖了吧\"（多余顿号）\n\n### 术语一致性\n- **A的问题**: 段落20突然出现\"哈尔\"\n- **B的严重问题**: 段落44、45、47将\"凛(リン)\"误译为\"凪\"，这是不同的名字\n\n### 格式/标点\n- 两者基本规范\n- 段落63 B末尾多了一个不必要的引号「」\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A在段落20有'哈尔'不一致问题；B有'入社'错误及多处将'凛'误译为'凪'\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语流畅，A部分句子略显拗口\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说对话风格，用语活泼\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"B多次将角色名'凛'误译为'凪'是严重错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯；B因名字错误影响阅读理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B段落63末尾有多余引号\"}\n  },\n  \"key_differences\": [\n    \"B将角色名'凛(リン)'多次误译为'凪'（段落44、45、47），严重影响角色识别\",\n    \"A在段落20将'ハル'突然译为'哈尔'而非一贯的'晴'\",\n    \"B整体语言风格更活泼口语化，更符合轻小说特点\",\n    \"B段落3'入社申请'用词错误（应为'入部'）\"\n  ],\n  \"final_summary\": \"两个译本各有优缺点。B在流畅性和轻小说风格上表现更好，但存在将核心角色'凛'多次误译为'凪'的严重错误，直接影响读者对剧情的理解。A虽然风格略显正式，有个别不一致问题，但整体准确性和术语一致性更可靠。考虑到名字错误对轻小说阅读体验的严重影响，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10658,
+          "completion_tokens": 1887,
+          "total_tokens": 12545
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A在段落20有'哈尔'不一致问题；B有'入社'错误及多处将'凛'误译为'凪'"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语流畅，A部分句子略显拗口"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格，用语活泼"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "B多次将角色名'凛'误译为'凪'是严重错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯；B因名字错误影响阅读理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B段落63末尾有多余引号"
+      }
+    },
+    "key_differences": [
+      "B将角色名'凛(リン)'多次误译为'凪'（段落44、45、47），严重影响角色识别",
+      "A在段落20将'ハル'突然译为'哈尔'而非一贯的'晴'",
+      "B整体语言风格更活泼口语化，更符合轻小说特点",
+      "B段落3'入社申请'用词错误（应为'入部'）"
+    ],
+    "final_summary": "两个译本各有优缺点。B在流畅性和轻小说风格上表现更好，但存在将核心角色'凛'多次误译为'凪'的严重错误，直接影响读者对剧情的理解。A虽然风格略显正式，有个别不一致问题，但整体准确性和术语一致性更可靠。考虑到名字错误对轻小说阅读体验的严重影响，A略胜一筹。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

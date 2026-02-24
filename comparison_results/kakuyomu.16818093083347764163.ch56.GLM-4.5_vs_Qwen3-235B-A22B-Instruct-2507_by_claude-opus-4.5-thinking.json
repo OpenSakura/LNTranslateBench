@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:28:46.234189",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.GLM-4.5.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "d546b036ef399bf13bcd0b3a3ab3377ada94b82a79577d6ea2eef702737b25ec",
+    "B": "27ec22ec46285c6000ac38a383c004e8bf088759537da04277e3c55656ea6f6d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:29:30.892916",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9a0b39bb-1b1f-424b-a48f-7539ec0b7dde",
+      "judge_response": {
+        "id": "9a0b39bb-1b1f-424b-a48f-7539ec0b7dde",
+        "object": "chat.completion",
+        "created": 1768422570,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量对比分析\n\n## 详细分析\n\n### 1. 准确性\n- **段落6**: A有错别字\"打个盫\"（应为\"打个盹\"），B无此问题\n- **段落17**: A将\"ご主人\"译为\"丈夫\"正确；B译为\"主人\"在此语境下不够准确\n- **段落28**: B出现未翻译的英文\"crew\"，严重影响阅读\n- **段落31**: B将\"ディートヘルム様\"误译为\"迪特里希大人\"（混淆人名），A正确译为\"迪特赫尔姆大人\"\n- **段落29**: B将\"船に導いてくる\"译为\"引导回人世\"过度诠释，A的\"带到船上来\"更准确\n\n### 2. 流畅性\n- A整体更口语化自然，如\"闲得要死\"\"跑腿\"\n- B部分句子较生硬，如段落22\"对着暗属性的4级技能来一发猛击\"表达不通顺\n\n### 3. 风格/语气\n- A的轻小说感更强，如\"嘛\"\"啦\"等语气词使用自然\n- B有时过于书面化\n\n### 4. 术语一致性\n- **魔法技能名**: A统一意译（狂暴黑暗/暗黑暴走），B在段落26、31保留音译\"兰佩金格达克内斯/兰帕金·达克内斯\"，前后不一致\n- **人名翻译**: B出现人名混淆错误（段落31）\n\n### 5. 连贯性\n- A整体术语使用一致\n- B的技能名翻译方式前后矛盾\n\n### 6. 格式\n- A使用中文引号\"\"，B使用日式引号「」，均可接受\n- B有未翻译的英文词汇，扣分\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有人名混淆(段落31)、未翻译词汇(crew)、过度诠释等问题；A有一个错别字\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语化自然，B部分句子表达生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A轻小说风格把握更好，语气词使用自然\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B技能名翻译前后不一致，人名有混淆\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A术语统一，B存在矛盾之处\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"B有未翻译的英文单词crew\"}\n  },\n  \"key_differences\": [\n    \"B在段落31将ディートヘルム误译为迪特里希（人名混淆）\",\n    \"B在段落28保留未翻译的英文crew\",\n    \"A技能名统一意译，B前后不一致（既有意译又有音译）\",\n    \"A有一处错别字（盫→盹），B有语句不通顺问题\",\n    \"A整体口语化风格更符合轻小说特点\"\n  ],\n  \"final_summary\": \"A翻译整体质量更高，术语一致性好，风格把握准确，虽有一处错别字但不影响阅读。B存在人名混淆、未翻译词汇、术语不一致等较严重问题，影响了整体可读性和专业度。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9918,
+          "completion_tokens": 2037,
+          "total_tokens": 11955
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有人名混淆(段落31)、未翻译词汇(crew)、过度诠释等问题；A有一个错别字"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语化自然，B部分句子表达生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A轻小说风格把握更好，语气词使用自然"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B技能名翻译前后不一致，人名有混淆"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A术语统一，B存在矛盾之处"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "B有未翻译的英文单词crew"
+      }
+    },
+    "key_differences": [
+      "B在段落31将ディートヘルム误译为迪特里希（人名混淆）",
+      "B在段落28保留未翻译的英文crew",
+      "A技能名统一意译，B前后不一致（既有意译又有音译）",
+      "A有一处错别字（盫→盹），B有语句不通顺问题",
+      "A整体口语化风格更符合轻小说特点"
+    ],
+    "final_summary": "A翻译整体质量更高，术语一致性好，风格把握准确，虽有一处错别字但不影响阅读。B存在人名混淆、未翻译词汇、术语不一致等较严重问题，影响了整体可读性和专业度。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

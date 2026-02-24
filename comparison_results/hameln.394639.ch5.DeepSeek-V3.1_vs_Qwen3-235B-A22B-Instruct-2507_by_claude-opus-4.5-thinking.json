@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:19:11.762727",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "882318f99e425a5e6fdd34c234a4bc6f36aab0fe052fb16cd395fe5e7a3f78fe",
+    "B": "32732df6ff1844c35e5420906269a6e9a13616c23c50f46beb43fe3d18280776"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:19:59.883594",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "76dabad8-09bb-495a-838e-13cc75f473f3",
+      "judge_response": {
+        "id": "76dabad8-09bb-495a-838e-13cc75f473f3",
+        "object": "chat.completion",
+        "created": 1768421999,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n- **段落8**: A将「トップツー」译为\"主力前二\"更准确，B译为\"主力锋线双人组\"有误（トップツー指综合实力前二，非锋线双人组）\n- **段落20/34**: ハル是\"晴\"的日文读法，A在段落34错译为\"哈鲁\"，B在段落20错译为\"哈尔\"。A整体更准确\n- **段落37**: 「リンさん」B译为\"凛先生\"保留敬语更准确，A省略了\"さん\"\n- **段落31**: A\"像刚才那样随便的远射\"vs B\"软绵绵的远射\"，A更接近原文「甘えた」的语感\n\n### 2. 流畅性分析\n- **段落4**: B\"完蛋了\"比A\"完了\"更自然表达绝望感\n- **段落29**: B\"好嘞！！\"远胜A\"是的哟！！\"，A的翻译非常生硬\n- **段落33**: B\"啧、靠你了\"比A\"可恶，拜托了啊\"更口语化\n\n### 3. 风格/语气\n- **段落48**: B\"有丶意思\"有错字（应为\"点\"），A\"全都很有趣啊\"更自然\n- **段落37-50**: B保留\"凛先生\"的称呼体现了ハル对リン的尊敬关系，风格更贴切\n\n### 4. 术语一致性\n- **段落21/23**: A前后不一致（\"粉碎\"→\"撞击\"），B一致使用\"爆击\"\n- **名字处理**: A对木曽路统一，B用\"木曾路\"；A对ハル有不一致问题\n\n### 5. 严重错误\n- **段落32**: A缺少结尾引号\n- **段落47**: A使用西式引号(\"\")，与全文不一致\n- **段落58**: A突然切换为繁体中文（對我來說、發展等）\n- **段落64**: A出现俄语词汇\"теперь\"，为严重翻译错误\n\n### 6. 格式问题\n- A在多处出现繁简混用、引号不一致、标点遗漏\n- B格式整体统一\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A对トップツー理解更准确，B保留敬语更好；各有优劣\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B的口语对话更自然，A有生硬表达如'是的哟'\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留了人物关系中的敬语层次，更符合轻小说风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A必杀技名称前后不一致，B相对统一\"},\n    \"coherence\": {\"A\": 5, \"B\": 8, \"notes\": \"A有俄语乱码、繁简混用等严重问题\"},\n    \"formatting\": {\"A\": 4, \"B\": 8, \"notes\": \"A有引号缺失、繁简混用、引号风格不一致等多处问题\"}\n  },\n  \"key_differences\": [\n    \"A在段落64出现俄语乱码'теперь'，为致命错误\",\n    \"A在段落58突然使用繁体中文\",\n    \"A段落32缺少结尾引号，段落47使用西式引号\",\n    \"B对口语化对话处理更自然（如'好嘞'vs'是的哟'）\",\n    \"B保留'凛先生'敬语更贴合原文人物关系\"\n  ],\n  \"final_summary\": \"B翻译在格式规范性、口语自然度和风格统一性上明显优于A。虽然A在个别术语理解上略胜一筹，但A存在严重的技术错误（俄语乱码、繁简混用、标点遗漏），严重影响可读性和专业性，因此B为更优选择。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10789,
+          "completion_tokens": 2083,
+          "total_tokens": 12872
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A对トップツー理解更准确，B保留敬语更好；各有优劣"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的口语对话更自然，A有生硬表达如'是的哟'"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留了人物关系中的敬语层次，更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A必杀技名称前后不一致，B相对统一"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有俄语乱码、繁简混用等严重问题"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 8,
+        "notes": "A有引号缺失、繁简混用、引号风格不一致等多处问题"
+      }
+    },
+    "key_differences": [
+      "A在段落64出现俄语乱码'теперь'，为致命错误",
+      "A在段落58突然使用繁体中文",
+      "A段落32缺少结尾引号，段落47使用西式引号",
+      "B对口语化对话处理更自然（如'好嘞'vs'是的哟'）",
+      "B保留'凛先生'敬语更贴合原文人物关系"
+    ],
+    "final_summary": "B翻译在格式规范性、口语自然度和风格统一性上明显优于A。虽然A在个别术语理解上略胜一筹，但A存在严重的技术错误（俄语乱码、繁简混用、标点遗漏），严重影响可读性和专业性，因此B为更优选择。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

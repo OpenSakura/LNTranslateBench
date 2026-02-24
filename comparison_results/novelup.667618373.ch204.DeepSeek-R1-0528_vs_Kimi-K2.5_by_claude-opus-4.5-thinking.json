@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:21:37.227769",
+  "sample": "novelup.667618373.ch204",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.667618373.ch204.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.667618373.ch204.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/novelup.667618373.ch204.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "a7b9bc8920e64499b0c9853279cbb23c63b9a906b15bfa6f4389c678948cdad3",
+    "A": "2a0a195147388ba64d456fab70e6c467e252acfa658f8aac69657cd1a19a9681",
+    "B": "3dd2b50a1176f49470ea09613f71b98ffb5873cfba1d9ebaf8d6b3e1befdc91e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:22:26.068469",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "16ad6e1a-9068-4829-a51f-677c5c9e5c20",
+      "judge_response": {
+        "id": "16ad6e1a-9068-4829-a51f-677c5c9e5c20",
+        "object": "chat.completion",
+        "created": 1769610145,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段对比分析\n\n**段落2**: A的\"这不是错的\"较生硬，B的\"这并没有错\"更自然。但A的\"钉进脑袋里拔不出的钉子\"比B的\"钉在头上\"更准确（原文是「頭に刺さって」）。\n\n**段落3**: \"一か零か\"指有无不定，B的\"有一顿没一顿\"比A的\"要么吃要么不吃\"更地道。\n\n**段落4**: A的\"本大爷\"完美保留了「オレ様」的傲慢语气，B的\"我\"丢失了这一特色。这是关键差异。\n\n**段落10**: B的\"露出仿佛要将整齐排列的牙齿全部笑掉的架势大笑着\"比A的表达更生动自然。\n\n**段落12**: B的\"毕恭毕敬\"比A的\"礼貌\"更能体现「仰々しく」的程度。\n\n**段落18**: \"辟易する\"表厌烦退缩，A的\"真受不了\"比B的\"感到为难\"更贴切。\n\n**段落24**: 形容酒精灼烧感，B的\"好烫\"比A的\"好热\"更准确。\n\n**段落33**: A用西式引号\"\"，B用日式「」，B更符合轻小说风格。\n\n**段落35**: B的\"明明是您叫我这么喝的\"比A更自然流畅。\n\n**段落38**: \"面を喰った\"A译\"吓了一跳\"，B译\"目瞪口呆\"，B更准确。\n\n**段落52**: B的\"重新坚定了扼杀意志的决心\"比A的表达更完整准确。\n\n**段落55**: A的\"内心惊愕\"误译，\"呆れながら\"应为\"无语/呆然\"，B的\"无语\"正确。\n\n### 综合评估\n\n- **准确性**: B在关键理解上更精准\n- **流畅性**: 两者各有优劣，整体B稍优\n- **风格**: A在\"オレ様→本大爷\"等处保留更好，B格式更规范\n- **术语**: 两者基本一致（萝拉、义兄、魔兽）\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在'面を喰った''呆れながら''一か零か'等处理解更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体行文更流畅自然，A部分句子较生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A保留'本大爷'等角色语气更佳，但B格式更规范\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者术语处理基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B段落衔接更自然，可读性稍好\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B使用「」更符合日系轻小说规范，A混用标点\"}\n  },\n  \"key_differences\": [\n    \"A保留'オレ様→本大爷'的傲慢语气，B部分丢失\",\n    \"B对'面を喰った''呆れながら'等词理解更准确\",\n    \"B使用日式引号「」，A使用西式引号\",\n    \"B整体句式更流畅，A部分直译痕迹明显\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性和格式规范上略胜一筹，特别是对一些关键表达的理解更准确。A在保留角色语气（如'本大爷'）方面做得更好。综合来看B稍优，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9415,
+          "completion_tokens": 2465,
+          "total_tokens": 11880
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在'面を喰った''呆れながら''一か零か'等处理解更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体行文更流畅自然，A部分句子较生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A保留'本大爷'等角色语气更佳，但B格式更规范"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者术语处理基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B段落衔接更自然，可读性稍好"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B使用「」更符合日系轻小说规范，A混用标点"
+      }
+    },
+    "key_differences": [
+      "A保留'オレ様→本大爷'的傲慢语气，B部分丢失",
+      "B对'面を喰った''呆れながら'等词理解更准确",
+      "B使用日式引号「」，A使用西式引号",
+      "B整体句式更流畅，A部分直译痕迹明显"
+    ],
+    "final_summary": "B在准确性、流畅性和格式规范上略胜一筹，特别是对一些关键表达的理解更准确。A在保留角色语气（如'本大爷'）方面做得更好。综合来看B稍优，但差距不大。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

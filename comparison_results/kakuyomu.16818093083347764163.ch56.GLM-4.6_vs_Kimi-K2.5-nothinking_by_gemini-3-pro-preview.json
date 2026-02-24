@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:36:10.262622",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.GLM-4.6.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "63dc7784439aaf2354a63e352f07ba97dc8930d37f8182f8abb2a3a82f05290f",
+    "B": "1571d2e34f20c39e16eef703281b77b9b8872c5fbbdbcdabeff26aa97c1c5741"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:37:07.236113",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202601282236104765467915eutv5jG",
+      "judge_response": {
+        "id": "chatcmpl-202601282236104765467915eutv5jG",
+        "object": "chat.completion",
+        "created": 1769611027,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的分段文本对翻译A和翻译B的详细评判。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A**：整体准确度较高，能够正确理解原文的语境和意图。虽然在第29段对人物关系的解析（亚历克西斯是孙子还是孙女婿）上略显生硬，但基本逻辑通顺。\n*   **翻译B**：存在**严重**的准确性问题，特别是在后半部分。\n    *   **第31段致命错误**：原文是“ランペイジングダークネス”（Rampaging Darkness/狂暴黑暗），B竟然翻译成了“水压抽取”（Water Drain），这是第25段提到的另一个魔法，完全搞错了，属于严重的幻觉或复制粘贴错误。\n    *   **第28段漏翻**：直接保留了英文单词“crew”，未翻译成中文。\n    *   **第16段歧义**：原文“譲位”指退位/让位，B翻译成“继位”，意思相反（尽管结合上下文可能指让艾米莉亚继位，但动词主语通常指在位者）。\n\n**2. 术语与一致性 (Terminology & Consistency)**\n*   **翻译A**：\n    *   魔法名称“Rampaging Darkness”在第22段译为“狂暴黑暗”，但在第31段却直接保留了英文“Rampaging Darkness”，存在不一致。\n    *   人名“Dietlind”两人都译为了男性的“迪特里希”，但考虑到轻小说常见音译，尚可接受。\n*   **翻译B**：\n    *   **极度不一致**。魔法“Rampaging Darkness”在第22段译为“暴乱黑暗”，第26段变成了音译“拉姆佩金暗黑术”，第31段错误地变成了“水压抽取”。\n    *   第7段高达模型制作过程，原文“ソイル”（Soil），B译为“土壤”技能，A译为“土壤术”，均可。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **翻译A**：文笔更自然，符合轻小说第一人称的口语感。例如第6段“打个盹儿”比B的“假寐”更符合主角的语气。第8段“叽叽喳喳”和“热火朝天”描绘得很有画面感。\n*   **翻译B**：部分句子显得生硬，且由于漏翻和术语混乱，严重影响阅读体验。第26段“真空虚”略显突兀，不如A的“空虚啊”自然。\n\n**4. 格式与标点 (Formatting)**\n*   **翻译A**：标点使用规范，符合中文习惯。\n*   **翻译B**：夹杂英文单词（crew），标点基本合格，但整体观感因漏翻受损。\n\n### 总结\n翻译A虽然在最后一段突然使用了英文单词（可能是为了强调或遗漏），但整体质量远高于翻译B。翻译B在后半部分出现了崩坏，包括漏翻英文单词、魔法名称前后翻译不一致（意译、音译混杂）、以及最严重的将魔法名称张冠李戴（将暗属性魔法错翻成水属性魔法）。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 8,\n      \"B\": 4,\n      \"notes\": \"B在第31段将'狂暴黑暗'错翻为'水压抽取'，且在第28段漏翻了'crew'。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A的语言风格更贴合轻小说原文的吐槽口吻；B部分表达生硬。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A很好地还原了主角的心理活动语气（如'打个盹儿' vs '假寐'）。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 2,\n      \"notes\": \"A有一个术语前后不一致（中文/英文）；B则是灾难级的混乱（意译/音译/错误翻译混杂）。\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 5,\n      \"notes\": \"B的术语混乱导致阅读时产生困惑。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"B保留了未翻译的英文单词。\"\n    }\n  },\n  \"key_differences\": [\n    \"第28段：B未翻译单词'crew'。\",\n    \"第31段：B将'Rampaging Darkness'错误翻译为'水压抽取'（Water Drain），属于严重的事实错误。\",\n    \"第26段：B使用了奇怪的音译'拉姆佩金暗黑术'，而之前使用的是意译。\",\n    \"整体风格：A更口语化、自然；B显得较为机械且缺乏校对。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都明显优于翻译B。尽管A在最后一段保留了魔法名的英文原文略显瑕疵，但B存在多处严重的质量控制问题，包括保留英文单词'crew'未翻、魔法名称在三处出现了三种不同的处理方式（其中最后一种完全错误，混淆了属性）。B的翻译在后半段基本处于失控状态，因此A毫无疑问是胜者。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6326,
+          "completion_tokens": 4957,
+          "total_tokens": 11283
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 4,
+        "notes": "B在第31段将'狂暴黑暗'错翻为'水压抽取'，且在第28段漏翻了'crew'。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A的语言风格更贴合轻小说原文的吐槽口吻；B部分表达生硬。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好地还原了主角的心理活动语气（如'打个盹儿' vs '假寐'）。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 2,
+        "notes": "A有一个术语前后不一致（中文/英文）；B则是灾难级的混乱（意译/音译/错误翻译混杂）。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "B的术语混乱导致阅读时产生困惑。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "B保留了未翻译的英文单词。"
+      }
+    },
+    "key_differences": [
+      "第28段：B未翻译单词'crew'。",
+      "第31段：B将'Rampaging Darkness'错误翻译为'水压抽取'（Water Drain），属于严重的事实错误。",
+      "第26段：B使用了奇怪的音译'拉姆佩金暗黑术'，而之前使用的是意译。",
+      "整体风格：A更口语化、自然；B显得较为机械且缺乏校对。"
+    ],
+    "final_summary": "翻译A在各方面都明显优于翻译B。尽管A在最后一段保留了魔法名的英文原文略显瑕疵，但B存在多处严重的质量控制问题，包括保留英文单词'crew'未翻、魔法名称在三处出现了三种不同的处理方式（其中最后一种完全错误，混淆了属性）。B的翻译在后半段基本处于失控状态，因此A毫无疑问是胜者。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

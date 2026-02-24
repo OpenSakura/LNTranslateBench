@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:10:20.384159",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "043eab4add88ce444acc26708c5a6c04c8a0dcac91e738118f7ec8ff145ad3e2",
+    "B": "9705b8077073de518f4c794fba9d670a709d928efc45f4709f11c01f589caba9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:11:11.547238",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "91fa3d54-56bf-46b2-80e7-d2d07ef80e24",
+      "judge_response": {
+        "id": "91fa3d54-56bf-46b2-80e7-d2d07ef80e24",
+        "object": "chat.completion",
+        "created": 1768486271,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 详细分析\n\n## 1. 准确性 (Accuracy)\n\n**翻译A的问题：**\n- **段落5**：将\"焼きそばパン\"译为\"烤面包\"是**严重错误**，应为\"炒面面包\"\n- **段落14**：**完全缺失此段翻译**，这是重大失误\n- 段落20：\"他不由得多看了那么一眼\"添加了原文没有的动作描写\n\n**翻译B的问题：**\n- 整体保持了较高的准确性\n- 段落13：\"那些女人\"比A的\"那几个女孩\"更贴近原文\"女たち\"的语气\n\n**评分：A: 6/10, B: 9/10**\n\n## 2. 流畅性 (Fluency)\n\n**翻译A：**\n- 整体较为流畅，但有些地方略显生硬\n- 段落36：\"了解得不清不楚\"表达略显啰嗦\n\n**翻译B：**\n- 更加口语化和自然\n- 段落1：\"玩意儿\"等口语词使用恰当\n- 段落42：\"背锅\"等网络用语贴合轻小说风格\n\n**评分：A: 7/10, B: 8/10**\n\n## 3. 风格/语气 (Style/Tone)\n\n**翻译A：**\n- 相对正式，有时不够贴近轻小说的轻松风格\n- 对话部分略显拘谨\n\n**翻译B：**\n- 更符合轻小说的口语化特点\n- 段落7：\"啥来着\"、段落12：\"呗\"等助词使用自然\n- 保持了原文的轻松氛围\n\n**评分：A: 7/10, B: 9/10**\n\n## 4. 术语/名称一致性 (Terminology)\n\n**翻译A：**\n- 段落3：保留\"ライトブリンガー\"原文，前后不一致\n- \"现场尼基\"音译保留了网络梗的原味\n\n**翻译B：**\n- 段落3：将圣剑名译为\"光之使者\"，更统一\n- \"现场达人\"意译虽然损失些许原味，但更易理解\n\n**评分：A: 7/10, B: 8/10**\n\n## 5. 连贯性/可读性 (Coherence)\n\n**翻译A：**\n- **段落14缺失**严重影响连贯性\n- 其他部分基本连贯\n\n**翻译B：**\n- 完整无缺失\n- 上下文衔接自然流畅\n\n**评分：A: 5/10, B: 9/10**\n\n## 6. 格式/标点符号 (Formatting)\n\n两者都基本保持了原文格式，标点使用大致相当。\n\n**评分：A: 8/10, B: 8/10**\n\n## 关键差异\n\n1. **翻译A缺失段落14** - 这是致命缺陷\n2. **翻译A将\"炒面面包\"误译为\"烤面包\"** - 事实性错误\n3. 翻译B的口语化程度更高，更符合轻小说风格\n4. 翻译B在人物语气把握上更准确（如蒂亚对佐渡山的冷淡态度）\n5. 术语处理上B更统一（圣剑名称的翻译）\n\n## 最终总结\n\n翻译B明显优于翻译A。主要原因是：\n1. A有完整段落缺失（段落14）\n2. A有明显的事实性翻译错误（段落5）\n3. B在风格把握、口语化表达、人物语气等方面都更胜一筹\n4. B的整体准确性和连贯性更高\n\n虽然A在某些细节上（如保留\"ニキ\"的音译）有其特色，但缺失内容和事实错误是无法容忍的严重问题。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 9, \"notes\": \"A缺失段落14，段落5将'炒面面包'误译为'烤面包'；B保持高准确性\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，A略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更贴合轻小说风格，对话更生动\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B术语翻译更统一（如圣剑名称）\"},\n    \"coherence\": {\"A\": 5, \"B\": 9, \"notes\": \"A缺失段落严重影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式处理相当\"}\n  },\n  \"key_differences\": [\n    \"翻译A完全缺失段落14的翻译\",\n    \"翻译A将'焼きそばパン'（炒面面包）错译为'烤面包'\",\n    \"翻译B的口语化和轻小说风格把握更好\",\n    \"翻译B在人物语气表现上更准确（如蒂亚对佐渡山的冷淡态度）\",\n    \"翻译B术语处理更统一（将圣剑名完整翻译而非保留原文）\"\n  ],\n  \"final_summary\": \"翻译B明显优于翻译A。A存在段落缺失和事实性翻译错误两个致命问题，而B在准确性、流畅性、风格把握等各方面都表现优秀，更符合轻小说的翻译要求。虽然A在个别细节（如网络用语音译）上有特色，但无法弥补其根本性缺陷。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12018,
+          "completion_tokens": 2448,
+          "total_tokens": 14466
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A缺失段落14，段落5将'炒面面包'误译为'烤面包'；B保持高准确性"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，A略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更贴合轻小说风格，对话更生动"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B术语翻译更统一（如圣剑名称）"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "A缺失段落严重影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式处理相当"
+      }
+    },
+    "key_differences": [
+      "翻译A完全缺失段落14的翻译",
+      "翻译A将'焼きそばパン'（炒面面包）错译为'烤面包'",
+      "翻译B的口语化和轻小说风格把握更好",
+      "翻译B在人物语气表现上更准确（如蒂亚对佐渡山的冷淡态度）",
+      "翻译B术语处理更统一（将圣剑名完整翻译而非保留原文）"
+    ],
+    "final_summary": "翻译B明显优于翻译A。A存在段落缺失和事实性翻译错误两个致命问题，而B在准确性、流畅性、风格把握等各方面都表现优秀，更符合轻小说的翻译要求。虽然A在个别细节（如网络用语音译）上有特色，但无法弥补其根本性缺陷。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

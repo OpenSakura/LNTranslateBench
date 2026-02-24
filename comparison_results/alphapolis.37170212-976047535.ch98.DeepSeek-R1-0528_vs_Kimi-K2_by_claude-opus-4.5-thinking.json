@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:53.946423",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.Kimi-K2.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "602e17241bcaeac3795c31c8ec09575700b69d18904cb9754d1c1fb566cda297",
+    "B": "15482c8c06ccd3132e10e9626fbde529b5da9de48d570b286976b31dc050175d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:03:53.215129",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6551ff9d-7d5c-4467-86ee-22c1133edb78",
+      "judge_response": {
+        "id": "6551ff9d-7d5c-4467-86ee-22c1133edb78",
+        "object": "chat.completion",
+        "created": 1768421033,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n- **段落19**: A将「シスコン」错译为\"弟控\"，实际应是\"妹控\"（兄长对妹妹的情结）。B正确翻译为\"妹控\"。\n- **段落69**: A将「打たれ弱く」误译为\"超怕挨打\"，实际意思是\"心理脆弱/玻璃心\"。B的\"抗打击弱\"更准确。\n- **段落91**: A的\"瘫着咕噜咕噜\"正确理解了「ごろごろ」，B的\"滚来滚去\"是误译。\n- **段落100**: 两者都将「ワラビー」（小袋鼠）误译为\"蕨菜/蕨类植物\"。\n- **段落155**: A译为\"黄鼠狼\"不准确，B的\"白鼬\"更正确。\n- **关键问题**: A在段落53、55、168、173-176有明显内容缺失。\n\n### 2. 流畅性分析\n- A整体更口语化生动：\"软声软气\"、\"倔得跟头牛\"、\"一口江户腔\"\n- B较为直译生硬：\"用温柔语气说话的人\"、\"是个顽固的人\"\n\n### 3. 风格/语气分析\n- A更符合轻小说的轻松活泼风格：\"超吓人\"、\"小确幸\"、\"骚操作\"\n- B偏正式文体，轻小说感不足\n\n### 4. 术语/名称一致性\n- 段落2、7、11、17: B保留日文「歳」或缺少\"岁\"字，格式不规范\n- 段落36: A译\"斯泰亚\"与段落1的\"斯黛亚\"不一致\n- 段落48: B的\"柠檬绿色\"与前文\"莱姆绿\"不一致\n- 段落98: B的\"天河\"比A的\"天伽\"更符合原文注音\n\n### 5. 格式分析\n- A使用规范的中文标点和数字格式\n- B保留部分日文格式（如「歳」、全角空格），不够规范\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A有关键误译(弟控)但B也有错误；A有内容缺失是重大扣分项，但B也有细节错误\"},\n    \"fluency\": {\"A\": 9, \"B\": 6, \"notes\": \"A口语化自然流畅，B较为直译生硬\"},\n    \"style\": {\"A\": 9, \"B\": 6, \"notes\": \"A更符合轻小说活泼风格，B过于正式\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"两者都有不一致问题，但B保留日文字符更不规范\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"A有内容缺失影响连贯，B相对完整\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"A格式规范，B保留日文歳字等不规范\"}\n  },\n  \"key_differences\": [\n    \"A内容有缺失(段落53,55,168,173-176)，B完整\",\n    \"A语言风格生动口语化，B直译较生硬\",\n    \"A将シスコン错译为弟控，B正确译为妹控\",\n    \"B保留日文「歳」等格式不规范\",\n    \"A对打たれ弱く、ごろごろ等理解错误/正确参半\"\n  ],\n  \"final_summary\": \"A在流畅性和轻小说风格方面明显优于B，语言生动活泼；但A存在内容缺失和个别关键误译(如弟控)的问题。B翻译较为完整但风格生硬，且存在格式不规范(保留日文字符)的问题。综合考虑轻小说翻译的可读性要求，A的风格优势和整体流畅度略微弥补了其缺陷，但优势不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 15972,
+          "completion_tokens": 2724,
+          "total_tokens": 18696
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有关键误译(弟控)但B也有错误；A有内容缺失是重大扣分项，但B也有细节错误"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A口语化自然流畅，B较为直译生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A更符合轻小说活泼风格，B过于正式"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "两者都有不一致问题，但B保留日文字符更不规范"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有内容缺失影响连贯，B相对完整"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "A格式规范，B保留日文歳字等不规范"
+      }
+    },
+    "key_differences": [
+      "A内容有缺失(段落53,55,168,173-176)，B完整",
+      "A语言风格生动口语化，B直译较生硬",
+      "A将シスコン错译为弟控，B正确译为妹控",
+      "B保留日文「歳」等格式不规范",
+      "A对打たれ弱く、ごろごろ等理解错误/正确参半"
+    ],
+    "final_summary": "A在流畅性和轻小说风格方面明显优于B，语言生动活泼；但A存在内容缺失和个别关键误译(如弟控)的问题。B翻译较为完整但风格生硬，且存在格式不规范(保留日文字符)的问题。综合考虑轻小说翻译的可读性要求，A的风格优势和整体流畅度略微弥补了其缺陷，但优势不大。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

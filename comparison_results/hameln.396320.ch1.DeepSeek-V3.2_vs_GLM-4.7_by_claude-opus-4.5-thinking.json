@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:20:47.797268",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "12b764ad96ee6f12358603049141d3473c46f148c7784aa92306fd270ed5f573",
+    "B": "f5ad05a959c681f9ca1f90676fdfc0b72e1afe000fb3bc65c1c4264ee36d6e44"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:21:41.592748",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "62577ecd-6bed-437d-92b9-c7b49961edfa",
+      "judge_response": {
+        "id": "62577ecd-6bed-437d-92b9-c7b49961edfa",
+        "object": "chat.completion",
+        "created": 1768422101,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n\n**段落2**: A的语序调整使意思表达略显割裂；B\"轮到自己亲口说出\"更贴合原文「まさか自分が口にする日がくる」的语感。\n\n**段落16**: 原文「命をかけた」A译为\"献出生命\"（已死的意思），B译为\"赌上性命\"更准确（表示冒险而非必然牺牲）。「敬拝」A译\"敬拜\"偏宗教化，B译\"敬意\"更自然。\n\n**段落55**: 原文「定刻通り」A译\"约定的时间\"不够准确，B译\"正好准时\"更贴切。\n\n### 2. 术语一致性\n\n**重大问题**: A在段落6、18、22使用\"迷宫\"，但其他地方用\"地下城\"，术语不统一。B始终使用\"地下城\"保持一致。\n\n### 3. 风格/语气\n\nB更符合轻小说的口语化叙述风格：\n- 段落12: B\"可是牺牲了不少人啊\" vs A\"出现了许多牺牲\"\n- 段落15: B\"不把怪物干掉是拿不到手的\" vs A\"必须通过打倒怪物才能获得\"\n- 段落41: B\"真的要疯了\" vs A\"真的快要精神失常了\"\n\n### 4. 流畅性\n\n**段落5**: A\"有说法称\"比B\"有一种说法说\"更简洁流畅。\n**段落64**: A\"编织出我所期望的言辞\"过于文绉绉；B\"说出了我想听的话\"更自然。\n\n### 5. 格式\n\n两者引号使用不同：A混用「」和\"\"，B也混用但整体更统一。B的破折号使用（——）比A的（───）更符合中文规范。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在'命をかけた''定刻通り'等处翻译更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，A部分表达生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B的口语化风格更符合轻小说第一人称叙事\"},\n    \"terminology\": {\"A\": 6, \"B\": 9, \"notes\": \"A术语不一致(迷宫/地下城混用)，B保持统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的语句衔接更自然流畅\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有引号混用问题，B的破折号更规范\"}\n  },\n  \"key_differences\": [\n    \"术语一致性：A混用'迷宫/地下城'，B统一使用'地下城'\",\n    \"语气风格：B更口语化符合轻小说风格，A部分表达过于书面化\",\n    \"关键词翻译：'命をかけた' A误译为'献出生命'，B正确译为'赌上性命'\",\n    \"自然度：B的对话和心理描写更贴近日常口语\"\n  ],\n  \"final_summary\": \"B在术语一致性、轻小说风格把握和整体流畅度方面明显优于A。A虽然部分表达也很精准，但术语不统一的问题较严重，且部分翻译过于书面化，不太符合轻小说的叙事特点。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12494,
+          "completion_tokens": 2355,
+          "total_tokens": 14849
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在'命をかけた''定刻通り'等处翻译更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的口语化风格更符合轻小说第一人称叙事"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "A术语不一致(迷宫/地下城混用)，B保持统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的语句衔接更自然流畅"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有引号混用问题，B的破折号更规范"
+      }
+    },
+    "key_differences": [
+      "术语一致性：A混用'迷宫/地下城'，B统一使用'地下城'",
+      "语气风格：B更口语化符合轻小说风格，A部分表达过于书面化",
+      "关键词翻译：'命をかけた' A误译为'献出生命'，B正确译为'赌上性命'",
+      "自然度：B的对话和心理描写更贴近日常口语"
+    ],
+    "final_summary": "B在术语一致性、轻小说风格把握和整体流畅度方面明显优于A。A虽然部分表达也很精准，但术语不统一的问题较严重，且部分翻译过于书面化，不太符合轻小说的叙事特点。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

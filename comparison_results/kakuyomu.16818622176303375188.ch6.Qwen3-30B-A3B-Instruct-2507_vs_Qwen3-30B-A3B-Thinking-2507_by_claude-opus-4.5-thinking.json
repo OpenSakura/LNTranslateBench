@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:33:45.734627",
+  "sample": "kakuyomu.16818622176303375188.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622176303375188.ch6.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622176303375188.ch6.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16818622176303375188.ch6.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2e0001678fabcbc42f80d57c706b1b7897e613da23a926f04d36b1f5b4ebed30",
+    "A": "fdba0a1a35469cd8b810ba16558b2a41cdc412f4a4f360758d4fd8d533254b7e",
+    "B": "cca52159065c53feb9babb500af27a2cde16b221e3e60bcc28e026e9c2d8a07d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:34:29.689879",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6135bec0-479a-4af1-9c42-3360371cf9e8",
+      "judge_response": {
+        "id": "6135bec0-479a-4af1-9c42-3360371cf9e8",
+        "object": "chat.completion",
+        "created": 1768422869,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**段落6**：\"手数だけ多くて\"指攻击次数多，A译为\"数量多\"，B译为\"技能多\"，两者都有偏差，但A更接近原意。\n\n**段落14**：\"5体編成\"A译\"五人小队\"用\"人\"不妥（怪物应用\"只/体\"），B译\"5体编队\"更准确。\n\n**段落31**：\"わずかに削れたHPを元に\"A译\"基于仅剩的一点生命值\"是误译，B译\"HP稍微掉了一点\"正确。\n\n**段落52**：B出现明显错误，\"無事\"译为\"平安\"，这里应是\"顺利\"的意思。\n\n### 2. 流畅性\nA整体句式更完整自然。如段落1，B的\"如今已不被使用的旧排水沟\"缺少谓语，不够通顺。段落2，A的\"死寂无声\"与\"回荡\"存在矛盾，B的\"寂静中回荡\"更合理。\n\n### 3. 风格/语气\nA的语气更符合轻小说热血风格，如\"正中靶心\"\"根本没什么比这更有趣\"。B相对直白但也恰当。段落65，A的\"'狩猎者'的视角\"比B的\"成了猎手\"更有氛围感。\n\n### 4. 术语一致性\n- A: 瘴气老鼠、生命值、魔法值、工会\n- B: 瘴气鼠、HP、MP、公会\n\nB保留游戏术语HP/MP更符合原作设定，\"公会\"也更常见于轻小说。但A的\"瘴气老鼠\"比\"瘴气鼠\"更自然。\n\n### 5. 连贯性\nA的段落衔接更流畅，B有时略显生硬（如段落39\"一味地承受着\"）。\n\n### 6. 格式\n两者都保留了系统提示格式《》，A用中文引号『』，B混用「」和'，B的格式略不统一。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落31有误译，B在段落52'平安'明显错误，段落14 B更准确；整体持平\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A句式更完整流畅，B有时句子不完整或略显生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更有轻小说热血感，用词更有氛围；B略显平淡\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留HP/MP更符合游戏设定，公会用词更标准；但A的'瘴气老鼠'更自然\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A段落衔接更自然，阅读更顺畅\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"A引号使用一致，B混用不同引号格式\"}\n  },\n  \"key_differences\": [\n    \"A流畅性更好但偶有意译过度，B更忠实原文但有时生硬\",\n    \"术语选择：A倾向本地化（生命值），B保留原术语（HP）\",\n    \"B在段落52出现'平安'的明显误译\",\n    \"A在段落14将怪物误称为'人'\",\n    \"A整体风格更符合轻小说叙事节奏\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在流畅性、风格把握和连贯性上表现更好，更符合轻小说的阅读体验；B在部分游戏术语保留和个别句子准确性上略胜。但B存在'平安'这样的明显误译，且整体句式偏生硬。综合考虑，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10022,
+          "completion_tokens": 1860,
+          "total_tokens": 11882
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落31有误译，B在段落52'平安'明显错误，段落14 B更准确；整体持平"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A句式更完整流畅，B有时句子不完整或略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更有轻小说热血感，用词更有氛围；B略显平淡"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留HP/MP更符合游戏设定，公会用词更标准；但A的'瘴气老鼠'更自然"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A段落衔接更自然，阅读更顺畅"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "A引号使用一致，B混用不同引号格式"
+      }
+    },
+    "key_differences": [
+      "A流畅性更好但偶有意译过度，B更忠实原文但有时生硬",
+      "术语选择：A倾向本地化（生命值），B保留原术语（HP）",
+      "B在段落52出现'平安'的明显误译",
+      "A在段落14将怪物误称为'人'",
+      "A整体风格更符合轻小说叙事节奏"
+    ],
+    "final_summary": "两译本各有优劣。A在流畅性、风格把握和连贯性上表现更好，更符合轻小说的阅读体验；B在部分游戏术语保留和个别句子准确性上略胜。但B存在'平安'这样的明显误译，且整体句式偏生硬。综合考虑，A略胜一筹。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

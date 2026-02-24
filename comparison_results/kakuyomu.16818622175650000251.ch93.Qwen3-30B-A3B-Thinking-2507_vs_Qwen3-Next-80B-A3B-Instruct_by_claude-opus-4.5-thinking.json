@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:32:33.040035",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "bd124323c45152c70835d794a82fba65d157ad32103f3296a2e235d7898ae6f0",
+    "B": "13975fe4962294007f11fadf1ee18e6fb425ecf554f236d6dc282baa7ac4f8e8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:33:14.596771",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9e0a7f18-88da-4746-8d0a-e2c0186cdb0b",
+      "judge_response": {
+        "id": "9e0a7f18-88da-4746-8d0a-e2c0186cdb0b",
+        "object": "chat.completion",
+        "created": 1768422794,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性\n- **段落2**: A译\"别把那身衣服脱了\"与原文\"その服を着ておくべきだ\"（应该穿上）意思相反；B\"把这身衣服穿上吧\"准确\n- **段落14**: A\"女式男装所以算是女装\"逻辑混乱；B的\"男扮女裝/女扮男裝\"虽有尝试但也略乱\n- **段落54**: A\"我和塔希\"正确；B\"我和阿蒂\"名字出错（おタヒ不是阿蒂）\n- **段落73**: 原文\"おタヒでも着られる\"意为\"连塔希都能穿的\"；A译\"普通人都能穿\"偏离；B\"給懶人穿的\"也不准确\n\n### 2. 流畅性\n- A整体更简洁口语化\n- B有时略显啰嗦但更完整\n- **段落47**: B\"邊走邊，我們...\"语法别扭；A\"一边走，我们...\"自然\n\n### 3. 风格/语气\n- **段落6**: A\"随便被说\"过于简略失去轻小说吐槽感；B\"被他们随口乱骂一通\"更贴合\n- **段落63**: A\"怎么办呢\"中规中矩；B\"这可咋办啊\"更口语化符合角色\n- B整体对话感更强，符合轻小说风格\n\n### 4. 术语/名称一致性\n- **严重问题**: 两者都不一致\n  - A: 段落1用\"奥塔希\"，段落7保留\"おタヒ\"，段落29用\"塔希\"\n  - B: 多处保留\"おタヒ\"日文，但也有用\"塔希\"\"阿蒂\"\n- **段落43**: A保留日文\"【視界拡張】で見てみると\"是严重错误；B正确翻译\n\n### 5. 连贯性/可读性\n- B整体叙事更流畅连贯\n- A有些句子过于简短影响上下文衔接\n\n### 6. 格式/标点\n- B对话格式更规范，保留引号\n- A多处对话缺少引号（段落25、26、27、33、38、40等）\n- B在简繁混用方面有问题（部分段落突然转繁体）\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落2有重大误译；B段落54名字错误，但整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A更简洁，B段落47有语病，两者相当\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说对话风格，吐槽感更到位\"},\n    \"terminology\": {\"A\": 4, \"B\": 5, \"notes\": \"两者都有名称不一致问题，A段落43保留日文是严重错误\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"B叙事更完整连贯\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处缺少对话引号；B有简繁混用问题但格式更规范\"}\n  },\n  \"key_differences\": [\n    \"段落2: A误译'别脱'vs B正确译'穿上'\",\n    \"段落43: A保留日文未翻译 vs B正确翻译\",\n    \"对话格式: A频繁缺失引号 vs B保持规范\",\n    \"名称一致性: 两者都有问题但表现形式不同\",\n    \"整体风格: A偏简略 vs B更贴合轻小说语气\"\n  ],\n  \"final_summary\": \"B在准确性、风格和格式方面整体优于A，尤其在关键段落2的意思保留和对话格式规范性上表现更好。A虽更简洁但有重大误译和日文未翻译问题。两者都存在名称不一致的缺陷，但B的问题相对较轻。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10583,
+          "completion_tokens": 1753,
+          "total_tokens": 12336
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落2有重大误译；B段落54名字错误，但整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A更简洁，B段落47有语病，两者相当"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格，吐槽感更到位"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 5,
+        "notes": "两者都有名称不一致问题，A段落43保留日文是严重错误"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "B叙事更完整连贯"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处缺少对话引号；B有简繁混用问题但格式更规范"
+      }
+    },
+    "key_differences": [
+      "段落2: A误译'别脱'vs B正确译'穿上'",
+      "段落43: A保留日文未翻译 vs B正确翻译",
+      "对话格式: A频繁缺失引号 vs B保持规范",
+      "名称一致性: 两者都有问题但表现形式不同",
+      "整体风格: A偏简略 vs B更贴合轻小说语气"
+    ],
+    "final_summary": "B在准确性、风格和格式方面整体优于A，尤其在关键段落2的意思保留和对话格式规范性上表现更好。A虽更简洁但有重大误译和日文未翻译问题。两者都存在名称不一致的缺陷，但B的问题相对较轻。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:15:15.046634",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Kimi-K2.5.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "c7e03d1519dbea2ca941d34f84a4249202c738fe7474b54f6cfb167ace1545fc",
+    "B": "06a630f6188c488b84233bd7041408146109f964990733912a90077400f6a00d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:16:12.401220",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128221515513585556pGvvgNpi",
+      "judge_response": {
+        "id": "chatcmpl-20260128221515513585556pGvvgNpi",
+        "object": "chat.completion",
+        "created": 1769609772,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A**：表现出色。它不仅准确理解了原文的意思，还能识别出原文中可能的笔误。例如在段落101中，原文是“獣や人が買った獲物”（野兽或人**买**的猎物），这显然是“狩った”（**狩猎**）的同音误字（野兽不会买东西）。翻译A将其修正为“捕获的猎物”，显示了极佳的语境理解能力。此外，它正确识别了“Vorpal Bunny”（段落86）这一经典RPG/文化梗，翻译为“斩首兔”。\n*   **翻译B**：存在**严重误译**。\n    *   **致命错误**：在段落102中，将“Boar”（野猪）误译为“Boa”（蟒蛇/蚺），导致后续描述完全错乱（明明是猪，却叫蟒蛇，还有牙齿和美味的肉）。\n    *   **盲目直译**：段落101中，它照搬了原文的笔误，翻译成“野兽或人**买**来的猎物”，不合逻辑。\n    *   **术语理解不足**：未能识别“Vorpal Bunny”，直接音译为“波帕尔巴尼”。\n\n**2. 术语与名称 (Terminology)**\n*   **翻译A**：采用了标准的奇幻/RPG游戏术语。\n    *   *Owl Bear* -> 鸮熊（标准译法）。\n    *   *Treant* -> 树人（意译，易于理解）。\n    *   *Killer Hornet* -> 胡蜂（生物学上更准确对应Suzumebachi）。\n    *   *Vorpal Bunny* -> 斩首兔（意译，保留了梗的含义）。\n*   **翻译B**：倾向于生硬的音译或非标准直译。\n    *   *Owl Bear* -> 猫头鹰熊（过于口语化）。\n    *   *Treant* -> 特伦特、马达特伦特（音译，对于中文读者来说缺乏画面感）。\n    *   *Vorpal Bunny* -> 波帕尔巴尼（完全丢失了含义）。\n    *   *Dullahan Gallop* -> 杜拉汉加洛普（音译，不知所云）。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **翻译A**：文笔流畅，符合轻小说图鉴/设定的文风。句子结构工整，既保留了原文“笔记”的感觉，又具有百科全书式的条理性。\n*   **翻译B**：风格过于口语化，有时显得随意。虽然原文确实有“笔记”的随意感（如“冬眠はしたり、しなかったり”），但B的处理（“冬眠嘛，有时睡有时不睡”）略显啰嗦。加上大量的音译词，阅读体验较差。\n\n**4. 格式与标点 (Formatting)**\n*   **翻译A**：保留了原文的中点号（・），排版整洁。\n*   **翻译B**：将中点号改为逗号，无伤大雅，但整体处理不如A细致。\n\n### 总结\n翻译A是一位经验丰富的轻小说/游戏译者，懂得如何处理专有名词，并具备校对原文错误的能力。翻译B则犯了严重的生物名词错误（野猪变蟒蛇），且大量使用令人费解的音译，导致可读性极低。\n\n---\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"B在段落102将'Boar'(野猪)误译为蟒蛇，属于严重错误；且未能修正段落101原文的同音字笔误(买/狩猎)。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的语言更符合奇幻设定集的风格；B过于口语化且音译词破坏阅读流。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A很好地平衡了说明文与轻小说的语调。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 3,\n      \"notes\": \"A使用了标准的RPG术语(鸮熊, 树人, 斩首兔)；B大量使用生硬音译(特伦特, 波帕尔巴尼, 杜拉汉)。\"\n    },\n    \"coherence\": {\n      \"A\": 10,\n      \"B\": 5,\n      \"notes\": \"B的误译导致部分段落逻辑崩坏(如蟒蛇长獠牙)。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A保留了原文的符号风格。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落102：原文'Boar'(野猪)，A译为'野猪'，B误译为'蟒蛇'。\",\n    \"段落86：原文'Vorpal Bunny'，A意译为'斩首兔'，B音译为'波帕尔巴尼'。\",\n    \"段落78：原文'Treant'，A意译为'树人'，B音译为'特伦特'。\",\n    \"段落101：原文有笔误'买来的猎物'，A根据语境修正为'捕获'，B直译错误。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都完胜。它准确识别了RPG术语，修正了原文的笔误，并提供了流畅自然的中文表达。翻译B存在致命的理解错误（将野猪错认为蟒蛇），并且过度依赖音译，导致大量怪物名称对中文读者来说毫无意义且难以阅读。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7978,
+          "completion_tokens": 5512,
+          "total_tokens": 13490
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 10,
+        "B": 4,
+        "notes": "B在段落102将'Boar'(野猪)误译为蟒蛇，属于严重错误；且未能修正段落101原文的同音字笔误(买/狩猎)。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的语言更符合奇幻设定集的风格；B过于口语化且音译词破坏阅读流。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好地平衡了说明文与轻小说的语调。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 3,
+        "notes": "A使用了标准的RPG术语(鸮熊, 树人, 斩首兔)；B大量使用生硬音译(特伦特, 波帕尔巴尼, 杜拉汉)。"
+      },
+      "coherence": {
+        "A": 10,
+        "B": 5,
+        "notes": "B的误译导致部分段落逻辑崩坏(如蟒蛇长獠牙)。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "A保留了原文的符号风格。"
+      }
+    },
+    "key_differences": [
+      "段落102：原文'Boar'(野猪)，A译为'野猪'，B误译为'蟒蛇'。",
+      "段落86：原文'Vorpal Bunny'，A意译为'斩首兔'，B音译为'波帕尔巴尼'。",
+      "段落78：原文'Treant'，A意译为'树人'，B音译为'特伦特'。",
+      "段落101：原文有笔误'买来的猎物'，A根据语境修正为'捕获'，B直译错误。"
+    ],
+    "final_summary": "翻译A在各方面都完胜。它准确识别了RPG术语，修正了原文的笔误，并提供了流畅自然的中文表达。翻译B存在致命的理解错误（将野猪错认为蟒蛇），并且过度依赖音译，导致大量怪物名称对中文读者来说毫无意义且难以阅读。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

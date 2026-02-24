@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:32:15.303636",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "1b5f016aeb1d06018c103e45b2f5ca973d6056c046831e67be71ee0e4f745baa",
+    "B": "72383609c917608106cee97fa6e8d8e98218efb6637a4e03e1109c6c0a05ab32"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:32:59.032910",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "92b3bccf-2977-4861-888d-67b6f5f42a0e",
+      "judge_response": {
+        "id": "92b3bccf-2977-4861-888d-67b6f5f42a0e",
+        "object": "chat.completion",
+        "created": 1768422778,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段对比分析\n\n**段落1**\n- A：\"轮番补刀\"是对「畳み掛けるように」的意译，自然流畅\n- B：\"像叠罗汉一样\"是误译，「畳み掛ける」意为\"步步紧逼\"，非字面\"叠\"\n\n**段落7**\n- A：角色名统一为\"塔希\"\n- B：出现\"一タヒ\"，明显是输入错误\n\n**段落29（关键错误）**\n- A：\"塔希骑上牛头哥\"——正确\n- B：\"我骑上牛头君\"——严重错误，原文明确是「おタヒは牛頭くんに乗り」\n\n**段落37/38/40**\n- A：将角色名翻译为中文\n- B：保留日文\"インテ\"\"おタヒ\"未翻译，影响阅读\n\n**段落44（关键错误）**\n- A：\"葛莉賽達和小塔希\"——正确\n- B：\"葛莉赛达和恩蒂\"——错误，原文是「おタヒ」不是インテ\n\n**段落48（关键错误）**\n- A：正确指出\"和小塔希相性不好\"\n- B：错误翻译为\"和恩蒂的相性很差\"\n\n**段落54/56**\n- B突然使用\"小呆\"称呼，术语不一致\n\n**段落51**\n- A：\"尺贯法是4町弱\"——正确\n- B：\"市制约是四町多\"——错误，尺貫法不是市制\n\n**流畅性对比**\n- A整体更口语化、简洁，符合轻小说对话风格\n- B部分地方较生硬，如\"正茂盛地捕捉\"\n\n**格式对比**\n- B保留了更多原文的引号格式\n- A部分对话省略引号，如段落36/38/40\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有多处严重误译：段落29主语错误、段落44/48角色混淆、段落1「畳み掛ける」误译、段落51单位换算错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语化自然，B部分表达生硬如'正茂盛地捕捉'\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的轻小说对话感更强，B略显书面\"},\n    \"terminology\": {\"A\": 8, \"B\": 4, \"notes\": \"B存在严重问题：多处保留日文未翻译、角色名混淆（おタヒ误译为恩蒂）、称呼不一致（小呆）\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B的角色混淆影响整体连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"A部分对话省略引号，B保留较完整但有输入错误'一タヒ'\"}\n  },\n  \"key_differences\": [\n    \"B在段落29将主语完全搞错（おタヒ→我）\",\n    \"B多次将おタヒ误译为恩蒂（段落44/48）\",\n    \"B保留多处日文名未翻译，影响阅读体验\",\n    \"A对「畳み掛ける」的理解更准确\",\n    \"A角色名翻译始终一致\"\n  ],\n  \"final_summary\": \"A在准确性和术语一致性方面明显优于B。B存在多处严重错误：段落29主语混淆、段落44/48将おタヒ误译为恩蒂、段落1对「畳み掛ける」的误译。此外B多处保留日文未翻译且角色称呼不一致。虽然B在格式保留上略好，但这些优势无法弥补其准确性问题。A虽然部分地方过于简洁，但整体翻译准确、流畅，更适合轻小说阅读。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10253,
+          "completion_tokens": 2105,
+          "total_tokens": 12358
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有多处严重误译：段落29主语错误、段落44/48角色混淆、段落1「畳み掛ける」误译、段落51单位换算错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语化自然，B部分表达生硬如'正茂盛地捕捉'"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的轻小说对话感更强，B略显书面"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 4,
+        "notes": "B存在严重问题：多处保留日文未翻译、角色名混淆（おタヒ误译为恩蒂）、称呼不一致（小呆）"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B的角色混淆影响整体连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "A部分对话省略引号，B保留较完整但有输入错误'一タヒ'"
+      }
+    },
+    "key_differences": [
+      "B在段落29将主语完全搞错（おタヒ→我）",
+      "B多次将おタヒ误译为恩蒂（段落44/48）",
+      "B保留多处日文名未翻译，影响阅读体验",
+      "A对「畳み掛ける」的理解更准确",
+      "A角色名翻译始终一致"
+    ],
+    "final_summary": "A在准确性和术语一致性方面明显优于B。B存在多处严重错误：段落29主语混淆、段落44/48将おタヒ误译为恩蒂、段落1对「畳み掛ける」的误译。此外B多处保留日文未翻译且角色称呼不一致。虽然B在格式保留上略好，但这些优势无法弥补其准确性问题。A虽然部分地方过于简洁，但整体翻译准确、流畅，更适合轻小说阅读。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

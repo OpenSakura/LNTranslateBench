@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:31:00.953213",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "5ff68e0d44c117001d6cabe2f4b17b723f74c90750c648a15522fd710d725685",
+    "B": "d24a96bfd85d14f11e54375c807a68938c550ed9bfb8ffd347c88e50d0531dce"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:32:24.474769",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "62bf35eb-fdbc-40df-9f6e-8373442f26ff",
+      "judge_response": {
+        "id": "62bf35eb-fdbc-40df-9f6e-8373442f26ff",
+        "object": "chat.completion",
+        "created": 1769610739,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段关键差异分析\n\n### 准确性问题\n\n**段落3**: A遗漏了\"黒髪\"（黑发），只译为\"长发\"；B完整保留\"黑色长发\"。\n\n**段落18**: B严重错误——\"让我悲伤的明明是我\"，原文是\"シオンを悲しませたのはわたしの方だから\"（让席恩伤心的人明明是我）。A正确。\n\n**段落34**: A准确理解\"二本持ち\"是两手各拿一串显得贪吃；B误译为\"两个人拿一根...逞强\"。\n\n**段落50**: B严重混淆视角，将妈妈的话误认为是波普拉自己说的（\"我当时可是大声怒斥\"）。原文是波普拉转述妈妈的话。A正确。\n\n**段落95**: A完全未翻译，直接保留日文原文。这是致命错误。\n\n**段落64**: A\"好胜\"准确翻译\"勝ち気\"；B\"胜券在握\"理解有误。\n\n### 流畅性与风格\n\n**段落7**: A\"真让人火大\"；B\"我讨厌她\"。原文\"気に入らない\"更接近\"看不顺眼/讨厌\"，B更贴切。\n\n**段落17**: B\"你算哪根葱？\"更口语化、更符合轻小说风格。\n\n**段落36**: B使用\"她\"违反第一人称叙述视角，应为\"我\"。\n\n### 格式问题\n\n- B在段落35、42末尾缺少后引号\n- B在段落112使用繁体字\"沒\"\n\n---\n\n## 综合评估\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A在段落95完全未翻译是严重问题，但B在段落18、50有根本性理解错误；A漏译黑发，B误解多处关键语义\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化流畅，但视角混乱问题（段落36、50）影响阅读\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好地保持了轻小说风格，B部分台词更生动但偶有过度演绎\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"人名一致；A对'勝ち気''平和ボケ'等词处理更准确\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B在段落50的视角混乱严重影响叙事连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A格式规范；B多处缺少引号，有繁简混用\"}\n  },\n  \"key_differences\": [\n    \"段落95：A完全未翻译（致命错误）vs B正确翻译\",\n    \"段落18：A正确翻译 vs B误译主语（让席恩伤心→让我悲伤）\",\n    \"段落50：A正确转述妈妈的话 vs B视角混乱误认为是波普拉自己说的\",\n    \"段落34：A正确理解贪吃含义 vs B误解为逞强\",\n    \"B多处格式问题（缺引号、繁简混用）\"\n  ],\n  \"final_summary\": \"两译本各有严重问题。A在段落95完全未翻译是致命失误，但整体准确性更高、格式更规范。B虽流畅度略胜，但在段落18、50有根本性理解错误，且格式问题较多。综合权衡，A的单一致命错误不如B的多处理解偏差影响深远，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13201,
+          "completion_tokens": 2953,
+          "total_tokens": 16154
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A在段落95完全未翻译是严重问题，但B在段落18、50有根本性理解错误；A漏译黑发，B误解多处关键语义"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化流畅，但视角混乱问题（段落36、50）影响阅读"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好地保持了轻小说风格，B部分台词更生动但偶有过度演绎"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "人名一致；A对'勝ち気''平和ボケ'等词处理更准确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B在段落50的视角混乱严重影响叙事连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A格式规范；B多处缺少引号，有繁简混用"
+      }
+    },
+    "key_differences": [
+      "段落95：A完全未翻译（致命错误）vs B正确翻译",
+      "段落18：A正确翻译 vs B误译主语（让席恩伤心→让我悲伤）",
+      "段落50：A正确转述妈妈的话 vs B视角混乱误认为是波普拉自己说的",
+      "段落34：A正确理解贪吃含义 vs B误解为逞强",
+      "B多处格式问题（缺引号、繁简混用）"
+    ],
+    "final_summary": "两译本各有严重问题。A在段落95完全未翻译是致命失误，但整体准确性更高、格式更规范。B虽流畅度略胜，但在段落18、50有根本性理解错误，且格式问题较多。综合权衡，A的单一致命错误不如B的多处理解偏差影响深远，A略胜。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

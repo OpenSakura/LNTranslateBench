@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:45:08.376093",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "28074ee373a25217cd21b3966b2bdc3f2cd6fd8cf105a4e386653b55f0e4886d",
+    "B": "d45137f26ab9c3351921b80a2bbf3cddf2c07ec4bd261bcd05aa4d99c0f1946f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:46:04.592830",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "53c76aaa-16a9-4061-9f9c-5523dc3537c5",
+      "judge_response": {
+        "id": "53c76aaa-16a9-4061-9f9c-5523dc3537c5",
+        "object": "chat.completion",
+        "created": 1768488364,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 详细分析\n\n## 1. 准确性 (Accuracy)\n\n**翻译A的问题：**\n- 段落23：\"对俺来说\"使用了错误的第一人称（应该是エン说\"对我来说\"）\n- 段落6：\"继承之意\"不如\"被继承的意志\"准确\n- 段落19：\"受热铁屑\"较为生硬\n\n**翻译B的问题：**\n- **段落22：出现\"creepy\"英文单词，这是严重的翻译错误**\n- 段落41：引号使用英文格式\n\n## 2. 流畅性 (Fluency)\n\n**翻译A：**\n- 整体较为生硬，如\"从那一心一意面对敌人的背影中\"\n- 某些表达欠自然\n\n**翻译B：**\n- 更加口语化和自然，如\"那股不顾一切冲向敌人的背影\"\n- 对话更符合中文习惯\n\n## 3. 风格 (Style)\n\n**翻译A：**\n- 较为书面化\n- 战斗场景描写略显平淡\n\n**翻译B：**\n- 更贴近轻小说的口语化风格\n- 感叹词和语气词使用更生动（\"噗噗\"、\"咯\"等）\n- 但段落22的\"creepy\"破坏了整体风格\n\n## 4. 术语一致性 (Terminology)\n\n**翻译A：**\n- 人名\"エン\"翻译为\"安\"（段落22-24）后又变成\"焰\"（段落47-54），**严重不一致**\n- 怪兽名：\"普雷格托恩\"/\"普莱格托恩\"混用\n- \"フェイズ\"统一使用\"阶段\"\n\n**翻译B：**\n- 人名保留\"恩\"或\"エン\"，相对统一\n- \"シロガネ\"有\"白银\"/\"白金\"混用问题\n- 怪兽名：\"普雷格通\"/\"普莱盖顿\"也有不一致\n- \"フェイズ\"使用\"阶段\"和\"回合\"混用\n\n## 5. 连贯性 (Coherence)\n\n两者在叙事连贯性上都可以接受，B略胜一筹，更符合中文阅读习惯。\n\n## 6. 格式 (Formatting)\n\n**翻译A：**\n- 标点符号使用规范\n- 格式统一\n\n**翻译B：**\n- 段落17、41等处引号格式混乱（中英文引号混用）\n- 整体格式不够统一\n\n## 关键差异\n\n1. **致命错误**：B的段落22出现\"creepy\"英文单词\n2. **术语一致性**：A的人名\"エン\"翻译极度不一致（安→焰）\n3. **人称错误**：A的段落23人称使用错误\n4. **自然度**：B整体更自然流畅\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 5, \"notes\": \"A有段落23人称错误；B有段落22严重的'creepy'英文词错误，但整体理解准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合中文表达习惯，口语化自然；A较为生硬\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"B更贴近轻小说风格，但段落22的错误影响整体；A过于书面化\"},\n    \"terminology\": {\"A\": 4, \"B\": 6, \"notes\": \"A的人名翻译极度不一致（安→焰）是严重问题；B虽有白银/白金混用，但相对较轻\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙事更流畅连贯，阅读体验更好\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"A格式规范；B引号混用中英文格式，不够统一\"}\n  },\n  \"key_differences\": [\n    \"B在段落22出现'creepy'英文单词的严重错误\",\n    \"A在段落23出现人称使用错误（'对俺来说'应为'对我来说'）\",\n    \"A的人名'エン'翻译极度不一致（安→焰→安），严重影响阅读\",\n    \"B整体更口语化自然，更符合轻小说风格\",\n    \"B的格式问题（引号混用）影响专业性\",\n    \"A术语一致性问题更严重（人名完全混乱）\"\n  ],\n  \"final_summary\": \"这是一个艰难的选择。B虽然在段落22出现了'creepy'这个严重的英文词错误，格式也有引号混用问题，但整体翻译更自然流畅，更符合轻小说的口语化风格。A虽然格式规范，但存在更严重的系统性问题：人名'エン'的翻译极度不一致（安→焰反复变化），段落23的人称错误，以及整体较为生硬的表达。权衡之下，A的术语不一致问题对阅读连贯性的破坏更大，而B的错误虽然明显但相对孤立。因此判定B略胜，但信心度仅为0.6，建议两者都需要修订。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13269,
+          "completion_tokens": 2484,
+          "total_tokens": 15753
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 5,
+        "notes": "A有段落23人称错误；B有段落22严重的'creepy'英文词错误，但整体理解准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合中文表达习惯，口语化自然；A较为生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "B更贴近轻小说风格，但段落22的错误影响整体；A过于书面化"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 6,
+        "notes": "A的人名翻译极度不一致（安→焰）是严重问题；B虽有白银/白金混用，但相对较轻"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙事更流畅连贯，阅读体验更好"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "A格式规范；B引号混用中英文格式，不够统一"
+      }
+    },
+    "key_differences": [
+      "B在段落22出现'creepy'英文单词的严重错误",
+      "A在段落23出现人称使用错误（'对俺来说'应为'对我来说'）",
+      "A的人名'エン'翻译极度不一致（安→焰→安），严重影响阅读",
+      "B整体更口语化自然，更符合轻小说风格",
+      "B的格式问题（引号混用）影响专业性",
+      "A术语一致性问题更严重（人名完全混乱）"
+    ],
+    "final_summary": "这是一个艰难的选择。B虽然在段落22出现了'creepy'这个严重的英文词错误，格式也有引号混用问题，但整体翻译更自然流畅，更符合轻小说的口语化风格。A虽然格式规范，但存在更严重的系统性问题：人名'エン'的翻译极度不一致（安→焰反复变化），段落23的人称错误，以及整体较为生硬的表达。权衡之下，A的术语不一致问题对阅读连贯性的破坏更大，而B的错误虽然明显但相对孤立。因此判定B略胜，但信心度仅为0.6，建议两者都需要修订。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

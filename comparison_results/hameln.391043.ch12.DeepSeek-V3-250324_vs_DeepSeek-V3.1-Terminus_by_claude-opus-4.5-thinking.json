@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:12:50.872517",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "854e88ca48ddb4fe25aab3059529414b201d4bc7be0589da771349bf131e52cf",
+    "B": "c5b0858bfe74d949c73adaa0a24215e8ea4f5f2913ad55f334fbd3349aca52e7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:13:43.373167",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "dd801c75-9187-44cf-a65d-8d1b233bdf3e",
+      "judge_response": {
+        "id": "dd801c75-9187-44cf-a65d-8d1b233bdf3e",
+        "object": "chat.completion",
+        "created": 1768421623,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题识别\n\n**翻译A的重大问题：**\n1. **日语残留严重**：\n   - 段落10：\"故に、因此\" - 日语未翻译\n   - 段落11：\"しかし、然而\" - 日语未翻译\n   - 段落12：\"そもそもの話、そもそも\" - 日语未翻译\n   - 段落13：\"だが、但是\" - 日语未翻译\n   - 段落14：\"正確には、严格来说\" - 日语未翻译\n\n2. **标点符号不一致**：段落45、55、68-73混用中文引号和日式「」\n\n3. **段落22名称翻译**：\"クスミ\"译为\"糟美\"（错误），应为\"霞\"或音译\n\n**翻译B的优势：**\n- 无日语残留\n- 标点符号统一使用「」\n- 语句更流畅自然\n\n### 逐项对比\n\n| 段落 | A的问题 | B的表现 |\n|------|---------|---------|\n| 1 | \"实力派\"更自然 | \"实力者\"略生硬 |\n| 8 | \"人\"过于简单 | \"高手\"更贴切 |\n| 10-14 | 日语严重残留 | 翻译完整 |\n| 23 | 句子结构混乱，漏译黑墨 | 主语清晰 |\n| 48 | 语句不通顺 | 表达清晰 |\n| 67 | 意思理解有偏差 | 更准确传达原意 |\n\n### 细节亮点对比\n\n- 段落28：A译\"！\"，B译\"呜！\"捕捉到了语气词\n- 段落80：A\"蹦跳移动着\"较平，B\"欢快地弹跳着\"更生动\n- 段落73：B的\"谜之计量表\"更符合轻小说风格\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落23漏译'黒墨'，段落67理解有偏差；B整体准确\"},\n    \"fluency\": {\"A\": 5, \"B\": 8, \"notes\": \"A有多处日语残留严重影响阅读流畅性\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的'欢快弹跳''谜之计量表'等更符合轻小说风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A将'クスミ'译为'糟美'明显错误，B译'霞'更合理\"},\n    \"coherence\": {\"A\": 5, \"B\": 8, \"notes\": \"A的日语残留严重破坏阅读连贯性\"},\n    \"formatting\": {\"A\": 4, \"B\": 9, \"notes\": \"A引号格式混乱（中日混用），B统一使用「」\"}\n  },\n  \"key_differences\": [\n    \"A存在5处以上日语原文未翻译的严重错误\",\n    \"A标点符号格式不统一，B保持一致\",\n    \"A将'クスミ'误译为'糟美'\",\n    \"B整体语言更自然流畅，符合轻小说文风\"\n  ],\n  \"final_summary\": \"翻译B明显胜出。翻译A存在多处日语残留未翻译的致命错误（段落10-14），这是翻译工作中不可接受的失误。此外A的标点格式不一致、部分名称翻译错误也降低了整体质量。B在准确性、流畅性和格式规范性上均表现优秀，更适合作为轻小说成品翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11065,
+          "completion_tokens": 2233,
+          "total_tokens": 13298
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落23漏译'黒墨'，段落67理解有偏差；B整体准确"
+      },
+      "fluency": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有多处日语残留严重影响阅读流畅性"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的'欢快弹跳''谜之计量表'等更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A将'クスミ'译为'糟美'明显错误，B译'霞'更合理"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 8,
+        "notes": "A的日语残留严重破坏阅读连贯性"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 9,
+        "notes": "A引号格式混乱（中日混用），B统一使用「」"
+      }
+    },
+    "key_differences": [
+      "A存在5处以上日语原文未翻译的严重错误",
+      "A标点符号格式不统一，B保持一致",
+      "A将'クスミ'误译为'糟美'",
+      "B整体语言更自然流畅，符合轻小说文风"
+    ],
+    "final_summary": "翻译B明显胜出。翻译A存在多处日语残留未翻译的致命错误（段落10-14），这是翻译工作中不可接受的失误。此外A的标点格式不一致、部分名称翻译错误也降低了整体质量。B在准确性、流畅性和格式规范性上均表现优秀，更适合作为轻小说成品翻译。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

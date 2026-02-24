@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:28:37.998225",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "c50890bf247f07ea8dd44d572d44b8bb4212152655eb9ab97ae52782136a3cd8",
+    "B": "a2dc6e09d61f3e68dc12016163d9897dddd17b41183aaa2ad6e57c4e39528f92"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:29:20.276218",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "de0272af-d06f-48b3-b4b9-316dea8391fa",
+      "judge_response": {
+        "id": "de0272af-d06f-48b3-b4b9-316dea8391fa",
+        "object": "chat.completion",
+        "created": 1769610560,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落7**: A「让人制作」正确，B「让制造」漏译「人」，语法错误\n- **段落9**: 「一刻ごとに」A译「每一刻」较准确，B译「每到整点」是过度诠释\n- **段落39**: 「鍛錬場」意为\"训练场\"，A误译为「锻冶场」，B「训练场」正确\n- **段落45**: 「潰して」A译「碾碎」，B译「压扁」更准确\n\n### 流畅性分析\n- B整体语言更口语化、更自然（如「这玩意儿」「够呛」）\n- A部分表达较生硬（如段落29「以最优先便携性为结果」）\n\n### 格式问题\n- A始终使用「」作为对话标记，格式统一\n- B从段落25开始混用「」和\"\"，且段落69、71-73将叙述文字错误地加上引号\n\n### 风格/术语\n- 「姫様」：A译「公主殿下/姬殿下」，B译「公主大人」——两者都可接受\n- 「将兵」：A译「将士」，B译「将兵」——A更自然\n\n### 关键差异\n| 项目 | A | B |\n|------|---|---|\n| 段落7 | ✓正确 | ✗语法错误 |\n| 段落39 | ✗误译 | ✓正确 |\n| 格式一致性 | ✓统一 | ✗混乱 |\n| 自然度 | 中等 | 较高 |\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A段落39误译鍛錬場；B段落7语法错误，段落9过度诠释\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，但A也通顺\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A轻小说叙事风格稳定，B后期引号使用混乱影响阅读\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A锻冶场误译，B钟表相关术语更准确\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A全文连贯，B格式问题影响可读性\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"A格式统一；B后半部分对话/叙述引号混乱严重\"}\n  },\n  \"key_differences\": [\n    \"B段落7存在语法硬伤「让制造」漏词\",\n    \"A段落39术语错误「锻冶场」应为「训练场」\",\n    \"B后半部分大量格式错误，将叙述文加引号\",\n    \"B整体更口语化但A更稳定\"\n  ],\n  \"final_summary\": \"两译本各有优劣：A格式规范统一，翻译稳定但略显生硬，有一处术语错误；B语言更自然流畅，但存在语法硬伤且后半部分格式严重混乱。综合考虑，A在格式规范性和整体稳定性上的优势略胜于B的流畅度优势，尤其是B的格式问题严重影响阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12255,
+          "completion_tokens": 1998,
+          "total_tokens": 14253
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A段落39误译鍛錬場；B段落7语法错误，段落9过度诠释"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，但A也通顺"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A轻小说叙事风格稳定，B后期引号使用混乱影响阅读"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "A锻冶场误译，B钟表相关术语更准确"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A全文连贯，B格式问题影响可读性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "A格式统一；B后半部分对话/叙述引号混乱严重"
+      }
+    },
+    "key_differences": [
+      "B段落7存在语法硬伤「让制造」漏词",
+      "A段落39术语错误「锻冶场」应为「训练场」",
+      "B后半部分大量格式错误，将叙述文加引号",
+      "B整体更口语化但A更稳定"
+    ],
+    "final_summary": "两译本各有优劣：A格式规范统一，翻译稳定但略显生硬，有一处术语错误；B语言更自然流畅，但存在语法硬伤且后半部分格式严重混乱。综合考虑，A在格式规范性和整体稳定性上的优势略胜于B的流畅度优势，尤其是B的格式问题严重影响阅读体验。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

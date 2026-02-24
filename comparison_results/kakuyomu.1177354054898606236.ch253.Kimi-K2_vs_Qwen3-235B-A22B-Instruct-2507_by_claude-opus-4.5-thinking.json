@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:59:18.178684",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "5837f2f84608e65ad59653c1278611083297cf446f2d23429af6d90f99c2e303",
+    "B": "c77db65ac2bb730e72fd95924f418a367f33fa197bf354f08ef7a24a73b6715d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T22:59:57.568296",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "dd27cc72-af16-485f-bfc2-7899db1b2aec",
+      "judge_response": {
+        "id": "dd27cc72-af16-485f-bfc2-7899db1b2aec",
+        "object": "chat.completion",
+        "created": 1768431597,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n- **A** 对原文意思保留较完整，如段落7\"テストベッド\"译为\"试验平台\"更准确\n- **B** 段落21将「短慮は禁物」译为「别犯傻」过于口语化，偏离原文\"禁止轻率/冒进\"之意\n- 段落33：A的\"一无是处\"比B的\"那玩意儿根本不存在\"更贴合原意\n\n### 2. 流畅性分析\n- **B** 口语表达更自然（如\"真难搞啊\"、\"搞不懂\"）\n- **A** 较正式但部分句子略显生硬\n- **B** 段落47出现繁简混用（羅貝爾/柳井），严重影响流畅度\n\n### 3. 风格/语气分析\n- 本文为政治军事题材，**A** 的正式语体更契合\n- **B** 部分表达过于随意（如\"那玩意儿\"、\"混民營軍企\"），与作品氛围不符\n- 对话部分B稍显活泼，但整体风格不统一\n\n### 4. 术语/名称一致性\n- **A** 全程使用简体中文，一致性好\n- **B** 繁简混用严重（維爾海米娜/贝尔塞福尼亚/羅貝爾），问题突出\n- 时间格式：A有\"一〇时\"与\"14时\"混用；B有\"一〇時\"与\"10:43\"混用\n\n### 5. 连贯性/可读性\n- **A** 文风统一，阅读体验连贯\n- **B** 字符系统混乱影响沉浸感\n\n### 6. 格式/标点\n- **A** 统一使用「」标注对话\n- **B** 「」与\"\"混用（如段落9-11、13-16），格式混乱\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"B的'别犯傻'等译法偏离原意\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"B繁简混用严重影响流畅度\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"政治军事题材A的正式语体更合适\"},\n    \"terminology\": {\"A\": 8, \"B\": 4, \"notes\": \"B繁简体混用问题严重\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"B字符系统混乱破坏连贯性\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B对话标点「」与\\\"\\\"混用\"}\n  },\n  \"key_differences\": [\n    \"A全程简体一致，B繁简混用严重\",\n    \"A对话格式统一使用「」，B混用「」和\\\"\\\"\",\n    \"A语体正式契合政治军事题材，B部分表达过于口语化\",\n    \"B部分译文偏离原意（如'短慮は禁物'→'别犯傻'）\"\n  ],\n  \"final_summary\": \"A在一致性（字符系统、格式、语体）方面明显优于B，准确性也更高。B虽有部分口语化表达较自然，但繁简混用和格式混乱是致命缺陷，整体质量不及A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12279,
+          "completion_tokens": 1723,
+          "total_tokens": 14002
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "B的'别犯傻'等译法偏离原意"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "B繁简混用严重影响流畅度"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "政治军事题材A的正式语体更合适"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 4,
+        "notes": "B繁简体混用问题严重"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "B字符系统混乱破坏连贯性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B对话标点「」与\"\"混用"
+      }
+    },
+    "key_differences": [
+      "A全程简体一致，B繁简混用严重",
+      "A对话格式统一使用「」，B混用「」和\"\"",
+      "A语体正式契合政治军事题材，B部分表达过于口语化",
+      "B部分译文偏离原意（如'短慮は禁物'→'别犯傻'）"
+    ],
+    "final_summary": "A在一致性（字符系统、格式、语体）方面明显优于B，准确性也更高。B虽有部分口语化表达较自然，但繁简混用和格式混乱是致命缺陷，整体质量不及A。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:58:02.599067",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "008eb4a16cd270de3ec8d4381e4589644b14f0fa6b80a768500ce7049b4e5fea",
+    "B": "d23908ef2d654b9c5e90ad81e2430aa730f98d66f0e42478ef913e483287e34a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:59:01.276524",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9a48167e-cc31-40cf-8cea-396dc8e09387",
+      "judge_response": {
+        "id": "9a48167e-cc31-40cf-8cea-396dc8e09387",
+        "object": "chat.completion",
+        "created": 1768489141,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性对比\n\n**重大理解偏差：**\n\n**段落14：** 这是最严重的错误\n- A：\"我就取消了约定啦。这可真是突然说这种事的帕比～，真是抱歉呢。\"\n- B：\"结果爸爸突然说什么去野餐，就给撞期啦。真是的，突然乱来的爹爹最讨厌了〜\"\n- 原文：\"ブッキングしちゃった\"是指\"撞期/时间冲突\"，且后半句是批评爸爸，A完全理解反了\n\n**段落22：**\n- A：\"那我就和幼女酱的份一起好好享受啦\"（主语理解错误）\n- B：\"你们就替我和幼女酱好好享受吧\"（正确）\n\n**段落26：**\n- A：\"我爸爸向我求婚\"（多了\"我\"，逻辑错误）\n- B：\"爸爸向我求婚\"（正确）\n\n**段落33/42：**\n- A：\"沉迷的夫妇\"/\"睡不着觉\"（理解偏差）\n- B：\"秀恩爱的夫妻\"/\"本来就很下作\"（更准确把握\"惚気\"和\"寝覚め悪い\"）\n\n**段落46：**\n- A：\"老公寄来的戒指\"（\"寄来\"错误）\n- B：\"丈夫送的戒指\"（正确）\n\n### 流畅性与风格\n\n两者整体流畅度相近，但：\n- **段落8：** B的\"万一是万一呢\"更符合轻小说口语化风格\n- **段落63：** B的\"双手撑地\"比A的\"跪在地板上\"更准确且自然\n\n### 术语一致性问题\n\n**人名翻译：**\n- A：时而保留\"マミィ〜\"，时而译为\"玛米\"，不一致\n- B：在段落4用\"麻米\"，其他地方用\"玛咪\"，也存在不一致\n\n两者都有问题，但A的日文/中文混用更不统一。\n\n### 其他细节\n\n**段落10：**\n- A：\"麻烦制造者\"是意译\n- B：\"小鬼头\"直译\"ガキ\"，更贴合原文\n\n**段落97：**\n- B更准确表达了\"不存在的人本来就不存在\"的催眠逻辑\n\n## 评分总结\n\n虽然两个翻译都有瑕疵，但**B的准确性明显优于A**，特别是在关键情节理解上（段落14、22、26）。A有多处严重的理解错误会误导读者对剧情的把握。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落14、22、26、46等处有明显理解错误；B对原文把握更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"两者都较流畅，B在口语表达上略胜一筹\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说的口语化、生动化风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"两者人名翻译都存在不一致，A混用日文/中文更严重\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的理解错误影响了剧情连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"格式标点都较规范\"}\n  },\n  \"key_differences\": [\n    \"段落14：A完全误解'ブッキング'和说话者态度，将批评理解成道歉\",\n    \"段落22：A误解主语，将'你们享受'理解成'我享受'\",\n    \"段落26/46：A在亲属关系和动词选择上出现错误\",\n    \"段落33/42：B对'惚気'和'寝覚め悪い'等词汇理解更准确\",\n    \"人名翻译：两者都有不一致，但A的日中混用更明显\"\n  ],\n  \"final_summary\": \"B在准确性方面明显优于A，特别是对关键剧情的理解更准确。虽然两者都存在人名翻译不一致的问题，但A出现了多处严重的理解偏差（段落14、22、26），会误导读者对故事情节的把握。B在流畅性、风格把握和术语使用上也略胜一筹，整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11262,
+          "completion_tokens": 2600,
+          "total_tokens": 13862
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落14、22、26、46等处有明显理解错误；B对原文把握更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者都较流畅，B在口语表达上略胜一筹"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说的口语化、生动化风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "两者人名翻译都存在不一致，A混用日文/中文更严重"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的理解错误影响了剧情连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "格式标点都较规范"
+      }
+    },
+    "key_differences": [
+      "段落14：A完全误解'ブッキング'和说话者态度，将批评理解成道歉",
+      "段落22：A误解主语，将'你们享受'理解成'我享受'",
+      "段落26/46：A在亲属关系和动词选择上出现错误",
+      "段落33/42：B对'惚気'和'寝覚め悪い'等词汇理解更准确",
+      "人名翻译：两者都有不一致，但A的日中混用更明显"
+    ],
+    "final_summary": "B在准确性方面明显优于A，特别是对关键剧情的理解更准确。虽然两者都存在人名翻译不一致的问题，但A出现了多处严重的理解偏差（段落14、22、26），会误导读者对故事情节的把握。B在流畅性、风格把握和术语使用上也略胜一筹，整体质量更高。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

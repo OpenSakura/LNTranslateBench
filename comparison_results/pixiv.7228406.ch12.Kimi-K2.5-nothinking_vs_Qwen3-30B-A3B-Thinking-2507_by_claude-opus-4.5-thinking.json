@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:32:24.475534",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "091a704284c541e0ef1cc2a3e7ea56cea9fc843dffae1e5da36e33bf1eb0d457",
+    "B": "3d09bb870a2323b8a6ea6041c623969ebfee656682255f14c19cce0d22ae49ec"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:33:15.616448",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c657ea6e-028f-4f04-b879-e7edf23f9760",
+      "judge_response": {
+        "id": "c657ea6e-028f-4f04-b879-e7edf23f9760",
+        "object": "chat.completion",
+        "created": 1769610795,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**关键问题：**\n- 段落2：「マッ缶」A保留日文原样，B译为\"马口罐\"（错误，应为MAX咖啡罐的缩写）\n- 段落5-6：「乗り遅れて」A译\"赶不上车\"正确，B译\"坐错车\"错误\n- 段落23、25、30：「みのぶまんじゅう」A多次误译（\"美浓部馒头\"\"美浓\"\"三峰馒头\"），B始终正确译为\"身延馒头\"\n- 段落3：「思いのほか」B\"出乎意料地\"更准确，A\"相当\"丢失了\"意外\"之意\n- 段落4：「火の玉ストレート」B\"火球直球\"更准确（棒球术语），A仅译\"火球\"\n\n### 2. 流畅性\n- B整体更自然流畅，如段落51\"初中时代总是憧憬着「要是能和别人一起度过这样的时光就好了」\"\n- A部分表达生硬，如段落41\"被吹捧着推崇\"\n\n### 3. 风格/语气\n- B的对话更贴合轻小说口语风格，如\"好清楚啊\"\"谢啦\"\"原来是现学现卖啊\"\n- A有些地方略显书面化\n\n### 4. 术语/名称一致性\n- A对\"斉藤\"译名不一致（齐藤/斋藤交替使用，段落16、21等）\n- A对\"身延馒头\"翻译混乱（美浓部/美浓/三峰多个版本）\n- B保持一致（齐藤、身延馒头）\n\n### 5. 连贯性/可读性\n- B的叙述更连贯，情感表达更细腻\n- A部分段落读起来有跳跃感\n\n### 6. 格式/标点\n- **严重问题**：B在段落11-14使用了错误引号格式『...「（颠倒且混用）\n- A在段落17-20对话缺少引号\n- B段落16末尾有多余符号\n\n---\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.7,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A多次误译'身延'（美浓部/三峰），B误译'乗り遅れて'为坐错车，但A的核心术语错误更严重\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更自然流畅，A部分表达生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B对话更贴合轻小说口语风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A对'斉藤'和'身延馒头'译名不一致，B保持一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙述更连贯，情感表达更细腻\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"B段落11-14引号格式严重错误，A段落17-20缺少引号\"}\n  },\n  \"key_differences\": [\n    \"核心术语'身延馒头'：A多次误译（美浓部/三峰），B始终正确\",\n    \"'乗り遅れて'：A正确译为'赶不上车'，B误译为'坐错车'\",\n    \"人名一致性：A混用齐藤/斋藤，B统一使用齐藤\",\n    \"引号格式：B在11-14段使用错误格式『...「\"\n  ],\n  \"final_summary\": \"B在核心地名术语（身延）和人名一致性上明显优于A，整体流畅度和风格把握也更好。虽然B有个别词汇错误和格式问题，但A对'身延馒头'这一贯穿全文的重要术语的多次误译是更严重的问题。综合考虑，B略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10942,
+          "completion_tokens": 2358,
+          "total_tokens": 13300
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.7,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A多次误译'身延'（美浓部/三峰），B误译'乗り遅れて'为坐错车，但A的核心术语错误更严重"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更自然流畅，A部分表达生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对话更贴合轻小说口语风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A对'斉藤'和'身延馒头'译名不一致，B保持一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙述更连贯，情感表达更细腻"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "B段落11-14引号格式严重错误，A段落17-20缺少引号"
+      }
+    },
+    "key_differences": [
+      "核心术语'身延馒头'：A多次误译（美浓部/三峰），B始终正确",
+      "'乗り遅れて'：A正确译为'赶不上车'，B误译为'坐错车'",
+      "人名一致性：A混用齐藤/斋藤，B统一使用齐藤",
+      "引号格式：B在11-14段使用错误格式『...「"
+    ],
+    "final_summary": "B在核心地名术语（身延）和人名一致性上明显优于A，整体流畅度和风格把握也更好。虽然B有个别词汇错误和格式问题，但A对'身延馒头'这一贯穿全文的重要术语的多次误译是更严重的问题。综合考虑，B略胜一筹。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

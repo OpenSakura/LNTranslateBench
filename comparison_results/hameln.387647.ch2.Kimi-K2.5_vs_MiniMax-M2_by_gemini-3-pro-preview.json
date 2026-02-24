@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:16:17.953259",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "ca67ac0f5a48408e4fae0e6eea57ea3d5bfc2bf3cf8d4e52bb2bddaf1702c412",
+    "B": "c665343e85f81d27b8cc317bc804f5107fc2e392e4c209aa686ea243878edfbc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:17:27.949830",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128221618150914079yBaj3sGd",
+      "judge_response": {
+        "id": "chatcmpl-20260128221618150914079yBaj3sGd",
+        "object": "chat.completion",
+        "created": 1769609847,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A** 存在多处严重的误译。\n    *   **第 27 段**: 原文「色々と教えてやれ」（去教教他）被译为「把所有东西都教给我」，搞反了授受关系。\n    *   **第 53 段**: 原文「ディフェンスを躱し...」（躲避防守）被译为「躲避四分卫」，完全改变了外接手（WR）的职责描述。\n    *   **第 65 段**: 原文「双葉さんが…！？」（双叶学长/先生），A 译为「双叶小姐」，误判了说话者（双叶莲次，自称“俺”）的性别。\n    *   **第 77 段**: 原文「東京スタジアム」（东京体育场），A 译为「东京巨蛋」，属于地名误译。\n*   **翻译 B** 在上述几点上都非常准确，正确理解了语境、人物关系和动作主体。\n\n**2. 术语/名称一致性 (Terminology)**\n*   **翻译 A** 的术语使用非常生硬且不准确。\n    *   Running Back 译为「跑步后卫」（应为跑卫）。\n    *   Line 译为「线」（应为线锋/攻防线）。\n    *   Tight End 译为「边锋」（正确）。\n    *   Extra Point 译为「加时得分」（完全错误，应为附加分）。\n*   **翻译 B** 使用了标准的美式足球中文术语（跑卫、线锋、边锋、附加分/两分转换），显得非常专业。\n\n**3. 格式/标点符号 (Formatting)**\n*   **翻译 A** 有一个致命的格式错误：它将许多**旁白/叙述段落**（如第 46, 94, 100 段）错误地加上了引号「」，将其变成了对话。这严重影响了阅读体验，让人分不清是心理活动、动作描写还是口语。\n*   **翻译 B** 格式正确，区分了对话和叙述。\n\n**4. 流畅性与风格 (Fluency & Style)**\n*   **翻译 A** 的句子结构偏向直译，有时甚至不符合中文语法习惯（如第 3 段「...1年级学生在」）。语气较为平淡，缺乏轻小说的生动感。\n*   **翻译 B** 的行文流畅自然，符合中文表达习惯。对话语气更贴合角色性格（如蛭魔的粗鲁、濑那的胆怯）。\n\n### 总结\n翻译 A 表现出明显的机器翻译特征或初学者水平，存在严重的误译（性别、动作方向、专有名词）、术语错误以及格式混乱。翻译 B 则是一份高质量的翻译，术语专业，语意准确，行文流畅，完美还原了原文的语境。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A存在严重误译（教我vs教他、性别错误、躲避四分卫等）；B准确无误。\"\n    },\n    \"fluency\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A句式生硬（如'1年级学生在'）；B自然流畅。\"\n    },\n    \"style\": {\n      \"A\": 5,\n      \"B\": 8,\n      \"notes\": \"B更好地还原了轻小说的对话语气。\"\n    },\n    \"terminology\": {\n      \"A\": 3,\n      \"B\": 10,\n      \"notes\": \"A使用了错误的直译术语（跑步后卫、线、加时得分）；B使用了标准美式足球术语。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A的格式错误导致叙述和对话混淆，影响连贯性。\"\n    },\n    \"formatting\": {\n      \"A\": 2,\n      \"B\": 10,\n      \"notes\": \"A错误地将叙述段落加上了引号，视为对话处理。\"\n    }\n  },\n  \"key_differences\": [\n    \"A将叙述段落错误地加上引号变成对话。\",\n    \"A误译了角色性别（将双叶称为小姐）。\",\n    \"A的美式足球术语极不专业（如将Line译为'线'，Running Back译为'跑步后卫'）。\",\n    \"A搞反了授受动词的方向（教我 vs 教他）。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都完胜。翻译A不仅存在严重的格式错误（将旁白当成对话），还包含多处致命的误译（性别、动作主体、专业术语）。翻译B准确使用了美式足球术语，行文流畅，逻辑清晰，是一份优秀的译文。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7904,
+          "completion_tokens": 6241,
+          "total_tokens": 14145
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 9,
+        "notes": "A存在严重误译（教我vs教他、性别错误、躲避四分卫等）；B准确无误。"
+      },
+      "fluency": {
+        "A": 5,
+        "B": 9,
+        "notes": "A句式生硬（如'1年级学生在'）；B自然流畅。"
+      },
+      "style": {
+        "A": 5,
+        "B": 8,
+        "notes": "B更好地还原了轻小说的对话语气。"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 10,
+        "notes": "A使用了错误的直译术语（跑步后卫、线、加时得分）；B使用了标准美式足球术语。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "A的格式错误导致叙述和对话混淆，影响连贯性。"
+      },
+      "formatting": {
+        "A": 2,
+        "B": 10,
+        "notes": "A错误地将叙述段落加上了引号，视为对话处理。"
+      }
+    },
+    "key_differences": [
+      "A将叙述段落错误地加上引号变成对话。",
+      "A误译了角色性别（将双叶称为小姐）。",
+      "A的美式足球术语极不专业（如将Line译为'线'，Running Back译为'跑步后卫'）。",
+      "A搞反了授受动词的方向（教我 vs 教他）。"
+    ],
+    "final_summary": "翻译B在各方面都完胜。翻译A不仅存在严重的格式错误（将旁白当成对话），还包含多处致命的误译（性别、动作主体、专业术语）。翻译B准确使用了美式足球术语，行文流畅，逻辑清晰，是一份优秀的译文。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

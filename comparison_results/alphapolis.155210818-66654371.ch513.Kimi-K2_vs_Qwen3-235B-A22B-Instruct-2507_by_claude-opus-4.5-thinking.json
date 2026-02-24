@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:10.207400",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "7d168259ceef939c4dd83e397d4412a5827f7e5279d8682054ebc2db09b845c2",
+    "B": "43ca83664913c542c74456668887e5f054cfe3f26aaefad2dbf8432898d76b4f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:02:48.625563",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "db255424-5186-41c9-bee2-c56e634253c2",
+      "judge_response": {
+        "id": "db255424-5186-41c9-bee2-c56e634253c2",
+        "object": "chat.completion",
+        "created": 1768420968,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n- **段落2**: A译\"家里的老家\"冗余，B译\"直接传回老家\"更简洁准确\n- **段落6**: A译\"把大家全灭\"有误，原文指的是消灭所有魔物，不是消灭同伴；B译\"清场\"正确\n- **段落45**: A译\"被魔物刺中\"理解反了，原文是\"枪刺中魔物\"；B译\"被魔物扎过\"同样有误\n- **段落47**: **B完全缺失此段落**，这是严重错误\n- **段落96**: A译\"转学来的\"完全错误，\"移転組\"指有转移能力的人；B译\"搬迁组\"虽不完美但更接近\n\n### 流畅性分析\nB整体使用更口语化的表达，如\"老爸\"\"刷级\"\"干翻\"\"溜到安全区\"等，更符合轻小说风格；A较为生硬书面化。\n\n### 风格/语气分析\n- B的对话更活泼自然：\"'啪咔'一闪\"\"超厉害\"\"太萌了\"\n- A较为平淡正式：\"咻的一下\"\"太厉害了\"\n- 结尾作者留言部分，B更亲切（\"咱\"\"亲们\"），A较为正式\n\n### 术语一致性\n- A保留\"雫ちゃん\"日文不翻译（段落3），不统一\n- 従魔：A译\"使魔\"，B译\"从魔\"，两者都可接受\n- 人名翻译：A\"黛安娜\"vs B\"戴安娜\"，均可\n\n### 格式问题\n- **B缺失段落47**，这是致命问题\n- 标点符号两者都基本规范\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有少量误译，但B缺失整段内容且段落45/6也有误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语自然，A较生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说活泼语气\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A有未翻译日文，两者基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B缺失段落影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 4, \"notes\": \"B缺失段落47是严重格式问题\"}\n  },\n  \"key_differences\": [\n    \"B完全缺失段落47的翻译\",\n    \"B语言风格更口语化活泼，A更书面正式\",\n    \"A段落6将'全滅'误译为消灭同伴\",\n    \"A段落96将'移転組'误译为'转学来的'\"\n  ],\n  \"final_summary\": \"B在流畅度和轻小说风格把握上明显优于A，语言更自然生动。然而B缺失了段落47的完整翻译，这是不可接受的重大缺陷。尽管A存在一些误译问题，但内容完整性是翻译的基本要求。综合考虑，A以微弱优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10404,
+          "completion_tokens": 1522,
+          "total_tokens": 11926
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有少量误译，但B缺失整段内容且段落45/6也有误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语自然，A较生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说活泼语气"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有未翻译日文，两者基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B缺失段落影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 4,
+        "notes": "B缺失段落47是严重格式问题"
+      }
+    },
+    "key_differences": [
+      "B完全缺失段落47的翻译",
+      "B语言风格更口语化活泼，A更书面正式",
+      "A段落6将'全滅'误译为消灭同伴",
+      "A段落96将'移転組'误译为'转学来的'"
+    ],
+    "final_summary": "B在流畅度和轻小说风格把握上明显优于A，语言更自然生动。然而B缺失了段落47的完整翻译，这是不可接受的重大缺陷。尽管A存在一些误译问题，但内容完整性是翻译的基本要求。综合考虑，A以微弱优势胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

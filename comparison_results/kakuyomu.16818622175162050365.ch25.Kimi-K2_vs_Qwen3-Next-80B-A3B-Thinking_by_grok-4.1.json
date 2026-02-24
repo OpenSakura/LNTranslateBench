@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:59.234936",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "815f381ca91e90379c18263aec6d317193acaa7af13c72a829483f534b131ac5",
+    "B": "a5f5a08861215c42b4653288f721beb76ec0b7f799fab41e9000b6df6d7893dd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:42:19.668616",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DKxB4xAwnxplLFmiQ24nk7KlqmO",
+      "judge_response": {
+        "id": "chatcmpl-89DKxB4xAwnxplLFmiQ24nk7KlqmO",
+        "object": "chat.completion",
+        "created": 1768426938,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"魔法少女 部活 勧誘 軽小说 日文\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"魔法少女を養成する学校 部活 轻小说\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"魔道 ルミナスリーグ ダイヤモンドリーグ 魔法少女 小说\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"Pixiv\" Pixiv](https://comic.pixiv.net/works/5316)\n> [🔗 \"Douyin\" TikTok](https://www.douyin.com/search/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E7%BD%91%E7%AB%99%E6%97%A5%E6%96%87%E5%90%8D)\n> [🔗 \"もしも魔法少女が部活動に所属していたら1 / アマノ さんのイラスト - ニコニコ静画 (イラスト)\" Niconico](https://seiga.nicovideo.jp/seiga/im1907933)\n> [🔗 \"魔法少女育成計畫 - 維基百科，自由的百科全書\" Wikipedia](https://zh.wikipedia.org/zh-tw/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%A8%88%E5%8A%83)\n> [🔗 \"魔法少女 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3#:~:text=魔法少女（日语：魔法少女,我来使用这些能力。)\n> [🔗 \"魔法少女育成计划 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%AE%A1%E5%88%92)\n> [🔗 \"《魔法少女I am Magicami》日版宣布10/31 结束营运|Gamekee\" GameKee](https://www.gamekee.com/598130.html)\n> [🔗 \"魔法少女 - 知乎\" Zhihu](https://www.zhihu.com/topic/20020893/intro)\n> [🔗 \"魔法少女网站 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E7%B6%B2%E7%AB%99)\n> [🔗 \"Magical Girl Game works | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax/works/type/=/work_type_category/game/genre/240/page/2?locale=en_US)\n\n> 🔍 **10 results found**\n\n> [🔗 \"魔法少女育成计划（日本远藤浅蜊创作的轻小说...\" Baidu Baike](https://baike.baidu.com/item/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%AE%A1%E5%88%92/2953037)\n> [🔗 \"魔法学园MA（榊一郎创作的轻小说）_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E9%AD%94%E6%B3%95%E5%AD%A6%E5%9B%ADMA/10049786)\n> [🔗 \"魔笔小说 | 轻小说 资源收集\" Mobinovels](https://mobinovels.com/)\n> [🔗 \"魔法禁书目录 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E9%AD%94%E6%B3%95%E7%A6%81%E4%B9%A6%E7%9B%AE%E5%BD%95)\n> [🔗 \"魔法少女育成计划 - 萌娘百科 万物皆可萌的百科全书\" MoeGirl](https://zh.moegirl.org.cn/zh-hans/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%AE%A1%E5%88%92)\n> [🔗 \"魔法学园MA - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%AD%94%E6%B3%95%E5%AD%B8%E5%9C%92MA)\n> [🔗 \"系列 | 魔法少女育成計画 Wiki | Fandom\" Fandom](https://mahoiku.fandom.com/zh/wiki/%E7%B3%BB%E5%88%97)\n> [🔗 \"上课，但学生是魔法少女最新章节全文无弹窗在线阅读-QQ阅读女生现言网\" Qq](https://m.wbook.qq.com/detail/1050214823)\n> [🔗 \"魔法少女育成计划小说在线阅读与TXT电子书下载-远藤浅蜊-其他文库-轻小说文库(www.wenku8.com)\" Wenku8](https://www.wenku8.net/novel/1/1414/index.htm)\n> [🔗 \"魔法科高中的劣等生 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-my/%E9%AD%94%E6%B3%95%E7%A7%91%E9%AB%98%E4%B8%AD%E7%9A%84%E5%8A%A3%E7%AD%89%E7%94%9F)\n\n> 🔍 **10 results found**\n\n> [🔗 \"【魔法少女】おすすめWeb小説一覧を人気順で読もう ...\" Kakuyomu](https://kakuyomu.jp/tags/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3)\n> [🔗 \"我，魔王，魔法少女？目录列表 - 小说频道 - SF轻小说\" SFACG](https://book.sfacg.com/Novel/512906/MainIndex)\n> [🔗 \"魔法少女 小説・SS一覧 - ハーメルン\" Syosetu](https://syosetu.org/search?mode=search&word=%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3)\n> [🔗 \"魔法少女ノ魔女裁判 公式\" Manosaba](https://manosaba.com/)\n> [🔗 \"魔法少女 (まほうしょうじょ)とは【ピクシブ百科事典】 - pixiv\" Pixiv](https://dic.pixiv.net/en/a/Magical%20Girl)\n> [🔗 \"Doujin・[Sort by price] a-moe.com\" A-moe](https://www.a-moe.com/en/doujin/keyword/%5C%5C%5C+%E5%A5%B3%E6%95%99%E5%B8%AB&amp;gt;/17o/%3E%3E%3E)\n> [🔗 \"\"Magic\" in Japanese | Japanese with Anime\" Japanese with Anime](https://www-japanesewithanime-com.translate.goog/2017/05/magic.html?_x_tr_hl=pt-PT&_x_tr_pto=tc&_x_tr_sl=en&_x_tr_tl=pt)\n> [🔗 \"魔法少女育成计划 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%AE%A1%E5%88%92)\n> [🔗 \"魔法少女 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3)\n> [🔗 \"夢想成為魔法少女 - 維基百科，自由的百科全書\" Wikipedia](https://zh.wikipedia.org/zh-tw/%E5%A4%A2%E6%83%B3%E6%88%90%E7%82%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3)\n\n\n这是一个轻小说片段，背景设定在魔法少女养成学校（芙蓉中学），融合校园日常、社团招新（部活勧誘）、魔法竞技（魔道）和棒球等元素。叙述者是第一人称“我”（柚子），带有轻松、吐槽、内省的轻小说典型语气，对话活泼，包含粗口、口语化表达，体现青春期少年的随意与吐槽感。\n\n**整体比较**：\n\nA翻译更注重直译与简洁，忠实原文结构，但有时显得生硬、缺少中文网络轻小说常见的流畅口语感与节奏感。B翻译更注重中文阅读习惯的自然化、活泼化，使用更多网络流行语、俚语（如“牛啊”“关我屁事”“超他妈大的嗓门”“这哥们”），使对话更接地气、幽默，叙述更生动。但B偶尔过度意译或添加强调（如“**”粗口处理），可能略微偏离原文中性语气；A在人名/术语一致性上更稳定（如“东云同学”统一），B有时变体（如“东云同学/东云さん”）。\n\n**逐项详细分析**：\n\n1. **准确性**（意思保留）  \n   A更贴近原文逐字意译，避免添加/删减，忠实度高（如段落1的“部活の大々的な勧誘が許されているのは今日から1週間”→“听说社团招新从今天开始，为期一周”直接明了）。  \n   B有时改写强调语气或添加解释（如段落6加入“我环顾教室，正好看见炭谷君发现...”的主观插入，原文是客观描述；段落46的“クソデカい声”→“超他妈大的嗓门”很贴，但A的“他妈的巨响”也准确）。  \n   整体A略胜，但B在多数段落意思未失真。\n\n2. **流畅性**（中文自然表达）  \n   B明显更胜，使用中文日常口语、网络用语（如“抱成小团体”“搭过话”“牛啊”“咋办呢”“脚踩两条船”），读起来像当代中文轻小说，节奏感强、活泼。  \n   A较书面化、有些句子awkward（如“要说和各个小组的人都处得好的，就是...”有点绕），整体不够顺。\n\n3. **风格/语气**（轻小说叙述/对话）  \n   轻小说对话需可爱、吐槽、口语、带点中二或粗鲁。B更到位：对话粗俗自然（如“关我屁事”“这哥们简直是交流大师”），叙述带吐槽感（如“总感觉这人，好像很懂怎么对付女生，真讨厌啊”）。  \n   A对话偏文雅、克制（如“你的烦恼我不管，没事别搭话行吗”较温和），丢失部分原文的随意与毒舌感。B更贴合轻小说“中二+日常吐槽”风格。\n\n4. **术语/名称一致性**  \n   A一致性更好：人名统一（如“津津木同学”“炭谷君”“奏多”），术语稳定（如“社团”“传单”“魔法少女”）。  \n   B有小瑕疵：有时“同学”变“学长”、 “东云さん”未统一；但“魔道”“ルミナスリーグ”→“光明联盟”等翻译合理一致。A小胜。\n\n5. **连贯性/可读性**  \n   B整体连贯性强，全文读来像一篇完整中文轻小说，节奏流畅、代入感高。  \n   A有些段落跳跃感强、可读性稍逊（如段落19句子太碎）。B胜。\n\n6. **格式/标点符号**  \n   两者标点类似，都使用中文习惯（如「」对话、～语气）。B在粗口/强调上用更多感叹/省略，格式稍活泼；A更规整。基本平手。\n\n**key_differences**:\n- B更口语化、网络化，增强趣味性和轻小说氛围，但偶有过译。\n- A更忠实、简洁，但语气偏平淡，缺少活力。\n- 在对话密集段落（如段落10、15、46、57、71），B的活泼度明显优于A。\n\n**最终判决**：B整体更好。B在流畅性、风格、连贯性上优势明显，更符合中文轻小说读者对“自然有趣”的期待；A准确但稍显生涩。虽非完美，但B更胜一筹。\n\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更忠实原文逐字，B偶有添加/改写但意思基本无误\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文自然、口语强，读来顺畅；A较书面\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B捕捉轻小说吐槽、粗口、活泼语气更好；A偏克制\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"A名称/术语更统一；B小变体但不影响\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B全文节奏连贯、可读性高；A有些碎\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点/格式均规范，B稍活泼\"}\n  },\n  \"key_differences\": [\n    \"B对话更口语、网络化（如‘关我屁事’‘牛啊’），增强轻小说趣味；A偏文雅\",\n    \"B叙述带主观吐槽感更强，代入好；A较客观平淡\",\n    \"A在准确与一致性上微胜，但整体阅读体验B更优\"\n  ],\n  \"final_summary\": \"B翻译在保留准确性的前提下，更好地再现了轻小说的轻松、吐槽、青春口语风格，全文流畅有趣，更适合中文读者；A忠实但稍显生硬。B胜出。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11885,
+          "completion_tokens": 4473,
+          "total_tokens": 16358
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更忠实原文逐字，B偶有添加/改写但意思基本无误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文自然、口语强，读来顺畅；A较书面"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B捕捉轻小说吐槽、粗口、活泼语气更好；A偏克制"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A名称/术语更统一；B小变体但不影响"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B全文节奏连贯、可读性高；A有些碎"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点/格式均规范，B稍活泼"
+      }
+    },
+    "key_differences": [
+      "B对话更口语、网络化（如‘关我屁事’‘牛啊’），增强轻小说趣味；A偏文雅",
+      "B叙述带主观吐槽感更强，代入好；A较客观平淡",
+      "A在准确与一致性上微胜，但整体阅读体验B更优"
+    ],
+    "final_summary": "B翻译在保留准确性的前提下，更好地再现了轻小说的轻松、吐槽、青春口语风格，全文流畅有趣，更适合中文读者；A忠实但稍显生硬。B胜出。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

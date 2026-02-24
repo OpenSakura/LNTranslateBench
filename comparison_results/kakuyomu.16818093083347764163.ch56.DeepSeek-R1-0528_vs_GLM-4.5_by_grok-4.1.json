@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:43.851471",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "1f0d8146b759f267cf05fc793d5027f54b9f506793280499ac2e418cec641fff",
+    "B": "d546b036ef399bf13bcd0b3a3ab3377ada94b82a79577d6ea2eef702737b25ec"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:42:06.166392",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DZHkM8RWE5RfOqyrK9OKYBNPRBp",
+      "judge_response": {
+        "id": "chatcmpl-89DZHkM8RWE5RfOqyrK9OKYBNPRBp",
+        "object": "chat.completion",
+        "created": 1768426925,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 常见中文翻译术语 1LDK テラスハウス ランペイジングダークネス ガンプラ 巨神兵\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"轻小说翻译 暗属性 生活魔法 ダークネス Calm スキルレベル\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"日文轻小说中文翻译 自然流畅例子 \"超絶暇\" \"闲得要死\"\"\n> 📊 **Results requested:** 5\n\n> 🔍 **1 results found**\n\n> [🔗 \"懸命にタスキを繋ぐ - 株式会社リヴレーゾン\" www.liv.co.jp](http://www.liv.co.jp/modules/d3blog/details.php?bid=19)\n\n> 🔍 **5 results found**\n\n> [🔗 \"那些提倡大家爱读书，读好书的人原创 - CSDN博客\" blog.csdn.net](https://blog.csdn.net/u013669912/article/details/141753384)\n> [🔗 \"朝话\" www.sssch.net](http://www.sssch.net/Admin/ckfinder/userfiles/files/shujixiazai/shujijijin/%E6%A2%81%E6%BC%B1%E6%BA%9F%E5%85%A8%E9%9B%86%EF%BC%88%E5%85%AB%E5%8D%B7%EF%BC%89/%E6%9C%9D%E8%AF%9D(%E6%A2%81%E6%BC%B1%E6%BA%9F%E5%85%88%E7%94%9F).pdf)\n> [🔗 \"绿茶捞子被狠辣富哥强养了 - Scribd\" www.scribd.com](https://www.scribd.com/document/918558902/%E7%BB%BF%E8%8C%B6%E6%8D%9E%E5%AD%90%E8%A2%AB%E7%8B%A0%E8%BE%A3%E5%AF%8C%E5%93%A5%E5%BC%BA%E5%85%BB%E4%BA%86-Dmxs-org)\n> [🔗 \"3 MJUFSBUVSF-!IJTUPSZ-!BOE!QIJMPTPQIZ - 文史哲\" www.lhp.sdu.edu.cn](https://www.lhp.sdu.edu.cn/__local/1/A6/2D/BACA1C5EDFCB096EBDAB18AB9FB_80F7E648_6729E8.pdf)\n> [🔗 \"《修辞学发凡》出版七十五周年\" forum.rdfzer.com](https://forum.rdfzer.com/uploads/short-url/9ozPloEQRAXyk2VzoPNYkpMQdDq.pdf)\n\n\n以下是对A和B两个翻译版本的详细比较分析。作为轻小说翻译评判，我重点考察中文轻小说常见的阅读习惯：口语化、轻松幽默、吐槽感强、对话活泼自然，同时保留原作的叙述节奏和世界观设定。\n\n**整体观察**：  \n原文是典型的轻小说第一人称视角，带有自嘲、闲聊式吐槽、日常系幽默。叙述部分偏说明性但带调侃，对话则非常口语化、少女感/中二感强。B在多数地方更贴近当下中文轻小说社区常见的“网络口语化”表达，读起来更轻松、更有“梗”味；A则相对更书面化、规整，但有时显得稍生硬或不够生动。\n\n**逐项详细分析**：\n\n1. **准确性（意思保留）**  \n   两者整体都忠实于原文，几乎没有明显误译或遗漏。  \n   - 少数细微差别：段落5中B把“ほとんどが1LDKだけどね”译为“嘛，不过大部分时间还是在那个1LDK啦”更贴合原文的轻吐槽语气（A的“不过，基本上都是1LDK呢”稍弱）。  \n   - 段落22/26的技能名“ランペイジングダークネス”，A直译“狂暴黑暗”或“ランペイジングダークネス”，B用“狂暴黑暗”/“暗黑暴走”，都可接受，但B的“暗黑暴走”在中文轻小说中更常见、更带夸张感。  \n   - 段落7的“早すぎた巨神兵”指EVA初号机暴走梗，A/B都用了“过早出现的巨神兵”/“提前出现的巨神兵”，准确。  \n   两者准确性都很高，**A略胜在极个别地方更逐字**，但差距微小。\n\n2. **流畅性（中文自然表达）**  \n   B明显更胜。B大量使用“嘛”“啦”“呢”“要死”“热火朝天”“一劲儿”“搞不太清楚”等当下中文网络/轻小说常用语气助词和表达，读起来像母语者写的日常文。  \n   A的表达更中规中矩，如“超级闲”“吵吵闹闹”“徒增杂事”“沉重的影子”，虽然正确，但缺少B那种“活泼跳脱”的轻小说感。  \n   例如段落1：A“超级闲”准确但平，B“闲得要死”更夸张、更符合“超絶暇”的强度和吐槽味。  \n   段落26：B“好空虚”比A“真是空虚”更简洁带情绪。  \n   B在长句处理上也更拆分、更有节奏感（如段落6、25）。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   轻小说核心是“轻松+吐槽+中二/少女感”。B更好捕捉了这种感觉：  \n   - 对话：B的少女对话（如段落9“等等，那条连衣裙不可爱吗？！”、段落14“琳达你也太狡猾了吧！”）更尖叫感、更JK味；A稍文雅。  \n   - 叙述：B的“我只好在甲板上，朝着大海轰出暗黑属性的Lv4技能「狂暴黑暗」”带点自嘲中二感，A的版本更平铺直叙。  \n   - 段落8的“大家的气氛都跟女高中生一样” vs A“大家就像女高中生一样玩得嗨”，B更自然不刻意。  \n   B整体语气更贴轻小说“ネットスラング混じり”的感觉。\n\n4. **术语/名称一致性**  \n   两者都基本一致（如人名、地名、属性名）。  \n   - 细微差异：A统一用“阿尔布雷希特邸/宅”、B混用“宅邸/府”，但不影响。  \n   - 技能/专有名词：A更倾向直译（如“ランペイジングダークネス”保持原样或音译+意译），B更意译/本土化（如“暗黑暴走”）。在中文轻小说中，本土化常见且受欢迎，只要前后一致即可。两者都做到了前后一致，无大问题。\n\n5. **连贯性/可读性**  \n   B的可读性明显更高。句子更短、更口语化、节奏感强，长段叙述（如段落5、6、7、25）B读起来不累，A有些地方句子过长或连接稍生硬（如段落6的连续逗号堆叠）。  \n   B的段落过渡和吐槽插入更自然，整体像一篇连贯的“吐槽日记”。\n\n6. **格式/标点符号**  \n   两者标点使用都规范。  \n   - B在对话中更常使用「」+！？组合，符合中文轻小说对话的“兴奋/惊讶”表现（如段落9、14）。  \n   - A有时用“”而非「」，但整体可接受。  \n   差异不大，但B的标点更活泼。\n\n**总结判断**：  \nB在流畅性、风格语气、连贯性、可读性上全面占优，更符合现代中文轻小说读者的阅读预期和“爽快感”。A准确且稳重，但缺少轻小说所需的“活泼”和“网络感”。整体而言，B更优秀。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者意思保留都很到位，几乎无误译，差距极小\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B使用大量自然口语、网络化表达，读来更顺；A稍显书面\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地保留了轻小说吐槽、少女感、中二幽默的语气，A偏平稳\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"两者一致性均好，B部分本土化处理更常见于中文轻小说圈\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B节奏更好，长句拆分自然，可读性更强\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B对话标点更活泼，符合轻小说风格\"}\n  },\n  \"key_differences\": [\n    \"B更口语化、网络化（如‘闲得要死’‘热火朝天’‘一劲儿’），A更规整书面\",\n    \"B对话少女感/吐槽感更强（如‘等等，那条连衣裙不可爱吗？！’），A稍文雅\",\n    \"B长段叙述节奏更好、拆句自然，A有些地方连接稍硬\",\n    \"技能/效果描述B更带夸张趣味（如‘暗黑暴走’），A更直译\"\n  ],\n  \"final_summary\": \"B整体更符合中文轻小说读者的阅读习惯和期待，语气活泼、流畅自然、吐槽感强，虽然A准确稳重，但B在轻小说核心的‘有趣’和‘轻松’上明显胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10138,
+          "completion_tokens": 3207,
+          "total_tokens": 13345
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者意思保留都很到位，几乎无误译，差距极小"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B使用大量自然口语、网络化表达，读来更顺；A稍显书面"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地保留了轻小说吐槽、少女感、中二幽默的语气，A偏平稳"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者一致性均好，B部分本土化处理更常见于中文轻小说圈"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B节奏更好，长句拆分自然，可读性更强"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B对话标点更活泼，符合轻小说风格"
+      }
+    },
+    "key_differences": [
+      "B更口语化、网络化（如‘闲得要死’‘热火朝天’‘一劲儿’），A更规整书面",
+      "B对话少女感/吐槽感更强（如‘等等，那条连衣裙不可爱吗？！’），A稍文雅",
+      "B长段叙述节奏更好、拆句自然，A有些地方连接稍硬",
+      "技能/效果描述B更带夸张趣味（如‘暗黑暴走’），A更直译"
+    ],
+    "final_summary": "B整体更符合中文轻小说读者的阅读习惯和期待，语气活泼、流畅自然、吐槽感强，虽然A准确稳重，但B在轻小说核心的‘有趣’和‘轻松’上明显胜出。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

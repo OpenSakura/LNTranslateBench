@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:05:03.735351",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.GLM-4.5.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "dc876e787e2aa5c294a7b4d128bf36d9ad2d5bd68e9ce7f8cfb2aa456e439478",
+    "B": "c2833da00c58157bd11c702007563eb43d2cd4ca583998fea2b2ca8cc08620d5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:05:59.355236",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4e4b14ad-843f-467d-b25d-71fa1315222c",
+      "judge_response": {
+        "id": "4e4b14ad-843f-467d-b25d-71fa1315222c",
+        "object": "chat.completion",
+        "created": 1768431959,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落1**: A将\"浮かぶ\"译为\"恍惚的\"不够准确，B的\"漂浮的\"更贴近字面但略显生硬。B的\"法定假日\"比A的\"节假日\"更准确。\n- **段落7**: B多加了\"也\"字，原文无此意。\n- **段落15**: A省略了\"さん\"的敬称，B的\"希罗小姐\"更忠实。\n- **段落86**: \"ノンデリゴリラ女\"(不体贴的大猩猩女)，A的\"不懂女人心\"偏离原意，B的\"粗鲁的\"也有偏差但更接近。\n- **段落92**: \"スパダリモドキ\"（假冒完美男友），A的\"冒牌超级巨星\"误译，B的\"装腔作势\"也不准确但语境更通顺。\n- **段落100**: \"数刻\"A译为\"一会儿\"偏短，B译为\"好几个钟头\"偏长，两者都不够准确。\n\n### 2. 流畅性\n- A整体更口语化，如段落1\"舍不得离开被窝\"\n- B的衔接更自然，如段落34\"照这样下去不妙\"\n- 两者基本流畅，B略胜\n\n### 3. 风格/语气\n- A的称呼保持一致：\"希罗酱\"\"雪莉酱\"\n- B段落112突然变成\"小雪莉\"\"小希罗\"，风格跳跃\n- A更好地保持了轻小说的亲昵感\n\n### 4. 术语/名称一致性\n- A始终保持\"希罗酱/艾玛/雪莉酱\"\n- B有时\"雪莉\"有时\"小雪莉\"，不统一\n- A更一致\n\n### 5. 连贯性/可读性\n- 两者都较通顺\n- B段落12、13、24等缺少句尾标点，影响阅读\n\n### 6. 格式/标点符号\n- A段落8-10、13-16等处使用\"\"引号，与原文｢｣不一致\n- B段落49-60等也有类似问题，但整体更统一\n- B有多处句末缺少标点（段落12、13、24等）\n\n---\n\n## 亮点对比\n\n| 方面 | 翻译A | 翻译B |\n|------|-------|-------|\n| 段落66 | \"色恋沙汰に疎い\"→\"不懂风月\"（雅） | \"不懂风情\"（稍逊） |\n| 段落34 | 表达更完整 | 更简洁自然 |\n| 称呼统一性 | 一致 | 不一致 |\n| 格式 | 引号有混用 | 句末标点缺失 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有小错，A在敬称处理上略有疏漏，B在某些术语上有误译\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者都较流畅，A更口语化，B衔接更自然\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A称呼一致性好，保持轻小说风格；B称呼不统一影响风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A名称统一，B的'小希罗''小雪莉'与原文风格不符\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者都可读，B句末标点缺失影响连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A引号混用，B标点缺失问题更多\"}\n  },\n  \"key_differences\": [\n    \"称呼一致性：A保持'酱'后缀统一，B混用'小XX'与直呼名字\",\n    \"标点格式：B多处句末缺少标点\",\n    \"段落92术语：两者都未准确翻译'スパダリモドキ'\",\n    \"整体风格：A更贴近轻小说亲昵语气\"\n  ],\n  \"final_summary\": \"两份翻译质量接近，但A在术语一致性和格式规范上略胜。B虽然在某些句子的自然度上稍好，但称呼不统一和标点缺失问题较明显。A整体更稳定可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14991,
+          "completion_tokens": 2574,
+          "total_tokens": 17565
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有小错，A在敬称处理上略有疏漏，B在某些术语上有误译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者都较流畅，A更口语化，B衔接更自然"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A称呼一致性好，保持轻小说风格；B称呼不统一影响风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A名称统一，B的'小希罗''小雪莉'与原文风格不符"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者都可读，B句末标点缺失影响连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A引号混用，B标点缺失问题更多"
+      }
+    },
+    "key_differences": [
+      "称呼一致性：A保持'酱'后缀统一，B混用'小XX'与直呼名字",
+      "标点格式：B多处句末缺少标点",
+      "段落92术语：两者都未准确翻译'スパダリモドキ'",
+      "整体风格：A更贴近轻小说亲昵语气"
+    ],
+    "final_summary": "两份翻译质量接近，但A在术语一致性和格式规范上略胜。B虽然在某些句子的自然度上稍好，但称呼不统一和标点缺失问题较明显。A整体更稳定可靠。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

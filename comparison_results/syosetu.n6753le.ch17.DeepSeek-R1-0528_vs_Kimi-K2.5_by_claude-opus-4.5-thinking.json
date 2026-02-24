@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:24:17.624045",
+  "sample": "syosetu.n6753le.ch17",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6753le.ch17.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6753le.ch17.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/syosetu.n6753le.ch17.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2afa7564b8a9514c750f35e65d3d70d2bd5288fd6b1f160d0d59e89ce5f975be",
+    "A": "cfe2868e39e1c43108d7a824296859844bd78cdc75309fc0a7d205b422ae76c0",
+    "B": "2702b6fc1549957564cac4cce6f693c6a511c6a3f16a1ce9d106fad724a5c660"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:25:04.284910",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b0980e68-b68b-4c1c-916c-6fcfe760fa8f",
+      "judge_response": {
+        "id": "b0980e68-b68b-4c1c-916c-6fcfe760fa8f",
+        "object": "chat.completion",
+        "created": 1769610304,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题识别\n\n**翻译A的严重问题：**\n- 段落18：大段日文未翻译（「があって、魔道具で沸かされた汤が傍に备え付けてある...」）\n- 段落74-77：完全未翻译，保留原文日语\n- 术语\"転移者\"误译为\"转生者\"（転移=转移，非转生）\n- \"ロータス\"译为\"莲花\"而非音译地名\n\n**翻译B的问题：**\n- 多处保留日文\"浄化\"而非译为\"净化\"（段落2、4、8、11、34）\n- 段落44：\"ワイバーン\"译为\"飞蛇\"，与段落26的\"双足飞龙\"不一致\n\n### 各段落对比亮点\n\n| 段落 | 优势方 | 原因 |\n|------|--------|------|\n| 14 | B | \"洛塔斯\"作为地名更准确，\"没有根深蒂固的泡澡文化\"表达更自然 |\n| 18 | B | A严重失误，留有大段日文 |\n| 25 | B | \"牵连的大片伤疤\"更准确传达\"引き連れた\" |\n| 33 | B | \"又干又涩\"比\"嘎吱嘎吱\"更符合中文表达 |\n| 54 | B | \"多亏了艾利克大人\"更贴合原文\"エリークさまさま\" |\n| 74-77 | B | A完全未翻译 |\n| 82 | B | \"一直超级麻烦艾利克\"比\"受到了极大照顾\"更贴合原意 |\n\n### 流畅度对比\n- B整体更口语化，符合轻小说风格（如\"好歹\"\"来着\"\"搞不定\"）\n- A部分表达略显生硬（如\"是不需要全裸的方式\"）\n\n### 术语一致性\n- A的\"催化剂\"vs B的\"触媒\"：B更贴近原文术语\n- A错译\"转生者\"，B正确使用\"转移者\"\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 4, \"B\": 8, \"notes\": \"A有多处未翻译段落(18,74-77)，且误译転移者为转生者；B术语保留日文但整体准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语化自然，A部分表达生硬且未翻译段落严重破坏流畅度\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说叙事风格，对话更自然生动\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A误译转生者、莲花；B保留日文浄化但触媒、转移者等更准确\"},\n    \"coherence\": {\"A\": 4, \"B\": 8, \"notes\": \"A未翻译段落严重影响连贯性；B飞龙/飞蛇不一致但整体连贯\"},\n    \"formatting\": {\"A\": 3, \"B\": 9, \"notes\": \"A多处保留日文原文属严重格式问题；B标点规范\"}\n  },\n  \"key_differences\": [\n    \"A存在严重的未翻译问题（段落18、74-77保留日文原文）\",\n    \"A将転移者误译为转生者，B正确译为转移者\",\n    \"B多处保留日文「浄化」未译为「净化」\",\n    \"B整体语言更口语化、更符合轻小说风格\",\n    \"A将地名ロータス意译为莲花，B音译为洛塔斯更合理\"\n  ],\n  \"final_summary\": \"翻译B整体优于翻译A。A存在致命缺陷——多处段落完全未翻译保留日文原文，这是不可接受的翻译失误。此外A还有术语误译问题。虽然B存在保留日文「浄化」及ワイバーン译名不一致等小问题，但整体翻译完整、流畅，更符合轻小说的叙事风格，故B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9967,
+          "completion_tokens": 2231,
+          "total_tokens": 12198
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 8,
+        "notes": "A有多处未翻译段落(18,74-77)，且误译転移者为转生者；B术语保留日文但整体准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语化自然，A部分表达生硬且未翻译段落严重破坏流畅度"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说叙事风格，对话更自然生动"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A误译转生者、莲花；B保留日文浄化但触媒、转移者等更准确"
+      },
+      "coherence": {
+        "A": 4,
+        "B": 8,
+        "notes": "A未翻译段落严重影响连贯性；B飞龙/飞蛇不一致但整体连贯"
+      },
+      "formatting": {
+        "A": 3,
+        "B": 9,
+        "notes": "A多处保留日文原文属严重格式问题；B标点规范"
+      }
+    },
+    "key_differences": [
+      "A存在严重的未翻译问题（段落18、74-77保留日文原文）",
+      "A将転移者误译为转生者，B正确译为转移者",
+      "B多处保留日文「浄化」未译为「净化」",
+      "B整体语言更口语化、更符合轻小说风格",
+      "A将地名ロータス意译为莲花，B音译为洛塔斯更合理"
+    ],
+    "final_summary": "翻译B整体优于翻译A。A存在致命缺陷——多处段落完全未翻译保留日文原文，这是不可接受的翻译失误。此外A还有术语误译问题。虽然B存在保留日文「浄化」及ワイバーン译名不一致等小问题，但整体翻译完整、流畅，更符合轻小说的叙事风格，故B胜出。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

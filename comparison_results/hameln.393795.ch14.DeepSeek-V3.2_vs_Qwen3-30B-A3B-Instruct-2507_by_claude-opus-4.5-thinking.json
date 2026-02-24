@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:16:29.448758",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "cc42f728d1e4eb552fb78b32b2da1df9b6e287a5cfc8be24613ab641c9487375",
+    "B": "8d0eb3cacd3eb93013a4132f36da71f1a41292a24f66613684f073749be5af9b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:17:21.315412",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "40c9c6ca-bfbe-4457-95ef-dc2b1acdd05b",
+      "judge_response": {
+        "id": "40c9c6ca-bfbe-4457-95ef-dc2b1acdd05b",
+        "object": "chat.completion",
+        "created": 1768421840,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 准确性分析\n\n**段落7**: 「私が作らせた」\n- A: \"我制造的\" - 丢失使役态，变成自己制造\n- B: \"我所下令制造的\" - 准确保留使役含义 ✓\n\n**段落9**: 「一刻ごとに」\n- A: \"每过一刻\" - 正确，一刻约为15分钟的传统时间单位 ✓\n- B: \"每分钟\" - 误译，一刻≠分钟\n\n**段落25**: 「公都」\n- A: \"帝都\" - 误译，公都是公爵领首府，非帝都\n- B: \"公都\" - 正确 ✓\n\n**段落42**: 「脱進」\n- A: \"脱进\" - 直译，不是钟表专业术语\n- B: \"擒纵\" - 正确的钟表术语 ✓\n\n**段落80**: 「用意周到にも姫様が用意した」\n- A: 正确理解为公主周到准备\n- B: \"周密地看到\" - 句法理解错误\n\n### 流畅性分析\n\nA版整体读起来更自然流畅，如段落58的\"我们自然地抓住了\"比B的\"他们抓住了\"更通顺（虽然B实际上人称混乱）。\n\n### 风格/称谓一致性\n\n- A: 统一用\"小姐\"称呼公主 - 略显随意\n- B: 统一用\"公主殿下\" - 更符合轻小说贵族设定 ✓\n- A: 对话统一使用「」\n- B: 对话使用\"\" - 两者都可接受\n\n### 格式问题\n\n两者格式基本一致，无明显问题。\n\n---\n\n```json\n{\n  \"winner\": \"tie\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A误译公都→帝都、丢失使役态；B误译一刻→分钟、段落80句法错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体更自然流畅，B部分表达略显生硬如段落50\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的'公主殿下'称谓更符合轻小说贵族设定，A的'小姐'略显随意\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"B的'擒纵'等钟表专业术语更准确，A的'脱进'不专业\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A的叙述连贯性略优，B段落80理解偏差影响连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范，无明显问题\"}\n  },\n  \"key_differences\": [\n    \"公都vs帝都：B正确保留原文地名，A误译\",\n    \"一刻vs分钟：A正确理解时间单位，B误译\",\n    \"使役态处理：B更准确（我下令制造vs我制造）\",\n    \"专业术语：B的擒纵比A的脱进更专业\",\n    \"称谓风格：B的公主殿下比A的小姐更贴合设定\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。A在流畅性和可读性上略胜，但存在地名误译(公都→帝都)和使役态丢失的问题；B在专业术语、称谓风格和部分关键细节上更准确，但一刻→分钟的误译和部分表达略显生硬。总体而言，两者质量相当，权衡后判定为平局。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12259,
+          "completion_tokens": 2175,
+          "total_tokens": 14434
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "tie",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A误译公都→帝都、丢失使役态；B误译一刻→分钟、段落80句法错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体更自然流畅，B部分表达略显生硬如段落50"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的'公主殿下'称谓更符合轻小说贵族设定，A的'小姐'略显随意"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的'擒纵'等钟表专业术语更准确，A的'脱进'不专业"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的叙述连贯性略优，B段落80理解偏差影响连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范，无明显问题"
+      }
+    },
+    "key_differences": [
+      "公都vs帝都：B正确保留原文地名，A误译",
+      "一刻vs分钟：A正确理解时间单位，B误译",
+      "使役态处理：B更准确（我下令制造vs我制造）",
+      "专业术语：B的擒纵比A的脱进更专业",
+      "称谓风格：B的公主殿下比A的小姐更贴合设定"
+    ],
+    "final_summary": "两个翻译各有优劣。A在流畅性和可读性上略胜，但存在地名误译(公都→帝都)和使役态丢失的问题；B在专业术语、称谓风格和部分关键细节上更准确，但一刻→分钟的误译和部分表达略显生硬。总体而言，两者质量相当，权衡后判定为平局。"
+  },
+  "outcome": "tie",
+  "winner_model": null
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:08:01.232700",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "a94d27f64189b9ec46b4713ac90138285410aba96344bbfa527dffaed730b481",
+    "B": "b7c63146aeccb8a0181cb734a44165ebdac68e5ca9c35742a5029fd3d3c86510"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:08:51.618122",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b9d94eda-005f-414f-9eac-d9dddf8499cd",
+      "judge_response": {
+        "id": "b9d94eda-005f-414f-9eac-d9dddf8499cd",
+        "object": "chat.completion",
+        "created": 1768421330,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n\n**关键差异：**\n- 段落3「アウルベア」：A译\"奥斯尔贝亚\"（音译），B译\"枭熊\"（意译owl+bear）。B更符合该奇幻生物的命名逻辑。\n- 段落102「ボア」：A译\"蟒蛇\"，B译\"野猪\"。根据上下文「ウリボア」（幼猪）、「毛皮、肉、牙」，**B正确，A严重误译**。\n- 段落82：A译\"雪藤、冰藤\"，B译\"雪巨像或冰巨像\"，两者都误译了トレント，但原文明确提到スノートレント/アイストレント，应为雪树精/冰树精。\n- 段落74「ギャロップ」：A音译\"加洛普\"，B意译\"疾驰\"，B更佳。\n\n### 2. 流畅性分析\n\n- B整体句式更简洁紧凑：\"几乎随处可见\"vs\"基本上到处都能见到\"\n- A有时略显冗余：\"偏好树木繁茂的地方，因此多出没于山林地带\"\n\n### 3. 风格/语气分析\n\n- 段落67「バンビちゃん」：A\"邦比\"，B\"斑比宝宝\"。B更口语化可爱，符合轻小说风格。\n- 段落34/43：B用\"这边的家伙\"翻译\"こっち\"，更有叙述感。\n\n### 4. 术语一致性\n\n- トレント系：A不统一（树人/藤/巨树），B相对统一（树精）\n- バーニィ：A\"巴尼\"，B\"巴尼兔\"，B更明确\n- 上位種：两者都处理为\"上位种\"，一致\n\n### 5. 连贯性分析\n\n段落93：A译\"无头骑士疾驰\"与段落74的\"杜拉汉加洛普\"不一致；B保持\"杜拉汉疾驰\"一致。\n\n### 6. 格式/标点\n\n两者基本相当，规范使用中文标点。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A将ボア误译为蟒蛇是致命错误；B在トレント系也有小问题但整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B句式更简洁自然，A偶有冗余表达\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的口语化处理更贴合轻小说风格，如'这家伙''斑比宝宝'\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A的奇幻术语处理不够统一，部分音译不当；B整体更一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落74和93对同一术语译法不一致\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式标点规范，基本持平\"}\n  },\n  \"key_differences\": [\n    \"ボア：A误译为蟒蛇，B正确译为野猪\",\n    \"アウルベア：A音译，B意译为枭熊更合适\",\n    \"トレント系术语：B译为树精更统一，A不一致\",\n    \"ギャロップ：B意译疾驰优于A的音译\",\n    \"整体风格：B更符合轻小说的轻松叙述感\"\n  ],\n  \"final_summary\": \"B在准确性上有明显优势，特别是ボア的正确翻译避免了A的重大错误。B的奇幻术语处理更为统一，风格也更贴近轻小说的叙述语感。虽然B在段落82也有误译，但整体质量明显优于A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12040,
+          "completion_tokens": 2046,
+          "total_tokens": 14086
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A将ボア误译为蟒蛇是致命错误；B在トレント系也有小问题但整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B句式更简洁自然，A偶有冗余表达"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的口语化处理更贴合轻小说风格，如'这家伙''斑比宝宝'"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A的奇幻术语处理不够统一，部分音译不当；B整体更一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落74和93对同一术语译法不一致"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式标点规范，基本持平"
+      }
+    },
+    "key_differences": [
+      "ボア：A误译为蟒蛇，B正确译为野猪",
+      "アウルベア：A音译，B意译为枭熊更合适",
+      "トレント系术语：B译为树精更统一，A不一致",
+      "ギャロップ：B意译疾驰优于A的音译",
+      "整体风格：B更符合轻小说的轻松叙述感"
+    ],
+    "final_summary": "B在准确性上有明显优势，特别是ボア的正确翻译避免了A的重大错误。B的奇幻术语处理更为统一，风格也更贴近轻小说的叙述语感。虽然B在段落82也有误译，但整体质量明显优于A。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

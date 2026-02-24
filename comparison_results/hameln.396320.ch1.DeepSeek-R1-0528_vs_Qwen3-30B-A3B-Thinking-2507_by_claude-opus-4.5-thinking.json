@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:19:59.884092",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "7af4221a5bb67d65a85331e119001be1cd09846832e21e287c194594b50d42e8",
+    "B": "f296d327e711990d52f852c58c451a8994c43640b5ba971c104155ef8e7e8f28"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:20:39.310264",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "30b2f3cc-eb8c-4c7b-951e-c11d4d2bdf9c",
+      "judge_response": {
+        "id": "30b2f3cc-eb8c-4c7b-951e-c11d4d2bdf9c",
+        "object": "chat.completion",
+        "created": 1768422039,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n\n**A的问题：**\n- 段落18：\"再多也用不完\"与原文\"どれだけあっても足りません\"意思相反（原意是\"再多也不够用\"）\n- 段落59：\"我是隶属于我创建的组织的干部\"主语错误，应该是\"她是\"\n\n**B的问题：**\n- 段落13-14：保留日文\"ダンジョン\"未翻译\n- 段落42：出现明显错字\"场景母\"\n\n### 2. 流畅性分析\n\nA整体语言较为书面化、正式，B更口语化。例如：\n- 段落37：A\"头都要晕了\" vs B\"脑子快要坏掉了\"，B更贴近原文\"頭が可笑しくなりそう\"的意味\n- 段落15：B\"不干掉怪物就弄不到手\"更生动\n\n### 3. 风格/语气\n\n两者都保持了轻小说的叙述风格，但B在某些对话感更强的段落表现略好。\n\n### 4. 术语一致性\n\n- A：统一使用\"地下城\"/\"迷宫\"\n- B：混用\"地下城\"/\"迷宫\"/\"地牢\"，且有未翻译的日文\n\n### 5. 格式/标点\n\n- A使用中文引号\"\"\n- B使用日文引号「」\n- 对于中文译文，A的选择更规范\n\n### 6. 关键差异\n\n| 段落 | A | B | 判断 |\n|------|---|---|------|\n| 18 | 意思错误 | 正确 | B胜 |\n| 59 | 主语错误 | 正确 | B胜 |\n| 13-14 | 正确翻译 | 保留日文 | A胜 |\n| 42 | 正确 | 有错字 | A胜 |\n\n---\n\n```json\n{\n  \"winner\": \"tie\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A有意思反转错误(段18)和主语错误(段59)；B有未翻译术语和错字\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"A较书面，B较口语，各有优势\"},\n    \"style\": {\"A\": 8, \"B\": 8, \"notes\": \"两者都保持了轻小说风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A术语一致；B混用且有未翻译日文\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A连贯性稍好；B段42错字影响阅读\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A使用规范中文引号；B使用日文引号\"}\n  },\n  \"key_differences\": [\n    \"A段18意思反转（用不完→不够用），B正确\",\n    \"A段59主语错误（我→她），B正确\",\n    \"B段13-14保留日文ダンジョン未翻译\",\n    \"B段42有错字「场景母」\",\n    \"A使用中文引号，B使用日文引号\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。A在术语一致性和格式规范方面表现更好，但存在关键性的意思错误（段18）和主语错误（段59）。B在这些关键段落翻译正确，口语感更自然，但存在未翻译术语、错字和格式不规范的问题。综合来看，两者的错误类型不同但严重程度相当，整体质量接近，判定为平局。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12186,
+          "completion_tokens": 1748,
+          "total_tokens": 13934
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "tie",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有意思反转错误(段18)和主语错误(段59)；B有未翻译术语和错字"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "A较书面，B较口语，各有优势"
+      },
+      "style": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者都保持了轻小说风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A术语一致；B混用且有未翻译日文"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A连贯性稍好；B段42错字影响阅读"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A使用规范中文引号；B使用日文引号"
+      }
+    },
+    "key_differences": [
+      "A段18意思反转（用不完→不够用），B正确",
+      "A段59主语错误（我→她），B正确",
+      "B段13-14保留日文ダンジョン未翻译",
+      "B段42有错字「场景母」",
+      "A使用中文引号，B使用日文引号"
+    ],
+    "final_summary": "两个翻译各有优劣。A在术语一致性和格式规范方面表现更好，但存在关键性的意思错误（段18）和主语错误（段59）。B在这些关键段落翻译正确，口语感更自然，但存在未翻译术语、错字和格式不规范的问题。综合来看，两者的错误类型不同但严重程度相当，整体质量接近，判定为平局。"
+  },
+  "outcome": "tie",
+  "winner_model": null
+}

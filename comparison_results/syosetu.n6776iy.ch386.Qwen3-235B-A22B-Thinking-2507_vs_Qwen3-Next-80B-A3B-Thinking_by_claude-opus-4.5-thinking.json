@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:17:47.559264",
+  "sample": "syosetu.n6776iy.ch386",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6776iy.ch386.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6776iy.ch386.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/syosetu.n6776iy.ch386.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2bb7195d7ec1f474ffb77e11e9912b818e91c49fbc1fcd84cbf2ad9cb25860ec",
+    "A": "de454346aff0fffe51d71a2c3585c448c6b65f1c45066e5fda72e19076eb0b2c",
+    "B": "eb64a59302b572b8191323f995b9b66b43c5952247215e444a1a2e414d1dbac3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:18:33.627928",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7d41c9e8-8230-41ff-9a13-66ed561fd395",
+      "judge_response": {
+        "id": "7d41c9e8-8230-41ff-9a13-66ed561fd395",
+        "object": "chat.completion",
+        "created": 1768432712,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性分析：**\n- 段落2：\"後、お願い\"表示\"之后拜托了\"，B更准确；A译为\"等一下\"偏离原意\n- 段落9：B的\"像把体重托付一样\"比A的\"像把体重交给马克\"更自然准确\n- 段落19、21、22：A错误地将叙述段落加上引号变成对话\n- 段落59：\"十五の少女\"指\"十五岁的少女\"，A误译为\"十五个少女\"，B也有类似问题\n- 段落29：\"転移者\"A译\"转移者\"更准确，B译\"转生者\"有误\n\n**流畅性分析：**\n- A整体口语化程度高，情感对话更有张力（如段落63、64的激烈对质）\n- B部分表达略显生硬，但叙述部分较为稳定\n- 段落67：A的处理更有气势，B稍显拖沓\n\n**风格分析：**\n- A的对话语气更符合轻小说中激烈对峙的场景\n- B偏书面化，部分地方失去了原文的情绪冲击力\n\n**格式问题：**\n- A在段落19、21、22、70、71错误地将旁白变成对话（加了引号）\n- B全篇对话缺少结束引号\"」\"，格式严重残缺\n- 段落77：A保留了日文\"うん\"未翻译，这是明显错误\n\n**术语一致性：**\n- A：马克/马尔克混用；B：马克/马尔克也有混用\n- 两者对\"黒幕\"的翻译都一致\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A将叙述误为对话；B部分词汇翻译有误，两者各有失误\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A口语化自然，情感表达到位；B部分表达生硬\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说激烈对话风格；B偏书面化\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者人名均有不一致问题\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体可读，但各有问题影响连贯\"},\n    \"formatting\": {\"A\": 5, \"B\": 3, \"notes\": \"A将旁白误加引号，段落77未翻译；B全篇缺少结束引号，严重影响阅读\"}\n  },\n  \"key_differences\": [\n    \"B全篇对话缺少结束引号，格式严重残缺\",\n    \"A多处将叙述误加引号变成对话\",\n    \"A口语化程度高，情感传递更到位\",\n    \"段落2 B更准确理解原意\",\n    \"段落77 A保留日文未翻译\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在流畅性和风格上更胜一筹，情感对话的张力更强，但存在将叙述误为对话、部分未翻译的问题。B在某些地方更准确，但格式问题严重（全篇缺少结束引号），流畅度也不如A。综合考虑轻小说的阅读体验，A的表现略优，但需修正格式错误。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9499,
+          "completion_tokens": 1913,
+          "total_tokens": 11412
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A将叙述误为对话；B部分词汇翻译有误，两者各有失误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A口语化自然，情感表达到位；B部分表达生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说激烈对话风格；B偏书面化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者人名均有不一致问题"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体可读，但各有问题影响连贯"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 3,
+        "notes": "A将旁白误加引号，段落77未翻译；B全篇缺少结束引号，严重影响阅读"
+      }
+    },
+    "key_differences": [
+      "B全篇对话缺少结束引号，格式严重残缺",
+      "A多处将叙述误加引号变成对话",
+      "A口语化程度高，情感传递更到位",
+      "段落2 B更准确理解原意",
+      "段落77 A保留日文未翻译"
+    ],
+    "final_summary": "两译本各有优劣。A在流畅性和风格上更胜一筹，情感对话的张力更强，但存在将叙述误为对话、部分未翻译的问题。B在某些地方更准确，但格式问题严重（全篇缺少结束引号），流畅度也不如A。综合考虑轻小说的阅读体验，A的表现略优，但需修正格式错误。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

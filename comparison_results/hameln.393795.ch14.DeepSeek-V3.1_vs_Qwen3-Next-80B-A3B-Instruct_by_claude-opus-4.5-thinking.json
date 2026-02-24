@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:16:16.393680",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "f51a17f3a68d8b8243ed03b450e8370693d6009e668b2f9ebea1f160b1d92648",
+    "B": "9e5bf82766b6729a6b4a0f252e081058f401c803a52d2643c795136078283a82"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:17:15.619108",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "8062c045-e985-4029-a668-450b28cd4a0d",
+      "judge_response": {
+        "id": "8062c045-e985-4029-a668-450b28cd4a0d",
+        "object": "chat.completion",
+        "created": 1768421835,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**段落4**: A\"将士\"比B\"士卒\"更准确，\"将兵\"指将领和士兵。\n\n**段落13**: A\"分秒级\"不够准确，原文\"分刻み\"是\"分钟级\"，B\"精确到分钟\"更准确。\n\n**段落50**: B出现严重视角错误，将第三人称叙述变成第一人称\"我会明确地表扬\"。\n\n**段落53**: B使用\"他\"指代公主（女性角色），性别代词错误。\n\n**段落54**: A出现致命错误`@@@LUA_PLACEHOLDER@@@`，完全丢失翻译内容。\n\n### 流畅性分析\n\nB整体更口语化自然：\n- 段落12: B\"根本不用想，完全没戏\"比A\"想都不用想就令人绝望\"更生动\n- 段落16: B\"搬那玩意儿也够呛的\"更自然\n- 段落78: B\"白费劲\"比A\"无处发泄\"更符合口语\n\n### 风格/语气分析\n\nB更符合轻小说叙事风格，对话更活泼。但A在正式叙述段落更稳重。\n\n### 格式问题\n\n- A: 对话符号使用不一致（有时「」有时\"\"），段落54有占位符错误\n- B: 段落25、67-70等处对话引号缺失或不一致\n\n### 术语一致性\n\n两者都保持了较好的术语一致性，如\"摆钟\"、\"帝都\"、\"公都\"等。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A段落54有占位符致命错误；B段落50、53有视角/代词错误，但A的错误更严重\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，对话更生动流畅\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说风格，语气把握更好\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者术语处理基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者连贯性相当，都有个别问题\"},\n    \"formatting\": {\"A\": 5, \"B\": 6, \"notes\": \"A有占位符严重错误，B引号不一致但问题较轻\"}\n  },\n  \"key_differences\": [\n    \"A段落54出现@@@LUA_PLACEHOLDER@@@占位符错误，完全丢失翻译\",\n    \"B段落50、53出现视角和性别代词错误\",\n    \"B整体语言更口语化、更符合轻小说风格\",\n    \"A在正式叙述部分更稳重准确\",\n    \"两者引号格式都有不一致问题\"\n  ],\n  \"final_summary\": \"两个翻译各有优缺点。A在段落54出现致命的占位符错误导致内容完全丢失，这是无法接受的重大缺陷。B虽然在段落50、53有视角和代词错误，但整体流畅度和风格把握更好，更符合轻小说的叙事特点。综合考虑，B的整体质量略胜，但由于B也存在明显错误，置信度不高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12063,
+          "completion_tokens": 2066,
+          "total_tokens": 14129
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A段落54有占位符致命错误；B段落50、53有视角/代词错误，但A的错误更严重"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，对话更生动流畅"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说风格，语气把握更好"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者术语处理基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者连贯性相当，都有个别问题"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 6,
+        "notes": "A有占位符严重错误，B引号不一致但问题较轻"
+      }
+    },
+    "key_differences": [
+      "A段落54出现@@@LUA_PLACEHOLDER@@@占位符错误，完全丢失翻译",
+      "B段落50、53出现视角和性别代词错误",
+      "B整体语言更口语化、更符合轻小说风格",
+      "A在正式叙述部分更稳重准确",
+      "两者引号格式都有不一致问题"
+    ],
+    "final_summary": "两个翻译各有优缺点。A在段落54出现致命的占位符错误导致内容完全丢失，这是无法接受的重大缺陷。B虽然在段落50、53有视角和代词错误，但整体流畅度和风格把握更好，更符合轻小说的叙事特点。综合考虑，B的整体质量略胜，但由于B也存在明显错误，置信度不高。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:31:00.481218",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "d9fc550884fc3d688767cafe80f4a7d630334cd4231a0e12afd2e108e3ca9966",
+    "B": "8a101186badf1f1a1a4826feb3eaad9b46be802d360cca483444157dbb209a7b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:31:37.876420",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a2193086-0b17-484f-a000-bd3d20896f50",
+      "judge_response": {
+        "id": "a2193086-0b17-484f-a000-bd3d20896f50",
+        "object": "chat.completion",
+        "created": 1769610697,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 1. 准确性分析\n\n**关键差异：**\n- **段落2**：原文\"早坂透――トール\"，A译为\"透——早坂透\"顺序颠倒；B译为\"早坂透——透\"正确\n- **段落5**：「焼きそばパン」A译\"炒面面包\"正确；B译\"烤面条面包\"错误\n- **段落6**：「現場ニキ」A译\"现场哥/老哥\"正确（ニキ=兄贵缩写）；B译\"现场妮琪\"误解为人名\n- **段落10**：「袴姿」A译\"穿袴\"准确；B译\"穿裤裙\"略有偏差\n- **段落36**：「直方体」A译\"长方体\"正确；B译\"立方体\"不准确\n\n**人称视角重大问题**：\n- 原文为第三人称叙述，A保持一致\n- B在段落10、20、22、52等处突然切换为第一人称\"我\"，属于严重翻译错误\n\n### 2. 流畅性分析\n\n- B在口语化表达上更自然（如\"话说回来\"\"司空见惯\"\"背锅\"）\n- A较为书面化，但整体通顺\n- B段落46突然将\"トール\"译为\"托尔\"，与全文\"透\"不一致\n\n### 3. 风格/语气分析\n\n- B的对话更贴近轻小说的轻松感\n- A稍显生硬但忠实原文语气\n- 段落33：A\"应对无礼推销电话的女大学生\"vs B\"面对一个无礼推销的女大学生\"——A理解更准确\n\n### 4. 术语一致性\n\n- A全文使用\"透\"统一\n- B在段落46-47出现\"托尔\"与\"透\"混用问题\n- 圣剑名：A译\"光之使者\"；B保留日文\"ライトブリンガー\"——A更易读\n\n### 5. 格式问题\n\n- 段落31、53、56、57：B将对话引号改为西式引号，不符合中文轻小说规范\n- A保持「」格式统一\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有多处误译：焼きそばパン、現場ニキ、直方体；且人称视角多处错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"B口语化更自然，但人称混乱严重影响阅读\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者风格各有优势，B更活泼但A更稳定\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B出现托尔/透混用，ニキ误译为人名\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"A视角统一；B第一/三人称混乱严重损害可读性\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处引号格式不统一\"}\n  },\n  \"key_differences\": [\n    \"B将「現場ニキ」误译为'现场妮琪'（应为'现场哥'）\",\n    \"B将「焼きそばパン」误译为'烤面条面包'\",\n    \"B在多处将第三人称叙述错误转为第一人称'我'\",\n    \"B人名译法不一致（透/托尔混用）\",\n    \"A整体更忠实原文，B口语化但准确性不足\"\n  ],\n  \"final_summary\": \"A在准确性和一致性上明显优于B。B虽然口语化表达更自然，但存在关键术语误译（現場ニキ、焼きそばパン）、人称视角混乱、人名不统一等严重问题，这些错误直接影响读者对情节的理解。A虽然语言稍显书面化，但翻译准确、视角统一、术语一致，整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12242,
+          "completion_tokens": 1959,
+          "total_tokens": 14201
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有多处误译：焼きそばパン、現場ニキ、直方体；且人称视角多处错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "B口语化更自然，但人称混乱严重影响阅读"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者风格各有优势，B更活泼但A更稳定"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B出现托尔/透混用，ニキ误译为人名"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "A视角统一；B第一/三人称混乱严重损害可读性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处引号格式不统一"
+      }
+    },
+    "key_differences": [
+      "B将「現場ニキ」误译为'现场妮琪'（应为'现场哥'）",
+      "B将「焼きそばパン」误译为'烤面条面包'",
+      "B在多处将第三人称叙述错误转为第一人称'我'",
+      "B人名译法不一致（透/托尔混用）",
+      "A整体更忠实原文，B口语化但准确性不足"
+    ],
+    "final_summary": "A在准确性和一致性上明显优于B。B虽然口语化表达更自然，但存在关键术语误译（現場ニキ、焼きそばパン）、人称视角混乱、人名不统一等严重问题，这些错误直接影响读者对情节的理解。A虽然语言稍显书面化，但翻译准确、视角统一、术语一致，整体质量更高。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

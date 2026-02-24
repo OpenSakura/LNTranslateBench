@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:17:15.619746",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "b281f670bfa1f05bc811d0ee1a8683accf20fdfe75fd6ccd834f7066c0ba3d73",
+    "B": "72c300ff2f73d27ad7c6c697eafebf9fec94c12cfa71e0945b8e5651fe6c7c36"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:17:57.707628",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b77ef3e0-ab48-4687-aa24-eaadef9c815e",
+      "judge_response": {
+        "id": "b77ef3e0-ab48-4687-aa24-eaadef9c815e",
+        "object": "chat.completion",
+        "created": 1768421877,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段关键差异分析\n\n**段落3「齟齬」翻译**：A译\"摩擦\"，B译\"差错\"。原文指战场上的失误/偏差，B更准确。\n\n**段落4「将兵」翻译**：A译\"士兵\"，B译\"将兵\"。原文指将领和士兵的结合，B保留了原意。\n\n**段落31 完整性问题**：A遗漏了「農村の柵や、急造の防御施設ならともかく」这半句，B完整翻译。\n\n**段落42「脱進」翻译**：这是钟表专业术语\"擒纵机构\"，B译为\"擒纵机构\"正确，A译为\"摆轮\"是错误的。\n\n**段落50 严重视角错误**：A翻译成\"我会明确表扬...我不会细碎插手\"，这是描述公主的第三人称段落，A错误地使用了第一人称。B正确保持了第三人称描述。\n\n**段落58 关键信息遗漏**：A遗漏了「確保」（抓获公爵一家），导致逻辑不通。B完整翻译了这一关键动作。\n\n**段落80 翻译混乱**：A的\"尽管准备周到\"理解错误，且句子逻辑混乱。B正确理解为\"公主周到地准备的随军画师所画的战场风景\"。\n\n### 风格与格式\n\n- A在对话标点上不统一（有时用「」有时省略）\n- B统一使用\"\"格式\n- B整体语气更符合轻小说叙事风格，口语化处理更自然\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 9, \"notes\": \"A有多处遗漏（段落31、58）和误译（段落42脱進、段落50视角错误、段落80逻辑混乱）\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的表达更自然流畅，A部分句子较生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说叙事风格，语气把握更好\"},\n    \"terminology\": {\"A\": 6, \"B\": 9, \"notes\": \"A将钟表术语'脱進'误译为'摆轮'，B正确译为'擒纵机构'；'将兵'B保留原词更准确\"},\n    \"coherence\": {\"A\": 6, \"B\": 9, \"notes\": \"A段落50视角混乱、段落58遗漏导致逻辑断裂\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A对话标点不统一，B格式较为一致\"}\n  },\n  \"key_differences\": [\n    \"段落50：A错误使用第一人称视角，B正确保持第三人称\",\n    \"段落31：A遗漏关于农村栅栏和临时防御设施的重要对比内容\",\n    \"段落58：A遗漏'確保'（抓获）这一关键动作\",\n    \"段落42：A将'脱進'误译为'摆轮'，B正确译为'擒纵机构'\",\n    \"段落80：A翻译逻辑混乱，B清晰准确\"\n  ],\n  \"final_summary\": \"B在准确性方面明显优于A，A存在多处关键遗漏和误译，尤其是段落50的视角错误是严重问题。B的专业术语处理更准确，整体流畅度和风格把握也更好。虽然A在某些口语化表达上有亮点，但无法弥补准确性上的重大缺陷。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11942,
+          "completion_tokens": 1913,
+          "total_tokens": 13855
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A有多处遗漏（段落31、58）和误译（段落42脱進、段落50视角错误、段落80逻辑混乱）"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的表达更自然流畅，A部分句子较生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说叙事风格，语气把握更好"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "A将钟表术语'脱進'误译为'摆轮'，B正确译为'擒纵机构'；'将兵'B保留原词更准确"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 9,
+        "notes": "A段落50视角混乱、段落58遗漏导致逻辑断裂"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A对话标点不统一，B格式较为一致"
+      }
+    },
+    "key_differences": [
+      "段落50：A错误使用第一人称视角，B正确保持第三人称",
+      "段落31：A遗漏关于农村栅栏和临时防御设施的重要对比内容",
+      "段落58：A遗漏'確保'（抓获）这一关键动作",
+      "段落42：A将'脱進'误译为'摆轮'，B正确译为'擒纵机构'",
+      "段落80：A翻译逻辑混乱，B清晰准确"
+    ],
+    "final_summary": "B在准确性方面明显优于A，A存在多处关键遗漏和误译，尤其是段落50的视角错误是严重问题。B的专业术语处理更准确，整体流畅度和风格把握也更好。虽然A在某些口语化表达上有亮点，但无法弥补准确性上的重大缺陷。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

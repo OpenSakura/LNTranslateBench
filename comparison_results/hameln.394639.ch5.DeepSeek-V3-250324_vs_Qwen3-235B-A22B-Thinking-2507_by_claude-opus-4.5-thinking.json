@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:19:10.203628",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "a8ab643dc59f6fda8ddc3a582fa3db8aebc3fb74620118b8a2927eaaf5f38868",
+    "B": "b5f3179a960ed4067254192aadc5301aaf80e68a18ecc99d8d377ee8dabd1b46"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:19:58.573852",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1a2fd1f4-b34f-4a26-8a3f-d3fe5c1d14a9",
+      "judge_response": {
+        "id": "1a2fd1f4-b34f-4a26-8a3f-d3fe5c1d14a9",
+        "object": "chat.completion",
+        "created": 1768421998,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量对比分析\n\n## 详细分析\n\n### 1. 准确性分析\n- **段落4**: A「哦，完蛋了」未能体现原文「お、終わった」的结巴感；B「完、完蛋了」准确还原\n- **段落8**: A「主力TOP2」略显生硬；B「王牌双前锋」更贴切原意\n- **段落10**: 「ズリぃ」A译「离谱」失去\"耍赖/卑鄙\"的原意；B「卑鄙」更准确\n- **段落52**: 两个译本对「赤袖先輩」理解都有偏差，A误解为\"交往很久\"，B误解为\"穿红色袖标\"\n\n### 2. 流畅性分析\n- **段落5**: A「好说歹说」地道自然；B「设法恳求」较书面\n- **段落6**: B「问题不在这里」比A「那是另一回事」更通顺\n- **段落20**: B的战术描述更流畅完整\n\n### 3. 风格/语气\n- A整体偏口语化，对话更自然\n- B整体偏文学化，叙述更正式\n- **段落48**: A「有意思的人」；B「有趣的混蛋」更符合角色语气\n\n### 4. 术语/名称一致性\n- **重大问题**: B混用繁简体（圓堂/圆堂、凜/凛、學長/同学），严重影响阅读体验\n- A保持简体一致性\n- 角色称呼：A用「凛学长」，B用「凜」，A更符合日语敬称习惯\n\n### 5. 格式/标点\n- **段落19-20**: A错误使用引号标注叙述段落；B格式正确\n- **段落25、38等**: A/B引号使用都有不一致处\n- B在段落25使用西式引号「\"」不统一\n\n### 6. 连贯性\n- B在足球战术描写（段落20、61-62）更专业连贯\n- A在对话衔接上更自然\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B对结巴音、俚语翻译更准确；A部分意译偏离原意\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙述流畅度更高，A对话更口语化\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A口语风格适合对话，B文学风格适合叙述，各有所长\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B繁简混用严重扣分，A保持一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B战术描写和情节推进更连贯\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A在叙述段错加引号；B引号基本正确但偶有不一致\"}\n  },\n  \"key_differences\": [\n    \"B繁简体混用是重大缺陷\",\n    \"B对原文细节（如结巴、俚语）把握更准确\",\n    \"A对话更口语自然，B叙述更流畅文学\",\n    \"A在段落19-20格式错误（叙述加引号）\",\n    \"B足球术语和战术描写更专业\"\n  ],\n  \"final_summary\": \"两译本各有优劣。B在准确性、流畅性和连贯性上略胜，尤其在细节还原和叙述完整度方面表现更好；但B的繁简体混用是严重缺陷。A保持字体一致性，对话更自然，但有格式错误和部分意译偏差。综合评估B略优，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10557,
+          "completion_tokens": 1991,
+          "total_tokens": 12548
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对结巴音、俚语翻译更准确；A部分意译偏离原意"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙述流畅度更高，A对话更口语化"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A口语风格适合对话，B文学风格适合叙述，各有所长"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B繁简混用严重扣分，A保持一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B战术描写和情节推进更连贯"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在叙述段错加引号；B引号基本正确但偶有不一致"
+      }
+    },
+    "key_differences": [
+      "B繁简体混用是重大缺陷",
+      "B对原文细节（如结巴、俚语）把握更准确",
+      "A对话更口语自然，B叙述更流畅文学",
+      "A在段落19-20格式错误（叙述加引号）",
+      "B足球术语和战术描写更专业"
+    ],
+    "final_summary": "两译本各有优劣。B在准确性、流畅性和连贯性上略胜，尤其在细节还原和叙述完整度方面表现更好；但B的繁简体混用是严重缺陷。A保持字体一致性，对话更自然，但有格式错误和部分意译偏差。综合评估B略优，但差距不大。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

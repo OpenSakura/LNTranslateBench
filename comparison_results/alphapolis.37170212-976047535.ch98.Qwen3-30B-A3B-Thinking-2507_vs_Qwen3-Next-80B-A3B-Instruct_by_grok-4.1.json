@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:38:39.997620",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "a719b22a4620c541bc2fc571af2b82a7f18811d392be9ce90c2237212af28e91",
+    "B": "3f4642d4d1d4115d910a46276655b9796370185a02d3d6c06e4f7ba74d47ef15"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:03.234217",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DC4TLsewLHaqKax0JT8ilUqT7zh",
+      "judge_response": {
+        "id": "chatcmpl-89DC4TLsewLHaqKax0JT8ilUqT7zh",
+        "object": "chat.completion",
+        "created": 1768426739,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"マクリナ茶 OR マクリナ 軽小说 OR ライトノベル\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"ステア OR ステア王立学校 ライトノベル\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"コルトフィア王国 OR コルトフィア OR 科尔蒂亚王国\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"グレスハート王国 OR 格雷斯哈特王国 轻小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"マクリナ茶 OR マクリナ OR マクリナ茶 翻译\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"ライトノベル（ラノベ） | 無料試し読みなら電子書籍ストア BOOK WALKER\" BOOK WALKER](https://bookwalker.jp/st1)\n> [🔗 \"ライトノベル - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%88%E3%83%8E%E3%83%99%E3%83%AB)\n> [🔗 \"ラノベ（ライトノベル） - 漫画・ラノベ（小説）・無料試し読みなら、電子書籍・コミックストア ブックライブ\" BookLive](https://booklive.jp/index/lightnovel)\n> [🔗 \"三木なずな\" Pixiv](https://dic.pixiv.net/a/%E4%B8%89%E6%9C%A8%E3%81%AA%E3%81%9A%E3%81%AA)\n> [🔗 \"ライトノベル(ラノベ)｜電子書籍・漫画のコミックシーモア\" CMOA](https://www.cmoa.jp/lightnovel)\n> [🔗 \"三木なずな - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E4%B8%89%E6%9C%A8%E3%81%AA%E3%81%9A%E3%81%AA)\n> [🔗 \"ライトノベル（ラノベ）の電子書籍無料試し読みならBOOK☆WALKER\" BOOK WALKER](https://bookwalker.jp/category/3)\n> [🔗 \"三木なずな\" Syosetu](https://mypage.syosetu.com/511777)\n> [🔗 \"ライトノベルの作品一覧 - DMMブックス(旧電子書籍)\" DMM Books](https://book.dmm.com/list?category=66041)\n> [🔗 \"ラノベ人気投票『好きラノ』 - 2019年下期に発売されたライトノベルリスト\" Lightnovel](https://lightnovel.jp/best/2019_07-12/data.html)\n\n> 🔍 **5 results found**\n\n> [🔗 \"ステア(JING)\" Pixiv](https://dic.pixiv.net/a/%E3%82%B9%E3%83%86%E3%82%A2(JING))\n> [🔗 \"ステア\" Pixiv](https://dic.pixiv.net/a/%E3%82%B9%E3%83%86%E3%82%A2)\n> [🔗 \"ステア(ブンブンジャー)\" Pixiv](https://dic.pixiv.net/a/%E3%82%B9%E3%83%86%E3%82%A2(%E3%83%96%E3%83%B3%E3%83%96%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC))\n> [🔗 \"ステア - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%86%E3%82%A2)\n> [🔗 \"ステア - スーパーロボット大戦Wiki\" Super Robot Wars Wiki](https://srw.wiki.cre.jp/wiki/%E3%82%B9%E3%83%86%E3%82%A2)\n\n\n这是一个典型的轻小说角色介绍/设定集文本，内容为人物介绍和召唤兽介绍，整体风格轻松、口语化、带有萌点和幽默感，目标是中文读者（zh）。\n\n### 详细分析\n\n**1. 准确性（意思保留）**  \nA 在大部分地方忠实原文，但偶尔有小偏差，如段落3的“マクリナ茶”统一为“马克拉娜茶”，B统一为“玛克琳茶”；段落19的“シスコンな兄たち”A译“弟控的哥哥们”（原文是兄控姐姐？不，原文是シスコン=姐控，A错译成弟控，严重失误！）；B正确为“兄长是姐控”。  \n段落31的“ライムグリーン”A保留英文“lime-green”，B自然为“青柠绿”。  \n段落36的“ステア王立学校”A为“斯泰尔”，B为“斯蒂亚”（原文ステア，B更接近音译）。  \nA有几处明显误译（如段落19），准确性稍逊。\n\n**2. 流畅性（自然表达）**  \nB整体更符合现代中文轻小说阅读习惯，使用更口语化、简洁的表达，如段落4 B“虽然外表温婉，性格却是那种很会照顾人、爽直的妈妈”比A“别看她外表温柔，其实是个爱操心、胆子大的老妈妈”更优雅自然。  \n段落5 B“她把让人多吃饭当作自己的使命”比A“当成人生使命”更简洁贴合。  \nB在多处避免了生硬的直译，读起来更顺（段落12、32、37等）。\n\n**3. 风格/语气（轻小说叙述/对话）**  \n轻小说角色介绍常带萌、吐槽、夸张幽默感。  \nB更能保留这种轻松俏皮语气，如段落39 B“因为极度弟控，成了个可惜的帅哥”比A“遗憾的帅哥”更带吐槽味；段落50 B“为了防止菲尔被休伯特搞得肌肉虬结，一直在盯着”更活泼。  \nA有时过于直白或夸张过头（如段落26 A“帅得像好莱坞演员一样有型有范”稍显土），B更克制自然。\n\n**4. 术语/名称一致性**  \n专有名词：  \n- マクリナ茶：A“马克拉娜茶”，B“玛克琳茶”——两者都音译，但全文一致各自统一。  \n- ステア：A“斯特亚/斯泰尔”，B统一“斯特亚/斯蒂亚”——B更一致。  \n- コルトフィア王国：A“科尔蒂亚”，B“科尔特菲亚”——B更接近原文“コルトフィア”。  \n- グレスハート：两者都“格雷斯哈特”，一致。  \n- 其他如“ライムグリーン”B处理为“青柠绿/黄绿色”更统一自然。  \nB在王国名、人名音译上更稳定一致。\n\n**5. 连贯性/可读性**  \nB句子更短促、节奏感强，适合快速阅读角色介绍。A有些句子稍长、赘述（如段落27 A“但依然是个通情达理、威严十足的国王”比B更啰嗦）。整体B连贯性更好。\n\n**6. 格式/标点符号**  \n两者格式相似，都保留了原文的括号、破折号。但B在标点使用上更规范（如对话感更强，破折号使用恰当），A偶有小问题（如英文混用）。\n\n**关键差异总结**  \n- A在段落19严重误译“シスコン”（姐控）为“弟控”，这是重大准确性问题。  \n- B在音译更接近原文（如王国名、校名），语气更符合轻小说萌系、轻松风格。  \n- B整体更自然、流畅、可读，适合中文轻小说受众。  \n- A偶尔有创意表达，但失误和生硬处较多。\n\n最终判决：B整体优于A。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 9, \"notes\": \"A在段落19等处有明显误译（如シスコン错成弟控），B整体忠实且无重大错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B表达更自然口语化，符合现代中文阅读节奏；A有些地方稍显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地保留了轻小说幽默、萌系吐槽语气；A偶尔夸张过头或平淡\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"B在王国名、学校名、颜色等音译/意译更一致自然；A有少量不统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B句子节奏更好，连贯性强；A偶有赘述\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点和格式更规范统一；A小问题稍多\"}\n  },\n  \"key_differences\": [\n    \"A在关键处误译姐控为弟控（段落19），严重影响准确性\",\n    \"B音译更贴近原文（如科尔特菲亚、斯蒂亚），整体更统一\",\n    \"B语气更轻松俏皮、符合轻小说风格；A稍显直白或不自然\",\n    \"B句子更简洁流畅，可读性更高\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性、风格保留上全面优于A，仅有极少数地方A稍有创意，但整体B是更优质的轻小说翻译版本，推荐B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16638,
+          "completion_tokens": 3108,
+          "total_tokens": 19746
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "A在段落19等处有明显误译（如シスコン错成弟控），B整体忠实且无重大错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B表达更自然口语化，符合现代中文阅读节奏；A有些地方稍显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地保留了轻小说幽默、萌系吐槽语气；A偶尔夸张过头或平淡"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在王国名、学校名、颜色等音译/意译更一致自然；A有少量不统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B句子节奏更好，连贯性强；A偶有赘述"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点和格式更规范统一；A小问题稍多"
+      }
+    },
+    "key_differences": [
+      "A在关键处误译姐控为弟控（段落19），严重影响准确性",
+      "B音译更贴近原文（如科尔特菲亚、斯蒂亚），整体更统一",
+      "B语气更轻松俏皮、符合轻小说风格；A稍显直白或不自然",
+      "B句子更简洁流畅，可读性更高"
+    ],
+    "final_summary": "B在准确性、流畅性、风格保留上全面优于A，仅有极少数地方A稍有创意，但整体B是更优质的轻小说翻译版本，推荐B。"
+  },
+  "outcome": "Qwen3-30B-A3B-Thinking-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Thinking-2507"
+}

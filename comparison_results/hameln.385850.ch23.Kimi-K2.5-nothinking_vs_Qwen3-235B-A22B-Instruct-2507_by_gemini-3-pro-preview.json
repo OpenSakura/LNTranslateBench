@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:32:12.310219",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "49da8d078a1379697fd0cdcfb776f20e0f145eb8e604df3ae763a631f981e979",
+    "B": "34c9490637b7262c8d5a78f77fc8285aa9459ae961933901cf1f52e3ba661744"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:33:13.461723",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026012822321251058314645Nm4nVs",
+      "judge_response": {
+        "id": "chatcmpl-2026012822321251058314645Nm4nVs",
+        "object": "chat.completion",
+        "created": 1769610793,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A** 在理解原文语境方面表现更好。例如在段落31中，原文“手渡し”指直接当面给钱，A译为“现金支付”虽然略有意译但非常得体；而B译为“手交”，这在中文里有极强的色情（性行为）歧义，是严重的选词错误。\n*   **翻译B** 倾向于直译，有时过于拘泥字面。例如段落57中，原文“できる女だぜまったく”，B译为“真是能干的女人啊，完全地”，这是典型的翻译腔（Translationese），完全不符合中文表达习惯。\n*   **缺憾**：翻译A在段落1中保留了日文拟声词未翻译，这是一个明显的疏漏，但相比B的语义错误，影响较小。\n\n**2. 流畅性 (Fluency)**\n*   **翻译A** 的中文表达非常自然，符合轻小说的阅读习惯。句式结构经过调整，读起来顺畅。例如段落17、57、90的处理都很老练。\n*   **翻译B** 存在多处生硬的表达。例如段落3（“炉火纯青、撕心裂肺号泣”略显堆砌）、段落8（“奇怪地一直跟在身边”语序不自然）、段落62（“用抬眼的眼神看着我”非常拗口）。\n\n**3. 风格/语气 (Style/Tone)**\n*   原文是带有内心独白和“中二”角色扮演风格的轻小说。\n*   **翻译A** 很好地把握了男主角内心吐槽的语气（如段落44、46）。\n*   **翻译B** 虽然也尝试还原，但由于语感较差，有时显得干巴巴的。例如段落55，原文“知らんけど”是关西腔的吐槽梗，A译为“吧。”略显平淡，B译为“虽然我不晓得”则过于直白，两者都未完美传达，但A的整体文风更统一。\n\n**4. 格式与标点 (Formatting/Punctuation)**\n*   **翻译A** 的标点符号使用规范（如段落42使用全角括号）。\n*   **翻译B** 偶尔混用半角符号（如段落42），且段落30中直接用“+”号不如A的“加”字在文学文本中自然。\n\n**5. 关键差异点 (Key Differences)**\n*   **段落 1**: A未翻译拟声词；B翻译了。\n*   **段落 31**: A译为“现金支付”；B译为“手交”（严重用词不当）。\n*   **段落 57**: A译为“真是个能干的女人啊”；B译为“……完全地”（语病）。\n*   **段落 90**: B用了“刷好感度”这一游戏术语，其实很符合轻小说风格，这是B为数不多的亮点；A的“好感度也不可能轻易提升”则较中规中矩。\n\n### 最终判决\n\n尽管翻译A在第一句有漏译（未翻译拟声词），但其整体的文学素养、语言组织能力和对语境的把控远超翻译B。翻译B虽然翻出了第一句，但在后续文本中出现了严重的歧义用词（“手交”）和拙劣的翻译腔（“完全地”），极大地破坏了阅读体验。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A整体准确，B在段落31出现严重歧义词汇（手交）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A行文流畅自然；B存在明显的翻译腔和拗口句式（如段落57、62）。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A很好地还原了轻小说的吐槽风格；B略显生硬。\"\n    },\n    \"terminology\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"两者术语基本一致。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的逻辑连接更紧密。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A的标点符号（全角）更规范。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落1：A漏译了拟声词，B进行了翻译。\",\n    \"段落31：A使用得体的'现金支付'，B使用了带有严重歧义的'手交'。\",\n    \"段落57：B使用了'完全地'这种生硬的后置修饰，A处理得当。\",\n    \"整体语感：A更像成熟的中文小说，B像初学者的翻译练习。\"\n  ],\n  \"final_summary\": \"翻译A在流畅度、用词准确性和文学性上具有压倒性优势。尽管A在第一段漏译了拟声词，但这属于细微的编辑失误。相比之下，翻译B存在严重的选词错误（如将'手渡し'译为'手交'）以及多处生硬的翻译腔（如句末的'完全地'），严重影响阅读体验。因此A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7990,
+          "completion_tokens": 5347,
+          "total_tokens": 13337
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A整体准确，B在段落31出现严重歧义词汇（手交）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A行文流畅自然；B存在明显的翻译腔和拗口句式（如段落57、62）。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A很好地还原了轻小说的吐槽风格；B略显生硬。"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者术语基本一致。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的逻辑连接更紧密。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的标点符号（全角）更规范。"
+      }
+    },
+    "key_differences": [
+      "段落1：A漏译了拟声词，B进行了翻译。",
+      "段落31：A使用得体的'现金支付'，B使用了带有严重歧义的'手交'。",
+      "段落57：B使用了'完全地'这种生硬的后置修饰，A处理得当。",
+      "整体语感：A更像成熟的中文小说，B像初学者的翻译练习。"
+    ],
+    "final_summary": "翻译A在流畅度、用词准确性和文学性上具有压倒性优势。尽管A在第一段漏译了拟声词，但这属于细微的编辑失误。相比之下，翻译B存在严重的选词错误（如将'手渡し'译为'手交'）以及多处生硬的翻译腔（如句末的'完全地'），严重影响阅读体验。因此A胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

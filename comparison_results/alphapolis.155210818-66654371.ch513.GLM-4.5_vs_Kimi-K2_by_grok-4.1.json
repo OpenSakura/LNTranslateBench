@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:38:39.987663",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.5.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "1734bd794dafac2907cfacaf2e7a2e401c843cee990e178f082d34e1e8611cd7",
+    "B": "43ca83664913c542c74456668887e5f054cfe3f26aaefad2dbf8432898d76b4f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:02.655702",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DfWm3zsAIqd8xNn8iNzDeYRFCTH",
+      "judge_response": {
+        "id": "chatcmpl-89DfWm3zsAIqd8xNn8iNzDeYRFCTH",
+        "object": "chat.completion",
+        "created": 1768426741,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说翻译风格 中文 自然 口语化 vs 正式\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"日文轻小说中文翻译 常见用词 刷级 老爸 姐姐 小雫\"\n> 📊 **Results requested:** 20\n\n> 🔍 **8 results found**\n\n> [🔗 \"重写同人翻译vs 官方翻译对比: r/visualnovels - Reddit\" www.reddit.com](https://www.reddit.com/r/visualnovels/comments/rjvxzb/rewrite_fantranslation_versus_official?tl=zh-hans)\n> [🔗 \"日本轻小说的语气为什么洗脑性这么强?怎么避免在写作中不自觉对此进行模仿? - 知乎\" www.zhihu.com](https://www.zhihu.com/question/276758167)\n> [🔗 \"官方vs 非官方轻小说翻译个人观点指南: r/Mahouka - Reddit\" www.reddit.com](https://www.reddit.com/r/Mahouka/comments/ll81jf/official_vs_unofficial_ln_translations_imo_guide?tl=zh-hans)\n> [🔗 \"轻小说翻译：解码二次元，金雨助力破壁之旅\" www.jinyutrans.com](https://www.jinyutrans.com/hotspot/translation_of_light_novels)\n> [🔗 \"我發現翻譯過的日本輕小說常常很囉嗦，而且很冗長。這到底是語言或翻譯的問題，還是單純寫得很爛？ : r/books - Reddit\" www.reddit.com](https://www.reddit.com/r/books/comments/13vfkoi/ive_found_that_translated_japanese_light_novels?tl=zh-hant)\n> [🔗 \"讨论：本地化应该偏离日语原文多远？ : r/Falcom - Reddit\" www.reddit.com](https://www.reddit.com/r/Falcom/comments/8ar6xq/discussion_how_far_should_a_localization_stray?tl=zh-hans)\n> [🔗 \"日式小说vs 中式小说: r/noveltranslations - Reddit\" www.reddit.com](https://www.reddit.com/r/noveltranslations/comments/3mqr24/japanese_vs_chinese_novels?tl=zh-hans)\n> [🔗 \"轻小说第五卷后记- 粉丝翻译: r/KusuriyaNoHitorigoto - Reddit\" www.reddit.com](https://www.reddit.com/r/KusuriyaNoHitorigoto/comments/1j9irk4/light_novel_vol_5_epilogue_fan_translation?tl=zh-hans)\n\n> 🔍 **10 results found**\n\n> [🔗 \"序號書名著者出版ISBN 1 「張看」現代.1917~1949 :張愛玲的「新文學」閱讀史研究李璐獵海人9 - 臺南市立圖書館\" www.tnpl.tn.edu.tw](https://www.tnpl.tn.edu.tw/GetFile.ashx?ID=5577850954783767134)\n> [📚 \"平凡職業造就世界最強- 維基百科\" zh.wikipedia.org](https://zh.wikipedia.org/wiki/%E5%B9%B3%E5%87%A1%E8%81%B7%E6%A5%AD%E9%80%A0%E5%B0%B1%E4%B8%96%E7%95%8C%E6%9C%80%E5%BC%B7)\n> [🔗 \"https://www.frontiersin.org/api/v4/articles/162889...\" www.frontiersin.org](https://www.frontiersin.org/api/v4/articles/1628896/file/Data_Sheet_1.csv/1628896_data-sheet_1/1)\n> [🔗 \"臺大日文系學會(@ntu_jpsa) - Instagram\" www.instagram.com](https://www.instagram.com/ntu_jpsa)\n> [🔗 \"機構簡稱： ISBN 書名作者版次裝訂冊次數量9789869213431 聖經的啟示江特忠編著初版平裝1 978 - 國家圖書館\" nclfile.ncl.edu.tw](https://nclfile.ncl.edu.tw/files/202010/952f1d7e-0648-4c55-a08d-693448bd8ef8.pdf)\n> [🔗 \"111學年度-中文圖書 - 黎明技術學院\" www.lit.edu.tw](https://www.lit.edu.tw/wp-content/uploads/2022/12/111%E4%B8%AD%E6%96%87%E5%9C%96%E6%9B%B8%E6%8E%A1%E8%B3%BC%E6%9B%B8%E5%96%AE%E8%AA%BF-1.pdf)\n> [🔗 \"Galgame - 萌娘百科万物皆可萌的百科全书\" zh.moegirl.org.cn](https://zh.moegirl.org.cn/Galgame)\n> [🔗 \"繁中網絡上經常討論的作者、工作人員一覽 - Fandom\" newkomica-kari.fandom.com](https://newkomica-kari.fandom.com/zh-tw/wiki/%E7%B9%81%E4%B8%AD%E7%B6%B2%E7%B5%A1%E4%B8%8A%E7%B6%93%E5%B8%B8%E8%A8%8E%E8%AB%96%E7%9A%84%E4%BD%9C%E8%80%85%E3%80%81%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%93%A1%E4%B8%80%E8%A6%BD)\n> [🔗 \"telecomadm1145/esjzone_2024 · Datasets at Hugging Face\" huggingface.co](https://huggingface.co/datasets/telecomadm1145/esjzone_2024/viewer/default/train)\n> [🔗 \"如何评价2020年的galgame业界？ - 知乎\" www.zhihu.com](https://www.zhihu.com/question/440283840)\n\n\n**详细分析**\n\n这是一个典型的**异世界/迷宫/冒险类轻小说**片段，叙述者是女性第一人称，整体基调轻松、日常、带点吐槽与家庭温馨，对话非常口语化，角色间关系亲密（家人、从魔），经常使用可爱/亲昵的称呼。轻小说中文翻译的核心在于既要**忠实原文意思**，又要**让中文读者读起来像中文网络小说一样自然流畅、活泼有趣**，尤其是大量内心独白和对话部分需要强烈的**口语化、本土化**处理。\n\n**逐方面比较：**\n\n1. **准确性（意思保留）**  \n   两者整体准确度都很高，几乎没有明显误译。  \n   B在少数地方更口语但略微意译（如“刷长枪等级”比“练习长矛的等级”更贴近游戏用语，“干掉”比“打倒”更直白粗暴，但符合原文的战斗感）。  \n   A更倾向直译，个别地方稍显生硬（如段落1的“转移层级”不如B的“继续往下层走”通顺）。  \n   → A 略胜在极致忠实，B 偶有轻微润色但未偏离原意。\n\n2. **流畅性（目标语言自然表达）**  \n   B明显更胜一筹。大量使用“老爸”“老妈”“超厉害”“干掉”“刷级”“蹭不到”“吓得眼珠子都快掉出来”“开心得不行”“犯规技”等非常接地气的当代中文网络/轻小说读者常用表达，读起来像中文网文/起点文，几乎没有翻译腔。  \n   A整体偏书面/中规中矩（如“练习长矛的等级”“一脸的不高兴”“相当惊讶”“巨大的身姿吓到发抖”），虽然通顺，但少了那种“活泼的日式轻小说味”，更像传统小说翻译。  \n   → B 大幅领先。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   轻小说尤其是现代异世界系，对话和内心独白**强烈口语化、带吐槽感、亲昵、可爱、偶尔沙雕**是核心魅力。  \n   B完美捕捉了这点：大量叠词、语气词（“诶——”“好嘞”“就是啊～”）、网络流行语感（“直接差评”“干劲爆棚”“被做掉”），角色性格鲜明（雫的幼稚、姐姐的腹黑/莽撞、妈妈的管钱强势）。  \n   A的语气明显更温柔、克制、正经（“真的太厉害了”“一脸的不高兴”“非常感谢”），丢失了轻小说特有的“轻快跳脱+网络感”。  \n   → B 完胜，这是决定性差距。\n\n4. **术语/名称一致性**  \n   两者都保持了基本一致（贝希摩斯、魔石、转移/移転、从魔、Lv等）。  \n   B在游戏术语上更统一且贴近中文玩家习惯（如“刷级”“清场”“蹭经验”），A则更直译（“Lv升级”“全灭”）。  \n   称呼上B更亲昵统一（老爸/老妈、沙良姐、小雫、树叔），A混用较多（父亲/爸爸、沙良姐姐、樵大叔/树叔叔）。  \n   → B 略胜。\n\n5. **连贯性/可读性**  \n   B整篇读下来像一气呵成的中文轻小说，节奏明快、对话抓眼球、吐槽感强，非常适合手机阅读。  \n   A虽然连贯，但语感较平，缺少爆点和情绪起伏，阅读体验稍显沉闷。  \n   → B 明显更强。\n\n6. **格式/标点符号**  \n   两者标点使用都很规范。  \n   B在对话语气词的处理更细腻（更多波浪线～、破折号——、感叹号滥用符合轻小说风格）。  \n   A稍显保守。  \n   → B 微胜。\n\n**总体判断**  \n虽然A在字面准确性和保守直译上稍有优势，但**轻小说的灵魂在于“读起来有趣、自然、代入感强”**，而B在流畅性、风格、语气、可读性上全面碾压，更符合2025-2026年中文轻小说读者的主流期待（高度本土化、网络化、口语化）。  \n只有极少数地方B稍显过度意译，但不影响整体正确性。\n\n**因此，B整体质量明显更好。**\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 8.5,\n      \"notes\": \"A更忠于字面，B偶有轻度意译但未失真\"\n    },\n    \"fluency\": {\n      \"A\": 7.5,\n      \"B\": 9.5,\n      \"notes\": \"B的中文极其自然流畅，像原生网文；A仍有轻微翻译腔\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 9.5,\n      \"notes\": \"B完美还原了轻小说需要的活泼、口语、吐槽、亲昵感；A偏正经书面\"\n    },\n    \"terminology\": {\n      \"A\": 8.5,\n      \"B\": 9,\n      \"notes\": \"B的游戏术语和亲属称呼更统一且贴近中文玩家习惯\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 9.5,\n      \"notes\": \"B节奏明快、情绪连贯，可读性极强\"\n    },\n    \"formatting\": {\n      \"A\": 8.5,\n      \"B\": 9,\n      \"notes\": \"B在语气标点处理更符合轻小说风格\"\n    }\n  },\n  \"key_differences\": [\n    \"B大量使用网络流行口语（刷级、老爸、干掉、超厉害、开心得不行），A偏书面直译\",\n    \"对话语气：B活泼沙雕、亲昵夸张，A温柔克制、正经\",\n    \"整体阅读体验：B像中文原生轻小说，A更像传统翻译小说\"\n  ],\n  \"final_summary\": \"B在轻小说最核心的“有趣、自然、代入感”上大幅领先，虽然A更忠实字面，但对于轻小说读者而言，B是明显更好的翻译版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10804,
+          "completion_tokens": 3881,
+          "total_tokens": 14685
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "A更忠于字面，B偶有轻度意译但未失真"
+      },
+      "fluency": {
+        "A": 7.5,
+        "B": 9.5,
+        "notes": "B的中文极其自然流畅，像原生网文；A仍有轻微翻译腔"
+      },
+      "style": {
+        "A": 7,
+        "B": 9.5,
+        "notes": "B完美还原了轻小说需要的活泼、口语、吐槽、亲昵感；A偏正经书面"
+      },
+      "terminology": {
+        "A": 8.5,
+        "B": 9,
+        "notes": "B的游戏术语和亲属称呼更统一且贴近中文玩家习惯"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B节奏明快、情绪连贯，可读性极强"
+      },
+      "formatting": {
+        "A": 8.5,
+        "B": 9,
+        "notes": "B在语气标点处理更符合轻小说风格"
+      }
+    },
+    "key_differences": [
+      "B大量使用网络流行口语（刷级、老爸、干掉、超厉害、开心得不行），A偏书面直译",
+      "对话语气：B活泼沙雕、亲昵夸张，A温柔克制、正经",
+      "整体阅读体验：B像中文原生轻小说，A更像传统翻译小说"
+    ],
+    "final_summary": "B在轻小说最核心的“有趣、自然、代入感”上大幅领先，虽然A更忠实字面，但对于轻小说读者而言，B是明显更好的翻译版本。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

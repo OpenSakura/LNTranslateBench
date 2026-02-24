@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:29:29.228012",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "896ad02b1f0979ad13d5e65d8d2aff3759095f26aa9e16a8f7338f88a42559c1",
+    "B": "52a38634443099494b9194b40e365061d31289fe60e8e7847a36e1282c92ae18"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:30:14.423199",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4718dae1-fdcf-4017-a5a6-5e0c0c0e43c0",
+      "judge_response": {
+        "id": "4718dae1-fdcf-4017-a5a6-5e0c0c0e43c0",
+        "object": "chat.completion",
+        "created": 1768422614,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段对比分析\n\n**段落1-3：开场对话**\n- A的\"超级闲的慌\"比B的\"超级闲\"更能传达\"超絶暇\"的强调感\n- 段落3中\"アレク\"是昵称，A译\"亚历克斯\"过长，B译\"亚克\"更符合昵称特点\n- B在段落2缺少逗号断句，影响节奏\n\n**段落5-6：场景描述**\n- \"1LDK\"：A译为\"一室一厅\"本土化更好，B保留原词可能让部分读者困惑\n- \"テラスハウス\"：A译\"阶梯式住宅\"不太准确，B译\"露台屋\"也有偏差，但后续统一使用更一致\n\n**段落7：核心技术段落**\n- \"ソイル\"是技能名，A译\"SOIL\"保留专有名词意识，B译\"土壤\"丢失了这是技能的含义\n- \"早すぎた巨神兵\"：A\"过于早产巨神兵般\"略显拗口，B\"早产的巨神兵\"更自然\n\n**段落10：敬语处理**\n- A的\"母亲大人\"符合贵族语境，B的\"您妈\"过于口语化，与轻小说贵族设定不符\n\n**段落16-18：格式问题**\n- A使用正确的引号格式\n- B在这几段缺失对话引号，格式不规范\n\n**段落29：关键错误**\n- A正确理解\"お孫さん\"指杰拉尔德大人的孙女婿关系\n- B译成\"孙儿\"存在理解偏差\n\n**段落31：严重问题**\n- B留有未翻译的日语原文\"ディートヘルム\"和\"ランペイジングダークネス\"，属于重大失误\n- A完整翻译所有内容\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落29理解有误（孙儿vs孙女婿），段落31有未翻译内容；A对ソイル等专有名词处理更好\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体行文更流畅自然，B部分表达较生硬如'心力交瘁'用词过重\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A的敬语和贵族语气把握更好（母亲大人vs您妈），B有时过于口语化\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"A名称翻译一致；B在段落31留有日语原文未翻译，严重影响阅读\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A叙述连贯完整；B因未翻译内容导致段落31可读性断裂\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"A引号使用规范一致；B在段落16-18、27缺失对话引号\"}\n  },\n  \"key_differences\": [\n    \"B在段落31有未翻译的日语原文，属于严重失误\",\n    \"B在段落16-18、27等处缺失对话引号\",\n    \"A对敬语和贵族语境的把握更准确（如母亲大人vs您妈）\",\n    \"A对1LDK等文化词汇本土化处理更好\",\n    \"B在段落29对人物关系理解有误\"\n  ],\n  \"final_summary\": \"翻译A整体质量明显优于B。A在准确性、风格把握、格式规范性上都表现更好，特别是对轻小说贵族语境的敬语处理更恰当。B存在多处严重问题：段落31有未翻译的日语原文、多处对话缺失引号、部分表达过于口语化与贵族设定不符。虽然B在某些口语化表达上略显活泼，但整体完成度和规范性不及A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9495,
+          "completion_tokens": 1995,
+          "total_tokens": 11490
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落29理解有误（孙儿vs孙女婿），段落31有未翻译内容；A对ソイル等专有名词处理更好"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体行文更流畅自然，B部分表达较生硬如'心力交瘁'用词过重"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A的敬语和贵族语气把握更好（母亲大人vs您妈），B有时过于口语化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "A名称翻译一致；B在段落31留有日语原文未翻译，严重影响阅读"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A叙述连贯完整；B因未翻译内容导致段落31可读性断裂"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "A引号使用规范一致；B在段落16-18、27缺失对话引号"
+      }
+    },
+    "key_differences": [
+      "B在段落31有未翻译的日语原文，属于严重失误",
+      "B在段落16-18、27等处缺失对话引号",
+      "A对敬语和贵族语境的把握更准确（如母亲大人vs您妈）",
+      "A对1LDK等文化词汇本土化处理更好",
+      "B在段落29对人物关系理解有误"
+    ],
+    "final_summary": "翻译A整体质量明显优于B。A在准确性、风格把握、格式规范性上都表现更好，特别是对轻小说贵族语境的敬语处理更恰当。B存在多处严重问题：段落31有未翻译的日语原文、多处对话缺失引号、部分表达过于口语化与贵族设定不符。虽然B在某些口语化表达上略显活泼，但整体完成度和规范性不及A。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

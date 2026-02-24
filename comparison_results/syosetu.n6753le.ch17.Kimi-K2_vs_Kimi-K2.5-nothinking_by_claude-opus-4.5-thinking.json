@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:34:30.860008",
+  "sample": "syosetu.n6753le.ch17",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6753le.ch17.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6753le.ch17.Kimi-K2.translated.txt",
+    "B": "translated_results/syosetu.n6753le.ch17.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2afa7564b8a9514c750f35e65d3d70d2bd5288fd6b1f160d0d59e89ce5f975be",
+    "A": "aa312e3eb8a7c113ac13812f5d62ba009749b6e36345461b10ec9ac28888a4b6",
+    "B": "6ba42c9189c29b77af4b8af21e03ec11c70acf3e66624b6410e118c6b5c4dbd5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:35:07.000158",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "03d3d9f8-cec2-4677-aa37-c003a639f2e8",
+      "judge_response": {
+        "id": "03d3d9f8-cec2-4677-aa37-c003a639f2e8",
+        "object": "chat.completion",
+        "created": 1769610906,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n- **段落4**: A\"不是洗澡\"vs B\"不是泡澡\"——原文\"お風呂\"指泡澡，B更准确\n- **段落18**: A\"灌满热水\"vs B\"注满水\"——原文\"湯の張られた\"是热水，A正确；B丢失了\"热水\"\n- **段落25**: A\"作死的纪念\"vs B\"失误的痕迹\"——原文\"へま\"是失误/马虎，B更准确，A有些过度演绎\n- **段落54**: A\"全靠艾利克大人\"vs B\"艾利克大人真是的\"——原文\"エリークさまさま\"是感激之语，A更准确\n\n### 2. 流畅性分析\n- **段落8**: A\"天天用『净化』也太烧钱了\"更口语化自然，B\"确实不划算\"略显平淡\n- **段落29**: A\"命在才有一切\"vs B\"留得青山在嘛\"——B使用了更地道的成语\n- **段落33**: A\"嘎吱嘎吱乱蓬蓬\"生动传神，B\"又涩又蓬\"较简洁但同样达意\n- **段落57**: A\"窝在大床上睡了个死\"过于夸张，B\"睡得很香\"更贴合原文\n\n### 3. 风格/语气分析\n- A整体更加口语化、活泼，符合轻小说角色的年轻感\n- B相对稳重，但有些地方略显生硬（如段落69\"绑头发的人\"翻译\"髪結い\"不如A的\"理发师\"自然）\n- 段落66: A\"手太笨\"vs B\"太笨手笨脚了\"——A更简洁符合角色说话风格\n\n### 4. 术语一致性\n- 两者对\"浄化\"\"治愈\"\"魔术触媒\"等术语翻译一致\n- \"ロータス\": A\"莲花镇\"有时有时没有\"镇\"，B一致使用\"莲花镇\"\n\n### 5. 连贯性/可读性\n- A的对话更自然流畅，读起来更像角色在说话\n- B有些句子过于书面化，如段落70\"据说还有能让手指梳理更顺畅的漂洗液\"\n\n### 6. 格式/标点\n- 段落21: A添加了省略号\"那是……\"，B没有——原文无省略，但A的处理更符合对话语境\n- 两者标点使用基本规范\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 8, \"notes\": \"A在段落25'作死'过度演绎，B在段落18漏掉'热水'；总体持平\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A更口语化流畅，B部分句子略显生硬书面\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更符合轻小说的轻快活泼风格，B偏正式\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者术语翻译一致，处理得当\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话衔接更自然，B部分句子断句略生硬\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式都规范，A适当添加省略号增强语气\"}\n  },\n  \"key_differences\": [\n    \"A整体风格更口语化、活泼，B相对正式稳重\",\n    \"A的对话翻译更自然流畅（如'太烧钱了'vs'确实不划算'）\",\n    \"B在部分细节更准确（如'失误'vs'作死'），但A在语境理解上更好\",\n    \"A对'髪結い'译为'理发师'比B的'绑头发的人'更恰当\"\n  ],\n  \"final_summary\": \"翻译A在流畅性和风格契合度上明显优于B，更符合轻小说活泼的叙述风格和角色语气。虽然A在个别词汇（如'作死'）上略有过度演绎，但整体阅读体验更佳。B翻译较为保守稳妥，准确性尚可，但缺乏轻小说应有的灵动感。综合考虑，A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9828,
+          "completion_tokens": 1887,
+          "total_tokens": 11715
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 8,
+        "notes": "A在段落25'作死'过度演绎，B在段落18漏掉'热水'；总体持平"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更口语化流畅，B部分句子略显生硬书面"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更符合轻小说的轻快活泼风格，B偏正式"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者术语翻译一致，处理得当"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话衔接更自然，B部分句子断句略生硬"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式都规范，A适当添加省略号增强语气"
+      }
+    },
+    "key_differences": [
+      "A整体风格更口语化、活泼，B相对正式稳重",
+      "A的对话翻译更自然流畅（如'太烧钱了'vs'确实不划算'）",
+      "B在部分细节更准确（如'失误'vs'作死'），但A在语境理解上更好",
+      "A对'髪結い'译为'理发师'比B的'绑头发的人'更恰当"
+    ],
+    "final_summary": "翻译A在流畅性和风格契合度上明显优于B，更符合轻小说活泼的叙述风格和角色语气。虽然A在个别词汇（如'作死'）上略有过度演绎，但整体阅读体验更佳。B翻译较为保守稳妥，准确性尚可，但缺乏轻小说应有的灵动感。综合考虑，A胜出。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

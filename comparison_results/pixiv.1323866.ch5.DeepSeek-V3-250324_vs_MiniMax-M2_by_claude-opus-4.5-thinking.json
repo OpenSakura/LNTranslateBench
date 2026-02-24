@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:44:32.837440",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "e19f57435431c757b57e8b7f36e0dedff3a73898aa02f4837217c2e881f525d8",
+    "B": "d06c7364a32c66e634e4f2e40c65733231a5c4f9a5ae70a1554fdb320511d14e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:45:13.110043",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0a254485-ac82-4145-86d9-962dabc6b555",
+      "judge_response": {
+        "id": "0a254485-ac82-4145-86d9-962dabc6b555",
+        "object": "chat.completion",
+        "created": 1768423512,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 准确性分析\n\n**翻译A的准确性问题：**\n- 段落14：\"警衔同样是警部补\"错误，原文是「巡査部長」（巡查部长）\n- 段落30末尾多了个多余的」\n\n**翻译B的准确性问题：**\n- 段落20：\"警视厅一般通过倒计时的方式传播\"完全误译，原文是\"在警视厅内部用'倒计时的（那个）'就能传达\"\n- 段落39：\"最初已经完全把这座房子当成已死住户的诸伏\"严重误译，原文是\"已完全融入这个家的住人\"\n- 段落54：将诸伏错误地用\"她\"指代（诸伏是男性）\n- 段落60：\"「.Apple Pie、美味的」\"未翻译，保留英文\n- 段落64：整段翻译混乱不通\n\n### 流畅性分析\n\nA整体更符合中文表达习惯，如：\n- 段落7：\"打圆场\"vs\"撑腰\"——都可，但A后续\"问题儿童\"更自然\n- 段落24：A\"故技重施\"比B\"这次大概也会这么做\"更简洁有力\n- 段落45：A将情感表达得更细腻流畅\n\nB多处语句生硬，如段落62：\"家里有人这种想法感觉平常却意外救人的\"读起来非常别扭\n\n### 格式问题\n\nA在段落9-13、26、43-44等使用了引号「」与\"\"混用\nB在段落36-38、41-42、47-48、51-53等去掉了对话符号，破坏了原文格式\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"A有一处警衔错误；B有多处严重误译（段落20、39、64）\"},\n    \"fluency\": {\"A\": 8, \"B\": 5, \"notes\": \"A整体流畅自然；B多处生硬，段落62、64几乎不通顺\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说叙事风格；B有些地方过于直译\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A警衔译错；B人称代词错误（诸伏用'她'）\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"A上下文连贯；B部分段落逻辑断裂\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A引号不统一；B部分段落丢失对话符号，段落60保留英文\"}\n  },\n  \"key_differences\": [\n    \"B段落39、60、64存在严重翻译错误，影响理解\",\n    \"A整体语言更流畅自然，B多处直译生硬\",\n    \"B将男性角色诸伏误用'她'指代\",\n    \"A对情感描写处理更细腻（如段落45、49）\"\n  ],\n  \"final_summary\": \"翻译A在准确性和流畅性上明显优于B。虽然A有个别小错误（如巡查部长译为警部补），但B存在多处严重误译和不通顺的段落，特别是段落39、60、64的错误严重影响阅读理解。A更好地保持了轻小说的叙事风格和人物对话的语气。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11502,
+          "completion_tokens": 1661,
+          "total_tokens": 13163
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "A有一处警衔错误；B有多处严重误译（段落20、39、64）"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 5,
+        "notes": "A整体流畅自然；B多处生硬，段落62、64几乎不通顺"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说叙事风格；B有些地方过于直译"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A警衔译错；B人称代词错误（诸伏用'她'）"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "A上下文连贯；B部分段落逻辑断裂"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A引号不统一；B部分段落丢失对话符号，段落60保留英文"
+      }
+    },
+    "key_differences": [
+      "B段落39、60、64存在严重翻译错误，影响理解",
+      "A整体语言更流畅自然，B多处直译生硬",
+      "B将男性角色诸伏误用'她'指代",
+      "A对情感描写处理更细腻（如段落45、49）"
+    ],
+    "final_summary": "翻译A在准确性和流畅性上明显优于B。虽然A有个别小错误（如巡查部长译为警部补），但B存在多处严重误译和不通顺的段落，特别是段落39、60、64的错误严重影响阅读理解。A更好地保持了轻小说的叙事风格和人物对话的语气。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

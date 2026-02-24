@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:36:22.003700",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.Kimi-K2.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "10da90e870f32d9408c61f153cf382e98ab2a71469f1485d78484e0e2f70c3aa",
+    "B": "fc09c6053e604fd486397a054dbed3db1c118ff9394440a24cbdb39334531a5a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:37:12.735393",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "930d27e0-9bb1-439d-9062-94fd90c0ebde",
+      "judge_response": {
+        "id": "930d27e0-9bb1-439d-9062-94fd90c0ebde",
+        "object": "chat.completion",
+        "created": 1768423032,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**关键差异点：**\n\n1. **段落15**：原文「わたしを押し倒して」描述的是\"我把他推倒\"的情景。A译\"我把他推倒后\"正确理解了视角；B译\"你把我推倒后\"完全搞反了主客体。\n\n2. **段落34**：「食い意地張ってる」意为\"贪吃/馋嘴\"。A译\"饿鬼上身\"准确；B译\"抠门似的\"意思完全错误。\n\n3. **段落48**：「まんざらでもなさそうに」意为\"并非不满意/其实还挺乐意\"。A译\"也不是完全不满足的样子\"准确；B译\"若无其事地\"遗漏了这层含义。\n\n4. **段落55**：波普拉是女性，A用\"那淡淡的笑容\"正确；B用\"他那淡淡的笑容\"性别错误。\n\n5. **段落100**：「理不尽な怒りだとは、思わなかった」意为\"我并不觉得这怒火毫无道理\"。A正确；B译\"没想到竟会这么无理取闹\"意思完全相反，是严重翻译错误。\n\n### 流畅性与风格分析\n\n- A在口语化表达上更自然：如\"啥也不想\"、\"库斯库斯地偷笑\"、\"真让人不爽\"\n- B部分段落缺少对话引号（段落35、42、47等），格式不一致\n- A的对话语气更符合轻小说少女角色的说话方式\n\n### 术语一致性\n\n两者人名翻译一致（尤莉娅、席恩、波普拉）\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 5, \"notes\": \"B在段落15、34、48、55、100有明显误译，尤其段落100意思完全相反\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A口语化更自然，B部分表达略显生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更贴合轻小说少女视角的语气风格\"},\n    \"terminology\": {\"A\": 9, \"B\": 9, \"notes\": \"人名等专有名词翻译一致\"},\n    \"coherence\": {\"A\": 9, \"B\": 6, \"notes\": \"B的视角混乱（段落15）影响叙事连贯性\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"B多处对话缺少引号，格式不统一\"}\n  },\n  \"key_differences\": [\n    \"段落15视角错误：A正确理解为尤莉娅推倒席恩，B错译为相反\",\n    \"段落34「食い意地」：A译贪吃正确，B误译为抠门\",\n    \"段落100关键情感理解：A正确表达'不觉得无理'，B错译为'没想到无理取闹'\",\n    \"段落55性别代词：A正确用女性视角，B误用'他'\",\n    \"B多处缺少对话引号\"\n  ],\n  \"final_summary\": \"A译本在准确性上明显优于B，特别是在几个关键情节点（如段落100的情感转折、段落15的视角）的理解上，A正确把握了原文含义，而B出现了影响剧情理解的严重误译。A在风格和流畅度上也更贴合轻小说的表达习惯，格式也更规范统一。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12781,
+          "completion_tokens": 1979,
+          "total_tokens": 14760
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在段落15、34、48、55、100有明显误译，尤其段落100意思完全相反"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A口语化更自然，B部分表达略显生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更贴合轻小说少女视角的语气风格"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9,
+        "notes": "人名等专有名词翻译一致"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "B的视角混乱（段落15）影响叙事连贯性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "B多处对话缺少引号，格式不统一"
+      }
+    },
+    "key_differences": [
+      "段落15视角错误：A正确理解为尤莉娅推倒席恩，B错译为相反",
+      "段落34「食い意地」：A译贪吃正确，B误译为抠门",
+      "段落100关键情感理解：A正确表达'不觉得无理'，B错译为'没想到无理取闹'",
+      "段落55性别代词：A正确用女性视角，B误用'他'",
+      "B多处缺少对话引号"
+    ],
+    "final_summary": "A译本在准确性上明显优于B，特别是在几个关键情节点（如段落100的情感转折、段落15的视角）的理解上，A正确把握了原文含义，而B出现了影响剧情理解的严重误译。A在风格和流畅度上也更贴合轻小说的表达习惯，格式也更规范统一。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

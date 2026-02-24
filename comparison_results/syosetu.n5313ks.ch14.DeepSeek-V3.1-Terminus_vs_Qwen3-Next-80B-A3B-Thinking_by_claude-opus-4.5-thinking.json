@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:11:58.504056",
+  "sample": "syosetu.n5313ks.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5313ks.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5313ks.ch14.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/syosetu.n5313ks.ch14.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bf88588a1a5855615ef8d65c9b6c4af37e7a365094b338c25ea4e2c97eb1cf89",
+    "A": "e58929d309d0ed0d2677526578a1a41efbbe5df88a97bcbc98f8b4b11f70cf64",
+    "B": "8362e4f8d09585b7ed4ab171f55f8a208dcaa406e25a7171d7cb0a52de82e53d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:12:50.877436",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d37e903f-3cb8-45b1-a48f-b51383f416c5",
+      "judge_response": {
+        "id": "d37e903f-3cb8-45b1-a48f-b51383f416c5",
+        "object": "chat.completion",
+        "created": 1768432370,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 详细对比分析\n\n**准确性方面：**\n- 段落2：A将原意理解偏差（\"我跟里昂先生说过我们只是\"），B准确表达了\"虽然对里昂先生说是…的朋友\"\n- 段落3：A理解错误（\"和里昂先生一起逛\"），原文是主人公带里昂看，B正确\n- 段落30：A严重误译（\"不是随便对家里人发火\"），B准确（\"并非对擅自决定的家人抱怨或发怒\"）\n- 段落38：A将\"謝って\"译成\"道谢\"，实际应是\"道歉\"，B正确\n- **段落112：B严重误译**，原文\"働くのが好きでも\"是\"即使喜欢工作\"，B译成\"我既不喜欢工作\"完全相反，A正确\n\n**流畅性方面：**\n- B整体用词更典雅：如\"零星点缀\"\"蹙眉沉思\"\"光彩照人\"\n- A部分表达较口语化但偶显生硬\n\n**格式问题：**\n- A在段落79、80、83-84等处将内心独白错误加上引号\n- B对话格式保持一致，使用「」符号\n- B在段落50-52等处标点格式有缺失（缺少句号等）\n\n**风格/语气：**\n- B更符合轻小说女主视角的细腻叙述\n- A部分地方过于口语化（如\"老公\"\"宅\"\"傻透了\"）\n\n**名称一致性：**\n- A时而称\"里昂\"时而称\"里昂先生\"，不够统一\n- B基本统一使用\"里昂先生\"\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A有多处理解错误(段落30/38)，但B在段落112有严重反译错误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B用词典雅流畅，A部分表达生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说女主内心独白风格，A过于口语化\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A称呼不统一，B较一致；地名略有差异\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体阅读感更流畅连贯\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处将内心独白错误加引号，B部分标点缺失\"}\n  },\n  \"key_differences\": [\n    \"B整体文风更符合轻小说女主细腻叙述风格\",\n    \"A在段落30/38等处有理解错误，B在段落112有严重反译\",\n    \"A格式问题较多（内心独白加引号），影响阅读体验\",\n    \"B用词更典雅（蹙眉沉思/光彩照人等），A偏口语化（老公/傻透了）\"\n  ],\n  \"final_summary\": \"B在整体文风、流畅性和风格把控上明显优于A，更符合轻小说女性视角的细腻叙述。虽然B在段落112有一处严重误译，但A的错误更为分散且格式问题突出。综合考量，B胜出但优势不算压倒性。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13707,
+          "completion_tokens": 2281,
+          "total_tokens": 15988
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有多处理解错误(段落30/38)，但B在段落112有严重反译错误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B用词典雅流畅，A部分表达生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说女主内心独白风格，A过于口语化"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A称呼不统一，B较一致；地名略有差异"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体阅读感更流畅连贯"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处将内心独白错误加引号，B部分标点缺失"
+      }
+    },
+    "key_differences": [
+      "B整体文风更符合轻小说女主细腻叙述风格",
+      "A在段落30/38等处有理解错误，B在段落112有严重反译",
+      "A格式问题较多（内心独白加引号），影响阅读体验",
+      "B用词更典雅（蹙眉沉思/光彩照人等），A偏口语化（老公/傻透了）"
+    ],
+    "final_summary": "B在整体文风、流畅性和风格把控上明显优于A，更符合轻小说女性视角的细腻叙述。虽然B在段落112有一处严重误译，但A的错误更为分散且格式问题突出。综合考量，B胜出但优势不算压倒性。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

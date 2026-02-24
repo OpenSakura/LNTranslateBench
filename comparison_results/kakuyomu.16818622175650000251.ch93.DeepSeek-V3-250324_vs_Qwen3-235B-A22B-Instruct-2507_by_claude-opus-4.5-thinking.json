@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:32:14.093710",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "ee00edbcdc1cc008f5ecb7f468daece5a0c854ea6da876e91a4936cb95a365ca",
+    "B": "484c0e436ee5d57ea1ef1604746caf89ea973fe0d793d5236c8b718c7ea0be71"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:33:02.920118",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b1bcee9c-243a-4459-941e-ed27f1659f94",
+      "judge_response": {
+        "id": "b1bcee9c-243a-4459-941e-ed27f1659f94",
+        "object": "chat.completion",
+        "created": 1768422782,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落逐一分析\n\n**段落1-2**：\n- B的\"乘胜追击般给我致命一击\"比A的\"接连不断地对我痛下杀手\"更贴切原文\"畳み掛けるように...とどめを刺す\"\n- B的\"只有你穿着寒酸\"保留了\"お前だけ\"的强调，A漏掉了\"只有\"\n\n**段落7 - 严重错误**：\n- 原文主语是\"おタヒ\"不考虑禁播词汇\n- A翻译成\"塔伊\"（虽名字不一致但主语正确）\n- B翻译成\"琪肯\"，**完全搞错了主语**（琪肯是被说的人，不是说话者）\n\n**段落54-56 - 关键错误**：\n- 段落54原文\"俺とおタヒは25％の確率で即死\"\n- A译\"我和小多菲\"（正确）\n- B译\"我和葛莉賽達\"（**错误**）\n- 段落56原文\"おタヒは憤慨してる\"\n- A译\"小多菲\"（正确）\n- B译\"葛莉賽達\"（**严重错误**）\n\n**名字一致性问题**：\n- A对おタヒ的译名不统一：塔伊、小塔希、小多菲、小太妃\n- B保留了\"おタヒ\"未译（在大部分地方）但出现了致命的角色混淆\n\n**流畅性与风格对比**：\n- B：\"老子才不是你的下仆好吗\" vs A：\"我才不是你下人呢\" → B更口语化\n- B：\"冷静下来想想确实有道理\" vs A：\"恢复理智想想的话，确实有点道理\" → B更自然\n- B：\"噼里啪啦掉下来\" vs A：\"啪噠啪噠掉下來\" → B更生动\n\n**段落73 - 另一处错误**：\n- 原文是\"おタヒでも着られる\"（连おタヒ都能穿的）\n- B译成\"连和服都能穿的\" → **完全误译**\n- A译成\"连小泰菲都能穿的\" → 正确（虽然名字又换了）\n\n### 总体评价\n\nB在语言流畅度、轻小说风格把握上明显优于A，但存在**多处致命的角色混淆错误**（段落7、54、56、73），直接影响读者理解剧情。A虽然名字翻译不统一、文风稍显生硬，但没有出现如此严重的理解错误。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B在段落7/54/56/73出现严重角色混淆错误，将おタヒ误译为琪肯或葛莉賽達\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语化自然，A部分表达略显生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说语气，如'老子才不是''该咋整'等\"},\n    \"terminology\": {\"A\": 5, \"B\": 5, \"notes\": \"A名字译法不统一(塔伊/小塔希/小多菲)；B虽保留おタヒ但出现角色错配\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"B的角色混淆严重影响剧情理解\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式标点基本规范\"}\n  },\n  \"key_differences\": [\n    \"B在段落56将'おタヒは憤慨してる'误译为'葛莉賽達虽然愤慨'\",\n    \"B在段落54将'俺とおタヒ'误译为'我和葛莉賽達'\",\n    \"B在段落73将'おタヒでも着られる'误译为'连和服都能穿的'\",\n    \"B整体语言更流畅口语化，A较为保守直译\",\n    \"A人名翻译不统一但主语判断正确\"\n  ],\n  \"final_summary\": \"B在流畅度和轻小说风格上表现更佳，但存在多处致命的角色混淆错误，将おタヒ误认为其他角色，严重影响剧情理解。A虽然文风略生硬、名字翻译不统一，但准确性更高，没有出现如此严重的理解偏差。综合考虑，准确性是翻译的基础，A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10843,
+          "completion_tokens": 2243,
+          "total_tokens": 13086
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B在段落7/54/56/73出现严重角色混淆错误，将おタヒ误译为琪肯或葛莉賽達"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语化自然，A部分表达略显生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说语气，如'老子才不是''该咋整'等"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 5,
+        "notes": "A名字译法不统一(塔伊/小塔希/小多菲)；B虽保留おタヒ但出现角色错配"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "B的角色混淆严重影响剧情理解"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式标点基本规范"
+      }
+    },
+    "key_differences": [
+      "B在段落56将'おタヒは憤慨してる'误译为'葛莉賽達虽然愤慨'",
+      "B在段落54将'俺とおタヒ'误译为'我和葛莉賽達'",
+      "B在段落73将'おタヒでも着られる'误译为'连和服都能穿的'",
+      "B整体语言更流畅口语化，A较为保守直译",
+      "A人名翻译不统一但主语判断正确"
+    ],
+    "final_summary": "B在流畅度和轻小说风格上表现更佳，但存在多处致命的角色混淆错误，将おタヒ误认为其他角色，严重影响剧情理解。A虽然文风略生硬、名字翻译不统一，但准确性更高，没有出现如此严重的理解偏差。综合考虑，准确性是翻译的基础，A胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

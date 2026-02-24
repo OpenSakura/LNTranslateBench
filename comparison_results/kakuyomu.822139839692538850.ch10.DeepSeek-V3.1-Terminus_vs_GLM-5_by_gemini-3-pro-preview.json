@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-02-13T00:04:26.582605",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "GLM-5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "GLM-5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.GLM-5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "d0bcbb725f83b3d5c9197f4922b420b213bc4bf27580f89ec288b0cc09cf41b4",
+    "B": "e3e9adaadf355c2259269c51d718f879af25d992dd56be2a68a929d3dedcf4fb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-02-13T00:05:29.566927",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202602130004268314382373c35MMmq",
+      "judge_response": {
+        "id": "chatcmpl-202602130004268314382373c35MMmq",
+        "object": "chat.completion",
+        "created": 1770941129,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于详细对比分析后的评判结果：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **关键差异点 (段落 15):**\n    *   原文: 「わたしを押し倒してショックを受けたまま放っておいてしまったから...」\n    *   **翻译 A** 理解正确：主角（尤莉娅）在席恩推倒她并受到惊吓（席恩自己被自己的行为吓到）后，主角把他留在那儿离开了（放っておいてしまった）。这符合后文主角感到“担心”和“没有资格担心”的语境。\n    *   **翻译 B** 理解错误：翻译为“他...就那样把我扔在一边不管”。这弄反了动作的主语。如果是席恩扔下主角，原文通常会用被动语态或明确主语，且主角的情感反应会是困惑而非对他的担心。\n*   **细节捕捉:**\n    *   段落 111: 原文有「いずれ」（总有一天/迟早），**翻译 A** 译出了“总有一天”，**翻译 B** 漏译了该词，导致句子失去了时间上的层次感。\n    *   段落 2: 「小娘」在精灵的视角下带有轻蔑意，**翻译 B** 的“小丫头”比 **翻译 A** 的“普通姑娘”稍微更贴切一点语境，但 A 也不算错。\n\n**2. 流畅性与文风 (Fluency & Style)**\n*   **翻译 A** 的中文表达更加洗练和文学化。例如段落 86，A 译作“懵懂度日”，B 译作“无忧无虑、一无所知活着”，A 更符合轻小说的叙述美感。\n*   **翻译 B** 有时显得啰嗦或口语化过度。例如段落 86 的“愚蠢的笨女人”（语义重复），以及段落 30 的句式结构略显生硬。\n*   **翻译 A** 在处理长句时（如段落 14、77）逻辑更清晰，修饰语的排列更符合中文习惯。\n\n**3. 术语与一致性 (Terminology & Consistency)**\n*   两者在人名和基本术语上保持一致。\n*   段落 40 中，原文是「孤立」，**翻译 A** 译为“孤高”，**翻译 B** 译为“孤立”。虽然 B 更忠实字面，但 A 的“孤高”结合上下文（波普拉敢说敢做的性格）其实更传神，不过 B 的处理在准确性上更稳妥。\n\n**4. 标点与格式**\n*   两者都处理得当。\n\n### 总结\n**翻译 A** 整体质量更高。它不仅准确理解了复杂的句子结构（特别是段落 15 的主语判定），而且用词更具文学性，读起来更像是一部打磨过的轻小说。**翻译 B** 虽然在某些口语对话（如精灵的辱骂）上很有力度，但在关键情节的理解上出现了失误（弄反了谁把谁扔下），且部分描述性文字略显累赘。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9.5,\n      \"B\": 8.0,\n      \"notes\": \"A准确理解了第15段复杂的动作主语关系；B在该处出现明显误译（弄反了是谁离开了谁）。\"\n    },\n    \"fluency\": {\n      \"A\": 9.0,\n      \"B\": 8.5,\n      \"notes\": \"A的措辞更加洗练（如'懵懂度日'），句式结构更顺畅。\"\n    },\n    \"style\": {\n      \"A\": 9.0,\n      \"B\": 8.5,\n      \"notes\": \"A更符合轻小说内心独白的文艺感；B在部分对话中略显啰嗦（如'愚蠢的笨女人'）。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者均无问题。\"\n    },\n    \"coherence\": {\n      \"A\": 9.5,\n      \"B\": 8.5,\n      \"notes\": \"A的逻辑连接更紧密，特别是在长句翻译上。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"均符合规范。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落15：原文'放っておいてしまった'是主角（尤莉娅）的动作。A正确译为主角放着席恩不管；B错误译为席恩把主角扔在一边。\",\n    \"段落86：A使用了'懵懂度日'等成语，文笔优美；B使用了'无忧无虑、一无所知'，略显拖沓。\",\n    \"段落111：A保留了'いずれ'（总有一天）的含义，B漏译。\"\n  ],\n  \"final_summary\": \"翻译A在准确性和文笔上都优于翻译B。最关键的差别在于段落15，A正确解析了原文的施事者，而B出现了理解错误，改变了剧情逻辑。此外，A的语言组织更加精炼，符合轻小说的阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8923,
+          "completion_tokens": 5352,
+          "total_tokens": 14275
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9.5,
+        "B": 8.0,
+        "notes": "A准确理解了第15段复杂的动作主语关系；B在该处出现明显误译（弄反了是谁离开了谁）。"
+      },
+      "fluency": {
+        "A": 9.0,
+        "B": 8.5,
+        "notes": "A的措辞更加洗练（如'懵懂度日'），句式结构更顺畅。"
+      },
+      "style": {
+        "A": 9.0,
+        "B": 8.5,
+        "notes": "A更符合轻小说内心独白的文艺感；B在部分对话中略显啰嗦（如'愚蠢的笨女人'）。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者均无问题。"
+      },
+      "coherence": {
+        "A": 9.5,
+        "B": 8.5,
+        "notes": "A的逻辑连接更紧密，特别是在长句翻译上。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "均符合规范。"
+      }
+    },
+    "key_differences": [
+      "段落15：原文'放っておいてしまった'是主角（尤莉娅）的动作。A正确译为主角放着席恩不管；B错误译为席恩把主角扔在一边。",
+      "段落86：A使用了'懵懂度日'等成语，文笔优美；B使用了'无忧无虑、一无所知'，略显拖沓。",
+      "段落111：A保留了'いずれ'（总有一天）的含义，B漏译。"
+    ],
+    "final_summary": "翻译A在准确性和文笔上都优于翻译B。最关键的差别在于段落15，A正确解析了原文的施事者，而B出现了理解错误，改变了剧情逻辑。此外，A的语言组织更加精炼，符合轻小说的阅读体验。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:27.817740",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "Qwen3-Next-80B-A3B-Instruct",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "eb366e73b1d7a8db46d3b86c014db4d3f8b1c98b1d879b4996f9653b18772c87",
+    "B": "c2a76b8ab0ffd188c761f06b49c6f0e3ccbe5559234c1b93035e5e8bcefb1e86"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:46.149129",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89D1mxvaXcfhG9uiyggeNPpjJmtsk",
+      "judge_response": {
+        "id": "chatcmpl-89D1mxvaXcfhG9uiyggeNPpjJmtsk",
+        "object": "chat.completion",
+        "created": 1768426905,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"ヴィルヘルミーナ軍港 艦名 インペラトリーツァ・エカテリーナ ライトノベル OR 小説\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"ベルセフォニア共和国 OR ベルセフォニア ライトノベル OR 軍事 OR SF 小説\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"柳井 皇帝 メアリーⅠ世 インペラトリーツァ・エカテリーナ 翻訳 OR 原作\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"【書籍化済】追放された公爵令嬢、ヴィルヘルミーナが幸せになるまで。【コミカライズ】\" Syosetu](https://ncode.syosetu.com/n0890hp)\n> [🔗 \"追放された公爵令嬢、ヴィルヘルミーナが幸せになるまで。 上 | ブックライブ\" BookLive](https://booklive.jp/product/index/title_id/1360233/vol_no/001)\n> [🔗 \"ライトノベル系レーベル一覧 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%88%E3%83%8E%E3%83%99%E3%83%AB%E7%B3%BB%E3%83%AC%E3%83%BC%E3%83%99%E3%83%AB%E4%B8%80%E8%A6%A7)\n> [🔗 \"追放された公爵令嬢、ヴィルヘルミーナが幸せになるまで。 上\" Renta！](https://renta.papy.co.jp/renta/sc/frm/item/332707/title/2334164)\n> [🔗 \"小説（ヴィルヘルミナ） - カクヨム\" Kakuyomu](https://kakuyomu.jp/users/Wilhelmina/works)\n> [🔗 \"【ミリタリー】おすすめWeb小説一覧を人気順で読...\" Kakuyomu](https://kakuyomu.jp/tags/%E3%83%9F%E3%83%AA%E3%82%BF%E3%83%AA%E3%83%BC)\n> [🔗 \"追放された公爵令嬢、ヴィルヘルミーナが幸せになるまで。 上｜無料漫画（マンガ）ならコミックシーモア｜ただのぎょー/結川カズノ\" Cmoa](https://www.cmoa.jp/title/1101388691)\n> [🔗 \"魔弾の王と戦姫 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E9%AD%94%E5%BC%BE%E3%81%AE%E7%8E%8B%E3%81%A8%E6%88%A6%E5%A7%AB)\n> [🔗 \"ラノベ（ライトノベル） - 漫画・ラノベ（小説）・無料試し読みなら、電子書籍・コミックストア ブックライブ\" BookLive](https://booklive.jp/index/lightnovel)\n> [🔗 \"【有償特典付き】追放された公爵令嬢、ヴィルヘルミーナが幸せになるまで。（下） - SHOSEN ONLINE SHOP\" SHOSEN ONLINE SHOP](https://shosen.tokyo/?pid=174621963)\n\n> 🔍 **10 results found**\n\n> [🔗 \"宇宙SFライトノベル完全ガイド ～スペースオペラ、惑星探索、冒険活劇～ | ブックオフ公式オンラインストア\" Bookoff](https://shopping.bookoff.co.jp/lightnovel/feature/sf-space)\n> [🔗 \"力を貸してください。昔、ライトノベルで、SFとファンタジー?が混... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12313986622)\n> [🔗 \"#オススメラノベSF で選んだ比較的最近のラノベSF20選 - 読書する日々と備忘録\" Hatenablog](https://yocchi.hatenablog.com/entry/2022/09/29/222358)\n> [🔗 \"SF̏Љ35\" Omnh](http://www.omnh.jp/wada/Book/SF-35.html)\n> [🔗 \"ライトノベルの歴史 I.ジュブナイルSFの時代 : 物語良品館資料室\" Blog](https://susumutomaru1999.blog.jp/archives/1072483598.html)\n> [🔗 \"ＳＦが読みたい！ラノベ・ライト文芸＋ハヤカワ文庫２６選 - 読書する日々と備忘録\" Hatenablog](https://yocchi.hatenablog.com/entry/2018/09/16/224851)\n> [🔗 \"【近未来SF】おすすめWeb小説一覧を人気順で読もう - カクヨム\" Kakuyomu](https://kakuyomu.jp/tags/%E8%BF%91%E6%9C%AA%E6%9D%A5SF)\n> [🔗 \"今読みたい！おすすめSFラノベ30選 - 読書する日々と備忘録\" Hatenablog](https://yocchi.hatenablog.com/entry/2023/10/14/152216)\n> [🔗 \"【最新】ライトノベルおすすめ53選！異世界、恋愛、ラブコメなどのラノベ名作をジャンル別にご紹介\" BookWalker](https://bookwalker.jp/select/1981)\n> [🔗 \"ラノベとSF、100タイトル挙げてジャンル小説について考えてみた件｜SF研究会（慶應義塾大学公認学生団体）\" Note](https://note.com/keio_sf/n/n642c8e1097a3)\n\n> 🔍 **10 results found**\n\n> [🔗 \"エカテリーナ (テレビドラマ) - 登場人物 - ...\" Weblio](https://www.weblio.jp/wkpja/content/%E3%82%A8%E3%82%AB%E3%83%86%E3%83%AA%E3%83%BC%E3%83%8A+(%E3%83%86%E3%83%AC%E3%83%93%E3%83%89%E3%83%A9%E3%83%9E)_%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)\n> [🔗 \"エカチェリーナ2世 (ロシア皇帝) - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%AB%E3%83%81%E3%82%A7%E3%83%AA%E3%83%BC%E3%83%8A2%E4%B8%96_(%E3%83%AD%E3%82%B7%E3%82%A2%E7%9A%87%E5%B8%9D))\n> [🔗 \"「王冠をかぶった娼婦」と呼ばれたロシア最強女帝『エカテリーナ』を2018年2月に日本初放送決定！ | チャンネル銀河株式会社のプレスリリース\" PR TIMES](https://prtimes.jp/main/html/rd/p/000000067.000007290.html)\n> [🔗 \"エカテリーナ - Translation into English - examples Japanese | Reverso Context\" Reverso Context](https://context.reverso.net/translation/japanese-english/%E3%82%A8%E3%82%AB%E3%83%86%E3%83%AA%E3%83%BC%E3%83%8A)\n> [🔗 \"THE GREAT ～エカチェリーナの時々真実の物語～ ...\" Prime Video](https://www.primevideo.com/-/ja/detail/THE-GREAT-%EF%BD%9E%E3%82%A8%E3%82%AB%E3%83%81%E3%82%A7%E3%83%AA%E3%83%BC%E3%83%8A%E3%81%AE%E6%99%82%E3%80%85%E7%9C%9F%E5%AE%9F%E3%81%AE%E7%89%A9%E8%AA%9E%EF%BD%9E-%E5%AD%97%E5%B9%95%E7%89%88/0L49YBTPFJI9OTD8OYHE6VB8NX)\n> [🔗 \"ドラマ「エカテリーナ」特集 | J:COMテレビ番組ガイド | MYJCOM\" J:COM](https://www2.myjcom.jp/special/tv/drama/foreign/ekaterina)\n> [🔗 \"エカテリーナ - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%AB%E3%83%86%E3%83%AA%E3%83%BC%E3%83%8A)\n> [🔗 \"エカテリーナ (テレビドラマ) - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%AB%E3%83%86%E3%83%AA%E3%83%BC%E3%83%8A_(%E3%83%86%E3%83%AC%E3%83%93%E3%83%89%E3%83%A9%E3%83%9E))\n> [🔗 \"5分でわかる、「エカチェリーナ２世のちょっと変わった政治」の映像授業 | 映像授業のTry IT (トライイット)\" Try IT](https://www.try-it.jp/chapters-11654/lessons-11666/point-3)\n> [🔗 \"エカテリーナ\" Pixiv](https://dic.pixiv.net/a/%E3%82%A8%E3%82%AB%E3%83%86%E3%83%AA%E3%83%BC%E3%83%8A)\n\n\n这是一个太空歌剧风格的轻小说片段，涉及帝国政治、舰队、外交、共和国局势等元素。原文是日文（ja），翻译成中文（zh）。A和B是两个不同的译本，我将逐段比较，重点评估准确性、流畅性、轻小说风格（叙述优雅、对话自然、带点吐槽/内心戏感）、术语一致性、连贯性、格式。\n\n**整体观察**：\n- A更倾向于忠实原文，保留日式叙述的细腻与正式感，使用较多汉字（如「威廉明娜」「帝后葉卡捷琳娜」），对话较为文雅，适合轻小说中严肃的政治/军事氛围。\n- B更口语化、简化，追求现代中文的轻松感（如「挺不错的」「吧？」），但有时牺牲准确性或风格一致性（如人名音译不统一、句子过短导致节奏突兀）。\n- 术语：舰名「インペラトリーツァ・エカテリーナ」A译「帝后葉卡捷琳娜號」（贴近“Empress Catherine”的帝后意味，优雅），B多用「叶卡捷琳娜号」（直接但平淡）。地名如「ヴィルヘルミーナ」A「威廉明娜」（较标准德语系音译），B「维尔赫米尔娜」（稍偏）。\n- 轻小说风格：原文有叙述性强、带点心理描写的倾向，A保留得更好；B有时过于简略，少了轻小说常见的“氛围感”。\n\n**详细逐类分析**（选代表性段落）：\n\n- 准确性：A整体更准。例如段落6，原文“皇帝と侍従の一団に付き添って、柳井は...を見上げていた”→A“伴隨皇帝與侍從一行，柳井抬頭凝望著...”，完整保留“付き添って”（伴随/陪同）；B“皇帝和侍从们陪着，柳井抬头看着”，主语颠倒，意思偏差。段落7历史描述，A准确传达“ネームシップ”（命名舰/首舰），B“首舰”正确但简化。段落8，A保留“不犠牲機動性與火力”，B“机动和火力也一点没落”较口语但准确。总体A胜。\n- 流畅性：B在对话更自然（如段落4「改装的效果也挺不错的呢」轻松），但叙述段B常过短（如段落6、B太简略）。A句子较长但节奏稳，读来顺畅不生硬。两者接近，但A在长句处理更好。\n- 风格/语气：轻小说常混正式叙述+轻松对话。A保持优雅（如段落9「順便做一下改裝後的測試，我打算去本土宙域巡視兩週左右。留守就拜託你了。」有礼貌的皇帝语气）；B更随意（如段落21「总之，冲动要不得，千万得记住！」带点命令感，但少了原文的“言い含めておいてちょうだい”的温柔叮嘱）。A更贴轻小说“高贵角色”的语气。\n- 术语/名称一致性：A一致（如始终「威廉明娜軍港」「帝后葉卡捷琳娜」「貝爾塞福尼亞共和國」）；B波动（如「维尔赫米尔娜」「叶卡捷琳娜」「贝尔塞福尼亚」）。A胜。\n- 连贯性/可读性：A全文连贯，段落过渡自然；B有些地方跳跃（如段落19 B句子太碎）。A胜。\n- 格式/标点：两者均使用中文标点，但A更规范（如全角引号一致，时间「10時00分」保留日式）；B有时混用（如「10:43」）。A稍优。\n\n**关键差异**：\n- 人名/专名：A音译更严谨优雅（威廉明娜、貝爾塞福尼亞、帝后葉卡捷琳娜），B较随意。\n- 对话：A文雅有层次，B偏白话轻松。\n- 叙述：A保留原文细腻描写，B简化有时失味（如段落15政治分析，A更完整）。\n- 整体：A更适合严肃太空政治轻小说；B更“接地气”但牺牲部分质感。\n\n**最终判决**  \nA在准确性、风格一致性、术语连贯上明显优于B，整体更符合轻小说翻译的标准（保留原文氛围、不随意简化）。B在某些对话流畅，但全局弱。\n\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A忠实原文，少有误译或省略；B有主语错位、简化过度导致偏差\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者中文均顺；B对话更口语，但叙述有时太碎\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A保留轻小说优雅+正式叙述语气；B偏现代白话，少了贵族/皇帝的格调\"},\n    \"terminology\": {\"A\": 9, \"B\": 6, \"notes\": \"A名称一致优雅（如帝后葉卡捷琳娜）；B音译不统一、简化\"},\n    \"coherence\": {\"A\": 9, \"B\": 7, \"notes\": \"A段落连贯完整；B部分跳跃、句子过短\"},\n    \"formatting\": {\"A\": 9, \"B\": 8, \"notes\": \"A时间/标点更统一日式风格；B偶有西式混用\"}\n  },\n  \"key_differences\": [\n    \"专名音译：A更严谨统一（如威廉明娜 vs 维尔赫米尔娜）\",\n    \"叙述详略：A保留原文细腻描写，B常简化导致氛围减弱\",\n    \"对话语气：A优雅有礼，B更随意口语\",\n    \"政治/历史描述：A更完整准确，B偶有省略\"\n  ],\n  \"final_summary\": \"A整体更胜一筹，准确保留原文意思、轻小说风格与氛围，适合严肃太空政治题材；B虽对话亲切，但准确性、连贯性与一致性不足，导致质感稍逊。推荐A作为更好译本。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12864,
+          "completion_tokens": 5066,
+          "total_tokens": 17930
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A忠实原文，少有误译或省略；B有主语错位、简化过度导致偏差"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者中文均顺；B对话更口语，但叙述有时太碎"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A保留轻小说优雅+正式叙述语气；B偏现代白话，少了贵族/皇帝的格调"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 6,
+        "notes": "A名称一致优雅（如帝后葉卡捷琳娜）；B音译不统一、简化"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A段落连贯完整；B部分跳跃、句子过短"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "A时间/标点更统一日式风格；B偶有西式混用"
+      }
+    },
+    "key_differences": [
+      "专名音译：A更严谨统一（如威廉明娜 vs 维尔赫米尔娜）",
+      "叙述详略：A保留原文细腻描写，B常简化导致氛围减弱",
+      "对话语气：A优雅有礼，B更随意口语",
+      "政治/历史描述：A更完整准确，B偶有省略"
+    ],
+    "final_summary": "A整体更胜一筹，准确保留原文意思、轻小说风格与氛围，适合严肃太空政治题材；B虽对话亲切，但准确性、连贯性与一致性不足，导致质感稍逊。推荐A作为更好译本。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

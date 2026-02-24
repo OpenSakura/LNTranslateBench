@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:18:02.910155",
+  "sample": "syosetu.n6776iy.ch386",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6776iy.ch386.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6776iy.ch386.Kimi-K2.translated.txt",
+    "B": "translated_results/syosetu.n6776iy.ch386.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2bb7195d7ec1f474ffb77e11e9912b818e91c49fbc1fcd84cbf2ad9cb25860ec",
+    "A": "4b97080977ac7676b2c557cfddb5fb418249b6a46fca4a6f2e7a082214020732",
+    "B": "78034d2964e01d5f634fd1681fcf2a3d71c0ae56b541bb0d1ff1b2b7efac5b93"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:18:55.582299",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ee1573e6-2ded-40d8-a48f-6f7ea6ec50d6",
+      "judge_response": {
+        "id": "ee1573e6-2ded-40d8-a48f-6f7ea6ec50d6",
+        "object": "chat.completion",
+        "created": 1768432734,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n- **段落2**: 原文「後、お願い」意为\"之后的事拜托了\"，A译成\"再等我一下\"有误解，B的\"之后、拜托了\"更准确\n- **段落11**: 原文是\"白色中滴入墨汁\"，A译为\"墨汁搅进白颜料里\"语序略有调整但可接受，B保持原意更精确\n- **段落16**: A将\"二人目\"译为\"第二人格\"添加了原文没有的\"格\"字，B的\"第二人\"更忠实\n- **段落22**: A的\"马尔克\"和B的\"马克\"人名翻译不一致，但B对句子结构\"或许是...从而填补了\"把握更好\n\n### 流畅性分析\n- **段落4**: A\"就现在，只要现在，让我稍微缓一缓\"自然流畅；B\"稍微现在、只有现在\"语序别扭\n- **段落9**: A\"朝马克倒了过去\"口语化；B\"朝着马克倾倒而去\"略显文绉绉\n- **段落63**: A的激烈对话更有感染力，语气更连贯；B断句稍显生硬\n\n### 格式问题\n- **B译文存在严重问题**: 全篇使用日文顿号\"、\"代替中文逗号\"，\"，这在中文排版中不规范\n- A使用标准中文标点符号\n\n### 风格/语气\n- 轻小说对话场景中，A的表达更口语化、情绪更饱满（如段落51、59、67的激烈争吵）\n- B部分表达较为书面化，对话感稍弱\n\n### 术语一致性\n- A统一用\"马尔克\"，B用\"马克\"——两者内部一致\n- \"第一人/第二人\"vs\"第一人格/第二人格\"：B更统一，A在段落16突然加\"格\"\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B对原文细节把握更精确，A在段落2有误译\"},\n    \"fluency\": {\"A\": 9, \"B\": 6, \"notes\": \"A语言流畅自然，B多处语序别扭\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A对话感强、情绪饱满，更符合轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B术语更统一，A在'第二人格'处不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体阅读体验更顺畅\"},\n    \"formatting\": {\"A\": 9, \"B\": 4, \"notes\": \"B全篇使用日文顿号、代替中文逗号，严重扣分\"}\n  },\n  \"key_differences\": [\n    \"标点符号规范性：A使用中文标点，B错误使用日文顿号\",\n    \"语言风格：A更口语化有感情，B较为直译生硬\",\n    \"准确性：B在部分细节更忠实原文，A有少量误译\",\n    \"对话表现力：A在激烈争吵场景更有张力\"\n  ],\n  \"final_summary\": \"A译文在流畅性、风格把控和格式规范上明显优于B，尤其在情绪激烈的对话场景中更有感染力。B虽在部分细节准确性上略胜，但全篇使用日文顿号的格式错误是硬伤，加上多处语序不自然，整体阅读体验受损。综合评判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10100,
+          "completion_tokens": 2073,
+          "total_tokens": 12173
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对原文细节把握更精确，A在段落2有误译"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A语言流畅自然，B多处语序别扭"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A对话感强、情绪饱满，更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B术语更统一，A在'第二人格'处不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体阅读体验更顺畅"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B全篇使用日文顿号、代替中文逗号，严重扣分"
+      }
+    },
+    "key_differences": [
+      "标点符号规范性：A使用中文标点，B错误使用日文顿号",
+      "语言风格：A更口语化有感情，B较为直译生硬",
+      "准确性：B在部分细节更忠实原文，A有少量误译",
+      "对话表现力：A在激烈争吵场景更有张力"
+    ],
+    "final_summary": "A译文在流畅性、风格把控和格式规范上明显优于B，尤其在情绪激烈的对话场景中更有感染力。B虽在部分细节准确性上略胜，但全篇使用日文顿号的格式错误是硬伤，加上多处语序不自然，整体阅读体验受损。综合评判A胜出。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

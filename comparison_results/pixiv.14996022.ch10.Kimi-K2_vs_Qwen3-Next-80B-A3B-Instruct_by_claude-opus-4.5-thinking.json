@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:47:38.627674",
+  "sample": "pixiv.14996022.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14996022.ch10.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14996022.ch10.Kimi-K2.translated.txt",
+    "B": "translated_results/pixiv.14996022.ch10.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "97840b0ea25b900611e3fd1bca8d95c19b711a6d9a5b445298a5ca51f9d44473",
+    "A": "4ed2e22e4885b8232dd1e6ac5eea32a2eb0010071bdb0de578635260f787aeb5",
+    "B": "247f1c72fbdaa5fc8800be09c2e19f49a862ad1959bc999a0d3993069a02530a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:48:37.395916",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6cc18aba-598c-445e-b20b-c9aa320db922",
+      "judge_response": {
+        "id": "6cc18aba-598c-445e-b20b-c9aa320db922",
+        "object": "chat.completion",
+        "created": 1768423717,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 关键问题发现\n\n**翻译A存在严重缺失**：段落36、37、39、40、42、43、56、57完全没有翻译内容，这是致命缺陷。\n\n### 各维度详细对比\n\n**1. 准确性**\n- \"タメ口\"译法：A译为\"口语\"（不准确），B译为\"随便的口吻\"（更接近原意：非敬语的平辈说话方式）\n- 段落19：A\"只要能【拜托】她就万事大吉\"正确；B\"接受你的请求\"理解有误\n- 段落53\"マリモ\"：A\"马里莫\"(音译)，B\"海藻球\"(意译，更易理解)\n\n**2. 流畅性**\n- 段落3：A\"以下内容包含以下要素\"有冗余；B更简洁\n- 段落8：A的\"杀伤力爆表可爱到爆\"节奏感佳；B的列举略显冗长\n\n**3. 风格/语气**\n- A的\"冲鸭\"\"小心脏扑通扑通\"等网络用语更贴合轻小说风格\n- B整体偏正式，但人物对话中保持了应有的亲昵感\n- 称呼：A偶尔省略\"酱\"，B较一致但段落59出现日文\"ちゃん\"未译\n\n**4. 术语一致性**\n- 段落2标题：A译为中文《魔法少女之魔女审判》；B保留原文「魔法少女ノ魔女裁判」（二次创作保留原名更常见）\n- 人名：A偶尔称\"雪\"而非\"雪酱\"，B更统一\n\n**5. 连贯性/可读性**\n- A缺失8个段落，导致对话断裂，严重影响阅读体验\n- B完整呈现全部内容\n\n**6. 格式/标点**\n- 段落32-33：B使用单引号'而非双引号「」，不符合惯例\n- A的格式基本规范（在有内容的段落）\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A将'タメ口'误译为'口语'；B'随便的口吻'更准确。B在段落19有小误解。\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相近，A有网络化表达，B更稳健。\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的'冲鸭''小心脏扑通扑通'更贴合轻小说少女叙述风格。\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A称呼不一致且核心术语'タメ口'翻译错误；B偶有日文残留。\"},\n    \"coherence\": {\"A\": 3, \"B\": 9, \"notes\": \"A缺失8个段落(36,37,39,40,42,43,56,57)，严重破坏连贯性。\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"B在段落32-33使用非标准单引号；A格式规范但内容不全。\"}\n  },\n  \"key_differences\": [\n    \"翻译A缺失8个完整段落，翻译B内容完整\",\n    \"'タメ口'核心术语：A误译为'口语'，B译为'随便的口吻/随意口吻'\",\n    \"A语气更网络化/活泼，B更稳重\",\n    \"原作标题处理：A汉化，B保留原文\"\n  ],\n  \"final_summary\": \"翻译A虽在风格上略胜一筹，但致命缺陷是缺失8个段落的翻译内容，导致对话和情节断裂，严重影响可读性。此外，A对核心术语'タメ口'的翻译也存在明显错误。翻译B虽有个别小瑕疵（如引号格式、偶尔残留日文），但内容完整、术语准确，整体质量明显更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11496,
+          "completion_tokens": 2478,
+          "total_tokens": 13974
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A将'タメ口'误译为'口语'；B'随便的口吻'更准确。B在段落19有小误解。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相近，A有网络化表达，B更稳健。"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的'冲鸭''小心脏扑通扑通'更贴合轻小说少女叙述风格。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A称呼不一致且核心术语'タメ口'翻译错误；B偶有日文残留。"
+      },
+      "coherence": {
+        "A": 3,
+        "B": 9,
+        "notes": "A缺失8个段落(36,37,39,40,42,43,56,57)，严重破坏连贯性。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "B在段落32-33使用非标准单引号；A格式规范但内容不全。"
+      }
+    },
+    "key_differences": [
+      "翻译A缺失8个完整段落，翻译B内容完整",
+      "'タメ口'核心术语：A误译为'口语'，B译为'随便的口吻/随意口吻'",
+      "A语气更网络化/活泼，B更稳重",
+      "原作标题处理：A汉化，B保留原文"
+    ],
+    "final_summary": "翻译A虽在风格上略胜一筹，但致命缺陷是缺失8个段落的翻译内容，导致对话和情节断裂，严重影响可读性。此外，A对核心术语'タメ口'的翻译也存在明显错误。翻译B虽有个别小瑕疵（如引号格式、偶尔残留日文），但内容完整、术语准确，整体质量明显更优。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

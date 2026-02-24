@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:17:15.948056",
+  "sample": "syosetu.n6753le.ch17",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6753le.ch17.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6753le.ch17.GLM-4.6.translated.txt",
+    "B": "translated_results/syosetu.n6753le.ch17.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2afa7564b8a9514c750f35e65d3d70d2bd5288fd6b1f160d0d59e89ce5f975be",
+    "A": "76d9a9a06a06961c431483f1b0c7615c696d4b200343410785c6478243e74106",
+    "B": "a29d4664e408dc01d0e7700c14f8ab5d916c87085bcccb9100e6c1603d209114"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:17:54.800215",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "860e810e-b2f5-405b-9b36-e8ec98e8f17a",
+      "judge_response": {
+        "id": "860e810e-b2f5-405b-9b36-e8ec98e8f17a",
+        "object": "chat.completion",
+        "created": 1768432673,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 格式/标点符号\n- **翻译A**：全程使用「」作为对话标记，符合日系轻小说翻译惯例\n- **翻译B**：大部分使用\"\"，但在段落38突然切换为「」，格式不统一\n- **注意**：A在段落74和76出现截断问题，缺少结束引号\n\n### 2. 准确性\n- 段落8：\"不経済\"，A译为\"太浪费了\"，B译为\"太费钱了\"——B更贴合经济概念\n- 段落13：\"根強くて\"，A译\"很顽固\"略显生硬，B译\"根深蒂固\"更准确\n- 段落26：\"ワイバーン\"，A译\"双足飞龙\"更精确，B仅译\"飞龙\"稍有省略\n- 段落25：\"引き連れた\"，A译\"又长又大\"，B译\"延伸到\"——B更准确表达伤疤走向\n\n### 3. 流畅性\n- 段落32：A\"舒服得要命\"vs B\"爽翻天了\"——B更口语化自然\n- 段落33：A\"眼睛都涩出眼泪了\"表达不自然，B\"简直乱成一团，我都快哭了\"更流畅\n- 段落54：A\"艾利克大人\"vs B\"艾利克大人\"——两者都准确表达\"さまさま\"\n\n### 4. 风格/语气\n- A整体语气稳定，轻小说对话感较好\n- B在某些地方更活泼（如\"爽翻天\"），但格式不统一影响观感\n- 段落53：A\"超规格\"vs B\"离谱\"——B更符合口语化轻小说风格\n\n### 5. 术语一致性\n- 两者对\"魔術触媒\"\"浄化\"\"治癒\"等术语处理一致\n- A对\"ワイバーン\"的处理（双足飞龙）更专业\n\n### 6. 主要问题\n- A：段落74、76存在明显截断\n- B：引号使用不统一，影响阅读体验\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 8, \"notes\": \"两者准确度相近，A对ワイバーン更精确，B对部分表达更贴切\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B在口语化表达上更自然流畅\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话格式统一符合轻小说惯例，B格式混乱\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A术语处理更专业（双足飞龙vs飞龙）\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯性更好，B引号切换影响阅读\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A有两处截断问题，B引号全程不统一\"}\n  },\n  \"key_differences\": [\n    \"A使用「」统一对话格式，B混用\\\"\\\"和「」\",\n    \"A段落74和76存在截断问题\",\n    \"B在口语化表达上更生动自然\",\n    \"A对专业术语（如ワイバーン）处理更精确\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。A在格式统一性和术语专业性上更胜一筹，但存在截断问题；B在口语流畅度上更自然，但格式不统一是致命伤。综合考虑轻小说翻译对格式规范的要求，A略胜，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10233,
+          "completion_tokens": 1667,
+          "total_tokens": 11900
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者准确度相近，A对ワイバーン更精确，B对部分表达更贴切"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在口语化表达上更自然流畅"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话格式统一符合轻小说惯例，B格式混乱"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A术语处理更专业（双足飞龙vs飞龙）"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯性更好，B引号切换影响阅读"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A有两处截断问题，B引号全程不统一"
+      }
+    },
+    "key_differences": [
+      "A使用「」统一对话格式，B混用\"\"和「」",
+      "A段落74和76存在截断问题",
+      "B在口语化表达上更生动自然",
+      "A对专业术语（如ワイバーン）处理更精确"
+    ],
+    "final_summary": "两个翻译各有优劣。A在格式统一性和术语专业性上更胜一筹，但存在截断问题；B在口语流畅度上更自然，但格式不统一是致命伤。综合考虑轻小说翻译对格式规范的要求，A略胜，但差距不大。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:38:50.690714",
+  "sample": "novelup.634490929.ch167",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.634490929.ch167.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.634490929.ch167.GLM-4.6.translated.txt",
+    "B": "translated_results/novelup.634490929.ch167.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "32eb13be72e0747f319c67077645057ceb552d1d8f1248f9660d1a8d68e7f568",
+    "A": "4537d56b3a00034a9f11db9923f380e1a7de240f6f58d1cd462cd36098090df0",
+    "B": "5de228c1699135b13cd6b5d7a10e3d13dbbdbb91e11788e23eca42392e0ec191"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:39:49.672341",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e3e74fbf-1827-4a31-90aa-372745d607f5",
+      "judge_response": {
+        "id": "e3e74fbf-1827-4a31-90aa-372745d607f5",
+        "object": "chat.completion",
+        "created": 1768423189,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 详细对比分析\n\n### 1. 名称/术语处理\n\n**キバテビ处理：**\n- A：段落1用\"奇巴特比\"，段落15/19改为\"牙辉\"——**不一致**\n- B：段落1用\"牙突飞\"，段落15/19直接保留日文\"キバテビ\"——**也不一致**\n\n**ドクター处理：**\n- A：全程保持\"Doctor\"\n- B：混用\"博士\"、\"医生\"、\"Doctor\"——**严重不一致**\n\n**魔法少女名称：**\n- A：\"白银少女\"、\"紫罗兰少女\"——意译统一\n- B：\"席尔瓦——女孩\"、\"尤姆拉萨基女孩\"——音译+直译，极不自然\n\n### 2. 关键翻译错误\n\n**段落53（严重错误）：**\n- 原文：「よそ見している場合かな？」\n- A：「你还有空东张西望吗？」✓\n- B：「分心する场合かな？」**（未翻译，保留日文）**\n\n**段落8：**\n- 原文：「自分たちはここを動けないです！」= 我们不能离开这里\n- A：「我们不能离开这里！」✓\n- B：「我们自己动不了啊！」（意思偏离）\n\n**段落15（理解错误）：**\n- 原文意思：被对手抢走观众的心让我们很火大\n- B：「观众的心被我们夺走个不停」——**主客体颠倒**\n\n### 3. 语气词处理（デス口癖）\n\n- A：用\"德死\"保留角色说话特点（段落22、27）\n- B：完全省略，丢失角色特色\n\n### 4. 格式问题\n\n**段落34：**\n- A：使用「」正确\n- B：使用\"\"——**格式错误**\n\n### 5. 流畅性对比\n\nB在部分叙述段落更流畅（如段落50、74），但整体因错误和不一致拉低分数。\n\nA整体更稳定，虽然有些表达略显生硬但无重大错误。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有未翻译段落(53)及主客体颠倒错误(15)\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有优劣，B部分叙述更流畅但被错误拖累\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A保留了デス口癖特色，B丢失角色语言特点\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"A的キバテビ不一致，B的Doctor/名称翻译混乱严重\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A整体连贯，B因未翻译和错误影响阅读\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"B段落34使用错误引号格式\"}\n  },\n  \"key_differences\": [\n    \"B段落53存在未翻译的严重错误\",\n    \"B段落15主客体理解颠倒\",\n    \"A保留了デス口癖（德死），B完全丢失\",\n    \"B的人名翻译极不自然（席尔瓦——女孩）\",\n    \"B的ドクター译法不统一（博士/医生/Doctor混用）\"\n  ],\n  \"final_summary\": \"A翻译虽存在キバテビ名称前后不一的问题，但整体准确性更高，无重大翻译遗漏，且保留了角色说话特色。B存在未翻译段落、意思理解错误、格式问题及术语严重不一致等多项硬伤，综合评定A获胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10852,
+          "completion_tokens": 2556,
+          "total_tokens": 13408
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有未翻译段落(53)及主客体颠倒错误(15)"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有优劣，B部分叙述更流畅但被错误拖累"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A保留了デス口癖特色，B丢失角色语言特点"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "A的キバテビ不一致，B的Doctor/名称翻译混乱严重"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A整体连贯，B因未翻译和错误影响阅读"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "B段落34使用错误引号格式"
+      }
+    },
+    "key_differences": [
+      "B段落53存在未翻译的严重错误",
+      "B段落15主客体理解颠倒",
+      "A保留了デス口癖（德死），B完全丢失",
+      "B的人名翻译极不自然（席尔瓦——女孩）",
+      "B的ドクター译法不统一（博士/医生/Doctor混用）"
+    ],
+    "final_summary": "A翻译虽存在キバテビ名称前后不一的问题，但整体准确性更高，无重大翻译遗漏，且保留了角色说话特色。B存在未翻译段落、意思理解错误、格式问题及术语严重不一致等多项硬伤，综合评定A获胜。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

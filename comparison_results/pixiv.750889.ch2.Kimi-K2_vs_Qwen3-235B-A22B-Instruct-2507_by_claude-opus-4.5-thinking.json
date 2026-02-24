@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:49:31.306083",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "71c38b8a6884210f667133e4d0ffeaf3ee4c9583011ecf147b4e0b3c6918b16a",
+    "B": "ace2b4c7d61c9d4edc19619f94361e05d3a9cbf0ce27a663d28d7dae97c390ef"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:50:17.908296",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "66305858-daab-4dc3-b00f-5bbc74212d01",
+      "judge_response": {
+        "id": "66305858-daab-4dc3-b00f-5bbc74212d01",
+        "object": "chat.completion",
+        "created": 1768423817,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落级别分析\n\n**段落2（オリ主）：**\n- A：\"主创注意\" — 翻译不太准确，\"主创\"通常指主要创作者\n- B：\"原创主角注意\" — 更准确地传达了\"原创主人公\"的含义\n\n**段落8（长句叙述）：**\n- A：较为直译，\"从...听说某个少年转学而来的事\"句子结构略显生硬\n- B：\"我居然还赖在帝丹高中一年级没动窝\" 更口语化、生动\n\n**段落13（ガラケー/スマートフォン）：**\n- A：\"功能机\" — 准确但稍正式\n- B：\"翻盖机\" — 更口语化，但不完全准确（ガラケー不一定是翻盖）\n\n**段落35（关键翻译问题）：**\n- A：正确理解原文结构——男孩们说\"骗人的吧\"同时战栗，然后他离开\n- B：**误译**——将\"嘘だろ\"错误地归给了彼方说出口，且\"一群吓得直哆嗦的男人注视下\"对象理解有误\n\n**段落47（サバゲー）：**\n- A：\"生存游戏\" — 准确\n- B：\"彩弹\" — 不准确，サバゲー是气枪生存游戏，不是彩弹\n\n**格式一致性：**\n- A：引号使用不统一（'...' 和 「...」混用）\n- B：基本统一使用「...」\n\n**风格/语气：**\n- B整体更口语化、活泼，如\"嗖嗖地往前跑\"\"这可咋办啊\"\"压根没怀疑的余地\"\n- A较为书面化但也流畅\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落35有关键误译，将说话者搞错；段落47サバゲー译成彩弹不准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，但A也流畅\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说的活泼语气，用语更生动\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A对オリ主、サバゲー等术语处理更准确\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙事逻辑更清晰，B偶有理解偏差\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A引号使用不统一，B格式更一致\"}\n  },\n  \"key_differences\": [\n    \"段落35：A正确理解说话者和动作主体，B误将对话归错人\",\n    \"段落47：A准确译为'生存游戏'，B错译为'彩弹'\",\n    \"整体风格：B更口语活泼，A更书面稳健\",\n    \"段落2：B对'オリ主'理解更准确\",\n    \"格式：B引号使用更统一\"\n  ],\n  \"final_summary\": \"两个译本各有优劣。B在流畅性和轻小说风格把握上略胜一筹，语言更生动口语化。但B存在关键性准确度问题：段落35误解了原文结构导致说话者归属错误，段落47将サバゲー（生存游戏/气枪对战）误译为彩弹。在轻小说翻译中，准确性是基础，尤其是涉及剧情理解的关键段落。A虽然风格稍显平淡、格式不够统一，但整体准确可靠，因此略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9730,
+          "completion_tokens": 1800,
+          "total_tokens": 11530
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落35有关键误译，将说话者搞错；段落47サバゲー译成彩弹不准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，但A也流畅"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说的活泼语气，用语更生动"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对オリ主、サバゲー等术语处理更准确"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙事逻辑更清晰，B偶有理解偏差"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A引号使用不统一，B格式更一致"
+      }
+    },
+    "key_differences": [
+      "段落35：A正确理解说话者和动作主体，B误将对话归错人",
+      "段落47：A准确译为'生存游戏'，B错译为'彩弹'",
+      "整体风格：B更口语活泼，A更书面稳健",
+      "段落2：B对'オリ主'理解更准确",
+      "格式：B引号使用更统一"
+    ],
+    "final_summary": "两个译本各有优劣。B在流畅性和轻小说风格把握上略胜一筹，语言更生动口语化。但B存在关键性准确度问题：段落35误解了原文结构导致说话者归属错误，段落47将サバゲー（生存游戏/气枪对战）误译为彩弹。在轻小说翻译中，准确性是基础，尤其是涉及剧情理解的关键段落。A虽然风格稍显平淡、格式不够统一，但整体准确可靠，因此略胜。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

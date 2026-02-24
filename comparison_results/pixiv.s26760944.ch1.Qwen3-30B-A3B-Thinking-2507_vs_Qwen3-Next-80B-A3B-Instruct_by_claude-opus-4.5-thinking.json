@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:05:59.655928",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "adcc650e391e377bc04ec03b696800c871dfaab966bd7bdf150440d55141ad86",
+    "B": "d5f39c9392bbb971df20ce9f43d891e0b49538cb6f659fde2493f566f9608f1c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:06:57.741186",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a4afd75b-a143-4eed-b031-d04ce4e1ce23",
+      "judge_response": {
+        "id": "a4afd75b-a143-4eed-b031-d04ce4e1ce23",
+        "object": "chat.completion",
+        "created": 1768432017,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**段落1**：\n- A「周三清晨漂浮着」过于直译「浮かぶ」\n- B「在浮荡的周三清晨」更自然地处理了这个意象\n\n**段落12**：\n- A「新闻纸逐渐染成咖啡色」漏译了「時間差で」的延迟感\n- B「时间差地」准确保留了这一细节\n\n**段落14**：\n- A「喂，是二阶堂吗？」误解为疑问句\n- B「喂，二阶堂」正确理解为自我介绍\n\n**段落29/34**：\n- A将内心独白错误处理为对话格式\n- B正确保持为内心想法\n\n**段落95**：\n- A完整翻译了尖叫声\n- B**完全漏译**此段落\n\n### 2. 流畅性分析\n\n- B整体语言更加流畅自然，如「若有若无的香气轻挠鼻腔」优于A的「微弱的香气在鼻腔中轻轻撩拨」\n- B的对话更口语化，如「这可不是在开玩笑」比A的「这可不是开玩笑的时候」更符合轻小说风格\n\n### 3. 格式问题\n\n- A存在多处格式错误：段落9结尾「我走了哦！『」使用错误引号；段落69-75等多处对话缺少引号\n- B格式较为统一，使用标准双引号\n\n### 4. 术语一致性\n\n**「ムー！ムー！」（被堵嘴的呜咽声）**：\n- A统一译为「唔！唔！」，符合被堵嘴的情境\n- B不一致：段落23「哞！哞！」（像牛叫）、段落49「穆！穆！」、段落86「Mu！Mu！」（罗马音）\n\n### 5. 关键差异\n\n| 项目 | A | B |\n|------|---|---|\n| 漏译 | 无 | 段落95完全漏译 |\n| 格式 | 多处引号错误/缺失 | 基本一致 |\n| 流畅度 | 略显生硬 | 更自然 |\n| 术语一致性 | 较好 | 「ムー」处理不一致 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A误解段落14为疑问句；B漏译段落95，但其他细节处理更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B的中文表达更自然流畅，口语感更强\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说的轻松对话风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"A的「唔」统一处理被堵嘴声；B的「哞/穆/Mu」处理混乱\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"B整体阅读体验更流畅\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处引号错误或缺失；B格式较统一但漏译一段\"}\n  },\n  \"key_differences\": [\n    \"B漏译段落95的尖叫声\",\n    \"A多处对话格式错误（缺引号、引号混用）\",\n    \"B对「ムー」的翻译不统一（哞/穆/Mu）\",\n    \"B整体流畅度和口语化程度更高\",\n    \"A将部分内心独白误处理为对话格式\"\n  ],\n  \"final_summary\": \"B在整体流畅度、风格把握和自然表达上明显优于A，更符合轻小说的阅读体验。但B存在漏译段落95和术语不一致的问题。A虽然翻译完整，但格式问题较多，语言相对生硬。综合考虑，B的优势（流畅性、风格）略大于其劣势（漏译、术语），故B胜出，但置信度不高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14161,
+          "completion_tokens": 2431,
+          "total_tokens": 16592
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A误解段落14为疑问句；B漏译段落95，但其他细节处理更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的中文表达更自然流畅，口语感更强"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说的轻松对话风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "A的「唔」统一处理被堵嘴声；B的「哞/穆/Mu」处理混乱"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "B整体阅读体验更流畅"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处引号错误或缺失；B格式较统一但漏译一段"
+      }
+    },
+    "key_differences": [
+      "B漏译段落95的尖叫声",
+      "A多处对话格式错误（缺引号、引号混用）",
+      "B对「ムー」的翻译不统一（哞/穆/Mu）",
+      "B整体流畅度和口语化程度更高",
+      "A将部分内心独白误处理为对话格式"
+    ],
+    "final_summary": "B在整体流畅度、风格把握和自然表达上明显优于A，更符合轻小说的阅读体验。但B存在漏译段落95和术语不一致的问题。A虽然翻译完整，但格式问题较多，语言相对生硬。综合考虑，B的优势（流畅性、风格）略大于其劣势（漏译、术语），故B胜出，但置信度不高。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

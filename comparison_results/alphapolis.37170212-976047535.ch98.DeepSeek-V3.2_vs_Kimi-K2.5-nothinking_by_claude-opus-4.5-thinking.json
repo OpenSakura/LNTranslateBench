@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:27:43.996105",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "b000f44ba3eb11ebd7b74e2ab7f7d3212a2e3d21982f3b37a857e1a15a7e534b",
+    "B": "abfe47ff1f99a26f15013872c1a0f07319be3bbd0f695009482388b86d9a687e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:28:30.396927",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "10beb044-c629-4a7d-8d43-1ce17f63d724",
+      "judge_response": {
+        "id": "10beb044-c629-4a7d-8d43-1ce17f63d724",
+        "object": "chat.completion",
+        "created": 1769610510,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**关键差异：**\n- 段落100：ワラビー（wallaby，小袋鼠）- A误译为\"蕨菜\"，B正确译为\"小袋鼠\"，这是A的重大错误\n- 段落36：「王立学校」A译为\"皇家学校\"，B保留\"王立学校\"更贴近原文\n- 段落140：「ファイク」A意译为\"火狐\"符合火属性设定，B音译为\"菲克\"\n- 段落148：「長耳兎」A译为\"垂耳兔\"（结合下文垂耳描述），B直译\"长耳兔\"\n\n### 2. 流畅性分析\n\n- 段落5：A\"将喂饱某人视为燃烧的使命\"较生硬；B\"以让别人吃上一顿饱饭为使命\"更自然\n- 段落12：B\"温声细语\"比A\"语气温柔\"更生动\n- 段落19：B\"哥哥们是妹控\"比A\"兄长的妹控属性\"更口语化\n- 段落42：B出现\"肌肉筋肉虬结\"冗余错误\n\n### 3. 名称处理\n\n- 召唤兽名字：A多保留假名（コクヨウ[黑曜]），B多译为汉字（黑曜[黑曜]）——B更符合中文阅读习惯\n- ユーリ：A译\"尤里\"，B译\"尤莉\"——根据女性角色设定，B更合适\n- トーマ：A译\"托马斯\"（过度翻译），B译\"托马\"更准确\n- 段落151/158：A将トーマ统一误译为\"托马斯\"\n\n### 4. 风格/语气\n\n- 两者都较好地保持了轻小说角色介绍的轻松语气\n- B的\"遗憾系帅哥\"（段落39）比A\"遗憾的帅哥\"更有网络语感\n- 段落180：「岡っ引き」A译\"小混混\"有误，B译\"捕快\"更准确\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有重大误译（ワラビー→蕨菜），トーマ→托马斯也不准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更自然流畅，但段落42有冗余错误\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说轻松活泼的语气\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者名称处理各有优劣，A保留假名较多\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的名称翻译更统一，读起来更连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式处理相当\"}\n  },\n  \"key_differences\": [\n    \"ワラビー：A错译为蕨菜，B正确译为小袋鼠\",\n    \"召唤兽名字：A保留假名，B译为汉字\",\n    \"トーマ：A过度翻译为托马斯，B正确译为托马\",\n    \"ユーリ：A译尤里，B译尤莉（女性更合适）\",\n    \"岡っ引き：A误译为小混混，B正确译为捕快\"\n  ],\n  \"final_summary\": \"B整体优于A。A存在明显的翻译错误（ワラビー误译为蕨菜是致命伤），且部分名称处理不够准确。B在流畅性和准确性上表现更好，名称汉化处理更符合中文读者习惯，尽管段落42有小瑕疵，但不影响整体质量。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16393,
+          "completion_tokens": 2510,
+          "total_tokens": 18903
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有重大误译（ワラビー→蕨菜），トーマ→托马斯也不准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更自然流畅，但段落42有冗余错误"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说轻松活泼的语气"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者名称处理各有优劣，A保留假名较多"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的名称翻译更统一，读起来更连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式处理相当"
+      }
+    },
+    "key_differences": [
+      "ワラビー：A错译为蕨菜，B正确译为小袋鼠",
+      "召唤兽名字：A保留假名，B译为汉字",
+      "トーマ：A过度翻译为托马斯，B正确译为托马",
+      "ユーリ：A译尤里，B译尤莉（女性更合适）",
+      "岡っ引き：A误译为小混混，B正确译为捕快"
+    ],
+    "final_summary": "B整体优于A。A存在明显的翻译错误（ワラビー误译为蕨菜是致命伤），且部分名称处理不够准确。B在流畅性和准确性上表现更好，名称汉化处理更符合中文读者习惯，尽管段落42有小瑕疵，但不影响整体质量。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

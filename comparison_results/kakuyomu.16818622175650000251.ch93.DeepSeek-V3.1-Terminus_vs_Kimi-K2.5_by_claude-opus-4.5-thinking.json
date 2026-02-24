@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:20:18.299436",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "c889af880da602c22823cbddc8a6775c86aefff92440e9622b4bdec2260006d0",
+    "B": "113b16e503080ef2a3d9a64f5464d9bd20f54b4548cac04769a1c5bac1f0018f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:21:11.449239",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f0375896-e600-4fbe-bc7e-9d84d5495010",
+      "judge_response": {
+        "id": "f0375896-e600-4fbe-bc7e-9d84d5495010",
+        "object": "chat.completion",
+        "created": 1769610071,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细对比分析\n\n### 人名翻译一致性问题（关键问题）\n- **A的严重问题**：人名翻译极度混乱\n  - 段落7把\"おタヒ\"误译为\"琪肯\"（チケン才是琪肯）\n  - 段落44再次将\"おタヒ\"误译为\"琪肯\"\n  - 段落54写成\"小田姬\"，段落56又用\"小田姬\"\n  - 段落62把おタヒ误译为\"琪肯\"\n- **B的问题**：段落56将\"おタヒ\"误译为\"琪肯\"，但整体保持较好一致性（多用\"おタヒ\"/\"小塔希\"）\n\n### 准确性分析\n- 段落6：\"好き放題言われている\"\n  - A：\"被说得一无是处\"（偏离原意）\n  - B：\"被她们随心所欲地数落着\"（准确）\n- 段落10：\"心外である\"\n  - A：\"很不爽了\"（正确，心外=不满）\n  - B：\"太让人意外了\"（错误理解）\n- 段落59：\"倍くらい強い\"\n  - A：\"强个两三倍\"（夸大）\n  - B：\"强一倍左右\"（准确）\n- 段落73：\"おタヒでも着られる\"\n  - A：\"连礼服也能穿的\"（完全错误）\n  - B：\"就算死了也能穿的\"（也不正确，应为\"连おタヒ也能穿的\"）\n\n### 流畅性与风格\n- 段落4：B\"脸都要笑开花了\"比A\"快要笑出来了\"更生动\n- 段落20：\"そうね！\" B\"说的是呢！\"比A\"嗯！\"更传神\n- 段落43：\"もりもり\" B\"麻利地\"比A\"狼吞虎咽\"更准确\n- 段落17：A的表达更连贯流畅\n\n### 格式问题\n- A在部分段落使用繁体字\"葛莉賽達\"，不一致\n- 段落49-51：A使用了英文引号\"\"而非中文引号「」\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落6、59有误解；B在段落10、73有误解，但A错误更多更严重\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化、生动，如'脸都要笑开花了'\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说对话风格，语气词处理更自然\"},\n    \"terminology\": {\"A\": 4, \"B\": 6, \"notes\": \"A人名翻译严重混乱（おタヒ多次误译为琪肯/小田姬），B虽有一处错误但整体一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A因人名混乱导致阅读困惑，B相对连贯\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A混用繁简体和中英文引号\"}\n  },\n  \"key_differences\": [\n    \"人名一致性：A严重混乱（おタヒ被译为琪肯/小田姬/御田妃多个版本），B基本一致\",\n    \"段落6准确性：A'一无是处'偏离原意，B'随心所欲地数落'更准确\",\n    \"段落10：A'不爽'正确理解心外，B'意外'误解\",\n    \"口语化程度：B更生动自然（如'脸都要笑开花了'）\",\n    \"格式规范：A混用繁简体和引号类型\"\n  ],\n  \"final_summary\": \"两个译本各有优劣，但A存在严重的人名翻译混乱问题（将おタヒ多次错译为チケン/琪肯），这直接影响读者理解剧情和人物关系。B虽然在段落10对'心外'的理解有误，但整体人名处理更一致，语言风格更符合轻小说特点，流畅度和可读性更佳。综合考虑，B略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10785,
+          "completion_tokens": 2690,
+          "total_tokens": 13475
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落6、59有误解；B在段落10、73有误解，但A错误更多更严重"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化、生动，如'脸都要笑开花了'"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格，语气词处理更自然"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 6,
+        "notes": "A人名翻译严重混乱（おタヒ多次误译为琪肯/小田姬），B虽有一处错误但整体一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A因人名混乱导致阅读困惑，B相对连贯"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A混用繁简体和中英文引号"
+      }
+    },
+    "key_differences": [
+      "人名一致性：A严重混乱（おタヒ被译为琪肯/小田姬/御田妃多个版本），B基本一致",
+      "段落6准确性：A'一无是处'偏离原意，B'随心所欲地数落'更准确",
+      "段落10：A'不爽'正确理解心外，B'意外'误解",
+      "口语化程度：B更生动自然（如'脸都要笑开花了'）",
+      "格式规范：A混用繁简体和引号类型"
+    ],
+    "final_summary": "两个译本各有优劣，但A存在严重的人名翻译混乱问题（将おタヒ多次错译为チケン/琪肯），这直接影响读者理解剧情和人物关系。B虽然在段落10对'心外'的理解有误，但整体人名处理更一致，语言风格更符合轻小说特点，流畅度和可读性更佳。综合考虑，B略胜一筹。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

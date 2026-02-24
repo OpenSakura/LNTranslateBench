@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:05:08.739694",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "33c7465f9604b0feb9b921ea909b9a52496a8b28e688f5028f9d64e32a3f6c2d",
+    "B": "e2ec2d3027c73ce3caf34e08360fc6e4b3ff98798071c4e651959bc9b1fff9c4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:06:07.476260",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1f036ab2-dc57-42c6-81fd-714f01356786",
+      "judge_response": {
+        "id": "1f036ab2-dc57-42c6-81fd-714f01356786",
+        "object": "chat.completion",
+        "created": 1768485967,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 详细分析\n\n## 1. 准确性评估\n\n**翻译A的重大问题：**\n- **人名错误**：多次将\"东云\"（しののめ/Shinonome）错译为\"冬云\"（段落12、15等），这是基础性错误\n- 段落58理解错误：将\"奏多把脚架在桌上\"误译为\"学长把脚架在奏多桌上\"\n- 段落1缺失\"という話だった\"（据说）的传闻语气\n\n**翻译B的问题：**\n- 段落46表述略有瑕疵：\"阳菜乃和两人\"应为\"阳菜乃和我两人\"\n\n## 2. 流畅性与风格\n\n**口语化程度对比：**\n- 段落10：B用\"关我屁事\"vs A用\"我才不在乎\"——B更符合东云的粗鲁性格\n- 段落15：B用\"牛逼\"vs A用\"厉害啊\"——B更贴近年轻人口语\n- 段落4：B用\"吃得开\"vs A用\"受欢迎\"——B的俗语更自然\n\n**语气把握：**\n- 段落82：B译\"狂热到令人窒息\"准确传达了\"暑苦しい\"的热血过头感，A的\"热得让人受不了\"略显平淡\n\n## 3. 术语一致性\n\n- **人名处理**：B全文统一使用\"东云\"，A混用\"冬云/东云\"（严重失误）\n- **称呼**：B在\"君/さん\"处理上更统一（炭谷君、东云同学）\n\n## 4. 连贯性\n\n- A在段落51缺失翻译内容\n- B整体叙述连贯，人称代词使用清晰\n\n## 5. 格式\n\n两者格式基本相当，标点符号使用正常。\n\n## 关键差异总结\n\n1. **人名翻译错误**（A的致命伤）\n2. **口语化程度**：B更符合轻小说风格\n3. **角色语气**：B更准确（如东云的粗鲁、炭谷的亲和）\n4. **理解准确度**：B在细节处理上更精准\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A存在严重的人名错误（东云→冬云）和理解偏差（段落58），B仅有个别措辞瑕疵\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的口语化表达更自然流畅，A较为书面化\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B准确捕捉轻小说的口语化、角色性格化语气；A过于正式，缺乏轻小说特色\"\n    },\n    \"terminology\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A多次人名错误导致术语一致性严重失分，B术语统一规范\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"A缺失段落51翻译，B叙述连贯完整\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"两者格式和标点符号使用均良好\"\n    }\n  },\n  \"key_differences\": [\n    \"A将角色名'东云'多次错译为'冬云'，这是不可接受的基础错误\",\n    \"B的口语化程度显著优于A（如'牛逼''吃得开''关我屁事'等），更符合轻小说风格\",\n    \"A在段落58对动作主体理解错误，B理解正确\",\n    \"B对角色语气把握更准确（东云的粗鲁、藤田的热血等）\",\n    \"A缺失段落51的翻译内容\"\n  ],\n  \"final_summary\": \"翻译B明显优于翻译A。A存在致命的人名翻译错误（东云→冬云），这在轻小说翻译中是不可接受的。此外，B在口语化表达、角色语气把握、细节理解等方面均显著胜出，更符合轻小说的叙述风格和目标读者群的阅读习惯。虽然B存在个别措辞瑕疵，但瑕不掩瑜。综合评估，B的整体质量远超A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12107,
+          "completion_tokens": 2519,
+          "total_tokens": 14626
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A存在严重的人名错误（东云→冬云）和理解偏差（段落58），B仅有个别措辞瑕疵"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的口语化表达更自然流畅，A较为书面化"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B准确捕捉轻小说的口语化、角色性格化语气；A过于正式，缺乏轻小说特色"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 9,
+        "notes": "A多次人名错误导致术语一致性严重失分，B术语统一规范"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "A缺失段落51翻译，B叙述连贯完整"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式和标点符号使用均良好"
+      }
+    },
+    "key_differences": [
+      "A将角色名'东云'多次错译为'冬云'，这是不可接受的基础错误",
+      "B的口语化程度显著优于A（如'牛逼''吃得开''关我屁事'等），更符合轻小说风格",
+      "A在段落58对动作主体理解错误，B理解正确",
+      "B对角色语气把握更准确（东云的粗鲁、藤田的热血等）",
+      "A缺失段落51的翻译内容"
+    ],
+    "final_summary": "翻译B明显优于翻译A。A存在致命的人名翻译错误（东云→冬云），这在轻小说翻译中是不可接受的。此外，B在口语化表达、角色语气把握、细节理解等方面均显著胜出，更符合轻小说的叙述风格和目标读者群的阅读习惯。虽然B存在个别措辞瑕疵，但瑕不掩瑜。综合评估，B的整体质量远超A。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

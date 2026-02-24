@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:50:17.909214",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "905920756f120593e52bc3d67ccc3f1ccc6642560e01785a189faebeca33b67f",
+    "B": "4f0f23f53af81bb1ccecd4c0b957030003804a80cd3f504d339f6632f9a4ab5a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:51:06.861008",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1ce976c6-e98f-46cc-a01c-fa8fee4f8fa5",
+      "judge_response": {
+        "id": "1ce976c6-e98f-46cc-a01c-fa8fee4f8fa5",
+        "object": "chat.completion",
+        "created": 1768423866,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n#### 准确性\n- **段落2**: 两者均误译。\"オリ主\"指\"原创主角\"，A译\"原作注意\"、B译\"原作者注意\"都不准确\n- **段落8**: A将\"某少年の話を聞いた\"理解为\"听说转学过来的那小子\"（稍有偏差），B\"从步美那里听说某少年转校来的事情\"更准确\n- **段落11**: B译\"海螺小姐\"更便于中文读者理解，A保留日文\"《サザエさん》\"需要注释\n- **段落48**: \"プリティーキュートな\"A仅译\"可爱\"丢失\"pretty\"，B\"漂亮又可爱\"完整\n- **段落56**: A使用\"她\"指代彼方（男性角色），重大错误；B正确使用语境\n\n#### 流畅性\n- A整体读感更自然口语化，如段落9\"该不会是季节在循环吧？\"\n- B有时较生硬，如段落12\"这可怎么办啊在我困惑的时候\"缺乏标点\n- 段落34: A\"先把步美训了一顿\"比B\"把步美训斥了一顿，然后紧紧地抱了她一次\"更简洁\n\n#### 风格/语气\n- A更贴合轻小说的轻松吐槽风格\n- B在段落8保留\"pretty\"英文显得突兀\n- 两者都较好地传达了原文的戏谑感\n\n#### 格式\n- A全程使用「」作为对话标记，统一\n- B混用「」和\"\"，如段落22-23、26-27使用\"\"，不一致\n\n#### 术语一致性\n- B\"生存游戏\"比A\"真人CS\"更通用标准\n- 人名翻译两者一致\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落56代词错误严重；B对オリ主和某些句子理解更准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语化自然，B部分句子较生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更贴合轻小说风格，B保留英文pretty显突兀\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B'海螺小姐''生存游戏'更标准\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体行文连贯，B段落12缺标点\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A对话格式统一，B混用「」和''\"}\n  },\n  \"key_differences\": [\n    \"A段落56使用错误代词'她'，B无此问题\",\n    \"A格式统一使用「」，B混用中英标点\",\n    \"A流畅度更高但牺牲部分准确性\",\n    \"B专有名词处理更本土化（海螺小姐、生存游戏）\",\n    \"A轻小说语感更强，B偏书面\"\n  ],\n  \"final_summary\": \"A在流畅性、风格和格式一致性上表现更好，读起来更像轻小说；B在准确性和术语本土化上有优势。A在段落56的代词错误是较严重的问题，但综合考虑全文阅读体验，A的整体可读性和轻小说风格表现略胜一筹。两者差距不大，A以微弱优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9940,
+          "completion_tokens": 1868,
+          "total_tokens": 11808
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落56代词错误严重；B对オリ主和某些句子理解更准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语化自然，B部分句子较生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更贴合轻小说风格，B保留英文pretty显突兀"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B'海螺小姐''生存游戏'更标准"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体行文连贯，B段落12缺标点"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A对话格式统一，B混用「」和''"
+      }
+    },
+    "key_differences": [
+      "A段落56使用错误代词'她'，B无此问题",
+      "A格式统一使用「」，B混用中英标点",
+      "A流畅度更高但牺牲部分准确性",
+      "B专有名词处理更本土化（海螺小姐、生存游戏）",
+      "A轻小说语感更强，B偏书面"
+    ],
+    "final_summary": "A在流畅性、风格和格式一致性上表现更好，读起来更像轻小说；B在准确性和术语本土化上有优势。A在段落56的代词错误是较严重的问题，但综合考虑全文阅读体验，A的整体可读性和轻小说风格表现略胜一筹。两者差距不大，A以微弱优势胜出。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

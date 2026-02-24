@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:14:19.829611",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "1a0fb528094047124ee4ea7b0cb7de8ebe32c4d94fe2a791b315b91f97633c96",
+    "B": "c0c08b75418db45cde8879f3db90361ddafc7531ba9cf16da0448b7223381020"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:16:16.393060",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "772f69f0-c077-4adc-9339-3ddaa979d346",
+      "judge_response": {
+        "id": "772f69f0-c077-4adc-9339-3ddaa979d346",
+        "object": "chat.completion",
+        "created": 1768421770,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**A翻译优势：**\n- 段落1：正确保持了\"被称为实力者的A级魔法少女\"的修饰关系\n- 段落7：使用\"她\"指代魔法少女，B用\"它\"不恰当\n- 段落11、13：保持第三人称叙述，B错误使用\"我\"破坏了叙事视角\n- 段落23：正确理解句子结构，B误读为\"泄露给黑墨\"\n- 段落48：B出现严重错误\"神秘气囊\"，完全偏离原意\n\n**B翻译优势：**\n- 段落83：\"糯米兔\"比A的\"玉兔\"更贴近\"餅兎\"原意\n\n### 流畅性分析\n\nA整体表达更自然流畅，如段落37\"面对紧追不舍的黑暗之月，黑墨回应道\"比B的\"黏着不放的暗月，黑墨会回话\"更符合中文表达习惯。段落54A的叙述也更清晰连贯。\n\n### 格式问题\n\nB存在多处格式错误：\n- 段落41：对话缺少引号\n- 段落55：缺少开头引号\n- 段落22：保留日文假名\"クスミ\"未翻译（可接受但不统一）\n\n### 术语一致性\n\n- A统一使用\"认知阻断\"，B混用\"认识阻挠\"\"认识阻击\"\"认识妨碍\"\n- B在段落13混入英文注释\"(Recognition block)\"，不协调\n\n### 风格语气\n\nA更符合轻小说的叙事风格，保持了适度的书面语和口语平衡。B部分地方过于随意（如\"啥\"\"挺巧的\"），但有些地方又生硬。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有严重误译(段落48)、人称混乱(段落11/13用'我')、理解偏差(段落23)\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A表达更自然流畅，B部分句子生硬或语法问题\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A轻小说风格把握更好，B时而过于口语化时而生硬\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"A术语统一，B术语不一致且混入英文注释\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A叙事视角一致，B人称跳跃影响连贯性\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"B多处对话缺少引号，格式不规范\"}\n  },\n  \"key_differences\": [\n    \"人称视角：A保持第三人称一致，B多处错用第一人称'我'\",\n    \"段落48：A正确翻译，B出现'神秘气囊'严重错误\",\n    \"格式规范：A引号完整，B多处对话缺引号\",\n    \"术语统一：A'认知阻断'统一，B三种译法混用\"\n  ],\n  \"final_summary\": \"A翻译在准确性、流畅性和格式规范方面明显优于B。B存在多处严重错误，包括人称混乱、关键段落误译和格式问题，影响了整体阅读体验和原文意思的传达。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11213,
+          "completion_tokens": 4730,
+          "total_tokens": 15943
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有严重误译(段落48)、人称混乱(段落11/13用'我')、理解偏差(段落23)"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A表达更自然流畅，B部分句子生硬或语法问题"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A轻小说风格把握更好，B时而过于口语化时而生硬"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "A术语统一，B术语不一致且混入英文注释"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A叙事视角一致，B人称跳跃影响连贯性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "B多处对话缺少引号，格式不规范"
+      }
+    },
+    "key_differences": [
+      "人称视角：A保持第三人称一致，B多处错用第一人称'我'",
+      "段落48：A正确翻译，B出现'神秘气囊'严重错误",
+      "格式规范：A引号完整，B多处对话缺引号",
+      "术语统一：A'认知阻断'统一，B三种译法混用"
+    ],
+    "final_summary": "A翻译在准确性、流畅性和格式规范方面明显优于B。B存在多处严重错误，包括人称混乱、关键段落误译和格式问题，影响了整体阅读体验和原文意思的传达。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:12:40.939736",
+  "sample": "syosetu.n5313ks.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5313ks.ch14.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5313ks.ch14.GLM-4.7.translated.txt",
+    "B": "translated_results/syosetu.n5313ks.ch14.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bf88588a1a5855615ef8d65c9b6c4af37e7a365094b338c25ea4e2c97eb1cf89",
+    "A": "d9b54d2e40d14c411df19517dc93a77a254af6c014eb7be090cae3c1dd55c593",
+    "B": "8f09ed8ca6bb9e55966fb90fbb530a6a6e3facaf5db7ad54196be3f047fbc5a5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:13:33.428197",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fb0931eb-e8ca-43fe-80ee-b4659cb5e032",
+      "judge_response": {
+        "id": "fb0931eb-e8ca-43fe-80ee-b4659cb5e032",
+        "object": "chat.completion",
+        "created": 1768432413,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项分析\n\n### 1. 准确性\n**翻译A**整体准确度较高。\n- 段落39：A准确翻译\"二十四歳にしては若い\"为\"作为二十四岁的人来说很年轻\"\n- B错误地译为\"二十四五岁\"，添加了原文没有的内容\n\n**翻译B**存在几处明显误译：\n- 段落59：\"因为我不知道啊\"应为\"因为**你**不知道啊\"（指里昂不知道结婚的事）\n- 段落61：\"是不是让我觉得受伤了\"应为\"是不是让他觉得**我**受伤了\"，逻辑错误\n\n### 2. 流畅性\nB在口语化表达上有优势：\n- 段落16：B\"婆家\"比A\"义理家人\"更自然\n- 段落9：B\"我受不了\"比A\"不合我的性子\"更口语化\n\n但B也有生硬处：\n- 段落5结尾\"但。\"处理不当\n- 段落18\"还是说。\"句子不完整\n\n### 3. 风格/语气\nA保持了轻小说的优雅叙述风格，B偏向过度口语化，有时失去了原文的温婉感。如段落34，A\"心爱之地\"比B\"我最喜欢的地方\"更符合原文风格。\n\n### 4. 术语一致性\n- A：里昂**先生**全程保持敬称\n- B：多处省略\"先生\"（段落20、73、74等），敬称使用不一致\n\n### 5. 连贯性/可读性\n两者都较好，但B有些对话衔接略显突兀。\n\n### 6. 格式/标点\n**重大差异**：\n- A使用中文标准引号\"\"，格式正确\n- B使用日文引号「」，且多处引号缺失（段落17、18、22、25、26、27等未闭合）\n- B段落57、58等直接省略了引号\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"B在段落39、59、61有明显误译；A整体准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"B部分表达更口语化但有生硬处；A整体流畅\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好地保持轻小说优雅叙事风格；B有时过度口语化\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A敬称使用一致；B多处省略'先生'，不统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者相近，A略胜\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B使用日文引号且多处引号缺失；A格式规范\"}\n  },\n  \"key_differences\": [\n    \"B有多处准确性错误（段落39年龄、段落59人称、段落61逻辑）\",\n    \"B使用日文引号「」且多处引号未闭合，格式问题严重\",\n    \"B敬称使用不一致，多处省略'先生'\",\n    \"A风格更优雅统一，B有时过度口语化\"\n  ],\n  \"final_summary\": \"翻译A在准确性、格式规范性和风格一致性上明显优于B。B虽在部分口语化表达上更自然，但存在多处误译、引号格式混乱、敬称不统一等问题，整体质量不如A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14211,
+          "completion_tokens": 2311,
+          "total_tokens": 16522
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "B在段落39、59、61有明显误译；A整体准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "B部分表达更口语化但有生硬处；A整体流畅"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好地保持轻小说优雅叙事风格；B有时过度口语化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A敬称使用一致；B多处省略'先生'，不统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者相近，A略胜"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B使用日文引号且多处引号缺失；A格式规范"
+      }
+    },
+    "key_differences": [
+      "B有多处准确性错误（段落39年龄、段落59人称、段落61逻辑）",
+      "B使用日文引号「」且多处引号未闭合，格式问题严重",
+      "B敬称使用不一致，多处省略'先生'",
+      "A风格更优雅统一，B有时过度口语化"
+    ],
+    "final_summary": "翻译A在准确性、格式规范性和风格一致性上明显优于B。B虽在部分口语化表达上更自然，但存在多处误译、引号格式混乱、敬称不统一等问题，整体质量不如A。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

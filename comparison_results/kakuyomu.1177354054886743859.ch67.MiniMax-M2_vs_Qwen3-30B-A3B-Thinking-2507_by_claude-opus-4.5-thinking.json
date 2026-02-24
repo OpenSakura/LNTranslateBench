@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:23:03.388143",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "aee0eac1a97499a4c56927a47e397dfb221d00da4063905e5a8e3c10f86f20f0",
+    "B": "270ea00656eed80b485cce4aa8593f4da7ecff58944e60bb43917e4e268d3572"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:23:45.823994",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "57a178f3-cdfc-45d3-9ab0-2a625e4b7a49",
+      "judge_response": {
+        "id": "57a178f3-cdfc-45d3-9ab0-2a625e4b7a49",
+        "object": "chat.completion",
+        "created": 1768422225,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落1**: A译\"王都\"正确保留原文，B译为\"首都\"略有偏差；B添加英文注释(golem horse)不必要\n- **段落8**: A译\"跟新领主打个招呼\"误解原意，B译\"进行领主就职致辞\"正确（是主角自己要做领主就职致辞）\n- **段落20**: A译\"黄色的声\"过于死板，B译\"激动地叫了一声\"更准确理解日语习语\n- **段落23**: B严重错误——保留日文原文未翻译\"ケント様、ケント様と闘こえてくる\"\n- **段落54**: A译\"惊讶\"误译\"呆れた\"，B译\"无语\"更准确\n- **段落77**: B译\"交给我吧\"完全错误，应为\"交给她们\"，A正确\n\n### 术语一致性\n- A: 傀儡马→傀儡→哥勒姆马（不一致）\n- B: 魔像马（一致）；但\"役场\"未翻译（段落10、11）\n- B在段落25保留\"肯特様\"日语敬称，不一致\n\n### 流畅性与风格\n- A整体中文表达更自然流畅，对话感较好\n- B部分句子结构生硬，如段落27\"在路边看到我们马车的像家庭的团体用大声音说话\"\n\n### 格式\n- B保留日语「」符号更忠于原文对话格式\n- A部分段落改用引号或去除标记\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A在段落8有误译，B在段落23、77有严重错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A中文表达更自然，B部分句子结构生硬\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者轻小说风格把握相当，B保留对话标记更好\"},\n    \"terminology\": {\"A\": 6, \"B\": 5, \"notes\": \"A傀儡马不一致，B有未翻译日语和役场问题\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A可读性更佳，B有断句和理解障碍\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"B保留原文对话格式，A部分改动\"}\n  },\n  \"key_differences\": [\n    \"B在段落23保留大段日语未翻译，严重影响阅读\",\n    \"A在段落8误解领主就职致辞含义\",\n    \"B在段落77主语错误导致意思完全相反\",\n    \"A中文流畅度整体优于B\",\n    \"B术语有未翻译问题（役场、肯特様）\"\n  ],\n  \"final_summary\": \"A译文虽有少量误译（如段落8），但中文表达自然流畅，整体可读性强。B译文存在致命缺陷：段落23大段日语未翻译、段落77主语错误导致意思相反、多处术语未翻译。综合考虑，A在流畅性和连贯性上优势明显，尽管两者各有准确性问题，A的整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10865,
+          "completion_tokens": 1778,
+          "total_tokens": 12643
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A在段落8有误译，B在段落23、77有严重错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A中文表达更自然，B部分句子结构生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者轻小说风格把握相当，B保留对话标记更好"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 5,
+        "notes": "A傀儡马不一致，B有未翻译日语和役场问题"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A可读性更佳，B有断句和理解障碍"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "B保留原文对话格式，A部分改动"
+      }
+    },
+    "key_differences": [
+      "B在段落23保留大段日语未翻译，严重影响阅读",
+      "A在段落8误解领主就职致辞含义",
+      "B在段落77主语错误导致意思完全相反",
+      "A中文流畅度整体优于B",
+      "B术语有未翻译问题（役场、肯特様）"
+    ],
+    "final_summary": "A译文虽有少量误译（如段落8），但中文表达自然流畅，整体可读性强。B译文存在致命缺陷：段落23大段日语未翻译、段落77主语错误导致意思相反、多处术语未翻译。综合考虑，A在流畅性和连贯性上优势明显，尽管两者各有准确性问题，A的整体质量更高。"
+  },
+  "outcome": "Qwen3-30B-A3B-Thinking-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Thinking-2507"
+}

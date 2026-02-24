@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:45:56.711830",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "29c482094308244e349fad1ca5d935fb2c62b8257031b48996a0de35bf0f96c1",
+    "B": "23c3a073ba4ad7807d9f417b6757a4a53b18c939cc134b918e7b5481684578cc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:46:48.941022",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2eb6399b-f832-4378-8459-de272124c93e",
+      "judge_response": {
+        "id": "2eb6399b-f832-4378-8459-de272124c93e",
+        "object": "chat.completion",
+        "created": 1768488408,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 详细分析\n\n## 准确性对比\n\n**翻译A的优势：**\n- 段落4：\"甚至能看到下缘\"更准确对应原文\"下部が見えている\"，而B的\"若隐若现\"是过度诠释\n- 段落42：\"呆れた顔\"正确译为\"无语的表情\"，而B的\"看垃圾的眼神\"严重夸大了原意\n- 段落46：\"即便从后方也能清晰看见轮廓\"准确，B的\"后续动作时的起伏\"添加了原文不存在的内容\n- 段落77：\"反复涂抹延展\"准确对应\"伸ばして塗りたくる\"，B的\"胡乱涂抹\"曲解了原意\n\n**翻译B的优势：**\n- 段落1：\"防晒衣\"比A的\"冲浪服\"更准确（ラッシュガード的标准译法）\n- 段落50/52：\"乳液\"比\"润肤液\"更符合中文习惯\n\n## 流畅性对比\n\n两者整体都较流畅，但：\n- B在多处使用更自然的中文表达（如段落28\"这算什么\"vs\"なんだ那种\"）\n- A有时保留了日文语序（段落28直接保留\"なんだ\"）\n- B的语气词使用更自然（段落26\"啦\"vs\"吧\"）\n\n## 风格/语气\n\n- A：更贴近原文，保留更多日式表达\n- B：更中文化，但段落42、107等处过度演绎破坏了原作风格\n\n## 术语一致性\n\n- \"乳液\"vs\"润肤液\"：B更统一使用\"乳液\"\n- \"防晒衣\"vs\"冲浪服\"：B更准确\n- 两者在角色名称上都保持一致\n\n## 连贯性\n\n两者都保持了良好的连贯性，但B在段落42的过度翻译破坏了情绪连贯\n\n## 关键问题\n\n**A的严重失误：**\n- 段落1术语错误（冲浪服）\n- 段落87过度解读（添加了\"伸着懒腰\"）\n\n**B的严重失误：**\n- 段落42严重歪曲（呆れた→看垃圾）\n- 段落46添加内容\n- 段落77曲解原意（涂满→胡乱）\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A在多数关键处更准确（段落4、42、46、77），B虽在术语选择上更好但有多处严重误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的中文表达更自然流畅，但A也保持了良好可读性\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更好保持了轻小说原味，B在段落42、107等处过度演绎偏离原作风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B的'防晒衣'、'乳液'更准确和统一，但两者整体都可接受\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者都连贯，但B的过度翻译偶尔破坏情绪连贯性\"},\n    \"formatting\": {\"A\": 10, \"B\": 10, \"notes\": \"两者格式标点都完全正确\"}\n  },\n  \"key_differences\": [\n    \"段落1：B的'防晒衣'比A的'冲浪服'更准确\",\n    \"段落42：A正确译'无语的表情'，B严重误译为'看垃圾的眼神'\",\n    \"段落46：A准确，B添加了'后续动作时的起伏'等原文不存在内容\",\n    \"段落77：A准确表达'反复涂抹延展'，B的'胡乱涂抹'曲解原意\",\n    \"整体流畅性：B稍更自然，但A保持了更忠实的翻译\"\n  ],\n  \"final_summary\": \"翻译A整体胜出。虽然B在术语选择（防晒衣、乳液）和中文流畅性上稍有优势，但A在准确性和风格保持上更胜一筹。B存在多处严重误译（段落42将'无奈'译成'看垃圾'）和过度诠释（段落46、77），这些失误在轻小说翻译中是不可接受的。A虽有个别术语选择欠佳，但保持了更高的翻译准确度和原作风格的完整性。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11128,
+          "completion_tokens": 2394,
+          "total_tokens": 13522
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A在多数关键处更准确（段落4、42、46、77），B虽在术语选择上更好但有多处严重误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的中文表达更自然流畅，但A也保持了良好可读性"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更好保持了轻小说原味，B在段落42、107等处过度演绎偏离原作风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的'防晒衣'、'乳液'更准确和统一，但两者整体都可接受"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者都连贯，但B的过度翻译偶尔破坏情绪连贯性"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式标点都完全正确"
+      }
+    },
+    "key_differences": [
+      "段落1：B的'防晒衣'比A的'冲浪服'更准确",
+      "段落42：A正确译'无语的表情'，B严重误译为'看垃圾的眼神'",
+      "段落46：A准确，B添加了'后续动作时的起伏'等原文不存在内容",
+      "段落77：A准确表达'反复涂抹延展'，B的'胡乱涂抹'曲解原意",
+      "整体流畅性：B稍更自然，但A保持了更忠实的翻译"
+    ],
+    "final_summary": "翻译A整体胜出。虽然B在术语选择（防晒衣、乳液）和中文流畅性上稍有优势，但A在准确性和风格保持上更胜一筹。B存在多处严重误译（段落42将'无奈'译成'看垃圾'）和过度诠释（段落46、77），这些失误在轻小说翻译中是不可接受的。A虽有个别术语选择欠佳，但保持了更高的翻译准确度和原作风格的完整性。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:24.292883",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "d5dcad02bc6b8dd57c82f5d0e3de791c795e392c914da2746259ded02293952b",
+    "B": "87f0c9dfdec55f05b38bb0af3a8fe3aa464826ec4343a2dd9fd1d33b0569d22d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:43.835326",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DJSQaplwn7AHj8wG5lx5afFigx8",
+      "judge_response": {
+        "id": "chatcmpl-89DJSQaplwn7AHj8wG5lx5afFigx8",
+        "object": "chat.completion",
+        "created": 1768426903,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"ゴブラル ゴブリン王 ライトノベル\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"sideゴブラル ゴブリン ライトノベル\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"ゴーブラ ゴブラル 違い ゴブリン\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"ゴブリンの王国\" Syosetu](https://ncode.syosetu.com/n8034ba)\n> [🔗 \"「ゴブリンスレイヤー」シリーズ（ＧＡ文庫） - ライトノベル（ラノベ）│電子書籍無料試し読み・まとめ買いならBOOK☆WALKER\" BookWalker](https://bookwalker.jp/series/61006)\n> [🔗 \"ゴブリンスレイヤー - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC)\n> [🔗 \"【最新刊】ゴブリンスレイヤー１６ - ライトノベル（ラノベ） 蝸牛くも/神奈月昇（ＧＡ文庫）：電子書籍試し読み無料 - BOOK☆WALKER -\" BOOK WALKER](https://bookwalker.jp/dece26cee3-baa0-41cc-8f60-466a2ed66858)\n> [🔗 \"ゴブリンスレイヤー - ライトノベル（ラノベ） 蝸牛くも/神奈月昇（ＧＡ文庫）：電子書籍試し読み無料 - BOOK☆WALKER -\" BOOK WALKER](https://bookwalker.jp/def3332c85-d78a-4c38-8faa-c4e337b01a4a)\n> [🔗 \"GA文庫｜「ゴブリンスレイヤー」特設サイト\" GA文庫](https://ga.sbcr.jp/sp/goblin_slayer/book.html)\n> [🔗 \"[ライトノベル]ゴブリンの王国 王の生誕 (全1冊) | 漫画全巻ドットコム\" Mangazenkan](https://www.mangazenkan.com/items/10418902)\n> [🔗 \"ゴブリンスレイヤー１２ - ライトノベル（ラノベ） 蝸牛くも/神奈月昇（ＧＡ文庫）：電子書籍試し読み無料 - BOOK☆WALKER -\" BOOK WALKER](https://bookwalker.jp/deb2fe8575-5fbb-4091-9596-c225b15f99ae)\n> [🔗 \"[第1話] 転生ゴブリンだけど質問ある？ - 三木なずな/荒木宰 | となりのヤングジャンプ\" Tonarinoyj](https://tonarinoyj.jp/episode/10834108156765668108)\n> [🔗 \"Amazon.co.jp: ゴブリンスレイヤー (GA文庫) : 蝸牛 くも, ...\" Amazon Japan](https://www.amazon.co.jp/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC-GA%E6%96%87%E5%BA%AB-%E8%9D%B8%E7%89%9B-%E3%81%8F%E3%82%82/dp/4797386150)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ゴブリンスレイヤー - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC)\n> [🔗 \"「ゴブリンスレイヤー」シリーズ（ＧＡ文庫） - ライトノベル（ラノベ）│電子書籍無料試し読み・まとめ買いならBOOK☆WALKER\" BookWalker](https://bookwalker.jp/series/61006)\n> [🔗 \"【最新刊】ゴブリンスレイヤー１６ - ライトノベル（ラノベ） 蝸牛くも/神奈月昇（ＧＡ文庫）：電子書籍試し読み無料 - BOOK☆WALKER -\" BOOK WALKER](https://bookwalker.jp/dece26cee3-baa0-41cc-8f60-466a2ed66858)\n> [🔗 \"ゴブリンスレイヤー - ライトノベル（ラノベ） 蝸牛くも/神奈月昇（ＧＡ文庫）：電子書籍試し読み無料 - BOOK☆WALKER -\" BOOK WALKER](https://bookwalker.jp/def3332c85-d78a-4c38-8faa-c4e337b01a4a)\n> [🔗 \"『ゴブリンスレイヤー』ラノベ＆コミックス 無料コラボ試読版（最新刊）｜無料漫画（マンガ）ならコミックシーモア｜蝸牛くも/神奈月昇/足立慎吾\" Cmoa](https://www.cmoa.jp/title/1101207297)\n> [🔗 \"Amazon.co.jp: ゴブリンスレイヤー (GA文庫) : 蝸牛 くも, ...\" Amazon Japan](https://www.amazon.co.jp/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC-GA%E6%96%87%E5%BA%AB-%E8%9D%B8%E7%89%9B-%E3%81%8F%E3%82%82/dp/4797386150)\n> [🔗 \"ゴブリンスレイヤー | ブックライブ\" BookLive](https://booklive.jp/product/index/title_id/360433/vol_no/001)\n> [🔗 \"Amazon.co.jp: ゴブリンスレイヤー ライトノベル ...\" Amazon Japan](https://www.amazon.co.jp/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC-%E3%83%A9%E3%82%A4%E3%83%88%E3%83%8E%E3%83%99%E3%83%AB-1-7%E5%B7%BB%E3%82%BB%E3%83%83%E3%83%88-%E8%9D%B8%E7%89%9B-%E3%81%8F%E3%82%82/dp/B07BK3W96B)\n> [🔗 \"[小説]ゴブリンサバイバー | 漫画なら、めちゃコミック\" Mechacomic](https://mechacomic.jp/books/104389)\n> [🔗 \"ゴブリンスレイヤー | ガンガンONLINE\" Gangan Online](https://www.ganganonline.com/title/47)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ゴブリン - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3)\n> [🔗 \"ゴブリン (ごぶりん)とは【ピクシブ百科事典】 - pixiv\" Pixiv](https://dic.pixiv.net/en/a/Goblin)\n> [🔗 \"ゴブリン - アニヲタWiki(仮)\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/36781.html)\n> [🔗 \"ゴブリン、意地悪な妖精。オーク・コボルト・ホブゴブリンとの違いは？ - waqwaq\" Waqwaq-j](https://waqwaq-j.com/celtic/4050)\n> [🔗 \"ゴブリン/FF11用語辞典\" FFO](https://wiki.ffo.jp/html/549.html)\n> [🔗 \"698.事典篇：妖精族：ゴブリン - 三百枚書けるようになるお得な「小説の書き方」コラム（カイ 壬） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054889417588/episodes/1177354054891292627)\n> [🔗 \"ゴブリンとは [単語記事] - ニコニコ大百科\" Niconico](https://dic.nicovideo.jp/a/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3)\n> [🔗 \"第1話 ファンタジー：種族-妖精-ゴブリン（ヨーロッパ - 伝承由来、イギリス人 - J・R・R・トールキン由来） - ファンタジー共有設定 異世界チート、現実知識等 考察（津希名魅） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354055180764891/episodes/1177354055181077285)\n> [🔗 \"ホブゴブリンHobgoblin - 怪物森羅万象\" Cocolog-nifty](http://fujik.cocolog-nifty.com/fujik5963/2014/01/hobgoblin-8632.html)\n> [🔗 \"ゴブリン：ファンタジー用語解説｜滝川海老郎\" Note](https://note.com/takigawa_ebirou/n/n851140d78d70)\n\n\n以下是对翻译A和翻译B的详细比较分析。本文是典型的轻小说风格：带有哥布林视角的黑色幽默、残酷描写、突然的反转、哥布林王的傲慢与震惊、以及人类方（大贤者儿子）的无敌爽快战斗描写。整体语气轻快却带血腥、对话口语化、叙述带有吐槽感。\n\n### 总体观察\n- **术语一致性**：这是最大分歧点。A统一使用“哥布林”“哥布拉”（ゴーブラ/ゴブラル的音译），显得整洁专业；B使用“戈布拉尔”“戈布拉”，但混杂“哥布**”（明显是屏蔽“哥布林”），整体不统一，且“戈布拉尔”较长拗口。side标题A用“side哥布林王”更直观贴合内容，B保留原文“sideゴブラル”显得不翻译。\n- **准确性**：两者都基本准确，但A在一些细微处更忠实（如保留“牝→雌性/女性”而非过于口语的“母的”）。\n- **流畅性与自然度**：A的中文更书面流畅、符合轻小说常见翻译风格（优雅却不失趣味）；B更口语化、接地气，但有时显得粗糙或中二（如大量感叹号、重复拟声）。\n- **风格/语气**：轻小说需要保持哥布林方的傲慢残忍+震惊崩坏、人类方的爽快。A更平衡，B在哥布林视角过于“逗比”，有时夸张过头。\n- **连贯性/可读性**：A整体更连贯，人物内心吐槽自然；B有些句子生硬。\n- **格式/标点**：A标点规范、对话处理成熟；B有时标点滥用（过多！？），引号混用中英。\n\n### 逐项打分与说明\n\n**accuracy（准确性）**  \nA: 9/10 —— 整体忠实，细微处处理得当（如“牝”译“女性/雌性”保留原意）。  \nB: 8/10 —— 基本准确，但“ゴブラル”强行音译“戈布拉尔”稍显生硬，部分遮挡“哥布林”影响理解。  \nnotes: A更尊重原文意图，B在某些地方为了“有趣”稍作改动。\n\n**fluency（流畅性）**  \nA: 9/10 —— 句子通顺，中文阅读体验优秀。  \nB: 7/10 —— 过于口语化导致部分地方像网络小说粗译，读起来跳跃。  \nnotes: A更像正式轻小说中译本，B像机翻+个人润色。\n\n**style（风格/语气）**  \nA: 9/10 —— 很好保留了轻小说特有的黑色幽默与反差萌（哥布林王从嚣张到冷汗）。  \nB: 8/10 —— 更“网络化”、更搞笑，但有时破坏哥布林的残忍威严感。  \nnotes: A的哥布林视角更阴冷傲慢，符合原文；B太“沙雕”了。\n\n**terminology（术语/名称一致性）**  \nA: 10/10 —— 全篇统一“哥布林”“哥布拉”，side标题翻译到位。  \nB: 5/10 —— “戈布拉尔/戈布拉”不统一 + 大量**屏蔽，严重影响专业感。  \nnotes: 这点A完胜，几乎是决定性因素。\n\n**coherence（连贯性/可读性）**  \nA: 9/10 —— 叙述连贯，吐槽自然插入。  \nB: 8/10 —— 大部分可读，但口语过度导致部分段落节奏乱。  \n\n**formatting（格式/标点符号）**  \nA: 9/10 —— 标点规范，对话处理专业。  \nB: 7/10 —— 过多感叹号、问号、中英引号混用，显得随意。\n\n### 关键差异总结\n- 名称处理：A统一且贴合中文阅读习惯，B生硬且不一致。\n- 语气平衡：A在残酷与幽默间拿捏更好，B偏向网络搞笑风。\n- 整体专业度：A读起来像正规出版社译本，B更像个人爱好者翻译。\n\n### 最终判决\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更忠实于原文细微含义，B稍有随意改动\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A句子更自然流畅，B口语过度显得粗糙\"},\n    \"style\": {\"A\": 9, \"B\": 8, \"notes\": \"A更好保留轻小说黑色幽默与反差，B过于沙雕化\"},\n    \"terminology\": {\"A\": 10, \"B\": 5, \"notes\": \"A名称统一专业，B音译混乱且大量屏蔽严重减分\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体连贯性更强\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"A标点规范，B滥用感叹号\"}\n  },\n  \"key_differences\": [\n    \"名称翻译与一致性：A用'哥布林/哥布拉'统一，B'戈布拉尔'拗口且不统一\",\n    \"语气控制：A平衡残忍与幽默，B过于搞笑网络化\",\n    \"专业度：A像正规轻小说译本，B更像个人随意翻译\"\n  ],\n  \"final_summary\": \"综合各方面，尤其是术语一致性和整体专业度，A明显优于B，是更适合作为正式轻小说中文译本的选择。B虽然某些口语表达生动，但缺陷太多无法弥补。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13258,
+          "completion_tokens": 4772,
+          "total_tokens": 18030
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更忠实于原文细微含义，B稍有随意改动"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A句子更自然流畅，B口语过度显得粗糙"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更好保留轻小说黑色幽默与反差，B过于沙雕化"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 5,
+        "notes": "A名称统一专业，B音译混乱且大量屏蔽严重减分"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体连贯性更强"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A标点规范，B滥用感叹号"
+      }
+    },
+    "key_differences": [
+      "名称翻译与一致性：A用'哥布林/哥布拉'统一，B'戈布拉尔'拗口且不统一",
+      "语气控制：A平衡残忍与幽默，B过于搞笑网络化",
+      "专业度：A像正规轻小说译本，B更像个人随意翻译"
+    ],
+    "final_summary": "综合各方面，尤其是术语一致性和整体专业度，A明显优于B，是更适合作为正式轻小说中文译本的选择。B虽然某些口语表达生动，但缺陷太多无法弥补。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

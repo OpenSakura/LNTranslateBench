@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:35:42.229513",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "a42c37e988ededbb7be9d83fd99438bc2d2c54b7f3280eb0991d9b1d34b61ad0",
+    "B": "899b9077d325c2a9f11da83d4960fe692fef661dc706285b560a3f67ac4bb2dc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:36:28.221027",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f5af3cce-13fd-43c1-bd05-528277ebb97b",
+      "judge_response": {
+        "id": "f5af3cce-13fd-43c1-bd05-528277ebb97b",
+        "object": "chat.completion",
+        "created": 1768422987,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性对比\n\n**段落74**：A版本**完全漏译**整段内容（「お腹も膨れてきたし...」），这是严重错误。B完整翻译。\n\n**段落97**：原文「シオンのことを愛している」描述精灵女性的情感。A译为\"我爱席恩\"（第一人称错误），B正确译为\"爱着席恩\"。\n\n**段落3**：A译\"头发长长了不管，黑乎乎的\"过度口语化且丢失原文结构；B\"只是单纯留长、没怎么打理过的长黑发\"更忠实。\n\n**段落6**：A省略了\"ほとんど\"（绝大部分），B保留了\"绝大部分\"。\n\n### 流畅性与风格对比\n\n**段落17**：A\"你谁啊？\"不符合自责语境；B\"我又算老几啊\"更贴合「何様のつもりなの」的自问语气。\n\n**段落21**：A\"和平麻木\"较生硬；B\"安逸过头\"更自然地表达「平和ボケ」。\n\n**段落25**：A译\"哈\"语气错误（原文是叹气）；B\"唉\"准确。\n\n### 格式问题\n\nA在多处漏掉引号（段落32、61-63、66-69等），B偶尔也有引号不一致问题（如段落43-44、47-49用了不同引号样式），但整体更规范。\n\n### 术语一致性\n\n两版人名翻译一致（席恩、尤莉娅、波普拉）。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 9, \"notes\": \"A漏译段落74整段，段落97人称错误；B整体更忠实原文\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B表达更自然流畅，A部分过度口语化或生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地保持轻小说的叙述语气和情感表达\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"人名翻译一致，无明显差异\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A因漏译导致连贯性受损，B整体更完整\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A多处漏引号，B引号样式偶有不统一\"}\n  },\n  \"key_differences\": [\n    \"A完全漏译段落74（关键过渡段落）\",\n    \"A段落97人称翻译错误（第一人称vs第三人称）\",\n    \"A多处缺失对话引号\",\n    \"B对原文细节保留更完整（如'绝大部分'等）\",\n    \"B语气把握更准确（如叹气'唉'vs'哈'）\"\n  ],\n  \"final_summary\": \"B版本整体质量明显优于A。A存在严重的漏译问题（段落74）和人称翻译错误（段落97），加上多处格式缺失，影响了整体可读性。B在准确性、流畅性和格式规范上表现更好，更忠实地传达了原文的情感和细节。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12547,
+          "completion_tokens": 1919,
+          "total_tokens": 14466
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A漏译段落74整段，段落97人称错误；B整体更忠实原文"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B表达更自然流畅，A部分过度口语化或生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地保持轻小说的叙述语气和情感表达"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "人名翻译一致，无明显差异"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A因漏译导致连贯性受损，B整体更完整"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A多处漏引号，B引号样式偶有不统一"
+      }
+    },
+    "key_differences": [
+      "A完全漏译段落74（关键过渡段落）",
+      "A段落97人称翻译错误（第一人称vs第三人称）",
+      "A多处缺失对话引号",
+      "B对原文细节保留更完整（如'绝大部分'等）",
+      "B语气把握更准确（如叹气'唉'vs'哈'）"
+    ],
+    "final_summary": "B版本整体质量明显优于A。A存在严重的漏译问题（段落74）和人称翻译错误（段落97），加上多处格式缺失，影响了整体可读性。B在准确性、流畅性和格式规范上表现更好，更忠实地传达了原文的情感和细节。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

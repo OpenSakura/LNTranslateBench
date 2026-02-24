@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:18:02.439712",
+  "sample": "hameln.394629.ch7",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394629.ch7.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394629.ch7.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.394629.ch7.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "75794fdd92e580d793f2c60acda602fe251b03cd0f92019992c28c220903948f",
+    "A": "c2bb53563527fc950154cf0bb6b1508a1942663d4c9432e414d8bb5ab2dc5899",
+    "B": "3f19fda9f115a61e655a51ffd0596110f5798bbea575c7841156b81acd355444"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:19:11.762086",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f4e28170-deac-417a-bd98-ec6788b8d7b8",
+      "judge_response": {
+        "id": "f4e28170-deac-417a-bd98-ec6788b8d7b8",
+        "object": "chat.completion",
+        "created": 1768421951,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n- **段落56**：A将\"何も分かってないわ\"误译为\"我什么都不知道\"，应为\"你什么都不知道\"；B正确翻译\n- **段落29**：原文\"俺の考察も当たってないかな\"表达对自己推测可能有误的疑问，A翻译为\"不太准\"较接近，B翻译为\"没错\"是相反的意思，B此处有误\n- **段落73**：A的\"指向美树沙耶香的枪\"语法不通顺；B\"将枪口对准了美树沙耶香\"准确流畅\n\n### 流畅性分析\n- **段落1**：A\"学校放学后\"简洁；B\"学校结束放学后\"略显冗余\n- **段落15**：\"フラフラ\"在此语境指被某种力量引导般地走出，A\"轻飘飘\"更贴切；B\"摇摇晃晃\"偏向于物理上的不稳\n- **段落48**：B\"干得漂亮！\"比A\"也行！\"更好地传达了\"ヨシ！\"的得意感\n\n### 风格/语气分析\n- B整体更自然口语化，如\"搞不好\"\"该怎么说呢\"\n- A部分对话缺少引号（段落30、31、40、42等），影响轻小说对话感\n- **段落77**：B\"一厢情愿\"比A\"固执己见\"更符合原文\"思い込みが強くて\"的含义\n\n### 术语一致性\n- 角色名：A用\"马美前辈\"，B用\"麻美学姐/小姐\"——B的\"麻美\"是更通用的译名\n- 敬称：A保留\"沙耶香酱\"（段落26），B简化为\"沙耶香\"\n\n### 格式分析\n- B在对话段落保持引号一致性更好\n- A多处对话段落缺失引号，如段落30、31、40、42、43等\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落56有关键翻译错误（主语弄反），B在段落29理解有误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更自然流畅，A个别表达生硬如'用自己的手保护圆给你看'\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更符合轻小说风格，对话语气把握更好\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B角色名'麻美'更通用，A'马美'较少见\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙事衔接更自然，主语补充更到位\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A多处对话缺失引号，B格式更规范一致\"}\n  },\n  \"key_differences\": [\n    \"A在段落56将'你什么都不知道'误译为'我什么都不知道'\",\n    \"B在段落29将'推测可能不准'误译为'推测没错'\",\n    \"A多处对话缺少引号，B格式更规范\",\n    \"B整体口语化程度更高，更符合轻小说风格\",\n    \"角色名译法不同：马美vs麻美\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。A在段落56有关键性误译，且多处对话缺少引号；B在段落29理解有误，但整体流畅度、风格把握和格式规范性更佳。综合来看，B的优势更明显，尤其在格式规范和自然表达方面表现更好。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10359,
+          "completion_tokens": 3105,
+          "total_tokens": 13464
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落56有关键翻译错误（主语弄反），B在段落29理解有误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更自然流畅，A个别表达生硬如'用自己的手保护圆给你看'"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更符合轻小说风格，对话语气把握更好"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B角色名'麻美'更通用，A'马美'较少见"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙事衔接更自然，主语补充更到位"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A多处对话缺失引号，B格式更规范一致"
+      }
+    },
+    "key_differences": [
+      "A在段落56将'你什么都不知道'误译为'我什么都不知道'",
+      "B在段落29将'推测可能不准'误译为'推测没错'",
+      "A多处对话缺少引号，B格式更规范",
+      "B整体口语化程度更高，更符合轻小说风格",
+      "角色名译法不同：马美vs麻美"
+    ],
+    "final_summary": "两个翻译各有优劣。A在段落56有关键性误译，且多处对话缺少引号；B在段落29理解有误，但整体流畅度、风格把握和格式规范性更佳。综合来看，B的优势更明显，尤其在格式规范和自然表达方面表现更好。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

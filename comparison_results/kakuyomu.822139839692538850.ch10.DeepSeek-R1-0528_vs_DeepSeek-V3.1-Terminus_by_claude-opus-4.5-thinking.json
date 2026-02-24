@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:35:25.300220",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "4ea4f737ed231970c0d38da8bb1babeaa81f1d91906f8e890d4467254342119d",
+    "B": "d0bcbb725f83b3d5c9197f4922b420b213bc4bf27580f89ec288b0cc09cf41b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:36:18.994701",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fe218f3e-5a1f-43bd-8cfe-c4662614f9e8",
+      "judge_response": {
+        "id": "fe218f3e-5a1f-43bd-8cfe-c4662614f9e8",
+        "object": "chat.completion",
+        "created": 1768422976,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n- **段落14**：A将\"長そうな会話\"译为\"看起来很开心的村长模样的男人\"，漏掉了\"长\"的意思；B译为\"看似漫长的对话\"更准确\n- **段落17**：\"何様のつもりなの\"是自问自责，B\"我算老几啊\"比A\"你以为你是谁啊\"更符合内心独白语境\n- **段落59-60**：B将\"お母さん\"（母亲）错译为\"他\"，这是明显的性别错误\n- **段落6**：\"素知らぬ顔をして\"B译\"装作若无其事的样子\"比A\"若无其事地\"更准确\n\n### 流畅性分析\n- **段落21**：A\"和平痴呆\"生硬，B\"和平过头\"更自然\n- **段落34**：B的口语化处理\"搞得像贪吃鬼一样多难为情呀\"比A更流畅\n- **段落72**：B\"差不多把各种食物都尝了一遍\"比A\"基本上吃了各种各样的东西\"更自然\n- **段落77**：B\"以惊人的力道揪住我的前襟\"比A\"被一股巨大的力量抓住胸口\"更生动\n\n### 风格/语气分析\n- B整体更符合轻小说少女视角的内心独白风格\n- 段落7：B\"真不爽\"比A\"不爽\"更口语化\n- 段落47：B\"母上\"是对教会修女的尊称，比A\"妈妈\"更贴合语境\n\n### 术语一致性\n- 两者对人名翻译一致（席恩、尤莉娅、波普拉）\n- \"マザー\"：A译\"妈妈\"，B译\"母上/母亲\"，B更符合教会背景\n\n### 问题点\n- B在段落59-60有代词性别错误\n- A在部分段落翻译较为生硬\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.7,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A漏译段落14关键词；B段落59-60代词性别错误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体更流畅自然，A多处表达生硬如'和平痴呆'\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说少女视角的内心独白风格，口语化处理更佳\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B对'マザー'译为'母上'更符合教会背景\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B段落衔接更自然，叙述节奏更好\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范，标点使用正确\"}\n  },\n  \"key_differences\": [\n    \"流畅性：B的口语化处理更自然，A部分表达生硬\",\n    \"段落14：A漏译'長そうな'，B正确译出'看似漫长的对话'\",\n    \"段落59-60：B代词性别错误（将母亲译为'他'）\",\n    \"风格：B更贴合轻小说少女内心独白的语气\",\n    \"'平和ボケ'：A译'和平痴呆'生硬，B译'和平过头/沉浸在和平中'更自然\"\n  ],\n  \"final_summary\": \"B在流畅性、风格语气和整体可读性上明显优于A，更符合轻小说的叙述特点。虽然B在段落59-60有代词性别错误，但A也存在漏译和表达生硬的问题。综合考量，B的整体翻译质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13135,
+          "completion_tokens": 2238,
+          "total_tokens": 15373
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.7,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A漏译段落14关键词；B段落59-60代词性别错误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体更流畅自然，A多处表达生硬如'和平痴呆'"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说少女视角的内心独白风格，口语化处理更佳"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对'マザー'译为'母上'更符合教会背景"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B段落衔接更自然，叙述节奏更好"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范，标点使用正确"
+      }
+    },
+    "key_differences": [
+      "流畅性：B的口语化处理更自然，A部分表达生硬",
+      "段落14：A漏译'長そうな'，B正确译出'看似漫长的对话'",
+      "段落59-60：B代词性别错误（将母亲译为'他'）",
+      "风格：B更贴合轻小说少女内心独白的语气",
+      "'平和ボケ'：A译'和平痴呆'生硬，B译'和平过头/沉浸在和平中'更自然"
+    ],
+    "final_summary": "B在流畅性、风格语气和整体可读性上明显优于A，更符合轻小说的叙述特点。虽然B在段落59-60有代词性别错误，但A也存在漏译和表达生硬的问题。综合考量，B的整体翻译质量更高。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

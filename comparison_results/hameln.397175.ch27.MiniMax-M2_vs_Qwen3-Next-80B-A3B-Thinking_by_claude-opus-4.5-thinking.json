@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:21:41.593399",
+  "sample": "hameln.397175.ch27",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.397175.ch27.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.397175.ch27.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.397175.ch27.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9e3d6a37ea65d8b759673ec215e5f01f65038c7c9c42d9aa02205902654ed6c0",
+    "A": "3a1e1cf8524933faab7bde0e137ad0fcae2b5f893018eb052950f110eeb1936a",
+    "B": "caf1e92015d9629a254d3428f77a0d95ebde102cf91757544d38ae0ad9b5857d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:22:23.751140",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e8dbb06c-1eac-4b7c-970e-e0cf00c60580",
+      "judge_response": {
+        "id": "e8dbb06c-1eac-4b7c-970e-e0cf00c60580",
+        "object": "chat.completion",
+        "created": 1768422143,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**关键错误对比：**\n- **段落14**: A将「ただの影」保留日语未翻译，B正确译为\"只是影子\"\n- **段落26**: A误译为\"坠落武士咒灵\"，B正确译为\"落武者咒灵\"（落武者是战败逃亡的武士，非\"坠落\"）\n- **段落50/53**: A严重错误，将「すくなのゆび」译为\"小指\"（小拇指），B正确译为\"宿傩的手指\"\n- **段落66**: A译\"会粘上来\"、B译\"退缩了\"，原文「食い下がる」意为\"不肯罢休/继续追问\"，两者皆错但B更接近语境\n- **段落89/90**: A译\"没伸长\"正确，B译\"没长高\"错误（讨论的是脖子被拉伸）\n\n### 2. 流畅性\n- B整体更口语化：\"牛逼啊\"、\"消耗太大\"、\"太蠢了\"等表达更自然\n- A有些生硬处理：\"我无视了这种粪老头的一半\"（段落25）、\"那种事know的\"（段落55混入英文）\n\n### 3. 风格/语气\n- B更符合轻小说第一人称叙事风格，对话感强\n- A部分对话过于书面：\"就是啊……虽然如此\"、\"在说什么…？\"\n- B的\"臭老头\"、\"粪爷\"称呼更统一有个性\n\n### 4. 术语一致性\n- A：称呼不统一（\"粪爷\"/\"老头子\"/\"那老家伙\"交替使用）\n- B：较为统一使用\"粪爷\"/\"臭老头\"\n- A的\"坠落武士\"vs B的\"落武者\"：B更准确\n\n### 5. 连贯性/可读性\n- B段落间衔接更流畅\n- A某些句子断裂感强：\"我选择了，和来到新宿时相同的方法\"（段落11多余逗号）\n\n### 6. 格式/标点\n- A有多处异常空格：\"我选择了， 和来到新宿时\"\n- B标点使用更规范\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 7, \"notes\": \"A有致命错误：将宿傩的手指误译为小指；落武者误译为坠落武士；保留日语未译\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B口语化更自然，A有混入英文和生硬表达\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说风格，对话生动；A偏书面\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A称呼不统一且有关键术语错误；B较统一但段落89有错\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体流畅度更高，A有句子断裂感\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A有异常空格和标点问题\"}\n  },\n  \"key_differences\": [\n    \"A将宿傩的手指误译为小指（致命错误）\",\n    \"A保留日语「ただの影」未翻译\",\n    \"A将落武者误译为坠落武士\",\n    \"B整体语言风格更贴合轻小说\",\n    \"B称呼用语更统一\",\n    \"B段落89将伸长误译为长高\"\n  ],\n  \"final_summary\": \"B在整体质量上明显优于A。虽然B在段落89有一处误译，但A存在多处致命错误（宿傩的手指→小指、保留日语未译、术语错误），且B的语言风格更符合轻小说特点，口语化自然，称呼统一。A的书面化倾向和格式问题也拉低了整体质量。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14770,
+          "completion_tokens": 1786,
+          "total_tokens": 16556
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 7,
+        "notes": "A有致命错误：将宿傩的手指误译为小指；落武者误译为坠落武士；保留日语未译"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B口语化更自然，A有混入英文和生硬表达"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说风格，对话生动；A偏书面"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A称呼不统一且有关键术语错误；B较统一但段落89有错"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体流畅度更高，A有句子断裂感"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有异常空格和标点问题"
+      }
+    },
+    "key_differences": [
+      "A将宿傩的手指误译为小指（致命错误）",
+      "A保留日语「ただの影」未翻译",
+      "A将落武者误译为坠落武士",
+      "B整体语言风格更贴合轻小说",
+      "B称呼用语更统一",
+      "B段落89将伸长误译为长高"
+    ],
+    "final_summary": "B在整体质量上明显优于A。虽然B在段落89有一处误译，但A存在多处致命错误（宿傩的手指→小指、保留日语未译、术语错误），且B的语言风格更符合轻小说特点，口语化自然，称呼统一。A的书面化倾向和格式问题也拉低了整体质量。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:24:34.042786",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "f44cba15fac3a65186941071b10343ec4ad23f0f150293b725055d93e3fc08aa",
+    "B": "f8c30973c62c09f0de0c597bfcaf7b2450646ecfa77f7d907d2e094a7dd676ed"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:25:15.867566",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "78d047fd-43fc-470b-92b0-397624bdeae3",
+      "judge_response": {
+        "id": "78d047fd-43fc-470b-92b0-397624bdeae3",
+        "object": "chat.completion",
+        "created": 1768422315,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n- **段落1/94**: A未翻译\"sideゴブラル\"和\"sideナモナイ\"，B正确翻译了前者但后者译为\"什么都没有\"（应为人名）\n- **段落8**: \"苦しゅうない\"是古语\"不必拘束\"之意，A译\"别拘谨\"正确，B译\"别着急\"有误\n- **段落19**: A\"看戈布拉\"正确，B\"哥布拉看着\"主语颠倒，严重错误\n- **段落42**: 原文\"倍の一万\"即一万，B误译为\"两万\"\n- **段落4**: A漏译了\"そうなってくるとやはり気になるのは戦利品だ\"的后续内容，B也漏译\n\n### 流畅性分析\n- B整体语言更自然流畅，如\"另当别论\"\"真是让人期待啊\"\n- A部分句子生硬，如\"那样的话果然在意的是战利品\"\n\n### 风格/语气分析\n- B更符合轻小说口语化风格，如\"真是可怕啊\"\"说不定能行\"\n- A较为直译，某些对话略显生硬\n\n### 格式问题\n- B在段落42、43、44、73-76等处丢失引号，影响对话呈现\n- A保留了更完整的标点格式\n\n### 术语一致性\n- A: 戈布拉、玛泽尔（统一简体）\n- B: 混用哥布拉/戈布拉，使用繁体\"瑪澤爾\"，不一致\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B有主语颠倒(段19)和数字错误(段42)等关键失误；A有漏译但整体更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B语言更自然流畅，A部分句子较生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更贴合轻小说风格，口语化表达更佳\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"A名称翻译统一；B混用哥布拉/戈布拉，且使用繁体字\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处对话丢失引号，A格式保留更完整\"}\n  },\n  \"key_differences\": [\n    \"B段落19主语颠倒错误：'哥布拉看着'应为'看向哥布拉'\",\n    \"B段落42数字错误：'两万'应为'一万'\",\n    \"A段落8正确理解古语'苦しゅうない'，B误译\",\n    \"B多处对话缺少引号影响阅读\",\n    \"A有未翻译文本但关键信息更准确\"\n  ],\n  \"final_summary\": \"A虽然流畅性和风格略逊于B，但在关键准确性上表现更好，避免了B的主语颠倒和数字等硬伤。B的格式问题（丢失引号）和术语不一致也扣分较多。综合考虑，A整体质量略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12570,
+          "completion_tokens": 1707,
+          "total_tokens": 14277
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B有主语颠倒(段19)和数字错误(段42)等关键失误；A有漏译但整体更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B语言更自然流畅，A部分句子较生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更贴合轻小说风格，口语化表达更佳"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "A名称翻译统一；B混用哥布拉/戈布拉，且使用繁体字"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处对话丢失引号，A格式保留更完整"
+      }
+    },
+    "key_differences": [
+      "B段落19主语颠倒错误：'哥布拉看着'应为'看向哥布拉'",
+      "B段落42数字错误：'两万'应为'一万'",
+      "A段落8正确理解古语'苦しゅうない'，B误译",
+      "B多处对话缺少引号影响阅读",
+      "A有未翻译文本但关键信息更准确"
+    ],
+    "final_summary": "A虽然流畅性和风格略逊于B，但在关键准确性上表现更好，避免了B的主语颠倒和数字等硬伤。B的格式问题（丢失引号）和术语不一致也扣分较多。综合考虑，A整体质量略优。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

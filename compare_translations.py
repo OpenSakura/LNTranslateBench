@@ -24,24 +24,54 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from openai import OpenAI
 
+add_span_event: Any
+create_span: Any
+init_tracing: Any
+record_exception: Any
+set_span_attributes: Any
+shutdown_tracing: Any
+
 try:
     from utils.tracing import (
-        add_span_event,
-        create_span,
-        init_tracing,
-        record_exception,
-        set_span_attributes,
-        shutdown_tracing,
+        add_span_event as _add_span_event,
+        create_span as _create_span,
+        init_tracing as _init_tracing,
+        record_exception as _record_exception,
+        set_span_attributes as _set_span_attributes,
+        shutdown_tracing as _shutdown_tracing,
     )
+
+    add_span_event = _add_span_event
+    create_span = _create_span
+    init_tracing = _init_tracing
+    record_exception = _record_exception
+    set_span_attributes = _set_span_attributes
+    shutdown_tracing = _shutdown_tracing
 
     TRACING_AVAILABLE = True
 except ImportError:
     TRACING_AVAILABLE = False
 
+    def _noop(*args: Any, **kwargs: Any) -> None:
+        return None
+
+    def _noop_span(*args: Any, **kwargs: Any):
+        from contextlib import nullcontext
+
+        return nullcontext()
+
+    add_span_event = _noop
+    create_span = _noop_span
+    init_tracing = _noop
+    record_exception = _noop
+    set_span_attributes = _noop
+    shutdown_tracing = _noop
+
 
 def _noop_context():
     """No-op context manager for when tracing is disabled."""
     from contextlib import nullcontext
+
     return nullcontext()
 
 
@@ -259,8 +289,8 @@ def build_judge_messages(
         max_len = max(max_len, len(lines_source))
 
     for i in range(max_len):
-        segment_str = f"段落 {i+1}:\n"
-        
+        segment_str = f"段落 {i + 1}:\n"
+
         if source_text:
             s_line = lines_source[i] if i < len(lines_source) else ""
             segment_str += f"原文: {s_line}\n"
@@ -280,7 +310,9 @@ def build_judge_messages(
 def atomic_write_json(path: Path, payload: Dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp_path = path.with_suffix(path.suffix + ".tmp")
-    tmp_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    tmp_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     tmp_path.replace(path)
 
 
@@ -292,9 +324,11 @@ def judge_pair(
     temperature: float,
     timeout_s: int,
     messages: List[Dict[str, str]],
+    response_api: str,
     response_format: Optional[str],
+    reasoning_effort: Optional[str],
 ) -> Tuple[str, Dict[str, Any], str]:
-    """Call the judge LLM using OpenAI client for automatic tracing.
+    """Call the judge LLM using the OpenAI python client.
 
     Args:
         judge_base_url: Base URL for the API (e.g., "http://localhost:8000/v1")
@@ -303,7 +337,9 @@ def judge_pair(
         temperature: Sampling temperature
         timeout_s: Request timeout in seconds
         messages: List of chat messages
+        response_api: Which OpenAI API to call ("chat_completions" or "responses")
         response_format: Optional response format (e.g., "json_object")
+        reasoning_effort: Optional reasoning effort ("low", "medium", "high")
 
     Returns:
         Tuple of (content, response_json, request_id)
@@ -314,23 +350,102 @@ def judge_pair(
         timeout=timeout_s,
     )
 
-    # Prepare request parameters
-    request_params: Dict[str, Any] = {
+    if response_api == "responses":
+        request_params: Dict[str, Any] = {
+            "model": judge_model,
+            "input": messages,
+            "temperature": temperature,
+        }
+        if reasoning_effort:
+            request_params["reasoning"] = {"effort": reasoning_effort}
+
+        # Responses API uses `text.format` for structured outputs.
+        if response_format == "json_object":
+            request_params["text"] = {"format": {"type": "json_object"}}
+
+        output_parts: List[str] = []
+        final_response: Any = None
+
+        # Stream if supported by the installed SDK.
+        if hasattr(client.responses, "stream"):
+            with client.responses.stream(**request_params) as stream:
+                for event in stream:
+                    if getattr(event, "type", None) == "response.output_text.delta":
+                        delta = getattr(event, "delta", None)
+                        if delta:
+                            output_parts.append(str(delta))
+                final_response = stream.get_final_response()
+        else:
+            for event in client.responses.create(**request_params, stream=True):
+                if getattr(event, "type", None) == "response.output_text.delta":
+                    delta = getattr(event, "delta", None)
+                    if delta:
+                        output_parts.append(str(delta))
+                elif getattr(event, "type", None) == "response.completed":
+                    final_response = getattr(event, "response", None)
+
+        if final_response is None:
+            # As a last resort, fall back to non-streaming.
+            final_response = client.responses.create(**request_params)
+
+        content = "".join(output_parts).strip()
+        if not content:
+            content = (getattr(final_response, "output_text", None) or "").strip()
+
+        response_json: Dict[str, Any] = {
+            "id": getattr(final_response, "id", None),
+            "object": getattr(final_response, "object", None),
+            "created": getattr(final_response, "created", None),
+            "model": getattr(final_response, "model", judge_model),
+            "output_text": content,
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {"role": "assistant", "content": content},
+                    "finish_reason": None,
+                }
+            ],
+        }
+
+        usage = getattr(final_response, "usage", None)
+        if usage is not None:
+            prompt_tokens = getattr(usage, "input_tokens", None)
+            completion_tokens = getattr(usage, "output_tokens", None)
+            total_tokens = getattr(usage, "total_tokens", None)
+            if (
+                prompt_tokens is not None
+                or completion_tokens is not None
+                or total_tokens is not None
+            ):
+                response_json["usage"] = {
+                    "prompt_tokens": prompt_tokens,
+                    "completion_tokens": completion_tokens,
+                    "total_tokens": total_tokens,
+                }
+
+        request_id = str(getattr(final_response, "id", "") or "")
+        return content, response_json, request_id
+
+    if response_api != "chat_completions":
+        raise ValueError(
+            f"Unsupported response_api: {response_api!r} (expected 'chat_completions' or 'responses')"
+        )
+
+    request_params = {
         "model": judge_model,
         "messages": messages,
         "temperature": temperature,
     }
+    if reasoning_effort:
+        request_params["reasoning_effort"] = reasoning_effort
     if response_format:
         request_params["response_format"] = {"type": response_format}
 
-    # Call the API using OpenAI client (automatically traced by OpenInference)
     response = client.chat.completions.create(**request_params)
 
-    # Extract content from response
     content = response.choices[0].message.content or ""
 
-    # Build response JSON for compatibility with existing code
-    response_json: Dict[str, Any] = {
+    response_json = {
         "id": response.id,
         "object": response.object,
         "created": response.created,
@@ -348,7 +463,6 @@ def judge_pair(
         ],
     }
 
-    # Add usage info if available
     if response.usage:
         response_json["usage"] = {
             "prompt_tokens": response.usage.prompt_tokens,
@@ -356,9 +470,7 @@ def judge_pair(
             "total_tokens": response.usage.total_tokens,
         }
 
-    # Extract request ID (OpenAI uses 'id' field)
     request_id = response.id or ""
-
     return content, response_json, request_id
 
 
@@ -368,22 +480,75 @@ def main() -> None:
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
 
-    parser.add_argument("--translations-dir", default="translated_results", help="Stage 1 output directory")
-    parser.add_argument("--samples-dir", default="samples", help="Directory containing source sample .txt files")
-    parser.add_argument("--output-dir", default="comparison_results", help="Directory to write comparison JSON files")
+    parser.add_argument(
+        "--translations-dir",
+        default="translated_results",
+        help="Stage 1 output directory",
+    )
+    parser.add_argument(
+        "--samples-dir",
+        default="samples",
+        help="Directory containing source sample .txt files",
+    )
+    parser.add_argument(
+        "--output-dir",
+        default="comparison_results",
+        help="Directory to write comparison JSON files",
+    )
 
-    parser.add_argument("--judge-base-url", default=os.environ.get("JUDGE_BASE_URL"), help="Judge API base URL (e.g., http://localhost:8000/v1)")
-    parser.add_argument("--judge-model", default=os.environ.get("JUDGE_MODEL"), help="Judge model name")
-    parser.add_argument("--judge-api-key", default=os.environ.get("JUDGE_API_KEY"), help="Judge API key")
+    parser.add_argument(
+        "--judge-base-url",
+        default=os.environ.get("JUDGE_BASE_URL"),
+        help="Judge API base URL (e.g., http://localhost:8000/v1)",
+    )
+    parser.add_argument(
+        "--judge-model", default=os.environ.get("JUDGE_MODEL"), help="Judge model name"
+    )
+    parser.add_argument(
+        "--judge-api-key", default=os.environ.get("JUDGE_API_KEY"), help="Judge API key"
+    )
 
-    parser.add_argument("--temperature", type=float, default=0.0, help="Judge sampling temperature")
-    parser.add_argument("--max-retries", type=int, default=3, help="Maximum retries on JSON validation failure")
-    parser.add_argument("--retry-temp-increase", type=float, default=0.3, help="Temperature increase per retry")
-    parser.add_argument("--timeout", type=int, default=900, help="HTTP timeout in seconds for judge calls (default: 900)")
-    parser.add_argument("--delay", type=float, default=0.0, help="Sleep between judge calls (seconds)")
-    parser.add_argument("--concurrent-requests", type=int, default=1, help="Number of concurrent judge requests (1 = sequential, >1 = parallel)")
-    parser.add_argument("--max-pairs", type=int, default=0, help="Stop after this many comparisons (0 = no limit)")
-    parser.add_argument("--overwrite", action="store_true", help="Re-run comparisons even if output exists")
+    parser.add_argument(
+        "--temperature", type=float, default=0.0, help="Judge sampling temperature"
+    )
+    parser.add_argument(
+        "--max-retries",
+        type=int,
+        default=3,
+        help="Maximum retries on JSON validation failure",
+    )
+    parser.add_argument(
+        "--retry-temp-increase",
+        type=float,
+        default=0.3,
+        help="Temperature increase per retry",
+    )
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=900,
+        help="HTTP timeout in seconds for judge calls (default: 900)",
+    )
+    parser.add_argument(
+        "--delay", type=float, default=0.0, help="Sleep between judge calls (seconds)"
+    )
+    parser.add_argument(
+        "--concurrent-requests",
+        type=int,
+        default=1,
+        help="Number of concurrent judge requests (1 = sequential, >1 = parallel)",
+    )
+    parser.add_argument(
+        "--max-pairs",
+        type=int,
+        default=0,
+        help="Stop after this many comparisons (0 = no limit)",
+    )
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Re-run comparisons even if output exists",
+    )
     parser.add_argument(
         "--seed",
         default="0",
@@ -395,12 +560,58 @@ def main() -> None:
         default=None,
         help="Send OpenAI-compatible response_format (optional; may not be supported by all APIs)",
     )
+    parser.add_argument(
+        "--response-api",
+        choices=["chat_completions", "responses"],
+        default=os.environ.get("JUDGE_RESPONSE_API", "chat_completions"),
+        help="Which OpenAI API to use for judge calls",
+    )
+    parser.add_argument(
+        "--reasoning-effort",
+        choices=["low", "medium", "high", "xhigh"],
+        default=os.environ.get("JUDGE_REASONING_EFFORT"),
+        help="Reasoning effort for supported models/APIs",
+    )
+
+    parser.add_argument(
+        "--models",
+        default="",
+        help="Comma-separated subset of models to include (default: all discovered from translations)",
+    )
+    parser.add_argument(
+        "--focus-model",
+        default="",
+        help="Only run comparisons involving this model (default: off)",
+    )
+    parser.add_argument(
+        "--focus-mode",
+        choices=["scheduled", "all"],
+        default="scheduled",
+        help=(
+            "When --focus-model is set: 'scheduled' filters the round-robin schedule to only that model; "
+            "'all' compares the focus model vs every other active model per sample."
+        ),
+    )
 
     # Tracing options
-    parser.add_argument("--tracing", action="store_true", help="Enable OpenTelemetry tracing")
-    parser.add_argument("--otlp-endpoint", default=os.environ.get("OTLP_ENDPOINT"), help="OTLP endpoint for traces")
-    parser.add_argument("--otlp-auth-header", default=os.environ.get("OTLP_AUTH_HEADER"), help="OTLP auth header value")
-    parser.add_argument("--otlp-project-name", default=os.environ.get("OTLP_PROJECT_NAME"), help="Project name for tracing")
+    parser.add_argument(
+        "--tracing", action="store_true", help="Enable OpenTelemetry tracing"
+    )
+    parser.add_argument(
+        "--otlp-endpoint",
+        default=os.environ.get("OTLP_ENDPOINT"),
+        help="OTLP endpoint for traces",
+    )
+    parser.add_argument(
+        "--otlp-auth-header",
+        default=os.environ.get("OTLP_AUTH_HEADER"),
+        help="OTLP auth header value",
+    )
+    parser.add_argument(
+        "--otlp-project-name",
+        default=os.environ.get("OTLP_PROJECT_NAME"),
+        help="Project name for tracing",
+    )
 
     args = parser.parse_args()
 
@@ -421,7 +632,10 @@ def main() -> None:
         )
         print("OpenTelemetry tracing enabled")
     elif args.tracing:
-        print("Warning: Tracing requested but utils.tracing module not available", file=sys.stderr)
+        print(
+            "Warning: Tracing requested but utils.tracing module not available",
+            file=sys.stderr,
+        )
 
     translations_dir = Path(args.translations_dir)
     samples_dir = Path(args.samples_dir)
@@ -429,7 +643,10 @@ def main() -> None:
 
     translation_files = sorted(translations_dir.glob(TRANSLATION_FILE_GLOB))
     if not translation_files:
-        print(f"No translation files found in {translations_dir} (glob: {TRANSLATION_FILE_GLOB})", file=sys.stderr)
+        print(
+            f"No translation files found in {translations_dir} (glob: {TRANSLATION_FILE_GLOB})",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     records: List[TranslationRecord] = []
@@ -444,7 +661,9 @@ def main() -> None:
         records.append(record)
 
     if not records:
-        print(f"No successful translations found in {translations_dir}", file=sys.stderr)
+        print(
+            f"No successful translations found in {translations_dir}", file=sys.stderr
+        )
         sys.exit(1)
 
     by_sample: Dict[str, Dict[str, TranslationRecord]] = {}
@@ -458,36 +677,94 @@ def main() -> None:
         for model in by_sample[sample].keys():
             model_counts[model] = model_counts.get(model, 0) + 1
 
-    all_models = sorted(model_counts.keys())
-    rounds = round_robin_rounds(all_models)
+    discovered_models = sorted(model_counts.keys())
+
+    requested_models = [m.strip() for m in (args.models or "").split(",") if m.strip()]
+    if requested_models:
+        missing = [m for m in requested_models if m not in discovered_models]
+        if missing:
+            print(
+                "Error: --models includes unknown model(s): " + ", ".join(missing),
+                file=sys.stderr,
+            )
+            print("Discovered models: " + ", ".join(discovered_models), file=sys.stderr)
+            sys.exit(2)
+        active_models = sorted(requested_models)
+    else:
+        active_models = discovered_models
+
+    focus_model = (args.focus_model or "").strip() or None
+    if focus_model and focus_model not in active_models:
+        print(
+            f"Error: --focus-model {focus_model!r} is not in the active model set.",
+            file=sys.stderr,
+        )
+        print("Active models: " + ", ".join(active_models), file=sys.stderr)
+        sys.exit(2)
+
+    rounds = round_robin_rounds(active_models)
     if not rounds:
         print("Not enough models to schedule comparisons.", file=sys.stderr)
         sys.exit(1)
 
-    round_offset = 0 if str(args.seed).strip() in {"", "0"} else stable_mod(args.seed, len(rounds))
+    round_offset = (
+        0 if str(args.seed).strip() in {"", "0"} else stable_mod(args.seed, len(rounds))
+    )
+
+    schedule_type = "round_robin"
+    if focus_model:
+        schedule_type = "focus_all" if args.focus_mode == "all" else "focus_round_robin"
+
     scheduled_total = 0
     scheduled_available = 0
     scheduled_missing_translation = 0
     for idx, sample in enumerate(samples_sorted):
         round_idx = (idx + round_offset) % len(rounds)
-        pairings = rounds[round_idx]
+
+        models_map = {
+            m: r for (m, r) in by_sample[sample].items() if m in active_models
+        }
+        if focus_model:
+            if args.focus_mode == "all":
+                pairings = [(focus_model, m) for m in active_models if m != focus_model]
+            else:
+                pairings = [p for p in rounds[round_idx] if focus_model in p]
+        else:
+            pairings = rounds[round_idx]
+
         scheduled_total += len(pairings)
-        models_map = by_sample[sample]
         for m1, m2 in pairings:
             if m1 in models_map and m2 in models_map:
                 scheduled_available += 1
             else:
                 scheduled_missing_translation += 1
 
-    print(f"Loaded {len(records)} successful translations across {len(by_sample)} sample(s)")
-    print(f"Models discovered: {len(all_models)}")
     print(
-        f"Schedule: round-robin ({len(rounds)} rounds, {len(rounds[0])} matches/round, offset={round_offset})"
+        f"Loaded {len(records)} successful translations across {len(by_sample)} sample(s)"
     )
+    print(f"Models discovered: {len(discovered_models)} (active: {len(active_models)})")
+    if focus_model:
+        print(f"Focus model: {focus_model} (mode: {args.focus_mode})")
+
+    if schedule_type == "round_robin":
+        print(
+            f"Schedule: round-robin ({len(rounds)} rounds, {len(rounds[0])} matches/round, offset={round_offset})"
+        )
+    elif schedule_type == "focus_round_robin":
+        print(
+            f"Schedule: focus round-robin ({len(rounds)} rounds, <=1 match/round, offset={round_offset})"
+        )
+    else:
+        print(
+            f"Schedule: focus all-opponents ({len(active_models) - 1} matches/sample)"
+        )
+
     print(f"Planned comparisons (scheduled): {scheduled_total}")
     print(f"Planned comparisons (available):  {scheduled_available}")
     if scheduled_missing_translation:
-        print(f"Note: {scheduled_missing_translation} scheduled matches skipped due to missing translations.")
+        print(
+            f"Note: {scheduled_missing_translation} scheduled matches skipped due to missing translations."
+        )
     print(f"Judge base URL: {args.judge_base_url}")
     print(f"Judge model: {args.judge_model}")
     print(f"Output dir: {output_dir}")
@@ -509,7 +786,9 @@ def main() -> None:
 
     # One round per sample; round index increments with sample index.
     for sample_idx, sample in enumerate(samples_sorted):
-        models_map = by_sample[sample]
+        models_map = {
+            m: r for (m, r) in by_sample[sample].items() if m in active_models
+        }
         if len(models_map) < 2:
             continue
 
@@ -524,7 +803,15 @@ def main() -> None:
         target_lang = any_record.target_lang or "zh"
 
         round_idx = (sample_idx + round_offset) % len(rounds)
-        for model_1, model_2 in rounds[round_idx]:
+        if focus_model:
+            if args.focus_mode == "all":
+                pairings = [(focus_model, m) for m in active_models if m != focus_model]
+            else:
+                pairings = [p for p in rounds[round_idx] if focus_model in p]
+        else:
+            pairings = rounds[round_idx]
+
+        for model_1, model_2 in pairings:
             if model_1 not in models_map or model_2 not in models_map:
                 with counter_lock:
                     skipped_missing += 1
@@ -567,27 +854,29 @@ def main() -> None:
             )
 
             # Collect task for processing
-            comparison_tasks.append({
-                "sample": sample,
-                "source_lang": source_lang,
-                "target_lang": target_lang,
-                "source_file": source_file,
-                "source_text": source_text,
-                "canonical_1": canonical_1,
-                "canonical_2": canonical_2,
-                "a_model": a_model,
-                "b_model": b_model,
-                "a_text": a_text,
-                "b_text": b_text,
-                "a_file": a_file,
-                "b_file": b_file,
-                "out_path": out_path,
-                "messages": messages,
-            })
+            comparison_tasks.append(
+                {
+                    "sample": sample,
+                    "source_lang": source_lang,
+                    "target_lang": target_lang,
+                    "source_file": source_file,
+                    "source_text": source_text,
+                    "canonical_1": canonical_1,
+                    "canonical_2": canonical_2,
+                    "a_model": a_model,
+                    "b_model": b_model,
+                    "a_text": a_text,
+                    "b_text": b_text,
+                    "a_file": a_file,
+                    "b_file": b_file,
+                    "out_path": out_path,
+                    "messages": messages,
+                }
+            )
 
     # Limit tasks if max_pairs is set
     if args.max_pairs and len(comparison_tasks) > args.max_pairs:
-        comparison_tasks = comparison_tasks[:args.max_pairs]
+        comparison_tasks = comparison_tasks[: args.max_pairs]
 
     # Function to process a single comparison task
     def process_comparison(task: Dict[str, Any]) -> Tuple[str, Optional[str]]:
@@ -626,7 +915,12 @@ def main() -> None:
                 "A": sha256_text(a_text),
                 "B": sha256_text(b_text),
             },
-            "judge": {"base_url": args.judge_base_url, "model": args.judge_model},
+            "judge": {
+                "base_url": args.judge_base_url,
+                "model": args.judge_model,
+                "response_api": args.response_api,
+                "reasoning_effort": args.reasoning_effort,
+            },
             "status": "started",
         }
         atomic_write_json(out_path, result_payload)
@@ -647,6 +941,8 @@ def main() -> None:
                     "source_lang": source_lang,
                     "target_lang": target_lang,
                     "judge.model": args.judge_model,
+                    "judge.response_api": args.response_api,
+                    "judge.reasoning_effort": args.reasoning_effort or "",
                     "judge.temperature": args.temperature,
                     "max_retries": args.max_retries,
                 },
@@ -657,13 +953,15 @@ def main() -> None:
 
         with span_context if span_context is not None else _noop_context():
             for attempt_num in range(args.max_retries + 1):
-                current_temp = args.temperature + (attempt_num * args.retry_temp_increase)
+                current_temp = args.temperature + (
+                    attempt_num * args.retry_temp_increase
+                )
                 attempt_info: Dict[str, Any] = {
                     "attempt": attempt_num + 1,
                     "temperature": current_temp,
                 }
 
-                content: Optional[str] = None
+                content: str = ""
                 response_json: Optional[Dict[str, Any]] = None
                 request_id: Optional[str] = None
 
@@ -682,14 +980,18 @@ def main() -> None:
                         temperature=current_temp,
                         timeout_s=args.timeout,
                         messages=messages,
+                        response_api=args.response_api,
                         response_format=args.response_format,
+                        reasoning_effort=args.reasoning_effort,
                     )
 
-                    attempt_info.update({
-                        "judge_request_id": request_id,
-                        "judge_response": response_json,
-                        "status": "success",
-                    })
+                    attempt_info.update(
+                        {
+                            "judge_request_id": request_id,
+                            "judge_response": response_json,
+                            "status": "success",
+                        }
+                    )
 
                     # Try to extract and validate JSON
                     decision = extract_json_object(content)
@@ -701,22 +1003,26 @@ def main() -> None:
 
                     # Add success attributes to span
                     if TRACING_AVAILABLE:
-                        set_span_attributes({
-                            "judge.attempts": attempt_num + 1,
-                            "judge.winner": winner,
-                            "judge.request_id": request_id or "",
-                            "judge.success": True,
-                        })
+                        set_span_attributes(
+                            {
+                                "judge.attempts": attempt_num + 1,
+                                "judge.winner": winner,
+                                "judge.request_id": request_id or "",
+                                "judge.success": True,
+                            }
+                        )
 
                     # Success! Break out of retry loop
                     break
 
                 except Exception as e:
                     last_error = e
-                    attempt_info.update({
-                        "status": "failed",
-                        "error": str(e),
-                    })
+                    attempt_info.update(
+                        {
+                            "status": "failed",
+                            "error": str(e),
+                        }
+                    )
                     # Save partial info if available
                     if response_json is not None:
                         attempt_info["judge_response"] = response_json
@@ -731,17 +1037,22 @@ def main() -> None:
 
                     # If this was the last attempt, don't sleep
                     if attempt_num < args.max_retries:
-                        print(f"  Attempt {attempt_num + 1} failed: {e}. Retrying with temp={current_temp + args.retry_temp_increase:.2f}...", file=sys.stderr)
+                        print(
+                            f"  Attempt {attempt_num + 1} failed: {e}. Retrying with temp={current_temp + args.retry_temp_increase:.2f}...",
+                            file=sys.stderr,
+                        )
                         if args.delay > 0:
                             time.sleep(args.delay)
                     else:
                         # Mark final failure in span
                         if TRACING_AVAILABLE:
-                            set_span_attributes({
-                                "judge.attempts": attempt_num + 1,
-                                "judge.success": False,
-                                "judge.error": str(last_error),
-                            })
+                            set_span_attributes(
+                                {
+                                    "judge.attempts": attempt_num + 1,
+                                    "judge.success": False,
+                                    "judge.error": str(last_error),
+                                }
+                            )
 
         # Process the final result
         if decision is not None:
@@ -765,31 +1076,40 @@ def main() -> None:
                 }
             )
             atomic_write_json(out_path, result_payload)
-            
+
             # Add final result to tracing span
             if TRACING_AVAILABLE:
-                set_span_attributes({
-                    "result.outcome": outcome,
-                    "result.winner_model": winner_model or "tie",
-                    "result.confidence": decision.get("confidence", 0.0),
-                    "result.total_attempts": len(attempts),
-                    "result.status": "completed",
-                })
+                set_span_attributes(
+                    {
+                        "result.outcome": outcome,
+                        "result.winner_model": winner_model or "tie",
+                        "result.confidence": decision.get("confidence", 0.0),
+                        "result.total_attempts": len(attempts),
+                        "result.status": "completed",
+                    }
+                )
                 # Add scores if available
                 if "scores" in decision:
                     scores = decision["scores"]
                     for category, details in scores.items():
                         if isinstance(details, dict):
-                            set_span_attributes({
-                                f"result.scores.{category}.A": details.get("A", 0),
-                                f"result.scores.{category}.B": details.get("B", 0),
-                            })
-            
+                            set_span_attributes(
+                                {
+                                    f"result.scores.{category}.A": details.get("A", 0),
+                                    f"result.scores.{category}.B": details.get("B", 0),
+                                }
+                            )
+
             with counter_lock:
                 completed += 1
                 processed += 1
-            retry_info = f" (after {len(attempts)} attempts)" if len(attempts) > 1 else ""
-            return "completed", f"[{processed}/{total_work}] {sample}: {canonical_1} vs {canonical_2} -> {outcome}{retry_info}"
+            retry_info = (
+                f" (after {len(attempts)} attempts)" if len(attempts) > 1 else ""
+            )
+            return (
+                "completed",
+                f"[{processed}/{total_work}] {sample}: {canonical_1} vs {canonical_2} -> {outcome}{retry_info}",
+            )
 
         else:
             # All retries failed
@@ -802,27 +1122,37 @@ def main() -> None:
                 }
             )
             atomic_write_json(out_path, result_payload)
-            
+
             # Add error result to tracing span
             if TRACING_AVAILABLE:
-                set_span_attributes({
-                    "result.outcome": "error",
-                    "result.total_attempts": len(attempts),
-                    "result.status": "error",
-                    "result.error": str(last_error),
-                })
-            
+                set_span_attributes(
+                    {
+                        "result.outcome": "error",
+                        "result.total_attempts": len(attempts),
+                        "result.status": "error",
+                        "result.error": str(last_error),
+                    }
+                )
+
             with counter_lock:
                 failed += 1
                 processed += 1
-            return "failed", f"Error judging {sample}: {canonical_1} vs {canonical_2} (all {len(attempts)} attempts failed): {last_error}"
+            return (
+                "failed",
+                f"Error judging {sample}: {canonical_1} vs {canonical_2} (all {len(attempts)} attempts failed): {last_error}",
+            )
 
     # Process comparisons (sequential or parallel)
     if args.concurrent_requests > 1:
         # Parallel processing
-        print(f"Processing {len(comparison_tasks)} comparisons with {args.concurrent_requests} concurrent requests...")
+        print(
+            f"Processing {len(comparison_tasks)} comparisons with {args.concurrent_requests} concurrent requests..."
+        )
         with ThreadPoolExecutor(max_workers=args.concurrent_requests) as executor:
-            future_to_task = {executor.submit(process_comparison, task): task for task in comparison_tasks}
+            future_to_task = {
+                executor.submit(process_comparison, task): task
+                for task in comparison_tasks
+            }
             for future in as_completed(future_to_task):
                 try:
                     status, message = future.result()
@@ -835,7 +1165,7 @@ def main() -> None:
                         failed += 1
                         processed += 1
                     print(f"Unexpected error in worker thread: {e}", file=sys.stderr)
-                
+
                 # Apply delay between completions if specified
                 if args.delay > 0:
                     time.sleep(args.delay)
@@ -854,7 +1184,7 @@ def main() -> None:
                     failed += 1
                     processed += 1
                 print(f"Unexpected error processing comparison: {e}", file=sys.stderr)
-            
+
             # Apply delay between requests if specified
             if args.delay > 0:
                 time.sleep(args.delay)
@@ -868,9 +1198,17 @@ def main() -> None:
         "output_dir": str(output_dir),
         "judge_base_url": args.judge_base_url,
         "judge_model": args.judge_model,
+        "models": {
+            "discovered": discovered_models,
+            "active": active_models,
+        },
+        "filters": {
+            "focus_model": focus_model,
+            "focus_mode": args.focus_mode if focus_model else None,
+        },
         "schedule": {
-            "type": "round_robin",
-            "models": all_models,
+            "type": schedule_type,
+            "models": active_models,
             "rounds": len(rounds),
             "matches_per_round": len(rounds[0]),
             "round_offset": round_offset,

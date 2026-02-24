@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:08:43.677068",
+  "sample": "syosetu.n1560fy.ch298",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n1560fy.ch298.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n1560fy.ch298.MiniMax-M2.translated.txt",
+    "B": "translated_results/syosetu.n1560fy.ch298.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9aeb6269094dc80681686c7ce43485d4644d7889a31862f13341d77dfc8671a9",
+    "A": "c67bee108681fb4d969e074befcf2470c2f2fe7b2c7a70de2f508d814e653656",
+    "B": "5e33ea094b7ff3dfa1e57c6513c690a4105c79d7944aa3e0b925513d8f6ee889"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:09:30.667392",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "85bd2199-5515-4ae7-8309-15feff652600",
+      "judge_response": {
+        "id": "85bd2199-5515-4ae7-8309-15feff652600",
+        "object": "chat.completion",
+        "created": 1768432170,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 准确性分析\n\n**关键误译对比：**\n\n1. **段落5** - ベルゼブブ（别西卜/Beelzebub）\n   - A: \"别西卜阁下\" ✓\n   - B: \"贝利亚陛下\" ✗（完全错误的名字）\n\n2. **段落11** - 血に酔った獣である人間とは違うのだ\n   - A: \"和血醉的野兽不同，人类是这样的\" ✗（意思完全颠倒）\n   - B: \"我们和醉血的野兽——人类不一样\" ✓\n\n3. **段落29** - な、めるなァァァ（舐めるな的断句）\n   - A: \"别，别，别啦！！\" ✗（完全误译）\n   - B: \"别、小、看我啊啊啊啊啊！！\" ✓\n\n4. **段落26** - 神秘が従えられる\n   - A: \"食肉家畜居然还能顺从神秘\" ✗（主谓倒置）\n   - B: \"家畜竟被当作肉食，还被神秘附身\" ✗（意思不对，原意是家畜驱使神秘）\n\n5. **段落88** - なんかしたか\n   - A: \"出什么事了？\" ✗\n   - B: \"你做了啥？\" ✓\n\n## 流畅性与风格\n\n- B整体更符合轻小说战斗场景的紧张感\n- B的语气词处理更贴合原文情绪（如\"他妈的\"虽然粗俗但符合角色）\n- A某些地方过于生硬（如\"即使你说给我耳朵听\"）\n\n## 格式问题\n\n- **段落45**: A保持『』正确，B错误使用《》\n- **段落81/101**: B保留原文拟声词未翻译，A翻译了\n\n## 术语一致性\n\n- A对\"ベルゼブブ\"一致（别西卜/贝尔泽布有差异）\n- B的\"贝利亚\"是严重错误\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A有段落11、29致命误译；B有段落5名字严重错误，但整体语义把握更好\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B语句更通顺自然，战斗场景节奏感更强\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说战斗叙事风格，情绪表达更到位\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"A的别西卜正确，B的贝利亚是重大错误\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B上下文衔接更连贯，A有多处断裂感\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A符号使用更一致，B有符号混用问题\"}\n  },\n  \"key_differences\": [\n    \"段落29「舐めるな」A完全误译为'别别别'，B正确译为'别小看我'\",\n    \"段落11语义A完全颠倒，B正确\",\n    \"段落5专有名词B严重错误（贝利亚≠别西卜）\",\n    \"B整体战斗氛围和角色情绪表达更准确\"\n  ],\n  \"final_summary\": \"两译本各有明显缺陷。A在关键句段落11、29有致命误译导致意思完全错误；B在专有名词上犯了将别西卜译为贝利亚的严重错误。但综合考量，B在整体流畅性、战斗场景的紧张感、角色情绪表达上明显优于A，核心语义理解也更准确，故B略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10756,
+          "completion_tokens": 2009,
+          "total_tokens": 12765
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有段落11、29致命误译；B有段落5名字严重错误，但整体语义把握更好"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B语句更通顺自然，战斗场景节奏感更强"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说战斗叙事风格，情绪表达更到位"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "A的别西卜正确，B的贝利亚是重大错误"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B上下文衔接更连贯，A有多处断裂感"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A符号使用更一致，B有符号混用问题"
+      }
+    },
+    "key_differences": [
+      "段落29「舐めるな」A完全误译为'别别别'，B正确译为'别小看我'",
+      "段落11语义A完全颠倒，B正确",
+      "段落5专有名词B严重错误（贝利亚≠别西卜）",
+      "B整体战斗氛围和角色情绪表达更准确"
+    ],
+    "final_summary": "两译本各有明显缺陷。A在关键句段落11、29有致命误译导致意思完全错误；B在专有名词上犯了将别西卜译为贝利亚的严重错误。但综合考量，B在整体流畅性、战斗场景的紧张感、角色情绪表达上明显优于A，核心语义理解也更准确，故B略胜。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

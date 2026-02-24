@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:09:48.156430",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "28074ee373a25217cd21b3966b2bdc3f2cd6fd8cf105a4e386653b55f0e4886d",
+    "B": "d45137f26ab9c3351921b80a2bbf3cddf2c07ec4bd261bcd05aa4d99c0f1946f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:10:37.112766",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "98802bb2-e5ff-4231-958d-01f86268f0ab",
+      "judge_response": {
+        "id": "98802bb2-e5ff-4231-958d-01f86268f0ab",
+        "object": "chat.completion",
+        "created": 1768432236,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性\n- **段落3**: A译\"我的回合\"比B的\"我的阶段\"更符合卡牌游戏习惯用语\n- **段落6**: B译\"被继承的意志\"比A的\"继承之意\"更准确还原\"受け継がれる意思\"\n- **段落19**: B的\"回合\"译法与原文\"フェイズ\"对应更清晰\n- **段落37**: B\"就好像本能地在警告我\"比A的倒装句式更准确传达原意\n\n### 2. 流畅性\n- **段落7**: B\"为了平复咚咚直跳的心脏\"比A\"为了让狂跳的心脏平静下来\"更自然\n- **段落20**: B\"令其动弹不得\"更流畅，A\"像要阻止他的动作一样\"稍显累赘\n- **段落43**: B\"完全没感到痛快\"比A\"心情完全舒畅不起来\"更口语化\n\n### 3. 格式/标点符号 (重大问题)\n- **B在段落17-19、23、26-29、31等多处使用了英文引号\"\"而非日式引号「」**，这在轻小说格式中是严重问题\n- **段落22**: B出现\"恩 creepy 地咧嘴一笑\"——直接保留英文单词，属于翻译失误\n- **段落41**: B使用单引号''，格式混乱\n\n### 4. 术语/名称一致性 (两者都有问题)\n- A: 人名翻译不一致（焰→艾恩→安，白银→银加）\n- B: 人名翻译不一致（恩/エン，白银/白金/シロガネ），且多处保留日文原名\n- 怪兽名: A用\"普雷格托恩/普莱格托恩\"，B用\"普雷格顿/普莱盖顿\"——两者都有不一致\n\n### 5. 风格/语气\n- A的对话语气稍显书面化\n- B的口语感更强（如\"啥！？\"、\"你急个啥？\"）\n- B部分对话更贴合轻小说风格\n\n### 6. 连贯性\n- A整体格式统一（全部使用「」）\n- B格式混乱严重影响阅读体验\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在部分句子的意思传达更精准，如段落6、37\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的表达更自然口语化，如段落7、20、43\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有千秋，B口语感更强但有时过于随意\"},\n    \"terminology\": {\"A\": 5, \"B\": 4, \"notes\": \"两者人名翻译都不一致，B问题更严重（混用日文原名）\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体阅读更连贯，B因格式问题影响阅读\"},\n    \"formatting\": {\"A\": 8, \"B\": 3, \"notes\": \"B多处使用英文引号、保留英文单词(creepy)、格式混乱是致命问题\"}\n  },\n  \"key_differences\": [\n    \"B在多处对话使用英文引号而非「」，严重违反轻小说格式规范\",\n    \"B在段落22出现未翻译的英文单词'creepy'\",\n    \"B人名翻译混乱：恩/エン/白银/白金/シロガネ混用\",\n    \"B部分表达更自然流畅，准确度略高\",\n    \"A格式统一但部分表达略显生硬\"\n  ],\n  \"final_summary\": \"B在流畅性和准确性上略胜一筹，但其格式问题极其严重：多处使用英文引号、保留未翻译的英文单词、人名翻译混乱。这些问题在轻小说翻译中属于基础性错误，严重影响专业度和阅读体验。A虽然在表达自然度上略逊，但格式规范、整体一致性更好，因此综合评判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13269,
+          "completion_tokens": 2069,
+          "total_tokens": 15338
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在部分句子的意思传达更精准，如段落6、37"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的表达更自然口语化，如段落7、20、43"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有千秋，B口语感更强但有时过于随意"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 4,
+        "notes": "两者人名翻译都不一致，B问题更严重（混用日文原名）"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体阅读更连贯，B因格式问题影响阅读"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 3,
+        "notes": "B多处使用英文引号、保留英文单词(creepy)、格式混乱是致命问题"
+      }
+    },
+    "key_differences": [
+      "B在多处对话使用英文引号而非「」，严重违反轻小说格式规范",
+      "B在段落22出现未翻译的英文单词'creepy'",
+      "B人名翻译混乱：恩/エン/白银/白金/シロガネ混用",
+      "B部分表达更自然流畅，准确度略高",
+      "A格式统一但部分表达略显生硬"
+    ],
+    "final_summary": "B在流畅性和准确性上略胜一筹，但其格式问题极其严重：多处使用英文引号、保留未翻译的英文单词、人名翻译混乱。这些问题在轻小说翻译中属于基础性错误，严重影响专业度和阅读体验。A虽然在表达自然度上略逊，但格式规范、整体一致性更好，因此综合评判A胜出。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

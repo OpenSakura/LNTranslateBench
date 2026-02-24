@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:27:40.520508",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "f4d7fbdcbe59a1b5e93706f6d0759d177d1cf86fdf56139ce47429fb5d391e66",
+    "B": "52fcf933380d58b10f9c31ab32b1e0697b8a3356141e7118c6610a477c0821ca"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:28:39.501345",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2ad33f51-cae7-4aca-a976-f850c8fbf98e",
+      "judge_response": {
+        "id": "2ad33f51-cae7-4aca-a976-f850c8fbf98e",
+        "object": "chat.completion",
+        "created": 1768422519,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 名称/术语一致性分析\n\n**翻译A的问题：**\n- 段落53、60中保留了日文\"N：ブル\"未翻译\n- 段落47将\"フェスタ\"误译为\"庆典\"（其他地方正确译为\"费斯塔/菲斯塔\"）\n- 段落71-72突然使用\"N·Blue\"格式\n\n**翻译B的问题：**\n- 名称极不一致：N：ブル有时保留日文、有时译为\"N：蓝\"、有时译为\"N：布鲁\"\n- 段落2、4、11、12等处保留日文原名未译\n- 段落47同样将\"フェスタ\"误译为\"庆典\"\n\n### 2. 格式问题\n\n**翻译B存在严重的对话引号缺失问题：**\n- 段落21、25、26、77-78、82-85、89、127-129、133-135、139-140等多处对话丢失「」引号\n- 这严重影响了对话与叙述的区分\n\n### 3. 准确性对比\n\n| 段落 | 问题 |\n|------|------|\n| 19 | A将\"依頼書\"误译为\"信\"；B的\"透过眼睛\"表达别扭 |\n| 44 | B的\"公会养的人\"过于口语化/不雅 |\n| 57 | B的\"葛琳先生们\"性别有误（葛琳为女性） |\n| 93 | B的\"就算被要求低头\"理解错误，应是\"就算你低头\" |\n\n### 4. 流畅性与风格\n\n**翻译A优势：**\n- 对话语气更自然：\"咦——，还有那种传闻？\"vs\"哦～，有这种传闻吗？\"\n- 叙述更流畅：\"那势头简直像是要把额头撞上柜台一般\"\n\n**翻译B优势：**\n- 部分表达更简洁：\"真是麻烦啊\"vs\"真绕弯子呢\"\n\n### 5. 整体评价\n\n翻译A虽有零星不一致，但整体质量稳定，对话自然，格式规范。\n翻译B存在系统性的名称不一致和格式缺失问题，严重影响阅读体验。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A有小错如'信'误译；B有'透过眼睛'等别扭表达和理解错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话更自然流畅，B部分句子生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说对话风格，语气词运用得当\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"A有零星不一致，B名称翻译混乱(布鲁/蓝/日文原名混用)\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A阅读连贯，B因名称不一致影响理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B大量对话缺失引号，严重影响格式规范\"}\n  },\n  \"key_differences\": [\n    \"B存在大量对话引号缺失问题\",\n    \"B的角色名翻译极不一致(N：ブル有三种以上译法)\",\n    \"A整体格式规范，名称翻译相对统一\",\n    \"A的对话语气更符合轻小说风格\"\n  ],\n  \"final_summary\": \"翻译A在术语一致性、格式规范和对话自然度方面明显优于翻译B。B最突出的问题是名称翻译混乱和大量对话引号缺失，这些系统性问题严重影响了阅读体验和专业性。尽管A也存在一些小瑕疵，但整体质量更加稳定可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13068,
+          "completion_tokens": 2429,
+          "total_tokens": 15497
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A有小错如'信'误译；B有'透过眼睛'等别扭表达和理解错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话更自然流畅，B部分句子生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说对话风格，语气词运用得当"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "A有零星不一致，B名称翻译混乱(布鲁/蓝/日文原名混用)"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A阅读连贯，B因名称不一致影响理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B大量对话缺失引号，严重影响格式规范"
+      }
+    },
+    "key_differences": [
+      "B存在大量对话引号缺失问题",
+      "B的角色名翻译极不一致(N：ブル有三种以上译法)",
+      "A整体格式规范，名称翻译相对统一",
+      "A的对话语气更符合轻小说风格"
+    ],
+    "final_summary": "翻译A在术语一致性、格式规范和对话自然度方面明显优于翻译B。B最突出的问题是名称翻译混乱和大量对话引号缺失，这些系统性问题严重影响了阅读体验和专业性。尽管A也存在一些小瑕疵，但整体质量更加稳定可靠。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

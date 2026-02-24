@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:20:53.451363",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "41da3a746bcd3ad2d213b1d8fefc457654e144622f6c7f0057ed4a37d788c316",
+    "B": "2e74346c7729f4868a83086287198e9da569b314806c99833093fa2daf2cd9f8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:21:37.226556",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "117f1c06-9f6b-487d-aae3-da113fe1fb05",
+      "judge_response": {
+        "id": "117f1c06-9f6b-487d-aae3-da113fe1fb05",
+        "object": "chat.completion",
+        "created": 1769610097,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1) 准确性\n\n**段落1**: B更完整地保留了「この自動車ってやつ」（这种叫做汽车的东西）和「町中に道が敷かれてる」的完整表达；A简化为「城里都铺了路」稍显笼统。\n\n**段落7**: 「サドヤマ」是人名，B译为「佐渡山」正确，A译为「萨多亚马」是音译错误。\n\n**段落33**: 这里有重大差异。原文「無礼なキャッチセールスに対応する女子大生」意思是\"应对无礼推销的女大学生\"。A正确理解，B译为「对待强行推销的无礼女大学生」把修饰对象搞错了。\n\n**段落51**: A错误地将内心独白加了引号变成对话；B正确处理为心理活动。\n\n### 2) 流畅性\n\nA整体偏口语化、简洁但有时过于随意（如\"真牛啊\"、\"捣鼓终端\"）；B更书面化、完整，符合轻小说叙述风格。\n\n### 3) 风格/语气\n\nB更好地保持了轻小说的叙述节奏，对话与叙述的区分更清晰。A有些地方过于口语化，失去了原作的语感。\n\n### 4) 术语一致性\n\n- 「現場ニキ」: A保留\"Niki\"，B译为\"现场哥/现场小哥\"，B对中文读者更友好\n- 「ライトブリンガー」: A\"光之引者\" vs B\"光芒使者\"，均可接受\n- 「課長」: A译\"课长\"，B译\"科长\"，日本行政体系中\"課\"确实对应\"课\"\n\n### 5) 连贯性/可读性\n\nB的段落衔接更自然，叙述完整度更高。A有时省略过多导致信息丢失。\n\n### 6) 格式/标点\n\nB使用「」作为对话标记更符合日系轻小说风格；A混用引号和'单引号'，不够统一。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更完整准确，但段落33有误；A段落7人名翻译错误，段落51格式错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更流畅自然，A部分表达过于口语化\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说风格，对话与叙述区分清晰\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B对网络用语处理更佳，人名翻译更准确\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B段落完整度更高，信息保留更全\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"B标点符号统一使用「」，A混用多种引号\"}\n  },\n  \"key_differences\": [\n    \"人名翻译：佐渡山 vs 萨多亚马\",\n    \"段落33的语义理解差异\",\n    \"对话标点符号的统一性\",\n    \"网络用语「現場ニキ」的处理方式\",\n    \"整体完整度与简化程度的取舍\"\n  ],\n  \"final_summary\": \"B在准确性、风格保持和格式规范方面整体更优，虽然段落33存在误译，但A的问题更多（人名错误、格式混乱、过度简化）。B更适合作为轻小说的正式翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11760,
+          "completion_tokens": 1864,
+          "total_tokens": 13624
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更完整准确，但段落33有误；A段落7人名翻译错误，段落51格式错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更流畅自然，A部分表达过于口语化"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说风格，对话与叙述区分清晰"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对网络用语处理更佳，人名翻译更准确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B段落完整度更高，信息保留更全"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "B标点符号统一使用「」，A混用多种引号"
+      }
+    },
+    "key_differences": [
+      "人名翻译：佐渡山 vs 萨多亚马",
+      "段落33的语义理解差异",
+      "对话标点符号的统一性",
+      "网络用语「現場ニキ」的处理方式",
+      "整体完整度与简化程度的取舍"
+    ],
+    "final_summary": "B在准确性、风格保持和格式规范方面整体更优，虽然段落33存在误译，但A的问题更多（人名错误、格式混乱、过度简化）。B更适合作为轻小说的正式翻译。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

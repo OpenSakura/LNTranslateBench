@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:30:14.424382",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "7d055710bd62dc8b92cb7edecfb9926546cbabef7143552c9e60c72ad124c16a",
+    "B": "a8f4fcc0ce7bc02a74cc1e7a870d16ebe04f2db053908052d7df8500ee1b97a0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:31:00.293571",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a4af56f3-3e87-4c04-9175-011f1fbe8949",
+      "judge_response": {
+        "id": "a4af56f3-3e87-4c04-9175-011f1fbe8949",
+        "object": "chat.completion",
+        "created": 1768422660,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段关键差异分析\n\n### 准确性问题\n\n**段落4**: A正确理解\"前者のふたりほどではない\"（不如前两位突出），B译为\"在这方面津木和炭谷两位程度不同\"，意思偏离。\n\n**段落13**: B将东云（女性）误用\"他\"，性别错误。\n\n**段落33**: 原文\"部室出してくれない\"意为\"不让你离开活动室\"，A正确译为\"不让出活动室\"，B误译为\"不让进部室\"。\n\n**段落38**: B严重错误——\"我露出绝望表情\"，实际应是\"她（阳菜乃）那副绝望的表情\"。\n\n**段落46**: A错译为\"阳菜乃和两人\"语句不通，B正确译为\"阳菜乃和我两个人\"。\n\n**段落71**: A正确理解\"当魔法少女可不是为了打棒球\"，B误译为\"才不会因为棒球变成魔法少女\"，逻辑完全相反。\n\n### 流畅性与风格\n\n- B在日常对话（段落3、9、59）更口语化自然\n- A在正式叙述部分更通顺\n- 段落12: A\"没精打采\"比B\"平淡\"更贴合\"低血圧みたいなテンション\"\n\n### 术语处理\n\n- 段落4两者都有名字问题：A\"津津木\"、B\"津木\"（原文\"津々木\"）\n- 段落91: A保留\"里特尔\"，B直接用日文\"リトル\"未翻译\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B在段落13性别错误、段落38主语错误、段落33/71意思相反等严重问题；A段落46有小错\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"B对话更口语化，A叙述更流畅，各有所长\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者轻小说风格把握相近，B略带更多网络口语\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A处理专有名词更一致，B有未翻译情况\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"B因准确性问题影响整体连贯理解\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者标点格式均可接受\"}\n  },\n  \"key_differences\": [\n    \"段落38主语归属：A正确指向阳菜乃，B错误指向叙述者\",\n    \"段落71逻辑方向：A正确表达不想打棒球，B逻辑相反\",\n    \"段落33动词理解：A正确理解为不让离开，B误解为不让进入\",\n    \"段落13性别代词：A用她，B错误用他\"\n  ],\n  \"final_summary\": \"A虽有段落46等小瑕疵，但整体准确性明显优于B。B存在多处严重翻译错误（性别、主语、逻辑方向），影响读者正确理解剧情。A在关键信息传达上更可靠，综合胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12144,
+          "completion_tokens": 1772,
+          "total_tokens": 13916
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B在段落13性别错误、段落38主语错误、段落33/71意思相反等严重问题；A段落46有小错"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "B对话更口语化，A叙述更流畅，各有所长"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者轻小说风格把握相近，B略带更多网络口语"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A处理专有名词更一致，B有未翻译情况"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "B因准确性问题影响整体连贯理解"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者标点格式均可接受"
+      }
+    },
+    "key_differences": [
+      "段落38主语归属：A正确指向阳菜乃，B错误指向叙述者",
+      "段落71逻辑方向：A正确表达不想打棒球，B逻辑相反",
+      "段落33动词理解：A正确理解为不让离开，B误解为不让进入",
+      "段落13性别代词：A用她，B错误用他"
+    ],
+    "final_summary": "A虽有段落46等小瑕疵，但整体准确性明显优于B。B存在多处严重翻译错误（性别、主语、逻辑方向），影响读者正确理解剧情。A在关键信息传达上更可靠，综合胜出。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

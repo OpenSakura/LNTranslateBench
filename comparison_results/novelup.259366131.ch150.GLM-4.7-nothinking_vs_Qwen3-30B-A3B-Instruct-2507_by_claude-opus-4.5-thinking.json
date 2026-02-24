@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:37:52.415619",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "571a987413abf45e9c8eabb36114046302c4f8121e882ed595f5115b18aacecb",
+    "B": "bb1704cde6a5afd77ef345cc829c03ad280a4c2b1ecb6a6454f051b18975f94a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:38:39.503438",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "abfe685f-e77c-4320-90ac-0d3efcfe582e",
+      "judge_response": {
+        "id": "abfe685f-e77c-4320-90ac-0d3efcfe582e",
+        "object": "chat.completion",
+        "created": 1768423119,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 名称/术语一致性问题\n\n**翻译A:**\n- ウエノ魔物園 → 上野魔物园 ✓（正确）\n- マタタビ → 木天蓼（一致）\n- ハチロウ → 八郎（一致）\n- クラリス・クラーラ → 克菈莉丝・克拉拉（统一处理）\n\n**翻译B:**\n- ウエノ魔物園 → 雨野魔物园 ✗（应为上野）\n- マタタビ → 猫薄荷/猫尾草（不一致）\n- ハチロウ → 八郎君/蜂郎君/哈奇罗君（严重不一致）\n- ワダツミ → 瓦达茨米（音译，A用\"海神\"更合理）\n\n### 重大准确性错误\n\n**段落23（致命错误）:**\n- 原文表达\"萨塔尼埃尔不是我们的对手\"\n- A: \"对于...我们来说，不是对手\" ✓\n- B: \"根本就不是她的对手\" ✗（意思完全相反）\n\n**段落29:**\n- 原文是业平把怪物当展览\n- B: \"把纳里赫拉先生当成观赏品\" ✗（主客体颠倒）\n\n**段落54:**\n- B: \"恶人中的恶手\"（应为\"恶手中的恶手\"，明显错误）\n\n### 流畅性与风格\n\n翻译B在对话部分略显自然（如\"完蛋了\"\"这种东西\"），但翻译A更稳定准确。翻译A的\"没心没肺\"（段落20）比B的\"大大咧咧\"更贴切原文\"能天気\"的语感。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 5, \"notes\": \"B在段落23有致命意思反转，段落29主客体颠倒\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者都较流畅，B部分对话更口语化\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的轻小说语感更稳定\"},\n    \"terminology\": {\"A\": 9, \"B\": 4, \"notes\": \"B人名严重不一致(八郎/蜂郎/哈奇罗)，地名错误(雨野)\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B因名称混乱影响阅读连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"两者格式基本正确，A引号使用更统一\"}\n  },\n  \"key_differences\": [\n    \"段落23: A正确表达'萨塔尼埃尔不是我们对手'，B完全反转为'我们不是她对手'\",\n    \"人名一致性: A统一，B的ハチロウ有三种译法\",\n    \"地名: A正确译为上野，B错译为雨野\",\n    \"段落54: B有'恶人中的恶手'笔误\"\n  ],\n  \"final_summary\": \"翻译A在准确性和术语一致性上明显优于B。B存在致命的意思反转错误（段落23），且人名翻译极不统一，严重影响阅读体验。虽然B部分对话更口语化，但无法弥补其准确性方面的重大缺陷。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11645,
+          "completion_tokens": 1920,
+          "total_tokens": 13565
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在段落23有致命意思反转，段落29主客体颠倒"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者都较流畅，B部分对话更口语化"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的轻小说语感更稳定"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 4,
+        "notes": "B人名严重不一致(八郎/蜂郎/哈奇罗)，地名错误(雨野)"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B因名称混乱影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者格式基本正确，A引号使用更统一"
+      }
+    },
+    "key_differences": [
+      "段落23: A正确表达'萨塔尼埃尔不是我们对手'，B完全反转为'我们不是她对手'",
+      "人名一致性: A统一，B的ハチロウ有三种译法",
+      "地名: A正确译为上野，B错译为雨野",
+      "段落54: B有'恶人中的恶手'笔误"
+    ],
+    "final_summary": "翻译A在准确性和术语一致性上明显优于B。B存在致命的意思反转错误（段落23），且人名翻译极不统一，严重影响阅读体验。虽然B部分对话更口语化，但无法弥补其准确性方面的重大缺陷。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

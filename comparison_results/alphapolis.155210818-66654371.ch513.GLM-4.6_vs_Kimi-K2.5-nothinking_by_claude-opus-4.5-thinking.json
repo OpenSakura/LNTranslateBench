@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:27:43.995798",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.6.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "6913984749842c5384524b690b5ced5211721ea6b7467220eec943b2ae08e919",
+    "B": "72c901eda11f06d37ab74aa031bd59c76725fecf4b80f110b42f9a7b6bcc62f5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:28:18.523641",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d95d04a1-c9bd-4b92-85a0-2ffbada8b681",
+      "judge_response": {
+        "id": "d95d04a1-c9bd-4b92-85a0-2ffbada8b681",
+        "object": "chat.completion",
+        "created": 1769610498,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 准确性分析\n- **段落5**: A\"把它射进了河里\"理解错误，B\"往河里发射的\"正确（是把雷球射向河里，不是把鲶鱼射进河里）\n- **段落45**: 原文是\"槍が刺さる\"（枪刺中），A\"被魔物刺中\"完全弄反，B同样错误\n- **段落2**: B\"『家』的实家\"保留了原文ホーム的概念但略显冗余，A简化但失去部分信息\n\n### 流畅性分析\n- A在对话中更口语化：\"超厉害的啦\"、\"换的钱可就少了哦\"\n- B某些表达略生硬：\"从帐篷移动到『家』的实家\"\n- 段落56: A\"吓得一哆嗦\"比B\"吓得发抖\"更生动\n\n### 风格/语气分析\n- **段落4**: A\"唰地一下亮起来\"很好地还原了ピカ的拟声效果，B\"闪光之后\"较平淡\n- **段落69**: A\"呵呵\"比B\"哼\"更符合ふっ的语气\n- B对技能名使用『』标记更一致（如『雷球』）\n\n### 术语一致性\n- A: 樹大叔/树大叔，小雫/雫酱混用\n- B: 使用\"使魔\"（段落28）与其他地方\"从魔\"不一致\n- A: 圣先生 vs B: 濑先生（セイさん翻译不同）\n\n### 格式处理\n- B保留了更多日式标点和空格\n- A对话标点更符合中文习惯\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落5错误，两者段落45都有误解；B整体略准确但差距小\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话更自然口语化，B部分表达生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A拟声词处理更好，对话语气更贴切轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有不一致问题，B技能名标记更规范但从魔/使魔混用\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体阅读更流畅\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留专有名词标记更规范\"}\n  },\n  \"key_differences\": [\n    \"A对话语气更自然活泼，B较平实\",\n    \"A拟声词还原更好（ピカ→唰）\",\n    \"B技能名用『』标记更一致\",\n    \"两者都有个别误译，准确度接近\",\n    \"人名称呼处理方式不同（小雫vs雫酱）\"\n  ],\n  \"final_summary\": \"A在对话自然度、拟声词处理、轻小说语气方面略胜一筹，阅读体验更流畅。B在术语标记规范性上更好，但部分表达较生硬。两者准确度接近，各有小错。综合考量轻小说翻译的可读性需求，A略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10649,
+          "completion_tokens": 1576,
+          "total_tokens": 12225
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A段落5错误，两者段落45都有误解；B整体略准确但差距小"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话更自然口语化，B部分表达生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A拟声词处理更好，对话语气更贴切轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有不一致问题，B技能名标记更规范但从魔/使魔混用"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体阅读更流畅"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留专有名词标记更规范"
+      }
+    },
+    "key_differences": [
+      "A对话语气更自然活泼，B较平实",
+      "A拟声词还原更好（ピカ→唰）",
+      "B技能名用『』标记更一致",
+      "两者都有个别误译，准确度接近",
+      "人名称呼处理方式不同（小雫vs雫酱）"
+    ],
+    "final_summary": "A在对话自然度、拟声词处理、轻小说语气方面略胜一筹，阅读体验更流畅。B在术语标记规范性上更好，但部分表达较生硬。两者准确度接近，各有小错。综合考量轻小说翻译的可读性需求，A略优。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

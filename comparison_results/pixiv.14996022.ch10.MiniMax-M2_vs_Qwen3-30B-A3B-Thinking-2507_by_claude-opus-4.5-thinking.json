@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:47:14.045589",
+  "sample": "pixiv.14996022.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14996022.ch10.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14996022.ch10.MiniMax-M2.translated.txt",
+    "B": "translated_results/pixiv.14996022.ch10.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "97840b0ea25b900611e3fd1bca8d95c19b711a6d9a5b445298a5ca51f9d44473",
+    "A": "f2911dc98f3d25dd8ecb96e0987c8c2a85c0e6ff54fff52e701baa2ac785d4ff",
+    "B": "2fc3dda5c52c4a40c3c85950a28d2895640b2ca1b5838595c8c90ab716374ac2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:48:01.709617",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "db899e9f-24cc-4c34-bf69-b383e224ddf6",
+      "judge_response": {
+        "id": "db899e9f-24cc-4c34-bf69-b383e224ddf6",
+        "object": "chat.completion",
+        "created": 1768423681,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n**段落11**: A版本明显被截断（\"我也如果希罗酱、雪酱、监狱的大家突然失去\"），严重影响完整性。B版本完整但保留了\"ちゃん\"未翻译，存在不一致。\n\n**段落53**: A版本出现乱码（\"…哇!マimoto!!!\"），B版本翻译为\"玛利摩\"更合理。\n\n**段落32**: B版本误译为\"请带我进保健室吧\"，应该是梅露露请艾玛进入保健室，不是反过来。\n\n**タメ口翻译**: A用\"普通口吻/随便口吻\"，B用\"随意说话/直呼其名\"。两者都不够准确，タメ口指不用敬语的平辈说话方式。\n\n### 流畅性分析\n**段落3**: A\"请在了解后欣赏\"更自然，B\"以下要素已包含\"语序生硬。\n\n**段落8**: A的长句处理较散乱，B的\"超破坏力、可爱、最爱、真棒、好厉害、天才最强\"列举更有节奏感。\n\n### 术语一致性\n- A版本：统一使用\"酱\"作为敬称后缀\n- B版本：混用日文\"ちゃん\"与中文，严重不一致（如\"梅露露ちゃん\"、\"雪ちゃん\"）\n\n### 敬称处理\n**段落14/16**: \"エマさん\" A译为\"艾玛\"，B译为\"艾玛小姐\"。B更准确体现敬语。\n\n### 风格表现\nB版本在语气词处理上更活泼（如\"噗哇\"、\"哈呜\"），更符合轻小说风格。\nA版本部分语气词处理较平淡。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A有截断和乱码问题；B段落32有误译但整体更完整\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相近，各有优劣\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"B的语气词和对话更有轻小说感\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"B保留日文ちゃん严重破坏一致性\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A因截断影响阅读连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A有乱码，B格式更规范\"}\n  },\n  \"key_differences\": [\n    \"A段落11截断、段落53乱码为致命硬伤\",\n    \"B混用日文ちゃん破坏术语一致性\",\n    \"B对敬语差异(エマさん→艾玛小姐)处理更细腻\",\n    \"B段落32存在主语误译\"\n  ],\n  \"final_summary\": \"A存在文本截断和乱码等技术性硬伤，影响基本可读性；B虽有术语一致性问题（保留日文ちゃん）和个别误译，但整体完整度和可读性更佳。综合考量，B略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11515,
+          "completion_tokens": 1980,
+          "total_tokens": 13495
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有截断和乱码问题；B段落32有误译但整体更完整"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相近，各有优劣"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "B的语气词和对话更有轻小说感"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "B保留日文ちゃん严重破坏一致性"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A因截断影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有乱码，B格式更规范"
+      }
+    },
+    "key_differences": [
+      "A段落11截断、段落53乱码为致命硬伤",
+      "B混用日文ちゃん破坏术语一致性",
+      "B对敬语差异(エマさん→艾玛小姐)处理更细腻",
+      "B段落32存在主语误译"
+    ],
+    "final_summary": "A存在文本截断和乱码等技术性硬伤，影响基本可读性；B虽有术语一致性问题（保留日文ちゃん）和个别误译，但整体完整度和可读性更佳。综合考量，B略胜。"
+  },
+  "outcome": "Qwen3-30B-A3B-Thinking-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Thinking-2507"
+}

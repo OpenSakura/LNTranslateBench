@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:59:23.054746",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "DeepSeek-V3.1"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "1d384605b0faf0051510063ee0852984552705492295f278528396997a3fc31a",
+    "B": "43f568b3b09abb3e7a728370ba3ae453689d818704756f788cda5c47627e3ccd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:00:17.635257",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5f4e82ae-23ba-432c-976b-a29cd69f397b",
+      "judge_response": {
+        "id": "5f4e82ae-23ba-432c-976b-a29cd69f397b",
+        "object": "chat.completion",
+        "created": 1768431617,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性\n- **段落6**: A\"座舰\" vs B\"座乘舰\"，原文\"座乗艦\"，B更准确\n- **段落7**: A\"加冕帝冠\" vs B\"加冕帝位\"，B更自然\n- **段落8**: A\"兼具与之相称的通信能力与防御力\"更清晰；B\"作为帝国全军总旗舰相称的通信能力与防御力兼备\"语法略混乱\n- **段落13**: \"些か不安\"，A\"有些令人不安\" vs B\"稍显不安\"，A更贴切\n- **段落15**: A对原文结构理解更准确；B\"姑且不论\"与原文\"とは言え\"理解有偏差\n\n### 2. 流畅性\n- **段落8**: A句式更清晰，B句子结构较乱\n- **段落19**: A\"无论做什么支持率都缓慢下滑陷入僵局\"较顺；B\"持续缓步下跌\"略冗长\n- **段落47**: A\"罗贝尔\"与前文\"罗伯特\"不一致；B保持\"罗伯尔\"一致\n\n### 3. 格式/标点符号\n- **严重问题**: A在段落31-36、79、81-84处将「」改为双引号\"\"，与其他段落不一致\n- B始终保持「」格式一致\n- **繁简混用**: A在段落7用\"瑪麗\"（繁体），B在段落20-22、25-27处混用繁体字\n\n### 4. 术语/名称一致性\n- **国名**: A在段落53、55使用\"贝尔赛佛尼亚\"，与其他段落\"贝尔塞福尼亚\"不一致\n- **人名**: A在段落82-85将\"马尔滕施泰因\"错写为\"马滕施泰因\"\n- B的国名翻译始终一致\n\n### 5. 其他差异\n- **段落2时间**: A\"十时〇〇分\"用汉字；B\"一〇时〇〇分\"保留原格式\n- **段落41**: A\"伯国\" vs B\"伯爵领\"，原文为\"伯国領主\"，A更准确\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落8、15更准确；B段落6、7更准确，整体持平\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A部分句子更通顺；B部分句子结构有问题，各有优劣\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都保持了轻小说对话语气\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A国名不一致(贝尔赛佛尼亚/贝尔塞福尼亚)、人名错误(马滕施泰因)；B基本一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A多处术语不一致影响连贯性\"},\n    \"formatting\": {\"A\": 5, \"B\": 6, \"notes\": \"A多段引号格式混乱(「」与\\\"\\\"混用)；B繁简混用但引号一致\"}\n  },\n  \"key_differences\": [\n    \"A多处将「」改为双引号，格式不一致\",\n    \"A国名翻译不一致：贝尔塞福尼亚/贝尔赛佛尼亚\",\n    \"A人名错误：马尔滕施泰因→马滕施泰因\",\n    \"B繁简混用问题存在但不如A的格式问题严重\",\n    \"A部分长句翻译更流畅（段落8、19）\"\n  ],\n  \"final_summary\": \"两者在准确性和流畅性上各有优劣，但A在格式一致性（引号混用）和术语一致性（国名、人名错误）方面存在明显问题，这些问题对整体阅读体验影响较大。B虽有繁简混用问题，但核心术语保持一致，格式统一。综合考虑，B略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12081,
+          "completion_tokens": 2505,
+          "total_tokens": 14586
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A段落8、15更准确；B段落6、7更准确，整体持平"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A部分句子更通顺；B部分句子结构有问题，各有优劣"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都保持了轻小说对话语气"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A国名不一致(贝尔赛佛尼亚/贝尔塞福尼亚)、人名错误(马滕施泰因)；B基本一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A多处术语不一致影响连贯性"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 6,
+        "notes": "A多段引号格式混乱(「」与\"\"混用)；B繁简混用但引号一致"
+      }
+    },
+    "key_differences": [
+      "A多处将「」改为双引号，格式不一致",
+      "A国名翻译不一致：贝尔塞福尼亚/贝尔赛佛尼亚",
+      "A人名错误：马尔滕施泰因→马滕施泰因",
+      "B繁简混用问题存在但不如A的格式问题严重",
+      "A部分长句翻译更流畅（段落8、19）"
+    ],
+    "final_summary": "两者在准确性和流畅性上各有优劣，但A在格式一致性（引号混用）和术语一致性（国名、人名错误）方面存在明显问题，这些问题对整体阅读体验影响较大。B虽有繁简混用问题，但核心术语保持一致，格式统一。综合考虑，B略胜。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

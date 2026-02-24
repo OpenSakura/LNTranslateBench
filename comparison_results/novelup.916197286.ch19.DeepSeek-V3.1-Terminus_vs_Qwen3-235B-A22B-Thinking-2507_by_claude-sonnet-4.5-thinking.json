@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:18:03.540545",
+  "sample": "novelup.916197286.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.916197286.ch19.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.916197286.ch19.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/novelup.916197286.ch19.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "555d1a41f6993dc9f3cb5fc90218bd40f549c3b95e2e9706edd270d42780783c",
+    "A": "90ba25ecc43c53abf194e31918151e809a6cca80d2c5cd20191dcbb6fa56a1a2",
+    "B": "2f0a63e3f684683017c2affb53ddf3b047acc8ed1406942f97ed324bb3981a02"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:19:02.943467",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "234feb0d-c2d1-4cae-bee7-bcc692b4a841",
+      "judge_response": {
+        "id": "234feb0d-c2d1-4cae-bee7-bcc692b4a841",
+        "object": "chat.completion",
+        "created": 1768486742,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 轻小说翻译质量评估\n\n## 详细分析\n\n### 1. 准确性 (Accuracy)\n**翻译A的问题：**\n- 段落6：\"揉捏揉捏\"误译了\"ｺﾞﾆｮｺﾞﾆｮ\"（应该是嘟囔声）\n- 段落31、52等处人名\"克伦/库兰/克朗\"混用，极不一致\n\n**翻译B的问题：**\n- 段落49：漏掉结束引号，格式错误\n- 段落100：\"有我和另一个长得一模一样的人\"理解有误，原意是\"有个和我一模一样的人\"\n- 段落131：艾西亚/艾希亚不一致（但A也有此问题）\n\n### 2. 流畅性 (Fluency)\n**翻译A：**\n- 整体自然流畅\n- 如\"经历了一番折腾\"、\"真拿你没办法\"等表达地道\n\n**翻译B：**\n- 部分句子略显生硬\n- 如段落20\"从这里到遗迹很远，小心点\"过于直译\n- 段落108\"我办到啦\"比A的\"我把它变成可能了哦\"更简洁自然\n\n### 3. 风格/语气 (Style)\n**翻译A：**\n- 使用\"欧派\"保留了日式轻小说的萌系用词\n- 中文引号「」更符合日系作品惯例\n- \"色色的事\"等表达偏可爱\n\n**翻译B：**\n- \"奶子\"、\"鸡鸡\"等用词较粗俗但直白\n- 英文引号\"\"不太符合轻小说风格\n- \"做过爱\"比\"做过色色的事\"更成人向\n\n### 4. 术语一致性 (Terminology)\n**翻译A的严重问题：**\n- 克兰(Clan)：库兰→克伦→克朗（三个不同译名！）\n- 艾希娅→艾伊夏（两个译名）\n- 城塞/要塞精灵混用\n\n**翻译B的问题：**\n- 艾西亚→艾希亚（两个译名）\n- 法乌斯特→浮士德（两个译名）\n- 城塞精灵一致\n\n**致命差异：**A在人名翻译上的不一致性是重大缺陷。\n\n### 5. 连贯性/可读性 (Coherence)\n- A：人名混乱严重影响阅读\n- B：整体连贯性较好，但偶有格式问题\n\n### 6. 格式/标点 (Formatting)\n**翻译A：**\n- 使用中文引号「」更规范\n- 标点使用一致\n\n**翻译B：**\n- 英文引号\"\"不符合中文规范\n- 段落49、51、53等处引号缺失\n\n## 关键差异总结\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 6,\n      \"B\": 7,\n      \"notes\": \"A在段落6误译拟声词；B在段落49、100有理解偏差，但A的人名混乱影响更大\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"A整体更自然流畅，B部分句子略显生硬\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A使用'欧派'等日式用词更符合轻小说风格；B的'奶子'等词过于粗俗，但标点格式不规范严重扣分\"\n    },\n    \"terminology\": {\n      \"A\": 3,\n      \"B\": 7,\n      \"notes\": \"致命差异：A将克兰译为库兰/克伦/克朗三个不同名字，完全无法接受；B虽也有不一致但程度轻得多\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 7,\n      \"notes\": \"A的人名混乱严重破坏连贯性；B整体可读性更好\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A使用中文引号规范；B使用英文引号且多处引号缺失\"\n    }\n  },\n  \"key_differences\": [\n    \"术语一致性：A将同一角色克兰译为库兰/克伦/克朗三个名字，这是不可接受的严重错误\",\n    \"标点符号：A使用中文引号「」符合规范，B使用英文引号且多处缺失\",\n    \"用词风格：A使用'欧派'更萌系，B使用'奶子'更粗俗直白\",\n    \"准确性：A误译'ｺﾞﾆｮｺﾞﾆｮ'为'揉捏揉捏'；B在段落100理解有误\",\n    \"整体流畅度：A略胜一筹，但被人名混乱严重拖累\"\n  ],\n  \"final_summary\": \"虽然翻译A在流畅性、风格和标点格式上表现更好，但其将同一角色克兰译为库兰/克伦/克朗三个不同名字的致命错误完全无法接受，严重影响读者理解和阅读体验。翻译B虽然在标点格式和部分用词上有问题，但至少保持了基本的术语一致性和可读性。考虑到术语一致性在轻小说翻译中的重要性（读者需要记住角色），翻译B整体更可用。建议B改进标点格式，A则必须彻底修正人名翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12106,
+          "completion_tokens": 2752,
+          "total_tokens": 14858
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落6误译拟声词；B在段落49、100有理解偏差，但A的人名混乱影响更大"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体更自然流畅，B部分句子略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A使用'欧派'等日式用词更符合轻小说风格；B的'奶子'等词过于粗俗，但标点格式不规范严重扣分"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 7,
+        "notes": "致命差异：A将克兰译为库兰/克伦/克朗三个不同名字，完全无法接受；B虽也有不一致但程度轻得多"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 7,
+        "notes": "A的人名混乱严重破坏连贯性；B整体可读性更好"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "A使用中文引号规范；B使用英文引号且多处引号缺失"
+      }
+    },
+    "key_differences": [
+      "术语一致性：A将同一角色克兰译为库兰/克伦/克朗三个名字，这是不可接受的严重错误",
+      "标点符号：A使用中文引号「」符合规范，B使用英文引号且多处缺失",
+      "用词风格：A使用'欧派'更萌系，B使用'奶子'更粗俗直白",
+      "准确性：A误译'ｺﾞﾆｮｺﾞﾆｮ'为'揉捏揉捏'；B在段落100理解有误",
+      "整体流畅度：A略胜一筹，但被人名混乱严重拖累"
+    ],
+    "final_summary": "虽然翻译A在流畅性、风格和标点格式上表现更好，但其将同一角色克兰译为库兰/克伦/克朗三个不同名字的致命错误完全无法接受，严重影响读者理解和阅读体验。翻译B虽然在标点格式和部分用词上有问题，但至少保持了基本的术语一致性和可读性。考虑到术语一致性在轻小说翻译中的重要性（读者需要记住角色），翻译B整体更可用。建议B改进标点格式，A则必须彻底修正人名翻译。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

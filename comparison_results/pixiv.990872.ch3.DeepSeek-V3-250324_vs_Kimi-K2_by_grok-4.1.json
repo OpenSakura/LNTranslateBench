@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:45:04.849613",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "c0696924adf1facc0132e5a310382da4b60e4827b9f30f73e57a6b2e899405c9",
+    "B": "61d4ad719ee1e302ffe0cc1266f8a9bf5ca6721e63eaf40e7cbae98ac59fdf71"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:26.173584",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DHbxnkwWUPgdUZv2DS8IIDh5aXz",
+      "judge_response": {
+        "id": "chatcmpl-89DHbxnkwWUPgdUZv2DS8IIDh5aXz",
+        "object": "chat.completion",
+        "created": 1768427125,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"警視庁警察学校編 名探偵夢 萩下瑞稀\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"名探偵夢 萩下瑞稀 腐向け 夢小説\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"萩原 研二 松田陣平 降谷零 諸伏景光 警察学校 夢小説\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"【警察学校組】小説・夢小説一覧 (109件以上) | ...\" Teller](https://teller.jp/tag/%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84)\n> [🔗 \"萩原研二の登場回 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E8%90%A9%E5%8E%9F%E7%A0%94%E4%BA%8C%E3%81%AE%E7%99%BB%E5%A0%B4%E5%9B%9E)\n> [🔗 \"名探偵コナン シークレットアーカイブス ｗｉｔｈ 警察学校編 Ｗｉｌｄ Ｐｏｌｉｃｅ Ｓｔｏｒｙ | 書籍 | 小学館\" Shogakukan](https://www.shogakukan.co.jp/books/09199083)\n> [🔗 \"「警察学校組」の小説・夢小説 検索結果 - ...\" Uranai](https://search.uranai.nosv.org/find.php/%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84)\n> [🔗 \"名探偵コナン 「警察学校編 Wild Police Story」の 紹介していきます😊｜つとむ\" Note](https://note.com/gentle_dunlin475/n/n52ec9f335e26)\n> [🔗 \"警察学校組 小説・SS一覧 - ハーメルン\" Syosetu](https://syosetu.org/search?mode=search&word=%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84)\n> [🔗 \"『名探偵コナン』警察学校組のメンバー一覧｜登場回や人物像、関係性など解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1747820329)\n> [🔗 \"名探偵コナン 警察学校編 Wild Police Story - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3_%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B7%A8_Wild_Police_Story)\n> [🔗 \"「警察学校組」相関図＆時系列【降谷零・松田陣平・萩原研二・伊達航・諸伏景光】2026年映画最新ネタバレ\" Conan-zukai](https://conan-zukai.com/2024keisatugakkou)\n> [🔗 \"\"警察学校組から逃げるだけの話\"/\"瑠璃\" Series [pixiv]\" pixiv](https://www.pixiv.net/novel/series/971729)\n\n> 🔍 **5 results found**\n\n> [🔗 \"【腐】小説・夢小説一覧 (981件以上) | テラーノベル\" Teller](https://teller.jp/tag/%E8%85%90)\n> [🔗 \"「腐向け」の小説・夢小説 検索結果(タグ) - ...\" Uranai](https://search.uranai.nosv.org/find.php/%E8%85%90%E5%90%91%E3%81%91?stype=tag)\n> [🔗 \"腐向けの検索結果 【夢小説対応】簡単オシャレな創作サイト作成サービス | フォレストページ＋\" Famipure](https://plus.fm-p.jp/search?w=%E8%85%90%E5%90%91%E3%81%91)\n> [🔗 \"[pixiv] Novels\" pixiv](https://www.pixiv.net/novel)\n> [🔗 \"無料スマホ小説ならプリ小説 byGMO - 会話で楽しむストーリー\" PRCM](https://novel.prcm.jp/novel/zk3buQAVHtpTCaerbTwY)\n\n> 🔍 **5 results found**\n\n> [🔗 \"「警察学校組」相関図＆時系列【降谷零・松田陣平・萩原研二・伊達航・諸伏景光】2026年映画最新ネタバレ\" Conan-zukai](https://conan-zukai.com/2024keisatugakkou)\n> [🔗 \"降谷零、松田陣平、伊達航、萩原研二、諸伏景光の5人の警察学校時代の魅力が詰まった究極の1冊。設定資料集や絵コンテ、原画も収録【名探偵コナン 警察学校編 Wild Police Story】 - 電撃オンライン\" Dengeki Online](https://dengekionline.com/article/202411/22564)\n> [🔗 \"「萩原研二」の小説・夢小説 検索結果 - 占いツ...\" Uranai](https://search.uranai.nosv.org/find.php/%E8%90%A9%E5%8E%9F%E7%A0%94%E4%BA%8C)\n> [🔗 \"名探偵コナン シークレットアーカイブス ｗｉｔｈ 警察学校編 Ｗｉｌｄ Ｐｏｌｉｃｅ Ｓｔｏｒｙ | 書籍 | 小学館\" Shogakukan](https://www.shogakukan.co.jp/books/09199083)\n> [🔗 \"【萩原研二】小説・夢小説一覧 (15件以上) | ...\" Teller](https://teller.jp/tag/%E8%90%A9%E5%8E%9F%E7%A0%94%E4%BA%8C)\n\n\n这是一个典型的《名探偵コナン》警察学校组（萩原研二、松田陣平、降谷零、诸伏景光等）的**腐向梦小说**（读者代入主角萩下瑞稀，带有BL元素，主角被误认为女生，但实际为男性，带有偶像背景的搞笑/日常/友情向故事）。\n\n整体文本是作者的前言+正文片段，带有典型的轻小说/梦小说风格：第一人称叙述、吐槽、内 monologue 多、口语化强、带有自嘲和夸张幽默，针对粉丝的同人创作。\n\n现在对A和B进行逐项比较。\n\n**准确性（意思保留）**：  \n两者都基本忠实于原文。B在很多地方更贴近原文的口语感和粗鲁/随性语气（如“がっつり”→“超猛”、“腐向けです”→“腐向内容”而不是稍柔和的“含BL向内容”）。A有时稍作润色或柔化（如“秒で風呂から出て行った”→“秒速从浴室溜走了”，B更直接“秒从浴室溜了”）。少数地方A有小遗漏或改动（如段落4 A空缺，B有“超猛梦小说”对应“がっつり夢小説”）。B整体更完整保留原文的直白和网络用语感。  \nA: 9/10  \nB: 9.5/10\n\n**流畅性（中文自然表达）**：  \n两者中文都很流畅，都符合现代网络中文阅读习惯。B更口语化、更接地气（如“老子”“啥玩意儿”“燃到爆表”“扑街”），读起来像当代中文轻小说/同人常见的风格，非常自然不生硬。A也自然，但偶尔用词稍书面或中规中矩（如“勇者”“不胜感激”“小菜一碟”虽有趣但不如B的“谢天谢地了”“超猛”那样随性爆）。B的对话和内心独白更像中文互联网用户的日常表达。  \nA: 8.5/10  \nB: 9.5/10\n\n**风格/语气（轻小说叙述/对话）**：  \n轻小说尤其是梦小说/腐向同人，强调活泼、吐槽、自黑、夸张、亲切网络口吻。B几乎完美捕捉：大量“啊——”“咦咦咦〜”“啥玩意儿”“燃到爆表”“娘炮脸”等，语气贱萌、沙雕、接地气，和原文的“あっれれ〜？”“んだどごらぁ”等对应极好。A的语气也努力保持可爱/吐槽，但稍显“翻译腔”或柔和（如“勇者，请便”“太感动了”），少了点原文的粗野和网络味。B更贴合腐向梦小说的“玩家向”、自嘲卖萌风格。  \nA: 8/10  \nB: 9.5/10\n\n**术语/名称一致性**：  \n两者都保持了人名（如萩原、松田、降谷零、诸伏景光）和专有名词（如六法全书、逆ムルシエラゴ）的一致。术语如“夢小説”→A“梦小说”B同；“腐向け”→A“含BL向内容”B“腐向内容”（B更直接保留“腐”这个圈内用语，更合适腐向作品）。车名/外号如“逆ムルシエラゴ”A音译“逆穆尔西亚拉戈”B意译“逆吸血蝙蝠”（原文是兰博基尼Murciélago的梗+逆，B的意译更搞笑贴合语境）。整体两者一致性高，但B在圈内梗处理更到位。  \nA: 9/10  \nB: 9.5/10\n\n**连贯性/可读性**：  \n两者连贯，都易读。但B的口语节奏更快、段落跳跃感更强，更符合轻小说/同人一口气读下去的爽感。A偶尔句子稍长或修饰多，读起来稍缓。B在吐槽和内心戏的串联更丝滑。  \nA: 8.5/10  \nB: 9/10\n\n**格式/标点符号**：  \n两者标点基本规范。日文原文的“〜”拉长音、重复拟声等，B保留得更好（如“咦咦咦〜”“〜？”“哈哈”）。引号使用一致。对话与叙述区分清晰。A和B都良好，但B在网络风标点（如“……”“！！”）更活泼。  \nA: 9/10  \nB: 9/10\n\n**key_differences**总结：  \n- B更口语、更网络、更贴合腐向梦小说“贱萌沙雕”调性，保留了原文粗糙直白的趣味。  \n- A更“标准翻译”风，稍柔和、书面化一些，少了点“同人味”。  \n- B在搞笑台词、内心吐槽上更生动传神（如“娘炮脸”“扑街”“燃到爆表”）。  \n- A偶尔有小空缺或柔化，但整体准确。  \n\n整体而言，B在轻小说尤其是腐向梦小说的核心——“有趣、自然、代入感强、粉丝向口吻”上明显更胜一筹。A质量也很高，但B更“对味”。\n\n**最终判决**  \n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9.5, \"notes\": \"B更完整保留原文直白和网络用语，A偶有小柔化或空缺\"},\n    \"fluency\": {\"A\": 8.5, \"B\": 9.5, \"notes\": \"B的口语表达更自然接地气，像中文同人常见风格\"},\n    \"style\": {\"A\": 8, \"B\": 9.5, \"notes\": \"B完美捕捉原文贱萌、吐槽、自黑的轻小说/梦小说语气，A稍柔和\"},\n    \"terminology\": {\"A\": 9, \"B\": 9.5, \"notes\": \"B在圈内梗（如腐、逆ムルシエラゴ意译）处理更贴合粉丝阅读习惯\"},\n    \"coherence\": {\"A\": 8.5, \"B\": 9, \"notes\": \"B节奏更快、读起来更爽快连贯\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点和格式均良好，B拉长音等网络符号更生动\"}\n  },\n  \"key_differences\": [\n    \"B更口语化、网络化，保留了原文的粗野趣味和沙雕感\",\n    \"A稍显书面/柔和，少了些腐向同人特有的'贱萌'调性\",\n    \"B在搞笑对话、内心吐槽上更传神（如'娘炮脸''扑街''燃到爆表'）\",\n    \"A整体更'标准'，但在轻小说娱乐性上略逊B\"\n  ],\n  \"final_summary\": \"B整体更胜一筹，尤其适合这类警察学校组腐向梦小说的读者。B的翻译更活泼、自然、贴合原作风味和中文同人圈阅读习惯，娱乐性和代入感更强。虽然A也很优秀，但B在风格匹配度上明显领先。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11953,
+          "completion_tokens": 4390,
+          "total_tokens": 16343
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9.5,
+        "notes": "B更完整保留原文直白和网络用语，A偶有小柔化或空缺"
+      },
+      "fluency": {
+        "A": 8.5,
+        "B": 9.5,
+        "notes": "B的口语表达更自然接地气，像中文同人常见风格"
+      },
+      "style": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B完美捕捉原文贱萌、吐槽、自黑的轻小说/梦小说语气，A稍柔和"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9.5,
+        "notes": "B在圈内梗（如腐、逆ムルシエラゴ意译）处理更贴合粉丝阅读习惯"
+      },
+      "coherence": {
+        "A": 8.5,
+        "B": 9,
+        "notes": "B节奏更快、读起来更爽快连贯"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点和格式均良好，B拉长音等网络符号更生动"
+      }
+    },
+    "key_differences": [
+      "B更口语化、网络化，保留了原文的粗野趣味和沙雕感",
+      "A稍显书面/柔和，少了些腐向同人特有的'贱萌'调性",
+      "B在搞笑对话、内心吐槽上更传神（如'娘炮脸''扑街''燃到爆表'）",
+      "A整体更'标准'，但在轻小说娱乐性上略逊B"
+    ],
+    "final_summary": "B整体更胜一筹，尤其适合这类警察学校组腐向梦小说的读者。B的翻译更活泼、自然、贴合原作风味和中文同人圈阅读习惯，娱乐性和代入感更强。虽然A也很优秀，但B在风格匹配度上明显领先。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

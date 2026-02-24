@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:23:12.816675",
+  "sample": "hameln.394629.ch7",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394629.ch7.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394629.ch7.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.394629.ch7.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "75794fdd92e580d793f2c60acda602fe251b03cd0f92019992c28c220903948f",
+    "A": "542afb2fd5e64734b8d48dab1fbfed11ee0715568a1a06035e63b9eb472a89d3",
+    "B": "f5a27431f27a4ce978e57092f9c33e121a44ae5e8da1722581beeedf3efe6d51"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:24:02.214298",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "535c7109-80b2-4dca-a95c-df065da43bd3",
+      "judge_response": {
+        "id": "535c7109-80b2-4dca-a95c-df065da43bd3",
+        "object": "chat.completion",
+        "created": 1768433042,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性\n两个翻译在整体准确性上都较好，基本传达了原文意思。但有几处差异：\n- **段落1**: A译\"学校一结束就放学了\"存在语义重复（\"结束\"=\"放学\"），B译\"学校放学后\"更准确简洁\n- **段落46**: B译\"多亏曾和麻美学姐一起巡逻\"比A译\"因为和麻美一起巡逻过\"更准确地传达了原文感谢的语气\n- **段落77**: B的句子结构更贴近原文的分段节奏\n\n### 流畅性\n- A在某些表达上更符合中文习惯，如段落2\"简直就是才貌双全\"比B的\"堪称才色兼备\"更自然\n- 但A在段落1\"学校一结束就放学了\"显得冗余\n- B在段落2\"样样行外加还是个美人\"略显别扭\n\n### 风格/语气\n这是最大的差异点：\n- **敬称处理**: B保留了\"学姐\"（マミさん）、\"酱\"（ちゃん）等日式称呼，更符合轻小说风格（段落26、46、50、59-62）\n- **亲密称呼**: B使用\"小圆\"而A只用\"圆\"，前者更贴近轻小说的亲密感\n- A倾向于完全汉化，失去了部分原作的日式轻小说氛围\n\n### 术语/名称一致性\n- **B更一致**: 全文保持\"麻美学姐\"、\"沙耶香酱\"等称呼\n- **A不一致**: 有时用\"麻美\"，有时用\"麻美同学\"，缺乏统一性\n\n### 连贯性/可读性\n- 两者都保持了良好的连贯性\n- B在段落76-77等长句处理上更清晰，通过空格分隔增强可读性\n\n### 格式/标点符号\n- 基本相同，都使用了中文标点\n- B在某些长句中使用了更多空格来分隔语义单元，提升可读性（段落76、77、86）\n\n## 关键差异\n\n1. **敬称体系**: B保留日式敬称（学姐、酱），A完全汉化\n2. **轻小说风格**: B更贴近原作风格，A更像一般中文叙述\n3. **术语一致性**: B统一使用\"麻美学姐\"，A在\"麻美\"和\"麻美同学\"间摇摆\n4. **流畅度权衡**: A个别句子更流畅，但B整体风格统一性更好\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9, \"notes\": \"B在语义准确性和语气传达上略优，避免了A的重复表达问题\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A个别句子更符合中文习惯，但B整体可读性良好\"},\n    \"style\": {\"A\": 6, \"B\": 9, \"notes\": \"B保留了轻小说特有的日式称呼和语气，A过度汉化失去原作风味\"},\n    \"terminology\": {\"A\": 6, \"B\": 9, \"notes\": \"B统一使用'学姐'、'酱'等称呼，A在称呼上不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 8, \"notes\": \"两者连贯性都很好，B在长句处理上稍优\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"格式处理基本相同，都符合规范\"}\n  },\n  \"key_differences\": [\n    \"B保留了日式敬称体系（学姐、酱），更符合轻小说风格；A完全汉化\",\n    \"B使用'小圆'等亲密称呼，A只用'圆'\",\n    \"B在术语一致性上更优秀，统一使用'麻美学姐'\",\n    \"A在个别句子流畅度上略优，但B整体风格统一性更好\",\n    \"B在长句中使用空格分隔提升可读性\"\n  ],\n  \"final_summary\": \"虽然翻译A在个别句子的流畅度上表现更好，但翻译B在轻小说风格还原、术语一致性和整体准确性上明显优于A。B成功保留了原作的日式轻小说氛围（敬称、亲密称呼等），这对于轻小说翻译至关重要。A的过度汉化虽然读起来更像中文，但失去了原作特色。综合评估，B是更好的轻小说翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10307,
+          "completion_tokens": 2309,
+          "total_tokens": 12616
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在语义准确性和语气传达上略优，避免了A的重复表达问题"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A个别句子更符合中文习惯，但B整体可读性良好"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B保留了轻小说特有的日式称呼和语气，A过度汉化失去原作风味"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "B统一使用'学姐'、'酱'等称呼，A在称呼上不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者连贯性都很好，B在长句处理上稍优"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "格式处理基本相同，都符合规范"
+      }
+    },
+    "key_differences": [
+      "B保留了日式敬称体系（学姐、酱），更符合轻小说风格；A完全汉化",
+      "B使用'小圆'等亲密称呼，A只用'圆'",
+      "B在术语一致性上更优秀，统一使用'麻美学姐'",
+      "A在个别句子流畅度上略优，但B整体风格统一性更好",
+      "B在长句中使用空格分隔提升可读性"
+    ],
+    "final_summary": "虽然翻译A在个别句子的流畅度上表现更好，但翻译B在轻小说风格还原、术语一致性和整体准确性上明显优于A。B成功保留了原作的日式轻小说氛围（敬称、亲密称呼等），这对于轻小说翻译至关重要。A的过度汉化虽然读起来更像中文，但失去了原作特色。综合评估，B是更好的轻小说翻译。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

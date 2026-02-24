@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:04:11.556684",
+  "sample": "pixiv.s26712391.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26712391.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26712391.ch1.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.s26712391.ch1.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f704bc6475e324efffb4fa390733d8170d454e4947204c1dc291d3ec83d24451",
+    "A": "25d3f4dc9bc3af44913661ee28b02e455f4951a7e893ba69121a48dcf2d95c97",
+    "B": "2be2b02c8dd64969e51b41fd6096937b7a83495379587fbd59cdb1b43e47118b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:05:03.734379",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b4331b71-4fba-4fd1-82dc-8ebc967c2928",
+      "judge_response": {
+        "id": "b4331b71-4fba-4fd1-82dc-8ebc967c2928",
+        "object": "chat.completion",
+        "created": 1768431903,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐段关键差异分析\n\n### 准确性问题\n\n**段落1**: 原文「飛び込んできたのは」指视觉上的景象冲入眼帘。B的\"闯入眼帘的\"更准确，A的\"冲进来的\"略有歧义。\n\n**段落2**: 原文使用过去状态「倒れたレイアちゃんが居た」表示蕾雅已经倒在那里。B\"倒伏在地的蕾雅酱就在那里\"准确。A\"蕾雅就趴在地上倒了下去\"暗示动作刚发生，有误。\n\n**段落8**: 「殺してしまった友達に」A译为\"已经死去的朋友\"，B译为\"那个杀害了朋友的她\"。B更准确——这里指的是杀害了朋友的那个人（レイア）。\n\n**段落47**: 「泣きじゃくるボクを、ボクの瞳を強く見つめていた」A译为\"死死盯着我的眼睛，就像哭着的我\"语义混乱。B\"她紧紧凝视着抽泣的我、凝视着我的眼眸\"正确。\n\n**段落57**: **重大错误** - 「っ、いたっ！」是痛呼声（痛い的缩写）。A错译为\"找到了！\"，B正确译为\"嘶、好疼！\"\n\n**段落62**: 「嘘と本当は両立するものだ」A译\"无法共存\"与原意相反，B\"可以共存\"正确。\n\n### 风格与流畅度\n\n- B在情感表达上更细腻，如段落26「ヒロちゃんに、会いたいよ」B译\"我好想见、希罗啊\"保留了原文的情感停顿\n- B保持了\"酱\"的称呼一致性（ちゃん→酱）\n- A在某些地方过度意译，如段落25省略了原文的重复\"所以、所以\"\n\n### 术语处理\n\n- 段落37「ボク」的自称：A译\"我\"，B译\"人家\"。考虑到说话者是女性用ボク自称，A的处理更通用，B的\"人家\"与ボク的语感不太匹配。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有多处误译，尤其段落57完全错误，段落62意思相反；B整体准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的中文表达更自然流畅，情感表达更细腻\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地保留了轻小说的情感节奏和叙述风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A处理ボク更恰当，B保持ちゃん→酱更一致，各有优劣\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的段落47等处语义混乱影响可读性\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式处理相当，标点使用合理\"}\n  },\n  \"key_differences\": [\n    \"段落57：A将痛呼'いたっ'错译为'找到了'，B正确译为'好疼'\",\n    \"段落62：A将'两立'译为'无法共存'与原意相反\",\n    \"段落8：对'殺してしまった友達に'的理解差异导致语义不同\",\n    \"段落2：A误将已完成状态译为进行动作\",\n    \"段落47：A语义混乱，B准确表达\"\n  ],\n  \"final_summary\": \"翻译B在准确性和流畅度上明显优于A。A存在多处关键误译（段落57的痛呼声、段落62的语义相反），且部分句子语义混乱。B虽然在ボク自称的处理上略有不妥，但整体保持了原文的情感基调和叙事节奏，是更可靠的翻译版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11845,
+          "completion_tokens": 2252,
+          "total_tokens": 14097
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有多处误译，尤其段落57完全错误，段落62意思相反；B整体准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的中文表达更自然流畅，情感表达更细腻"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地保留了轻小说的情感节奏和叙述风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A处理ボク更恰当，B保持ちゃん→酱更一致，各有优劣"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的段落47等处语义混乱影响可读性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式处理相当，标点使用合理"
+      }
+    },
+    "key_differences": [
+      "段落57：A将痛呼'いたっ'错译为'找到了'，B正确译为'好疼'",
+      "段落62：A将'两立'译为'无法共存'与原意相反",
+      "段落8：对'殺してしまった友達に'的理解差异导致语义不同",
+      "段落2：A误将已完成状态译为进行动作",
+      "段落47：A语义混乱，B准确表达"
+    ],
+    "final_summary": "翻译B在准确性和流畅度上明显优于A。A存在多处关键误译（段落57的痛呼声、段落62的语义相反），且部分句子语义混乱。B虽然在ボク自称的处理上略有不妥，但整体保持了原文的情感基调和叙事节奏，是更可靠的翻译版本。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

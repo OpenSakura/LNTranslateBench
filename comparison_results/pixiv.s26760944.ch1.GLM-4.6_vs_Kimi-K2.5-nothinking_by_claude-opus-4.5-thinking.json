@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:33:15.617028",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "62d06030979d5f0483572577e3d86d64751764fe540666ac13d5abd53408eeed",
+    "B": "bcb933cf38d5268cc64ebfda73fe15585ae4c18d793b447f37302e24948854b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:34:07.446651",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f72d3f29-d35d-4b7e-85e8-e03efae89b98",
+      "judge_response": {
+        "id": "f72d3f29-d35d-4b7e-85e8-e03efae89b98",
+        "object": "chat.completion",
+        "created": 1769610847,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落逐项分析\n\n**段落1**\n- A将「浮かぶ」译为\"漂浮的\"过于字面，不够通顺\n- B译为\"难得的\"更符合语境，表达休息日难得的意味\n- A的\"踩得水花四溅\"比B的\"乱踩水坑\"更生动\n\n**段落17（关键错误）**\n- A误译：\"雪莉小姐都拒绝好几次了还硬要把我卷起来带走\"——主语错误，原文是汉娜拒绝\n- B正确：\"我都拒绝了多少次了，还要把我卷在席子里带走\"\n\n**段落49/53**\n- A将「ムー」译为\"哞\"（牛叫声）\n- B译为\"唔唔\"（被堵住嘴的声音）\n- B更准确，因为汉娜嘴里被塞了东西\n\n**段落51-52**\n- 「しょ〜」是掌声/应和声\n- A译为\"吧～\"不知所云\n- B译为\"嘿咻\"虽不完美但更能理解\n\n**段落100**\n- B多次添加\"大叔我\"，原文无此内容，属于过度翻译\n- A保持了原文的简洁\n\n**格式问题**\n- A的引号使用一致（「」）\n- B混用｢｣和\"\"，不够统一\n\n### 各维度评分\n\n| 维度 | A | B | 说明 |\n|------|---|---|------|\n| 准确性 | 6 | 7 | A在段落17有关键误译，但B在段落100有添加 |\n| 流畅性 | 7 | 8 | B整体更自然流畅 |\n| 风格 | 7 | 8 | B的轻小说对话感更强 |\n| 术语 | 7 | 7 | 两者名称处理相当 |\n| 连贯性 | 7 | 8 | B叙述更连贯 |\n| 格式 | 8 | 6 | B引号使用不一致 |\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落17将主语翻译错误（把汉娜说的「何度も断っている」误译为雪莉拒绝）；B在段落100添加了原文没有的「大叔我」；B对「ムー」的理解更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更自然通顺，如「片刻之后」「一窍不通」等表达更地道；A部分表达较生硬如「对情爱不谙世事」\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话语气更符合轻小说风格，如「好嘞好嘞」「这可不是开玩笑的时候」更口语化\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者人名翻译相当；B将「同居人」译为「室友」更自然，A的「同居人」稍显生硬\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的叙述衔接更流畅，段落间过渡更自然\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A引号使用一致；B混用｢｣和\\\"\\\"，格式不统一\"}\n  },\n  \"key_differences\": [\n    \"段落17：A将说话者与被拒绝者关系翻译错误\",\n    \"段落49/53：A将被堵嘴的呜咽声译为牛叫「哞」，B正确译为「唔唔」\",\n    \"段落51-52：A对「しょ〜」的处理不当\",\n    \"段落100：B过度添加「大叔我」\",\n    \"整体格式：B引号使用不一致\"\n  ],\n  \"final_summary\": \"B在整体流畅性、风格把握和关键语境理解上优于A，尤其是段落17的主语判断和被堵嘴发声的翻译更准确。但B存在格式不统一和段落100过度添加的问题。综合来看，B的优势稍大于其不足，故判定B胜出，但置信度不高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14657,
+          "completion_tokens": 2194,
+          "total_tokens": 16851
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落17将主语翻译错误（把汉娜说的「何度も断っている」误译为雪莉拒绝）；B在段落100添加了原文没有的「大叔我」；B对「ムー」的理解更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更自然通顺，如「片刻之后」「一窍不通」等表达更地道；A部分表达较生硬如「对情爱不谙世事」"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话语气更符合轻小说风格，如「好嘞好嘞」「这可不是开玩笑的时候」更口语化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者人名翻译相当；B将「同居人」译为「室友」更自然，A的「同居人」稍显生硬"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的叙述衔接更流畅，段落间过渡更自然"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A引号使用一致；B混用｢｣和\"\"，格式不统一"
+      }
+    },
+    "key_differences": [
+      "段落17：A将说话者与被拒绝者关系翻译错误",
+      "段落49/53：A将被堵嘴的呜咽声译为牛叫「哞」，B正确译为「唔唔」",
+      "段落51-52：A对「しょ〜」的处理不当",
+      "段落100：B过度添加「大叔我」",
+      "整体格式：B引号使用不一致"
+    ],
+    "final_summary": "B在整体流畅性、风格把握和关键语境理解上优于A，尤其是段落17的主语判断和被堵嘴发声的翻译更准确。但B存在格式不统一和段落100过度添加的问题。综合来看，B的优势稍大于其不足，故判定B胜出，但置信度不高。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

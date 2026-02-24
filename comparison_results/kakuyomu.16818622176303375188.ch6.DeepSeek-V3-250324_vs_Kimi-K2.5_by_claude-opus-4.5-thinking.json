@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:20:51.156861",
+  "sample": "kakuyomu.16818622176303375188.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622176303375188.ch6.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622176303375188.ch6.Kimi-K2.5.translated.txt",
+    "B": "translated_results/kakuyomu.16818622176303375188.ch6.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2e0001678fabcbc42f80d57c706b1b7897e613da23a926f04d36b1f5b4ebed30",
+    "A": "ba73ec24cc29d4afd9363fb4f2653f9981ae945a5a01266e1cbf4f09f81397e4",
+    "B": "f534573ebbcc1d25c79df50a2f4c6386cd100781acf51cf55d240c53ada49591"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:21:38.301463",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d200711e-a943-4abc-8082-b078031e074b",
+      "judge_response": {
+        "id": "d200711e-a943-4abc-8082-b078031e074b",
+        "object": "chat.completion",
+        "created": 1769610098,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**段落6关键差异：**\n- 原文：「手数だけ多くて火力が低い」\n- A：「只有攻击次数多但火力低」✓\n- B：「数量众多但火力低下」✗\nB将「手数」误译为\"数量\"，实际指攻击次数/招数。\n\n**段落18：**\n- 原文：「頭の中にアナウンスが流れる」\n- A：「脑海中突然像有广播流淌而过」✓\n- B：「有通告般的信息流过头顶」（头顶不准确）\n\n**段落54：**\n- 原文：「口をつける」（嘴唇接触）\n- A：「含入口中」- 较准确\n- B：「仰头灌下」- 过度演绎\n\n### 流畅性分析\n\nB版本整体更简洁凝练：\n- 段落2：B「石砌拱廊昏暗幽静」vs A「石砌的拱门内一片昏暗」\n- 段落3：B「时间在此停滞」vs A「只有这里时间停止了一般」\n\n### 风格/语气分析\n\n**段落52：**\n- A：「没有比这更开心的了」- 较正式\n- B：「简直爽翻了」- 更口语化但略过度\n\n**段落36：**\n- 原文「ははっ」是短促笑声\n- B「哈」更贴切 vs A「哈哈」\n\n### 术语一致性\n\n| 术语 | A | B |\n|------|---|---|\n| 瘴気ネズミ | 瘴气老鼠 | 瘴气鼠 |\n| 物理耐性 | 物理耐性 | 物理抗性 |\n| ステータス | 状态 | 属性 |\n\n两者内部均保持一致，B的简称更符合游戏术语习惯。\n\n### 格式分析\n\n两者格式处理相当，都正确使用了书名号和破折号。A使用「」，B使用\"\"，两种都可接受。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在关键词'手数'、'頭の中'等处更准确；B有误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更简洁流畅，句式更自然\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更贴合轻小说口语化风格，但偶有过度翻译\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者内部一致性都好，B的游戏术语更简洁\"},\n    \"coherence\": {\"A\": 8, \"B\": 8, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"格式处理均规范\"}\n  },\n  \"key_differences\": [\n    \"段落6：A正确翻译'手数'为攻击次数，B误译为数量\",\n    \"段落18：A的'脑海中'比B的'头顶'更准确\",\n    \"B整体语言更简洁口语化，A更忠实原文结构\",\n    \"段落52/62：B的'爽翻了'等表达略有过度翻译倾向\"\n  ],\n  \"final_summary\": \"A在准确性上占优，特别是段落6对'手数'的正确理解是关键性差异。B在流畅性和轻小说风格表达上略胜，但存在误译和过度翻译问题。综合考虑轻小说翻译中准确性的基础重要性，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10119,
+          "completion_tokens": 2345,
+          "total_tokens": 12464
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在关键词'手数'、'頭の中'等处更准确；B有误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更简洁流畅，句式更自然"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更贴合轻小说口语化风格，但偶有过度翻译"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者内部一致性都好，B的游戏术语更简洁"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "格式处理均规范"
+      }
+    },
+    "key_differences": [
+      "段落6：A正确翻译'手数'为攻击次数，B误译为数量",
+      "段落18：A的'脑海中'比B的'头顶'更准确",
+      "B整体语言更简洁口语化，A更忠实原文结构",
+      "段落52/62：B的'爽翻了'等表达略有过度翻译倾向"
+    ],
+    "final_summary": "A在准确性上占优，特别是段落6对'手数'的正确理解是关键性差异。B在流畅性和轻小说风格表达上略胜，但存在误译和过度翻译问题。综合考虑轻小说翻译中准确性的基础重要性，A略胜一筹。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

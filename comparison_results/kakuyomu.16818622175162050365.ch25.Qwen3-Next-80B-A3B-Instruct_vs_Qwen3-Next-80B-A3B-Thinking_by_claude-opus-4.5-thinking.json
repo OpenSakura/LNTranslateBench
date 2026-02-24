@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:31:00.294847",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "Qwen3-Next-80B-A3B-Instruct",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "815f381ca91e90379c18263aec6d317193acaa7af13c72a829483f534b131ac5",
+    "B": "f5dc866f4be21bde56a9c63b929985c430d08d6450e36818e5a9d27aeeb86e8e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:32:14.092737",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "60827de5-a233-4f16-bdfe-fe2c2a17b61e",
+      "judge_response": {
+        "id": "60827de5-a233-4f16-bdfe-fe2c2a17b61e",
+        "object": "chat.completion",
+        "created": 1768422733,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性方面：**\n- 段落1：B更完整地保留了\"大々的な勧誘が許されている\"（允许大规模招新）的语义，A简化了这层意思\n- 段落17：B出现名字错误，\"陽菜乃\"翻译成\"阳乃\"而非\"阳菜乃\"\n- 段落46：A将\"クソデカい声\"译为\"他妈的巨响\"过于粗俗，原文只是\"超大声\"的意思，B的\"一声巨响\"更准确\n- 段落52/56/58/60/63/66：B多次将男性前辈（男子生徒）误译为\"学姐\"，这是重大性别错误\n- 段落85：B将\"ニューイヤートーナメント\"（新年锦标赛）误译为\"新人锦标赛\"\n\n**流畅性方面：**\n- A多处使用日式顿号（、）代替逗号，如段落19、23、24，影响阅读\n- B整体口语化表达更自然，如\"三三两两\"、\"咋办\"、\"牛啊\"等\n- B的对话更贴近日常中文口语习惯\n\n**风格/语气方面：**\n- A使用「」和『』区分对话和精灵发言，保留了轻小说格式特色\n- B使用统一的\"\"，未区分不同角色类型的发言\n\n**术语/名称一致性：**\n- A对\"有為\"称呼基本一致\n- B的\"学姐\"错误严重破坏了性别设定的一致性\n- 段落79：A误用\"东云先生\"，应为\"东云同学\"；B正确\n\n**连贯性/可读性：**\n- B整体读起来更顺畅自然\n- 但B的性别错误会让读者产生困惑\n\n**格式/标点：**\n- A的标点使用不够规范\n- B格式较为统一但缺少对话类型区分\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B多次将男性前辈误译为'学姐'，且有名字错误'阳乃'；A有一处粗俗翻译\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B口语化表达更自然，A有标点问题\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A保留了轻小说对话格式区分，B整体风格统一\"},\n    \"terminology\": {\"A\": 7, \"B\": 4, \"notes\": \"B的'学姐'错误严重影响角色性别设定\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B的性别错误导致读者困惑\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A有日式顿号问题，B标点规范但缺少对话区分\"}\n  },\n  \"key_differences\": [\n    \"B多次将男性前辈误译为'学姐'，属于重大性别错误\",\n    \"A保留了「」『』区分对话类型的轻小说格式\",\n    \"B口语化程度更高，读起来更自然流畅\",\n    \"A有一处粗俗翻译（'他妈的'），B有名字错误（'阳乃'）\"\n  ],\n  \"final_summary\": \"虽然B在流畅性和口语化表达上表现更好，但其多次将男性角色误译为'学姐'的性别错误是致命的准确性问题，会严重误导读者对角色关系的理解。A虽有标点不规范和一处过于粗俗的翻译，但整体准确性更高，且保留了轻小说特有的对话格式区分。综合考虑，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11487,
+          "completion_tokens": 3177,
+          "total_tokens": 14664
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B多次将男性前辈误译为'学姐'，且有名字错误'阳乃'；A有一处粗俗翻译"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B口语化表达更自然，A有标点问题"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A保留了轻小说对话格式区分，B整体风格统一"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 4,
+        "notes": "B的'学姐'错误严重影响角色性别设定"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B的性别错误导致读者困惑"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有日式顿号问题，B标点规范但缺少对话区分"
+      }
+    },
+    "key_differences": [
+      "B多次将男性前辈误译为'学姐'，属于重大性别错误",
+      "A保留了「」『』区分对话类型的轻小说格式",
+      "B口语化程度更高，读起来更自然流畅",
+      "A有一处粗俗翻译（'他妈的'），B有名字错误（'阳乃'）"
+    ],
+    "final_summary": "虽然B在流畅性和口语化表达上表现更好，但其多次将男性角色误译为'学姐'的性别错误是致命的准确性问题，会严重误导读者对角色关系的理解。A虽有标点不规范和一处过于粗俗的翻译，但整体准确性更高，且保留了轻小说特有的对话格式区分。综合考虑，A略胜一筹。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

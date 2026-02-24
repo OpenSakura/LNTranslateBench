@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:18:55.583204",
+  "sample": "syosetu.n7886gf.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n7886gf.ch19.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n7886gf.ch19.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/syosetu.n7886gf.ch19.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b7c5e5862caa77dd51ae9b11b2fafe158a804e9e40647a31c9450a6e682fc8dd",
+    "A": "8074a764e352307a7be4f2d10636a1d9879c9fabcf2ad963f51a1d3bad3757b7",
+    "B": "7959aa20c390055672a8c1a1cf34eba28545c3eab0c28e7e80783812b3f12213"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:19:46.443810",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "83f334eb-cbd8-42ee-9f59-5c449047b85f",
+      "judge_response": {
+        "id": "83f334eb-cbd8-42ee-9f59-5c449047b85f",
+        "object": "chat.completion",
+        "created": 1768432786,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐项分析\n\n**1. 准确性**\n- 段落2：A译\"惠美森林\"是音译错误，B译\"恩惠之森\"正确\n- 段落19/22/77/91：「わらし」是梅尔的自称。A误译为\"小家伙/小鬼\"，B正确理解为\"我\"\n- 段落28：「ゲソ」指鱿鱼脚。A译\"章鱼脚\"接近，B译\"脚趾头\"完全错误\n- 段落56：A译\"鱿鱼干脚\"正确，B译\"海带的脚\"严重错误\n- 段落86：A译\"雨不会漏的\"正确，B译\"雨要漏进来啦\"意思完全相反\n\n**2. 流畅性**\n- A的某些表达较为生硬（如段落12\"处理奇迹的女贤者\"）\n- B的日常表达更自然（如段落16\"加个好友\"比\"好友注册\"更口语化）\n\n**3. 风格/语气**\n- A在幼儿口吻处理上不够到位\n- B的童言童语更自然，但部分段落（60-65等）突然改用西式引号，风格不统一\n\n**4. 术语一致性**\n- A：人名译法较统一（罗尔夫）\n- B：人名不一致（洛夫），后半部分将\"魔女\"改为\"巫女\"（段落107-116）\n\n**5. 格式**\n- A：「」引号全文统一\n- B：段落60-76突然切换为\"\"引号，格式混乱\n\n### 关键差异\n| 问题 | A | B |\n|------|---|---|\n| 恵みの森 | ❌惠美森林 | ✓恩惠之森 |\n| わらし理解 | ❌误解为他称 | ✓正确自称 |\n| ゲソ/スルメ | ✓鱿鱼干 | ❌海带/脚趾头 |\n| 段落86语义 | ✓正确 | ❌完全相反 |\n| 格式统一 | ✓统一 | ❌混乱 |\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 5, \"notes\": \"A误译地名和自称，但B有多处严重语义错误（海带、雨漏反义）\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相当，B口语化略好\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"B的幼儿语气更自然，但后半段风格突变\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"B人名不一致，魔女/巫女混用\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体连贯，B有格式断裂\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B引号格式中途改变，严重影响阅读\"}\n  },\n  \"key_differences\": [\n    \"A误译「恵みの森」为音译，B正确理解为「恩惠之森」\",\n    \"A多次误解「わらし」为他称，B正确理解为自称\",\n    \"B将「スルメ」误译为海带，「ゲソ」误译为脚趾头\",\n    \"B段落86语义完全相反（雨不漏→雨要漏）\",\n    \"B后半部分引号格式混乱，术语不一致\"\n  ],\n  \"final_summary\": \"两译文各有明显缺陷。A的主要问题是地名音译错误和自称误解；B虽然自称理解正确，但存在多处严重语义错误（海带、雨漏反义），且后半部分格式混乱、术语不一致。综合考虑，A的错误相对可控，B的硬伤更致命，故A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11327,
+          "completion_tokens": 2210,
+          "total_tokens": 13537
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 5,
+        "notes": "A误译地名和自称，但B有多处严重语义错误（海带、雨漏反义）"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相当，B口语化略好"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "B的幼儿语气更自然，但后半段风格突变"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "B人名不一致，魔女/巫女混用"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体连贯，B有格式断裂"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B引号格式中途改变，严重影响阅读"
+      }
+    },
+    "key_differences": [
+      "A误译「恵みの森」为音译，B正确理解为「恩惠之森」",
+      "A多次误解「わらし」为他称，B正确理解为自称",
+      "B将「スルメ」误译为海带，「ゲソ」误译为脚趾头",
+      "B段落86语义完全相反（雨不漏→雨要漏）",
+      "B后半部分引号格式混乱，术语不一致"
+    ],
+    "final_summary": "两译文各有明显缺陷。A的主要问题是地名音译错误和自称误解；B虽然自称理解正确，但存在多处严重语义错误（海带、雨漏反义），且后半部分格式混乱、术语不一致。综合考虑，A的错误相对可控，B的硬伤更致命，故A略胜。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

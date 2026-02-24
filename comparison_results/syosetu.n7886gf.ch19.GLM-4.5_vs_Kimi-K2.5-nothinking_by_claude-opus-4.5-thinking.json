@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:34:53.497393",
+  "sample": "syosetu.n7886gf.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n7886gf.ch19.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n7886gf.ch19.GLM-4.5.translated.txt",
+    "B": "translated_results/syosetu.n7886gf.ch19.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b7c5e5862caa77dd51ae9b11b2fafe158a804e9e40647a31c9450a6e682fc8dd",
+    "A": "f46973e8582deba5c7167f748b54fe48b6e5d94b7350489a3e8b0c3c56923d65",
+    "B": "b2510f88c6d9568c9c89a4b9920890feb9a78cdb0bcb1fc8bceac700dbcbfef7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:35:55.666164",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2ca2ef48-62a7-4ed2-8ac7-1ac6c018f17e",
+      "judge_response": {
+        "id": "2ca2ef48-62a7-4ed2-8ac7-1ac6c018f17e",
+        "object": "chat.completion",
+        "created": 1769610955,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**段落17关键错误：**\n- 原文「エミリオや。手数をかけたね」是魔女在称呼埃米利奥\n- A译：「艾米利奥呀。辛苦你了」✓ 正确\n- B译：「我是埃米利奥。劳你费心了」✗ 严重误译，把称呼当成自我介绍\n\n**段落34关键错误：**\n- 原文「すうめヨ」是梅尔用幼儿发音说\"するめ\"（干鱿鱼）\n- A译：「是鱿鱼干」✓ 正确\n- B译：「是酸黄瓜」✗ 完全误译\n\n**段落85：**\n- 原文「あなー！」是梅尔指着\"洞\"惊呼\n- A译：「洞啊—！」✓ 正确\n- B译：「啊——！」✗ 漏译关键词\n\n### 术语一致性\n- A的人名不一致：洛夫/罗尔夫、艾米利欧/艾米利奥\n- B人名相对一致但地名有变化：惠泽之森/恩泽之森\n- 森の魔女：A混用\"森之魔女/森林魔女\"，B较统一用\"森林魔女/森之魔女\"\n\n### 风格处理\n- B在处理幼儿语言方面更有特色（如\"咱家\"、\"漂酿\"）\n- A的幼儿语言处理较为平淡但准确\n- 引号：B使用「」更符合日式风格\n\n### 其他细节\n- スルメの足：A译\"须/触手\"，B译\"脚\"（B更准确）\n- 四半刻：A保留原词，B译\"一刻钟\"（B更易懂）\n- イボ：A译\"疙瘩\"，B译\"疣子\"（B更精确）\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B在段落17、34、85有严重误译，改变了原意\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的表达更流畅自然，幼儿语言处理更有趣味\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的轻小说风格更到位，角色语言特色更鲜明\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A人名不一致问题较严重，B整体更统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B的误译导致部分情节不连贯\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B使用日式引号更统一，A引号使用混乱\"}\n  },\n  \"key_differences\": [\n    \"段落17: B将称呼误译为自我介绍（致命错误）\",\n    \"段落34: B将'干鱿鱼'误译为'酸黄瓜'（致命错误）\",\n    \"段落85: B漏译关键词'洞'\",\n    \"A人名翻译不一致（洛夫/罗尔夫）\",\n    \"B幼儿语言风格更出色但牺牲了部分准确性\"\n  ],\n  \"final_summary\": \"虽然B在风格、流畅度和格式方面表现更佳，但B存在多处严重误译（特别是段落17将对话对象搞错、段落34完全误译食物名称），这些错误直接影响读者对剧情的理解。A虽然在人名一致性和风格上有不足，但核心意思传达准确，因此A整体更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11476,
+          "completion_tokens": 3033,
+          "total_tokens": 14509
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B在段落17、34、85有严重误译，改变了原意"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的表达更流畅自然，幼儿语言处理更有趣味"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的轻小说风格更到位，角色语言特色更鲜明"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A人名不一致问题较严重，B整体更统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B的误译导致部分情节不连贯"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B使用日式引号更统一，A引号使用混乱"
+      }
+    },
+    "key_differences": [
+      "段落17: B将称呼误译为自我介绍（致命错误）",
+      "段落34: B将'干鱿鱼'误译为'酸黄瓜'（致命错误）",
+      "段落85: B漏译关键词'洞'",
+      "A人名翻译不一致（洛夫/罗尔夫）",
+      "B幼儿语言风格更出色但牺牲了部分准确性"
+    ],
+    "final_summary": "虽然B在风格、流畅度和格式方面表现更佳，但B存在多处严重误译（特别是段落17将对话对象搞错、段落34完全误译食物名称），这些错误直接影响读者对剧情的理解。A虽然在人名一致性和风格上有不足，但核心意思传达准确，因此A整体更胜一筹。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

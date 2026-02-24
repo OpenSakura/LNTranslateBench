@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:03:19.213659",
+  "sample": "pixiv.s26712391.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26712391.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26712391.ch1.GLM-4.7.translated.txt",
+    "B": "translated_results/pixiv.s26712391.ch1.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f704bc6475e324efffb4fa390733d8170d454e4947204c1dc291d3ec83d24451",
+    "A": "fcf43d4339e6c38b8bbf70214fbbe41bbf8d00abd13143affb9376797955d822",
+    "B": "e0e2910de4ec3cff9de9095f3f372369f112e9ad17d423889683f06d2c2aac0c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:03:57.262492",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "96d5d9fb-34c3-4d6a-890f-01e1eb8fc749",
+      "judge_response": {
+        "id": "96d5d9fb-34c3-4d6a-890f-01e1eb8fc749",
+        "object": "chat.completion",
+        "created": 1768431837,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 详细对比分析\n\n**准确性问题：**\n- 段落8：A\"杀了人的朋友\"正确理解\"殺してしまった友達\"（朋友杀了人）；B\"已经被杀的朋友\"严重误译\n- 段落35：B保留日文「じゃま！」未翻译，A正确译为\"别碍事！\"\n- 段落72：B保留日文\"が\"未处理\n- 段落78：B保留日文\"\"一番\"には、なれない\"未翻译，严重错误\n- 段落5：A\"翠玉色\"比B\"翠绿色\"更贴合\"翠玉色\"\n\n**流畅性对比：**\n- A整体语句更连贯自然，如段落54\"即便如此也会偶尔从那不散的人群圈子里抽身\"\n- B部分句子较生硬，如段落77结构混乱\n\n**风格处理：**\n- A在情感段落处理更细腻，如段落84\"居然要像这样结束\"\n- 两者在轻小说口语风格上都有不错表现\n\n**格式问题：**\n- A使用中文标准引号\"\"\n- B使用日文引号「」，不符合中文规范\n- B多处保留未翻译日文，属于严重格式/翻译缺陷\n\n**称呼一致性：**\n- A\"希罗酱/希罗\"有切换但基本合理\n- B在称呼处理上也有类似情况\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B在段落8严重误译，且多处保留未翻译日文\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A语句更流畅自然，B部分句子生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"两者风格相近，A情感表达更细腻\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者称呼处理类似，都有轻微不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B因未翻译内容影响阅读连贯性\"},\n    \"formatting\": {\"A\": 9, \"B\": 4, \"notes\": \"B使用日文引号且多处保留日文原文未译\"}\n  },\n  \"key_differences\": [\n    \"B在段落8将'殺してしまった友達'误译为'已经被杀的朋友'\",\n    \"B在段落35、72、78保留日文原文未翻译\",\n    \"B全篇使用日文引号「」而非中文引号\",\n    \"A整体流畅度和情感表达更佳\"\n  ],\n  \"final_summary\": \"A翻译在准确性、流畅性和格式规范上均优于B。B存在严重的翻译遗漏（多处保留日文原文未译）和关键误译（段落8），且使用非中文标准引号格式。虽然B在某些细节处理上也有可取之处，但整体质量明显不如A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11762,
+          "completion_tokens": 1679,
+          "total_tokens": 13441
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B在段落8严重误译，且多处保留未翻译日文"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A语句更流畅自然，B部分句子生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者风格相近，A情感表达更细腻"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者称呼处理类似，都有轻微不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B因未翻译内容影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B使用日文引号且多处保留日文原文未译"
+      }
+    },
+    "key_differences": [
+      "B在段落8将'殺してしまった友達'误译为'已经被杀的朋友'",
+      "B在段落35、72、78保留日文原文未翻译",
+      "B全篇使用日文引号「」而非中文引号",
+      "A整体流畅度和情感表达更佳"
+    ],
+    "final_summary": "A翻译在准确性、流畅性和格式规范上均优于B。B存在严重的翻译遗漏（多处保留日文原文未译）和关键误译（段落8），且使用非中文标准引号格式。虽然B在某些细节处理上也有可取之处，但整体质量明显不如A。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

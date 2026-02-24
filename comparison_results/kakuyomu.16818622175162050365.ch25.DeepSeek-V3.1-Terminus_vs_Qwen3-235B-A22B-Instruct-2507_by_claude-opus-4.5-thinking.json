@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:30:32.868259",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "6312918aff45bc85a1be659efa3f053b05d08919a5dfc20d2bd2b72621f0e0be",
+    "B": "24ddd39084a0f8829376808a58589695fef7f600e84331f6a06522d5dde265d3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:31:42.595954",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9885b40b-97a7-405d-8dcf-3c1220aace9f",
+      "judge_response": {
+        "id": "9885b40b-97a7-405d-8dcf-3c1220aace9f",
+        "object": "chat.completion",
+        "created": 1768422701,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段对比分析\n\n**段落4**: A正确翻译人名为\"津々木同学、炭谷同学\"，B保留日语原文\"津々木さん、炭谷くん\"混杂不一致。\n\n**段落12**: A\"没精打采\"准确传达テンション的整体状态感；B\"的语气\"过于局限。\n\n**段落15**: A使用\"牛逼\"过于粗俗，不太符合轻小说少女叙述者语气；B\"厉害啊\"更自然。\n\n**段落46**: A\"阳菜乃和两人齐刷刷地\"存在语病（应为\"我们两人\"）；B\"阳菜乃和我俩\"正确。\n\n**段落49-50**: A称学生为\"男人\"不恰当；B用\"男生\"更准确。\n\n**段落58**: A正确理解是奏多把脚放在桌上；B句子结构混乱，主语指代模糊。\n\n**段落61**: A正确翻译\"入ってきた方も悪い\"指大声进来的学长们有错；B错误翻译为\"冲进来的我们也有错\"，严重误译。\n\n**段落63/71/78/80**: **严重问题**：B将男性角色（藤田等）错误称为\"学姐\"，原文明确是\"男子生徒\"，这是性别翻译错误。\n\n**段落77**: B留有未翻译的英文\"refusing\"，属于明显疏漏。\n\n**段落60/70/74等**: B将\"奏多\"误写为\"凑多\"，存在用字错误。\n\n### 综合评估\n\nA的问题主要是个别用词不够雅致（如\"牛逼\"），以及段落46的小语病。\n\nB存在多处严重错误：性别误译（多次将男生称为学姐）、段落61的意思反转、未翻译的英文残留、人名用字错误。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有多处严重误译：段落61意思反转、性别错误、refusing未译\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相近，各有优劣\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A偶有粗俗用词(牛逼)，B对话感稍好但有硬伤\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B人名用字错误(凑多)、保留日语原文混杂、性别称谓错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落58主语混乱，段落61逻辑错误影响理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B有英文残留refusing\"}\n  },\n  \"key_differences\": [\n    \"B多次将男性角色错误翻译为学姐(原文明确是男子生徒)\",\n    \"B段落61将'大声进来的人有错'误译为'冲进来的我们有错'\",\n    \"B段落77留有未翻译的英文refusing\",\n    \"B人名奏多误写为凑多\",\n    \"A偶有用词粗俗(牛逼)但无原则性错误\"\n  ],\n  \"final_summary\": \"A虽有个别用词不够雅致的问题，但整体准确可靠；B存在多处致命错误，包括性别误译、意思反转、未翻译残留和人名错误，严重影响阅读理解。A明显胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12276,
+          "completion_tokens": 2920,
+          "total_tokens": 15196
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有多处严重误译：段落61意思反转、性别错误、refusing未译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相近，各有优劣"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A偶有粗俗用词(牛逼)，B对话感稍好但有硬伤"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B人名用字错误(凑多)、保留日语原文混杂、性别称谓错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落58主语混乱，段落61逻辑错误影响理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有英文残留refusing"
+      }
+    },
+    "key_differences": [
+      "B多次将男性角色错误翻译为学姐(原文明确是男子生徒)",
+      "B段落61将'大声进来的人有错'误译为'冲进来的我们有错'",
+      "B段落77留有未翻译的英文refusing",
+      "B人名奏多误写为凑多",
+      "A偶有用词粗俗(牛逼)但无原则性错误"
+    ],
+    "final_summary": "A虽有个别用词不够雅致的问题，但整体准确可靠；B存在多处致命错误，包括性别误译、意思反转、未翻译残留和人名错误，严重影响阅读理解。A明显胜出。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

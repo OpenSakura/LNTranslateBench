@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:28:18.524286",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "49da8d078a1379697fd0cdcfb776f20e0f145eb8e604df3ae763a631f981e979",
+    "B": "34c9490637b7262c8d5a78f77fc8285aa9459ae961933901cf1f52e3ba661744"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:29:14.819808",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4957ab14-14e2-4985-80e4-961c61f0d503",
+      "judge_response": {
+        "id": "4957ab14-14e2-4985-80e4-961c61f0d503",
+        "object": "chat.completion",
+        "created": 1769610554,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**关键问题：代词性别错误**\n- 翻译B在多处将少女（明确的女性角色）用\"他\"代替\"她\"：\n  - 段落15：「看他那害怕的样子」→ 应为\"她\"\n  - 段落38：「让他敞开心扉」→ 应为\"她\"  \n  - 段落42：「他也说过」「他不吃」→ 应为\"她\"\n\n这是严重的准确性错误，会导致读者对角色性别产生困惑。\n\n**其他准确性对比：**\n- 段落3：「堂に入った染み染みとした号泣」A译为\"教科书般深入人心哭泣演技\"，B译为\"炉火纯青、撕心裂肺号泣\"。A更准确捕捉了\"精湛但不是真哭\"的讽刺语境。\n- 段落31：「手渡し」A译\"现金支付\"有偏差，B译\"手交\"更准确。\n\n### 流畅性分析\n\n- 段落1：B将拟声词译为中文更自然（「……呜、唔……嗯……」）\n- 段落44：B的\"真让人不甘心啊\"比A的\"真恨啊\"更自然\n- 段落48：B的\"恭敬不如从命\"比A的\"让我尝尝\"更符合语境\n\n### 风格/语气分析\n\n- 两者都保持了轻小说特有的轻松吐槽风格\n- A的语气略显正式，B更口语化\n- 段落52：B的\"普通地很有趣\"是日语直译，略显生硬\n\n### 术语一致性\n\n- 两者在\"Boss\"、\"夏露米娜\"、\"秘密结社\"等术语上保持一致\n- 段落29-30：两者对日元金额的处理都合适\n\n### 格式分析\n\n- 段落55：A出现\"吧。\"重复，有校对疏漏\n- A使用中文引号「」「」与日式引号「」混用（段落14-16用\"\"）\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B存在严重的代词性别错误，多次将少女用'他'指代\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，但某些日语直译痕迹明显\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好保持了轻小说风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"专有名词处理一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B的代词错误严重影响角色辨识和阅读连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"A有引号不统一和重复字问题\"}\n  },\n  \"key_differences\": [\n    \"B存在多处将女性角色误用'他'的严重错误\",\n    \"B整体语言更口语化流畅，A更书面化\",\n    \"段落1拟声词处理：A保留原文，B译为中文\",\n    \"A段落55有校对疏漏（'吧。'重复）\"\n  ],\n  \"final_summary\": \"翻译B在流畅性和口语化表达上略胜一筹，但存在多处将少女角色用'他'指代的严重性别代词错误，这对轻小说读者理解角色关系造成明显障碍。翻译A虽然表达略显正式，有个别格式问题，但准确性和连贯性更有保障。综合考虑准确性是翻译的首要标准，A更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12102,
+          "completion_tokens": 2254,
+          "total_tokens": 14356
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B存在严重的代词性别错误，多次将少女用'他'指代"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，但某些日语直译痕迹明显"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好保持了轻小说风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "专有名词处理一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B的代词错误严重影响角色辨识和阅读连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有引号不统一和重复字问题"
+      }
+    },
+    "key_differences": [
+      "B存在多处将女性角色误用'他'的严重错误",
+      "B整体语言更口语化流畅，A更书面化",
+      "段落1拟声词处理：A保留原文，B译为中文",
+      "A段落55有校对疏漏（'吧。'重复）"
+    ],
+    "final_summary": "翻译B在流畅性和口语化表达上略胜一筹，但存在多处将少女角色用'他'指代的严重性别代词错误，这对轻小说读者理解角色关系造成明显障碍。翻译A虽然表达略显正式，有个别格式问题，但准确性和连贯性更有保障。综合考虑准确性是翻译的首要标准，A更胜一筹。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

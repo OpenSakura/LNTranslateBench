@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:17:58.475519",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "15c73e9e1a324b8dca6020ad9e82998975609519a95dcf6a5ad2030382f56578",
+    "B": "29c959d5e99dd2dbbed405c4a5ad8e240d83efe74b30be0456d9dd6a21790ffe"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:18:37.131078",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a2f7a7b0-7692-4acf-b827-f6926b7fa063",
+      "judge_response": {
+        "id": "a2f7a7b0-7692-4acf-b827-f6926b7fa063",
+        "object": "chat.completion",
+        "created": 1769609916,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性\n- 段落2: B的\"字面意义上的全灭\"更忠实于\"文字通りの全滅\"，A的\"全军覆没\"丢失了\"字面意义\"这一修辞\n- 段落3: B的\"确认\"更准确地传达\"見届けてから\"的意思；A的\"默默盯着\"略显歧义，B的\"无法言语的人\"（もの言わぬ二人）更准确\n- 段落7: \"ものは試し\"B译为\"死马当活马医\"略有过度意译，A的\"试试看\"更贴切\n- 段落69: A严重误译——原文是\"俺\"打寒颤，A错译成格蕾西雅打寒颤，B正确\n\n### 流畅性\n- B整体更自然流畅，如段落5、16、23等\n- A某些表达略显生硬，如段落28\"墓地可能有，只是猜的\"\n\n### 格式问题（重大差异）\n- **A存在严重格式错误**：\n  - 段落36、40、42：将叙述文本错误地加上引号「」\n  - 段落43、45-46、49-53、73-74、76、79：对话文本却缺少引号\n- B格式始终正确一致\n\n### 风格/语气\n- B更符合轻小说对话风格，如\"哼\"地别过脸去\n- A部分对话过于口语化，如\"说那么多了\"\n\n### 术语一致性\n- 两者人名翻译一致\n- A混用\"教堂/教会\"、\"城/城镇\"，B更一致\n\n### 名字翻译\n- 段落30: 人名略有差异（ルサルカ：A\"鲁萨尔卡\" vs B\"露萨尔卡\"），两者皆可\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A段落69严重误译主语；B整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B表达更自然流畅\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A混用教堂/教会，B更一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"两者均可读，B略胜\"},\n    \"formatting\": {\"A\": 4, \"B\": 9, \"notes\": \"A存在多处引号错误——叙述加引号、对话缺引号\"}\n  },\n  \"key_differences\": [\n    \"A段落69将打寒颤的主语误译为格蕾西雅而非主角\",\n    \"A多处格式错误：叙述文本误加引号、对话缺少引号\",\n    \"B的'字面意义上的全灭'更忠实原文\",\n    \"B整体对话风格更符合轻小说特点\"\n  ],\n  \"final_summary\": \"B在准确性、格式规范和整体流畅度上均优于A。A最致命的问题是段落69的主语误译以及大量引号格式错误，严重影响阅读体验。B虽有个别过度意译之处，但整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11212,
+          "completion_tokens": 1782,
+          "total_tokens": 12994
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A段落69严重误译主语；B整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B表达更自然流畅"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "A混用教堂/教会，B更一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者均可读，B略胜"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 9,
+        "notes": "A存在多处引号错误——叙述加引号、对话缺引号"
+      }
+    },
+    "key_differences": [
+      "A段落69将打寒颤的主语误译为格蕾西雅而非主角",
+      "A多处格式错误：叙述文本误加引号、对话缺少引号",
+      "B的'字面意义上的全灭'更忠实原文",
+      "B整体对话风格更符合轻小说特点"
+    ],
+    "final_summary": "B在准确性、格式规范和整体流畅度上均优于A。A最致命的问题是段落69的主语误译以及大量引号格式错误，严重影响阅读体验。B虽有个别过度意译之处，但整体质量更高。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

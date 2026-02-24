@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:23:31.736951",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.Kimi-K2.5.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "004633c4694992ea447333168147059b3c5985dc484e4d1163f7d243d475678a",
+    "B": "f25c5b16f7dd56635f8699bd6aa9b39f82ddc5bd6f5c48cbc2ea5a2dd94330cb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:24:16.153644",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "aba285d9-794b-4747-8ab1-27386adaa85d",
+      "judge_response": {
+        "id": "aba285d9-794b-4747-8ab1-27386adaa85d",
+        "object": "chat.completion",
+        "created": 1769610256,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 1. 准确性分析\n\n**翻译A问题：**\n- 段落27：\"德莱格，不能攻击是弱点\"句式略显生硬\n- 段落59/61/62/65/68：シロガネ翻译不一致，混用\"白金\"和\"白银\"\n\n**翻译B问题：**\n- 段落9/13/15/97/99/104/112：プレゲトーン未翻译，直接保留日文\n- 段落76：\"他一边这样搪塞着\"错误使用第三人称（原文为第一人称叙述）\n- 段落32：\"开火\"用词不当，原文是弓箭\n\n## 2. 流畅性分析\n\n**A较优处：**\n- 段落7：\"扑通扑通吵个不停的心脏\"比B的\"吵得令人心烦的心跳声\"更贴合拟声词\n- 段落25：\"能和佐智子对战真是太好了\"自然连贯\n\n**B较优处：**\n- 段落37：语序调整更自然\n- 段落43：\"畅快的感觉\"比A的\"舒畅\"更口语化\n\n## 3. 术语一致性（严重问题）\n\n**翻译A：**\n- シロガネ：段落59-68混用\"白金\"与\"白银\"（严重错误）\n\n**翻译B：**\n- 大量日文名称未翻译（プレゲトーン出现多次未译）\n- エン翻译不一致（焰/恩混用）\n\n## 4. 格式问题\n\n**翻译A：** 统一使用「」引号 ✓\n**翻译B：** 混用「」和\"\"引号（不一致）\n\n## 5. 风格表现\n\n- A的语气词处理较规范：\"哦\"\"呢\"\n- B有时过度口语化：\"啦～\"\"吧～\"，但也更有轻小说感\n- 段落22：A\"诡异的笑容\" vs B\"令人毛骨悚然的狞笑\"——B更有画面感\n\n## 关键差异总结\n\n| 方面 | A | B |\n|------|---|---|\n| 名称翻译 | 白银/白金混用 | 多处日文未译 |\n| 引号格式 | 统一 | 不统一 |\n| 人称错误 | 无 | 段落76第三人称错误 |\n| 游戏术语 | 抽牌/怪兽 | 抽卡/怪物(混用) |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B有人称错误和'开火'误译，A更忠实原文\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有优劣，整体持平\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A稳健，B更有轻小说感但偶尔过度\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"A有白银/白金混用；B大量未翻译日文名称严重影响阅读\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"B的未翻译名称严重破坏阅读连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"A引号统一，B引号格式混乱\"}\n  },\n  \"key_differences\": [\n    \"B多处保留日文名称未译（プレゲトーン等）严重影响可读性\",\n    \"A的シロガネ翻译在白银/白金间不一致\",\n    \"B段落76错误使用第三人称\",\n    \"A引号格式统一，B混用中日引号\",\n    \"B段落32将弓箭射击译为'开火'\"\n  ],\n  \"final_summary\": \"两份翻译各有缺陷。A的主要问题是角色名'白银/白金'不一致；B的问题更严重——大量日文名称未翻译直接破坏中文阅读体验，加上人称错误和格式混乱。虽然B在部分表达上更有轻小说风格，但未翻译的日文名称是致命硬伤，因此A整体更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13235,
+          "completion_tokens": 1940,
+          "total_tokens": 15175
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B有人称错误和'开火'误译，A更忠实原文"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有优劣，整体持平"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A稳健，B更有轻小说感但偶尔过度"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "A有白银/白金混用；B大量未翻译日文名称严重影响阅读"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "B的未翻译名称严重破坏阅读连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "A引号统一，B引号格式混乱"
+      }
+    },
+    "key_differences": [
+      "B多处保留日文名称未译（プレゲトーン等）严重影响可读性",
+      "A的シロガネ翻译在白银/白金间不一致",
+      "B段落76错误使用第三人称",
+      "A引号格式统一，B混用中日引号",
+      "B段落32将弓箭射击译为'开火'"
+    ],
+    "final_summary": "两份翻译各有缺陷。A的主要问题是角色名'白银/白金'不一致；B的问题更严重——大量日文名称未翻译直接破坏中文阅读体验，加上人称错误和格式混乱。虽然B在部分表达上更有轻小说风格，但未翻译的日文名称是致命硬伤，因此A整体更优。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

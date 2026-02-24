@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:01:04.662572",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.GLM-4.6.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "dd8796cdcb30daa3d40e92ec6133217211a8cbcc7938365dfbf905db9161f015",
+    "B": "09bd3e7271585530dacd1f7a74f6d52c8b7914754a3d86c36448a126fe1b94e4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:02:19.483748",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a1cddfe1-e9e6-4558-877a-ef51a1cf1261",
+      "judge_response": {
+        "id": "a1cddfe1-e9e6-4558-877a-ef51a1cf1261",
+        "object": "chat.completion",
+        "created": 1768431739,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项对比分析\n\n### 准确性问题\n\n**A的问题：**\n- 段落3：将「オリ主」误译为\"作者\"，实际应为\"原创主角\"\n- 段落40：「羽場」误写为\"滨二三一\"，应为\"羽场二三一\"\n- 段落105：使用\"他\"指代叙述者，应为\"我\"（第一人称）\n\n**B的问题：**\n- 段落116：「方輪走行」译为\"裸体行驶\"完全错误，应为\"单侧轮行驶\"\n- 段落147：将「降谷さん」误译为\"安室先生\"\n- 段落114：「エッジ・オブ・オーシャン」译为\"海洋边缘\"不够准确，应保留专有名词\n\n### 流畅性比较\n\nA整体更自然：\n- 段落11：A\"关闭本页\"比B\"浏览器后退\"更通顺\n- 段落47：A\"让我有点在意罢了\"比B\"有点在意而已\"更口语化\n- 段落48：A\"情报还是再多也不嫌多\"比B\"信息越多越好\"更符合中文表达\n\n### 风格/语气\n\n- A保留了更多语气词和轻小说特有的表达（如\"哦\"\"呀\"\"啊\"）\n- B在部分对话中缺少引号格式，不够统一（段落66-76）\n- A段落77\"Yuya\"用罗马字不如B\"悠也\"统一\n\n### 术语一致性\n\n- A使用\"诸伏桑/降谷先生\"混用，B统一用\"先生\"\n- 段落36：A译\"白鸟号\"比B\"天鹅\"更合适（专有名词）\n- 段落21：B\"红烧肉\"比A\"角煮\"更通俗\n\n### 格式问题\n\n- B在多处对话缺少「」标记（段落66-76等），格式不统一\n- A格式整体更规范\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A误译オリ主和人名；B误译方輪走行和降谷/安室混淆更严重\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A表达更自然口语化，B部分译文较生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好地保留了轻小说的对话语气和氛围\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有优劣，A专有名词处理更好，B敬称更统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体阅读流畅度更高\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处对话缺少引号，格式不统一\"}\n  },\n  \"key_differences\": [\n    \"B段落116严重误译「方輪走行」为裸体行驶\",\n    \"B段落147将降谷误写为安室\",\n    \"A段落3误译オリ主为作者\",\n    \"B多处对话缺少引号格式\",\n    \"A整体语言更自然流畅\"\n  ],\n  \"final_summary\": \"两译本各有瑕疵，但B存在更严重的理解错误（方輪走行完全误译、人物混淆），且格式不统一。A虽有个别术语错误，但整体流畅度、语气把握和格式规范性更胜一筹，更适合轻小说阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14292,
+          "completion_tokens": 3286,
+          "total_tokens": 17578
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A误译オリ主和人名；B误译方輪走行和降谷/安室混淆更严重"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A表达更自然口语化，B部分译文较生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好地保留了轻小说的对话语气和氛围"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有优劣，A专有名词处理更好，B敬称更统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体阅读流畅度更高"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处对话缺少引号，格式不统一"
+      }
+    },
+    "key_differences": [
+      "B段落116严重误译「方輪走行」为裸体行驶",
+      "B段落147将降谷误写为安室",
+      "A段落3误译オリ主为作者",
+      "B多处对话缺少引号格式",
+      "A整体语言更自然流畅"
+    ],
+    "final_summary": "两译本各有瑕疵，但B存在更严重的理解错误（方輪走行完全误译、人物混淆），且格式不统一。A虽有个别术语错误，但整体流畅度、语气把握和格式规范性更胜一筹，更适合轻小说阅读体验。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

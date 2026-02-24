@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:26:16.041323",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "5255728ae560ab0b61f08024b697b1cf199f2e6dc246e62c178c23ef8a864179",
+    "B": "c2a76b8ab0ffd188c761f06b49c6f0e3ccbe5559234c1b93035e5e8bcefb1e86"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:27:09.604837",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5bc4c74f-d13e-4d88-aaef-cc1235cfac84",
+      "judge_response": {
+        "id": "5bc4c74f-d13e-4d88-aaef-cc1235cfac84",
+        "object": "chat.completion",
+        "created": 1768422429,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**翻译A的优势：**\n- 段落6：完整保留\"皇帝座驾舰、女皇叶卡捷琳娜号\"的信息\n- 段落7：保留\"命名舰\"(ネームシップ)的准确翻译\n- 段落42/46：正确将\"センターポリス\"译为\"中心都市\"\n\n**翻译B的问题：**\n- 段落42/46：严重错误，将\"センターポリス\"(Center Polis，中心城市)误译为\"中央警察\"，完全改变原意\n- 段落47：将\"ロベール\"译为\"罗伯特\"（后文又如此），但这是法语名，应译为\"罗贝尔\"\n- 段落6：省略\"皇帝座驾舰\"信息\n\n**翻译A的问题：**\n- 段落8：将\"インペラトリーツァ・エカテリーナ級\"误译为\"伊丽莎白·叶卡捷琳娜级\"\n- 段落60：将\"ベルセフォニア\"误写为\"贝塞法尼亚\"\n\n### 2. 流畅性分析\n\n**翻译A：** 较为书面化，句式完整但有时略显冗长\n**翻译B：** 更口语化，简洁但有时过度简化，段落19/21/35等处格式不一致（有时加引号有时不加）\n\n### 3. 风格/语气\n\n**翻译A：** 保持较正式的轻小说叙述风格\n**翻译B：** 过于口语化，如\"这玩意儿\"、\"啥也不是\"、\"怎么搞\"等表达与原文政治军事题材不符\n\n### 4. 术语/名称一致性\n\n**翻译A问题：**\n- 段落18使用繁体\"匹柏爾斯伯爵\"，其他处使用简体\n\n**翻译B问题：**\n- 段落47/48\"罗伯特\"与段落44\"罗贝尔\"不一致\n- 段落70\"马尔巴哈\"与之前\"马尔巴赫\"不一致\n\n### 5. 格式问题\n\n**翻译A：** 引号使用基本一致\n**翻译B：** 段落19、21、35、66、67、68等处引号格式混乱，时有时无\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B将センターポリス误译为中央警察是严重错误；A的伊丽莎白误译也是问题\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A较正式但略冗长，B简洁但有时过于简化\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"B过于口语化，不符合政治军事题材的轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"两者都有名称不一致问题，A略好\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A信息更完整，B有省略\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"B引号格式混乱，多处该加引号未加\"}\n  },\n  \"key_differences\": [\n    \"センターポリス翻译：A正确译为'中心都市'，B错译为'中央警察'\",\n    \"语言风格：A保持正式感，B过于口语化\",\n    \"信息完整度：A更完整，B多处简化省略\",\n    \"格式一致性：A较一致，B引号使用混乱\"\n  ],\n  \"final_summary\": \"翻译A在准确性上明显优于B，尤其是B将'センターポリス'误译为'中央警察'是致命错误。A虽有个别问题如'伊丽莎白'误译，但整体准确度、风格把握和格式规范都更好。B的过度口语化表达不适合本作品的政治军事题材。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11822,
+          "completion_tokens": 2403,
+          "total_tokens": 14225
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B将センターポリス误译为中央警察是严重错误；A的伊丽莎白误译也是问题"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A较正式但略冗长，B简洁但有时过于简化"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "B过于口语化，不符合政治军事题材的轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "两者都有名称不一致问题，A略好"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A信息更完整，B有省略"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "B引号格式混乱，多处该加引号未加"
+      }
+    },
+    "key_differences": [
+      "センターポリス翻译：A正确译为'中心都市'，B错译为'中央警察'",
+      "语言风格：A保持正式感，B过于口语化",
+      "信息完整度：A更完整，B多处简化省略",
+      "格式一致性：A较一致，B引号使用混乱"
+    ],
+    "final_summary": "翻译A在准确性上明显优于B，尤其是B将'センターポリス'误译为'中央警察'是致命错误。A虽有个别问题如'伊丽莎白'误译，但整体准确度、风格把握和格式规范都更好。B的过度口语化表达不适合本作品的政治军事题材。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

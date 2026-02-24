@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:21:46.438734",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.Kimi-K2.5.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "bc6007430ee46025de3009e1d8e4bedacbcdc551db273d3a6ff43bcf29d7efeb",
+    "B": "de9996ffb6aede92b320172663d86014cd1ca39c687ddb46ba8ae878a96405ee"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:22:25.060816",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "af423a4e-a3da-4289-9acc-fde0afa86525",
+      "judge_response": {
+        "id": "af423a4e-a3da-4289-9acc-fde0afa86525",
+        "object": "chat.completion",
+        "created": 1769610144,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 逐段关键差异分析\n\n**段落6**：「問題の種」\n- A译为\"问题的根源\"（意译，符合中文习惯）\n- B译为\"问题的种子\"（直译，略显生硬）\n\n**段落7**：「援護する」\n- A译为\"打圆场\"（准确传达帮忙圆话的语境）\n- B译为\"补充说明\"（略偏离原意，失去了\"援护\"的微妙感）\n\n**段落9-13, 21-23, 27-28等**：\n- B在对话中混用「」和\"\"，格式不统一\n- A始终保持「」格式\n\n**段落14**：「階級」\n- A译为\"阶级\"（略不专业）\n- B译为\"警衔\"（更准确的警察术语）\n\n**段落21**：关键理解差异\n- A误译：\"也可以认为是同伙散布了警察的虚假信息\"（逻辑混乱）\n- B正确：\"或许会认为警察散布虚假信息，利用其善意杀害了他\"\n\n**段落42**：「生きた心地がしなかった」\n- A译为\"心神不宁\"（准确）\n- B译为\"生不如死\"（严重误译，原意是\"提心吊胆\"）\n\n**段落44**：句子结构\n- A正确保留了\"我嘟囔\"的主语\n- B错误地将说话者换成了诸伏\n\n**段落65**：「数年後も」\n- A译为\"几年后\"（漏译「も」）\n- B译为\"几年后也是\"（准确）\n\n### 综合评估\n\n| 方面 | A优势 | B优势 |\n|------|-------|-------|\n| 准确性 | 段落7、42、44表现更好 | 段落21理解正确 |\n| 流畅性 | 整体表达自然 | 部分对话更口语化 |\n| 格式 | 统一使用「」 | 格式混乱 |\n| 术语 | - | \"警衔\"等更专业 |\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在段落42、44表现更好；B在段落21理解正确但在42有严重误译\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相当，各有千秋\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A轻小说叙述感更稳定，B部分对话口语化好但不够统一\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B的警衔等术语更专业，A的阶级略显业余\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯性更好，B段落44主语错位影响阅读\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"A格式统一，B对话符号混用「」和\\\"\\\"严重影响一致性\"}\n  },\n  \"key_differences\": [\n    \"格式一致性：A统一使用「」，B混用两种引号\",\n    \"段落42：A正确译为'心神不宁'，B误译为'生不如死'\",\n    \"段落44：A正确保留说话主语，B错误调换\",\n    \"段落7：A的'打圆场'比B的'补充说明'更贴切\",\n    \"段落21：B对犯人同伙视角的理解比A更准确\"\n  ],\n  \"final_summary\": \"A在格式统一性、关键段落准确性（42、44）和整体连贯性上表现更优。B虽在个别术语和段落21理解上略胜，但格式混乱和段落42的严重误译拉低了整体质量。综合考量，A更适合作为轻小说翻译成品。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11752,
+          "completion_tokens": 1767,
+          "total_tokens": 13519
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在段落42、44表现更好；B在段落21理解正确但在42有严重误译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相当，各有千秋"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A轻小说叙述感更稳定，B部分对话口语化好但不够统一"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的警衔等术语更专业，A的阶级略显业余"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯性更好，B段落44主语错位影响阅读"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "A格式统一，B对话符号混用「」和\"\"严重影响一致性"
+      }
+    },
+    "key_differences": [
+      "格式一致性：A统一使用「」，B混用两种引号",
+      "段落42：A正确译为'心神不宁'，B误译为'生不如死'",
+      "段落44：A正确保留说话主语，B错误调换",
+      "段落7：A的'打圆场'比B的'补充说明'更贴切",
+      "段落21：B对犯人同伙视角的理解比A更准确"
+    ],
+    "final_summary": "A在格式统一性、关键段落准确性（42、44）和整体连贯性上表现更优。B虽在个别术语和段落21理解上略胜，但格式混乱和段落42的严重误译拉低了整体质量。综合考量，A更适合作为轻小说翻译成品。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

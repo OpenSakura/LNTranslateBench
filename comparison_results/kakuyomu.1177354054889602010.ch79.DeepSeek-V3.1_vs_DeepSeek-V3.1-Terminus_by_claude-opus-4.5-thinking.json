@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:24:50.735005",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "fb57e1153499694def84144129528076dceea3d6c29f8a3598454e6a035450ae",
+    "B": "a833f9bf4d8de01c5d60ba9614d4299d24919cc7f8734d50e2e5be8162b2b386"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:25:29.503855",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "050ff158-f663-45ab-8cc4-0d637ec9e906",
+      "judge_response": {
+        "id": "050ff158-f663-45ab-8cc4-0d637ec9e906",
+        "object": "chat.completion",
+        "created": 1768422328,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 段落1：标题翻译\n- **A**: 保留日语原文\"sideゴブラル\"未翻译\n- **B**: 翻译为\"side哥布林王\"\n- B正确翻译了章节标题，A的处理不当。\n\n### 人名处理（关键差异）\n原文中的\"ゴーブラ\"是一个角色名：\n- **A**: 多次错译为\"哥布林队长\"（段落14、19、24、26）\n- **B**: 正确音译为\"哥布拉\"\n\n这是一个重大准确性问题。ゴーブラ明显是专有名词，A将其误解为职称。\n\n### 段落47：人名翻译\n- **A**: \"玛泽尔\"（简体中文）\n- **B**: \"瑪澤爾\"（繁体中文字符）\n- 目标语言为简体中文，B的用字不一致。\n\n### 语言流畅性比较\n- 段落32：A\"钓鱼伏击\" vs B\"诱敌埋伏\"——两者都可接受\n- 段落33：A\"就是这么回事吧？喂，你这不就是...\" vs B\"「就是这么回事吧」这话说的，你这不就是...\"——B更自然地表达了吐槽语气\n- 段落42：B的\"权宜之计\"比A的\"程度的战术罢了\"更地道\n\n### 叫声/拟声词处理\n- 段落55：两者处理方式不同，B的\"鱼鱼鱼\"较为生硬\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A将专有名词ゴーブラ多次错译为'哥布林队长'，是重大错误；B正确音译为'哥布拉'\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"两者都较流畅，B的表达更自然，如'权宜之计'、'碾碎'等用词更地道\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的轻小说对话语气把握更好，吐槽感更强\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A的人名处理有严重问题；B使用繁体'瑪澤爾'与简体中文不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的段落衔接更自然，A的名称错误影响理解\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A未翻译段落1的标题，B正确处理\"}\n  },\n  \"key_differences\": [\n    \"ゴーブラ翻译：A错译为'哥布林队长'，B正确音译为'哥布拉'\",\n    \"章节标题：A未翻译sideゴブラル，B翻译为side哥布林王\",\n    \"マゼル翻译：A用简体'玛泽尔'，B用繁体'瑪澤爾'\",\n    \"整体语感：B的轻小说风格把握更准确\"\n  ],\n  \"final_summary\": \"B在准确性方面明显优于A，特别是正确处理了关键人名ゴーブラ。A将其反复错译为职称，影响了故事理解。B的语言表达也更自然流畅。但B在人名マゼル处使用了繁体字符，与目标简体中文不一致。综合考虑，B的整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12892,
+          "completion_tokens": 1771,
+          "total_tokens": 14663
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A将专有名词ゴーブラ多次错译为'哥布林队长'，是重大错误；B正确音译为'哥布拉'"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者都较流畅，B的表达更自然，如'权宜之计'、'碾碎'等用词更地道"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的轻小说对话语气把握更好，吐槽感更强"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A的人名处理有严重问题；B使用繁体'瑪澤爾'与简体中文不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的段落衔接更自然，A的名称错误影响理解"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A未翻译段落1的标题，B正确处理"
+      }
+    },
+    "key_differences": [
+      "ゴーブラ翻译：A错译为'哥布林队长'，B正确音译为'哥布拉'",
+      "章节标题：A未翻译sideゴブラル，B翻译为side哥布林王",
+      "マゼル翻译：A用简体'玛泽尔'，B用繁体'瑪澤爾'",
+      "整体语感：B的轻小说风格把握更准确"
+    ],
+    "final_summary": "B在准确性方面明显优于A，特别是正确处理了关键人名ゴーブラ。A将其反复错译为职称，影响了故事理解。B的语言表达也更自然流畅。但B在人名マゼル处使用了繁体字符，与目标简体中文不一致。综合考虑，B的整体质量更高。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

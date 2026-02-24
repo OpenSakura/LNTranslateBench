@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-02-13T00:04:37.745687",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "GLM-5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "GLM-5"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.GLM-5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "84ab9185d866ed21c738371b571476d438d420dd991fbdadecc38d849d51add2",
+    "B": "4d3262b62e44629680469ec0f71cb41f90629b7e06eb88ef378ce30c3ff336ef"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-02-13T00:05:48.007499",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026021300043945599868kehAK2te",
+      "judge_response": {
+        "id": "chatcmpl-2026021300043945599868kehAK2te",
+        "object": "chat.completion",
+        "created": 1770941147,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的分段文本进行的详细评测：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **关键错误 (Translation A):** 在**段落 23** 中出现了严重的误译。\n    *   原文：「...わたしたちの敵ではありません。」（意为：它们不是我们的对手/敌手，即我们更强）。\n    *   译文 A：「...我们绝非其敌手。」（意为：我们完全打不过它们）。\n    *   译文 B：「...它根本不是我们的对手。」（正确）。\n    *   这一错误导致主角在后续段落（如段落 31-35）论证“因为我们很强所以很安全”的逻辑在 A 版本中完全崩塌。\n*   **地名/名词错误 (Translation A):**\n    *   **段落 9:** 原文「ウエノ」(Ueno) 指的是东京的“上野”。A 译为“ウェノ”(Weno)，可能是误读了片假名；B 正确译为“上野”。\n    *   **段落 40:** A 将「マタタビ」(Matatabi) 译为“玛塔比”，漏掉了音节，且与自己在段落 3 的译法“玛塔塔比”不一致。\n\n**2. 流畅性与风格 (Fluency & Style)**\n*   **Translation A:** 整体文笔优于 B。A 的措辞更具文学性，符合轻小说的叙述语感。例如段落 45 的“愚见也是蠢行”比 B 的直译更精炼；段落 65 的“次等货色”也很好地体现了说话者的傲慢与自信。\n*   **Translation B:** 译文略显生硬，有时保留了日语的语序（如段落 12 的修饰语堆砌），读起来不如 A 顺畅。但在对话的自然度上尚可。\n\n**3. 术语与一致性 (Terminology & Consistency)**\n*   **Translation A:** 存在前后不一致（玛塔塔比 vs 玛塔比）。\n*   **Translation B:** 术语保持一致。对于“マタタビ”，B 选择了意译“木天蓼”（一种植物，常用于猫），A 选择了音译。考虑到轻小说人名通常音译，A 的选择可能更常规，但 B 的一致性更好。对于神名“ワダツミ”，B 使用了汉字“绵津见”，A 使用了意译“海神”，两者皆可，但 B 更具专有名词感。\n\n**4. 连贯性 (Coherence)**\n*   由于 A 在段落 23 的逻辑反转错误，导致主角后续劝说同伴“不要害怕”的理由变得不可理喻（既然打不过，为什么还要说没问题？）。B 的逻辑通顺。\n\n### 最终判决\n\n尽管译文 A 在润色和文笔上表现出色，读起来更有轻小说的味道，但它在**段落 23 犯了一个致命的逻辑错误**（意思完全相反），并且有地名误译和人名不一致的问题。译文 B 虽然文采稍逊，但准确地传达了原文的意思和逻辑，没有硬伤。在翻译质量评估中，准确性（尤其是核心逻辑的准确性）优先于文笔。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A在段落23将'它们不是我们的对手'误译为'我们绝非其敌手'，导致逻辑崩塌；且将'上野'误译为'ウェノ'。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的中文表达更自然、精炼，文学性更强。B略显生硬，有翻译腔。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A更好地捕捉了角色的语气（如自信、傲慢）。\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A人名前后不一致（玛塔塔比/玛塔比），地名错误。B准确且一致。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A的逻辑错误严重影响了情节理解。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者格式均良好。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落23逻辑反转：A译反了双方实力对比，B正确。\",\n    \"地名识别：A误译'上野'为'ウェノ'，B正确译为'上野'。\",\n    \"一致性：A中途拼写错误（玛塔比），B保持一致。\",\n    \"文笔：A明显优于B，但无法弥补准确性的硬伤。\"\n  ],\n  \"final_summary\": \"译文A的文笔流畅优美，非常适合轻小说阅读，但在关键情节上出现了致命的误译（颠倒了敌我实力对比），导致逻辑不通，且存在地名误读和人名不一致的低级错误。译文B虽然文采平实，偶有翻译腔，但准确无误地传达了原文的逻辑和信息。基于准确性优先的原则，B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7457,
+          "completion_tokens": 6488,
+          "total_tokens": 13945
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A在段落23将'它们不是我们的对手'误译为'我们绝非其敌手'，导致逻辑崩塌；且将'上野'误译为'ウェノ'。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的中文表达更自然、精炼，文学性更强。B略显生硬，有翻译腔。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地捕捉了角色的语气（如自信、傲慢）。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "A人名前后不一致（玛塔塔比/玛塔比），地名错误。B准确且一致。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "A的逻辑错误严重影响了情节理解。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式均良好。"
+      }
+    },
+    "key_differences": [
+      "段落23逻辑反转：A译反了双方实力对比，B正确。",
+      "地名识别：A误译'上野'为'ウェノ'，B正确译为'上野'。",
+      "一致性：A中途拼写错误（玛塔比），B保持一致。",
+      "文笔：A明显优于B，但无法弥补准确性的硬伤。"
+    ],
+    "final_summary": "译文A的文笔流畅优美，非常适合轻小说阅读，但在关键情节上出现了致命的误译（颠倒了敌我实力对比），导致逻辑不通，且存在地名误读和人名不一致的低级错误。译文B虽然文采平实，偶有翻译腔，但准确无误地传达了原文的逻辑和信息。基于准确性优先的原则，B胜出。"
+  },
+  "outcome": "GLM-5_win",
+  "winner_model": "GLM-5"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:28:59.382184",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "c430aed52e71669e0ec9415a6e3fba25d88bea733bfdac5e23be1c117e34d6d1",
+    "B": "87e015113d0b37e4bb704c7cb9316e148331f489c1fdd64e01c2ff32a3fe2834"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:30:02.781119",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5f554e7d-e0cf-4105-8fcc-ac6cdc71ad4f",
+      "judge_response": {
+        "id": "5f554e7d-e0cf-4105-8fcc-ac6cdc71ad4f",
+        "object": "chat.completion",
+        "created": 1768422602,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项详细分析\n\n### 1. 准确性\n**段落1**: A\"闲得快要发霉\"意译生动，B\"超级无聊\"直译忠实原文\"超絶暇\"\n**段落9**: \"可愛くない\"，A译\"不好看\"有偏差，B译\"不可爱\"更准确\n**段落10**: \"シュッとした\"，A译\"正式一点\"有误，B译\"修身\"更准确\n**段落29**: B严重错误——\"造诣了吉娜斯蒂拉\"应为\"造访\"，语义完全错误\n**段落31**: A出现离谱错误——把技能名音译成\"拉佩伊金斯暗影\"，B\"黑暗怒击爆射\"虽不佳但尚可理解\n\n### 2. 流畅性\n- A整体更口语化自然，如\"闲得快要发霉\"\"上头\"\"跑来跑去\"\n- B部分表达生硬，如\"努力进行着女生谈话\"\"平白无故多了不少杂事\"\n- A段落7\"全都像早产的巨神兵\"比B\"为时过早的巨神兵\"更自然\n\n### 3. 风格/语气\n- A更符合轻小说活泼轻松的叙事风格\n- B对话语气略显平淡，如段落27 A\"嘛嘛，少爷\"vs B\"好啦好啦少爷\"\n\n### 4. 术语一致性\n**A的严重问题**: 同一技能\"ランペイジングダークネス\"翻译不一致\n- 段落22: \"暗影爆裂\"\n- 段落26: \"暗影渗透\"  \n- 段落31: \"拉佩伊金斯暗影\"（完全崩溃）\n\n**B相对一致**: 始终译为\"狂暴黑暗\"相关表述\n\n地名\"デルブリュック\": A不一致(德尔布鲁克/德布鲁克)，B一致(德尔布吕克)\n\n### 5. 连贯性/可读性\n- 两者整体可读性都不错\n- A叙述更有节奏感\n\n### 6. 格式/标点\n- B部分对话缺少逗号分隔（如段落2、4）\n- A标点使用更规范\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A部分意译偏差，B有'造诣'致命错误；互有得失\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A口语化自然，B部分表达生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更符合轻小说轻松活泼风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A技能名翻译严重不一致(三种译法)，B保持一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙述更流畅有节奏\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B部分对话标点缺失\"}\n  },\n  \"key_differences\": [\n    \"A术语一致性严重崩溃（同一技能三种译法），B保持一致\",\n    \"B在段落29出现致命翻译错误（造诣→造访）\",\n    \"A整体流畅度和轻小说风格明显优于B\",\n    \"A对'シュッとした'等词理解有偏差，B更准确\",\n    \"A段落31出现不可接受的音译错误\"\n  ],\n  \"final_summary\": \"两个译本各有严重缺陷：A在术语一致性上完全崩溃（技能名三种译法），B在段落29出现致命语义错误。但综合考量，A在流畅性、风格把握、整体可读性上明显优于B，更符合轻小说翻译的核心要求。A的术语问题虽严重但属于可修复的技术性错误，而B的生硬感贯穿全文。因此A以较小优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9729,
+          "completion_tokens": 2861,
+          "total_tokens": 12590
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A部分意译偏差，B有'造诣'致命错误；互有得失"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A口语化自然，B部分表达生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更符合轻小说轻松活泼风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A技能名翻译严重不一致(三种译法)，B保持一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙述更流畅有节奏"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B部分对话标点缺失"
+      }
+    },
+    "key_differences": [
+      "A术语一致性严重崩溃（同一技能三种译法），B保持一致",
+      "B在段落29出现致命翻译错误（造诣→造访）",
+      "A整体流畅度和轻小说风格明显优于B",
+      "A对'シュッとした'等词理解有偏差，B更准确",
+      "A段落31出现不可接受的音译错误"
+    ],
+    "final_summary": "两个译本各有严重缺陷：A在术语一致性上完全崩溃（技能名三种译法），B在段落29出现致命语义错误。但综合考量，A在流畅性、风格把握、整体可读性上明显优于B，更符合轻小说翻译的核心要求。A的术语问题虽严重但属于可修复的技术性错误，而B的生硬感贯穿全文。因此A以较小优势胜出。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

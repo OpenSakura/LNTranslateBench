@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:03:48.166051",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "b000f44ba3eb11ebd7b74e2ab7f7d3212a2e3d21982f3b37a857e1a15a7e534b",
+    "B": "3f4642d4d1d4115d910a46276655b9796370185a02d3d6c06e4f7ba74d47ef15"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:04:42.430872",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "33a6c6f9-8880-4ffd-a279-82c7a3e52b66",
+      "judge_response": {
+        "id": "33a6c6f9-8880-4ffd-a279-82c7a3e52b66",
+        "object": "chat.completion",
+        "created": 1768421082,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 名称翻译对比\n\n**段落1 (ステア)**：A译\"斯黛拉\"偏离原音，B译\"斯特亚\"更接近日语发音。\n\n**段落19 (シスコン)**：A正确译为\"妹控\"，B错误译为\"姐控\"——シスコン指的是对妹妹的情结，不是姐姐。\n\n**段落61-62 (ガルボ)**：A不一致地使用\"加尔波\"和\"加尔博\"，B统一使用\"加尔博\"。\n\n**段落69 (チャライ風体)**：A正确译为\"打扮轻浮\"，B错误保留为\"查莱型\"（未翻译）。\n\n**段落100 (ワラビー)**：两者都出错！ワラビー是\"小袋鼠/沙袋鼠\"，A译\"蕨菜\"、B译\"蕨类植物\"都完全错误。\n\n### 2. 流畅度与风格\n\n**段落5**：A\"将喂饱某人视为燃烧的使命\"较生硬，B\"她把让人多吃饭当作自己的使命\"更自然。\n\n**段落91 (ごろごろ)**：猫的ごろごろ是打呼噜声，B的\"呼噜呼噜\"比A的\"咕噜咕噜打滚\"更准确。\n\n**段落77-87 (名字处理)**：A保留日文假名如\"コクヨウ[黑曜]\"，B直接用中文\"黑曜[黒曜]\"，B的处理对中文读者更友好。\n\n### 3. 细节准确性\n\n**段落151**：原文是トーマ，A错误译为\"托马斯\"，B正确译为\"托马\"。\n\n**段落26 (シブい)**：A\"成熟帅气\"准确传达了シブい的含义，B丢失了这个细微差别。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A错译シスコン为正确，B错译；但A有トーマス错误，B有チャライ未译；两者都错译ワラビー\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体更自然流畅，A部分译文较生硬如段落5\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说的轻松口吻，A偏正式\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A名称不一致(加尔波/加尔博)，B更统一但部分名字音译选择欠佳\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的名字处理(中文优先)更便于阅读\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式相当，B标点更统一\"}\n  },\n  \"key_differences\": [\n    \"B流畅度明显优于A，更符合轻小说风格\",\n    \"A正确翻译シスコン为妹控，B错译为姐控\",\n    \"B错误保留チャライ未译，A正确译为打扮轻浮\",\n    \"A名称一致性较差(加尔波/加尔博混用)\",\n    \"两者都严重错译ワラビー(小袋鼠)为蕨类植物\"\n  ],\n  \"final_summary\": \"B在流畅度和风格上明显胜出，更适合轻小说的阅读体验。虽然B有シスコン和チャライ的翻译错误，但A也有名称不一致和トーマス错译等问题。综合考虑，B的整体阅读体验更佳，以较小优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16259,
+          "completion_tokens": 2429,
+          "total_tokens": 18688
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A错译シスコン为正确，B错译；但A有トーマス错误，B有チャライ未译；两者都错译ワラビー"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体更自然流畅，A部分译文较生硬如段落5"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说的轻松口吻，A偏正式"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A名称不一致(加尔波/加尔博)，B更统一但部分名字音译选择欠佳"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的名字处理(中文优先)更便于阅读"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式相当，B标点更统一"
+      }
+    },
+    "key_differences": [
+      "B流畅度明显优于A，更符合轻小说风格",
+      "A正确翻译シスコン为妹控，B错译为姐控",
+      "B错误保留チャライ未译，A正确译为打扮轻浮",
+      "A名称一致性较差(加尔波/加尔博混用)",
+      "两者都严重错译ワラビー(小袋鼠)为蕨类植物"
+    ],
+    "final_summary": "B在流畅度和风格上明显胜出，更适合轻小说的阅读体验。虽然B有シスコン和チャライ的翻译错误，但A也有名称不一致和トーマス错译等问题。综合考虑，B的整体阅读体验更佳，以较小优势胜出。"
+  },
+  "outcome": "Qwen3-30B-A3B-Thinking-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Thinking-2507"
+}

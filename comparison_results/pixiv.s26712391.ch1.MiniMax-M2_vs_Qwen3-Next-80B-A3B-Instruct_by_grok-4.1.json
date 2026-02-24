@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:45:19.086359",
+  "sample": "pixiv.s26712391.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26712391.ch1.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26712391.ch1.MiniMax-M2.translated.txt",
+    "B": "translated_results/pixiv.s26712391.ch1.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f704bc6475e324efffb4fa390733d8170d454e4947204c1dc291d3ec83d24451",
+    "A": "31c3527135bd9170b629990216521ad97ff73c52de0002ce8599aede337f85db",
+    "B": "ca48a625c379200bd0bcc1ea3571d30398c706f4e48591d50be1adf71983804c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:39.455243",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Deymqt97rGu0SaENBySMs9fRWJ5",
+      "judge_response": {
+        "id": "chatcmpl-89Deymqt97rGu0SaENBySMs9fRWJ5",
+        "object": "chat.completion",
+        "created": 1768427138,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔧 **Using tool:** code_execution\n> 📝 **Parameters:** code: print(\"No code execution needed for this translati...\n\n> 🔍 **Searching for:** \"轻小说翻译质量评价标准 准确性 流畅性 风格 术语一致性\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"日文轻小说中文翻译常见问题 死に戻り 翻译\"\n> 📊 **Results requested:** 5\n\n> 🔍 **5 results found**\n\n> [🔗 \"SakuraLLM术语表功能深度指南：提升翻译准确性的终极技巧 - CSDN博客\" blog.csdn.net](https://blog.csdn.net/gitblog_00287/article/details/155152522)\n> [🔗 \"腾讯混元开源翻译模型1.5，端侧可部署，效果超越商用API - InfoQ\" www.infoq.cn](https://www.infoq.cn/article/jPBQa2PLqigECgqqYQOP)\n> [🔗 \"1.8B！腾讯开源新模型，1GB内存手机离线跑，媲美Qwen3-235B\" zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/1989650483883820024)\n> [🔗 \"腾讯宣布推出混元开源翻译模型1.5 曾拿下多项世界翻译比赛冠军 - 新浪财经\" finance.sina.com.cn](https://finance.sina.com.cn/stock/t/2025-12-30/doc-inhequph9553328.shtml)\n> [🔗 \"机器翻译：基础与模型\" niutrans.github.io](https://niutrans.github.io/MTBook/mt-book.pdf)\n\n> 🔍 **5 results found**\n\n> [🔗 \"日语学习30天入门 - tss john | オンラインでPDFをめくる - FlipHTML5\" fliphtml5.com](https://fliphtml5.com/cialx/pktt/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A030%E5%A4%A9%E5%85%A5%E9%97%A8)\n> [🔗 \"答 案 解 析\" mlp-resources.fltrp.com](https://mlp-resources.fltrp.com/data/User/mlp_riyu/home/52132322/20211015170157.pdf)\n> [🔗 \"Steam コミュニティ:: EXAPUNKS\" steamcommunity.com](https://steamcommunity.com/app/716490/reviews?browsefilter=toprated&filterLanguage=schinese&l=japanese)\n> [🔗 \"日语能力考试二级语法句型整理！(必考)-论坛精华贴\" www.ffsky.com](http://www.ffsky.com/article/bc5739_a13586.aspx)\n> [🔗 \"日语翻译理论与实务 | PDF - Scribd\" www.scribd.com](https://www.scribd.com/document/501600417/%E6%97%A5%E8%AF%AD%E7%BF%BB%E8%AF%91%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E5%8A%A1)\n\n\n这是一个轻小说片段，带有强烈的第一人称内心独白、情感爆发、回忆闪回，以及轻小说常见的戏剧化、少女心、绝望与依恋交织的语气。源文使用“ボク”作为自称（少女用ボク，带有中性或个性特征），角色名如レイアちゃん、ハンナちゃん、ヒロちゃん等可爱化，关键术语如“魔女因子”“死に戻り”。\n\n整体比较后，**翻译B** 在大多数段落更胜一筹。它更忠实于原文的口语化、情感强度、叙述节奏和轻小说风格，同时中文更自然流畅，少有生硬或过度意译的地方。A有时过于简洁或改写，导致语气弱化、细节丢失或不够生动。\n\n### 详细分析（按评估维度）\n\n1. **准确性（意思保留）**  \n   B 整体更贴近原文语义，几乎无明显增删或误译。例如：  \n   - 段落2：原文“うつ伏せになって倒れたレイアちゃんが居た” → B“我看见レイア酱脸朝下倒在地上”准确传达了“我”视角看见的客观事实；A“蕾雅酱正趴着倒在地上”少了“我看见”的主观视角。  \n   - 段落8：原文强调“殺してしまった友達”（自己造成的死亡）→ B“我想陪在那个被我杀死的朋友身边”直接保留了罪恶感；A“因自己失误而被杀的朋友”软化了“殺してしまった”的直接责任感。  \n   - 段落85-87：关键“死に戻り”→ A“死亡回溯”、B“【死而复生】”，但结合上下文B在86用“复活”“回到过去”更符合常见“死に戻り”含义（死亡后时间倒流复活）。A的“死亡回溯”虽常见但稍显生硬。  \n   B 在关键情感转折、因果关系上保留更完整。\n\n2. **流畅性（中文自然表达）**  \n   B 的中文更符合现代网络轻小说读者的阅读习惯，口语感强、节奏好。  \n   - 段落5：B“她本该是可爱又高贵的，可那双翠绿色的眼眸里，曾充满希望的温柔光芒，已经彻底消失了。”更连贯、有文学感；A“本该可爱而高贵的她，翠玉色的眼眸里盈满希望的光已经消失了”稍显拗口。  \n   - 段落12：B“肚子好痛。痛得让人浑身发抖。”自然；A“疼得让人起鸡皮疙瘩”虽生动但“ぞっとする”更偏寒意/毛骨悚然，B“浑身发抖”贴合恐惧感。  \n   - 段落19：B“不要啊。不要啊。我还想活着啊。”重复+“啊”更口语化、绝望感强；A“讨厌。不要。我还不想死。”较平。  \n   A 偶尔有文绉绉或简略表达，B 更顺滑。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   轻小说强调可爱、病娇、内心碎碎念、情感爆发。B 更好地保留了这种“少女ボク”的脆弱、执着、撒娇感。  \n   - 自称：A 多用“希罗酱”，保持可爱；但B 在后期回忆中渐转为“希罗”，符合情感深化（从酱→本名）的细腻变化。  \n   - 段落21/26：B“好想见希罗。好想见希罗。” / “我好想见希罗。” 更直接恳切；A用“想见希罗酱”稍显拘谨。  \n   - 段落84：B“不要啊。怎么会这样结束啊。……满嘴都是希罗酱、希罗酱，别的啥都不想。” 碎念+自嘲很轻小说味；A 较叙述化。  \n   B 的语气更贴近绝望中仍依恋的少女内心。\n\n4. **术语/名称一致性**  \n   两者都基本一致：レイア→蕾雅/レイア（B保留片假名更专业）、ハンナ→汉娜、ヒロ→希罗。  \n   “魔女因子”一致。  \n   “死に戻り”：A“死亡回溯”、B“【死而复生】”——轻小说圈“死に戻り”常译“死亡回归”“死而复生”“轮回死亡”等，B的【】+“死而复生”更突出专有名词感，一致性略胜。  \n   两者均无重大不一致。\n\n5. **连贯性/可读性**  \n   B 整段阅读下来情绪递进更顺：从震惊→自责→回忆→释然→遗言，节奏感强。  \n   A 在长段（如28-29、32等回忆）有时改写过多，导致前后衔接稍弱。B 更紧扣原文逻辑，连贯性更好。\n\n6. **格式/标点符号**  \n   两者标点类似，都使用——、…等轻小说常见表达。  \n   B 在对话/内心独白中更灵活使用“啊”“呀”“呢”等语气助词，格式上更生动。  \n   平局或微弱B优。\n\n**关键差异总结**：\n- B 更忠实原文细节与情感强度，少有软化/省略。\n- B 的中文更口语、自然、富有轻小说“卖萌+病气”味。\n- A 在某些地方更“文学化”或简洁，但牺牲了部分语气和准确性。\n- 少数段落A更优雅（如段落5的“盈满希望的光”诗意），但整体B胜出更多。\n\n最终判决：\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 9, \"notes\": \"B在视角、责任归属、关键术语如死に戻り处理更精确，A偶有软化或视角偏移\"},\n    \"fluency\": {\"A\": 8, \"B\": 9, \"notes\": \"B中文更自然口语，节奏感强；A偶尔略生硬或简略\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地捕捉轻小说式的少女内心碎念、绝望依恋与可爱感，A稍显平淡或叙述化\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"两者名称一致，B的【死而复生】更突出专有名词感，轻微胜出\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B情绪递进与回忆连贯性更强，整篇可读性高\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B语气助词与标点使用更生动灵活，贴合轻小说风格\"}\n  },\n  \"key_differences\": [\n    \"B在情感爆发段（如19、21、84、90-95）更强烈、重复恳求感更真实\",\n    \"A部分段落（如8、11）软化了原文的自责/残酷感\",\n    \"B回忆部分（如28-42）更忠实口语化叙述，A改写较多导致语气稍弱\",\n    \"整体B更符合现代中文轻小说读者习惯的自然+卖点表达\"\n  ],\n  \"final_summary\": \"翻译B整体更优秀，更准确保留原文情感深度与轻小说风格，同时中文表达更流畅自然、可读性强。A虽在个别句子有诗意，但整体逊色。推荐B作为优胜翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12366,
+          "completion_tokens": 3532,
+          "total_tokens": 15898
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "B在视角、责任归属、关键术语如死に戻り处理更精确，A偶有软化或视角偏移"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B中文更自然口语，节奏感强；A偶尔略生硬或简略"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地捕捉轻小说式的少女内心碎念、绝望依恋与可爱感，A稍显平淡或叙述化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "两者名称一致，B的【死而复生】更突出专有名词感，轻微胜出"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B情绪递进与回忆连贯性更强，整篇可读性高"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B语气助词与标点使用更生动灵活，贴合轻小说风格"
+      }
+    },
+    "key_differences": [
+      "B在情感爆发段（如19、21、84、90-95）更强烈、重复恳求感更真实",
+      "A部分段落（如8、11）软化了原文的自责/残酷感",
+      "B回忆部分（如28-42）更忠实口语化叙述，A改写较多导致语气稍弱",
+      "整体B更符合现代中文轻小说读者习惯的自然+卖点表达"
+    ],
+    "final_summary": "翻译B整体更优秀，更准确保留原文情感深度与轻小说风格，同时中文表达更流畅自然、可读性强。A虽在个别句子有诗意，但整体逊色。推荐B作为优胜翻译。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

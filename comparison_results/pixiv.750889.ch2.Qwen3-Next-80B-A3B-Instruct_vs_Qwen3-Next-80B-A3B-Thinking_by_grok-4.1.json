@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:44.834920",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "Qwen3-Next-80B-A3B-Instruct",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "1ff2991dfa992b87f5b1b336b6615f8d66ab2ebc43ad619f023f7d52cbeb5632",
+    "B": "905920756f120593e52bc3d67ccc3f1ccc6642560e01785a189faebeca33b67f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:06.057669",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Dd8gjEqVYSXkZl37nSA7J2oFXdF",
+      "judge_response": {
+        "id": "chatcmpl-89Dd8gjEqVYSXkZl37nSA7J2oFXdF",
+        "object": "chat.completion",
+        "created": 1768427105,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 吉田歩美 お兄ちゃん 彼方\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"名探偵コナン ファン fic 吉田彼方\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"サザエさん時空 意味\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> 📋 **Task:** サザエさん時空とは何かを説明し、軽小説や二次創作でどう使われるかをまとめよ。\n\n> 🔍 **Searching for:** \"\"オリ主\" 小説 意味\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"メタ ネタ 軽小説 翻訳 中国語\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"1 【名探偵コナン】吉田歩美の絶対に叶わない恋【組織壊滅後】 - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=17388646)\n> [🔗 \"第3話：３ 幼児化した組織の一員③（もしも名探偵コナンの主人公が灰原哀だったら） - プリ小説\" novel.prcm.jp](https://novel.prcm.jp/novel/anXokwIUS4EPdFz2oxJs/chapter/Cz6D6euTerMmxxwyGwwf)\n> [🔗 \"卒業\" ace-heaven.main.jp](http://ace-heaven.main.jp/aceheaventosyokan/shosai/sarad.days/sotsugyou.htm)\n> [🔗 \"歩美ちゃんが黒い回まとめ【名探偵コナン】 - 至高のアニメ思考\" suzuki2018.hatenablog.com](https://suzuki2018.hatenablog.com/entry/ayumi-black)\n> [🔗 \"吉田歩美 (Yoshida Ayumi)\" conan.aga-search.com](https://conan.aga-search.com/character/008_yoshida_ayumi.php)\n> [🔗 \"吉田歩美のキャラクター&エピソード情報 | 名探偵コナン - 少年サンデー\" websunday.net](https://websunday.net/conan100/character?tid=423)\n> [🔗 \"名探偵コナンの歩美ちゃんってコナンへの恋心無くなったんですか？... - Yahoo!知恵袋\" detail.chiebukuro.yahoo.co.jp](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11297307151)\n> [📚 \"少年探偵団 (名探偵コナン) - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E5%B0%91%E5%B9%B4%E6%8E%A2%E5%81%B5%E5%9B%A3_(%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3))\n> [🔗 \"兄と妹の恋物語？3【名探偵コナン】 (ページ6) - 小説 - 占いツクール\" uranai.nosv.org](https://uranai.nosv.org/u.php/novel/d9b9cfb1a630?ans=5&p=A)\n> [🔗 \"名探偵コナン 吉田歩美、灰原哀 過去編より - pixiv\" www.pixiv.net](https://www.pixiv.net/artworks/131280272)\n\n> 🔍 **10 results found**\n\n> [🔗 \"Model: line-corporation/japanese-large-lm-3.6b - GitHub\" github.com](https://github.com/pfnet-research/pfgen-bench/blob/main/result/line-corporation/japanese-large-lm-3.6b/35ef4d4/README.md)\n> [🔗 \"pfgen-bench/result/line-corporation/japanese-large-lm-3.6b-instruction-sft/4db2bf8/ ...\" github.com](https://github.com/pfnet-research/pfgen-bench/blob/main/result/line-corporation/japanese-large-lm-3.6b-instruction-sft/4db2bf8/README.md)\n> [🔗 \"1\" huggingface.co](https://huggingface.co/rinna/bilingual-gpt-neox-4b-8k/resolve/main/spiece.vocab?download=true)\n> [🔗 \"Sheet1 - 国立国会図書館デジタルコレクション\" dl.ndl.go.jp](https://dl.ndl.go.jp/static/files/jogai/soshin_202506_ta_common_99.xlsx)\n> [🔗 \"請求記号 書名 著者名 出版者 出版年 //2000-03年度 上原記念生命科学財団一年のあゆみ（2000年 - テクノプラザものづくり支援センター\" www.technoplaza.pref.gifu.lg.jp](https://www.technoplaza.pref.gifu.lg.jp/wp/wp-content/themes/vr/img/pdf/syozou-tosyo_202506.pdf)\n> [🔗 \"アニメ「MFゴースト」2023年放送開始！ - TikTok\" www.tiktok.com](https://www.tiktok.com/@avexpictures/video/7184565630866132226)\n> [🔗 \"Full text of \"Oh!X 1990 05\" - Internet Archive\" archive.org](https://archive.org/stream/OhX_1990-05/OhX_1990-05_djvu.txt)\n> [🔗 \"可愛いノラ坊の魅力を探る！ - TikTok\" www.tiktok.com](https://www.tiktok.com/@kuro.0125/video/7236221396710345985)\n> [🔗 \"ここね今日好き自己紹介 - TikTok\" www.tiktok.com](https://www.tiktok.com/discover/%E3%81%93%E3%81%93%E3%81%AD%E4%BB%8A%E6%97%A5%E5%A5%BD%E3%81%8D%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B)\n> [🔗 \"イカゲーム2：新キャラクター紹介 - TikTok\" www.tiktok.com](https://www.tiktok.com/@kuro.0125/video/7519547517420277000)\n\n> 🔍 **10 results found**\n\n> [🔗 \"サザエさん時空 - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"サザエさん時空とは (サザエサンジクウとは) [単語記事] - ニコニコ大百科\" dic.nicovideo.jp](https://dic.nicovideo.jp/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"サザエさん時空 - アニヲタWiki(仮) - atwiki（アットウィキ）\" w.atwiki.jp](https://w.atwiki.jp/aniwotawiki/pages/7311.html)\n> [🔗 \"サザエさん時空 | ディクト - DiQt\" www.diqt.net](https://www.diqt.net/ja/words/2035509)\n> [🔗 \"サザエさん時空とは？ わかりやすく解説 - Weblio辞書\" www.weblio.jp](https://www.weblio.jp/content/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"「サザエさん時空」に対しての妄想 - - 怪獣の溜息 - FC2\" mogera594.blog9.fc2.com](http://mogera594.blog9.fc2.com/blog-entry-784.html)\n> [🔗 \"「サザエさん時空」とは?～サザエさんは大正11年生まれだけれど、今も24歳。あの古めかしい茶の間のテレビは、デジタルハイビジョン対応 - 神崎のナナメ読み\" kanzaki.sub.jp](http://kanzaki.sub.jp/archives/002960.html)\n> [🔗 \"サザエさん時空 - アニヲタWiki(仮) 非公式避難所wiki\" wiki3.jp](https://wiki3.jp/aniwotadata/page/7311)\n> [🔗 \"サザエさん時空 - 若者言葉辞典～あなたはわかりますか？～\" bosesound.blog.fc2.com](https://bosesound.blog.fc2.com/blog-entry-799.html)\n> [🔗 \"サザエさん時空以前を描く江莉チエミ版『サザエさん』 - もやもやレビュー｜BOOKSTAND映画部！\" bookstand.webdoku.jp](https://bookstand.webdoku.jp/cinema/review/202504/30113641.html)\n\n> 🔍 **1 results found**\n\n> [🔗 \"サザエさん時空\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n\n> 🔍 **10 results found**\n\n> [🔗 \"オリ主 - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%AA%E3%83%AA%E4%B8%BB)\n> [🔗 \"夢小説についての私の見解｜雑食獏 - note\" note.com](https://note.com/brave_lotus235/n/nde7c8b7db1f7)\n> [🔗 \"オリ主と夢主の違い、とはなんだろうか。 - 個人的には夢主は原... - Yahoo!知恵袋\" detail.chiebukuro.yahoo.co.jp](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11232811941)\n> [🔗 \"【雑記】オリ主について。｜ぜろたいむの活動報告 - 小説家になろう\" mypage.syosetu.com](https://mypage.syosetu.com/mypageblog/view/userid/127219/blogkey/274657)\n> [🔗 \"オリ主を使う利点・欠点とおすすめ二次創作5選\" suzustory.com](https://suzustory.com/2018/01/16/nizi-5)\n> [🔗 \"夢小説の分類 〜夢主とオリ主〜 | カジモドの見上げる空、見下ろす町\" ameblo.jp](https://ameblo.jp/giftpilz64/entry-12685177273.html)\n> [🔗 \"オリ主 - ネット用語辞典「ネット王子」\" netyougo.com](https://netyougo.com/slang/10295.html)\n> [🔗 \"ツイッターで「オリキャラを夢主って言うな」というツイートを見て疑問に思った...\" cremu.jp](https://cremu.jp/topics/18201)\n> [🔗 \"なろう批評2：「転生」と「転移」について／崩れ去るリアリティ／転生オリ主の遺言 - 古い土地\" wagaizumo.hatenablog.com](https://wagaizumo.hatenablog.com/entry/2023/01/29/223338)\n> [🔗 \"〈夢小説〉の機能 - 比較文明学\" csc.hus.osaka-u.ac.jp](https://csc.hus.osaka-u.ac.jp/pdf/thesis/saito_summary.pdf)\n\n> 🔍 **10 results found**\n\n> [🔗 \"#146 ロベルト・ボラーニョ「センシニ」〜メタ小説の評価論 by 翻訳文学試食会 - Spotify for Creators\" creators.spotify.com](https://creators.spotify.com/pod/profile/honyaku-shishoku/episodes/146-e39p4i7)\n> [🔗 \"この本がスゴい！2025 - わたしが知らないスゴ本は、きっとあなたが読んでいる - ココログ\" dain.cocolog-nifty.com](https://dain.cocolog-nifty.com/myblog/2025/11/post-d0269a.html)\n> [🔗 \"第十回 推薦作品リストその1 - 日本翻訳大賞\" besttranslationaward.wordpress.com](https://besttranslationaward.wordpress.com/2024/01/16/1st_list)\n> [🔗 \"中国で既にライトノベルが「軽小説」とまんま訳され「テンプレも共有」してるという...サブカルの世界連帯はあるのか？ - INVISIBLE Dojo. ーQUIET & COLORFUL PLACE-\" m-dojo.hatenadiary.com](https://m-dojo.hatenadiary.com/entry/20160117/p1)\n> [🔗 \"日本と中国の若者の言語使用に見られる対人関係上 の志向性 : 「卑語」、「ぼかし表現」、「 - cata log.lib.ky - 九州大学\" catalog.lib.kyushu-u.ac.jp](https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1543915/scs0251.pdf)\n> [🔗 \"台湾華語で喋ってみた\" www.kiriusa.com](https://www.kiriusa.com/taiwan-trip-chinese)\n> [🔗 \"Kyozai ListNo50 | PDF - Scribd\" www.scribd.com](https://www.scribd.com/document/829863624/Kyozai-ListNo50)\n> [🔗 \"『陶淵明考』(其三)「追想」東と西:漢詩の英訳 (5)\" hama-med.repo.nii.ac.jp](https://hama-med.repo.nii.ac.jp/record/179/files/kiyo07_05.pdf)\n> [🔗 \"中公新書ラクレ作品一覧 2025年\" www.chuko.co.jp](https://www.chuko.co.jp/mokuroku/laclef_mokuroku_2025.pdf)\n> [🔗 \"第20号 - 慶應義塾大学外国語教育研究センター\" www.flang.keio.ac.jp](https://www.flang.keio.ac.jp/files/journal_20th.pdf)\n\n\n这是一个轻小说风格的同人作品（基于名探偵コナン的二次创作，带有时间循环、オリ主元素），前半部分是作者的注意事项和引言，后半部分是叙述+对话。\n\n### 详细分析\n\n**准确性（意思保留）**  \nA在多数地方忠实于原文，但偶尔简化或省略细微语气（如段落11的“一人サザエさん時空”翻译为“海螺小姐的时空里就我一个人”，直接用了俗称但没完整传达“サザエさん时空间”的梗意；B更完整地用了“《サザエさん》的时间循环”）。  \nB在关键文化梗（如サザエさん时空间、手机从ガラケー到智能手机的科技变迁）保留更完整，整体意思丢失更少。A有时过于口语化导致轻微偏差（如段落35的句子结构混乱）。  \n**A稍逊，B更准**。\n\n**流畅性（中文自然表达）**  \nA的中文更口语、更接地气，像网络小说常用语（“咋知道的？”“嗖嗖溜走了”“太不搭了！”），读起来轻松，但有时生硬或awkward（如段落18的句子过长）。  \nB的表达更文学化、优雅，句子结构流畅，节奏感好，符合轻小说叙述的“轻松但不low”的感觉（如段落8、13、18的叙述都很自然）。  \n**B明显更自然**。\n\n**风格/语气（轻小说叙述/对话）**  \n轻小说常混杂吐槽、内 monologue、日常幽默、轻微メタ。  \nA的语气很“网络喷子”式，亲切但略粗糙（“好巧啊，你这家伙”“饶了我吧”很直接）。  \nB更贴近日式轻小说中常见的“冷静吐槽+内心戏”风格，幽默感更内敛、节奏更好（如段落11、37的吐槽自然不突兀）。对话部分B也更可爱/生动。  \n**B更符合轻小说调性**。\n\n**术语/名称一致性**  \n两者基本一致（如人名“吉田彼方”“江户川コナン”→“吉田彼方”“江户川柯南”）。  \n但A在“サザエさん”直接音译“海螺小姐”，B用书名号《サザエさん》+解释，更专业。  \n科技词如“ガラケー”→A“功能机”，B同；“サバゲー”→A“生存游戏”，B“真人CS”，后者更常见于中文圈。  \n**两者差不多，B微胜**（对梗处理更到位）。\n\n**连贯性/可读性**  \nA整体可读，但有些句子跳跃或赘余（如段落35翻译混乱）。  \nB叙述连贯，段落过渡自然，长句处理好，读起来“一口气”感强。  \n**B胜出**。\n\n**格式/标点符号**  \n两者都用了合适的引号、破折号。  \nA偶尔缺少空格或标点不精致（如段落18的引号混用）。  \nB格式更干净，一致性高。  \n**B更好**。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9.5, \"notes\": \"B对文化梗和细节保留更完整，A有少量简化导致的细微丢失\"},\n    \"fluency\": {\"A\": 8, \"B\": 9.5, \"notes\": \"B的中文更自然流畅，像优秀轻小说译本；A口语化但偶有生涩\"},\n    \"style\": {\"A\": 7.5, \"B\": 9, \"notes\": \"B更好地捕捉了轻小说式的轻松吐槽与叙述节奏，A略显网络粗糙\"},\n    \"terminology\": {\"A\": 8.5, \"B\": 9, \"notes\": \"两者术语一致，但B对专有名词/梗的处理更专业合适\"},\n    \"coherence\": {\"A\": 8, \"B\": 9.5, \"notes\": \"B整体连贯性强，阅读体验更好\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点与格式更精致统一\"}\n  },\n  \"key_differences\": [\n    \"B在文化梗（如サザエさん时空间）和科技变迁描写上更完整自然\",\n    \"B的叙述节奏与句子流畅度明显优于A，读起来更像专业轻小说翻译\",\n    \"A更偏网络口语化风格，亲切但不够精炼，适合快餐阅读；B更贴合日轻的优雅吐槽调性\"\n  ],\n  \"final_summary\": \"整体而言，B在准确性、流畅性、风格契合度、可读性各方面都更胜一筹，是更优质的轻小说翻译版本。A虽然亲切易懂，但细节处理和文风精致度有差距。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9635,
+          "completion_tokens": 5685,
+          "total_tokens": 15320
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B对文化梗和细节保留更完整，A有少量简化导致的细微丢失"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B的中文更自然流畅，像优秀轻小说译本；A口语化但偶有生涩"
+      },
+      "style": {
+        "A": 7.5,
+        "B": 9,
+        "notes": "B更好地捕捉了轻小说式的轻松吐槽与叙述节奏，A略显网络粗糙"
+      },
+      "terminology": {
+        "A": 8.5,
+        "B": 9,
+        "notes": "两者术语一致，但B对专有名词/梗的处理更专业合适"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B整体连贯性强，阅读体验更好"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点与格式更精致统一"
+      }
+    },
+    "key_differences": [
+      "B在文化梗（如サザエさん时空间）和科技变迁描写上更完整自然",
+      "B的叙述节奏与句子流畅度明显优于A，读起来更像专业轻小说翻译",
+      "A更偏网络口语化风格，亲切但不够精炼，适合快餐阅读；B更贴合日轻的优雅吐槽调性"
+    ],
+    "final_summary": "整体而言，B在准确性、流畅性、风格契合度、可读性各方面都更胜一筹，是更优质的轻小说翻译版本。A虽然亲切易懂，但细节处理和文风精致度有差距。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

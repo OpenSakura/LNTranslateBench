@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:38:10.921287",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.GLM-4.5.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "3ed4f333955e4e27142a5ff0c96e5bf5cb3276ca6579f4f4a94992d02018d007",
+    "B": "746db9c1d5045b6ec9dc662285c4f226982ea57232646db5c0d1030573d5c701"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:39:02.425988",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128223811184426071XiVRi0aV",
+      "judge_response": {
+        "id": "chatcmpl-20260128223811184426071XiVRi0aV",
+        "object": "chat.completion",
+        "created": 1769611142,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份轻小说翻译的详细评判：\n\n### 详细分析\n\n**1. 准确性与术语 (Accuracy & Terminology)**\n*   **ACG/御宅族术语：** 这是本段文本的核心。\n    *   **Seg 90, 104 (Ero/Hentai):** 原文涉及“エロ漫画”和“エロパロ”。\n        *   **翻译A** 使用了“工口”（Ero的音译）和“里本”（同人圈内对R18本子的通称）。这非常符合轻小说读者的阅读习惯和圈内黑话。\n        *   **翻译B** 使用了“涩情”和“黄书”。“黄书”这个词显得过于通俗、甚至有些粗俗，缺乏同人展（Comiket）的文化氛围，听起来像是局外人的描述。\n    *   **Seg 66 (角色名 Yuragi):** 原文“御神楽ゆらぎ”。\n        *   **翻译A** 译为“御神乐由良岐”。使用汉字选词带有古风/帅气感，符合文中描述的“宝冢风/军人风”。\n        *   **翻译B** 译为“御神乐摇曳”。虽然“Yuragi”确实有摇曳之意，但作为人名显得非常奇怪，缺乏角色的帅气感。\n    *   **Seg 4 (面構え):** 原文指战士的面部神态/气场。\n        *   **翻译A** 译为“气势”，很好地对应了“战士”的比喻。\n        *   **翻译B** 译为“表情”，虽然字面正确，但“与众不同”对应“違う”显得力度稍弱（这里是指神态变得严峻/专业）。\n*   **一般名词：**\n    *   **Seg 24 (Carry cart):** B译为“拉杆箱”比A的“手推车”更符合Cosplay玩家携带装备的实际情况（通常是行李箱）。\n\n**2. 流畅性与语感 (Fluency & Style)**\n*   **对话自然度：**\n    *   **翻译B** 在日常对话的处理上略微优于A，句子结构更紧凑。例如Seg 5（“睡够了吗” vs “都睡好了吗”）、Seg 19（“更有精神” vs “状态更高”）。\n    *   **翻译A** 有时显得略微啰嗦（如Seg 9“而且说起来”）。\n*   **轻小说风格：**\n    *   **翻译A** 明显更熟悉轻小说的叙述语调。例如Seg 110的笑声“哦ー呵呵呵”比B的“哦～呵呵”更有画面感（典型的女王三段笑）。\n    *   **翻译B** 的语调有时过于平实，缺乏“中二”气息。\n\n**3. 格式与标点 (Formatting)**\n*   **翻译B** 在 Seg 61 出现了一个明显的标点错误：`『那本身就是Cosplay「吧`，括号不匹配。\n*   **翻译A** 格式整洁。\n\n### 总结\n**翻译A** 明显更懂“行话”。在处理Comiket（同人展）相关的特定术语时（如“工口”、“里本”），A的选择精准地击中了目标受众的痛点，营造了正确的文化氛围。虽然B在部分日常对话的流畅度上稍好，但在关键的术语选择（如将同人本称为“黄书”）和人名翻译（“摇曳”）上表现出对亚文化语境的不熟悉，这在轻小说翻译中是较大的扣分项。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A在人名和特定文化指代上更准确；B在一般物品（如拉杆箱）上较好，但人名翻译（摇曳）失真。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B的中文语序和口语表达略微更自然顺畅。\"\n    },\n    \"style\": {\n      \"A\": 10,\n      \"B\": 7,\n      \"notes\": \"A完美掌握了轻小说和御宅族文化的语调（工口、里本、气势）；B的用词（黄书、涩情）过于圈外化，破坏了氛围。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 6,\n      \"notes\": \"A使用了正确的圈内术语；B使用了通俗但违和的词汇。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"两者都很好地保持了连贯性。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"B在第61段有标点符号错误。\"\n    }\n  },\n  \"key_differences\": [\n    \"术语本地化：A使用“工口”、“里本”等ACG专用词汇，B使用“涩情”、“黄书”等通用词汇，前者更符合原文语境。\",\n    \"人名翻译：A将“Yuragi”音译为帅气的“由良岐”，B意译为“摇曳”，不符合角色设定的军人/宝冢风。\",\n    \"标点错误：B存在明显的括号不匹配错误。\"\n  ],\n  \"final_summary\": \"翻译A是明显的胜者。虽然翻译B在基础语言流畅度上表现不错，但它缺乏对轻小说及御宅族亚文化背景的理解。翻译A精准地使用了同人圈的习惯用语（如“工口”、“里本”），并赋予了角色名更贴切的汉字选词，极大地提升了目标读者的代入感。对于此类题材，文化语境的还原至关重要。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8172,
+          "completion_tokens": 4568,
+          "total_tokens": 12740
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A在人名和特定文化指代上更准确；B在一般物品（如拉杆箱）上较好，但人名翻译（摇曳）失真。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B的中文语序和口语表达略微更自然顺畅。"
+      },
+      "style": {
+        "A": 10,
+        "B": 7,
+        "notes": "A完美掌握了轻小说和御宅族文化的语调（工口、里本、气势）；B的用词（黄书、涩情）过于圈外化，破坏了氛围。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 6,
+        "notes": "A使用了正确的圈内术语；B使用了通俗但违和的词汇。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者都很好地保持了连贯性。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 8,
+        "notes": "B在第61段有标点符号错误。"
+      }
+    },
+    "key_differences": [
+      "术语本地化：A使用“工口”、“里本”等ACG专用词汇，B使用“涩情”、“黄书”等通用词汇，前者更符合原文语境。",
+      "人名翻译：A将“Yuragi”音译为帅气的“由良岐”，B意译为“摇曳”，不符合角色设定的军人/宝冢风。",
+      "标点错误：B存在明显的括号不匹配错误。"
+    ],
+    "final_summary": "翻译A是明显的胜者。虽然翻译B在基础语言流畅度上表现不错，但它缺乏对轻小说及御宅族亚文化背景的理解。翻译A精准地使用了同人圈的习惯用语（如“工口”、“里本”），并赋予了角色名更贴切的汉字选词，极大地提升了目标读者的代入感。对于此类题材，文化语境的还原至关重要。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

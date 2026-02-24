@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:03:49.120598",
+  "sample": "pixiv.s26712391.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26712391.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26712391.ch1.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/pixiv.s26712391.ch1.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f704bc6475e324efffb4fa390733d8170d454e4947204c1dc291d3ec83d24451",
+    "A": "986ce06c64cd1a6706657725c75eebafdc08eaea4cb82e53daf86c9dc3b90a2a",
+    "B": "31c3527135bd9170b629990216521ad97ff73c52de0002ce8599aede337f85db"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:04:37.494705",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ad8b7762-27f6-414c-852c-b721e86e212b",
+      "judge_response": {
+        "id": "ad8b7762-27f6-414c-852c-b721e86e212b",
+        "object": "chat.completion",
+        "created": 1768431877,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**段落1**: A\"眼前闯进来的\"准确表达了视觉冲击感，B\"冲进来的是一个令人难以置信的光景\"的\"一个\"搭配\"光景\"不当。\n\n**段落5**: \"可憐\"A译\"楚楚可怜\"更准确，B译\"可爱\"偏离原意。\n\n**段落29**: B严重误译——将\"ボク\"的视角错误理解为妈妈的视角（\"妈妈总是问我希罗酱在哪儿？我记得她常哭着问\"），原文明确是主角自己向妈妈哭着问。\n\n**段落37**: \"鬼ごっこ\"是捉鬼游戏，B译为\"捉迷藏\"不准确。\n\n**段落55**: B翻译严重不完整，漏掉了\"だってヒロちゃんは、芯を持ったその正しさで周りの人達をどうしようもなく惹きつけてしまうから\"整句。\n\n**段落72**: B保留日语助词\"が\"（希罗酱\"が\"选择的）是明显错误。\n\n**段落74**: A\"喜欢自己能纠正的孩子\"准确，B\"喜欢能让她变得正确的人\"理解颠倒。\n\n### 流畅性分析\n\nA整体表达更通顺自然。B有病句如\"家在很近\"（应为\"家离得很近\"）。\n\n### 风格/语气分析\n\n- B保留\"酱\"称呼更符合轻小说风格\n- A在段落90、95使用\"希罗小宝贝\"不太恰当，显得突兀\n- A整体叙述更细腻，B有时过于口语化\n\n### 其他问题\n\n- 段落45: B漏掉了引号「」\n- 段落77: B\"他是个可靠稳重的孩子\"性别用错（应为\"她\"）\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有多处严重误译：段落29主语错误、段落55漏译整句、段落72保留日语助词、段落74意思颠倒\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A表达流畅自然，B有病句如'家在很近'\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"B保留'酱'更符合轻小说风格，但A的'希罗小宝贝'略显突兀；两者各有优劣\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A'鬼ごっこ'译为捉鬼游戏正确，B译为捉迷藏错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A叙事连贯，B因漏译和误译影响整体理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B段落45漏引号\"}\n  },\n  \"key_differences\": [\n    \"B段落29严重误译主语，将主角的行为错误归于妈妈\",\n    \"B段落55漏译关键句子，影响上下文理解\",\n    \"B保留日语助词'が'属于翻译失误\",\n    \"A对'可憐''鬼ごっこ'等词汇翻译更准确\",\n    \"B在称呼上保留'酱'更有日式轻小说感\"\n  ],\n  \"final_summary\": \"A在准确性方面明显优于B，B存在多处严重的误译和漏译问题，特别是段落29的主语错误和段落55的整句漏译严重影响了译文质量。虽然B在保留日式称呼方面更符合轻小说风格，但这无法弥补其在准确性上的重大缺陷。A虽有个别用词（如'希罗小宝贝'）略显不当，但整体翻译质量更高、更可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11871,
+          "completion_tokens": 2183,
+          "total_tokens": 14054
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有多处严重误译：段落29主语错误、段落55漏译整句、段落72保留日语助词、段落74意思颠倒"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A表达流畅自然，B有病句如'家在很近'"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "B保留'酱'更符合轻小说风格，但A的'希罗小宝贝'略显突兀；两者各有优劣"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A'鬼ごっこ'译为捉鬼游戏正确，B译为捉迷藏错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A叙事连贯，B因漏译和误译影响整体理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B段落45漏引号"
+      }
+    },
+    "key_differences": [
+      "B段落29严重误译主语，将主角的行为错误归于妈妈",
+      "B段落55漏译关键句子，影响上下文理解",
+      "B保留日语助词'が'属于翻译失误",
+      "A对'可憐''鬼ごっこ'等词汇翻译更准确",
+      "B在称呼上保留'酱'更有日式轻小说感"
+    ],
+    "final_summary": "A在准确性方面明显优于B，B存在多处严重的误译和漏译问题，特别是段落29的主语错误和段落55的整句漏译严重影响了译文质量。虽然B在保留日式称呼方面更符合轻小说风格，但这无法弥补其在准确性上的重大缺陷。A虽有个别用词（如'希罗小宝贝'）略显不当，但整体翻译质量更高、更可靠。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

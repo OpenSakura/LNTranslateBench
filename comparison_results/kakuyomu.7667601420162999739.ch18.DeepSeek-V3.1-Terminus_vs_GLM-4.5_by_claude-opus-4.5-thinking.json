@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:33:59.308430",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "25ee94c40ce5ba5ed51de01a3c49ab17d171d0d6d304123788ef37930555c732",
+    "B": "ddfdac8b5ff59e8411971c90b688d93879136ae4a28873c4ab1c2e6d4f44a454"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:34:47.770357",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "545b7fa7-1b61-47cf-aff0-8a0856611b6a",
+      "judge_response": {
+        "id": "545b7fa7-1b61-47cf-aff0-8a0856611b6a",
+        "object": "chat.completion",
+        "created": 1768422887,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落7**: A译\"佐土山\"，B译\"佐度山\"，原文是\"サドヤマ\"（佐渡山），两者都有偏差\n- **段落6**: \"現場ニキ\"中ニキ源自\"アニキ\"（大哥），A译\"现场老哥\"更准确，B译\"现场小哥\"略有偏差\n- **段落38**: B出现严重错误\"安赛ム\"（日文片假名未翻译）\n- **段落10**: B译\"穿袴裙的人影\"比A的\"穿袴的人影\"更明确\n- **段落2**: 原文有\"雑で曖昧な\"两个形容词，B保留了\"心不在焉地、含糊地\"，A简化为\"敷衍应和\"\n\n### 2. 流畅性\n- B整体更口语化、更自然：\"话说回来\"、\"猛吃\"、\"捣鼓终端\"\n- A部分句子较生硬，如段落24\"听到佐渡山用意外谦卑的态度说道\"结构别扭\n- 段落33: A\"像大学生应付无礼推销电话似的\"不如B\"像一个在应付无礼推销的女大学生\"自然\n\n### 3. 风格/语气\n- 轻小说对话应该更口语化，B在这方面表现更好\n- 段落5: B\"超级大美人老外\"比A\"超级漂亮的外国人\"更符合网络/年轻人语言风格\n- 段落51: B\"长得着急的五十岁\"比A\"长得显老的五十岁\"更有趣味\n\n### 4. 术语一致性\n- A在段落22出现\"佐渡山科长\"与\"迷宫课\"不一致\n- B始终使用\"课长\"保持一致\n- 段落47: A用《》书名号标注\"安赛姆\"不当，B保持『』\n\n### 5. 格式/标点\n- A使用中文引号「」，B混用中文\"\"和日式「」\n- B整体标点更统一\n\n## 关键差异总结\n1. B有段落38的明显错误（未翻译的日文片假名）\n2. A对\"ニキ\"的翻译更准确\n3. B整体更口语化、更符合轻小说风格\n4. 两者在人名翻译上都有小问题\n\n---\n\n```json\n{\n  \"winner\": \"tie\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A对'ニキ→老哥'更准确；B段落38有明显错误'安赛ム'未翻译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，A部分句式较生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说年轻化、网络化的语言风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者人名翻译都有小问题；A段落22课/科不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"A保持「」一致；B引号使用不统一\"}\n  },\n  \"key_differences\": [\n    \"B段落38出现致命错误'安赛ム'\",\n    \"A对网络用语'現場ニキ'翻译更准确（老哥vs小哥）\",\n    \"B整体语言更口语化、更符合轻小说风格\",\n    \"两者在人名'佐渡山'上都有不同程度的错误\"\n  ],\n  \"final_summary\": \"A在准确性上略胜一筹（尤其是网络用语），但B段落38的未翻译错误是严重扣分项；B在流畅性和轻小说风格把握上更好。综合考虑，A的准确性优势与B的风格优势相互抵消，B的致命错误与A的生硬表达相互抵消，判定为平局。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12465,
+          "completion_tokens": 2099,
+          "total_tokens": 14564
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "tie",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A对'ニキ→老哥'更准确；B段落38有明显错误'安赛ム'未翻译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，A部分句式较生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说年轻化、网络化的语言风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者人名翻译都有小问题；A段落22课/科不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "A保持「」一致；B引号使用不统一"
+      }
+    },
+    "key_differences": [
+      "B段落38出现致命错误'安赛ム'",
+      "A对网络用语'現場ニキ'翻译更准确（老哥vs小哥）",
+      "B整体语言更口语化、更符合轻小说风格",
+      "两者在人名'佐渡山'上都有不同程度的错误"
+    ],
+    "final_summary": "A在准确性上略胜一筹（尤其是网络用语），但B段落38的未翻译错误是严重扣分项；B在流畅性和轻小说风格把握上更好。综合考虑，A的准确性优势与B的风格优势相互抵消，B的致命错误与A的生硬表达相互抵消，判定为平局。"
+  },
+  "outcome": "tie",
+  "winner_model": null
+}

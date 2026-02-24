@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-13T21:53:41.469152",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "571a987413abf45e9c8eabb36114046302c4f8121e882ed595f5115b18aacecb",
+    "B": "bb1704cde6a5afd77ef345cc829c03ad280a4c2b1ecb6a6454f051b18975f94a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-13T21:54:55.847041",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260114055353880868905c18XTlg9",
+      "judge_response": {
+        "id": "chatcmpl-20260114055353880868905c18XTlg9",
+        "object": "chat.completion",
+        "created": 1768341295,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **关键误译 (Translation B):**\n    *   **段落 9:** 原文“ウエノ”通常指地名“上野”（Ueno）。B译为“雨野”，这可能是误读或无根据的猜测。A译为“上野”更符合常理（特别是后文提到东京）。\n    *   **段落 23:** 原文“（サタニエルは）わたしたちの敵ではありません”意为“（撒旦尼埃尔）不是我们的对手/敌手”（即我们比他强）。B译为“根本就不是她的对手”，意思完全反了，变成了“我们打不过她”。A译为“不是对手”，结合上下文（叙述者认为对方魔力只有自己的一半），逻辑正确。\n    *   **段落 29:** 原文“見世物にしていたナリヒラ氏”中，修饰语“把...当作展览品”修饰的是主语“ナリヒラ氏”（业平先生）。即“把怪物当展览品的业平”。B译为“把纳里赫拉先生当成观赏品”，搞反了主谓关系，变成了业平是被展览的对象。A译文正确。\n    *   **段落 54:** 原文“悪手中の悪手”（臭棋中的臭棋/下策中的下策）。B译为“恶人中的恶手”，这显然是误译或笔误，逻辑不通。\n*   **Translation A:** 整体准确度非常高，正确理解了原文的语法结构和逻辑关系（如双方战力对比、主被动关系）。\n\n**2. 术语与名称一致性 (Terminology & Consistency)**\n*   **Translation A:** 名称处理得当且一致。\n    *   Matatabi -> 木天蓼（准确）。\n    *   Hachirou -> 八郎（标准）。\n    *   Ueno -> 上野。\n    *   Narihira -> 业平（使用了对应的汉字，符合轻小说习惯）。\n*   **Translation B:** 存在严重的不一致和漏译。\n    *   Matatabi: 先译为“猫薄荷”（段落3），后译为“猫尾草”（段落40）。\n    *   Hachirou: 段落25中保留了片假名“ハチロウ”未翻译，段落40译为“蜂郎”，段落69又变为“哈奇罗”。极度不一致。\n    *   Narihira: 译为音译“纳里赫拉”，不如A的“业平”更有文化底蕴（通常指在原业平）。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **Translation A:** 语句通顺，符合中文轻小说的阅读习惯。对话自然，心理描写清晰。对于“悪手”（臭棋/下策）等词的处理也很地道。\n*   **Translation B:** 虽然部分句子通顺，但由于误译导致的逻辑混乱影响了阅读体验。例如段落4中“疑问就留了下来”略显生硬，不如A的“还有疑问”自然。\n\n**4. 格式与标点 (Formatting)**\n*   **Translation A:** 标点使用规范。\n*   **Translation B:** 段落25中保留了日文片假名，这是明显的格式/编辑失误。\n\n### 总结\n翻译A在各个方面都优于翻译B。翻译B存在多处严重的语法理解错误（导致意思相反）、名词术语前后不一致、以及漏译片假名的问题。翻译A则准确地传达了原文的含义，术语统一，文笔流畅。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9.5,\n      \"B\": 5.0,\n      \"notes\": \"B在段落23（战力对比）和段落29（主被动关系）有严重误译，导致剧情逻辑颠倒。\"\n    },\n    \"fluency\": {\n      \"A\": 9.0,\n      \"B\": 7.0,\n      \"notes\": \"A的表达更自然；B部分句子生硬且有语病。\"\n    },\n    \"style\": {\n      \"A\": 9.0,\n      \"B\": 6.0,\n      \"notes\": \"A符合轻小说风格；B在人名处理上缺乏文化对应（如业平），且术语混乱。\"\n    },\n    \"terminology\": {\n      \"A\": 9.5,\n      \"B\": 4.0,\n      \"notes\": \"B的人名翻译前后不一致（八郎/蜂郎/哈奇罗），且有漏译（保留片假名）。\"\n    },\n    \"coherence\": {\n      \"A\": 9.5,\n      \"B\": 6.0,\n      \"notes\": \"由于B的误译，导致叙述者的自信态度在译文中显得逻辑不通。\"\n    },\n    \"formatting\": {\n      \"A\": 10.0,\n      \"B\": 8.0,\n      \"notes\": \"B在段落25中未翻译片假名。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落23：A正确翻译为'不是（我们的）对手'，B误译为'（我们）不是她的对手'。\",\n    \"段落29：A正确理解'业平'为主语，B误将其作为宾语（被展览品）。\",\n    \"术语一致性：B在人名（八郎、木天蓼）翻译上前后矛盾，且出现漏译现象。\",\n    \"地名：A译为'上野'（正确），B译为'雨野'（错误）。\"\n  ],\n  \"final_summary\": \"翻译A在准确性、术语一致性和流畅度上均完胜。翻译B存在多处致命的误译，颠倒了原文的逻辑（如谁强谁弱、谁支配谁），并且人名翻译极其混乱，甚至直接保留了原文片假名未译。A是高质量的翻译，而B属于初稿或机翻润色水平，且错误较多。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7477,
+          "completion_tokens": 5808,
+          "total_tokens": 13285
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 9.5,
+        "B": 5.0,
+        "notes": "B在段落23（战力对比）和段落29（主被动关系）有严重误译，导致剧情逻辑颠倒。"
+      },
+      "fluency": {
+        "A": 9.0,
+        "B": 7.0,
+        "notes": "A的表达更自然；B部分句子生硬且有语病。"
+      },
+      "style": {
+        "A": 9.0,
+        "B": 6.0,
+        "notes": "A符合轻小说风格；B在人名处理上缺乏文化对应（如业平），且术语混乱。"
+      },
+      "terminology": {
+        "A": 9.5,
+        "B": 4.0,
+        "notes": "B的人名翻译前后不一致（八郎/蜂郎/哈奇罗），且有漏译（保留片假名）。"
+      },
+      "coherence": {
+        "A": 9.5,
+        "B": 6.0,
+        "notes": "由于B的误译，导致叙述者的自信态度在译文中显得逻辑不通。"
+      },
+      "formatting": {
+        "A": 10.0,
+        "B": 8.0,
+        "notes": "B在段落25中未翻译片假名。"
+      }
+    },
+    "key_differences": [
+      "段落23：A正确翻译为'不是（我们的）对手'，B误译为'（我们）不是她的对手'。",
+      "段落29：A正确理解'业平'为主语，B误将其作为宾语（被展览品）。",
+      "术语一致性：B在人名（八郎、木天蓼）翻译上前后矛盾，且出现漏译现象。",
+      "地名：A译为'上野'（正确），B译为'雨野'（错误）。"
+    ],
+    "final_summary": "翻译A在准确性、术语一致性和流畅度上均完胜。翻译B存在多处致命的误译，颠倒了原文的逻辑（如谁强谁弱、谁支配谁），并且人名翻译极其混乱，甚至直接保留了原文片假名未译。A是高质量的翻译，而B属于初稿或机翻润色水平，且错误较多。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

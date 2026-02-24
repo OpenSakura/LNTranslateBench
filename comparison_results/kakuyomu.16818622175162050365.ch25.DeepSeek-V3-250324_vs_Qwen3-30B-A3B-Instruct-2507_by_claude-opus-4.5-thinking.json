@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:30:51.005178",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "33c7465f9604b0feb9b921ea909b9a52496a8b28e688f5028f9d64e32a3f6c2d",
+    "B": "e2ec2d3027c73ce3caf34e08360fc6e4b3ff98798071c4e651959bc9b1fff9c4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:31:35.533563",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6007e7a2-da5b-48d5-9641-e72f30643698",
+      "judge_response": {
+        "id": "6007e7a2-da5b-48d5-9641-e72f30643698",
+        "object": "chat.completion",
+        "created": 1768422695,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细对比分析\n\n### 1. 准确性问题\n\n**A的严重错误：**\n- 段落12、15：将「東雲」错译为\"冬云\"，这是人名翻译的重大失误\n- 段落51：**完全缺失翻译**\n- 段落33：原文意思是\"参观时不填入部申请就不让出活动室\"，A译成\"不让进部室\"，意思完全颠倒\n- 段落58：原文是奏多把脚跷在自己桌上，A误译成\"两名三年级学生把脚跷在奏多桌上\"\n- 段落75-76：突然从第一人称转为第三人称\"她\"，与全文视角不符\n\n**B的问题：**\n- 段落46：\"阳菜乃和两人\"漏了\"我\"字\n- 段落52：表述略有瑕疵\n\n### 2. 流畅性与风格\n\n- B的对话更符合轻小说风格：\"牛逼\"、\"哈啊——\"、\"嘛～\"等口语化表达\n- A部分对话较生硬，如段落25\"只去听个介绍\"不如B\"只是去听听说明会\"自然\n- B的\"脚踏两条船\"比A的\"两头兼顾\"更生动形象\n\n### 3. 术语一致性\n\n- A的\"冬云\"错误严重影响术语一致性\n- B保持\"东云\"、\"奏多\"等人名一致\n\n### 4. 格式问题\n\n- A：「」使用一致\n- B：混用「」和\"\"（如段落40、45、51用\"\"），格式不统一\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A有多处严重误译：人名错误(冬云)、段落51缺失、段落33/58意思颠倒、视角混乱\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话更口语化自然，A部分表述较生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说风格，语气词运用得当\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A的东云→冬云是严重的术语错误\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的视角转换问题和缺失段落影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A标点一致，B混用「」和\\\"\\\"格式不统一\"}\n  },\n  \"key_differences\": [\n    \"A将東雲错译为冬云（多处）\",\n    \"A完全缺失段落51的翻译\",\n    \"A在段落33和58有严重的意思颠倒错误\",\n    \"A在段落75-76突然转为第三人称视角\",\n    \"B对话风格更符合轻小说特点\",\n    \"B格式使用不统一但内容完整准确\"\n  ],\n  \"final_summary\": \"B在准确性上明显优于A。A存在人名翻译错误、整段缺失、意思颠倒、视角混乱等严重问题，这些是翻译的根本性错误。虽然B在格式上存在标点不统一的问题，但内容完整准确，对话风格也更贴合轻小说特点。综合考量，B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12107,
+          "completion_tokens": 1823,
+          "total_tokens": 13930
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有多处严重误译：人名错误(冬云)、段落51缺失、段落33/58意思颠倒、视角混乱"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话更口语化自然，A部分表述较生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说风格，语气词运用得当"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A的东云→冬云是严重的术语错误"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的视角转换问题和缺失段落影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A标点一致，B混用「」和\"\"格式不统一"
+      }
+    },
+    "key_differences": [
+      "A将東雲错译为冬云（多处）",
+      "A完全缺失段落51的翻译",
+      "A在段落33和58有严重的意思颠倒错误",
+      "A在段落75-76突然转为第三人称视角",
+      "B对话风格更符合轻小说特点",
+      "B格式使用不统一但内容完整准确"
+    ],
+    "final_summary": "B在准确性上明显优于A。A存在人名翻译错误、整段缺失、意思颠倒、视角混乱等严重问题，这些是翻译的根本性错误。虽然B在格式上存在标点不统一的问题，但内容完整准确，对话风格也更贴合轻小说特点。综合考量，B胜出。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:38:39.994378",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.GLM-4.7.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "c50f081944d7a6b03630596749e55469118e7cab7f650ed38f521f01991ea066",
+    "B": "c9323bdb0cc84565f167bc83a978d3b0bd6d35499b976e076caad6d26cbf8d12"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:01.882253",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DPwC0IvpQNpFexm8xraiZPC7SLz",
+      "judge_response": {
+        "id": "chatcmpl-89DPwC0IvpQNpFexm8xraiZPC7SLz",
+        "object": "chat.completion",
+        "created": 1768426741,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 日文人名 中文翻译 常见规则 转写\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"日文名字 中文音译 标准 如 Stea Yuri Misa Oruto\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"マクリナ茶 中文翻译 轻小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"如何从零开始翻译一本日语小说？ - 知乎\" Zhihu](https://www.zhihu.com/question/27047645)\n> [🔗 \"日本的轻小说中文翻译 - 喜马拉雅手机版\" Ximalaya](https://m.ximalaya.com/ask/t1686233)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/zh-hans/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"Name变换君 - 快速将你的名字翻译并转换成日文名字，包括日文汉字、片假名、平假名\" Namehenkan](https://namehenkan.com/)\n> [🔗 \"为什么日本人名翻译成中文有时会出现两个完全不一样的名称？ - 知乎\" Zhihu](https://www.zhihu.com/question/628519204)\n> [🔗 \"轻小说翻译：解码二次元，金雨助力破壁之旅-金雨翻译\" Jinyutrans](https://www.jinyutrans.com/hotspot/translation_of_light_novels)\n> [🔗 \"音译假名 - 萌娘百科 万物皆可萌的百科全书\" MoeGirl](https://zh.moegirl.org.cn/zh-hans/%E9%9F%B3%E8%AF%91%E5%81%87%E5%90%8D)\n> [🔗 \"輕小說 - 萌娘百科 萬物皆可萌的百科全書\" MoeGirl](https://zh.moegirl.org.cn/zh-hant/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"珊瑚文库_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E7%8F%8A%E7%91%9A%E6%96%87%E5%BA%93/2966009)\n\n> 🔍 **10 results found**\n\n> [🔗 \"Name变换君 - 快速将你的名字翻译并转换成日文名字，包括日文汉字、片假名、平假名\" Namehenkan](https://namehenkan.com/)\n> [🔗 \"日文名字翻譯器》中文姓名轉日文片假名翻譯、平假名\" Langconverter](https://langconverter.com/zh/converters/chinese_to_japanese_name)\n> [🔗 \"中文名字转日文名字生成器 姓名翻译日语 日本名字在线免费转换 日本通\" Ribentong](https://www.ribentong.com/mingzi)\n> [🔗 \"姓名转换器_日语宝\" Riyubao](https://www.riyubao.com/tool/nameconverter)\n> [🔗 \"日文名字_小楠日语\" Riyutool](https://riyutool.com/japanesename-nopqr)\n> [🔗 \"Japanese Name Converter | NameChef\" NameChef](https://www.namechef.co/japanese-name/name-converter)\n> [🔗 \"Ltool - Language Study Tools 日文名字翻譯, 片假名翻譯, 拼音 > 片假名轉換器\" Ltool](https://www.ltool.net/chinese-simplified-and-traditional-characters-pinyin-to-katakana-converter-in-traditional-chinese.php)\n> [🔗 \"日本人名字的讀法 - Hi!Penpal!\" Hi!Penpal](http://www.hipenpal.com/tool/japanese-names-search-and-converter-in-traditional-chinese.php)\n> [🔗 \"日语名字翻译器在线转换-起点中文网手机端\" Qidian](https://m.qidian.com/ask/qqbpezfzfgtqb)\n> [🔗 \"日本網站註冊教學：フリガナ是什麼？中文名字翻...\" Boo2k](https://boo2k.com/archives/20343)\n\n> 🔍 **10 results found**\n\n> [🔗 \"轻小说翻译：解码二次元，金雨助力破壁之旅-金雨翻译\" Jinyutrans](https://www.jinyutrans.com/hotspot/translation_of_light_novels)\n> [🔗 \"「日语轻小说翻译招聘信息」-BOSS直聘\" Zhipin](https://www.zhipin.com/zhaopin/afa08a86cdea1e3d1nRy39S1EQ~~)\n> [🔗 \"日本的轻小说中文翻译 - 喜马拉雅手机版\" Ximalaya](https://m.ximalaya.com/ask/t1686233)\n> [🔗 \"轻小说 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E8%BC%95%E5%B0%8F%E8%AA%AA)\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"沉迷于中国网文无法自拔？起点中文网专门给这些外国粉们做了个翻译网站 | 爱范儿\" iFanr](https://www.ifanr.com/837428)\n> [🔗 \"GitHub - lousi8/acgnd: 日本轻小说聚合网站，计划使用百度翻译 Baidu translator for Japanese Comic and light novel\" GitHub](https://github.com/lousi8/acgnd)\n> [🔗 \"轻小说中文版 - Top 100件轻小说中文版 - 2024年10月...\" Taobao](https://taobao.com/list/product/%E8%BD%BB%E5%B0%8F%E8%AF%B4%E4%B8%AD%E6%96%87%E7%89%88.htm)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/zh-hans/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"文学少女（日本野村美月创作的轻小说系列）_百...\" Baidu Baike](https://baike.baidu.com/item/%E6%96%87%E5%AD%A6%E5%B0%91%E5%A5%B3/27390)\n\n\n**详细分析：**\n\n这是一个典型的轻小说角色介绍/设定集段落，整体风格轻松、口语化、带有萌系幽默（例如角色个性描述、吐槽、弟控等元素），目标读者为青少年/二次元爱好者。翻译需要同时保持**准确性**（不误译设定）、**自然流畅的中文口语**、**可爱/活泼的轻小说语气**，以及**专有名词的一致性**（人名、地名、物品名等）。\n\n**关键比较点总结：**\n\n1. **准确性**：两者整体都较忠实于原文意思，极少明显误译。A在少数地方更精确（如“体弱多病的人”更贴“体が弱い人”，B的“身体很弱”稍泛化）；B偶尔有小偏差（如段落13 B漏译“多尔加德の”导致不完整）。但整体差异不大。\n\n2. **流畅性**：B的中文更自然、符合现代大陆口语习惯（如“热心肠妈妈”“热情满满”“超级怕生”“超模般的美人”“开朗活泼”），读起来轻松顺口。A有时稍显生硬或**腔（如“尤里”“大胆母亲”“一针见血地戳中人的痛处”“肌肉虬结”），部分句子结构更书面化。\n\n3. **风格/语气**：轻小说强调可爱、吐槽、萌点。B在处理角色个性时更活泼生动（如“遗憾的帅哥”“弟控程度仅次于”“监视着，以防……”“傲娇兔子。略带暴力的爱”），更贴近轻小说常见的“卖萌”调调。A的表达相对中规中矩，缺少一点“萌味”或趣味性。\n\n4. **术语/名称一致性**：这是最大差异点。\n   - 人名：A统一使用“尤里”“菲尔”“阿方斯”等常见大陆译法；B用“优莉”“菲尔”“阿方斯”，但“优莉”在轻小说圈较少见，更常见“尤里/优莉”混用，但A整体更一致。\n   - 专有名词：A的“马克里纳茶”“斯蒂亚”“多尔加德”“科尔特菲亚”等更贴近标准音译；B的“马库莉娜茶”“斯缇娅”“科尔托菲亚”变体较多，不统一。\n   - 年龄表示：A统一用“X岁”，B混用“X歳”（日式）和“X岁”，不一致。\n   - 整体B在名称上变更多（如“塞恩/塔因”“露易丝”“马尔科”等），容易造成系列阅读时混乱。\n\n5. **连贯性/可读性**：B的句子更短、更口语化，段落节奏轻快，适合快速阅读设定集；A有些句子稍长，阅读时稍有卡顿感。\n\n6. **格式/标点**：两者标点使用都基本规范，但B在省略号、顿号、引号上更符合大陆习惯（如“……”而不是“...”，对话引号统一）。A偶尔有**式标点或空格习惯。\n\n**总体评价**：  \nB在流畅性、轻小说式活泼语气、可读性上明显占优，更适合当下大陆读者的阅读习惯和“萌系”期待。A的优势主要在名称音译的传统准确性和部分细节的严谨，但整体读起来稍显“正经”，缺少轻小说特有的轻松俏皮感。名称不一致是B的主要减分项，但由于这是角色介绍而非长篇故事，影响相对可控。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A在专有名词和部分细节更严谨，B有少量小偏差或省略\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B的口语化表达更自然流畅，A偶有生硬或书面感\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地保留了轻小说萌系、吐槽、活泼的语气，A稍显平淡\"},\n    \"terminology\": {\"A\": 9, \"B\": 7, \"notes\": \"A名称音译更统一传统，B变体较多但部分更可爱\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B节奏轻快、句子短促，更适合设定集阅读\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者标点基本规范，B更贴大陆习惯\"}\n  },\n  \"key_differences\": [\n    \"语气活泼度：B更萌、更口语（如'热心肠妈妈' '超级怕生' '遗憾的帅哥'），A更中性\",\n    \"名称一致性：A整体更统一（如'尤里'系列），B有较多变体（如'优莉' '马库莉娜茶'）\",\n    \"句子自然度：B更短、更符合当下中文阅读节奏，A部分句子稍长或**风\",\n    \"细节精确度：A在某些描述（如体弱多病、首席毕业）更贴原文\"\n  ],\n  \"final_summary\": \"B整体更符合轻小说中文读者对流畅、萌系、轻松阅读的期待，读起来更带感。尽管A在准确性和名称统一上稍胜，但轻小说翻译的魅力更多在于'读着舒服、想继续看'，因此B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 17053,
+          "completion_tokens": 3886,
+          "total_tokens": 20939
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A在专有名词和部分细节更严谨，B有少量小偏差或省略"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的口语化表达更自然流畅，A偶有生硬或书面感"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地保留了轻小说萌系、吐槽、活泼的语气，A稍显平淡"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 7,
+        "notes": "A名称音译更统一传统，B变体较多但部分更可爱"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B节奏轻快、句子短促，更适合设定集阅读"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者标点基本规范，B更贴大陆习惯"
+      }
+    },
+    "key_differences": [
+      "语气活泼度：B更萌、更口语（如'热心肠妈妈' '超级怕生' '遗憾的帅哥'），A更中性",
+      "名称一致性：A整体更统一（如'尤里'系列），B有较多变体（如'优莉' '马库莉娜茶'）",
+      "句子自然度：B更短、更符合当下中文阅读节奏，A部分句子稍长或**风",
+      "细节精确度：A在某些描述（如体弱多病、首席毕业）更贴原文"
+    ],
+    "final_summary": "B整体更符合轻小说中文读者对流畅、萌系、轻松阅读的期待，读起来更带感。尽管A在准确性和名称统一上稍胜，但轻小说翻译的魅力更多在于'读着舒服、想继续看'，因此B胜出。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:39:22.656440",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "743c2625e6dd5019a319781f36bb23150aedcbe07b262abd9b1577d70b131e61",
+    "B": "5e374213716faebd81ccaa415d3bfdf9806ac513c04958ace95e319c9cb7a06e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:40:02.078924",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DljwGrLgxgDRca2korCHxFnh7Af",
+      "judge_response": {
+        "id": "chatcmpl-89DljwGrLgxgDRca2korCHxFnh7Af",
+        "object": "chat.completion",
+        "created": 1768426792,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n\n**详细分析**\n\n整体来看，两者都是相当高质量的轻小说中译，准确性都很高，风格也基本符合轻小说叙述+对话的轻松、带点情感张力的调性。但在多个细微之处仍能看出明显差异。\n\n**逐项比较要点总结：**\n\n1. **准确性（意思保留）**  \n   A整体更忠实原文，几乎没有增删或改写核心意思。  \n   B在若干地方有轻微意译过度或小改写，例如：  \n   - 段落2「ずいぶんましな結末だとも言える」→ A「也算好多了」更贴近原文语气，B「相当不错的收场」稍显夸张  \n   - 段落5「妙な顔」→ A「一脸古怪」最自然，B「表情很古怪」也可但稍逊  \n   - 段落67/68 B出现明显漏字（「把剑**我的嘴里」），属于严重失误  \n   → A在此项占优\n\n2. **流畅性（中文自然度）**  \n   A的句子整体更符合当代网络轻小说读者的阅读习惯，节奏感更好、口语化更自然。  \n   B偶尔会出现稍显书面/生硬的表达，例如：  \n   - 「字面意义上的全灭」「姑且算是试试」「一屁股坐下去」「蒙的」「愤懑难平」等，虽然不算错，但现代读者读起来会感觉略微“文绉绉”或“用力过猛”。  \n   → A更胜一筹\n\n3. **风格/语气（轻小说感）**  \n   A在对话和内心独白部分更活泼、带点吐槽感和轻盈的距离感，非常符合日式轻小说“表面轻松、内心有苦”的氛围。  \n   B的语气整体更“正经”一点，对话偶尔显得过于完整/书面（如「请不要想些多余的事」「你其实是很好地接受了这件事哦」），轻小说特有的“屑屑的亲昵感”和“无力吐槽感”稍弱。  \n   → A风格更到位\n\n4. **术语/名称一致性**  \n   两者基本一致，但细节处：  \n   - A统一用「裘达神父」（更接近Günter的常见中译习惯）  \n   - B也统一，但段落67出现明显排版错误（**），影响观感  \n   - 货币「达利尔」、地名、人名等两边都处理得很好，无大差别  \n   → 几乎平手（B因排版错误略扣分）\n\n5. **连贯性/可读性**  \n   A整篇阅读下来节奏更顺畅，段落间衔接自然，几乎没有让人卡顿的地方。  \n   B在部分段落（尤其是叙述部分）会出现“用力翻译”的痕迹，导致阅读时偶尔需要停顿一下重新理解（如段落37、42、51等处）。  \n   → A胜出\n\n6. **格式/标点符号**  \n   A标点使用更符合中文轻小说习惯（破折号、顿号、省略号、对话引号等都很自然）。  \n   B偶尔出现不必要的「」全角引号混用、句尾标点略显刻板，且段落67有明显排版错误。  \n   → A明显更好\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9.5,\n      \"B\": 8.0,\n      \"notes\": \"A几乎完全忠实原文，B有数处轻微改写+一处严重漏字\"\n    },\n    \"fluency\": {\n      \"A\": 9.5,\n      \"B\": 8.0,\n      \"notes\": \"A句子更符合当代中文轻小说阅读节奏，B部分表达稍显书面或用力\"\n    },\n    \"style\": {\n      \"A\": 9.5,\n      \"B\": 7.5,\n      \"notes\": \"A更好地保留了轻小说特有的轻松吐槽感与情感细腻度，B偏正经\"\n    },\n    \"terminology\": {\n      \"A\": 9.5,\n      \"B\": 8.5,\n      \"notes\": \"术语基本一致，但B出现明显排版错误\"\n    },\n    \"coherence\": {\n      \"A\": 9.5,\n      \"B\": 8.0,\n      \"notes\": \"A通篇阅读流畅度更高，B局部有轻微卡顿感\"\n    },\n    \"formatting\": {\n      \"A\": 9.5,\n      \"B\": 7.5,\n      \"notes\": \"A标点与轻小说格式更自然，B有排版失误\"\n    }\n  },\n  \"key_differences\": [\n    \"A整体更自然、节奏更好、轻小说味更浓\",\n    \"B在部分意译上稍显用力或书面化\",\n    \"B存在一处严重漏字/排版错误（段落67）\",\n    \"对话部分A的口语感与屑屑的亲密感更强\"\n  ],\n  \"final_summary\": \"综合各方面，A在准确性、流畅性、轻小说风格体现、可读性上全面占优，虽然B也属于高水平翻译，但整体差距较为明显，A是更优秀的版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12022,
+          "completion_tokens": 1718,
+          "total_tokens": 13740
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 9.5,
+        "B": 8.0,
+        "notes": "A几乎完全忠实原文，B有数处轻微改写+一处严重漏字"
+      },
+      "fluency": {
+        "A": 9.5,
+        "B": 8.0,
+        "notes": "A句子更符合当代中文轻小说阅读节奏，B部分表达稍显书面或用力"
+      },
+      "style": {
+        "A": 9.5,
+        "B": 7.5,
+        "notes": "A更好地保留了轻小说特有的轻松吐槽感与情感细腻度，B偏正经"
+      },
+      "terminology": {
+        "A": 9.5,
+        "B": 8.5,
+        "notes": "术语基本一致，但B出现明显排版错误"
+      },
+      "coherence": {
+        "A": 9.5,
+        "B": 8.0,
+        "notes": "A通篇阅读流畅度更高，B局部有轻微卡顿感"
+      },
+      "formatting": {
+        "A": 9.5,
+        "B": 7.5,
+        "notes": "A标点与轻小说格式更自然，B有排版失误"
+      }
+    },
+    "key_differences": [
+      "A整体更自然、节奏更好、轻小说味更浓",
+      "B在部分意译上稍显用力或书面化",
+      "B存在一处严重漏字/排版错误（段落67）",
+      "对话部分A的口语感与屑屑的亲密感更强"
+    ],
+    "final_summary": "综合各方面，A在准确性、流畅性、轻小说风格体现、可读性上全面占优，虽然B也属于高水平翻译，但整体差距较为明显，A是更优秀的版本。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:04:42.431510",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "2f149776a2b68fdfc69b8ea9be09c7e7f18dda92ea8dc7aedc33a002f7f2ee6f",
+    "B": "9b3607a63580f71f1535cf53dead97e79921a8c41f8886ee83d9577791ed57c9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:05:39.902391",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "16d12260-40df-46d8-ba31-66fb7c63a75c",
+      "judge_response": {
+        "id": "16d12260-40df-46d8-ba31-66fb7c63a75c",
+        "object": "chat.completion",
+        "created": 1768421139,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 详细分析\n\n### 1. 准确性问题\n\n**段落2 - 关键错误**\n- 原文：「１３歳から１５歳に専属メイドをしていて性同一性障害だとフィリップが教えたのに」\n- A：「她从13岁开始就给15岁的专属女仆做性同一性障碍者」— **严重误译**，句子结构完全混乱\n- B：「菲利普告诉我说她有性别认同障碍」— 更准确，但省略了\"13到15岁担任专属女仆\"的信息\n\n**段落20**\n- 原文：「真剣じゃねえか！？」（这是真剑啊！？）\n- A：「这可是真剑啊！？」— 正确\n- B：「来真的啊！？」— 误解，「真剣」此处指实物真剑\n\n**段落15**\n- 「ヒョロヒョロの剣」形容剑法软弱无力\n- A：「瘦弱的剑」— 不太准确\n- B：「软趴趴的剑」— 更贴切\n\n### 2. 流畅性\n\nB版整体语言更口语化、自然：\n- 「对不～起啦」vs「抱歉啦～嘛」\n- 「呜啊～！快给我住手～～～！！」vs「呜嘎～！别再那样了啊啊啊啊！！」\n\n### 3. 格式问题\n\n**A版严重格式缺陷**：\n- 段落8、10、11、12、13均缺少结尾引号「」\n- 这是明显的编辑疏漏\n\n**B版**：\n- 部分段落使用\"\"代替「」，但整体格式完整\n\n### 4. 风格把握\n\n两者都保持了轻小说的轻松语气，但：\n- B的「对不～起啦」更好地还原了「ゴメ～ンちゃい」的撒娇感\n- A的「不好意思啦～」略显生硬\n\n### 5. 术语一致性\n\n- 两者对角色名称保持一致\n- 「アイテムボックス」：A译「物品盒」，B译「物品箱」，均可接受\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落2有严重结构性误译；B在段落20有小失误但整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，A部分表达略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地还原了撒娇语气和轻小说对话感\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者术语处理基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"两者可读性都不错，B略胜一筹\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处缺少结尾引号，格式问题严重；B偶有引号不统一\"}\n  },\n  \"key_differences\": [\n    \"段落2：A完全误译关键信息，B基本正确\",\n    \"段落20：B误解「真剣」为「认真」而非「真剑」\",\n    \"格式：A多处缺失引号，B基本完整\",\n    \"语气：B更好地还原了「ゴメ～ンちゃい」的可爱撒娇感\"\n  ],\n  \"final_summary\": \"B版整体优于A版。虽然B在段落20有「真剣」的小误译，但A在段落2的严重误译和多处格式缺失是更严重的问题。B的语言更流畅自然，更好地保持了轻小说的轻松语气风格。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10280,
+          "completion_tokens": 2630,
+          "total_tokens": 12910
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落2有严重结构性误译；B在段落20有小失误但整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，A部分表达略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地还原了撒娇语气和轻小说对话感"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者术语处理基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者可读性都不错，B略胜一筹"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处缺少结尾引号，格式问题严重；B偶有引号不统一"
+      }
+    },
+    "key_differences": [
+      "段落2：A完全误译关键信息，B基本正确",
+      "段落20：B误解「真剣」为「认真」而非「真剑」",
+      "格式：A多处缺失引号，B基本完整",
+      "语气：B更好地还原了「ゴメ～ンちゃい」的可爱撒娇感"
+    ],
+    "final_summary": "B版整体优于A版。虽然B在段落20有「真剣」的小误译，但A在段落2的严重误译和多处格式缺失是更严重的问题。B的语言更流畅自然，更好地保持了轻小说的轻松语气风格。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

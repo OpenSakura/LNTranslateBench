@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:59:30.731353",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "078ca0539f628d98f66bb9f1977dc96a82f182e2f3399e94497332c2882b47bb",
+    "B": "899fc9a8ef1bf2d02e8b5acb2ac724a76a8cd27f3639b1ada258bdda1f72e18f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:00:27.451829",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "03317a9e-911f-4e99-b375-95a7fdc5e46c",
+      "judge_response": {
+        "id": "03317a9e-911f-4e99-b375-95a7fdc5e46c",
+        "object": "chat.completion",
+        "created": 1768431627,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落5**: A译\"章鱼烧面包\"是错误的，原文「焼きそばパン」是\"炒面面包\"，B正确\n- **段落35**: A译\"像是害怕似的\"不准确，「畏まる」是\"恭敬、敬畏\"的意思，B的\"敬畏一般恭敬地\"更准确\n- **段落10**: A译\"穿袴的人影\"比B的\"穿裤裙\"更准确，袴是日本传统服装\n- **段落48/57**: A译\"紧身裤套装\"\"短裤套装\"均有误，「パンツスーツ」是裤装套装，B正确\n- **段落50**: A译\"管子椅\"不当，「パイプ椅子」应是\"折叠椅\"，B正确\n\n### 2. 流畅性\n- **段落2**: A的\"透'啊'，敷衍地含糊应和\"语序混乱；B的表达更自然通顺\n- **段落6**: B\"也都像不像真的\"有语病；A更通顺\n- **段落24**: A\"态度出乎意料地谦卑地说道\"连用两个\"地\"，略显生硬\n\n### 3. 风格/语气\n- B在对话中保留了「」符号格式，更符合轻小说风格\n- A多处对话缺少引号（段落7、13、14等）\n- B的口语化处理更自然（如\"嘛\"\"啊\"等语气词）\n\n### 4. 术语一致性\n- 圣剑名：A译\"光之刃\"（意译），B译\"雷特布林格\"（音译）——各有道理\n- 『現場ニキ』：A译\"现场网红\"，B保留\"现场尼基\"——B更忠于原文网络用语特色\n- 段落60：「モです」A译\"你好\"过于随意，B译\"摩斯拉\"更贴近作者笔名梗\n\n### 5. 连贯性/可读性\n两者整体可读性相当，B在叙述段落中更连贯自然\n\n### 6. 格式/标点\nB的对话格式更规范统一，A多处缺失对话标记\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有明显错译（章鱼烧→炒面、畏まる误解、パンツスーツ多次错译）；B在袴的翻译上不如A\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更流畅，但段落6有语病；A段落2语序问题明显\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B对话格式完整，轻小说风格更到位；A多处缺对话引号\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B术语处理更一致，保留了网络用语特色\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"两者相近，B略胜\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A对话标点不规范，B格式统一\"}\n  },\n  \"key_differences\": [\n    \"焼きそばパン翻译：A错译为章鱼烧面包，B正确译为炒面面包\",\n    \"对话格式：B保留完整「」引号，A多处缺失\",\n    \"パンツスーツ：A多次错译，B正确\",\n    \"畏まる理解：A误译为害怕，B正确理解为恭敬\"\n  ],\n  \"final_summary\": \"B在准确性和格式规范上明显优于A，尤其避免了A的几处关键误译。虽然B在个别地方（如袴的翻译、段落6的语病）略有瑕疵，但整体质量更高，更适合作为轻小说翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12152,
+          "completion_tokens": 2534,
+          "total_tokens": 14686
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有明显错译（章鱼烧→炒面、畏まる误解、パンツスーツ多次错译）；B在袴的翻译上不如A"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更流畅，但段落6有语病；A段落2语序问题明显"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B对话格式完整，轻小说风格更到位；A多处缺对话引号"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B术语处理更一致，保留了网络用语特色"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者相近，B略胜"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A对话标点不规范，B格式统一"
+      }
+    },
+    "key_differences": [
+      "焼きそばパン翻译：A错译为章鱼烧面包，B正确译为炒面面包",
+      "对话格式：B保留完整「」引号，A多处缺失",
+      "パンツスーツ：A多次错译，B正确",
+      "畏まる理解：A误译为害怕，B正确理解为恭敬"
+    ],
+    "final_summary": "B在准确性和格式规范上明显优于A，尤其避免了A的几处关键误译。虽然B在个别地方（如袴的翻译、段落6的语病）略有瑕疵，但整体质量更高，更适合作为轻小说翻译。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

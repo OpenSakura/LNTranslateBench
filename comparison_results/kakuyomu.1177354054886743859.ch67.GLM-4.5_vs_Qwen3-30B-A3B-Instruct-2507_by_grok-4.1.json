@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:03.282273",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.GLM-4.5.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "2efcf080b397363d7550d04a8821a2556956e1020ad08f0582634115a505e960",
+    "B": "e95168cb2a561d05e07c66020b94a8d9e7a460ca1ba2a42d00fb36f218567d8c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:24.370154",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Dy5wpHclwcjt62hmMJbBZFfZgOv",
+      "judge_response": {
+        "id": "chatcmpl-89Dy5wpHclwcjt62hmMJbBZFfZgOv",
+        "object": "chat.completion",
+        "created": 1768426883,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"軽小说 ゴーレムホース スレイプニル トリエン ケント クサナギ デ・トリエン\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"王都デーアヘルト トリエン 辺境伯 軽小说 タイトル\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"ケント・クサナギ・デ・トリエン 小説\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"スレイプニル | 漫画無料試し読みならブッコミ！\" HandyComic](https://sp.handycomic.jp/product/index/title_id/274698)\n> [🔗 \"転生したらスライムだった件 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BB%A2%E7%94%9F%E3%81%97%E3%81%9F%E3%82%89%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%A0%E3%81%A0%E3%81%A3%E3%81%9F%E4%BB%B6)\n> [🔗 \"Rimuru Tempest is... - pixiv Encyclopedia\" Pixiv](https://dic.pixiv.net/en/a/Rimuru%20Tempest)\n> [🔗 \"転生したらスライムだった件\" Syosetu](https://ncode.syosetu.com/n6316bn)\n> [🔗 \"#クトゥルフ神話TRPG #クローズド系シナリオ オリジナルCocシナリオ【拝啓、未来の―――】 - N - pixiv\" pixiv](https://www.pixiv.net/novel/show.php?id=9335633)\n> [🔗 \"ケルベロスブレイド\" Tw5](http://tw5.jp/html/world/event/010/01RdusGBKM.htm)\n> [🔗 \"BOOKS | ノベル「転生したらスライムだった件」\" Ten Sura](https://www.ten-sura.com/novel/tensura/books)\n> [🔗 \"スレイプニル - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%97%E3%83%8B%E3%83%AB)\n> [🔗 \"キャラクター | 「転生したらスライムだった件」ポータルサイト\" Ten Sura](https://www.ten-sura.com/character)\n> [🔗 \"ハーメルン - SS･小説投稿サイト-\" Syosetu](https://syosetu.org/?mode=ss_detail2&nid=220374)\n\n> 🔍 **10 results found**\n\n> [🔗 \"「辺境伯」の作品一覧・人気順で無料で読む | 野いちご\" No Ichigo](https://www.no-ichigo.jp/search/book?word=%E8%BE%BA%E5%A2%83%E4%BC%AF)\n> [🔗 \"「辺境伯」の作品一覧・人気順で無料で読む | ベリーズカフェ\" Berrys Cafe](https://www.berrys-cafe.jp/search/book?word=%E8%BE%BA%E5%A2%83%E4%BC%AF)\n> [🔗 \"【無料試し読みあり】身代わりの花嫁は、不器用な辺境伯に溺愛される - めちゃコミック\" Mechacomic](https://mechacomic.jp/books/161398)\n> [🔗 \"売られた辺境伯令嬢は隣国の王太子に溺愛される |小椋あん...他 | まずは無料試し読み！Renta!(レンタ)\" Renta！](https://renta.papy.co.jp/renta/sc/frm/item/309667)\n> [🔗 \"『辺境』は田舎という意味じゃないよσ(゜∀゜ )というお話\" Syosetu](https://ncode.syosetu.com/n7029hl)\n> [🔗 \"辺境伯 - 作品検索 | 小説を読もう！\" Syosetu](https://yomou.syosetu.com/search.php?word=%E8%BE%BA%E5%A2%83%E4%BC%AF)\n> [🔗 \"辺境伯\" Pixiv](https://dic.pixiv.net/a/%E8%BE%BA%E5%A2%83%E4%BC%AF)\n> [🔗 \"辺境伯 小説一覧 | 無料の小説投稿サイトのアルファポリス\" Alphapolis](https://www.alphapolis.co.jp/novel/index?tag_ids=29450)\n> [🔗 \"身代わりの花嫁は、不器用な辺境伯に溺愛される【分冊版】 1 | ブックライブ\" BookLive](https://booklive.jp/product/index/title_id/20047577/vol_no/001)\n> [🔗 \"辺境伯：ファンタジー用語解説｜滝川海老郎\" Note](https://note.com/takigawa_ebirou/n/n150ddd5c770a)\n\n> 🔍 **10 results found**\n\n> [🔗 \"【ケントゥリア】ネタバレ完全版｜あらすじから...\" Comic Community](https://comicommunity.com/%E3%80%90%E3%82%B1%E3%83%B3%E3%83%88%E3%82%A5%E3%83%AA%E3%82%A2%E3%80%91%E3%83%8D%E3%82%BF%E3%83%90%E3%83%AC%E5%AE%8C%E5%85%A8%E7%89%88%EF%BD%9C%E3%81%82%E3%82%89%E3%81%99%E3%81%98%E3%81%8B%E3%82%89)\n> [🔗 \"ケントゥリア 1／暗森透\" Shueisha](https://www.shueisha.co.jp/books/items/contents.html?jdcn=08X10000000048692400)\n> [🔗 \"ケントゥリア - Web漫画アンテナ\" Web Comics](https://webcomics.jp/shonenjump-plus/17106371852950440097)\n> [🔗 \"ケントゥリア (漫画) - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%B3%E3%83%88%E3%82%A5%E3%83%AA%E3%82%A2_(%E6%BC%AB%E7%94%BB))\n> [🔗 \"密航者となった奴隷の少年に大きな試練が、少年ジャンプ＋新連載「ケントゥリア」 - コミックナタリー\" Natalie](https://natalie.mu/comic/news/568465)\n> [🔗 \"ケントゥリア 1｜無料漫画（マンガ）ならコミックシーモア｜暗森透\" Cmoa](https://www.cmoa.jp/title/295775)\n> [🔗 \"もうすぐ２巻が発売されるので、「ケントゥリア」のどこが面白いか、どこが好きかを語りたい。｜苦虫うさる\" Note](https://note.com/saiusaruzzz/n/n63009b44449c)\n> [🔗 \"ケントゥリア｜まんが王国\" K-Manga](https://comic.k-manga.jp/title/202428/pv)\n> [🔗 \"Amazon.co.jp: ケントゥリア 1 (ジャンプコミックス) ...\" Amazon Japan](https://www.amazon.co.jp/%E3%82%B1%E3%83%B3%E3%83%88%E3%82%A5%E3%83%AA%E3%82%A2-1-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E6%9A%97%E6%A3%AE-%E9%80%8F/dp/4088841026)\n> [🔗 \"ケントゥリア\" Pixiv](https://dic.pixiv.net/a/%E3%82%B1%E3%83%B3%E3%83%88%E3%82%A5%E3%83%AA%E3%82%A2)\n\n\n以下是对A和B两个翻译版本的详细比较分析。原文为日语轻小说风格，带有第一人称叙述（俺视角）、轻松幽默的语气、日常对话以及世界观说明。目标语言为中文，评估重点放在轻小说常见的“轻松、可读、带点吐槽感”的叙述/对话风格上。\n\n### 总体观察\n- **A**：更倾向于直译+自然化处理，使用“魔像马”“特里恩镇”“市政厅”等较为标准的奇幻用语。叙述较为平实，句子结构接近原文，但部分地方稍显生硬或冗长。对话中常使用“哦”“啊”等语气助词，保留了原文的轻快感。\n- **B**：更注重中文阅读流畅性和口语化，使用“傀儡马”“特里恩小镇”“役场/衙门”等略有古风或变体表达。对话更简洁、接地气，叙述中加入了更多“小聪明”式的轻松语气（如“挺好的”“有點痒痒的啊”），但在某些专业术语或细节上偶有小偏差（如军队规模误译）。\n\n逐个方面分析：\n\n1. **准确性（意思保留）**  \n   A基本忠实于原文，几乎无明显误译。B在整体意思上也接近，但存在个别偏差，例如段落16中原文“二〇〇〇～三〇〇〇人規模”被译为“两到三万规模的军队”（多了一个“万”，严重失准）；段落56中旅馆价格描述B有小错（如“黄铜貨”统一为“铜币”但细节混淆）。A在细节（如货币、专有名词、地名）更严谨。\n\n2. **流畅性（中文自然表达）**  \n   B的句子更短、更口语化，读起来像日常中文小说（如“转眼之间就到了”“挺好的”），节奏感强。A的句子有时稍长或文绉绉（如“多亏了可以自动驾驶的魔像马，一下子就到了”），但整体也流畅。B在对话部分更胜一筹，A在长叙述段落更稳。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   轻小说强调主角的内心吐槽、轻松调侃、日常系幽默。B更贴近：如“有點痒痒的啊”“呜……就算说我金钱观念有问题”“真是个麻烦的领主大人啊”等，带有可爱或自嘲的轻小说味。A的语气也保留了（如“真不好意思啊”“那也没办法啊”），但稍显正经，少了点“萌”或“贱萌”感。B在对话的活泼度更高。\n\n4. **术语/名称一致性**  \n   A统一使用“魔像马”“特里恩镇”“市政厅”“领主官邸”等，保持一致。B混用“傀儡马”“特里恩小镇”“役场/衙门/事务所”等，名称在不同段落微变（如“镇公所”→“役场”→“衙门”），虽不影响理解，但一致性稍逊。地名/人名A更稳定（如“特里恩”始终一致，B有时“小鎮”）。\n\n5. **连贯性/可读性**  \n   两版整体连贯，但B因口语化强，读起来更“上头”、节奏快，像刷轻小说时的感觉。A更像标准翻译体，可读性稳但稍平。长段落（如段落10-12的世界观说明）A更清晰有条理，B稍压缩但生动。\n\n6. **格式/标点符号**  \n   两版标点使用规范，基本一致。A的省略号和语气助词更接近日文习惯（如“……だ”“哦”）。B的标点更符合中文小说习惯（如更多逗号分隔），无明显问题。\n\n### 关键差异总结\n- 准确度与一致性：A更胜（少误译、术语统一）。\n- 流畅度与轻小说“萌味”：B更胜（对话活泼、叙述轻松）。\n- 整体阅读体验：B更像中文原创轻小说，A更像忠实译本。\n- 严重失误：B在军队规模（段16）有明显错误，影响设定可信度。\n\n综合来看，B在轻小说最重要的“读着爽、语气可爱、代入感强”上占优，尽管有少量准确性瑕疵，但不影响大局。A稳重可靠，但少了点轻小说灵魂的“俏皮”。\n\n### 最终判决\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A几乎无误译，B有军队规模等明显偏差，但整体意思保留尚可\"},\n    \"fluency\": {\"A\": 8, \"B\": 9, \"notes\": \"B口语化更自然，读起来节奏更好；A稍显直译感\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B的吐槽与轻松对话更符合轻小说调性，A较为正经\"},\n    \"terminology\": {\"A\": 9, \"B\": 7, \"notes\": \"A术语统一稳定，B名称/用词偶有切换\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B节奏感强，连贯阅读更爽快\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两版标点规范，无明显问题\"}\n  },\n  \"key_differences\": [\n    \"B在对话和内心独白更活泼可爱（如'有点痒痒的啊'），增强轻小说趣味性\",\n    \"A在专有名词和细节准确度更高（如货币、地名统一）\",\n    \"B存在个别严重误译（如军队规模），但不影响主线\",\n    \"整体B更贴近中文轻小说读者习惯的'爽快感'\"\n  ],\n  \"final_summary\": \"尽管B有少量准确性问题，但其在流畅性、风格贴合度和整体可读性上明显更胜一筹，更符合轻小说的阅读期待，因此判定B整体更好。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11991,
+          "completion_tokens": 4418,
+          "total_tokens": 16409
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A几乎无误译，B有军队规模等明显偏差，但整体意思保留尚可"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B口语化更自然，读起来节奏更好；A稍显直译感"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的吐槽与轻松对话更符合轻小说调性，A较为正经"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 7,
+        "notes": "A术语统一稳定，B名称/用词偶有切换"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B节奏感强，连贯阅读更爽快"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两版标点规范，无明显问题"
+      }
+    },
+    "key_differences": [
+      "B在对话和内心独白更活泼可爱（如'有点痒痒的啊'），增强轻小说趣味性",
+      "A在专有名词和细节准确度更高（如货币、地名统一）",
+      "B存在个别严重误译（如军队规模），但不影响主线",
+      "整体B更贴近中文轻小说读者习惯的'爽快感'"
+    ],
+    "final_summary": "尽管B有少量准确性问题，但其在流畅性、风格贴合度和整体可读性上明显更胜一筹，更符合轻小说的阅读期待，因此判定B整体更好。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

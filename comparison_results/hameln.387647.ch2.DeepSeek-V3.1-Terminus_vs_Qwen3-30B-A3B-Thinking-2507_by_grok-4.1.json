@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:39:26.917815",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "89aae12961c49195fb220b9c3c687a4b20323ca035fcd1a5b5f8960e3d7f2f73",
+    "B": "3f8c5372629aed7574f95702baa271830c844aec48c2dbfe9a0c475d60a6fcb0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:43.883293",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DXBVrorhscxa247TRCeNVPr2lnf",
+      "judge_response": {
+        "id": "chatcmpl-89DXBVrorhscxa247TRCeNVPr2lnf",
+        "object": "chat.completion",
+        "created": 1768426783,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"美式足球 ポジション ライン タイトエンド\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"アメフト ポジション ライン タイトエンド 日本語\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"Eyeshield 21 蛭魔 小早川瀬那 双葉蓮次 ポジション\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"【アメフトのポジション】タイトエンド（TE）とは？役割・能力について解説 | Inside out\" insideout-football.info](https://insideout-football.info/blog/guide/te)\n> [▶️ \"[American Football Introduction] The ultimate middle manager! A quick explanation of TE in just u... - YouTube\" www.youtube.com](https://www.youtube.com/watch?v=t6SOjcTGKHY)\n> [🔗 \"NFL解説 ポジション説明 タイト・エンド - NFL超入門！～群雄割拠の32国志演義～\" www.nfl-32.com](https://www.nfl-32.com/entry/2017/07/19/093207)\n> [🔗 \"アメリカンフットボール：オフェンス・ディフェンス・スペシャルチーム ポジション解説 | アメフト NFL\" www.redbull.com](https://www.redbull.com/jp-ja/american-football-positions-explained)\n> [🔗 \"ポジション紹介〜TE〜 | 大阪府立大学 アメリカンフットボール部\" www.shrikes.com](https://www.shrikes.com/te-cvd7)\n> [🔗 \"【アメフト】ポジション一覧｜花形・重要ポジションまでご紹介！ - スポスルマガジン｜様々なスポーツ情報を配信\" sposuru.com](https://sposuru.com/contents/sports-quest/american-football-position)\n> [🔗 \"PLAYERS OFFENSIVE LINE /TIGHT END RUNNING BACK QUARTERBACK WIDE RECIEVER /TIGHT END - 日本アメリカンフットボール協会\" americanfootball.jp](https://americanfootball.jp/wp-content/uploads/119_07.pdf)\n> [🔗 \"タイトエンドの役割って何？オフェンスにどれくらい影響を与えられるの？ : r/NFLNoobs - Reddit\" www.reddit.com](https://www.reddit.com/r/NFLNoobs/comments/a27swf/whats_the_role_of_a_tight_end_and_how_much_can_he?tl=ja)\n> [📚 \"タイトエンド - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89)\n> [🔗 \"初心者向け解説：アメフトの各ポジションに求められる身体サイズと運動能力とは - Sportie.com\" sportie.com](https://sportie.com/2023/03/american-football23)\n\n> 🔍 **5 results found**\n\n> [🔗 \"【アメフトのポジション】タイトエンド（TE）とは？役割・能力について解説 | Inside out\" insideout-football.info](https://insideout-football.info/blog/guide/te)\n> [🔗 \"NFL解説 ポジション説明 タイト・エンド - NFL超入門！～群雄割拠の32国志演義～\" www.nfl-32.com](https://www.nfl-32.com/entry/2017/07/19/093207)\n> [🔗 \"TE進化論：オフェンスを多様化させた重要ポジション | NFL JAPAN.COM\" nfljapan.com](https://nfljapan.com/column/19477)\n> [📚 \"タイトエンド - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89)\n> [🔗 \"【2022NFLプレーオフ】今更聞けないアメフトのポジション（タイトエンド/TE） | 地球の歩き方\" www.arukikata.co.jp](https://www.arukikata.co.jp/tokuhain/253750)\n\n> 🔍 **5 results found**\n\n> [🔗 \"Player Positions | Eyeshield 21 Wiki - Fandom\" eyeshield21.fandom.com](https://eyeshield21.fandom.com/wiki/Player_Positions)\n> [🔗 \"泥門の2番手 - ハーメルン\" syosetu.org](https://syosetu.org/novel/387647)\n> [🔗 \"ヒルセナ (ひるせな)とは【ピクシブ百科事典】 - pixiv\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%83%92%E3%83%AB%E3%82%BB%E3%83%8A)\n> [🔗 \"小早川瀬那(アイシールド21) - アニヲタWiki(仮) - atwiki（アットウィキ）\" w.atwiki.jp](https://w.atwiki.jp/aniwotawiki/pages/10804.html)\n> [🔗 \"Team Japan | Eyeshield 21 Wiki - Fandom\" eyeshield21.fandom.com](https://eyeshield21.fandom.com/wiki/Team_Japan)\n\n\n这是一个轻小说（疑似受《Eyeshield 21》启发或类似校园美式足球主题的作品）的中文翻译比较。源文本是日语，目标是中文（zh），轻小说风格强调活泼、口语化、热血、幽默的叙述与对话，带有少年漫风的夸张语气。\n\n**总体观察**：\n- 两者都基本准确传达原文意思，无重大误译。\n- A翻译更简洁、直译倾向强，有时显得生硬或不够自然，但保持了原文的节奏感。\n- B翻译更注重中文流畅性和口语化，添加了少量修饰（如“咯咯咯——”“太可靠了！”），使对话更生动、符合轻小说中热血/搞笑的语气。\n- 术语方面：美式足球专有名词（如“ライン”常译“线锋/进攻线”“タイトエンド”常译“紧端/边锋/紧端锋”，但在中文圈尤其是《Eyeshield 21》相关社区，常统一为“线锋”“边锋”或“紧端”）。A常用“线”“边锋”，B用“线锋”“边锋”。两者一致性都较好，但B在解释时更贴近常见译法（如“跑卫”而非“跑锋”）。\n- 风格：轻小说需要保持角色的个性（如蛭魔的狂妄、双叶的吐槽、瀬那的天然），B在语气上更活泼、贴近少年热血感。\n- 格式/标点：两者类似，都使用中文标点，但B在感叹、拟声更夸张（如加“——”），更符合轻小说表现。\n\n**详细逐项评分与笔记**（1-10分，10为完美）：\n\n- **accuracy**（准确性）：两者都很高，无明显丢失/添加意思。A更忠实字面，B偶有轻微意译但不偏离。\n  - A: 9\n  - B: 9\n  - notes: 两者均保留核心信息，B在个别处（如“誘拐”译“绑架也太过分”而非“过头”）稍柔和但仍准。\n\n- **fluency**（流畅性）：B的中文更自然、读起来顺口，像母语者写的对话。\n  - A: 7\n  - B: 9\n  - notes: A有些句子生硬（如“绑着1年”“选手兼主务。”），B调整为“绑着一名被绳子捆住的一年级生”“我是二年级的双叶莲次”，更符合中文习惯。\n\n- **style**（风格/语气）：轻小说需热血、搞笑、口语夸张。B更捕捉到这种感觉（如“咯咯咯——”“太可靠了！”“乖～乖～好孩子”）。\n  - A: 7\n  - B: 9\n  - notes: A语气平淡（如“嘿嘿嘿”“好的。”），B强化了角色个性（如蛭魔的“ケケケ”→“咯咯咯——”）。\n\n- **terminology**（术语/名称一致性）：人名（如“小早川瀬那”→“小早川濑那”一致）、职位（A多用“跑锋”“线”“边锋”，B用“跑卫”“线锋”“边锋”）。B更接近常见中文译法（尤其是《Eyeshield 21》粉丝圈，“ランニングバック”常“跑卫”，“タイトエンド”“边锋/紧端”）。\n  - A: 8\n  - B: 9\n  - notes: B统一性稍强（如始终“跑卫”“线锋”），A混用“跑锋”“线位”。\n\n- **coherence**（连贯性/可读性）：B整体阅读体验更好，句子衔接自然。\n  - A: 8\n  - B: 9\n  - notes: A部分叙述跳跃（如“把塞在嘴里的布拿掉，解开绳子后，1年露出了松了口气的表情。”），B更顺。\n\n- **formatting**（格式/标点符号）：两者标点类似，但B在拟声、强调更丰富（如“…………啊”“是！！”）。\n  - A: 8\n  - B: 9\n  - notes: B更符合轻小说视觉表现。\n\n**关键差异**：\n- 语气生动度：B更活泼、热血，适合轻小说读者。\n- 自然度：B中文更地道，A偶有日式直译痕迹。\n- 专有名词：B的“跑卫”“线锋”“边锋”更标准/流行。\n- 细节润色：B添加少量强调（如“——”“啦”“嘛”），增强趣味但不改意。\n- 少数处A更忠实（如“蛭魔！你绑架过头了吧！！”直译“やり過ぎ”）。\n\n**最终判决**：B整体更好——在保持准确的前提下，显著提升了流畅性、风格匹配度和可读性，更符合轻小说的娱乐性阅读需求。差异明显，非平局。\n\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者准确度相当，无重大偏差。\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B的中文表达更自然流畅，像日常对话。\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地捕捉轻小说热血、搞笑、口语化的语气。\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"B的足球术语译法更统一且贴近中文社区常见用法（如跑卫而非跑锋）。\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B句子衔接更好，整体阅读顺畅。\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B在标点和强调上更生动，符合轻小说格式。\"}\n  },\n  \"key_differences\": [\n    \"B在对话语气上更活泼夸张（如拟声词延长、添加语气助词），增强轻小说趣味性。\",\n    \"B的中文更地道自然，避免A的部分生硬直译。\",\n    \"术语统一性B略胜（如一致使用‘跑卫’‘线锋’）。\",\n    \"叙述部分B更注重可读性，调整句式让节奏更好。\"\n  ],\n  \"final_summary\": \"翻译B整体更优秀，在准确性相当的情况下，显著提升了流畅性、风格契合度和轻小说特有的热血娱乐感，更适合目标读者。A忠实但稍显平淡，B胜出。\" \n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11804,
+          "completion_tokens": 3749,
+          "total_tokens": 15553
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者准确度相当，无重大偏差。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文表达更自然流畅，像日常对话。"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地捕捉轻小说热血、搞笑、口语化的语气。"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "B的足球术语译法更统一且贴近中文社区常见用法（如跑卫而非跑锋）。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B句子衔接更好，整体阅读顺畅。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在标点和强调上更生动，符合轻小说格式。"
+      }
+    },
+    "key_differences": [
+      "B在对话语气上更活泼夸张（如拟声词延长、添加语气助词），增强轻小说趣味性。",
+      "B的中文更地道自然，避免A的部分生硬直译。",
+      "术语统一性B略胜（如一致使用‘跑卫’‘线锋’）。",
+      "叙述部分B更注重可读性，调整句式让节奏更好。"
+    ],
+    "final_summary": "翻译B整体更优秀，在准确性相当的情况下，显著提升了流畅性、风格契合度和轻小说特有的热血娱乐感，更适合目标读者。A忠实但稍显平淡，B胜出。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

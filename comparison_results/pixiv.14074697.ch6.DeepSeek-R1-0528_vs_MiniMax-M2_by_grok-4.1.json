@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:04.055627",
+  "sample": "pixiv.14074697.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14074697.ch6.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14074697.ch6.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.14074697.ch6.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2aaa1771168c77ee4570d21e2a44b5dc90fdfabb9a6cc3e628ed6bb3c8239389",
+    "A": "b55ca47787c11188ba9d007bbb1f707aa7ccda7447e7bb37fa79dfb6c840b6c7",
+    "B": "19eea1817473482c4e123044dfb0d1c5d6a9142a2f46c8fc5a797d7331e95bc7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:26.892835",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Dnz7ekiH15waO1RhNLrMQPrBSj2",
+      "judge_response": {
+        "id": "chatcmpl-89Dnz7ekiH15waO1RhNLrMQPrBSj2",
+        "object": "chat.completion",
+        "created": 1768427065,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 松田陣平 萩原研二 爆弾処理班 組対 姫ちゃん\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"名探偵コナン 二次創作 望月紫乃 組対の女王様\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"コナン 二次小説 主人公 重生 警察 爆弾処理\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"松田陣平のキャラクター&エピソード情報 | 名探偵コナン\" Web Sunday](https://websunday.net/conan100/character?tid=457)\n> [🔗 \"松田 陣平｜キャラクター｜名探偵コナン｜読売テレビ\" YTV](https://www.ytv.co.jp/conan/character/matsuda)\n> [🔗 \"松田陣平\" Pixiv](https://dic.pixiv.net/a/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3)\n> [🔗 \"『名探偵コナン』松田陣平の情報まとめ｜登場回や重要エピソードも解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1748590068)\n> [🔗 \"『名探偵コナン』萩原研二の情報まとめ｜登場回や重要エピソードも解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1749778454)\n> [🔗 \"松田陣平 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3)\n> [🔗 \"松田陣平の登場回 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3%E3%81%AE%E7%99%BB%E5%A0%B4%E5%9B%9E)\n> [🔗 \"松田陣平との約20年を振り返る｜げんきなにんげん\" Note](https://note.com/genkinaningen/n/ne74fd1a8929c)\n> [🔗 \"「松田陣平」検索結果 | アニメイト\" Animate Online Shop](https://www.animate-onlineshop.jp/products/list.php?mode=search&smt=%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3)\n> [🔗 \"「警察学校組」相関図＆時系列【降谷零・松田陣平・萩原研二・伊達航・諸伏景光】2026年映画最新ネタバレ\" Conan-zukai](https://conan-zukai.com/2024keisatugakkou)\n\n> 🔍 **10 results found**\n\n> [🔗 \"原作：名探偵コナン 小説・SS一覧 - ハーメルン\" Syosetu](https://syosetu.org/search?mode=search&word=%E5%8E%9F%E4%BD%9C%EF%BC%9A%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"名探偵コナン二次創作 | 全2話 (作者:Ruka@二次創作楽しい)の連載小説 | テラーノベル\" Teller Novel](https://teller.jp/se/3qnvop3yb1gyu-8287933628)\n> [🔗 \"【名探偵コナン SS・夢小説】オリ主、クロス、オススメの二次小説\" 0en-game](https://www.0en-game.com/free/ss-konan.htm)\n> [🔗 \"名探偵コナン\" Akatsuki-novels](https://www.akatsuki-novels.com/novels/index/original_keywords~a520402a8e12db745075ab69a7eb01f714ee279678d16cf9)\n> [🔗 \"「名探偵コナン」SS100選まとめ：人気の二次創作小説を一挙紹介 | 夜ふかしおじさんの小説探訪\" Netsyousetuojisan](https://netsyousetuojisan.com/?p=8291)\n> [🔗 \"名探偵コナンの2次創作について。すごくマニアックな質問です。私は最近p... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10312982005)\n> [🔗 \"名探偵コナンの検索結果 【夢小説対応】簡単オシャレな創作サイト作成サービス | フォレストページ＋\" Famipure](https://plus.fm-p.jp/search?w=%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"【名探偵コナン】小説・夢小説一覧 (1490件以上) ...\" Teller](https://teller.jp/tag/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"「二次創作 コナン」の小説・夢小説 検索結果 - ...\" Uranai](https://search.uranai.nosv.org/find.php/%E4%BA%8C%E6%AC%A1%E5%89%B5%E4%BD%9C%20%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"【名探偵コナン】おすすめWeb小説一覧を人気順で...\" Kakuyomu](https://kakuyomu.jp/tags/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3)\n\n> 🔍 **10 results found**\n\n> [🔗 \"原作：名探偵コナン 小説・SS一覧 - ハーメルン\" Syosetu](https://syosetu.org/search?mode=search&word=%E5%8E%9F%E4%BD%9C%EF%BC%9A%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"コナンの名作二次創作小説｜あにまん掲示板\" Animanch](https://bbs.animanch.com/board/669014)\n> [🔗 \"「名探偵コナン」の小説・夢小説 検索結果(タグ) ...\" Uranai](https://search.uranai.nosv.org/find.php/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3?stype=tag)\n> [🔗 \"【名探偵コナン SS・夢小説】オリ主、クロス、オススメの二次小説\" 0en-game](https://www.0en-game.com/free/ss-konan.htm)\n> [🔗 \"「名探偵コナン」SS100選まとめ：人気の二次創作小説を一挙紹介 | 夜ふかしおじさんの小説探訪\" Netsyousetuojisan](https://netsyousetuojisan.com/?p=8291)\n> [🔗 \"「二次創作 コナン」の小説・夢小説 検索結果 - ...\" Uranai](https://search.uranai.nosv.org/find.php/%E4%BA%8C%E6%AC%A1%E5%89%B5%E4%BD%9C%20%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"【名探偵コナン】小説・夢小説一覧 (1490件以上) ...\" Teller](https://teller.jp/tag/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"暁 〜小説投稿サイト〜: 小説検索\" Akatsuki-novels](https://www.akatsuki-novels.com/novels/index/original_keywords~a520402a8e12db745075ab69a7eb01f714ee279678d16cf9)\n> [🔗 \"【コナン】小説・夢小説一覧 (224件以上) | ...\" Teller](https://teller.jp/tag/%E3%82%B3%E3%83%8A%E3%83%B3)\n> [🔗 \"【名探偵コナン夢小説】小説・夢小説一覧 ...\" Teller](https://teller.jp/tag/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3%E5%A4%A2%E5%B0%8F%E8%AA%AC)\n\n\n这是一个典型的**名探偵コナン**（名侦探柯南）二次创作（同人小说），作者通过重生/穿越设定，让女主角（望月紫乃）在原作世界中成为警视厅机动队爆弾処理班成员，并与松田阵平、萩原研二等角色深度互动，改变了部分原作悲剧（尤其是萩原的死亡事件）。\n\n整体上，这篇作品保持了轻小说常见的**第一人称吐槽风+幽默自嘲+热血友情**风格，语言活泼、口语化强，带有大量网络用语、内梗和角色间调侃，符合轻小说读者喜好。\n\n### 详细比较分析（A vs B）\n\n**准确性**：  \nA整体更忠实于原文意思，几乎没有明显增减或误译。  \nB偶尔出现小偏差或简化，例如段落8结尾“大巴 please read”（明显打字错误/机翻残留）、段落38/61中对爆弾处理的专业描述稍显生硬、段落50“组对的王后”不如A的“组对的女王大人”贴近“女王様”的调侃意味。A胜出。\n\n**流畅性**：  \nA的中文非常自然、接地气，像中文母语者日常写作/吐槽风格（“啥？？”“懵了”“自找的”“安全安全”等），读起来顺口不卡顿。  \nB有些地方显得略显生硬或欧化，例如“哈？”“公主酱”“大姐头”等译名选择虽可爱，但组合起来不如A整体流畅；部分长句拆分或重组不够自然。A明显更胜。\n\n**风格/语气**：  \n原文是典型的轻小说口吻：大量括号吐槽、自我解嘲、角色间贫嘴、夸张表情。  \nA很好保留了这种**网络轻小说风**（“は？？”→“啥？？”、“バカヤロウ”→“笨蛋”、“金髪ゴリラ”→“金毛猩猩”等），语气活泼俏皮。  \nB在可爱化和少女心方向用力较多（如“雷酱”“hiro酱”“公主酱”），但有时显得过于软萌，与原文偶尔硬派、刑警粗口风的基调稍有偏差。A更贴合轻小说叙述/对话的整体感觉。\n\n**术语/名称一致性**：  \n两者都基本一致使用了常见的柯南圈译名（松田阵平、萩原研二、组对=组织犯罪对策部、爆弾処理班等）。  \n但B在昵称上更倾向少女化（姬酱→公主酱、雷酱等），而A保持了“姬酱”“雷君”“hiro君”等相对中性/原文风的译法，更统一且不突兀。A略胜。\n\n**连贯性/可读性**：  \nA全文读下来节奏感强、吐槽连贯，像一个人在自言自语讲故事，非常抓人。  \nB部分段落衔接稍显跳跃（如段落14/15的叙述转折），可读性略逊。A更强。\n\n**格式/标点符号**：  \nA标点使用更符合中文习惯（大量感叹号、问号叠加、破折号、省略号），视觉上更轻快。  \nB有些地方标点较保守或有小错误（如段落8结尾），A胜出。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A几乎无偏差，B有少量误译/残留机翻痕迹\"},\n    \"fluency\": {\"A\": 10, \"B\": 7, \"notes\": \"A口语自然流畅，B部分生硬/欧化\"},\n    \"style\": {\"A\": 9, \"B\": 8, \"notes\": \"A更贴合原文轻小说吐槽+贫嘴风，B偏可爱软萌化稍有偏差\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"两者术语一致性高，但A昵称处理更统一自然\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体节奏连贯性更强\"},\n    \"formatting\": {\"A\": 9, \"B\": 8, \"notes\": \"A标点表情更活泼符合中文轻小说阅读习惯\"}\n  },\n  \"key_differences\": [\n    \"A的口语化程度更高，更像中文网络轻小说读者习惯的表达\",\n    \"B在角色昵称上更偏向可爱/少女风（公主酱、雷酱），A相对克制贴原文\",\n    \"B个别地方有明显笔误或不自然表达（大巴 please read等），A无此类问题\",\n    \"整体语气A更接近原文的刑警间粗犷调侃+自我吐槽，B稍柔化\"\n  ],\n  \"final_summary\": \"翻译A在准确性、流畅性、风格还原度、可读性各方面全面领先，是一篇非常优秀、适合中文轻小说读者口味的译文；翻译B虽然也可读，但整体自然度与原文贴合度明显逊色。推荐A作为优胜译文。\"\n}\n```\n\n**结论**：**A完胜**，是更高质量的轻小说中文翻译。"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13720,
+          "completion_tokens": 4447,
+          "total_tokens": 18167
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A几乎无偏差，B有少量误译/残留机翻痕迹"
+      },
+      "fluency": {
+        "A": 10,
+        "B": 7,
+        "notes": "A口语自然流畅，B部分生硬/欧化"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更贴合原文轻小说吐槽+贫嘴风，B偏可爱软萌化稍有偏差"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者术语一致性高，但A昵称处理更统一自然"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体节奏连贯性更强"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "A标点表情更活泼符合中文轻小说阅读习惯"
+      }
+    },
+    "key_differences": [
+      "A的口语化程度更高，更像中文网络轻小说读者习惯的表达",
+      "B在角色昵称上更偏向可爱/少女风（公主酱、雷酱），A相对克制贴原文",
+      "B个别地方有明显笔误或不自然表达（大巴 please read等），A无此类问题",
+      "整体语气A更接近原文的刑警间粗犷调侃+自我吐槽，B稍柔化"
+    ],
+    "final_summary": "翻译A在准确性、流畅性、风格还原度、可读性各方面全面领先，是一篇非常优秀、适合中文轻小说读者口味的译文；翻译B虽然也可读，但整体自然度与原文贴合度明显逊色。推荐A作为优胜译文。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

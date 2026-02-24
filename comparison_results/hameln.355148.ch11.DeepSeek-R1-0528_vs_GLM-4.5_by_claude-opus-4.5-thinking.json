@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:08:51.619651",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.GLM-4.5.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "e85bf3dcf3c8174cd09c34d57a79fa55d8a99c70656701dfc88d605345310fb8",
+    "B": "bd295fbd179922388c265e78ac7b49230a47df6f4532ada78553224f6ea8e8ad"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:09:47.830451",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7c23fb68-731d-4761-bfe9-f247e87b0929",
+      "judge_response": {
+        "id": "7c23fb68-731d-4761-bfe9-f247e87b0929",
+        "object": "chat.completion",
+        "created": 1768421387,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 逐项分析\n\n**准确性**\n- 段落2：A\"别的灵魂\"较直译，B\"被其他灵魂占据\"更明确；A\"字面意义上的全灭\"更贴合\"文字通りの全滅\"\n- 段落3：A\"无法言语的二人\"更准确表达\"もの言わぬ二人\"（他们是尸体），B\"沉默不语的人\"略淡化\n- 段落5：B将\"蘇生術の経験が豊富な\"译为\"复活术师\"不够准确，A的\"复活术经验丰富的\"更好\n\n**流畅性**\n- 段落1：A语序更自然，B将\"考虑到当初的目的\"插入中间显生硬\n- 段落7：B\"抱着试试看的心态\"比A\"不管怎样先试试\"更地道\n\n**术语一致性**\n- 段落19：B将\"事務所\"译为\"办公室\"，与其他段落\"事务所\"不一致\n- 段落36：**A严重错误**——\"格蕾シア\"混入日文片假名\n- 段落80-81：**B错误**——使用\"俺\"而非\"我\"，不符合中文习惯\n\n**格式问题**\n- 段落33：A错误添加「」对话符号（此为叙述文）\n- 段落44：B错误用「」包裹整句叙述文\n\n**风格表现**\n- 两者都较好地保持了轻小说的叙事风格\n- A在情感表达上略显自然（如段落78\"忍不住笑了出来\"）\n\n### 关键差异总结\n1. A有名字渲染错误（格蕾シア）\n2. B有人称代词错误（俺→应为我）\n3. A在部分准确性上更优\n4. B有术语一致性问题\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在关键语义把握上更准确，如'无法言语的二人'\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体语序更自然，B段落1等处略生硬\"},\n    \"style\": {\"A\": 8, \"B\": 8, \"notes\": \"两者都较好保持轻小说风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"A有片假名混入错误，B有事务所/办公室不一致及俺的使用\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体阅读更流畅\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有对话符号误用问题\"}\n  },\n  \"key_differences\": [\n    \"A段落36出现片假名混入错误'格蕾シア'\",\n    \"B段落80-81使用日式'俺'而非中文'我'\",\n    \"A在语义准确性上略优，B在部分表达上更明确\",\n    \"B术语一致性较差（事务所/办公室混用）\"\n  ],\n  \"final_summary\": \"两个翻译质量接近，各有瑕疵。A在准确性和流畅性上略胜，但存在名字渲染的技术错误；B在某些表达上更明确，但有人称代词和术语一致性问题。综合考虑，A的错误虽明显但属技术问题易修正，而B的问题涉及译文质量本身，故A略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11585,
+          "completion_tokens": 2460,
+          "total_tokens": 14045
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在关键语义把握上更准确，如'无法言语的二人'"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体语序更自然，B段落1等处略生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者都较好保持轻小说风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "A有片假名混入错误，B有事务所/办公室不一致及俺的使用"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体阅读更流畅"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有对话符号误用问题"
+      }
+    },
+    "key_differences": [
+      "A段落36出现片假名混入错误'格蕾シア'",
+      "B段落80-81使用日式'俺'而非中文'我'",
+      "A在语义准确性上略优，B在部分表达上更明确",
+      "B术语一致性较差（事务所/办公室混用）"
+    ],
+    "final_summary": "两个翻译质量接近，各有瑕疵。A在准确性和流畅性上略胜，但存在名字渲染的技术错误；B在某些表达上更明确，但有人称代词和术语一致性问题。综合考虑，A的错误虽明显但属技术问题易修正，而B的问题涉及译文质量本身，故A略优。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

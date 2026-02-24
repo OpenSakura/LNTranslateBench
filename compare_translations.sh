@@ -22,10 +22,14 @@ Optional:
   --output DIR               Comparison output dir (env: COMPARISON_DIR, default: ./comparison_results)
   --concurrent-requests N    Number of concurrent judge requests (env: CONCURRENT_REQUESTS, default: 1)
   --seed N                   Seed for round-robin offset (env: SEED, default: 0)
+  --response-api API         Judge API type: chat_completions|responses (env: JUDGE_RESPONSE_API)
+  --reasoning-effort EFF     Reasoning effort: low|medium|high|xhigh (env: JUDGE_REASONING_EFFORT)
   --tracing                  Enable OpenTelemetry tracing (env: ENABLE_TRACING)
   --otlp-endpoint URL        OTLP traces endpoint (env: OTLP_ENDPOINT)
   --otlp-auth-header HDR     OTLP auth header (env: OTLP_AUTH_HEADER)
   --otlp-project NAME        OTLP project name (env: OTLP_PROJECT_NAME)
+  --focus-model MODEL        Only compare this model (env: FOCUS_MODEL)
+  --focus-mode MODE          Focus mode: scheduled|all (env: FOCUS_MODE, default: scheduled)
 
 Examples:
   export JUDGE_BASE_URL="http://localhost:8000/v1"
@@ -46,18 +50,24 @@ EOF
 }
 
 JUDGE_BASE_URL="${JUDGE_BASE_URL:-}"
-JUDGE_MODEL="${JUDGE_MODEL:-gemini-2.5-pro}"
+JUDGE_MODEL="${JUDGE_MODEL:-}"
 JUDGE_API_KEY="${JUDGE_API_KEY:-}"
+JUDGE_RESPONSE_API="${JUDGE_RESPONSE_API:-chat_completions}"
+JUDGE_REASONING_EFFORT="${JUDGE_REASONING_EFFORT:-high}"
 
 TRANSLATIONS_DIR="${TRANSLATIONS_DIR:-./translated_results}"
 SAMPLES_DIR="${SAMPLES_DIR:-./samples}"
 COMPARISON_DIR="${COMPARISON_DIR:-./comparison_results}"
-CONCURRENT_REQUESTS="${CONCURRENT_REQUESTS:-20}"
+CONCURRENT_REQUESTS="${CONCURRENT_REQUESTS:-3}"
 SEED="${SEED:-1}"
 
+# Focus mode options
+FOCUS_MODEL="${FOCUS_MODEL:-}"
+FOCUS_MODE="${FOCUS_MODE:-scheduled}"
+
 # Tracing options
-ENABLE_TRACING="${ENABLE_TRACING:-true}"
-OTLP_ENDPOINT="${OTLP_ENDPOINT:-[REDACTED]}"
+ENABLE_TRACING="${ENABLE_TRACING:-}"
+OTLP_ENDPOINT="${OTLP_ENDPOINT:-}"
 OTLP_AUTH_HEADER="${OTLP_AUTH_HEADER:-}"
 OTLP_PROJECT_NAME="${OTLP_PROJECT_NAME:-}"
 
@@ -101,6 +111,14 @@ while [[ $# -gt 0 ]]; do
       SEED="$2"
       shift 2
       ;;
+    --response-api)
+      JUDGE_RESPONSE_API="$2"
+      shift 2
+      ;;
+    --reasoning-effort)
+      JUDGE_REASONING_EFFORT="$2"
+      shift 2
+      ;;
     --tracing)
       ENABLE_TRACING="true"
       shift
@@ -115,6 +133,14 @@ while [[ $# -gt 0 ]]; do
       ;;
     --otlp-project)
       OTLP_PROJECT_NAME="$2"
+      shift 2
+      ;;
+    --focus-model)
+      FOCUS_MODEL="$2"
+      shift 2
+      ;;
+    --focus-mode)
+      FOCUS_MODE="$2"
       shift 2
       ;;
     --)
@@ -144,6 +170,11 @@ echo "Samples:      $SAMPLES_DIR"
 echo "Output:       $COMPARISON_DIR"
 echo "Judge URL:    $JUDGE_BASE_URL"
 echo "Judge model:  $JUDGE_MODEL"
+echo "Response API: $JUDGE_RESPONSE_API"
+echo "Reasoning:    $JUDGE_REASONING_EFFORT"
+if [[ -n "$FOCUS_MODEL" ]]; then
+  echo "Focus model:  $FOCUS_MODEL (mode: $FOCUS_MODE)"
+fi
 echo "=========================================="
 
 PY_ARGS=(
@@ -154,9 +185,19 @@ PY_ARGS=(
   --judge-model "$JUDGE_MODEL"
   --concurrent-requests "$CONCURRENT_REQUESTS"
   --seed "$SEED"
+  --response-api "$JUDGE_RESPONSE_API"
 )
+if [[ -n "$JUDGE_REASONING_EFFORT" ]]; then
+  PY_ARGS+=(--reasoning-effort "$JUDGE_REASONING_EFFORT")
+fi
 if [[ -n "$JUDGE_API_KEY" ]]; then
   PY_ARGS+=(--judge-api-key "$JUDGE_API_KEY")
+fi
+
+# Add focus mode parameters if set
+if [[ -n "$FOCUS_MODEL" ]]; then
+  PY_ARGS+=(--focus-model "$FOCUS_MODEL")
+  PY_ARGS+=(--focus-mode "$FOCUS_MODE")
 fi
 
 # Add tracing parameters if enabled

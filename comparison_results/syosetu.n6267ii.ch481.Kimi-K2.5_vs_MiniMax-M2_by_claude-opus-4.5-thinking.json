@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:24:16.154549",
+  "sample": "syosetu.n6267ii.ch481",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6267ii.ch481.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6267ii.ch481.MiniMax-M2.translated.txt",
+    "B": "translated_results/syosetu.n6267ii.ch481.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f309a52414e2e175d574abffda59bec83b94bff3fbcfc345346bc89227d7cc17",
+    "A": "e3f48199190368423025447915beee8434f4bd015d280f86d675c4e3bff64805",
+    "B": "7e91f160c1ed01d4e12e03d857f0327e92f33bdbf17e169b894feb71be6c50c6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:25:03.679029",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d8906cc9-3d29-4ca3-9d7b-5f21eadc09e2",
+      "judge_response": {
+        "id": "d8906cc9-3d29-4ca3-9d7b-5f21eadc09e2",
+        "object": "chat.completion",
+        "created": 1769610303,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**段落5**: A使用\"我被呼唤\"产生人称视角混乱，而B正确使用\"圭听到\"保持第三人称叙述。\n\n**段落12**: A翻译为\"天天一起的圭，也让人觉得有点可爱了\"，误解了句意（原意是圭觉得莎琳可爱）。B正确理解为\"圭也不知怎地觉得她挺可爱的了\"。\n\n**段落32**: A译为\"我把你那小子的撒旦城堡\"完全错误，B正确译为\"把撒旦那家伙的城堡给炸飞了\"。\n\n**段落42**: A将「車輪」直译为\"轮子\"（大错），实际这里指角色名シャリン，B正确译为\"看向莎琳\"。\n\n**段落63**: A将「抱いてしまえ」误译为\"想要抱抱的话，我来抱你吧\"，完全曲解了原意。B正确译为\"把她睡了吧\"（指发生关系）。\n\n**段落66**: A翻译为\"与恶魔的这种事可不是盖的\"含糊其辞，B准确译为\"和恶魔交欢可是很棒的\"。\n\n### 流畅性分析\n\nB整体更口语化、更符合轻小说风格。例如：\n- 段落2：B的\"居然连手机都不让用\"比A的\"禁止使用智能手机的残酷判决\"更自然\n- 段落85：B的\"阿扎德那家伙搞得\"比A的\"因为阿扎德的行动\"更生动\n\n### 格式问题\n\nA在多处将叙述文错误地加上引号（段落65、68、73），这是严重的格式错误。\n\n### 名称一致性\n\nA：沙琳/夏林/沙林混用\nB：莎琳/夏琳混用\n两者都有不一致问题，但A更混乱。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 9, \"notes\": \"A有多处严重误译：段落32撒旦城堡归属错误、段落42将角色名误译为轮子、段落63完全曲解性暗示内容\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语化自然，符合轻小说叙述风格；A部分表达生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更好地保留了角色语气和轻小说的轻松氛围，A在对话处理上过于书面\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A名称不一致（沙琳/夏林/沙林），且关键术语如「依代」「情交」处理不当\"},\n    \"coherence\": {\"A\": 5, \"B\": 8, \"notes\": \"A存在人称视角混乱问题（段落5用第一人称），影响整体连贯性\"},\n    \"formatting\": {\"A\": 4, \"B\": 9, \"notes\": \"A在多处叙述段落错误添加引号（段落65、68、73），严重格式错误\"}\n  },\n  \"key_differences\": [\n    \"段落42：A将シャリン误译为轮子，B正确识别为人名莎琳\",\n    \"段落63：A将性暗示「抱いてしまえ」误译为普通拥抱，B正确翻译\",\n    \"段落32：A弄错了撒旦城堡的归属表述\",\n    \"A多处将叙述内容错误地用引号包裹\",\n    \"A存在人称视角不一致问题\"\n  ],\n  \"final_summary\": \"B在准确性上明显优于A，特别是在关键剧情理解（角色名识别、性暗示内容）方面。B的语言更自然流畅，格式规范正确。A存在多处严重误译和格式错误，影响阅读体验和内容理解。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9875,
+          "completion_tokens": 2245,
+          "total_tokens": 12120
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A有多处严重误译：段落32撒旦城堡归属错误、段落42将角色名误译为轮子、段落63完全曲解性暗示内容"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语化自然，符合轻小说叙述风格；A部分表达生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地保留了角色语气和轻小说的轻松氛围，A在对话处理上过于书面"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A名称不一致（沙琳/夏林/沙林），且关键术语如「依代」「情交」处理不当"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 8,
+        "notes": "A存在人称视角混乱问题（段落5用第一人称），影响整体连贯性"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 9,
+        "notes": "A在多处叙述段落错误添加引号（段落65、68、73），严重格式错误"
+      }
+    },
+    "key_differences": [
+      "段落42：A将シャリン误译为轮子，B正确识别为人名莎琳",
+      "段落63：A将性暗示「抱いてしまえ」误译为普通拥抱，B正确翻译",
+      "段落32：A弄错了撒旦城堡的归属表述",
+      "A多处将叙述内容错误地用引号包裹",
+      "A存在人称视角不一致问题"
+    ],
+    "final_summary": "B在准确性上明显优于A，特别是在关键剧情理解（角色名识别、性暗示内容）方面。B的语言更自然流畅，格式规范正确。A存在多处严重误译和格式错误，影响阅读体验和内容理解。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

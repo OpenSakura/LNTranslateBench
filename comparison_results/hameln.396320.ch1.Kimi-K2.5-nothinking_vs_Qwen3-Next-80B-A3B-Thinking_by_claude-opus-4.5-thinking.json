@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:29:14.821017",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "1d39e6a7e911f3fc10ce107c69a82763ee8629bcf325a37e0cbcefee07e3e45a",
+    "B": "3d69cc2f56e106d449de434e08cb7ba5f865454131003e60616472804d696276"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:30:04.809679",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "78fae5c2-4dff-407b-9da5-bddfb97524ea",
+      "judge_response": {
+        "id": "78fae5c2-4dff-407b-9da5-bddfb97524ea",
+        "object": "chat.completion",
+        "created": 1769610604,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落逐一分析\n\n**段落2-3**: B更准确保留了原文结构\"没想到会有这么一天\"的感叹语气；A的\"压根\"略显随意。B的\"也曾有过同样的想法吧\"保留了推测语气\"のでしょうか\"。\n\n**段落4-6**: B的\"林立的高楼\"、\"高耸入云\"比A的\"满眼都是高楼\"、\"直插云霄\"更贴合轻小说叙述文体。关键点：原文\"読んで\"（读作）B正确译为\"读作\"，A译为\"叫它\"丢失了这层含义。\n\n**段落8-12**: A的翻译过于简化，如\"新能量\"(应为\"新能源\")、\"抢魔石\"太口语；B保留了\"最具代表性\"、\"能量效率极高\"等精准表达。B的\"据说\"正确对应原文的\"とされています\"推测语气。\n\n**段落13**: B有引号格式错误「迷宫『的由来」，扣分点。A虽口语但准确。\n\n**段落16**: A\"真心敬仰\"vs B\"致以发自内心的崇敬\"——B更贴合原文\"心からの敬拝を\"的正式感。\n\n**段落22-27**: B保持了原文的思辨性和文学性；A的\"关键不是人搞的\"过于口语，丢失了原文\"人の手で起きた訳ではない\"的严肃感。\n\n**段落38-39**: 两者都能传达困惑感，但B的\"因为是男性所以叫父亲\"更清晰地呈现了逻辑链条。\n\n**段落43**: B\"培养友情的男性好友\"比A\"好哥们儿\"更符合原文\"友情を育んできた\"的表达。\n\n**段落50-52**: B的表述更清晰准确；A的\"女的性欲反过来跟男的一样了\"表意不清，原文是\"置き換わった\"（被替换）。\n\n**段落61**: A的翻译格式混乱，不当使用引号；B正确处理了内心独白的呈现。\n\n**段落78**: A漏译了\"二月を費やした\"（花了两个月），B完整保留。\n\n---\n\n### 综合评判\n\n| 维度 | A特点 | B特点 |\n|------|-------|-------|\n| 准确性 | 多处简化、省略细节 | 更完整保留原意 |\n| 流畅性 | 口语化，部分过于随意 | 较正式但偶有生硬 |\n| 风格 | 偏日常对话 | 更贴合轻小说叙述体 |\n| 格式 | 段落61格式混乱 | 段落13引号错误 |\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A多处省略细节(如段落78漏译时间)、简化表达；B整体更忠实原文\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A口语流畅但过于随意；B正式但偶有直译痕迹\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B的文学性表达更符合轻小说叙述体；A的'好哥们儿''抢魔石'过于口语\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B统一使用'迷宫/地下城'、'魔石'等术语；A偶有不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B保持了原文的思辨性和逻辑链条；A部分简化导致逻辑断裂\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A段落61格式混乱；B段落13引号错误，但整体格式更规范\"}\n  },\n  \"key_differences\": [\n    \"A过度口语化(压根、好哥们儿、抢魔石)，B保持轻小说文体\",\n    \"A多处省略关键信息，B更完整\",\n    \"B更好地保留了原文推测语气(とされています→据说)\",\n    \"A段落61格式严重错误，B段落13有引号小错\"\n  ],\n  \"final_summary\": \"翻译B在准确性、风格贴合度和连贯性上明显优于A，更适合轻小说的叙述语境。A虽然口语流畅，但过度简化和随意化损失了原文的文学性和信息完整度。B的主要问题是偶有直译痕迹和一处引号格式错误，但整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11541,
+          "completion_tokens": 2241,
+          "total_tokens": 13782
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A多处省略细节(如段落78漏译时间)、简化表达；B整体更忠实原文"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A口语流畅但过于随意；B正式但偶有直译痕迹"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的文学性表达更符合轻小说叙述体；A的'好哥们儿''抢魔石'过于口语"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B统一使用'迷宫/地下城'、'魔石'等术语；A偶有不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保持了原文的思辨性和逻辑链条；A部分简化导致逻辑断裂"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A段落61格式混乱；B段落13引号错误，但整体格式更规范"
+      }
+    },
+    "key_differences": [
+      "A过度口语化(压根、好哥们儿、抢魔石)，B保持轻小说文体",
+      "A多处省略关键信息，B更完整",
+      "B更好地保留了原文推测语气(とされています→据说)",
+      "A段落61格式严重错误，B段落13有引号小错"
+    ],
+    "final_summary": "翻译B在准确性、风格贴合度和连贯性上明显优于A，更适合轻小说的叙述语境。A虽然口语流畅，但过度简化和随意化损失了原文的文学性和信息完整度。B的主要问题是偶有直译痕迹和一处引号格式错误，但整体质量更高。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

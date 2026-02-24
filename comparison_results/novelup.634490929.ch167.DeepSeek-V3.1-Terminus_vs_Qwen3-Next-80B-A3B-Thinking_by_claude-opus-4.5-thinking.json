@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:38:31.065738",
+  "sample": "novelup.634490929.ch167",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.634490929.ch167.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.634490929.ch167.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/novelup.634490929.ch167.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "32eb13be72e0747f319c67077645057ceb552d1d8f1248f9660d1a8d68e7f568",
+    "A": "b0c5b75b57eeec3951812dd06acfaadf9367366c2b701a4f80635f070f3c55fd",
+    "B": "04facb898f417699d931229cec548ccb9b584fdc9b9b18914700c0bf16500527"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:39:20.878239",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9ab2af10-2425-425f-a439-5cd57d64dd24",
+      "judge_response": {
+        "id": "9ab2af10-2425-425f-a439-5cd57d64dd24",
+        "object": "chat.completion",
+        "created": 1768423160,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 1. 准确性分析\n\n**段落3**：原文「なんでデス(だヨ)」\n- A译为「为啥要死（拒绝）啊」误解了\"デス\"（语气词）为\"死\"\n- B译为「为啥啊」虽简化但避免错误\n\n**段落4**：原文「ドクターの対応を盟友たちに任せ」\n- A「Doctor将应对交给盟友处理」准确\n- B「把Doctor交给伙伴们处理」误解为\"把Doctor这个人交给别人\"\n\n**段落31**：原文「その手に持っているのは」\n- A译「你手里拿着的」错误改变人称（原文是第三人称描述）\n- B译「手里拿的是」正确保持第三人称\n\n**段落61**：A出现未翻译的英文\"sentimental\"\n\n## 2. 流畅性分析\n\n- A整体更书面化、正式，如「尽管已是这般状况」「震耳欲聋的轰鸣声」\n- B更口语化，如「都这时候了」「震耳欲聋的爆音」\n- 轻小说风格上，B的口语化处理更贴合原作对话风格\n\n## 3. 术语一致性\n\n**名称翻译**：\n- A：「牙手组」→「牙咬丁」→「牙咬丁」（前后不一致）\n- B：始终用「基巴特比」（音译一致）\n\n**角色名**：\n- A：「银闪少女」「夜紫女孩」有意译尝试\n- B：「西尔瓦—女孩」「夜魔崎女孩」更接近音译\n\n## 4. 格式问题\n\n**B的严重问题**：\n- 段落6、7、8、47、48等多处缺少「」引号\n- 段落34使用了中文引号\"\"而非日式「」\n\n**A的格式**：基本规范统一\n\n## 5. 风格表现\n\n| 方面 | A | B |\n|------|---|---|\n| 语气词「デス」 | 有时保留如「危险デ斯」| 简化处理 |\n| 感叹词 | 「呜唏哟」较生动 | 「呜嘿」略显平淡 |\n| 战斗描写 | 更详细文雅 | 更简洁直接 |\n\n## 6. 关键差异示例\n\n**段落50**：\n- A：「从那轻柔的触感中难以想象的威力，我的身体以滑稽的姿势被轰飞」\n- B：「轻轻一碰威力大得不可思议，我直接被撞飞」\n- A更贴合原文「面白いほど」的表达\n\n**段落74**：\n- A：「我将这些攻击逐一在千钧一发之际化解」\n- B：「每次都在刀尖上避开」\n- 两者都可接受，B更有画面感\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A有人称错误和未译英文，B有段落4理解错误，各有失误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更流畅规范，B口语化但有时过于简略\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A偏书面正式，B偏口语轻松，各有适合场景\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"A名称翻译不一致（牙手组/牙咬丁），B始终统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙述连贯完整，B部分句子过于简化\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B多处缺少引号，格式混乱严重\"}\n  },\n  \"key_differences\": [\n    \"B在多个对话段落缺少引号，格式问题严重\",\n    \"A名称翻译不一致（牙手组vs牙咬丁），B保持音译统一\",\n    \"段落4：A正确理解原文结构，B误解主语\",\n    \"段落31：A人称错误，B正确\",\n    \"A整体更书面规范，B更口语化但有时过简\"\n  ],\n  \"final_summary\": \"两个译本各有优劣。A在格式规范性和文字表达上更胜一筹，但存在术语不一致和个别理解错误；B的口语化风格适合轻小说，术语统一，但格式问题严重（多处缺少引号）且部分翻译过于简化丢失原文细节。综合考虑，A因格式规范和整体表达质量略优于B，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10129,
+          "completion_tokens": 2131,
+          "total_tokens": 12260
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有人称错误和未译英文，B有段落4理解错误，各有失误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更流畅规范，B口语化但有时过于简略"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A偏书面正式，B偏口语轻松，各有适合场景"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A名称翻译不一致（牙手组/牙咬丁），B始终统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙述连贯完整，B部分句子过于简化"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B多处缺少引号，格式混乱严重"
+      }
+    },
+    "key_differences": [
+      "B在多个对话段落缺少引号，格式问题严重",
+      "A名称翻译不一致（牙手组vs牙咬丁），B保持音译统一",
+      "段落4：A正确理解原文结构，B误解主语",
+      "段落31：A人称错误，B正确",
+      "A整体更书面规范，B更口语化但有时过简"
+    ],
+    "final_summary": "两个译本各有优劣。A在格式规范性和文字表达上更胜一筹，但存在术语不一致和个别理解错误；B的口语化风格适合轻小说，术语统一，但格式问题严重（多处缺少引号）且部分翻译过于简化丢失原文细节。综合考虑，A因格式规范和整体表达质量略优于B，但差距不大。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:57:46.059577",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "50af72005d6b33040853ae751ca6bf883d0ae532a194df39f75fc1df5b273dd0",
+    "B": "be7038ba95e29dc0d5a4b50ec952fde703d587364260b6a2b2f70e6c47a03d8e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T22:59:18.177487",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "401d6925-bcf5-4eba-9d1e-b1ebc5710209",
+      "judge_response": {
+        "id": "401d6925-bcf5-4eba-9d1e-b1ebc5710209",
+        "object": "chat.completion",
+        "created": 1768431508,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落1**: A用\"出柜\"翻译「カミングアウト」不太恰当（出柜通常指性取向），B用\"坦白\"更准确\n- **段落2**: A\"以辅导考试为交换条件\"比B\"为了换考试复习\"更清晰准确\n- **段落31**: **B缺失翻译**，这是严重问题\n- **段落79**: B未翻译\"てへぺろ\"（应为\"嘻嘻/吐舌卖萌\"），A译为\"嬉皮笑脸\"合理\n\n### 2. 流畅性\n- A整体语言较为书面化，B更口语化\n- **段落4**: B\"不发火才怪\"比A更自然流畅\n- **段落11**: B\"压在不被骂的边缘\"比A\"控制在刚好不会被骂的及格线\"更简洁\n\n### 3. 风格/语气\n- **段落5**: A\"人家\"更符合撒娇语气，B\"我\"较普通\n- **段落34/36**: A\"抱歉咯～\"比B\"对不起啦～\"更俏皮\n- **段落46**: A\"容易上钩\"比B\"笨蛋\"更准确（チョロい指容易对付）\n\n### 4. 格式一致性\n- A全程保持「」对话格式\n- **B格式混乱**: 段落15-18、20-24、39-45等突然使用\"\"而非「」，严重影响阅读体验\n\n### 5. 术语一致性\n- A: \"道具箱\"；B: \"物品箱\"（アイテムボックス两种译法皆可）\n- 人名翻译两者一致\n\n### 6. 连贯性\n- **段落60**: A\"令众人无言以对\"是第三人称叙述；B\"我什么也说不出来了\"错误转为第一人称\n- **段落57**: B\"我不想再想起那些死掉的家伙了\"理解错误，原文是\"不太想让你回忆起来\"\n\n## 关键问题汇总\n| 问题 | A | B |\n|------|---|---|\n| 缺失翻译 | 无 | 段落31完全缺失 |\n| 未翻译词汇 | 无 | 段落79\"てへぺろ\"未译 |\n| 格式混乱 | 无 | 多处引号不一致 |\n| 人称错误 | 无 | 段落60第一/三人称混淆 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落31缺失翻译，段落57/60理解错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，但有硬伤\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A撒娇语气处理更好，B部分过于随意\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"两者基本一致，B有未翻译词\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B人称视角混乱，A保持一致\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B引号格式严重不一致，多处从「」变\"\"\"}\n  },\n  \"key_differences\": [\n    \"B段落31完全缺失翻译\",\n    \"B段落79未翻译'てへぺろ'\",\n    \"B格式混乱，对话引号不统一\",\n    \"B段落60错误使用第一人称\",\n    \"A对撒娇语气（ゴメ～ンちゃい等）处理更到位\"\n  ],\n  \"final_summary\": \"A翻译虽有个别用词不够精准（如'出柜'），但整体完整、格式统一、人称视角一致。B虽然口语化表达更自然，但存在严重硬伤：段落31缺失翻译、段落79未译词汇、多处格式混乱、人称错误等问题。综合考量，A明显优于B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9875,
+          "completion_tokens": 1674,
+          "total_tokens": 11549
+        }
+      },
+      "status": "failed",
+      "error": "Expecting ',' delimiter: line 10 column 64 (char 429)"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "4f2e95a7-f73d-4c8b-80b7-225e53fa8057",
+      "judge_response": {
+        "id": "4f2e95a7-f73d-4c8b-80b7-225e53fa8057",
+        "object": "chat.completion",
+        "created": 1768431558,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐项分析\n\n**1. 准确性**\n- 段落2：A将\"ボエルが専属メイドをしていて\"误解为\"菲利普当专属女仆\"，实际是波耶尔当专属女仆服务菲利普\n- 段落31：B完全缺失翻译！\n- 段落48：A\"要是没有波耶尔就好了\"比B\"我都想死多少回了\"更准确\n- 段落60：B错误地将第三人称叙述改为第一人称\"我什么也说不出来了\"\n- 段落79：B未翻译\"てへぺろ\"，A译为\"嬉皮笑脸\"正确\n\n**2. 流畅性**\n- A整体语言更流畅自然\n- B部分表达略显生硬，如段落11\"这点分数拿100分太轻松了\"\n\n**3. 风格/语气**\n- 段落5：A\"人家一开始就道歉了嘛～\"更符合撒娇语气\n- 段落34/36/50：A\"抱歉咯～\"比B\"对不起啦～\"更贴合原文\"ゴメ～ンちゃい\"的俏皮感\n- 段落46：A\"容易上钩\"比B\"笨蛋\"更准确表达\"チョロい\"\n\n**4. 格式/标点符号**\n- A全文使用「」保持一致\n- B从段落15开始随意切换为\"\"，格式严重不一致\n- 段落1：B混用简繁体\"第二個達格瑪\"\n\n**5. 术语一致性**\n- 两者名称翻译基本一致\n- A\"道具箱\"vs B\"物品箱\"（アイテムボックス）都可接受\n\n**6. 连贯性**\n- B段落31缺失导致上下文断裂\n- A整体叙述连贯\n\n### 关键差异总结\n1. B有完整段落缺失（段落31）\n2. B格式不一致（引号混用）\n3. B有人称错误（段落60）\n4. B有未翻译词汇（段落79）\n5. A在段落2有理解偏差，但B也存在类似问题\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A段落2有误解，但B段落31缺失、段落60人称错误、段落79未翻译\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A表达更自然流畅\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的撒娇语气和轻小说口吻更到位\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"两者基本一致，A略胜\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落缺失影响连贯性\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B引号格式混乱，简繁混用\"}\n  },\n  \"key_differences\": [\n    \"B段落31完全缺失翻译\",\n    \"B引号格式不一致（「」与\\\"\\\"混用）\",\n    \"B段落60将第三人称错误改为第一人称\",\n    \"B段落79未翻译'てへぺろ'\",\n    \"A撒娇语气翻译更贴切\"\n  ],\n  \"final_summary\": \"A翻译在格式一致性、完整性和风格把握上明显优于B。B存在严重缺陷：段落缺失、格式混乱、人称错误及未翻译词汇。尽管A在段落2有理解偏差，但综合质量仍显著高于B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9875,
+          "completion_tokens": 2245,
+          "total_tokens": 12120
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A段落2有误解，但B段落31缺失、段落60人称错误、段落79未翻译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A表达更自然流畅"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的撒娇语气和轻小说口吻更到位"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者基本一致，A略胜"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落缺失影响连贯性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B引号格式混乱，简繁混用"
+      }
+    },
+    "key_differences": [
+      "B段落31完全缺失翻译",
+      "B引号格式不一致（「」与\"\"混用）",
+      "B段落60将第三人称错误改为第一人称",
+      "B段落79未翻译'てへぺろ'",
+      "A撒娇语气翻译更贴切"
+    ],
+    "final_summary": "A翻译在格式一致性、完整性和风格把握上明显优于B。B存在严重缺陷：段落缺失、格式混乱、人称错误及未翻译词汇。尽管A在段落2有理解偏差，但综合质量仍显著高于B。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

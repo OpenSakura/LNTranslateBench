@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:28:30.397446",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "e5d5f26aa1c14227e2a1b21c890119756721e5f66e8f009991189c7a10cd2be0",
+    "B": "140d18489bb4a7bb3c48be8508c05fb5091422290b8bca746caa14ca0cecee20"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:29:08.707102",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f3bdfed3-062b-4020-968f-c2d5f669184d",
+      "judge_response": {
+        "id": "f3bdfed3-062b-4020-968f-c2d5f669184d",
+        "object": "chat.completion",
+        "created": 1769610548,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **翻译A**：整体忠实原文，如段落1\"被称为实力者的A级魔法少女\"准确传达了\"実力者と呼べるA級魔法少女\"\n- **翻译B**：段落13错误使用第一人称\"我\"，原文是第三人称叙述；段落50\"这是我陪她搞研究的报酬\"改变了原意（应是\"陪我研究\"）；**段落84完全漏译**\n\n### 流畅性分析\n- **翻译A**：部分表达略显生硬，如段落3\"更能窥见其稀有性\"\n- **翻译B**：更口语化流畅，如\"热度直接拉满\"\"想不引人注意都难\"\n\n### 风格分析\n- **翻译A**：偏正式文学风格\n- **翻译B**：段落4出现\"tm\"等粗俗用语，对轻小说来说过于随意；段落6\"新瓜又砸下来\"网络梗过重\n\n### 术语一致性\n- **翻译A**：段落22保留日文\"クスミ\"未翻译，不利于读者理解\n- **翻译B**：段落37将\"ダークムーン\"译为\"黑月\"，而前文均为\"暗月\"，不一致\n\n### 格式问题\n- **翻译B**：段落84完全缺失，这是严重的格式/完整性问题\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B存在人称错误(段落13)、意思改变(段落50)及漏译(段落84)\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化流畅，但部分过于随意\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"B使用tm等粗俗语及过多网络梗，不太适合轻小说\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A保留日文クスミ；B暗月/黑月不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"B人称转换造成混乱\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B段落84完全漏译，严重扣分\"}\n  },\n  \"key_differences\": [\n    \"B段落84完全漏译\",\n    \"B段落13错用第一人称\",\n    \"B段落4使用粗俗用语tm\",\n    \"B整体更口语化但有时过度\",\n    \"A更忠实原文但偶有生硬\"\n  ],\n  \"final_summary\": \"翻译A虽然部分表达略显生硬，但整体准确性高、完整性好。翻译B虽然流畅度更佳，但存在漏译整段(84)、人称错误、意思改变等严重问题，且部分用语过于粗俗不适合轻小说风格。综合考虑，A的可靠性更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11114,
+          "completion_tokens": 1801,
+          "total_tokens": 12915
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B存在人称错误(段落13)、意思改变(段落50)及漏译(段落84)"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化流畅，但部分过于随意"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "B使用tm等粗俗语及过多网络梗，不太适合轻小说"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A保留日文クスミ；B暗月/黑月不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "B人称转换造成混乱"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B段落84完全漏译，严重扣分"
+      }
+    },
+    "key_differences": [
+      "B段落84完全漏译",
+      "B段落13错用第一人称",
+      "B段落4使用粗俗用语tm",
+      "B整体更口语化但有时过度",
+      "A更忠实原文但偶有生硬"
+    ],
+    "final_summary": "翻译A虽然部分表达略显生硬，但整体准确性高、完整性好。翻译B虽然流畅度更佳，但存在漏译整段(84)、人称错误、意思改变等严重问题，且部分用语过于粗俗不适合轻小说风格。综合考虑，A的可靠性更高。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

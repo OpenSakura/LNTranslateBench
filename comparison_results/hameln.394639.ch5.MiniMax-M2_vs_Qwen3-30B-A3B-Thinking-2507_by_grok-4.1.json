@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:40:24.718027",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "916efdb41ec14c830a837bbc1d96693a05caa8785440976ec1eb06ef781966c5",
+    "B": "9450c99696104a8ebdb2202998f80340652c78430f568befb8518b45c91af7dd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:40:59.917623",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DY3TR13smNTo2hVDFlzis0fhKQE",
+      "judge_response": {
+        "id": "chatcmpl-89DY3TR13smNTo2hVDFlzis0fhKQE",
+        "object": "chat.completion",
+        "created": 1768426859,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"雷门足球部 円堂ハル 月影蓮 早瀬リン 笹波雲明 南雲原\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"イナズマイレブン 円堂ハル 月影蓮 早瀬リン\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"巴哈姆特粉碎 OR 巴哈姆特冲击 イナズマイレブン\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"アステロイドベルト イナズマイレブン\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"円堂ハル\" Pixiv](https://dic.pixiv.net/a/%E5%86%86%E5%A0%82%E3%83%8F%E3%83%AB)\n> [🔗 \"イナズマイレブンの登場人物 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)\n> [🔗 \"『イナズマイレブン 英雄たちのヴィクトリーロード』の笹波雲明と円堂ハルについて考察する｜無名人\" Note](https://note.com/mumei3_/n/n3e969eac7f12)\n> [🔗 \"笹波雲明 - アニヲタWiki(仮)【12/25更新】\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/60035.html)\n> [🔗 \"『イナズマイレブン 英雄たちのヴィクトリーロード』笹波雲明、円堂ハルの声優発表！キャラの入手方法などやり込み要素の詳細も公開【TGS2023】\" Famitsu](https://app.famitsu.com/20230923_2135262)\n> [🔗 \"『イナイレ』新作『イナズマイレブン 英雄たちのヴィクトリーロード』主人公“笹波雲明”役は小村将さん、円堂守の息子“円堂ハル”役は木間萌さん【TGS2023】 | ゲーム・エンタメ最新情報のファミ通.com\" Famitsu](https://www.famitsu.com/news/202309/23318196.html)\n> [🔗 \"笹波雲明の悲しい過去判明！桜咲、木曽路、柳生、円堂ハル登場！『イナズマイレブン 英雄たちのヴィクトリーロード』 体験版ストーリーモード配信！第１章「君はサッカーができる」 - YouTube\" YouTube](https://www.youtube.com/watch?v=nTgiXc4TZ0M)\n> [🔗 \"お知らせ｜株式会社レベルファイブ\" Level5](https://www.level5.co.jp/news/20251229)\n> [🔗 \"雷門夏未\" Pixiv](https://dic.pixiv.net/a/%E9%9B%B7%E9%96%80%E5%A4%8F%E6%9C%AA)\n> [🔗 \"【2025年最新版】『イナズマイレブン』キャラクター一覧！登場人物の基本プロフィール・ゲーム情報などを網羅 - 女性向けアニメ情報サイトにじめん\" Nijimen](https://nijimen.kusuguru.co.jp/topics/548365)\n\n> 🔍 **10 results found**\n\n> [🔗 \"円堂ハル\" Pixiv](https://dic.pixiv.net/a/%E5%86%86%E5%A0%82%E3%83%8F%E3%83%AB)\n> [🔗 \"映画『イナズマイレブン・ザ・ムービー 2025』 を観たオタクの感想｜みゅんごむし\" Note](https://note.com/myun_0x0_myun/n/nc39bd6fdaa87)\n> [🔗 \"映画『イナズマV』雲明にとって円堂ハルはどんな存在なのか。『イナズマイレブン』らしい衝撃の物語表現にどよめく先行上映イベントリポート | ゲーム・エンタメ最新情報のファミ通.com\" Famitsu](https://www.famitsu.com/article/202412/29004)\n> [🔗 \"『イナイレ』新作『イナズマイレブン 英雄たちのヴィクトリーロード』主人公“笹波雲明”役は小村将さん、円堂守の息子“円堂ハル”役は木間萌さん【TGS2023】 | ゲーム・エンタメ最新情報のファミ通.com\" Famitsu](https://www.famitsu.com/news/202309/23318196.html)\n> [🔗 \"『イナズマイレブン 英雄たちのヴィクトリーロード』の笹波雲明と円堂ハルについて考察する｜無名人\" Note](https://note.com/mumei3_/n/n3e969eac7f12)\n> [🔗 \"映画「イナズマイレブン」中学生姿の円堂守＆円堂ハルが会話!? 夢のイラストが入プレ♪ 舞台挨拶付き先行上映も実施 | アニメ！アニメ！\" Animeanime](https://animeanime.jp/article/2024/11/22/87810.html)\n> [🔗 \"【イナイレV】円堂 ハルの入手方法・キャラ情報【ヴィクトリーロード】 | AppMedia\" AppMedia](https://appmedia.jp/victory-road/79480667)\n> [🔗 \"イナズマイレブン円堂ハルの時代は、円堂守が中学2年生から25年... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11311099121)\n> [🔗 \"「イナズマイレブン in JOYPOLIS」アクリルスタンド 円堂 ハル【EDITH ONLINE（イーディスオンライン）】\" Edith-online](https://edith-online.com/products/4571694196189)\n> [🔗 \"円堂ハルの「母親」は誰なのか？『イナズマイレブン』最新作で問われる“円堂守の結婚相手問題” | インサイド\" Inside Games](https://www.inside-games.jp/article/2023/03/09/144542.html)\n\n> 🔍 **10 results found**\n\n> [🔗 \"アステロイドベルト\" Pixiv](https://dic.pixiv.net/a/%E3%82%A2%E3%82%B9%E3%83%86%E3%83%AD%E3%82%A4%E3%83%89%E3%83%99%E3%83%AB%E3%83%88)\n> [🔗 \"アステロイドベルト | メトペディア - メトロイド Wiki\" Fandom](https://metroid.fandom.com/ja/wiki/%E3%82%A2%E3%82%B9%E3%83%86%E3%83%AD%E3%82%A4%E3%83%89%E3%83%99%E3%83%AB%E3%83%88)\n> [🔗 \"アステロイドベルト (Asteroid Belt) | 競走馬データ - netkeiba\" Netkeiba](https://en.netkeiba.com/db/horse/2017105321)\n> [🔗 \"アステロイドベルト - ガンダムWiki\" Gundam Wiki](https://gundam.wiki.cre.jp/wiki/%E3%82%A2%E3%82%B9%E3%83%86%E3%83%AD%E3%82%A4%E3%83%89%E3%83%99%E3%83%AB%E3%83%88)\n> [🔗 \"小惑星帯 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%83%91%E6%98%9F%E5%B8%AF)\n> [🔗 \"太陽系形成の謎と秘密がそこに？アステロイドベルトとは【地球の兄弟星たち・外惑星編】(季節・暮らしの話題 2021年09月18日) - 日本気象協会 tenki.jp\" Tenki.jp](https://tenki.jp/suppl/kous4/2021/09/18/30628.html)\n> [🔗 \"r/IsaacArthur on Reddit: Turning the Asteroid Belt into a economic empire\" Reddit](https://www.reddit.com/r/IsaacArthur/comments/17csq5q/turning_the_asteroid_belt_into_a_economic_empire)\n> [🔗 \"アステロイドベルト - 初音ミク Wiki\" STGR Wiki](https://w.atwiki.jp/hmiku/pages/37387.html)\n> [🔗 \"アステロイドベルト\" JBIS](https://www.jbis.or.jp/horse/0001235255)\n> [🔗 \"アステロイドベルト - クラブ馬情報 :: 一口馬主DB\" UmaDB](https://www.umadb.com/uma/au28623)\n\n\n这是一个来自《イナズマイレブン 英雄たちのヴィクトリーロード》（Inazuma Eleven: Victory Road）相关轻小说/衍生文本的翻译比较。原文是典型的轻小说风格：热血、口语化对话、足球+超必杀技的叙述，带有情感内省和吐槽感。目标语言为中文（zh），需保持轻小说常见的活泼、青春、带点中二感的语气，同时术语（如角色名、必杀技名）需一致且贴近粉丝习惯。\n\n### 详细分析\n\n**准确性**：  \nA整体更忠实于原文，许多地方逐字对应，避免添加或省略含义（如段落3的“曰く”翻译为“说是因为”、段落16的复杂否定结构）。  \nB有时改写意图（如段落3用“说白了”更口语但稍加解释、段落37性别误译“她”——原文“リンさん”是男性，早瀬リン为男），导致准确性降低。必杀技名上A的“巴·哈姆特冲击”虽生硬但接近音译，B的“巴哈姆特粉碎”更贴合游戏常见译法（类似“粉碎”类技）。但整体A胜。\n\n**流畅性**：  \nB在对话和叙述上更自然、接地气（如段落1“跑掉了”、段落10“那不就是太蠢了吗……”、段落48“超有趣的人”），读起来像日常中文轻小说。  \nA有时显得生涩、直译感强（如段落7“先来制定针对西宫中出现的异常事态的对策吧”、段落52复杂长句），但不至于读不懂。B整体更顺。\n\n**风格/语气**：  \n轻小说需要热血、吐槽、内心戏生动。B更贴近：口语强、感叹号使用自然、情感渲染好（如段落36“真气人”重复三次很带感）。  \nA偏书面、冷静，少了点轻小说“燃”和“中二”味（如段落21技名翻译较保守）。\n\n**术语/名称一致性**：  \n两者角色名基本一致（如円堂ハル→圆堂晴/ハル，月影蓮→月影莲，早瀬リン→早瀬/凛），但B在“早濑”统一更好。  \n必杀技：B的“巴哈姆特粉碎”和“小行星带”更符合イナズマイレブン系列粉丝译名习惯（常见“粉碎”“小行星带”），A的“巴·哈姆特冲击”较奇怪。  \nB在段落37误将リン性别译为女，严重不一致。\n\n**连贯性/可读性**：  \nB全文读来更连贯，像一本流畅的小说。A偶有awkward长句，但逻辑清晰。B在情感段（如段落36-54内心戏）更打动人。\n\n**格式/标点符号**：  \n两者都用了合适的引号、省略号，但B的口语标点（如“！？”“……”）更生动，符合对话节奏。A较规整。\n\n**关键差异总结**：\n- A：更忠实、直译，准确高，但流畅性和轻小说风格稍弱。\n- B：更自然、口语化，读感优秀，但有少量误译/改写（尤其是性别误判），准确性扣分。\n- 整体上，B在轻小说阅读体验上占优，尤其对话和情感部分更“像中文轻小说”。A更适合“忠实还原原文”需求。\n\n最终判决：B整体更好（更符合轻小说翻译追求的“可读性+风格”平衡，尽管有小瑕疵）。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A更忠实原文，几乎无添加/省略；B有改写和一处性别误译（リンさん为男性）\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B对话和叙述更自然流畅，像日常中文表达；A稍显直译生硬\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B保留了轻小说热血、吐槽、情感重复的青春中二感；A偏书面冷静\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"B必杀技译名（如巴哈姆特粉碎、小行星带）更贴系列习惯，但有性别失误；A保守但一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B全文连贯性强，内心戏特别动人；A逻辑清晰但句式偶显冗长\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"两者标点都规范，B口语感叹号和省略号使用更生动\"}\n  },\n  \"key_differences\": [\n    \"B对话更口语化、生动（如'跑掉了' vs '我逃了'），但有性别误译\",\n    \"必杀技名：B的'巴哈姆特粉碎'更贴粉丝译法，A的'巴·哈姆特冲击'较怪\",\n    \"情感/内心戏：B渲染更强（如段落36重复'真气人'），A较平实\",\n    \"整体阅读体验：B更像商业轻小说译本，A更像字幕组风格\"\n  ],\n  \"final_summary\": \"B在流畅性、风格和可读性上明显占优，更符合轻小说中文读者的期待。尽管准确性稍逊且有小瑕疵（如误判リン性别），但整体作为轻小说翻译，B的质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10839,
+          "completion_tokens": 4568,
+          "total_tokens": 15407
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更忠实原文，几乎无添加/省略；B有改写和一处性别误译（リンさん为男性）"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B对话和叙述更自然流畅，像日常中文表达；A稍显直译生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B保留了轻小说热血、吐槽、情感重复的青春中二感；A偏书面冷静"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "B必杀技译名（如巴哈姆特粉碎、小行星带）更贴系列习惯，但有性别失误；A保守但一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B全文连贯性强，内心戏特别动人；A逻辑清晰但句式偶显冗长"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "两者标点都规范，B口语感叹号和省略号使用更生动"
+      }
+    },
+    "key_differences": [
+      "B对话更口语化、生动（如'跑掉了' vs '我逃了'），但有性别误译",
+      "必杀技名：B的'巴哈姆特粉碎'更贴粉丝译法，A的'巴·哈姆特冲击'较怪",
+      "情感/内心戏：B渲染更强（如段落36重复'真气人'），A较平实",
+      "整体阅读体验：B更像商业轻小说译本，A更像字幕组风格"
+    ],
+    "final_summary": "B在流畅性、风格和可读性上明显占优，更符合轻小说中文读者的期待。尽管准确性稍逊且有小瑕疵（如误判リン性别），但整体作为轻小说翻译，B的质量更高。"
+  },
+  "outcome": "Qwen3-30B-A3B-Thinking-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Thinking-2507"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:11:30.636566",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "664a0b4f7819f75aaec8d08eb7fcbb0fc4b6869e129826e1a2516373e26bd6be",
+    "B": "06a630f6188c488b84233bd7041408146109f964990733912a90077400f6a00d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:12:15.651046",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0f22aec5-e5ba-4b63-b410-3937c625f21a",
+      "judge_response": {
+        "id": "0f22aec5-e5ba-4b63-b410-3937c625f21a",
+        "object": "chat.completion",
+        "created": 1768432335,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 详细分析\n\n## 准确性问题\n\n**翻译A的重大错误：**\n1. **段落31**：原文\"女子供を浚う\"意为\"掳走妇女儿童\"，A翻译为\"甚至掳走男女\"错误，B\"连妇孺都不放过\"准确\n2. **段落45**：原文\"スノートレント\"是\"雪树人\"，A翻译为\"雪藤\"完全错误，B\"雪树人\"正确\n3. **段落102**：原文\"ボア\"是\"Boar\"（野猪），A翻译为\"水獭\"严重错误，B\"蟒蛇\"也不对但更接近音译\n\n**翻译B的小问题：**\n- 段落102：\"ボア\"应该是\"野猪\"而非\"蟒蛇\"\n\n## 流畅性对比\n\n**翻译A**：偏向书面化、正式，如：\n- \"随着年龄增长体型不断变大\"\n- \"拥有向两侧伸展的巨型犄角\"\n\n**翻译B**：更口语化、简洁，如：\n- \"随着年龄增长而变大\"\n- \"长着横向伸展的巨大角\"\n\n## 风格适配\n\n轻小说需要轻松、口语化的叙述风格：\n- **B更符合**：如段落55\"这只大雪白熊简直跟白熊一样\"、段落76\"乱骑就甩你，还想扯你头\"\n- **A偏正式**：段落76\"若擅自骑乘，会将其甩下，并试图拧断其脖子\"过于文学化\n\n## 术语处理\n\n- **A倾向保留日文**：アウルベア、アシッドスライム等\n- **B倾向本地化**：猫头鹰熊、酸性史莱姆等\n\n对于轻小说，B的本地化处理更便于普通读者理解。\n\n## 连贯性\n\n两者整体连贯，但：\n- B的口语化风格更统一\n- A在某些地方过于书面化破坏了轻小说的轻松感\n\n## 格式\n\n两者格式基本一致，无明显差异。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有3处严重错误（段落31女子供、段落45树人译成藤、段落102野猪译成水獭），B仅段落102野猪译成蟒蛇1处错误\"} ,\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B更简洁自然，符合中文表达习惯；A偏书面化，有时显冗长\"} ,\n    \"style\": {\"A\": 6, \"B\": 9, \"notes\": \"轻小说需要轻松口语化风格，B的'乱骑就甩你'、'颜色恶心到吐'等表达更贴切；A过于正式文学化\"} ,\n    \"terminology\": {\"A\": 7, \"B\": 9, \"notes\": \"A保留日文原名（アウルベア等）对普通读者不友好；B本地化翻译（猫头鹰熊）更易懂\"} ,\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化风格更统一连贯；A在正式与口语间摇摆\"} ,\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者格式基本一致，无明显差异\"}\n  },\n  \"key_differences\": [\n    \"准确性：A有多处严重翻译错误（女子供→男女、トレント→藤、ボア→水獭），B仅1处错误\",\n    \"风格：B更符合轻小说的轻松口语化风格，A过于书面正式\",\n    \"术语：B本地化翻译便于理解，A保留日文原名影响可读性\",\n    \"流畅性：B更简洁自然，A有时显冗长\"\n  ],\n  \"final_summary\": \"翻译B整体更优。虽然两个翻译都有准确性问题，但A的错误更严重且更多（3处vs1处），特别是将树人译成藤、野猪译成水獭等基础错误。更重要的是，B的口语化、轻松风格更符合轻小说体裁要求，而A过于书面正式，破坏了原文的轻松感。B的本地化术语处理也更便于读者理解。综合考虑，B在风格适配和可读性上明显占优，准确性虽有瑕疵但优于A。\" \n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11532,
+          "completion_tokens": 2044,
+          "total_tokens": 13576
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有3处严重错误（段落31女子供、段落45树人译成藤、段落102野猪译成水獭），B仅段落102野猪译成蟒蛇1处错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更简洁自然，符合中文表达习惯；A偏书面化，有时显冗长"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "轻小说需要轻松口语化风格，B的'乱骑就甩你'、'颜色恶心到吐'等表达更贴切；A过于正式文学化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 9,
+        "notes": "A保留日文原名（アウルベア等）对普通读者不友好；B本地化翻译（猫头鹰熊）更易懂"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化风格更统一连贯；A在正式与口语间摇摆"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式基本一致，无明显差异"
+      }
+    },
+    "key_differences": [
+      "准确性：A有多处严重翻译错误（女子供→男女、トレント→藤、ボア→水獭），B仅1处错误",
+      "风格：B更符合轻小说的轻松口语化风格，A过于书面正式",
+      "术语：B本地化翻译便于理解，A保留日文原名影响可读性",
+      "流畅性：B更简洁自然，A有时显冗长"
+    ],
+    "final_summary": "翻译B整体更优。虽然两个翻译都有准确性问题，但A的错误更严重且更多（3处vs1处），特别是将树人译成藤、野猪译成水獭等基础错误。更重要的是，B的口语化、轻松风格更符合轻小说体裁要求，而A过于书面正式，破坏了原文的轻松感。B的本地化术语处理也更便于读者理解。综合考虑，B在风格适配和可读性上明显占优，准确性虽有瑕疵但优于A。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

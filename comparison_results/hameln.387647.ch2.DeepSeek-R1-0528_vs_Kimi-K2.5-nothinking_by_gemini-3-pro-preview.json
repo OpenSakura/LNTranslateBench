@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:32:16.590475",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "59efdf566fe84f73c8a9e556a7f2841e2532e1f4773d2ec95a352baa43f9a5ac",
+    "B": "5cda12e77c78c303e5ea699accf64310aeaa2a12272f41f7c76d004fee60238a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:33:40.225132",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202601282232167860704642kfPbe1v",
+      "judge_response": {
+        "id": "chatcmpl-202601282232167860704642kfPbe1v",
+        "object": "chat.completion",
+        "created": 1769610820,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 术语与专业知识 (Terminology)**\n这是两份翻译差距最大的地方。\n*   **翻译 A**：严重缺乏美式足球（橄榄球）的相关知识。\n    *   将位置 \"Line\"（线锋/攻防线）直译为“线”（例如：“位置是线”、“线被开除了”），这在中文语境下完全无法理解。\n    *   保留了大量的英文原文术语（Running Back, Quarterback, Wide Receiver），没有进行翻译。虽然有时保留原文是风格选择，但在面向中文读者的轻小说中，通常应当翻译为标准中文术语。\n    *   将 \"Touchdown\" 译为“触地得分”，这是英式橄榄球（Rugby）或直译的说法，美式足球的标准术语是“达阵”。\n*   **翻译 B**：展现了良好的专业知识。\n    *   准确地将 \"Line\" 译为“线锋”。\n    *   将所有位置名称准确翻译为中文标准术语（跑卫、四分卫、外接手、边锋）。\n    *   将 \"Touchdown\" 准确译为“达阵”。\n    *   将 \"First down\" 译为“首攻”，符合体育解说习惯。\n\n**2. 准确性与理解 (Accuracy)**\n*   **人称与角色理解**：\n    *   原文角色“双叶莲次”自称“俺”（男性用语），且被Hiruma粗鲁对待，通常设定为男性。\n    *   **翻译 A**：在第65段和72段称其为“双叶小姐”，误判了角色性别。\n    *   **翻译 B**：在第19段正确译为“双叶学长”，第72段译为“双叶先生”，但在第65段出现了一处失误（“双叶小姐”），可能是笔误或受A版本影响（如果存在参考关系），但整体对角色关系的把握远优于A。\n*   **特定语句**：\n    *   第27段 \"Fucking Second\"（Hiruma给人的绰号）：A音译为“法金·塞肯德”，将其当作一个外国名字，完全丢失了侮辱性绰号的含义。B意译为“混蛋小鬼”，虽然牺牲了\"Second\"的具体指代，但保留了Hiruma说话的语气和侮辱性。\n    *   第95段 \"天然人誑し\"（天然的人心收买者/魅惑者）：A译为“天然呆骗局”，语义不通。B译为“把天然呆骗到手”，虽然稍微改变了主语指向（将“天然”理解为Sena），但语句通顺且符合语境。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **翻译 A**：\n    *   语句生硬，直译痕迹重（如“作为主务入部了” vs B的“作为主务入部了” - 此处相同，但其他地方如“线被开除了”很生硬）。\n    *   中英夹杂严重，破坏阅读体验。\n    *   **格式错误**：在第54、94、100段，将旁白叙述放入了对话框「」中，这是严重的格式错误，导致读者难以分清是对话还是描写。\n*   **翻译 B**：\n    *   语言自然流畅，符合中文轻小说的阅读习惯。\n    *   对话语气更贴合角色性格（如Hiruma的“嘿嘿嘿” vs A的“咯咯咯”）。\n    *   格式正确，旁白与对话区分清晰。\n\n**4. 连贯性 (Coherence)**\n*   B版本在叙述Sena被说服的过程以及Hiruma的反应时，逻辑更连贯。A版本由于术语错误和格式混乱，读起来非常费劲。\n\n### 最终判决\n\n翻译 B 在各个方面都完胜翻译 A。A 版本看起来像是不懂橄榄球规则的人进行的初级翻译或机翻润色，存在严重的术语错误和格式问题。B 版本则准确使用了专业术语，且文笔流畅。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 8,\n      \"notes\": \"A误判角色性别，将绰号音译为名字；B整体准确，仅有一处疑似笔误。\"\n    },\n    \"fluency\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A中英夹杂，语句生硬；B自然流畅，符合中文习惯。\"\n    },\n    \"style\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A使用了错误的标点符号（旁白加引号），语气平淡；B还原了角色的粗鲁与热血语气。\"\n    },\n    \"terminology\": {\n      \"A\": 1,\n      \"B\": 10,\n      \"notes\": \"A完全不懂美式足球术语（Line->线, Touchdown->触地得分, 保留英文）；B术语使用完美（线锋, 达阵, 跑卫）。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A因术语错误导致部分段落无法理解。\"\n    },\n    \"formatting\": {\n      \"A\": 4,\n      \"B\": 10,\n      \"notes\": \"A在旁白段落错误地使用了对话引号「」；B格式正确。\"\n    }\n  },\n  \"key_differences\": [\n    \"术语翻译：A保留英文或错误直译（如'线'），B使用标准中文术语（如'线锋'、'跑卫'）。\",\n    \"格式：A在非对话的旁白部分错误使用了引号，B格式正确。\",\n    \"准确性：A将侮辱性绰号音译为外国人名（法金·塞肯德），B进行了意译。\",\n    \"角色理解：A误以为双叶是女性（小姐），B主要识别为男性（学长/先生）。\"\n  ],\n  \"final_summary\": \"翻译B在所有维度上都优于翻译A。最关键的差异在于专业术语的翻译，B准确掌握了美式足球的中文术语（如达阵、线锋、跑卫），而A则进行了令人困惑的直译（如将位置'Line'译为'线'）或直接保留英文。此外，A存在严重的格式错误（给旁白加引号）和误译（将绰号音译为人名、搞错角色性别）。B的译文流畅、专业且符合轻小说风格。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7878,
+          "completion_tokens": 5962,
+          "total_tokens": 13840
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 8,
+        "notes": "A误判角色性别，将绰号音译为名字；B整体准确，仅有一处疑似笔误。"
+      },
+      "fluency": {
+        "A": 5,
+        "B": 9,
+        "notes": "A中英夹杂，语句生硬；B自然流畅，符合中文习惯。"
+      },
+      "style": {
+        "A": 4,
+        "B": 9,
+        "notes": "A使用了错误的标点符号（旁白加引号），语气平淡；B还原了角色的粗鲁与热血语气。"
+      },
+      "terminology": {
+        "A": 1,
+        "B": 10,
+        "notes": "A完全不懂美式足球术语（Line->线, Touchdown->触地得分, 保留英文）；B术语使用完美（线锋, 达阵, 跑卫）。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "A因术语错误导致部分段落无法理解。"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 10,
+        "notes": "A在旁白段落错误地使用了对话引号「」；B格式正确。"
+      }
+    },
+    "key_differences": [
+      "术语翻译：A保留英文或错误直译（如'线'），B使用标准中文术语（如'线锋'、'跑卫'）。",
+      "格式：A在非对话的旁白部分错误使用了引号，B格式正确。",
+      "准确性：A将侮辱性绰号音译为外国人名（法金·塞肯德），B进行了意译。",
+      "角色理解：A误以为双叶是女性（小姐），B主要识别为男性（学长/先生）。"
+    ],
+    "final_summary": "翻译B在所有维度上都优于翻译A。最关键的差异在于专业术语的翻译，B准确掌握了美式足球的中文术语（如达阵、线锋、跑卫），而A则进行了令人困惑的直译（如将位置'Line'译为'线'）或直接保留英文。此外，A存在严重的格式错误（给旁白加引号）和误译（将绰号音译为人名、搞错角色性别）。B的译文流畅、专业且符合轻小说风格。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

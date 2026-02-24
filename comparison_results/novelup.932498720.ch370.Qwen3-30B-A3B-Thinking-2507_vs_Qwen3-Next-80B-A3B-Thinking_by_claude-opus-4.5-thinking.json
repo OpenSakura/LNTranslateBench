@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:42:12.617392",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "efce45329d4ea19514d19f1eca40113be6751feacb550b130d1a90f26f71fb26",
+    "B": "6cf5a1c6bc7ace5020ded45b55e7cc2e474ec0c1a281ce3140c7032569e67ae0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:43:08.453256",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7707d0ef-1ab8-4c32-83db-a884ae9557d4",
+      "judge_response": {
+        "id": "7707d0ef-1ab8-4c32-83db-a884ae9557d4",
+        "object": "chat.completion",
+        "created": 1768423388,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n\n**翻译A的优势：**\n- 段落8：\"逼近一步\"准确对应\"一歩迫る\"\n- 段落12：\"疯狂地喝\"虽略夸张，但\"有点怪\"表达了\"妙に\"\n- 段落50：\"土土的\"准确翻译\"もっさい\"（邋遢/土气）\n- 段落62：\"一年\"正确理解为\"一年级生\"\n\n**翻译B的问题：**\n- 段落9：\"我们这么在意的话，还能玩得开心吗？\"偏离原意（原文是\"我们会在意所以玩不开心\"）\n- 段落19：完全遗漏了\"海水浴のあとはたーっぷり眠ることで\"的关键信息\n- 段落50：\"没精打采\"与\"もっさい\"（土气）意思不符\n- 段落54：\"文学部\"应为\"文艺部\"\n- 段落62：\"这一年来的两个人\"严重误译，应是\"一年级的两人\"\n\n### 2. 流畅性分析\n\n翻译A更口语化自然，如：\n- 段落5：\"多喝水别中暑\"比B的\"别让身体吃不消，记得喝饮料\"更地道\n- 段落11：\"这下男生们老实了\"比\"那番正理让男生安静下来了\"更自然\n\n### 3. 格式问题\n\n**翻译B存在严重格式问题：**\n- 段落20-23、25：对话缺少引号\n- 段落62、74-76：对话标记不一致\n\n### 4. 风格/术语\n\n- 段落31：B用\"卧槽\"过于粗俗，原文\"うっわー\"只是惊叹\n- A保持\"Comiket/cosplay\"等同人圈常用术语\n- 段落46：A\"高中出道\"比B\"高中初次登场\"更贴合原意\n\n### 5. 名称处理\n\n- 段落48：A写\"沢田\"（保留日文）vs B\"泽田\"（正确中文）\n- 但B在段落54错译\"文学部\"\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有多处误译：段落9语义偏差、段落19遗漏关键信息、段落62严重误译'一年'\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语化自然，B部分表达略显生硬\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落31'卧槽'过于粗俗不符原文语气；A保持轻小说轻松感\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A同人圈术语使用得当；B段落54误译'文艺部'为'文学部'\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者整体可读，但B因误译导致局部逻辑断裂\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处对话缺少引号（段落20-25等），格式严重不一致\"}\n  },\n  \"key_differences\": [\n    \"B段落19完全遗漏'游泳后好好睡了一觉'的关键因果信息\",\n    \"B段落62将'一年级生'误译为'一年来'，意思完全错误\",\n    \"B多处对话缺失引号，格式混乱\",\n    \"B段落31用'卧槽'过于粗俗，A的'哇'更贴切\",\n    \"A整体更口语化流畅，B部分表达较生硬\"\n  ],\n  \"final_summary\": \"翻译A在准确性、格式一致性和风格把握上明显优于B。B存在多处关键误译（尤其段落19、62）和严重的格式问题（对话缺失引号）。A虽有个别小瑕疵，但整体质量更高，更适合轻小说的阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11402,
+          "completion_tokens": 2299,
+          "total_tokens": 13701
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有多处误译：段落9语义偏差、段落19遗漏关键信息、段落62严重误译'一年'"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语化自然，B部分表达略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落31'卧槽'过于粗俗不符原文语气；A保持轻小说轻松感"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A同人圈术语使用得当；B段落54误译'文艺部'为'文学部'"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者整体可读，但B因误译导致局部逻辑断裂"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处对话缺少引号（段落20-25等），格式严重不一致"
+      }
+    },
+    "key_differences": [
+      "B段落19完全遗漏'游泳后好好睡了一觉'的关键因果信息",
+      "B段落62将'一年级生'误译为'一年来'，意思完全错误",
+      "B多处对话缺失引号，格式混乱",
+      "B段落31用'卧槽'过于粗俗，A的'哇'更贴切",
+      "A整体更口语化流畅，B部分表达较生硬"
+    ],
+    "final_summary": "翻译A在准确性、格式一致性和风格把握上明显优于B。B存在多处关键误译（尤其段落19、62）和严重的格式问题（对话缺失引号）。A虽有个别小瑕疵，但整体质量更高，更适合轻小说的阅读体验。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

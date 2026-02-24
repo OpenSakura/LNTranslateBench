@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:17:16.120643",
+  "sample": "syosetu.n6776iy.ch386",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6776iy.ch386.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6776iy.ch386.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/syosetu.n6776iy.ch386.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2bb7195d7ec1f474ffb77e11e9912b818e91c49fbc1fcd84cbf2ad9cb25860ec",
+    "A": "7535870fe9ec56204e252950983509b0b11ae6c40b414e7146666915c46be1dc",
+    "B": "2ffd708cdd7f0f582487d455ea67e8a4234a7921632af1943a036f5eee65a2f9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:18:04.551471",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "43b6d700-aaa3-4335-b5fb-1c6ae4d384ff",
+      "judge_response": {
+        "id": "43b6d700-aaa3-4335-b5fb-1c6ae4d384ff",
+        "object": "chat.completion",
+        "created": 1768432683,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段对比分析\n\n### 准确性问题\n\n**段落14**: A将「白く」译为\"银白色\"，原文是\"白色\"。B正确译为\"白色的头发\"。A存在添加偏差。\n\n**段落19/39/46-48/54/57/64-65/67-68**: A在多处将叙述文本错误地加上引号变成对话，或漏掉引号。B保持了与原文一致的格式区分。\n\n**段落22**: 原文「齟齬」意为\"隔阂/分歧\"。A译为\"矛盾\"稍偏，B译为\"隔阂\"更准确。\n\n**段落59**: **关键错误** - A将「十五の少女」误译为\"十五名少女\"（15个少女），B正确译为\"十五岁的少女\"。这是重大语义错误。\n\n**段落74**: 原文「体がほどけていく」表示身体逐渐消散。A\"从身体上松脱\"不太准确，B\"身体逐渐消散\"更贴切。\n\n### 流畅性比较\n\n- 段落5: A\"让我想起了重要的东西\"比B\"我想起来了，这个记忆，重要的东西\"更流畅\n- 段落10: B\"像晕过去一样，视野变了\"比A更自然\n- 段落63: B的表达更完整清晰\n\n### 风格/语气\n\n- B在对话中使用\"啦\"\"嘛\"等语气词更符合轻小说口语风格\n- A部分对话更简洁，但有时丢失原文情感层次\n\n### 格式问题\n\nA存在严重的引号错误问题，多处将内心独白错误标注为对话（段落19、39、46-48、64-65、67-68等），这影响读者理解叙事结构。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有关键误译（十五名少女→应为十五岁少女），银白色添加，齟齬译法偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相近，各有优劣之处\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的语气词使用更符合轻小说对话风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B对魔法/转移者等术语处理更一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的引号错误严重影响叙事结构理解\"},\n    \"formatting\": {\"A\": 5, \"B\": 9, \"notes\": \"A多处错误添加/遗漏引号，破坏对话与叙述的区分\"}\n  },\n  \"key_differences\": [\n    \"A将「十五の少女」误译为'十五名少女'而非'十五岁的少女'\",\n    \"A在多处内心独白添加引号或遗漏对话引号，格式混乱\",\n    \"A将'白く'译为'银白色'，添加了原文没有的信息\",\n    \"B整体更忠实原文结构，语气词运用更自然\"\n  ],\n  \"final_summary\": \"B在准确性和格式方面明显优于A。A存在关键性误译（年龄误译为人数）和严重的引号格式错误，影响读者对叙事结构的理解。虽然A在个别句子的流畅度上略有优势，但无法弥补准确性和格式上的重大缺陷。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9869,
+          "completion_tokens": 2122,
+          "total_tokens": 11991
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有关键误译（十五名少女→应为十五岁少女），银白色添加，齟齬译法偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相近，各有优劣之处"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的语气词使用更符合轻小说对话风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对魔法/转移者等术语处理更一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的引号错误严重影响叙事结构理解"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A多处错误添加/遗漏引号，破坏对话与叙述的区分"
+      }
+    },
+    "key_differences": [
+      "A将「十五の少女」误译为'十五名少女'而非'十五岁的少女'",
+      "A在多处内心独白添加引号或遗漏对话引号，格式混乱",
+      "A将'白く'译为'银白色'，添加了原文没有的信息",
+      "B整体更忠实原文结构，语气词运用更自然"
+    ],
+    "final_summary": "B在准确性和格式方面明显优于A。A存在关键性误译（年龄误译为人数）和严重的引号格式错误，影响读者对叙事结构的理解。虽然A在个别句子的流畅度上略有优势，但无法弥补准确性和格式上的重大缺陷。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

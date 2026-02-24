@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:29:16.816613",
+  "sample": "hameln.397175.ch27",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.397175.ch27.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.397175.ch27.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/hameln.397175.ch27.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9e3d6a37ea65d8b759673ec215e5f01f65038c7c9c42d9aa02205902654ed6c0",
+    "A": "2a5cd9b6fba568a18db02c5713fdd4544a3ab066196f74d0222258099c35b4ca",
+    "B": "c3908120619a10698668d40bde4e2e07e38e0e28e6bd67c6d69b2a26c4c1bbb6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:29:55.447966",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d3225ff7-9937-4847-acff-7a4954f2a836",
+      "judge_response": {
+        "id": "d3225ff7-9937-4847-acff-7a4954f2a836",
+        "object": "chat.completion",
+        "created": 1769610595,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键差异分析\n\n**1. 重大术语错误（致命问题）**\n\n| 段落 | 原文 | A翻译 | B翻译 |\n|------|------|-------|-------|\n| 50 | すくなのゆび | 宿傩的手指 ✓ | 须贺的拇指 ✗ |\n| 53 | とっきゅうじゅぶつ | 特级咒物 ✓ | 特急寿司 ✗ |\n| 69 | ぜんせのきおく | 前世の记忆 ✓ | 全是老爷子的记忆 ✗ |\n\nB在核心术语上犯了严重错误，将\"宿傩(すくな)\"误译为\"须贺\"，将\"特级咒物\"误译为\"特急寿司\"，完全破坏了原作设定。\n\n**2. 人物称呼一致性**\n- A：在\"粪爷/渣渣老头/臭老头\"之间切换，略显混乱\n- B：基本统一使用\"粪爷/粪爷爷\"，但偶有变化（如屎爷爷）\n\n**3. 风格表达对比**\n\n| 段落 | A翻译 | B翻译 | 评价 |\n|------|-------|-------|------|\n| 6 | 燃耗太差 | 太费咒力了 | B更口语化 |\n| 26 | 落败武士咒灵 | 落魄武者的咒灵 | A更准确 |\n| 59 | 但我知道 | 但老子清楚 | B更有个性 |\n\n**4. 语言流畅度**\n- A整体更书面化，部分地方略显生硬（如段落21\"人类，做不到\"）\n- B更口语化自然，但在关键处出现误译\n\n**5. 细节处理**\n- 段落16：A\"羽毛\"vs B\"翅膀\"——原文\"羽根\"，两者皆可\n- 段落72：A「……不是假话啊」vs B「……不是在撒谎吧？」——A更符合原文语气\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 4, \"notes\": \"B在段落50、53、69出现致命翻译错误，将'宿傩的手指'误译为'须贺的拇指'，'特级咒物'误译为'特急寿司'，完全破坏核心剧情\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相近，A略书面，B略口语\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A较好保持轻小说叙事风格，B部分表达更生动但整体被术语错误拖累\"},\n    \"terminology\": {\"A\": 9, \"B\": 3, \"notes\": \"A准确翻译咒术回战专有术语，B在关键术语上犯下无法接受的错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A整体连贯，B因术语错误导致剧情逻辑断裂\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式均规范，A用「」，B用\\\"\\\"，皆可接受\"}\n  },\n  \"key_differences\": [\n    \"B将'宿儺の指'(宿傩的手指)错译为'须贺的拇指'\",\n    \"B将'特級呪物'(特级咒物)错译为'特急寿司'\",\n    \"B将'前世の記憶'(前世记忆)错译为'老爷子的记忆'\",\n    \"A称呼不一致(粪爷/渣渣老头/臭老头)，B基本统一\",\n    \"A整体更书面准确，B更口语但有严重误译\"\n  ],\n  \"final_summary\": \"A明显优于B。虽然A在人物称呼上存在不一致的小问题，但B在核心术语翻译上犯了严重错误：将作品标志性设定'宿傩的手指'和'特级咒物'完全误译，这对于咒术回战同人作品而言是致命的。B的错误不仅破坏了原作世界观，还会让读者完全无法理解剧情。A虽有小瑕疵但准确传达了原文含义。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 15453,
+          "completion_tokens": 2032,
+          "total_tokens": 17485
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 4,
+        "notes": "B在段落50、53、69出现致命翻译错误，将'宿傩的手指'误译为'须贺的拇指'，'特级咒物'误译为'特急寿司'，完全破坏核心剧情"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相近，A略书面，B略口语"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A较好保持轻小说叙事风格，B部分表达更生动但整体被术语错误拖累"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 3,
+        "notes": "A准确翻译咒术回战专有术语，B在关键术语上犯下无法接受的错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A整体连贯，B因术语错误导致剧情逻辑断裂"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式均规范，A用「」，B用\"\"，皆可接受"
+      }
+    },
+    "key_differences": [
+      "B将'宿儺の指'(宿傩的手指)错译为'须贺的拇指'",
+      "B将'特級呪物'(特级咒物)错译为'特急寿司'",
+      "B将'前世の記憶'(前世记忆)错译为'老爷子的记忆'",
+      "A称呼不一致(粪爷/渣渣老头/臭老头)，B基本统一",
+      "A整体更书面准确，B更口语但有严重误译"
+    ],
+    "final_summary": "A明显优于B。虽然A在人物称呼上存在不一致的小问题，但B在核心术语翻译上犯了严重错误：将作品标志性设定'宿傩的手指'和'特级咒物'完全误译，这对于咒术回战同人作品而言是致命的。B的错误不仅破坏了原作世界观，还会让读者完全无法理解剧情。A虽有小瑕疵但准确传达了原文含义。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

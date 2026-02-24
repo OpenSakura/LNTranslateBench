@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:07:40.579601",
+  "sample": "pixiv.s26810488.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26810488.ch1.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26810488.ch1.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.s26810488.ch1.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "92db91e48665f24307285ee8df507a11e561d6aa20242dd51ddd1a73514e9a0b",
+    "A": "7dfe01a258b4daaebfcf843711d1c0e259e76e11298d0cec83333ccd893c6ee5",
+    "B": "36a14602fc91f24a1d5f355aef4f60c8f75702779e3470435325767792e549f2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:08:48.936201",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "01c58776-e0ba-4735-b017-2f7237c4a568",
+      "judge_response": {
+        "id": "01c58776-e0ba-4735-b017-2f7237c4a568",
+        "object": "chat.completion",
+        "created": 1768432128,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**段落7**：原文「それだけが、欠けてしまっていて」意为\"只有这一点缺失\"\n- A：\"就只剩下这些，其他都忘了\" ❌ 理解相反\n- B：\"唯一记不起来的，就是这一点\" ✓ 准确\n\n**段落63**：原文「作っていただいた」是被动/授受表达，指\"别人为我做\"\n- A：\"第一次收到这样完整的一个蛋糕\" ✓ 基本准确\n- B：\"但亲手做出一个完整的大蛋糕\" ❌ 误解为自己做\n\n**段落12**：「空を切って」意为\"落空/扑空\"\n- A：\"声音在空中消失了\" ✓ 接近原意\n- B：\"划破了夜空\" ❌ 偏离原意\n\n### 2. 流畅性与风格\n**段落5**：\n- A：\"现在想起来还很清晰\" — 较平淡\n- B：\"至今那画面仍清晰地浮现在我眼前\" — 更有画面感，符合轻小说叙事\n\n**段落10**：\n- A：\"我的意识只能看向被握住的手腕\"\n- B：\"我的意识，只能死死盯住那被抓住的手腕\" — 更有张力\n\n### 3. 术语/称呼一致性\n- **段落32/36**：\"エマさーん\"是拉长音的敬称\n  - A用\"艾玛~\" ✓ 保留拉长音感\n  - B用\"艾玛酱\" ❌ \"さん\"≠\"ちゃん\"\n\n- **段落93**：\"エマさん\"\n  - A：\"艾玛\" — 省略敬称\n  - B：\"艾玛大人\" ❌ 过度升格\n\n- B整体对\"エマさん→艾玛小姐\"保持更一致\n\n### 4. 其他亮点\n**段落90**：\n- A：\"擦了又擦，爱哭的我却停不下来\"\n- B：\"擦了又擦，擦了又擦，爱哭的我就是停不下来\" ✓ 更好地传达重复感\n\n**段落106**：「半宵」\n- A：\"深夜\" — 简化\n- B：\"半宵之间\" ✓ 保留原文用词\n\n---\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"各有失误：A段落7理解反了，B段落63/12有误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更流畅自然，表达更细腻\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说的抒情叙事风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"B敬称更一致，但有'艾玛酱/大人'等失误；A常省略敬称\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的叙事连贯性更强，情感递进更自然\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范，标点恰当\"}\n  },\n  \"key_differences\": [\n    \"段落7关键理解：B正确，A理解相反\",\n    \"段落63授受表达：A正确，B误解\",\n    \"整体风格：B更文学化，A更简洁但有时过于简略\",\n    \"称呼处理：B更一致但偶有过度（艾玛大人），A常省略敬称\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在某些关键语法点更准确（如段落63），但整体风格偏简略，情感表达较平淡。B在文学性、情感渲染和叙事连贯性上更胜一筹，更符合轻小说的抒情风格，虽然也有个别理解偏差。综合考虑轻小说这一文体对风格和可读性的要求，B略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10282,
+          "completion_tokens": 3076,
+          "total_tokens": 13358
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "各有失误：A段落7理解反了，B段落63/12有误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更流畅自然，表达更细腻"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说的抒情叙事风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "B敬称更一致，但有'艾玛酱/大人'等失误；A常省略敬称"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的叙事连贯性更强，情感递进更自然"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范，标点恰当"
+      }
+    },
+    "key_differences": [
+      "段落7关键理解：B正确，A理解相反",
+      "段落63授受表达：A正确，B误解",
+      "整体风格：B更文学化，A更简洁但有时过于简略",
+      "称呼处理：B更一致但偶有过度（艾玛大人），A常省略敬称"
+    ],
+    "final_summary": "两译本各有优劣。A在某些关键语法点更准确（如段落63），但整体风格偏简略，情感表达较平淡。B在文学性、情感渲染和叙事连贯性上更胜一筹，更符合轻小说的抒情风格，虽然也有个别理解偏差。综合考虑轻小说这一文体对风格和可读性的要求，B略优。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-02-12T23:58:27.009842",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "GLM-5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "GLM-5"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.GLM-5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "b7c63146aeccb8a0181cb734a44165ebdac68e5ca9c35742a5029fd3d3c86510",
+    "B": "0a5d64fb0b9a6a5b8f969daeb53dbcaf08a7cba6ec72553f0f6d8cb8d3fdb757"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-02-12T23:59:37.059678",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260212235827186129346hKxrk4ib",
+      "judge_response": {
+        "id": "chatcmpl-20260212235827186129346hKxrk4ib",
+        "object": "chat.completion",
+        "created": 1770940776,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的分段文本对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **关键差异点（Boar/Boa）：** 在段落102-105中，原文是“ボア”（Boa）。虽然这个词在日语中通常指“蟒蛇”（Boa Constrictor），但结合上下文提到的“ウリボア”（Uriboa，源自Uribou即野猪幼崽）、“毛皮”、“牙”（獠牙）以及“肉”，这里显然是指英语的“Boar”（野猪）。\n    *   **翻译A** 正确地根据上下文将其翻译为“野猪”及其亚种。\n    *   **翻译B** 错误地将其翻译为“蟒蛇”，导致后续描述出现“蟒蛇有毛皮和獠牙”的逻辑矛盾，这是一个严重的理解错误。\n*   **植物名称（Ninjin）：** 段落111中，原文“人参”（日语通常指胡萝卜）。\n    *   **翻译A** 译为“人参”。在中文语境中，曼德拉草（Mandrake）的外形确实常被比作人参（根部像人），这算是一种合理的本地化处理，尽管日语原意是胡萝卜。\n    *   **翻译B** 译为“胡萝卜”。这是日语“人参”的直译，也是准确的。\n*   **术语理解：** 段落86中，“ボーパル”（Vorpal）源自《爱丽丝梦游仙境》及D&D文化，通常与斩首有关。翻译B译为“斩首”比翻译A的“狂暴”更贴切文化背景。但在段落83中，翻译A将“Vege-Treant”译为“蔬菜巨像”，而之前将Treant译为“树精”，前后术语不一致且“巨像”偏离原意；翻译B保持了“树人”的一致性。\n\n**2. 流畅性与风格 (Fluency & Style)**\n*   **翻译A** 的文风更偏向于“图鉴”或“百科全书”式的正式感（如“多栖息于”、“统称”），语言精炼，阅读感顺畅。\n*   **翻译B** 的文风更口语化（如“冬眠嘛”、“蹭蹭地种出来”），这其实很符合原文标题“个人的备忘录”这一设定。\n*   然而，翻译B在部分句子结构上略显生硬（如段落24“向正侧面延伸”不如A的“横向延伸”自然）。\n\n**3. 格式与标点 (Formatting & Punctuation)**\n*   **翻译A** 的标点符号使用规范。\n*   **翻译B** 在段落116出现了明显的标点错误：`「绿之手『`，括号未正确闭合且方向错误。\n\n**4. 总结**\n虽然翻译B在某些“梗”的翻译（如Vorpal）和口语化风格上表现不错，但在**段落102的“野猪 vs 蟒蛇”**这一核心名词上出现了严重的上下文理解错误，导致该段落完全失真。加上段落116的标点失误，使得翻译A在整体可靠性和专业度上胜出。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A正确识别了上下文中的'Boar'(野猪)；B错误地翻译成了'蟒蛇'，导致描述出现逻辑矛盾（蛇长毛皮和獠牙）。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A的措辞更精炼自然；B的口语化风格不错，但偶有生硬之处。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"A偏向图鉴风格，B偏向个人笔记风格，两者都符合原文语境。\"\n    },\n    \"terminology\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"A在树精/巨像上有一处不一致；B在Vorpal（斩首）的翻译上更准确。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"B因'蟒蛇'的误译导致该段落逻辑崩坏。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"B在段落116出现了括号配对错误。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落102-105：原文'ボア'指野猪(Boar)，A译对，B误译为蟒蛇(Boa)，导致后续'毛皮、獠牙'描述不合逻辑。\",\n    \"段落111：A将'人参'译为'人参'（符合曼德拉草形象的本地化），B直译为'胡萝卜'（日语原意）。两者皆可。\",\n    \"段落116：B存在标点符号错误（括号未闭合）。\",\n    \"段落86：'Vorpal'一词，A译为'狂暴'，B译为'斩首'（B更符合典故）。\"\n  ],\n  \"final_summary\": \"翻译A整体表现更佳。决定性的因素是段落102中对'ボア'（Boar/Boa）的翻译。原文虽然使用了片假名ボア（既可指Boa蟒蛇也可指Boar野猪），但后文明确提到了毛皮、獠牙和猪崽（Uriboa），翻译A正确结合上下文译为'野猪'，而翻译B机械地译为'蟒蛇'，导致出现了'长着毛皮和獠牙的蟒蛇'这种严重违背常识的错误。此外，翻译B在段落116有明显的标点失误。尽管翻译B在某些专有名词（如斩首兔）的处理上更有味道，但核心准确性的缺失使其无法胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8252,
+          "completion_tokens": 7271,
+          "total_tokens": 15523
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "A正确识别了上下文中的'Boar'(野猪)；B错误地翻译成了'蟒蛇'，导致描述出现逻辑矛盾（蛇长毛皮和獠牙）。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的措辞更精炼自然；B的口语化风格不错，但偶有生硬之处。"
+      },
+      "style": {
+        "A": 8,
+        "B": 8,
+        "notes": "A偏向图鉴风格，B偏向个人笔记风格，两者都符合原文语境。"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "A在树精/巨像上有一处不一致；B在Vorpal（斩首）的翻译上更准确。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "B因'蟒蛇'的误译导致该段落逻辑崩坏。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 8,
+        "notes": "B在段落116出现了括号配对错误。"
+      }
+    },
+    "key_differences": [
+      "段落102-105：原文'ボア'指野猪(Boar)，A译对，B误译为蟒蛇(Boa)，导致后续'毛皮、獠牙'描述不合逻辑。",
+      "段落111：A将'人参'译为'人参'（符合曼德拉草形象的本地化），B直译为'胡萝卜'（日语原意）。两者皆可。",
+      "段落116：B存在标点符号错误（括号未闭合）。",
+      "段落86：'Vorpal'一词，A译为'狂暴'，B译为'斩首'（B更符合典故）。"
+    ],
+    "final_summary": "翻译A整体表现更佳。决定性的因素是段落102中对'ボア'（Boar/Boa）的翻译。原文虽然使用了片假名ボア（既可指Boa蟒蛇也可指Boar野猪），但后文明确提到了毛皮、獠牙和猪崽（Uriboa），翻译A正确结合上下文译为'野猪'，而翻译B机械地译为'蟒蛇'，导致出现了'长着毛皮和獠牙的蟒蛇'这种严重违背常识的错误。此外，翻译B在段落116有明显的标点失误。尽管翻译B在某些专有名词（如斩首兔）的处理上更有味道，但核心准确性的缺失使其无法胜出。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

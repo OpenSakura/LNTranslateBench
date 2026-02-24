@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:22:48.433303",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.Kimi-K2.5.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "7ecd3bec05a49f6691dd92ab3329099a80fafb27cc426e131c197588f174992e",
+    "B": "a0b3ba1df7be1a506f681bed97cbf56c5e4d96d67304869107b60638ee1323e8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:23:42.243467",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128222248634955187vYymmf8d",
+      "judge_response": {
+        "id": "chatcmpl-20260128222248634955187vYymmf8d",
+        "object": "chat.completion",
+        "created": 1769610222,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对提供的轻小说（同人小说）文本的详细分析，以下是我的评判结果：\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"A在第14段对主语的理解有歧义，且在第82段出现了明显的理解/格式错误。B对语境（如第14段浴室场景、第84段作者后记的元语气）理解更准确。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的中文表达更加自然、口语化，非常贴合轻小说和同人圈的阅读习惯。A的句子结构有时略显生硬（如第10段）。\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B很好地还原了主角内心吐槽（Tsukkomi）的语气和轻小说的幽默感。A的语气较为平淡。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B保留了ACG圈常用的术语（如'歌番组'、'Live'），虽然'Murcielago'保留英文对部分读者有门槛，但比A将其直译为'蝙蝠'（容易产生歧义）要好。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B在对话和心理活动的衔接上更流畅。\"\n    },\n    \"formatting\": {\n      \"A\": 6,\n      \"B\": 10,\n      \"notes\": \"A在第82段保留了原文输入法残留的字母'r'，属于明显的校对失误。B处理得当。\"\n    }\n  },\n  \"key_differences\": [\n    \"语境理解：第14段中，B正确理解了是'别人'把主角晾在浴室，而A翻译成了主角自己没跟上去。\",\n    \"格式错误：第82段原文表现说话被打断（あげr...），A直接保留了字母'r'，B正确转换为省略号。\",\n    \"语气还原：B在处理吐槽和心理活动时（如第82段对道歉速度的吐槽），用词更精准传神。\",\n    \"术语处理：B倾向于使用圈内习惯用语（歌番组、Live），A则倾向于意译。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都优于翻译A。首先，B的语言风格非常契合轻小说/同人小说的调性，对话生动，内心独白自然流畅。其次，B在理解上下文逻辑上更准确（例如第14段的浴室情节和第84段的作者后记）。最重要的是，A在第82段出现了明显的未处理字符（'r'）和对语气词（'はやっ'）的误译，而B则完美处理了对话被打断的效果及吐槽语气。因此，B是更成熟、更具可读性的译本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7753,
+          "completion_tokens": 4750,
+          "total_tokens": 12503
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "A在第14段对主语的理解有歧义，且在第82段出现了明显的理解/格式错误。B对语境（如第14段浴室场景、第84段作者后记的元语气）理解更准确。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文表达更加自然、口语化，非常贴合轻小说和同人圈的阅读习惯。A的句子结构有时略显生硬（如第10段）。"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B很好地还原了主角内心吐槽（Tsukkomi）的语气和轻小说的幽默感。A的语气较为平淡。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留了ACG圈常用的术语（如'歌番组'、'Live'），虽然'Murcielago'保留英文对部分读者有门槛，但比A将其直译为'蝙蝠'（容易产生歧义）要好。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B在对话和心理活动的衔接上更流畅。"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 10,
+        "notes": "A在第82段保留了原文输入法残留的字母'r'，属于明显的校对失误。B处理得当。"
+      }
+    },
+    "key_differences": [
+      "语境理解：第14段中，B正确理解了是'别人'把主角晾在浴室，而A翻译成了主角自己没跟上去。",
+      "格式错误：第82段原文表现说话被打断（あげr...），A直接保留了字母'r'，B正确转换为省略号。",
+      "语气还原：B在处理吐槽和心理活动时（如第82段对道歉速度的吐槽），用词更精准传神。",
+      "术语处理：B倾向于使用圈内习惯用语（歌番组、Live），A则倾向于意译。"
+    ],
+    "final_summary": "翻译B在各方面都优于翻译A。首先，B的语言风格非常契合轻小说/同人小说的调性，对话生动，内心独白自然流畅。其次，B在理解上下文逻辑上更准确（例如第14段的浴室情节和第84段的作者后记）。最重要的是，A在第82段出现了明显的未处理字符（'r'）和对语气词（'はやっ'）的误译，而B则完美处理了对话被打断的效果及吐槽语气。因此，B是更成熟、更具可读性的译本。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

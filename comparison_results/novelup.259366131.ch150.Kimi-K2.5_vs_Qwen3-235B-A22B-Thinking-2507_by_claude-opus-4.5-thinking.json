@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:20:55.540162",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "68c0188194558fcaf88e3c29f809cec0d64409dc30f41017ba60c44a45ff3fbf",
+    "B": "fa6f0d84c024a5a3b2921827d274837bd8c4e7bd854df097fccd2698bb432035"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:21:46.437962",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "614d79e7-5777-4a8e-bc03-7c6da3becf5e",
+      "judge_response": {
+        "id": "614d79e7-5777-4a8e-bc03-7c6da3becf5e",
+        "object": "chat.completion",
+        "created": 1769610106,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**段落67关键错误**：A译\"后妈\"是严重误译，原文「後の母」指\"后来成为母亲的人\"，而非\"继母\"。B译\"后来的母亲\"准确。\n\n**段落37**：B译\"您也能做到我做不到的事情\"语序颠倒，原文意思是\"我能做到您做不到的事\"。A译正确。\n\n**段落27**：B译\"快让我们逃\"应为\"快让他们逃\"，语义错误。\n\n**段落5**：原文「わたしはどこへ？」指未来去向，B译\"我要去哪里\"更准确，A译\"我去了哪儿\"倾向过去时。\n\n### 术语一致性\n\n- **クラリス・クラーラ**：这是机体合体名。B译\"克菈莉丝・克拉拉\"保持一体感，A译\"克菈莉丝和克拉拉\"有时拆分处理。\n- **サタニエル**：A有时译\"撒旦尼尔\"，B在多处出现\"撒旦叶/撒塔尼尔/萨塔尼埃尔\"等不同写法，均有不一致。\n- **ワダツミ**：B译\"绵津见\"采用传统译法，A译\"和多都美\"音译化。\n- **ナリヒラ**：A译\"纳里希拉\"（音译），B译\"成寻\"（意译/人名）。\n\n### 风格与流畅性\n\nA译整体更口语化，如\"太要命了\"\"烂招中的烂招\"\"靠蛮力搞定\"，符合轻小说对话风格。\nB译偏书面正式，如\"毫不胆怯\"\"简直是坏棋中的坏棋\"，叙述稳重但对话略显生硬。\n\n### 格式问题\n\n- 段落35：A使用直角引号变为弯引号，格式不一致。\n- B整体标点规范性更好。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落67将'後の母'误译为'后妈'（继母），属重大语义错误；B在段落27、37有小错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化更自然流畅，B略显书面生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话风格更贴合轻小说，B叙述部分稳重但对话稍正式\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"两者都有术语不一致问题，A拆分机体名，B人名多种写法\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体可读性相当\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A段落35引号格式混乱，B格式更规范\"}\n  },\n  \"key_differences\": [\n    \"段落67：A'后妈'严重误译 vs B'后来的母亲'正确\",\n    \"段落37：B语序颠倒 vs A正确\",\n    \"整体风格：A口语化 vs B书面化\",\n    \"机体名处理：A拆分 vs B保持连体\",\n    \"段落27：B'让我们逃'指代错误\"\n  ],\n  \"final_summary\": \"A在流畅性和轻小说风格上略胜一筹，但段落67'后妈'的严重误译影响了核心剧情理解（主角怀疑克菈莉丝是未来的母亲，而非继母）。B虽有段落27、37的小错误，但整体准确性更高，格式更规范。综合权衡，B在准确传达原意方面更可靠，以较小优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11440,
+          "completion_tokens": 2534,
+          "total_tokens": 13974
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落67将'後の母'误译为'后妈'（继母），属重大语义错误；B在段落27、37有小错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化更自然流畅，B略显书面生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话风格更贴合轻小说，B叙述部分稳重但对话稍正式"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "两者都有术语不一致问题，A拆分机体名，B人名多种写法"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体可读性相当"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A段落35引号格式混乱，B格式更规范"
+      }
+    },
+    "key_differences": [
+      "段落67：A'后妈'严重误译 vs B'后来的母亲'正确",
+      "段落37：B语序颠倒 vs A正确",
+      "整体风格：A口语化 vs B书面化",
+      "机体名处理：A拆分 vs B保持连体",
+      "段落27：B'让我们逃'指代错误"
+    ],
+    "final_summary": "A在流畅性和轻小说风格上略胜一筹，但段落67'后妈'的严重误译影响了核心剧情理解（主角怀疑克菈莉丝是未来的母亲，而非继母）。B虽有段落27、37的小错误，但整体准确性更高，格式更规范。综合权衡，B在准确传达原意方面更可靠，以较小优势胜出。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

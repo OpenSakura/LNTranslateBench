@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:11:08.593416",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "15de9e57834980d8cbf44a6af4622a219dbc30aa82aa1c04dbe0c314b8b4c4af",
+    "B": "1c43090ef9683c5486847e4608e0a1afd6cc8a124893fab26b50c353dfd55167"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:12:04.529473",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "320e31c2-9af8-4bd2-907e-311179c2b299",
+      "judge_response": {
+        "id": "320e31c2-9af8-4bd2-907e-311179c2b299",
+        "object": "chat.completion",
+        "created": 1768421524,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量详细分析\n\n### 1. 准确性分析\n\n**段落3：**\n- 原文「堂に入った染み染みとした号泣」指\"老练/入戏的、感人肺腑的哭泣\"\n- A：\"使出浑身解数大哭大叫\"——误译，理解错误\n- B：\"正沉浸在深深哭泣中\"——更接近原意\n\n**段落51：**\n- 原文「ツボに入る」是\"戳中笑点\"的意思\n- A：\"莫名其妙地戳中笑点了\"——正确\n- B：\"正卡在谜题的核心\"——严重误译\n\n**段落63：**\n- B把シャルミナ译成\"零号协议\"——严重误译\n\n**段落36：**\n- B：\"给我们\"——应该是\"给她/少女\"\n\n### 2. 名称一致性\n\n- A：混用「シャルミナ」「莎露米娜」「夏露米娜」，严重不一致\n- B：统一使用\"夏露米娜\"，一致性好\n\n### 3. 流畅性与风格\n\n**A更自然的例子：**\n- 段落22：\"一周前还来了两个人呢\"vs B\"一周前来了大约两个人\"\n- 段落32：\"随口说声'谢谢'，轻飘飘地收下\"vs B\"说谢谢，然后轻轻松松地接受\"\n- 段落50：A的拟声词处理更自然\n\n**B的问题：**\n- 段落10保留\"俺\"不符合中文习惯\n- 段落74：\"哔嗤\"音译拟声词不自然\n\n### 4. 格式问题\n\n- B在段落47、48、49丢失对话引号，严重格式错误\n- A在段落76、86、88使用西式引号\"\"与其他地方不一致，但影响较小\n\n### 5. 对话自然度\n\nA的对话更口语化，更符合轻小说风格：\n- 段落23 A：\"就靠拉来一个常客，真觉得生意能撑得下去吗\"\n- 段落48 A：\"嘻嘻，不过我这么让Boss做饭，当下属的会不会太任性了呀\"\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A段落3误译，但B有段落51、63严重误译\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A更口语化自然，B有生硬直译\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A对话风格更符合轻小说，B略显机械\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A人名混乱(シャルミナ/莎露米娜/夏露米娜)，B统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体可读性更好，B有多处理解偏差\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"B段落47-49丢失引号是严重问题\"}\n  },\n  \"key_differences\": [\n    \"A流畅度和口语化程度显著优于B\",\n    \"B名称一致性优于A，但A的名称问题影响有限\",\n    \"B有多处严重误译(段落51、63)和格式丢失\",\n    \"A对话风格更贴近轻小说叙事\"\n  ],\n  \"final_summary\": \"A在流畅性、风格和整体可读性上明显优于B，虽然存在名称不一致的问题，但B的误译问题(如'零号协议'、'卡在谜题的核心')和格式丢失更为严重。综合权衡，A是更好的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11842,
+          "completion_tokens": 2559,
+          "total_tokens": 14401
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A段落3误译，但B有段落51、63严重误译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更口语化自然，B有生硬直译"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A对话风格更符合轻小说，B略显机械"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A人名混乱(シャルミナ/莎露米娜/夏露米娜)，B统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体可读性更好，B有多处理解偏差"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "B段落47-49丢失引号是严重问题"
+      }
+    },
+    "key_differences": [
+      "A流畅度和口语化程度显著优于B",
+      "B名称一致性优于A，但A的名称问题影响有限",
+      "B有多处严重误译(段落51、63)和格式丢失",
+      "A对话风格更贴近轻小说叙事"
+    ],
+    "final_summary": "A在流畅性、风格和整体可读性上明显优于B，虽然存在名称不一致的问题，但B的误译问题(如'零号协议'、'卡在谜题的核心')和格式丢失更为严重。综合权衡，A是更好的翻译。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

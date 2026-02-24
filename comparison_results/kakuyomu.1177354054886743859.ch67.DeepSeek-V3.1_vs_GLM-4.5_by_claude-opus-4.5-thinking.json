@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:23:44.952718",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.GLM-4.5.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "2efcf080b397363d7550d04a8821a2556956e1020ad08f0582634115a505e960",
+    "B": "fe10e29464d7c94966e587c59b32039e14ddc61c0db59e06e871950e988a82c0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:24:34.042034",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "97bee7bb-22a2-4ff1-9dee-02ed188d7acc",
+      "judge_response": {
+        "id": "97bee7bb-22a2-4ff1-9dee-02ed188d7acc",
+        "object": "chat.completion",
+        "created": 1768422273,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性对比\n两个翻译整体准确度相近。值得注意的差异：\n- 段落1：B的\"转眼间就结束了\"比A的\"一下子就到了\"更贴合原文\"あっという間だった\"\n- 段落6：\"常歩\"A译为\"慢步走\"（意译），B保留\"常步\"（马术术语直译）\n- 段落3：B的\"的说\"较好体现了\"のじゃ\"的角色特色语气\n\n### 术语一致性（重要问题）\n**A的严重问题**：地名翻译混乱\n- 段落13：突然变成\"崔恩\"（前后都是\"特里恩\"）\n- 段落25、56：变成\"特里安\"\n\n**B的问题**：\n- 段落19：\"傀儡马\"与其他地方的\"魔像马\"不一致\n- 段落25、68：\"特里安\"与\"特利恩\"不一致\n\n### 格式与标点\n- A使用中文引号「\"\"」：更符合中文排版规范\n- B使用日文引号「「」」：在中文译文中不太恰当\n\n### 流畅性与风格\n- B整体语句更简洁流畅（如段落29、46\"面面相觑\"）\n- A部分句子稍显冗长但更口语化\n- 两者都较好地保持了轻小说风格\n\n### 关键问题\n- 段落55：A译\"简直就像个大老爷\"，B译\"大富豪级别的挥霍\"——B更准确传达\"大尽様\"的意思\n- 段落70：A\"迅速地推了推眼镜\"误解了\"クイッと上げながら\"，B\"猛地推了推镜框\"更准确\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B对部分细节处理更准确，如'大尽様''クイッと'的翻译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B句式更简洁自然，A部分句子略显冗长\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好保持轻小说风格，角色语气处理各有特色\"},\n    \"terminology\": {\"A\": 5, \"B\": 6, \"notes\": \"A地名严重不一致(崔恩/特里安/特里恩)，B也有不一致但较轻微\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体连贯性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A使用中文引号更规范，B使用日文引号不适合中文译文\"}\n  },\n  \"key_differences\": [\n    \"A地名翻译严重不一致（崔恩/特里安/特里恩混用）\",\n    \"B使用日文引号「」而非中文引号\",\n    \"B整体语句更简洁流畅\",\n    \"B对'大尽様''クイッと'等细节翻译更准确\"\n  ],\n  \"final_summary\": \"B在准确性和流畅性方面略胜一筹，虽然使用了日文引号这一格式问题，但A的地名术语严重不一致是更大的硬伤。综合考虑，B以较小优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11231,
+          "completion_tokens": 2212,
+          "total_tokens": 13443
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对部分细节处理更准确，如'大尽様''クイッと'的翻译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B句式更简洁自然，A部分句子略显冗长"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好保持轻小说风格，角色语气处理各有特色"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 6,
+        "notes": "A地名严重不一致(崔恩/特里安/特里恩)，B也有不一致但较轻微"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体连贯性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A使用中文引号更规范，B使用日文引号不适合中文译文"
+      }
+    },
+    "key_differences": [
+      "A地名翻译严重不一致（崔恩/特里安/特里恩混用）",
+      "B使用日文引号「」而非中文引号",
+      "B整体语句更简洁流畅",
+      "B对'大尽様''クイッと'等细节翻译更准确"
+    ],
+    "final_summary": "B在准确性和流畅性方面略胜一筹，虽然使用了日文引号这一格式问题，但A的地名术语严重不一致是更大的硬伤。综合考虑，B以较小优势胜出。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

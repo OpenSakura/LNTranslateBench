@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:32:16.644738",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "ac0f8c4c383bf034e7ee42d1cef7aebb1b7c2c3787464c316d69fe440777c4d2",
+    "B": "ec9b95f30cdb76783394f2ae0620decbcae082e424c0a2a6701d4a456d04bbc6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:33:13.864086",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1b41f9a4-43f7-4597-b24d-e554ef42b323",
+      "judge_response": {
+        "id": "1b41f9a4-43f7-4597-b24d-e554ef42b323",
+        "object": "chat.completion",
+        "created": 1769610793,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**段落14（关键错误）**：\n- 原文：「階級は同じ巡査部長」\n- A译：「警衔都是**警部补**」❌ \n- B译：「阶级同样是**巡查部长**」✓\n- A将「巡査部長」误译为「警部补」，这是两个不同的警衔级别，属于重大准确性错误。\n\n**段落21**：\n- 原文：「逆探知をした警察に捕まりそうになり」\n- A译：「因警方逆向追踪险些被捕」✓\n- B译：「在对警方进行逆向追踪快要被抓的时候」❌ 主客体颠倒\n\n**段落35**：\n- A译：「荻原」❌（错误汉字）\n- B译：「萩原」✓\n\n### 流畅性分析\n\n- **段落3**：B的「这两位是因人事调动从今天起配属到本班的...」比A的结构更自然\n- **段落10**：B的「可得给我守规矩」更口语化\n- **段落44**：B的「我嘀咕了句...诸伏就嗯嗯地点着头」主语明确，更通顺\n- **段落51**：B的「那是啊，因为我没亲眼看到嘛」对话感更强\n\n### 格式问题\n\n- **段落16-23**：A使用了西式引号\" \"，B保持了日式引号「」的一致性\n- **段落30**：A结尾多出一个不应有的」\n- **段落49**：A有引号格式不规范的问题\n\n### 风格/语气\n\n- B整体更贴合轻小说的口语化风格（如「这小子」「迁怒」「那家伙脸皮厚得很」）\n- A某些地方略显书面化\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落14将「巡査部長」误译为「警部补」，段落35写错「萩原」；B在段落21主客体颠倒\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话更自然口语化，句式结构更流畅\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说的叙述和对话风格，语气更贴切\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"A的警衔翻译错误是关键术语失误；B保持FAX等用语一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B段落间衔接更顺畅，主语明确\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A有引号格式不一致问题，混用中西引号；B格式统一\"}\n  },\n  \"key_differences\": [\n    \"A将「巡査部長」误译为「警部补」（重大术语错误）\",\n    \"A将「萩原」写成「荻原」（人名错误）\",\n    \"B在段落21对「逆探知」的主客体理解有误\",\n    \"A引号格式不统一，B保持「」一致\",\n    \"B整体对话语气更口语化、自然\"\n  ],\n  \"final_summary\": \"B在整体质量上略胜一筹。虽然B在段落21有一处理解错误，但A存在更严重的术语翻译错误（警衔级别混淆）、人名错字及格式不统一等问题。B的语言风格更贴合轻小说特点，对话流畅自然，格式规范统一。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11741,
+          "completion_tokens": 2719,
+          "total_tokens": 14460
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落14将「巡査部長」误译为「警部补」，段落35写错「萩原」；B在段落21主客体颠倒"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话更自然口语化，句式结构更流畅"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说的叙述和对话风格，语气更贴切"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的警衔翻译错误是关键术语失误；B保持FAX等用语一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B段落间衔接更顺畅，主语明确"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有引号格式不一致问题，混用中西引号；B格式统一"
+      }
+    },
+    "key_differences": [
+      "A将「巡査部長」误译为「警部补」（重大术语错误）",
+      "A将「萩原」写成「荻原」（人名错误）",
+      "B在段落21对「逆探知」的主客体理解有误",
+      "A引号格式不统一，B保持「」一致",
+      "B整体对话语气更口语化、自然"
+    ],
+    "final_summary": "B在整体质量上略胜一筹。虽然B在段落21有一处理解错误，但A存在更严重的术语翻译错误（警衔级别混淆）、人名错字及格式不统一等问题。B的语言风格更贴合轻小说特点，对话流畅自然，格式规范统一。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

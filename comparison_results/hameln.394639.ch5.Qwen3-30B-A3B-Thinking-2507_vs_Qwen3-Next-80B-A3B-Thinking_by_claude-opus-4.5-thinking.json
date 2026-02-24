@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:18:49.221737",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "0c10f673168b9d8206b1db48ce1c7be1bd4299e290f58c22bcb9d04520cac1d6",
+    "B": "9450c99696104a8ebdb2202998f80340652c78430f568befb8518b45c91af7dd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:19:32.707680",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "112f94e8-523d-4314-895d-32cd9cf44e05",
+      "judge_response": {
+        "id": "112f94e8-523d-4314-895d-32cd9cf44e05",
+        "object": "chat.completion",
+        "created": 1768421972,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**段落3**: \n- A简化了表达但保留核心意思\n- B误将\"自分\"理解为说话者自己，原文是转述那些想入部者的话\n\n**段落10**: \"ズリぃ\"（ずるい的口语）意为\"狡猾/耍赖\"\n- A译\"恶心\"偏离\n- B译\"太蠢\"完全错误\n\n**段落32**: \"早いッ！？\"是惊叹对方速度快\n- A\"好快？！\"正确\n- B\"快点！？\"完全错误\n\n**段落37**: \"彼\"指凛（男性）\n- A\"他\"正确\n- B\"她\"性别错误\n\n**段落59**: \"ぶつける\"在足球语境是\"派去对付/盯防\"\n- A\"派早濑君去对付他\"正确\n- B\"让他去撞早濑君\"字面直译，意思反了\n\n**段落67**: \"下げなかった\"意为\"没有换下场\"\n- A理解正确\n- B表述混乱\n\n### 2. 格式问题\n\n**A的问题**: 段落28、29、32、33等处缺少引号\n\n**B的问题**: \n- 段落5、6将叙述文错误地加上引号变成对话\n- 段落9、58、60引号未闭合\n\n### 3. 流畅性与风格\n\n- A整体更口语化、简洁，符合轻小说对话风格\n- B部分地方过于书面化（如\"蹂躏如同新手拼凑的\"）\n\n### 4. 术语处理\n\n- 段落11: A\"常胜不败\"更贴近原文\"常勝無敗\"，B\"常胜无敌\"略有改动\n- 必杀技名称两者处理都可接受\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B有多处严重误译：段落10、32、37、59、67\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A更口语自然，B部分表达生硬\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说对话风格，B偏书面\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"两者基本一致，A对原文术语更忠实\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A阅读流畅，B有理解偏差导致的不连贯\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A缺少部分引号；B错误添加引号且有未闭合问题\"}\n  },\n  \"key_differences\": [\n    \"段落32：A正确译为'好快'，B错译为'快点'\",\n    \"段落37：A正确用'他'，B错误用'她'\",\n    \"段落59：A正确理解为'派去对付'，B误译为'撞'\",\n    \"段落5-6：B错误地将叙述文加引号变对话\",\n    \"段落10：两者都有偏差，但B错误更严重\"\n  ],\n  \"final_summary\": \"A虽有少量格式问题和个别意译偏差，但整体准确性更高、风格更符合轻小说特点。B存在多处严重误译（性别错误、动词理解错误、语气词误解），且有格式错误（将叙述变对话），整体质量明显低于A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10049,
+          "completion_tokens": 1970,
+          "total_tokens": 12019
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有多处严重误译：段落10、32、37、59、67"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更口语自然，B部分表达生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说对话风格，B偏书面"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者基本一致，A对原文术语更忠实"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A阅读流畅，B有理解偏差导致的不连贯"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A缺少部分引号；B错误添加引号且有未闭合问题"
+      }
+    },
+    "key_differences": [
+      "段落32：A正确译为'好快'，B错译为'快点'",
+      "段落37：A正确用'他'，B错误用'她'",
+      "段落59：A正确理解为'派去对付'，B误译为'撞'",
+      "段落5-6：B错误地将叙述文加引号变对话",
+      "段落10：两者都有偏差，但B错误更严重"
+    ],
+    "final_summary": "A虽有少量格式问题和个别意译偏差，但整体准确性更高、风格更符合轻小说特点。B存在多处严重误译（性别错误、动词理解错误、语气词误解），且有格式错误（将叙述变对话），整体质量明显低于A。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

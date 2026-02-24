@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:45:44.245887",
+  "sample": "syosetu.n1560fy.ch298",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n1560fy.ch298.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n1560fy.ch298.GLM-4.5.translated.txt",
+    "B": "translated_results/syosetu.n1560fy.ch298.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9aeb6269094dc80681686c7ce43485d4644d7889a31862f13341d77dfc8671a9",
+    "A": "a2f4c76105b02337c93d18bcdb0cf2ce53dadf6d62f4efe9c2a257dd94d0f77b",
+    "B": "c628bb36743f5d6d204c9859ce22bc2fb37b7d6d857ce550495009a9ff24bb36"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:46:20.804473",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DzWmQBfojWsXvWvysM5k6IPiMO3",
+      "judge_response": {
+        "id": "chatcmpl-89DzWmQBfojWsXvWvysM5k6IPiMO3",
+        "object": "chat.completion",
+        "created": 1768427180,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"凡人探索者 轻小说 原文 OR 翻译 site:pixiv.net OR site:syosetu.com OR site:comic-gardo.com\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"凡人探索者 アスタロト 権能 時の審判\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"\"凡人探索者\" \"オリュンポス\" \"ベルゼブブ\" \"アスタロト\"\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [comic-gardo.com](https://comic-gardo.com/episode/2550912964918726482)\n> 📋 **Task:** Extract the title of the work, author, and any mention of original light novel or source. Summarize if this is the comic version of 'Bonjin Tansakusha' or '凡人探索者' and check for any text that matches the provided Japanese excerpts like アスタロト, 時の審判, ベルゼブブ, オリュンポス.\n\n> 🔍 **10 results found**\n\n> [🔗 \"#纪实文学- DionysusSSGの小説- pixiv\" www.pixiv.net](https://www.pixiv.net/users/69466300/novels/%E7%BA%AA%E5%AE%9E%E6%96%87%E5%AD%A6)\n> [🔗 \"19 『第五章-第三节「Rise of the Light」』 | Elf Story 3 / The - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=17895966)\n> [🔗 \"#幻书启世录书幻人间梦几重- 錦蒻の小説- pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=19220321)\n> [🔗 \"从逃婚开始的月光旅程/第七卷·起航时代：太空电梯工程与月球宝宝的成长/第八卷 - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=26902927)\n> [🔗 \"【讨论/思考】关于变身百合/变身嫁人/变身加入后宫的那些事（11044） - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=25877762)\n> [🔗 \"#6 第四卷：猫与魔都吸血鬼事件，以及潮汐教派（莎海篇上） | 在魔法复苏的世界里被TS成了猫娘！？ - - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=25580605)\n> [🔗 \"#26 1.6 炸裂的蓝色谜团| 《异界——脐蠹∶寄生魔王》 - 蓝毛黑化赛高の小説シリーズ- pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=26278446)\n> [🔗 \"#1 第一卷| 前传：原神：关于我穿越去浇百合花这事- 璃音_YLの小説シリーズ- pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=23114538)\n> [🔗 \"#魔幻#小説宇宙道行者- 顾世民の小説- pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=23524766)\n> [🔗 \"第二卷：猫与预言邪教和背后的恶魔 - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=25571403)\n\n> 🔍 **5 results found**\n\n> [🔗 \"なろう新着チェッカー - ノベレコ\" novereco.net](https://novereco.net/check/naro_new?code=ALL&date=2023-03-09&tag=%E7%A5%9E)\n> [🔗 \"なろう新着チェッカー - ノベレコ\" novereco.net](https://novereco.net/check/naro_new?code=ALL&date=2023-03-23&tag=%E6%AE%8B%E9%85%B7%E3%81%AA%E6%8F%8F%E5%86%99%E3%81%82%E3%82%8A)\n> [🔗 \"なろう新着チェッカー - ノベレコ\" novereco.net](https://novereco.net/check/naro_new?code=ALL&date=2023-08-19&tag=%E7%A5%9E)\n> [🔗 \"愛の道阿修羅 真・女神転生ウィッチオブフォローワーズ2\" toro.2ch.sc](http://toro.2ch.sc/test/read.cgi/gamerpg/1638628217)\n> [🔗 \"なろう新着チェッカー - ノベレコ\" novereco.net](https://novereco.net/check/naro_new?code=ALL&date=2023-03-02&tag=%E9%AD%94%E7%8E%8B)\n\n> 🔍 **10 results found**\n\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】 - 小説家になろう\" ncode.syosetu.com](https://ncode.syosetu.com/n1560fy)\n> [🔗 \"お勧め】『凡人探索者のたのしい現代ダンジョンライフ - 古宮九時 - pixivFANBOX\" furumiyakuji.fanbox.cc](https://furumiyakuji.fanbox.cc/posts/6692256)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】 - 43話 ゼウスという神 その1 - 小説家になろう\" ncode.syosetu.com](https://ncode.syosetu.com/n1560fy/265)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ｜株式会社オーバーラップ\" over-lap.co.jp](https://over-lap.co.jp/narou/824004376)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ (全5巻) Kindle版\" www.amazon.co.jp](https://www.amazon.co.jp/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95-%E5%85%A85%E5%B7%BB/dp/B0C142LGV8)\n> [🔗 \"1982年度のTVアニメ動画ランキング【あにこれβ】\" www.anikore.jp](https://www.anikore.jp/chronicle/1982/ac:tv)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】 - 61話 部位と神秘種 - 小説家になろう\" ncode.syosetu.com](https://ncode.syosetu.com/n1560fy/285)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 1 (ガルドコミックス) | もちろんさん, しば犬部隊, 諏訪真弘 |本 | 通販 | Amazon\" www.amazon.co.jp](https://www.amazon.co.jp/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95-1-%E3%82%AC%E3%83%AB%E3%83%89%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E3%82%82%E3%81%A1%E3%82%8D%E3%82%93%E3%81%95%E3%82%93/dp/4824011663)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 3 - オーバーラップ\" over-lap.co.jp](https://over-lap.co.jp/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95+3/product/0/9784824006783?cat=BNK&swrd=)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 1 (オーバーラップ文庫) | しば犬部隊, 諏訪真弘 |本 | 通販 | Amazon\" www.amazon.co.jp](https://www.amazon.co.jp/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95-1-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%A9%E3%83%83%E3%83%97%E6%96%87%E5%BA%AB-%E3%81%97%E3%81%B0%E7%8A%AC%E9%83%A8%E9%9A%8A/dp/4824004373)\n\n> 🔍 **1 results found**\n\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ - もちろんさん/しば犬部隊/諏訪真弘 / 第1話「味山只人という男」 | コミックガルド\" comic-gardo.com](https://comic-gardo.com/episode/2550912964918726482)\n\n\n作为公正的轻小说翻译质量评判员，我对提供的日文原文与两个中文翻译版本（A与B）进行了逐段对比分析。整体文本出自轻小说《凡人探索者のたのしい現代ダンジョンライフ》（凡人探索者的快乐现代迷宫生活），属于带有战斗、神秘、神话元素、叙述语气夸张且带点黑色幽默/疯狂感的现代奇幻轻小说风格。\n\n### 详细分析\n\n**1. 准确性（意思保留）**  \nA版在大多数地方更忠实于原文，例如：\n- 段落2：A保留了“今回の地上侵攻だがな”“オリュンポスの番だが”的轮到感和随意口吻，“就只让给你们一次哦”更贴近原文的让步语气；B稍简化，丢失了“轮到”的明确感。\n- 段落22：A准确传达了疯狂重复的“はいられた”“もどれない”“おみみが、とれない”，B的“是的，是的”“拿不住的呜呜呜呜呜”改动较大，失去了原文的恐怖/疯狂感。\n- 段落29：“な、めるなァァァぁァァァ”明显是“舐めるな”（看不起/小看）的拉长音，A正确译为“别、他妈的看不起人啊”；B误译成“别、舔啊啊啊啊”（舔的误读），这是严重失误。\n- 段落71：A正确处理了“光栄に思え”（感到光荣吧）的讽刺；B简化且丢失语气。\nB在少数地方更简洁，但整体准确性不如A，尤其在关键剧情台词上出现理解错误。\n\n**2. 流畅性（中文自然表达）**  \nB整体更简洁、口语化，阅读时更顺（例如段落10、11、31、43等处用词更日常）。  \nA有时稍显生硬或冗长（如“沉醉于鲜血的野兽”重复使用、“自我再生来不及了”），但在叙述部分仍算流畅。  \nB在对话部分更像现代中文网文风格，A更接近直译轻小说体。\n\n**3. 风格/语气（轻小说叙述/对话）**  \n轻小说尤其是这类带疯狂神明、战斗、旁白式的作品，需要夸张、激烈、带脏话、疯狂感的语气。  \nA更好地保留了原文的狂气、脏话强度（如段落29、33、45的脏话处理）、重复强调（如杀杀杀、啊啊啊）的冲击力，以及旁白的戏剧性。  \nB经常软化/淡化语气（如段落3“疯神”、段落15笑声缩短、段落22疯狂感减弱、段落34“妖怪”而非“化け物”的怪物感），整体偏温和，丢失了原文的“疯癫战斗轻小说”特色。\n\n**4. 术语/名称一致性**  \n两者基本一致（奥林匹斯、别西卜、巴力、宙斯、阿斯塔禄/阿斯塔罗特等），但：\n- A统一使用“神秘种”，B混用“神秘种族”“神秘种”，略不一致。\n- A在“地上侵攻”统一用“地上侵攻”，B用“地上入侵”，小差异但A更一致。\n- 神名与能力名A更贴近常见译法（“时之审判”），B偶尔有小错（如引号不一致）。\n\n**5. 连贯性/可读性**  \nA整体连贯性更好，尤其是长段叙述与战斗高潮的紧张感保持连续（段落33、43、62等）。  \nB可读性在日常阅读上略胜（更短句），但关键高潮处因语气弱化而连贯感下降。\n\n**6. 格式/标点符号**  \n两者标点都基本合理，但：\n- A更积极使用重复符号、破折号、感叹号来体现原文疯狂感（例：啊啊啊啊啊啊、！！）。\n- B有时标点较保守，省略部分强调（如段落22、33）。\n- 两者在最后广告部分都处理得当。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 6, \"notes\": \"A整体忠实度高，B在关键台词（如舔めるな误译）出现严重错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更简洁日常，A稍显直译但仍可读\"},\n    \"style\": {\"A\": 9, \"B\": 6, \"notes\": \"A很好保留了轻小说狂气、脏话、夸张重复的战斗/疯狂风格，B明显软化、丢失特色\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"A术语更统一一致，B偶有混用与小偏差\"},\n    \"coherence\": {\"A\": 9, \"B\": 7, \"notes\": \"A在高潮战斗与旁白的紧张连贯性更强\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者标点都合理，A在强调符号上更贴合原文\"}\n  },\n  \"key_differences\": [\n    \"A更忠实保留原文狂气、脏话强度与重复表现，适合轻小说战斗高潮\",\n    \"B在关键处出现误译（如'舐めるな'→'舔'），语气整体偏温和，丢失疯癫感\",\n    \"A叙述与台词的冲击力与戏剧性更强，B更偏向简洁网文流\"\n  ],\n  \"final_summary\": \"综合而言，A在准确性、风格再现、连贯性上明显优于B，更符合这部带有疯狂神明与激烈战斗的轻小说气质；虽然B阅读更顺畅，但核心魅力缺失严重，因此A为更优秀的翻译版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10945,
+          "completion_tokens": 5152,
+          "total_tokens": 16097
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "A整体忠实度高，B在关键台词（如舔めるな误译）出现严重错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更简洁日常，A稍显直译但仍可读"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好保留了轻小说狂气、脏话、夸张重复的战斗/疯狂风格，B明显软化、丢失特色"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A术语更统一一致，B偶有混用与小偏差"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A在高潮战斗与旁白的紧张连贯性更强"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者标点都合理，A在强调符号上更贴合原文"
+      }
+    },
+    "key_differences": [
+      "A更忠实保留原文狂气、脏话强度与重复表现，适合轻小说战斗高潮",
+      "B在关键处出现误译（如'舐めるな'→'舔'），语气整体偏温和，丢失疯癫感",
+      "A叙述与台词的冲击力与戏剧性更强，B更偏向简洁网文流"
+    ],
+    "final_summary": "综合而言，A在准确性、风格再现、连贯性上明显优于B，更符合这部带有疯狂神明与激烈战斗的轻小说气质；虽然B阅读更顺畅，但核心魅力缺失严重，因此A为更优秀的翻译版本。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

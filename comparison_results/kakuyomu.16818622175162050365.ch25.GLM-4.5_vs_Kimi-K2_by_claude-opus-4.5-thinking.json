@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:30:02.781707",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.GLM-4.5.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "8c596d9fe4fd070457ddfc3ff7e70382b69cc89673d2fabfe4c79264041b19b9",
+    "B": "a5f5a08861215c42b4653288f721beb76ec0b7f799fab41e9000b6df6d7893dd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:31:01.327858",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "abbab054-7c7e-4e61-836b-85c8ef46396e",
+      "judge_response": {
+        "id": "abbab054-7c7e-4e61-836b-85c8ef46396e",
+        "object": "chat.completion",
+        "created": 1768422661,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n两个翻译整体准确度相当，但有细微差异：\n- 段落5：原文「話してる」B译为\"搭过话\"更准确，A\"聊得来\"略有偏差\n- 段落12：原文「万年低血圧」A保留\"万年低血压\"更贴近原文，B\"常年待机\"稍有创译\n- 段落80：原文「慇懃無礼」意为\"表面恭敬实则无礼\"，A\"恭敬无礼\"和B\"客气得近乎无礼\"都勉强表达，B略好\n\n### 流畅性分析\n- B整体更口语化自然：\"三五成群\"、\"牛啊\"、\"这哥们\"、\"关我屁事\"\n- A较为书面化，如\"也就只有...了\"、\"我才是呢\"\n- 段落18：B\"吓得我一哆嗦。谁让我杵在出入口前呢\"比A更生动\n\n### 风格/语气分析\n- 轻小说对话风格：B更符合轻小说活泼口吻\n- 段落16：A\"柚子，早安\"、B\"柚子酱，早啊\"——B更贴合「柚子ちゃん」的亲昵感\n- 段落8/10：B\"那才见鬼了\"、\"关我屁事\"更符合东云高冷毒舌人设\n\n### 格式问题（重要）\n- **B在段落46-55存在严重格式错误**：将叙述文本错误地加上引号，如「\"超他妈大的嗓门从门口炸进来\"」「\"进来的是俩穿西装外套...\"」——这些明显不是对话却用了引号\n- A格式一致规范\n\n### 术语一致性\n- A对\"柚子ちゃん\"翻译不一致（柚子/柚子同学混用）\n- B的\"柚子酱\"/\"柚子\"更统一\n\n### 可读性\n- B叙述更流畅有节奏感\n- A部分句子较生硬：\"这让我觉得，阳菜乃原本一定就是这样会坦率地笑着的孩子吧\"\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 8, \"notes\": \"两者准确度相当，各有小误差\"},\n    \"fluency\": {\"A\": 6, \"B\": 9, \"notes\": \"B口语化自然，A较书面生硬\"},\n    \"style\": {\"A\": 6, \"B\": 9, \"notes\": \"B更符合轻小说活泼对话风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A对'柚子ちゃん'翻译不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B节奏感更好\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B在段落46-55有严重引号格式错误\"}\n  },\n  \"key_differences\": [\n    \"B整体语言风格更贴合轻小说口语化特点\",\n    \"B在段落46-55存在叙述文本误加引号的严重格式问题\",\n    \"A翻译较为忠实但读起来生硬\",\n    \"B对角色语气把握更准确（如东云的毒舌、奏多的随性）\",\n    \"A对'柚子ちゃん'称呼翻译不统一\"\n  ],\n  \"final_summary\": \"B在流畅性、风格把握和轻小说特有的对话氛围上明显优于A，语言生动活泼，符合目标读者期待。但B存在明显的格式错误（段落46-55将叙述误标为对话），这是比较严重的问题。A虽然格式规范，但语言偏书面化，部分翻译生硬。综合考量，B在核心的可读性和风格上的优势足以弥补格式瑕疵（可视为编辑疏漏），故B略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12230,
+          "completion_tokens": 2313,
+          "total_tokens": 14543
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者准确度相当，各有小误差"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B口语化自然，A较书面生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B更符合轻小说活泼对话风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "A对'柚子ちゃん'翻译不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B节奏感更好"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在段落46-55有严重引号格式错误"
+      }
+    },
+    "key_differences": [
+      "B整体语言风格更贴合轻小说口语化特点",
+      "B在段落46-55存在叙述文本误加引号的严重格式问题",
+      "A翻译较为忠实但读起来生硬",
+      "B对角色语气把握更准确（如东云的毒舌、奏多的随性）",
+      "A对'柚子ちゃん'称呼翻译不统一"
+    ],
+    "final_summary": "B在流畅性、风格把握和轻小说特有的对话氛围上明显优于A，语言生动活泼，符合目标读者期待。但B存在明显的格式错误（段落46-55将叙述误标为对话），这是比较严重的问题。A虽然格式规范，但语言偏书面化，部分翻译生硬。综合考量，B在核心的可读性和风格上的优势足以弥补格式瑕疵（可视为编辑疏漏），故B略胜。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

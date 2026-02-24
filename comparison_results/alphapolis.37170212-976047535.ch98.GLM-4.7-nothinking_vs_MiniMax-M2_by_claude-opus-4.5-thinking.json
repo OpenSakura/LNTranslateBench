@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:54.072911",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.MiniMax-M2.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "a57252a92b011a003ee05a7fcaf9054cf2d496adebd26674697ce823503a4d63",
+    "B": "e02e06cc4b12609b0df4e10615d9592bd1c35b876576bb27665fee49a9f1d8bc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:03:48.164793",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d8092d35-acb0-4f83-9c8b-3f5baa32e26c",
+      "judge_response": {
+        "id": "d8092d35-acb0-4f83-9c8b-3f5baa32e26c",
+        "object": "chat.completion",
+        "created": 1768421028,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n\n**重大错误：**\n- **段落19**: A将\"シスコン\"译为\"弟控\"，实际应为\"妹妹控\"（指哥哥们对妹妹过度保护），B正确\n- **段落37**: A译为\"皇帝所有人都仰慕\"是严重错误，原文是\"国民\"，B正确\n- **段落50**: A将主语理解错误，原文是\"（レイラ）盯着菲尔不让他被休伯特...\"，A误解为\"菲尔被盯着\"\n- **段落69**: A将\"チャライ風体\"误译为\"查理风体型\"，实际意思是\"外表轻浮\"，B正确\n- **段落79**: A漏译了\"全身黒い毛の狼。尾が２つに分かれている\"整句\n- **段落100**: A将\"ワラビー\"（小袋鼠）错译为\"蕨菜\"，B正确\n\n**专有名词处理：**\n- A在多处保留日文未翻译（段落36的ステア、段落98/104的テンガ、段落105的ザクロ、段落111的ルリ），而B都做了翻译\n- 段落169: A将\"マクベアー\"译为\"麝\"（完全错误），B正确译为\"麦克贝尔\"\n- 段落146: トーマ，A译\"托马斯\"不准确，B译\"托玛\"更符合原音\n\n### 2. 流畅性分析\n\n- **段落32**: A\"微笑着守护的人\"较生硬，B\"一边微笑着一边注视着别人\"更自然\n- **段落73**: A\"真严肃严谨\"不通顺，B\"认真且一丝不苟\"更流畅\n- **段落58**: A\"根是好人\"不通顺，B\"本质上是个好人\"更自然\n\n### 3. 风格/语气\n\n- B整体更符合轻小说人物介绍的轻松语气\n- 段落39: A\"可怜的帅哥\"vs B\"遗憾的美男子\"，B更贴合轻小说风格\n- 段落152: B\"带点暴力的爱\"比A\"轻微的暴力式爱\"更口语化\n\n### 4. 术语一致性\n\n- A在名字翻译上不一致（有时翻译有时保留日文）\n- B保持了较好的一致性\n\n### 5. 连贯性/可读性\n\n- B整体可读性更好，句式更完整\n\n### 6. 格式\n\n- 段落75: A简化了分隔线，B保留原格式\n- 两者在基本格式上相近\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A有多处重大错误：シスコン误译、漏译、ワラビー误译为蕨菜、多处保留日文未译\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B表达更自然流畅，A有生硬之处\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说角色介绍的轻松风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A多处保留日文原文未翻译，名称处理不一致；マクベアー误译为麝\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体连贯性更好，A有理解错误导致的逻辑问题\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"两者基本相当，B保留分隔符更完整\"}\n  },\n  \"key_differences\": [\n    \"A将シスコン错译为弟控，B正确译为妹妹控\",\n    \"A将国民误译为皇帝\",\n    \"A漏译段落79的狼外观描述\",\n    \"A将ワラビー（小袋鼠）误译为蕨菜\",\n    \"A多处保留日文未翻译（ステア、テンガ、ザクロ等），B统一翻译\",\n    \"A将マクベアー误译为麝，B正确译为麦克贝尔\"\n  ],\n  \"final_summary\": \"B翻译在准确性上明显优于A，A存在多处严重误译和漏译。B在专有名词处理上更一致，流畅度和风格也更符合轻小说的特点。A的关键错误（如弟控/妹妹控混淆、国民/皇帝错误、漏译）严重影响了整体质量。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16228,
+          "completion_tokens": 2555,
+          "total_tokens": 18783
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有多处重大错误：シスコン误译、漏译、ワラビー误译为蕨菜、多处保留日文未译"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B表达更自然流畅，A有生硬之处"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说角色介绍的轻松风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A多处保留日文原文未翻译，名称处理不一致；マクベアー误译为麝"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体连贯性更好，A有理解错误导致的逻辑问题"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者基本相当，B保留分隔符更完整"
+      }
+    },
+    "key_differences": [
+      "A将シスコン错译为弟控，B正确译为妹妹控",
+      "A将国民误译为皇帝",
+      "A漏译段落79的狼外观描述",
+      "A将ワラビー（小袋鼠）误译为蕨菜",
+      "A多处保留日文未翻译（ステア、テンガ、ザクロ等），B统一翻译",
+      "A将マクベアー误译为麝，B正确译为麦克贝尔"
+    ],
+    "final_summary": "B翻译在准确性上明显优于A，A存在多处严重误译和漏译。B在专有名词处理上更一致，流畅度和风格也更符合轻小说的特点。A的关键错误（如弟控/妹妹控混淆、国民/皇帝错误、漏译）严重影响了整体质量。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

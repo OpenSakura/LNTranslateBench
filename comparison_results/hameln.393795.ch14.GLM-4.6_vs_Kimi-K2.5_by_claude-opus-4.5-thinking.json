@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:18:57.345543",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.GLM-4.6.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "12dbff769cd6b36f7f72c4c10469d0ea9f24d4cc5a9c26230a9d8164b26ebe8d",
+    "B": "c1bc24ab77057eced12035dcff2accebe2d71bd2d5eb035bf79c28035c9b8c2c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:19:39.314788",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "188a185a-8341-4565-9709-3fec1c4620eb",
+      "judge_response": {
+        "id": "188a185a-8341-4565-9709-3fec1c4620eb",
+        "object": "chat.completion",
+        "created": 1769609979,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n- **段落11**: A有明显错误\"应该和我前世爱用的怀表没多大**才对**\"，漏译\"差别\"（差別）。B正确翻译为\"没有太大差别\"。\n- **段落39**: 「鍛錬場」A译为\"训练场\"，B译为\"锻冶场\"。原文指锻炼/训练场，A更准确。\n- **段落41**: 「国を動かす」A译\"掌控国家\"，B译\"推动国家\"。在这个并列结构中，A的\"掌控\"更贴合原文语境。\n- **段落17**: 「時計係」A译\"钟表管理员\"，B译\"钟表师\"。A更准确表达职务性质。\n\n### 流畅性分析\n- A整体更口语化自然，如段落12\"大得要命\"\"没戏\"，段落76\"扫荡光了\"\n- B有时略显生硬，如段落6\"统御这一切的东西，让部队间的行动同时开始的标准\"较为拗口\n- 段落45: A\"把人拉长、压碎、剥皮\"节奏更好，B\"将人拉长压碎剥皮\"略显急促\n\n### 风格/语气分析\n- A更符合轻小说叙述风格，对话更生动\n- 段落14: A「根本就没法用啊。」比B「实在用不了」更有情感\n- 段落16: A「不过话说回来，那个搬起来也挺费劲的。」更口语化\n\n### 术语一致性问题\n- **严重问题**: A在段落80-81突然将\"公主殿下\"改为\"姬殿下\"，与全文不一致\n- B全程保持\"公主殿下\"的一致性\n\n### 连贯性/可读性\n- 两者整体都保持良好连贯性\n- A的衔接词使用更自然，如\"不仅如此\"\"不过话说回来\"\n- 段落25: B\"大家都用公主殿下的名字来称呼它呢\"比A更清晰明确\n\n### 格式/标点\n- A对话末尾标点更规范（使用句号）\n- B部分对话末尾缺少标点\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落11漏译'差别'，但其他地方理解更到位；B整体准确但段落39译错\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A更自然口语化，B有时略显生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更符合轻小说风格，对话生动有情感\"},\n    \"terminology\": {\"A\": 6, \"B\": 9, \"notes\": \"A在80-81段突然改用'姬殿下'，严重破坏一致性\"},\n    \"coherence\": {\"A\": 8, \"B\": 8, \"notes\": \"两者都保持良好连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"A标点使用更规范\"}\n  },\n  \"key_differences\": [\n    \"A段落11漏译'差别'，B正确\",\n    \"A在80-81段术语不一致（姬殿下vs公主殿下）\",\n    \"A整体更口语化流畅，B更书面化\",\n    \"A对话更有轻小说感，B较平淡\",\n    \"B段落39误译'鍛錬場'为'锻冶场'\"\n  ],\n  \"final_summary\": \"A在流畅性和风格上明显优于B，更符合轻小说的叙述特点，但存在段落11的漏译和80-81段术语不一致的问题。B虽然更加稳定一致，但整体读感略显生硬。综合考虑，A的优势（流畅性、风格）对阅读体验的提升超过其缺陷带来的影响，因此A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12202,
+          "completion_tokens": 1815,
+          "total_tokens": 14017
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落11漏译'差别'，但其他地方理解更到位；B整体准确但段落39译错"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更自然口语化，B有时略显生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更符合轻小说风格，对话生动有情感"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "A在80-81段突然改用'姬殿下'，严重破坏一致性"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者都保持良好连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "A标点使用更规范"
+      }
+    },
+    "key_differences": [
+      "A段落11漏译'差别'，B正确",
+      "A在80-81段术语不一致（姬殿下vs公主殿下）",
+      "A整体更口语化流畅，B更书面化",
+      "A对话更有轻小说感，B较平淡",
+      "B段落39误译'鍛錬場'为'锻冶场'"
+    ],
+    "final_summary": "A在流畅性和风格上明显优于B，更符合轻小说的叙述特点，但存在段落11的漏译和80-81段术语不一致的问题。B虽然更加稳定一致，但整体读感略显生硬。综合考虑，A的优势（流畅性、风格）对阅读体验的提升超过其缺陷带来的影响，因此A略胜。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

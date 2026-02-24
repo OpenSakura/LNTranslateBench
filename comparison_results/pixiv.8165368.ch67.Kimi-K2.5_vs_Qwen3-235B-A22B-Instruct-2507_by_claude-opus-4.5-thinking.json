@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:22:26.069140",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "639422ee803510bc0b89d71d89dbf0a4013622452f0dad538ea45a30c32eca8b",
+    "B": "0dd2904a4d8dd9b402b9531391d731e2b009d7cc2ca9cb0e18455d7721eea5ed"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:23:26.162551",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "65436cf4-6ad3-451b-a174-c718cc30bd13",
+      "judge_response": {
+        "id": "65436cf4-6ad3-451b-a174-c718cc30bd13",
+        "object": "chat.completion",
+        "created": 1769610206,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 段落级别详细对比\n\n**准确性问题：**\n- 段落16：A正确译为\"二十二点\"，B错误译为\"晚上十点\"（22时应为晚上十点，但B的表述可能造成误解为10:00）\n- 段落11：「ブラウザバック」意为\"返回上一页\"，B的\"返回浏览器\"更准确，A的\"关闭浏览器\"不准确\n- 段落29：「目を白黒させる」意为\"眼睛转来转去/不知所措\"，B的\"眼冒金星\"比A的\"两眼翻白\"更贴切\n- 段落81：A的翻译逻辑混乱（\"柯南君为了救人\"主语错误），B更清晰准确\n\n**流畅性对比：**\n- 段落1：A直译\"诸注意\"生硬，B\"注意事项\"自然\n- 段落8：B\"诸多需要注意的地方\"比A\"各种注意事项\"更通顺\n- 段落6：B\"暗示程度的性描写\"比A\"程度上暗示性的表现\"更清晰\n\n**风格/语气：**\n- 段落50：B正确添加引号表示对话，A遗漏\n- 段落59：B用引号呈现对话更符合原文\n- 段落128：A的引号使用不一致（用了中文双引号而非日式括号）\n\n**术语处理：**\n- 段落116：B将「ゆりかもめ」译为\"百合海鸥号\"，A保留日文\n- 段落36：「はくちょう」A译\"天鹅号\"（意译），B译\"白鸟\"（音译），两者都可接受\n- 段落77：「ゆーや」指风见裕也，A译\"由也\"，B译\"小景\"（景光的昵称，可能是误解）\n\n**连贯性：**\n- 段落9：A用\"诸注意\"与段落1不一致，B统一用\"注意事项\"\n- B整体行文更流畅，段落衔接更自然\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在关键词汇和句意理解上更准确，但段落16时间表述有小问题；A段落81翻译逻辑混乱\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体更符合中文表达习惯，A有多处生硬直译如'诸注意'、'程度上暗示性的表现'\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地保留了轻小说对话的轻松语气和节奏感\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有优劣：A保留日文术语，B翻译更完整；段落77两者都有问题\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B行文更连贯，术语使用更一致\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"B引号使用更规范一致，A段落128引号格式混乱\"}\n  },\n  \"key_differences\": [\n    \"B整体中文表达更自然流畅，A有较多直译痕迹\",\n    \"B对对话标点处理更规范\",\n    \"A段落81翻译有明显错误，主语混淆\",\n    \"B将专有名词（如百合海鸥号）翻译完整，A保留日文\",\n    \"B段落16时间表述可能造成歧义\"\n  ],\n  \"final_summary\": \"B译本整体质量更高，中文表达更自然流畅，对话风格把握更好，格式更规范。A译本存在部分直译生硬、逻辑错误（段落81）和格式不一致的问题。虽然B在个别地方（如时间表述）略有瑕疵，但综合考虑各项指标，B仍是更优选择。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14496,
+          "completion_tokens": 2618,
+          "total_tokens": 17114
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在关键词汇和句意理解上更准确，但段落16时间表述有小问题；A段落81翻译逻辑混乱"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体更符合中文表达习惯，A有多处生硬直译如'诸注意'、'程度上暗示性的表现'"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地保留了轻小说对话的轻松语气和节奏感"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有优劣：A保留日文术语，B翻译更完整；段落77两者都有问题"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B行文更连贯，术语使用更一致"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "B引号使用更规范一致，A段落128引号格式混乱"
+      }
+    },
+    "key_differences": [
+      "B整体中文表达更自然流畅，A有较多直译痕迹",
+      "B对对话标点处理更规范",
+      "A段落81翻译有明显错误，主语混淆",
+      "B将专有名词（如百合海鸥号）翻译完整，A保留日文",
+      "B段落16时间表述可能造成歧义"
+    ],
+    "final_summary": "B译本整体质量更高，中文表达更自然流畅，对话风格把握更好，格式更规范。A译本存在部分直译生硬、逻辑错误（段落81）和格式不一致的问题。虽然B在个别地方（如时间表述）略有瑕疵，但综合考虑各项指标，B仍是更优选择。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

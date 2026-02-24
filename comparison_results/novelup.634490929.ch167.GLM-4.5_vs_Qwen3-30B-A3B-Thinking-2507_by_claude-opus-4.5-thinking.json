@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:38:44.348591",
+  "sample": "novelup.634490929.ch167",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.634490929.ch167.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.634490929.ch167.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/novelup.634490929.ch167.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "32eb13be72e0747f319c67077645057ceb552d1d8f1248f9660d1a8d68e7f568",
+    "A": "ef3c34648da65f0a4f353a027b27ccef8d494a6558b8d826e35f10c385c3ace2",
+    "B": "4612519bfadb4c744dd82f673ff68b80d3569faf99f5bcf5c42cdb2437e2f3c1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:39:56.046241",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a1a40d11-4512-4bbe-b217-4219c1fbe288",
+      "judge_response": {
+        "id": "a1a40d11-4512-4bbe-b217-4219c1fbe288",
+        "object": "chat.completion",
+        "created": 1768423195,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段详细分析\n\n### 关键名词处理\n- **キバテビ**: A译为\"牙太飞\"后又变成\"基巴特维\"（不一致），B基本保持\"奇巴特比/奇巴泰比\"（略有波动但较一致）\n- **タツミ**: A译\"塔津\"，B译\"辰巳\"（日文汉字标准写法，更准确）\n- **シルヴァーガール/ムラサキガール**: A译\"银—女孩/尤姆拉萨基女孩\"（生硬），B译\"银之少女/紫罗兰女孩\"（自然）\n\n### 准确性问题\n- **段落4**: A\"Doctor把应对交给盟友们\"主语错误，应是\"把对付Doctor的事\"交给盟友。B正确。\n- **段落8**: A\"我们动不了这里了\"错译，原文是\"不能离开这里\"。B正确。\n- **段落41**: A漏译\"悉く\"(全部)，B\"悉数命中\"准确。\n- **段落57**: A\"不受伤也会有身体疲劳吗\"未能表达主角的推断语气，B\"意思是就算不会受伤，身体的疲劳还是会累积是吗\"更准确。\n- **段落61**: A把主语搞混，B正确理解Doctor踢飞\"我\"但温柔地扔拉比利斯。\n\n### 流畅性对比\n- **段落5**: B\"都这种情况了...看样子是打算\"比A\"在这种情况下...继续演奏\"更口语化\n- **段落7**: B完整表达了\"谁知道他们会对我们做什么\"的担忧，A略显生硬\n- **段落55**: A\"飞得特别好笑\"对\"面白いほど\"理解偏差，B\"飞得老远\"更自然\n\n### 格式问题\n- A在段落52-53、56-58、61-62、67-68、71等处**缺失对话引号**，严重影响可读性\n- B格式规范，引号使用一致\n\n### 语气/风格\n- **デス语尾**: A保留\"德斯\"保持角色特色，B译为\"是\"丢失特点——此处A略胜\n- **段落3**: A\"DESS（啦）\"虽怪异但保留了原文双语混搭感，B\"是斯(是哟)\"较生硬\n- 整体轻小说对话感：B更自然流畅\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落4、8、41、57、61有明显误译；B整体准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B口语化表达更自然，A部分句子生硬\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"A保留デス语尾有特色，但B整体对话感更好\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A的キバテビ翻译严重不一致(牙太飞→基巴特维)；角色名A也较生硬\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B上下文衔接更流畅，逻辑更清晰\"},\n    \"formatting\": {\"A\": 5, \"B\": 9, \"notes\": \"A多处对话缺失引号，格式问题严重\"}\n  },\n  \"key_differences\": [\n    \"A多处对话缺失引号，B格式规范\",\n    \"A在段落4、8、61等处有理解性错误，B准确\",\n    \"A角色名翻译不一致(牙太飞/基巴特维)，B较统一\",\n    \"A保留デス语尾特色，B丢失但整体更流畅\",\n    \"B的口语化表达和轻小说语感更自然\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性、格式规范性上明显优于A，尤其是A存在多处关键理解错误和格式缺陷（缺失引号）。虽然A在保留角色语癖（デス）上有优势，但无法弥补其他方面的不足。综合考虑，B是更好的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10579,
+          "completion_tokens": 2859,
+          "total_tokens": 13438
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落4、8、41、57、61有明显误译；B整体准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B口语化表达更自然，A部分句子生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "A保留デス语尾有特色，但B整体对话感更好"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A的キバテビ翻译严重不一致(牙太飞→基巴特维)；角色名A也较生硬"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B上下文衔接更流畅，逻辑更清晰"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A多处对话缺失引号，格式问题严重"
+      }
+    },
+    "key_differences": [
+      "A多处对话缺失引号，B格式规范",
+      "A在段落4、8、61等处有理解性错误，B准确",
+      "A角色名翻译不一致(牙太飞/基巴特维)，B较统一",
+      "A保留デス语尾特色，B丢失但整体更流畅",
+      "B的口语化表达和轻小说语感更自然"
+    ],
+    "final_summary": "B在准确性、流畅性、格式规范性上明显优于A，尤其是A存在多处关键理解错误和格式缺陷（缺失引号）。虽然A在保留角色语癖（デス）上有优势，但无法弥补其他方面的不足。综合考虑，B是更好的翻译。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

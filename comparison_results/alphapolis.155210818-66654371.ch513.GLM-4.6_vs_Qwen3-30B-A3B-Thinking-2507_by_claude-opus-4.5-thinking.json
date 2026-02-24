@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:10.209726",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.6.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "6913984749842c5384524b690b5ced5211721ea6b7467220eec943b2ae08e919",
+    "B": "770b79f3358a0d1275f8a0bfc10249522759b1ff058b0d43cd7eeb0ba3c0e41d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:02:54.072254",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "184600ae-239c-44be-94d6-a5d8fd760bc7",
+      "judge_response": {
+        "id": "184600ae-239c-44be-94d6-a5d8fd760bc7",
+        "object": "chat.completion",
+        "created": 1768420973,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估\n\n## 详细分析\n\n### 1. 准确性\n- **段落2**: A\"移动回了家\"简化了\"ホームの実家\"；B\"家的娘家\"语义不通，理解错误\n- **段落5**: A\"把它射进河里\"指代不清；B\"把雷球魔石扔进河里\"更清晰准确\n- **段落6**: A\"全灭敌人\"正确；B\"让全员全灭\"表述错误（应该是敌人被全灭）\n- **段落24**: A\"交给树大叔的小包\"正确理解为委托制作；B\"树大叔交给我的\"方向理解相反\n- **段落45**: 原文\"魔物に刺さ（れ）ば\"意为\"刺中魔物\"，两者都误译为\"被魔物刺中\"\n\n### 2. 流畅性\n- A整体更符合中文轻小说阅读习惯，语句连贯\n- B部分表达偏口语化（如\"干得漂亮\"\"瘪成一团\"），有时生硬\n\n### 3. 风格/语气\n- A保持了轻小说的叙述风格，对话自然活泼\n- B部分对话过于随意，如\"搞不定\"\"被干掉\"等\n\n### 4. 术语一致性\n- A: 统一使用\"树大叔/樹大叔\"\"道具盒\"\"地下城\"\n- B: 段落75保留日文\"アイテムBOX\"未翻译，不统一\n\n### 5. 格式\n- A: 对话统一使用「」\n- B: 对话格式混用「」和\"\"，不一致（如段落32、36等）\n\n### 6. 名称翻译\n- A: 戴安娜/黛安娜、希尔瓦/西尔弗 - 两者选择不同但都可接受\n- B: 修玄先生 vs A的修根先生 - 都是音译选择\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A段落24理解正确，B段落6和24有明显误译\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体流畅自然，B部分表达生硬\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A保持轻小说风格，B部分过于口语化\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落75保留日文未译，A术语统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙述连贯，B可读性稍差\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B对话引号格式混用不一致\"}\n  },\n  \"key_differences\": [\n    \"段落24：A正确理解委托关系，B理解相反\",\n    \"段落6：B「让全员全灭」表述错误\",\n    \"B对话格式混用「」和\\\"\\\"\",\n    \"B段落75保留日文アイテムBOX未翻译\",\n    \"A整体风格更贴合轻小说\"\n  ],\n  \"final_summary\": \"翻译A在准确性、风格一致性和格式规范方面表现更佳。B虽然部分细节翻译更明确，但存在关键理解错误（段落6、24）和格式不统一问题。A更适合轻小说读者阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10415,
+          "completion_tokens": 1746,
+          "total_tokens": 12161
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A段落24理解正确，B段落6和24有明显误译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体流畅自然，B部分表达生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A保持轻小说风格，B部分过于口语化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落75保留日文未译，A术语统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙述连贯，B可读性稍差"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B对话引号格式混用不一致"
+      }
+    },
+    "key_differences": [
+      "段落24：A正确理解委托关系，B理解相反",
+      "段落6：B「让全员全灭」表述错误",
+      "B对话格式混用「」和\"\"",
+      "B段落75保留日文アイテムBOX未翻译",
+      "A整体风格更贴合轻小说"
+    ],
+    "final_summary": "翻译A在准确性、风格一致性和格式规范方面表现更佳。B虽然部分细节翻译更明确，但存在关键理解错误（段落6、24）和格式不统一问题。A更适合轻小说读者阅读体验。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

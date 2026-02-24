@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:49:23.475867",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "3a4ed128faf6f3ef61c938506988451ba83c882b6e4614700fd000760db692d5",
+    "B": "44ca65a6e0c4684b7290d49ae9ee6caaeb2ccc156d206d2868228c5023e7a3cc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:50:10.338515",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7928fe74-8940-418b-ad3f-bb68def8062c",
+      "judge_response": {
+        "id": "7928fe74-8940-418b-ad3f-bb68def8062c",
+        "object": "chat.completion",
+        "created": 1768423810,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落逐一分析\n\n**段落1：地名翻译**\n- A将「甲斐常葉駅」译为\"开斐常叶站\"（错误，\"甲斐\"误写为\"开斐\"）\n- B正确译为\"甲斐常叶站\"\n\n**段落2：「マッ缶」翻译**\n- A译为\"罐头\"（过于笼统）\n- B译为\"马口铁罐\"（仍不够准确，应为MAX咖啡罐的简称）\n\n**段落3：人名处理**\n- B添加了\"凛\"和\"抚子\"作为角色全名，这符合《摇曳露营》原作设定，更准确\n- A未添加，保持模糊\n\n**段落16/21：人名一致性**\n- A在段落16用\"齐藤\"，段落21也用\"齐藤\"，但其他段落用\"斋藤\"，存在不一致\n- B全程统一使用\"斋藤\"\n\n**段落23/25：「みのぶまんじゅう」**\n- A译为\"蓑衣馒头\"（误译，与地名无关）\n- B译为\"苇乃ぶ馒头\"（保留假名，处理方式奇怪）\n- 但段落30两者都正确译为\"身延馒头\"\n\n**段落29：语感**\n- B\"这下能理解为什么会被家里人偷吃光了\"更自然地道\n- A\"家里人会擅自吃掉我也能理解\"略显生硬\n\n**段落59：「残りのひとかけら」**\n- A译为\"剩下的一个\"\n- B译为\"最后一块\"（更准确，ひとかけら是\"一块/一片\"）\n\n**段落67：「お兄ちゃん」翻译**\n- A译为\"哥哥\"\n- B译为\"老哥\"（更口语化，符合小町活泼的语气）\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A地名'开斐'错误；B角色全名补充准确；两者'みのぶまんじゅう'首次出现时都有问题\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体表达更自然，如段落29的处理更地道\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的'老哥''呢'等语气词更符合轻小说对话风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A人名'齐藤/斋藤'不一致；B统一使用'斋藤'\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B添加角色全名有助于读者理解人物关系\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者标点格式基本一致\"}\n  },\n  \"key_differences\": [\n    \"地名准确性：A误译'开斐'，B正确译为'甲斐'\",\n    \"人名一致性：A存在'齐藤/斋藤'混用，B统一\",\n    \"角色全名：B补充了志摩凛、各务原抚子等全名\",\n    \"口语自然度：B的对话更接近口语习惯\",\n    \"'身延馒头'首次出现时两者都有翻译问题\"\n  ],\n  \"final_summary\": \"B在地名准确性、人名一致性和自然表达方面表现更优。A存在明显的地名错误('开斐'应为'甲斐')和人名不一致问题。B补充角色全名符合原作设定，口语表达更自然流畅。虽然两者在'身延馒头'首次出现时都有瑕疵，但综合来看B质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11084,
+          "completion_tokens": 2127,
+          "total_tokens": 13211
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A地名'开斐'错误；B角色全名补充准确；两者'みのぶまんじゅう'首次出现时都有问题"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体表达更自然，如段落29的处理更地道"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的'老哥''呢'等语气词更符合轻小说对话风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A人名'齐藤/斋藤'不一致；B统一使用'斋藤'"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B添加角色全名有助于读者理解人物关系"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者标点格式基本一致"
+      }
+    },
+    "key_differences": [
+      "地名准确性：A误译'开斐'，B正确译为'甲斐'",
+      "人名一致性：A存在'齐藤/斋藤'混用，B统一",
+      "角色全名：B补充了志摩凛、各务原抚子等全名",
+      "口语自然度：B的对话更接近口语习惯",
+      "'身延馒头'首次出现时两者都有翻译问题"
+    ],
+    "final_summary": "B在地名准确性、人名一致性和自然表达方面表现更优。A存在明显的地名错误('开斐'应为'甲斐')和人名不一致问题。B补充角色全名符合原作设定，口语表达更自然流畅。虽然两者在'身延馒头'首次出现时都有瑕疵，但综合来看B质量更高。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

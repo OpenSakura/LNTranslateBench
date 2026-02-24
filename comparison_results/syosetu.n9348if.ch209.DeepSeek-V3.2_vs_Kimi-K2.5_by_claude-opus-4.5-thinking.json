@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:24:52.815635",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "1339c170b8649549a8813b098555635c183971e2c7286660ce0c4fee41accf5b",
+    "B": "29fa0e59431c34175cdfa2ff720577c9c0d53189d78e068adb9fd3ddb2857a29"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:25:35.602225",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "8695f053-ea0a-439b-80f0-1553cc812581",
+      "judge_response": {
+        "id": "8695f053-ea0a-439b-80f0-1553cc812581",
+        "object": "chat.completion",
+        "created": 1769610335,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n- **段落4**: A将「パピィ〜」译为「啪哔〜」（音译保留原文风格），B译为「爸爸〜」（意译）。B的「一副想到了什么好事的样子」更准确还原「さもいい事を思いついたぞとばかりに」，A的「仿佛灵光乍现」略有偏差。\n- **段落14**: 关键错误——「ブッキング」意为撞期/双重预约。A译为「取消约定了」完全错误，B的「撞期了」正确。\n- **段落38**: A「毕竟人家那么珍视的东西实在下不去手偷」比B「那么重要的东西实在没法偷」更准确传达「流石に...盗めねぇ」的语感。\n\n### 流畅性分析\n- **段落8**: A「可能是我过度担心了」更自然，B「太过在意确实是太过在意了吧」略显生硬。\n- **段落33**: A「恩爱秀不停的夫妻档」较口语化，B「秀恩爱的夫妇」较正式。\n- **段落88**: B「还真是个纯真又善良的孩子呢」比A「那还真是个单纯又温柔的孩子呢」稍显自然。\n\n### 风格/语气分析\n- **段落14**: A「那突然说这种话的爸比〜才是坏人啦」保留了原文的俏皮口吻，B「那突然说这种话的爸爸〜不对」语气平淡。\n- 昵称翻译: 两者对パピィ〜/マミィ〜的处理有变化（啪哔/爸比/爹地 vs 爸爸/爹地），A更富变化和口语感。\n\n### 格式/标点问题\n- **段落35**: B出现严重格式错误「收获物『」引号不匹配\n- **段落72**: B再次出现格式错误「……嗯〜『」\n- **段落83-86**: A使用了\"\"而非「」，不一致但影响较小\n\n### 术语一致性\n- 人名: A用「提米特」，B用「蒂米特」，两者均保持内部一致\n- 专用术语「收获物」「领域畑」两者处理相似\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落14误译'ブッキング'为取消约定，B正确译为撞期；但A在其他细节处理更佳\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体语言更自然流畅，B段落8等处有生硬表达\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更好地保留了轻小说的俏皮口语风格，B部分对话语气较平淡\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"两者基本一致，A对昵称的处理更有趣味性\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体阅读体验更连贯\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"B有两处严重的引号格式错误，A有轻微不一致\"}\n  },\n  \"key_differences\": [\n    \"段落14关键翻译: A错译ブッキング为'取消约定'，B正确译为'撞期'\",\n    \"口语风格: A更活泼俏皮，B较为平实\",\n    \"格式问题: B有明显引号错误，A有轻微不一致\",\n    \"昵称处理: A用音译/变体更丰富，B倾向直译\"\n  ],\n  \"final_summary\": \"A在整体风格把握、语言流畅度和轻小说口语感方面表现更佳，但在段落14有明显误译。B在准确性上有优势但格式错误严重且风格较平淡。综合考虑，A的优势（风格、流畅度、格式）在轻小说翻译中权重更高，故A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11068,
+          "completion_tokens": 2056,
+          "total_tokens": 13124
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落14误译'ブッキング'为取消约定，B正确译为撞期；但A在其他细节处理更佳"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体语言更自然流畅，B段落8等处有生硬表达"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更好地保留了轻小说的俏皮口语风格，B部分对话语气较平淡"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者基本一致，A对昵称的处理更有趣味性"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体阅读体验更连贯"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有两处严重的引号格式错误，A有轻微不一致"
+      }
+    },
+    "key_differences": [
+      "段落14关键翻译: A错译ブッキング为'取消约定'，B正确译为'撞期'",
+      "口语风格: A更活泼俏皮，B较为平实",
+      "格式问题: B有明显引号错误，A有轻微不一致",
+      "昵称处理: A用音译/变体更丰富，B倾向直译"
+    ],
+    "final_summary": "A在整体风格把握、语言流畅度和轻小说口语感方面表现更佳，但在段落14有明显误译。B在准确性上有优势但格式错误严重且风格较平淡。综合考虑，A的优势（风格、流畅度、格式）在轻小说翻译中权重更高，故A胜出。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:34:46.284733",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "8a101186badf1f1a1a4826feb3eaad9b46be802d360cca483444157dbb209a7b",
+    "B": "3c9068ece3ec76984d8638481063371adf18a7efc76389e06bbf7b87a8df83f1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:35:33.529014",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c70ac10f-75e0-4b38-9853-e27a1d660bd8",
+      "judge_response": {
+        "id": "c70ac10f-75e0-4b38-9853-e27a1d660bd8",
+        "object": "chat.completion",
+        "created": 1768422933,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题识别\n\n**段落22 - 严重问题：**\n- A：完整翻译\n- B：出现乱码\"широк\"，翻译中断不完整\n\n**段落44 - 严重问题：**\n- A：正确翻译了佐渡山的话\n- B：完全错误，译为\"嗯，我想跟女友们聊聊\"，完全不符原意\n\n**段落5 - 术语问题：**\n- A：\"烤面条面包\"❌（焼きそばパン应译为炒面面包）\n- B：\"炒面面包\"✓\n\n**段落6/8 - 术语问题：**\n- A：\"现场妮琪\"（ニキ是网络用语\"兄贵\"缩写，译法欠妥但尝试本地化）\n- B：\"在现场的人\"更接近字面意思\n\n**段落3 - 专有名词处理：**\n- A：保留\"ライトブリンガー\"日文\n- B：译为\"Light Bringer\"英文，但保留\"ドラムバッグ\"日文\n\n**段落17/18 - 格式问题：**\n- A：保持引号格式\n- B：缺少对话引号\n\n**段落46 - 名称一致性：**\n- A：突然用\"托尔\"（之前一直用\"透\"）\n- B：保持\"透\"一致\n\n### 流畅性对比\n- A整体更口语化、自然\n- B部分句子生硬，如\"被抛来话题也不懂\"\n\n### 对话格式\n- A大部分保留引号\n- B多处对话缺少引号标记\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B有两处严重错译（段落22乱码中断、段落44完全错误），A有焼きそば误译\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A更口语化自然，B部分句子结构生硬\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"A更符合轻小说叙述风格，对话语气把握较好\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"A有焼きそば错译但名称处理较一致；B炒面正确但专有名词处理混乱\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"B有段落翻译中断严重影响可读性\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"A对话引号使用一致，B多处缺失引号且有乱码\"}\n  },\n  \"key_differences\": [\n    \"B段落22出现俄语乱码，翻译中断\",\n    \"B段落44完全误译，内容与原文无关\",\n    \"A对话格式更规范，B多处缺少引号\",\n    \"A名称一致性问题（段落46用'托尔'）\",\n    \"B'炒面面包'正确，A误译为'烤面条面包'\"\n  ],\n  \"final_summary\": \"B存在两处致命错误：段落22翻译中断出现乱码、段落44完全误译。尽管A有个别术语错误（如焼きそばパン）和名称不一致问题，但整体完整度和可读性远优于B。A在对话格式、流畅性方面表现更好，综合评判A获胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12036,
+          "completion_tokens": 2142,
+          "total_tokens": 14178
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有两处严重错译（段落22乱码中断、段落44完全错误），A有焼きそば误译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更口语化自然，B部分句子结构生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "A更符合轻小说叙述风格，对话语气把握较好"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "A有焼きそば错译但名称处理较一致；B炒面正确但专有名词处理混乱"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有段落翻译中断严重影响可读性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "A对话引号使用一致，B多处缺失引号且有乱码"
+      }
+    },
+    "key_differences": [
+      "B段落22出现俄语乱码，翻译中断",
+      "B段落44完全误译，内容与原文无关",
+      "A对话格式更规范，B多处缺少引号",
+      "A名称一致性问题（段落46用'托尔'）",
+      "B'炒面面包'正确，A误译为'烤面条面包'"
+    ],
+    "final_summary": "B存在两处致命错误：段落22翻译中断出现乱码、段落44完全误译。尽管A有个别术语错误（如焼きそばパン）和名称不一致问题，但整体完整度和可读性远优于B。A在对话格式、流畅性方面表现更好，综合评判A获胜。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

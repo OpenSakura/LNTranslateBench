@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:22:57.921237",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.GLM-4.7.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "c2833da00c58157bd11c702007563eb43d2cd4ca583998fea2b2ca8cc08620d5",
+    "B": "f6e1fde07dc9dea1d9faf6ca4cd431a7fd2419eb7c8d900b65d9e58cb61e2eb6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:23:54.638553",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "status": "failed",
+      "error": "Error code: 503 - {'error': {'message': 'No capacity available for model claude-opus-4-5-thinking on the server', 'type': 'upstream_error', 'param': '', 'code': 503}}"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "590334a9-29a3-434a-86b3-7f01be58d7e3",
+      "judge_response": {
+        "id": "590334a9-29a3-434a-86b3-7f01be58d7e3",
+        "object": "chat.completion",
+        "created": 1769610234,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n\n**段落1**: A的\"漂浮的周三\"过于直译\"浮かぶ\"，略显生硬；B的\"转眼又是周三\"更符合语境意思。\n\n**段落49/53**: \"ムー！ムー！\"是被塞嘴发出的呜咽声，A译为\"唔唔！唔唔！\"正确；B译为\"哞！哞！\"（牛叫声）明显错误。\n\n**段落67**: \"粉！！！\"是\"粉砕\"的省略，B补全为\"粉碎！！！\"更准确，A仅用\"粉！！！\"不完整。\n\n**段落92**: \"スパダリモドキ女\"中\"スパダリ\"是\"super darling/霸道总裁\"的网络用语，B译为\"假霸道总裁女\"准确；A译为\"装腔作势的女人\"丢失了核心含义。\n\n**段落109**: \"半身の構え\"指侧身站立的姿势，A译\"半身架势\"正确；B译\"半蹲的架势\"是明显错误。\n\n### 2. 流畅性分析\n\n两者都较流畅，A在对话处理上更口语化自然，B在叙述段落有时略显生硬。\n\n### 3. 风格/语气分析\n\nA在对话中更活泼，如\"嘿嘿\"\"太好了～\"等；B整体略正式。轻小说风格A更贴切。\n\n### 4. 术语/名称一致性\n\n两者都保持了角色名称一致性。A有时用\"小希罗\"，B统一用\"希罗酱\"，B更一致。\n\n### 5. 连贯性/可读性\n\n两者差异不大，A的复杂段落处理更清晰。\n\n### 6. 格式/标点\n\nA存在引号不统一问题（混用｢｣和\"\"）；B全程使用「」，格式更规范。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在段落109半身架势正确，B错译为半蹲；但B在段落67和92更准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话更口语化自然\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说活泼风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B角色称呼更统一，但B将ムー错译为哞是重大失误\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者相近，A略优\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A引号使用不统一，B格式规范\"}\n  },\n  \"key_differences\": [\n    \"段落49/53: A正确译为呜咽声，B错译为牛叫声\",\n    \"段落109: A正确译半身架势，B错译为半蹲\",\n    \"段落92: B正确译出スパダリ含义，A丢失\",\n    \"格式: A引号混用，B统一使用「」\"\n  ],\n  \"final_summary\": \"A在关键翻译点（如被堵嘴的呜咽声、武术姿势）准确性更高，对话风格更贴合轻小说；B在格式规范和个别术语上表现更好，但存在将呜咽声译为牛叫声的明显错误。综合考量，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14627,
+          "completion_tokens": 1857,
+          "total_tokens": 16484
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在段落109半身架势正确，B错译为半蹲；但B在段落67和92更准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话更口语化自然"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说活泼风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B角色称呼更统一，但B将ムー错译为哞是重大失误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者相近，A略优"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A引号使用不统一，B格式规范"
+      }
+    },
+    "key_differences": [
+      "段落49/53: A正确译为呜咽声，B错译为牛叫声",
+      "段落109: A正确译半身架势，B错译为半蹲",
+      "段落92: B正确译出スパダリ含义，A丢失",
+      "格式: A引号混用，B统一使用「」"
+    ],
+    "final_summary": "A在关键翻译点（如被堵嘴的呜咽声、武术姿势）准确性更高，对话风格更贴合轻小说；B在格式规范和个别术语上表现更好，但存在将呜咽声译为牛叫声的明显错误。综合考量，A略胜。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

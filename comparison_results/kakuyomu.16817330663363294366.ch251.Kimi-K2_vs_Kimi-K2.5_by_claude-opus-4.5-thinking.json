@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:20:01.002641",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.Kimi-K2.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "f200760617753f359ad95d87ae25b6b0b211d82949b07e63c0b6105b471dc571",
+    "B": "bfea89e79874a6af07c76d452fa9afa4d47c6fc3d45a7c69059e605c22e7ebb1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:20:55.538932",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "status": "failed",
+      "error": "Error code: 503 - {'error': {'message': 'No capacity available for model claude-opus-4-5-thinking on the server', 'type': 'upstream_error', 'param': '', 'code': 503}}"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "f829508a-028e-43d7-bc38-3ebf84c34491",
+      "judge_response": {
+        "id": "f829508a-028e-43d7-bc38-3ebf84c34491",
+        "object": "chat.completion",
+        "created": 1769610055,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 术语/名称一致性问题（最显著差异）\n\n**翻译A存在严重的名称不一致问题：**\n- \"N：ブル\"在多处被错译为\"N：蓝\"（段落19、22、28、32、35、71、72、75、97、100、107、111）\n- \"フェスタ\"被多种翻译：祭典（47）、祭（102、104、105）、庆典（109、110、114）、费斯塔/菲斯塔\n\n**翻译B的问题相对较轻：**\n- \"N：ブル\"偶尔变成\"N：布露\"（53）或\"N：布尔\"（86、87、90、97、100）\n- \"フェスタ\"在费斯塔/菲斯塔间切换，但至少音译一致\n\n### 2. 准确性问题\n\n**翻译A的明显错误：**\n- 段落111：\"到此为止的N：听完布鲁的话，问问他想怎么做\" - 语句混乱，不通顺\n- 段落38：\"传成谣言\"应该是\"成为传闻\"\n\n**翻译B相对准确**\n\n### 3. 格式问题\n\n**翻译A：** 段落49-52、56-59、64-67等处使用中文双引号\"\"，与其他段落的「」格式不一致\n\n**翻译B：** 全程保持「」格式的一致性\n\n### 4. 流畅性与风格\n\n- A更口语化：\"咋了\"、\"八卦\"、\"溜了\"、\"嗨起来\"\n- B更书面化但通顺：\"怎么了\"、\"传闻\"、\"撤离\"、\"兴奋\"\n\n对于轻小说，A的口语风格可取，但错误太多抵消了优势。\n\n### 5. 具体对比示例\n\n| 段落 | A的问题 | B的表现 |\n|------|---------|---------|\n| 19 | \"N：蓝\"错误 | \"N：布鲁\"正确 |\n| 47 | \"祭典\"音译错误 | \"菲斯塔\"正确 |\n| 111 | 完全语句混乱 | 语义清晰 |\n| 49-52 | 引号格式混乱 | 格式一致 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落111有严重的语句混乱错误，多处名称翻译错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A更口语化，B更书面但两者都基本通顺\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A的轻小说口语风格略好，但错误影响整体观感\"},\n    \"terminology\": {\"A\": 4, \"B\": 6, \"notes\": \"A的N：ブル译为'蓝'是严重错误，フェスタ译法混乱；B虽有小问题但音译基本一致\"},\n    \"coherence\": {\"A\": 5, \"B\": 8, \"notes\": \"A因名称混乱和段落111的错误严重影响可读性\"},\n    \"formatting\": {\"A\": 5, \"B\": 9, \"notes\": \"A引号格式在中日式之间混用，B保持一致\"}\n  },\n  \"key_differences\": [\n    \"A将N：ブル多次错译为'N：蓝'，B基本保持'N：布鲁'\",\n    \"A将フェスタ译成祭典/祭/庆典/费斯塔多种形式，极不一致\",\n    \"A段落111存在严重语句混乱\",\n    \"A的引号格式不统一，B保持一致\"\n  ],\n  \"final_summary\": \"翻译B整体更胜一筹。虽然A的口语化风格更适合轻小说，但A存在严重的名称一致性问题（N：ブル多次误译为'蓝'、フェスタ四种译法）、段落111的语句混乱错误、以及格式不统一等问题。B虽然也有少量名称波动，但整体更准确、连贯、格式规范。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13060,
+          "completion_tokens": 2176,
+          "total_tokens": 15236
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落111有严重的语句混乱错误，多处名称翻译错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A更口语化，B更书面但两者都基本通顺"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A的轻小说口语风格略好，但错误影响整体观感"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 6,
+        "notes": "A的N：ブル译为'蓝'是严重错误，フェスタ译法混乱；B虽有小问题但音译基本一致"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 8,
+        "notes": "A因名称混乱和段落111的错误严重影响可读性"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A引号格式在中日式之间混用，B保持一致"
+      }
+    },
+    "key_differences": [
+      "A将N：ブル多次错译为'N：蓝'，B基本保持'N：布鲁'",
+      "A将フェスタ译成祭典/祭/庆典/费斯塔多种形式，极不一致",
+      "A段落111存在严重语句混乱",
+      "A的引号格式不统一，B保持一致"
+    ],
+    "final_summary": "翻译B整体更胜一筹。虽然A的口语化风格更适合轻小说，但A存在严重的名称一致性问题（N：ブル多次误译为'蓝'、フェスタ四种译法）、段落111的语句混乱错误、以及格式不统一等问题。B虽然也有少量名称波动，但整体更准确、连贯、格式规范。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:02:40.920730",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "910dc2955b30c038f9095d0f378e86d8669dc477eae420a2fcba52119c2d70fd",
+    "B": "081638ebec6e30dbb6e1360e4195e46277d7014322ee335d08eb28685c5ab7e8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:03:36.531256",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "550f50bd-1063-4758-b0f8-aab3eec84c2a",
+      "judge_response": {
+        "id": "550f50bd-1063-4758-b0f8-aab3eec84c2a",
+        "object": "chat.completion",
+        "created": 1768431816,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性问题\n\n**段落7**：\n- 原文「主」指作者本人\n- A译\"主笔者\"正确\n- B译\"主攻\"完全错误，这是BL术语误用\n\n**段落14**：\n- 原文主语是\"俺\"（主角自己）没有跟进解释就跑了\n- A正确理解\n- B误译为\"那家伙就那样没follow我\"，主语搞错\n\n**段落17**：\n- 「あっれれ〜？おかしぃぞぉ〜？」是名侦探柯南经典台词风格\n- A\"啊咧咧～？好奇怪啊～？\"准确还原\n- B\"哎嘿嘿〜？有趣哟〜？\"意思偏离\n\n**段落44**：\n- 「ハイブリット」= hybrid = 混合动力\n- A\"混合体质\"正确\n- B\"混血体质\"误译\n\n**段落40**：B完全缺失翻译\n\n### 2. 流畅性\n- B在某些口语表达上更自然（如段落23\"死磕\"、\"滚瓜烂熟\"）\n- A整体保持稳定流畅度\n\n### 3. 风格/语气\n- A更好地保留了轻小说的吐槽感和节奏\n- 段落50 A用\"卡姿兰大眼\"过于本地化网络语\n\n### 4. 术语/名称\n- A将\"萩原\"误写为\"荻原\"（段落38、43、79）\n- B名称使用一致\n\n### 5. 格式问题\n- 段落28 A引号使用错误（开头「结尾『）\n- 段落40 B缺失\n- B在部分对话中引号使用混乱（如段落55-57用了单引号）\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有多处关键误译：段落7'主攻'、段落14主语错误、段落44'混血'、段落40缺失\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语表达略自然，但误译影响理解\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好保留柯南梗和轻小说吐槽风格，B段落17风格偏离\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A将萩原误写荻原；B名称一致但有术语误用\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"B因误译导致段落14逻辑混乱\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A有引号错误；B有内容缺失和引号混乱\"}\n  },\n  \"key_differences\": [\n    \"段落7：A正确译为'主笔者'，B误译为BL术语'主攻'\",\n    \"段落14：A正确理解主角自己没跟进就跑，B误解为对方没follow主角\",\n    \"段落17：A准确还原柯南经典台词风格，B偏离原意\",\n    \"段落40：B完全缺失翻译\",\n    \"段落44：A正确译为'混合体质'，B误译为'混血体质'\"\n  ],\n  \"final_summary\": \"翻译A在准确性和风格把握上明显优于B。B虽然在部分口语表达上更自然，但存在多处关键性误译（主语错误、术语误用）和内容缺失，严重影响理解。A的错误主要是人名笔误和个别格式问题，相对次要。综合考虑，A整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11978,
+          "completion_tokens": 2424,
+          "total_tokens": 14402
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有多处关键误译：段落7'主攻'、段落14主语错误、段落44'混血'、段落40缺失"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语表达略自然，但误译影响理解"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好保留柯南梗和轻小说吐槽风格，B段落17风格偏离"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A将萩原误写荻原；B名称一致但有术语误用"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "B因误译导致段落14逻辑混乱"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有引号错误；B有内容缺失和引号混乱"
+      }
+    },
+    "key_differences": [
+      "段落7：A正确译为'主笔者'，B误译为BL术语'主攻'",
+      "段落14：A正确理解主角自己没跟进就跑，B误解为对方没follow主角",
+      "段落17：A准确还原柯南经典台词风格，B偏离原意",
+      "段落40：B完全缺失翻译",
+      "段落44：A正确译为'混合体质'，B误译为'混血体质'"
+    ],
+    "final_summary": "翻译A在准确性和风格把握上明显优于B。B虽然在部分口语表达上更自然，但存在多处关键性误译（主语错误、术语误用）和内容缺失，严重影响理解。A的错误主要是人名笔误和个别格式问题，相对次要。综合考虑，A整体质量更高。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

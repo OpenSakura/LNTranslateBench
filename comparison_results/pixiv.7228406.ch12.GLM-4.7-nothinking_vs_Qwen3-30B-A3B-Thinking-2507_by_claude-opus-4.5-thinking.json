@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:48:38.912494",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "091a704284c541e0ef1cc2a3e7ea56cea9fc843dffae1e5da36e33bf1eb0d457",
+    "B": "0f2a3e8f1bb01ed0002baf7f4c74e58bb382d6a78911b83729b4ec0f72fe9896"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:49:23.475132",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0193a025-c1a8-4cd6-a159-11f76d1f2b6b",
+      "judge_response": {
+        "id": "0193a025-c1a8-4cd6-a159-11f76d1f2b6b",
+        "object": "chat.completion",
+        "created": 1768423763,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细对比分析\n\n### 1. 准确性问题\n\n**重大翻译错误：**\n- 段落2：「マッ缶」A保留原文，B译为\"马口铁罐头\"。这里可能指\"MAX咖啡罐\"（マックス缶），B的翻译偏离原意。\n- 段落25、30：**A出现严重错误**——「みのぶ」译为\"美浓部\"（段落25）和\"三峰\"（段落30），正确应为\"身延\"。B全程正确使用\"身延\"。\n- 段落65：B将\"小町\"写成\"Komachi\"，属于明显失误。\n\n### 2. 流畅性对比\n\n- 段落3：B\"出乎意料的娇小少女\"比A\"相当娇小\"更准确传达「思いのほか」的语感\n- 段落8：A\"枢纽站\"比B\"据点站\"更符合中文表达习惯\n- 段落9：B\"咨询处\"比A\"指示牌\"更准确翻译「案内所」\n\n### 3. 格式问题\n\n**A的严重格式缺陷：**\n- 段落17-20、23、26-28、30-39等多处对话缺少引号\n- 段落46-55将叙述文加上了不必要的引号\n- 段落16出现\"斋藤\"而非统一的\"齐藤\"\n\n**B的格式问题：**\n- 段落53、55、61-67等部分对话缺少开头引号\n- 整体格式一致性优于A\n\n### 4. 风格与术语\n\n- 段落4：「火の玉ストレート」A译\"快得像火球一样\"较自然，B\"火球直线\"较生硬\n- 段落35：「受け売り」B\"现学现卖\"比A\"抄来的\"更准确\n- 段落41：B的语气词处理更贴合轻小说对话风格\n\n### 5. 关键差异汇总\n\n| 段落 | A的问题 | B的问题 |\n|------|---------|---------|\n| 25 | \"美浓部\"错误 | 正确\"身延\" |\n| 30 | \"三峰馒头\"错误 | 正确\"身延馒头\" |\n| 65 | 正确 | \"Komachi\"错误 |\n| 多处 | 引号缺失/错加 | 部分引号缺失 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A将'身延'(みのぶ)错译为'美浓部''三峰'是重大地名错误；B仅有一处'Komachi'失误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体语句更通顺自然，A部分表达略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话语气更贴合轻小说风格，语气词处理更自然\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A地名翻译错误严重影响评分；B术语使用基本准确\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A格式混乱影响阅读连贯性\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处对话缺引号或叙述误加引号，人名不一致(斋藤/齐藤)；B格式更统一但也有小瑕疵\"}\n  },\n  \"key_differences\": [\n    \"A将核心地名'身延'(みのぶ)错译为'美浓部'和'三峰'，B翻译正确\",\n    \"A对话格式严重不规范，多处缺少或错加引号\",\n    \"B有一处将'小町'写成'Komachi'的失误\",\n    \"B在语气词和口语化表达上更贴近轻小说风格\"\n  ],\n  \"final_summary\": \"B整体优于A。A最致命的问题是将故事核心地名'身延'多次错译，这是不可接受的准确性错误。此外A的格式问题（引号使用混乱、人名不一致）也严重影响阅读体验。B虽有一处'Komachi'的小失误，但整体准确性、流畅性和格式规范性都明显更好。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10885,
+          "completion_tokens": 2012,
+          "total_tokens": 12897
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A将'身延'(みのぶ)错译为'美浓部''三峰'是重大地名错误；B仅有一处'Komachi'失误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体语句更通顺自然，A部分表达略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话语气更贴合轻小说风格，语气词处理更自然"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A地名翻译错误严重影响评分；B术语使用基本准确"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A格式混乱影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处对话缺引号或叙述误加引号，人名不一致(斋藤/齐藤)；B格式更统一但也有小瑕疵"
+      }
+    },
+    "key_differences": [
+      "A将核心地名'身延'(みのぶ)错译为'美浓部'和'三峰'，B翻译正确",
+      "A对话格式严重不规范，多处缺少或错加引号",
+      "B有一处将'小町'写成'Komachi'的失误",
+      "B在语气词和口语化表达上更贴近轻小说风格"
+    ],
+    "final_summary": "B整体优于A。A最致命的问题是将故事核心地名'身延'多次错译，这是不可接受的准确性错误。此外A的格式问题（引号使用混乱、人名不一致）也严重影响阅读体验。B虽有一处'Komachi'的小失误，但整体准确性、流畅性和格式规范性都明显更好。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

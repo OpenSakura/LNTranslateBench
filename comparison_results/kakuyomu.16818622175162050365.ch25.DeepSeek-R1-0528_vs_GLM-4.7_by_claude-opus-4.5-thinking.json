@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:29:47.195450",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "de8170d801d9e82991953f934a5d49fa6a746c00af4fb8be3946c10f4cb05f40",
+    "B": "8338622fa6543435fd53228f6643518966d6a8088e21cf79a583ba6a34a756fd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:30:51.003307",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d180e6b7-f07f-4f53-b42d-44d304d3fafb",
+      "judge_response": {
+        "id": "d180e6b7-f07f-4f53-b42d-44d304d3fafb",
+        "object": "chat.completion",
+        "created": 1768422650,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量对比分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落1**: A简洁准确，B有冗余\"允许...只允许\"\n- **段落4**: A错译\"津々木\"为\"津木\"，B正确译为\"津津木\"\n- **段落28**: A\"那不是挺好的吗\"误解原意，B\"应该没问题吧\"更准确（大丈夫=没问题）\n- **段落33**: A理解有偏差，B正确表达\"不会有那种不交申请就不让出门的社团\"\n- **段落52**: A\"盐系脸\"准确，B\"成熟脸\"是误译\n- **段落68**: A保留\"Little\"未译，B正确译为\"少棒\"\n- **段落81**: B误写\"有位君\"，应为\"有为君\"\n\n### 2. 流畅性\n- **段落9**: B\"话是这么说啦～我该咋办啊\"更口语化\n- **段落10**: B\"我才懒得管\"比A\"根本不重要\"更自然\n- **段落14**: B\"挺受用的\"比A\"并不讨厌的样子\"更贴切\n- **段落46**: B\"贼大的声音\"比A\"巨大的声音\"更符合轻小说语感\n\n### 3. 风格/语气\n- B整体更口语化、更符合轻小说对话风格\n- **段落16-17**: B的\"早啊\"\"干嘛呢\"比A的\"早上好\"\"在做什么呢\"更自然\n- **段落43**: A\"脚踏两条船\"用词不当（该词有贬义），B\"身兼两职\"更恰当\n- **段落57**: A\"女生\"比B\"女人\"在校园语境更合适\n\n### 4. 术语/名称一致性\n- A在段落4漏掉\"々\"（津々木→津木）\n- B在段落81拼写错误（有为→有位）\n- 两者敬称使用略有不同（A用\"君\"，B多用\"同学\"）\n\n### 5. 格式/标点\n- A的「」使用更统一\n- B在段落21-22、40等处混用\"\"和「」\n- **段落26**: A错误添加引号（原文是内心独白），B正确\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A误译津々木、段落28/33理解偏差；B误译塩顔、段落81笔误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化，对话更自然流畅\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更贴合轻小说口语风格，A部分表达略显生硬\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"双方各有小错误，基本持平\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B句子衔接更自然，叙事更连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A引号使用更统一，B混用中日式引号\"}\n  },\n  \"key_differences\": [\n    \"B的对话语气更自然口语化，更贴合轻小说风格\",\n    \"A在段落4、28、33存在理解/翻译偏差\",\n    \"B在段落52塩顔误译、段落81笔误\",\n    \"A格式更统一，B引号使用不一致\",\n    \"B对俗语/习语的处理更地道（如まんざらでも→挺受用）\"\n  ],\n  \"final_summary\": \"B在风格和流畅性上优势明显，对话翻译更自然生动，更符合轻小说语感。A虽然格式更规范，但存在几处关键误译（津々木、大丈夫的理解）。B虽有个别笔误，但整体阅读体验更佳。综合权衡，B略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12263,
+          "completion_tokens": 2888,
+          "total_tokens": 15151
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A误译津々木、段落28/33理解偏差；B误译塩顔、段落81笔误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化，对话更自然流畅"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更贴合轻小说口语风格，A部分表达略显生硬"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "双方各有小错误，基本持平"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B句子衔接更自然，叙事更连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A引号使用更统一，B混用中日式引号"
+      }
+    },
+    "key_differences": [
+      "B的对话语气更自然口语化，更贴合轻小说风格",
+      "A在段落4、28、33存在理解/翻译偏差",
+      "B在段落52塩顔误译、段落81笔误",
+      "A格式更统一，B引号使用不一致",
+      "B对俗语/习语的处理更地道（如まんざらでも→挺受用）"
+    ],
+    "final_summary": "B在风格和流畅性上优势明显，对话翻译更自然生动，更符合轻小说语感。A虽然格式更规范，但存在几处关键误译（津々木、大丈夫的理解）。B虽有个别笔误，但整体阅读体验更佳。综合权衡，B略胜一筹。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

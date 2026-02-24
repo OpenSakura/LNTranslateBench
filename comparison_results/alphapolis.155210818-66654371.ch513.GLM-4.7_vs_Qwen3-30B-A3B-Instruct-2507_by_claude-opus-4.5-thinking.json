@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:10.208946",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.7.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "5ef60fc10c4578b82d4a80709372a8007b3a1ae882eb22b65586d5dfc7e46d9c",
+    "B": "6fe953eb68e562421b2218c2d4696c320268d37dbc8630ce9ef15edc39f2f9a8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:02:56.741791",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "df2e8303-73c3-45ea-9db4-467b7b4db1e1",
+      "judge_response": {
+        "id": "df2e8303-73c3-45ea-9db4-467b7b4db1e1",
+        "object": "chat.completion",
+        "created": 1768420976,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题分析\n\n**段落16：B版缺失翻译**\n原文「魔物の損傷が激しいと、換金額が下がるぞ？」B版完全缺失，这是严重的遗漏。\n\n**术语一致性问题：**\n- B版对「ベヒモス」翻译不一致：段落51-68等处交替使用\"巨兽\"、\"巨型怪物\"、\"贝希摩斯\"\n- A版全程保持\"贝希摩斯\"\n- 人名「雫」：A版用\"雫/雫酱\"，B版用\"小露\"（均可接受）\n\n**准确性问题：**\n- 段落77：「サイ」A译\"犀牛\"（正确），B译\"野牛\"（错误）\n- 段落23：B版\"只有丝尔维只在双脚上\"有语病\n- 段落5：「どうやら」A译\"看样子\"更贴切，B译\"听说\"不够准确\n\n**风格差异：**\n- A版使用中式引号\"\"，B版使用日式括号「」\n- B版部分表达更口语化（如\"震惊得不行\"、\"不太踏实\"）\n- A版更贴近原文结构\n\n**流畅度：**\n- B版在部分句子更自然流畅（如段落56\"立刻改变策略\"）\n- A版个别处略显生硬（如段落8\"听着话的父亲\"）\n\n### 综合评估\n\nA版优势：准确度高、术语一致、无遗漏\nB版优势：部分表达更口语化自然\nB版致命问题：段落16缺失、术语不一致、段落77翻译错误\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B版段落77将犀牛误译为野牛，段落5理解有偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B版部分表达更口语化自然，但有语病\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A用中式引号B用日式括号，各有特色\"},\n    \"terminology\": {\"A\": 9, \"B\": 5, \"notes\": \"B版ベヒモス翻译不一致，交替使用多个译名\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B版段落16完全缺失，严重影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"两版格式基本规范，B版缺失内容扣分\"}\n  },\n  \"key_differences\": [\n    \"B版段落16完全缺失翻译\",\n    \"B版ベヒモス译名不统一（贝希摩斯/巨兽/巨型怪物）\",\n    \"B版段落77将サイ(犀牛)误译为野牛\",\n    \"B版段落23存在语病\",\n    \"A版术语和人名翻译保持一致\"\n  ],\n  \"final_summary\": \"A版在准确性和术语一致性上明显优于B版。B版存在段落缺失、关键词汇误译（犀牛→野牛）、术语不统一等严重问题。虽然B版部分表达更口语化流畅，但这些优点无法弥补其核心缺陷。综合评判A版更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10484,
+          "completion_tokens": 1740,
+          "total_tokens": 12224
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B版段落77将犀牛误译为野牛，段落5理解有偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B版部分表达更口语化自然，但有语病"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A用中式引号B用日式括号，各有特色"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 5,
+        "notes": "B版ベヒモス翻译不一致，交替使用多个译名"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B版段落16完全缺失，严重影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "两版格式基本规范，B版缺失内容扣分"
+      }
+    },
+    "key_differences": [
+      "B版段落16完全缺失翻译",
+      "B版ベヒモス译名不统一（贝希摩斯/巨兽/巨型怪物）",
+      "B版段落77将サイ(犀牛)误译为野牛",
+      "B版段落23存在语病",
+      "A版术语和人名翻译保持一致"
+    ],
+    "final_summary": "A版在准确性和术语一致性上明显优于B版。B版存在段落缺失、关键词汇误译（犀牛→野牛）、术语不统一等严重问题。虽然B版部分表达更口语化流畅，但这些优点无法弥补其核心缺陷。综合评判A版更优。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

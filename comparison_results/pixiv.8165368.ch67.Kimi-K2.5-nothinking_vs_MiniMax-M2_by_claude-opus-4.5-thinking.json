@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:32:53.476743",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "cfd06c67bdcba6172b3514ddf6ee93d29aa0076f14f88438e4b137be20081050",
+    "B": "2adee7241c64b419d6e24530f825ec1c0e7c97a8c8acfab75c634bfa3a6b1850"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:33:44.222376",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e4f9f0bf-acf4-4941-b612-2bad35adfb13",
+      "judge_response": {
+        "id": "e4f9f0bf-acf4-4941-b612-2bad35adfb13",
+        "object": "chat.completion",
+        "created": 1769610824,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 详细对比分析\n\n**准确性问题：**\n- 段落55：B将「それ聞きます？」误译为\"你听说那个吗？\"，正确应为\"这个要问吗？\"（A正确）\n- 段落89：B将\"続きを促す降谷さんに頷く\"译为\"降谷君催促着点点头\"，错将主语搞混，应是叙述者点头（A正确）\n- 段落105：B使用\"他的眼神\"，但原文主语是\"私\"（我），应为第一人称\n- 段落116：B将\"方輪走行\"译为\"车轮继续前行\"，A正确译为\"两轮行驶\"\n- 段落124-126：B出现内容截断和顺序错乱\n\n**流畅性对比：**\n- 段落27：A\"对人家小姑娘动手动脚\"比B\"对她做不该做的事\"更生动自然\n- 段落147：A重组句子结构清晰，B语句混乱难懂\n- 段落6：A\"毒亲\"比B\"毒性父母\"更符合中文网络用语习惯\n\n**风格/语气：**\n- A整体保留了轻小说的轻松语气，如\"请进请进——\"、\"谢谢啦\"\n- B部分对话显得较为生硬\n\n**术语一致性：**\n- 两者对角色名称处理基本一致\n- 段落21：B\"东坡肉\"比A\"炖肉\"对\"角煮\"更准确\n\n**格式问题：**\n- B段落124出现严重截断问题，内容不完整\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有多处误译，包括段落55、89、105、116的主语或动作错误，以及段落124-126的内容错乱\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A语言更自然流畅，B部分句子生硬或混乱（如段落147）\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好地保留了轻小说的轻松对话风格，语气词处理更到位\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者术语处理相近，B在食物名词上略优（东坡肉），A在网络用语上更自然（毒亲）\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"B存在内容截断和顺序错误，严重影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落124明显截断不完整，标点使用略有不一致\"}\n  },\n  \"key_differences\": [\n    \"B在段落55、89、105存在主语/视角错误\",\n    \"B段落124-126出现内容截断和顺序错乱的严重问题\",\n    \"A的对话语气更符合轻小说风格\",\n    \"A对复杂句子（如段落147）的重组更清晰易懂\"\n  ],\n  \"final_summary\": \"翻译A整体质量明显优于B。A在准确性、流畅性和连贯性方面表现稳定，较好地保留了原作轻小说的语气风格。B存在多处明显误译（主语混淆、动作误解）以及段落截断等严重问题，影响阅读体验和内容理解。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14223,
+          "completion_tokens": 2122,
+          "total_tokens": 16345
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有多处误译，包括段落55、89、105、116的主语或动作错误，以及段落124-126的内容错乱"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A语言更自然流畅，B部分句子生硬或混乱（如段落147）"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好地保留了轻小说的轻松对话风格，语气词处理更到位"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者术语处理相近，B在食物名词上略优（东坡肉），A在网络用语上更自然（毒亲）"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "B存在内容截断和顺序错误，严重影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落124明显截断不完整，标点使用略有不一致"
+      }
+    },
+    "key_differences": [
+      "B在段落55、89、105存在主语/视角错误",
+      "B段落124-126出现内容截断和顺序错乱的严重问题",
+      "A的对话语气更符合轻小说风格",
+      "A对复杂句子（如段落147）的重组更清晰易懂"
+    ],
+    "final_summary": "翻译A整体质量明显优于B。A在准确性、流畅性和连贯性方面表现稳定，较好地保留了原作轻小说的语气风格。B存在多处明显误译（主语混淆、动作误解）以及段落截断等严重问题，影响阅读体验和内容理解。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

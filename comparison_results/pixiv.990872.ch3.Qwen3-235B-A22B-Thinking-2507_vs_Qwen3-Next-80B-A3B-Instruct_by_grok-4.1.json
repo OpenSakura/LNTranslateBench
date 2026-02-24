@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:45:06.059039",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "19801d6f59ff105966449099a18b65eb7ead9c103dc633883dc03fd44ddfeef1",
+    "B": "8155b869fd20552249332d9df6c751f71e2fd91867e10618bf25322889c6d4ef"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:32.994775",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DGebL6BoZONYKNKRxrNnLFlYXZS",
+      "judge_response": {
+        "id": "chatcmpl-89DGebL6BoZONYKNKRxrNnLFlYXZS",
+        "object": "chat.completion",
+        "created": 1768427132,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 警察学校編 萩原研二 松田陣平 降谷零 諸伏景光 伊達航 夢小説 腐向け\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"逆ムルシエラゴ 逆FD 警察学校 コナン 意味\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"星羅ちゃん アイドル 警察学校 夢小説\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"萩原研二の登場回 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E8%90%A9%E5%8E%9F%E7%A0%94%E4%BA%8C%E3%81%AE%E7%99%BB%E5%A0%B4%E5%9B%9E)\n> [🔗 \"「警察学校組」相関図＆時系列【降谷零・松田陣平・萩原研二・伊達航・諸伏景光】2026年映画最新ネタバレ\" Conan-zukai](https://conan-zukai.com/2024keisatugakkou)\n> [🔗 \"『名探偵コナン』警察学校組のメンバー一覧｜登場回や人物像、関係性など解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1747820329)\n> [🔗 \"警察学校編 Wild Police Story | 名探偵コナン | 読売テレビ\" YTV](https://www.ytv.co.jp/conan/police)\n> [🔗 \"松田陣平\" Pixiv](https://dic.pixiv.net/a/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3)\n> [🔗 \"名探偵コナン シークレットアーカイブス ｗｉｔｈ 警察学校編 Ｗｉｌｄ Ｐｏｌｉｃｅ Ｓｔｏｒｙ | 書籍 | 小学館\" Shogakukan](https://www.shogakukan.co.jp/books/09199083)\n> [🔗 \"名探偵コナン降谷零/松田陣平/伊達航/萩原研二/諸伏景光シークレットアーカイブスwith『警察学校編Wild Police Story』/青山剛昌 : bk-4091990835 : bookfanプレミアム - 通販 - Yahoo!ショッピング\" Yahoo! Shopping](https://store.shopping.yahoo.co.jp/bookfan/bk-4091990835.html)\n> [🔗 \"名探偵コナン 警察学校編 降谷零／松田陣平／伊...\" Amazon Japan](https://www.amazon.co.jp/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3-%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B7%A8-%E9%99%8D%E8%B0%B7%E9%9B%B6%EF%BC%8F%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3%EF%BC%8F%E4%BC%8A%E9%81%94%E8%88%AA%EF%BC%8F%E8%90%A9%E5%8E%9F%E7%A0%94%E4%BA%8C%EF%BC%8F%E8%AB%B8%E4%BC%8F%E6%99%AF%E5%85%89-%E3%82%B7%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%E3%82%B9%EF%BC%9A%E5%B0%91%E5%B9%B4%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF-%E5%8E%9F%E7%94%BB%E9%9B%86%E3%83%BB%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/dp/4091990835)\n> [🔗 \"コナンの警察学校組とは？安室・スコッチ・伊達・松田・萩原の登場回や関係 - 脱線あざらしブログ\" Dassen-azara4](https://www.dassen-azara4.com/conan-keisatugakkougumi)\n> [🔗 \"降谷零、松田陣平、伊達航、萩原研二、諸伏景光の5人の警察学校時代の魅力が詰まった究極の1冊。設定資料集や絵コンテ、原画も収録【名探偵コナン 警察学校編 Wild Police Story】 - 電撃オンライン\" Dengeki Online](https://dengekionline.com/article/202411/22564)\n\n> 🔍 **5 results found**\n\n> [🔗 \"名探偵コナン 警察学校編 Wild Police Story - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3_%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B7%A8_Wild_Police_Story)\n> [🔗 \"名探偵コナン 警察学校編（Wild Police Story）のネタバレ解説・考察まとめ - RENOTE [リノート]\" RENOTE](https://renote.net/articles/323909)\n> [🔗 \"警察学校編 Wild Police Story | 名探偵コナン | 読売テレビ\" YTV](https://www.ytv.co.jp/conan/police)\n> [🔗 \"名探偵コナン 警察学校編 Wild Police Story | 名探偵...\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3_%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B7%A8_Wild_Police_Story)\n> [🔗 \"警察学校編\" Pixiv](https://dic.pixiv.net/a/%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B7%A8)\n\n> 🔍 **5 results found**\n\n> [🔗 \"無料スマホ小説ならプリ小説 byGMO - 会話で楽しむ...\" PRCM](https://novel.prcm.jp/search/novel/%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84)\n> [🔗 \"「警察学校組」タグ関連作品 - ランキング\" Uranai](https://uranai.nosv.org/items.php/%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84?t=rank)\n> [🔗 \"『【Ｒ18】【ごちゃまぜ裏夢✿短編集】今夜はＯＫかもしれない。』第14章「名探偵コナン✿警察学校組「1day」」 130ページ - 夢小説（ドリーム小説）が無料で楽しめる -ドリームノベル- [スマホ対応]\" Dream Novel](https://dream-novel.jp/viewstory/page/57980/130?guid=ON)\n> [🔗 \"【警察学校組】小説・夢小説一覧 (109件以上) | ...\" Teller](https://teller.jp/tag/%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84)\n> [🔗 \"警察学校組の検索結果 【夢小説対応】簡単オシャレな創作サイト作成サービス | フォレストページ＋\" Famipure](https://plus.fm-p.jp/search?w=%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84)\n\n\n这是一个典型的《名探偵コナン》警察学校編相关的腐向梦小说（读者代入式轻小说），主角是原创角色“萩下瑞稀”（原为女性偶像“星羅ちゃん”，转生/穿越/梦小说中以男性身份进入警察学校），带有救赎（救済）、腐向け元素，涉及萩原研二、松田陣平、降谷零、諸伏景光等角色。叙述采用第一人称，带有自嘲、吐槽、内心OS，语气活泼、傲娇、带点卖萌和轻小说常见的夸张自恋/自虐风格。\n\n现在对A和B进行逐段比较和整体评估。\n\n**详细分析：**\n\n- **段落1-6**（标签/警告部分）：A和B基本一致或差异微小。B在段落2稍简洁（“看上去是小孩” vs “外表是小孩”），但都准确。段落4 A的“彻彻底底的”更贴“がっつり”的强度感，B的“狠狠地写”稍口语但力度稍弱。段落6 A的“这是腐向的。”更直白自然，B“是腐向的。”略简。\n\n- **段落7-9**（作者前言）：A更口语化、自然，像网络轻小说作者的碎碎念（“我没读完原作，可能会有错。要是有啥错误……悄悄告诉我就太好了”），贴合原文的亲切随意语气。B用“主角没读完原作”显得生硬，像第三人称，失去了第一人称的亲和感；“我会很感激”比“太好了”正式，略失可爱感。段落9 A的“明白了以上这些，要是您觉得'好，我上了'”生动还原“よし行ったるで”的豪爽感，B的“觉得 okay，那就继续往下看吧”太平淡。\n\n- **段落10-12**：A在叙述和内心独白更流畅，标点和口语感强（如“搞完了”“小意思”）。B有时稍显直译（如“早早把…都弄完了”），但整体接近。段落11 A的翻译捕捉到原文的自豪+吐槽感更好（“偶像时代可是每周五次五点就开始录音”“现在想想是不是太狠了？”），B的“当偶像的时候每周五天早上五点就开始录节目”“现在想想是不是太变态了？”“变态”稍过，原文是“酷すぎ”=太残酷/太猛。\n\n- **段落13-22**：A在对话和内心更自然、节奏感好（如“哎呀呀～？好奇怪哦～？”生动）。B有时加词（如“啊咧咧～？怪怪的吧～？”），但A的“萩下酱”保持可爱调侃一致。段落21 A的“星罗酱的微笑！”更贴“星羅ちゃんスマイル”，B有乱码“**惯”可能是打字错误。\n\n- **段落23-45**（学校生活、吃饭部分）：A整体更生动、幽默感强（如“盼星星盼月亮的午饭时间”“哇！！居然没有朋友……我”）。B有时更直白，但丢失部分可爱吐槽味。段落24 A的“能吃到红色的食物”准确（“赤の食品”指红肉），B类似。段落43-44 A的“果然萩下是女孩子啊？没什么”处理暧昧更好。\n\n- **段落46-83**（训练、互动、交朋友）：A在吐槽和内心OS更贴轻小说风格（如“果然放弃偶像真是太好了！”）。B有时更平实。对话部分A的语气更活泼、带波浪线～的卖萌感还原度高。段落54-55的“逆ムルシエラゴ”“逆FD” A用“逆莫西干”（音译误，但上下文可理解为搞笑昵称，实际可能是“逆マツダ”相关车梗），但B的“逆穆尔西埃拉戈”更准确（ムルシエラゴ=Lamborghini Murciélago，FD=RX-7 FD3S）。但A整体可读性未受大影响。\n\n- **整体**：A在准确性上基本持平，但**流畅性、风格/语气**明显优于B。A更忠实于轻小说常见的网络口语、内心吐槽、卖萌、碎碎念风格，读起来像中文轻小说/梦文。B倾向于更规整、稍正式，有时丢失原文的轻快感和可爱度。术语一致性A更好（如持续用“萩下酱”调侃）。连贯性和可读性A胜出。格式标点A更灵活使用波浪线、感叹，贴合原文。\n\n**最终判决：**\n\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8.5, \"notes\": \"两者整体意思保留良好，A在少数语气细节（如自豪吐槽）更准，B偶有小偏差（如'变态'过重）\"},\n    \"fluency\": {\"A\": 9.5, \"B\": 8, \"notes\": \"A的中文更自然流畅，像母语网络轻小说风格；B稍显生硬、直译痕迹\"},\n    \"style\": {\"A\": 9.5, \"B\": 7.5, \"notes\": \"A很好捕捉轻小说第一人称的傲娇、卖萌、吐槽感；B偏平实，丢失可爱碎念味\"},\n    \"terminology\": {\"A\": 9, \"B\": 8.5, \"notes\": \"A在昵称、调侃一致性更好；B在个别车名音译更准，但整体A更统一\"},\n    \"coherence\": {\"A\": 9.5, \"B\": 8.5, \"notes\": \"A节奏感强、段落连贯自然；B偶有突兀\"},\n    \"formatting\": {\"A\": 9, \"B\": 8.5, \"notes\": \"A标点、波浪线、引号使用更活泼贴原文；B较保守\"}\n  },\n  \"key_differences\": [\"A更口语化、活泼，忠实还原轻小说网络碎念风格\", \"B更规整但丢失语气轻快感与可爱卖萌\", \"A在对话内心OS的节奏与幽默感明显更胜\", \"个别地方B音译更准（如车名），但不影响整体风格劣势\"],\n  \"final_summary\": \"A整体更优秀，翻译更贴合轻小说（尤其是腐向梦文）的叙述语气、流畅度和可读性，读起来自然有趣，像中文圈常见的同人作品风格。B虽准确，但较为平淡，缺少那种'梦文味'。推荐A作为更好版本。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12186,
+          "completion_tokens": 4825,
+          "total_tokens": 17011
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "两者整体意思保留良好，A在少数语气细节（如自豪吐槽）更准，B偶有小偏差（如'变态'过重）"
+      },
+      "fluency": {
+        "A": 9.5,
+        "B": 8,
+        "notes": "A的中文更自然流畅，像母语网络轻小说风格；B稍显生硬、直译痕迹"
+      },
+      "style": {
+        "A": 9.5,
+        "B": 7.5,
+        "notes": "A很好捕捉轻小说第一人称的傲娇、卖萌、吐槽感；B偏平实，丢失可爱碎念味"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "A在昵称、调侃一致性更好；B在个别车名音译更准，但整体A更统一"
+      },
+      "coherence": {
+        "A": 9.5,
+        "B": 8.5,
+        "notes": "A节奏感强、段落连贯自然；B偶有突兀"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "A标点、波浪线、引号使用更活泼贴原文；B较保守"
+      }
+    },
+    "key_differences": [
+      "A更口语化、活泼，忠实还原轻小说网络碎念风格",
+      "B更规整但丢失语气轻快感与可爱卖萌",
+      "A在对话内心OS的节奏与幽默感明显更胜",
+      "个别地方B音译更准（如车名），但不影响整体风格劣势"
+    ],
+    "final_summary": "A整体更优秀，翻译更贴合轻小说（尤其是腐向梦文）的叙述语气、流畅度和可读性，读起来自然有趣，像中文圈常见的同人作品风格。B虽准确，但较为平淡，缺少那种'梦文味'。推荐A作为更好版本。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

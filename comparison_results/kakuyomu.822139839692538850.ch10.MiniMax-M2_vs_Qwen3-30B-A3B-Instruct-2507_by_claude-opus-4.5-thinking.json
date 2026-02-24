@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:36:23.921370",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "d24a96bfd85d14f11e54375c807a68938c550ed9bfb8ffd347c88e50d0531dce",
+    "B": "26e7ea38196d42a89089e0180e0905389d13dfb8c86cc5d1b208ec7e3ea824a9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:37:54.037040",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2ff3b4f2-30a3-4a4b-82c6-339c18dcd230",
+      "judge_response": {
+        "id": "2ff3b4f2-30a3-4a4b-82c6-339c18dcd230",
+        "object": "chat.completion",
+        "created": 1768423073,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段关键差异分析\n\n**段落3：**\n- A「只是任由它长长地垂着」准确表达了「ただ伸ばしただけ」的意思\n- B「只是随便一伸头发」理解有误，原文意为头发只是任其生长\n\n**段落6：**\n- A 将「私を地獄から引き上げてくれた人」直接替换为「席恩」，省略了原文的情感表达\n- B「把我从地狱里捞出来的人」更忠实原文\n\n**段落14：**\n- 原文「嬉々とした様子の村長」指村长很开心\n- A正确理解「村长兴致勃勃」\n- B「显得很开心」误将主语理解为席恩\n\n**段落18（重大错误）：**\n- 原文「シオンを悲しませたのはわたしの方」\n- A「让我悲伤的明明是我」——严重误译，主客颠倒\n- B「是我让席恩伤心的」——正确\n\n**段落36：**\n- A「她刻意装出」用了第三人称，原文为第一人称叙述\n- B「我会刻意表现」正确保持人称\n\n**段落69：**\n- 原文「何年あなたの顔見てると思ってんだか」是波普拉说自己看了尤莉娅多少年\n- A「你觉得我看了你多少年了」正确\n- B「你看了我这么多年」主客颠倒\n\n**段落97：**\n- 原文「シオンのことを愛している」是尤莉娅在心中评价精灵女性\n- A「她爱着席恩」正确\n- B「我爱着席恩」人称错误\n\n**流畅度与风格：**\n- A整体语言更自然流畅，如「乡下土妞」「你算哪根葱」等更口语化\n- B部分表达较生硬，如段落34「像是在抢食的样子」\n\n**格式问题：**\n- B段落46有多余引号\n- B段落86开头缺少引号\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落18有重大误译，B段落14、69、97有人称/主语错误，双方均有明显失误\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A语言更自然流畅，B部分表达生硬如「和平懈怠」「方方面面地说教」\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说风格，口语化表达如「乡下土妞」「火大」更生动\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"人名翻译一致，A对「平和ボケ」译为「麻木和平」比B「和平懈怠」更贴切\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙事连贯性更好，B部分句子衔接略显生涩\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"B段落46、86有引号格式问题\"}\n  },\n  \"key_differences\": [\n    \"段落18：A严重误译「让我悲伤」vs B正确「让席恩伤心」\",\n    \"段落36：A人称错误用「她」vs B正确用「我」\",\n    \"段落69、97：B人称/主语错误\",\n    \"整体风格：A更口语化生动 vs B较书面生硬\",\n    \"格式：B存在引号问题\"\n  ],\n  \"final_summary\": \"两个译本各有明显错误。A在段落18和36有人称错误，B在段落14、69、97有类似问题。但综合考虑，A在流畅度、风格和格式方面明显优于B，更符合轻小说的阅读体验。尽管A有关键错误，但B的错误同样不少且整体表达较生硬，因此A以较小优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13144,
+          "completion_tokens": 3627,
+          "total_tokens": 16771
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A段落18有重大误译，B段落14、69、97有人称/主语错误，双方均有明显失误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A语言更自然流畅，B部分表达生硬如「和平懈怠」「方方面面地说教」"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说风格，口语化表达如「乡下土妞」「火大」更生动"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "人名翻译一致，A对「平和ボケ」译为「麻木和平」比B「和平懈怠」更贴切"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙事连贯性更好，B部分句子衔接略显生涩"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "B段落46、86有引号格式问题"
+      }
+    },
+    "key_differences": [
+      "段落18：A严重误译「让我悲伤」vs B正确「让席恩伤心」",
+      "段落36：A人称错误用「她」vs B正确用「我」",
+      "段落69、97：B人称/主语错误",
+      "整体风格：A更口语化生动 vs B较书面生硬",
+      "格式：B存在引号问题"
+    ],
+    "final_summary": "两个译本各有明显错误。A在段落18和36有人称错误，B在段落14、69、97有类似问题。但综合考虑，A在流畅度、风格和格式方面明显优于B，更符合轻小说的阅读体验。尽管A有关键错误，但B的错误同样不少且整体表达较生硬，因此A以较小优势胜出。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

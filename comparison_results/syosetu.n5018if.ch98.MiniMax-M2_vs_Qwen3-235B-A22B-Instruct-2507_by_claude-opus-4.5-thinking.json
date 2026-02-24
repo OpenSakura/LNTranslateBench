@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:11:28.182397",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.MiniMax-M2.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "bf1c9a58629757820db4d61e8c225c744df1580299819d86fc3d21752a0137a4",
+    "B": "ed12d8e46dfbb3fd292457519a31d83da4b0d1d40d55e27c4904b3861810d959"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:12:31.637405",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "90fa60a3-cb3a-473c-a38d-39ea2671f09e",
+      "judge_response": {
+        "id": "90fa60a3-cb3a-473c-a38d-39ea2671f09e",
+        "object": "chat.completion",
+        "created": 1768432351,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**段落1:** A省略了\"ラッシュガード\"(防晒衣/水母衣)，B误译为\"连体泳衣\"，两者都有问题，但A保留了核心动作。\n\n**段落10:** \"恐る恐る\"A译为\"怕生地\"不准确，B译为\"战战兢兢地\"更符合原意。\n\n**段落16:** A理解有误，将话说成是亚莉莎不会说；B理解正确是问话者不会问这种扫兴的问题。\n\n**段落50:** 关键错误——\"股間に響く声\"A译为\"从她胯部传来了呜咽声\"严重错误；B译为\"直击胯下的叫声\"正确理解为让听者有反应的声音。\n\n**段落109:** A将\"涼真のえっち\"译为\"凉真的sex\"严重错误；B译为\"凉真真色呢\"准确。\n\n### 流畅性分析\n\nB整体更加口语化、自然，如段落6、7、18的处理。A部分句子较生硬，如\"所有美组成的身姿在讲着什么\"。\n\n### 风格分析\n\nB更贴合轻小说的对话风格，语气词处理更到位。但B的\"亚莉莎亲\"不如A的\"亚莉莎酱\"自然。A在段落69使用引号不一致。\n\n### 术语一致性\n\n两者对人名处理基本一致。A在敬称上更统一（酱），B混用（亲/酱）。\n\n### 格式问题\n\nA在段落57、58、59、61、67出现多余的引号\"」\"，严重影响阅读。段落69、75、76引号风格不一致。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落50、109有严重误译；B整体理解更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语化自然，A部分表达生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更贴合轻小说风格，但A敬称更统一\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者人名处理相当，B敬称不够统一\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B段落间衔接更流畅，语气更连贯\"},\n    \"formatting\": {\"A\": 4, \"B\": 9, \"notes\": \"A多段落出现多余引号，引号风格不一致\"}\n  },\n  \"key_differences\": [\n    \"A在段落50将'股間に響く声'严重误译\",\n    \"A在段落109将'えっち'误译为'sex'\",\n    \"A存在严重的格式问题（多余引号、引号风格不一致）\",\n    \"B整体语言更自然流畅，更符合轻小说风格\",\n    \"B对原文语气和情感的把握更准确\"\n  ],\n  \"final_summary\": \"B翻译在准确性、流畅性和格式上都明显优于A。A存在两处严重误译和多处格式错误，影响阅读体验。B虽然在个别术语选择上略有瑕疵，但整体质量更高，更符合轻小说的语言风格。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11090,
+          "completion_tokens": 2691,
+          "total_tokens": 13781
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落50、109有严重误译；B整体理解更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语化自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更贴合轻小说风格，但A敬称更统一"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者人名处理相当，B敬称不够统一"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B段落间衔接更流畅，语气更连贯"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 9,
+        "notes": "A多段落出现多余引号，引号风格不一致"
+      }
+    },
+    "key_differences": [
+      "A在段落50将'股間に響く声'严重误译",
+      "A在段落109将'えっち'误译为'sex'",
+      "A存在严重的格式问题（多余引号、引号风格不一致）",
+      "B整体语言更自然流畅，更符合轻小说风格",
+      "B对原文语气和情感的把握更准确"
+    ],
+    "final_summary": "B翻译在准确性、流畅性和格式上都明显优于A。A存在两处严重误译和多处格式错误，影响阅读体验。B虽然在个别术语选择上略有瑕疵，但整体质量更高，更符合轻小说的语言风格。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

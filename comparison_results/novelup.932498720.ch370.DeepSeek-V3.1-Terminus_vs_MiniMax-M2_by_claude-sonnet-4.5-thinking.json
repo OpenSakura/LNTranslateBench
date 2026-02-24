@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:19:20.892202",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "c7a9f1dcab34d12ba1b3156317b96a82c2161d1e0be8c4426b45504a5a1c6985",
+    "B": "a04333aeceda6d3033876da6f9fe9bcae299d480b15e95ed16ca57700bdd2b05"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:20:29.165764",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a976becd-44e3-40ed-be5b-31ac3a249f89",
+      "judge_response": {
+        "id": "a976becd-44e3-40ed-be5b-31ac3a249f89",
+        "object": "chat.completion",
+        "created": 1768486828,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 轻小说翻译质量评判\n\n## 详细分析\n\n### 1. 准确性评估\n\n**翻译A的问题：**\n- **严重错误**：段落73完全缺失翻译，这是不可接受的漏译\n- 段落14：\"Comical Market\"应为\"Comic Market\"，这是专有名词的错误\n- 段落9：\"工作人员说\"与原文不符，原文是前辈自己说的话\n\n**翻译B的问题：**\n- 段落12：\"他\"应为\"他们\"（复数）\n- 段落42：\"先到的三人\"理解有误，应是\"最初三人的亮相\"\n- 段落51：\"脸型\"应为\"脸\"或\"长相\"\n- 段落70：\"更纱\"是严重误译，\"さらし\"指束胸布\n\n### 2. 流畅性评估\n\n**翻译A**表现更好：\n- 段落5：\"天气热别搞坏身体\"比B的\"天热要注意身体健康\"更口语化\n- 段落18：\"汹涌的人流\"比B的\"无数人群\"更生动\n- 整体语句更符合中文表达习惯\n\n**翻译B**部分生硬：\n- 段落16：\"加油加油加油，冲冲冲！\"过于夸张\n- 段落52：\"崩一点形象\"表达不够自然\n- 段落59：\"整理成那种感觉的东西\"过于直译\n\n### 3. 风格/语气\n\n**翻译A**：\n- 更贴近轻小说的轻松、活泼风格\n- 对话更自然流畅\n- 叙述部分更有画面感\n\n**翻译B**：\n- 有时过于直译，失去了轻小说的韵味\n- 部分表达过于正式\n\n### 4. 术语处理\n\n**关键分歧：**\n- 作品名称：A倾向意译（如\"大和忍法帖\"），B保留原文（\"ジャポニカ忍法帖\"）\n- \"コミマ\"：A音译为\"Comima\"，B保留日文\n- **致命错误**：A将\"Comic Market\"误译为\"Comical Market\"\n\n对于轻小说翻译，专有名词的准确性至关重要。\n\n### 5. 连贯性\n\n两者整体连贯，但：\n- A因段落73缺失导致连贯性严重受损\n- B个别理解偏差影响局部连贯\n\n### 6. 格式\n\n两者格式基本一致，无明显差异。\n\n## 关键差异总结\n\n1. **最严重问题**：A完全漏译段落73\n2. **专有名词错误**：A将\"Comic Market\"误译为\"Comical Market\"\n3. **流畅度**：A整体更自然流畅\n4. **误译问题**：B的\"更纱\"、\"他\"（应为\"他们\"）等\n\n## 最终判决\n\n尽管翻译A在流畅性和风格上表现更好，但**段落73的完全缺失**和**Comic Market的专有名词错误**是不可原谅的严重问题。翻译B虽有小错误，但完整性和关键术语准确性更高。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 7,\n      \"notes\": \"A有段落73完全漏译和Comic Market专有名词错误，这是致命问题；B有'更纱'误译和单复数错误，但相对较轻\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A的中文表达更自然流畅，口语化处理更好；B部分表达略显生硬\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A更符合轻小说轻松活泼的风格；B有时过于直译，失去韵味\"\n    },\n    \"terminology\": {\n      \"A\": 3,\n      \"B\": 7,\n      \"notes\": \"A将Comic Market误译为Comical Market是严重错误；B术语处理基本准确，保留原文名称的做法也合理\"\n    },\n    \"coherence\": {\n      \"A\": 4,\n      \"B\": 7,\n      \"notes\": \"A因段落73缺失严重影响连贯性；B整体完整连贯\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 10,\n      \"notes\": \"两者格式处理无明显差异\"\n    }\n  },\n  \"key_differences\": [\n    \"A完全漏译段落73，这是最严重的问题\",\n    \"A将专有名词'Comic Market'误译为'Comical Market'\",\n    \"A在流畅性和风格上整体表现更好，更符合轻小说语言风格\",\n    \"B在段落70将'さらし'（束胸布）误译为'更纱'\",\n    \"B在段落12出现单复数错误（'他'应为'他们'）\",\n    \"B对作品名称采用保留原文策略，A采用意译策略\"\n  ],\n  \"final_summary\": \"虽然翻译A在流畅性和轻小说风格把握上明显优于B，但存在段落73完全漏译和Comic Market专有名词错误这两个致命问题。翻译工作的首要原则是完整性和准确性，特别是专有名词不容出错。翻译B虽然在表达自然度上稍逊，也有'更纱'等误译，但至少保证了文本完整性和关键术语的基本准确。在轻小说翻译中，漏译和专有名词错误会严重影响读者体验，因此B更胜一筹。建议理想的翻译应结合A的流畅风格和B的完整准确。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11923,
+          "completion_tokens": 2882,
+          "total_tokens": 14805
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 7,
+        "notes": "A有段落73完全漏译和Comic Market专有名词错误，这是致命问题；B有'更纱'误译和单复数错误，但相对较轻"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A的中文表达更自然流畅，口语化处理更好；B部分表达略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说轻松活泼的风格；B有时过于直译，失去韵味"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 7,
+        "notes": "A将Comic Market误译为Comical Market是严重错误；B术语处理基本准确，保留原文名称的做法也合理"
+      },
+      "coherence": {
+        "A": 4,
+        "B": 7,
+        "notes": "A因段落73缺失严重影响连贯性；B整体完整连贯"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 10,
+        "notes": "两者格式处理无明显差异"
+      }
+    },
+    "key_differences": [
+      "A完全漏译段落73，这是最严重的问题",
+      "A将专有名词'Comic Market'误译为'Comical Market'",
+      "A在流畅性和风格上整体表现更好，更符合轻小说语言风格",
+      "B在段落70将'さらし'（束胸布）误译为'更纱'",
+      "B在段落12出现单复数错误（'他'应为'他们'）",
+      "B对作品名称采用保留原文策略，A采用意译策略"
+    ],
+    "final_summary": "虽然翻译A在流畅性和轻小说风格把握上明显优于B，但存在段落73完全漏译和Comic Market专有名词错误这两个致命问题。翻译工作的首要原则是完整性和准确性，特别是专有名词不容出错。翻译B虽然在表达自然度上稍逊，也有'更纱'等误译，但至少保证了文本完整性和关键术语的基本准确。在轻小说翻译中，漏译和专有名词错误会严重影响读者体验，因此B更胜一筹。建议理想的翻译应结合A的流畅风格和B的完整准确。"
+  },
+  "outcome": "MiniMax-M2_win",
+  "winner_model": "MiniMax-M2"
+}

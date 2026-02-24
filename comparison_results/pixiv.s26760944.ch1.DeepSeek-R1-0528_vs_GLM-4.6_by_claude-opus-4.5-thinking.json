@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:04:37.495372",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "2b8253c67ef7ca014cbe8cc7d98801c7daceac0b02a3a4db7b67412817bccbe1",
+    "B": "bcb933cf38d5268cc64ebfda73fe15585ae4c18d793b447f37302e24948854b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:05:24.062397",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "20f77116-5758-4163-8006-548d9a3fe716",
+      "judge_response": {
+        "id": "20f77116-5758-4163-8006-548d9a3fe716",
+        "object": "chat.completion",
+        "created": 1768431923,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 关键问题分析\n\n**翻译A的严重错误：**\n1. 段落12：\"时间差で报纸\" - 日语助词\"で\"未翻译\n2. 段落13：\"给她の助手\" - 日语助词\"の\"未翻译  \n3. 段落99：\"コッコッコッ\" - 拟声词完全未翻译\n4. 段落103：\"ただいま希罗酱\" - \"ただいま\"未翻译\n\n**翻译B的问题：**\n1. 段落100：多次使用\"大叔我\"，但原文主角是女性（从对话可知）\n2. 段落51-52：\"しょ〜\"译为\"嘿咻\"略显不自然\n\n### 各维度对比\n\n**准确性：** B在整体意思传达上更完整，A有多处漏译/未译的日语残留。\n\n**流畅性：** \n- 段落2：B\"淡淡的香气挠着鼻尖\"比A\"微飘的芳香刺激鼻腔\"更生动自然\n- 段落66：B\"情情爱爱一窍不通\"比A\"男女之事迟钝\"更口语化\n- 段落92：B\"装型男的女人\"比A音译\"斯帕达利莫多基女\"更易理解\n\n**风格/语气：**\n- B的对话更符合轻小说活泼风格（如\"好嘞好嘞\"、\"太好啦~\"）\n- B的吐槽更到位（如\"你就安心地去死吧\"、\"这是什么鬼契约\"）\n\n**格式：**\n- 段落29：A错误地加了引号，将内心独白变成了对话\n- B在段落69-75等处改用了中文引号「」→\"\"，不够统一\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A有多处日语残留未翻译（で、の、ただいま、コッコッコッ）为严重错误；B段落100误解角色性别\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B表达更自然流畅，如'挠着鼻尖''情情爱爱'等；A部分表达生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说的轻松吐槽风格，对话更活泼；A偏书面\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A音译'斯帕达利莫多基'读者无法理解；B译为'装型男的'意译恰当\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A段落29将独白误作对话影响理解；B整体连贯性好\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A保持了日式引号统一；B部分引号不统一但拟声词处理更好\"}\n  },\n  \"key_differences\": [\n    \"A有多处致命漏译（日语助词/词汇残留），B基本完整翻译\",\n    \"B对话风格更贴合轻小说，A偏书面化\",\n    \"B对俗语/网络用语处理更好（如スパダリモドキ）\",\n    \"B拟声词翻译完整，A有遗漏\",\n    \"B段落100有性别误判问题但不影响整体理解\"\n  ],\n  \"final_summary\": \"翻译B整体质量明显优于A。A存在多处严重的漏译问题（日语助词和词汇未翻译），严重影响阅读体验。B在流畅性、风格把握和术语处理上都更胜一筹，虽有小瑕疵但不影响整体质量。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14784,
+          "completion_tokens": 1994,
+          "total_tokens": 16778
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有多处日语残留未翻译（で、の、ただいま、コッコッコッ）为严重错误；B段落100误解角色性别"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B表达更自然流畅，如'挠着鼻尖''情情爱爱'等；A部分表达生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说的轻松吐槽风格，对话更活泼；A偏书面"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A音译'斯帕达利莫多基'读者无法理解；B译为'装型男的'意译恰当"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A段落29将独白误作对话影响理解；B整体连贯性好"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A保持了日式引号统一；B部分引号不统一但拟声词处理更好"
+      }
+    },
+    "key_differences": [
+      "A有多处致命漏译（日语助词/词汇残留），B基本完整翻译",
+      "B对话风格更贴合轻小说，A偏书面化",
+      "B对俗语/网络用语处理更好（如スパダリモドキ）",
+      "B拟声词翻译完整，A有遗漏",
+      "B段落100有性别误判问题但不影响整体理解"
+    ],
+    "final_summary": "翻译B整体质量明显优于A。A存在多处严重的漏译问题（日语助词和词汇未翻译），严重影响阅读体验。B在流畅性、风格把握和术语处理上都更胜一筹，虽有小瑕疵但不影响整体质量。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

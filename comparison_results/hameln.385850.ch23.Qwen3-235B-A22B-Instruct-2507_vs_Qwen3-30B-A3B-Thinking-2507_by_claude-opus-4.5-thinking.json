@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:11:10.965632",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "49da8d078a1379697fd0cdcfb776f20e0f145eb8e604df3ae763a631f981e979",
+    "B": "7ad407803820032c4448033516178db813d4f36885fc90c70f86766462f9240a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:11:55.020325",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c2100044-e4d2-4745-b5b5-266b7b268f8e",
+      "judge_response": {
+        "id": "c2100044-e4d2-4745-b5b5-266b7b268f8e",
+        "object": "chat.completion",
+        "created": 1768421514,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n\n**段落3** 是最关键的差异点：\n- 原文「堂に入った」是惯用语，意为\"熟练的、老到的\"\n- A译为\"教科书般深入人心的哭泣演技\" ✓ 正确理解\n- B译为\"在堂里哭得泪浸透了\" ✗ 严重误译\n\n**段落44**：\n- 原文「恨めしい」意为\"可恨、令人怨恨\"\n- A译为\"真恨啊\" ✓ \n- B译为\"真让人羡慕啊\" ✗ 完全相反\n\n**段落51**：\n- 原文「謎にツボに入っている」中「謎に」是副词\"莫名其妙地\"\n- A：\"莫名觉得有趣而笑出声\" ✓\n- B：\"谜一样的夏露米娜\" ✗ 误解为形容词\n\n### 流畅性与风格分析\n\n- A整体语言更贴近轻小说的叙述风格，口语化程度适中\n- B某些表达较为生硬，如段落17\"我倒是能说什么都\"语序不自然\n\n### 格式问题\n\n- **段落16**：B保留日文「きゅ」未翻译，不妥\n- **段落38、39、40**：B漏掉了对话引号「」，破坏格式一致性\n- **段落80**：B漏译「で」，连接不完整\n\n### 术语处理\n\n- A用\"蛋包饭\"，B用\"欧姆蛋饭\"——前者更符合中文习惯\n- 两者对人名\"夏露米娜\"处理一致\n\n### 亮点对比\n\n| 方面 | A优势 | B优势 |\n|------|-------|-------|\n| 惯用语 | 准确把握「堂に入った」等 | — |\n| 口语感 | 「杞忧」等词汇运用自然 | 部分对话更简洁 |\n| 格式 | 引号使用规范一致 | — |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 5, \"notes\": \"B在段落3、44、51有严重误译，A整体准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A语言更自然，B个别句子语序不顺\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说叙述风格，B略显生硬\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A用词更符合中文习惯如'蛋包饭'\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A上下文衔接更流畅\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"B多处漏引号，段落16保留未译日文\"}\n  },\n  \"key_differences\": [\n    \"段落3「堂に入った」：A正确理解为熟练的演技，B误译为字面意思\",\n    \"段落44「恨めしい」：A译为可恨，B错译为羡慕（意思相反）\",\n    \"段落38-40：B漏掉对话引号，格式不规范\",\n    \"段落51「謎に」：A正确译为莫名，B误解为形容词\"\n  ],\n  \"final_summary\": \"翻译A在准确性上明显优于B，正确理解了多处关键惯用语和词汇，格式规范，语言流畅自然。B存在多处严重误译，特别是段落3和44的错误会影响读者对情节的理解，且格式问题较多。综合评判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11864,
+          "completion_tokens": 2012,
+          "total_tokens": 13876
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在段落3、44、51有严重误译，A整体准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A语言更自然，B个别句子语序不顺"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说叙述风格，B略显生硬"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A用词更符合中文习惯如'蛋包饭'"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A上下文衔接更流畅"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "B多处漏引号，段落16保留未译日文"
+      }
+    },
+    "key_differences": [
+      "段落3「堂に入った」：A正确理解为熟练的演技，B误译为字面意思",
+      "段落44「恨めしい」：A译为可恨，B错译为羡慕（意思相反）",
+      "段落38-40：B漏掉对话引号，格式不规范",
+      "段落51「謎に」：A正确译为莫名，B误解为形容词"
+    ],
+    "final_summary": "翻译A在准确性上明显优于B，正确理解了多处关键惯用语和词汇，格式规范，语言流畅自然。B存在多处严重误译，特别是段落3和44的错误会影响读者对情节的理解，且格式问题较多。综合评判A胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

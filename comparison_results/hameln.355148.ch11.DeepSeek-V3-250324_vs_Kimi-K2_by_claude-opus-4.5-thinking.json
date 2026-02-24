@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:57:46.061659",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "cc66529c8c7f1279e5a376e81f6ac9a792b006dff887a7a6b75afe62bec37a38",
+    "B": "c42126a2cc32c7e6a64e3f7b74885593e6da0269e4e1c208ff9f10aacca16688"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T22:58:29.534334",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9dff32cf-c6dc-4fd2-9cf3-310fd63d659b",
+      "judge_response": {
+        "id": "9dff32cf-c6dc-4fd2-9cf3-310fd63d659b",
+        "object": "chat.completion",
+        "created": 1768431509,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项详细分析\n\n### 1. 准确性\n- **段落2**: B的\"都塞进了别的灵魂\"比A的\"被其他灵魂占据\"更贴近原文「別の魂が入っていた」\n- **段落32**: B有理解偏差——\"可伊莲妮说回收费给我打折\"把主语搞混了，原文是教会提出减免伊莲妮的回收费用\n- **段落61**: A严重误译——\"根性の悪そうな笑み\"应是\"坏笑/使坏的笑\"，A译成\"略带苦涩的笑容\"完全相反；B的\"坏坏的笑\"正确\n\n### 2. 流畅性\n- B整体采用更口语化的表达：\"全挂\"\"干掉\"\"拖进\"\"弱鸡\"等，更符合第一人称叙述\n- A偏书面化：\"惨烈\"\"差强人意\"\"沉默地凝视\"，略显生硬\n\n### 3. 风格/语气\n- B使用\"真·团灭\"\"五感瞬间全回满\"等网络用语，更贴合轻小说调性\n- A相对正式，语气稍显拘谨\n\n### 4. 术语/名称一致性\n- 两者人名地名基本一致\n- A段落73、79使用中文引号\"\"，其他用「」，不统一\n- B全程使用「」，格式一致\n\n### 5. 连贯性/可读性\n- 段落78: A\"漾开笑容\"略文艺；B\"忍不住笑出声\"更自然\n- 段落81: A\"归途的远方传来教堂钟声的轰鸣\"较流畅；B\"回家路上远远传来，教堂的钟声当当响起\"断句略碎\n\n### 6. 格式/标点\n- A引号使用不一致（混用中日引号）\n- B全篇统一使用日式引号「」\n\n---\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A段落61严重误译'坏笑'为'苦涩笑容'；B段落32主语理解有误，但整体A失误更关键\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化表达更自然流畅，A部分表述偏书面生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说第一人称叙述风格，使用适度网络用语；A过于正式\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"人名地名两者基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B行文更连贯自然，A部分句式略显呆板\"},\n    \"formatting\": {\"A\": 6, \"B\": 9, \"notes\": \"A引号使用不统一；B全篇格式一致\"}\n  },\n  \"key_differences\": [\n    \"A段落61关键情感误译（坏笑→苦涩笑容）\",\n    \"B整体语气更贴合轻小说调性\",\n    \"A格式不统一，B保持一致\",\n    \"B段落32有小失误但不影响理解\"\n  ],\n  \"final_summary\": \"B在风格把控、流畅度和格式一致性上明显优于A，且A在段落61的关键情感表达上出现严重误译，影响角色塑造。虽然B在段落32有小瑕疵，但综合轻小说翻译的核心需求，B整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11116,
+          "completion_tokens": 1750,
+          "total_tokens": 12866
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A段落61严重误译'坏笑'为'苦涩笑容'；B段落32主语理解有误，但整体A失误更关键"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化表达更自然流畅，A部分表述偏书面生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说第一人称叙述风格，使用适度网络用语；A过于正式"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "人名地名两者基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B行文更连贯自然，A部分句式略显呆板"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 9,
+        "notes": "A引号使用不统一；B全篇格式一致"
+      }
+    },
+    "key_differences": [
+      "A段落61关键情感误译（坏笑→苦涩笑容）",
+      "B整体语气更贴合轻小说调性",
+      "A格式不统一，B保持一致",
+      "B段落32有小失误但不影响理解"
+    ],
+    "final_summary": "B在风格把控、流畅度和格式一致性上明显优于A，且A在段落61的关键情感表达上出现严重误译，影响角色塑造。虽然B在段落32有小瑕疵，但综合轻小说翻译的核心需求，B整体质量更高。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

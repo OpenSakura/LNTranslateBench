@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:11:03.295615",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "156e924484ffe2c677f4e43d0aaf5232f114f9d2e323f983690d1d612f72d7bc",
+    "B": "6714e89eeba48cd1646d1bd953587ad21d3442c53e52a52a0b952e251271a6db"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:11:42.031366",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "df2bd9dc-8e15-4398-855d-f81ab218d4da",
+      "judge_response": {
+        "id": "df2bd9dc-8e15-4398-855d-f81ab218d4da",
+        "object": "chat.completion",
+        "created": 1768421501,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n\n**段落3**是关键差异点：\n- 原文「堂に入った染み染みとした号泣」意为\"入木三分、沁人心脾的哭泣\"\n- A译为\"堂进入了呜呜的号啕大哭\"——完全误译，把惯用语拆开理解\n- B译为\"哭得撕心裂肺、眼泪汪汪\"——虽稍有意译但意思正确\n\n**段落19**：「俺からシャルミナへの株が上がっていく」\n- A：\"这让我在她心里越来越有分量\"——方向反了\n- B：\"夏露米娜在我心里的分数又蹭蹭往上涨\"——正确\n\n**段落14-15**：讨论的是少女害怕靠近她的人\n- A混淆了主语\n- B正确理解了语境\n\n### 流畅性分析\n\nB整体更自然：\n- \"实打实的演技\"比\"真演技\"更通顺\n- \"我可不想原谅啊\"比\"可不想这样啊\"更地道\n- \"光靠一个回头客就想撑住生意\"比\"就一个常客就想让生意运转\"更流畅\n\n### 风格分析\n\nB更符合轻小说语气：\n- \"蹭蹭往上涨\"、\"打包票\"、\"脑洞\"等用词活泼\n- A在段落41用了\"phase\"这样的英文混杂，不够统一\n\n### 问题点\n\n- B在段落38把少女误用\"他\"（应为\"她\"）\n- A多处句子生硬，如\"我跟少女说了这个\"\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A在段落3完全误译关键惯用语，段落19方向错误；B整体准确度更高\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B用词更自然流畅，A多处生硬表达如'堂进入了'\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说活泼口语风格，A偶有英文混杂\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者人名一致；B误用少女代词'他'\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B上下文衔接更顺畅，逻辑更清晰\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者标点格式基本规范\"}\n  },\n  \"key_differences\": [\n    \"段落3：A完全误译'堂に入った'这一惯用语\",\n    \"段落19：A把'股票上涨'的方向译反\",\n    \"段落41：A混用英文'phase'\",\n    \"整体语感：B更活泼自然，A偏生硬\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性和风格上明显优于A。A存在关键性误译（段落3、19），且整体语言生硬；B虽有代词小瑕疵，但整体翻译更准确、更符合轻小说调性。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11352,
+          "completion_tokens": 1569,
+          "total_tokens": 12921
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A在段落3完全误译关键惯用语，段落19方向错误；B整体准确度更高"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B用词更自然流畅，A多处生硬表达如'堂进入了'"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说活泼口语风格，A偶有英文混杂"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者人名一致；B误用少女代词'他'"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B上下文衔接更顺畅，逻辑更清晰"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者标点格式基本规范"
+      }
+    },
+    "key_differences": [
+      "段落3：A完全误译'堂に入った'这一惯用语",
+      "段落19：A把'股票上涨'的方向译反",
+      "段落41：A混用英文'phase'",
+      "整体语感：B更活泼自然，A偏生硬"
+    ],
+    "final_summary": "B在准确性、流畅性和风格上明显优于A。A存在关键性误译（段落3、19），且整体语言生硬；B虽有代词小瑕疵，但整体翻译更准确、更符合轻小说调性。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

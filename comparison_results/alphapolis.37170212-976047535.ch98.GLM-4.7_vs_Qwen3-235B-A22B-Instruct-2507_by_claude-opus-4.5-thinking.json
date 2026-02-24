@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:56.742343",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "55ae84ffb8e0d7123b3d1ab0cc49f4cbf2629dc3031195342255107b1dc1f31c",
+    "B": "c50f081944d7a6b03630596749e55469118e7cab7f650ed38f521f01991ea066"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:04:06.066397",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2d750190-db61-4172-bbf8-fb3c533c0cbb",
+      "judge_response": {
+        "id": "2d750190-db61-4172-bbf8-fb3c533c0cbb",
+        "object": "chat.completion",
+        "created": 1768421045,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n\n**关键错误对比：**\n\n- **段落19**：「シスコン」是\"妹控\"（sister complex）\n  - A：「兄长们太弟控」❌ 完全错误\n  - B：「妹控的哥哥们」✓ 正确\n\n- **段落100**：「ワラビー」是\"沙袋鼠\"（wallaby）\n  - A：「外形类似蕨菜的动物」❌ 严重错误，把wallaby误译为わらび（蕨菜）\n  - B：「外形像沙袋鼠的动物」✓ 正确\n\n- **段落48**：「ライムグリーン」是\"青柠绿\"\n  - A：「石灰绿」❌ 错误（lime≠石灰）\n  - B：「青柠色」✓ 正确\n\n- **段落132**：「レイ」是角色名\n  - A：「蕾拉」❌ 与ライラ混淆\n  - B：「雷」✓ 正确区分\n\n### 2. 流畅性分析\n\n- **段落4**：「肝っ玉母さん」\n  - A：「亲切可靠的女强人」- 偏离原意\n  - B：「很会照顾人的大胆母亲」- 更贴切\n\n- **段落69**：「打たれ弱く、いじけると長い」\n  - A：「抗打击能力弱，一旦被欺负就会消沉很久」- 略显生硬\n  - B：「经不起打，而且一闹别扭就没完没了」- 更口语化自然\n\n### 3. 术语一致性\n\n- **段落1/36**：「ステア」\n  - A：斯黛拉（更像Stella）\n  - B：斯蒂亚（更接近Stea发音）\n\n- **段落98/104/105/111**：动物名保留问题\n  - A：保留日文片假名（不统一）\n  - B：使用拼音/英文（稍显不协调但更可辨识）\n\n### 4. 风格把握\n\n两者都较好地把握了轻小说角色介绍的简洁风格，B在口语化表达上略胜一筹（如「没完没了」「马马虎虎」）。\n\n### 5. 格式\n\n两者基本一致，B在某些空格处理上保留了原文格式。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 9, \"notes\": \"A有多处严重误译：シスコン译错、ワラビー译为蕨菜、ライムグリーン译为石灰绿、レイ与ライラ混淆\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，如「没完没了」「马马虎虎」等表达\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地把握了轻小说角色介绍的轻松语气\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B在人名音译上更准确，如路易丝、斯蒂亚\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"两者都较连贯，B在角色名区分上更清晰\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式处理相近\"}\n  },\n  \"key_differences\": [\n    \"A将シスコン（妹控）误译为弟控，关键性格错误\",\n    \"A将ワラビー（沙袋鼠）误译为蕨菜，生物完全错误\",\n    \"A将ライムグリーン译为石灰绿而非青柠色\",\n    \"A将レイ误译为蕾拉，与ライラ角色混淆\",\n    \"B整体语言更自然流畅\"\n  ],\n  \"final_summary\": \"B在准确性上明显优于A，A存在多处关键性误译（シスコン、ワラビー、ライムグリーン、レイ），这些错误会导致读者对角色和设定产生误解。B在流畅性和风格把握上也略胜一筹，更符合轻小说的语言特点。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16567,
+          "completion_tokens": 3177,
+          "total_tokens": 19744
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A有多处严重误译：シスコン译错、ワラビー译为蕨菜、ライムグリーン译为石灰绿、レイ与ライラ混淆"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，如「没完没了」「马马虎虎」等表达"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地把握了轻小说角色介绍的轻松语气"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在人名音译上更准确，如路易丝、斯蒂亚"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者都较连贯，B在角色名区分上更清晰"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式处理相近"
+      }
+    },
+    "key_differences": [
+      "A将シスコン（妹控）误译为弟控，关键性格错误",
+      "A将ワラビー（沙袋鼠）误译为蕨菜，生物完全错误",
+      "A将ライムグリーン译为石灰绿而非青柠色",
+      "A将レイ误译为蕾拉，与ライラ角色混淆",
+      "B整体语言更自然流畅"
+    ],
+    "final_summary": "B在准确性上明显优于A，A存在多处关键性误译（シスコン、ワラビー、ライムグリーン、レイ），这些错误会导致读者对角色和设定产生误解。B在流畅性和风格把握上也略胜一筹，更符合轻小说的语言特点。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

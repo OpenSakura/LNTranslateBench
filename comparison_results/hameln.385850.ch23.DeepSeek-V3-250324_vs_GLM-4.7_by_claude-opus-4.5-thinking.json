@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:10:53.962692",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "1b6eb85d8f89ad12670ae7503fb1a5d595851272abef32d453a73d829b7796bb",
+    "B": "f52663c277444f67489557f6c2ab040a14c013feafc81a5232a01502b105a468"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:11:42.116755",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4414331b-f271-44d5-a1b2-865aaa257549",
+      "judge_response": {
+        "id": "4414331b-f271-44d5-a1b2-865aaa257549",
+        "object": "chat.completion",
+        "created": 1768421501,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 段落对照分析\n\n### 关键差异点\n\n**段落2 (ガチ泣きとかではない)**\n- A「倒不是真的在哭」- 准确传达\"ガチ泣き\"的含义\n- B「并不是那种在那儿乱哭」- \"乱哭\"偏离原意，原文是说\"不是真哭\"\n\n**段落3 (堂に入った染み染みとした号泣)**\n- A「梨花带雨」- 优美但略失\"堂に入った\"（娴熟）的含义\n- B「炉火纯青、真情流露」- 较好地捕捉了\"娴熟\"+\"感人\"两层含义\n\n**段落51 (謎にツボに入っている)**\n- A「正对着谜之笑点憋笑」- 正确理解惯用语\"ツボに入る\"（戳中笑点）\n- B「谜一样蹲在坛子里」- 严重误译，直译成\"坛子\"完全错误\n\n**段落74 - 重大问题**\n- A: **完全缺失此段落**\n- B: 完整翻译\n\n**段落8 (変にずっと付いて回っても)**\n- A「一直杵在旁边」- 丢失\"変に\"（奇怪地）\n- B「总在旁边怪怪地跟着」- 保留了\"変に\"\n\n**格式差异**\n- A使用「」引号（日式/部分中文轻小说风格）\n- B使用\"\"引号（标准中文风格）\n\n### 术语一致性\n- A: \"秘密组织/秘密结社\"混用\n- B: 始终使用\"秘密结社\"\n\n### 语言风格\n- A整体更书面、凝练\n- B更口语化，如\"人家\"\"嘛\"\"啦\"等语气词更丰富，更贴近轻小说风格\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A漏译段落74是重大失误；B在段落51严重误译'ツボに入る'，两者各有硬伤\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的口语化表达更自然流畅，语气词运用得当\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更贴合轻小说的轻松吐槽风格，A略显书面\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A术语不一致(秘密组织/结社混用)，B更统一\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A缺失段落74导致上下文断裂，影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式均可接受，风格不同但各有合理性\"}\n  },\n  \"key_differences\": [\n    \"A完全漏译段落74，造成内容缺失\",\n    \"B严重误译段落51的惯用语'ツボに入る'\",\n    \"B整体口语化程度更高，更符合轻小说风格\",\n    \"A术语使用不一致\",\n    \"B在细节处理上更完整（如段落8保留'変に'）\"\n  ],\n  \"final_summary\": \"两个译本各有明显硬伤：A漏译整段内容（段落74），B误译惯用语（段落51）。但从整体来看，A的漏译问题更严重，因为它导致了信息完整性的缺失；而B的误译虽然错误，但不影响整体叙事理解。此外，B在轻小说风格把握、口语化表达和术语一致性方面整体优于A，因此B略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12024,
+          "completion_tokens": 2036,
+          "total_tokens": 14060
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A漏译段落74是重大失误；B在段落51严重误译'ツボに入る'，两者各有硬伤"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的口语化表达更自然流畅，语气词运用得当"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更贴合轻小说的轻松吐槽风格，A略显书面"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "A术语不一致(秘密组织/结社混用)，B更统一"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A缺失段落74导致上下文断裂，影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式均可接受，风格不同但各有合理性"
+      }
+    },
+    "key_differences": [
+      "A完全漏译段落74，造成内容缺失",
+      "B严重误译段落51的惯用语'ツボに入る'",
+      "B整体口语化程度更高，更符合轻小说风格",
+      "A术语使用不一致",
+      "B在细节处理上更完整（如段落8保留'変に'）"
+    ],
+    "final_summary": "两个译本各有明显硬伤：A漏译整段内容（段落74），B误译惯用语（段落51）。但从整体来看，A的漏译问题更严重，因为它导致了信息完整性的缺失；而B的误译虽然错误，但不影响整体叙事理解。此外，B在轻小说风格把握、口语化表达和术语一致性方面整体优于A，因此B略胜一筹。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

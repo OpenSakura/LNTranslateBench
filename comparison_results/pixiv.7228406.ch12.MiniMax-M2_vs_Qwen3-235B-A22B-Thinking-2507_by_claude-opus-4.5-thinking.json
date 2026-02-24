@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:48:25.707819",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.MiniMax-M2.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "c760d11408bc776f26a7de82882ebbb726da82a7bf40bf6006d73d6ea853f811",
+    "B": "8dc3b1cd48bb4c279f0a676485317d8e48e658719081ac5c346c39f0e0c0ef13"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:49:12.573875",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ec1457ec-a82e-45e4-ba4f-85238a9e1ed7",
+      "judge_response": {
+        "id": "ec1457ec-a82e-45e4-ba4f-85238a9e1ed7",
+        "object": "chat.completion",
+        "created": 1768423752,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落逐一分析\n\n**段落2 - 术语问题：**\n- 原文「マッ缶」指的是MAX咖啡罐装饮料的简称\n- A译\"铁罐\"、B译\"火柴盒\"均为误译，但这是较生僻的俚语\n\n**段落4 - 完整性严重问题：**\n- A翻译严重漏译，原文有大段关于无人站、普通列车、特急\"富士川\"的内容完全缺失\n- B完整翻译了全部内容\n\n**段落23/25/30/59 - 术语一致性：**\n- 「みのぶまんじゅう」/「身延」\n- A分别译为\"Minobu馒头\"、\"Minobu\"、\"三峰馒头\"、\"三武馒头\"——严重不一致且有误\n- B统一译为\"身延馒头\"/\"身延\"——一致准确\n\n**段落50-51 - 格式问题：**\n- A莫名添加了引号「真开心，不过——」」，破坏了叙述的连贯性\n- B格式正确\n\n**段落65 - 格式问题：**\n- A错误添加引号包围整句\n- B格式正确\n\n**段落68 - 翻译问题：**\n- A未翻译「マシンガントーク」，保留日语原文\n- B译为\"连珠炮\"，准确传达意思\n\n**段落71-79 - 对话格式问题：**\n- A多处对话缺少引号标记\n- B格式规范统一\n\n**风格与流畅度：**\n- B整体更口语化，符合轻小说对话风格\n- A部分表达较生硬，如\"强力主张着\"、\"打着配合\"\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A段落4严重漏译；A术语多处误译（三峰/三武/Minobu）；B段落2也有小误但整体更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语化自然；A部分表达生硬如'强力主张着'\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说对话风格；A部分过于书面\"},\n    \"terminology\": {\"A\": 3, \"B\": 8, \"notes\": \"A对'身延馒头'翻译极不一致（Minobu/三峰/三武）；B统一准确\"},\n    \"coherence\": {\"A\": 5, \"B\": 8, \"notes\": \"A漏译导致段落4上下文断裂；A段落68未译マシンガントーク\"},\n    \"formatting\": {\"A\": 4, \"B\": 8, \"notes\": \"A多处格式错误：段落50-51多余引号、段落65错误引号、段落71-79对话缺引号\"}\n  },\n  \"key_differences\": [\n    \"A段落4严重漏译约70%内容，B完整翻译\",\n    \"A对'身延馒头'翻译混乱（4种不同译法），B统一为'身延馒头'\",\n    \"A多处对话格式错误（缺少或多余引号），B格式规范\",\n    \"A未翻译'マシンガントーク'，B正确译为'连珠炮'\",\n    \"B整体语言更口语化，更符合轻小说风格\"\n  ],\n  \"final_summary\": \"B在完整性、术语一致性、格式规范和风格把握上全面优于A。A存在严重的漏译问题（段落4缺失大量内容）、术语翻译混乱（身延馒头有4种不同译法）以及多处格式错误。B虽然在段落2也有小误，但整体翻译质量明显更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10793,
+          "completion_tokens": 2100,
+          "total_tokens": 12893
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A段落4严重漏译；A术语多处误译（三峰/三武/Minobu）；B段落2也有小误但整体更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语化自然；A部分表达生硬如'强力主张着'"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格；A部分过于书面"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 8,
+        "notes": "A对'身延馒头'翻译极不一致（Minobu/三峰/三武）；B统一准确"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 8,
+        "notes": "A漏译导致段落4上下文断裂；A段落68未译マシンガントーク"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 8,
+        "notes": "A多处格式错误：段落50-51多余引号、段落65错误引号、段落71-79对话缺引号"
+      }
+    },
+    "key_differences": [
+      "A段落4严重漏译约70%内容，B完整翻译",
+      "A对'身延馒头'翻译混乱（4种不同译法），B统一为'身延馒头'",
+      "A多处对话格式错误（缺少或多余引号），B格式规范",
+      "A未翻译'マシンガントーク'，B正确译为'连珠炮'",
+      "B整体语言更口语化，更符合轻小说风格"
+    ],
+    "final_summary": "B在完整性、术语一致性、格式规范和风格把握上全面优于A。A存在严重的漏译问题（段落4缺失大量内容）、术语翻译混乱（身延馒头有4种不同译法）以及多处格式错误。B虽然在段落2也有小误，但整体翻译质量明显更高。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

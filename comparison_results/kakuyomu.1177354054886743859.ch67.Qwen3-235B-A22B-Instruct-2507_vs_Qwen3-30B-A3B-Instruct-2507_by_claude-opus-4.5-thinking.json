@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:22:55.497815",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "e95168cb2a561d05e07c66020b94a8d9e7a460ca1ba2a42d00fb36f218567d8c",
+    "B": "3d613e33e9b5800acde2a8b49af648c9228e95c844e74ab93788edd03a0c3498"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:23:44.952052",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "051e0717-62ee-4ed1-8e40-54789b64d7f7",
+      "judge_response": {
+        "id": "051e0717-62ee-4ed1-8e40-54789b64d7f7",
+        "object": "chat.completion",
+        "created": 1768422224,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 关键差异分析\n\n**1. 重大准确性问题（段落16）**\n- 原文：「二〇〇〇～三〇〇〇人規模の軍隊」\n- A：「两到三万规模的军队」❌ **严重数字错误**\n- B：「两千到三千人规模的军队」✓\n\n**2. 术语翻译**\n- ゴーレムホース：A=\"傀儡马\"（一致），B=\"魔像马\"但段落19出现\"石像鬼马\"（不一致）\n- 常歩（马术术语）：A=\"常速前进\"（意译偏离），B=\"慢步\"（更准确）\n- 役場：两者都有轻微不一致\n\n**3. 语境理解（段落8）**\n- 原文：「領主就任の挨拶」\n- A：「得去给领主上任打个招呼」❌ 主语混淆，主角自己才是领主\n- B：「正式就任领主」✓ 正确理解\n\n**4. 格式问题**\n- 段落46：B错误地给叙述文加了引号「」\n- 段落44：A保留了日语\"まったく\"原文，稍显突兀\n\n**5. 对话自然度**\n- 段落2：A更完整自然；B缺少语气词\n- 段落54：「呆れた顔」A译\"震惊\"偏离，B译\"无语\"更贴切\n\n**6. 地名一致性**\n- A：段落56出现\"特兰城\"与其他\"特里恩\"不一致\n- B：始终使用\"特里安\"\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有致命数字错误（2000-3000译成2-3万），段落8语境理解错误；B整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者对话自然度相当，各有优劣\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"轻小说风格把握相近，语气词处理B略欠\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A傀儡马一致但常歩译得不准；B魔像马有一处不一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A地名出现特兰城不一致；B整体连贯性更好\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B段落46错误添加引号；A段落44保留日语原文\"}\n  },\n  \"key_differences\": [\n    \"段落16数字翻译：A错误译为2-3万，B正确译为2000-3000\",\n    \"段落8语境：A误解主语，B正确理解主角是新领主\",\n    \"常歩术语：B的'慢步'比A的'常速前进'更准确\",\n    \"术语一致性：A傀儡马一致，B出现石像鬼马不一致\",\n    \"格式：B段落46叙述文误加引号\"\n  ],\n  \"final_summary\": \"B在关键准确性方面明显优于A，特别是避免了军队规模的严重数字错误（差10倍），且正确理解了领主就任的语境。虽然B在术语一致性和个别格式上有小瑕疵，但A的数字错误属于致命失误，直接影响对剧情的理解。综合考量，B为更优翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11251,
+          "completion_tokens": 2109,
+          "total_tokens": 13360
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有致命数字错误（2000-3000译成2-3万），段落8语境理解错误；B整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者对话自然度相当，各有优劣"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "轻小说风格把握相近，语气词处理B略欠"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A傀儡马一致但常歩译得不准；B魔像马有一处不一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A地名出现特兰城不一致；B整体连贯性更好"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B段落46错误添加引号；A段落44保留日语原文"
+      }
+    },
+    "key_differences": [
+      "段落16数字翻译：A错误译为2-3万，B正确译为2000-3000",
+      "段落8语境：A误解主语，B正确理解主角是新领主",
+      "常歩术语：B的'慢步'比A的'常速前进'更准确",
+      "术语一致性：A傀儡马一致，B出现石像鬼马不一致",
+      "格式：B段落46叙述文误加引号"
+    ],
+    "final_summary": "B在关键准确性方面明显优于A，特别是避免了军队规模的严重数字错误（差10倍），且正确理解了领主就任的语境。虽然B在术语一致性和个别格式上有小瑕疵，但A的数字错误属于致命失误，直接影响对剧情的理解。综合考量，B为更优翻译。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

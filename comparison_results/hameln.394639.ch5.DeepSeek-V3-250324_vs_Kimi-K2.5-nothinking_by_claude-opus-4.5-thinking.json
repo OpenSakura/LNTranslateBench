@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:29:09.173973",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "62e7d28ede902affa3b7e983a2fc89fa031ec30aa5eb773f98fbd75e10b3b194",
+    "B": "b5f3179a960ed4067254192aadc5301aaf80e68a18ecc99d8d377ee8dabd1b46"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:31:04.252140",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "98a397f0-5a28-4e38-8e8a-303f696ffc4f",
+      "judge_response": {
+        "id": "98a397f0-5a28-4e38-8e8a-303f696ffc4f",
+        "object": "chat.completion",
+        "created": 1769610609,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n- **段落3**: A的\"据说是……这样\"结构略显口语化但忠实原文；B的\"说是\"更简洁自然\n- **段落6**: A的\"这归这\"略显生硬；B的\"但问题不在这里\"更清晰\n- **段落8**: \"主力トップツー\"A译为\"主力双王牌\"较准确；B译为\"王牌双前锋\"添加了原文没有的位置信息\n- **段落37**: A的\"让我这个足球选手应该都能平等体会到那种感情的人\"语法混乱、理解有误；B更清晰准确\n- **段落40**: \"不敵な笑み\"A译\"无畏笑容\"较准确；B译\"嚣张笑容\"偏离原意\n- **段落48**: B添加了\"全他妈\"这种原文没有的粗口，过度意译\n- **段落52**: A保留\"赤袖学姊\"作为人名；B误译为\"穿着红色袖标\"，理解错误\n\n### 2. 流畅性分析\n- A有时过于直译，如\"进行了选手派遣的形式呢\"\n- B整体读起来更通顺自然\n- A混用繁简体字（靠著、著），影响阅读一致性\n\n### 3. 风格/语气分析\n- 两者都保持了轻小说风格\n- B在段落48添加粗口不符合原文语气\n- A对话语气更贴合原文\n\n### 4. 格式/标点分析\n- A的引号使用一致（「」）\n- B在段落25、47、48、65等处混用「」和\"\"，格式不统一\n\n### 5. 术语一致性\n- 两者对角色名、术语处理基本一致\n- A用\"凛\"，B用\"凜\"，均可接受\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落37有理解问题，B在段落52误译'赤袖先輩'、段落48添加粗口\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更流畅自然，A有些句子过于直译\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更忠实原文语气，B段落48添加不当粗口\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"两者基本一致，B在段落8添加了原文没有的位置信息\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体连贯性稍好\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"A格式统一，B引号使用混乱（「」与\"\"混用）\"}\n  },\n  \"key_differences\": [\n    \"B格式不统一，多处混用中文引号和日文引号\",\n    \"B在段落48添加原文没有的粗口'全他妈'\",\n    \"B在段落52将'赤袖先輩'误译为'穿着红色袖标'\",\n    \"A在段落40'不敵な笑み'译为'无畏笑容'更准确，B译为'嚣张笑容'偏离\",\n    \"A在段落37存在理解问题，句子不通顺\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。B在流畅性和连贯性方面略胜一筹，但存在严重的格式不统一问题（引号混用）、添加原文没有的粗口、以及关键术语误译（赤袖先輩）。A虽然在部分句子过于直译、段落37存在理解问题，但整体格式规范、语气忠实原文、未出现过度意译。综合考虑，A在格式规范性和风格忠实度上的优势略微超过B在流畅性上的优势。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10733,
+          "completion_tokens": 2074,
+          "total_tokens": 12807
+        }
+      },
+      "status": "failed",
+      "error": "Expecting ',' delimiter: line 10 column 64 (char 458)"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "6eff9f18-809f-4561-a826-f3c16b42e016",
+      "judge_response": {
+        "id": "6eff9f18-809f-4561-a826-f3c16b42e016",
+        "object": "chat.completion",
+        "created": 1769610664,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落8**: A译\"主力双王牌\"准确理解\"トップツー\"，B译\"王牌双前锋\"误将其限定为前锋位置\n- **段落23**: B译\"巴哈姆特爆击\"与段落21的\"巴哈姆特衝擊\"不一致，A保持一致\n- **段落37**: A译\"让我这个足球选手应该都能平等体会到那种感情的人\"语法混乱，B译更清晰\n- **段落52**: B译\"连至今仍穿着红色袖标\"严重误译，\"赤袖先輩\"是人名，A正确译为\"赤袖学姊\"\n\n### 流畅性分析\n- B整体句式更自然流畅，如段落64\"与欢欣鼓舞的南云原形成鲜明对比\"\n- A部分表达较生硬，如段落22\"开球球\"重复\n\n### 术语一致性\n- A全程使用「」引号，保持一致\n- B在段落25、47、48、65等处混用「」与\"\"，格式不统一\n- B偶尔出现繁简混用（如櫻咲、凜）\n\n### 风格语气\n- A保留更多日式表达（\"初心者\"、\"ACE\"）\n- B更本土化但有时过度意译\n- 段落40: A译\"无畏笑容\"更贴近\"不敵\"原意，B译\"嚣张笑容\"略有偏差\n\n### 关键差异总结\n1. B有重大误译（赤袖先輩）\n2. B格式不统一（引号混用、繁简混杂）\n3. A部分句子生硬但准确性较高\n4. B整体流畅度略胜但有术语不一致问题\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B在段落52严重误译'赤袖先輩'，段落8误解'トップツー'\"},\n    \"fluency\": {\"A\": 6, \"B\": 7, \"notes\": \"B整体更流畅自然，但A也基本通顺\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好保留轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"B必杀技名称不一致，繁简混用\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处引号格式混乱（「」与\\\"\\\"混用）\"}\n  },\n  \"key_differences\": [\n    \"B严重误译'赤袖先輩'为'穿着红色袖标'\",\n    \"B引号格式不统一，多处使用\\\"\\\"而非「」\",\n    \"B繁简字混用（凜/凛、櫻/樱）\",\n    \"A译'トップツー'为'双王牌'更准确，B误译为'双前锋'\",\n    \"B必杀技名称前后不一致（衝擊vs爆击）\"\n  ],\n  \"final_summary\": \"A虽然部分表达略显生硬，但在准确性、术语一致性和格式规范性上表现更稳定。B流畅度略胜，但存在严重误译（赤袖先輩）、格式混乱（引号、繁简混用）等问题，整体可靠性不如A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10733,
+          "completion_tokens": 2075,
+          "total_tokens": 12808
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B在段落52严重误译'赤袖先輩'，段落8误解'トップツー'"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 7,
+        "notes": "B整体更流畅自然，但A也基本通顺"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好保留轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "B必杀技名称不一致，繁简混用"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处引号格式混乱（「」与\"\"混用）"
+      }
+    },
+    "key_differences": [
+      "B严重误译'赤袖先輩'为'穿着红色袖标'",
+      "B引号格式不统一，多处使用\"\"而非「」",
+      "B繁简字混用（凜/凛、櫻/樱）",
+      "A译'トップツー'为'双王牌'更准确，B误译为'双前锋'",
+      "B必杀技名称前后不一致（衝擊vs爆击）"
+    ],
+    "final_summary": "A虽然部分表达略显生硬，但在准确性、术语一致性和格式规范性上表现更稳定。B流畅度略胜，但存在严重误译（赤袖先輩）、格式混乱（引号、繁简混用）等问题，整体可靠性不如A。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

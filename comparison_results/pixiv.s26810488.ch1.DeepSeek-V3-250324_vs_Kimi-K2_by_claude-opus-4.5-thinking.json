@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:06:57.741742",
+  "sample": "pixiv.s26810488.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26810488.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26810488.ch1.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/pixiv.s26810488.ch1.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "92db91e48665f24307285ee8df507a11e561d6aa20242dd51ddd1a73514e9a0b",
+    "A": "7d3e73a13f8617f25581c743b865197fd2105c2bb09251c5512bd4d2ec953d18",
+    "B": "f413065698f7c60f48f2ae326f51cfc59b3eb6a84536f4d321ca02c21ccae57a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:07:50.010702",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2e31edec-2757-41cc-8a98-da3592ce43e9",
+      "judge_response": {
+        "id": "2e31edec-2757-41cc-8a98-da3592ce43e9",
+        "object": "chat.completion",
+        "created": 1768432069,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题发现\n\n**段落55存在致命错误：**\n- 原文：「私の目の前に置かれた箱の蓋を取り上げ」\n- A：「**大叔我**拿起眼前盒子的盖子」——完全错误，出现了莫名其妙的\"大叔我\"\n- B：「我眼前那只盒子的盖子被掀开」——正确\n\n### 逐项分析\n\n**准确性：**\n- A段落55的\"大叔我\"是严重翻译错误\n- A段落12\"划破天空\"对「空を切って」理解有误，B的\"落空\"更准确\n- B段落4\"让我成了主角\"略微曲解原意\n\n**流畅性：**\n- A整体句式更完整流畅\n- B更口语化、简洁，如\"我一边犯懵\"\"好久没经历过了\"\n\n**风格/语气：**\n- B的口语化更贴合轻小说第一人称叙述，如\"才不要那种寂寞\"\"我这个爱哭鬼\"\n- A略显书面化\n\n**术语一致性：**\n- A在称呼上不一致：时用\"艾玛小姐\"时用\"艾玛\"，且敬语\"您\"使用混乱\n- B在\"艾玛\"/\"艾玛小姐\"间也有不一致\n\n**格式：**\n- A在段落29、32、36等处使用了中文双引号\"\"而非原文的「」，格式不统一\n- B格式统一\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A段落55出现'大叔我'致命错误，段落12理解有误；B整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A句式完整但有错误；B更口语化自然\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的口语化表达更符合轻小说第一人称少女视角\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"两者称呼都有不一致，A的敬语使用更混乱\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的段落55错误严重影响阅读连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A混用引号格式，B格式统一\"}\n  },\n  \"key_differences\": [\n    \"A段落55出现'大叔我'致命翻译错误\",\n    \"A段落12'划破天空'理解有误，B'落空'更准确\",\n    \"A混用中文引号和日文引号，格式不统一\",\n    \"B整体更口语化，符合少女视角的轻小说叙述\"\n  ],\n  \"final_summary\": \"尽管A在部分段落的句式更为完整流畅，但段落55出现的'大叔我'是严重的翻译错误，完全破坏了文本的连贯性和可信度。此外A还存在引号格式混用、敬语不一致等问题。B虽然个别处表达略显简略，但整体准确性更高，口语化风格更贴合轻小说少女视角，格式也更统一，因此B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10346,
+          "completion_tokens": 2405,
+          "total_tokens": 12751
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A段落55出现'大叔我'致命错误，段落12理解有误；B整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A句式完整但有错误；B更口语化自然"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的口语化表达更符合轻小说第一人称少女视角"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "两者称呼都有不一致，A的敬语使用更混乱"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的段落55错误严重影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A混用引号格式，B格式统一"
+      }
+    },
+    "key_differences": [
+      "A段落55出现'大叔我'致命翻译错误",
+      "A段落12'划破天空'理解有误，B'落空'更准确",
+      "A混用中文引号和日文引号，格式不统一",
+      "B整体更口语化，符合少女视角的轻小说叙述"
+    ],
+    "final_summary": "尽管A在部分段落的句式更为完整流畅，但段落55出现的'大叔我'是严重的翻译错误，完全破坏了文本的连贯性和可信度。此外A还存在引号格式混用、敬语不一致等问题。B虽然个别处表达略显简略，但整体准确性更高，口语化风格更贴合轻小说少女视角，格式也更统一，因此B胜出。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

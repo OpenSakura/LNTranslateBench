@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:24:34.444330",
+  "sample": "syosetu.n7886gf.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n7886gf.ch19.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n7886gf.ch19.Kimi-K2.5.translated.txt",
+    "B": "translated_results/syosetu.n7886gf.ch19.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b7c5e5862caa77dd51ae9b11b2fafe158a804e9e40647a31c9450a6e682fc8dd",
+    "A": "f6ff42dfd9942cfdfc600c5a362971c17d47a49d01ad2bcecb727a51dca74350",
+    "B": "d7c912eb76ecb9af035a39f838aa3f6c590db2ad25d1eff4307ece43030005ce"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:25:21.296842",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f1d3bae8-81ee-4661-a925-d3341379845b",
+      "judge_response": {
+        "id": "f1d3bae8-81ee-4661-a925-d3341379845b",
+        "object": "chat.completion",
+        "created": 1769610321,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 术语/名称一致性\n- **A的问题**：エミリオ翻译不一致（艾米里奥/艾蜜莉欧），「恵みの森」翻译不一致（丰饶森林/恩惠之森）\n- **B的问题**：段落78中「ロルフ」漏字，写成「洛夫」而非「洛尔夫」\n\n### 准确性关键差异\n- **段落34**：「すうめ」（スルメ的口齿不清说法）→ A译\"酸酸\"（错误），B译\"干鱿鱼\"（正确）\n- **段落45**：「カボチャパンツ」→ A译\"南瓜图案内裤\"（误解），B译\"南瓜内裤\"（正确，指灯笼裤/南瓜裤）\n- **段落63**：「四半刻」→ A译\"一刻钟\"（约15分钟，较准确），B译\"半个时辰\"（约1小时，错误）\n- **段落41**：「ペロン」→ A译\"哗地\"（更贴切布料翻起），B译\"啪嗒地\"（不太合适）\n\n### 格式问题\n- **B的严重问题**：段落60-66、72-92等多处引号从「」变成\"\"，格式不统一；段落5括号不匹配\n- **A**：格式基本一致\n\n### 流畅性与风格\n- B部分译文更口语化自然（如段落21\"我呀，才不会骂你呢\"）\n- A部分译文稍显生硬但整体稳定\n- 幼儿口吻：A段落91\"窝，要做啾\"较奇怪；B\"我，来做\"更自然\n\n### 整体判断\nA在格式规范性和部分关键时间单位上更准确，但有术语不一致和个别误译；B在部分语义理解上更准确（如カボチャパンツ），但格式问题严重且时间单位错误（四半刻）是硬伤。综合来看两者各有优劣，但A的问题相对更容易接受。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A误译'酸酸'和'南瓜图案'；B误译'半个时辰'，各有硬伤\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，A部分表达略生硬\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好地保留了轻小说风格和幼儿口吻\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A人名/地名不一致问题较多；B漏字'洛夫'\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A阅读连贯性稍好；B格式跳跃影响阅读\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B引号格式严重不统一，多处从「」变成\\\"\\\"\"}\n  },\n  \"key_differences\": [\n    \"B格式问题严重：引号在多个段落不一致\",\n    \"段落63时间单位：A'一刻钟'正确，B'半个时辰'错误\",\n    \"段落34：A'酸酸'误译，B'干鱿鱼'正确\",\n    \"段落45：A误解カボチャパンツ为'图案'，B理解正确\",\n    \"A人名翻译不统一（艾米里奥/艾蜜莉欧）\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在格式规范性上明显优于B，但存在术语不一致和个别误译；B在部分语义理解和流畅度上更好，但格式问题严重且时间单位硬伤影响阅读体验。综合考虑，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11492,
+          "completion_tokens": 2327,
+          "total_tokens": 13819
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A误译'酸酸'和'南瓜图案'；B误译'半个时辰'，各有硬伤"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，A部分表达略生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好地保留了轻小说风格和幼儿口吻"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A人名/地名不一致问题较多；B漏字'洛夫'"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A阅读连贯性稍好；B格式跳跃影响阅读"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B引号格式严重不统一，多处从「」变成\"\""
+      }
+    },
+    "key_differences": [
+      "B格式问题严重：引号在多个段落不一致",
+      "段落63时间单位：A'一刻钟'正确，B'半个时辰'错误",
+      "段落34：A'酸酸'误译，B'干鱿鱼'正确",
+      "段落45：A误解カボチャパンツ为'图案'，B理解正确",
+      "A人名翻译不统一（艾米里奥/艾蜜莉欧）"
+    ],
+    "final_summary": "两译本各有优劣。A在格式规范性上明显优于B，但存在术语不一致和个别误译；B在部分语义理解和流畅度上更好，但格式问题严重且时间单位硬伤影响阅读体验。综合考虑，A略胜一筹。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

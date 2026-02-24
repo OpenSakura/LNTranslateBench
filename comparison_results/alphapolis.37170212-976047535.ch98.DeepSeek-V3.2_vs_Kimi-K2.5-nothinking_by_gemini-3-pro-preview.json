@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:31:17.213859",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "b000f44ba3eb11ebd7b74e2ab7f7d3212a2e3d21982f3b37a857e1a15a7e534b",
+    "B": "abfe47ff1f99a26f15013872c1a0f07319be3bbd0f695009482388b86d9a687e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:32:12.309696",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202601282231183367160222pMzOUtv",
+      "judge_response": {
+        "id": "chatcmpl-202601282231183367160222pMzOUtv",
+        "object": "chat.completion",
+        "created": 1769610732,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对提供的两份翻译文本（A和B）的详细分析，以下是我的评判结果：\n\n### 详细分析\n\n**1. 准确性与完整性**\n*   **严重错误（翻译A）：** 在段落112中，原文是“ウォルガー”，翻译A直接保留了日文片假名未翻译，这是一个明显的漏翻或编辑失误。翻译B正确翻译为“沃鲁加”。\n*   **词汇准确度（翻译B胜）：**\n    *   **段落180（岡っ引き）：** 原文指江户时代的捕快/侦探助手。翻译A译为“小混混”（完全错误，意思相反），翻译B译为“捕快”（准确，符合语境）。\n    *   **段落185（土モグラ）：** 原文是鼹鼠（Mole）。翻译A译为“土拨鼠”（Marmot/Groundhog，属于不同物种），翻译B译为“土鼹鼠”（准确）。\n    *   **段落10（尤里的性别）：** 原文提到“姉”（姐姐），说明尤里是女性。翻译A使用“尤里”（通常用于男性），翻译B使用“尤莉”（通常用于女性），B在ACGN语境下更准确。\n\n**2. 术语与一致性**\n*   **翻译A胜出点：** 在人名一致性上，翻译A表现较好。例如“加尔博”（Galbo），翻译A前后一致；而翻译B在段落53译为“加尔博”，但在段落54译为“加尔沃”，出现了前后不一致。\n*   **翻译B胜出点：** 翻译B对轻小说特有词汇的处理更地道。例如段落39的“残念なハンサム”，A译为“遗憾的帅哥”，B译为“遗憾系帅哥”，后者更符合二次元文化的用语习惯。\n\n**3. 流畅性与风格**\n*   **翻译B：** 整体文风更贴近轻小说。例如段落4的“肝っ玉母さん”，B译为“热心肠老妈”比A的“有胆魄的妈妈”更符合家庭喜剧的语境。段落69关于性格的描述，B的“消沉”比A的“闹别扭”更贴合“いじける”的原意。\n*   **翻译A：** 句子结构有时略显生硬，直译痕迹较重（如段落5的“燃烧的使命” vs B的“以...为使命”）。\n\n**4. 瑕疵**\n*   **翻译B：** 段落42出现了“肌肉筋肉虬结”的重复用词错误（可能是输入法问题），应为“肌肉虬结”。\n\n### 最终判决\n\n尽管翻译B存在少量的人名不一致和一处笔误，但翻译A存在**未翻译原文**和**关键名词误译**（捕快译成混混、鼹鼠译成土拨鼠）等硬伤。翻译B在理解轻小说语境、角色性别暗示以及特定词汇的准确性上明显优于A。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A有漏翻（段落112）和明显的词义误解（段落180、185）。B整体准确。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B的语言组织更自然，更符合中文阅读习惯。\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B更熟悉轻小说/ACGN术语（如'遗憾系'、'尤莉'的选字）。\"\n    },\n    \"terminology\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"A的人名一致性较好。B在'Galbo'的翻译上前后不一致（加尔博/加尔沃）。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B的句子逻辑更通顺。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 8,\n      \"notes\": \"两者格式均符合要求。\"\n    }\n  },\n  \"key_differences\": [\n    \"漏翻：A在段落112保留了日文原文，B进行了翻译。\",\n    \"词汇错误：A将'岡っ引き'（捕快）错译为'小混混'，将'モグラ'（鼹鼠）错译为'土拨鼠'。\",\n    \"性别处理：B正确使用了女性化的'尤莉'，符合文中'姐姐'的设定。\",\n    \"风格：B使用了'遗憾系'等更地道的轻小说词汇。\"\n  ],\n  \"final_summary\": \"翻译B胜出。虽然B在人名一致性上有小瑕疵（加尔博/加尔沃）且有一处笔误，但其整体准确度远高于A。A存在严重的漏翻现象（保留片假名），且在关键的名词解释上出现错误（将警察角色的说话方式译为混混，物种翻译错误）。此外，B的文风更贴合轻小说受众，对角色性别的暗示捕捉也更敏锐。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11517,
+          "completion_tokens": 4741,
+          "total_tokens": 16258
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A有漏翻（段落112）和明显的词义误解（段落180、185）。B整体准确。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的语言组织更自然，更符合中文阅读习惯。"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更熟悉轻小说/ACGN术语（如'遗憾系'、'尤莉'的选字）。"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的人名一致性较好。B在'Galbo'的翻译上前后不一致（加尔博/加尔沃）。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的句子逻辑更通顺。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式均符合要求。"
+      }
+    },
+    "key_differences": [
+      "漏翻：A在段落112保留了日文原文，B进行了翻译。",
+      "词汇错误：A将'岡っ引き'（捕快）错译为'小混混'，将'モグラ'（鼹鼠）错译为'土拨鼠'。",
+      "性别处理：B正确使用了女性化的'尤莉'，符合文中'姐姐'的设定。",
+      "风格：B使用了'遗憾系'等更地道的轻小说词汇。"
+    ],
+    "final_summary": "翻译B胜出。虽然B在人名一致性上有小瑕疵（加尔博/加尔沃）且有一处笔误，但其整体准确度远高于A。A存在严重的漏翻现象（保留片假名），且在关键的名词解释上出现错误（将警察角色的说话方式译为混混，物种翻译错误）。此外，B的文风更贴合轻小说受众，对角色性别的暗示捕捉也更敏锐。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

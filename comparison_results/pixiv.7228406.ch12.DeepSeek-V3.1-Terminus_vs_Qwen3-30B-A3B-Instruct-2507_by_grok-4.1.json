@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:31.656537",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "6c09353eff3046f045276d09dc289f03487534c6b940e91b4708f34ee0f9f798",
+    "B": "3a4ed128faf6f3ef61c938506988451ba83c882b6e4614700fd000760db692d5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:50.417385",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DlOkg75J96qtR5BjOO6LOCAeg55",
+      "judge_response": {
+        "id": "chatcmpl-89DlOkg75J96qtR5BjOO6LOCAeg55",
+        "object": "chat.completion",
+        "created": 1768427089,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"みのぶまんじゅう\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"身延饅頭\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"身延まんじゅう OR みのぶまんじゅう 漢字\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"比企谷 みのぶまんじゅう\"\n> 📊 **Results requested:** 3\n\n> 🔍 **10 results found**\n\n> [🔗 \"みのぶまんじゅう\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"身延饅頭\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"【楽天市場】山梨銘菓 みのぶまんじゅう 12個入り 贈答箱 ...\" Rakuten](https://item.rakuten.co.jp/e-yamanashi/skr-0002)\n> [🔗 \"山梨百貨店 / 山梨銘菓 みのぶまんじゅう 山梨県身延町 名物和菓子\" Shopvision](https://shopvision.jp/products/detail/1387)\n> [🔗 \"Eishodo - Minobu/Japanese traditional sweets | Tabelog\" Tabelog](https://tabelog.com/en/yamanashi/A1904/A190402/19000888)\n> [🔗 \"身延山御用 御菓子司 甘養亭河喜\" Kanyoutei](https://www.kanyoutei.com/)\n> [🔗 \"さくら製菓 powered by BASE\" Base](https://sminobumanju.base.shop/)\n> [🔗 \"地元がすすめるスイーツ8選 - 身延町観光情報サイト「みのラブ」\" Minolove](https://www.minolove.jp/soshiki/1/101754.html)\n> [🔗 \"甘養亭河喜 身延まんじゅう（みのぶまんじゅう）\" Amebaownd](https://kanyoutei.amebaownd.com/)\n> [🔗 \"みのぶまんじゅう 12個入り1箱・20個入り1箱・さくらくず湯（5 ...\" Carenet](https://furusato.carenet.com/items/776649)\n\n> 🔍 **10 results found**\n\n> [🔗 \"身延饅頭 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"栄昇堂 / TOPページ\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"Eishodo - Minobu/Japanese traditional sweets | Tabelog\" Tabelog](https://tabelog.com/en/yamanashi/A1904/A190402/19000888)\n> [🔗 \"身延山御用 御菓子司 甘養亭河喜\" Kanyoutei](https://www.kanyoutei.com/)\n> [🔗 \"身延 まんじゅうのおすすめ人気商品一覧 通販 - Yahoo!ショッピング\" Yahoo! Shopping](https://shopping.yahoo.co.jp/search/%E8%BA%AB%E5%BB%B6+%E3%81%BE%E3%82%93%E3%81%98%E3%82%85%E3%81%86/0)\n> [🔗 \"さくら製菓 powered by BASE\" Base](https://sminobumanju.base.shop/)\n> [🔗 \"みのぶまんじゅう 栄昇堂のクチコミ一覧 - じゃらんnet\" Jalan](https://www.jalan.net/gourmet/grm_alikejpB001058419/kuchikomi)\n> [🔗 \"栄昇堂 - 南山梨じゃん｜市川三郷町・富士川町・身延町・早川町・南部町の5町の魅力や観光情報を発信します\" Szac-minamiyamanashi](https://szac-minamiyamanashi.com/spot/1015)\n> [🔗 \"甘養亭河喜 身延まんじゅう（みのぶまんじゅう）\" Amebaownd](https://kanyoutei.amebaownd.com/)\n> [🔗 \"みのぶまんじゅう12個入り1箱・20個入り1箱・さくらくず湯（5袋）[№5530-0339] - 山梨県身延町｜ふるさとチョイス - ふるさと納税サイト\" Furusato Tax](https://www.furusato-tax.jp/product/detail/19365/5590226)\n\n> 🔍 **10 results found**\n\n> [🔗 \"みのぶまんじゅう\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"甘養亭河喜 身延まんじゅう（みのぶまんじゅう）\" Amebaownd](https://kanyoutei.amebaownd.com/)\n> [🔗 \"身延まんじゅう（みのぶまんじゅう）12個入 | 甘養亭 身延まんじゅう（みのぶまんじゅう） powered by BASE\" Kanyoutei](https://shop.kanyoutei.co.jp/items/3734807)\n> [🔗 \"身延まんじゅう（みのぶまんじゅう）9個入 | 甘養亭 身延まんじゅう（みのぶまんじゅう） powered by BASE\" Kanyoutei](https://shop.kanyoutei.co.jp/items/3734802)\n> [🔗 \"身延まんじゅう (みのぶまんじゅう)とは【ピクシ...\" Pixiv](https://dic.pixiv.net/a/%E8%BA%AB%E5%BB%B6%E3%81%BE%E3%82%93%E3%81%98%E3%82%85%E3%81%86)\n> [🔗 \"身延 まんじゅうのおすすめ人気商品一覧 通販 - Yahoo!ショッピング\" Yahoo! Shopping](https://shopping.yahoo.co.jp/search/%E8%BA%AB%E5%BB%B6+%E3%81%BE%E3%82%93%E3%81%98%E3%82%85%E3%81%86/0)\n> [🔗 \"山梨百貨店 / 山梨銘菓 みのぶまんじゅう 山梨県身延町 名物和菓子\" Shopvision](https://shopvision.jp/products/detail/1387)\n> [🔗 \"みのぶまんじゅう 栄昇堂のクチコミ一覧 - じゃらんnet\" Jalan](https://www.jalan.net/gourmet/grm_alikejpB001058419/kuchikomi)\n> [🔗 \"身延饅頭 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"さくら製菓 powered by BASE\" Base](https://sminobumanju.base.shop/)\n\n> 🔍 **10 results found**\n\n> [🔗 \"Hachiman Hikigaya is... - pixiv Encyclopedia\" Pixiv](https://dic.pixiv.net/en/a/Hachiman%20Hikigaya)\n> [🔗 \"比企谷八幡という、最高の主人公 - 孤読な日々\" Hatenablog](https://kodokunahibi.hatenablog.jp/entry/2020/10/03/232743)\n> [🔗 \"比企谷八幡の感じた違和感の正体についての考察 - ”やはり俺の青春ラブコメはまちがっている。”の11巻187～188Pの感想文（サラマン） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054890540059/episodes/1177354054890540085)\n> [🔗 \"【ゲーム俺ガイル完】キャラクターピックアップムービー 比企谷八幡（cv.江口拓也）【やはりゲームでも俺の青春ラブコメはまちがっている。完（Switch / PS4）】 - YouTube\" YouTube](https://www.youtube.com/watch?v=8NkkGbV_H3k)\n> [🔗 \"第1話 とにかく比企谷八幡はくさっている。 (2) / やはり俺の青春ラブコメはまちがっている。＠ｃｏｍｉｃ - 渡航/伊緒直道/ぽんかん8 | サンデーうぇぶり\" Sunday Webry](https://www.sunday-webry.com/episode/2550912965415111689)\n> [🔗 \"Mercari\" Mercari](https://jp.mercari.com/search?keyword=%E6%AF%94%E4%BC%81%E8%B0%B7%E5%85%AB%E5%B9%A1)\n> [🔗 \"みのぶまんじゅう\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"無様な青春を / 比企谷八幡(CV.江口拓也) - YouTube\" YouTube](https://www.youtube.com/watch?v=Ecx5kxzvb3w)\n> [🔗 \"比企谷小町/やはり俺の青春ラブコメはまちがっている。 | NeoApo アニメ･ゲームデータベース\" NeoApo](https://neoapo.com/characters/17628)\n> [🔗 \"比企谷八幡とは (ヒキガヤハチマンとは) [単語記事] ...\" Niconico](https://dic.nicovideo.jp/a/%E6%AF%94%E4%BC%81%E8%B0%B7%E5%85%AB%E5%B9%A1)\n\n\n翻译A和翻译B都是从日文轻小说翻译成中文的版本，整体风格偏向自然口语化的叙述与对话，适合轻小说读者。两者在大多数段落中都较为接近，但存在一些关键差异，尤其在专有名词处理、语气自然度、句子流畅性和细节准确性上。\n\n**段落1**：A使用“齐藤”“甲斐常叶站”，B使用“斋藤”“开斐常叶站”。原文“斉藤”是“さいとう”，标准译为“斋藤”；站名“甲斐常葉駅”是“かいときわえき”，标准为“甲斐常叶站”。A更准确。\n\n**段落2**：A的“马卡风的历史”明显误译“マッ缶”（可能是“マッ缶”或打字错误，但上下文是“マッ缶”，很可能指“マグカップ”或误写，但实际可能是“マッ缶”作为梗或特定物，B直接“罐头”更安全，但原文可能是“マッ缶”指“マグカップ缶”或啤酒罐历史？等下，可能是“マッ缶”=“マグカップ缶”或误，但B的“罐头”明显错，A的“马卡风”也错。两者都有问题，但B更离谱。\n\n**段落3**：A“齐藤”“各务原”，B“斋藤”。A的“小巧玲珑的志摩”自然，B“娇小玲珑的志摩”也行。B的“意外娇小的少女”贴近“思いのほか小柄”。两者接近，但A更流畅。\n\n**段落4**：站名一致性A“甲斐常叶站”“甲斐大岛站”，B同。特急“ふじかわ”A“富士川”，B“富士川”。A的“火球直通一样快”误，原文“火の玉ストレート”，是棒球术语“火球直球”。B“火球直球一样快”准确。A的翻译在这里失准。\n\n**段落23**：A“みのぶまんじゅう”→“みのぶまんじゅう”，B“蓑衣馒头”。实际商品名为“みのぶまんじゅう”（ひらがな或片假名常见），但正式常写“身延饅頭”或“みのぶまんじゅう”，无“蓑衣”。B的“蓑衣馒头”可能是误联想到“みのぶ”音似“蓑布”或错误解读，严重不准。A保留原文音更好。\n\n**段落25**：A“みのぶ”，B“蓑衣”。同上，B错误。\n\n**段落30**：A“三日月馒头”（完全错），B“身延馒头”。正确应为“身延馒头”或“みのぶまんじゅう”。B准确。\n\n**段落31-32**：A“素斋料理”，B“斋饭”。原文“精進料理”是“精进料理”（佛教素食）。A准确，B“斋饭”稍口语但可接受。\n\n**段落74**：A“御手洗馒头”（错），B“美袋馒头”（也错）。原文是“みのぶまんじゅう”，两者都误译。\n\n整体上，A在人名（如“齐藤”vs“斋藤”标准是“斋藤”）和部分描述更自然流畅，对话轻松贴近轻小说风格；B在某些地方（如段落4的“火球直球”、段落3的“意外娇小”）更贴原文，但多次出现严重术语错误，尤其是“みのぶまんじゅう”被译为“蓑衣馒头”等，破坏一致性和准确性。\n\n**准确性**：A在多数地方保留原文音译更好，避免了B的明显误译（如馒头名），但有少量失误。B有多个硬伤。\n\n**流畅性**：A的句子更连贯、自然，读起来像中文轻小说。\n\n**风格/语气**：两者都保持了原作的吐槽+内心独白风格，但A的对话更活泼。\n\n**术语一致性**：A整体更一致（统一音译），B在关键专有名词上混乱。\n\n**连贯性/可读性**：A胜出。\n\n**格式/标点**：两者类似，但A的引号和省略号使用更标准。\n\n综合而言，A整体更好，B虽在个别句子贴近，但重大误译拉低分数。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 6, \"notes\": \"A在人名、地名、商品名上更忠实避免误译，B多次出现严重错误如馒头名'蓑衣馒头'、'美袋馒头'等\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A句子更自然流畅，B偶有生硬处但整体不错\"},\n    \"style\": {\"A\": 9, \"B\": 8, \"notes\": \"A更好地保留了轻小说式的轻松吐槽与内心戏语气\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"A统一音译处理专有名词，B在'みのぶまんじゅう'等关键术语上多次错译严重影响一致性\"},\n    \"coherence\": {\"A\": 9, \"B\": 7, \"notes\": \"A全文可读性更高，逻辑连贯；B因误译偶有跳脱感\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点、格式均规范，无明显差异\"}\n  },\n  \"key_differences\": [\n    \"人名处理：A'齐藤' vs B'斋藤'（B更标准，但A整体一致）\",\n    \"关键商品名'みのぶまんじゅう'：A保留音译，B多次误为'蓑衣馒头'等，B严重失分\",\n    \"部分意译准确性：B在'火の玉ストレート'上更准，但整体被误译抵消\",\n    \"对话自然度：A更口语化轻松，符合轻小说风格\"\n  ],\n  \"final_summary\": \"A在准确性、一致性、流畅性和轻小说风格上全面占优，虽然B在个别句子贴近原文，但关键术语的多次误译使其整体质量明显逊色。A是更可靠的翻译版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11631,
+          "completion_tokens": 4893,
+          "total_tokens": 16524
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "A在人名、地名、商品名上更忠实避免误译，B多次出现严重错误如馒头名'蓑衣馒头'、'美袋馒头'等"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A句子更自然流畅，B偶有生硬处但整体不错"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更好地保留了轻小说式的轻松吐槽与内心戏语气"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "A统一音译处理专有名词，B在'みのぶまんじゅう'等关键术语上多次错译严重影响一致性"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A全文可读性更高，逻辑连贯；B因误译偶有跳脱感"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点、格式均规范，无明显差异"
+      }
+    },
+    "key_differences": [
+      "人名处理：A'齐藤' vs B'斋藤'（B更标准，但A整体一致）",
+      "关键商品名'みのぶまんじゅう'：A保留音译，B多次误为'蓑衣馒头'等，B严重失分",
+      "部分意译准确性：B在'火の玉ストレート'上更准，但整体被误译抵消",
+      "对话自然度：A更口语化轻松，符合轻小说风格"
+    ],
+    "final_summary": "A在准确性、一致性、流畅性和轻小说风格上全面占优，虽然B在个别句子贴近原文，但关键术语的多次误译使其整体质量明显逊色。A是更可靠的翻译版本。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

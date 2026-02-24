@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:46:05.893409",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "10d5c1f1201af1ce44e63937c29d77a761777addd50203e8419e8046b37500d1",
+    "B": "d45137f26ab9c3351921b80a2bbf3cddf2c07ec4bd261bcd05aa4d99c0f1946f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:46:26.824474",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DuQ4pFgDO8hlEjkyj5IWMVsW8ew",
+      "judge_response": {
+        "id": "chatcmpl-89DuQ4pFgDO8hlEjkyj5IWMVsW8ew",
+        "object": "chat.completion",
+        "created": 1768427186,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"遊戯王 OR カードゲーム 用語 中文翻译 デッキ ドロー フェイズ MP 手札 モンスター スキル 攻撃力\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"轻小说 卡牌游戏 中文翻译 常见术语 デッキ ドロー プレゲトーン ドライグ\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [zh.moegirl.org.cn](https://zh.moegirl.org.cn/游戏王)\n> 📋 **Task:** 提取游戏王中文常用术语对应：デッキ、手札、ドロー、フェイズ、MP、モンスター、攻撃力、スキル、効果発動等\n\n> 🔍 **Searching for:** \"site:baike.baidu.com OR site:zh.wikipedia.org 游戏王术语 中文\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"遊戯王の専門用語まとめ\" Yugioh-cram-school](https://yugioh-cram-school.com/matome/1683)\n> [🔗 \"カードゲームでよく使われる用語！【プレイ編】｜VSS鑑定\" Note](https://note.com/vss_japan/n/n56e52b73831a)\n> [🔗 \"TCGカタログ（用語集）\" Xrea](http://card.g1.xrea.com/tcg/t0006esp.html)\n> [🔗 \"初心者さん必見!!!カードゲーム用語解説！対戦編 / マルイ海老名店の店舗ブログ - カードラボ\" C-Labo](https://www.c-labo.jp/blog/219099)\n> [🔗 \"【TCG】覚えておきたいカードゲーム用語54選【遊戯王、ポケカ、デュエマ、シャドバetc】 | ぱなだブログ\" Panadablog](https://panadablog.com/card-game-term)\n> [🔗 \"用語集 - MTG Wiki\" Mtgwiki](http://m.mtgwiki.com/wiki/%E7%94%A8%E8%AA%9E%E9%9B%86)\n> [🔗 \"カードゲームでよく使われる用語！【デッキ編】｜VSS鑑定\" Note](https://note.com/vss_japan/n/nba16e45c068a)\n> [🔗 \"【遊戯王OCG】用語集 | スニーカーダンク\" SNKRDUNK](https://snkrdunk.com/articles/15138)\n> [🔗 \"【初級者向け】遊戯王の非公式用語と解説。【遊戯王トピックス】 - がりすのにっき。\" Hatenablog](https://degu324.hatenablog.com/entry/2018/10/11/030814)\n> [🔗 \"遊戯王のよく使う略称覧！中には面白い略称もあり！\" Kata0003](https://kata0003.net/yu-gi-oh-abbreviation-3570)\n\n> 🔍 **10 results found**\n\n> [🔗 \"卡牌游戏 - Translation into English - examples Chinese | Reverso Context\" Reverso Context](https://context.reverso.net/translation/chinese-english/%E5%8D%A1%E7%89%8C%E6%B8%B8%E6%88%8F)\n> [🔗 \"カードゲームでよく使われる用語！【プレイ編】｜VSS鑑定\" Note](https://note.com/vss_japan/n/n56e52b73831a)\n> [🔗 \"卡牌游戏\" Baidu Baike](https://baike.baidu.com/item/%E5%8D%A1%E7%89%8C%E6%B8%B8%E6%88%8F/5039094)\n> [🔗 \"万智牌常用词汇中英文对照-微信公众号老汉MTG-旅法师营地\" Yingdi](https://www.iyingdi.com/tz/post/5204025)\n> [🔗 \"桌上角色扮演游戏/术语 - 萌娘百科 万物皆可萌的...\" Moegirl](https://zh.moegirl.org.cn/%E6%A1%8C%E4%B8%8A%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94%E6%B8%B8%E6%88%8F/%E6%9C%AF%E8%AF%AD)\n> [🔗 \"集换式卡牌游戏_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E9%9B%86%E6%8D%A2%E5%BC%8F%E5%8D%A1%E7%89%8C%E6%B8%B8%E6%88%8F/3851645)\n> [🔗 \"集换式卡牌游戏 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%BA%A4%E6%8F%9B%E5%8D%A1%E7%89%87%E9%81%8A%E6%88%B2)\n> [🔗 \"游戏类型大全-CSDN博客\" CSDN](https://blog.csdn.net/z736248591/article/details/109495799)\n> [🔗 \"Roguelike牌组构筑游戏 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/Roguelike%E7%89%8C%E7%BB%84%E6%9E%84%E7%AD%91%E6%B8%B8%E6%88%8F)\n> [🔗 \"集换式卡牌游戏 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E9%9B%86%E6%8D%A2%E5%BC%8F%E5%8D%A1%E7%89%8C%E6%B8%B8%E6%88%8F)\n\n> 🔍 **1 results found**\n\n> [🔗 \"游戏王 - 萌娘百科 万物皆可萌的百科全书\" zh.moegirl.org.cn](https://zh.moegirl.org.cn/%E6%B8%B8%E6%88%8F%E7%8E%8B)\n\n> 🔍 **10 results found**\n\n> [🔗 \"游戏王卡片游戏_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E6%B8%B8%E6%88%8F%E7%8E%8B%E5%8D%A1%E7%89%87%E6%B8%B8%E6%88%8F/6269153)\n> [🔗 \"遊戲王 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/wiki/%E9%81%8A%E6%88%B2%E7%8E%8B)\n> [🔗 \"游戏王卡片_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E6%B8%B8%E6%88%8F%E7%8E%8B%E5%8D%A1%E7%89%87/11054592)\n> [🔗 \"游戏王集换纸牌游戏 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%81%8A%E6%88%B2%E7%8E%8B%E9%9B%86%E6%8F%9B%E7%B4%99%E7%89%8C%E9%81%8A%E6%88%B2)\n> [🔗 \"同步（游戏王卡片游戏召唤方式之一）_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E5%90%8C%E6%AD%A5/62176177)\n> [🔗 \"电子游戏术语列表 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%9B%BB%E5%AD%90%E9%81%8A%E6%88%B2%E8%A1%93%E8%AA%9E%E5%88%97%E8%A1%A8)\n> [🔗 \"衍生物（游戏《游戏王卡片游戏》中的术语）_百...\" Baidu Baike](https://baike.baidu.com/item/%E8%A1%8D%E7%94%9F%E7%89%A9/18765031)\n> [🔗 \"游戏王：决斗链接_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E6%B8%B8%E6%88%8F%E7%8E%8B%EF%BC%9A%E5%86%B3%E6%96%97%E9%93%BE%E6%8E%A5/22879867)\n> [🔗 \"遊戲王卡片遊戲 - 維基百科，自由的百科全書\" Wikipedia](https://zh.wikipedia.org/zh-hk/%E9%81%8A%E6%88%B2%E7%8E%8B%E9%9B%86%E6%8F%9B%E7%B4%99%E7%89%8C%E9%81%8A%E6%88%B2)\n> [🔗 \"连接召唤_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E8%BF%9E%E6%8E%A5%E5%8F%AC%E5%94%A4/20493154)\n\n\n作为一位公正的轻小说翻译质量评判员，我对提供的A和B两个翻译版本进行了逐段详细比较。原文是一部带有卡牌对战元素的轻小说，叙述语气热血、紧张、口语化，对话充满激情和少年感，术语需符合中文卡牌游戏（尤其是类似《游戏王》）的习惯表达，同时保持轻小说流畅的可读性和情感张力。\n\n### 整体分析\n\n**准确性**：  \nA在多数地方忠实于原文，但偶尔出现生硬或小误译（如“开枪射击”把弓箭说成枪）。  \nB整体更精准，尤其在术语处理上更贴近中文卡牌圈习惯（如“抽牌”而非“抽卡”，“牌组”而非“卡组”），误译极少，细节处理更到位（如“把...提升1”而非“提升...1点”更自然）。\n\n**流畅性**：  \nA的句子有时略显生硬、翻译腔重（如“无法回头。我下定决心定要凭这手牌取胜”），重复或冗余较多。  \nB更自然、符合中文阅读习惯，口语化程度更高，读起来节奏感更好，少有别扭表达。\n\n**风格/语气**：  \n原文是热血少年轻小说，内心独白激昂、对话带感叹号和拖长音。  \nA保留了部分语气，但有时过于直译，显得中二感稍弱或不自然（如“上啊，德莱格！！”）。  \nB在语气上更生动、更有感染力（如使用“上啊”“给我点反应啊”“放箭啊啊啊啊啊”），更好地传达了少年热血、对战紧张感与角色个性。\n\n**术语/名称一致性**：  \n这是最大差异点。  \nA统一使用“卡组”“抽卡”“阶段”“怪物”“攻击力”“MP1”等更接近日式直译或部分老翻译的表达。  \nB使用“牌组”“抽牌”“阶段/回合混用但整体自然”“怪物/怪兽交替但一致性好”“攻击力”“1点MP”等更接近当前主流中文《游戏王》/卡牌游戏圈的习惯（如“抽牌”“牌组”在很多轻小说和游戏汉化中更流行）。专有名词音译上B更统一（如“普雷格通” vs A的“プレゲトーン”混用）。B在术语现代化和一致性上明显占优。\n\n**连贯性/可读性**：  \nA整体连贯，但部分句子读来卡顿，叙述节奏偶尔被冗长表达打断。  \nB段落衔接更顺畅，叙述与对话节奏一致，长段描述更紧凑，可读性更高。\n\n**格式/标点符号**：  \n两者标点都大量使用！！！和……，基本符合轻小说风格。  \nB在对话语气词（如“哟～”“啊～”）和拖长音处理上更细腻，格式稍胜。\n\n**关键差异总结**：\n- 术语现代化与圈内习惯：B完胜（抽牌/牌组 vs 抽卡/卡组；更自然的成本/攻击描述）。\n- 语气生动度与热血感：B更强。\n- 整体自然度和阅读舒适度：B明显更流畅。\n- A的优势主要在某些直译的忠实度，但不足以抵消其他方面的差距。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9, \"notes\": \"B在细节和术语准确性上更胜一筹，A有少量小误译或不自然表达\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文更自然流畅，几乎无翻译腔，A部分句子略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地保留了轻小说热血、激昂、口语化的少年语气，A稍显平淡\"},\n    \"terminology\": {\"A\": 6, \"B\": 9, \"notes\": \"B术语更符合当前中文卡牌游戏圈习惯（抽牌/牌组等），一致性强；A偏日式直译，稍显过时\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B整体节奏更好，连贯性更强\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点、语气词、拖长音处理更细腻自然\"}\n  },\n  \"key_differences\": [\n    \"术语选择：B的“抽牌”“牌组”“1点MP”“翻倍”等更现代化和圈内流行，A偏传统直译\",\n    \"语气生动性：B对话和内心独白更热血、更带感（如“给我点反应啊”“放箭啊啊啊啊啊”）\",\n    \"流畅度和自然度：B读起来更像母语中文小说，A偶有别扭句式\",\n    \"专有名词统一：B对怪物名音译更稳定（如始终“普雷格通”）\"\n  ],\n  \"final_summary\": \"B整体质量明显优于A，尤其在轻小说最重要的流畅性、语气还原和术语自然度上全面领先，是更适合中文读者沉浸式阅读的版本。A虽忠实，但翻译感较重，适合作为参考但不敌B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13517,
+          "completion_tokens": 4501,
+          "total_tokens": 18018
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在细节和术语准确性上更胜一筹，A有少量小误译或不自然表达"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文更自然流畅，几乎无翻译腔，A部分句子略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地保留了轻小说热血、激昂、口语化的少年语气，A稍显平淡"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "B术语更符合当前中文卡牌游戏圈习惯（抽牌/牌组等），一致性强；A偏日式直译，稍显过时"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B整体节奏更好，连贯性更强"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点、语气词、拖长音处理更细腻自然"
+      }
+    },
+    "key_differences": [
+      "术语选择：B的“抽牌”“牌组”“1点MP”“翻倍”等更现代化和圈内流行，A偏传统直译",
+      "语气生动性：B对话和内心独白更热血、更带感（如“给我点反应啊”“放箭啊啊啊啊啊”）",
+      "流畅度和自然度：B读起来更像母语中文小说，A偶有别扭句式",
+      "专有名词统一：B对怪物名音译更稳定（如始终“普雷格通”）"
+    ],
+    "final_summary": "B整体质量明显优于A，尤其在轻小说最重要的流畅性、语气还原和术语自然度上全面领先，是更适合中文读者沉浸式阅读的版本。A虽忠实，但翻译感较重，适合作为参考但不敌B。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

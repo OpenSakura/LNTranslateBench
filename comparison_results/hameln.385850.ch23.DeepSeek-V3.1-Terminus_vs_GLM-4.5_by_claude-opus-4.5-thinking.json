@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:10:28.355547",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.GLM-4.5.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "f94805961d7ec76f8e33e21d9efbfc465e9d1200d95d8e26445692fd3c296bbc",
+    "B": "826c70b9c2b002cc06726493c0e03d3a1d5232769661d49c99a10385b0dd3f90"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:11:08.592555",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ce4b6414-6918-4821-bfc9-03424a5050cf",
+      "judge_response": {
+        "id": "ce4b6414-6918-4821-bfc9-03424a5050cf",
+        "object": "chat.completion",
+        "created": 1768421468,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**段落2**: 原文\"ガチ泣きとかではない\"指\"不是真正在哭\"。A译为\"嚎啕大哭\"偏离原意；B\"并非真的在哭\"更准确。\n\n**段落3**: \"堂に入った染み染みとした号泣\"意为\"熟练/老道的沉浸式哭泣\"。A\"拿捏得恰到好处、入戏三分\"较准确传达了表演感；B\"浑然忘我\"简化过度，丢失了\"演技老练\"的内涵。\n\n**段落51**: \"ツボに入る\"是\"被戳中笑点\"的惯用语。A\"莫名其妙地呆在罐子里\"完全误译；B\"戳中笑点\"正确。\n\n**段落74**: B翻译**缺失**，这是严重问题。\n\n### 2. 流畅性\nA整体更口语化，使用了较多语气词（\"嘛\"、\"呢\"、\"啦\"），符合轻小说内心独白风格。\nB较为简洁流畅，但有时过于平淡。\n\n### 3. 风格/语气\n- A在对话中使用「」，叙述中使用\"\"，不够统一\n- B在格式上更一致使用「」\n- A的语气词运用更丰富，B相对克制\n\n### 4. 术语一致性\n- \"秘密結社\": A偶尔译为\"秘密社团\"，B统一为\"秘密结社\"\n- \"シチュエーション\": A\"情况管理\"，B\"情境管理\"——B更准确\n\n### 5. 关键对比\n\n| 段落 | A表现 | B表现 |\n|------|-------|-------|\n| 10 | \"你看嘛……万一她想抱怨我\"更自然 | \"我是这么体贴考虑的\"略生硬 |\n| 33 | \"要是他能这么想就好了\"代词错误 | \"希望她能明白\"更准确 |\n| 51 | **严重误译** | ✓正确 |\n| 74 | 有翻译 | **缺失** |\n\n### 6. 格式\nA在段落25-29出现引号混用问题，将内心独白误标为对话。\nB格式更整洁统一。\n\n---\n\n## 最终判定\n\n```json\n{\n  \"winner\": \"tie\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落51严重误译；B在段落74缺失翻译，两者都有重大失误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A语气词运用更丰富自然，更符合轻小说内心独白风格\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B风格更统一简洁；A偶有过度口语化\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B术语更统一（秘密结社/情境管理）；A偶有不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A连贯但有代词混淆；B缺失段落严重影响连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A引号使用混乱（对话与独白不分）；B格式统一\"}\n  },\n  \"key_differences\": [\n    \"A段落51「ツボに入る」严重误译为字面意思\",\n    \"B段落74完全缺失翻译\",\n    \"A更口语化活泼，B更简洁规范\",\n    \"A引号格式混乱，B格式统一\"\n  ],\n  \"final_summary\": \"两译本各有致命缺陷：A在关键惯用语上严重误译（段落51），B则有整段缺失（段落74）。A流畅度和口语感更强，但格式混乱；B术语统一、格式规范，但表达略显平淡。综合权衡后，两者整体质量相当，判为平局。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12266,
+          "completion_tokens": 1782,
+          "total_tokens": 14048
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "tie",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落51严重误译；B在段落74缺失翻译，两者都有重大失误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A语气词运用更丰富自然，更符合轻小说内心独白风格"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B风格更统一简洁；A偶有过度口语化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B术语更统一（秘密结社/情境管理）；A偶有不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A连贯但有代词混淆；B缺失段落严重影响连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A引号使用混乱（对话与独白不分）；B格式统一"
+      }
+    },
+    "key_differences": [
+      "A段落51「ツボに入る」严重误译为字面意思",
+      "B段落74完全缺失翻译",
+      "A更口语化活泼，B更简洁规范",
+      "A引号格式混乱，B格式统一"
+    ],
+    "final_summary": "两译本各有致命缺陷：A在关键惯用语上严重误译（段落51），B则有整段缺失（段落74）。A流畅度和口语感更强，但格式混乱；B术语统一、格式规范，但表达略显平淡。综合权衡后，两者整体质量相当，判为平局。"
+  },
+  "outcome": "tie",
+  "winner_model": null
+}

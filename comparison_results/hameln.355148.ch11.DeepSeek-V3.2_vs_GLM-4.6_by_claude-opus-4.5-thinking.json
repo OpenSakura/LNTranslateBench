@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:09:04.519224",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "62a08964de066d3b80ade013c67a894d609891bbb813b397f287be33011fa455",
+    "B": "5e374213716faebd81ccaa415d3bfdf9806ac513c04958ace95e319c9cb7a06e"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:09:46.966552",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "798241c3-82d7-4849-bd83-3e80246fd175",
+      "judge_response": {
+        "id": "798241c3-82d7-4849-bd83-3e80246fd175",
+        "object": "chat.completion",
+        "created": 1768421386,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**段落3**: 原文「積み込んだ死体」，A译为\"堆积的尸体\"，B译为\"装上车的尸体\"。「積み込む」确实是\"装载\"的意思，B更准确。\n\n**段落17**: 原文「腰を下ろしかけた」，A译\"准备蹲下\"较准确，B译\"正要一屁股坐下去\"略过于口语化但也可接受。\n\n**段落36**: B出现严重错误——\"格蕾シア\"混用了日文假名，这是明显的漏译/格式错误。\n\n**段落65**: 原文「やめるって言われる」，A译\"说别干了\"正确，B译\"叫我停下\"意思偏离。\n\n**段落72**: 原文「少し引いてみせる」是\"稍微装出退缩的样子\"，A译\"稍微退后一步试探\"、B译\"稍微拉开一点距离\"，A更符合语境。\n\n### 2. 流畅性分析\n\nB整体更口语化，读起来更自然流畅。如段落8，B\"老实待着不动\"比A\"静待\"更生动。但A的正式语体在某些场景也合适。\n\n### 3. 风格/语气分析\n\n轻小说特点是口语化对话。B在对话处理上更自然，如段落73\"你到底把我当成什么人了啊\"比A\"你到底是用什么眼光看我的呀\"更符合角色情绪。\n\n### 4. 术语/名称一致性\n\n两者人名基本一致，但B段落36出现致命错误。\n\n### 5. 格式/标点\n\nA标点使用有些不一致（混用\"\"和「」）。B使用「」更统一，但有假名遗留问题。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"B在段落3更准确，但段落65理解偏差，段落36有假名遗留错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化流畅，A部分表达略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话风格更符合轻小说特点\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落36出现'格蕾シア'混用假名的严重错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 8, \"notes\": \"两者整体连贯性相当\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A标点略有不一致，B有假名遗留问题\"}\n  },\n  \"key_differences\": [\n    \"B段落36出现假名遗留错误'格蕾シア'，严重影响阅读\",\n    \"B整体更口语化自然，A更正式\",\n    \"段落65的关键语义理解A更准确\",\n    \"段落3的'積み込んだ'B翻译更准确\"\n  ],\n  \"final_summary\": \"两译本各有优劣：B在流畅性和轻小说风格上表现更好，但段落36出现假名遗留的严重格式错误，且段落65语义理解有偏差；A虽然语言略正式，但准确性和术语一致性更好。考虑到B的假名错误是不可忽视的硬伤，综合判定A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11584,
+          "completion_tokens": 1866,
+          "total_tokens": 13450
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "B在段落3更准确，但段落65理解偏差，段落36有假名遗留错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化流畅，A部分表达略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话风格更符合轻小说特点"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落36出现'格蕾シア'混用假名的严重错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者整体连贯性相当"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A标点略有不一致，B有假名遗留问题"
+      }
+    },
+    "key_differences": [
+      "B段落36出现假名遗留错误'格蕾シア'，严重影响阅读",
+      "B整体更口语化自然，A更正式",
+      "段落65的关键语义理解A更准确",
+      "段落3的'積み込んだ'B翻译更准确"
+    ],
+    "final_summary": "两译本各有优劣：B在流畅性和轻小说风格上表现更好，但段落36出现假名遗留的严重格式错误，且段落65语义理解有偏差；A虽然语言略正式，但准确性和术语一致性更好。考虑到B的假名错误是不可忽视的硬伤，综合判定A略胜。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

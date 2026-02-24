@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:39:01.883107",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "0a3087b7c2e409d34ed67da0fd4a33d77015446709b6a066fc5b86ab38fef39c",
+    "B": "67eb6cbd80b9a83704680f4fe3b20a3d556f1af38fd1198b8625c95c88698832"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:22.745217",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DbeyEUaLgS3iy1gKm5QyVNFnar6",
+      "judge_response": {
+        "id": "chatcmpl-89DbeyEUaLgS3iy1gKm5QyVNFnar6",
+        "object": "chat.completion",
+        "created": 1768426757,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n\n**详细分析**\n\n整体来看，两个翻译都属于比较认真的轻小说中译水准，但风格取向和细节处理有明显差异。\n\n**A翻译的特点**  \n- 更注重中文的自然流畅度和叙述感，句子结构相对完整、优雅  \n- 语气词（如「～」）处理较为克制且位置合理，基本符合轻小说中常见的“可爱/欠揍”系叙述语气  \n- 很多地方对原文的微妙情感、吐槽感、戏谑感还原较好  \n- 但偶尔会出现稍显书面化或冗长的表达（如“发展了肉体关系”“遥遥领先”）  \n- 人物内心活动和旁白部分的中文阅读节奏较舒服\n\n**B翻译的特点**  \n- 更偏向口语化、直白、梗感强，部分地方非常“网络轻小说风”  \n- 大量使用短句、感叹号、省略号，情绪外露更直接  \n- 但也因此在某些地方显得粗糙、随意，甚至有明显的翻译腔或不自然的中文表达  \n- 部分术语和叙述语气不够统一（一会儿很口语，一会儿又突然正经）  \n- 对“～”的处理比较随意，有时加得过多或位置奇怪\n\n**逐项对比总结**\n\n1. **准确性**  \n   A整体更忠实，误译/增删较少；B在几处有明显的意译过度或小错（如段落1“出柜”明显过度解读、段落15剑的主语搞反、段落53“**玩奴隶”明显打码失败等）\n\n2. **流畅性**  \n   A的中文更通顺、阅读体验更好；B很多句子短而碎，虽然口语感强，但连贯性较差，部分读起来像机翻后润色不足\n\n3. **风格/语气**  \n   轻小说核心是“戏谑+欠揍+反差萌”的叙述语气，A在这方面还原度更高，菲利普那种“表面可爱实际很欠”的感觉更到位；B虽然也很努力做口语化，但经常用力过猛或用力不足，显得不够统一\n\n4. **术语/名称一致性**  \n   两者基本一致，但B在“物品箱/道具箱”“地牢/地下城”“考试/测试”等处偶有摇摆，A更稳定\n\n5. **连贯性/可读性**  \n   A胜出。整段读下来节奏更好，信息层次更清晰；B容易出现情绪断层或信息堆砌感\n\n6. **格式/标点**  \n   A标点使用更规范，括号、破折号、波浪线位置都比较自然；B的标点使用过于激进（大量连续感叹号、省略号），有时反而降低可读性\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.87,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A误译少，理解更到位；B有明显过度解读（如出柜）和主语错误\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A中文更自然流畅；B过于零碎，部分句子读来别扭\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7.5,\n      \"notes\": \"A更好地保留了菲利普那种轻浮又欠揍的反差萌叙述感；B用力过猛或不到位\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"两者术语基本统一，但B偶有摇摆（物品箱/道具箱、地牢/地下城）\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A整体节奏与信息层次更好；B情绪与叙述经常断裂\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A标点克制且位置恰当；B标点过于戏剧化，影响阅读\"\n    }\n  },\n  \"key_differences\": [\n    \"A更注重中文自然度和轻小说式叙述节奏，整体阅读体验更好\",\n    \"B更口语化、情绪外露，但容易用力过猛或出现小硬伤\",\n    \"关键反差萌与欠揍感的表现上，A明显更胜一筹\",\n    \"B在个别段落（如出柜、玩奴隶、剑的主语）出现较为严重的理解/表达失误\"\n  ],\n  \"final_summary\": \"综合各项指标，A翻译在准确性、流畅性、风格还原度、可读性上全面占优，虽然B在某些地方口语感更强，但整体瑕疵较多，A是明显更优质的轻小说译文。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9947,
+          "completion_tokens": 1650,
+          "total_tokens": 11597
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.87,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A误译少，理解更到位；B有明显过度解读（如出柜）和主语错误"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A中文更自然流畅；B过于零碎，部分句子读来别扭"
+      },
+      "style": {
+        "A": 9,
+        "B": 7.5,
+        "notes": "A更好地保留了菲利普那种轻浮又欠揍的反差萌叙述感；B用力过猛或不到位"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者术语基本统一，但B偶有摇摆（物品箱/道具箱、地牢/地下城）"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7,
+        "notes": "A整体节奏与信息层次更好；B情绪与叙述经常断裂"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A标点克制且位置恰当；B标点过于戏剧化，影响阅读"
+      }
+    },
+    "key_differences": [
+      "A更注重中文自然度和轻小说式叙述节奏，整体阅读体验更好",
+      "B更口语化、情绪外露，但容易用力过猛或出现小硬伤",
+      "关键反差萌与欠揍感的表现上，A明显更胜一筹",
+      "B在个别段落（如出柜、玩奴隶、剑的主语）出现较为严重的理解/表达失误"
+    ],
+    "final_summary": "综合各项指标，A翻译在准确性、流畅性、风格还原度、可读性上全面占优，虽然B在某些地方口语感更强，但整体瑕疵较多，A是明显更优质的轻小说译文。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

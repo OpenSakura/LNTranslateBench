@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:43:50.272062",
+  "sample": "syosetu.n6267ii.ch481",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6267ii.ch481.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6267ii.ch481.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/syosetu.n6267ii.ch481.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f309a52414e2e175d574abffda59bec83b94bff3fbcfc345346bc89227d7cc17",
+    "A": "40ae6a6145a3ef72991c2caba6f9638d0cc02ee41e2a5d259a703413de1bec53",
+    "B": "026212127b8eccfddec25d50375ac48b53390398a53341c6deb5afd0b61168ca"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:44:45.834811",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128224350477788547t7DeZx8G",
+      "judge_response": {
+        "id": "chatcmpl-20260128224350477788547t7DeZx8G",
+        "object": "chat.completion",
+        "created": 1769611485,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是详细的评判分析：\n\n### 详细分析\n\n**1. 术语与名称一致性 (Terminology & Consistency)**\n*   **翻译 A**：表现完美。主角名字始终为“圭”（Kei），女角名字始终为“夏琳”（Sharin）。\n*   **翻译 B**：存在严重问题。\n    *   主角名字在“圭”和“凯”之间反复横跳。第1-18段用“圭”，第25段突然变成“凯”，之后混用，最后一段又变回“圭”。\n    *   女角名字在“夏琳”和“莎琳”之间不一致。前半部分用“夏琳”，后半部分（如第18、68、69、86段）变成了“莎琳”。\n    *   这种名称的不一致极大地破坏了阅读体验。\n\n**2. 格式与标点符号 (Formatting & Punctuation)**\n*   **翻译 A**：格式规范，对话使用了直角引号，标点正确。\n*   **翻译 B**：后半部分出现严重格式错误。从第62段开始，直到第72段，对话完全丢失了引号（例如段落64：`B: 呜、咳咳！？`），直接作为普通文本显示，这使得对话和叙述难以区分。\n\n**3. 准确性 (Accuracy)**\n*   **翻译 A**：准确理解了原文的细微差别。例如第18段关于为什么人偶被当作夏琳的东西，翻译 A 清楚地表达了“大男人带着人偶不合适”的逻辑。\n*   **翻译 B**：整体意思大致正确，但细节处理较粗糙。第60段将“不知道那种东西（是否存在/在哪里）”翻译为“觉得那种东西不存在”，意思略有偏差。\n\n**4. 流畅性与风格 (Fluency & Style)**\n*   **翻译 A**：语言自然流畅，符合轻小说的文风，既有叙述的条理，又能体现对话的角色性格。\n*   **翻译 B**：风格较为口语化（如“啥也干不了”、“自个儿过来的”），虽然读起来轻松，但有时显得过于随意。加上名称和格式的错误，整体观感显得草率。\n\n**5. 错别字与细节**\n*   **段落 42**：原文是“ルシファーは車輪のことを見る”（路西法看着车轮）。这里的“車輪”（Sharin）显然是原文将角色名“シャリン”（Sharin）写成了汉字“车轮”的错别字/双关。两个翻译都直译为“车轮”，这在没有上下文注释的情况下可能会让读者困惑，但既然两者处理方式相同，此处平局。\n\n### 总结\n翻译 A 是一份高质量、经过校对的译文，保持了术语一致性和格式规范。翻译 B 则像是一份初稿，虽然翻译了大致意思，但充满了名称不一致、标点缺失等低级错误，严重影响阅读。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A准确捕捉了原文含义；B在部分细节上有偏差，且名字混乱影响了信息的准确传达。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A行文流畅自然；B过于口语化，且因格式问题导致阅读不畅。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A符合轻小说风格；B风格随意且不统一。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"A完全一致；B严重不一致（圭/凯，夏琳/莎琳混用）。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B的角色名变换让读者难以连贯阅读。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"B在后半部分丢失了大量对话引号。\"\n    }\n  },\n  \"key_differences\": [\n    \"B在主角名字（圭/凯）和配角名字（夏琳/莎琳）上前后不一致。\",\n    \"B在第62-72段丢失了对话引号，导致格式混乱。\",\n    \"A的语言风格更稳重且符合原文语境，B过于口语化。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都明显优于翻译B。翻译A保持了高度的术语一致性、正确的格式和流畅的文笔。翻译B存在严重的质量问题，包括主角和配角名字的前后不一致（圭变凯，夏琳变莎琳），以及后半部分大量对话缺失引号的格式错误。这些问题使得翻译B在可读性和专业度上远不及A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6507,
+          "completion_tokens": 5148,
+          "total_tokens": 11655
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A准确捕捉了原文含义；B在部分细节上有偏差，且名字混乱影响了信息的准确传达。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A行文流畅自然；B过于口语化，且因格式问题导致阅读不畅。"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A符合轻小说风格；B风格随意且不统一。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 4,
+        "notes": "A完全一致；B严重不一致（圭/凯，夏琳/莎琳混用）。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 5,
+        "notes": "B的角色名变换让读者难以连贯阅读。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 4,
+        "notes": "B在后半部分丢失了大量对话引号。"
+      }
+    },
+    "key_differences": [
+      "B在主角名字（圭/凯）和配角名字（夏琳/莎琳）上前后不一致。",
+      "B在第62-72段丢失了对话引号，导致格式混乱。",
+      "A的语言风格更稳重且符合原文语境，B过于口语化。"
+    ],
+    "final_summary": "翻译A在各方面都明显优于翻译B。翻译A保持了高度的术语一致性、正确的格式和流畅的文笔。翻译B存在严重的质量问题，包括主角和配角名字的前后不一致（圭变凯，夏琳变莎琳），以及后半部分大量对话缺失引号的格式错误。这些问题使得翻译B在可读性和专业度上远不及A。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

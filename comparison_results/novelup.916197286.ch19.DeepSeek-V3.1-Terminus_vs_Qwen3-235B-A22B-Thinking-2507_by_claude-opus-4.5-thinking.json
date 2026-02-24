@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:41:59.717063",
+  "sample": "novelup.916197286.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.916197286.ch19.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.916197286.ch19.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/novelup.916197286.ch19.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "555d1a41f6993dc9f3cb5fc90218bd40f549c3b95e2e9706edd270d42780783c",
+    "A": "90ba25ecc43c53abf194e31918151e809a6cca80d2c5cd20191dcbb6fa56a1a2",
+    "B": "2f0a63e3f684683017c2affb53ddf3b047acc8ed1406942f97ed324bb3981a02"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:42:43.331076",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e70a6ce9-7c72-4b6e-aa97-f96ae444dc77",
+      "judge_response": {
+        "id": "e70a6ce9-7c72-4b6e-aa97-f96ae444dc77",
+        "object": "chat.completion",
+        "created": 1768423363,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 格式/标点符号\n**翻译A**：全文统一使用「」作为对话标记，格式一致。\n**翻译B**：对话标记混乱，有时用「」有时用\"\"，且多处对话漏掉引号（段落49、51、53、55、59-65、130-150等）。这是严重的格式问题。\n\n### 2. 名称一致性\n- **クラン**：A译为\"库兰/克伦\"（不一致），B译为\"库兰/克兰\"（不一致）\n- **アイシア**：A主要用\"艾希娅\"（但174段变成\"艾伊夏\"），B用\"艾西亚/艾希亚\"（混用）\n- 两者都存在人名不统一的问题，但A整体略好\n\n### 3. 准确性\n- 段落6：「ｺﾞﾆｮｺﾞﾆｮ」是小声嘀咕的拟声词，B译\"咕哝咕哝\"正确，A译\"揉捏揉捏\"误译\n- 段落100：「俺とうり二つの人物」A正确译为\"和我一模一样的人\"，B译\"我和另一个长得一模一样的人\"语义有偏差\n- 段落137：「死闘」A译\"死斗\"准确，B译\"苦战\"弱化程度\n- 段落151：「毒を吐く」A译\"吐出恶言\"稍不自然，B译\"吐槽\"更符合语境\n\n### 4. 风格/语气\n- A保留\"欧派\"等二次元用语，更符合轻小说风格\n- B用\"奶子/鸡鸡\"等较粗俗词汇（段落31、36、41、177等），风格不太适合轻小说\n- A的语气词处理更自然：\"啦\"、\"嘛\"、\"呢\"等\n\n### 5. 流畅性\n- 段落1：A\"为明天做准备今天休息吧\"断句不自然，B\"为了明天准备，今天早点休息吧\"更流畅\n- 段落17：A\"经历了一番折腾\"比B\"总之\"更准确传达「いろいろあって」\n- 段落20：A缺少逗号，B断句更清晰\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落6有误译，B在段落100有理解偏差，整体持平\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有长短，A个别断句欠佳，B整体较通顺\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A保留轻小说风格用语，B用词过于粗俗（奶子/鸡鸡等）\"},\n    \"terminology\": {\"A\": 6, \"B\": 5, \"notes\": \"两者人名都有不一致，A略胜一筹\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体叙述连贯，B部分句子略显生硬\"},\n    \"formatting\": {\"A\": 9, \"B\": 4, \"notes\": \"B大量对话漏掉引号，格式混乱严重\"}\n  },\n  \"key_differences\": [\n    \"格式问题：B大量对话缺失引号标记，A格式统一\",\n    \"风格选择：A用'欧派'保留轻小说萌感，B用'奶子/鸡鸡'过于粗俗\",\n    \"人名一致性：两者都有问题但A略好\",\n    \"拟声词处理：段落6的ｺﾞﾆｮｺﾞﾆｮ，B更准确\"\n  ],\n  \"final_summary\": \"翻译A在格式规范性和轻小说风格保持方面明显优于B。B最大的问题是大量对话漏掉引号，格式混乱严重；其次用词粗俗不符合轻小说调性。虽然B在个别准确性和流畅性方面有优势，但无法弥补格式和风格上的明显缺陷。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12106,
+          "completion_tokens": 2061,
+          "total_tokens": 14167
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落6有误译，B在段落100有理解偏差，整体持平"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有长短，A个别断句欠佳，B整体较通顺"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A保留轻小说风格用语，B用词过于粗俗（奶子/鸡鸡等）"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 5,
+        "notes": "两者人名都有不一致，A略胜一筹"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体叙述连贯，B部分句子略显生硬"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B大量对话漏掉引号，格式混乱严重"
+      }
+    },
+    "key_differences": [
+      "格式问题：B大量对话缺失引号标记，A格式统一",
+      "风格选择：A用'欧派'保留轻小说萌感，B用'奶子/鸡鸡'过于粗俗",
+      "人名一致性：两者都有问题但A略好",
+      "拟声词处理：段落6的ｺﾞﾆｮｺﾞﾆｮ，B更准确"
+    ],
+    "final_summary": "翻译A在格式规范性和轻小说风格保持方面明显优于B。B最大的问题是大量对话漏掉引号，格式混乱严重；其次用词粗俗不符合轻小说调性。虽然B在个别准确性和流畅性方面有优势，但无法弥补格式和风格上的明显缺陷。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

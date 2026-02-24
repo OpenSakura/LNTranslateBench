@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:13:28.843539",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "0203a4c1b164d5ec39220898ce5d7a27fa8e22915936fd6fd30c657b20666874",
+    "B": "5709ef354cdbab716b2f9acd484794e4f754605104798548f13481319af26498"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:14:30.208180",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1dfc7b19-caf1-45f1-93c1-3128c5da0eff",
+      "judge_response": {
+        "id": "1dfc7b19-caf1-45f1-93c1-3128c5da0eff",
+        "object": "chat.completion",
+        "created": 1768421670,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项对比分析\n\n### 准确性问题\n\n**翻译A的严重错误：**\n- 段落37：将「食い下がる」（穷追不舍/不肯罢休）错译为「食言」，这是严重的误译\n- 段落13：「比果比五子」误译为「比子」，人名不完整\n- 段落11：「自己学校的魔法少女竟然是棺木」逻辑不清，原意是\"发现棺木在自己学校\"\n\n**翻译B的问题：**\n- 段落9：「タネ」应指\"底细/把戏\"，误译为\"种子\"\n- 段落63/65：擅自添加「我们」，原文只是「考えられます」\n- 段落41：「なにものだ」译为\"什么东西\"略显不敬，\"什么人\"更佳\n\n### 流畅性对比\n- A整体更简洁凝练，口语化程度更高\n- B较为直译，有时结构生硬（如段落2「再加上那个事实」）\n\n### 术语处理\n- A：将人名翻译为中文（朝樱、龙星、暗月）\n- B：保留日文原名（朝桜、竜星、Dark Moon）\n- 轻小说翻译中，A的处理更符合中文读者习惯\n\n### 风格把握\n- 段落66：A将「ニコリと笑う」译为\"狡黠地笑\"不准确，原意是\"嫣然一笑/微微一笑\"\n- 段落67：A主语理解错误，是说\"这个天才总让人想拒绝她\"而非\"她想拒绝别人\"\n\n## 关键差异\n\n1. **段落37的致命错误**：A完全曲解了「食い下がる」的含义\n2. **人名一致性**：A中文化 vs B保留日文\n3. **使魔名称**：A「暗月」vs B「达克月亮/Dark Moon」混用\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落37有致命误译（食い下がる→食言），段落13人名不全；B在段落9误译タネ为种子，但整体更准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更凝练自然，口语化表达更流畅；B部分句式较生硬\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好把握轻小说风格，A段落66/67有理解偏差\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A人名中文化更符合中文习惯，B使魔名称中英混用不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体可读性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范，标点使用正确\"}\n  },\n  \"key_differences\": [\n    \"段落37：A将「食い下がる」（不肯罢休）严重误译为「食言」\",\n    \"段落13：A将「比果比五子」简化为「比子」\",\n    \"段落9：B将「タネ」误译为「种子」而非「底细」\",\n    \"人名处理：A中文化 vs B保留日文原名\",\n    \"使魔名称：A统一用「暗月」vs B使用「Dark Moon/达克月亮」不一致\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。A在流畅性和人名处理上略胜，但段落37的「食い下がる」误译为「食言」是致命错误，完全改变了句意。B虽然部分表达较生硬、术语不统一，但整体准确性更高，关键信息传达更可靠。综合考量，B略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11248,
+          "completion_tokens": 2674,
+          "total_tokens": 13922
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落37有致命误译（食い下がる→食言），段落13人名不全；B在段落9误译タネ为种子，但整体更准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更凝练自然，口语化表达更流畅；B部分句式较生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好把握轻小说风格，A段落66/67有理解偏差"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A人名中文化更符合中文习惯，B使魔名称中英混用不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体可读性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范，标点使用正确"
+      }
+    },
+    "key_differences": [
+      "段落37：A将「食い下がる」（不肯罢休）严重误译为「食言」",
+      "段落13：A将「比果比五子」简化为「比子」",
+      "段落9：B将「タネ」误译为「种子」而非「底细」",
+      "人名处理：A中文化 vs B保留日文原名",
+      "使魔名称：A统一用「暗月」vs B使用「Dark Moon/达克月亮」不一致"
+    ],
+    "final_summary": "两个翻译各有优劣。A在流畅性和人名处理上略胜，但段落37的「食い下がる」误译为「食言」是致命错误，完全改变了句意。B虽然部分表达较生硬、术语不统一，但整体准确性更高，关键信息传达更可靠。综合考量，B略优。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

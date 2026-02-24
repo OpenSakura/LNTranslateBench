@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:46:54.525995",
+  "sample": "pixiv.14996022.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14996022.ch10.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14996022.ch10.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.14996022.ch10.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "97840b0ea25b900611e3fd1bca8d95c19b711a6d9a5b445298a5ca51f9d44473",
+    "A": "c0857654219f259c230463852cd6f096816b82020a70b9fe2b7c890e4183c1b0",
+    "B": "b95f80d4550da584776eb0f6d7a1097ecee0aaa70df443d777656deb44778651"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:47:44.361256",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c02cc5e5-0429-4fa8-bb21-c8193ab752b6",
+      "judge_response": {
+        "id": "c02cc5e5-0429-4fa8-bb21-c8193ab752b6",
+        "object": "chat.completion",
+        "created": 1768423664,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 段落级别分析\n\n**段落2-3：** A的\"请在理解的基础上享受\"较生硬；B的\"请确认后，尽情享受吧\"更自然流畅。\n\n**段落5：** 关键差异！\"解像度の低いセリフ\"A译为\"分辨率低的台词\"（直译但语义不通），B译为\"质量较低的台词\"（意译准确，理解了\"解像度\"在此处的比喻含义）。\n\n**段落14-17：** A保留\"艾玛桑\"敬称但略显突兀；B使用\"艾玛\"更自然。A用\"保健室\"，B用\"医务室\"——后者更符合中文习惯。\n\n**段落19、20、26-28：** **严重问题！** A出现多处未翻译的日语原文（【お愿い】、タメ口），严重影响阅读体验。\n\n**段落29：** 两者都将\"丁寧じゃない\"译为\"不礼貌的\"，但实际应为\"不用敬语的/随意的\"，均有轻微偏差。\n\n**段落32-33：** **严重问题！** B完全缺失这两段翻译，内容遗漏。\n\n**段落51：** A的\"让好多女孩哭过的人\"理解正确；B的\"没变成...人\"误解了原文的反讽语气。\n\n**段落65-67：** B的口语化更强（\"转悠\"、\"拿捏住\"），更符合轻小说风格；A较为平实但准确。\n\n### 整体评价\n\n| 方面 | 翻译A | 翻译B |\n|------|-------|-------|\n| 内容完整性 | ✓完整 | ✗缺失段落32-33 |\n| 术语翻译 | ✗有未翻译日语 | ✓基本完成 |\n| 语言自然度 | 中等 | 较好 |\n| 风格契合度 | 中等 | 较好 |\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有未翻译术语但内容完整；B缺失段落32-33，段落51理解有误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体更口语化自然，A部分表达生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说活泼风格，A偏正式\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处保留日语原文(タメ口/お愿い)；B翻译完整但保健室/医务室不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"A完整连贯；B缺失段落导致对话断裂\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A格式统一；B对话标点混用「」和引号\"}\n  },\n  \"key_differences\": [\n    \"B缺失段落32-33的翻译，造成对话断裂\",\n    \"A多处保留未翻译日语(【お愿い】、タメ口)\",\n    \"段落5：A直译'分辨率低'不通，B意译'质量较低'正确\",\n    \"B整体语言风格更活泼自然，更符合轻小说调性\",\n    \"段落51对反讽语气理解：A正确，B误译\"\n  ],\n  \"final_summary\": \"两译本各有明显缺陷。A的问题是部分日语术语未翻译，影响阅读流畅性；B的问题是段落32-33完全缺失且段落51理解有误。虽然B在语言自然度和风格上更胜一筹，但内容缺失是更严重的翻译错误。基于内容完整性优先原则，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11582,
+          "completion_tokens": 2117,
+          "total_tokens": 13699
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有未翻译术语但内容完整；B缺失段落32-33，段落51理解有误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体更口语化自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说活泼风格，A偏正式"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处保留日语原文(タメ口/お愿い)；B翻译完整但保健室/医务室不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "A完整连贯；B缺失段落导致对话断裂"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A格式统一；B对话标点混用「」和引号"
+      }
+    },
+    "key_differences": [
+      "B缺失段落32-33的翻译，造成对话断裂",
+      "A多处保留未翻译日语(【お愿い】、タメ口)",
+      "段落5：A直译'分辨率低'不通，B意译'质量较低'正确",
+      "B整体语言风格更活泼自然，更符合轻小说调性",
+      "段落51对反讽语气理解：A正确，B误译"
+    ],
+    "final_summary": "两译本各有明显缺陷。A的问题是部分日语术语未翻译，影响阅读流畅性；B的问题是段落32-33完全缺失且段落51理解有误。虽然B在语言自然度和风格上更胜一筹，但内容缺失是更严重的翻译错误。基于内容完整性优先原则，A略胜。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

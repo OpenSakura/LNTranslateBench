@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:31:04.252818",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "cc55d4ab04f7eb3d1d33bd48814768a578bcfa40984de1d24ebcf24af05fa1da",
+    "B": "c28dbc87d0c9d11e2d8df83b51a39bf0aa02904bd5376a11ec35dd5406074e50"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:32:16.979869",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ac0b6c64-ef26-4e22-bf10-14f2629794a0",
+      "judge_response": {
+        "id": "ac0b6c64-ef26-4e22-bf10-14f2629794a0",
+        "object": "chat.completion",
+        "created": 1769610736,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n\n**关键问题：**\n- **段落23**：A翻译为\"根本不是她的对手\"，完全颠倒了原意。原文\"わたしたちの敵ではありません\"意为\"不是我们的对手\"，B的\"并非其敌手\"正确。\n- **段落67**：A译\"已故母亲的转世\"错误，\"後の母\"应为\"未来的母亲\"，B的\"未来的母亲\"正确。\n- **段落64**：B将\"わたし\"误译为第三人称\"她\"，改变了说话主体。\n- **段落14**：B将\"青ざめた\"译为\"铁青\"，原意为\"苍白/发白\"，A的\"脸色发白\"更准确。\n- **段落21**：ワダツミ（绵津见/海神）A译\"和魂\"、B译\"大八洲\"均不准确。\n\n### 2. 流畅性分析\n\n- 段落2：B\"我曾见过母亲使用过类似的招式\"比A更通顺\n- 段落4：B\"就留下了疑问\"比A\"还剩下疑问\"更自然\n- 段落41：B\"客气点说也算不上高\"优于A的生硬表达\n\n### 3. 术语/名称一致性\n\n- **A的问题**：八郎酱→哈奇洛酱（段落40）；玛塔塔比→斑斑（段落49）\n- **B的问题**：萨塔尼埃尔/撒旦尼尔不统一；木天蓼→斑斑\n- 人名ナリヒラ：A\"那须原\"、B\"成平\"——B更接近原音\n\n### 4. 格式问题\n\n- A段落30缺少右引号\n- B段落61使用\"妳\"区分性别更细致\n\n### 5. 风格表现\n\n两者均符合轻小说风格，B在对话语气上稍显自然。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落23和67有关键性错误（颠倒意思、误解'後の母'）；B在段落14和64有误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体语感更自然，部分句式处理更流畅\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者均符合轻小说叙事风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"两者均存在名称前后不一致问题；ワダツミ的翻译均不准确\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"整体可读性相近\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A缺少段落30的右引号；B使用'妳'区分性别更细致\"}\n  },\n  \"key_differences\": [\n    \"段落23：A完全颠倒原意（'不是她的对手'vs正确的'并非其敌手'）\",\n    \"段落67：A误译'後の母'为'已故母亲的转世'，B正确译为'未来的母亲'\",\n    \"段落64：B误将第一人称改为第三人称\",\n    \"段落14：B将'苍白'误译为'铁青'\",\n    \"人名处理：マタタビ译法不同（玛塔塔比vs木天蓼）\"\n  ],\n  \"final_summary\": \"两者均存在若干翻译问题。A在段落23和67犯了关键性错误，尤其是段落23完全颠倒了战力对比的意思，对剧情理解影响较大。B虽在段落14和64也有误译，但整体准确性略胜，且流畅度更佳。综合考量，B略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11802,
+          "completion_tokens": 3400,
+          "total_tokens": 15202
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落23和67有关键性错误（颠倒意思、误解'後の母'）；B在段落14和64有误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体语感更自然，部分句式处理更流畅"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者均符合轻小说叙事风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "两者均存在名称前后不一致问题；ワダツミ的翻译均不准确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "整体可读性相近"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A缺少段落30的右引号；B使用'妳'区分性别更细致"
+      }
+    },
+    "key_differences": [
+      "段落23：A完全颠倒原意（'不是她的对手'vs正确的'并非其敌手'）",
+      "段落67：A误译'後の母'为'已故母亲的转世'，B正确译为'未来的母亲'",
+      "段落64：B误将第一人称改为第三人称",
+      "段落14：B将'苍白'误译为'铁青'",
+      "人名处理：マタタビ译法不同（玛塔塔比vs木天蓼）"
+    ],
+    "final_summary": "两者均存在若干翻译问题。A在段落23和67犯了关键性错误，尤其是段落23完全颠倒了战力对比的意思，对剧情理解影响较大。B虽在段落14和64也有误译，但整体准确性略胜，且流畅度更佳。综合考量，B略优。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:44:39.831242",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "c451492a41e9768012f5bdd4ec65d95bd28cd39cace2cdddab65a3b4c398cf0c",
+    "B": "a45464af71110ee2479e6dde073667402eb28b609b45b3a26603588e6daf4e61"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:45:21.492336",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fe442681-da98-4a61-a9c4-bc0e9f57294d",
+      "judge_response": {
+        "id": "fe442681-da98-4a61-a9c4-bc0e9f57294d",
+        "object": "chat.completion",
+        "created": 1768423521,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落12**: B完全缺失翻译，严重扣分\n- **段落14**: A错误翻译\"阶级都是警部补\"，原文是「巡査部長」，B正确译为\"巡查部长\"\n- **段落4**: B的\"主动申请调到特殊犯搜查组\"比A的\"希望调往特殊犯系\"更准确传达了主动性\n\n### 2. 流畅性\n- B整体更口语化自然，如段落19「你说啥？！」vs A「这话怎么说？！」\n- 段落6: B\"摸清问题根源\"比A\"问题的种子必须把握清楚\"自然\n- 段落8: A有空格问题（\"顺便说一句 萩原\"）\n\n### 3. 风格/语气\n- B更贴合轻小说口语风格：段落4\"把他扔这儿来了\"、段落52\"女子力爆棚\"\n- A较为正式书面，如段落30\"对于被纳入自己人范围的对象\"\n- B段落43使用\"老黏在\"更生动\n\n### 4. 术语一致性\n- A段落14阶级翻译错误\n- B称呼更一致（佐藤妹子/佐藤）\n- 两者人名处理基本一致\n\n### 5. 连贯性\n- B缺失段落12导致上下文断裂\n- A完整但部分句子衔接生硬\n\n### 6. 格式/标点\n- A多处缺少逗号（段落8、10、47等）\n- B段落21-23引号不一致（「」与\"\"混用）\n- B段落12完全空白\n\n---\n\n## 关键差异总结\n| 方面 | A优势 | B优势 |\n|------|-------|-------|\n| 完整性 | 无缺漏 | 缺段落12 |\n| 口语感 | 较弱 | 自然流畅 |\n| 准确性 | 段落14有误 | 术语正确 |\n| 标点 | 空格问题 | 引号不一致 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A段落14阶级译错；B缺失整个段落12，错误更严重\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B口语化更自然，A较生硬书面\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说对话风格，用词活泼\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A阶级翻译错误（警部补vs巡查部长）\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B缺失段落12导致连贯性受损\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A有空格问题；B引号不一致且有空白段落\"}\n  },\n  \"key_differences\": [\n    \"B完全缺失段落12的翻译\",\n    \"A段落14将巡查部长误译为警部补\",\n    \"B整体语言更口语化、轻小说风格更强\",\n    \"A标点有空格遗漏，B有引号格式不一致问题\"\n  ],\n  \"final_summary\": \"B在流畅性和轻小说风格上明显优于A，但缺失整个段落12是致命伤，严重影响完整性和可用性。A虽然语言较生硬且有一处术语错误，但作为完整译本仍更可靠。综合考虑，A以完整性优势险胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11643,
+          "completion_tokens": 1789,
+          "total_tokens": 13432
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A段落14阶级译错；B缺失整个段落12，错误更严重"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B口语化更自然，A较生硬书面"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格，用词活泼"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A阶级翻译错误（警部补vs巡查部长）"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B缺失段落12导致连贯性受损"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A有空格问题；B引号不一致且有空白段落"
+      }
+    },
+    "key_differences": [
+      "B完全缺失段落12的翻译",
+      "A段落14将巡查部长误译为警部补",
+      "B整体语言更口语化、轻小说风格更强",
+      "A标点有空格遗漏，B有引号格式不一致问题"
+    ],
+    "final_summary": "B在流畅性和轻小说风格上明显优于A，但缺失整个段落12是致命伤，严重影响完整性和可用性。A虽然语言较生硬且有一处术语错误，但作为完整译本仍更可靠。综合考虑，A以完整性优势险胜。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:30:36.807163",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.GLM-4.6.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "dd8796cdcb30daa3d40e92ec6133217211a8cbcc7938365dfbf905db9161f015",
+    "B": "09bd3e7271585530dacd1f7a74f6d52c8b7914754a3d86c36448a126fe1b94e4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:31:22.018287",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "3f0db30c-0b80-4f8a-a0d4-1b42be726fa9",
+      "judge_response": {
+        "id": "3f0db30c-0b80-4f8a-a0d4-1b42be726fa9",
+        "object": "chat.completion",
+        "created": 1768487481,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 详细分析\n\n## 主要差异对比\n\n### 1. 准确性问题\n\n**段落2-3的关键错误：**\n- A将\"オリ主\"（原创主角）误译为\"作者\"，这是严重的理解错误\n- B正确译为\"原创主角有原作知识\"\n\n**段落40的人名错误：**\n- A: \"滨二三一\" - 错误\n- B: \"羽场二三一\" - 正确\n\n**段落116的技术描述：**\n- A: \"方形轮行驶\" - 理解有误\n- B: \"空中的裸体行驶\" - 翻译混乱，应该是\"方轮走行\"（两轮侧立行驶）\n\n### 2. 术语处理差异\n\n**段落21：**\n- A: 保留\"角煮\"（日式料理术语）\n- B: 本地化为\"红烧肉\"（更易理解）\n\n**段落10：**\n- A: \"口令\"\n- B: \"密语\"（更贴合网文语境）\n\n### 3. 流畅性对比\n\n**段落47：**\n- A: \"只是这两件事凑到一块儿，让我有点在意罢了\" - 更口语化自然\n- B: \"只是两个重叠了有点在意而已\" - 稍显生硬\n\n**段落147：**\n- A: 结构清晰，读起来流畅\n- B: 破折号使用导致句子结构混乱\n\n### 4. 风格一致性\n\n两者都保持了轻小说的语气，但：\n- A在对话中更活泼（如\"ー\"的使用）\n- B更规范但有时略显平淡\n\n### 5. 重大失误统计\n\n**A的严重错误：**\n- 段落3：主语理解错误（作者 vs 原创主角）\n- 段落40：人名错误（滨 vs 羽场）\n\n**B的严重错误：**\n- 段落116：技术描述混乱\n\n## 最终判决\n\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"A在段落3和40有明显错误（主语误解、人名错误）；B整体准确度更高，仅在段落116有技术术语翻译问题\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"A的口语化表达更自然流畅；B在某些地方略显生硬，但整体可读\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"两者都保持了轻小说风格；A在对话语气上稍显活泼，B更规范\"\n    },\n    \"terminology\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"A保留日语词'角煮'，人名翻译错误；B采用本地化'红烧肉'，人名正确\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B整体连贯性更好；A虽流畅但关键信息错误影响理解\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"两者格式都规范；A在语气词延长上处理更细致\"\n    }\n  },\n  \"key_differences\": [\n    \"段落3：A误将'オリ主'译为'作者'，B正确译为'原创主角'\",\n    \"段落40：A人名错误'滨二三一'，B正确'羽场二三一'\",\n    \"段落21：A保留'角煮'，B本地化为'红烧肉'\",\n    \"段落116：B技术术语翻译混乱，A虽有误但相对清晰\",\n    \"整体流畅性：A更口语化自然，B更规范但略显平淡\"\n  ],\n  \"final_summary\": \"虽然A在流畅性和对话语气上表现更好，但存在两处严重的准确性错误（段落3的主语误解和段落40的人名错误），这些是翻译的致命缺陷。B虽在流畅性上稍逊，但准确性明显更高，仅在段落116有技术术语的翻译问题。考虑到准确性是翻译质量的首要标准，特别是人名和关键设定不能出错，B整体质量更优。信心度0.75，主要扣分在于B也有不完美之处，且A的流畅性优势确实存在。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14292,
+          "completion_tokens": 1871,
+          "total_tokens": 16163
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落3和40有明显错误（主语误解、人名错误）；B整体准确度更高，仅在段落116有技术术语翻译问题"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的口语化表达更自然流畅；B在某些地方略显生硬，但整体可读"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者都保持了轻小说风格；A在对话语气上稍显活泼，B更规范"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A保留日语词'角煮'，人名翻译错误；B采用本地化'红烧肉'，人名正确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体连贯性更好；A虽流畅但关键信息错误影响理解"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者格式都规范；A在语气词延长上处理更细致"
+      }
+    },
+    "key_differences": [
+      "段落3：A误将'オリ主'译为'作者'，B正确译为'原创主角'",
+      "段落40：A人名错误'滨二三一'，B正确'羽场二三一'",
+      "段落21：A保留'角煮'，B本地化为'红烧肉'",
+      "段落116：B技术术语翻译混乱，A虽有误但相对清晰",
+      "整体流畅性：A更口语化自然，B更规范但略显平淡"
+    ],
+    "final_summary": "虽然A在流畅性和对话语气上表现更好，但存在两处严重的准确性错误（段落3的主语误解和段落40的人名错误），这些是翻译的致命缺陷。B虽在流畅性上稍逊，但准确性明显更高，仅在段落116有技术术语的翻译问题。考虑到准确性是翻译质量的首要标准，特别是人名和关键设定不能出错，B整体质量更优。信心度0.75，主要扣分在于B也有不完美之处，且A的流畅性优势确实存在。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

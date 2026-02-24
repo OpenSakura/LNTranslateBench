@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:35:29.144919",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "1dc78c4b3d692307ac7725734b88230de43b82b833cd93c51d21bc1f711df9ab",
+    "B": "29fd1fb9be89e0d457ca9eef39d92cb080d7e2c2bfe48b37324eedcbb97e22aa"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:36:22.003167",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6c01e43a-d70f-4166-88c5-25d4ef605244",
+      "judge_response": {
+        "id": "6c01e43a-d70f-4166-88c5-25d4ef605244",
+        "object": "chat.completion",
+        "created": 1768422977,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段重点分析\n\n**段落7**：原文「気に入らない」\n- A：\"我不喜欢这样\" - 稍显温和\n- B：\"真让人不快\" - 更符合原文的简短有力和不满情绪\n\n**段落10**：原文「許せなかった」\n- A：\"无法忍受\" - 意译偏离\n- B：\"无法原谅\" - 准确对应原文\n\n**段落14**：原文「嬉々とした様子の村長」\n- A：\"正兴致勃勃地陪着似乎要长篇大论的村长\" - 误解，将\"嬉々\"归于席恩\n- B：\"正陪着看起来兴致勃勃的村长\" - 正确理解是村长兴致勃勃\n\n**段落17**：原文「何様のつもりなの」\n- A：\"你算老几啊\" - 主语错误\n- B：\"我算老几啊\" - 正确理解为自问\n\n**段落21**：格式问题\n- A：使用『』保持一致\n- B：混用「」和『，结尾格式错误「尤莉娅你根本不懂...这种话！『\n\n**段落50、53、62、63等**：引号格式\n- A：使用中文引号\"\"，与其他对话格式不一致\n- B：统一使用「」\n\n**段落52-53**：严重问题\n- A：完整翻译\"然后，\"\"你很受宠爱呢。\"\n- B：**缺失翻译**，段落53完全空白\n\n**段落37-41**：B版本使用空格分隔句子，不符合中文标点规范\n\n### 评分与总结\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在段落7、10、14、17等处更准确，但A无缺漏\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A表达更流畅自然，B部分句子稍显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的语气把握略好，但A更符合轻小说阅读习惯\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"人名翻译一致，A在称谓上更统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"B缺失段落52-53严重影响连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A部分使用中文引号不统一；B有缺漏且使用空格分隔句子\"}\n  },\n  \"key_differences\": [\n    \"B版本段落52-53存在严重缺漏\",\n    \"段落17主语理解A错B对\",\n    \"段落14村长描述A错B对\",\n    \"A部分对话使用中文引号\\\"\\\"与其他「」不一致\",\n    \"B在段落37-41使用空格分隔句子不规范\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣，B在部分细节准确性上表现更好（如段落7、10、14、17），但存在致命的完整性问题——段落52-53完全缺失，严重影响故事连贯性。A虽有个别理解偏差和格式不统一问题，但内容完整，整体阅读体验更佳。综合考量，A版本胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13267,
+          "completion_tokens": 2078,
+          "total_tokens": 15345
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在段落7、10、14、17等处更准确，但A无缺漏"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A表达更流畅自然，B部分句子稍显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的语气把握略好，但A更符合轻小说阅读习惯"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "人名翻译一致，A在称谓上更统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "B缺失段落52-53严重影响连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A部分使用中文引号不统一；B有缺漏且使用空格分隔句子"
+      }
+    },
+    "key_differences": [
+      "B版本段落52-53存在严重缺漏",
+      "段落17主语理解A错B对",
+      "段落14村长描述A错B对",
+      "A部分对话使用中文引号\"\"与其他「」不一致",
+      "B在段落37-41使用空格分隔句子不规范"
+    ],
+    "final_summary": "两个翻译各有优劣，B在部分细节准确性上表现更好（如段落7、10、14、17），但存在致命的完整性问题——段落52-53完全缺失，严重影响故事连贯性。A虽有个别理解偏差和格式不统一问题，但内容完整，整体阅读体验更佳。综合考量，A版本胜出。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

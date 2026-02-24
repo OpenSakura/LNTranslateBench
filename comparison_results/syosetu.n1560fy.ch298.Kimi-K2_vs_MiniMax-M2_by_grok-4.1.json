@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:46:04.272532",
+  "sample": "syosetu.n1560fy.ch298",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n1560fy.ch298.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n1560fy.ch298.Kimi-K2.translated.txt",
+    "B": "translated_results/syosetu.n1560fy.ch298.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9aeb6269094dc80681686c7ce43485d4644d7889a31862f13341d77dfc8671a9",
+    "A": "5ebf5f747104c60097a6f45cdfe3358b1d13714a9bbf6ef78a9f379d25918522",
+    "B": "c67bee108681fb4d969e074befcf2470c2f2fe7b2c7a70de2f508d814e653656"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:46:20.993813",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DHiAM1nZPTGqFdTvSFjtatnkzuO",
+      "judge_response": {
+        "id": "chatcmpl-89DHiAM1nZPTGqFdTvSFjtatnkzuO",
+        "object": "chat.completion",
+        "created": 1768427180,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"凡人探索者 小説 翻訳 スタイル OR 軽小说 凡人探索者 作者 OR 作品\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"凡人探索者 あらすじ OR 内容 OR オリュンポス ベルゼブブ\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"凡人探索者 コミカライズ site:comic-gardo.com\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】 - 小説家になろう\" ncode.syosetu.com](https://ncode.syosetu.com/n1560fy)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】 - 6話 休日 - 小説家になろう\" ncode.syosetu.com](https://ncode.syosetu.com/n1560fy/8)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 1 (オーバーラップ文庫) | しば犬部隊, 諏訪真弘 |本 | 通販 | Amazon\" www.amazon.co.jp](https://www.amazon.co.jp/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95-1-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%A9%E3%83%83%E3%83%97%E6%96%87%E5%BA%AB-%E3%81%97%E3%81%B0%E7%8A%AC%E9%83%A8%E9%9A%8A/dp/4824004373)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ - もちろんさん/しば犬部隊/諏訪真弘 / 第1話「味山只人という男」 | コミックガルド\" comic-gardo.com](https://comic-gardo.com/episode/2550912964918726482)\n> [🔗 \"『「凡人探索者のたのしい現代ダンジョンライフ」シリーズ（オーバーラップ文庫）(ライトノベル)』の ...\" bookwalker.jp](https://bookwalker.jp/series/404019/list?srsltid=AfmBOooQ72ZssxLnm9f5ZEwgLiKHZnTyx7qW6r9nY86tCf0PUAkgjxay)\n> [🔗 \"我精心收藏的垃圾模组 - 骰声回响\" www.dicecho.com](https://www.dicecho.com/collection/67b1bf2e3a48f88dd30663cf)\n> [🔗 \"「凡人探索者のたのしい現代ダンジョンライフ」と似たコンセプトのおすすめ小説は？ - GoodNovel\" www.goodnovel.com](https://www.goodnovel.com/qa/ja/%E3%80%8C%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95%E3%80%8D%E3%81%A8%E4%BC%BC%E3%81%9F%E3%82%B3%E3%83%B3%E3%82%BB%E3%83%97%E3%83%88%E3%81%AE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E5%B0%8F%E8%AA%AC%E3%81%AF)\n> [🔗 \"『凡人探索者のたのしい現代ダンジョンライフ』耳の力で運命を切り開く最弱冒険譚 - note\" note.com](https://note.com/book_book_book/n/ne45058500f71)\n> [🔗 \"凡人ソロ探索者は現代ダンジョンに酔いながら恐ろしい怪物に立ち向かうようです。[旧題 彼らは現代ダンジョンで命をかけるようです]\" ncode.syosetu.com](https://ncode.syosetu.com/n5139ew)\n> [🔗 \"フォローしているユーザー（@14s5dwt2） - カクヨム\" kakuyomu.jp](https://kakuyomu.jp/users/14s5dwt2/following_users)\n\n> 🔍 **5 results found**\n\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻刊行予定、作業中、完全書下ろし】 - 64話 ”Via Dolorosa”\" ncode.syosetu.com](https://ncode.syosetu.com/n1560fy/289)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ4 - 気ままに読書漬け\" dokusyozanmai.blog.jp](https://dokusyozanmai.blog.jp/archives/88965938.html)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ｜株式会社オーバーラップ\" over-lap.co.jp](https://over-lap.co.jp/narou/824004376)\n> [🔗 \"独占インタビュー「ラノベの素」 しば犬部隊先生『凡人探索者のたのしい現代ダンジョンライフ』\" ln-news.com](https://ln-news.com/articles/120353)\n> [🔗 \"用語 - 凡人ソロ探索者 Wiki* - WIKIWIKI.jp\" wikiwiki.jp](https://wikiwiki.jp/babel/%E7%94%A8%E8%AA%9E)\n\n> 🔍 **4 results found**\n\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ - もちろんさん/しば犬部隊/諏訪真弘 / 第1話「味山只人という男」 | コミックガルド\" comic-gardo.com](https://comic-gardo.com/episode/2550912964918726482)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ - もちろんさん/しば犬部隊/諏訪真弘 / 第2話「奇妙な夢と世界の話」(1) | コミックガルド\" comic-gardo.com](https://comic-gardo.com/episode/2550912964936349565)\n> [🔗 \"連載一覧 - コミックガルド\" comic-gardo.com](https://comic-gardo.com/series)\n> [🔗 \"コミックガルド\" comic-gardo.com](https://comic-gardo.com/)\n\n\n这是一个来自轻小说《凡人探索者のたのしい現代ダンジョンライフ》（凡人探索者的愉快现代迷宫生活）的片段，涉及神话体系（奥林匹斯、贝尔泽布ブ等）、神秘种（神秘种族/神秘种）、地上侵攻（地面/地上入侵）、以及主角（人类/“猴子”/凡人探索者）与神秘种的战斗、权能“時の審判”（时间审判）等内容。叙述风格典型轻小说：第一人称视角切换、激烈战斗描写、粗口脏话、心理独白、夸张拟声词、结尾有作者后记与宣传。\n\n现在对A和B两个翻译版本进行详细比较。两者都是简体中文，轻小说常见的网络翻译风格。\n\n**整体观察**：\n- A更倾向于直译+口语化，保留原文粗鲁、狂乱、重复的语气，脏话强烈（如“操操操”“你丫”），叙述更贴近原文的狂气与戏剧性。\n- B更倾向于稍润色、柔和一些表达，部分地方更“文雅”或简洁，但有时丢失原文的粗野冲击力或微妙语气。\n- 术语：A统一用“神秘种”“地上入侵”“贝尔泽布”“宙斯”“奥林匹斯”等，更接近常见日轻中译习惯；B用“神秘种族”“地面入侵”“别西卜”“狂神宙斯”等，部分不一致或偏旧译。\n\n逐项评分（1-10分）：\n\n1. **准确性（意思保留）**  \n   A：基本忠实，少有明显误译，捕捉了原文的细微情感与重复强调（如“殺し、殺し”）。  \n   B：个别地方改动较大，如段落26“食肉扱いの家畜に、神秘が従えられる”→“食肉家畜居然还能顺从神秘”意思反了（原文是家畜使役神秘，B翻成神秘顺从家畜）。段落34“やっぱ化け物はそうじゃないとなァ”→“果然怪物才不会这样啊”与原文“怪物就该这样”相反。  \n   → A 9 | B 7\n\n2. **流畅性（中文自然表达）**  \n   A：口语很强，战斗部分节奏感好，但部分句子稍生硬（如“可憎的巴力势力”）。  \n   B：整体更顺滑、文雅，但有时过于平淡，丢失原文的冲击。  \n   → A 8 | B 9\n\n3. **风格/语气（轻小说叙述/对话）**  \n   A：很好保留了轻小说的“中二”“狂气”“脏话连篇”“夸张拟声”，对话粗野贴合角色（尤其是被压制的反派视角）。  \n   B：语气稍收敛，脏话弱化（如“别、别、别啦”代替“别舔我”），部分地方显得不够“疯”。  \n   → A 9 | B 7\n\n4. **术语/名称一致性**  \n   A：较统一（神秘种、地上入侵、贝尔泽布、奥林匹斯、宙斯、亚斯塔罗斯）。  \n   B：不一致较多（神秘种族/神秘、地面入侵、别西卜/贝尔泽布、狂神宙斯、阿斯塔罗特），易造成阅读混淆。  \n   → A 9 | B 6\n\n5. **连贯性/可读性**  \n   A：整体连贯，战斗张力强，心理描写流畅。  \n   B：部分改写导致逻辑小跳跃（如误译处），但句子更短促易读。  \n   → A 9 | B 8\n\n6. **格式/标点符号**  \n   A：标点使用贴近原文（大量感叹号、破折号、省略号），拟声词处理自然。  \n   B：类似，但部分对话标点不一致（如段16 B用了「」而非『』）。  \n   → A 9 | B 8\n\n**关键差异**：\n- 语气强度：A更狂野、粗俗，符合原文反派崩溃时的绝望与愤怒；B更克制。\n- 关键误译：B在段落26、34等处意思偏差较大。\n- 术语统一：A胜出。\n- 自然度：B在某些叙述句更流畅，但牺牲了风格。\n\n**最终判决**：A整体更优秀，尤其在轻小说核心的“语气冲击力”“准确性”“风格还原”上占优。B虽在部分流畅性占优，但关键错误与语气弱化导致整体逊色。没有到“极其接近”的程度。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A忠实原文，B存在几处明显误译或意思反转（如段落26、34）\"},\n    \"fluency\": {\"A\": 8, \"B\": 9, \"notes\": \"B句子更顺滑文雅，A口语化但偶有生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A很好保留轻小说狂气、脏话、戏剧性；B语气偏柔和，冲击力弱\"},\n    \"terminology\": {\"A\": 9, \"B\": 6, \"notes\": \"A术语一致性高（神秘种、地上入侵、贝尔泽布等）；B多处不统一或旧译\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A战斗与心理连贯性强；B因误译偶有逻辑跳跃\"},\n    \"formatting\": {\"A\": 9, \"B\": 8, \"notes\": \"两者标点类似，A拟声词与原文对应更自然\"}\n  },\n  \"key_differences\": [\n    \"A语气更粗野狂乱，贴合原文反派视角的崩溃感；B柔化脏话与夸张\",\n    \"B有关键意思偏差（如神秘被家畜使役→反过来）\",\n    \"A术语更统一且常见于日轻中译；B名称混用（别西卜/贝尔泽布等）\",\n    \"A在战斗描写与拟声的冲击力更强\"\n  ],\n  \"final_summary\": \"A在准确性、风格还原、术语一致性上明显优于B，更符合轻小说翻译应保留的狂气与冲击力。B虽部分更流畅，但整体逊色。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10922,
+          "completion_tokens": 4397,
+          "total_tokens": 15319
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A忠实原文，B存在几处明显误译或意思反转（如段落26、34）"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B句子更顺滑文雅，A口语化但偶有生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A很好保留轻小说狂气、脏话、戏剧性；B语气偏柔和，冲击力弱"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 6,
+        "notes": "A术语一致性高（神秘种、地上入侵、贝尔泽布等）；B多处不统一或旧译"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A战斗与心理连贯性强；B因误译偶有逻辑跳跃"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者标点类似，A拟声词与原文对应更自然"
+      }
+    },
+    "key_differences": [
+      "A语气更粗野狂乱，贴合原文反派视角的崩溃感；B柔化脏话与夸张",
+      "B有关键意思偏差（如神秘被家畜使役→反过来）",
+      "A术语更统一且常见于日轻中译；B名称混用（别西卜/贝尔泽布等）",
+      "A在战斗描写与拟声的冲击力更强"
+    ],
+    "final_summary": "A在准确性、风格还原、术语一致性上明显优于B，更符合轻小说翻译应保留的狂气与冲击力。B虽部分更流畅，但整体逊色。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

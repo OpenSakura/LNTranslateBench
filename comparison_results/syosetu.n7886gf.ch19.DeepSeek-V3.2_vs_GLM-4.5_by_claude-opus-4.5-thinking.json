@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:20:32.269930",
+  "sample": "syosetu.n7886gf.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n7886gf.ch19.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n7886gf.ch19.GLM-4.5.translated.txt",
+    "B": "translated_results/syosetu.n7886gf.ch19.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b7c5e5862caa77dd51ae9b11b2fafe158a804e9e40647a31c9450a6e682fc8dd",
+    "A": "f46973e8582deba5c7167f748b54fe48b6e5d94b7350489a3e8b0c3c56923d65",
+    "B": "ff38aaf484fdefc617aaa1f0bcbbc56bd956534230f5edec6bec86b7a938d82f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:21:17.792465",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "77332151-f51b-426a-a6be-94ba0b632956",
+      "judge_response": {
+        "id": "77332151-f51b-426a-a6be-94ba0b632956",
+        "object": "chat.completion",
+        "created": 1768432877,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n- **段落1**: B严重错误，保留了日文原文\"翌日の朝\"未翻译，A正确译为\"第二天早上\"\n- **段落2**: A\"恩惠之森\"比B\"惠顾之森\"更准确，\"恵み\"意为恩惠/恩泽\n- **段落13**: B用\"他\"指代女性魔女，性别错误；A正确用\"她\"\n- **段落19/22/28等**: \"わらし\"是幼儿自称\"我\"的口吻，A译为\"我/人家\"更准确，B误译为\"小鬼\"（称呼他人）\n- **段落45**: \"カボチャパンツ\"是南瓜裤（一种灯笼裤样式），A\"南瓜裤\"正确，B\"南瓜图案内裤\"误解\n- **段落61**: \"ちかぁー\"应为\"近い\"（好近），B正确，A误译为感叹词\n\n### 流畅性分析\n- B整体语言更书面化、流畅\n- A在某些地方稍显口语化但也自然\n- B使用日式引号「」，A使用中文引号\"\"，各有所好\n\n### 风格/语气分析\n- A更好地保留了幼儿说话的可爱感（\"须须\"\"好害羞啊\"）\n- B的幼儿语气处理欠佳，\"わらし\"误解影响整体角色塑造\n\n### 术语一致性\n- A名字处理不一致（洛夫/罗尔夫混用，艾米利欧/艾米利奥）\n- B名字处理较一致（罗尔夫、埃米利奥）\n\n### 格式\n- B段落46格式异常\"「……！」\"\n- 两者标点风格不同，各有特色\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有未翻译内容(段1)、性别错误(段13)、わらし误译等关键失误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更书面流畅，但关键错误影响阅读\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更好保留幼儿说话的可爱语气，B误解自称导致角色塑造偏差\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A人名不一致，B人名较统一但恵みの森译法欠妥\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B的わらし误译导致对话逻辑混乱\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式风格不同，各有特点\"}\n  },\n  \"key_differences\": [\n    \"B段落1完全未翻译，保留日文原文\",\n    \"B段落13性别代词错误（他→她）\",\n    \"わらし理解差异：A正确理解为幼儿自称，B误译为称呼他人的'小鬼'\",\n    \"カボチャパンツ：A正确译为南瓜裤样式，B误解为图案\",\n    \"A人名翻译不一致，B较统一\"\n  ],\n  \"final_summary\": \"A虽然存在人名不一致等小问题，但在关键准确性上表现更好。B有严重的未翻译段落、性别错误，以及对幼儿自称'わらし'的系统性误译，这导致角色塑造出现偏差。综合考虑，A的翻译质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11572,
+          "completion_tokens": 1889,
+          "total_tokens": 13461
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有未翻译内容(段1)、性别错误(段13)、わらし误译等关键失误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更书面流畅，但关键错误影响阅读"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更好保留幼儿说话的可爱语气，B误解自称导致角色塑造偏差"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A人名不一致，B人名较统一但恵みの森译法欠妥"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B的わらし误译导致对话逻辑混乱"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式风格不同，各有特点"
+      }
+    },
+    "key_differences": [
+      "B段落1完全未翻译，保留日文原文",
+      "B段落13性别代词错误（他→她）",
+      "わらし理解差异：A正确理解为幼儿自称，B误译为称呼他人的'小鬼'",
+      "カボチャパンツ：A正确译为南瓜裤样式，B误解为图案",
+      "A人名翻译不一致，B较统一"
+    ],
+    "final_summary": "A虽然存在人名不一致等小问题，但在关键准确性上表现更好。B有严重的未翻译段落、性别错误，以及对幼儿自称'わらし'的系统性误译，这导致角色塑造出现偏差。综合考虑，A的翻译质量更高。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

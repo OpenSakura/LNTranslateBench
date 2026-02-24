@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:44.924779",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "b356f6dac170b10ceb3564b1ef18b58f6abaecfc8f108f5b27eabf85cebc8a77",
+    "B": "dd8796cdcb30daa3d40e92ec6133217211a8cbcc7938365dfbf905db9161f015"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:21.869462",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DJLcOtBP31P9wl8kj0z3rGMzKbn",
+      "judge_response": {
+        "id": "chatcmpl-89DJLcOtBP31P9wl8kj0z3rGMzKbn",
+        "object": "chat.completion",
+        "created": 1768427121,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 トリプルフェイス\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 安室透 降谷零 諸伏景光\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"名探偵コナン 警察学校組 トリプルフェイス\"\n> 📊 **Results requested:** 5\n\n> 🔍 **5 results found**\n\n> [🔗 \"トリプルフェイス - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%83%88%E3%83%AA%E3%83%97%E3%83%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9)\n> [🔗 \"『名探偵コナン』安室透／バーボン／降谷零ーートリプルフェイスを持つ男、その底知れぬ魅力 - リアルサウンド\" realsound.jp](https://realsound.jp/book/2020/04/post-536204.html)\n> [🔗 \"劇場版「名探偵コナン」第22作目の情報解禁、“トリプルフェイス”安室透が登場！ - 映画ランド\" eigaland.com](https://eigaland.com/topics?p=60708)\n> [🔗 \"「名探偵コナン 純黒の悪夢」黒ずくめの組織キャラ一覧 キュラソー役やゲスト声優は誰？ コナン×安室×赤井の“神コラボ”も必見 - アニメハック\" anime.eiga.com](https://anime.eiga.com/news/column/animehack_editors/119609)\n> [🔗 \"安室透・バーボン・降谷零 徹底解剖！トリプルフェイスのすべて【名探偵コナン】 - eBookJapan\" ebookjapan.yahoo.co.jp](https://ebookjapan.yahoo.co.jp/content/title-119961/triple.html)\n\n> 🔍 **5 results found**\n\n> [🔗 \"諸伏景光 | 名探偵コナン Wiki | Fandom\" meitantei-conan.fandom.com](https://meitantei-conan.fandom.com/ja/wiki/%E8%AB%B8%E4%BC%8F%E6%99%AF%E5%85%89)\n> [🔗 \"2 【IF注意！】景光と安室さんが爆処組にみつかってしまいました。 | 警察学校組生存IF - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=10140288)\n> [🔗 \"劇場版名探偵コナン「降谷零」\" ameblo.jp](https://ameblo.jp/fuuyuu-xxx-sakurachan/entry-12708294743.html)\n> [🔗 \"降谷 零｜キャラクター｜名探偵コナン - 読売テレビ\" www.ytv.co.jp](https://www.ytv.co.jp/conan/character/furuya)\n> [🔗 \"『名探偵コナン』安室 透／バーボン／降谷 零の情報まとめ｜登場回一覧＆重要エピソードも解説 | アニメイトタイムズ\" www.animatetimes.com](https://www.animatetimes.com/news/details.php?id=1766722419)\n\n> 🔍 **5 results found**\n\n> [🔗 \"トリプルフェイス - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%83%88%E3%83%AA%E3%83%97%E3%83%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9)\n> [🔗 \"『名探偵コナン』警察学校組のメンバー一覧｜登場回や人物像、関係性など解説\" www.animatetimes.com](https://www.animatetimes.com/news/details.php?id=1747820329)\n> [🔗 \"#工藤新一 #降谷零 【トリプルフェイス】夜遅い外出には注意しましょう【補導案件!?】 - sulmeの\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=9746207)\n> [🔗 \"安室透・バーボン・降谷零 徹底解剖！トリプルフェイスのすべて【名探偵コナン】 - eBookJapan\" ebookjapan.yahoo.co.jp](https://ebookjapan.yahoo.co.jp/content/title-119961/triple.html)\n> [🔗 \"「名探偵コナン ハロウィンの花嫁」警察学校組を徹底解説 彼らを知ると映画がもっと面白くなる！\" eiga.com](https://eiga.com/news/20220427/19)\n\n\n这是一个轻小说（或粉丝小说）的作者前言+正文片段，属于《名探偵コナン》同人，焦点在安室透/降谷零（常被称Zero）和诸伏景光（ヒロ/景光，常被称Hiro或諸伏さん）上。故事是IF向（警察学校组救済、原作改编），叙述者（女主）在讲述电影《纯黑の悪夢》的剧情给两人听，并表达对降谷零的喜爱。\n\n现在进行详细比较分析（基于轻小说中文翻译的标准：忠实原意、自然口语化、保持轻松吐槽/日常/粉丝向的语气、术语统一、标点活泼）：\n\n**整体观察**：\n- A翻译更倾向直译，部分地方生硬、缺少轻小说常见的可爱/俏皮感，但准确性较高，术语基本一致（如“降谷さん”统一为“降谷先生”）。\n- B翻译更注重中文自然流畅、口语化，添加了轻小说常见的语气助词（如“哦”“呢”“啊”“耶”），使对话和叙述更活泼、生动，接近中文轻小说/同人常见的风格。但偶尔有小偏差或过度意译。\n\n逐项详细分析：\n\n1. **准确性（意思保留）**：\n   - A整体更忠实原文，几乎无添加/省略，错误少（如段落40“羽場二三一”正确，B误为“滨二三一”可能是笔误或误认汉字）。\n   - B有少量小误或改动：如段3将“オリ主”（原创主角）意译为“作者是懂原作的”（不准，オリ主指原创主角而非作者）；段6“匂わせ程度”→“暗示性的**描写”（加粗可能是强调，但原文是“匂わせ程度”=轻微暗示）；段28“好音”→“非常悦耳的声音”（原文“好音”指声音清脆好听，但语境是敲头的声音，略夸张）；段40名字错误。\n   - A胜出。\n\n2. **流畅性（中文自然表达）**：\n   - B明显更流畅，许多句子读起来像母语中文轻小说：如段11“请立刻关闭本页”（自然）、段14“明明原作都已经完结了啊”（带感叹）、段45“真的耶”“毛骨悚然”（生动）、段81“横冲直撞”（贴切）。\n   - A有些地方awkward：如段3“原创主角具备原作知识”、段4“方便主义的改编”（“ご都合主義”更适合“方便主义/剧情便利主义”，但读起来别扭）、段16“特殊的巡警”（不如“特殊的警察先生”亲切）。\n   - B胜出。\n\n3. **风格/语气（轻小说叙述/对话）**：\n   - 轻小说尤其是这种粉丝向吐槽文，需要可爱、吐槽感、内心戏活泼。\n   - B更好捕捉：大量使用“哦”“呢”“啊”“耶”“……是这种感觉？”等，段27“防止Zero对她出手啊”、段56“欸——？那反而更让人在意了”、段93“哈啊啊啊啊！孩子们好厉害啊！”等很到位，女主的第一人称叙述调侃味浓。\n   - A较平淡、中规中矩，如段27“当然是为了不让Zero对她做不轨的事情啦”（少了俏皮）、段84“对比很强烈”（不如“太惨烈了”有冲击）。\n   - B胜出。\n\n4. **术语/名称一致性**：\n   - 两者都较一致：降谷零→降谷先生/降谷さん，诸伏→诸伏先生/诸伏桑，Zero统一，コナンくん→柯南君。\n   - 但B在段40误“羽場”→“滨”，是明显失误；段21“角煮”统一但B加“哦”更可爱。\n   - A略胜（无明显错名）。\n\n5. **连贯性/可读性**：\n   - B整体读起来更连贯，像一篇完整中文轻小说，节奏感好，笑点突出（如两人反应部分B的描述更夸张生动）。\n   - A可读但稍显生涩，部分长句不顺。\n   - B胜出。\n\n6. **格式/标点符号**：\n   - 两者标点都基本规范，但B更活泼（使用“——”“⁉︎”“…”更多，符合轻小说），如段98/99的惊叹。\n   - A有些地方平淡（如缺少延长音）。\n   - B略胜。\n\n**关键差异总结**：\n- B在流畅性、风格语气、可读性上明显更适合轻小说读者，读来有趣、代入感强。\n- A胜在准确性和少错误，但牺牲了趣味性和自然度。\n- 整体：虽然A更“准”，但轻小说翻译的核心是“读起来有趣、自然，像中文原生作品”，B在这点做得更好，且错误不算致命（名字误写可修正）。\n\n因此整体B更好，信心较高。\n\n现在输出JSON：\n\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A更忠实原文，几乎无偏差；B有少量误译（如オリ主、名字）及轻微添加，但意思大体保留\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文更自然流畅，口语化强；A部分直译生硬\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B很好捕捉轻小说吐槽、可爱、粉丝向语气；A较平实缺少活力\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"A名称一致无误；B有1处名字误写但整体统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B节奏感强、连贯有趣；A可读但稍显平淡\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点更活泼，符合轻小说风格；A规范但保守\"}\n  },\n  \"key_differences\": [\n    \"B在对话和叙述中添加了大量中文语气助词，使整体更生动俏皮，贴合轻小说风格\",\n    \"A更接近直译，准确但缺少趣味性和口语感\",\n    \"B有少量小误（如名字、オリ主解释），但不影响整体理解和乐趣\",\n    \"剧情吐槽和高潮部分（如讲述电影剧情时的反应），B的表达更夸张到位，笑点突出\"\n  ],\n  \"final_summary\": \"虽然A在准确性上稍胜，但轻小说翻译更注重可读性、自然流畅和风格再现。B整体更生动、贴合中文读者口味，更适合作为轻小说/同人作品的翻译，因此判定B胜出。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14516,
+          "completion_tokens": 3789,
+          "total_tokens": 18305
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更忠实原文，几乎无偏差；B有少量误译（如オリ主、名字）及轻微添加，但意思大体保留"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文更自然流畅，口语化强；A部分直译生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B很好捕捉轻小说吐槽、可爱、粉丝向语气；A较平实缺少活力"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A名称一致无误；B有1处名字误写但整体统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B节奏感强、连贯有趣；A可读但稍显平淡"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点更活泼，符合轻小说风格；A规范但保守"
+      }
+    },
+    "key_differences": [
+      "B在对话和叙述中添加了大量中文语气助词，使整体更生动俏皮，贴合轻小说风格",
+      "A更接近直译，准确但缺少趣味性和口语感",
+      "B有少量小误（如名字、オリ主解释），但不影响整体理解和乐趣",
+      "剧情吐槽和高潮部分（如讲述电影剧情时的反应），B的表达更夸张到位，笑点突出"
+    ],
+    "final_summary": "虽然A在准确性上稍胜，但轻小说翻译更注重可读性、自然流畅和风格再现。B整体更生动、贴合中文读者口味，更适合作为轻小说/同人作品的翻译，因此判定B胜出。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:15:40.411881",
+  "sample": "syosetu.n6267ii.ch481",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6267ii.ch481.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6267ii.ch481.Kimi-K2.translated.txt",
+    "B": "translated_results/syosetu.n6267ii.ch481.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f309a52414e2e175d574abffda59bec83b94bff3fbcfc345346bc89227d7cc17",
+    "A": "a78edb05b2563991fc138a09a182df0194db6bf6a178623e66197c977993c621",
+    "B": "83efc5dc2b8809bc3215c3a8b6d3688eb4d87c51685725a07f456d7232ad546f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:16:21.676003",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "996dfc2e-4b6a-45ef-9280-67866f1e87ff",
+      "judge_response": {
+        "id": "996dfc2e-4b6a-45ef-9280-67866f1e87ff",
+        "object": "chat.completion",
+        "created": 1768432581,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落4**: A的\"健康得离谱\"添加了原文没有的夸张意味，B的\"健康的生活作息\"更忠实\n- **段落5**: A的语序\"正高兴着呢，夜里就听见\"略显口语化但稍有偏离，B更完整地传达了复杂句结构\n- **段落56**: B使用\"他\"指代シャリン（女性角色），性别错误；A正确使用\"她\"\n- **段落63**: \"何なら抱いてしまえ\"，A译\"抱了她\"较委婉，B译\"抱上床\"更直白，两者都可接受\n- **段落64**: **A完全缺失此段翻译**，这是严重问题\n\n### 名称一致性分析\n- **A**: シャリン翻译出现\"莎琳\"(段7)、\"夏琳\"(段43、44、57)、\"沙琳\"(段75、86)——严重不一致\n- **B**: シャリン翻译出现\"沙琳\"(段7、43、44)、\"纱琳\"(段11)、\"夏琳\"(段68、69)——也有不一致\n\n### 流畅性与风格\n- A倾向口语化：\"老子解释不清\"、\"撒野\"、\"秀了一波肌肉\"——轻小说风格更强\n- B较为正式完整，但有时略显冗长\n\n### 格式问题\n- 两者都存在引号不一致问题（混用「」和\"\"）\n- 段落54-55、58、61-63、73: B使用\"\"而非「」，不统一\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A完全缺失段落64翻译，B有段落56性别错误(他→她)，但A的遗漏更严重\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化表达更自然流畅，B部分句子略显生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的轻小说对话风格更到位，如'老子解释不清'\"},\n    \"terminology\": {\"A\": 5, \"B\": 6, \"notes\": \"两者角色名都不一致，A有三种写法(莎琳/夏琳/沙琳)，B有三种(沙琳/纱琳/夏琳)\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"A缺失段落影响连贯性，B整体叙述更完整\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"B引号使用不统一(混用「」和'')，A相对更一致\"}\n  },\n  \"key_differences\": [\n    \"A完全遗漏段落64「唔、咳噗！？」的翻译\",\n    \"角色名シャリン两者都不一致，但A变化更大\",\n    \"B在段落56误用'他'指代女性角色\",\n    \"A风格更口语化轻松，B更正式完整\",\n    \"B存在引号格式不统一问题\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A的轻小说风格更佳、语言更活泼，但存在段落64完全缺失翻译的严重错误，且角色名不一致问题更突出。B虽有性别代词错误和格式问题，但内容完整性更好。综合考虑，翻译完整性是基本要求，A缺失整段翻译的问题更为致命，故B略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9940,
+          "completion_tokens": 1697,
+          "total_tokens": 11637
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A完全缺失段落64翻译，B有段落56性别错误(他→她)，但A的遗漏更严重"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化表达更自然流畅，B部分句子略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的轻小说对话风格更到位，如'老子解释不清'"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 6,
+        "notes": "两者角色名都不一致，A有三种写法(莎琳/夏琳/沙琳)，B有三种(沙琳/纱琳/夏琳)"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "A缺失段落影响连贯性，B整体叙述更完整"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "B引号使用不统一(混用「」和'')，A相对更一致"
+      }
+    },
+    "key_differences": [
+      "A完全遗漏段落64「唔、咳噗！？」的翻译",
+      "角色名シャリン两者都不一致，但A变化更大",
+      "B在段落56误用'他'指代女性角色",
+      "A风格更口语化轻松，B更正式完整",
+      "B存在引号格式不统一问题"
+    ],
+    "final_summary": "两译本各有优劣。A的轻小说风格更佳、语言更活泼，但存在段落64完全缺失翻译的严重错误，且角色名不一致问题更突出。B虽有性别代词错误和格式问题，但内容完整性更好。综合考虑，翻译完整性是基本要求，A缺失整段翻译的问题更为致命，故B略胜。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

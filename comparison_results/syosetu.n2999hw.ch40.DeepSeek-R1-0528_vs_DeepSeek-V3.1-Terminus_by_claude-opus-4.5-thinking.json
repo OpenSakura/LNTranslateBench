@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:09:08.401923",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "DeepSeek-V3.1-Terminus"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "d2e7aa2760e5abb6a5a354f34ef751681e8071e72572ecab80c6c595a29b622f",
+    "B": "6df128cffefa3be3e29980ea012203a5b94ce093d5a182c45eed625c8ffa4ff4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:09:48.154617",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9807d9f2-8580-45c2-ad53-416bbd4d9151",
+      "judge_response": {
+        "id": "9807d9f2-8580-45c2-ad53-416bbd4d9151",
+        "object": "chat.completion",
+        "created": 1768432187,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**翻译A**：\n- 大部分准确传达原意\n- 段落9、11、13、15出现未翻译的日文（如プレゲトーン、湖からの目覚め）\n- 人名处理不一致：エン→恩/焰/炎，シロガネ→白银/白金\n\n**翻译B**：\n- 严重问题：多处保留大量未翻译日文\n- 段落47、49、50、52、54、56、57等出现日中混杂\n- 例如：「気付いたら足が前に动いていた」「仕挂けてきたのはそっちだ」\n\n### 2. 流畅性分析\n\n**翻译A**：\n- 整体更流畅自然\n- 段落7「为了安抚那吵得令人心烦的心跳声」表达自然\n- 段落37「仿佛本能正在发出危险信号」流畅\n\n**翻译B**：\n- 使用「俺」作为第一人称，虽有风格考量但在中文里不自然\n- 段落1使用日式顿号「、」而非中文逗号\n- 多处句式生硬：段落91「被认为是普雷格顿的精灵」\n\n### 3. 术语/名称一致性\n\n**翻译A**：\n- 怪物/怪兽混用\n- 人名翻译不统一\n\n**翻译B**：\n- シロガネ翻译混乱：白根/希罗加奈/シロガネ\n- 段落101、104、108等出现多种译法\n\n### 4. 格式问题\n\n**翻译A**：使用中文标点「\"\"」\n**翻译B**：大量使用日文括号「」和顿号「、」，不符合中文规范\n\n### 5. 关键差异\n\n| 段落 | 问题类型 | A | B |\n|------|----------|---|---|\n| 47 | 未翻译 | ✓完整翻译 | ✗日文残留 |\n| 49 | 未翻译 | ✓完整翻译 | ✗日文残留 |\n| 101 | 名称 | 白金 | 希罗加奈 |\n| 全文 | 标点 | 中文标点 | 日文标点 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B有大量未翻译的日文段落，严重影响准确性\"},\n    \"fluency\": {\"A\": 8, \"B\": 5, \"notes\": \"A更符合中文表达习惯，B的日中混杂严重影响阅读\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"A语气把握更好，B使用俺有风格考量但不够自然\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"两者都有名称不一致问题，但B更严重\"},\n    \"coherence\": {\"A\": 7, \"B\": 4, \"notes\": \"B的未翻译内容严重破坏连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 4, \"notes\": \"B使用日文标点，不符合中文规范\"}\n  },\n  \"key_differences\": [\n    \"B有大量未翻译的日文残留（段落47、49、50、52等）\",\n    \"B使用日文标点「」和顿号「、」\",\n    \"B人名翻译极不统一（シロガネ有三种译法）\",\n    \"A整体完成度更高，阅读体验更好\"\n  ],\n  \"final_summary\": \"翻译A在完成度、流畅性和格式规范方面明显优于B。B最大的问题是存在大量未翻译的日文内容，这是翻译的硬伤。虽然A也有个别名称未翻译和人名不统一的问题，但整体可读性远胜于B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13129,
+          "completion_tokens": 1796,
+          "total_tokens": 14925
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有大量未翻译的日文段落，严重影响准确性"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 5,
+        "notes": "A更符合中文表达习惯，B的日中混杂严重影响阅读"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "A语气把握更好，B使用俺有风格考量但不够自然"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "两者都有名称不一致问题，但B更严重"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 4,
+        "notes": "B的未翻译内容严重破坏连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 4,
+        "notes": "B使用日文标点，不符合中文规范"
+      }
+    },
+    "key_differences": [
+      "B有大量未翻译的日文残留（段落47、49、50、52等）",
+      "B使用日文标点「」和顿号「、」",
+      "B人名翻译极不统一（シロガネ有三种译法）",
+      "A整体完成度更高，阅读体验更好"
+    ],
+    "final_summary": "翻译A在完成度、流畅性和格式规范方面明显优于B。B最大的问题是存在大量未翻译的日文内容，这是翻译的硬伤。虽然A也有个别名称未翻译和人名不统一的问题，但整体可读性远胜于B。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

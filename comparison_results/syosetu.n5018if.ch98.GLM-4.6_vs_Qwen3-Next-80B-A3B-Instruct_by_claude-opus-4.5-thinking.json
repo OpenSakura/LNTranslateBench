@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:10:56.299279",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.GLM-4.6.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "82cf091d177277931c449b8967c5f8a022515ff8bc2eac35ebf959854ed7155f",
+    "B": "022191b0cb2265173894c50fd7f3115076e17de991d1671574a7f77965473ee8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:11:58.503449",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "31b6c19b-89f3-431c-9881-b54a36f4674e",
+      "judge_response": {
+        "id": "31b6c19b-89f3-431c-9881-b54a36f4674e",
+        "object": "chat.completion",
+        "created": 1768432318,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段关键差异分析\n\n### 准确性问题\n- **段落13**: 原文アリサ抱怨\"明明都夸䌷很适合了却不夸我\"。A理解为\"䌷夸我\"完全错误；B理解为\"说䌷穿起来很好看\"也有偏差，但稍近原意。\n- **段落23**: B严重错误——\"我和亚莉莎夹着我\"且\"仰躺着\"，原文是\"紬とアリサが\"（䌷和亚莉莎）且\"うつ伏せ\"（趴着）。A正确。\n- **段落30/33**: B使用\"他们\"指代两位女性，性别错误。A正确使用\"你们/她们\"。\n- **段落50**: \"股間に響く声\"指让下身起反应的声音。A\"直冲胯间\"接近原意，B\"胯间发出\"理解错误。\n- **段落81**: 原文\"今度の\"是下次，A\"下次\"正确，B\"这次\"错误。\n\n### 术语选择\n- **段落50/52/74/77**: A用\"润滑液\"不太恰当（有暧昧暗示），B用\"润肤露/乳液\"更自然，但原文是\"ローション\"在防晒语境下应为\"防晒乳\"。\n\n### 流畅性与风格\n- A整体更口语化、轻小说风格（如段落5\"玩意儿\"、段落29\"笑嘻嘻\"）\n- B某些句子更简洁流畅（如段落45、72）\n- A格式更统一使用「」，B混用「」和\"\"\n\n### 格式问题\n- 段落89: B保留日文\"ん\"未翻译\n- B引号使用不一致\n\n---\n\n## 最终评判\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B在段落23有严重翻译错误（主语和动作都错），段落30/33性别代词错误，段落50理解错误，段落81时态错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化更自然，B部分句子简洁但有生硬处\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说叙事风格，语气词和表达更活泼\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"两者对ローション翻译都不够准确，A用润滑液有暧昧暗示，B用润肤露较中性\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B的多处错误影响整体连贯性理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A引号格式统一，B混用且段落89保留日文假名\"}\n  },\n  \"key_differences\": [\n    \"段落23：B将主语和动作都译错（紬和亚莉莎→我和亚莉莎，趴→仰躺）\",\n    \"段落30/33：B性别代词错误使用'他们'\",\n    \"段落50：对'股間に響く声'理解差异大\",\n    \"段落81：时态处理（下次vs这次）\",\n    \"整体风格：A更口语化轻小说风，B较平实\"\n  ],\n  \"final_summary\": \"虽然B在部分句子简洁度上有优势，但存在多处关键翻译错误（段落23主语和动作双重错误、性别代词误用、时态错误等），严重影响准确性和连贯性。A虽然在术语选择上有小瑕疵，但整体准确性更高，轻小说风格把握更好，格式也更统一，因此A获胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11215,
+          "completion_tokens": 2609,
+          "total_tokens": 13824
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B在段落23有严重翻译错误（主语和动作都错），段落30/33性别代词错误，段落50理解错误，段落81时态错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化更自然，B部分句子简洁但有生硬处"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说叙事风格，语气词和表达更活泼"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "两者对ローション翻译都不够准确，A用润滑液有暧昧暗示，B用润肤露较中性"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B的多处错误影响整体连贯性理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A引号格式统一，B混用且段落89保留日文假名"
+      }
+    },
+    "key_differences": [
+      "段落23：B将主语和动作都译错（紬和亚莉莎→我和亚莉莎，趴→仰躺）",
+      "段落30/33：B性别代词错误使用'他们'",
+      "段落50：对'股間に響く声'理解差异大",
+      "段落81：时态处理（下次vs这次）",
+      "整体风格：A更口语化轻小说风，B较平实"
+    ],
+    "final_summary": "虽然B在部分句子简洁度上有优势，但存在多处关键翻译错误（段落23主语和动作双重错误、性别代词误用、时态错误等），严重影响准确性和连贯性。A虽然在术语选择上有小瑕疵，但整体准确性更高，轻小说风格把握更好，格式也更统一，因此A获胜。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

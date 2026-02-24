@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:11:51.053762",
+  "sample": "syosetu.n5313ks.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5313ks.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "DeepSeek-V3-250324"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5313ks.ch14.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/syosetu.n5313ks.ch14.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bf88588a1a5855615ef8d65c9b6c4af37e7a365094b338c25ea4e2c97eb1cf89",
+    "A": "63b4577faacefedc12d8ba2dd13ccc690d427d7472b238d8bc90df2c28267493",
+    "B": "ab8965a079c968eb3ce757994df9308d09b828b9d0b429a7fc6c1c3d42c0f0b5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:12:40.938993",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fc0f0c79-bd49-4b33-a034-7901617aa7cd",
+      "judge_response": {
+        "id": "fc0f0c79-bd49-4b33-a034-7901617aa7cd",
+        "object": "chat.completion",
+        "created": 1768432360,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性分析\n- **段落1**: A译\"熟悉的街景\"比B译\"怀旧的街道\"更准确表达\"懐かしい街並み\"的含义\n- **段落2**: B译\"偶尔会和朋友一起喝茶\"更贴近原文结构，A译稍有压缩\n- **段落3**: 原文是\"我带里昂先生看\"，两者都有轻微偏差，A译成\"让里昂先生带我\"是明显错误\n- **段落45**: A译\"暧昧的微笑\"有歧义（中文\"暧昧\"有暧昧情愫含义），B译\"模糊的微笑\"更准确\n- **段落88**: A译补全了原文截断的意思，处理更圆滑\n\n### 2. 流畅性分析\n- A整体更偏文学化表达：\"猛然回神\"、\"咚，心脏发出令人不快的声响\"、\"若真有半点心虚\"\n- B更直译倾向：\"吓了一跳\"、\"咚的一声，心脏发出了讨厌的声音\"\n- A的\"心怀鬼胎\"比B的\"有罪恶感的事情\"更自然传神\n\n### 3. 风格/语气\n- A更符合轻小说的文学调性，行文更流畅优美\n- B略显生硬，但保持了原文的朴素感\n- 对话语气：A的\"还有这种讲究？\"比B的\"原来是这样啊\"更口语化生动\n\n### 4. 术语/名称一致性\n- A在段落34出现\"加雷特\"与前文\"加雷托\"不一致\n- B始终用\"伽雷托\"/\"加莱托\"，虽有差异但相对统一\n\n### 5. 连贯性/可读性\n- A整体阅读体验更顺畅，句子衔接自然\n- B部分句子较生硬，如段落83\"我能待在那里是好的\"\n\n### 6. 格式/标点符号\n- A使用「」较一致，但偶有混用\"\"\n- B混用「」和\"\"，一致性较差\n\n## 关键差异点\n1. 段落3的方向性翻译错误（A把\"我带他看\"译成\"他带我看\"）\n2. 段落45\"暧昧\"vs\"模糊\"的选词差异\n3. A整体更文学化，B更直译\n4. A地名一致性有问题\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落3有方向性错误，B在段落1'怀旧'不够准确，各有失误\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A的中文表达更自然流畅，成语运用得当；B较生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更符合轻小说的文学调性，对话更生动\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者地名翻译都有轻微不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体阅读体验更顺畅\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A引号使用较一致，B混用严重\"}\n  },\n  \"key_differences\": [\n    \"段落3: A翻译方向错误（原文是'我带里昂看'，A译成'让里昂带我'）\",\n    \"段落45: A'暧昧的微笑'有歧义，B'模糊的微笑'更准确\",\n    \"整体风格: A更文学化流畅，B更直译但生硬\",\n    \"A的成语运用如'心怀鬼胎'比B的'有罪恶感'更传神\"\n  ],\n  \"final_summary\": \"A在流畅性、风格和可读性上明显优于B，中文表达更自然优美，符合轻小说叙事风格。但A在段落3有明显方向性翻译错误，段落45选词有歧义。B虽然更忠实于原文结构，但行文较生硬，格式不统一。综合考量，A的整体阅读体验更佳，但需注意其准确性问题。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14078,
+          "completion_tokens": 2238,
+          "total_tokens": 16316
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落3有方向性错误，B在段落1'怀旧'不够准确，各有失误"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的中文表达更自然流畅，成语运用得当；B较生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更符合轻小说的文学调性，对话更生动"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者地名翻译都有轻微不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体阅读体验更顺畅"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A引号使用较一致，B混用严重"
+      }
+    },
+    "key_differences": [
+      "段落3: A翻译方向错误（原文是'我带里昂看'，A译成'让里昂带我'）",
+      "段落45: A'暧昧的微笑'有歧义，B'模糊的微笑'更准确",
+      "整体风格: A更文学化流畅，B更直译但生硬",
+      "A的成语运用如'心怀鬼胎'比B的'有罪恶感'更传神"
+    ],
+    "final_summary": "A在流畅性、风格和可读性上明显优于B，中文表达更自然优美，符合轻小说叙事风格。但A在段落3有明显方向性翻译错误，段落45选词有歧义。B虽然更忠实于原文结构，但行文较生硬，格式不统一。综合考量，A的整体阅读体验更佳，但需注意其准确性问题。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

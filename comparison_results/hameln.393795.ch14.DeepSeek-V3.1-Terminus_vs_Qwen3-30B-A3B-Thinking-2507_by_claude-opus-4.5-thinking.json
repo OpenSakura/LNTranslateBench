@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:16:25.047982",
+  "sample": "hameln.393795.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393795.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393795.ch14.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.393795.ch14.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8722ee60ffd6fead9774c1248156569d26f1aa62172f97c702853489ee9b9fc2",
+    "A": "874679ec100f0cf05986da65b2ce3b46d12dd09af428a83481295a8300435b87",
+    "B": "a67c7157587e49be49a4847de1f0129d9529159710ff21939f167651203e089c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:17:22.454473",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "bb067e33-c2a7-4faf-8e33-0dab3e26b30b",
+      "judge_response": {
+        "id": "bb067e33-c2a7-4faf-8e33-0dab3e26b30b",
+        "object": "chat.completion",
+        "created": 1768421842,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段对比分析\n\n### 准确性问题\n\n**段落5**: A\"同一水平上\" vs B\"同一擂台\"。原文「土俵」是相扑擂台，B更贴合原意。\n\n**段落11**: A\"前世用的怀表应该没什么差别\"漏译了\"愛用\"的情感色彩；B\"我前世爱用的怀表\"更完整。\n\n**段落15**: A\"我让制作了摆钟\"存在明显语法错误，缺少宾语\"人\"；B\"我也让人制作了摆钟\"正确。\n\n**段落21**: A\"光是支撑结构就得占一辆马车\"理解有误，原文是\"时钟本体加上支撑结构占满一辆马车\"；B理解正确但表述略awkward。\n\n**段落42**: A\"脱进\" vs B\"擒纵机构\"。「脱進」是专业钟表术语，B译法更专业准确。\n\n**段落45**: B开头多出\"ヨアヒム\"是错误添加。\n\n**段落78**: **B完全遗漏此段！这是严重的完整性问题。**\n\n**段落80**: A\"气得直冒泡\"误译，「泡を吹いた」意为\"口吐白沫/晕厥\"；B\"当场口吐白沫\"正确。\n\n### 流畅性与风格\n\n- A整体更口语化，符合轻小说对话感\n- B更书面化，部分地方略显生硬\n- 段落13: A\"分秒必争地协同作战\"有些偏离原意，原文强调\"分钟级别精度\"；B\"分秒级别的协同作战\"更准确\n- 段落79: A\"接住他们，然后打\"过于口语；B\"迎头阻击，予以痛击\"更有气势\n\n### 术语一致性\n\n- 时计/时钟：两者都保持一致\n- 段落25: A\"钟表部门\" vs B\"钟表管理员\"，原文「時計係」指管理人员，B更准确\n\n---\n\n## 最终评判\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A有段落21、80误译；B有段落45错误添加，段落78完全遗漏\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语自然，B部分表达略生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说叙事风格，B偏书面化\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B的专业术语如擒纵机构更准确\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B遗漏段落78严重影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式基本规范\"}\n  },\n  \"key_differences\": [\n    \"B遗漏段落78是致命缺陷，影响战役叙述完整性\",\n    \"A段落80将'口吐白沫'误译为'气得直冒泡'\",\n    \"A段落15存在语法错误'我让制作了'\",\n    \"B专业术语如'擒纵机构'更准确\",\n    \"A整体风格更贴合轻小说口语化特点\"\n  ],\n  \"final_summary\": \"B遗漏整段78是翻译中最严重的错误，直接导致战役描述不完整。虽然A存在段落80误译、段落15语法错误等问题，但至少保证了完整性。综合考虑完整性优先原则，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11732,
+          "completion_tokens": 2412,
+          "total_tokens": 14144
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有段落21、80误译；B有段落45错误添加，段落78完全遗漏"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语自然，B部分表达略生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说叙事风格，B偏书面化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的专业术语如擒纵机构更准确"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B遗漏段落78严重影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式基本规范"
+      }
+    },
+    "key_differences": [
+      "B遗漏段落78是致命缺陷，影响战役叙述完整性",
+      "A段落80将'口吐白沫'误译为'气得直冒泡'",
+      "A段落15存在语法错误'我让制作了'",
+      "B专业术语如'擒纵机构'更准确",
+      "A整体风格更贴合轻小说口语化特点"
+    ],
+    "final_summary": "B遗漏整段78是翻译中最严重的错误，直接导致战役描述不完整。虽然A存在段落80误译、段落15语法错误等问题，但至少保证了完整性。综合考虑完整性优先原则，A略胜。"
+  },
+  "outcome": "Qwen3-30B-A3B-Thinking-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Thinking-2507"
+}

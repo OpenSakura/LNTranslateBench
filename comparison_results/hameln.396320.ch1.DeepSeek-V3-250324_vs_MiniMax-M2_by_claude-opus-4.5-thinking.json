@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:20:39.311157",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "df2493889a32f570b741f8d9410b326adecdda6c834eff53cb0fd2d7f7ce4930",
+    "B": "2013523dd4d477cf34e07966b3d5a3708b969c4ff555a3c78149d4307abac36f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:21:36.905107",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1de931a2-f255-4218-b1a1-060c3e290d81",
+      "judge_response": {
+        "id": "1de931a2-f255-4218-b1a1-060c3e290d81",
+        "object": "chat.completion",
+        "created": 1768422096,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落11**: A\"石油以及已被废弃的核能相比\"缺少\"比\"字，句子不通；B\"比石油或早已废止的核能更环保安全\"更准确\n- **段落14**: 原文\"ゴーレム\"，A译为\"巨人\"（错误），B译为\"魔像\"（正确）\n- **段落19**: 原文\"一攫千金\"，A译为\"一掷千金\"（错误，意为挥霍），B译为\"一夜暴富\"（正确）\n- **段落43**: A\"说着只有好朋友才知道的初次见面的女性\"语法混乱；B\"初次见面的女性却亲昵地称呼我，还说起只有挚友才知道的记忆\"准确通顺\n\n### 2. 流畅性\n- **段落12**: A\"都在拼命抢魔石，据说过程中死了不少人\"过于口语化；B\"以国家为主导全力获取魔石。据称在此过程中造成了大量牺牲\"更符合叙述文体\n- **段落33**: B\"全球男性仅3亿750万，而女性高达60亿750万\"比A更有对比感\n\n### 3. 术语一致性\n- A始终使用\"地下城\"\n- B在段落13、14、18等处使用\"迷宫\"，其他地方使用\"地下城\"，存在不一致\n\n### 4. 风格/语气\n- B整体更贴合轻小说的正式叙述风格\n- A部分段落过于口语化（如段落12、13）\n\n### 5. 格式\n- B保留日式引号「」，A使用中文引号\"\"\n- 两者在轻小说翻译中都可接受\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有明显翻译错误：ゴーレム译为巨人、一攫千金译为一掷千金；段落43语法混乱\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更流畅自然，A部分段落过于口语化或有语病\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更贴合轻小说的叙述文体，A部分地方失去正式感\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A的地下城用语一致；B在迷宫/地下城之间切换不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的段落衔接和整体可读性更好\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"两者都可接受，B保留日式引号更符合轻小说风格\"}\n  },\n  \"key_differences\": [\n    \"B准确性更高：正确翻译了ゴーレム(魔像)和一攫千金(一夜暴富)\",\n    \"A术语一致性更好：始终使用地下城；B混用迷宫/地下城\",\n    \"B风格更贴合轻小说正式叙述，A部分段落过于口语化\",\n    \"段落43 A存在明显语法问题，B翻译通顺\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性和风格把握上整体优于A，尤其在关键词汇翻译（ゴーレム、一攫千金）和复杂句式处理上更为准确。A的主要优势在于术语一致性（始终使用地下城）。综合考虑，B的翻译质量更高，但需注意统一迷宫/地下城的术语使用。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12152,
+          "completion_tokens": 2575,
+          "total_tokens": 14727
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有明显翻译错误：ゴーレム译为巨人、一攫千金译为一掷千金；段落43语法混乱"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更流畅自然，A部分段落过于口语化或有语病"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更贴合轻小说的叙述文体，A部分地方失去正式感"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A的地下城用语一致；B在迷宫/地下城之间切换不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的段落衔接和整体可读性更好"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者都可接受，B保留日式引号更符合轻小说风格"
+      }
+    },
+    "key_differences": [
+      "B准确性更高：正确翻译了ゴーレム(魔像)和一攫千金(一夜暴富)",
+      "A术语一致性更好：始终使用地下城；B混用迷宫/地下城",
+      "B风格更贴合轻小说正式叙述，A部分段落过于口语化",
+      "段落43 A存在明显语法问题，B翻译通顺"
+    ],
+    "final_summary": "B在准确性、流畅性和风格把握上整体优于A，尤其在关键词汇翻译（ゴーレム、一攫千金）和复杂句式处理上更为准确。A的主要优势在于术语一致性（始终使用地下城）。综合考虑，B的翻译质量更高，但需注意统一迷宫/地下城的术语使用。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

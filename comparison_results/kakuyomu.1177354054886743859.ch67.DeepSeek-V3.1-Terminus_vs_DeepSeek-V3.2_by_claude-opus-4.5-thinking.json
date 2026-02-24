@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:23:45.824655",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "6247d55b2616d659c35934cd1485662763dc62e65ac7d4aeaacd59351d98e4d2",
+    "B": "36cd9d8ee8b6b0e57ca4d6d64225cc8e3ed5469554155e8453b147b1eddbc3c8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:24:37.245454",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7da7f9b0-98fd-4095-991d-36373e1c8d39",
+      "judge_response": {
+        "id": "7da7f9b0-98fd-4095-991d-36373e1c8d39",
+        "object": "chat.completion",
+        "created": 1768422276,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n- **段落6**: A直译「常步」保留马术术语，B译为\"缓步前进\"虽易懂但增添了原文没有的内容\n- **段落13**: A将トリエン误译为\"特利安\"，与前后文不一致；B保持\"特利恩\"\n- **段落19**: A用\"魔像马\"与全文一致，B突然改用\"傀儡马\"造成术语混乱\n- **段落70**: A\"脸色铁青\"稍有偏差，B\"脸色苍白\"更准确（原文是\"青くなる\"表示吓白）\n\n### 2. 流畅性分析\n- **段落3**: A\"去的时候可是花了三天呢\"更口语自然，B\"的说\"语气词略显刻意\n- **段落44**: A\"真是的……你这领主可真会给人添麻烦啊\"更符合轻小说吐槽风格\n- **段落55**: A\"大富豪级别的挥霍\"表达流畅，B\"至今为止\"开头略显拗口\n\n### 3. 术语/名称一致性\n这是两个版本最大的问题：\n- **A**: トリエン译为\"托利恩\"→\"特利安\"(段13)→\"特里恩\"(段16/25/56/68/69)，严重不统一\n- **B**: トリエン译为\"特连\"→\"特利恩\"→\"托里安\"(段56)，同样不统一\n- **役場**: A混用\"政务所/市政厅/公所\"，B混用\"政务厅/市政厅/公所/村公所\"\n\n### 4. 格式问题\n- **段落24-26, 30, 33-34, 36-42**: A保持「」对话格式，B改用\"\"，格式不一致\n- 轻小说通常应统一使用「」，A在这方面更规范\n\n### 5. 风格/语气\n- A的对话语气更自然活泼，符合轻小说风格\n- B部分对话略显书面化或生硬\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"两者各有小误，A段13地名错误，B段19术语突变；B段70更准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话更口语自然，B部分表达略生硬如'的说'\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A轻小说对话风格更到位，B偶有书面化倾向\"},\n    \"terminology\": {\"A\": 5, \"B\": 5, \"notes\": \"两者地名均严重不统一，A的役場翻译混用问题也存在\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体可读性相近\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A全文保持「」格式，B多处对话改用\\\"\\\"不统一\"}\n  },\n  \"key_differences\": [\n    \"对话引号格式：A统一用「」，B部分用\\\"\\\"\",\n    \"地名一致性：两者均有问题但表现形式不同\",\n    \"语气词处理：A更自然，B有时过于刻意（如'的说'）\",\n    \"段19术语：A保持'魔像马'，B突改'傀儡马'\"\n  ],\n  \"final_summary\": \"两个译本在术语一致性方面都存在明显问题。A版本在格式规范性（对话引号统一）和对话语气自然度方面表现更好，更符合轻小说的阅读体验；B版本在个别翻译细节上更准确但格式不统一且部分语气生硬。综合考虑轻小说的阅读场景，A版本略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11208,
+          "completion_tokens": 2188,
+          "total_tokens": 13396
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者各有小误，A段13地名错误，B段19术语突变；B段70更准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话更口语自然，B部分表达略生硬如'的说'"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A轻小说对话风格更到位，B偶有书面化倾向"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 5,
+        "notes": "两者地名均严重不统一，A的役場翻译混用问题也存在"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体可读性相近"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A全文保持「」格式，B多处对话改用\"\"不统一"
+      }
+    },
+    "key_differences": [
+      "对话引号格式：A统一用「」，B部分用\"\"",
+      "地名一致性：两者均有问题但表现形式不同",
+      "语气词处理：A更自然，B有时过于刻意（如'的说'）",
+      "段19术语：A保持'魔像马'，B突改'傀儡马'"
+    ],
+    "final_summary": "两个译本在术语一致性方面都存在明显问题。A版本在格式规范性（对话引号统一）和对话语气自然度方面表现更好，更符合轻小说的阅读体验；B版本在个别翻译细节上更准确但格式不统一且部分语气生硬。综合考虑轻小说的阅读场景，A版本略胜一筹。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

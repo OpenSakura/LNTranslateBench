@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:09:33.351304",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "8977ffaafbac2900e0cd5dea92b1d34080aefde0a9d5a9ceba03d144c77b8bee",
+    "B": "7aeb76241a1905850344bc493ee74f7e07686fa87d9fda6f1c829c690303bf75"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:10:28.354581",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "3e91f4bc-d00f-4d98-aa3a-ef511e6e7625",
+      "judge_response": {
+        "id": "3e91f4bc-d00f-4d98-aa3a-ef511e6e7625",
+        "object": "chat.completion",
+        "created": 1768421427,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**段落3**: B的\"死死盯着那两个沉默的\"语法残缺，缺少宾语；A的\"沉默地凝视着那两人\"更准确地表达\"もの言わぬ二人\"。\n\n**段落7**: B的\"姑且试试，被带到了复活室\"主语混乱，丢失了\"神父把我带到\"的因果关系；A表述清晰。\n\n**段落41**: 这是关键错误——原文\"うまく受け入れたんですよ\"是奥古斯特对格蕾西雅说的话，主语应是\"你\"。A翻译为\"你终于好好地接受他们了\"正确；B翻译为\"我接受得挺好\"完全错误。\n\n**段落68**: A的\"以格蕾西雅那孱弱的力气\"准确传达了\"非力なグレシア\"；B的\"格蕾西雅力气不够\"稍显直白但也可接受。\n\n### 流畅性分析\n\nB整体更口语化、简洁，符合轻小说风格，但有时过度删减导致信息丢失。A较为正式但读起来也很流畅。\n\n### 格式问题\n\n**B的重大问题**: 多处对话省略引号（段落11、13、15、18、27、29、31、32、73、74、76、79等），这在轻小说翻译中是严重的格式错误，会造成读者混淆叙述与对话。\n\n**A的问题**: 段落73、74、76、79使用了英文双引号而非中文引号「」或\"\"，但至少保持了对话的标记。\n\n### 风格与术语\n\n两者人名翻译基本一致（裘达神父、格蕾西雅等）。A在情感表达上更细腻（如\"恶劣至极的笑容\"vs\"一脸坏笑\"），B更贴近日常口语。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落41出现主语错误（我vs你），段落3语法残缺，段落7主语混乱\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"B更口语化但过度删减；A较正式但流畅自然\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"两者风格各有特色，A更文学化，B更轻松但有时过于随意\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"人名地名翻译基本一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处省略信息导致连贯性下降\"},\n    \"formatting\": {\"A\": 7, \"B\": 4, \"notes\": \"A部分使用英文引号；B大量对话缺少引号，严重影响阅读体验\"}\n  },\n  \"key_differences\": [\n    \"B在段落41将'你接受了'错译为'我接受了'，意思完全相反\",\n    \"B大量对话省略引号，格式严重不规范\",\n    \"B部分句子过度简化导致语法残缺（如段落3、7）\",\n    \"A整体更完整准确，B更口语化但牺牲了准确性\"\n  ],\n  \"final_summary\": \"翻译A在准确性和格式规范上明显优于B。B虽然口语化风格符合轻小说特点，但存在关键翻译错误（段落41主语错误）、多处语法问题以及大量对话缺少引号的格式问题，严重影响阅读体验和理解准确性。A虽然部分地方使用了英文引号，但整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11037,
+          "completion_tokens": 2334,
+          "total_tokens": 13371
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落41出现主语错误（我vs你），段落3语法残缺，段落7主语混乱"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "B更口语化但过度删减；A较正式但流畅自然"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者风格各有特色，A更文学化，B更轻松但有时过于随意"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "人名地名翻译基本一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处省略信息导致连贯性下降"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 4,
+        "notes": "A部分使用英文引号；B大量对话缺少引号，严重影响阅读体验"
+      }
+    },
+    "key_differences": [
+      "B在段落41将'你接受了'错译为'我接受了'，意思完全相反",
+      "B大量对话省略引号，格式严重不规范",
+      "B部分句子过度简化导致语法残缺（如段落3、7）",
+      "A整体更完整准确，B更口语化但牺牲了准确性"
+    ],
+    "final_summary": "翻译A在准确性和格式规范上明显优于B。B虽然口语化风格符合轻小说特点，但存在关键翻译错误（段落41主语错误）、多处语法问题以及大量对话缺少引号的格式问题，严重影响阅读体验和理解准确性。A虽然部分地方使用了英文引号，但整体质量更高。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

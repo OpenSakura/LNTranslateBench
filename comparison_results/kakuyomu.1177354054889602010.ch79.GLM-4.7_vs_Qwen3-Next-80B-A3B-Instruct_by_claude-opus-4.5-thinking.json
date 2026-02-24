@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:58:46.804545",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.GLM-4.7.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "2b4de2f3d0615181b4cc4c4139b4e88929ed7f5687bd2a0d43002faa306037f0",
+    "B": "87f0c9dfdec55f05b38bb0af3a8fe3aa464826ec4343a2dd9fd1d33b0569d22d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T22:59:30.730325",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "02c09690-5d6f-4780-9a36-a86b17f8f0c8",
+      "judge_response": {
+        "id": "02c09690-5d6f-4780-9a36-a86b17f8f0c8",
+        "object": "chat.completion",
+        "created": 1768431570,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n\n**段落1**: A翻译了名字\"哥布拉尔\"，B保留原文\"ゴブラル\"未翻译，A更佳。\n\n**段落42关键错误**: 原文\"倍の一万の兵力\"意为\"翻倍的一万兵力\"。A正确译为\"一万兵力\"，B错误译为\"两万兵力\"，这是重大数字错误。\n\n**段落59**: \"side第二陣のジェネラル\"中\"side\"是视角标记。A正确保留\"side第二阵的将军\"，B误译为\"侧翼第二阵的将军\"。\n\n**段落5**: \"牝\"一词，A译\"女人\"较中性，B译\"母的\"更贴合哥布林粗俗视角，B更准确。\n\n### 流畅性分析\n\nB在口语化表达上略胜一筹，如\"吃的和母的\"、\"咱们\"等更贴近哥布林粗犷语气。但A整体也很流畅自然。\n\n### 风格/语气分析\n\n两者都较好地保持了轻小说风格。B的对话更口语化，A更书面化但也得体。\n\n### 格式分析\n\n- A的引号使用较一致（中文书名号「」）\n- B在引号使用上不一致（段落55出现英文拟声词\"GYO GYO...\"，段落87保留日文\"eeeeee\"），格式混乱\n\n### 术语一致性\n\n两者在人名（戈布拉、玛泽尔）上一致。A的\"哥布林\"称呼更统一。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落42有重大数字错误（一万误译为两万），段落59误译side为侧翼\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，更符合哥布林粗犷语气\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好保持轻小说风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A更一致，B段落1未翻译名字\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体可读性稳定，B有些地方断裂感\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B引号不一致，段落55/87出现英文/日文保留，格式混乱\"}\n  },\n  \"key_differences\": [\n    \"段落42兵力数字：A正确(一万)，B错误(两万)\",\n    \"段落59视角标记：A正确保留side，B误译为侧翼\",\n    \"段落1名字：A翻译，B未翻译\",\n    \"拟声词处理：A全部中文化，B部分保留外文\",\n    \"语气：B更口语化粗犷，A更书面化\"\n  ],\n  \"final_summary\": \"虽然B在口语化和语气把握上略胜一筹，但存在关键性准确度错误（兵力数字错误、side误译）和格式不一致问题。A在准确性和格式一致性上表现更稳定可靠，综合来看A更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13145,
+          "completion_tokens": 1823,
+          "total_tokens": 14968
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落42有重大数字错误（一万误译为两万），段落59误译side为侧翼"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，更符合哥布林粗犷语气"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好保持轻小说风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更一致，B段落1未翻译名字"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体可读性稳定，B有些地方断裂感"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B引号不一致，段落55/87出现英文/日文保留，格式混乱"
+      }
+    },
+    "key_differences": [
+      "段落42兵力数字：A正确(一万)，B错误(两万)",
+      "段落59视角标记：A正确保留side，B误译为侧翼",
+      "段落1名字：A翻译，B未翻译",
+      "拟声词处理：A全部中文化，B部分保留外文",
+      "语气：B更口语化粗犷，A更书面化"
+    ],
+    "final_summary": "虽然B在口语化和语气把握上略胜一筹，但存在关键性准确度错误（兵力数字错误、side误译）和格式不一致问题。A在准确性和格式一致性上表现更稳定可靠，综合来看A更胜一筹。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

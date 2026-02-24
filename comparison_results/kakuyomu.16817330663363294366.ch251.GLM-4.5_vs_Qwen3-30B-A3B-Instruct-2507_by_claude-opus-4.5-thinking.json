@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:27:25.880234",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.GLM-4.5.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "78f5a16c03791aa8af24c4e76b2d0d1c1e0f5683bc794dd3d6ac2ff9e24413b2",
+    "B": "987339ed278d02f4addb5b2d5c753a8ac7ade606bac2cadc20c692e9f104b607"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:28:23.299387",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2f910369-1b34-4c0d-a09d-a505aeea207d",
+      "judge_response": {
+        "id": "2f910369-1b34-4c0d-a09d-a505aeea207d",
+        "object": "chat.completion",
+        "created": 1768422503,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项分析\n\n### 1. 准确性\n**翻译A问题：**\n- 段落2、4、11等保留日文\"N：ブル\"、\"アン：Ger\"未翻译\n- 段落68\"不，肯定没错\"理解错误，原意是\"肯定是听错了\"\n\n**翻译B问题：**\n- 段落95完全缺失翻译\n- 段落102\"费斯塔终究还是没那么容易上当\"与原文\"簡単に釣られる（容易上钩）\"意思相反\n- 段落145、148、149将\"D\"错误翻译为\"火\"\n- 段落129将\"フェスタ\"错误翻译为\"庆典\"\n\n### 2. 流畅性\n- B段落5\"声音压得很低，不至于被其他职员听见\"比A更自然\n- B段落13\"一股莫名要出事的气氛弥漫着，怎么都挥之不去\"更地道\n- A段落19\"正在翻阅确认\"比B\"正通过眼睛确认着\"更自然（目を通す≠通过眼睛）\n- A段落32\"不愧是葛琳也提高了嗓门\"较生硬\n\n### 3. 术语/名称一致性\n- A：名称处理混乱，时而保留日文（N：ブル），时而翻译（段落76变成N：布鲁）\n- B：较一致翻译为中文，但段落129出现严重错误（庆典）和D→火的错误\n\n### 4. 风格/语气\n- A段落17\"看来她工作起来很可靠\"，B\"这家伙看起来挺靠谱的\"——B更口语化符合轻小说风格\n- A段落49-51突然改用中文双引号\"\"，格式不一致\n\n### 5. 格式问题\n- A：引号使用不一致（部分段落用「」，部分用\"\"）\n- B：引号格式统一使用「」\n\n## 关键差异\n1. B有**严重翻译错误**：D→火、フェスタ→庆典、段落102语义相反\n2. A**名称未翻译**问题明显，但不影响理解\n3. B**缺失段落95**的翻译\n4. B整体**流畅性略佳**，但错误更致命\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B有多处严重错误：D→火、庆典、段落102语义相反、段落95缺失\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，但部分翻译如'通过眼睛确认'较生硬\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者轻小说风格把握相近，B略口语化\"},\n    \"terminology\": {\"A\": 5, \"B\": 6, \"notes\": \"A大量保留日文名；B虽翻译但出现庆典、火等致命错误\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B因错误翻译影响连贯性，段落95缺失\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A引号使用不一致；B格式统一\"}\n  },\n  \"key_differences\": [\n    \"B将角色名D错误翻译为'火'（段落145/148/149）\",\n    \"B将フェスタ错误翻译为'庆典'（段落129）\",\n    \"B段落102语义与原文相反\",\n    \"B缺失段落95翻译\",\n    \"A保留大量日文名称未翻译\"\n  ],\n  \"final_summary\": \"翻译A虽有名称未翻译的问题，但整体准确性较高；翻译B流畅性更好，但存在多处致命翻译错误（角色名错误、语义相反、内容缺失），这些错误严重影响阅读体验和理解。综合考量，A更可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13419,
+          "completion_tokens": 2623,
+          "total_tokens": 16042
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有多处严重错误：D→火、庆典、段落102语义相反、段落95缺失"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，但部分翻译如'通过眼睛确认'较生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者轻小说风格把握相近，B略口语化"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 6,
+        "notes": "A大量保留日文名；B虽翻译但出现庆典、火等致命错误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B因错误翻译影响连贯性，段落95缺失"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A引号使用不一致；B格式统一"
+      }
+    },
+    "key_differences": [
+      "B将角色名D错误翻译为'火'（段落145/148/149）",
+      "B将フェスタ错误翻译为'庆典'（段落129）",
+      "B段落102语义与原文相反",
+      "B缺失段落95翻译",
+      "A保留大量日文名称未翻译"
+    ],
+    "final_summary": "翻译A虽有名称未翻译的问题，但整体准确性较高；翻译B流畅性更好，但存在多处致命翻译错误（角色名错误、语义相反、内容缺失），这些错误严重影响阅读体验和理解。综合考量，A更可靠。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

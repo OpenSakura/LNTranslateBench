@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:34.174366",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "091a704284c541e0ef1cc2a3e7ea56cea9fc843dffae1e5da36e33bf1eb0d457",
+    "B": "44ca65a6e0c4684b7290d49ae9ee6caaeb2ccc156d206d2868228c5023e7a3cc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:51.980372",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89D4DYTIs9VRsD2xvoDom7giTvMZP",
+      "judge_response": {
+        "id": "chatcmpl-89D4DYTIs9VRsD2xvoDom7giTvMZP",
+        "object": "chat.completion",
+        "created": 1768427091,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"みのぶまんじゅう 身延饅頭\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"身延まんじゅう 正しい表記\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"身延まんじゅう 久遠寺\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"身延饅頭 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"みのぶまんじゅう\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"甘養亭河喜 身延まんじゅう（みのぶまんじゅう）\" Amebaownd](https://kanyoutei.amebaownd.com/)\n> [🔗 \"身延町の郷土料理・銘菓『みのぶまんじゅう』の人気店！【栄昇堂】(山梨県身延町) – 日本全国食べ歩き\" Menma825](https://menma825.com/minobu-eishodo)\n> [🔗 \"栄昇堂 - 南山梨じゃん｜市川三郷町・富士川町・身延町・早川町・南部町の5町の魅力や観光情報を発信します\" Szac-minamiyamanashi](https://szac-minamiyamanashi.com/spot/1015)\n> [🔗 \"【楽天市場】山梨銘菓 みのぶまんじゅう 12個入り 贈答箱 ...\" Rakuten](https://item.rakuten.co.jp/e-yamanashi/skr-0002)\n> [🔗 \"オリジナルみのぶ饅頭 | みのワン オフィシャルサイト\" Minobu](https://www.town.minobu.lg.jp/minowan/merch/manju.html)\n> [🔗 \"みのぶまんじゅう 栄昇堂のクチコミ一覧 - じゃらんnet\" Jalan](https://www.jalan.net/gourmet/grm_alikejpB001058419/kuchikomi)\n> [🔗 \"さくら製菓 powered by BASE\" Base](https://sminobumanju.base.shop/)\n> [🔗 \"山梨百貨店 / 山梨銘菓 みのぶまんじゅう 山梨県身延町 名物和菓子\" Shopvision](https://shopvision.jp/products/detail/1387)\n\n> 🔍 **10 results found**\n\n> [🔗 \"栄昇堂 / TOPページ\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"身延まんじゅう\" Pixiv](https://dic.pixiv.net/a/%E8%BA%AB%E5%BB%B6%E3%81%BE%E3%82%93%E3%81%98%E3%82%85%E3%81%86)\n> [🔗 \"みのぶまんじゅう 栄昇堂のクチコミ一覧 - じゃらんnet\" Jalan](https://www.jalan.net/gourmet/grm_alikejpB001058419/kuchikomi)\n> [🔗 \"山梨百貨店 / 山梨銘菓 みのぶまんじゅう 山梨県身延町 名物和菓子\" Shopvision](https://shopvision.jp/products/detail/1387)\n> [🔗 \"寛永3年(1626年)に創業、『身延饅頭(みのぶまんじゅう)』発祥のお店！【甘養亭河喜】(山梨県身延町) | 日本全国食べ歩き\" Menma825](https://menma825.com/kanyoutei)\n> [🔗 \"栄昇堂 - 南山梨じゃん｜市川三郷町・富士川町・身延町・早川町・南部町の5町の魅力や観光情報を発信します\" Szac-minamiyamanashi](https://szac-minamiyamanashi.com/spot/1015)\n> [🔗 \"身延饅頭 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"身延まんじゅう（みのぶまんじゅう）9個入 | 甘養亭 身延まんじゅう（みのぶまんじゅう） powered by BASE\" Kanyoutei](https://shop.kanyoutei.co.jp/items/3734802)\n> [🔗 \"身延饅頭とは - Weblio辞書\" Weblio](https://www.weblio.jp/content/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"身延まんじゅう（みのぶまんじゅう）12個入 | 甘養亭 身延まんじゅう（みのぶまんじゅう） powered by BASE\" Kanyoutei](https://shop.kanyoutei.co.jp/items/3734807)\n\n> 🔍 **10 results found**\n\n> [🔗 \"久遠寺 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E4%B9%85%E9%81%A0%E5%AF%BA)\n> [🔗 \"甘養亭河喜 身延まんじゅう（みのぶまんじゅう）\" Amebaownd](https://kanyoutei.amebaownd.com/)\n> [🔗 \"初詣に山梨・身延山久遠寺へ！「みのぶまんじゅう」や「生ゆばラーメン」ご当地グルメも堪能 ゆるキャン△コラボ中の身延へGO！｜静岡新聞アットエス\" AT-S](https://www.at-s.com/life/article/ats/1623934.html)\n> [🔗 \"身延饅頭 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"アニメ ゆるキャン△第八話で登場したモデル地／富士の国やまなし観光ネット 山梨県公式観光情報\" Yamanashi Tourism](https://www.yamanashi-kankou.jp/special/sp_yurucamp/story8.html)\n> [🔗 \"栄昇堂 / TOPページ\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"身延山 久遠寺 - 日蓮宗ポータルサイト\" Nichiren](https://temple.nichiren.or.jp/2011001-kuonji)\n> [🔗 \"よくある質問 | 身延山久遠寺オフィシャルウェブサイト\" Kuonji](https://www.kuonji.jp/faqs)\n> [🔗 \"久遠寺 - SHINDEN\" Boo](http://shinden.boo.jp/wiki/%E4%B9%85%E9%81%A0%E5%AF%BA)\n> [🔗 \"日蓮聖人の願いが棲む地、身延山久遠寺への旅！｜笑顔と出会う寺めぐり｜寺院めぐり｜日蓮宗ポータルサイト\" Nichiren](https://www.nichiren.or.jp/report/vol006)\n\n\n以下是对两个翻译版本的详细比较分析。这段文本来自轻小说风格的作品（带有日常对话、内省叙述、角色互动，以及对地方特色如“みのぶまんじゅう”的描写），整体氛围轻松、略带青春感伤与吐槽。\n\n### 整体观察\n- **A**：倾向于更简洁、直译感稍强，但有时句子结构较为生硬，部分地方显得不够自然。术语处理较为保守，但出现明显错误。\n- **B**：更注重中文阅读流畅性和轻小说常见的叙述语气（带点可爱、亲切、吐槽感），句子更活泼，标点使用更贴近现代中文小说习惯。但也存在个别小问题。\n\n### 逐项详细分析\n\n1. **准确性（意思保留）**  \n   - A 在关键专有名词上多次出错，例如“みのぶまんじゅう”统一译为“美浓部馒头”/“美穗馒头”等（完全错误，实际是“みのぶまんじゅう”→“身延饅头”或“みのぶ饅头”），这是重大失误，会误导读者理解地方名物。“精進料理”也错译为“三峰馒头”等。  \n   - B 正确地将“みのぶまんじゅう”处理为“身延馒头”或“苇乃ぶ馒头”（虽“苇乃ぶ”可能是笔误或变体，但整体更接近“みのぶ”，远优于A的错误）。其他内容保留更完整。  \n   → B明显胜出。\n\n2. **流畅性（目标语言自然表达）**  \n   - A 部分句子较僵硬，例如“重新两人并肩走着，才发现……”、“我个子也还算高吧。”等，读起来略显别扭。  \n   - B 更像日常中文小说，例如“重新两人并肩行走后，发现齐藤意外是个娇小的少女。”、“就是啊～早上要是错过车肯定就迟到了呢”，带波浪号、语气词，更自然亲切。  \n   → B更胜。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   - 轻小说常使用轻松、吐槽、内省、带点中二或害羞的语气。  \n   - A 的叙述较为平淡，对话也缺少轻小说常见的“呢”“啊～”等软化语气。  \n   - B 很好地保留了这种感觉，如“就是啊～”、“嗯―”、“噢噢，很懂嘛”、“原来是现学现卖啊”等，角色个性更鲜明，青春感更强。  \n   → B明显更好。\n\n4. **术语/名称一致性**  \n   - 角色名：A有时用“志摩凛”（段落3），但整体不统一；B更一致（如“志摩凛”）。  \n   - 关键术语：A的“マッ缶”→“マッ缶”（未翻译）、“みのぶまんじゅう”严重错误；B正确翻译“马口铁罐”、“身延馒头”。站名、地名也更稳定。  \n   - 专有名词如“精進料理”→B用“斋饭”更贴合佛教语境（A错得离谱）。  \n   → B大幅领先。\n\n5. **连贯性/可读性**  \n   - A 部分地方跳跃感强，句子连接不够顺（如段落3、9的描述）。  \n   - B 段落间过渡更自然，内心独白和对话衔接流畅，整篇读起来更连贯舒服。  \n   → B更好。\n\n6. **格式/标点符号**  \n   - A 标点较保守，缺少轻小说常见的省略号、波浪号、破折号的灵活运用。  \n   - B 使用更丰富的标点（如「」、「～」、「――」），符合中文轻小说排版习惯，视觉上更美观。  \n   → B胜出。\n\n### 关键差异总结\n- A的最大问题是专有名词严重错误（尤其是“みのぶまんじゅう”的翻译），这在涉及真实地名/名物的轻小说中是致命缺陷，会破坏沉浸感。\n- B在语气、流畅度、风格还原上全面更贴合轻小说读者期待，虽然个别地方（如“苇乃ぶ”可能是小笔误）有可改进空间，但整体质量明显更高。\n\n### 最终判决\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 4, \"B\": 9, \"notes\": \"A在关键名物'みのぶまんじゅう'上完全错误，严重失真；B基本准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 9, \"notes\": \"B句子更自然、口语化，读起来舒服得多\"},\n    \"style\": {\"A\": 5, \"B\": 9, \"notes\": \"B很好保留了轻小说特有的轻松吐槽与内心波动语气，A太平淡\"},\n    \"terminology\": {\"A\": 3, \"B\": 8, \"notes\": \"A专有名词错误太多；B处理正确且一致（小笔误不影响大局）\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B段落衔接更顺畅，可读性强\"},\n    \"formatting\": {\"A\": 6, \"B\": 9, \"notes\": \"B标点使用更符合现代中文轻小说习惯\"}\n  },\n  \"key_differences\": [\n    \"A对'みのぶまんじゅう'的翻译完全错误（美浓部/美穗等），B接近正确（身延/みのぶ）\",\n    \"B在对话中大量使用语气助词和波浪号，更好还原轻小说可爱/吐槽风格\",\n    \"A叙述较生硬直译，B更注重中文阅读节奏与情感表达\"\n  ],\n  \"final_summary\": \"综合各项，B在准确性、风格还原、流畅度上全面占优，虽然不是完美无缺，但整体远优于A，适合轻小说读者阅读。A的专有名词错误是不可忽视的硬伤。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11377,
+          "completion_tokens": 4202,
+          "total_tokens": 15579
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 9,
+        "notes": "A在关键名物'みのぶまんじゅう'上完全错误，严重失真；B基本准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B句子更自然、口语化，读起来舒服得多"
+      },
+      "style": {
+        "A": 5,
+        "B": 9,
+        "notes": "B很好保留了轻小说特有的轻松吐槽与内心波动语气，A太平淡"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 8,
+        "notes": "A专有名词错误太多；B处理正确且一致（小笔误不影响大局）"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B段落衔接更顺畅，可读性强"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 9,
+        "notes": "B标点使用更符合现代中文轻小说习惯"
+      }
+    },
+    "key_differences": [
+      "A对'みのぶまんじゅう'的翻译完全错误（美浓部/美穗等），B接近正确（身延/みのぶ）",
+      "B在对话中大量使用语气助词和波浪号，更好还原轻小说可爱/吐槽风格",
+      "A叙述较生硬直译，B更注重中文阅读节奏与情感表达"
+    ],
+    "final_summary": "综合各项，B在准确性、风格还原、流畅度上全面占优，虽然不是完美无缺，但整体远优于A，适合轻小说读者阅读。A的专有名词错误是不可忽视的硬伤。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

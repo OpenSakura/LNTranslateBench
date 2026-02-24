@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:06.921102",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "af4fe12414a71d8d216303a6dd93bcb632850921bee6a397c09be969ffc046d3",
+    "B": "4d0afd5debac056b1aee080131a79b7610b07d52dc78dc59efd67be572be47b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:43.850745",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Dm9x3w2wtrBKULRDbxlO7FMIusI",
+      "judge_response": {
+        "id": "chatcmpl-89Dm9x3w2wtrBKULRDbxlO7FMIusI",
+        "object": "chat.completion",
+        "created": 1768426885,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔧 **Using tool:** code_execution\n> 📝 **Parameters:** code: print(\"No code execution needed for this translati...\n\n\n以下是对A和B两个翻译版本的详细比较分析。整体来看，这是一段典型的轻小说风格文本（哥布林视角的喜剧式反转 + 人类侧的压倒性胜利），需要兼顾搞笑的夸张语气、粗俗感、叙述节奏以及中文的自然流畅度。\n\n### 总体观察\n- **名称音译**：A统一使用「戈布拉尔/戈布拉」，B使用「哥布拉尔/哥布拉」→ B的「哥布」更符合大多数中文读者对“Goblin”的长期习惯认知和接受度，A的「戈布」显得较为生硬。\n- **语气与幽默感**：A在很多地方更直白、粗暴，保留了原文哥布林视角的低俗与狂妄感；B有时会稍显文雅或柔和，部分幽默点被削弱。\n- **流畅性与可读性**：B整体句子更符合现代中文小说阅读习惯，节奏较顺；A偶尔出现生硬或过分直译的表达。\n- **细节处理**：A在某些关键搞笑/震惊桥段的语气更贴近原文的夸张与突然反转；B有时会添加小修饰，显得稍圆滑。\n\n### 逐项评分与分析（满分10分）\n\n**accuracy（准确性）**  \nA: 9  \nB: 8  \nnotes: A整体更忠实于原文的粗鄙感和直白表达（如“牝”“雌性”直接译为“雌性/女人”都保留了低俗意味）；B在多处轻微改写或柔化（如“牝”统一译“女人”而非更原始的“雌性”），损失少量原文信息量与冲击力。\n\n**fluency（流畅性）**  \nA: 7.5  \nB: 9  \nnotes: B的中文表达更自然、通顺，像网文读者熟悉的节奏；A有较多地方显得“翻译腔”较重（如“拖拖拉拉地大流冷汗”“啪嗒啪嗒地流着油汗”中A更奇怪）。\n\n**style（风格/语气）**  \nA: 9  \nB: 7.5  \nnotes: 轻小说尤其是这类哥布林喜剧，需要强烈的反差、夸张、突然崩坏的语气。A更好地保留了这种“嚣张→瞬间社死”的喜剧张力；B在多处语气偏稳，削弱了这种落差感（尤其是戈布拉从狂妄到冷汗的部分）。\n\n**terminology（术语/名称一致性）**  \nA: 7  \nB: 9  \nnotes: B在“哥布拉”“哥布林”“玛泽尔”等主要名称上更统一且符合中文圈主流习惯；A的“戈布”系列显得格格不入，容易出戏。\n\n**coherence（连贯性/可读性）**  \nA: 8  \nB: 8.5  \nnotes: B整体阅读更连贯顺滑；A虽然局部冲击力强，但部分句子衔接略显突兀。\n\n**formatting（格式/标点符号）**  \nA: 8.5  \nB: 8.5  \nnotes: 两者标点使用都比较规范，差异不大。A在惊叹、重复表达上更夸张，略胜一筹。\n\n### 关键差异总结\n- 名称音译：B完胜（哥布拉 vs 戈布拉）\n- 哥布林视角的粗俗、狂妄、喜剧式崩坏感：A明显更强\n- 中文阅读舒适度与网文流畅感：B更占优势\n- 整体搞笑冲击力与原文精神还原度：A更贴近\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更忠实于原文粗鄙与直白冲击力\"},\n    \"fluency\": {\"A\": 7.5, \"B\": 9, \"notes\": \"B中文更自然流畅，阅读阻力小\"},\n    \"style\": {\"A\": 9, \"B\": 7.5, \"notes\": \"A更好地保留了轻小说特有的夸张反差喜剧感\"},\n    \"terminology\": {\"A\": 7, \"B\": 9, \"notes\": \"B的哥布/玛泽尔音译更符合中文读者习惯\"},\n    \"coherence\": {\"A\": 8, \"B\": 8.5, \"notes\": \"B整体衔接更顺，A局部稍突兀\"},\n    \"formatting\": {\"A\": 8.5, \"B\": 8.5, \"notes\": \"两者标点处理均较好，差异微小\"}\n  },\n  \"key_differences\": [\n    \"名称音译：哥布拉（B）远比戈布拉（A）更被中文读者接受\",\n    \"语气还原：A在哥布林嚣张→瞬间崩溃的喜剧张力上明显更强\",\n    \"流畅度与阅读体验：B更像日常网文风格，A略带翻译腔但冲击力足\",\n    \"整体风格取舍：A更偏向原作风味，B更偏向中文读者舒适度\"\n  ],\n  \"final_summary\": \"虽然B在流畅性、名称习惯和整体阅读体验上占优，但考虑到这是一部以夸张反差、粗俗喜剧为核心的轻小说，A在风格语气和原文精神还原度上的优势更关键，因此A整体稍胜一筹（胜率约78%）。如果读者极端厌恶『戈布』这个音译，则可能翻转成B胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13802,
+          "completion_tokens": 1895,
+          "total_tokens": 15697
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更忠实于原文粗鄙与直白冲击力"
+      },
+      "fluency": {
+        "A": 7.5,
+        "B": 9,
+        "notes": "B中文更自然流畅，阅读阻力小"
+      },
+      "style": {
+        "A": 9,
+        "B": 7.5,
+        "notes": "A更好地保留了轻小说特有的夸张反差喜剧感"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的哥布/玛泽尔音译更符合中文读者习惯"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8.5,
+        "notes": "B整体衔接更顺，A局部稍突兀"
+      },
+      "formatting": {
+        "A": 8.5,
+        "B": 8.5,
+        "notes": "两者标点处理均较好，差异微小"
+      }
+    },
+    "key_differences": [
+      "名称音译：哥布拉（B）远比戈布拉（A）更被中文读者接受",
+      "语气还原：A在哥布林嚣张→瞬间崩溃的喜剧张力上明显更强",
+      "流畅度与阅读体验：B更像日常网文风格，A略带翻译腔但冲击力足",
+      "整体风格取舍：A更偏向原作风味，B更偏向中文读者舒适度"
+    ],
+    "final_summary": "虽然B在流畅性、名称习惯和整体阅读体验上占优，但考虑到这是一部以夸张反差、粗俗喜剧为核心的轻小说，A在风格语气和原文精神还原度上的优势更关键，因此A整体稍胜一筹（胜率约78%）。如果读者极端厌恶『戈布』这个音译，则可能翻转成B胜。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

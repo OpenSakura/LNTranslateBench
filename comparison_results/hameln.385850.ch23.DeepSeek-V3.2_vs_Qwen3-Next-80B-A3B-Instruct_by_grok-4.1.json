@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:39:22.886340",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "15de9e57834980d8cbf44a6af4622a219dbc30aa82aa1c04dbe0c314b8b4c4af",
+    "B": "f12952dbfb37bc092ce5ec8684187b4c75dda45429b8677f1df0a1ea0a9688c2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:47.727245",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DUCdwam7GMzf8ns9kcb9R7wD0GF",
+      "judge_response": {
+        "id": "chatcmpl-89DUCdwam7GMzf8ns9kcb9R7wD0GF",
+        "object": "chat.completion",
+        "created": 1768426787,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 翻译 标准 准确性 流畅性 风格\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"日文轻小说 中文翻译 常见问题 自然度\"\n> 📊 **Results requested:** 10\n\n> 📖 **Browsing:** [zh.wikipedia.org](https://zh.wikipedia.org/wiki/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> 📋 **Task:** 总结轻小说中文翻译的特点、常见翻译风格和注意事项，特别是语气、拟声词、网络用语的使用。\n\n> 🔍 **10 results found**\n\n> [🔗 \"轻小说是官方翻译比较好还是网上的翻译比较好？ - 知乎\" Zhihu](https://www.zhihu.com/question/25835050)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/zh-hans/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"如何从零开始翻译一本日语小说？ - 知乎\" Zhihu](https://www.zhihu.com/question/27047645)\n> [🔗 \"轻小说 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E8%BC%95%E5%B0%8F%E8%AA%AA)\n> [🔗 \"翻译公司提供专业小说翻译-行业资讯-上海艾睿翻译有限公司\" Rfanyi](http://www.rfanyi.com/show-166-2813-1.html)\n> [🔗 \"百度知道 - 信息提示\" Baidu Zhidao](https://zhidao.baidu.com/question/466895303.html)\n> [🔗 \"什么是轻小说？轻小说是什么？（上） - 知乎\" Zhihu](https://zhuanlan.zhihu.com/p/31676457)\n> [🔗 \"独家｜中国网文在海外：爆款网文背后的“民间翻译组”们_有戏_澎湃新闻-The Paper\" ThePaper](https://www.thepaper.cn/newsDetail_forward_1579344)\n> [🔗 \"戴瑶琴 陈稳：中国网络小说的日本民间译介--网络文学--中国作家网\" China Writer](https://www.chinawriter.com.cn/n1/2023/1108/c404027-40113604.html)\n\n> 🔍 **10 results found**\n\n> [🔗 \"如何从零开始翻译一本日语小说？ - 知乎\" Zhihu](https://www.zhihu.com/question/27047645)\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"轻小说是官方翻译比较好还是网上的翻译比较好？ - 知乎\" Zhihu](https://www.zhihu.com/question/25835050)\n> [🔗 \"有没有好用的轻小说翻译软件？ - 知乎\" Zhihu](https://www.zhihu.com/question/495645217/answer/3088203689)\n> [🔗 \"日本轻小说汉译特征的相关研究_参考网\" Fx361](https://www.fx361.com/page/2019/0916/5547048.shtml)\n> [🔗 \"轻小说 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-cn/%E8%BC%95%E5%B0%8F%E8%AA%AA)\n> [🔗 \"【为什么日语翻译成中文后，阅读起来有一种奇怪的感觉？】- 上海语通翻译有限公司\" Uniwords](http://cn.uniwords.com.cn/archives/5698)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/zh-hans/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"轻小说日语怎么说_轻小说用日语怎么说_中文翻译日文\" HuiJiang](https://www.hujiang.com/jpciku/ce8bdbbe5b08fe8afb4)\n> [🔗 \"日语小说翻译有哪些技巧？-天使翻译公司\" Trsol](https://www.trsol.com/zixun/4.html)\n\n> 🔍 **1 results found**\n\n> [📚 \"輕小說 - 维基百科，自由的百科全书\" zh.wikipedia.org](https://zh.wikipedia.org/wiki/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n\n\n作为公正的轻小说翻译质量评判员，我将基于提供的日文原文（ja）和两个中文翻译版本（A 和 B），逐段进行详细比较。评价严格遵循指定的6个维度：准确性（忠实原文意思）、流畅性（中文自然表达）、风格/语气（轻小说常见的轻松、口语化、第一人称内心吐槽、幽默自嘲、动漫式对话感）、术语/名称一致性（角色名如シャルミナ的音译统一性）、连贯性/可读性（整体阅读顺畅度）、格式/标点符号（标点使用、换行、分隔符处理）。\n\n### 详细分析\n\n**段落1**（拟声/呻吟）：原文「…っ、うぅ……んっ……」是哭泣/忍耐的拟声。A保留原文日文，B意译为「…っ、呜……嗯……」。B更自然融入中文阅读，但A保持原汁原味（常见于部分轻小说翻译保留日文拟声以保留氛围）。B在流畅性和风格上略胜。\n\n**段落2-4**（“ガチ泣き”相关）：原文强调“不是假哭，而是非常自然真实的哭法”。A用“真哭”“使出浑身解数大哭大叫”“自然到离谱”，生动但略夸张；B用“真的在哭”“哭得淋漓尽致、已然炉火纯青”“自然得不能再自然”，更贴近原文“過剰なものもなく、あまりにも自然体すぎる”的克制自然感。B准确性和风格更优，A稍显口语过度。\n\n**段落5、7-13、14-20**（角色名シャルミナ）：A统一用“夏露米娜”/“莎露米娜”（混用），B统一“夏露米娜”。B术语一致性更好。B的表达更自然（如“大概率是演技”“同为女性的夏露米娜”），A有时更口语化但偶有生硬（如“八成是真演的”）。\n\n**段落14-16**（对话语气）：B的标点和语气更接近轻小说口语（如“不行呢。就算我靠近也会害怕”），A有时稍显直译。\n\n**段落17-19**（内心独白）：A的“戴着面具演戏的时候，什么话都说得出口”生动幽默；B类似但稍正式。两者接近，但A在轻小说自嘲风格上更贴合。\n\n**段落21-33**（经营/薪资吐槽）：B的“月薪284万日元”处理更流畅，A的“！！！”保留原文兴奋感更好。B整体更自然，A更贴近原文网络式吐槽。\n\n**段落34-43**（少女状况/说服）：B用“接受少女已经过去一周了”“连饭也不好好吃”，更简洁自然；A有时稍冗长。\n\n**段落44-46**（自嘲/决心）：A的“恨自己是个没啥特别才能的普通人啊！！”“那根本没关系！！”更口语化、带劲，贴合轻小说第一人称吐槽；B稍温和。\n\n**段落47-56**（料理爱好/笑点）：B的“呵呵，虽然让Boss给部下做饭感觉有点奇怪呢”更自然可爱；A类似但语气稍重。\n\n**段落57-79**（说服/做饭）：B整体更连贯，A在内心独白上更活泼。\n\n**段落80-94**（高潮/结局）：B的“啪嗒啪嗒地掉眼泪”“大量”更贴合“ポロポロと”“大量に”；A的“哗啦啦地掉眼泪”“特别多”生动。B在安慰台词上更优雅自然。\n\n**总体观察**：\n- **准确性**：B更忠实原文细微差别（如“自然体すぎる”→“自然得不能再自然”优于A的“自然到离谱”）。\n- **流畅性**：B中文更自然、少生硬直译痕迹，读起来像母语者写的轻小说。\n- **风格/语气**：轻小说核心是轻松、吐槽、自嘲、口语对话。A更保留原文“ネットスラング”式活泼（如大量“！！”“啊”“诶”），但有时过口语导致不稳；B平衡更好，语气温柔自然，贴合角色互动。\n- **术语一致性**：B优（シャルミナ统一“夏露米娜”）。\n- **连贯性/可读性**：B整体更顺，少跳跃。\n- **格式/标点**：两者接近，但B标点更规范，A有时更夸张表情符号。\n\n**key_differences**总结：\n- A更倾向“直译+口语强化”，保留原文兴奋/吐槽强度，但偶有不自然。\n- B更倾向“意译+自然化”，中文阅读舒适度高，风格贴合主流轻小说汉译（轻松不失原味）。\n\n综合全段，**B整体质量更高**，尤其在自然度、一致性和可读性上优势明显，适合轻小说读者群。\n\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9, \"notes\": \"B更精准捕捉原文细腻自然哭法和意图，A偶有夸张化\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文表达更流畅自然，像原创中文轻小说；A口语化但偶生硬\"},\n    \"style\": {\"A\": 8, \"B\": 9, \"notes\": \"两者都保留轻小说吐槽幽默，但B语气更平衡可爱，A更活泼但稍乱\"},\n    \"terminology\": {\"A\": 7, \"B\": 9, \"notes\": \"B角色名统一，Aシャルミナ音译混用（夏露/莎露）\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B段落衔接更顺畅，整体阅读节奏更好\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者标点类似，A表情符号更丰富但不影响\"}\n  },\n  \"key_differences\": [\n    \"B在中文自然度和角色名一致性上明显优于A\",\n    \"A保留更多原文口语强度和吐槽感，但导致部分地方稍显不稳或夸张\",\n    \"B整体更贴合主流轻小说汉译风格：轻松、自然、易代入\"\n  ],\n  \"final_summary\": \"翻译B整体更胜一筹，在保持原文精神的同时，提供更流畅、自然、可读的中文体验，更符合轻小说‘轻松阅读’的核心追求。A虽有活泼优点，但细节处理稍逊，适合追求更‘原汁原味’的读者。\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12496,
+          "completion_tokens": 3788,
+          "total_tokens": 16284
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "B更精准捕捉原文细腻自然哭法和意图，A偶有夸张化"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文表达更流畅自然，像原创中文轻小说；A口语化但偶生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 9,
+        "notes": "两者都保留轻小说吐槽幽默，但B语气更平衡可爱，A更活泼但稍乱"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 9,
+        "notes": "B角色名统一，Aシャルミナ音译混用（夏露/莎露）"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B段落衔接更顺畅，整体阅读节奏更好"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者标点类似，A表情符号更丰富但不影响"
+      }
+    },
+    "key_differences": [
+      "B在中文自然度和角色名一致性上明显优于A",
+      "A保留更多原文口语强度和吐槽感，但导致部分地方稍显不稳或夸张",
+      "B整体更贴合主流轻小说汉译风格：轻松、自然、易代入"
+    ],
+    "final_summary": "翻译B整体更胜一筹，在保持原文精神的同时，提供更流畅、自然、可读的中文体验，更符合轻小说‘轻松阅读’的核心追求。A虽有活泼优点，但细节处理稍逊，适合追求更‘原汁原味’的读者。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

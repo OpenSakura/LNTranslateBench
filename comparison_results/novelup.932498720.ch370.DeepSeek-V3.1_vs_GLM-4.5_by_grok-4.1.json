@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:43:42.154042",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.GLM-4.5.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "3ed4f333955e4e27142a5ff0c96e5bf5cb3276ca6579f4f4a94992d02018d007",
+    "B": "a7f70f74368a5952ed3abb2afd1a630b861ba4373d505ce7b5edf47c30e92745"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:04.450774",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DzatRpmWLMmBOpzf32XBvAOyDL5",
+      "judge_response": {
+        "id": "chatcmpl-89DzatRpmWLMmBOpzf32XBvAOyDL5",
+        "object": "chat.completion",
+        "created": 1768427039,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n\n**详细分析**\n\n整体而言，这两份翻译都属于较高水准的轻小说中文翻译，对原文的理解基本准确，语气也努力贴近日式轻小说轻松、吐槽、日常+微热血的风格。但在多个细节维度上仍存在明显差异。\n\n### 逐项比较要点\n\n1. **准确性（意思保留）**  \n   A整体更忠实于原文语感与细微语气，尤其在叙述部分几乎没有增删内容。  \n   B在多处有轻微意译过度或改写，例如：\n   - 段落14：コミカルマーケット → B译成“Comical Market”（错误，标准译名应为Comic Market或コミケ）\n   - 段落66：御神楽ゆらぎ → B译“御神乐摇”（ゆらぎ是“揺”而非“摇”）\n   - 段落76：ジャポニカ忍法帖 → B译“大和忍法帖”（完全错误）\n   - 段落4：面構え → B“面相”稍偏（更偏向相貌而非气势/表情）\n   → **A在此项占优**\n\n2. **流畅性（中文自然度）**  \n   A的句子整体更符合现代网络中文阅读习惯，节奏明快、不拖沓。  \n   B有时用词稍显书面或刻意（如“抑或是”“汹涌人潮”“兴致盎然”“堪称绝景”），部分地方读起来略有“翻译腔”或过于文雅，与轻小说追求的“轻快吐槽感”稍有距离。  \n   → **A略胜**\n\n3. **风格/语气（轻小说感）**  \n   A很好地保留了原文那种“表面正经实际很现充/现充吐槽”的反差萌与轻浮感，尤其男生们的内心OS、对话的随意感更到位。  \n   B在部分地方过于收敛或“端着”（如对话中少用叠词、语气助词较少），热血/搞笑/猥琐感被削弱；但在某些叙述段落（18、69、72等）文笔更华丽，有一定文学感。  \n   → **A更贴近典型轻小说读者期待的语气**\n\n4. **术语/名称一致性**  \n   A在专有名词处理上基本稳定且采用更常见的译法（Comic Market、特斯拉达因、ジャポニカ忍法帖等）。  \n   B出现多次明显错误（Comical Market、大和忍法帖、御神乐摇），且“コミマ”“Comima”两种叫法混用，稳定性较差。  \n   → **A大幅领先**\n\n5. **连贯性/可读性**  \n   A整篇阅读下来节奏统一，几乎没有出戏的地方。  \n   B因部分用词偏书面、专有名词错误，以及偶尔出现的生硬改写（如段落9、52、73的心理描写），会让熟悉原作或轻小说套路的读者产生轻微违和感。  \n   → **A更胜**\n\n6. **格式/标点符号**  \n   两者整体标点使用都比较规范，但细节上：  \n   - A更倾向于使用中文常见的「」+语气词组合，更符合当前中文轻小说主流习惯。  \n   - B有时用「」外加中文句号，有时混用，有时语气词较少，整体稍显不统一。  \n   → **A小胜**\n\n### 总结性判断\nA在**准确性、术语一致性、轻小说风格贴合度、可读性**四个最核心的维度全面占优，是更安全、更符合当前中文轻小说读者主流期待的翻译。  \nB并非没有亮点（部分叙述段落的文笔确实更漂亮），但由于出现了多个专有名词硬伤 + 语气偶尔过于端正，导致整体体验被大幅拉低。\n\n因此最终判定：**A完胜**，差距较为明显。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A几乎无删减/误译，B出现多个专有名词错误（Comical Market、大和忍法帖等）\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A更符合网络阅读节奏，B部分用词略显书面/翻译腔\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7.5,\n      \"notes\": \"A更好地保留了轻小说特有的轻浮吐槽与反差萌，B有些地方过于收敛\"\n    },\n    \"terminology\": {\n      \"A\": 9.5,\n      \"B\": 5,\n      \"notes\": \"B专有名词错误明显且严重，A基本采用通用译名且稳定\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 7.5,\n      \"notes\": \"A通篇节奏统一几乎无出戏点，B因错误与语气落差偶有违和\"\n    },\n    \"formatting\": {\n      \"A\": 8.5,\n      \"B\": 8,\n      \"notes\": \"两者均较规范，A语气助词与标点使用更符合中文轻小说习惯\"\n    }\n  },\n  \"key_differences\": [\n    \"专有名词准确性差距巨大（B出现多个硬伤）\",\n    \"语气风格：A更轻快、吐槽感强；B部分过于文雅/端正\",\n    \"阅读流畅度与网络中文习惯贴合度A明显更好\"\n  ],\n  \"final_summary\": \"综合轻小说翻译最重要的准确性、一致性与风格再现度，A在几乎所有关键维度都占优，是明显更优质的版本。B虽有局部文笔亮点，但硬伤与整体语气偏差使其竞争力大幅下降。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12440,
+          "completion_tokens": 2000,
+          "total_tokens": 14440
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A几乎无删减/误译，B出现多个专有名词错误（Comical Market、大和忍法帖等）"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更符合网络阅读节奏，B部分用词略显书面/翻译腔"
+      },
+      "style": {
+        "A": 9,
+        "B": 7.5,
+        "notes": "A更好地保留了轻小说特有的轻浮吐槽与反差萌，B有些地方过于收敛"
+      },
+      "terminology": {
+        "A": 9.5,
+        "B": 5,
+        "notes": "B专有名词错误明显且严重，A基本采用通用译名且稳定"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 7.5,
+        "notes": "A通篇节奏统一几乎无出戏点，B因错误与语气落差偶有违和"
+      },
+      "formatting": {
+        "A": 8.5,
+        "B": 8,
+        "notes": "两者均较规范，A语气助词与标点使用更符合中文轻小说习惯"
+      }
+    },
+    "key_differences": [
+      "专有名词准确性差距巨大（B出现多个硬伤）",
+      "语气风格：A更轻快、吐槽感强；B部分过于文雅/端正",
+      "阅读流畅度与网络中文习惯贴合度A明显更好"
+    ],
+    "final_summary": "综合轻小说翻译最重要的准确性、一致性与风格再现度，A在几乎所有关键维度都占优，是明显更优质的版本。B虽有局部文笔亮点，但硬伤与整体语气偏差使其竞争力大幅下降。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

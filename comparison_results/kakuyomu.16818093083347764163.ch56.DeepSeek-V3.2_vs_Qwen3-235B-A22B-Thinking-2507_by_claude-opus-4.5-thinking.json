@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:28:49.877243",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "e6bed0b52f0a8cebc3079e0968004d7b6a044df0c7c0cd00e4c529528aa299ed",
+    "B": "8eb83967d1281aa57e32200137d373fd8febc65ce156c24d661ab45821953c92"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:29:49.380752",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d7dbff2c-c5bf-4af6-bfc4-d25c116ef5e5",
+      "judge_response": {
+        "id": "d7dbff2c-c5bf-4af6-bfc4-d25c116ef5e5",
+        "object": "chat.completion",
+        "created": 1768422589,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落逐一分析\n\n**段落1-4（开篇对话）**\n- A使用\"咱们可无聊死了\"、\"都现在才说\"更口语化自然\n- B的\"我们，超级无聊\"保留日语句式，显得生硬；\"嘛船旅\"开头突兀\n\n**段落5-6（场景描述）**\n- A的\"溜达\"、\"回笼觉\"等词汇更接地气\n- B末尾出现多余引号`\")`，为格式错误\n- 地名：A\"德鲁布吕克\"vs B\"德尔布吕克\"，B更接近原文音译\n\n**段落7（角色活动）**\n- A：\"用土壤挖出泥土\"理解有误，原文「ソイル」是魔法名称\n- B：\"用土壤抽取取出泥土\"有冗余但理解正确\n- A\"早すぎた巨神兵\"翻译为\"太早的巨神兵\"不够贴切，B\"过早出现的巨神兵\"更准确\n\n**段落8-12（女性群聊）**\n- A使用「」日式引号，B使用\"\"中式引号，B格式更符合目标语言规范\n- A\"闺蜜聊天\"vs B\"女生话题\"，两者皆可\n- \"シュッとした\"A译\"修身\"更准确\n\n**段落13-15（叙事段落）**\n- B\"使いっ走り\"译为\"被差遣跑腿\"比A\"跑腿\"更准确传达被动含义\n- 敬称：A统一用\"大人\"，B混用\"大人/殿下\"，A更一致\n\n**段落16-19（王室对话）**\n- B用汉字数字\"十四岁\"更符合中文书面规范\n- A\"情况更糟\"vs B\"那边更糟糕\"，B更自然\n\n**段落22-26（魔法系统说明）**\n- \"ドヨーン\"A译\"咕咚\"、B译\"噗咚\"均不准确，应译为\"阴沉沉的\"之类\n- B对魔法系统的解释更清晰完整\n\n**段落27-31（船员视角）**\n- A\"呼啦呼啦\"、B\"胡乱揉搓\"都可接受\n- B\"恩重如山\"等表达更文雅\n- A结尾\"迪特里希大人\"应为\"迪特赫尔姆大人\"（ディートヘルム様），两者均有误\n\n### 格式/标点问题\n- A多处使用日式引号「」\n- B段落5末尾有多余引号\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B对魔法系统和被动语态翻译更准确；A段落7理解有误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语化自然；B某些句子保留日语句式略显生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A轻小说氛围更浓；B稍显正式但也适合该类型\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B地名音译更准确；敬称方面A更统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B长段落解释更清晰连贯\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A多处使用日式引号不规范；B有一处多余引号但整体更好\"}\n  },\n  \"key_differences\": [\n    \"A更口语化但有格式问题（日式引号）\",\n    \"B准确性更高，尤其在技术性描述段落\",\n    \"A对部分原文理解有偏差（如段落7的ソイル）\",\n    \"B标点符号使用更符合中文规范\"\n  ],\n  \"final_summary\": \"两者整体水平接近。A在口语化和轻小说风格上略胜，但存在格式问题和个别理解偏差；B在准确性、格式规范和长段落连贯性上更优。综合考虑轻小说翻译需同时兼顾准确性与可读性，B因准确性和格式规范优势略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9665,
+          "completion_tokens": 2486,
+          "total_tokens": 12151
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对魔法系统和被动语态翻译更准确；A段落7理解有误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语化自然；B某些句子保留日语句式略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A轻小说氛围更浓；B稍显正式但也适合该类型"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B地名音译更准确；敬称方面A更统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B长段落解释更清晰连贯"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A多处使用日式引号不规范；B有一处多余引号但整体更好"
+      }
+    },
+    "key_differences": [
+      "A更口语化但有格式问题（日式引号）",
+      "B准确性更高，尤其在技术性描述段落",
+      "A对部分原文理解有偏差（如段落7的ソイル）",
+      "B标点符号使用更符合中文规范"
+    ],
+    "final_summary": "两者整体水平接近。A在口语化和轻小说风格上略胜，但存在格式问题和个别理解偏差；B在准确性、格式规范和长段落连贯性上更优。综合考虑轻小说翻译需同时兼顾准确性与可读性，B因准确性和格式规范优势略胜。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

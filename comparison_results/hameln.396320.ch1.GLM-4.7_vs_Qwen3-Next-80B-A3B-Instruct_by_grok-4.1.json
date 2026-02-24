@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:40:42.840339",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "e9941f2c4d74c8da07af916f006428bace1ad05801ea5272116eeb28e3558a5c",
+    "B": "f5ad05a959c681f9ca1f90676fdfc0b72e1afe000fb3bc65c1c4264ee36d6e44"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:04.426696",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Dut3T2mAruDfqFDjK8n0zZdIGwb",
+      "judge_response": {
+        "id": "chatcmpl-89Dut3T2mAruDfqFDjK8n0zZdIGwb",
+        "object": "chat.completion",
+        "created": 1768426864,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 世界变了 男女比 1:20 魔石 地下城 faceless angel 早乙女夏樹 如月梓\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"早乙女夏樹 世界が変わった 轻小说\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"小说列表-SF轻小说\" SF轻小说](https://book.sfacg.com/List/Default.aspx?PageIndex=57&tid=9.bhaeb.org%2F)\n> [🔗 \"轻小说,CliCli-呲哩呲哩轻小说官网，轻小说导航为您提供服务，精心挑选，安全无毒，找轻小说网址就来CliCli-呲哩呲哩，这里收集全网最全的网站资源。,呲哩呲哩CliCli-收录了数千二次元优质站点，包含免费看番，二次元社区，二次元小说，二次元游戏，手办周边，二次元直播等，并且只收录长期运营且稳定安全的网站，尽情的畅游二次元世界吧！ | CliCli-呲哩呲哩\" Clicli](https://clicli.com.cn/favorites/qingxiaoshuo)\n> [🔗 \"八男？别闹了！（Y.A创作的轻小说作品）_百度百科\" Baidu Baike](https://baike.baidu.com/item/%E5%85%AB%E7%94%B7%EF%BC%9F%E5%88%AB%E9%97%B9%E4%BA%86%EF%BC%81/18364453)\n> [🔗 \"圣剑使的禁咒咏唱（日本淡群赤光创作的轻小说...\" Baidu Baike](https://baike.baidu.com/item/%E5%9C%A3%E5%89%91%E4%BD%BF%E7%9A%84%E7%A6%81%E5%92%92%E5%92%8F%E5%94%B1/2264771)\n> [🔗 \"巴啦啦小魔仙\" Baidu Baike](https://baike.baidu.com/item/%E5%B7%B4%E5%95%A6%E5%95%A6%E5%B0%8F%E9%AD%94%E4%BB%99/18894557)\n> [🔗 \"首頁 BOOK☆WALKER 台灣漫讀 / 電子書平台\" BOOKWALKER](https://www.bookwalker.com.tw/)\n> [🔗 \"这本轻小说真厉害！2025 TOP榜单- 轻小说文库\" Wenku8](https://www.wenku8.net/zt/sugoi/2025.php?charset=gbk)\n> [🔗 \"恋爱禁止的世界轻小说文库 - 起点中文网手机端\" Qidian](https://m.qidian.com/ask/tqbvxgtdylwrh)\n> [🔗 \"关于我转生变成史莱姆这档事 - 维基百科，自由的...\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%97%9C%E6%96%BC%E6%88%91%E8%BD%89%E7%94%9F%E8%AE%8A%E6%88%90%E5%8F%B2%E8%90%8A%E5%A7%86%E9%80%99%E6%AA%94%E4%BA%8B)\n> [🔗 \"这本轻小说真厉害！ - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%80%99%E6%9C%AC%E8%BC%95%E5%B0%8F%E8%AA%AA%E7%9C%9F%E5%8E%B2%E5%AE%B3%EF%BC%81)\n\n> 🔍 **10 results found**\n\n> [🔗 \"这本轻小说真厉害！ - 萌娘百科 万物皆可萌的百...\" Moegirl](https://zh.moegirl.org.cn/%E8%BF%99%E6%9C%AC%E8%BD%BB%E5%B0%8F%E8%AF%B4%E7%9C%9F%E5%8E%89%E5%AE%B3%EF%BC%81)\n> [🔗 \"小说列表-SF轻小说\" SF轻小说](https://book.sfacg.com/List)\n> [🔗 \"魔笔小说 | 轻小说 资源收集\" Mobinovels](https://mobinovels.com/)\n> [🔗 \"全网最强同人文，轻小说当之无愧的霸主！_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1sQ4y117tR)\n> [🔗 \"这本轻小说真厉害！2025 TOP榜单- 轻小说文库\" Wenku8](https://www.wenku8.net/zt/sugoi/2025.php)\n> [🔗 \"女性主角标签-SF轻小说国内最大轻小说原创网站\" SF轻小说](https://book.sfacg.com/stag/401)\n> [🔗 \"大神_游戏热爱者兴趣圈_游戏社区\" DaShen](https://ds.163.com/topic/%E8%BD%BB%E5%B0%8F%E8%AF%B4%E8%B5%84%E8%AE%AF)\n> [🔗 \"r/LearnJapanese on Reddit: Light Novel & Novel Site Recommendations? (Preferably Free)\" Reddit](https://www.reddit.com/r/LearnJapanese/comments/1mvef1z/light_novel_novel_site_recommendations_preferably)\n> [🔗 \"什么是轻小说？轻小说推荐27选! - eeo Media（イーオメディア）\" eeo Media](https://eeo.today/media/2022/02/03/145213)\n> [🔗 \"来自新世界小说在线阅读与TXT电子书下载-贵志佑介-讲谈社-轻小说文库(www.wenku8.com)\" Wenku8](https://www.wenku8.net/novel/1/1827/index.htm)\n\n\n这是一个典型的轻小说开场+世界观解说+转折揭示+日常吐槽的叙述风格，带有异世界奇幻（ダンジョン、魔石、モンスター）与性别反转的搞笑/荒诞元素，叙述者是黑市商人（男性在女性主导世界中的“稀有资源”地位），语气带有自嘲、吐槽、略带中二与无奈的轻小说常见第一人称口吻。\n\n现在对A和B进行逐段详细比较（重点突出差异较大的地方）：\n\n**准确性**：两者整体都忠实于原文意思，没有重大误译或遗漏。A在一些地方更直白（如“烂大街”对应“ありがちな”、 “想想都觉得荒唐”对应“考えも及びませんが”），B有时稍柔和或改写（如段落2的“轮到自己亲口说出的一天呢”更贴近原文的感叹+ね）。少数地方A稍有微调但不失真（如段落50的**被和谐处理相同）。两者准确性都很高。\n\n**流畅性**：A的中文更口语化、接地气（如“烂大街”“这玩意儿”“搞得一头雾水”“老实说，我都快疯了”），读起来像日常聊天，符合现代网络中文习惯。B的表达更书面/文雅（如“这种故事开头常见的词句”“真没想到会有轮到自己亲口说出的一天呢”“坦白说，我脑子快要不正常了”），有时显得稍显生硬或冗长，但整体也通顺。A在可读性上略胜一筹，尤其在吐槽密集的段落。\n\n**风格/语气**：轻小说第一人称叙述常带吐槽、自嘲、轻快的黑色幽默感。A很好地保留了这种“损”“皮”“接地气”的感觉（如“想想都觉得荒唐，可事实就是”“拿命当筹码，追逐梦想”“我真的快疯了”），非常贴合主角那种“看透世界荒诞却不得不活下去”的无奈调侃语气。B更中规中矩、礼貌化（如“虽然无法想象”“据说在那过程中可是牺牲了不少人啊”“真的要疯了”），丢失了一些原文的俏皮与力度，显得稍正经，少了点“轻小说味”。\n\n**术语/名称一致性**：两者都统一使用了“地下城”（ダンジョン）、“魔石”、“冒险者”等，但A在部分地方用了“地牢”“迷宫”（段落22、31等），切换不一致；B始终坚持“地下城”，更统一。名称如“早乙女 夏樹”“如月 梓”两者处理相同。B在此项稍优。\n\n**连贯性/可读性**：A的句子更短促、节奏感强，适合轻小说快速阅读的特性，尤其在内心独白和吐槽段落（如27、37、41、81）。B句子有时较长，连接词多（如“虽然……但……”结构频繁），读起来稍缓。整体A更吸引人继续读下去。\n\n**格式/标点符号**：两者标点使用基本正确。A在对话和内心独白处理更活泼（如大量使用“！”“？”“……”），符合轻小说强调情绪的风格；B也类似，但A的破折号和省略号使用更贴近原文的日式节奏感。\n\n**关键差异总结**：\n- A更口语化、吐槽感强、节奏明快 → 更符合“轻小说”作为娱乐读物的阅读体验\n- B更书面化、礼貌、统一 → 更接近传统小说翻译，但轻小说味稍淡\n- 在性别反转+世界荒诞的吐槽核心上，A的表达更到位（如对“疯了”的处理、“拿命当筹码”等）\n\n综合判断，A在轻小说最重要的“趣味性”“语气贴合”“阅读爽快感”上占优，B虽稳健但稍显平淡。\n\n最终判决：\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者准确性均高，无明显误译\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A更口语自然，B稍显书面化\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A很好保留了原文的吐槽、自嘲与轻快荒诞感，B偏正经，少了轻小说特色\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"B术语更统一（始终地下城），A有少量迷宫/地牢混用\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A节奏更好，句子短促适合轻小说阅读，B稍缓\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点与格式处理均优秀，A情绪符号更活泼\"}\n  },\n  \"key_differences\": [\n    \"语气表现：A更生动接地气的吐槽风，B更中规中矩\",\n    \"阅读节奏：A句子短、冲击力强，B偏长句连接\",\n    \"轻小说适配度：A更贴合类型娱乐性，B更接近一般小说翻译\"\n  ],\n  \"final_summary\": \"整体而言，翻译A在保留原文轻小说特有的自嘲、吐槽、节奏感和趣味性上更胜一筹，更适合这类带有荒诞幽默与世界观解说的第一人称作品；翻译B准确稳健但风格稍显保守，少了些‘轻’的味道。因此A是更优的选择。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13155,
+          "completion_tokens": 3718,
+          "total_tokens": 16873
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者准确性均高，无明显误译"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更口语自然，B稍显书面化"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A很好保留了原文的吐槽、自嘲与轻快荒诞感，B偏正经，少了轻小说特色"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "B术语更统一（始终地下城），A有少量迷宫/地牢混用"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A节奏更好，句子短促适合轻小说阅读，B稍缓"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点与格式处理均优秀，A情绪符号更活泼"
+      }
+    },
+    "key_differences": [
+      "语气表现：A更生动接地气的吐槽风，B更中规中矩",
+      "阅读节奏：A句子短、冲击力强，B偏长句连接",
+      "轻小说适配度：A更贴合类型娱乐性，B更接近一般小说翻译"
+    ],
+    "final_summary": "整体而言，翻译A在保留原文轻小说特有的自嘲、吐槽、节奏感和趣味性上更胜一筹，更适合这类带有荒诞幽默与世界观解说的第一人称作品；翻译B准确稳健但风格稍显保守，少了些‘轻’的味道。因此A是更优的选择。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

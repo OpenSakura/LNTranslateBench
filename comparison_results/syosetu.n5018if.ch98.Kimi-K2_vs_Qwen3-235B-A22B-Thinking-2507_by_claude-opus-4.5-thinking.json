@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:11:23.614587",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.Kimi-K2.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "f4b26e2ca94ba569f2d8113bead3f25972e7e6a1e727153311a389663f1d533b",
+    "B": "129ee2575df7bac308c6d5190c830a05eacead9398c995deeba4ef0a918fb90a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:12:22.479898",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4ba4623d-44a0-4276-925c-75da62b9b7a5",
+      "judge_response": {
+        "id": "4ba4623d-44a0-4276-925c-75da62b9b7a5",
+        "object": "chat.completion",
+        "created": 1768432342,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量对比分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落1**: A\"防晒衣\"正确翻译\"ラッシュガード\"，B\"泳衣\"错误\n- **段落30**: B\"他们\"应为\"她们\"（两位女性）\n- **段落46**: A\"从后面\"正确，B\"即使后来\"误解\"後から\"\n- **段落50**: A\"乳液\"正确，B\"按摩油\"对\"ローション\"翻译不当\n- **段落72**: \"足\"在涂防晒语境下指\"腿\"，A更恰当\n\n### 2. 流畅性\n- A整体更口语化、活泼：\"脑袋被颜值炸得当场宕机\"、\"身材爆好的美女才撑得起\"\n- B多处生硬：\"被更突出地强调了\"（段落4）、\"整个姿态都由美构成\"（段落6）\n\n### 3. 风格/语气\n- A符合轻小说活泼叙事：\"嘀咕\"、\"怯生生地冒出一句\"、\"擦火花\"\n- B较平淡直译：\"嘟囔道\"、\"迸出火花似的\"\n\n### 4. 术语一致性\n- 两者人名一致\n- A\"乳液/防晒\"统一，B\"按摩油/防晒霜\"不一致\n\n### 5. 格式/标点\n- **段落48-49、53-56、62-69**: B多处对话缺少闭合引号\n- B部分段落缺少句末标点\n\n### 6. 关键差异对比\n| 段落 | 原文要点 | A | B |\n|------|----------|---|---|\n| 15 | やばいという気持ち | \"完全生不出'糟了'的感觉\" | \"完全不会有可爱得让人受不了的感觉\" |\n| 100 | こちょこちょ | \"禁止挠痒痒\" | \"咯吱咯吱是禁止的\" |\n| 112 | 上目遣い | \"往上瞟也太犯规\" | \"媚眼也太要命\" |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处误译：防晒衣→泳衣、乳液→按摩油、後から误解\"},\n    \"fluency\": {\"A\": 9, \"B\": 6, \"notes\": \"A口语化自然，B多处生硬直译\"},\n    \"style\": {\"A\": 9, \"B\": 6, \"notes\": \"A符合轻小说轻快调性，B偏书面化\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"两者人名一致，A术语更统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A行文流畅连贯，B部分句子衔接生硬\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处对话引号未闭合，标点缺失\"}\n  },\n  \"key_differences\": [\n    \"ラッシュガード翻译：A正确为防晒衣，B错误为泳衣\",\n    \"ローション翻译：A为乳液，B误译为按摩油\",\n    \"語感处理：A更活泼口语化，B较生硬\",\n    \"格式规范：B多处引号未闭合\"\n  ],\n  \"final_summary\": \"翻译A在准确性、流畅性和轻小说风格把握上明显优于B。A的口语化表达更贴合原作轻快调性，而B存在多处关键词误译和格式问题。A偶有过度意译但整体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10861,
+          "completion_tokens": 2464,
+          "total_tokens": 13325
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处误译：防晒衣→泳衣、乳液→按摩油、後から误解"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A口语化自然，B多处生硬直译"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A符合轻小说轻快调性，B偏书面化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者人名一致，A术语更统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A行文流畅连贯，B部分句子衔接生硬"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处对话引号未闭合，标点缺失"
+      }
+    },
+    "key_differences": [
+      "ラッシュガード翻译：A正确为防晒衣，B错误为泳衣",
+      "ローション翻译：A为乳液，B误译为按摩油",
+      "語感处理：A更活泼口语化，B较生硬",
+      "格式规范：B多处引号未闭合"
+    ],
+    "final_summary": "翻译A在准确性、流畅性和轻小说风格把握上明显优于B。A的口语化表达更贴合原作轻快调性，而B存在多处关键词误译和格式问题。A偶有过度意译但整体质量更高。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

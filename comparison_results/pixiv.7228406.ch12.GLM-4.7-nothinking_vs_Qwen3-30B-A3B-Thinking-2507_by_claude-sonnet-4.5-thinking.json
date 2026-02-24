@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:26:40.486351",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "091a704284c541e0ef1cc2a3e7ea56cea9fc843dffae1e5da36e33bf1eb0d457",
+    "B": "0f2a3e8f1bb01ed0002baf7f4c74e58bb382d6a78911b83729b4ec0f72fe9896"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:27:37.248417",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "8d662300-2b79-4d13-97be-c8371c1a1956",
+      "judge_response": {
+        "id": "8d662300-2b79-4d13-97be-c8371c1a1956",
+        "object": "chat.completion",
+        "created": 1768487257,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 关键差异识别\n\n**最严重的问题 - 术语一致性：**\n\n翻译A在核心术语\"みのぶまんじゅう\"上出现了严重的不一致性：\n- 段落23: \"美浓**部**馒头\"\n- 段落25: \"美浓**部**\"  \n- 段落30: \"**三峰**馒头\"\n- 段落59: \"美浓馒头\"\n- 段落74: \"**美穗**馒头\"\n\n翻译B统一使用\"**身延**馒头\"，这是正确的翻译（身延是地名）。\n\n**其他术语问题：**\n- 段落2：A保留\"マッ缶\"，B译为\"马口铁罐头\"（B过度解释但至少可读）\n- 段落16：A将\"齐藤\"误写为\"斋藤\"（人名不一致）\n- 段落65：B将\"小町\"误写为\"Komachi\"（罗马拼音错误）\n\n### 各维度对比\n\n**准确性：**\n- A在段落3\"相当娇小\"遗漏了\"思いのほか\"（出乎意料）的含义\n- B在段落3更准确：\"出乎意料的娇小\"\n- A的术语混乱导致意义传达严重受损\n\n**流畅性：**\n- B整体更自然，如段落13：\"风驰电掣\" vs A的\"飞快带过\"\n- B的对话更符合中文口语习惯\n- A有些地方过于直译，如段落41的长句处理\n\n**风格/语气：**\n- B更符合轻小说风格，语言轻松活泼\n- A部分对话略显生硬\n- 段落62：B的\"而是在家听YOASOBI哦\"比A更有轻小说感\n\n**连贯性：**\n- A的术语混乱严重破坏阅读连贯性\n- B整体流畅，除了一处Komachi错误\n\n**格式：**\n- 两者基本相同，都保留了原文格式\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 3,\n      \"B\": 8,\n      \"notes\": \"A在核心术语みのぶまんじゅう上出现5种不同翻译（美浓部/三峰/美浓/美穗馒头），严重影响准确性。B除段落65一处Komachi错误外，整体准确。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"B的表达更自然流畅，如'风驰电掣'、对话语气更符合中文习惯。A有些地方过于直译。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"B更好地把握了轻小说的轻松活泼风格，对话更生动。A略显生硬。\"\n    },\n    \"terminology\": {\n      \"A\": 2,\n      \"B\": 8,\n      \"notes\": \"A的致命弱点：同一术语出现5种翻译。B基本一致，仅'身延'正确统一。A还有段落16'斋藤'vs'齐藤'不一致。\"\n    },\n    \"coherence\": {\n      \"A\": 4,\n      \"B\": 8,\n      \"notes\": \"A的术语混乱严重破坏阅读连贯性，读者会困惑。B流畅连贯。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"两者格式处理基本相同，都保留了原文结构和分段。\"\n    }\n  },\n  \"key_differences\": [\n    \"A将みのぶまんじゅう译为5种不同版本（美浓部/三峰/美浓/美穗馒头），B统一正确译为'身延馒头'\",\n    \"A在段落16将'齐藤'误写为'斋藤'，人名不一致\",\n    \"B在段落65将'小町'误写为'Komachi'\",\n    \"B的语言更自然流畅，更符合轻小说风格\",\n    \"A在准确性上有遗漏，如段落3未译出'出乎意料'之意\"\n  ],\n  \"final_summary\": \"翻译B明显优于翻译A。A的致命弱点是核心术语'みのぶまんじゅう'在全文中出现了5种不同翻译，严重破坏了术语一致性和阅读连贯性，这在轻小说翻译中是不可接受的错误。虽然B在段落65出现一处'Komachi'错误，但整体上B在准确性、流畅性、风格把握和术语一致性方面都显著优于A。B的表达更自然，更符合中文轻小说的语言习惯，是更好的翻译选择。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10885,
+          "completion_tokens": 2403,
+          "total_tokens": 13288
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 3,
+        "B": 8,
+        "notes": "A在核心术语みのぶまんじゅう上出现5种不同翻译（美浓部/三峰/美浓/美穗馒头），严重影响准确性。B除段落65一处Komachi错误外，整体准确。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的表达更自然流畅，如'风驰电掣'、对话语气更符合中文习惯。A有些地方过于直译。"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地把握了轻小说的轻松活泼风格，对话更生动。A略显生硬。"
+      },
+      "terminology": {
+        "A": 2,
+        "B": 8,
+        "notes": "A的致命弱点：同一术语出现5种翻译。B基本一致，仅'身延'正确统一。A还有段落16'斋藤'vs'齐藤'不一致。"
+      },
+      "coherence": {
+        "A": 4,
+        "B": 8,
+        "notes": "A的术语混乱严重破坏阅读连贯性，读者会困惑。B流畅连贯。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式处理基本相同，都保留了原文结构和分段。"
+      }
+    },
+    "key_differences": [
+      "A将みのぶまんじゅう译为5种不同版本（美浓部/三峰/美浓/美穗馒头），B统一正确译为'身延馒头'",
+      "A在段落16将'齐藤'误写为'斋藤'，人名不一致",
+      "B在段落65将'小町'误写为'Komachi'",
+      "B的语言更自然流畅，更符合轻小说风格",
+      "A在准确性上有遗漏，如段落3未译出'出乎意料'之意"
+    ],
+    "final_summary": "翻译B明显优于翻译A。A的致命弱点是核心术语'みのぶまんじゅう'在全文中出现了5种不同翻译，严重破坏了术语一致性和阅读连贯性，这在轻小说翻译中是不可接受的错误。虽然B在段落65出现一处'Komachi'错误，但整体上B在准确性、流畅性、风格把握和术语一致性方面都显著优于A。B的表达更自然，更符合中文轻小说的语言习惯，是更好的翻译选择。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

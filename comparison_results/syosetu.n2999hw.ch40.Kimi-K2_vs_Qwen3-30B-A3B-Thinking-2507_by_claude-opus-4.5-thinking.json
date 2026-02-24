@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:09:48.615919",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.Kimi-K2.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "17317e02ce4cfc2fa5d46710bcfa59c5261c5525282a6bdba07b1e1436d03f8a",
+    "B": "bbabf70e507b203d086f2d715ff1e1c5640e92fae81d7cb959467f706302b2fd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:10:41.200320",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6f96aba0-a804-4ab5-bdab-bd50e5e84054",
+      "judge_response": {
+        "id": "6f96aba0-a804-4ab5-bdab-bd50e5e84054",
+        "object": "chat.completion",
+        "created": 1768432241,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n\n**翻译A的问题：**\n- 段落47：\"我担心太阳\"误译\"エン\"为\"太阳\"（严重错误）\n- 段落54：\"白平黄\"明显是笔误\n\n**翻译B的问题：**\n- 段落11：\"いけぇ\"译为\"干得好\"错误，应为\"上吧/去吧\"\n- 段落25：\"影縫い\"译为\"影薄\"错误，应为\"影缝\"\n- 段落27：\"ドライグが、攻撃不能が弱点なのは分かってた\"主语理解错误，应是\"我\"知道德莱格的弱点，B译成\"德莱格早就知道\"\n- 段落76-77：错误地将叙述文本加上引号\n\n### 2. 术语/名称一致性\n\n**翻译A：**\n- エン：焰/炎/小炎/太阳（极不一致）\n- シロガネ：白银/白钢/白金黄（不一致）\n- プレゲトーン：普雷格顿/普雷吉顿/普雷格通等（不一致）\n\n**翻译B：**\n- エン：恩/エン/英（不一致，部分保留日文）\n- シロガネ：白金/白银（不一致）\n- プレゲトーン：普雷格顿/プレゲトーン（部分保留日文）\n\n### 3. 流畅性与风格\n\n**翻译A更自然的例子：**\n- 段落5：\"赢给你看\"比B的\"绝对要赢\"更口语化\n- 段落14：\"早在预料之中\"比\"按计划来的\"更流畅\n- 段落46：\"光是通常攻击的反馈就疼得要命，输掉时的痛感只会更炸裂\"生动自然\n\n**翻译B更自然的例子：**\n- 段落9：\"他笔直冲向敌人的背影\"比A的\"那笔直冲向敌人的背影\"稍通顺\n\n### 4. 格式问题\n\n**翻译B存在明显格式问题：**\n- 段落6、23、26、28、29、31等：对话缺少「」引号\n- 段落76-77、81-85：错误地给叙述文添加引号\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有个别误译（太阳），B有多处理解错误（影薄、主语错误、干得好）\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A的口语表达更自然生动，符合轻小说风格\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更好地保持了轻小说的语气和节奏\"},\n    \"terminology\": {\"A\": 5, \"B\": 4, \"notes\": \"两者名称一致性都很差，但A至少全部翻译了术语，B保留部分日文\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体可读性更好\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B有大量引号使用错误，格式问题严重\"}\n  },\n  \"key_differences\": [\n    \"B在段落11误译「いけぇ」为'干得好'，A正确译为'上吧'\",\n    \"B在段落25误译「影縫い」为'影薄'，A正确译为'影缝'\",\n    \"B在段落27主语理解错误，误认为德莱格知道而非主角知道\",\n    \"B有大量对话引号缺失或错误添加的格式问题\",\n    \"两者名称一致性都很差，但A的错误类型更少\"\n  ],\n  \"final_summary\": \"翻译A在准确性、流畅性和格式方面整体优于B。虽然A存在名称不一致和个别误译问题，但B的错误更为严重，包括关键词误译、主语理解错误以及大量格式问题。A的语言风格更贴近轻小说的口语化表达，可读性更强。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12950,
+          "completion_tokens": 2388,
+          "total_tokens": 15338
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有个别误译（太阳），B有多处理解错误（影薄、主语错误、干得好）"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的口语表达更自然生动，符合轻小说风格"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更好地保持了轻小说的语气和节奏"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 4,
+        "notes": "两者名称一致性都很差，但A至少全部翻译了术语，B保留部分日文"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体可读性更好"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有大量引号使用错误，格式问题严重"
+      }
+    },
+    "key_differences": [
+      "B在段落11误译「いけぇ」为'干得好'，A正确译为'上吧'",
+      "B在段落25误译「影縫い」为'影薄'，A正确译为'影缝'",
+      "B在段落27主语理解错误，误认为德莱格知道而非主角知道",
+      "B有大量对话引号缺失或错误添加的格式问题",
+      "两者名称一致性都很差，但A的错误类型更少"
+    ],
+    "final_summary": "翻译A在准确性、流畅性和格式方面整体优于B。虽然A存在名称不一致和个别误译问题，但B的错误更为严重，包括关键词误译、主语理解错误以及大量格式问题。A的语言风格更贴近轻小说的口语化表达，可读性更强。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

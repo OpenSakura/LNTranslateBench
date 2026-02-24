@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:31:36.029091",
+  "sample": "novelup.667618373.ch204",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.667618373.ch204.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.667618373.ch204.Kimi-K2.translated.txt",
+    "B": "translated_results/novelup.667618373.ch204.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "a7b9bc8920e64499b0c9853279cbb23c63b9a906b15bfa6f4389c678948cdad3",
+    "A": "f31b9b55b06576dc60938e0b4f7328a755f923fc246aca31f7e2f4afdd12ee9d",
+    "B": "8ed14bcbd7698b5a6d37f9987fbfcd358e4df46be8cc231dfbee26efc03c97f4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:32:36.338572",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "73baef0c-0f71-4414-921f-832bb8f6bf57",
+      "judge_response": {
+        "id": "73baef0c-0f71-4414-921f-832bb8f6bf57",
+        "object": "chat.completion",
+        "created": 1769610756,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**段落1**: A\"抹杀感情\"比B\"压抑感情\"更接近原文\"感情は殺そう\"的力度。\n**段落19**: 原文\"愉快な場で飲酒をすることはない\"意为\"不会在愉快的场合喝酒\"，A误译为\"扫兴的场合\"，B译法也略有偏差但更接近原意。\n**段落27**: \"ハーブ\"是香草，B正确，A译为\"草药\"不够准确。\n**段落30**: A\"趴地求饶的糗样\"过度添加，B\"趴倒在地的样子\"更忠实原文。\n\n### 2. 流畅性\nA整体口语化更强，如\"给我感恩\"\"够带劲吧\"\"被火系魔法直接糊过\"，读起来生动；B相对更书面化正式。段落55 A的\"心里翻着白眼\"比B\"心里一边无语\"更生动传神。\n\n### 3. 风格/语气\nA更贴合轻小说的对话风格，义兄的台词如\"给我感恩\"\"够带劲吧\"符合狂妄人设；B的\"感谢吧\"\"好喝吧\"语气偏弱。但A段落21\"淫笑\"用词稍嫌过重，B\"嬉皮笑脸\"更妥当。\n\n### 4. 格式/标点\n**严重问题**: B在段落40、43、44、45、46出现引号混乱错误（如『义兄大人，这是？「、『说过一次都记不住吗，鸡头「），这是明显的格式错误。A统一使用中文引号，格式规范。\n\n### 5. 术语一致性\n两者都保持了\"义兄\"\"配膳台\"\"魔兽\"等术语的一致性。\n\n### 6. 连贯性\n段落7：A\"随着打响的指节登场，一边瞥了士兵一眼一边低头\"主语模糊；B\"我瞥了一眼那名士兵，同时低下头\"更清晰。\n段落55结尾：B补充\"本该是这样的\"与段落56衔接更自然。\n\n## 综合评定\n\nA在口语化表达和轻小说风格上更胜一筹，但有时过度意译。B在部分段落更准确，但**引号格式的严重错误**（多处出现『「混用）严重影响可读性和专业性，这在正式翻译中是不可接受的。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在香草/压抑等处更准确，A有过度意译现象\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化更自然流畅，B稍显正式生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说对话风格，人物语气更鲜明\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者术语一致性相当\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B在部分段落衔接更清晰\"},\n    \"formatting\": {\"A\": 9, \"B\": 4, \"notes\": \"B多处引号严重错误（『「混用），A格式规范\"}\n  },\n  \"key_differences\": [\n    \"B存在严重的引号格式错误，多处出现『「混用\",\n    \"A口语化风格更强，B更书面正式\",\n    \"A有时过度意译（如'够带劲''趴地求饶'），B更忠实但稍显平淡\",\n    \"香草/ハーブ翻译：A误译为草药，B正确\"\n  ],\n  \"final_summary\": \"两者翻译质量各有千秋，B在准确性上略胜，A在风格和流畅性上更佳。但B存在严重的引号格式错误（段落40、43、44、45、46），这一致命缺陷严重影响专业性和可读性。综合考虑，A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9341,
+          "completion_tokens": 3050,
+          "total_tokens": 12391
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在香草/压抑等处更准确，A有过度意译现象"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化更自然流畅，B稍显正式生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说对话风格，人物语气更鲜明"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者术语一致性相当"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在部分段落衔接更清晰"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B多处引号严重错误（『「混用），A格式规范"
+      }
+    },
+    "key_differences": [
+      "B存在严重的引号格式错误，多处出现『「混用",
+      "A口语化风格更强，B更书面正式",
+      "A有时过度意译（如'够带劲''趴地求饶'），B更忠实但稍显平淡",
+      "香草/ハーブ翻译：A误译为草药，B正确"
+    ],
+    "final_summary": "两者翻译质量各有千秋，B在准确性上略胜，A在风格和流畅性上更佳。但B存在严重的引号格式错误（段落40、43、44、45、46），这一致命缺陷严重影响专业性和可读性。综合考虑，A胜出。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

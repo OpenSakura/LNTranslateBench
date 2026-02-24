@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:20:53.737561",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "fc09c6053e604fd486397a054dbed3db1c118ff9394440a24cbdb39334531a5a",
+    "B": "202c67f4079d8e5a0de9c73dbb19110798218ebf401cc1b8a36e999e66a9e001"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:21:45.674427",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "3d9f1bbf-cdd6-480d-8705-c00ae127aa6d",
+      "judge_response": {
+        "id": "3d9f1bbf-cdd6-480d-8705-c00ae127aa6d",
+        "object": "chat.completion",
+        "created": 1769610105,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 准确性分析\n\n**段落14**：原文说村长看起来很高兴（嬉々とした様子の村長），A误译为\"席恩一脸喜滋滋的样子\"，B正确译为\"一脸喜色的村长\"。\n\n**段落34**：「食い意地張ってる」意为贪吃/馋嘴，A译为\"抠门\"完全错误，B译为\"贪吃鬼\"正确。\n\n**段落97**：原文「シオンのことを愛している」是第三人称描述精灵女性爱席恩，A译为\"我爱席恩\"（第一人称）严重错误，B译为\"深爱着席恩\"正确。\n\n**段落100**：原文「理不尽な怒りだとは、思わなかった」意为\"并不觉得这是无理取闹\"，A译为\"没想到竟会这么无理取闹\"意思完全相反，B译为\"我并未觉得这是不讲理的愤怒\"正确。\n\n### 流畅性与风格\n\n- B的\"有事没事就挂在嘴边\"比A的\"动不动就叫名字\"更地道\n- B的\"安逸过头/安逸到脑子退化\"比A的\"和平麻痹\"更自然\n- B的\"黄毛丫头\"比A的\"小姑娘\"更符合轻蔑语气\n\n### 格式问题\n\n- 段落22、35、47：A丢失或错加引号，B保持正确\n- 段落55、96：A使用\"他\"指代女性角色，B无此错误\n\n### 术语一致性\n\n两者人名翻译一致，但B在描述性语言上更准确统一。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 9, \"notes\": \"A有多处严重误译：段落14主语错误、段落34词义错误、段落97人称错误、段落100意思完全相反\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的表达更自然地道，如'有事没事挂在嘴边'、'安逸过头'等\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地保留了轻小说内心独白的语气和情感张力\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"人名一致，但A在'食い意地'等词汇上出错\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的多处误译影响了情节理解，尤其是段落97和100\"},\n    \"formatting\": {\"A\": 6, \"B\": 9, \"notes\": \"A多处引号使用错误，且有性别代词错误\"}\n  },\n  \"key_differences\": [\n    \"段落97：A将第三人称情感描述误译为第一人称\",\n    \"段落100：A将'并不觉得无理取闹'译成相反意思\",\n    \"段落14：A误解了谁表现得高兴\",\n    \"段落34/43：A将'贪吃'误译为'抠门/死要面子'\",\n    \"多处引号和性别代词处理B更规范\"\n  ],\n  \"final_summary\": \"B在准确性上明显优于A，A存在多处严重误译导致意思相反或人称混乱，严重影响读者对情节和人物情感的理解。B在流畅性、风格和格式方面也更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12948,
+          "completion_tokens": 2274,
+          "total_tokens": 15222
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A有多处严重误译：段落14主语错误、段落34词义错误、段落97人称错误、段落100意思完全相反"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的表达更自然地道，如'有事没事挂在嘴边'、'安逸过头'等"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地保留了轻小说内心独白的语气和情感张力"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "人名一致，但A在'食い意地'等词汇上出错"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的多处误译影响了情节理解，尤其是段落97和100"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 9,
+        "notes": "A多处引号使用错误，且有性别代词错误"
+      }
+    },
+    "key_differences": [
+      "段落97：A将第三人称情感描述误译为第一人称",
+      "段落100：A将'并不觉得无理取闹'译成相反意思",
+      "段落14：A误解了谁表现得高兴",
+      "段落34/43：A将'贪吃'误译为'抠门/死要面子'",
+      "多处引号和性别代词处理B更规范"
+    ],
+    "final_summary": "B在准确性上明显优于A，A存在多处严重误译导致意思相反或人称混乱，严重影响读者对情节和人物情感的理解。B在流畅性、风格和格式方面也更胜一筹。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

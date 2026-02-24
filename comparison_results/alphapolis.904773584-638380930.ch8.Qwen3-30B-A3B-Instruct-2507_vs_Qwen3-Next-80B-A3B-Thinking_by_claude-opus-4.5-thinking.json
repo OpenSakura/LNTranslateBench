@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:08:04.357652",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "664a0b4f7819f75aaec8d08eb7fcbb0fc4b6869e129826e1a2516373e26bd6be",
+    "B": "06a630f6188c488b84233bd7041408146109f964990733912a90077400f6a00d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:09:04.517986",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "42f0e1c9-6b64-4da4-aea4-78f022487fea",
+      "judge_response": {
+        "id": "42f0e1c9-6b64-4da4-aea4-78f022487fea",
+        "object": "chat.completion",
+        "created": 1768421343,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量详细分析\n\n### 1. 准确性分析\n\n**A的主要问题：**\n- 段落31：「女子供」译为\"男女\"是错误的，原文是\"妇孺\"\n- 段落45/46/49：「トレント」译为\"藤蔓\"有误，Treant是\"树人\"\n- 段落83：「ベジトレント」译为\"蔬菜兔\"严重错误，应为\"蔬菜树人\"\n- 段落93：「デュラハンギャロップ」译为\"德鲁亚加的奔马\"完全错误\n- 段落102：「ボア」译为\"水獭\"错误（Boar是野猪）\n\n**B的问题：**\n- 段落102：译为\"蟒蛇\"也不准确（从后文ウリボア看应是野猪）\n- 段落101：「獲った獲物」译为\"买来的\"可能是照搬原文笔误\n\n### 2. 流畅性分析\n\n| 段落 | A | B | 评价 |\n|------|---|---|------|\n| 6 | \"冬眠时有时会睡，有时又不会\" | \"冬眠嘛，有时睡有时不睡\" | B更口语化自然 |\n| 67 | \"若安静不动就是可爱的班比\" | \"安分点像可爱班比\" | B更简洁 |\n| 76 | 较为冗长正式 | \"乱骑就甩你，还想扯你头\" | B更符合轻小说语气 |\n\n### 3. 风格/术语一致性\n\n- A对专有名词处理不一致：有时保留片假名（段落3、7、9），有时音译（段落78）\n- B统一采用翻译策略，更具可读性\n- B对「上位種」统一译为\"上级种/高阶种\"，A有时译为\"上级种\"有时\"高级种\"\n\n### 4. 关键差异对比\n\n| 原文 | A | B | 正确性 |\n|------|---|---|--------|\n| クリムゾンブル | 深红之暴 | 深红公牛 | B准确（Bull=公牛）|\n| トレント | 藤蔓 | 树人 | B准确 |\n| マンドレイク | 人面菜 | 曼德拉草 | B用标准译名 |\n| マーダーウッド | 弑王木 | 杀人树 | B准确 |\n| ボーパルバーニィ | 炮弹巴尼 | 波帕尔巴尼 | B音译更安全 |\n\n### 5. 格式与可读性\n\n两者格式差异不大，但B整体更简洁，符合轻小说笔记类文本的特点。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A有多处严重误译：女子供→男女、トレント→藤蔓、ベジトレント→蔬菜兔、デュラハンギャロップ误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化简洁，符合笔记体裁；A偏正式但有时冗长\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B的轻松语气更贴合轻小说设定集风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A专有名词处理不一致；B统一翻译，采用标准译名如曼德拉草\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体阅读更流畅连贯\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式规范程度相当\"}\n  },\n  \"key_differences\": [\n    \"A将トレント系误译为藤蔓系，B正确译为树人\",\n    \"A将女子供误译为男女，B正确译为妇孺\",\n    \"A对片假名处理不一致，B统一翻译\",\n    \"B语言更简洁口语化，符合轻小说风格\",\n    \"A在段落83、93有严重误译\"\n  ],\n  \"final_summary\": \"B翻译整体更优。A存在多处关键性误译（树人→藤蔓、蔬菜树人→蔬菜兔、妇孺→男女），严重影响准确性。B在保持准确性的同时，语言更简洁自然，专有名词处理更一致，更符合轻小说设定集的文体风格。虽然B也有个别小问题（如ボア译为蟒蛇），但整体质量明显优于A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11532,
+          "completion_tokens": 2848,
+          "total_tokens": 14380
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有多处严重误译：女子供→男女、トレント→藤蔓、ベジトレント→蔬菜兔、デュラハンギャロップ误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化简洁，符合笔记体裁；A偏正式但有时冗长"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的轻松语气更贴合轻小说设定集风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A专有名词处理不一致；B统一翻译，采用标准译名如曼德拉草"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体阅读更流畅连贯"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式规范程度相当"
+      }
+    },
+    "key_differences": [
+      "A将トレント系误译为藤蔓系，B正确译为树人",
+      "A将女子供误译为男女，B正确译为妇孺",
+      "A对片假名处理不一致，B统一翻译",
+      "B语言更简洁口语化，符合轻小说风格",
+      "A在段落83、93有严重误译"
+    ],
+    "final_summary": "B翻译整体更优。A存在多处关键性误译（树人→藤蔓、蔬菜树人→蔬菜兔、妇孺→男女），严重影响准确性。B在保持准确性的同时，语言更简洁自然，专有名词处理更一致，更符合轻小说设定集的文体风格。虽然B也有个别小问题（如ボア译为蟒蛇），但整体质量明显优于A。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

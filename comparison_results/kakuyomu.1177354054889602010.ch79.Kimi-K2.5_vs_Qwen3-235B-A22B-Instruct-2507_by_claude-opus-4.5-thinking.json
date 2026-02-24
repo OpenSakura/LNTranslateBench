@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:19:39.315729",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.Kimi-K2.5.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "875d59b2799578406e5e02ad074d356e205bdceb5b1728383aefc896abcec19a",
+    "B": "af4fe12414a71d8d216303a6dd93bcb632850921bee6a397c09be969ffc046d3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:20:18.299024",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a06a47e1-fb0e-47f4-bce8-2b02c510b168",
+      "judge_response": {
+        "id": "a06a47e1-fb0e-47f4-bce8-2b02c510b168",
+        "object": "chat.completion",
+        "created": 1769610017,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 段落级别详细对比\n\n**名称翻译问题：**\n- 段落14：A译为\"哥布拉\"，B保留原文\"ゴーブラ\"未翻译\n- 段落47/94：A译为\"玛泽尔/ナモナイ\"，B保留原文未翻译\n- 段落59：A译\"side第二阵的将军\"，B误译为\"侧翼第二阵的将军\"\n\n**准确性对比：**\n- 段落19：原文\"ダラダラと脂汗\"，A\"大汗淋漓地流着油汗\"较准确，B\"拖拖拉拉地大流冷汗\"误解了ダラダラ的意思\n- 段落45：B末尾多出错误的\"」\"标点\n- 段落98：原文\"息子を追うぞ\"，A译\"去追他儿子\"，B译\"去追我儿子\"——B更准确（说话者是父亲）\n\n**流畅性对比：**\n- 段落7：A\"从现在开始就很期待啊\"较生硬，B\"真是令人期待啊\"更自然\n- 段落31：A\"也就是说？\"较普通，B\"此话怎讲？\"更符合情境语气\n- 段落42：B的表达\"雕虫小技\"\"如此必胜\"更有气势\n\n**风格对比：**\n- 段落45：A\"嘿嘿嘿\"改变了原文语气，B\"呵呵呵\"更贴合\n- 段落35：B\"这这这，堂堂我等帝王\"更有古风感，符合轻小说王者语气\n\n**重大问题：**\n- B有多处专有名词未翻译（段落14、47、94），严重影响阅读连贯性\n- B段落59将\"side\"误译为\"侧翼\"\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落19更准确，B段落98更准确，各有优劣\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体表达更自然流畅，用词更地道\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地把握了轻小说的语气和叙事风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 4, \"notes\": \"B多处保留日文原名未翻译(ゴーブラ/マゼル/ナモナイ)，严重扣分；A名称基本都译出\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B未译名称严重影响阅读连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B段落45有多余标点，段落59误译side\"}\n  },\n  \"key_differences\": [\n    \"B多处专有名词未翻译（ゴーブラ、マゼル、ナモナイ）\",\n    \"B将side误译为侧翼\",\n    \"B整体语言更流畅自然\",\n    \"A名称翻译更完整一致\",\n    \"段落19 ダラダラ理解不同：A正确，B错误\"\n  ],\n  \"final_summary\": \"B在流畅性和风格把握上略胜一筹，但存在多处专有名词未翻译的严重问题，这对轻小说的连贯阅读体验影响很大。A虽然部分表达略显生硬，但基本完成了全文翻译任务，名称处理更为完整。综合考虑术语一致性和可读性的重要性，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13278,
+          "completion_tokens": 1903,
+          "total_tokens": 15181
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A段落19更准确，B段落98更准确，各有优劣"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体表达更自然流畅，用词更地道"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地把握了轻小说的语气和叙事风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 4,
+        "notes": "B多处保留日文原名未翻译(ゴーブラ/マゼル/ナモナイ)，严重扣分；A名称基本都译出"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B未译名称严重影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B段落45有多余标点，段落59误译side"
+      }
+    },
+    "key_differences": [
+      "B多处专有名词未翻译（ゴーブラ、マゼル、ナモナイ）",
+      "B将side误译为侧翼",
+      "B整体语言更流畅自然",
+      "A名称翻译更完整一致",
+      "段落19 ダラダラ理解不同：A正确，B错误"
+    ],
+    "final_summary": "B在流畅性和风格把握上略胜一筹，但存在多处专有名词未翻译的严重问题，这对轻小说的连贯阅读体验影响很大。A虽然部分表达略显生硬，但基本完成了全文翻译任务，名称处理更为完整。综合考虑术语一致性和可读性的重要性，A略胜。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

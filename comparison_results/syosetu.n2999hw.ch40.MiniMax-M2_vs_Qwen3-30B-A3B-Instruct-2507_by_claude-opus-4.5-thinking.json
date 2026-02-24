@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:10:09.602979",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "45528788e5d8a91b098c3ab8073b1d26f7d25d16522cf73f17ebac5d3946b1c8",
+    "B": "7f761b910590839b0386d427c8d91a98242d2f8ddf5404a2a89c3a40aaec4200"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:10:56.298686",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "78e7550d-3e8a-4865-9535-a0b307d3e299",
+      "judge_response": {
+        "id": "78e7550d-3e8a-4865-9535-a0b307d3e299",
+        "object": "chat.completion",
+        "created": 1768432256,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细对比分析\n\n### 1. 准确性问题\n\n**翻译A的问题：**\n- 段落4：将「MP」误译为\"生命值\"，MP应为魔力值/魔法点数\n- 段落27：\"德莱格早就知道攻不攻击是他的弱点\"语义错误，原文是\"攻击不能是弱点\"\n- 段落75：\"把精灵还给他\"逻辑错误，应是让恩归还精灵\n\n**翻译B的问题：**\n- 段落92：出现乱码\"вида？\"，严重错误\n- 段落95-97：部分缺失引号，格式混乱\n- 段落41：\"那仍然不行\"误译，原文是\"那个还不行（时机未到）\"\n\n### 2. 术语一致性\n\n**翻译A：**\n- フェイズ→\"阶段/回合\"（较自然）\n- デッキ→\"卡组\"（本地化好）\n- MP→\"生命值\"（错误）→后文又用\"MP\"\n\n**翻译B：**\n- フェイズ→\"相位\"（不符合卡牌游戏用语）\n- デッキ→\"deck\"（未翻译）\n- MP保持原样（可接受）\n\n### 3. 人名处理\n\n**翻译A：** シロガネ→\"白金/白银/シロガネ\"混用；エン→\"恩/英\"混用\n**翻译B：** シロガネ→\"白银/白铁\"混用；エン→\"恩\"较统一\n\n### 4. 流畅性与风格\n\n**翻译A：** 整体更文学化，如段落7\"紧紧握住大地之剑，仿佛要让那咚咚作响的吵闹心脏平静下来\"语序调整得当\n\n**翻译B：** 更口语化但有时生硬，如段落5\"我要以这手牌绝对要赢给你看，已下决心\"语序不自然\n\n### 5. 对话语气\n\n- 段落23：A的\"真可惜呢？\"vs B的\"真可惜啊～？\"——B更符合エン的轻佻语气\n- 段落50：A的\"太阳君\"vs B的\"太阳\"——A保留了敬称更准确\n\n### 6. 严重问题汇总\n\n| 段落 | 翻译A | 翻译B |\n|------|-------|-------|\n| 4 | MP误译为生命值 | 正确 |\n| 27 | 语义错误 | 正确 |\n| 92 | 正确 | 乱码 |\n| 95-97 | 正确 | 格式缺失 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有MP误译和段落27错误；B有段落92乱码和部分理解偏差\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A整体更流畅自然；B有多处语序不通顺\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A更文学化；B在某些对话语气上更贴合原作轻佻感\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"A的卡牌术语更本地化（卡组vs deck）；但MP误译扣分；B'相位'不符合卡牌游戏习惯\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"两者人名都有不一致问题，但B更严重（白银/白铁混用）\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"A格式规范；B多处缺少引号，段落92有乱码\"}\n  },\n  \"key_differences\": [\n    \"A将フェイズ译为'回合/阶段'更符合卡牌游戏用语，B译为'相位'不自然\",\n    \"B出现严重乱码（段落92）和格式问题（段落95-97）\",\n    \"A误将MP译为'生命值'是重大术语错误\",\n    \"A整体语言更流畅，B多处表达生硬\",\n    \"两者人名一致性都有问题，B稍严重\"\n  ],\n  \"final_summary\": \"翻译A在整体流畅性、格式规范和术语本地化上优于B，但存在MP误译和个别语义错误。翻译B有严重的乱码问题和格式缺失，术语选择（如'相位''deck'）不够本地化，人名一致性也较差。综合考虑，A的问题属于可修复的局部错误，而B的问题更系统性，因此A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13256,
+          "completion_tokens": 1937,
+          "total_tokens": 15193
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有MP误译和段落27错误；B有段落92乱码和部分理解偏差"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A整体更流畅自然；B有多处语序不通顺"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A更文学化；B在某些对话语气上更贴合原作轻佻感"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "A的卡牌术语更本地化（卡组vs deck）；但MP误译扣分；B'相位'不符合卡牌游戏习惯"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "两者人名都有不一致问题，但B更严重（白银/白铁混用）"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "A格式规范；B多处缺少引号，段落92有乱码"
+      }
+    },
+    "key_differences": [
+      "A将フェイズ译为'回合/阶段'更符合卡牌游戏用语，B译为'相位'不自然",
+      "B出现严重乱码（段落92）和格式问题（段落95-97）",
+      "A误将MP译为'生命值'是重大术语错误",
+      "A整体语言更流畅，B多处表达生硬",
+      "两者人名一致性都有问题，B稍严重"
+    ],
+    "final_summary": "翻译A在整体流畅性、格式规范和术语本地化上优于B，但存在MP误译和个别语义错误。翻译B有严重的乱码问题和格式缺失，术语选择（如'相位''deck'）不够本地化，人名一致性也较差。综合考虑，A的问题属于可修复的局部错误，而B的问题更系统性，因此A略胜。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

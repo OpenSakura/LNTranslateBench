@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-02-12T23:58:32.036242",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "GLM-5",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "GLM-5",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.GLM-5.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "7925598fa83b6792830ed8ae2ecca6532aadeb63da2ef27c6a7e397f9ceb257f",
+    "B": "7aeb76241a1905850344bc493ee74f7e07686fa87d9fda6f1c829c690303bf75"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-02-12T23:59:16.641633",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260212235832314809116Dyw0rBBY",
+      "judge_response": {
+        "id": "chatcmpl-20260212235832314809116Dyw0rBBY",
+        "object": "chat.completion",
+        "created": 1770940756,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对提供的原文和两个翻译版本的详细分析，以下是评判结果：\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 10,\n      \"B\": 7,\n      \"notes\": \"A精准地捕捉了原文的细微差别和语境。B存在几处明显的理解偏差或过度简化，例如段落41中主语的判定（A正确理解为评论对方，B似乎理解为说自己），以及段落78将'呆気に取られ'（目瞪口呆/愣住）错译为'吓傻了'。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"两者的中文表达都通顺，但B过于口语化，有时显得破碎。\"\n    },\n    \"style\": {\n      \"A\": 10,\n      \"B\": 6,\n      \"notes\": \"A完美契合轻小说的文风，叙述部分沉稳，对话部分符合角色性格。B的叙述过于随意、市井气太重（如'收尸'、'吓傻了'、'惨不忍睹'），破坏了原文在墓地场景中应有的静谧和感伤氛围。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A使用了更符合职业设定的词汇（如'苏生'、'尸体回收业'）。B的用词过于大白话（'复活'、'收尸'），缺乏奇幻职业的专业感。\"\n    },\n    \"coherence\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"A的逻辑连接词使用得当，阅读体验流畅。B有时省略了必要的连接词，导致句子跳跃。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 9,\n      \"notes\": \"A的标点符号使用规范，符合出版标准。B在对话中偶尔省略标点或使用非标准的省略方式。\"\n    }\n  },\n  \"key_differences\": [\n    \"语体风格：A采用了标准的轻小说书面语，文笔优美；B采用了极度口语化的表达，甚至带有方言或网络用语色彩（如'咋知道'、'那儿'）。\",\n    \"情感渲染：在墓地对话的感人段落（段落37-43），A保留了原文的细腻情感；B则处理得过于干瘪，破坏了氛围。\",\n    \"准确度：段落41中，A正确理解了男主是在评价女主'接受了现实'；B译为'我接受得挺好'，导致逻辑错误。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都完胜翻译B。A展现了极高的专业素养，不仅准确还原了原文的意思，还很好地把握了轻小说的叙述节奏和人物语气，特别是在处理情感细腻的墓地场景时，文笔优美且动人。相比之下，翻译B显得过于随意和粗糙，使用了大量不适合旁白叙述的口语词汇（如'收尸'、'吓傻了'），并且在关键句子的理解上出现了偏差。A读起来像是一部成熟的出版作品，而B更像是随手的速翻或大纲。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7303,
+          "completion_tokens": 3536,
+          "total_tokens": 10839
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 10,
+        "B": 7,
+        "notes": "A精准地捕捉了原文的细微差别和语境。B存在几处明显的理解偏差或过度简化，例如段落41中主语的判定（A正确理解为评论对方，B似乎理解为说自己），以及段落78将'呆気に取られ'（目瞪口呆/愣住）错译为'吓傻了'。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者的中文表达都通顺，但B过于口语化，有时显得破碎。"
+      },
+      "style": {
+        "A": 10,
+        "B": 6,
+        "notes": "A完美契合轻小说的文风，叙述部分沉稳，对话部分符合角色性格。B的叙述过于随意、市井气太重（如'收尸'、'吓傻了'、'惨不忍睹'），破坏了原文在墓地场景中应有的静谧和感伤氛围。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 7,
+        "notes": "A使用了更符合职业设定的词汇（如'苏生'、'尸体回收业'）。B的用词过于大白话（'复活'、'收尸'），缺乏奇幻职业的专业感。"
+      },
+      "coherence": {
+        "A": 10,
+        "B": 8,
+        "notes": "A的逻辑连接词使用得当，阅读体验流畅。B有时省略了必要的连接词，导致句子跳跃。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 9,
+        "notes": "A的标点符号使用规范，符合出版标准。B在对话中偶尔省略标点或使用非标准的省略方式。"
+      }
+    },
+    "key_differences": [
+      "语体风格：A采用了标准的轻小说书面语，文笔优美；B采用了极度口语化的表达，甚至带有方言或网络用语色彩（如'咋知道'、'那儿'）。",
+      "情感渲染：在墓地对话的感人段落（段落37-43），A保留了原文的细腻情感；B则处理得过于干瘪，破坏了氛围。",
+      "准确度：段落41中，A正确理解了男主是在评价女主'接受了现实'；B译为'我接受得挺好'，导致逻辑错误。"
+    ],
+    "final_summary": "翻译A在各方面都完胜翻译B。A展现了极高的专业素养，不仅准确还原了原文的意思，还很好地把握了轻小说的叙述节奏和人物语气，特别是在处理情感细腻的墓地场景时，文笔优美且动人。相比之下，翻译B显得过于随意和粗糙，使用了大量不适合旁白叙述的口语词汇（如'收尸'、'吓傻了'），并且在关键句子的理解上出现了偏差。A读起来像是一部成熟的出版作品，而B更像是随手的速翻或大纲。"
+  },
+  "outcome": "GLM-5_win",
+  "winner_model": "GLM-5"
+}

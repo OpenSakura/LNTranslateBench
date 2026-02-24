@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:01:17.810389",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.GLM-4.5.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "82f4fe8e8aeb0a9f8bd9be1120c4eb8e1e7ad1837e7473a5b5cdd2636f086c48",
+    "B": "0353eaa0472c7a5fe8d0b02a42a0b2985251dd1248f379c9593db1ad13238b02"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:02:05.966775",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "3aa491ac-ab2f-4605-8a75-e750c3c1a770",
+      "judge_response": {
+        "id": "3aa491ac-ab2f-4605-8a75-e750c3c1a770",
+        "object": "chat.completion",
+        "created": 1768431725,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评析\n\n### 段落级别分析\n\n**术语准确性问题：**\n- 段落1：A「注意事项」正确，B「诸注意」是生硬的直译\n- 段落21：A「东坡肉」正确（角煮=红烧肉/东坡肉），B「叉烧」是明显错误\n- 段落11：A「点返回」自然，B「返回浏览器」生硬\n- 段落16：B「老警察」误译（お巡りさん只是警察，非\"老\"警察）\n\n**对话语气风格：**\n- 段落9：A「不管你是看还是没看注意事项，之后的抱怨我一概不接受」口语化自然；B过于书面化\n- 段落18/19：A保留了语气词延长「ー」的表达，更贴合轻小说风格\n- 段落77：A「由也」合理音译；B保留日文「ゆーや」不一致\n\n**格式问题：**\n- A在段落38、41、44、45、48-49等处对话缺少引号\n- B在段落139、141保留日文「降谷さん」未翻译，风格不统一\n\n**重大翻译错误：**\n- 段落81：B误译为「柯南君为了救人」，原文是降谷为救柯南而做的行为\n- 段落116：B「从那方开始的环行」完全不通顺，A「从那里开始单轮行驶」正确\n\n**流畅度对比：**\n- A整体对话感更强，符合轻小说口语叙述\n- B部分句子过于直译，如段落121「垂头丧气地声音很小」语法不顺\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有重大误译：角煮→叉烧、段落81主语错误、段落16「老警察」\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A对话口语化自然；B部分句子生硬如段落116、121\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更贴合轻小说风格，保留语气词；B偏书面化\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"A处理专有名词更一致；B「诸注意」「边缘海洋」不当\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A叙述连贯；B段落81等处逻辑断裂\"},\n    \"formatting\": {\"A\": 6, \"B\": 6, \"notes\": \"A多处对话缺引号；B保留未译日文不统一\"}\n  },\n  \"key_differences\": [\n    \"B将「角煮」误译为「叉烧」，A正确译为「东坡肉」\",\n    \"段落81：B错误理解主语，A正确\",\n    \"A对话风格更口语化贴合轻小说，B偏正式\",\n    \"A格式有对话引号遗漏，B有日文保留不统一问题\",\n    \"段落116：B翻译完全不通顺\"\n  ],\n  \"final_summary\": \"翻译A在准确性和风格上明显优于B。B存在多处关键误译（角煮→叉烧、段落81主语错误），且部分句子生硬不通顺。虽然A有若干对话引号格式遗漏，但整体表达更自然流畅，更符合轻小说的叙述风格。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14519,
+          "completion_tokens": 2078,
+          "total_tokens": 16597
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有重大误译：角煮→叉烧、段落81主语错误、段落16「老警察」"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A对话口语化自然；B部分句子生硬如段落116、121"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更贴合轻小说风格，保留语气词；B偏书面化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "A处理专有名词更一致；B「诸注意」「边缘海洋」不当"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A叙述连贯；B段落81等处逻辑断裂"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 6,
+        "notes": "A多处对话缺引号；B保留未译日文不统一"
+      }
+    },
+    "key_differences": [
+      "B将「角煮」误译为「叉烧」，A正确译为「东坡肉」",
+      "段落81：B错误理解主语，A正确",
+      "A对话风格更口语化贴合轻小说，B偏正式",
+      "A格式有对话引号遗漏，B有日文保留不统一问题",
+      "段落116：B翻译完全不通顺"
+    ],
+    "final_summary": "翻译A在准确性和风格上明显优于B。B存在多处关键误译（角煮→叉烧、段落81主语错误），且部分句子生硬不通顺。虽然A有若干对话引号格式遗漏，但整体表达更自然流畅，更符合轻小说的叙述风格。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

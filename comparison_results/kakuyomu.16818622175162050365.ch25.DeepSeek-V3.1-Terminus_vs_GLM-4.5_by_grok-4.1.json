@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:46.322483",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.GLM-4.5.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "8c596d9fe4fd070457ddfc3ff7e70382b69cc89673d2fabfe4c79264041b19b9",
+    "B": "6312918aff45bc85a1be659efa3f053b05d08919a5dfc20d2bd2b72621f0e0be"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:42:38.676464",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DH7uPEC95bc1rvgMTJKzg3eGvQU",
+      "judge_response": {
+        "id": "chatcmpl-89DH7uPEC95bc1rvgMTJKzg3eGvQU",
+        "object": "chat.completion",
+        "created": 1768426958,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"軽小说 日文到中文翻译 常见问题 准确性 流畅性\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"日语“部活の大々的な勧誘” 中文翻译 社团招新 OR 社团劝诱\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"Chinese To Japanese Translator - Apps on Google Play\" Google Play](https://play.google.com/store/apps/details?hl=en_US&id=all.language.translator.hub.chinesetojapanesetranslator)\n> [🔗 \"中文到日语翻译器 – 快速免费在线\" Lingvanex](https://lingvanex.com/translation/zhongguo-dao-riyu)\n> [🔗 \"Microsoft Translator - 从日语翻译到中文 (繁体)\" Microsoft](https://www.bing.com/translator?from=ja&setlang=zh-hans&to=zh-Hant)\n> [🔗 \"Free Chinese (Simplified) to Japanese Translation Tool | Cambridge\" Cambridge Dictionary](https://dictionary.cambridge.org/us/translate/chinese-simplified-japanese)\n> [🔗 \"Google 翻译\" Google Translate](https://translate.google.co.jp/?hl=zh-CN&op=translate&sl=zh-CN&tl=ja)\n> [🔗 \"Japanese Chinese Translator - Apps on Google Play\" Google Play](https://play.google.com/store/apps/details?hl=en_US&id=com.happydev4u.japanesechinesetranslator)\n> [🔗 \"日文中文翻译如何准确无误？中文日文翻译有什么高效方法？_翻译最新资讯\" Foxitsoftware](https://www.foxitsoftware.cn/fanyi/zixun/6760.html)\n> [🔗 \"中文翻译日文 - 中日翻译在线 - 迅捷PDF转换器在线免费版\" Xunjiepdf](https://app.xunjiepdf.com/fanyizh2ja)\n> [🔗 \"‎日语翻译 日文翻译 同时比较 翻译和比较\" App Store](https://apps.apple.com/cn/app/%E6%97%A5%E8%AF%AD%E7%BF%BB%E8%AF%91-%E6%97%A5%E6%96%87%E7%BF%BB%E8%AF%91-%E5%90%8C%E6%97%B6%E6%AF%94%E8%BE%83-%E7%BF%BB%E8%AF%91%E5%92%8C%E6%AF%94%E8%BE%83/id884419312)\n> [🔗 \"从业二十年的日语翻译，被这部漫画逼疯了 - 知乎\" Zhihu](https://zhuanlan.zhihu.com/p/610040828)\n\n> 🔍 **2 results found**\n\n> [🔗 \"社团招新 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E7%A4%BE%E5%9B%A2%E6%8B%9B%E6%96%B0)\n> [🔗 \"社团招新 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/zh-hans/%E7%A4%BE%E5%9B%A2%E6%8B%9B%E6%96%B0)\n\n\n作为一名公正的轻小说翻译质量评判员，我对提供的94段日→中翻译进行了逐段对比评估。以下是基于准确性、流畅性、风格/语气、术语一致性、连贯性/可读性、格式/标点六个维度的详细分析。\n\n### 整体观察\n- **准确性**：两者整体都较高，但B在一些地方更忠实原文含义（如“勧誘”更倾向“劝诱/招新”而非单纯“宣传”，B的“大々的な勧誘”处理更贴合轻小说校园语境的“大规模社团招新”）；A偶尔有轻微意译过度或小偏差。\n- **流畅性**：B的中文更自然、符合大陆读者阅读习惯（如使用“咋整”“牛逼”“关我屁事”等口语化表达），A偏书面/**化倾向较明显（如“吓了一大跳呢”“好讨厌啊”）。\n- **风格/语气**：轻小说尤其是校园+魔法少女题材，需要活泼、吐槽感强、少女内心戏细腻的语气。B更成功保留了原文的吐槽味、粗俗感与可爱感（如“牛逼”“哈啊？”“干就完了”），A整体偏柔和、礼貌。\n- **术语/名称一致性**：两者都基本一致（如“部活”统一为“社团”，“チラシ”多用“传单/宣传单”，“魔道”“ルミナスリーグ”等专有名词处理相似）。但B在“チラシ”统一性稍好，A偶尔混用。\n- **连贯性/可读性**：B全文阅读更顺畅，像一本流畅的中文轻小说；A在某些长句上稍显生硬。\n- **格式/标点**：两者标点使用都规范，但B在对话语气词（如“～”“嘛～”）和省略号处理更贴近原文节奏感。\n\n### 关键差异举例\n- 段落1：原文强调“大规模劝诱/招新”被允许的时间限制，B的“允许大规模社团招新活动是从今天开始持续一周”更准确传达“许されている”许可感；A的“宣传”稍偏。\n- 段落10：B的“关我屁事”完美再现原文粗暴拒绝的语气，A的“根本不在乎”太温和。\n- 段落15/71等吐槽：B用“牛逼”“哈啊？”等更符合现代中文轻小说读者口味，A偏保守。\n- 段落72/77：粗口处理B更直接，保留原文冲击力。\n- 段落31/84等世界观说明：B的表达更简洁自然。\n\n### 最终判决\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9, \"notes\": \"B在关键含义（如劝诱许可、语气强度）更忠实原文，A有少量轻微偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文更自然流畅，像母语者写的轻小说；A稍显书面化\"},\n    \"style\": {\"A\": 7, \"B\": 9.5, \"notes\": \"B很好保留了轻小说特有的吐槽、粗俗、可爱与内心戏节奏，A整体偏柔和礼貌，少了冲击力\"},\n    \"terminology\": {\"A\": 8.5, \"B\": 9, \"notes\": \"两者术语基本一致，B在チラシ/宣传单等词统一性略胜\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B全文连贯性更强，阅读像一本完整小说；A偶有生硬转折\"},\n    \"formatting\": {\"A\": 8.5, \"B\": 9, \"notes\": \"B在语气词、破折号、省略号处理更贴原文节奏\"}\n  },\n  \"key_differences\": [\n    \"B更成功再现原文粗俗、吐槽、少女毒舌风格（如'关我屁事' '牛逼' '哈啊？'），A偏向柔和书面表达\",\n    \"B口语化程度更高，更符合当下大陆轻小说读者习惯\",\n    \"A在部分长句和内心描写上稍显冗长或保守，B更简洁有力\",\n    \"整体B让文本更'活'，更具轻小说阅读乐趣\"\n  ],\n  \"final_summary\": \"翻译B整体更胜一筹，在保留原文轻小说特有的活泼、毒舌、节奏感方面明显优于A，同时准确性和流畅性也更均衡，适合作为优秀轻小说中译本的标准。A虽准确可靠，但风格上稍显保守，少了那股'日式轻小说味'。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12776,
+          "completion_tokens": 2551,
+          "total_tokens": 15327
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在关键含义（如劝诱许可、语气强度）更忠实原文，A有少量轻微偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文更自然流畅，像母语者写的轻小说；A稍显书面化"
+      },
+      "style": {
+        "A": 7,
+        "B": 9.5,
+        "notes": "B很好保留了轻小说特有的吐槽、粗俗、可爱与内心戏节奏，A整体偏柔和礼貌，少了冲击力"
+      },
+      "terminology": {
+        "A": 8.5,
+        "B": 9,
+        "notes": "两者术语基本一致，B在チラシ/宣传单等词统一性略胜"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B全文连贯性更强，阅读像一本完整小说；A偶有生硬转折"
+      },
+      "formatting": {
+        "A": 8.5,
+        "B": 9,
+        "notes": "B在语气词、破折号、省略号处理更贴原文节奏"
+      }
+    },
+    "key_differences": [
+      "B更成功再现原文粗俗、吐槽、少女毒舌风格（如'关我屁事' '牛逼' '哈啊？'），A偏向柔和书面表达",
+      "B口语化程度更高，更符合当下大陆轻小说读者习惯",
+      "A在部分长句和内心描写上稍显冗长或保守，B更简洁有力",
+      "整体B让文本更'活'，更具轻小说阅读乐趣"
+    ],
+    "final_summary": "翻译B整体更胜一筹，在保留原文轻小说特有的活泼、毒舌、节奏感方面明显优于A，同时准确性和流畅性也更均衡，适合作为优秀轻小说中译本的标准。A虽准确可靠，但风格上稍显保守，少了那股'日式轻小说味'。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:18:56.272512",
+  "sample": "syosetu.n7886gf.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n7886gf.ch19.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n7886gf.ch19.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/syosetu.n7886gf.ch19.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b7c5e5862caa77dd51ae9b11b2fafe158a804e9e40647a31c9450a6e682fc8dd",
+    "A": "ea7371f1c1f666f89011ff37f71897c13de5bbae9d9def1289d7042a6bcd561d",
+    "B": "af900efd28951027582f07fe3afe5479a4edcbc6cd0e562478d41fa9b13b4bea"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:20:34.789824",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "edd6403e-dbd6-4bc6-be5b-a2b7cf8364fd",
+      "judge_response": {
+        "id": "edd6403e-dbd6-4bc6-be5b-a2b7cf8364fd",
+        "object": "chat.completion",
+        "created": 1768432782,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n- **段落5**: 原文「感動した」A译\"激动\"，B译\"感动\"，B更准确\n- **段落13**: 「折れ曲がった大きな鼻」A译\"弯弯曲曲的大鼻子\"准确，B译\"鼻子不歪\"简化过度\n- **段落28**: 「わらし」是梅尔的自称，A译\"我\"正确，B译\"小鬼\"误解为第三人称\n- **段落63**: 「四半刻」A译\"不到一刻钟\"有时间概念，B译\"没走多远\"丢失精确性\n- **段落111**: 「ちぃー」指血(血→ち)，A译\"嘀\"B译\"咦\"，结合上下文B更合理\n\n### 2. 流畅性分析\n- A整体偏书面化，B更口语化\n- 段落14: A\"老态龙钟\"成语运用恰当，B\"因为老了而松懈\"略显冗长\n- 段落72: B\"哇塞\"更符合儿童惊叹语气\n\n### 3. 风格/语气\n- 梅尔的娃娃音：两者都有体现，B在语气词处理上更自然\n- 魔女的老年口吻：B的\"咱\"\"哦\"等更贴近原文じゃ、のぉ的感觉\n\n### 4. 术语/名称一致性\n- **A严重问题**: エミリオ时而\"艾米利奥\"时而\"埃米尔\"；ロルフ时而\"罗夫\"时而\"洛夫\"时而\"罗尔夫\"；アビー时而\"艾比丝\"时而\"艾比\"\n- **B较一致**: 埃米利奥、罗尔夫、艾比丝基本统一\n\n### 5. 连贯性/可读性\n- 两者整体可读性相当\n- B在对话节奏上更自然流畅\n\n### 6. 格式/标点\n- A混用''和「」和\"\"，不统一\n- B主要使用「」，较为规范\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"各有得失，A在段落13更准确，B在段落5更准确，段落28两者都有问题但A稍好\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化处理更自然，更符合轻小说对话风格\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B对角色语气把握更好，特别是魔女和梅尔的说话方式\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A人名严重不一致(埃米尔/艾米利奥、罗夫/洛夫/罗尔夫、艾比/艾比丝)，B基本统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体阅读更流畅\"},\n    \"formatting\": {\"A\": 5, \"B\": 8, \"notes\": \"A引号使用混乱(''/「」/\"\")，B统一使用「」\"}\n  },\n  \"key_differences\": [\n    \"A人名翻译严重不一致，B保持统一\",\n    \"A标点符号混用，B格式规范\",\n    \"B语气词和口语表达更自然\",\n    \"A部分细节翻译更精确(如段落13、63)\"\n  ],\n  \"final_summary\": \"B在术语一致性和格式规范性上明显优于A，这对轻小说阅读体验影响重大。虽然A在个别细节翻译上更精确，但A的人名混乱(同一角色多种译法)会严重影响读者理解。B的口语化风格也更符合轻小说特点。综合评判B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11129,
+          "completion_tokens": 2043,
+          "total_tokens": 13172
+        }
+      },
+      "status": "failed",
+      "error": "Expecting ',' delimiter: line 10 column 61 (char 481)"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "43582943-5512-4d1f-bf9b-9031029b69cd",
+      "judge_response": {
+        "id": "43582943-5512-4d1f-bf9b-9031029b69cd",
+        "object": "chat.completion",
+        "created": 1768432834,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**名称翻译一致性问题：**\n- A版エミリオ翻译不一致：段落2用\"艾米利奥\"，段落47/49/50却用\"埃米尔\"\n- A版ロルフ翻译不一致：段落8用\"罗夫\"，段落37用\"洛夫\"，段落78/40用\"罗尔夫\"\n- B版始终使用\"埃米利奥\"和\"罗尔夫\"，保持一致\n\n**关键误译：**\n- 段落28：「わらし」是梅尔自称\"我\"的幼儿语，A正确译为\"我\"，B错误译为\"小鬼\"\n- 段落56：スルメ是鱿鱼干，B正确译\"鱿鱼干\"，A误译为\"墨鱼干\"\n- 段落111：「ちぃー」是幼儿发音的\"血\"（ち），A误解为其他意思\n\n### 2. 流畅性分析\n\n- 段落1：B\"第二天早上\"更自然，A\"翌日的早晨\"略显生硬\n- 段落14：A\"老态龙钟\"比B\"因为老了而松懈\"更简洁达意\n- 段落78：A\"羞怯地低下了头\"比B\"哆哆嗦嗦地害羞低头\"更流畅\n\n### 3. 风格/语气分析\n\n- 幼儿语表现：两版都尝试表现梅尔的幼儿语，各有特色\n- 段落26：「ババさん」A译\"大妈\"略显不敬，B译\"奶奶\"更符合语境的亲切感\n- 老婆婆口吻：B版更好地保留了魔女的老年人说话特点\n\n### 4. 格式/标点\n\n- A版使用单引号''（不符合中文规范）\n- B版使用双引号「」或\"\"（更符合中文习惯）\n- 段落43：A用\"...\"，B用「」，对话应用引号\n\n### 5. 术语一致性\n\n| 角色/术语 | A版 | B版 |\n|---------|-----|-----|\n| エミリオ | 艾米利奥/埃米尔 | 埃米利奥 |\n| ロルフ | 罗夫/洛夫/罗尔夫 | 罗尔夫 |\n| 森の魔女 | 森林魔女/森林女巫 | 森林魔女/森林的魔女 |\n| スルメ | 墨鱼干 | 鱿鱼干 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有多处名称不一致和误译（墨鱼干），B对わらし理解错误但整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相近，各有优劣表达\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地保留了角色说话特点和轻小说氛围\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A名称翻译严重不一致，B基本保持统一\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的名称混乱影响阅读连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"A使用单引号不规范，B标点使用更符合中文习惯\"}\n  },\n  \"key_differences\": [\n    \"名称一致性：A版エミリオ/ロルフ等译名混乱，B版保持统一\",\n    \"标点规范：A用单引号，B用双引号更符合中文\",\n    \"术语准确：スルメ是鱿鱼干(B对)而非墨鱼干(A错)\",\n    \"段落28わらし：A正确理解为自称，B误译为小鬼\"\n  ],\n  \"final_summary\": \"B版在名称一致性、标点规范和整体准确性上明显优于A版。虽然B版在段落28对わらし的理解有误，但A版的名称翻译混乱（同一角色多种译法）严重影响阅读体验和专业性。综合考虑，B版质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11129,
+          "completion_tokens": 2366,
+          "total_tokens": 13495
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有多处名称不一致和误译（墨鱼干），B对わらし理解错误但整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相近，各有优劣表达"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地保留了角色说话特点和轻小说氛围"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A名称翻译严重不一致，B基本保持统一"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的名称混乱影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "A使用单引号不规范，B标点使用更符合中文习惯"
+      }
+    },
+    "key_differences": [
+      "名称一致性：A版エミリオ/ロルフ等译名混乱，B版保持统一",
+      "标点规范：A用单引号，B用双引号更符合中文",
+      "术语准确：スルメ是鱿鱼干(B对)而非墨鱼干(A错)",
+      "段落28わらし：A正确理解为自称，B误译为小鬼"
+    ],
+    "final_summary": "B版在名称一致性、标点规范和整体准确性上明显优于A版。虽然B版在段落28对わらし的理解有误，但A版的名称翻译混乱（同一角色多种译法）严重影响阅读体验和专业性。综合考虑，B版质量更高。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

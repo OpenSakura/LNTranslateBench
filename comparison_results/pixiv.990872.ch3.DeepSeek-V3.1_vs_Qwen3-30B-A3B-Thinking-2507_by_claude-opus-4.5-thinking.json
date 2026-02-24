@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:02:56.021341",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "d81e373d1920b0834c7b78ac73c9850495a0e5ee050402b28025bfc0c37aeac7",
+    "B": "5164cc58b383c227916a8a9621bddd6c6ff7185600011283158553c0490aa23a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:03:49.119134",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f46a8c91-5a2c-4761-862a-e960cf325c1c",
+      "judge_response": {
+        "id": "f46a8c91-5a2c-4761-862a-e960cf325c1c",
+        "object": "chat.completion",
+        "created": 1768431828,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n\n**段落7**：原文「主」指博主/作者，A错译为\"主角\"，B正确译为\"博主\"。\n\n**段落14**：「フォローしないで」A译为\"没关注\"不准确，B译为\"没继续追问\"更贴切语境。\n\n**段落57**：「こっちの話」意为\"自言自语/我自己的事\"，A错译为\"这可是正经事\"（完全错误），B正确译为\"自言自语\"。\n\n**段落73**：B缺失整段翻译，这是严重问题。\n\n**段落79/81**：B将「萩下」误译为\"萩原\"，名字混淆。\n\n### 流畅性与风格分析\n\n**段落9**：B的\"好嘞这就开冲\"比A的\"觉得没问题的\"更好地传达原文的口语化风格。\n\n**段落17**：原文「あっれれ〜？おかしぃぞぉ〜？」是《名侦探柯南》的经典台词彩蛋，B的\"啊咧咧～？好奇怪嗷～？\"完美还原，A的处理较平淡。\n\n**段落8**：A的\"请后退\"过于生硬，B的\"请自行退出\"更自然。\n\n### 术语与格式\n\n- B在保持日式引号『』「」方面更一致\n- A混用中文引号和日式引号\n- B将车名保留原文(Murcielago/Prius)，A音译为\"穆尔西埃拉戈/普锐斯\"——两者各有道理\n\n### 关键问题汇总\n\n| 问题 | A | B |\n|------|---|---|\n| 段落57严重误译 | ✗ | ✓ |\n| 段落7误译 | ✗ | ✓ |\n| 段落73缺失 | ✓ | ✗ |\n| 名字混淆 | ✓ | ✗ |\n| 整体语感 | 中规中矩 | 更活泼自然 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落57完全误译，段落7也有错误；B虽有名字混淆(萩原/萩下)和段落73缺失，但其他部分更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B的中文表达更自然流畅，A部分译文生硬如'请后退'\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更好地还原了轻小说的轻松口语风格，柯南彩蛋处理出色\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A名字一致，B有萩原/萩下混淆；两者对专有名词处理各有特色\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A完整无缺失，B缺失段落73影响连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"B引号使用更规范一致，A混用中日格式\"}\n  },\n  \"key_differences\": [\n    \"段落57：A完全误译为'这可是正经事'，B正确译为'自言自语'\",\n    \"段落73：B完全缺失该段翻译\",\n    \"段落17：B完美还原柯南彩蛋，A处理平淡\",\n    \"整体风格：B更贴合轻小说口语化特点\",\n    \"名字一致性：B将萩下误写为萩原\"\n  ],\n  \"final_summary\": \"B在流畅性、风格把握和大部分准确性上优于A，尤其在轻小说特有的轻松语气和彩蛋还原方面表现出色。但B存在段落73缺失和名字混淆的问题。A虽然完整度高，但段落57的严重误译和整体较生硬的语感拉低了评分。综合权衡，B的优势更为明显，但因缺失段落问题，置信度不高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11586,
+          "completion_tokens": 2310,
+          "total_tokens": 13896
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落57完全误译，段落7也有错误；B虽有名字混淆(萩原/萩下)和段落73缺失，但其他部分更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的中文表达更自然流畅，A部分译文生硬如'请后退'"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地还原了轻小说的轻松口语风格，柯南彩蛋处理出色"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A名字一致，B有萩原/萩下混淆；两者对专有名词处理各有特色"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A完整无缺失，B缺失段落73影响连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "B引号使用更规范一致，A混用中日格式"
+      }
+    },
+    "key_differences": [
+      "段落57：A完全误译为'这可是正经事'，B正确译为'自言自语'",
+      "段落73：B完全缺失该段翻译",
+      "段落17：B完美还原柯南彩蛋，A处理平淡",
+      "整体风格：B更贴合轻小说口语化特点",
+      "名字一致性：B将萩下误写为萩原"
+    ],
+    "final_summary": "B在流畅性、风格把握和大部分准确性上优于A，尤其在轻小说特有的轻松语气和彩蛋还原方面表现出色。但B存在段落73缺失和名字混淆的问题。A虽然完整度高，但段落57的严重误译和整体较生硬的语感拉低了评分。综合权衡，B的优势更为明显，但因缺失段落问题，置信度不高。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

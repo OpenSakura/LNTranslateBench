@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:13:49.925842",
+  "sample": "syosetu.n6113jz.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6113jz.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6113jz.ch1.GLM-4.5.translated.txt",
+    "B": "translated_results/syosetu.n6113jz.ch1.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "202d88e951c365c1b6224fa97be1f2152793d07174bcd127ad73eaa546de66e6",
+    "A": "6a11c46fd4c4ef91a4d66a6b305feb7920cbd1aae458b11b1e8ec595df64f792",
+    "B": "4fbc37eeb1ecbe5ff8a1d728a249eed964dc9b079040efc644ec45577a376979"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:14:37.648410",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d388a92b-ebfc-445c-9869-34942f1781f3",
+      "judge_response": {
+        "id": "d388a92b-ebfc-445c-9869-34942f1781f3",
+        "object": "chat.completion",
+        "created": 1768432477,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**翻译A问题：**\n- 段落72：将「フェニックス」误译为「朱雀」，与全文一致使用的「凤凰」矛盾\n- 段落78、80、83：存在漏译，原文的叫声完全未翻译\n- 段落41：主语理解有误，原文是说\"因为凤凰掌管火，所以(他们)用水魔法攻击\"\n\n**翻译B问题：**\n- 段落41同样存在主语模糊\n- 部分细节略有简化\n\n### 2. 流畅性分析\n\n**翻译A：** 文风偏书面，如「诡异劲儿」「瘆人」等用词自然\n**翻译B：** 口语化更强，如「那丫头」「那哥们儿」「嘎啊啊啊」，有时过于随意\n\n### 3. 格式问题\n\n**翻译A：** 引号使用混乱（「」和\"\"混用），部分段落漏译\n**翻译B：** 大量对话漏加引号（段落2、3、7、8等），格式不规范\n\n### 4. 风格/术语\n\n**翻译A：** 魔法名称保留日文原文（ウォーターキャノン），保持异世界感\n**翻译B：** 魔法名称翻译成中文（水炮、水瀑斩），更易理解\n\n### 5. 关键差异\n\n- A漏译3处凤凰叫声，影响完整性\n- A术语错误（朱雀vs凤凰）\n- B格式问题严重，对话引号缺失过多\n- B语言过于口语化，部分地方失去轻小说应有的文学感\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A有漏译和朱雀误译；B较完整但部分简化\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A文风适中；B过于口语化\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A保持轻小说叙事感；B部分过于随意\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A有朱雀误译；B凤凰一致但魔法名翻译风格见仁见智\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体可读，各有瑕疵\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A引号混用且有漏译；B大量对话缺引号\"}\n  },\n  \"key_differences\": [\n    \"A漏译3处凤凰叫声（段落78/80/83）\",\n    \"A将フェニックス误译为朱雀（段落72）\",\n    \"B大量对话缺少引号（超过10处）\",\n    \"B语言过于口语化（丫头、哥们儿等）\",\n    \"魔法名称处理：A保留日文 vs B翻译中文\"\n  ],\n  \"final_summary\": \"两个翻译各有明显缺陷。A的漏译和术语错误影响完整性和一致性，但整体文风更符合轻小说；B虽然完整度更高，但格式问题严重且语言风格过于口语化，削弱了轻小说应有的文学感。综合考量，A在风格把握上略胜一筹，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13053,
+          "completion_tokens": 1918,
+          "total_tokens": 14971
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有漏译和朱雀误译；B较完整但部分简化"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A文风适中；B过于口语化"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A保持轻小说叙事感；B部分过于随意"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有朱雀误译；B凤凰一致但魔法名翻译风格见仁见智"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体可读，各有瑕疵"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A引号混用且有漏译；B大量对话缺引号"
+      }
+    },
+    "key_differences": [
+      "A漏译3处凤凰叫声（段落78/80/83）",
+      "A将フェニックス误译为朱雀（段落72）",
+      "B大量对话缺少引号（超过10处）",
+      "B语言过于口语化（丫头、哥们儿等）",
+      "魔法名称处理：A保留日文 vs B翻译中文"
+    ],
+    "final_summary": "两个翻译各有明显缺陷。A的漏译和术语错误影响完整性和一致性，但整体文风更符合轻小说；B虽然完整度更高，但格式问题严重且语言风格过于口语化，削弱了轻小说应有的文学感。综合考量，A在风格把握上略胜一筹，但差距不大。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

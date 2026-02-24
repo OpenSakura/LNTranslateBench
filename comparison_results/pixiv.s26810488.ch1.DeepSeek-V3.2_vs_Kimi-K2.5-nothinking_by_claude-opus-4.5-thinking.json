@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:33:31.198472",
+  "sample": "pixiv.s26810488.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26810488.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26810488.ch1.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/pixiv.s26810488.ch1.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "92db91e48665f24307285ee8df507a11e561d6aa20242dd51ddd1a73514e9a0b",
+    "A": "74476e7a7f99661bdea97b5d1eadd3be88625f6b60624d391fed04f8ead864e5",
+    "B": "3835138d9c59d87af2427cf2a3b106cb03d1ce7e68d70dbc40fbeb5aa2ca13b0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:34:15.528206",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6aca0114-7629-4f74-83f1-bc2a998cf2d8",
+      "judge_response": {
+        "id": "6aca0114-7629-4f74-83f1-bc2a998cf2d8",
+        "object": "chat.completion",
+        "created": 1769610855,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段关键差异分析\n\n**段落1**: B保留了原文疑问语气\"这已经是第几次了呢\"，比A的陈述句更忠实。\n\n**段落12**: \"空を切って\"A译为\"消散在空中\"较合理，B\"划破天空\"在梦境声音落空的语境下不太恰当。\n\n**段落17**: \"そこで\"B译为\"就在这时\"比A的\"然后\"更准确地表达梦境转折。\n\n**段落55**: ⚠️ **B出现严重错误** - \"私の目の前に置かれた箱の蓋を取り上げ\"被B错译为\"大叔我拿起...\"。这是主语判断错误，应该是艾玛拿起盖子给梅露露看，A的翻译正确。\n\n**段落83**: A\"居然还有人愿意为我这样做\"准确，B\"居然还有人能让我这样\"语义不完整。\n\n**格式问题**: \n- A全程使用「」对话标点，保持一致\n- B混用「」和\"\"，不统一\n\n**称谓一致性**:\n- A始终使用\"艾玛小姐\"\n- B多处省略敬称仅用\"艾玛\"，但偶尔又用\"艾玛小姐\"，不够统一\n\n### 整体流畅性对比\nA的句子结构更接近中文表达习惯，如段落44\"我在稍微准备一下东西\"、段落71\"一直、一直以来，这个时期我都是一个人的\"等处理自然。\n\nB在某些段落如段落107\"我已经记不清那几百次生日中的绝大多数了，那些几乎都是孤身一人的日子\"语序重组更为通顺。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落55出现严重主语错误（大叔我），段落83语义不完整\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"两者都较流畅，A整体句式更自然\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更贴合轻小说温馨治愈的叙事风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A称谓一致（艾玛小姐），B时有时无，不统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者可读性相当，B的错误影响理解\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"A对话标点一致使用「」，B混用「」和\\\"\\\"\"}\n  },\n  \"key_differences\": [\n    \"段落55: B严重错误，将主语误译为'大叔我'\",\n    \"格式: A对话标点统一，B混用不一致\",\n    \"称谓: A保持'艾玛小姐'一致，B称谓不统一\",\n    \"段落12: A'消散在空中'更贴合语境，B'划破天空'不恰当\"\n  ],\n  \"final_summary\": \"A翻译整体更准确可靠，保持了称谓和格式的一致性。B虽然在部分段落有更自然的表达，但段落55出现严重的主语翻译错误（将艾玛的动作误译为'大叔我'），以及格式标点混用问题，严重影响了整体质量。A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10546,
+          "completion_tokens": 1906,
+          "total_tokens": 12452
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落55出现严重主语错误（大叔我），段落83语义不完整"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者都较流畅，A整体句式更自然"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更贴合轻小说温馨治愈的叙事风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A称谓一致（艾玛小姐），B时有时无，不统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者可读性相当，B的错误影响理解"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "A对话标点一致使用「」，B混用「」和\"\""
+      }
+    },
+    "key_differences": [
+      "段落55: B严重错误，将主语误译为'大叔我'",
+      "格式: A对话标点统一，B混用不一致",
+      "称谓: A保持'艾玛小姐'一致，B称谓不统一",
+      "段落12: A'消散在空中'更贴合语境，B'划破天空'不恰当"
+    ],
+    "final_summary": "A翻译整体更准确可靠，保持了称谓和格式的一致性。B虽然在部分段落有更自然的表达，但段落55出现严重的主语翻译错误（将艾玛的动作误译为'大叔我'），以及格式标点混用问题，严重影响了整体质量。A胜出。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

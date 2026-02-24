@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:13:44.445895",
+  "sample": "hameln.391043.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.391043.ch12.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.391043.ch12.Kimi-K2.translated.txt",
+    "B": "translated_results/hameln.391043.ch12.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "ea0812435dc8909a2670f8ad39efa78d9db0cade919827e9895cbee231c43b6e",
+    "A": "140d18489bb4a7bb3c48be8508c05fb5091422290b8bca746caa14ca0cecee20",
+    "B": "ed3220df91f2bab67fd06a76ea36f9f6d2ce08a69a8d44184961007610234daa"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:14:19.829076",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "bb2da394-16f9-4deb-8548-91496ec8b6f1",
+      "judge_response": {
+        "id": "bb2da394-16f9-4deb-8548-91496ec8b6f1",
+        "object": "chat.completion",
+        "created": 1768421659,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性分析：**\n- 段落13：B翻译\"比子\"漏掉了\"果比\"，应为\"比果比五子\"；A正确保留全名\n- 段落37：A将\"ダークムーン\"误译为\"黑月\"，应为\"暗月\"\n- 段落84：A完全漏译整段！这是严重失误\n- 段落67：A理解有偏差，原文说的是\"她那种让人想拒绝的天才言行\"，A的表述主客体混乱\n\n**流畅性分析：**\n- A整体更口语化、生动：\"热度直接拉满\"、\"新瓜又砸下来\"\n- B较为直译，有时略显生硬：\"这不是什么怪话\"\n\n**风格分析：**\n- 段落4：A用\"全tm\"过于粗俗，原文\"奇しくも\"只是\"碰巧\"之意，没有脏话色彩\n- A的网络语言风格（\"爆表\"、\"离谱\"）更贴合轻小说调性\n- B较为平实稳重\n\n**格式问题：**\n- B在段落41、43-52、85、90等多处对话缺少引号「」，格式错误严重\n- A格式统一，引号使用规范\n\n**术语一致性：**\n- \"認識阻害\"：A译\"认知干扰/阻碍\"，B译\"感知屏障/认知阻碍\"，不够统一\n- 魔眼：B在段落43-44译为\"魔法之眼\"，与其他地方不一致\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A漏译段落84，B漏译人名；A段落67理解有误，B段落13名字不完整\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A更口语化生动，B部分句子较生硬\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体更贴合轻小说风格，但段落4用词过于粗俗；B较平淡\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"B术语不统一，魔眼/魔法之眼混用，认知阻碍/感知屏障混用\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者叙事连贯性相当\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B多处对话缺少引号，格式问题严重\"}\n  },\n  \"key_differences\": [\n    \"A漏译段落84整段，B多处对话缺少引号\",\n    \"A语言风格更活泼但偶有过度口语化，B较为平实但略显生硬\",\n    \"B术语一致性差（魔眼/魔法之眼、认知阻碍/感知屏障）\",\n    \"A段落37误将暗月写成黑月，B段落13漏掉人名一部分\"\n  ],\n  \"final_summary\": \"两译本各有硬伤：A漏译一整段且有名词错误，B格式问题严重且术语不统一。综合考虑，A在流畅度、风格贴合度和格式规范方面优势明显，虽有漏译但整体阅读体验更佳。B的格式缺陷影响阅读连贯性，扣分较重。A胜出但优势有限。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10848,
+          "completion_tokens": 1444,
+          "total_tokens": 12292
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A漏译段落84，B漏译人名；A段落67理解有误，B段落13名字不完整"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更口语化生动，B部分句子较生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体更贴合轻小说风格，但段落4用词过于粗俗；B较平淡"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "B术语不统一，魔眼/魔法之眼混用，认知阻碍/感知屏障混用"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者叙事连贯性相当"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B多处对话缺少引号，格式问题严重"
+      }
+    },
+    "key_differences": [
+      "A漏译段落84整段，B多处对话缺少引号",
+      "A语言风格更活泼但偶有过度口语化，B较为平实但略显生硬",
+      "B术语一致性差（魔眼/魔法之眼、认知阻碍/感知屏障）",
+      "A段落37误将暗月写成黑月，B段落13漏掉人名一部分"
+    ],
+    "final_summary": "两译本各有硬伤：A漏译一整段且有名词错误，B格式问题严重且术语不统一。综合考虑，A在流畅度、风格贴合度和格式规范方面优势明显，虽有漏译但整体阅读体验更佳。B的格式缺陷影响阅读连贯性，扣分较重。A胜出但优势有限。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

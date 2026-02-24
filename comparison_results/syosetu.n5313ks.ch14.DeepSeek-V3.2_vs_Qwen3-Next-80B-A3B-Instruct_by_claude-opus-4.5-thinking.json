@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:12:05.779064",
+  "sample": "syosetu.n5313ks.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5313ks.ch14.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5313ks.ch14.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/syosetu.n5313ks.ch14.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bf88588a1a5855615ef8d65c9b6c4af37e7a365094b338c25ea4e2c97eb1cf89",
+    "A": "dffe8c9b976eb025bf46f9c0fb40ff199fa4e0401f99524b108c109d6b82757c",
+    "B": "878d88a9cdb5ac4252258db6eca458d1afb43b552a329fd15391d1870b3ac3b6"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:13:30.965081",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fa58d925-35f3-4587-80fe-826d826885bb",
+      "judge_response": {
+        "id": "fa58d925-35f3-4587-80fe-826d826885bb",
+        "object": "chat.completion",
+        "created": 1768432364,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性\n- **段落2**：B完全缺失翻译，这是严重问题\n- **段落3**：B翻译有误，\"見せて回りながら\"应该是\"给他看/带他看\"，B翻成了\"让里昂先生领着参观\"，主客关系颠倒\n- **段落41**：A把\"義妹\"译成\"弟妹\"有误（应为小姑子），B译为\"义妹\"正确\n- **段落56**：A理解混乱，B准确区分了新娘和新郎的不同情况\n\n### 2. 流畅性\n- A整体更口语化、更自然，如\"干掉\"、\"老公\"\n- B更书面化，如\"抵达\"、\"丈夫\"\n- A某些地方过于口语（段落12\"乱跑\"、段落45\"挤出\"）\n\n### 3. 风格/语气\n- **引号格式**：A用中文引号，B混用日式「」和中文引号，不够统一\n- **段落9**：B错误地把内心独白加了对话引号\n- 轻小说语气：A更活泼，B更稳重，两者各有特色\n\n### 4. 术语一致性\n- **称呼**：A\"里昂/里昂先生\"混用，B较一致地用\"里昂先生\"\n- **婆家/义家**：B用\"婆家\"更符合中文习惯，A用\"继亲家\"\"亲戚\"不够准确\n\n### 5. 连贯性\n- B缺失段落2严重影响连贯性\n- A段落间衔接更自然\n\n### 6. 格式\n- B引号使用不统一\n- A标点格式更一致\n\n## 关键差异\n\n1. **B缺失段落2翻译**——重大扣分项\n2. **段落3 B的主客关系翻译错误**\n3. A更口语化 vs B更书面化\n4. B引号格式混乱\n5. A某些细节不如B准确（如段落41、56）\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B缺失段落2，段落3主客关系错误；A段落41义妹译错\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语自然，B偏书面化\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A符合轻小说风格，B引号混用且段落9格式错误\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A称呼不一致，B婆家用语更准确\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"B缺失段落2严重影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B引号格式混乱，日式与中式混用\"}\n  },\n  \"key_differences\": [\n    \"B缺失段落2的完整翻译\",\n    \"B段落3主客关系翻译错误（见せて回る→被领着参观）\",\n    \"A更口语化适合轻小说，B更书面正式\",\n    \"B引号格式不统一（混用「」和\"\"）\",\n    \"A在部分细节准确度上逊于B（如义妹、新娘新郎区分）\"\n  ],\n  \"final_summary\": \"虽然B在某些细节翻译上更准确（如婆家用语、段落56的新娘新郎区分），但B存在三个关键问题：缺失段落2翻译、段落3主客关系翻译错误、引号格式混乱。A整体完整性好，语言风格更符合轻小说的活泼口吻，格式统一。综合考量，A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14234,
+          "completion_tokens": 1695,
+          "total_tokens": 15929
+        }
+      },
+      "status": "failed",
+      "error": "Expecting ',' delimiter: line 16 column 21 (char 566)"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "8a3f2f46-8191-4bff-a37e-5062d99bf711",
+      "judge_response": {
+        "id": "8a3f2f46-8191-4bff-a37e-5062d99bf711",
+        "object": "chat.completion",
+        "created": 1768432410,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题发现\n\n**段落2：B译文缺失**\n这是一个严重问题，B译文完全缺失该段落。\n\n**段落3：方向性错误**\n- 原文：「レオンさんにこの街で手に入る土産物や嗜好品を見せて回りながら」\n- A：「一边带里昂先生逛着街，给他看」✓\n- B：「一边让里昂先生领着参观」✗（方向相反，应是主角带领里昂）\n\n**段落41：关系表述错误**\n- 原文：「義妹である彼女」（作为义妹的她）\n- A：「弟妹」✗（错误，义妹指丈夫的妹妹，非弟妹）\n- B：「义妹」✓\n\n**段落56：理解偏差**\n- A将四种情况混淆合并，逻辑混乱\n- B清晰列出四种情况（迟到的新娘、不知情的新郎、只见过一次的新娘、从未见过的新郎）✓\n\n**段落84：逻辑错误**\n- A：「你不知道我不是贵族」逻辑混乱\n- B：「因为你不是贵族，不知道我是贵族的夫人」✓ 更清晰\n\n### 术语与风格\n\n| 项目 | A | B |\n|------|---|---|\n| 紺色 | 深蓝色 | 绀蓝色✓ |\n| 義理の家族 | 继亲家/亲戚 | 婆家✓ |\n| 扉繋ぎ | 门锁 | 门扉连接✓ |\n| 敬称一致性 | 时有时无 | 较一致 |\n\n### 流畅性与风格\n- A倾向口语化（「老公」「干掉」「蠢透了」）\n- B更符合轻小说叙述语体，保持适度书面感\n- B的对话格式使用「」更符合日式轻小说惯例\n\n### 格式问题\n- 段落9：B错误添加引号（原文为内心独白）\n- 整体B的引号使用更规范统一\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落41(弟妹误译)、56(情况混淆)、84(逻辑混乱)有明显错误；B缺失段落2是重大扣分，但段落3方向错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"A过于口语化部分地方显得随意；B整体更流畅自然\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说细腻内敛的叙述风格；A部分用词过于粗犷\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"B对紺色、義理の家族、扉繋ぎ等专业术语处理更准确\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"A部分段落逻辑不清；B缺失段落影响完整性\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B引号使用更规范，但段落9有误加引号问题\"}\n  },\n  \"key_differences\": [\n    \"B缺失段落2是重大缺陷\",\n    \"A在段落41将義妹误译为弟妹\",\n    \"A在段落56将四种情况混为一谈\",\n    \"B整体术语更精准（绀蓝色、婆家、门扉连接）\",\n    \"B风格更贴合轻小说文体，A过于口语化\"\n  ],\n  \"final_summary\": \"B在准确性、术语、风格方面整体优于A，尽管缺失段落2是严重问题。A存在多处理解错误（义妹→弟妹、四种情况混淆、逻辑混乱），且风格过于口语化。综合权衡，B的整体质量略胜，但置信度中等，因两者各有明显缺陷。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14234,
+          "completion_tokens": 1964,
+          "total_tokens": 16198
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落41(弟妹误译)、56(情况混淆)、84(逻辑混乱)有明显错误；B缺失段落2是重大扣分，但段落3方向错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "A过于口语化部分地方显得随意；B整体更流畅自然"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说细腻内敛的叙述风格；A部分用词过于粗犷"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "B对紺色、義理の家族、扉繋ぎ等专业术语处理更准确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "A部分段落逻辑不清；B缺失段落影响完整性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B引号使用更规范，但段落9有误加引号问题"
+      }
+    },
+    "key_differences": [
+      "B缺失段落2是重大缺陷",
+      "A在段落41将義妹误译为弟妹",
+      "A在段落56将四种情况混为一谈",
+      "B整体术语更精准（绀蓝色、婆家、门扉连接）",
+      "B风格更贴合轻小说文体，A过于口语化"
+    ],
+    "final_summary": "B在准确性、术语、风格方面整体优于A，尽管缺失段落2是严重问题。A存在多处理解错误（义妹→弟妹、四种情况混淆、逻辑混乱），且风格过于口语化。综合权衡，B的整体质量略胜，但置信度中等，因两者各有明显缺陷。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

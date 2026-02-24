@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:21:54.444402",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "e242f8b7d55f5cad77e6da903c864d0cfc76430a9d7470950e0036e16b12251b",
+    "B": "1339c170b8649549a8813b098555635c183971e2c7286660ce0c4fee41accf5b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:22:48.200155",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "58f74e53-e696-4faa-a2aa-4e0dd01c033e",
+      "judge_response": {
+        "id": "58f74e53-e696-4faa-a2aa-4e0dd01c033e",
+        "object": "chat.completion",
+        "created": 1768432967,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 1. 准确性分析\n\n**段落2**: A译\"突然放假\"稍添加了原文没有的\"突然\"，B\"我明天休假\"更贴合原文「明日仕事が休みになったんだ」。\n\n**段落14**: 「ブッキング」(double booking)指预约冲突。A译\"冲突\"准确，B译\"取消约定\"理解有误。\n\n**段落41**: 原文「子供だろうが結婚指輪をあげる親はいねぇな」，A\"再宠孩子的父母也不会把结婚戒指送人\"理解更准确，B的理解有偏差。\n\n**段落72**: A出现明显错误：「……ん〜」应是幼女酱的声音，A把引号位置弄错了。\n\n**段落105**: 「晩飯にすっから」A译\"当晚饭吃啦\"准确，B\"吃光光\"过度意译。\n\n### 2. 术语一致性\n\n- **A的问题**: 段落106将「マミィ〜」译为\"妈妈桑\"，与前文\"妈咪～\"不一致。\n- **B的问题**: 「ティミットちゃん」在段落54-56间\"蒂米特\"和\"提米特\"交替使用。\n\n### 3. 格式问题\n\n- **A**: 段落72括号格式错误严重影响阅读。\n- **B**: 段落83-86使用普通引号\"\"而非日式引号「」，格式不统一。\n\n### 4. 流畅性与风格\n\n两者整体流畅度相近。A的口语感更强（如\"哪还谈得上享受\"），B部分表达略正式但也通顺。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A对'ブッキング'等关键词理解更准确；B段落14误译\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相近，各有口语化表达\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A语气更俏皮活泼，符合轻小说第一人称叙述\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A有'妈妈桑'不一致；B有'提米特/蒂米特'混用\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"A段落72错误影响阅读；B整体连贯\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A段落72严重格式错误；B段落83-86引号不统一\"}\n  },\n  \"key_differences\": [\n    \"段落14：A正确译为'冲突'，B误译为'取消约定'\",\n    \"段落72：A格式错误严重\",\n    \"段落83-86：B引号格式不一致\",\n    \"段落106：A名称翻译不一致'妈妈桑'\"\n  ],\n  \"final_summary\": \"两者水平接近各有瑕疵。A在关键语义理解（如ブッキング=冲突）上更准确，语气更符合轻小说风格；但段落72有严重格式错误。B格式整体更统一，但有误译和名称不一致问题。综合考量准确性权重更高，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11064,
+          "completion_tokens": 2419,
+          "total_tokens": 13483
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对'ブッキング'等关键词理解更准确；B段落14误译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相近，各有口语化表达"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A语气更俏皮活泼，符合轻小说第一人称叙述"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有'妈妈桑'不一致；B有'提米特/蒂米特'混用"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "A段落72错误影响阅读；B整体连贯"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A段落72严重格式错误；B段落83-86引号不统一"
+      }
+    },
+    "key_differences": [
+      "段落14：A正确译为'冲突'，B误译为'取消约定'",
+      "段落72：A格式错误严重",
+      "段落83-86：B引号格式不一致",
+      "段落106：A名称翻译不一致'妈妈桑'"
+    ],
+    "final_summary": "两者水平接近各有瑕疵。A在关键语义理解（如ブッキング=冲突）上更准确，语气更符合轻小说风格；但段落72有严重格式错误。B格式整体更统一，但有误译和名称不一致问题。综合考量准确性权重更高，A略胜。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

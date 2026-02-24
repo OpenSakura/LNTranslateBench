@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:04:31.120386",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.GLM-4.6.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "abaf370c334204557cf6043006a1766d76fae3a171b6f0500b52ce23d8c7079e",
+    "B": "88fadf0b58ca8cd7dce074c4a907bce522d3d2225f56f7b27d814882c7fb1c32"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:05:17.032704",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c4616614-845b-451d-b5b2-143a339f2619",
+      "judge_response": {
+        "id": "c4616614-845b-451d-b5b2-143a339f2619",
+        "object": "chat.completion",
+        "created": 1768421116,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段关键差异分析\n\n### 准确性问题\n\n**段落1**: A\"坦白\"vs B\"出柜\" - \"カミングアウト\"在此语境指坦白身份/秘密，非性取向出柜，A更准确。\n\n**段落2**: A语序混乱（\"菲利普明明告诉她患有性认同障碍，她从13岁...\"主语混淆），B更清晰地表达了是菲利普患有性别认同障碍。\n\n**段落19**: B\"自己拔出了自己的剑鞘\"语义错误，应是\"从鞘中拔剑\"，A正确。\n\n**段落32**: 原文\"本気は目にも映らない\"意为\"全力的话眼睛看不到\"。A正确，B误译为\"不想暴露真正实力\"。\n\n**段落46**: \"チョロい\"意为\"好骗的/容易上当的\"，A\"好骗的\"正确，B\"狡猾的\"完全错误。\n\n**段落59**: 原文\"黙っていてゴメンなさい\"意为\"一直瞒着你对不起\"。A正确，B\"对不起让你一直保持沉默\"理解错误。\n\n### 风格与语气\n\n**段落3**: A加了\"你他妈的\"过度渲染，原文语气没这么强烈；B保持原味。\n\n**段落34/36/50**: A\"对不～起啦～\"更好地还原了\"ゴメ～ンちゃい\"的撒娇语气。\n\n**段落53**: A\"休克疗法把她给睡了\"虽然口语化但符合轻小说风格；B\"冲击疗法来拥抱她\"较生硬。\n\n### 流畅性\n\n- A整体对话更自然生动（如段落14\"可劲儿地逗弄\"）\n- B部分句子略显生硬（如段落48语句冗长）\n\n### 格式\n\n- B保留更多原文引号格式\n- A偶有省略引号的情况\n\n---\n\n## 最终评判\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B有多处严重误译：チョロい译为狡猾、段落32/59理解错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A对话更自然流畅，B部分句子生硬\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说语气，撒娇语气还原好；但段落3过度添加脏话\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者名称基本一致，A用迷宫/B用地下城皆可\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A叙事连贯，B部分断句影响阅读\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留引号格式更完整\"}\n  },\n  \"key_differences\": [\n    \"段落46: チョロい A正确译为'好骗的' vs B错误译为'狡猾的'\",\n    \"段落32: A正确理解'全力看不见' vs B误译为'不想暴露实力'\",\n    \"段落59: A正确'瞒着你对不起' vs B错误'让你保持沉默'\",\n    \"段落19: A正确'从鞘中拔剑' vs B错误'拔出剑鞘'\",\n    \"整体语气: A更符合轻小说风格，B较为生硬\"\n  ],\n  \"final_summary\": \"A翻译在准确性和流畅性上明显优于B，尤其避免了B的多处关键误译。虽然A在段落3有过度添加脏话的问题，且偶有省略引号，但整体更好地还原了轻小说的叙事风格和对话语气。B虽然格式保持较好，但多处理解错误严重影响了翻译质量。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9938,
+          "completion_tokens": 2092,
+          "total_tokens": 12030
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B有多处严重误译：チョロい译为狡猾、段落32/59理解错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A对话更自然流畅，B部分句子生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说语气，撒娇语气还原好；但段落3过度添加脏话"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者名称基本一致，A用迷宫/B用地下城皆可"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A叙事连贯，B部分断句影响阅读"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留引号格式更完整"
+      }
+    },
+    "key_differences": [
+      "段落46: チョロい A正确译为'好骗的' vs B错误译为'狡猾的'",
+      "段落32: A正确理解'全力看不见' vs B误译为'不想暴露实力'",
+      "段落59: A正确'瞒着你对不起' vs B错误'让你保持沉默'",
+      "段落19: A正确'从鞘中拔剑' vs B错误'拔出剑鞘'",
+      "整体语气: A更符合轻小说风格，B较为生硬"
+    ],
+    "final_summary": "A翻译在准确性和流畅性上明显优于B，尤其避免了B的多处关键误译。虽然A在段落3有过度添加脏话的问题，且偶有省略引号，但整体更好地还原了轻小说的叙事风格和对话语气。B虽然格式保持较好，但多处理解错误严重影响了翻译质量。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

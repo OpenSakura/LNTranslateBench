@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:36:28.222351",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "7caf623b1e679742ee36fe47e2f2e8659763f68934378e4b803dd0687133eb65",
+    "B": "cfcc587ae46bfc5057aaa3a23484b9e28eeacd56da11db7a1d6752e9f985bf4d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:37:29.472089",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2079291f-9b55-4794-b1d1-b211de84f9e3",
+      "judge_response": {
+        "id": "2079291f-9b55-4794-b1d1-b211de84f9e3",
+        "object": "chat.completion",
+        "created": 1768423049,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**段落3**: A遗漏了\"黒髪\"（黑发），只说\"头发\"；B完整保留了\"黑色长发\"。\n\n**段落15**: A理解有误，\"害我担心死了\"暗示对方让自己担心，但原文是说主角担心席恩。B正确理解为\"我本来很担心的\"。\n\n**段落17**: A用\"你算什么东西\"，但原文是自省语气；B正确用\"我算什么东西啊\"。\n\n**段落49**: A用\"您\"显得在直接对母亲说话，但实际是在和波普拉讨论母亲；B用\"妈妈\"更准确。\n\n**段落100**: A\"我没想到这是不讲道理的愤怒\"意思反了，原文是\"我并不觉得那是无理的愤怒\"；B正确。\n\n### 格式问题\n\n**A的问题**: 段落35、91、94、95缺少引号标记。\n\n**B的严重问题**: 段落96出现未翻译的英文\"somewhere\"，段落99出现\"buildings\"，这是重大格式/翻译错误。\n\n**段落65**: B出现\"玛露妈妈\"，原文マザー应为\"妈妈\"或\"母亲\"，来源不明。\n\n### 流畅性与风格\n\nA整体偏口语化、随意，如\"啥也不知道\"\"没啥两样\"\"哈哈\"。\nB更正式、完整，表达更细腻，如\"若无其事地\"\"浑浑噩噩\"。\n\n对于轻小说内心独白，B的风格更贴合原文基调。\n\n### 术语一致性\n\n两者对人名处理一致（尤莉娅、席恩、波普拉），B在段落65出现\"玛露妈妈\"的错误。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落15、17、100有理解错误；B整体更准确但段落65术语有误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B表达更流畅自然，A偏口语化有时略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说内心独白的细腻风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"B出现'玛露妈妈'来源不明的错误\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙述连贯性更好\"},\n    \"formatting\": {\"A\": 7, \"B\": 4, \"notes\": \"A缺少部分引号；B出现未翻译英文单词(somewhere/buildings)属严重错误\"}\n  },\n  \"key_differences\": [\n    \"B在段落96和99出现未翻译的英文单词，属于严重格式错误\",\n    \"A在多处缺少对话引号\",\n    \"A对段落15、17、100的理解有偏差\",\n    \"B整体语言更精致但出现'玛露妈妈'等术语问题\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性和风格上略胜一筹，但出现了未翻译英文单词（somewhere、buildings）的严重格式问题，这在正式翻译中是不可接受的。A虽有若干准确性和格式小问题，但没有如此明显的硬伤。综合考虑，A因无重大硬伤而略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13205,
+          "completion_tokens": 2587,
+          "total_tokens": 15792
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落15、17、100有理解错误；B整体更准确但段落65术语有误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B表达更流畅自然，A偏口语化有时略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说内心独白的细腻风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "B出现'玛露妈妈'来源不明的错误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙述连贯性更好"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 4,
+        "notes": "A缺少部分引号；B出现未翻译英文单词(somewhere/buildings)属严重错误"
+      }
+    },
+    "key_differences": [
+      "B在段落96和99出现未翻译的英文单词，属于严重格式错误",
+      "A在多处缺少对话引号",
+      "A对段落15、17、100的理解有偏差",
+      "B整体语言更精致但出现'玛露妈妈'等术语问题"
+    ],
+    "final_summary": "B在准确性、流畅性和风格上略胜一筹，但出现了未翻译英文单词（somewhere、buildings）的严重格式问题，这在正式翻译中是不可接受的。A虽有若干准确性和格式小问题，但没有如此明显的硬伤。综合考虑，A因无重大硬伤而略优。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

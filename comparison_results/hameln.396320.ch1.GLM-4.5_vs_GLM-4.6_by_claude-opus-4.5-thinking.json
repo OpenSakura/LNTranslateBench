@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:21:13.951908",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.GLM-4.5.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "d1c73c53fa4b21ae156c0415772f9aeb7b15703176e55f88dffdb2e068021dc5",
+    "B": "8994dc41ed84a13fe75b8b6155f8f02db4495c63e33f81d127ffa26eb14ed450"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:21:52.521498",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7bc3f802-e1d9-4e66-97e8-3a670cf67a9a",
+      "judge_response": {
+        "id": "7bc3f802-e1d9-4e66-97e8-3a670cf67a9a",
+        "object": "chat.completion",
+        "created": 1768422112,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性\n- **段落14**：「ゴーレム」A译为\"巨人\"，B译为\"魔像\"。B更准确，Golem应译为\"魔像/石像怪\"。\n- **段落43**：「親友」原文指的是男性挚友变成女性，A译为\"闺蜜\"不恰当（闺蜜通常指女性间的友谊），B译为\"挚友\"更准确。\n- **段落9**：A\"自从地下城有人介入\"语义略有偏差，B\"地下城有人进入了\"更贴合原文。\n\n### 2. 流畅性\n- 两者整体流畅度相近\n- A在段落27\"可一看到眼前的现实\"表达较自然\n- B在段落35\"如果从出生时就是那样的男女比例\"更通顺\n\n### 3. 术语一致性（关键差异）\n- **A存在严重不一致**：\n  - 段落13、14、22用\"地牢\"\n  - 段落31、32用\"迷宫\"\n  - 其他地方用\"地下城\"\n- **B全程统一使用\"地下城\"**\n\n### 4. 格式/标点\n- **A在段落67、70、72、75使用了中文引号\"\"**，而其他地方用「」，格式不一致\n- **B全程使用「」**，保持一致\n\n### 5. 称呼处理\n- A用\"梓桑\"，B用\"梓小姐\"——B更符合中文习惯\n- A在段落69突然改用\"梓小姐\"，自身不一致\n\n### 6. 细节处理\n- 段落46：A\"什么都没了\"理解有误，原文是\"何もかも\"（一切的一切），B\"一切的一切\"更准确\n- 段落61：A\"没有脸的天使\"vs B\"没有面孔的天使\"，B更文雅\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A将ゴーレム误译为'巨人'，親友误译为'闺蜜'；B更准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相近，各有优劣\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"两者都保持轻小说风格，B称呼处理更自然\"},\n    \"terminology\": {\"A\": 5, \"B\": 9, \"notes\": \"A在'地下城/地牢/迷宫'间不一致，B全程统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体连贯性更好\"},\n    \"formatting\": {\"A\": 6, \"B\": 9, \"notes\": \"A引号使用不一致（部分用\\\"\\\"部分用「」），B格式统一\"}\n  },\n  \"key_differences\": [\n    \"术语一致性：A混用'地下城/地牢/迷宫'，B统一用'地下城'\",\n    \"ゴーレム翻译：A误译为'巨人'，B正确译为'魔像'\",\n    \"親友翻译：A不当译为'闺蜜'，B正确译为'挚友'\",\n    \"格式问题：A部分段落使用中文引号\\\"\\\"，破坏一致性\",\n    \"称呼处理：A用'梓桑'且自身不一致，B统一用'梓小姐'\"\n  ],\n  \"final_summary\": \"B在术语一致性、准确性和格式规范上明显优于A。A的致命问题是'ダンジョン'翻译不统一（地下城/地牢/迷宫混用）以及格式不一致。B虽在个别表达上略显平淡，但整体质量更稳定可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12720,
+          "completion_tokens": 1791,
+          "total_tokens": 14511
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A将ゴーレム误译为'巨人'，親友误译为'闺蜜'；B更准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相近，各有优劣"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者都保持轻小说风格，B称呼处理更自然"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "A在'地下城/地牢/迷宫'间不一致，B全程统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体连贯性更好"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 9,
+        "notes": "A引号使用不一致（部分用\"\"部分用「」），B格式统一"
+      }
+    },
+    "key_differences": [
+      "术语一致性：A混用'地下城/地牢/迷宫'，B统一用'地下城'",
+      "ゴーレム翻译：A误译为'巨人'，B正确译为'魔像'",
+      "親友翻译：A不当译为'闺蜜'，B正确译为'挚友'",
+      "格式问题：A部分段落使用中文引号\"\"，破坏一致性",
+      "称呼处理：A用'梓桑'且自身不一致，B统一用'梓小姐'"
+    ],
+    "final_summary": "B在术语一致性、准确性和格式规范上明显优于A。A的致命问题是'ダンジョン'翻译不统一（地下城/地牢/迷宫混用）以及格式不一致。B虽在个别表达上略显平淡，但整体质量更稳定可靠。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

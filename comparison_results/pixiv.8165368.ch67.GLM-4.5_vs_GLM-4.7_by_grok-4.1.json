@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:45.256751",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.GLM-4.5.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "82f4fe8e8aeb0a9f8bd9be1120c4eb8e1e7ad1837e7473a5b5cdd2636f086c48",
+    "B": "483d0d7b67a8c97398e3170a40c609c4334b1ef3beb380576675124a8baa7542"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:21.901604",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Dw3NjeKFUQNxgBAxeGlMPZt8V3T",
+      "judge_response": {
+        "id": "chatcmpl-89Dw3NjeKFUQNxgBAxeGlMPZt8V3T",
+        "object": "chat.completion",
+        "created": 1768427121,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 トリプルフェイス\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"名探偵コナン 警察学校組 トリプルフェイス\"\n> 📊 **Results requested:** 5\n\n> 🔍 **5 results found**\n\n> [🔗 \"トリプルフェイス - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%83%88%E3%83%AA%E3%83%97%E3%83%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9)\n> [🔗 \"『名探偵コナン』安室透／バーボン／降谷零ーートリプルフェイスを持つ男、その底知れぬ魅力 - リアルサウンド\" realsound.jp](https://realsound.jp/book/2020/04/post-536204.html)\n> [🔗 \"劇場版「名探偵コナン」第22作目の情報解禁、“トリプルフェイス”安室透が登場！ - 映画ランド\" eigaland.com](https://eigaland.com/topics?p=60708)\n> [🔗 \"「名探偵コナン 純黒の悪夢」黒ずくめの組織キャラ一覧 キュラソー役やゲスト声優は誰？ コナン×安室×赤井の“神コラボ”も必見 - アニメハック\" anime.eiga.com](https://anime.eiga.com/news/column/animehack_editors/119609)\n> [🔗 \"安室透・バーボン・降谷零 徹底解剖！トリプルフェイスのすべて【名探偵コナン】 - eBookJapan\" ebookjapan.yahoo.co.jp](https://ebookjapan.yahoo.co.jp/content/title-119961/triple.html)\n\n> 🔍 **5 results found**\n\n> [🔗 \"トリプルフェイス - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%83%88%E3%83%AA%E3%83%97%E3%83%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9)\n> [🔗 \"『名探偵コナン』警察学校組のメンバー一覧｜登場回や人物像、関係性など解説\" www.animatetimes.com](https://www.animatetimes.com/news/details.php?id=1747820329)\n> [🔗 \"#工藤新一 #降谷零 【トリプルフェイス】夜遅い外出には注意しましょう【補導案件!?】 - sulmeの\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=9746207)\n> [🔗 \"安室透・バーボン・降谷零 徹底解剖！トリプルフェイスのすべて【名探偵コナン】 - eBookJapan\" ebookjapan.yahoo.co.jp](https://ebookjapan.yahoo.co.jp/content/title-119961/triple.html)\n> [🔗 \"トリプルフェイスをもつ女 - 全67話 【連載中】（涼音🎐🫧さんの夢小説）\" novel.prcm.jp](https://novel.prcm.jp/novel/SJ7HXXfz6kMIogPO4nZu)\n\n\n这是一个典型的《名探偵コナン》同人/二次创作梦小说前言+正文片段，涉及安室透（降谷零）、诸伏景光（スコッチ）、剧场版《纯黑的噩梦》（純黒の悪夢）的内容梗概。原文是作者的“注意事项”+轻松、吐槽向的第一人称叙述，对话活泼、带有粉丝向的自嘲与调侃，语气亲切、口语化、带点卖萌与戏谑。\n\n**整体比较：**\n\n- **准确性**：两者都基本忠实于原文意思，少有严重误译。A在多处更贴近原文的细微语气（如“胡乱改动”“点到为止的性描写”“悦耳的声音”对应“好音”带有戏谑感；“Safe”保留原文カタカナ；“眼冒金星”更生动贴合“目を白黒”）。B偶尔稍显生硬或微调（如“随心所欲的改动”比A的“为了方便…胡乱改动”更中性，但原文“ご都合主義”偏负面随意；“暗示程度的性描写”准确但不如A的“有点到为止”口语亲切）。A整体更精准捕捉作者的随意吐槽感。\n\n- **流畅性**：A的中文更自然、口语化，像中文网络小说/轻小说读者习惯的表达（“唔——。”“请ー进”“哇哇！”“咿！”等拟声/语气词处理生动；句子节奏好，不拗口）。B有些地方稍显书面或别扭（如“这是二次创作的无名字梦小说”“对象是Triple Face”“发出了非常清脆的响声”“嘻嘻地抱着肚子”不如A流畅；“ゆーや”“勇也”音译不统一且奇怪，原文明显是“ヒロ”指诸伏ヒロ/景光，A用“由也”更合理贴合常见汉化“景光→由也”）。\n\n- **风格/语气**：轻小说尤其是梦小説常带作者本人强烈介入、卖萌、粉丝向调侃。A很好保留了这种“作者亲自下场吐槽”的活泼、亲切、略带沙雕感（“大概还安全”“太惨了”“由也，加油哦！”“你还真能喜欢上我啊”等处语气戏谑到位）。B整体更平淡、中规中矩，少了点那种“粉丝和角色互动”的趣味与轻快（如对话更直译，缺少A的感叹号、波浪线活用；“暗号”比“口令”少点趣味）。\n\n- **术语/名称一致性**：两者基本一致（降谷、诸伏、柯南→小柯南/柯南、Zero等）。但B在“警察学校组”统一，A也基本统一；“Triple Face”两者都音译“トリプルフェイス”。A在人名音译更稳定（hiro→由也，常见于中文圈对诸伏景光的爱称/汉化）。B的“勇也”不常见，略扣分。\n\n- **连贯性/可读性**：A句子更连贯，读起来像一篇完整的中文轻小说，节奏感强，适合沉浸阅读。B偶有生硬跳跃或重复感（如多次“降谷先生”而A有时简写“降谷”更自然）。\n\n- **格式/标点符号**：A更活泼运用中文轻小说常见标点（——、…、！、？、～、ー等拉长音、波浪），贴合原文カタカナ/伸ばし棒的语气。B标点较保守，少了些趣味（“唔……” vs “唔——。”；“请进~” vs “请ー进”）。\n\n**关键差异总结**：\n- A更忠实于原文的轻快、吐槽、粉丝向语气，中文表达更生动自然，像母语级轻小说翻译。\n- B整体准确但偏保守、直译痕迹稍重，少了些“可爱”与节奏感，读来稍显平。\n\n**最终判决**：A整体更好，尤其在轻小说文体所需的流畅性、风格再现、可读性上优势明显。两者准确性接近，但A在捕捉作者“卖萌+自嘲”本质更胜一筹。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更精准捕捉语气细节与戏谑感（如“胡乱改动”“悦耳的声音”“眼冒金星”），B偶有微调或中性化处理\"},\n    \"fluency\": {\"A\": 10, \"B\": 8, \"notes\": \"A中文极自然、口语节奏优秀，像中文轻小说；B部分句子稍生硬或书面化\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A很好保留了梦小説的亲切、调侃、粉丝向卖萌语气；B偏平淡、直译，少了趣味与活泼\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"两者术语基本一致，A在人名音译（如“由也”）更符合中文圈习惯，B的“勇也”不常见\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体阅读流畅连贯，节奏感强；B偶有小跳跃或重复称呼\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"A标点、语气符号（如～、ー、——）活用更好，贴合原文轻松感；B较保守\"}\n  },\n  \"key_differences\": [\n    \"A在语气词、拟声词、感叹处理更生动贴合轻小说风格（如“唔——。”“哇哇！”“咿！”）\",\n    \"A更好保留作者自嘲与粉丝互动感（如“大概还安全”“太惨了”“由也，加油哦！”）\",\n    \"B部分表达更中性或直译，少了原文的戏谑与可爱（如“暗号”vs“口令”，“清脆的响声”vs“悦耳的声音”）\",\n    \"A整体更像成熟的中文轻小说翻译，B稍显保守\"\n  ],\n  \"final_summary\": \"A在准确传达原文轻松吐槽与粉丝向风格的同时，中文流畅度、可读性、语气再现全面优于B，更适合轻小说/梦小説的阅读体验。B准确但缺乏灵动感。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14682,
+          "completion_tokens": 3202,
+          "total_tokens": 17884
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更精准捕捉语气细节与戏谑感（如“胡乱改动”“悦耳的声音”“眼冒金星”），B偶有微调或中性化处理"
+      },
+      "fluency": {
+        "A": 10,
+        "B": 8,
+        "notes": "A中文极自然、口语节奏优秀，像中文轻小说；B部分句子稍生硬或书面化"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A很好保留了梦小説的亲切、调侃、粉丝向卖萌语气；B偏平淡、直译，少了趣味与活泼"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者术语基本一致，A在人名音译（如“由也”）更符合中文圈习惯，B的“勇也”不常见"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体阅读流畅连贯，节奏感强；B偶有小跳跃或重复称呼"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A标点、语气符号（如～、ー、——）活用更好，贴合原文轻松感；B较保守"
+      }
+    },
+    "key_differences": [
+      "A在语气词、拟声词、感叹处理更生动贴合轻小说风格（如“唔——。”“哇哇！”“咿！”）",
+      "A更好保留作者自嘲与粉丝互动感（如“大概还安全”“太惨了”“由也，加油哦！”）",
+      "B部分表达更中性或直译，少了原文的戏谑与可爱（如“暗号”vs“口令”，“清脆的响声”vs“悦耳的声音”）",
+      "A整体更像成熟的中文轻小说翻译，B稍显保守"
+    ],
+    "final_summary": "A在准确传达原文轻松吐槽与粉丝向风格的同时，中文流畅度、可读性、语气再现全面优于B，更适合轻小说/梦小説的阅读体验。B准确但缺乏灵动感。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

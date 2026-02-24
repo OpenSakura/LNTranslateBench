@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:45:44.203086",
+  "sample": "syosetu.n1560fy.ch298",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n1560fy.ch298.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n1560fy.ch298.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/syosetu.n1560fy.ch298.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9aeb6269094dc80681686c7ce43485d4644d7889a31862f13341d77dfc8671a9",
+    "A": "21498178d84e23c9028d47812e8e7dae2a002b8ae840ef27d29071f8ea7edabe",
+    "B": "3b0e9e841650df41706a9f188da85fe338d0bf47c4d1a309e3bc76fd2394a47d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:46:04.271761",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DlTZPkfLG9TT1ocaEEu8weeoBJJ",
+      "judge_response": {
+        "id": "chatcmpl-89DlTZPkfLG9TT1ocaEEu8weeoBJJ",
+        "object": "chat.completion",
+        "created": 1768427163,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"凡人探索者 小説 翻訳 比較 OR 凡人探索者 轻小说 中文翻译 A B\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"凡人探索者 コミカライズ キャラクター アレタ\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"凡人探索者 ベルゼブブ バアル ゼウス アスタロト 中文翻译\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [comic-gardo.com](https://comic-gardo.com/episode/2550912964918726482)\n> 📋 **Task:** 这是凡人探索者漫画的某一话，提取页面上是否有原文日文对照或相关叙述风格描述，如果有翻译痕迹或读者评论提及翻译质量，请总结。重点关注是否涉及阿斯塔罗特、耳鬼、时之审判等关键词的中文表现。\n\n> 🔍 **Searching for:** \"\"凡人探索者\" \"アスタロト\" \"時の審判\" site:syosetu.com OR site:kakuyomu.jp\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"「凡人探索者のたのしい現代ダンジョンライフ」シリーズ（オーバーラップ文庫）\" BookWalker](https://bookwalker.jp/series/404019)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ｜株式会社オーバーラップ\" OVERLAP](https://over-lap.co.jp/narou/824004376)\n> [🔗 \"Amazon.co.jp: 凡人探索者のたのしい現代ダンジョン...\" Amazon Japan](https://www.amazon.co.jp/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95-4-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%A9%E3%83%83%E3%83%97%E6%96%87%E5%BA%AB-%E3%81%97%E3%81%B0%E7%8A%AC%E9%83%A8%E9%9A%8A-ebook/dp/B0DCDRW6JH)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】\" Syosetu](https://ncode.syosetu.com/n1560fy)\n> [🔗 \"『凡人探索者のたのしい現代ダンジョンライフ 1巻』｜感想・レビュー・試し読み - 読書メーター\" Bookmeter](https://bookmeter.com/books/20922147)\n> [🔗 \"【ダンジョン配信中！】凡人探索者のたのしい現代ダンジョンライフ〜最弱の凡人、ダンジョン配信をしてたらソロ攻略方法がヤバすぎると話題に、地上では顔が良いけど湿度の高い美人達との修羅場ラブコメでバズる〜（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16817330659735142550)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ～俺...\" WikiWiki](https://wikiwiki.jp/babel/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 1\" BOOK WALKER](https://bookwalker.jp/deef0cab8f-85c6-48b0-9c74-2a2326ee6eb8)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ - もちろんさん/しば犬部隊/諏訪真弘 / 第1話「味山只人という男」 | コミックガルド\" Comic Gardo](https://comic-gardo.com/episode/2550912964918726482)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 1 | ブックライブ\" BookLive](https://booklive.jp/product/index/title_id/1316580/vol_no/001)\n\n> 🔍 **10 results found**\n\n> [🔗 \"独占インタビュー「ラノベの素」 しば犬部隊先生『凡人探索者のたのしい現代ダンジョンライフ』 - ラノベニュースオンライン\" Ln-news](https://ln-news.com/articles/120353)\n> [🔗 \"「凡人探索者のたのしい現代ダンジョンライフ」シリーズ（オーバーラップ文庫）\" BookWalker](https://bookwalker.jp/series/404019)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ｜株式会社オーバーラップ\" OVERLAP](https://over-lap.co.jp/narou/824004376)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 【書籍6巻作業進行中、書いてて凄いたのしかったです、読者の皆にはごめんね】\" Syosetu](https://ncode.syosetu.com/n1560fy)\n> [🔗 \"Amazon.co.jp: 凡人探索者のたのしい現代ダンジョン...\" Amazon Japan](https://www.amazon.co.jp/%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95-1-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%A9%E3%83%83%E3%83%97%E6%96%87%E5%BA%AB-%E3%81%97%E3%81%B0%E7%8A%AC%E9%83%A8%E9%9A%8A-ebook/dp/B0BXSBT8R2)\n> [🔗 \"登場人物 - 凡人ソロ探索者 Wiki*\" WikiWiki](https://wikiwiki.jp/babel/%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ 1 | ブックライブ\" BookLive](https://booklive.jp/product/index/title_id/1316580/vol_no/001)\n> [🔗 \"【ダンジョン配信中！】凡人探索者のたのしい現代ダンジョンライフ〜最弱の凡人、ダンジョン配信をしてたらソロ攻略方法がヤバすぎると話題に、地上では顔が良いけど湿度の高い美人達との修羅場ラブコメでバズる〜（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16817330659735142550)\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ4 : 気ままに読書漬け\" Blog](https://dokusyozanmai.blog.jp/archives/88965938.html)\n> [🔗 \"【小説】凡人探索者のたのしい現代ダンジョンラ...\" Gamers](https://www.gamers.co.jp/pn/%E3%80%90%E5%B0%8F%E8%AA%AC%E3%80%91%E5%87%A1%E4%BA%BA%E6%8E%A2%E7%B4%A2%E8%80%85%E3%81%AE%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84%E7%8F%BE%E4%BB%A3%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95(1)/pd/10645234)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ベルゼブブ(悪魔) - アニヲタWiki(仮)\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/563.html)\n> [🔗 \"ベルゼブブとは何？ わかりやすく解説 Weblio辞書\" Weblio](https://www.weblio.jp/content/%E3%83%99%E3%83%AB%E3%82%BC%E3%83%96%E3%83%96)\n> [🔗 \"【創作のネタ・題材】ベルゼブブとはなにか？意...\" Souzoulog](https://souzoulog.com/2020/03/20/%E3%80%90%E5%89%B5%E4%BD%9C%E3%81%AE%E3%83%8D%E3%82%BF%E3%83%BB%E9%A1%8C%E6%9D%90%E3%80%91%E3%83%99%E3%83%AB%E3%82%BC%E3%83%96%E3%83%96%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B%EF%BC%9F%E6%84%8F)\n> [🔗 \"アスタロト - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B9%E3%82%BF%E3%83%AD%E3%83%88)\n> [🔗 \"魔王\" Megaten-akuma](https://megaten-akuma.com/devil-king)\n> [🔗 \"Character | TVアニメ「ベルゼブブ嬢のお気に召すまま。」公式サイト\" Beelmama](https://beelmama.com/character?chara=astaroth)\n> [🔗 \"バアル、悪魔（ベルゼブブ）になった慈雨と豊穣...\" Waqwaq-j](https://waqwaq-j.com/%E6%97%A7%E7%B4%84%E8%81%96%E6%9B%B8/21019)\n> [🔗 \"バアル・ゼブル\" Pixiv](https://dic.pixiv.net/a/%E3%83%90%E3%82%A2%E3%83%AB%E3%83%BB%E3%82%BC%E3%83%96%E3%83%AB)\n> [🔗 \"アスタロト\" Pixiv](https://dic.pixiv.net/a/%E3%82%A2%E3%82%B9%E3%82%BF%E3%83%AD%E3%83%88)\n> [🔗 \"バアル - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%A2%E3%83%AB)\n\n> 🔍 **1 results found**\n\n> [🔗 \"凡人探索者のたのしい現代ダンジョンライフ - もちろんさん/しば犬部隊/諏訪真弘 / 第1話「味山只人という男」 | コミックガルド\" comic-gardo.com](https://comic-gardo.com/episode/2550912964918726482)\n\n> 🔍 **10 results found**\n\n> [🔗 \"【ダンジョン配信中！】凡人探索者のたのしい現代ダンジョンライフ〜最弱の凡人、ダンジョン配信をしてたらソロ攻略方法がヤバすぎると話題に、地上では顔が良いけど湿度の高い美人達との修羅場ラブコメでバズる〜（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16817330659735142550)\n> [🔗 \"凡人ソロ探索者は現代ダンジョンに酔いながら恐ろしい怪物に立ち向かうようです。（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054892432572)\n> [🔗 \"第1話 配信準備 - 【ダンジョン配信中！】凡人探索者のたのしい現代ダンジョンライフ〜最弱の凡人、ダンジョン配信をしてたらソロ攻略方法がヤバすぎると話題に、地上では顔が良いけど湿度の高い美人達との修羅場ラブコメでバズる〜（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16817330659735142550/episodes/16817330659736416523)\n> [🔗 \"第306話 地獄の大公、アスタロト - 宮廷魔導師見習いを辞めて、魔法アイテム職人になります（神泉せい） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054888524829/episodes/16817139554918959615)\n> [🔗 \"第54話 レジェンダリーデーモン - 使い魔として召喚されたのは、かつて世界を滅ぼしたとされる傍若無人の大悪魔でした。～全てを凌駕する力で、この世界を再び変える物語～（こりんさん＠クラきょど４巻２０２６年発売） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16817139556124159714/episodes/16817330661659058553)\n> [🔗 \"フォローしているユーザー（@deleac） - カクヨム\" Kakuyomu](https://kakuyomu.jp/users/deleac/following_users)\n> [🔗 \"第33話 耳、耳、耳 - 凡人ソロ探索者は現代ダンジョンに酔いながら恐ろしい怪物に立ち向かうようです。（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054892432572/episodes/1177354054892517313)\n> [🔗 \"凡人探索者のたのしい遭難キャンプ飯、〜動画配信しながらヤンデレの相手をしつつ村で作ったビールを使って焚き火とフライパンで焼き上げる\"怪物種61号ウタイテ鶏\"のビア・チキンステーキ\"〜（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16816927860675955054)\n> [🔗 \"第8話 冒険者ギルドと青空市場 - 現代ダンジョンライフの続きは異世界オープンワールドで！ お試し版（しば犬部隊） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054891783380/episodes/1177354054893282637)\n> [🔗 \"フォローしているユーザー（@kibe） - カクヨム\" Kakuyomu](https://kakuyomu.jp/users/kibe/following_users)\n\n\n以下是对翻译A和翻译B的详细比较分析。本段落出自轻小说《凡人探索者のたのしい現代ダンジョンライフ》（凡人探索者的愉快现代迷宫生活），涉及神话恶魔（如别西卜/ベルゼブブ、巴力/バアル、宙斯/ゼウス、阿斯塔罗特/アスタロト）、东方神秘与“耳”的力量等设定，叙述风格带有强烈的轻小说特色：激烈战斗、疯狂语气、内 monologue、夸张拟声、哲学式独白，以及最后的宣传后记。\n\n### 总体印象\n- **A**：倾向于较为文雅、文学化的中文表达，使用较多成语、四字词和较正式的句式（如“我辈”“吾王”“将死了”），整体更接近传统轻小说翻译的“中二感”与叙述美感，但有时显得稍显生硬或冗长。\n- **B**：更口语化、现代网络用语感强（如“**”“哇”“你他妈”“完蛋了”“超赞”），贴近当下中文读者的阅读习惯，战斗/对话部分更活泼、生动，但偶尔过于随意或丢失原文的中二庄重感。\n\n### 分项详细分析\n\n**1. 准确性（意思保留）**  \nA 在关键神话术语、神性描述、权能解释上更忠实（如“三大神性”“不可侵の契り”→“三大神性缔结了互不侵犯的誓约”）。  \nB 偶尔简化或改写（如段落26“被当作肉食的家畜”→“被当作肉吃的家畜”少了“肉食扱い”的 nuance；段落45有明显删减和**代替脏话）。  \n**A 稍胜**，尤其在复杂说明段落。\n\n**2. 流畅性（自然表达）**  \nB 的对话和内心独白更像日常中文，读起来顺滑（如段落33、48的疯狂叫喊，B更爆裂自然）。  \nA 有时句子过长或用词古雅（如“我辈”“恳请您能够传达”），略显别扭。  \n**B 更胜**，尤其口语部分。\n\n**3. 风格/语气（轻小说叙述/对话）**  \n轻小说核心是夸张、热血、中二、疯狂。  \nA 很好保留了中二感（如“作为真正的星球支配者，必将征服大地”“此乃吾之权能”）。  \nB 在战斗/疯狂处更带劲（如“嘎哈哈哈。啊，真爽”），但哲学独白（如段落74）过于白话，少了原文的庄严感。  \n**A 整体风格更贴合**轻小说常见的叙述腔调。\n\n**4. 术语/名称一致性**  \n两者都统一了“神秘种”“神性”“奥林匹斯”“别西卜”“巴力”“宙斯”“阿斯塔禄/阿斯塔罗特”等。  \nA 在“オリュンポス”→“奥林匹斯”更一致；B 偶尔小差异（如“蝇之国”vs“蝇国”）。  \n**基本平手**，A 微胜。\n\n**5. 连贯性/可读性**  \nA 整体段落衔接更文学化，适合沉浸式阅读。  \nB 节奏更快，对话更抓眼球，但部分地方因过于口语而略显跳脱。  \n**A 稍胜**，但B在战斗高潮更刺激。\n\n**6. 格式/标点符号**  \n两者都很好处理了破折号、感叹号、拟声词。  \nB 在拟声（如“噗嗤，噗嗤嗤嗤嗤”）和语气词上更活泼；A 的标点更规整。  \n**基本平手**。\n\n### 关键差异总结\n- A 更忠实原文的中二与文学感，适合喜欢传统轻小说风的读者（“吾王”“将死了”“命运之死”等）。\n- B 更现代化、接地气，战斗与骂战更爽快，但牺牲了部分原文的庄重与细腻（如长独白变短句、脏话弱化）。\n- 整体权衡：A 在准确性、风格保持、连贯性上优势明显；B 在流畅性和对话冲击力上占优。但考虑到轻小说读者更追求“中二燃”和“沉浸感”，A 的优势更关键。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A在神话设定、权能说明、细腻含义上更完整忠实\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B口语更自然流畅，A部分文言感稍重\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更好地保留了轻小说中二/庄重/疯狂的混合语气\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"两者一致性高，A在专有名词表述更严谨统一\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体叙述更连贯沉浸，B节奏快但偶有跳脱\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点/拟声处理均优秀，差异不大\"}\n  },\n  \"key_differences\": [\n    \"A更文学化、中二感强（如'吾王'、'此乃吾之权能'），B更口语网络化（如'你他妈'、'完蛋了'）\",\n    \"战斗疯狂叫喊B更爆裂生动，但哲学/设定说明A更完整细腻\",\n    \"后记宣传部分A更正式自然，B更活泼但略俚俗\"\n  ],\n  \"final_summary\": \"A整体更符合轻小说中常见的叙述风格与中二美学，准确性与沉浸感更强，虽然流畅度稍逊于B，但作为轻小说翻译，A是更均衡、更优质的选择。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10751,
+          "completion_tokens": 6688,
+          "total_tokens": 17439
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A在神话设定、权能说明、细腻含义上更完整忠实"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B口语更自然流畅，A部分文言感稍重"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地保留了轻小说中二/庄重/疯狂的混合语气"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者一致性高，A在专有名词表述更严谨统一"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体叙述更连贯沉浸，B节奏快但偶有跳脱"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点/拟声处理均优秀，差异不大"
+      }
+    },
+    "key_differences": [
+      "A更文学化、中二感强（如'吾王'、'此乃吾之权能'），B更口语网络化（如'你他妈'、'完蛋了'）",
+      "战斗疯狂叫喊B更爆裂生动，但哲学/设定说明A更完整细腻",
+      "后记宣传部分A更正式自然，B更活泼但略俚俗"
+    ],
+    "final_summary": "A整体更符合轻小说中常见的叙述风格与中二美学，准确性与沉浸感更强，虽然流畅度稍逊于B，但作为轻小说翻译，A是更均衡、更优质的选择。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

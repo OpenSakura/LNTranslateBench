@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:33:14.597482",
+  "sample": "kakuyomu.16818622176303375188.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622176303375188.ch6.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622176303375188.ch6.Kimi-K2.translated.txt",
+    "B": "translated_results/kakuyomu.16818622176303375188.ch6.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2e0001678fabcbc42f80d57c706b1b7897e613da23a926f04d36b1f5b4ebed30",
+    "A": "80466b9ac5964de7c84f6924e770df7efa1e8638997a4686b96ae41370176977",
+    "B": "f534573ebbcc1d25c79df50a2f4c6386cd100781acf51cf55d240c53ada49591"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:33:59.307635",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "609e8735-fe24-4018-a96d-a3ca82d2d6ff",
+      "judge_response": {
+        "id": "609e8735-fe24-4018-a96d-a3ca82d2d6ff",
+        "object": "chat.completion",
+        "created": 1768422839,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题发现\n\n**段落50-51：翻译A完全缺失内容**\n- 原文：《スキル《毒耐性》を取得》《スキル《毒耐性》Lv.1》\n- A：**（空白）**\n- B：《获得技能《毒耐性》》《技能《毒耐性》Lv.1》\n\n这是严重的翻译遗漏，直接影响叙事连贯性。\n\n### 各维度分析\n\n**1. 准确性**\n- A在段落50-51完全丢失两行技能获取提示\n- 段落52中A说\"顺利拿到'毒抗性'\"，但前面缺少获取提示，逻辑断裂\n- B完整保留原文信息\n\n**2. 流畅性**\n- A更口语化：\"这地方我熟\"\"一口闷\"\"怼到嘴边\"\"闷头猛攻\"\n- B较正式但通顺：\"我认识这个地方\"\"一饮而尽\"\"仰头灌下\"\n- A在游戏语境更自然，B偏书面\n\n**3. 术语一致性**\n- A存在矛盾：段落41-42用\"物理耐性\"，段落57用\"物理抗性\"\n- B始终使用\"物理耐性\"\"毒耐性\"，保持一致\n\n**4. 风格表达**\n- A：\"数据党\"\"刷技能\"\"爽爆了\"——更符合玩家口吻\n- B：\"数据解析组\"\"固守战术\"\"爽翻了\"——稍正式\n- 段落36：A\"爽到不行\"略偏离原意（原文是\"欣喜若狂\"），B更准确\n\n**5. 格式问题**\n- A引号使用不一致（单引号/双引号混用）\n- B格式较统一\n\n### 具体对比亮点\n\n| 段落 | A的优势 | B的优势 |\n|------|---------|---------|\n| 5 | \"新手教程的地图\"更地道 | - |\n| 8 | \"数据党\"术语本土化好 | 整体更准确完整 |\n| 45 | \"闷头猛攻/闷头硬扛\"生动 | - |\n| 50-51 | - | **内容完整（A缺失）** |\n| 57-58 | - | 术语一致 |\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 9, \"notes\": \"A缺失段落50-51的技能获取提示，严重影响完整性\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化更自然，符合游戏玩家语境；B稍正式但流畅\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A游戏感更强，但段落36'爽到不行'偏离原意\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"A技能名不一致(耐性/抗性混用)；B统一使用'耐性'\"},\n    \"coherence\": {\"A\": 6, \"B\": 9, \"notes\": \"A因缺失内容导致段落52逻辑断裂\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"A引号不统一；B格式规范\"}\n  },\n  \"key_differences\": [\n    \"A完全遗漏段落50-51的毒耐性技能获取提示\",\n    \"A术语不一致：物理耐性/物理抗性混用\",\n    \"A口语化程度更高，游戏感更强\",\n    \"B整体更完整准确，术语统一\"\n  ],\n  \"final_summary\": \"尽管A在口语化表达和游戏术语本土化方面更具优势，但段落50-51关键内容完全缺失是致命硬伤，直接破坏了'获得技能→确认获得'的叙事逻辑。加之A存在术语不一致问题，B以完整性和一致性胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9919,
+          "completion_tokens": 1963,
+          "total_tokens": 11882
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A缺失段落50-51的技能获取提示，严重影响完整性"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化更自然，符合游戏玩家语境；B稍正式但流畅"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A游戏感更强，但段落36'爽到不行'偏离原意"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A技能名不一致(耐性/抗性混用)；B统一使用'耐性'"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 9,
+        "notes": "A因缺失内容导致段落52逻辑断裂"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "A引号不统一；B格式规范"
+      }
+    },
+    "key_differences": [
+      "A完全遗漏段落50-51的毒耐性技能获取提示",
+      "A术语不一致：物理耐性/物理抗性混用",
+      "A口语化程度更高，游戏感更强",
+      "B整体更完整准确，术语统一"
+    ],
+    "final_summary": "尽管A在口语化表达和游戏术语本土化方面更具优势，但段落50-51关键内容完全缺失是致命硬伤，直接破坏了'获得技能→确认获得'的叙事逻辑。加之A存在术语不一致问题，B以完整性和一致性胜出。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

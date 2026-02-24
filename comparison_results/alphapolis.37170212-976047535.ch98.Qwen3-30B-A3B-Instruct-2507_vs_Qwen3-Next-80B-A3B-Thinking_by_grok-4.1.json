@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:38:39.996626",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "a8ae3ea95ea6be3fe2d39a71655259b118ca4617b23cff7641b19616a6de2c71",
+    "B": "b2ee3b5ad7dee06274090b2aece139abcee8d83719a257c9ddf323721679a339"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:03.415024",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DqbYORQZ2oKNLq0h45Rp08CXYsh",
+      "judge_response": {
+        "id": "chatcmpl-89DqbYORQZ2oKNLq0h45Rp08CXYsh",
+        "object": "chat.completion",
+        "created": 1768426738,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔧 **Using tool:** code_execution\n> 📝 **Parameters:** code: print(\"No code execution needed for this translati...\n\n\n作为公正的轻小说翻译质量评判员，我对提供的A和B两个中文翻译版本进行了全面比较。以下是逐项详细分析：\n\n### 1. 准确性（意思保留）\n- A版在绝大多数地方忠实原文，几乎无明显误译或遗漏。\n- B版偶尔出现轻微偏差，例如：\n  - 段落19：原文「シスコンな兄たち」→ B译为「妹控的兄长们」（方向相反，原文是兄控姐姐）\n  - 段落100：原文「ワラビ―のような姿」→ B译「外形像蕨类植物的动物」（蕨类=ワラビー为袋鼠的日语俗称，但直接译植物会引起误解）\n  - 段落132/160：角色名「レイ」翻译不统一（一会儿蕾拉一会儿雷）\n  - 段落36：把「ステア」学校名译为「斯特」而非更常见的「斯黛亚/斯特亚」\n总体A更稳，B有少量但明显的准确性问题。\n\n**A略胜**\n\n### 2. 流畅性（中文自然表达）\n- A版口语化程度更高，读起来轻松、节奏感好，符合现代中文轻小说读者的阅读习惯（例如「帅得跟好莱坞明星似的」「超爱午睡」「有点拽」等）。\n- B版偏书面/文雅，部分句子显得稍显生硬或冗长（例如段落5「把别人塞得满满当当吃上饭，仿佛是她的使命一般」比A的「总想让别人吃个饱，这就是她的使命」更绕）。\n\n**A明显更胜**\n\n### 3. 风格/语气（轻小说叙述/对话感）\n轻小说角色介绍通常需要活泼、带点吐槽感、可爱或夸张的语气。\n- A版很好地保留了这种“萌系+吐槽”氛围：用词俏皮（「老妈」「调皮鬼」「速度狂魔」「傲娇兔子」），人物个性鲜明跳脱。\n- B版整体更中规中矩、正经，少了些轻小说特有的“卖萌感”和幽默张力（例如段落26 B「冷峻又帅气」比A「帅得跟好莱坞明星似的」少了很多趣味）。\n\n**A明显更胜**\n\n### 4. 术语/名称一致性\n- 人名/地名：A整体更统一且常见（斯特尔、科尔托菲亚、格雷斯哈特、黑曜[黑曜]等），B在部分地方音译更保守或不一致（斯黛拉、科尔特菲亚、雷/蕾拉混用）。\n- 专有名词处理：A对「ステア」统一为「斯特尔/斯特亚」，B混用「斯黛拉/斯特」。\n\n**A稍胜**\n\n### 5. 连贯性/可读性\nA全文语气统一，读下来像一本完整的角色介绍书，衔接自然、节奏舒服。\nB在某些段落显得略跳跃或文体感不一（书面与口语混杂），整体连贯性稍逊。\n\n**A胜**\n\n### 6. 格式/标点符号\n两者格式基本一致，都保留了原文的【】括号和分段风格。  \nB在某些地方使用更规范的中文标点（例如全角顿号），但A的半角+口语化表达在轻小说语境中反而更常见且不突兀。差距极小。\n\n**基本持平**\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9.5,\n      \"B\": 8.0,\n      \"notes\": \"A几乎无误译，B存在少量但明显的理解偏差（如兄控误为妹控）\"\n    },\n    \"fluency\": {\n      \"A\": 9.5,\n      \"B\": 8.0,\n      \"notes\": \"A口语自然生动，B偏书面偶有拗口\"\n    },\n    \"style\": {\n      \"A\": 9.5,\n      \"B\": 7.5,\n      \"notes\": \"A很好保留了轻小说特有的活泼、吐槽与萌感，B过于正经\"\n    },\n    \"terminology\": {\n      \"A\": 9.0,\n      \"B\": 8.0,\n      \"notes\": \"A名称统一度更高且更符合常见译名习惯\"\n    },\n    \"coherence\": {\n      \"A\": 9.5,\n      \"B\": 8.5,\n      \"notes\": \"A整体阅读流畅连贯，B局部语气稍不统一\"\n    },\n    \"formatting\": {\n      \"A\": 9.0,\n      \"B\": 9.0,\n      \"notes\": \"两者格式均良好，差距可忽略\"\n    }\n  },\n  \"key_differences\": [\n    \"A整体更口语化、活泼，完美契合轻小说读者口味\",\n    \"B偏向书面规范，但丢失了部分轻小说趣味性和人物个性张力\",\n    \"B出现少量准确性失误（兄控→妹控、ワラビー误译等）\",\n    \"名称音译A更统一且主流\"\n  ],\n  \"final_summary\": \"综合各项指标，A版在轻小说核心需求（趣味性、可读性、语气活泼、准确传达角色魅力）上明显优于B版，是更适合作为轻小说中文译本的版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16404,
+          "completion_tokens": 1845,
+          "total_tokens": 18249
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9.5,
+        "B": 8.0,
+        "notes": "A几乎无误译，B存在少量但明显的理解偏差（如兄控误为妹控）"
+      },
+      "fluency": {
+        "A": 9.5,
+        "B": 8.0,
+        "notes": "A口语自然生动，B偏书面偶有拗口"
+      },
+      "style": {
+        "A": 9.5,
+        "B": 7.5,
+        "notes": "A很好保留了轻小说特有的活泼、吐槽与萌感，B过于正经"
+      },
+      "terminology": {
+        "A": 9.0,
+        "B": 8.0,
+        "notes": "A名称统一度更高且更符合常见译名习惯"
+      },
+      "coherence": {
+        "A": 9.5,
+        "B": 8.5,
+        "notes": "A整体阅读流畅连贯，B局部语气稍不统一"
+      },
+      "formatting": {
+        "A": 9.0,
+        "B": 9.0,
+        "notes": "两者格式均良好，差距可忽略"
+      }
+    },
+    "key_differences": [
+      "A整体更口语化、活泼，完美契合轻小说读者口味",
+      "B偏向书面规范，但丢失了部分轻小说趣味性和人物个性张力",
+      "B出现少量准确性失误（兄控→妹控、ワラビー误译等）",
+      "名称音译A更统一且主流"
+    ],
+    "final_summary": "综合各项指标，A版在轻小说核心需求（趣味性、可读性、语气活泼、准确传达角色魅力）上明显优于B版，是更适合作为轻小说中文译本的版本。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:33:57.610831",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "1697453c405528eff91cd72bd6f4be9947ede8312fe599285727989da3b6312c",
+    "B": "022191b0cb2265173894c50fd7f3115076e17de991d1671574a7f77965473ee8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:34:41.224333",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4a70de86-c581-4734-a687-78a4061601b3",
+      "judge_response": {
+        "id": "4a70de86-c581-4734-a687-78a4061601b3",
+        "object": "chat.completion",
+        "created": 1769610881,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n- **段落15**：原文表达的是\"因为太可爱了反而生不起气\"。A译\"可爱过头了，完全生不起气来\"较准确；B译\"根本不会觉得可爱过头了就完蛋了\"语义混乱。\n- **段落23**：原文是\"以我为中间，䌷和亚莉莎趴在垫子上\"。A用\"葛格\"指代错误；B译\"我和亚莉莎夹着我\"主语混乱，且\"仰躺\"与原文\"うつ伏せ\"（俯卧）相反。\n- **段落39**：原文是亚莉莎说\"先涂我\"。A译\"先涂她\"错误；B译\"先涂我\"正确。\n- **段落50**：原文\"股間に響く声\"指她的声音让叙述者下身有反应。A译\"让我胯下发烫的声音\"正确；B译\"她胯间发出一声轻叫\"完全误解。\n- **段落32-33**：A错误使用\"葛格\"指代主角。\n\n### 流畅性分析\nB版整体语感更自然口语化，如段落5\"身材超棒的美女\"、段落45\"弄出伤痕来，怕是要被她骂死了\"。A版部分句式较生硬，如段落1\"把穿着的防晒衣拉链用手拉住\"。\n\n### 风格/语气分析\nB版对话更活泼自然，符合轻小说调性；A版保留了更多日语句式痕迹但偶显生硬。\n\n### 格式分析\nA版统一使用「」，B版混用「」和\"\"，一致性欠佳。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有葛格指代错误，B有段落23姿势错误、段落50严重误译、段落39人称错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，A部分句式生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说对话风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A多处使用葛格错误指代主角\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B段落23、50等处语义混乱影响理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A对话符号统一，B混用「」和引号\"}\n  },\n  \"key_differences\": [\n    \"段落50：A正确理解为声音让叙述者有性反应，B误译为从她胯间发出声音\",\n    \"段落39：A将亚莉莎的话误译为第三人称，B正确使用第一人称\",\n    \"段落23：B将俯卧误译为仰躺且主语混乱\",\n    \"A多处错误使用葛格指代主角\",\n    \"格式一致性：A统一，B混用\"\n  ],\n  \"final_summary\": \"两个译本各有优缺。A在关键语义理解上更准确（如段落50的性暗示、段落15的情感逻辑），但存在人称指代错误；B流畅度和风格更佳，但有多处关键误译影响理解。综合考虑准确性对轻小说阅读体验的重要性，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11087,
+          "completion_tokens": 1999,
+          "total_tokens": 13086
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有葛格指代错误，B有段落23姿势错误、段落50严重误译、段落39人称错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，A部分句式生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A多处使用葛格错误指代主角"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B段落23、50等处语义混乱影响理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A对话符号统一，B混用「」和引号"
+      }
+    },
+    "key_differences": [
+      "段落50：A正确理解为声音让叙述者有性反应，B误译为从她胯间发出声音",
+      "段落39：A将亚莉莎的话误译为第三人称，B正确使用第一人称",
+      "段落23：B将俯卧误译为仰躺且主语混乱",
+      "A多处错误使用葛格指代主角",
+      "格式一致性：A统一，B混用"
+    ],
+    "final_summary": "两个译本各有优缺。A在关键语义理解上更准确（如段落50的性暗示、段落15的情感逻辑），但存在人称指代错误；B流畅度和风格更佳，但有多处关键误译影响理解。综合考虑准确性对轻小说阅读体验的重要性，A略胜一筹。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

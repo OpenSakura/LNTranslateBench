@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:31:48.390564",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "c889af880da602c22823cbddc8a6775c86aefff92440e9622b4bdec2260006d0",
+    "B": "8373d4a98d63ef24cca1a58651c3ada1866bdd82d20940976fdaa67b9558b212"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:32:46.731121",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "000bcc77-030a-4085-992a-b0ed00a5b741",
+      "judge_response": {
+        "id": "000bcc77-030a-4085-992a-b0ed00a5b741",
+        "object": "chat.completion",
+        "created": 1768422766,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量对比分析\n\n## 详细评估\n\n### 1. 准确性问题\n**关键错误发现：**\n- **段落7**: A错误地把\"おタヒ\"翻译成\"琪肯\"（琪肯是チケン），而B正确译为\"塔希\"\n- **段落44**: A再次混淆，写成\"葛莉賽达和琪肯\"，原文是\"おタヒ\"，B正确译为\"小田斐\"\n- **段落48**: A译\"对琪肯很不利\"，原文明确说的是おタヒ，B正确译为\"小塔希\"\n- **段落62**: A译\"琪肯和葛莉賽達\"，原文是\"おタヒとグリセルダ\"，B译\"小塔\"正确\n- **段落61**: B的\"我打不中\"理解错误，原文\"俺に当たらない\"是\"子弹打不中我\"，A正确\n- **段落73**: A译\"礼服\"、B译\"尸体\"均错，原文\"おタヒ\"是人名\n\n### 2. 流畅度与风格\n- B更符合轻小说口语化风格：\"老子\"、\"咋办\"、\"招呼\"等\n- A较生硬：\"暂且不论我\"、\"因为是珍稀花卉\"等较书面\n- 段落4: B的\"脸都要笑裂了\"比A的\"开心得快要笑出来\"更生动\n- 段落6: B\"想怎么说就怎么说\"准确；A\"一无是处\"添加了原文没有的意思\n\n### 3. 术语一致性\n- A的人名极其混乱：おタヒ分别译为\"御田妃\"\"琪肯\"\"小田姬\"等\n- B相对稳定：おタヒ主要译为\"小塔希\"\"小田斐\"\n\n### 4. 自然表达对比\n| 段落 | A | B | 评价 |\n|------|---|---|------|\n| 18 | 啪嗒啪嗒 | 哐啷哐啷 | A的拟声更贴切 |\n| 37 | 窸窸窣窣 | 嗖地 | B更符合触手伸出的动感 |\n| 54 | 当场去世 | 当场暴毙 | B更口语化 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 7, \"notes\": \"A多次将おタヒ误译为琪肯(チケン)，严重影响理解；B在段落61有误译但整体更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B语言更口语化自然，符合轻小说风格；A部分表达生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B的「老子」「咋办」等更贴合角色性格和轻小说语气\"},\n    \"terminology\": {\"A\": 4, \"B\": 6, \"notes\": \"A人名翻译极度混乱(御田妃/琪肯/小田姬)；B虽有变化但相对稳定\"},\n    \"coherence\": {\"A\": 5, \"B\": 7, \"notes\": \"A因人名混淆导致部分段落难以理解角色关系\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式均可，标点使用基本规范\"}\n  },\n  \"key_differences\": [\n    \"A多次将おタヒ错译为琪肯（チケン），造成严重的角色混淆\",\n    \"B整体语言风格更口语化、更符合轻小说调性\",\n    \"B在段落61存在主语理解错误\",\n    \"A部分表达过于书面化，不够自然\"\n  ],\n  \"final_summary\": \"B在整体准确性、流畅度和风格把握上优于A。A最致命的问题是多次混淆角色名称（将おタヒ错译为琪肯），这直接影响读者对情节和人物关系的理解。虽然B也有个别翻译失误，但整体表达更自然流畅，更符合轻小说的阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10551,
+          "completion_tokens": 2646,
+          "total_tokens": 13197
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多次将おタヒ误译为琪肯(チケン)，严重影响理解；B在段落61有误译但整体更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B语言更口语化自然，符合轻小说风格；A部分表达生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的「老子」「咋办」等更贴合角色性格和轻小说语气"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 6,
+        "notes": "A人名翻译极度混乱(御田妃/琪肯/小田姬)；B虽有变化但相对稳定"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 7,
+        "notes": "A因人名混淆导致部分段落难以理解角色关系"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式均可，标点使用基本规范"
+      }
+    },
+    "key_differences": [
+      "A多次将おタヒ错译为琪肯（チケン），造成严重的角色混淆",
+      "B整体语言风格更口语化、更符合轻小说调性",
+      "B在段落61存在主语理解错误",
+      "A部分表达过于书面化，不够自然"
+    ],
+    "final_summary": "B在整体准确性、流畅度和风格把握上优于A。A最致命的问题是多次混淆角色名称（将おタヒ错译为琪肯），这直接影响读者对情节和人物关系的理解。虽然B也有个别翻译失误，但整体表达更自然流畅，更符合轻小说的阅读体验。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

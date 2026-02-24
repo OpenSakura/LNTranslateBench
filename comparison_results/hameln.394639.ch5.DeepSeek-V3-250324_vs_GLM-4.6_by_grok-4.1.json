@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:40:25.561309",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.GLM-4.6.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "500bb25ad73110ac41566c5c3991383986775e1266ee42621c645af80e7d0992",
+    "B": "b5f3179a960ed4067254192aadc5301aaf80e68a18ecc99d8d377ee8dabd1b46"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:40:47.110849",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DkursnI6OklWqMgIX778fzBtpVn",
+      "judge_response": {
+        "id": "chatcmpl-89DkursnI6OklWqMgIX778fzBtpVn",
+        "object": "chat.completion",
+        "created": 1768426845,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"雷门足球部 圆堂晴 月影莲 早濑凛 必杀技 巴哈姆特クラッシュ アステロイドベルト\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"稲妻イレブン 円堂ハル 月影蓮 早瀬リン 南雲原\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"イナズマイレブン ファン小説 円堂ハル 月影蓮\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"巴哈姆特クラッシュ 小行星带 イナズマイレブン 技名\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"足球怪物！圆堂晴必杀技合集【闪电十一人英雄们的胜利之路】\" Bilibili](https://www.bilibili.com/video/BV1VkCEBUEn3)\n> [🔗 \"【ランキング考察】最強の雷キャラＴＯＰ１０をランキングで考察！！ - モックのコミックブログ\" Hatenablog](https://candygum.hatenablog.com/entry/2022/04/29/121827)\n> [🔗 \"【英雄们的胜利之路】故事模式全必杀技合集【闪电十一人】_游戏热门视频\" Bilibili](https://www.bilibili.com/video/BV1dgC4BkEUW)\n> [🔗 \"Data:角色列表.tabx - 碧蓝幻想中文维基|Granblue ...\" Huijiwiki](https://gbf.huijiwiki.com/wiki/Data:%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8.tabx)\n> [🔗 \"SSR人物 - 碧蓝幻想中文维基|Granblue Fantasy|碧蓝幻...\" Huijiwiki](https://gbf.huijiwiki.com/wiki/SSR%E4%BA%BA%E7%89%A9)\n> [🔗 \"游戏图鉴wiki|GameKee\" GameKee](https://www.gamekee.com/ba/second/23941)\n> [🔗 \"闪电十一人3必殺技集（全351種類）【2】林属性編_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1As411h7LY)\n> [🔗 \"ACG港湾 | 游戏分享的港湾\" Acggw](https://www.acggw.one/)\n> [🔗 \"Data:角色档案.tabx - 碧蓝幻想中文维基|Granblue ...\" Huijiwiki](https://gbf.huijiwiki.com/wiki/Data:%E8%A7%92%E8%89%B2%E6%A1%A3%E6%A1%88.tabx)\n> [🔗 \"Client Challenge\" Fandom](https://kimetsu-no-yaiba.fandom.com/zh/wiki/%E9%9B%B7%E4%B9%8B%E5%91%BC%E5%90%B8?variant=zh-tw)\n\n> 🔍 **10 results found**\n\n> [🔗 \"円堂ハル\" Pixiv](https://dic.pixiv.net/a/%E5%86%86%E5%A0%82%E3%83%8F%E3%83%AB)\n> [🔗 \"イナイレ新作まとめ#3 ～登場人物編～｜forEIgn\" Note](https://note.com/foreign_2022/n/n1abc45db856e)\n> [🔗 \"『イナイレ』新作『イナズマイレブン 英雄たちのヴィクトリーロード』主人公“笹波雲明”役は小村将さん、円堂守の息子“円堂ハル”役は木間萌さん【TGS2023】 | ゲーム・エンタメ最新情報のファミ通.com\" Famitsu](https://www.famitsu.com/news/202309/23318196.html)\n> [🔗 \"『イナズマイレブン 英雄たちのヴィクトリーロード』笹波雲明、円堂ハルの声優発表！キャラの入手方法などやり込み要素の詳細も公開【TGS2023】\" Famitsu](https://app.famitsu.com/20230923_2135262)\n> [🔗 \"【イナイレV】円堂ハルの入手方法と厳選手順まとめ｜ヒーロー＆レジェンダリーを効率良く集めるコツ【最速攻略】 | 徹底攻略ゲーム図鑑\" Chi-Tara](https://chi-tara.com/ie5_haru)\n> [🔗 \"【イナイレV】円堂 ハルの入手方法・キャラ情報【ヴィクトリーロード】 | AppMedia\" AppMedia](https://appmedia.jp/victory-road/79480667)\n> [🔗 \"映画『イナズマV』雲明にとって円堂ハルはどんな存在なのか。『イナズマイレブン』らしい衝撃の物語表現にどよめく先行上映イベントリポート | ゲーム・エンタメ最新情報のファミ通.com\" Famitsu](https://www.famitsu.com/article/202412/29004)\n> [🔗 \"『イナズマイレブン 英雄たちのヴィクトリーロード』の笹波雲明と円堂ハルについて考察する｜無名人\" Note](https://note.com/mumei3_/n/n3e969eac7f12)\n> [🔗 \"Inazuma Eleven: Player Codex—Inazugle\" Inazuma](https://zukan.inazuma.jp/en)\n> [🔗 \"イナズマイレブン英雄たちのヴィクトリーについてです。円堂ハル... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10322276930)\n\n> 🔍 **10 results found**\n\n> [🔗 \"円堂ハル\" Pixiv](https://dic.pixiv.net/a/%E5%86%86%E5%A0%82%E3%83%8F%E3%83%AB)\n> [🔗 \"映画『イナズマV』雲明にとって円堂ハルはどんな存在なのか。『イナズマイレブン』らしい衝撃の物語表現にどよめく先行上映イベントリポート | ゲーム・エンタメ最新情報のファミ通.com\" Famitsu](https://www.famitsu.com/article/202412/29004)\n> [🔗 \"映画『イナズマイレブン・ザ・ムービー 2025』 を観たオタクの感想｜みゅんごむし\" Note](https://note.com/myun_0x0_myun/n/nc39bd6fdaa87)\n> [🔗 \"【イナイレV】円堂 ハルの入手方法・キャラ情報【ヴィクトリーロード】 | AppMedia\" AppMedia](https://appmedia.jp/victory-road/79480667)\n> [🔗 \"『イナズマイレブン 英雄たちのヴィクトリーロード』の笹波雲明と円堂ハルについて考察する｜無名人\" Note](https://note.com/mumei3_/n/n3e969eac7f12)\n> [🔗 \"イナズマイレブンの英雄たちのヴィクトリーロードについてです。円堂ハルは円堂守と... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14292158279)\n> [🔗 \"イナイレ新作まとめ#3 ～登場人物編～｜forEIgn\" Note](https://note.com/foreign_2022/n/n1abc45db856e)\n> [🔗 \"YouTube\" YouTube](https://www.youtube.com/watch?v=0_DFfTgFkHM)\n> [🔗 \"『イナイレ』新作『イナズマイレブン 英雄たちのヴィクトリーロード』主人公“笹波雲明”役は小村将さん、円堂守の息子“円堂ハル”役は木間萌さん【TGS2023】 | ゲーム・エンタメ最新情報のファミ通.com\" Famitsu](https://www.famitsu.com/news/202309/23318196.html)\n> [🔗 \"【イナズマイレブンV攻略】円堂ハル完全ガイド：ヒーロー＆レジェンダリー最速入手と大界学園厳選ルート - zuki’sタイムズ\" Hatenablog](https://zuki.hatenablog.jp/entry/2025/11/16/233728)\n\n> 🔍 **10 results found**\n\n> [🔗 \"イナズマイレブンGO 必殺技\" Kill](http://hissatuwaza.kill.jp/setume/inazumago.htm)\n> [🔗 \"イナズマイレブン 必殺技\" Kill](http://hissatuwaza.kill.jp/setume/inazuma11.htm)\n> [🔗 \"イナズマイレブンシリーズの必殺技一覧\" Pixiv](https://dic.pixiv.net/a/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%AE%E5%BF%85%E6%AE%BA%E6%8A%80%E4%B8%80%E8%A6%A7)\n> [🔗 \"湊：必殺技一覧【円堂編】\" Ameba](https://ameblo.jp/sakura-tetsudo/entry-12714030970.html)\n> [🔗 \"必殺技 - イナズマイレブン3 世界への挑戦！！ スパーク／ボンバー攻略＠wiki\" STGR Wiki](https://w.atwiki.jp/inazuma11-3/pages/45.html)\n> [🔗 \"[イナズマSD研究所-イナズマイレブンSD 攻略wiki] - 必殺技一覧= の編集\" Wicurio](https://inazumasdinfo.wicurio.com/index.php?%E5%BF%85%E6%AE%BA%E6%8A%80%E4%B8%80%E8%A6%A7=)\n> [🔗 \"【イナズマイレブンアニメ総集編】海外代表選手編 必殺技＆名シーン集！！ - YouTube\" YouTube](https://www.youtube.com/watch?v=LaRkUw9Veck)\n> [🔗 \"必殺技一覧表五十音順 チェック表にでも | イナズマイレブン2~脅威の侵略者~ ブリザード ゲーム攻略 - ワザップ!\" Wazap](https://wazap.com/cheat/%E5%BF%85%E6%AE%BA%E6%8A%80%E4%B8%80%E8%A6%A7%E8%A1%A8%E4%BA%94%E5%8D%81%E9%9F%B3%E9%A0%86%E3%80%80%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E8%A1%A8%E3%81%AB%E3%81%A7%E3%82%82/482993)\n> [🔗 \"【イナズマイレブンアニメ総集編】円堂守 必殺技＆名シーン集！！ - YouTube\" YouTube](https://www.youtube.com/watch?v=urujSmdE3IU)\n> [🔗 \"合体技組み合わせ - イナズマイレブンGO ストライカーズ 2013攻略wiki\" STGR Wiki](https://w.atwiki.jp/inazumagost2013/pages/30.html)\n\n\n**翻译A和翻译B的详细比较分析如下：**\n\n这是基于《闪电十一人》（イナズマイレブン）系列最新作《英雄们的胜利之路》（Victory Road）相关同人/衍生风格的轻小说文本，涉及圆堂晴（円堂ハル）、月影莲（月影蓮）、早濑凛（早瀬リン）等角色，以及必杀技如“巴哈姆特クラッシュ”（巴哈姆特冲击/粉碎击）和“アステロイドベルト”（小行星带）等。整体为热血足球+个人情感描写，属于典型的轻小说叙述风格（口语化对话、内心独白、夸张表现）。\n\n### 总体印象\n- **A**：更偏向直译+口语化表达，句子较长，保留较多日式叙述的冗长感，但有时显得啰嗦或不够简洁。语气比较“少年热血感”强，偶尔有生硬之处。\n- **B**：更注重中文自然流畅，句子精炼、节奏感强，术语处理更统一且贴近中文读者习惯（如“王牌双前锋”而非“主力王牌二人组”），情感描写更细腻，整体可读性更高。语气更符合现代中文轻小说风格（简洁、有冲击力）。\n\n### 逐项评分与分析（满分10分）\n\n**accuracy（准确性）**  \nA: 9  \nB: 9  \nnotes: 两者都高度忠实原文意思，几乎无明显误译。A在个别地方更字面对应（如“主力トップツー”→“主力王牌二人组”），B稍作意译（如“トップツー”→“王牌双前锋”），但都准确传达核心。两者在此项平分秋色。\n\n**fluency（流畅性）**  \nA: 7  \nB: 9  \nnotes: A的句子常较长且结构复杂（如段落3、6、11），读起来稍显绕口；B更精炼、节奏明快（如段落20的战术描写、B在多处使用破折号增强冲击感），中文表达更自然顺畅。\n\n**style（风格/语气）**  \nA: 8  \nB: 9  \nnotes: 轻小说需保留热血、吐槽、内心纠葛的少年感。A保持了日式啰嗦的叙述味，但有时显得赘余；B在对话更活泼（如“太卑鄙了吧……” vs “太扯了吧那是……”），内心独白更具情感张力（如段落36-54的哈鲁与凛对峙部分），更贴近中文读者对“燃系轻小说”的期待。\n\n**terminology（术语/名称一致性）**  \nA: 8  \nB: 9  \nnotes: B在专有名词和必杀技上更统一且常用中文圈惯用译名（如“巴哈姆特衝擊”、“小行星带”、角色名“凜”统一、“圓堂晴”而非混用“晴”），A偶有不一致（如“巴哈姆特冲击”与“巴哈姆特粉碎击”混用、“凛”与“凜”切换）。B整体更专业。\n\n**coherence（连贯性/可读性）**  \nA: 7  \nB: 9  \nnotes: A部分段落转折稍显生硬，叙述连贯性一般；B通过精炼句子和适当分段/标点，使整段阅读体验更连贯，尤其在高潮战斗和情感段落（如段落34-54）更具沉浸感。\n\n**formatting（格式/标点符号）**  \nA: 8  \nB: 9  \nnotes: B的标点使用更灵活（如大量使用破折号、省略号增强语气、对话更分明），视觉上更舒适；A基本规范但稍显朴素。\n\n### 关键差异点\n- B在精炼度和节奏感上明显占优，尤其适合轻小说“快速阅读+情绪冲击”的特性。\n- A更忠实原文结构，但牺牲了一些中文阅读舒适度。\n- 术语统一性和角色情感细腻度，B更胜一筹（如哈鲁对凛的复杂情感描写）。\n- 整体而言，B更像“经过润色、面向中文受众的正式轻小说翻译”。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者高度忠实原文，几乎无误译差异\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B句子更精炼、自然，阅读节奏更好\"},\n    \"style\": {\"A\": 8, \"B\": 9, \"notes\": \"B更符合中文轻小说热血+情感风格，语气更活泼\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"B必杀技/角色名更统一、专业\"},\n    \"coherence\": {\"A\": 7, \"B\": 9, \"notes\": \"B整体连贯性与沉浸感更强\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点运用更灵活、视觉舒适\"}\n  },\n  \"key_differences\": [\n    \"B句子更短、节奏更快，适合轻小说快节奏阅读\",\n    \"B术语统一（如巴哈姆特衝擊、小行星带、凜），更专业\",\n    \"B情感描写更细腻（尤其哈鲁与凛对峙段落）\",\n    \"A更直译，保留日式冗长叙述，但偶尔啰嗦\"\n  ],\n  \"final_summary\": \"翻译B在流畅性、可读性、风格贴合度和术语一致性上全面优于A，更符合中文轻小说读者的阅读习惯与期待，整体质量明显更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11494,
+          "completion_tokens": 5356,
+          "total_tokens": 16850
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者高度忠实原文，几乎无误译差异"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B句子更精炼、自然，阅读节奏更好"
+      },
+      "style": {
+        "A": 8,
+        "B": 9,
+        "notes": "B更符合中文轻小说热血+情感风格，语气更活泼"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "B必杀技/角色名更统一、专业"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B整体连贯性与沉浸感更强"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点运用更灵活、视觉舒适"
+      }
+    },
+    "key_differences": [
+      "B句子更短、节奏更快，适合轻小说快节奏阅读",
+      "B术语统一（如巴哈姆特衝擊、小行星带、凜），更专业",
+      "B情感描写更细腻（尤其哈鲁与凛对峙段落）",
+      "A更直译，保留日式冗长叙述，但偶尔啰嗦"
+    ],
+    "final_summary": "翻译B在流畅性、可读性、风格贴合度和术语一致性上全面优于A，更符合中文轻小说读者的阅读习惯与期待，整体质量明显更高。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

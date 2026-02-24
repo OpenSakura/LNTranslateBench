@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:35:26.093911",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.MiniMax-M2.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "b57929c763c9fbd658ffd53c11c6ff203e779ccec65192f51d5ecbc195d991c4",
+    "B": "6dd3b4acfc667a42940b8a805eda2ee45576e379e2b43622c481b4f13cb5411b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:36:10.261260",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128223526293689979piSBAlaB",
+      "judge_response": {
+        "id": "chatcmpl-20260128223526293689979piSBAlaB",
+        "object": "chat.completion",
+        "created": 1769610970,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是针对提供的两份轻小说翻译（A和B）的详细评测。\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A** 存在多处严重的误译和漏译。\n    *   **段落 77**: 原文“疲弊した肉体に鞭を打ち”（鞭策疲惫的身体/勉强支撑），A译为“疲惫的身体不挨鞭子”，意思完全相反。\n    *   **段落 97**: A出现了**致命错误**，句末出现了“上一篇 went well”的字样，这显然是机器翻译的残留或复制粘贴错误。\n    *   **段落 94**: A没有翻译“sideナモナイ”，直接保留了原文。\n*   **翻译B** 对原文的理解非常准确，能够正确解读日文的惯用语和语境。\n\n**2. 流畅性 (Fluency)**\n*   **翻译A** 的中文表达非常生硬，带有强烈的“翻译腔”或机翻痕迹。例如段落32“会上钩，被结果就是被伏兵给收拾了”，语序混乱，难以阅读。\n*   **翻译B** 的行文非常通顺，符合中文的阅读习惯。句子结构经过了调整，读起来很自然。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译A** 未能很好地传达角色的语气。例如段落82的战吼，A译为“呕呕呕……”，这在中文里是呕吐的声音，完全破坏了战场气氛。\n*   **翻译B** 很好地还原了轻小说的风格。哥布林国王的傲慢、吐槽役的心理活动（如段落33“什么就这么回事吧”）、以及战场的紧张感都表现得很到位。战吼译为“哦哦哦”符合语境。\n\n**4. 术语/名称一致性 (Terminology)**\n*   **翻译A** 在人名处理上基本一致，但未能翻译“Namonai”（无名）。\n*   **翻译B** 术语处理得当，人名翻译符合奇幻小说惯例。\n\n**5. 格式/标点符号 (Formatting)**\n*   **翻译A** 在段落70的旁白部分错误地使用了引号，将其变成了对话格式。\n*   **翻译B** 标点符号使用规范，排版整洁。\n\n### 最终判决\n\n**翻译B** 在所有维度上都完胜翻译A。翻译A不仅文笔生硬，还包含严重的低级错误（如保留英文单词、误译拟声词），极有可能是未经润色的机器翻译。翻译B则是一篇高质量的人工翻译（或经过深度润色的翻译），准确且生动。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 3,\n      \"B\": 10,\n      \"notes\": \"A存在严重误译（如段落77）和未翻译部分（段落97残留英文）。\"\n    },\n    \"fluency\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A的语序混乱，读起来非常拗口；B非常自然流畅。\"\n    },\n    \"style\": {\n      \"A\": 3,\n      \"B\": 9,\n      \"notes\": \"A将战吼译为'呕吐声'，严重破坏氛围；B很好地还原了轻小说语感。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A漏译了角色名'Namonai'。\"\n    },\n    \"coherence\": {\n      \"A\": 4,\n      \"B\": 10,\n      \"notes\": \"A的逻辑连接词使用不当，导致句子支离破碎。\"\n    },\n    \"formatting\": {\n      \"A\": 5,\n      \"B\": 10,\n      \"notes\": \"A在旁白处错误使用了引号。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落97中，A出现了'上一篇 went well'的乱码/机翻残留，这是致命错误。\",\n    \"段落82中，A将呐喊声译为'呕呕呕'（呕吐），B译为'哦哦哦'（吼叫）。\",\n    \"段落77中，A将'鞭策疲惫的身体'误译为'不挨鞭子'。\",\n    \"A的句式结构非常生硬，带有明显的机翻特征；B则是地道的中文表达。\"\n  ],\n  \"final_summary\": \"翻译B在各方面都表现出色，提供了准确、流畅且符合轻小说风格的译文。翻译A质量极差，包含严重的误译、未翻译的英文残留以及不合逻辑的拟声词翻译，基本可以判定为劣质机翻。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8878,
+          "completion_tokens": 3770,
+          "total_tokens": 12648
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 3,
+        "B": 10,
+        "notes": "A存在严重误译（如段落77）和未翻译部分（段落97残留英文）。"
+      },
+      "fluency": {
+        "A": 4,
+        "B": 9,
+        "notes": "A的语序混乱，读起来非常拗口；B非常自然流畅。"
+      },
+      "style": {
+        "A": 3,
+        "B": 9,
+        "notes": "A将战吼译为'呕吐声'，严重破坏氛围；B很好地还原了轻小说语感。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "A漏译了角色名'Namonai'。"
+      },
+      "coherence": {
+        "A": 4,
+        "B": 10,
+        "notes": "A的逻辑连接词使用不当，导致句子支离破碎。"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 10,
+        "notes": "A在旁白处错误使用了引号。"
+      }
+    },
+    "key_differences": [
+      "段落97中，A出现了'上一篇 went well'的乱码/机翻残留，这是致命错误。",
+      "段落82中，A将呐喊声译为'呕呕呕'（呕吐），B译为'哦哦哦'（吼叫）。",
+      "段落77中，A将'鞭策疲惫的身体'误译为'不挨鞭子'。",
+      "A的句式结构非常生硬，带有明显的机翻特征；B则是地道的中文表达。"
+    ],
+    "final_summary": "翻译B在各方面都表现出色，提供了准确、流畅且符合轻小说风格的译文。翻译A质量极差，包含严重的误译、未翻译的英文残留以及不合逻辑的拟声词翻译，基本可以判定为劣质机翻。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

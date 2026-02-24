@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:07:55.208855",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.MiniMax-M2.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "7d357175142883f9aac9afa84ba20725d583558a57870fa853009f7bf0c943bd",
+    "B": "a1d741874c948eeaf13f233896f62935a03d400178c9b02bb662808edfbb9102"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:09:26.646277",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b1f9d961-3c30-440f-b20c-324ecbdbb081",
+      "judge_response": {
+        "id": "b1f9d961-3c30-440f-b20c-324ecbdbb081",
+        "object": "chat.completion",
+        "created": 1768421366,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**翻译A问题：**\n- 段落15：\"ポピュラー\"译为\"人气高\"，应为\"常见\"\n- 段落43：添加了原文没有的\"但本身实力强大\"\n- 段落91：理解有误，原文说的是\"特指好战或适合战斗的魔马\"\n- 段落111：\"人参～大根\"译为\"萝卜～萝卜\"重复\n\n**翻译B问题：**\n- 段落82：将\"スノートレント\"译为\"雪巨人\"而非\"雪树人\"，与上下文不一致\n- 段落101：原文\"狩った\"（狩猎的）翻译表述略有歧义\n\n### 2. 流畅性\nB整体更流畅，句式更简洁：\n- 段落24：B\"通体赤红的大型牛类魔物\"比A\"鲜红色的大牛魔物\"更通顺\n- 段落118：B\"别说人类甚至能整个吞下牛\"比A\"人和牛都能一口吞掉\"更自然\n\n### 3. 风格/术语一致性\n**名称处理差异：**\n- 段落3：A\"奥鲁贝亚\"(音译) vs B\"枭熊\"(意译)——B更符合Owl+Bear的原意\n- 段落77：A\"特伦特\" vs B\"树精\"——B更符合中文读者习惯\n- 段落74：A\"杜拉罕·加洛普\" vs B\"无头骑士疾驰\"——各有取舍\n\n**B术语一致性更好：**段落7和65的\"酸液史莱姆\"保持一致\n\n### 4. 连贯性/可读性\nB的表述更符合轻小说设定集风格：\n- 段落67：B保留了\"小鹿斑比\"的文化梗\n- 段落114：B\"软萌萌的\"更生动\n\n### 5. 格式\n两者格式相近，B偶尔添加英文标注（如Snow Fox）便于对照\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A有多处理解偏差(段落15/43/91)，B有个别术语错误(段落82)\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B句式更简洁自然，符合中文表达习惯\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更贴合轻小说设定集的叙述风格，保留了原文的趣味性\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"B的意译(枭熊/树精等)更易理解，术语内部一致性更好\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体可读性更强，信息组织更清晰\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式相近，B偶有英文标注\"}\n  },\n  \"key_differences\": [\n    \"生物名称处理：A偏音译，B偏意译且更贴合原意\",\n    \"流畅度：B句式更简洁，中文表达更自然\",\n    \"准确性：A段落43添加原文无内容，B段落82术语翻译失误\",\n    \"术语一致性：B在同类词汇翻译上保持更好一致性\"\n  ],\n  \"final_summary\": \"翻译B在流畅性、风格适配和术语一致性方面明显优于A。B的意译策略（如枭熊、树精）更符合中文轻小说读者习惯，句式简洁自然。虽然B在段落82有个别术语错误，但A的问题更多（添加内容、理解偏差等）。综合来看B是更优质的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11819,
+          "completion_tokens": 4289,
+          "total_tokens": 16108
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有多处理解偏差(段落15/43/91)，B有个别术语错误(段落82)"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B句式更简洁自然，符合中文表达习惯"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更贴合轻小说设定集的叙述风格，保留了原文的趣味性"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的意译(枭熊/树精等)更易理解，术语内部一致性更好"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体可读性更强，信息组织更清晰"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式相近，B偶有英文标注"
+      }
+    },
+    "key_differences": [
+      "生物名称处理：A偏音译，B偏意译且更贴合原意",
+      "流畅度：B句式更简洁，中文表达更自然",
+      "准确性：A段落43添加原文无内容，B段落82术语翻译失误",
+      "术语一致性：B在同类词汇翻译上保持更好一致性"
+    ],
+    "final_summary": "翻译B在流畅性、风格适配和术语一致性方面明显优于A。B的意译策略（如枭熊、树精）更符合中文轻小说读者习惯，句式简洁自然。虽然B在段落82有个别术语错误，但A的问题更多（添加内容、理解偏差等）。综合来看B是更优质的翻译。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

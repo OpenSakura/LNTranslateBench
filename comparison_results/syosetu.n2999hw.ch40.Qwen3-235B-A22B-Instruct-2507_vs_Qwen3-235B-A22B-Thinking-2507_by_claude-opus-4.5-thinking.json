@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:10:13.082455",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "4998161c5a2e4d3a0eaafe0dd6fcce153ed5e27f140339f22d53af7241630c45",
+    "B": "064ab5b91fdfa9ca848d4ca4482477e7db5c6911b0d4d515fd51ab11177c0ebb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:11:03.301274",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "54c8ac08-dd5c-4a74-aadc-32ed1cd64dfb",
+      "judge_response": {
+        "id": "54c8ac08-dd5c-4a74-aadc-32ed1cd64dfb",
+        "object": "chat.completion",
+        "created": 1768432263,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落27**: A翻译为\"德莱格明白不能攻击是弱点\"，主语错误，原文是\"我\"知道这一点。B正确翻译为\"我知道德莱格无法攻击是弱点\"\n- **段落50**: 原文\"仕掛けてきたのはそっちだ\"，A译为\"先动手的是你啊\"指向错误，B译为\"主动挑衅的可是你啊\"虽然用了\"你\"但语境中指向对方阵营，更符合逻辑\n- **段落112**: A出现严重错误，\"エン\"被误译为\"炎\"，B正确译为\"恩\"\n- **段落6/11/15**: B在卡牌名称上加了书名号『』，更准确地表示专有名词\n\n### 流畅性分析\n- 段落16: A\"如果这个成功\" vs B\"只要这一击命中\" - B更生动\n- 段落46: A的表达较为生硬，B\"输掉时的痛苦想必更是难以忍受的剧痛吧\"更自然流畅\n- 段落74: A\"不知道该怎么办\" vs B\"顿时手足无措\" - B更富表现力\n\n### 风格/语气分析\n- B更好地保留了轻小说的叙述风格，对话更生动\n- 段落25: A直译感较重，B\"真该庆幸\"更符合内心独白语气\n- 段落59: B\"眼神凶狠得仿佛随时都要扑上去砍杀\"比A的表达更具画面感\n\n### 术语一致性\n- A在段落17-18、64-67处引号格式不一致（混用「」和\"\"）\n- B在段落8/97译为\"普雷格托恩\"，但91/94译为\"培雷戈顿\"，存在不一致\n- B在段落76将\"ミカエル\"译为\"米凯尔\"，其他地方为\"米迦勒\"\n\n### 格式问题\n- A的引号使用不统一是明显扣分项\n- B整体格式更规范\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落27和112有明显误译，B整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B表达更自然流畅，用词更地道\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地保留了轻小说的对话风格和情感表达\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A引号格式不统一；B有少量名称不一致问题\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的叙述连贯性更好，可读性更高\"},\n    \"formatting\": {\"A\": 5, \"B\": 8, \"notes\": \"A混用中日引号格式，B格式较统一\"}\n  },\n  \"key_differences\": [\n    \"段落27: A主语误译，B正确\",\n    \"段落112: A将'エン'误译为'炎'，B正确译为'恩'\",\n    \"A引号格式混乱，B更规范\",\n    \"B在卡牌名称处理上使用书名号更专业\",\n    \"B整体语言更流畅自然\"\n  ],\n  \"final_summary\": \"B翻译在准确性、流畅性和格式规范性方面明显优于A。A存在两处关键性误译（段落27和112），以及引号格式不统一的问题。虽然B也有少量术语不一致的小问题，但整体质量更高，更适合轻小说的阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13228,
+          "completion_tokens": 2111,
+          "total_tokens": 15339
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落27和112有明显误译，B整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B表达更自然流畅，用词更地道"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地保留了轻小说的对话风格和情感表达"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A引号格式不统一；B有少量名称不一致问题"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的叙述连贯性更好，可读性更高"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 8,
+        "notes": "A混用中日引号格式，B格式较统一"
+      }
+    },
+    "key_differences": [
+      "段落27: A主语误译，B正确",
+      "段落112: A将'エン'误译为'炎'，B正确译为'恩'",
+      "A引号格式混乱，B更规范",
+      "B在卡牌名称处理上使用书名号更专业",
+      "B整体语言更流畅自然"
+    ],
+    "final_summary": "B翻译在准确性、流畅性和格式规范性方面明显优于A。A存在两处关键性误译（段落27和112），以及引号格式不统一的问题。虽然B也有少量术语不一致的小问题，但整体质量更高，更适合轻小说的阅读体验。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

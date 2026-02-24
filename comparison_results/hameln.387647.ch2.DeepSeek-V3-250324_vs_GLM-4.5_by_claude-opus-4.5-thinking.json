@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:11:55.020831",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "1e6dea1d7b92622581a652136ba3aa6cf0b09e1261678e4bbd838cfacd6553d0",
+    "B": "3c8cfce39a902eeb2b31ec024ca2a3dbac947944f0e568ee5af8154afe9a20c2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:12:50.871873",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "44d1104a-3a71-4e80-996d-244200b5c8ff",
+      "judge_response": {
+        "id": "44d1104a-3a71-4e80-996d-244200b5c8ff",
+        "object": "chat.completion",
+        "created": 1768421570,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**段落27** \"ファッキンセカンド\"：\n- A译为「操蛋二军的」- 准确理解了Fucking Second的双关含义\n- B译为「法金二世」- 误译，丢失了原意\n\n**段落95** \"天然人誑し\"：\n- A译为「天然呆真好骗」- 误解原意（应指\"天生擅长迷惑人的人\"）\n- B译为「騙天然呆的傢伙」- 也有误解，但更接近实际语境\n\n**段落98**：\n- A「强行逼人入部只会让人讨厌美式足球，这才是我最反感的」- 准确\n- B「哎呀呀，我只是不喜歡強迫人家，結果反而讓他討厭美式足球而已」- 意思有偏差\n\n### 2. 术语一致性\n\n**美式足球位置术语**：\n- A: 使用\"线锋\"、\"跑卫\"（但段落64、66混用\"跑锋\"）\n- B: \"線\"过于简略，但统一使用\"跑衛\"\n\n**笑声翻译**：\n- A: 「咯咯咯」- 更接近\"ケケケッ\"的发音特色\n- B: 「呵呵呵」- 较为普通\n\n### 3. 格式问题\n\n**B的重大格式问题**（段落82-100）：\n- 出现大量不当引号：如段落93「之後小早川填寫了入部申請就回去了。」不应有引号\n- 段落82-87混用了中文引号格式\n- 简繁体混用问题\n\n**A的格式**：\n- 全程使用简体中文，格式统一\n\n### 4. 流畅性与风格\n\n**段落53**（专业术语讲解）：\n- B添加英文注释如(Running Back)、(Quarterback)，对读者更友好\n- A简洁明了\n\n**段落6**：\n- A「趁他被运动社团挖走前先下手为强啊！」- 更口语化\n- B「在被運動社團挖走前，我們先把他攬下來了！」- 稍显生硬\n\n### 5. 细节对比\n\n| 方面 | A | B |\n|------|---|---|\n| 段落1长音符 | 中文破折号「——」✓ | 保留日文「ー」✗ |\n| 段落2 | 「前情提要」✓ | 「上次剧情」△ |\n| 敬称翻译 | 「前辈」「同学」混用 | 「桑」「前輩」混用 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在关键词汇如'ファッキンセカンド'、段落98的翻译更准确；B在段落95语境理解略好\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体表达更自然流畅，B部分句子略显生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的笑声翻译更符合角色特色，对话感更强\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A存在'跑卫/跑锋'不一致问题；B的'線'过于简略但添加英文注释有帮助\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A全文连贯；B后半段格式混乱影响阅读\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B在段落82-100出现严重格式问题，引号使用混乱，简繁体不统一\"}\n  },\n  \"key_differences\": [\n    \"B后半部分存在严重格式问题（不当引号、简繁混用）\",\n    \"A对'ファッキンセカンド'翻译更准确\",\n    \"A的'ケケケッ'译为'咯咯咯'更符合角色特色\",\n    \"B添加英文术语注释对新手更友好\",\n    \"A术语存在'跑卫/跑锋'不一致问题\"\n  ],\n  \"final_summary\": \"翻译A整体质量更优，主要体现在格式统一性、关键术语准确性和风格把握上。B虽然在添加英文注释方面对读者友好，但后半部分出现的严重格式问题（不当引号、简繁混用）严重影响了可读性。A在蛭魔笑声'ケケケッ'和'ファッキンセカンド'等特色表达的翻译上也更到位。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12003,
+          "completion_tokens": 2517,
+          "total_tokens": 14520
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在关键词汇如'ファッキンセカンド'、段落98的翻译更准确；B在段落95语境理解略好"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体表达更自然流畅，B部分句子略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的笑声翻译更符合角色特色，对话感更强"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A存在'跑卫/跑锋'不一致问题；B的'線'过于简略但添加英文注释有帮助"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A全文连贯；B后半段格式混乱影响阅读"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B在段落82-100出现严重格式问题，引号使用混乱，简繁体不统一"
+      }
+    },
+    "key_differences": [
+      "B后半部分存在严重格式问题（不当引号、简繁混用）",
+      "A对'ファッキンセカンド'翻译更准确",
+      "A的'ケケケッ'译为'咯咯咯'更符合角色特色",
+      "B添加英文术语注释对新手更友好",
+      "A术语存在'跑卫/跑锋'不一致问题"
+    ],
+    "final_summary": "翻译A整体质量更优，主要体现在格式统一性、关键术语准确性和风格把握上。B虽然在添加英文注释方面对读者友好，但后半部分出现的严重格式问题（不当引号、简繁混用）严重影响了可读性。A在蛭魔笑声'ケケケッ'和'ファッキンセカンド'等特色表达的翻译上也更到位。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:39:10.891400",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "664a0b4f7819f75aaec8d08eb7fcbb0fc4b6869e129826e1a2516373e26bd6be",
+    "B": "7d357175142883f9aac9afa84ba20725d583558a57870fa853009f7bf0c943bd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:27.443776",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DpWGNOC6dDI46wG3QmtMQfLpwPz",
+      "judge_response": {
+        "id": "chatcmpl-89DpWGNOC6dDI46wG3QmtMQfLpwPz",
+        "object": "chat.completion",
+        "created": 1768426767,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"アウルベア 魔物 名前\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"軽小说 魔物 名前 翻訳 中文 奥鲁贝亚 OR アウルベア\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"コートウルフ 中文翻译 披风狼 OR 寇图狼\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"クリムゾンブル 魔物 血红牛 OR 深红之暴\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"オウルベア - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2)\n> [🔗 \"アウルベア\" Pixiv](https://dic.pixiv.net/a/%E3%82%A2%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2)\n> [🔗 \"モンスター/【アウルベア】 - 旧版ダンジョンズ...\" WikiWiki](https://wikiwiki.jp/classicdnd/%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC/%E3%80%90%E3%82%A2%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2%E3%80%91)\n> [🔗 \"アウルベア/Owlbear - MTG Wiki\" MTG Wiki](http://mtgwiki.com/wiki/%E3%82%A2%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2/Owlbear)\n> [🔗 \"オウルベア\" Pixiv](https://dic.pixiv.net/a/%E3%82%AA%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2)\n> [🔗 \"アウルベア - prdj @ ウィキ\" STGR Wiki](https://w.atwiki.jp/prdj/pages/186.html)\n> [🔗 \"アウルベア § Bestiary ▶ モンスター ― パスファインダーRPG参照ルール集\" Qga](http://prd.qga.me/bestiary1/monsters/owlbear.html)\n> [🔗 \"モンスター辞典|ファンタジー辞典|ぶるがり屋本舗\" Xdomain](http://burugariya.php.xdomain.jp/dictionary/monster.html)\n> [🔗 \"アウルベアとは何？ わかりやすく解説 Weblio辞書\" Weblio](https://www.weblio.jp/content/%E3%82%A2%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2)\n> [🔗 \"【BG3】アウルベアの巣 | Spoilerブログ\" Spoiler](https://www.spoiler.jp/blog/baldurs-gate-3/locations/owlbear-nest)\n\n> 🔍 **1 results found**\n\n> [🔗 \"アウルベア\" Pixiv](https://dic.pixiv.net/a/%E3%82%A2%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2)\n\n\n**详细分析**\n\n这份文本是典型的轻小说风格魔物图鉴/笔记，采用第一人称记录形式，内容轻松、口语化、带有吐槽感，描述魔物特征、习性、掉落、强度等。整体语气随意、幽默，有时带点调侃（如“実は結構美味しい”“黙っていりゃ可愛いバンビちゃん”）。\n\n### 总体比较\n\n**A翻译**：更注重逐字忠实，句子结构常保留日语的短句节奏，翻译偏直译。语气较为书面化，但偶尔会显得生硬或不够口语。术语处理上倾向音译+意译混合（如“アシッドスライム”→“酸性史莱姆”），部分名称音译（如“アウルベア”保持原样）。\n\n**B翻译**：更注重中文自然流畅，句子调整更符合中文阅读习惯，口语感更强（如使用“其实挺美味的”“倒是哪里都有”）。术语上倾向纯意译或更通俗的中文名称（如“奥鲁贝亚”“酸液史莱姆”“披风狼”），整体可读性更高，语气更贴近轻小说轻松调侃风格。\n\n### 逐项评分\n\n**准确性（意思保留）**  \nA: 几乎所有地方都严格对应原文，极少省略或添加。  \nB: 基本准确，但个别地方稍作意译调整（如“意外と素早い”→“意外得很敏捷” vs “意外地很敏捷”），意思丢失极少。  \nA稍胜，但差距微小。\n\n**流畅性（中文自然表达）**  \nA: 部分句子结构偏日式，读起来略卡（如“意外地很敏捷。即使在夜晚也能看得非常清楚。”）。  \nB: 明显更符合中文口语习惯，句子更顺（如“意外得很敏捷。晚上也看得很清楚。”）。  \nB显著优于A。\n\n**风格/语气（轻小说叙述/对话感）**  \nA: 较为中规中矩，少了些轻小说常见的活泼调侃感。  \nB: 更抓住了原文的轻松、口语化感觉（如“其实挺美味的”“倒是哪里都有”“要是把它当伙伴，它会非常深情”），吐槽味更浓。  \nB明显更胜。\n\n**术语/名称一致性**  \nA: 名称处理保守，很多保持原文或直译（如“ウルフ”→“ウルフ”或“狼”，但统一性尚可；“コートウルフ”→“寇图狼”音译）。  \nB: 倾向更中文化的名称（如“奥鲁贝亚”“披风狼”“血红牛”“雪树精”），在轻小说读者中更易接受和记忆，一致性也较好（多数采用意译）。  \nB更符合中文轻小说社区的习惯用法（常见如“史莱姆”“哥布林”“狼”而非音译），因此B胜。\n\n**连贯性/可读性**  \nA: 整体连贯，但因部分句子僵硬，长时间阅读易疲劳。  \nB: 句子更短促、自然，阅读节奏更好，整篇可读性明显更高。  \nB胜。\n\n**格式/标点符号**  \n两者均基本保留原文的短句、分行风格，标点使用都合理。A在某些地方的“。”使用更规整，B偶尔更口语化（如省略部分助词）。基本持平。\n\n**关键差异总结**\n- 名称翻译：B更倾向意译/本土化，更适合中文轻小说读者（奥鲁贝亚、披风狼、血红牛等）。\n- 语气活泼度：B明显更贴近轻小说“随手记笔记”的轻松感。\n- 句子自然度：B全面胜出，读起来更舒服。\n- 少数地方A更直译准确，但整体不影响意思。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更忠实逐字，B偶有轻微意译调整，但无实质偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文表达明显更自然流畅，A部分日式结构较生硬\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地保留了轻小说口语化、调侃的轻松语气\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"B的中文本土化名称更符合轻小说读者习惯，一致性强\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B整体阅读节奏更好，更连贯易读\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点、分行格式均优秀，基本持平\"}\n  },\n  \"key_differences\": [\n    \"B在名称本土化（奥鲁贝亚、披风狼、血红牛等）上更贴近中文轻小说习惯\",\n    \"B句子更口语化、自然，语气更活泼调侃，符合原文轻小说风格\",\n    \"A更直译忠实，但部分表达略显生硬，流畅度和风格感稍逊\",\n    \"整体可读性B更胜一筹，适合长时间阅读的图鉴类文本\"\n  ],\n  \"final_summary\": \"B翻译整体更优秀，在保持较高准确性的同时，大幅提升了中文自然度、轻小说风格还原度和阅读舒适感，是更适合中文读者的版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12564,
+          "completion_tokens": 2858,
+          "total_tokens": 15422
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更忠实逐字，B偶有轻微意译调整，但无实质偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文表达明显更自然流畅，A部分日式结构较生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地保留了轻小说口语化、调侃的轻松语气"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "B的中文本土化名称更符合轻小说读者习惯，一致性强"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B整体阅读节奏更好，更连贯易读"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点、分行格式均优秀，基本持平"
+      }
+    },
+    "key_differences": [
+      "B在名称本土化（奥鲁贝亚、披风狼、血红牛等）上更贴近中文轻小说习惯",
+      "B句子更口语化、自然，语气更活泼调侃，符合原文轻小说风格",
+      "A更直译忠实，但部分表达略显生硬，流畅度和风格感稍逊",
+      "整体可读性B更胜一筹，适合长时间阅读的图鉴类文本"
+    ],
+    "final_summary": "B翻译整体更优秀，在保持较高准确性的同时，大幅提升了中文自然度、轻小说风格还原度和阅读舒适感，是更适合中文读者的版本。"
+  },
+  "outcome": "MiniMax-M2_win",
+  "winner_model": "MiniMax-M2"
+}

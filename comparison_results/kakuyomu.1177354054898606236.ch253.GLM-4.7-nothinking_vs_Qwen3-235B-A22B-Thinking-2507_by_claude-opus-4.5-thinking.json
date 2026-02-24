@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:25:29.504596",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "55f32c1728c282d50a7bfc6e8dfa0cf8434bf42ef844ed8b3ff83ac835d19dfd",
+    "B": "8ff8a8df5e2b17987ae0cd8e76f88c62ff9c317b5b5074c82d8a5197b1964e59"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:26:16.040450",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fcf6b3c7-28c2-472e-9058-a02a75fef943",
+      "judge_response": {
+        "id": "fcf6b3c7-28c2-472e-9058-a02a75fef943",
+        "object": "chat.completion",
+        "created": 1768422375,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**重大差异：**\n- 段落6：原文「皇帝と侍従の一団に付き添って」，A译\"陪同皇帝和侍从们\"（柳井陪同皇帝），B译\"在皇帝和侍从团的陪同下\"（柳井被陪同）。原文意思是柳井陪同皇帝，A正确。\n- 段落42/46：「センターポリス」A译\"中央警署\"（严重错误，这是城市名），B译\"中心城\"（正确）\n- 段落16：B添加了\"我才不信呢\"，原文没有这层语气\n- 段落82：B译\"首相府\"应为\"宰相府\"\n\n### 2. 流畅性分析\n\n- A整体较为书面化，但某些地方生硬\n- B部分段落过于口语化（如段落15\"重得吓人\"、\"非得变天不可\"；段落19\"黔驴技穷\"）\n- 段落45：A\"像是在说别人的事一样感动\"较awkward，B\"就像看热闹似的感慨着\"更自然\n\n### 3. 风格/语气\n\n- 轻小说叙述通常保持一定正式感\n- B在某些段落过于口语（段落8、15、19），偏离原文正式的第三人称叙述\n- A保持了较一致的叙述语气\n\n### 4. 术语一致性\n\n- 舰名：A保留音译\"伊姆佩拉特里察·叶卡捷琳娜\"，B意译\"女皇叶卡捷琳娜号\"（更易理解）\n- 人名：A\"马尔滕斯坦\"，B\"马滕施泰因\"（B更接近德语发音）\n- 段落18：B出现繁体字\"匹柏爾斯伯爵\"\n\n### 5. 格式/标点\n\n- A对话引号使用不一致（部分有、部分无）\n- B对话格式也不统一（混用「」、\"\"、''）\n- 时间格式：A混用汉字数字和阿拉伯数字，B统一用阿拉伯数字\n\n### 关键差异总结\n\n| 问题类型 | A | B |\n|---------|---|---|\n| センターポリス翻译 | 错误（中央警署）| 正确（中心城）|\n| 语气把控 | 较稳定 | 部分过于口语 |\n| 格式统一性 | 差 | 差 |\n| 专有名词 | 部分音译不当 | 较准确 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A的'センターポリス→中央警署'是重大翻译错误；B段落82'首相府'应为'宰相府'\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A部分表达生硬，B部分过于口语化，各有问题\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"A保持较一致的叙述风格；B某些段落口语化过度偏离轻小说正式感\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A关键地名翻译错误；B人名翻译更准确但有繁简混用\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 5, \"B\": 6, \"notes\": \"A对话引号使用不一致；B格式较统一但也有混用问题\"}\n  },\n  \"key_differences\": [\n    \"センターポリス翻译：A错译为'中央警署'，B正确译为'中心城'\",\n    \"语气风格：B部分段落过于口语化\",\n    \"舰名处理：A音译保留，B意译更易理解\",\n    \"格式规范：两者都有不一致问题\"\n  ],\n  \"final_summary\": \"B在关键术语翻译上更准确（特别是センターポリス这一核心地名），虽然风格上偶有过于口语化的问题，但不影响理解。A的重大翻译错误（将城市名译为'中央警署'）严重影响了文本的可理解性，因此B整体胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11890,
+          "completion_tokens": 2023,
+          "total_tokens": 13913
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的'センターポリス→中央警署'是重大翻译错误；B段落82'首相府'应为'宰相府'"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A部分表达生硬，B部分过于口语化，各有问题"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "A保持较一致的叙述风格；B某些段落口语化过度偏离轻小说正式感"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A关键地名翻译错误；B人名翻译更准确但有繁简混用"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 6,
+        "notes": "A对话引号使用不一致；B格式较统一但也有混用问题"
+      }
+    },
+    "key_differences": [
+      "センターポリス翻译：A错译为'中央警署'，B正确译为'中心城'",
+      "语气风格：B部分段落过于口语化",
+      "舰名处理：A音译保留，B意译更易理解",
+      "格式规范：两者都有不一致问题"
+    ],
+    "final_summary": "B在关键术语翻译上更准确（特别是センターポリス这一核心地名），虽然风格上偶有过于口语化的问题，但不影响理解。A的重大翻译错误（将城市名译为'中央警署'）严重影响了文本的可理解性，因此B整体胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:47:43.592657",
+  "sample": "syosetu.n6776iy.ch386",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6776iy.ch386.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6776iy.ch386.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n6776iy.ch386.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2bb7195d7ec1f474ffb77e11e9912b818e91c49fbc1fcd84cbf2ad9cb25860ec",
+    "A": "15012f6d4e82a15115984487cdfa489428e9ba8d82434d2b5a825bbb96f1bf3f",
+    "B": "4b97080977ac7676b2c557cfddb5fb418249b6a46fca4a6f2e7a082214020732"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:48:04.798317",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DBN9nYCK5ppDD4DJVLATQDjNlEt",
+      "judge_response": {
+        "id": "chatcmpl-89DBN9nYCK5ppDD4DJVLATQDjNlEt",
+        "object": "chat.completion",
+        "created": 1768427284,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 血属性 魔术 转移者 迷宫攻略 マルク ヒナ\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"レイ マルク ヒナ 転移者 迷宮 轻小说\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"离开A级队伍的我，和从前的弟子往迷宫深处迈进 ...\" Moegirl](https://zh.moegirl.org.cn/%E7%A6%BB%E5%BC%80A%E7%BA%A7%E9%98%9F%E4%BC%8D%E7%9A%84%E6%88%91%EF%BC%8C%E5%92%8C%E4%BB%8E%E5%89%8D%E7%9A%84%E5%BC%9F%E5%AD%90%E5%BE%80%E8%BF%B7%E5%AE%AB%E6%B7%B1%E5%A4%84%E8%BF%88%E8%BF%9B)\n> [🔗 \"魔法禁书目录 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E9%AD%94%E6%B3%95%E7%A6%81%E4%B9%A6%E7%9B%AE%E5%BD%95)\n> [🔗 \"魔法禁书目录 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%AD%94%E6%B3%95%E7%A6%81%E6%9B%B8%E7%9B%AE%E9%8C%84)\n> [🔗 \"魔法的禁书目录（镰池和马执笔的轻小说系列）...\" Baidu Baike](https://baike.baidu.com/item/%E9%AD%94%E6%B3%95%E7%9A%84%E7%A6%81%E4%B9%A6%E7%9B%AE%E5%BD%95/29646)\n> [🔗 \"离开A级队伍的我，和从前的弟子往迷宫深处迈进 ...\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%9B%A2%E9%96%8BA%E7%B4%9A%E9%9A%8A%E4%BC%8D%E7%9A%84%E6%88%91%EF%BC%8C%E5%92%8C%E5%BE%9E%E5%89%8D%E7%9A%84%E5%BC%9F%E5%AD%90%E5%BE%80%E8%BF%B7%E5%AE%AE%E6%B7%B1%E8%99%95%E9%82%81%E9%80%B2)\n> [🔗 \"魔禁里的变身 - 魔禁时间表 - 小说全文阅读 - SF轻小说\" SFACG](https://book.sfacg.com/Novel/108670/183408/1515125)\n> [🔗 \"魔法禁书目录手游人物图集_九游手机游戏\" 9Game](https://www.9game.cn/news/1737964.html)\n> [🔗 \"魔法少女育成计划（日本远藤浅蜊创作的轻小说...\" Baidu Baike](https://baike.baidu.com/item/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%AE%A1%E5%88%92/2953037)\n> [🔗 \"魔法禁书目录用语列表 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E9%AD%94%E6%B3%95%E7%A6%81%E6%9B%B8%E7%9B%AE%E9%8C%84%E7%94%A8%E8%AA%9E%E5%88%97%E8%A1%A8)\n> [🔗 \"无职转生 ~到了异世界就拿出真本事~（不讲理不求...\" Baidu Baike](https://baike.baidu.com/item/%E6%97%A0%E8%81%8C%E8%BD%AC%E7%94%9F%20~%E5%88%B0%E4%BA%86%E5%BC%82%E4%B8%96%E7%95%8C%E5%B0%B1%E6%8B%BF%E5%87%BA%E7%9C%9F%E6%9C%AC%E4%BA%8B~/18158567)\n\n> 🔍 **10 results found**\n\n> [🔗 \"異世界迷宮で奴隷ハーレムを\" Syosetu](https://ncode.syosetu.com/n4259s)\n> [🔗 \"異世界迷宮でハーレムを - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%B8%96%E7%95%8C%E8%BF%B7%E5%AE%AE%E3%81%A7%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%E3%82%92)\n> [🔗 \"【免費小說】《在異世界迷宮開後宮》2026最新連載、線上看 | 小說狂人\" CZ Books](https://czbooks.net/n/cpgfki1)\n> [🔗 \"槍万大学ヤリサー物語3(短編集) [Spider Taste] | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax-touch/work/=/product_id/RJ01293595.html?locale=en_US)\n> [🔗 \"誘惑の塔 [誘惑に弱い男子] | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax/work/=/product_id/RJ01200892.html?locale=en_US)\n> [🔗 \"异世界迷宫里的后宫生活 - 萌娘百科 万物皆可萌...\" Moegirl](https://zh.moegirl.org.cn/%E5%BC%82%E4%B8%96%E7%95%8C%E8%BF%B7%E5%AE%AB%E9%87%8C%E7%9A%84%E5%90%8E%E5%AE%AB%E7%94%9F%E6%B4%BB)\n> [🔗 \"Discontinued Works: Download doujinshi, games, and ASMR on \"DLsite Doujin R18\"\" DLsite](https://www.dlsite.com/maniax/info/sellend/=/month/2024-07?locale=en_US)\n> [🔗 \"异世界迷宫里的后宫生活 - 维基百科，自由的百科...\" Wikipedia](https://zh.wikipedia.org/zh-cn/%E7%95%B0%E4%B8%96%E7%95%8C%E8%BF%B7%E5%AE%AE%E8%A3%A1%E7%9A%84%E5%BE%8C%E5%AE%AE%E7%94%9F%E6%B4%BB)\n> [🔗 \"Release Calendar: Download doujinshi, games, and ASMR on \"DLsite Doujin R18\"\" DLsite](https://www.dlsite.com/maniax/new/=/date/2025-03-05/show_layout/2?locale=en_US)\n> [🔗 \"Masquerade Hypn*sis ~Before I knew it, I'm Pregnant with your Child~ [dieselmine] | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax/work/=/product_id/RJ221741.html?locale=en_US)\n\n\n这是一个轻小说风格的内心独白与对话场景，涉及人格分裂/记忆融合、转生者/转移者（転移者）、血属性魔术、迷宫攻略、黑幕植入的虚假目标等典型异世界轻小说元素。叙述者是“第二人格”在与“第一个人格”对话，最终融合/消逝，带有强烈的情感爆发、自我质疑与成长主题。语气应激烈、口语化、带有少女的脆弱与倔强，中文翻译需自然、富有张力，避免生硬。\n\n**整体比较：**\n\nA翻译倾向于较为直译、文学化处理，句子较长、修饰较多，试图保留日文细腻的叙述感，但有时显得稍显冗长或不够口语（尤其对话部分），在激烈情绪段落偶尔流畅性不足。\n\nB翻译更偏向自然中文表达，对话更口语化、接地气（如“干嘛呢”“抱歉，再等我一下”“这儿到底是哪儿”），叙述部分也更简洁生动，情绪张力更强，符合现代轻小说读者偏好的“读起来爽快、不卡顿”的风格。同时在关键情感爆发段落（如46-69），B的表达更具冲击力和节奏感。\n\n现在逐项评分（1-10分）：\n\n- **准确性**：两者都基本忠实原文，少有明显误译。A在一些地方更贴近日文结构（如段落5“我记起了重要的东西，想起了这份记忆”较直译），B有时稍作调整但意思未偏离（如“最珍贵的东西”更强调情感）。A略胜，但差距小。\n\n  accuracy: A 9, B 8.5, notes: 两者准确度都很高，B偶有轻微意译但不损原意。\n\n- **流畅性**：B明显更自然，中文阅读顺畅，尤其是长句和对话。A有些句子结构偏日式，读起来稍卡（如段落11的描述）。\n\n  fluency: A 7.5, B 9, notes: B的口语化和节奏更好，适合轻小说快节奏阅读。\n\n- **风格/语气**：轻小说需带“中二感”、少女内心戏的脆弱与爆发。B在激烈对白（如“开什么玩笑”“那正是正中黑幕下怀”）更具张力与情绪，A较温和、文雅。\n\n  style: A 8, B 9, notes: B更贴合轻小说“燃”“虐心”时的语气，情绪渲染更到位。\n\n- **术语/名称一致性**：两者基本一致（如マルク→马克/马尔克，ヒナ→阳奈，ベイン→贝恩/贝因，アル→阿尔）。B在“マルク”统一用“马尔克”更接近音译习惯，A用“马克”也常见。血属性、转移者等一致，无大问题。\n\n  terminology: A 9, B 9, notes: 两者均稳定，一致性良好。\n\n- **连贯性/可读性**：B整体更连贯，段落过渡自然，读者容易沉浸。A有些地方因句式复杂稍影响节奏。\n\n  coherence: A 8, B 9, notes: B的可读性更高，尤其在长内心独白部分。\n\n- **格式/标点符号**：两者标点使用规范，A更偏向使用中文书面语的破折号与省略号，B更灵活但也合适。无明显问题。\n\n  formatting: A 9, B 9, notes: 两者格式均良好。\n\n**关键差异**：\n- 对话自然度：B更像日常中文少女说话（“你在这儿干嘛呢”“骗人的吧”），A更书面（“你在做什么，待在这种地方”“骗人吧”）。\n- 叙述生动性：B在景物描写（如段落11“像一滴墨汁搅进白颜料里的浑浊天空”）和情绪高潮（如67、69）更具冲击力。\n- 整体节奏：B更紧凑、燃向，A稍显舒缓、文青。\n- 部分意译：如段落16 B用“第二人格”而A用“第二个我”，B更直接点题人格分裂主题。\n\n**最终判决**：B整体更好，尤其在轻小说所需的“沉浸感、情绪张力、口语流畅”上占优。A准确且文雅，但不够“轻”。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8.5, \"notes\": \"两者准确度高，A稍贴近日文直译，B有少量合理意译\"},\n    \"fluency\": {\"A\": 7.5, \"B\": 9, \"notes\": \"B中文更自然顺畅，对话和叙述读起来不卡顿\"},\n    \"style\": {\"A\": 8, \"B\": 9, \"notes\": \"B的情感爆发和少女语气更符合轻小说风格，冲击力强\"},\n    \"terminology\": {\"A\": 9, \"B\": 9, \"notes\": \"名称和专有名词一致性均优秀，无明显问题\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B整体节奏更好，连贯性和可读性更强\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"标点和格式处理都规范\"}\n  },\n  \"key_differences\": [\n    \"B的对话更口语化、自然（如'干嘛呢''骗人的吧'），A偏书面\",\n    \"B在情绪高潮段落（如人格争执、对黑幕的怒吼）张力更强、节奏更燃\",\n    \"B叙述更简洁生动，A偶有冗长或日式结构\",\n    \"B对人格主题的表达（如'第二人格'）更直接突出\"\n  ],\n  \"final_summary\": \"B翻译整体更胜一筹，更符合现代轻小说读者的阅读偏好：自然、流畅、情绪饱满、可读性高。A准确文雅，但流畅性和风格感染力稍逊，适合偏好细腻文风的读者。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10441,
+          "completion_tokens": 4133,
+          "total_tokens": 14574
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "两者准确度高，A稍贴近日文直译，B有少量合理意译"
+      },
+      "fluency": {
+        "A": 7.5,
+        "B": 9,
+        "notes": "B中文更自然顺畅，对话和叙述读起来不卡顿"
+      },
+      "style": {
+        "A": 8,
+        "B": 9,
+        "notes": "B的情感爆发和少女语气更符合轻小说风格，冲击力强"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9,
+        "notes": "名称和专有名词一致性均优秀，无明显问题"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B整体节奏更好，连贯性和可读性更强"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "标点和格式处理都规范"
+      }
+    },
+    "key_differences": [
+      "B的对话更口语化、自然（如'干嘛呢''骗人的吧'），A偏书面",
+      "B在情绪高潮段落（如人格争执、对黑幕的怒吼）张力更强、节奏更燃",
+      "B叙述更简洁生动，A偶有冗长或日式结构",
+      "B对人格主题的表达（如'第二人格'）更直接突出"
+    ],
+    "final_summary": "B翻译整体更胜一筹，更符合现代轻小说读者的阅读偏好：自然、流畅、情绪饱满、可读性高。A准确文雅，但流畅性和风格感染力稍逊，适合偏好细腻文风的读者。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

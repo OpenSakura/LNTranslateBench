@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:48:00.943685",
+  "sample": "pixiv.14996022.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14996022.ch10.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14996022.ch10.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/pixiv.14996022.ch10.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "97840b0ea25b900611e3fd1bca8d95c19b711a6d9a5b445298a5ca51f9d44473",
+    "A": "2b182328c4b85cf726ec00fa108477e9ff9a1cb99ddd0342bd4b851cde976407",
+    "B": "bd32419ce8464d642d1bd014506a171fa2c425a4b2d3f08bd45fa61dd0a970bb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:48:46.489894",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9b49c989-1ee3-48d4-9a7b-ddaf1f4cbb69",
+      "judge_response": {
+        "id": "9b49c989-1ee3-48d4-9a7b-ddaf1f4cbb69",
+        "object": "chat.completion",
+        "created": 1768423726,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐项对比分析\n\n**段落2：书名格式**\n- A使用《》符号，B使用「」符号\n- 中文书名号《》更符合目标语言规范\n\n**段落5：关键术语翻译**\n- 原文「解像度の低いセリフ」是对台词的比喻用法\n- A译\"清晰度较低\"更自然贴切\n- B译\"分辨率较低\"过于生硬，分辨率用于台词不通顺\n\n**段落8：长段落口语化表达**\n- A的\"破坏力十足·超级可爱·最喜欢了...\"更有节奏感\n- B略显生硬，连接词使用稍显机械\n\n**段落16：人称用词**\n- A使用\"人家\"作第一人称，与角色语气不符\n- B使用\"我\"更统一\n\n**段落23：术语处理**\n- A将\"エロ同人\"译为\"色情同人本\"，完成翻译任务\n- B保留日文\"エロ同人\"，不符合翻译规范\n\n**段落34：格式错误**\n- B末尾多了一个」符号，属于格式错误\n\n**段落60/67：术语一致性**\n- A全程统一使用【请求】对应【お願い】\n- B在段落67突然改为【恳求】，术语不一致\n\n**段落65-66：后日谈流畅度**\n- A行文更紧凑，\"让人上瘾\"比\"会上瘾的\"更自然\n- B\"玩弄于股掌之上\"应为\"之间\"，有小错误\n\n### 轻小说风格把握\nA在语气词、标点节奏上更贴合轻小说活泼的叙述风格，B部分段落偏书面化。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A对「解像度」等比喻性用语处理更准确；B部分过于直译\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化表达更自然流畅，B部分句子略显生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好地保留了轻小说活泼语气，B有时偏书面\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A术语一致；B末段【恳求】与前文【请求】不统一，且保留日文エロ同人\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者可读性均可，A整体连贯性稍好\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A使用《》更规范；B段落34有多余符号，部分标点不统一\"}\n  },\n  \"key_differences\": [\n    \"书名符号规范：A用《》，B用「」\",\n    \"「解像度」翻译：A译清晰度更贴切，B译分辨率生硬\",\n    \"エロ同人：A完成翻译，B保留日文\",\n    \"术语一致性：A统一用【请求】，B末段突然改为【恳求】\",\n    \"B存在格式错误（段落34多余符号）\"\n  ],\n  \"final_summary\": \"翻译A在术语一致性、比喻性用语处理、格式规范方面均优于B。A更好地把握了轻小说活泼口语化的叙述风格，而B存在术语不统一、保留日文未译、格式错误等问题。综合来看A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12003,
+          "completion_tokens": 1912,
+          "total_tokens": 13915
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对「解像度」等比喻性用语处理更准确；B部分过于直译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化表达更自然流畅，B部分句子略显生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好地保留了轻小说活泼语气，B有时偏书面"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A术语一致；B末段【恳求】与前文【请求】不统一，且保留日文エロ同人"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者可读性均可，A整体连贯性稍好"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A使用《》更规范；B段落34有多余符号，部分标点不统一"
+      }
+    },
+    "key_differences": [
+      "书名符号规范：A用《》，B用「」",
+      "「解像度」翻译：A译清晰度更贴切，B译分辨率生硬",
+      "エロ同人：A完成翻译，B保留日文",
+      "术语一致性：A统一用【请求】，B末段突然改为【恳求】",
+      "B存在格式错误（段落34多余符号）"
+    ],
+    "final_summary": "翻译A在术语一致性、比喻性用语处理、格式规范方面均优于B。A更好地把握了轻小说活泼口语化的叙述风格，而B存在术语不统一、保留日文未译、格式错误等问题。综合来看A胜出。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

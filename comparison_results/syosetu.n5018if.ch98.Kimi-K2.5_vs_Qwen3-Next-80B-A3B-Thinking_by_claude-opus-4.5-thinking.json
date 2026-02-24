@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:23:47.311474",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "3f225459b441e4376592c42490c424ec24a330d935bb42b04097a0cfb1407de8",
+    "B": "9c6d439230f6c45bca330855c95c020344061804ec218e2c3c4c675d64a26bac"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:24:28.758284",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4c82160a-2e40-492c-b32b-d5184e5e2b4a",
+      "judge_response": {
+        "id": "4c82160a-2e40-492c-b32b-d5184e5e2b4a",
+        "object": "chat.completion",
+        "created": 1769610268,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n- **段落15**：原文「可愛らしすぎてやばいという気持ちにならない」意思是\"不会产生糟糕的感觉（因为太可爱了）\"。A译\"完全不会觉得可爱到不行\"理解有误；B译\"太可爱了，完全产生不了糟糕的感觉\"更准确。\n- **段落74**：「フリフリのお尻」A译\"晃动的屁股\"，B译\"蓬蓬的臀部\"。B更准确捕捉到フリフリ（蓬松/荷叶边）的含义。\n- **段落5**：「スタイルの良い」A译\"大美女\"丢失了\"身材好\"的含义，B译\"身材好的美女\"更完整。\n\n### 2. 流畅性分析\n- A整体更口语化、简洁，如\"脑子瞬间空白了\"、\"真丢人啊\"\n- B偏书面化，有时略显冗长，如\"战战兢兢地嘀咕着\"\n\n### 3. 格式分析\n- **关键问题**：A使用中文引号「\"\"」，B使用日文引号「「」」\n- 作为中文翻译，A的标点符号格式更符合规范\n\n### 4. 风格/语气\n- A更符合轻小说轻松活泼的语调\n- B较为正式，部分地方显得生硬\n\n### 5. 术语一致性\n- 两者对\"ラッシュガード\"译法不同（速干衣vs防晒衣），但都可接受\n- 人名翻译一致\n\n### 6. 细节对比\n| 段落 | A的处理 | B的处理 | 评价 |\n|------|---------|---------|------|\n| 13 | 意译为疑问句 | 保留引号和原意 | B更准确 |\n| 22 | \"喂，凉真~\" | \"呐凉真\" | A更自然 |\n| 50 | 语序有点混乱 | 表达清晰 | B更好 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在部分细节更准确，如段落15、74；A有少数理解偏差\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A更口语化自然，B偏书面化有时生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更符合轻小说轻松活泼的叙述风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者人名、称呼基本一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 8, \"notes\": \"两者整体可读性相当\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B使用日文引号「」不符合中文排版规范，这是较大扣分项\"}\n  },\n  \"key_differences\": [\n    \"标点符号：A使用中文引号，B使用日文引号（重大格式问题）\",\n    \"语言风格：A更口语化活泼，B更书面化正式\",\n    \"段落15准确性：A理解有误，B正确\",\n    \"段落74：B对フリフリ的理解更准确\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。B在准确性上略胜一筹，但A在流畅性、风格把握和格式规范方面表现更好。B使用日文引号「」是中文翻译的重大格式问题，严重影响阅读体验和规范性。综合考虑轻小说翻译的整体阅读感受和中文出版规范，A的整体表现更适合目标读者。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10674,
+          "completion_tokens": 1966,
+          "total_tokens": 12640
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在部分细节更准确，如段落15、74；A有少数理解偏差"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更口语化自然，B偏书面化有时生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更符合轻小说轻松活泼的叙述风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者人名、称呼基本一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者整体可读性相当"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B使用日文引号「」不符合中文排版规范，这是较大扣分项"
+      }
+    },
+    "key_differences": [
+      "标点符号：A使用中文引号，B使用日文引号（重大格式问题）",
+      "语言风格：A更口语化活泼，B更书面化正式",
+      "段落15准确性：A理解有误，B正确",
+      "段落74：B对フリフリ的理解更准确"
+    ],
+    "final_summary": "两个翻译各有优劣。B在准确性上略胜一筹，但A在流畅性、风格把握和格式规范方面表现更好。B使用日文引号「」是中文翻译的重大格式问题，严重影响阅读体验和规范性。综合考虑轻小说翻译的整体阅读感受和中文出版规范，A的整体表现更适合目标读者。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

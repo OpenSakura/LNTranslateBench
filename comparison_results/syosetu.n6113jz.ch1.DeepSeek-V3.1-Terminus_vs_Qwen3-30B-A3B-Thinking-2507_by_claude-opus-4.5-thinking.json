@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:13:33.428890",
+  "sample": "syosetu.n6113jz.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6113jz.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6113jz.ch1.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/syosetu.n6113jz.ch1.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "202d88e951c365c1b6224fa97be1f2152793d07174bcd127ad73eaa546de66e6",
+    "A": "b0577eabdc57811f10c657edebd848b5eb724973cb713dd653b36ca18b097bc9",
+    "B": "eedccdac30181ae6a14b436960fc0d1906120c532dd1230a5ea1b6e2279ccebd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:14:15.416049",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "da5e1571-b59f-4c13-bfca-acf9b76e6d2c",
+      "judge_response": {
+        "id": "da5e1571-b59f-4c13-bfca-acf9b76e6d2c",
+        "object": "chat.completion",
+        "created": 1768432455,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性\n- **段落17**: B将「嵐で雨風」误译为\"暴风雪\"，原文明确是暴风雨，这是明显错误\n- **段落9**: A\"来历不明\"误译「得体の知れない」，B\"说不出的诡异感\"更准确\n- **段落50**: A\"货车\"误译「荷車」，B\"推车\"正确\n- **段落12**: A\"光看着就恶心\"比B的理解更准确\n- **段落63**: A对「命乞いにしては清々しく」理解有偏差，B也处理得不够清晰\n\n### 2. 流畅性\n- B整体更口语化、读起来更自然流畅\n- A有些句子过于书面化，如段落4\"混入了一位并未穿着\"较生硬\n- B段落11有\"脸和身体\"重复出现\n\n### 3. 风格/语气\n- B的对话更符合轻小说口语风格\n- A的叹词处理较好（如\"呜嘻嘻\"vs\"呵呵\"）\n- 段落29: A\"人家也\"比B\"我\"更符合少女语气\n\n### 4. 术语一致性\n- A段落34、37使用了`\"\"`而非「」，格式不统一\n- B保持了统一的括号格式\n\n### 5. 格式问题\n- 段落31: A『叽啊啊啊啊啊！』格式混乱，B「啊啊啊——！『完全错误\n- 段落73: A和B都有括号格式错误\n\n### 6. 凤凰鸣叫处理\n- A用\"嘎啊啊啊\"较为统一\n- B用\"啊啊啊\"/\"凯——\"不够统一且不够拟声\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有'来历不明'误译，B有'暴风雪'明显错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，A有时过于书面\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A叹词更丰富，B对话更自然\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者连贯性相当\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A引号不统一，B段落31/73格式严重错误\"}\n  },\n  \"key_differences\": [\n    \"段落17: B将暴风雨误译为暴风雪是关键错误\",\n    \"段落50: A误译荷車为货车\",\n    \"凤凰鸣叫声: A更统一更拟声化\",\n    \"整体语感: B更口语自然，A更书面\",\n    \"格式: B在段落31/73有严重括号错误\"\n  ],\n  \"final_summary\": \"两个翻译各有优缺。B在流畅性上略胜，但在准确性上有致命错误（暴风雪）和格式问题。A虽有小瑕疵但整体更稳定可靠，凤凰鸣叫的拟声处理也更好。综合考虑，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13004,
+          "completion_tokens": 1781,
+          "total_tokens": 14785
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有'来历不明'误译，B有'暴风雪'明显错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，A有时过于书面"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A叹词更丰富，B对话更自然"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者连贯性相当"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A引号不统一，B段落31/73格式严重错误"
+      }
+    },
+    "key_differences": [
+      "段落17: B将暴风雨误译为暴风雪是关键错误",
+      "段落50: A误译荷車为货车",
+      "凤凰鸣叫声: A更统一更拟声化",
+      "整体语感: B更口语自然，A更书面",
+      "格式: B在段落31/73有严重括号错误"
+    ],
+    "final_summary": "两个翻译各有优缺。B在流畅性上略胜，但在准确性上有致命错误（暴风雪）和格式问题。A虽有小瑕疵但整体更稳定可靠，凤凰鸣叫的拟声处理也更好。综合考虑，A略胜。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

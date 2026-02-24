@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:51.586166",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "774eb903193daa0d4a68fe49c60e3ca761492b4b454111db2025023d8bfec4b8",
+    "B": "116eebaf1e03f89062c78a2346ceff40b9ebdb045f4eab992d5164f89cbf6c50"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:03:26.970412",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0e46ab79-76fc-4216-8609-ce4b3a08168f",
+      "judge_response": {
+        "id": "0e46ab79-76fc-4216-8609-ce4b3a08168f",
+        "object": "chat.completion",
+        "created": 1768421006,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**严重问题（翻译B）：**\n- 段落3：原文\"雫ちゃん\"，B错译为\"沙良\"，混淆了两个不同角色\n- 段落8-9：B出现严重错位，段落8的内容被段落9替换，段落9被段落10替换，导致原文\"話を聞いていた父が隣で溜息を吐いていた\"完全丢失\n\n**翻译A问题：**\n- 段落75：原文主语是\"私\"（我），A错译为\"他\"\n- 段落45：原文\"魔物に刺さる\"（刺中魔物），A译为\"被魔物刺中\"，方向错误\n\n### 流畅性与风格\n- A：较为正式、书面化，保留敬语层次\n- B：口语化程度高，如\"乐坏了\"\"吓了一跳\"更活泼\n\n### 术语一致性\n- A：雫酱、树叔叔、从魔、物品BOX\n- B：小雫、树叔/树大叔、随从魔、物品箱（不统一）\n- 段落2：A保留\"ホーム\"译为\"霍姆镇\"，B省略地名\n\n### 格式问题\n- 段落67、32等：B使用不一致的引号格式（有时「」有时\"\"）\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 4, \"notes\": \"B在段落3混淆角色，段落8-9严重错位丢失整句；A段落75主语错误，段落45方向错\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然流畅，A稍显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说活泼风格，A较正式\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A术语一致；B称呼不统一（树叔/树大叔），从魔/随从魔混用\"},\n    \"coherence\": {\"A\": 8, \"B\": 5, \"notes\": \"B因段落错位导致上下文断裂\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B引号格式不统一\"}\n  },\n  \"key_differences\": [\n    \"B段落8-9严重错位，丢失父亲叹气的整句翻译\",\n    \"B段落3将雫误译为沙良\",\n    \"A段落75主语错误（我→他）\",\n    \"B整体更口语化活泼，A更正式书面\"\n  ],\n  \"final_summary\": \"虽然B在流畅度和风格上更贴近轻小说语感，但其准确性存在致命缺陷：段落错位导致内容丢失，人名混淆影响理解。A虽有个别错误，但整体准确性和一致性更好，因此A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10177,
+          "completion_tokens": 1463,
+          "total_tokens": 11640
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 4,
+        "notes": "B在段落3混淆角色，段落8-9严重错位丢失整句；A段落75主语错误，段落45方向错"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然流畅，A稍显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说活泼风格，A较正式"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A术语一致；B称呼不统一（树叔/树大叔），从魔/随从魔混用"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 5,
+        "notes": "B因段落错位导致上下文断裂"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B引号格式不统一"
+      }
+    },
+    "key_differences": [
+      "B段落8-9严重错位，丢失父亲叹气的整句翻译",
+      "B段落3将雫误译为沙良",
+      "A段落75主语错误（我→他）",
+      "B整体更口语化活泼，A更正式书面"
+    ],
+    "final_summary": "虽然B在流畅度和风格上更贴近轻小说语感，但其准确性存在致命缺陷：段落错位导致内容丢失，人名混淆影响理解。A虽有个别错误，但整体准确性和一致性更好，因此A胜出。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

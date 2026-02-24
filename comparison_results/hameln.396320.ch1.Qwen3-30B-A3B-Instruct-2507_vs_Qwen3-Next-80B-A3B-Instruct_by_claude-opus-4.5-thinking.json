@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:20:08.775085",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "959455be1931f6807e5cecf46fc9c62194df0c65187932c06f85f126a0775f8b",
+    "B": "e9941f2c4d74c8da07af916f006428bace1ad05801ea5272116eeb28e3558a5c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:20:47.796686",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c3dd9084-379f-4411-b3c5-67102b361284",
+      "judge_response": {
+        "id": "c3dd9084-379f-4411-b3c5-67102b361284",
+        "object": "chat.completion",
+        "created": 1768422047,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**段落2：**\n- 原文：「物語の導入にありがちな言葉」\n- A：「小说开头常见的台词」- 准确\n- B：「烂大街的故事开头」- \"烂大街\"略带贬义，原文只是\"常见\"\n\n**段落6：**\n- 原文：「考えも及びませんが」（无法想象）\n- A：「虽然无法想象」- 准确\n- B：「想想都觉得荒唐」- 意译偏离\n\n**段落22：**\n- 原文：「ダンジョン」\n- A：始终用「地下城」\n- B：此处用「迷宫」，前后不一致\n\n**段落36：**\n- 原文：「父親として接してきた」（作为父亲相处）\n- A：「以父亲身份相处的男性」- 准确\n- B：「把你当儿子对待的男性」- 理解偏差\n\n**段落78：**\n- A：漏译了\"二月を費やした\"的具体时间\n- B：「花了两个月」- 准确\n\n### 2. 流畅性分析\n\n**段落6：**\n- A：「现实就是如此，高塔确实存在」- 书面语流畅\n- B：「可事实就是塔确实存在，现在我们管这玩意儿叫」- 口语化过度，\"玩意儿\"与叙述语气不协调\n\n**段落15：**\n- A：「愁得抱头苦思」- 略显生硬\n- B：「头疼得不行」- 自然通顺\n\n**段落38：**\n- A：「因为是男性，所以才称作父亲」- 通顺\n- B：「因为他是男人，我才叫他爸」- 更口语化自然\n\n### 3. 风格/语气分析\n\n本文是第一人称叙述，带有轻小说的独白感。\n\n- A整体保持较为正式、文学性的叙述风格\n- B在某些地方过于口语化（如\"玩意儿\"\"嘛\"），但对话部分更自然\n\n**段落47：**\n- A：「嗯，就算世界变了」\n- B：「嘛，就算世界变了」- \"嘛\"更符合轻小说语气\n\n### 4. 术语一致性\n\n- A：始终使用「地下城」\n- B：混用「地下城」「迷宫」「dungeon」（段落73直接用英文，不妥）\n\n**段落14：**\n- 原文：「ゴーレム」\n- A：「石像鬼」- 错误，ゴーレム是魔像/泥偶\n- B：「哥雷姆」- 音译，较准确\n\n### 5. 连贯性/可读性\n\n**段落33：**\n- 原文：「60億750万人」\n- A：「60亿7500万」- 数字错误\n- B：「60亿7500万」- 同样错误（应为60亿750万）\n\n**段落76-77：**\n- B使用了英文引号\"\"而非中文引号「」，格式不一致\n\n### 6. 格式/标点\n\n- A：「」引号使用一致\n- B：部分段落（76、80）使用英文引号，不规范\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体准确，B段落36理解偏差、部分意译过度；但A段落78漏译时间\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者各有千秋，A书面语流畅，B部分口语化自然但有时过度\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话和语气词更符合轻小说风格，但A的叙述稳定\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A术语一致但ゴーレム译错；B混用地下城/迷宫/dungeon，严重不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯，B因术语混用影响阅读连贯性\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"A标点规范一致；B部分段落使用英文引号，格式混乱\"}\n  },\n  \"key_differences\": [\n    \"术语一致性：A始终用「地下城」，B混用「地下城」「迷宫」「dungeon」\",\n    \"语气风格：B更口语化但偶尔过度，A保持书面叙述稳定\",\n    \"准确性：B段落36「父親として接してきた」理解有误\",\n    \"格式：B部分段落使用英文引号，不规范\",\n    \"ゴーレム翻译：A错译为「石像鬼」，B音译「哥雷姆」更准确\"\n  ],\n  \"final_summary\": \"A在术语一致性、格式规范和整体准确性上表现更好，叙述风格稳定；B在轻小说语气和部分口语化表达上更自然，但术语混用（地下城/迷宫/dungeon）严重影响一致性，且存在格式问题。综合考虑，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12360,
+          "completion_tokens": 1722,
+          "total_tokens": 14082
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体准确，B段落36理解偏差、部分意译过度；但A段落78漏译时间"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者各有千秋，A书面语流畅，B部分口语化自然但有时过度"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话和语气词更符合轻小说风格，但A的叙述稳定"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A术语一致但ゴーレム译错；B混用地下城/迷宫/dungeon，严重不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯，B因术语混用影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A标点规范一致；B部分段落使用英文引号，格式混乱"
+      }
+    },
+    "key_differences": [
+      "术语一致性：A始终用「地下城」，B混用「地下城」「迷宫」「dungeon」",
+      "语气风格：B更口语化但偶尔过度，A保持书面叙述稳定",
+      "准确性：B段落36「父親として接してきた」理解有误",
+      "格式：B部分段落使用英文引号，不规范",
+      "ゴーレム翻译：A错译为「石像鬼」，B音译「哥雷姆」更准确"
+    ],
+    "final_summary": "A在术语一致性、格式规范和整体准确性上表现更好，叙述风格稳定；B在轻小说语气和部分口语化表达上更自然，但术语混用（地下城/迷宫/dungeon）严重影响一致性，且存在格式问题。综合考虑，A略胜一筹。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

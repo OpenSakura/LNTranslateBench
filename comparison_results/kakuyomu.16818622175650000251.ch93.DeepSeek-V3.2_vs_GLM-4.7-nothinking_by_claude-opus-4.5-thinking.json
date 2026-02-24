@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:31:42.596721",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "528975ea6d8788331c982741d2faeea5c6ffc82ff59aad10a93543151044b9e9",
+    "B": "fbdc30214b956a57d1249c606762fa0ec33fcf1fa4a16e5a32855689d1604262"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:32:33.039447",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0bdbabcc-4ee1-4c90-a712-4c61ed48198a",
+      "judge_response": {
+        "id": "0bdbabcc-4ee1-4c90-a712-4c61ed48198a",
+        "object": "chat.completion",
+        "created": 1768422752,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落1**: \"おタヒ\"是角色称呼，A译\"老鹰\"无根据，B译\"御姐\"至少是一种解读\n- **段落44/48/56**: A将\"おタヒ\"误译为\"琪肯\"（チケン才是琪肯），严重错误；B译为\"小塔希/欧塔希\"虽不统一但方向正确\n- **段落73**: A将\"おタヒでも着られる\"完全误译为\"可以当御寒披肩穿的\"；B译\"连我这种废物也能穿的\"虽有理解偏差但更接近原意\n- **段落43**: \"もりもり\"A译\"噗噜噗噜\"较生动，B译\"茂盛地\"语义不通\n\n### 2. 流畅性\n- B整体更口语化自然，如\"饶了我吧。我都开心得快笑出声了\"\n- A部分句式较生硬，如\"我都要因为喜悦而忍不住笑开花了\"\n\n### 3. 风格/语气\n- B更符合轻小说轻松吐槽的风格，如\"真想问问懂行的人，可惜这里不存在这种专家\"\n- A有时过于书面，如\"有识之士请教问题 却哪里都不存在\"\n\n### 4. 术语/名称一致性\n- A对\"おタヒ\"翻译极不一致：老鹰→小姐→おタヒ→琪肯，混乱严重\n- B较一致：御姐/小塔希/欧塔希，虽有变化但可辨识\n\n### 5. 格式/标点\n- **A保留了对话引号**，更忠实原文格式\n- **B多处省略引号**（段落2,5,11,16,19-21等），与原文不符\n\n### 6. 连贯性\n- B整体阅读流畅度更高\n- A有断句问题（段落15,22）\n\n## 关键差异\n\n1. **角色名处理**: A出现严重混淆，B相对一致\n2. **格式忠实度**: A保留引号，B省略\n3. **语言风格**: A偏书面，B偏口语自然\n4. **关键误译**: A在段落44/48/56/73有重大错误\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 7, \"notes\": \"A多处将おタヒ误译为琪肯，段落73完全误译；B虽有小问题但整体更准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语化自然，A部分句式生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说轻松吐槽风格\"},\n    \"terminology\": {\"A\": 4, \"B\": 7, \"notes\": \"A对おタヒ翻译极不一致且有严重混淆，B相对统一\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体阅读更流畅连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"A保留对话引号忠实原文，B多处省略引号\"}\n  },\n  \"key_differences\": [\n    \"A将おタヒ多次误译为琪肯（与チケン混淆），B保持相对一致\",\n    \"A保留对话引号格式，B省略大量引号\",\n    \"B语言更自然流畅符合轻小说风格\",\n    \"段落73：A完全误译，B理解基本正确\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性、风格和术语一致性方面明显优于A，尤其是A对角色名おタヒ的严重混淆（多次误译为琪肯）构成重大扣分项。虽然A在格式保留上更忠实原文，但整体翻译质量B更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10794,
+          "completion_tokens": 2319,
+          "total_tokens": 13113
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 7,
+        "notes": "A多处将おタヒ误译为琪肯，段落73完全误译；B虽有小问题但整体更准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语化自然，A部分句式生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说轻松吐槽风格"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 7,
+        "notes": "A对おタヒ翻译极不一致且有严重混淆，B相对统一"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体阅读更流畅连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "A保留对话引号忠实原文，B多处省略引号"
+      }
+    },
+    "key_differences": [
+      "A将おタヒ多次误译为琪肯（与チケン混淆），B保持相对一致",
+      "A保留对话引号格式，B省略大量引号",
+      "B语言更自然流畅符合轻小说风格",
+      "段落73：A完全误译，B理解基本正确"
+    ],
+    "final_summary": "B在准确性、流畅性、风格和术语一致性方面明显优于A，尤其是A对角色名おタヒ的严重混淆（多次误译为琪肯）构成重大扣分项。虽然A在格式保留上更忠实原文，但整体翻译质量B更胜一筹。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

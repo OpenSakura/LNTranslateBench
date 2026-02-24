@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:12:27.750056",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "89aae12961c49195fb220b9c3c687a4b20323ca035fcd1a5b5f8960e3d7f2f73",
+    "B": "a754b9b7292c4a29fa076b9b4a7d4cd71907e6c0cdbdbcbba040a7aebb0fc974"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:13:07.643175",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f1a0010a-4720-40eb-ae1f-3e341b41da73",
+      "judge_response": {
+        "id": "f1a0010a-4720-40eb-ae1f-3e341b41da73",
+        "object": "chat.completion",
+        "created": 1768421586,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判\n\n## 详细分析\n\n### 1. 准确性\n- **段落27**：原文「ファッキンセカンド」是蛭魔对二年级的称呼。A译为\"该死的，各种都教给你\"完全错误；B译为\"他妈的二年级，你来给她好好讲讲\"准确。\n- **段落3/8**：A将「1年」直译为\"1年\"，不自然；B译为\"一年级的\"更准确自然。\n- **段落21-24**：「ライン」A译\"线\"过于简略；B译\"线锋\"更完整准确。\n- **段落82**：「自分に向かって」A译\"向他奔去\"有误；B译\"朝我冲来\"符合第一人称视角。\n\n### 2. 流畅性\n- B整体采用更口语化的表达：\"这货\"、\"爆表\"、\"好嘞\"、\"没毛病\"等符合轻小说对话风格。\n- A部分句子较生硬，如段落17多出引号，段落53句子不完整。\n\n### 3. 风格/语气\n- B更贴合原作轻松诙谐的语气，如\"翻脸比翻书快\"、\"简直感激到爆\"、\"真有蛭魔的风格\"。\n- A相对正式，少了轻小说的活泼感。\n\n### 4. 术语一致性\n- A在\"跑卫/跑锋\"间摇摆（段落64用\"跑锋\"，段落13用\"跑锋\"）\n- B统一使用\"跑卫\"\n- A将タッチダウン译为\"达阵\"更本地化；B保留\"touchdown\"稍显不统一\n\n### 5. 格式问题\n- A在内心独白处错误添加引号（段落12、17、41-45、68、79等）\n- B正确区分了对话与内心独白\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 9, \"notes\": \"A在段落27严重误译，段落82视角错误；B整体准确\"},\n    \"fluency\": {\"A\": 6, \"B\": 9, \"notes\": \"B口语化表达更自然流畅，A部分句子生硬\"},\n    \"style\": {\"A\": 6, \"B\": 9, \"notes\": \"B更符合轻小说活泼诙谐的语气风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A跑卫/跑锋不统一；B统一但保留部分英文\"},\n    \"coherence\": {\"A\": 7, \"B\": 9, \"notes\": \"B整体阅读体验更连贯\"},\n    \"formatting\": {\"A\": 5, \"B\": 9, \"notes\": \"A多处内心独白错误添加引号\"}\n  },\n  \"key_differences\": [\n    \"段落27「ファッキンセカンド」：A完全误译，B准确\",\n    \"内心独白格式：A错误添加引号，B正确处理\",\n    \"口语化程度：B更贴合轻小说对话风格\",\n    \"术语统一性：A跑卫/跑锋混用，B统一为跑卫\"\n  ],\n  \"final_summary\": \"B在准确性、流畅性、风格把握和格式规范上全面优于A。A存在关键误译（段落27）和格式错误（内心独白加引号），严重影响阅读体验。B的口语化表达更符合轻小说特色。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11516,
+          "completion_tokens": 1700,
+          "total_tokens": 13216
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A在段落27严重误译，段落82视角错误；B整体准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B口语化表达更自然流畅，A部分句子生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B更符合轻小说活泼诙谐的语气风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "A跑卫/跑锋不统一；B统一但保留部分英文"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B整体阅读体验更连贯"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A多处内心独白错误添加引号"
+      }
+    },
+    "key_differences": [
+      "段落27「ファッキンセカンド」：A完全误译，B准确",
+      "内心独白格式：A错误添加引号，B正确处理",
+      "口语化程度：B更贴合轻小说对话风格",
+      "术语统一性：A跑卫/跑锋混用，B统一为跑卫"
+    ],
+    "final_summary": "B在准确性、流畅性、风格把握和格式规范上全面优于A。A存在关键误译（段落27）和格式错误（内心独白加引号），严重影响阅读体验。B的口语化表达更符合轻小说特色。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

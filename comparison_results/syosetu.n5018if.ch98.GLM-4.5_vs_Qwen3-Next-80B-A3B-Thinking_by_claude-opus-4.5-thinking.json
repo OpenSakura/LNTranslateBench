@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:10:41.204730",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.GLM-4.5.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "ad90242b769d23e1bf55375c0c9eb0be5f7abe1a166973a89ff83d9f0d8258d6",
+    "B": "3f225459b441e4376592c42490c424ec24a330d935bb42b04097a0cfb1407de8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:11:28.181092",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e11cfc57-a4c9-43d6-9da5-66a8ecfaeb87",
+      "judge_response": {
+        "id": "e11cfc57-a4c9-43d6-9da5-66a8ecfaeb87",
+        "object": "chat.completion",
+        "created": 1768432288,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 1. 准确性分析\n\n**段落2**: 原文用「果実」隐喻胸部\n- A: \"几乎要满溢而出的果实便显露了出来\" — 保留隐喻\n- B: \"饱满的胸脯快要溢出来了\" — 直译，失去含蓄感\n\n**段落13**: 「紬には似合ってるとからしいとか言ってくれたのに」\n- A: \"明明䌷都跟我说，听说很适合我啊……\" — 理解错误，主语应该是凉真说过的话\n- B: \"你之前不是说䌷穿起来挺合适的吗？\" — 理解正确\n\n**段落50**: 「股間に響く声」指这声音让人股间有反应\n- A: \"发出了一声连股间都能感受到的叫声\" — 正确理解\n- B: \"股间传来声响\" — 理解偏差\n\n**段落50/52**: 「ローション」应是乳液/防晒霜，A译\"润滑油\"不当，B译\"乳液\"正确\n\n### 2. 流畅性分析\n\nB整体更口语化自然：\n- 段落37: A\"露出了开心的表情\" vs B\"笑嘻嘻的\" — B更自然\n- 段落68: A\"涨红着脸咬紧牙关\" vs B\"脸通红，咬紧牙关\" — B更简洁\n\nA有时略显生硬：\n- 段落2: \"敞开的开口处\"略显冗余\n\n### 3. 风格/语气\n\n- A保留更多原文结构和书面语感\n- B更贴近轻小说轻快口语风格，但有时简化过度\n- 段落6: B\"美得挪不开眼\"丢失了原文\"全由美丽构成\"的详细描写\n\n### 4. 格式问题\n\n**重大问题**: B在多处对话中省略「」，且在段落106-107、112-113、115等非对话处错误添加引号，这是明显的格式错误\n\nA始终保持原文对话格式一致性\n\n### 5. 术语一致性\n\n- 人名处理两者一致\n- A的\"ローション→润滑油\"存在明显错误（段落50、52）\n- B使用\"乳液\"更准确\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落13理解错误，B在段落50理解偏差；A在隐喻保留上更好\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语自然，A略显书面\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者风格各有特点，B更轻快但有时过简\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"A将ローション误译为润滑油是明显错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙述更完整，B有时简化丢失细节\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B大量省略对话符号且在非对话处添加引号，格式混乱\"}\n  },\n  \"key_differences\": [\n    \"B格式处理存在严重问题，对话符号使用不当\",\n    \"A保留更多原文隐喻和细节描写\",\n    \"B口语化程度更高但有时过度简化\",\n    \"A术语翻译有误(润滑油)，B更准确(乳液)\",\n    \"段落13两者理解不同，B更准确\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣：A在隐喻保留、格式规范、叙述完整性上更好；B在口语流畅度和部分术语翻译上更准确。但B存在严重的格式问题（对话符号处理混乱），这对轻小说阅读体验影响较大。综合考虑，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10807,
+          "completion_tokens": 2043,
+          "total_tokens": 12850
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落13理解错误，B在段落50理解偏差；A在隐喻保留上更好"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语自然，A略显书面"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者风格各有特点，B更轻快但有时过简"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A将ローション误译为润滑油是明显错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙述更完整，B有时简化丢失细节"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B大量省略对话符号且在非对话处添加引号，格式混乱"
+      }
+    },
+    "key_differences": [
+      "B格式处理存在严重问题，对话符号使用不当",
+      "A保留更多原文隐喻和细节描写",
+      "B口语化程度更高但有时过度简化",
+      "A术语翻译有误(润滑油)，B更准确(乳液)",
+      "段落13两者理解不同，B更准确"
+    ],
+    "final_summary": "两个翻译各有优劣：A在隐喻保留、格式规范、叙述完整性上更好；B在口语流畅度和部分术语翻译上更准确。但B存在严重的格式问题（对话符号处理混乱），这对轻小说阅读体验影响较大。综合考虑，A略胜一筹。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

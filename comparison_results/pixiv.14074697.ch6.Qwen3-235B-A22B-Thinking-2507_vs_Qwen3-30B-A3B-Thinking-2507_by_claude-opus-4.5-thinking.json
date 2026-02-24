@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:45:52.266362",
+  "sample": "pixiv.14074697.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14074697.ch6.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14074697.ch6.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.14074697.ch6.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2aaa1771168c77ee4570d21e2a44b5dc90fdfabb9a6cc3e628ed6bb3c8239389",
+    "A": "a50f85285e49dab4135ec1fdd6b562bd8e86b6d5fc3d5a8baac493857f8c7a77",
+    "B": "8ca3a24894a4226ab63eeda3f1a0adf21589c91beb57c59113a0c7f353c1c131"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:46:48.971840",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0b318a0f-de14-44c9-a3cd-58dbe65514ac",
+      "judge_response": {
+        "id": "0b318a0f-de14-44c9-a3cd-58dbe65514ac",
+        "object": "chat.completion",
+        "created": 1768423608,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段对比分析\n\n**段落 3-4：**\n- A：\"没有真实内容\" / \"可能性很大\"\n- B：\"没有真实\" / \"可能性存在\"\n- 原文\"可能性あります\"只表示\"存在可能性\"，B更准确；但A在段落3表达更完整。\n\n**段落 7（关键差异）：**\n- A：\"系列感多，严肃感少\" — 误解了\"シリアル\"\n- B：\"剧情多，正经少\" — 虽然失去双关，但意思更接近\n\n**段落 15：**\n- A：\"大学考试失败\"\n- B：\"高考失败\" — 更符合中文表达习惯\n\n**段落 31：**\n- **B完全缺失翻译！** 这是严重问题。\n\n**段落 33（重大错误）：**\n- A：\"搜查一课\" — 正确\n- B：\"新一\" — **严重误译**，将\"捜一\"（搜查一课）翻译成了人名\"新一\"\n\n**段落 42：**\n- B将\"舐め腐った態度\"（嚣张傲慢的态度）译为\"舔着脸的态度\"，用词不当\n\n**段落 50、58：**\n- A对\"組対\"翻译一致为\"组织对策课/组对\"\n- B术语不一致，有时译为\"组织\"、\"特搜队\"\n\n**段落 77：**\n- A：\"正因为萩原技术好\" — 正确理解\"腕の良さ\"\n- B：\"正因萩的腕力\" — **误译**，\"腕の良さ\"指技术/本领，非臂力\n\n**段落 87-90：**\n- B的翻译出现**错位**，内容对不上原文\n\n### 格式问题：\n- A段落30末尾多了一个引号\n- B在段落40、41等处错加引号\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有重大误译（捜一→新一）、腕の良さ误译、段落87-90错位\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"两者流畅度接近，B部分表达更口语化\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更好地保留轻小说叙述感，B有时过于简略\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"B对組対翻译不一致，且有严重误译\"},\n    \"coherence\": {\"A\": 8, \"B\": 4, \"notes\": \"B缺失段落31，段落87-90错位严重影响阅读\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A有一处多余引号，B多处引号使用不当\"}\n  },\n  \"key_differences\": [\n    \"B完全缺失段落31的翻译\",\n    \"B将「捜一」误译为人名「新一」而非「搜查一课」\",\n    \"B段落87-90内容错位\",\n    \"B将「腕の良さ」（技术好）误译为「腕力」\",\n    \"B对組対术语翻译不一致\"\n  ],\n  \"final_summary\": \"A翻译虽有小瑕疵但整体准确完整，B存在缺译、严重误译和内容错位等致命问题，A明显胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12968,
+          "completion_tokens": 2408,
+          "total_tokens": 15376
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有重大误译（捜一→新一）、腕の良さ误译、段落87-90错位"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者流畅度接近，B部分表达更口语化"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更好地保留轻小说叙述感，B有时过于简略"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "B对組対翻译不一致，且有严重误译"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 4,
+        "notes": "B缺失段落31，段落87-90错位严重影响阅读"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有一处多余引号，B多处引号使用不当"
+      }
+    },
+    "key_differences": [
+      "B完全缺失段落31的翻译",
+      "B将「捜一」误译为人名「新一」而非「搜查一课」",
+      "B段落87-90内容错位",
+      "B将「腕の良さ」（技术好）误译为「腕力」",
+      "B对組対术语翻译不一致"
+    ],
+    "final_summary": "A翻译虽有小瑕疵但整体准确完整，B存在缺译、严重误译和内容错位等致命问题，A明显胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:37:54.038752",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.Kimi-K2.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "012261733ef3055d439bbe06aaefc1ba20eb727a55e9e7a7d1fbb7bd753ba225",
+    "B": "68c0188194558fcaf88e3c29f809cec0d64409dc30f41017ba60c44a45ff3fbf"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:38:44.347827",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d9b57451-942f-4396-b8ec-58fb46e080d3",
+      "judge_response": {
+        "id": "d9b57451-942f-4396-b8ec-58fb46e080d3",
+        "object": "chat.completion",
+        "created": 1768423123,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n**A译**较为准确地保留了原意，如段落67「後の母」译为\"后来的母王\"准确传达了时间线推理。**B译**在此处误译为\"后妈\"（继母），完全偏离原意。\n\n段落49、52中，B译将「マタタビ」误译为\"又吉\"，这是严重错误。A译使用\"猫薄荷/木天蓼\"虽有不一致但均为该词的有效翻译。\n\n段落9「ウエノ」：B译\"上野\"正确，A译\"乌野\"为音译错误。\n\n### 流畅性与风格\nA译更具口语化轻小说风格：\n- \"孤零零留在现代了呗\"、\"臭招\"、\"怂了\"\n- \"想唠嗑\"表达对话意图生动自然\n\nB译相对正式，如段落35-38突然使用普通引号而非「」，破坏了格式一致性。\n\n### 术语一致性\n- サタニエル：A译出现多个变体（撒塔尼尔/萨塔尼埃尔/萨塔妮尔），不够统一；B译较为一致\n- ワダツミ：A译\"海神\"取意译，B译\"和多都美\"为音译，两者皆可接受\n- クラリス・クラーラ：B译误解为两个独立个体\"克菈莉丝和克拉拉\"，实际应为合体名称，A译\"克菈莉丝・克拉拉\"正确\n\n### 格式问题\nB译从段落35开始对话使用普通双引号代替「」，格式不统一。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B有关键误译：后妈、又吉；A的乌野误译扣分\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化更自然，B部分表达生硬\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说对话风格，B偏正式\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A的サタニエル不一致，但B误解クラリス・クラーラ为两人\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯，B段落49-52出现人名错误影响理解\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"B段落35后对话引号格式错误\"}\n  },\n  \"key_differences\": [\n    \"B将「後の母」误译为'后妈'，严重影响剧情理解\",\n    \"B将マタタビ误译为'又吉'（段落49、52）\",\n    \"A对ウエノ误译为'乌野'而非'上野'\",\n    \"B误解クラリス・クラーラ为两个独立角色\",\n    \"A口语化风格更贴合轻小说，B偏书面化\",\n    \"B后半部分对话引号格式不一致\"\n  ],\n  \"final_summary\": \"A译虽有个别术语不一致和地名误译，但整体准确性、风格把握和格式规范均优于B译。B译存在关键性误译（后妈、又吉），且对合体机设定理解有误，后半段格式也出现问题。综合评判A译更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11153,
+          "completion_tokens": 1928,
+          "total_tokens": 13081
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有关键误译：后妈、又吉；A的乌野误译扣分"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化更自然，B部分表达生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说对话风格，B偏正式"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A的サタニエル不一致，但B误解クラリス・クラーラ为两人"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯，B段落49-52出现人名错误影响理解"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "B段落35后对话引号格式错误"
+      }
+    },
+    "key_differences": [
+      "B将「後の母」误译为'后妈'，严重影响剧情理解",
+      "B将マタタビ误译为'又吉'（段落49、52）",
+      "A对ウエノ误译为'乌野'而非'上野'",
+      "B误解クラリス・クラーラ为两个独立角色",
+      "A口语化风格更贴合轻小说，B偏书面化",
+      "B后半部分对话引号格式不一致"
+    ],
+    "final_summary": "A译虽有个别术语不一致和地名误译，但整体准确性、风格把握和格式规范均优于B译。B译存在关键性误译（后妈、又吉），且对合体机设定理解有误，后半段格式也出现问题。综合评判A译更优。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:27.633673",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.MiniMax-M2.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "90c865eac52f16bcdea597ce71cb4ce602be227415f88176b55d2a03a77ffcc6",
+    "B": "5255728ae560ab0b61f08024b697b1cf199f2e6dc246e62c178c23ef8a864179"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:51.510483",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DfzjxMGkoz5pq9JYT8Ep9w5M9WI",
+      "judge_response": {
+        "id": "chatcmpl-89DfzjxMGkoz5pq9JYT8Ep9w5M9WI",
+        "object": "chat.completion",
+        "created": 1768426911,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"ヴィルヘルミーナ軍港 インペラトリーツァ・エカテリーナ\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"インペラトリーツァ・エカテリーナ 艦名 翻訳\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"レヴィガータ伯国 ライトノベル OR 小説\"\n> 📊 **Results requested:** 5\n\n> 🔍 **3 results found**\n\n> [🔗 \"第52話-② 皇帝出陣 - 皇帝陛下の懐刀――帝国宰相・柳井義久（山﨑 孝明） - カクヨム\" kakuyomu.jp](https://kakuyomu.jp/works/1177354054898606236/episodes/16818093085004869908)\n> [📚 \"インペラトリッツァ・マリーヤ級戦艦 - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%A9%E3%83%88%E3%83%AA%E3%83%83%E3%83%84%E3%82%A1%E3%83%BB%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%A4%E7%B4%9A%E6%88%A6%E8%89%A6)\n> [🔗 \"1916年5月、セヴァストポリのロシア帝国戦艦インペラトリツァ・エカテリーナ・ヴェリカーヤ（ ...\" www.reddit.com](https://www.reddit.com/r/WorldOfWarships/comments/rgo032/imperial_russian_battleship_imperatritsa?tl=ja)\n\n> 🔍 **5 results found**\n\n> [📚 \"スヴォボードナヤ・ロシア (戦艦) - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%B4%E3%82%A9%E3%83%9C%E3%83%BC%E3%83%89%E3%83%8A%E3%83%A4%E3%83%BB%E3%83%AD%E3%82%B7%E3%82%A2_(%E6%88%A6%E8%89%A6))\n> [🔗 \"1916年5月、セヴァストポリのロシア帝国戦艦インペラトリツァ・エカテリーナ・ヴェリカーヤ（ ...\" www.reddit.com](https://www.reddit.com/r/WorldOfWarships/comments/rgo032/imperial_russian_battleship_imperatritsa?tl=ja)\n> [📚 \"ソ連・ロシア海軍艦艇一覧 - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E3%82%BD%E9%80%A3%E3%83%BB%E3%83%AD%E3%82%B7%E3%82%A2%E6%B5%B7%E8%BB%8D%E8%89%A6%E8%89%87%E4%B8%80%E8%A6%A7)\n> [🔗 \"70217 露海軍 戦艦 インペラトリッツァ・エカテリーナ・ヴェリカーヤ Imperatritza Ekaterina Velikaya 1915 | コンブリック Combrig - ホビーランド\" www.hobbyland.jp](https://www.hobbyland.jp/shopdetail/000000092109)\n> [🔗 \"インペラトリッツァマリーヤ級戦艦とは？ わかりやすく解説 - Weblio辞書\" www.weblio.jp](https://www.weblio.jp/content/%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%A9%E3%83%88%E3%83%AA%E3%83%83%E3%83%84%E3%82%A1%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%A4%E7%B4%9A%E6%88%A6%E8%89%A6)\n\n> 🔍 **4 results found**\n\n> [🔗 \"第74話ｰ⑩ 総監・柳井義久 - 皇帝陛下の懐刀――帝国宰相・柳井義久（山﨑 孝明） - カクヨム\" kakuyomu.jp](https://kakuyomu.jp/works/1177354054898606236/episodes/822139842891529293)\n> [🔗 \"お助けキャラも楽じゃない【書籍化】【コミカライズ進行中】 - 女子会とバッドエンド（1）\" ncode.syosetu.com](https://ncode.syosetu.com/n7747gm/58)\n> [🔗 \"第74話ｰ⑨ 総監・柳井義久 - 皇帝陛下の懐刀――帝国宰相 ...\" kakuyomu.jp](https://kakuyomu.jp/works/1177354054898606236/episodes/822139842629006985)\n> [🔗 \"(今更ながら)作中世界設定～各国家の位置について／山﨑 孝明の近況ノート - カクヨム\" kakuyomu.jp](https://kakuyomu.jp/users/tsp765601/news/822139842546620416)\n\n\n这是一个轻小说片段的翻译比较，源自日文（ja）到中文（zh）的翻译。整体来看，这段文本属于太空歌剧/政治军事轻小说风格，包含大量专有名词（舰名、地名、人名、政治术语）、叙述性描写和对话，需要平衡准确性、自然中文表达以及轻小说常见的轻松但带点正式/戏剧化语气。\n\n### 详细分析\n\n**准确性（意思保留）**  \nA 在多数地方忠实，但有时简化或小幅改动导致轻微丢失 nuance。例如段落8中“皇帝メアリーⅠ世が自身も最前線に躍り出ることを想定した改装”被译为“皇帝玛丽Ⅰ世为亲自冲上最前线而进行的改装”，基本准，但B更精确捕捉“想定した”（预想/假设她会亲上前线）的意图。段落7、15、20等长句，A有时结构稍乱或省略（如“物理的に”直接译“物理上看”显得生硬），B处理更完整保留原文逻辑。段落29 A有明显错位（把叙述主体搞混），B正确。整体A有几处小偏差，B更严谨。\n\n**流畅性（中文自然表达）**  \nB 的中文更接近当代网络轻小说读者的阅读习惯，句子节奏好、连接自然（如使用“呢”“吧”“呀”等轻小说常见语气助词）。A 偶尔显得较为生硬或直译感强（如“配合30号舰之后的设计变更哦”“物理上看”）。B 在对话部分尤其流畅，读起来更像母语者写的中文小说。\n\n**风格/语气（轻小说叙述/对话）**  \n轻小说对话常带轻松、亲切、微吐槽或戏剧感。B 在多处更好体现：如段落4 “看起来相当不错呢”、段落5 “是吧？ 这是为了……”、段落9 “家里的事情就拜托你了”、段落16 “可毕竟对手是……呀”等，语气活泼贴合角色（皇帝较随性）。A 的对应部分更平直（如“改装的效果也很不错呢”“留守就交给你啦”），少了点轻小说特有的“可爱”或“亲近”感。叙述部分B也更具文学性。\n\n**术语/名称一致性**  \n- 舰名：原文“インペラトリーツァ・エカテリーナ”，历史原型为“Imperatritsa Ekaterina Velikaya”（叶卡捷琳娜大帝）。A 多用“伊姆佩拉特里萨·叶卡捷琳娜”或“女皇伊卡特琳娜”，但段落8出现“女皇伊卡特琳娜级”（误，原文是“インペラトリーツァ・エカテリーナ級”）。B 统一用“女皇叶卡捷琳娜号”，更一致且贴近俄式舰名习惯（“号”常见于中文军舰译名）。\n- 其他：ベルセフォニア → A/B 都用“贝尔塞福尼亚”，但A有时“贝尔塞弗尼亚”（小不一致）。レヴィガータ → A “レヴィガータ”、B “雷维加塔”，B 更统一音译。FPU 等缩写两边一致。\nB 在专有名词处理更稳定。\n\n**连贯性/可读性**  \nB 的段落衔接更好，长句拆分合理，整体阅读顺畅。A 在一些复杂政治/军事说明（如段落15、20）显得啰嗦或跳跃，降低可读性。\n\n**格式/标点符号**  \n两者都使用中文引号（「」或“”），但B 更统一用“”且标点后处理自然（如对话结束的“呢。”“吧。”）。A 偶尔混用「」和“”，且有些地方缺少空格或标点不准（如段落6）。时间表达：A 偏阿拉伯数字，B 偏汉字，更符合中文小说习惯。\n\n总体而言，**B 在几乎所有维度都更胜一筹**：准确度更高、流畅自然、语气更贴合轻小说风格、术语一致性更好、可读性强。A 虽基本合格，但有几处明显失误和风格上的平淡，整体逊色。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 9, \"notes\": \"B 保留了更多原文细微意图和逻辑完整性，A 有少量简化/错位\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B 的中文表达更自然流畅，像母语轻小说；A 偶有直译生硬感\"},\n    \"style\": {\"A\": 6, \"B\": 9, \"notes\": \"B 很好捕捉轻小说对话的轻松亲切与叙述戏剧感，A 偏平直正式\"},\n    \"terminology\": {\"A\": 7, \"B\": 9, \"notes\": \"B 舰名/地名音译更统一且合理（如女皇叶卡捷琳娜号），A 有小不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 9, \"notes\": \"B 长句处理更好，整体阅读连贯顺畅\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B 标点、引号、时间汉字表达更统一规范\"}\n  },\n  \"key_differences\": [\n    \"语气助词与轻小说风格：B 使用'呢' '吧' '呀' 等更生动，A 较少\",\n    \"舰名与专有名词统一性：B 更一致（如统一'女皇叶卡捷琳娜号'），A 变体多\",\n    \"复杂句处理：B 逻辑更清晰流畅，A 偶有啰嗦或错位（如段落29）\",\n    \"整体可读性与自然度：B 读起来更像优质中文轻小说，A 稍显翻译腔\"\n  ],\n  \"final_summary\": \"翻译B 全面优于A，在准确性、流畅性、轻小说风格体现、术语一致性和可读性上都有明显优势，整体更适合作为轻小说中文版呈现。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12965,
+          "completion_tokens": 3580,
+          "total_tokens": 16545
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "B 保留了更多原文细微意图和逻辑完整性，A 有少量简化/错位"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B 的中文表达更自然流畅，像母语轻小说；A 偶有直译生硬感"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B 很好捕捉轻小说对话的轻松亲切与叙述戏剧感，A 偏平直正式"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 9,
+        "notes": "B 舰名/地名音译更统一且合理（如女皇叶卡捷琳娜号），A 有小不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B 长句处理更好，整体阅读连贯顺畅"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B 标点、引号、时间汉字表达更统一规范"
+      }
+    },
+    "key_differences": [
+      "语气助词与轻小说风格：B 使用'呢' '吧' '呀' 等更生动，A 较少",
+      "舰名与专有名词统一性：B 更一致（如统一'女皇叶卡捷琳娜号'），A 变体多",
+      "复杂句处理：B 逻辑更清晰流畅，A 偶有啰嗦或错位（如段落29）",
+      "整体可读性与自然度：B 读起来更像优质中文轻小说，A 稍显翻译腔"
+    ],
+    "final_summary": "翻译B 全面优于A，在准确性、流畅性、轻小说风格体现、术语一致性和可读性上都有明显优势，整体更适合作为轻小说中文版呈现。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

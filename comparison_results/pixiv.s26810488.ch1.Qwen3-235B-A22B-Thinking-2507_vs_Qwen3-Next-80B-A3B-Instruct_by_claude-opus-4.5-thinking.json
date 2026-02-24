@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:07:34.727894",
+  "sample": "pixiv.s26810488.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26810488.ch1.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26810488.ch1.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/pixiv.s26810488.ch1.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "92db91e48665f24307285ee8df507a11e561d6aa20242dd51ddd1a73514e9a0b",
+    "A": "51c15cccf4567157e49db7ee194ac9128467d40bdc00ddc36cb3e26c8587605b",
+    "B": "183e5f305c0bdeabc5283483329b0c6a27918834a6f2f24cc2525d261327cd07"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:08:24.381739",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4898e6f4-6c43-4213-aa17-12efc931c200",
+      "judge_response": {
+        "id": "4898e6f4-6c43-4213-aa17-12efc931c200",
+        "object": "chat.completion",
+        "created": 1768432104,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n#### 准确性\n- **A的问题**：段落44出现英文\"just\"，段落55出现\"contents\"，这是严重的翻译遗漏错误。段落55\"我拿起\"理解有误，原文是艾玛掀开盖子。\n- **B的问题**：段落95\"但现在还早着呢\"翻译错误，原文\"夜更けの最中\"指\"仍在深夜\"，不是\"还早\"。段落10\"手腕\"应为\"手臂\"（腕 vs 腕/arm）。\n\n#### 流畅性\n- **A**：整体行文流畅，如\"恐惧攫住了我\"、\"眼前一黑\"等表达地道。\n- **B**：部分表达较生硬，如\"黑屏\"一词过于现代/游戏化，不符合轻小说氛围。\n\n#### 风格/语气\n- **A**：段落15\"漆黑一片\"丢失了原文\"黒く、黒く\"的重复感。\n- **B**：段落15\"黑漆漆的，黑漆漆的\"保留了原文的重复效果，更有文学感。\n\n#### 术语/名称一致性\n- **A**：统一使用\"艾玛小姐\"对应\"エマさん\"。\n- **B**：有时用\"艾玛小姐\"有时省略\"小姐\"，不够统一。\n\n#### 格式/标点\n- **A**：使用中文引号\"\"，基本一致，但有个别遗漏（段落56、64、65）。\n- **B**：使用日式引号「」但严重不一致，段落29、32、36、38、40等对话完全缺失引号，格式问题较大。\n\n#### 关键差异亮点\n| 段落 | 问题 |\n|------|------|\n| 44 | A出现英文\"just\" |\n| 55 | A出现英文\"contents\" |\n| 95 | B误译\"还早着呢\" |\n| 多处 | B缺失对话引号 |\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A有英文残留错误，B有段落95误译及手腕/手臂混淆\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体更流畅自然，B'黑屏'等用词不够文学化\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A轻小说语感更好，B段落15重复处理更佳\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A称呼统一，B'小姐'使用不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A可读性稍强\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"B多处对话缺失引号，格式问题严重\"}\n  },\n  \"key_differences\": [\n    \"A段落44、55出现英文词汇残留（just, contents）\",\n    \"B多处对话缺失引号（段落29、32、36、38、40等）\",\n    \"B段落95误译'夜更けの最中'为'还早着呢'\",\n    \"B称呼不一致（艾玛/艾玛小姐混用）\"\n  ],\n  \"final_summary\": \"两个译本各有明显缺陷。A的英文残留是严重的技术错误，但B的格式问题更为系统性且影响阅读体验，加上B的误译和称呼不一致问题，综合来看A略胜一筹。若A修正英文残留问题，优势会更明显。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10286,
+          "completion_tokens": 2181,
+          "total_tokens": 12467
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有英文残留错误，B有段落95误译及手腕/手臂混淆"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体更流畅自然，B'黑屏'等用词不够文学化"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A轻小说语感更好，B段落15重复处理更佳"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A称呼统一，B'小姐'使用不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A可读性稍强"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "B多处对话缺失引号，格式问题严重"
+      }
+    },
+    "key_differences": [
+      "A段落44、55出现英文词汇残留（just, contents）",
+      "B多处对话缺失引号（段落29、32、36、38、40等）",
+      "B段落95误译'夜更けの最中'为'还早着呢'",
+      "B称呼不一致（艾玛/艾玛小姐混用）"
+    ],
+    "final_summary": "两个译本各有明显缺陷。A的英文残留是严重的技术错误，但B的格式问题更为系统性且影响阅读体验，加上B的误译和称呼不一致问题，综合来看A略胜一筹。若A修正英文残留问题，优势会更明显。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

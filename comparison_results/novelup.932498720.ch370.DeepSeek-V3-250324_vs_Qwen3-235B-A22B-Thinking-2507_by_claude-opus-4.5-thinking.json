@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:42:19.201731",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "6e7c8307d49aae82bad2d2b06680c796597f6cc37b0e3fba71602e257b33bea6",
+    "B": "442365babc78b1b858e1798a5d561e3b11f648083412f1905d2e20d5e26ebd05"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:43:14.644057",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d2657c1f-fd94-4e57-86bd-be2bd279219f",
+      "judge_response": {
+        "id": "d2657c1f-fd94-4e57-86bd-be2bd279219f",
+        "object": "chat.completion",
+        "created": 1768423394,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐段分析\n\n### 准确性方面\n- **段落4**: \"面構えが違う\"表示众人神情严肃/斗志昂扬。A译\"样子都不一样\"偏离原意，B译\"神情都不同\"稍好但仍有偏差\n- **段落10**: A译\"在、在——在\"完全错误，B译\"是、是——\"正确\n- **段落14**: \"コミカルマーケット\"实际名称应为\"Comic Market\"，A更准确，B的\"Comical\"有误\n- **段落70**: \"ゆらぎ\"是角色名，A译\"由良\"与段落66不一致，B译\"波动\"同样有问题\n- **段落73**: **B缺失整段翻译**，这是重大问题\n- **段落79**: A正确译出\"超小比基尼\"，B简化为\"比基尼\"丢失细节\n\n### 流畅性方面\n- **段落12**: B\"格外勤快地喝起\"比A\"奇怪地开始频繁喝\"更自然\n- **段落18**: B\"灼灼耀目\"\"刺得眼睛生疼\"远比A的直译流畅\n- **段落33**: B\"人山人海\"比A\"这么多人\"更地道\n- **段落51**: B\"脸蛋略带艳丽\"比A\"脸稍微花哨\"更通顺\n\n### 风格/语气方面\n- **段落7**: B\"俏皮话\"比A直译更符合轻小说语感\n- **段落16**: B\"嘿嘿，终于到啦。来来来，打起精神冲呀！\"更活泼\n- **段落53**: B\"突然就变了个人呢\"比A更口语化\n\n### 格式方面\n- A的引号使用不一致（混用「」和\"\"）\n- B格式更统一，但段落73完全缺失\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B缺失段落73整段翻译；A在Comic Market名称上更准确；B在'マイクロビキニ'处丢失细节\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体语言更流畅自然，如段落18、33等处表现优秀，但缺失段落影响整体\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说活泼语气，对话更生动自然\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"两者对角色名'ゆらぎ'处理都不一致；作品名翻译各有优劣\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"B缺失段落73严重影响连贯性，该段涉及角色心理活动重要内容\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A引号使用不一致；B格式较统一但有致命缺漏\"}\n  },\n  \"key_differences\": [\n    \"B完全缺失段落73的翻译（关于'男の娘'路线的思考），这是重大缺陷\",\n    \"B整体语言更流畅文学化，A更偏直译\",\n    \"A在专有名词(Comic Market、マイクロビキニ)上更准确\",\n    \"段落10：A完全误译，B正确\",\n    \"B对话语气更符合轻小说风格\"\n  ],\n  \"final_summary\": \"B在流畅性和风格上表现优于A，语言更自然生动。但B缺失段落73整段翻译是致命硬伤，该段落包含角色对'伪娘'路线的心理活动，是情节理解的重要部分。A虽然部分表达生硬（如段落10误译），但内容完整。综合考虑，内容完整性优先于语言润色，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11796,
+          "completion_tokens": 2266,
+          "total_tokens": 14062
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B缺失段落73整段翻译；A在Comic Market名称上更准确；B在'マイクロビキニ'处丢失细节"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体语言更流畅自然，如段落18、33等处表现优秀，但缺失段落影响整体"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说活泼语气，对话更生动自然"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "两者对角色名'ゆらぎ'处理都不一致；作品名翻译各有优劣"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "B缺失段落73严重影响连贯性，该段涉及角色心理活动重要内容"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A引号使用不一致；B格式较统一但有致命缺漏"
+      }
+    },
+    "key_differences": [
+      "B完全缺失段落73的翻译（关于'男の娘'路线的思考），这是重大缺陷",
+      "B整体语言更流畅文学化，A更偏直译",
+      "A在专有名词(Comic Market、マイクロビキニ)上更准确",
+      "段落10：A完全误译，B正确",
+      "B对话语气更符合轻小说风格"
+    ],
+    "final_summary": "B在流畅性和风格上表现优于A，语言更自然生动。但B缺失段落73整段翻译是致命硬伤，该段落包含角色对'伪娘'路线的心理活动，是情节理解的重要部分。A虽然部分表达生硬（如段落10误译），但内容完整。综合考虑，内容完整性优先于语言润色，A略胜。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

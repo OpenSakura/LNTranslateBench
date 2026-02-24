@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:14:46.872826",
+  "sample": "syosetu.n6267ii.ch481",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6267ii.ch481.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6267ii.ch481.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/syosetu.n6267ii.ch481.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f309a52414e2e175d574abffda59bec83b94bff3fbcfc345346bc89227d7cc17",
+    "A": "52e42b18bef9760421ddbf90621969981bc59e8f93111f042669bcd695555367",
+    "B": "bc5b4c03b0692636c8b9807b58fe90910098c3cba0dc97615bfe112933394537"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:15:40.411221",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4c2dc4f6-9747-4931-a688-17a6b03ca753",
+      "judge_response": {
+        "id": "4c2dc4f6-9747-4931-a688-17a6b03ca753",
+        "object": "chat.completion",
+        "created": 1768432540,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**段落1/8/9等**：A将「圭」译为\"凯\"，B保留\"圭\"。日语原名为\"圭\"(Kei)，B更忠实原文。\n\n**段落12**：原文\"圭も何だか可愛く思えるようになってきた\"指圭觉得莎琳可爱。A正确理解，B误译为\"觉得他变得越来越可爱了\"，主客颠倒。\n\n**段落57**：B将シャリン(女性)用\"他\"指代，性别错误。\n\n**段落63**：「抱いてしまえ」结合后文「情交」应译为\"上了她\"(A)，而非字面的\"抱起来\"(B)。\n\n**段落65**：「吹き出してしまった」是\"喷出来\"(A正确)，非\"笑出声来\"(B误译)。\n\n### 2. 流畅性\nB整体更口语化，如\"翻翻\"\"挺早\"\"完全听不懂台词\"等表达自然。\nA部分句子较生硬，如段落11\"又睡了起来\"不自然。\n\n### 3. 风格/语气\nB的对话更符合轻小说风格，语气更活泼。\nA较为正式，部分地方略显书面化。\n\n### 4. 术语/名称一致性\n- A：圭→凯（改名），夏琳（一致）\n- B：圭（保留），但シャリン译名不一致（莎林/沙琳/莎琳交替出现）\n\n### 5. 连贯性/可读性\n段落74/85：A缺少标点，连续长句读起来困难；B分句更清晰。\n\n### 6. 格式/标点\nA多处缺少逗号，如段落74\"其结果连阶梯也崩塌了在魔界备受批评即使复活了也无法动弹\"一句到底。\nB标点使用更规范。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落12、57、63、65有明显语义错误；A主要问题是改名\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B表达更自然口语化，A部分句子生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说对话风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A改名但一致；B保留原名但シャリン译名不统一(莎林/沙琳/莎琳)\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A部分长句缺分隔，B段落衔接更顺畅\"},\n    \"formatting\": {\"A\": 5, \"B\": 8, \"notes\": \"A多处缺少标点，长句堆叠；B标点规范\"}\n  },\n  \"key_differences\": [\n    \"A将主角名'圭'改译为'凯'，B保留原名\",\n    \"B在关键语义上有错误(段落12主客颠倒、63误译'抱く'、65误译'吹き出す')\",\n    \"B的シャリン译名不统一(莎林/沙琳/莎琳)\",\n    \"A标点使用较差，多处长句无分隔\",\n    \"B整体更口语流畅，A更书面正式\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在核心语义准确性上更可靠(段落12、63、65的关键理解正确)，但改动角色名且标点问题明显。B流畅度和风格更佳，但存在数处语义错误和人名不一致问题。考虑到轻小说翻译中语义准确性的重要性，A以微弱优势胜出，但需改进标点和流畅度。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10044,
+          "completion_tokens": 2205,
+          "total_tokens": 12249
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落12、57、63、65有明显语义错误；A主要问题是改名"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B表达更自然口语化，A部分句子生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A改名但一致；B保留原名但シャリン译名不统一(莎林/沙琳/莎琳)"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A部分长句缺分隔，B段落衔接更顺畅"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 8,
+        "notes": "A多处缺少标点，长句堆叠；B标点规范"
+      }
+    },
+    "key_differences": [
+      "A将主角名'圭'改译为'凯'，B保留原名",
+      "B在关键语义上有错误(段落12主客颠倒、63误译'抱く'、65误译'吹き出す')",
+      "B的シャリン译名不统一(莎林/沙琳/莎琳)",
+      "A标点使用较差，多处长句无分隔",
+      "B整体更口语流畅，A更书面正式"
+    ],
+    "final_summary": "两译本各有优劣。A在核心语义准确性上更可靠(段落12、63、65的关键理解正确)，但改动角色名且标点问题明显。B流畅度和风格更佳，但存在数处语义错误和人名不一致问题。考虑到轻小说翻译中语义准确性的重要性，A以微弱优势胜出，但需改进标点和流畅度。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

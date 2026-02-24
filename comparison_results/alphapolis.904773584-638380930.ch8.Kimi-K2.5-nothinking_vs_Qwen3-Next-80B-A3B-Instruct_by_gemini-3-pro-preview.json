@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:31:17.214708",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "2ae3d8d2a6eace5fdea9f80dd5a142955da7dc24ffae85d11fc6ba108b7adc63",
+    "B": "02b13f135a70326c35fdd7b1fa81b2fb0ca6b692ab2e1e3aa9a4de97aa69c155"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:32:16.589627",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-202601282231181925785715AiwUTne",
+      "judge_response": {
+        "id": "chatcmpl-202601282231181925785715AiwUTne",
+        "object": "chat.completion",
+        "created": 1769610736,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 术语与名称翻译 (Terminology & Naming)**\n这是两份翻译差异最大的地方。\n*   **意译 vs 音译：**\n    *   **A** 倾向于意译，符合中文奇幻/RPG游戏的习惯。例如：Owlbear -> 猫头鹰熊，Bicorn -> 双角兽，Treant -> 树精，Coat Wolf -> 棉绒狼。\n    *   **B** 倾向于音译，导致很多怪物名称对中文读者来说不知所云。例如：Owlbear -> 奥尔贝亚，Bicorn -> 拜科恩，Coat Wolf -> 寇特狼，Dullahan Gallop -> 杜拉汉盖洛普。\n    *   **判定：** A 胜出。对于通用的奇幻生物（如Owlbear, Bicorn），意译是行业标准，音译会让读者感到困惑。\n\n*   **严重错误 (Critical Errors)：**\n    *   **Boar (野猪):**\n        *   原文描述提到“牙、毛皮”、“小野猪(Uriboa)”。\n        *   **A** 翻译为“野猪”（正确）。\n        *   **B** 翻译为“蟒蛇”（**严重错误**）。B显然将“Boar”误认为是“Boa”（蚺/蟒），完全无视了后文中关于毛皮和獠牙的描述。\n    *   **Treant (树精/树人):**\n        *   **A** 翻译为“树精”（正确）。\n        *   **B** 在“Snow Treant”中翻译为“雪藤”（错误），将Treant理解成了藤蔓植物，而在后面的段落又改回“树人”。术语前后不一致且有误。\n    *   **Slime:**\n        *   **B** 在段落106中直接保留了英文“poison slime”，未翻译。\n\n**2. 准确性 (Accuracy)**\n*   **上下文理解：**\n    *   **段落 101 (Hraesvelgr):** 原文“人が買った獲物”中，“買った”(买)极有可能是“狩った”(狩猎)的误字（日文中同音）。\n        *   **A** 翻译为“捕获的猎物”，修正了原文的潜在笔误，符合逻辑（怪鸟抢夺猎人捕获的猎物）。\n        *   **B** 翻译为“买来的猎物”，直译了误字，导致逻辑奇怪（怪鸟去抢别人买的东西？）。\n    *   **段落 25 (Crimson Bull):** 原文“尤も(Mottomo)強く...”意为“最强壮的...”。\n        *   **A** 误译为“不过(Mottomo)...”，将副词理解成了接续词，导致句意断裂。\n        *   **B** 正确翻译为“由最强壮...”。\n        *   **判定：** 尽管A在段落25有语法错误，但B在“Boar”和“Treant”上的名词错误更为致命。A在处理原文笔误时表现出了更好的上下文推理能力。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **A** 的语言风格更像是一本RPG设定的图鉴或笔记，用词规范（如“栖息于”、“素材”）。\n*   **B** 的口语感较强（如“其实还挺好吃的”、“麻烦”），有时略显随意。\n*   **段落 113 (Mandrake):** 原文“バカスカできる”（能大量产出）。\n        *   **A** “随便量产”，通顺且准确。\n        *   **B** “堆得跟韭菜似的”，虽然生动但过度本地化，略显突兀。\n\n**4. 格式与标点**\n*   **A** 使用了“・”作为分隔符，符合原文风格。\n*   **B** 在段落106出现了漏译英文单词的情况。\n\n### 总结\n**翻译A** 提供了更专业、更符合轻小说/RPG语境的翻译。它正确地意译了怪物名称，修正了原文的同音误字，并且保持了术语的一致性。\n**翻译B** 犯了几个致命的错误，最显著的是将“野猪(Boar)”错译为“蟒蛇(Boa)”，完全违背了上下文描述。此外，B过度依赖音译，使得很多怪物名称难以理解，且存在漏译现象。\n\n尽管A在段落25有一个语法理解错误，但相比B的术语灾难，A的整体质量要高得多。\n\n***\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"A accurately translates creature names and context (fixing the 'bought/hunted' typo). B has catastrophic errors: translating 'Boar' as 'Python' (ignoring descriptions of fur/tusks) and 'Treant' as 'Vine'.\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"Both are readable, but A feels more like a proper bestiary entry. B is sometimes too colloquial.\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A uses standard fantasy terminology (Semantic translation). B relies heavily on Transliteration (Phonetic), making terms like 'Owlbear' or 'Bicorn' unrecognizable to Chinese readers.\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"A uses standard RPG terms. B fails significantly here (Boar->Snake, Treant->Vine, Owlbear->Orubeya).\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B's mistranslations create logical contradictions (a snake with fur and tusks).\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"B left one word untranslated ('slime').\"\n    }\n  },\n  \"key_differences\": [\n    \"Creature Names: A translates meanings (Owlbear -> 猫头鹰熊), B transliterates sounds (Owlbear -> 奥尔贝亚), making B hard to understand.\",\n    \"Critical Mistranslation in B: B translates 'Boar' (wild pig) as 'Python/Boa' (snake), despite the text describing fur and tusks.\",\n    \"Contextual Logic: A correctly infers a typo in source ('bought' -> 'hunted'), while B translates literally leading to logical awkwardness.\"\n  ],\n  \"final_summary\": \"翻译A明显优于翻译B。A采用了标准的奇幻/RPG术语意译，使得文本易于理解且符合体裁习惯。A还成功识别并修正了原文中的同音笔误（买/狩猎）。相比之下，B存在严重的术语错误，最致命的是将“野猪(Boar)”错译为“蟒蛇”，完全无视了文中关于毛皮和獠牙的描述。此外，B过度使用音译（如将Owlbear音译），导致怪物名称对中文读者缺乏意义，且存在漏译英文单词的情况。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8227,
+          "completion_tokens": 5022,
+          "total_tokens": 13249
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "A accurately translates creature names and context (fixing the 'bought/hunted' typo). B has catastrophic errors: translating 'Boar' as 'Python' (ignoring descriptions of fur/tusks) and 'Treant' as 'Vine'."
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "Both are readable, but A feels more like a proper bestiary entry. B is sometimes too colloquial."
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A uses standard fantasy terminology (Semantic translation). B relies heavily on Transliteration (Phonetic), making terms like 'Owlbear' or 'Bicorn' unrecognizable to Chinese readers."
+      },
+      "terminology": {
+        "A": 10,
+        "B": 4,
+        "notes": "A uses standard RPG terms. B fails significantly here (Boar->Snake, Treant->Vine, Owlbear->Orubeya)."
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "B's mistranslations create logical contradictions (a snake with fur and tusks)."
+      },
+      "formatting": {
+        "A": 10,
+        "B": 8,
+        "notes": "B left one word untranslated ('slime')."
+      }
+    },
+    "key_differences": [
+      "Creature Names: A translates meanings (Owlbear -> 猫头鹰熊), B transliterates sounds (Owlbear -> 奥尔贝亚), making B hard to understand.",
+      "Critical Mistranslation in B: B translates 'Boar' (wild pig) as 'Python/Boa' (snake), despite the text describing fur and tusks.",
+      "Contextual Logic: A correctly infers a typo in source ('bought' -> 'hunted'), while B translates literally leading to logical awkwardness."
+    ],
+    "final_summary": "翻译A明显优于翻译B。A采用了标准的奇幻/RPG术语意译，使得文本易于理解且符合体裁习惯。A还成功识别并修正了原文中的同音笔误（买/狩猎）。相比之下，B存在严重的术语错误，最致命的是将“野猪(Boar)”错译为“蟒蛇”，完全无视了文中关于毛皮和獠牙的描述。此外，B过度使用音译（如将Owlbear音译），导致怪物名称对中文读者缺乏意义，且存在漏译英文单词的情况。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

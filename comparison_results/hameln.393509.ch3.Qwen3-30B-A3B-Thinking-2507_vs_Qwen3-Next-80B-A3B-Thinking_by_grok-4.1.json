@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:40:02.078990",
+  "sample": "hameln.393509.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.393509.ch3.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.393509.ch3.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.393509.ch3.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d0ee712a22c7dfdd4c4af422942c07b6451fef680b5ae0c656be229b32ac619b",
+    "A": "8097505884edfbeebc03e12408f15c63a616683946f162c7f0fb88f690fb34e3",
+    "B": "9756b0637ea846dc06511780786abf26cd4ffc126671dd03e631f49132d1e8b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:40:32.141565",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DvJjPMCNN2RQUm1XTJYH2LYjiMF",
+      "judge_response": {
+        "id": "chatcmpl-89DvJjPMCNN2RQUm1XTJYH2LYjiMF",
+        "object": "chat.completion",
+        "created": 1768426831,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"雷門中 サッカー部 円堂守\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"イナズマイレブン 雷門中学 円堂守\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"来夏目 忍原 軽小说 OR ライトノベル\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"イナズマイレブンの登場人物 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)\n> [🔗 \"雷門イレブン\" Pixiv](https://dic.pixiv.net/a/%E9%9B%B7%E9%96%80%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3)\n> [🔗 \"雷門中学校 - アニヲタWiki(仮)\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/23236.html)\n> [🔗 \"湊：１.雷門中学サッカー部\" Ameba](https://ameblo.jp/sakura-tetsudo/entry-12655507753.html)\n> [🔗 \"第1話 サッカーやろうぜ！ - イナズマイレブン フットボールフロンティア編｜ネットもテレ東\" TV Tokyo](https://video.tv-tokyo.co.jp/inazuma-world/episode/00112384.html)\n> [🔗 \"円堂はなぜ、雷門中に入学したんですか？イナズマイレブンの質問です。円堂守はなぜ、雷門中に入学したんですか？雷門中って私立... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1065359180)\n> [🔗 \"円堂 守とは何？ わかりやすく解説 Weblio辞書\" Weblio](https://weblio.jp/content/%E5%86%86%E5%A0%82+%E5%AE%88)\n> [🔗 \"イナズマイレブン（1～13話）感想 : メロンソーダ高場の本拠地\" Livedoor](https://takaba1192.livedoor.blog/archives/2003241.html)\n> [🔗 \"雷門中サッカー部、さすがに補強しすぎ説！鬼道、一之瀬などの途中加入キャラがいなかったらFF優勝できるのか！？ イナズマイレブンGOストライカーズ 2013 【イナスト2013】 - YouTube\" YouTube](https://www.youtube.com/watch?v=_Q5zFrmzioQ)\n> [🔗 \"イナズマイレブンについてこの前の円堂達の卒業式の回で誰かが栗松にフットボールフロンティア三連覇がかかっていると言っていたような気がするん... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1360651748)\n\n> 🔍 **10 results found**\n\n> [🔗 \"イナズマイレブンの登場人物 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)\n> [🔗 \"雷門中 - イナズマイレブン 染岡さんと愉快な仲間たち wiki\" STGR Wiki](https://w.atwiki.jp/smoksan/pages/33.html)\n> [🔗 \"【イナイレV】円堂 守[雷門中]の入手方法・キャラ情報【ヴィクトリーロード】 | AppMedia\" AppMedia](https://appmedia.jp/victory-road/79469642)\n> [🔗 \"湊：１.雷門中学サッカー部\" Ameba](https://ameblo.jp/sakura-tetsudo/entry-12655507753.html)\n> [🔗 \"雷門中｜キャラクター｜イナズマイレブン ストライカーズ 2012エクストリーム\" Inazuma](https://www.inazuma.jp/strikers/character/chara02.html)\n> [🔗 \"イナズマイレブンの雷門中（円堂達が住んでいる）がある所って何県だと思います... - Yahoo!知恵袋\" Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1237462957)\n> [🔗 \"雷門中\" Pixiv](https://dic.pixiv.net/a/%E9%9B%B7%E9%96%80%E4%B8%AD)\n> [🔗 \"雷門イレブン\" Pixiv](https://dic.pixiv.net/a/%E9%9B%B7%E9%96%80%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3)\n> [🔗 \"イナズマイレブン（漫画） - マンガペディア\" MANGA PEDIA](https://mangapedia.com/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%96%E3%83%B3-jcb9swzgu)\n> [🔗 \"『イナズマイレブン』第126話「涙の卒業式！」の感想 【ついに卒業！】 - amateur2010’s diary\" Hatenablog](https://amateur2010.hatenablog.com/entry/20110423/1303506526)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ライトノベル（ラノベ） | 無料試し読みなら電子書籍ストア BOOK WALKER\" BOOK WALKER](https://bookwalker.jp/st1)\n> [🔗 \"ライトノベル（ラノベ）の電子書籍無料試し読みならBOOK☆WALKER\" BOOK WALKER](https://bookwalker.jp/category/3)\n> [🔗 \"【ライトノベル（ラノベ）】最新刊・続巻の発売一覧｜無料・試し読みなら漫画・電子書籍のコミックシーモア\" CMOA](https://www.cmoa.jp/newrelease/lightnovel)\n> [🔗 \"ライトノベル(ラノベ)｜電子書籍・漫画のコミックシーモア\" CMOA](https://www.cmoa.jp/lightnovel)\n> [🔗 \"ラノベ（ライトノベル） - 漫画・ラノベ（小説）・無料試し読みなら、電子書籍・コミックストア ブックライブ\" BookLive](https://booklive.jp/index/lightnovel)\n> [🔗 \"Amazon.co.jp: 夏目 さとる - Comics, Manga & Graphic Novels: Japanese Books\" Amazon Japan](https://www.amazon.co.jp/-/en/Comics-Manga-Graphic-Novels-%E5%A4%8F%E7%9B%AE-%E3%81%95%E3%81%A8%E3%82%8B/s?rh=n%3A466280%2Cp_27%3A%25E5%25A4%258F%25E7%259B%25AE%2B%25E3%2581%2595%25E3%2581%25A8%25E3%2582%258B)\n> [🔗 \"バケモノの嫁入り - ライトノベル（ラノベ） 結木あい/夏目レモン（スターツ出版文庫）：電子書籍試し読み無料 - BOOK☆WALKER -\" BOOK WALKER](https://bookwalker.jp/de45999aaf-cf54-484e-a489-2d23220281e7)\n> [🔗 \"[ライトノベル]なれる！SE (全16冊) | 漫画全巻ドットコム\" Mangazenkan](https://www.mangazenkan.com/items/91936)\n> [🔗 \"ライトノベル(ラノベ)・新文芸トップの新着作品 - 電子書籍│無料試し読みならBOOK☆WALKER\" BOOK WALKER](https://bookwalker.jp/new?qsto=st1)\n> [🔗 \"にじさんじ来栖夏芽「ライトノベルがアニメ化します！」←何が凄いのか解説します【人外教室の人間嫌い教師】 - YouTube\" YouTube](https://www.youtube.com/watch?v=g6OYiANdEbs)\n\n\n这是一个典型的轻小说片段，带有校园、社团、搞笑、热血元素，叙述者是第一人称（“俺”），带有吐槽式内心独白，对话活泼，带有轻小说常见的夸张、萌系、热血桥段（如决斗宣言、奇迹逆转的憧憬）。源语言是日语，目标是中文（zh）翻译。\n\n**整体分析**：\n\n- **准确性**：两者都基本忠实原文意思，但B在多处更精准捕捉原文口语化、随意的语气（如“なんで……”→“为啥……”；“どん底”→“惨到谷底”；“決闘マニア”→“决斗狂”）。A有时稍显生硬或冗长（如段落1的“不过你们是想来舞蹈部体验入部吧？”比B的简洁“你们想体验入部吗？”更接近原文，但B丢失了“部長のイワシロ”名字部分）。B在专有名词（如“忍原来夏”→“忍原来夏”一致，但B有时写“忍原”）和细微含义上更稳（如段落79的“雷门中”参考《イナズマイレブン》雷门中学，B的表达更自然贴合热血梗）。A有几处小误（如段落56“需要学姊的力量！”原文是“先輩の力が必要なんです”，B“需要学长帮忙！”误性别，但上下文是女前辈“先輩”）——总体B准确性略胜。\n\n- **流畅性**：B的中文更口语化、自然，像本土轻小说翻译（如“又是个怪人部长”“为啥想进舞蹈部？”“超可爱”“决斗狂啊”），读起来节奏快、轻松。A更书面化（如“又是个性格特别强的部长啊”“为什么想加入舞蹈部？”），有时句子稍长，读感稍滞。B整体更流畅，尤其对话部分。\n\n- **风格/语气**：轻小说核心是吐槽+热血+萌+搞笑。第一人称内心吐槽B保留得更好（如“感觉超默契。不过真羡慕你啊，木曽路君！居然能和美少女正常聊天！”很活泼；A有时平淡）。B的语气更贴近年轻读者、网络口语（如“惨到谷底”“烂透了”“决斗狂”），符合轻小说“中二热血+吐槽”风格。A稍显正经，丢失部分趣味。\n\n- **术语/名称一致性**：两者名称基本一致（如“忍原来夏”“笹波君”“木曽路君”），但B更统一（如“忍原学姐”频繁使用）。专有名词如“雷門中”“円堂守”都正确音译为“雷门中学”“圆堂守”。B在“幽灵部员”“竹笋体操”等梗上处理自然。A偶尔多字（如“来夏目”统一但B简洁）。\n\n- **连贯性/可读性**：B整体连贯更好，段落过渡自然，读起来像一口气读完的轻小说章节。A有些句子awkward，稍影响沉浸感。\n\n- **格式/标点符号**：两者都使用中文标点，但B更灵活使用波浪线（如“诶~”）、省略号、感叹号，体现语气。A较规范但少活泼感。B在内心独白与对话区分清晰。\n\n**关键差异**：\n- B更口语、网络化、活泼，适合轻小说读者（“为啥”“超高”“惨到谷底”“决斗狂”）。\n- A更直译、正式，有时丢失语气趣味（如段落2 B“人设浓”比A“个性浓”更贴合“キャラ濃い”）。\n- B有少量小问题（如段落56性别误用“学长”），但整体瑕不掩瑜。\n- 在热血宣言（如段落37、79）B更带感，贴合《イナズマイレブン》式逆袭梗。\n\n**最终判决**：B整体更好，更符合轻小说中文翻译的“自然、活泼、带梗”要求。A准确但稍显平淡。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9, \"notes\": \"B更精准捕捉口语和细微语气，A有少量冗余或微失，但两者都基本忠实\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文极自然、口语流畅，像本土轻小说；A稍书面化，读感滞涩\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B完美保留吐槽+热血+搞笑的轻小说调性，A语气偏正经，丢失部分趣味\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"名称一致，B在轻小说常见梗（如幽灵部员、决斗）处理更统一自然\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B段落节奏连贯、可读性强，A偶有awkward句式影响沉浸\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点更活泼体现语气（如～、！），A规范但少活力\"}\n  },\n  \"key_differences\": [\n    \"B对话更口语化（如'为啥' vs '为什么'），增强轻小说趣味\",\n    \"B内心吐槽更生动、网络化，贴合年轻读者\",\n    \"A在某些描述稍冗长或正式，B简洁有力\",\n    \"B在热血部分（如足球复兴宣言）更带感，符合类型期待\"\n  ],\n  \"final_summary\": \"B翻译整体更胜一筹：准确捕捉原文轻松吐槽与热血风格，同时中文表达自然流畅、节奏感强，更适合轻小说读者。A忠实但偏正式，趣味稍弱。B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10589,
+          "completion_tokens": 4568,
+          "total_tokens": 15157
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "B更精准捕捉口语和细微语气，A有少量冗余或微失，但两者都基本忠实"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文极自然、口语流畅，像本土轻小说；A稍书面化，读感滞涩"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B完美保留吐槽+热血+搞笑的轻小说调性，A语气偏正经，丢失部分趣味"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "名称一致，B在轻小说常见梗（如幽灵部员、决斗）处理更统一自然"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B段落节奏连贯、可读性强，A偶有awkward句式影响沉浸"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点更活泼体现语气（如～、！），A规范但少活力"
+      }
+    },
+    "key_differences": [
+      "B对话更口语化（如'为啥' vs '为什么'），增强轻小说趣味",
+      "B内心吐槽更生动、网络化，贴合年轻读者",
+      "A在某些描述稍冗长或正式，B简洁有力",
+      "B在热血部分（如足球复兴宣言）更带感，符合类型期待"
+    ],
+    "final_summary": "B翻译整体更胜一筹：准确捕捉原文轻松吐槽与热血风格，同时中文表达自然流畅、节奏感强，更适合轻小说读者。A忠实但偏正式，趣味稍弱。B胜出。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

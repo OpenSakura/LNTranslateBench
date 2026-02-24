@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:53:02.321990",
+  "sample": "syosetu.n6753le.ch17",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6753le.ch17.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6753le.ch17.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/syosetu.n6753le.ch17.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2afa7564b8a9514c750f35e65d3d70d2bd5288fd6b1f160d0d59e89ce5f975be",
+    "A": "1dbb104b459d173cde1aaf7bc61efbc624389393220a5ae36352b0c594ebdc42",
+    "B": "794f02803b089ea0dbdfa933af6cbf65f8ecfb947abefbd22e698372d91c07f1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:53:49.380247",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0e737f8a-6ced-466f-9907-c577ea2d1cb7",
+      "judge_response": {
+        "id": "0e737f8a-6ced-466f-9907-c577ea2d1cb7",
+        "object": "chat.completion",
+        "created": 1768488829,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性（意思保留）\n**A的问题：**\n- 段落13：\"根深蒂固\"误译了「根強い」的含义（应为\"棘手/顽固\"）\n- 段落14：\"罗塔斯\"未翻译地名含义（ロータス=Lotus=莲花）\n- 段落29：\"翼龙\"与段落26\"威巴恩\"不统一\n\n**B的问题：**\n- 段落4：略微省略了一些细节\n- 段落56：标点使用略显突兀（\"连澡、洗不了\"）\n\nB在整体准确性上稍优。\n\n### 2. 流畅性\n**A：**较为详细完整，但有些地方略显啰嗦（如段落25）\n\n**B：**更简洁自然，更符合中文表达习惯。例如：\n- 段落13：\"真厉害\"比\"猛人呢\"更自然\n- 段落32：\"舒服得要命\"比\"爽到爆\"更符合语境\n\nB在流畅性上明显更优。\n\n### 3. 风格/语气\n**轻小说特点：**\n- A：段落32\"爽到爆\"过于口语化\n- B：整体保持了轻松自然的叙事风格，更贴近原文语气\n\nB的风格把握更准确。\n\n### 4. 术语/名称一致性\n**关键差异：**\n- **魔术触媒 vs 魔术催化剂**：B使用\"触媒\"更标准（全文一致）\n- **威巴恩/威弗恩 vs 翼龙/兽龙**：A使用\"翼龙\"但与段落26\"威巴恩\"不统一；B使用\"威弗恩\"和\"兽龙\"也有不一致\n- **罗塔斯 vs 莲花镇**：B翻译了地名含义，与后文\"蓮の夢\"呼应更好\n\n两者都有不一致问题，但B在主要术语上更统一。\n\n### 5. 连贯性/可读性\nB整体更连贯，段落间过渡更自然。A在某些地方过于逐字翻译，影响了阅读流畅度。\n\n### 6. 格式/标点符号\n**A的问题：**\n- 标点使用较混乱（有时有引号，有时没有）\n- 段落21、22、24等处引号使用不一致\n\n**B的问题：**\n- 段落56标点使用略显生硬\n- 但整体更规范统一\n\nB在格式规范性上更优。\n\n### 关键差异总结\n1. **术语一致性**：B的\"触媒\"比A的\"催化剂\"更标准\n2. **地名翻译**：B将\"ロータス\"译为\"莲花镇\"更贴切\n3. **语言风格**：B更简洁自然，A有时过于详细\n4. **标点规范**：B更统一规范\n5. **准确性**：B避免了A的一些误译（如\"根深蒂固\"）\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B避免了'根深蒂固'等误译，地名翻译更准确；但两者都有小的省略或不够精确的地方\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B更简洁自然，符合中文表达习惯；A有时过于详细反而影响流畅度\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地把握了轻小说的轻松叙事风格；A个别地方（如'爆到爆'）过于口语化\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"B的'触媒'术语更标准且一致；A使用'催化剂'不够专业，且'威巴恩/翼龙'不统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体连贯性更好，段落过渡更自然；A有些地方过于逐字翻译\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"B标点符号使用更规范统一；A在引号使用上不够一致\"}\n  },\n  \"key_differences\": [\n    \"术语选择：B使用'魔术触媒'更专业，A使用'魔术催化剂'不够标准\",\n    \"地名翻译：B将'ロータス'译为'莲花镇'更贴切，与后文'莲之梦'呼应\",\n    \"语言风格：B更简洁自然，A有时过于详细或口语化\",\n    \"准确性：B避免了'根深蒂固'等误译，整体更准确\",\n    \"标点规范：B引号和标点使用更统一，A较混乱\"\n  ],\n  \"final_summary\": \"翻译B整体质量更优。在术语一致性、准确性、流畅性和格式规范性方面都表现更好。B使用'魔术触媒'等专业术语更标准，地名翻译（莲花镇）更贴切，语言更简洁自然，符合轻小说风格。虽然两者都有个别不足（如怪物名称不够统一），但B在关键评判标准上更胜一筹，整体可读性和专业度更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9405,
+          "completion_tokens": 2347,
+          "total_tokens": 11752
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B避免了'根深蒂固'等误译，地名翻译更准确；但两者都有小的省略或不够精确的地方"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更简洁自然，符合中文表达习惯；A有时过于详细反而影响流畅度"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地把握了轻小说的轻松叙事风格；A个别地方（如'爆到爆'）过于口语化"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的'触媒'术语更标准且一致；A使用'催化剂'不够专业，且'威巴恩/翼龙'不统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体连贯性更好，段落过渡更自然；A有些地方过于逐字翻译"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "B标点符号使用更规范统一；A在引号使用上不够一致"
+      }
+    },
+    "key_differences": [
+      "术语选择：B使用'魔术触媒'更专业，A使用'魔术催化剂'不够标准",
+      "地名翻译：B将'ロータス'译为'莲花镇'更贴切，与后文'莲之梦'呼应",
+      "语言风格：B更简洁自然，A有时过于详细或口语化",
+      "准确性：B避免了'根深蒂固'等误译，整体更准确",
+      "标点规范：B引号和标点使用更统一，A较混乱"
+    ],
+    "final_summary": "翻译B整体质量更优。在术语一致性、准确性、流畅性和格式规范性方面都表现更好。B使用'魔术触媒'等专业术语更标准，地名翻译（莲花镇）更贴切，语言更简洁自然，符合轻小说风格。虽然两者都有个别不足（如怪物名称不够统一），但B在关键评判标准上更胜一筹，整体可读性和专业度更高。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

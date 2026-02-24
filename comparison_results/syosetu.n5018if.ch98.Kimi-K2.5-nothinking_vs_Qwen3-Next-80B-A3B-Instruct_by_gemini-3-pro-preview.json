@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:42:56.106270",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "1697453c405528eff91cd72bd6f4be9947ede8312fe599285727989da3b6312c",
+    "B": "022191b0cb2265173894c50fd7f3115076e17de991d1671574a7f77965473ee8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:44:00.729084",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128224257861761155RifOk7Gu",
+      "judge_response": {
+        "id": "chatcmpl-20260128224257861761155RifOk7Gu",
+        "object": "chat.completion",
+        "created": 1769611440,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是基于提供的分段文本进行的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A**：整体准确度较高。正确理解了原文的动作描写和场景设置。例如在段落 23 中，正确翻译了“うつ伏せ”（俯卧/趴着），这对后续涂防晒霜的情节至关重要。在段落 50 中，正确理解了“股間に響く声”是指声音让男主角的胯下有反应（发烫），而不是声音来自女生的胯下。\n*   **翻译 B**：存在严重的理解错误。\n    *   **段落 23**：原文是“紬とアリサ”（䌷和亚莉莎），B 翻译成“我和亚莉莎”，导致句子变成“我和亚莉莎夹着我”，逻辑不通。同时将“うつ伏せ”（俯卧）错译为“仰躺”，这与后续涂抹背部的动作完全矛盾。\n    *   **段落 50**：将“股間に響く声”（响彻胯下的声音/令人兴奋的声音）误译为“她胯间发出一声轻叫”，这在解剖学和语境上都是错误的。\n    *   **段落 89**：漏译了片假名，保留了“ん”。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 A**：语句通顺，符合中文表达习惯。虽然在段落 23、32、33 中突然使用“葛格”（哥哥）来指代第一人称叙述者（原文为“僕”），这在叙述中显得非常突兀且不符合常规（除非是特定的网络用语风格），但除此之外的流畅度良好。\n*   **翻译 B**：部分句子改写得比较自然（如段落 5），但在对话和叙述中显得有些随意。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译 A**：保留了轻小说的特色，如保留了“亚莉莎酱”（Arisa-chan）的称呼，使用了日式引号「」。对于心理活动的描写（如段落 50 的兴奋感）把握得更到位。\n*   **翻译 B**：去掉了“酱”的后缀。语气上有时过于口语化或随意。\n\n**4. 格式/标点符号 (Formatting/Punctuation)**\n*   **翻译 A**：格式统一，始终使用「」作为对话引号。\n*   **翻译 B**：格式极其混乱。前几段使用双引号“”，中间突然变成直角引号「」，后面又混用。段落 89 甚至残留了日文平假名。\n\n**5. 连贯性 (Coherence)**\n*   **翻译 A**：场景逻辑连贯。\n*   **翻译 B**：由于段落 23 的方位错误（趴着变仰躺），导致后续涂背部防晒霜的情节在逻辑上断裂。\n\n### 总结\n翻译 A 在准确性上占据绝对优势。虽然 A 在中间几段叙述中奇怪地使用了“葛格”自称（可能是为了卖萌或机翻/术语表错误），但这属于风格上的瑕疵。相比之下，翻译 B 出现了致命的情节逻辑错误（人物混淆、体位错误）以及严重的误译（声音来源），且标点符号极不统一。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B在段落23中有严重的人物和动作误译（趴着变仰躺，䌷变我），段落50误解了句意。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"A整体流畅，但在几处叙述中突然用'葛格'自称略显突兀；B整体尚可但有逻辑语病。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A保留了轻小说风味（如称呼后缀）；B风格不统一。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A保留了'酱'，更符合原文语境。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B的体位翻译错误导致后续情节逻辑不通。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 4,\n      \"notes\": \"B混用了两种引号，且有残留日文字符。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落23：原文是两人趴着（うつ伏せ），B错译为仰躺，且搞错了人物（我和亚莉莎夹着我）。A翻译正确。\",\n    \"段落50：原文指声音让男主兴奋（响彻胯下），B错译为声音来自女生的胯间。\",\n    \"格式：A统一使用「」，B混用「」和“”，且B漏译了字符。\"\n  ],\n  \"final_summary\": \"翻译A在准确性、逻辑连贯性和格式规范性上完胜。翻译B存在致命的误译（将'趴着'译为'仰躺'，导致无法进行后续涂背部防晒霜的剧情），且标点符号混乱，甚至有人物指代错误。尽管A在个别段落的自称处理上略显怪异（使用'葛格'），但整体质量远高于B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7555,
+          "completion_tokens": 5417,
+          "total_tokens": 12972
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在段落23中有严重的人物和动作误译（趴着变仰躺，䌷变我），段落50误解了句意。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体流畅，但在几处叙述中突然用'葛格'自称略显突兀；B整体尚可但有逻辑语病。"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A保留了轻小说风味（如称呼后缀）；B风格不统一。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A保留了'酱'，更符合原文语境。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 5,
+        "notes": "B的体位翻译错误导致后续情节逻辑不通。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 4,
+        "notes": "B混用了两种引号，且有残留日文字符。"
+      }
+    },
+    "key_differences": [
+      "段落23：原文是两人趴着（うつ伏せ），B错译为仰躺，且搞错了人物（我和亚莉莎夹着我）。A翻译正确。",
+      "段落50：原文指声音让男主兴奋（响彻胯下），B错译为声音来自女生的胯间。",
+      "格式：A统一使用「」，B混用「」和“”，且B漏译了字符。"
+    ],
+    "final_summary": "翻译A在准确性、逻辑连贯性和格式规范性上完胜。翻译B存在致命的误译（将'趴着'译为'仰躺'，导致无法进行后续涂背部防晒霜的剧情），且标点符号混乱，甚至有人物指代错误。尽管A在个别段落的自称处理上略显怪异（使用'葛格'），但整体质量远高于B。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

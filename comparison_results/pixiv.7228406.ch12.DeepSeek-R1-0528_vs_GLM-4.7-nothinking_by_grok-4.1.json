@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:24.468289",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "f9328854153c77ae183e7802910f7b1ab833eed160f6beb3fe4c8270d8cee56a",
+    "B": "0f2a3e8f1bb01ed0002baf7f4c74e58bb382d6a78911b83729b4ec0f72fe9896"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:44.834456",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DCHo6Ug5nG6tsn2me8NCXhm3Zin",
+      "judge_response": {
+        "id": "chatcmpl-89DCHo6Ug5nG6tsn2me8NCXhm3Zin",
+        "object": "chat.completion",
+        "created": 1768427083,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"みのぶまんじゅう\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"身延まんじゅう OR みのぶまんじゅう\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"甲斐常葉駅\"\n> 📊 **Results requested:** 3\n\n> 🔍 **Searching for:** \"身延駅 特急 ふじかわ\"\n> 📊 **Results requested:** 3\n\n> 🔍 **10 results found**\n\n> [🔗 \"みのぶまんじゅう\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"身延饅頭\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"【楽天市場】山梨銘菓 みのぶまんじゅう 12個入り 贈答箱 ...\" Rakuten](https://item.rakuten.co.jp/e-yamanashi/skr-0002)\n> [🔗 \"山梨百貨店 / 山梨銘菓 みのぶまんじゅう 山梨県身延町 名物和菓子\" Shopvision](https://shopvision.jp/products/detail/1387)\n> [🔗 \"Eishodo - Minobu/Japanese traditional sweets | Tabelog\" Tabelog](https://tabelog.com/en/yamanashi/A1904/A190402/19000888)\n> [🔗 \"身延山御用 御菓子司 甘養亭河喜\" Kanyoutei](https://www.kanyoutei.com/)\n> [🔗 \"さくら製菓 powered by BASE\" Base](https://sminobumanju.base.shop/)\n> [🔗 \"地元がすすめるスイーツ8選 - 身延町観光情報サイト「みのラブ」\" Minolove](https://www.minolove.jp/soshiki/1/101754.html)\n> [🔗 \"甘養亭河喜 身延まんじゅう（みのぶまんじゅう）\" Amebaownd](https://kanyoutei.amebaownd.com/)\n> [🔗 \"みのぶまんじゅう 12個入り1箱・20個入り1箱・さくらくず湯（5 ...\" Carenet](https://furusato.carenet.com/items/776649)\n\n> 🔍 **10 results found**\n\n> [🔗 \"みのぶまんじゅう\" Minobu-eishodo](https://minobu-eishodo.com/)\n> [🔗 \"身延まんじゅう（みのぶまんじゅう）9個入 | 甘養亭 身延まんじゅう（みのぶまんじゅう） powered by BASE\" Kanyoutei](https://shop.kanyoutei.co.jp/items/3734802)\n> [🔗 \"身延まんじゅう（みのぶまんじゅう）12個入 | 甘養亭 身延まんじゅう（みのぶまんじゅう） powered by BASE\" Kanyoutei](https://shop.kanyoutei.co.jp/items/3734807)\n> [🔗 \"身延饅頭 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E8%BA%AB%E5%BB%B6%E9%A5%85%E9%A0%AD)\n> [🔗 \"身延町の名物！みのぶまんじゅう栄昇堂の駐車場はどこ？賞味期限は？\" Minoblog2018](https://minoblog2018.com/post/eisyodo)\n> [🔗 \"山梨百貨店 / 山梨銘菓 みのぶまんじゅう 山梨県身延町 名物和菓子\" Shopvision](https://shopvision.jp/products/detail/1387)\n> [🔗 \"身延まんじゅう（みのぶまんじゅう）16個入 | 甘養亭 身延まんじゅう（みのぶまんじゅう） powered by BASE\" Kanyoutei](https://shop.kanyoutei.co.jp/items/3734811)\n> [🔗 \"みのぶまんじゅう 栄昇堂のクチコミ一覧 - じゃらんnet\" Jalan](https://www.jalan.net/gourmet/grm_alikejpB001058419/kuchikomi)\n> [🔗 \"さくら製菓 powered by BASE\" Base](https://sminobumanju.base.shop/)\n> [🔗 \"甘養亭河喜 身延まんじゅう（みのぶまんじゅう）\" Amebaownd](https://kanyoutei.amebaownd.com/)\n\n> 🔍 **10 results found**\n\n> [🔗 \"甲斐常葉駅 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E7%94%B2%E6%96%90%E5%B8%B8%E8%91%89%E9%A7%85)\n> [🔗 \"ＪＲ身延線甲斐常葉駅／ホームメイト\" Homemate Research Station](https://www.homemate-research-station.com/dtl/46000000000000003253)\n> [🔗 \"甲斐常葉駅 時刻表一覧 - Yahoo!路線情報\" Yahoo! 路線情報](https://transit.yahoo.co.jp/timetable/23395)\n> [🔗 \"甲斐常葉駅 - 山梨県身延町\" Minobu](https://www.town.minobu.lg.jp/chosei/koukyoushisetsu/kaijoyo_st.html)\n> [🔗 \"甲斐常葉駅 甲府方面 時刻表|ＪＲ身延線【駅探】\" Eki Tanpo](https://ekitan.com/timetable/railway/line-station/85-20/d2)\n> [🔗 \"甲斐常葉駅の時刻表 - 駅探\" Eki Tanpo](https://ekitan.com/timetable/railway/station/3432)\n> [🔗 \"甲斐常葉駅(ＪＲ身延線 甲府方面)の時刻表 - Yahoo!路線情報\" Yahoo! 路線情報](https://transit.yahoo.co.jp/timetable/23395/1301)\n> [🔗 \"甲斐常葉駅周辺の観光スポットランキングTOP10 - じゃらんnet\" Jalan](https://www.jalan.net/kankou/sta_011886)\n> [🔗 \"「甲斐常葉」(駅)の時刻表/アクセス/地点情報/地図 - NAVITIME\" NAVITIME](https://www.navitime.co.jp/poi?node=00002472)\n> [🔗 \"甲斐常葉駅（南巨摩郡身延町/駅）の地図｜地図マピオン\" Mapion](https://www.mapion.co.jp/m2/35.44514198,138.47710195,16/poi=ST23395)\n\n> 🔍 **10 results found**\n\n> [🔗 \"特急「ふじかわ」―身延線を走り静岡県と山梨県を結ぶ特急列車（THE列車） | トレたび - 鉄道・旅行情報サイト\" Toretabi](https://www.toretabi.jp/railway_info/entry-715.html)\n> [🔗 \"身延線の特急「ふじかわ」に乗ろう！ 短距離でも利用しやすい特急列車、おすすめの座席も紹介します！（座席表あり） | ひさの乗り鉄ブログ\" Kzlifelog](https://www.kzlifelog.com/entry/jrt-fujikawa-report)\n> [🔗 \"お得なきっぷ｜ふじかわ号自由席特急回数券\" JR Central](https://railway.jr-central.co.jp/tickets/fujikawa-jiyuu/index.html)\n> [🔗 \"ふじかわ (列車) - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%81%B5%E3%81%98%E3%81%8B%E3%82%8F_(%E5%88%97%E8%BB%8A))\n> [🔗 \"特急「ふじかわ号」で富士川を下りながら車窓とビールと弁当を楽しむ！ | 日本ビアジャーナリスト協会\" Jbja](https://www.jbja.jp/archives/52753)\n> [🔗 \"【ゆっくり特急】ワイドビューふじかわが遅い理...\" Pass-case](https://pass-case.com/area/chubu/yamanashi/%E3%80%90%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E7%89%B9%E6%80%A5%E3%80%91%E3%83%AF%E3%82%A4%E3%83%89%E3%83%93%E3%83%A5%E3%83%BC%E3%81%B5%E3%81%98%E3%81%8B%E3%82%8F%E3%81%8C%E9%81%85%E3%81%84%E7%90%86)\n> [🔗 \"電車でお越しの方\" Minobu](https://www.minobu.info/transportration_infomation/train_information.html)\n> [🔗 \"身延 | ふじかわ | 静岡方面 特急時刻表 - NAVITIME\" NAVITIME](https://www.navitime.co.jp/diagram/timetable?displayLine=00000025&node=00004485)\n> [🔗 \"特急「ふじかわ」の料金と割引きっぷ | JR線ご利用案内\" Jr-group](https://jr-group.jp/fujikawa-ryokin)\n> [🔗 \"特急「ふじかわ」の乗り方は？ 料金体系や予約方法、楽しむポイントを解説 | トレたび - 鉄道・旅行情報サイト\" Toretabi](https://www.toretabi.jp/railway_info/entry-22762.html)\n\n\n翻译A和翻译B都是从日文轻小说风格文本翻译成中文的版本，整体上都保留了原作的叙述视角（第一人称“我”）、轻松吐槽的语气、日常对话的亲切感，以及对地方风物和情感的细腻描写。两者在准确性上都较高，但存在一些细微的差异。下面按评估维度逐一分析。\n\n**准确性（意思保留）**：  \nA在大部分地方忠实于原文，但个别地方有误译或不精确。例如段落23和25中将“みのぶまんじゅう”译为“实节馒头”或“实节”，这是明显错误（正确应为“身延馒头”或“みのぶ馒头”，标准中文常译“身延馒头”）；段落74中“みのぶまんじゅう”误译为“美乃滋馒头”（可能是“みのぶ”的音译失误）。B则一致使用“身延馒头”或“美浓馒头”（“美浓”可能是“みのぶ”的另一种音译尝试，但整体更接近“身延”），准确性更高。其他地方如地名“甲斐常叶站”、特急“富士川”、精进料理等，B处理更稳定。A有少量漏译或改写导致轻微偏差（如段落2的“マッ缶”被A简化为“罐头”，B明确为“马口铁罐头”）。\n\n**流畅性（中文自然表达）**：  \n两者中文都较为流畅，符合现代网络轻小说阅读习惯。B的句子更简洁自然（如段落1的“沿着平时的坡道下去”比A的“沿着往常的坡道下行”更口语化），对话部分B常用“啊”“呢”等语气词，贴近日常中文表达。A有时稍显生硬或文绉绉（如“大力阐述”“板上钉钉的事了”），但整体可读。\n\n**风格/语气（轻小说叙述/对话）**：  \n轻小说典型的第一人称内心吐槽、微酸自嘲、少女对话的轻快感，两者都较好保留。B在对话中更活泼（如“这个真好吃啊”“嗯～”的拖长音），更接近原作的青春日常+微妙心动氛围。A的叙述有时更直白（如“超好吃欸”），但偶尔语气稍重（如“烂得一塌糊涂”比B的“绝望了”更夸张）。B整体更柔和、贴合“比企谷”式毒舌但不失温柔的风格。\n\n**术语/名称一致性**：  \n关键专有名词如“みのぶまんじゅう”：A前后不一致（实节/美乃滋），严重影响一致性；B虽用“身延馒头”和“美浓馒头”混用，但更接近标准译名“身延馒头”。人名如“斉藤”A用“斋藤”，B用“齐藤”（中文常见“齐藤”）；“志摩”A加“凛”，B简用“志摩”（原文无“凛”，但若为角色全名A更完整）。地名、列车名等B更统一。A在这一项明显弱。\n\n**连贯性/可读性**：  \n整体文本连贯，两者都维持了故事流畅推进。B的用词更统一，读起来少有突兀感（如馒头名称反复出现时B更顺）。A因专有名词混乱，稍影响沉浸感。\n\n**格式/标点符号**：  \n两者标点使用相似，都用了中文常见的「」对话括号、……省略、——破折号。A在某些地方多用顿号或空格，格式稍乱；B更整洁。两者均保留了原文的＊＊＊分隔。\n\n总体而言，B在准确性、术语一致性、风格自然度上明显优于A，尤其关键的“みのぶまんじゅう”译名错误让A失分严重。A在部分叙述上更文学化，但整体B更适合轻小说读者。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 9, \"notes\": \"A有明显误译（如みのぶまんじゅう→实节/美乃滋），B更忠实且稳定\"},\n    \"fluency\": {\"A\": 8, \"B\": 9, \"notes\": \"B句子更简洁口语化，读来自然流畅\"},\n    \"style\": {\"A\": 8, \"B\": 9, \"notes\": \"B更好地保留了轻小说式的轻松吐槽与少女对话轻快感\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A专有名词前后不一致严重，B虽有细微变体但整体更好\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B用词统一，可读性更高\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"两者相似，B标点与分段更整齐\"}\n  },\n  \"key_differences\": [\n    \"みのぶまんじゅう的译名：A混乱（实节/美乃滋），B统一接近正确（身延/美浓）\",\n    \"人名音译：A偏“斋藤/志摩凛”，B偏“齐藤/志摩”\",\n    \"对话语气：B更常用语气助词（如啊、呢、～），贴近日常中文轻小说风格\",\n    \"部分描述：B更简练自然（如“风驰电掣”vs A的“飞快地经过”）\"\n  ],\n  \"final_summary\": \"B整体更准确、一致、自然，特别在专有名词和轻小说语气上占优；A虽可读，但关键错误拉低质量。B是更优翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11444,
+          "completion_tokens": 4799,
+          "total_tokens": 16243
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "A有明显误译（如みのぶまんじゅう→实节/美乃滋），B更忠实且稳定"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B句子更简洁口语化，读来自然流畅"
+      },
+      "style": {
+        "A": 8,
+        "B": 9,
+        "notes": "B更好地保留了轻小说式的轻松吐槽与少女对话轻快感"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A专有名词前后不一致严重，B虽有细微变体但整体更好"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B用词统一，可读性更高"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "两者相似，B标点与分段更整齐"
+      }
+    },
+    "key_differences": [
+      "みのぶまんじゅう的译名：A混乱（实节/美乃滋），B统一接近正确（身延/美浓）",
+      "人名音译：A偏“斋藤/志摩凛”，B偏“齐藤/志摩”",
+      "对话语气：B更常用语气助词（如啊、呢、～），贴近日常中文轻小说风格",
+      "部分描述：B更简练自然（如“风驰电掣”vs A的“飞快地经过”）"
+    ],
+    "final_summary": "B整体更准确、一致、自然，特别在专有名词和轻小说语气上占优；A虽可读，但关键错误拉低质量。B是更优翻译。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

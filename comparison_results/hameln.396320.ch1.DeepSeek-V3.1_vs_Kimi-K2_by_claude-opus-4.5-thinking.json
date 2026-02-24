@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:20:41.818498",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "1bb9fb58f5676b235b7f3deb03c0cbe719facda8823832b2431c5cfaa53b53fc",
+    "B": "27b45376a1317d7a26e8aff237137e25b451e9f5b62907acc4daf06b8ef69cba"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:21:29.704725",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0f5bd8b0-fafa-46f3-b2ca-b9c6e2aeef75",
+      "judge_response": {
+        "id": "0f5bd8b0-fafa-46f3-b2ca-b9c6e2aeef75",
+        "object": "chat.completion",
+        "created": 1768422089,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量详细分析\n\n### 1. 准确性分析\n\n两个翻译在核心信息传达上基本准确，但有细微差别：\n\n- **段落6**：A\"将其称为『地下城』并加以利用\"准确对应\"読んで利用\"；B\"把它当成『地下城』来用\"略有简化但意思到位\n- **段落15**：A\"一刀两断\"不够贴切原文\"切っても切れない\"；B\"根本剪不断\"更准确\n- **段落46**：B\"啥都不剩\"过度演绎了原文\"何もかも\"\n- **段落57**：A保留\"梓さん\"不翻译有些不统一；B译为\"梓小姐\"更规范\n\n### 2. 流畅性分析\n\n- **A**：整体偏书面语，如\"蓦然眺望\"、\"映入眼帘\"、\"高耸入云\"等文学性表达\n- **B**：更口语化，如\"懂吧？\"、\"没毛病\"、\"嵌块魔石上去\"、\"死党\"等\n- B的口语化在某些段落过度，如段落8的\"懂吧？\"、段落11的\"没毛病\"显得过于网络化\n\n### 3. 风格/语气分析\n\n原文是第一人称叙述，带有冷静分析的口吻，是一位闇商人的独白。\n\n- **A**：保持了原文较为正式、沉稳的叙述腔调\n- **B**：过于活泼，某些表达如\"水电煤气\"（原文没有提煤气）、\"立马飙升\"、\"那些大人物们全都抱头哀嚎\"略显夸张\n\n### 4. 术语一致性\n\n- 两者对\"ダンジョン\"的翻译不统一：A混用\"地下城\"和\"迷宫\"；B也混用\"地下城\"和\"迷宫\"\n- 人名处理：A后期混用\"梓さん/梓小姐\"；B统一用\"梓小姐\"或\"梓\"\n- 破折号：A使用\"───\"；B使用\"——\"，B更符合中文规范\n\n### 5. 关键段落对比\n\n**段落43**（重要情感段落）：\n- A：\"这个初次见面的女人亲昵地叫着我的名字\"——较为直白\n- B：\"一个第一次见面就亲昵地喊我\"——更自然但\"死党\"用词略显突兀\n\n**段落50**（核心世界观）：\n- A：\"女性的性欲被男性的所取代\"——稍显拗口\n- B：\"女性的性欲被替换成了男性的性欲\"——更清晰；\"被当宝/被当草\"生动但略显轻浮\n\n### 6. 格式/标点\n\n- A使用日式破折号\"───\"，B使用中文标准破折号\"——\"\n- B的格式更符合中文排版规范\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A更忠实原文；B有时过度演绎如'啥都不剩'、添加'煤气'\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语流畅，但部分网络用语过度\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"原文是冷静严肃的闇商人独白，A更贴合；B过于活泼轻浮\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有地下城/迷宫混用问题；B人名处理更统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙述语气统一；B口语化程度波动较大\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"B使用标准中文破折号，更规范\"}\n  },\n  \"key_differences\": [\n    \"A偏书面正式，B偏口语活泼\",\n    \"B有网络用语如'懂吧''没毛病'不符合作品严肃基调\",\n    \"A破折号使用日式符号，B使用中文标准符号\",\n    \"B在部分段落过度意译添加原文没有的内容\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在保持原文严肃冷静的闇商人叙述风格上更胜一筹，准确性更高；B在流畅度和格式规范上表现更好，但口语化过度、风格偏离原文基调。考虑到这是世界观铺陈的开篇章节，需要建立严肃氛围，A的译法更为适合。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12120,
+          "completion_tokens": 2047,
+          "total_tokens": 14167
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更忠实原文；B有时过度演绎如'啥都不剩'、添加'煤气'"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语流畅，但部分网络用语过度"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "原文是冷静严肃的闇商人独白，A更贴合；B过于活泼轻浮"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有地下城/迷宫混用问题；B人名处理更统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙述语气统一；B口语化程度波动较大"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "B使用标准中文破折号，更规范"
+      }
+    },
+    "key_differences": [
+      "A偏书面正式，B偏口语活泼",
+      "B有网络用语如'懂吧''没毛病'不符合作品严肃基调",
+      "A破折号使用日式符号，B使用中文标准符号",
+      "B在部分段落过度意译添加原文没有的内容"
+    ],
+    "final_summary": "两译本各有优劣。A在保持原文严肃冷静的闇商人叙述风格上更胜一筹，准确性更高；B在流畅度和格式规范上表现更好，但口语化过度、风格偏离原文基调。考虑到这是世界观铺陈的开篇章节，需要建立严肃氛围，A的译法更为适合。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

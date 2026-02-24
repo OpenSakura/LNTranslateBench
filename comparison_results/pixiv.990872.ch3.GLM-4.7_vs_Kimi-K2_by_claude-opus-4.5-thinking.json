@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:02:05.967739",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.Kimi-K2.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "61d4ad719ee1e302ffe0cc1266f8a9bf5ca6721e63eaf40e7cbae98ac59fdf71",
+    "B": "29c027d99a093f27a90075292d8027cdf3dd8129b11209881547624d1b23cedb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:02:56.020652",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "44a856ac-8775-4e26-9316-829380dbf66b",
+      "judge_response": {
+        "id": "44a856ac-8775-4e26-9316-829380dbf66b",
+        "object": "chat.completion",
+        "created": 1768431775,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段关键差异分析\n\n### 准确性问题\n\n**段落14**：关键理解差异\n- 原文主语是\"我\"（俺）没有回话就秒速离开浴室\n- A译：\"昨天就那样没再搭理我，秒从浴室溜了\"（错误理解为别人离开）\n- B译：\"昨天我就那样没回话直接秒速出浴室了\"（正确）\n\n**段落42**：「ご馳走さまする」\n- A译：\"我吃完了\"（正确，日语用餐结束敬语）\n- B译：\"这顿饭就赏给你吧\"（完全错误，误解了惯用表达）\n\n**段落54**：「ムルシエラゴ」\n- A译：\"吸血蝙蝠\"（西班牙语直译，丢失了兰博基尼车型的梗）\n- B译：\"Murcielago\"（保留原文，但读者可能不理解油耗梗）\n\n**段落74**：「女子盛り」\n- A译：\"少女巅峰身材\"（错误）\n- B译：\"女生份\"（正确，指食堂女生分量）\n\n### 流畅性与风格\n\n**段落11**：\n- A：\"当偶像那会儿每周有五天凌晨五点就要录节目\"——自然流畅\n- B：\"不一直都是一直在大喊大叫的吗\"——语病明显，\"不一直...一直\"冗余\n\n**段落21**：\n- A：\"星罗酱微笑杀！\"——活泼有力\n- B：\"星罗酱微笑！\"——稍显平淡\n\n**段落49-52**：互怼场景\n- A的\"圆滚滚的可爱妹子眼\"\"娘炮脸\"更口语化\n- B的\"像娘们儿一样\"\"女相\"稍显生硬\n\n### 术语一致性\n\n- A：「萩下ちゃん」译为\"萩下酱/萩下妹子\"（不一致）\n- B：「萩下ちゃん」译为\"萩下酱/萩下同学/小萩下\"（也不一致）\n- 两者在称呼翻译上都有轻微不一致\n\n### 格式处理\n\n- A使用「」\n- B使用\"\"和''\n- 两者都基本保持了原文的引号区分\n\n---\n\n## 综合评估\n\n**A的优势**：语言更活泼自然，符合轻小说风格，口语化程度高\n**A的劣势**：段落14主语理解错误，段落74术语错误\n\n**B的优势**：大部分情况下准确性较好，段落14、74理解正确\n**B的劣势**：段落42严重翻译错误，段落11有明显语病，整体略显生硬\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落14/74有误解；B在段落42有严重错误，各有失误\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A口语化自然；B段落11有语病，部分表达生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更符合轻小说活泼吐槽风格；B稍显拘谨\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者称呼翻译都有轻微不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A阅读更流畅；B部分断句略显机械\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式处理基本得当\"}\n  },\n  \"key_differences\": [\n    \"段落14主语理解：A错误/B正确\",\n    \"段落42「ご馳走さまする」：A正确/B严重错误\",\n    \"段落74「女子盛り」：A错误/B正确\",\n    \"整体语言风格：A更口语活泼/B较为书面\",\n    \"段落11流畅度：A通顺/B有语病\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在流畅性和轻小说风格把握上明显更好，阅读体验更佳，但存在个别理解偏差；B在部分细节准确性上更好，但段落42的严重错误和段落11的语病影响了整体质量。综合考虑轻小说翻译对可读性和风格的要求，A略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11803,
+          "completion_tokens": 2140,
+          "total_tokens": 13943
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落14/74有误解；B在段落42有严重错误，各有失误"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A口语化自然；B段落11有语病，部分表达生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更符合轻小说活泼吐槽风格；B稍显拘谨"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者称呼翻译都有轻微不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A阅读更流畅；B部分断句略显机械"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式处理基本得当"
+      }
+    },
+    "key_differences": [
+      "段落14主语理解：A错误/B正确",
+      "段落42「ご馳走さまする」：A正确/B严重错误",
+      "段落74「女子盛り」：A错误/B正确",
+      "整体语言风格：A更口语活泼/B较为书面",
+      "段落11流畅度：A通顺/B有语病"
+    ],
+    "final_summary": "两译本各有优劣。A在流畅性和轻小说风格把握上明显更好，阅读体验更佳，但存在个别理解偏差；B在部分细节准确性上更好，但段落42的严重错误和段落11的语病影响了整体质量。综合考虑轻小说翻译对可读性和风格的要求，A略胜一筹。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

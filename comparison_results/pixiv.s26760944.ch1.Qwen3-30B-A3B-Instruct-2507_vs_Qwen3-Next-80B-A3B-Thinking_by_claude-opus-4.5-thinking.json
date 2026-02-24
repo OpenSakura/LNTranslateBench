@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:05:59.356221",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "44bab862394986f3a85719b49172c8a8f01ee7e80ef3f02a2e6e96f749b8a10c",
+    "B": "8b5371f92e5753ed5b31dae14147e0736ca8efe468058e1f890cc24c26bddb57"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:06:51.217540",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "cf5976c0-4ff7-449b-90ca-3d9251f280d2",
+      "judge_response": {
+        "id": "cf5976c0-4ff7-449b-90ca-3d9251f280d2",
+        "object": "chat.completion",
+        "created": 1768432011,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n- **A的问题**：段落89完全缺失翻译；段落61出现英文\"thing\"未翻译；段落68\"壁ドン\"译为\"墙壁撞击\"不够准确\n- **B的问题**：段落9、13保留日文课程标题未翻译；段落43\"あっ\"未翻译；段落86\"ノンデリゴリラ女\"误译为\"诺德尔戈里拉女\"（应为\"没分寸的母猩猩\"）；段落92\"スパダリモドキ女\"译为\"假剑客女\"偏离原意\n\n### 2. 流畅性分析\n- **A**：表达较为完整但有时冗长，如\"淡淡的香气在鼻腔中轻挠\"\n- **B**：更简洁口语化，但有时过度简化失去细节，如段落1省略了\"沉溺于寒冬的人世\"的意象\n\n### 3. 风格/语气分析\n- **A**：对话略显正式，如\"早安，希罗！\"\n- **B**：对话更自然轻快，如\"早啊希罗！\"更符合轻小说氛围\n\n### 4. 术语一致性\n- **A**：\"壁ドン\"翻译不统一（墙壁撞击/靠墙攻势/壁咚）\n- **B**：始终用\"壁咚\"，但课程标题保留日文不可接受\n\n### 5. 格式问题\n- **A**：段落89缺失\n- **B**：段落20、21将内心独白错误加上引号变成对话\n\n### 6. 特殊处理\n- 段落23等的\"ムー\"：A译\"呣/哞\"、B译\"哞\"或保留日文——A更好\n- 段落99的拟声词：A\"咯咯咯\"、B\"咚咚咚\"——B更准确（敲击声）\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 5, \"notes\": \"A缺失段落89且有一处英文混入；B有多处未翻译日文及误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A较完整但略冗长；B简洁但有时过度简化\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"B的对话更符合轻小说口语风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 5, \"notes\": \"A壁咚翻译不一致；B保留日文标题是重大失误\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"B的格式错误（独白加引号）影响阅读理解\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A缺段落；B将叙述错误标为对话\"}\n  },\n  \"key_differences\": [\n    \"A缺失段落89，B保留多处日文未翻译\",\n    \"A术语不统一但都有中文，B术语统一但有未翻译内容\",\n    \"B对话风格更自然轻快，A较正式\",\n    \"B将段落20、21的独白错误加引号\",\n    \"A对'ノンデリゴリラ女'等词翻译更准确\"\n  ],\n  \"final_summary\": \"两个翻译各有明显缺陷。A的主要问题是缺失一个段落和术语不统一；B的主要问题是多处日文未翻译、有误译、格式错误。综合考虑，保留日文不翻译是翻译的根本性问题，且B的误译（如スパダリモドキ女）和格式错误累积较多，因此A略胜一筹，但优势不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14071,
+          "completion_tokens": 2165,
+          "total_tokens": 16236
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 5,
+        "notes": "A缺失段落89且有一处英文混入；B有多处未翻译日文及误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A较完整但略冗长；B简洁但有时过度简化"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "B的对话更符合轻小说口语风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 5,
+        "notes": "A壁咚翻译不一致；B保留日文标题是重大失误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "B的格式错误（独白加引号）影响阅读理解"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A缺段落；B将叙述错误标为对话"
+      }
+    },
+    "key_differences": [
+      "A缺失段落89，B保留多处日文未翻译",
+      "A术语不统一但都有中文，B术语统一但有未翻译内容",
+      "B对话风格更自然轻快，A较正式",
+      "B将段落20、21的独白错误加引号",
+      "A对'ノンデリゴリラ女'等词翻译更准确"
+    ],
+    "final_summary": "两个翻译各有明显缺陷。A的主要问题是缺失一个段落和术语不统一；B的主要问题是多处日文未翻译、有误译、格式错误。综合考虑，保留日文不翻译是翻译的根本性问题，且B的误译（如スパダリモドキ女）和格式错误累积较多，因此A略胜一筹，但优势不大。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

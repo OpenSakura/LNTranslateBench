@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:31:37.877191",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.GLM-4.5.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "3ed4f333955e4e27142a5ff0c96e5bf5cb3276ca6579f4f4a94992d02018d007",
+    "B": "746db9c1d5045b6ec9dc662285c4f226982ea57232646db5c0d1030573d5c701"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:32:17.160238",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9c8b7904-6b71-4f34-97c4-3dab877acdb2",
+      "judge_response": {
+        "id": "9c8b7904-6b71-4f34-97c4-3dab877acdb2",
+        "object": "chat.completion",
+        "created": 1769610737,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n\n**段落4:** \"面構えが違う\"\n- A译\"气势都不一样\" - 不够准确，面構え指的是表情/神态\n- B译\"表情都与众不同\" - 更贴合原意\n\n**段落17:** \"ビッグサイトのある国際展示場駅\"\n- A译\"有Big Sight的国际展示场站\" - 正确\n- B译\"有国际展示场的国际展示场站\" - 错误，Big Sight被错译\n\n**段落31:** \"凄い人\"\n- A译\"好厉害的人\" - 误译，这里指人多\n- B译\"人真的好多\" - 正确\n\n**段落26:** \"気が逸っている\"\n- A译\"心不在焉\" - 偏离，原意是心急/迫不及待\n- B译\"心神不宁\" - 也有偏差，但稍近\n\n### 流畅性与风格\n\n**对话表达:**\n- A使用中文引号\"\"，更符合中文习惯\n- B保留日式引号「」，在中文阅读体验上稍显突兀\n\n**段落6:**\n- A:\"果然不愧是领导者的大野前辈\" - 句式略生硬\n- B:\"不愧是作为领队的大野学姐\" - 更自然\n\n**段落55:**\n- A:\"原来如此原来如此，正听着的时候\" - 较口语化\n- B:\"正听得津津有味\" - 更生动\n\n### 术语一致性\n\n- A: 学姐/前辈混用，偏向\"学姐\"\n- B: 主要用\"前辈\"，较一致\n- A: 保留\"Cosplay\"\"Big Sight\"等外来词\n- B: 部分保留，但段落17出现严重错误\n\n### 格式问题\n\n**段落61:**\n- B出现格式错误：\"『那本身就是Cosplay「吧\" - 引号不匹配\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落31误译凄い人，B在段落17严重误译Big Sight，各有失误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A的中文表达更自然流畅，B保留日式引号影响阅读\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更贴近中文轻小说风格，B稍显生硬\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A学姐/前辈混用，B较一致但有关键错译\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体阅读更顺畅\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落61引号格式错误，A标点规范\"}\n  },\n  \"key_differences\": [\n    \"段落17: A正确译出Big Sight，B误译为重复的国际展示场\",\n    \"段落31: A误译凄い人为厉害的人，B正确理解为人多\",\n    \"引号风格: A用中文引号，B保留日式引号\",\n    \"段落61: B出现明显格式错误\"\n  ],\n  \"final_summary\": \"两个译本各有优劣。A在流畅性、格式规范和中文本土化方面更胜一筹，但存在个别意思误解；B在部分细节准确性上表现好，但段落17的Big Sight误译是重大失误，加上引号格式问题，整体略逊于A。综合考虑，A在轻小说翻译的整体阅读体验上更佳。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12236,
+          "completion_tokens": 1878,
+          "total_tokens": 14114
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落31误译凄い人，B在段落17严重误译Big Sight，各有失误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的中文表达更自然流畅，B保留日式引号影响阅读"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更贴近中文轻小说风格，B稍显生硬"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A学姐/前辈混用，B较一致但有关键错译"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体阅读更顺畅"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落61引号格式错误，A标点规范"
+      }
+    },
+    "key_differences": [
+      "段落17: A正确译出Big Sight，B误译为重复的国际展示场",
+      "段落31: A误译凄い人为厉害的人，B正确理解为人多",
+      "引号风格: A用中文引号，B保留日式引号",
+      "段落61: B出现明显格式错误"
+    ],
+    "final_summary": "两个译本各有优劣。A在流畅性、格式规范和中文本土化方面更胜一筹，但存在个别意思误解；B在部分细节准确性上表现好，但段落17的Big Sight误译是重大失误，加上引号格式问题，整体略逊于A。综合考虑，A在轻小说翻译的整体阅读体验上更佳。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

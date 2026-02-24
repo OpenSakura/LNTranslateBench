@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:27:09.605725",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "2dd71d0fb7c0d8aa0d5ac55d13c75f3f0a07dd01139671ebabb97a87863e3b7f",
+    "B": "89c02e5099f8762d3e9ab4bf38fac1fab5849c6bc3b1fd0b04b7c19292f74bfb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:28:02.205778",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fe2756e4-2a5f-4630-81a9-1399f7b76ac5",
+      "judge_response": {
+        "id": "fe2756e4-2a5f-4630-81a9-1399f7b76ac5",
+        "object": "chat.completion",
+        "created": 1768422482,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**段落10**：「険しい表情」\n- A译\"严肃的表情\"，B译\"险恶的表情\"\n- 原文指紧张/严峻的表情，A更准确，B\"险恶\"语义过重\n\n**段落68**：「いや、きっとそうに違いない」\n- A译\"不，肯定没错\"——误解原意，应该是\"肯定是听错了\"\n- B译\"不，一定是听错了\"——准确\n\n**段落47**：「フェスタ」\n- B误译为\"庆典\"，这是人名不应翻译\n\n### 2. 流畅性分析\n\n**段落13**：B的\"这气氛明显就是有事要发生，想忽略都难\"比A的\"总觉得有种不对劲的气氛，挥之不去\"更口语化自然\n\n**段落17**：B的\"看来工作她会很靠谱\"比A的\"看来业务处理得很认真\"更贴合轻小说语感\n\n**段落83**：B的\"被你擅自期待，我们也很困扰啊\"比A的\"被随便期待什么的\"表达更完整\n\n### 3. 术语/名称一致性\n\n- A在段落104-109突然将\"费斯塔\"改为\"菲斯塔\"，不一致\n- B在段落47将フェスタ误译为\"庆典\"，153段又用\"Festa\"，严重不一致\n- B将\"N：ブル\"翻译成\"布鲁\"和\"布露\"两种，性别混乱\n- A的人名处理相对统一\n\n### 4. 格式/标点\n\n- A在段落64-73突然使用中文引号\"\"而非日式引号「」，格式不统一\n- B在段落25、93、99、103-104等多处丢失引号\n\n### 5. 关键翻译质量对比\n\n| 段落 | 优势方 | 原因 |\n|------|--------|------|\n| 12 | B | \"逃离\"比\"离开\"更生动 |\n| 28 | B | 更准确理解\"興味が湧いてしまうと\" |\n| 51 | B | \"磨叽\"比\"麻烦\"更口语化 |\n| 68 | B | 理解正确 |\n| 10 | A | 用词更准确 |\n| 47 | A | 人名处理正确 |\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落68有理解错误；B在段落10用词过重，各有失误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，符合轻小说风格\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话语气更活泼，更符合角色特点\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"B将人名フェスタ误译为'庆典'是严重错误；两者都有人名不一致问题\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 6, \"B\": 6, \"notes\": \"A有引号格式切换问题；B多处丢失引号\"}\n  },\n  \"key_differences\": [\n    \"B流畅度和口语化程度更高\",\n    \"A人名处理相对更一致\",\n    \"B将人名'フェスタ'误译为'庆典'是严重失误\",\n    \"A在段落68理解错误\",\n    \"两者都存在格式问题\"\n  ],\n  \"final_summary\": \"B在整体流畅度和轻小说风格把握上略胜一筹，对话更自然生动。但B在术语一致性上有严重问题（人名误译）。A虽然较为稳健但有个别理解错误且文风稍显生硬。综合权衡，B在核心阅读体验上略优，但优势不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13155,
+          "completion_tokens": 2213,
+          "total_tokens": 15368
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落68有理解错误；B在段落10用词过重，各有失误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，符合轻小说风格"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话语气更活泼，更符合角色特点"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "B将人名フェスタ误译为'庆典'是严重错误；两者都有人名不一致问题"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 6,
+        "notes": "A有引号格式切换问题；B多处丢失引号"
+      }
+    },
+    "key_differences": [
+      "B流畅度和口语化程度更高",
+      "A人名处理相对更一致",
+      "B将人名'フェスタ'误译为'庆典'是严重失误",
+      "A在段落68理解错误",
+      "两者都存在格式问题"
+    ],
+    "final_summary": "B在整体流畅度和轻小说风格把握上略胜一筹，对话更自然生动。但B在术语一致性上有严重问题（人名误译）。A虽然较为稳健但有个别理解错误且文风稍显生硬。综合权衡，B在核心阅读体验上略优，但优势不大。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

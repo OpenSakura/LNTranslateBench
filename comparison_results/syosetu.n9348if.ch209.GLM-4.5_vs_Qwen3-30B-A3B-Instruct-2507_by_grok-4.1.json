@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:48:04.957436",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "008eb4a16cd270de3ec8d4381e4589644b14f0fa6b80a768500ce7049b4e5fea",
+    "B": "8fdc3be6a0a2dfafd36a536fed22c80bd6d1eb5c7776cbe84f98c162afd932dc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:48:23.219669",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DGVOCIUROQCqz9jZ1at1386ryy0",
+      "judge_response": {
+        "id": "chatcmpl-89DGVOCIUROQCqz9jZ1at1386ryy0",
+        "object": "chat.completion",
+        "created": 1768427302,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 日文 幼女ちゃん パピィ〜 マミィ〜 三つ編みちゃん 収穫物 領域畑 天然コア\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"\"パピィ〜\" \"マミィ〜\" \"三つ編みちゃん\" 小说 OR 轻小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"幼女ちゃん 領域畑 収穫物 指輪 轻小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **3 results found**\n\n> [🔗 \"こんな彼女と付き合えるのすごすぎ笑笑 - TikTok\" www.tiktok.com](https://www.tiktok.com/@mnm_krt_27/video/7256541324042685697)\n> [🔗 \"ひなぽんの食べるところが大好き！ - TikTok\" www.tiktok.com](https://www.tiktok.com/@ay_lxy/video/7471910213864410375)\n> [🔗 \"旦那への妊娠報告をサプライズで伝えるおすすめアイデアと注意点 - Lemon8-app\" www.lemon8-app.com](https://www.lemon8-app.com/discover/%E5%A6%8A%E5%A8%A0%E5%A0%B1%E5%91%8A%20%E6%97%A6%E9%82%A3%20%E3%82%B5%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA?region=jp)\n\n> 🔍 **5 results found**\n\n> [🔗 \"ALL_NEW - 言語メディア研究室 - 京都大学\" nlp.ist.i.kyoto-u.ac.jp](https://nlp.ist.i.kyoto-u.ac.jp/edit.php?file=JEC_basic_sentence_v1.xls&pcmd=open&plugin=attach&refer=%E6%97%A5%E8%8B%B1%E4%B8%AD%E5%9F%BA%E6%9C%AC%E6%96%87%E3%83%87%E3%83%BC%E3%82%BF)\n> [🔗 \"https://huggingface.co/spaces/Rayzggz/hanser-Bert-...\" huggingface.co](https://huggingface.co/spaces/Rayzggz/hanser-Bert-VITS2/commit/e526878cb458dae60d39432f16556cce18bc6af3.diff)\n> [🔗 \"萌交換処 | BBコーン！\" bell-sai-you.sakura.ne.jp](http://bell-sai-you.sakura.ne.jp/blog/log/eid196.html)\n> [🔗 \"Everything's Ruined: 海外フェス - トップページ\" fantomas.kill.jp](http://fantomas.kill.jp/blog/archives/2005/04/post_151.html)\n> [🔗 \"(新)とちぎ県の明日を考えるスレッド - とちぎの街掲示板 \"とちばん\" - したらば掲示板\" jbbs.shitaraba.net](https://jbbs.shitaraba.net/bbs/read.cgi/travel/1614/1439899916)\n\n\n作为一位公正的轻小说翻译质量评判员，我对提供的A和B两个中文翻译版本进行了全面对比。原文是一段带有日常家庭温馨、搞笑吐槽、轻微黑暗/犯罪元素（偷窃结婚戒指的“收获物”计划）的轻小说叙述与对话，角色使用大量可爱叠词（〜）和口语化表达，整体语气轻松、吐槽向、带有幼女/伪幼女视角的黑色幽默。\n\n### 总体观察\n- **A版**：更倾向于直译+适当口语化，句子结构有时稍显生硬，但对原文语气和可爱感保留较完整；部分地方用词更贴近网络轻小说社区常见表达（如“酱”“咿〜”）。\n- **B版**：更注重中文流畅度和自然对话感，句子更通顺、优雅，但偶尔会稍稍改写原文结构或省略部分语气词，导致可爱/黏糊感减弱；某些地方显得更“正经”或书面化。\n\n下面按6个维度逐一分析：\n\n1. **准确性（意思保留）**  \n   A在多数地方更忠实于原文词序和细微语气（如保留更多“〜”、重复表达），对“収穫物”“領域畑”“天然コア”等设定词几乎直译，丢失较少。  \n   B偶尔会改写导致轻微偏差，例如段落14把“ブッキングしちゃった”理解为“预约了”（其实更接近“行程冲突/订好了别的”），段落46“夫の送った指輪”译成“老公送的”而非更贴“寄来的/给的”，微小但存在。  \n   → A略胜。\n\n2. **流畅性（中文自然表达）**  \n   B整体句子更通顺、符合现代中文阅读习惯，读起来更舒服，几乎没有别扭之处。  \n   A有些句子结构保留日式过重（如“晚饭时，帕比～刚一开口，说想到了好主意，玛米～就……”），稍显冗长或日式中文化。  \n   → B明显胜出。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   轻小说核心是“可爱+吐槽+黏糊+黑色幽默”。A保留了更多叠词、拖长音、酱系称呼的黏糊感（如“帕比～”“玛米咿〜”“嘻嘻嘻嘻～”），对话更活泼俏皮。  \n   B在可爱感上打折扣（如把“ふふふ〜”译成“呵呵呵〜”而非更夸张的笑声；很多“〜”弱化；叙述更平稳，少了点轻小说特有的“卖萌过载”感）。  \n   → A更符合轻小说风格，胜出。\n\n4. **术语/名称一致性**  \n   两个版本都基本保持了“帕比〜/帕皮〜”“玛米〜/马咪〜”“三股辫酱”“幼女酱”“蒂米特酱”等一致性，差异不大。  \n   A在“帕比咿〜”“玛米咿〜”等处更统一使用拖长音，B有时切换（如“帕皮〜”“马咪〜”）。微弱差异。  \n   → 几乎平手，A稍好。\n\n5. **连贯性/可读性**  \n   B因为句子更流畅，整体阅读体验更好，长段落不卡顿。  \n   A虽然忠实，但部分地方因为保留日式表达导致连贯性稍弱（如段落4、10、20等叙述句）。  \n   → B胜出。\n\n6. **格式/标点符号**  \n   A更积极使用波浪号“〜”、感叹号、叠词重复来还原原文语气。  \n   B标点使用更标准，但有时弱化了原文的拖长可爱感（如把多重“〜”简化为一个）。  \n   → A胜出。\n\n### 最终判决JSON\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体更忠实，B有少量细微意译偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B中文更自然通顺，A偶有日式痕迹\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更好地保留了轻小说特有的黏糊、可爱、吐槽语气，B稍显平稳\"},\n    \"terminology\": {\"A\": 9, \"B\": 8.5, \"notes\": \"两者术语一致性均良好，A在叠词拖长音上更统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B阅读连贯性更强，A部分叙述稍显冗长\"},\n    \"formatting\": {\"A\": 9, \"B\": 8, \"notes\": \"A更积极使用波浪号等还原原文语气与可爱感\"}\n  },\n  \"key_differences\": [\n    \"A更强调可爱叠词与拖长音（如嘻嘻嘻嘻～、帕比咿〜），B偏向自然中文表达但牺牲部分萌感\",\n    \"A在叙述句上更直译，B更意译导致部分地方语气变柔和\",\n    \"B整体可读性更高，但风格上不如A贴合轻小说“卖萌+吐槽”的核心气质\"\n  ],\n  \"final_summary\": \"虽然B的中文流畅度和阅读舒适度更胜一筹，但考虑到轻小说的核心魅力在于夸张的可爱语气、黏糊对话与独特吐槽感，A在风格还原度、语气传达和轻小说氛围上明显更优秀，因此整体判定A胜出（优势主要在风格与语气，足以盖过B在流畅性上的优势）。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11624,
+          "completion_tokens": 2851,
+          "total_tokens": 14475
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体更忠实，B有少量细微意译偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B中文更自然通顺，A偶有日式痕迹"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地保留了轻小说特有的黏糊、可爱、吐槽语气，B稍显平稳"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "两者术语一致性均良好，A在叠词拖长音上更统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B阅读连贯性更强，A部分叙述稍显冗长"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更积极使用波浪号等还原原文语气与可爱感"
+      }
+    },
+    "key_differences": [
+      "A更强调可爱叠词与拖长音（如嘻嘻嘻嘻～、帕比咿〜），B偏向自然中文表达但牺牲部分萌感",
+      "A在叙述句上更直译，B更意译导致部分地方语气变柔和",
+      "B整体可读性更高，但风格上不如A贴合轻小说“卖萌+吐槽”的核心气质"
+    ],
+    "final_summary": "虽然B的中文流畅度和阅读舒适度更胜一筹，但考虑到轻小说的核心魅力在于夸张的可爱语气、黏糊对话与独特吐槽感，A在风格还原度、语气传达和轻小说氛围上明显更优秀，因此整体判定A胜出（优势主要在风格与语气，足以盖过B在流畅性上的优势）。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

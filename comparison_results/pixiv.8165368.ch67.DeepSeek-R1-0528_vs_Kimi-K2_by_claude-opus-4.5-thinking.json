@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:00:27.452192",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "b356f6dac170b10ceb3564b1ef18b58f6abaecfc8f108f5b27eabf85cebc8a77",
+    "B": "b8104f3080e1d4d08f104dcbba269d35c5fb34f02f8b1e58abc1ab5fd2d710c0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:01:39.264179",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2c654728-868f-43ca-83a0-9769325c1bb2",
+      "judge_response": {
+        "id": "2c654728-868f-43ca-83a0-9769325c1bb2",
+        "object": "chat.completion",
+        "created": 1768431699,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落3**: A\"对象\"正确理解了「お相手」（CP对象），B\"对手\"有误解\n- **段落13**: A\"呻吟\"误译「唸った」，应为低吟/嘟囔；B\"哼哼\"较接近\n- **段落16**: B将22時误译为\"晚上十点\"（应为22:00）\n- **段落26**: A\"目瞪口呆\"误译「呆れた」，B\"一脸无语\"准确\n- **段落81、84、87、89、90、98、99等**: B多处完全缺失翻译，严重扣分\n\n### 2. 流畅性\n- B整体更口语化，如段落28\"一声脆响，听着就疼\"比A生动\n- B段落9\"看完或跳过诸项注意后再来抱怨，一律不受理\"更自然\n- A部分表达较生硬，如段落4\"方便主义的改编\"\n\n### 3. 风格/语气\n- B更符合轻小说的活泼语气：段落14\"原作早就完结了好吧——\"\n- B的语气词处理更佳：「うーむ」→\"嗯——\"，「どーぞー」→\"请进——\"\n- 段落77: B\"金口玉言\"比A\"宝贵的一句话\"更有趣味\n\n### 4. 术语一致性\n- A保持「物語」为\"物语\"，B改为\"故事\"——各有道理\n- 人名敬称：A/B都保持了一致性\n\n### 5. 连贯性/可读性\n- B在对话格式处理上更一致（引号使用）\n- **但B有大量翻译缺失**，严重影响完整性\n\n### 6. 格式/标点符号\n- B的对话标点更规范\n- A部分引号不一致（混用「」和\"\"）\n\n## 关键问题\n\n**翻译B存在多处完全缺失的翻译**（段落81、84、87、89、90、98、99），这是致命缺陷。尽管B在流畅性和语气把握上整体更佳，但缺失翻译使其无法作为完整译本使用。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A有个别误译如'呻吟'，B有'对手'误译及22時错误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语自然，但因缺失扣分\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B语气词和轻小说风格把握更佳\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者术语处理相当\"},\n    \"coherence\": {\"A\": 8, \"B\": 4, \"notes\": \"B有大量段落缺失，严重影响连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"B引号使用更规范，但缺失抵消优势\"}\n  },\n  \"key_differences\": [\n    \"B有多处翻译完全缺失（段落81、84、87、89、90、98、99等）\",\n    \"B整体更口语化生动，A较为直译\",\n    \"B语气词处理更符合轻小说风格\",\n    \"A个别词汇误译（如'呻吟'），B有时间转换错误\"\n  ],\n  \"final_summary\": \"虽然B在流畅性和轻小说风格把握上明显优于A，但B存在多处关键段落完全缺失的致命问题，导致译文不完整。A虽然部分表达生硬、有个别误译，但至少保证了译文的完整性，因此综合判定A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13970,
+          "completion_tokens": 3115,
+          "total_tokens": 17085
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有个别误译如'呻吟'，B有'对手'误译及22時错误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语自然，但因缺失扣分"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B语气词和轻小说风格把握更佳"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者术语处理相当"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 4,
+        "notes": "B有大量段落缺失，严重影响连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "B引号使用更规范，但缺失抵消优势"
+      }
+    },
+    "key_differences": [
+      "B有多处翻译完全缺失（段落81、84、87、89、90、98、99等）",
+      "B整体更口语化生动，A较为直译",
+      "B语气词处理更符合轻小说风格",
+      "A个别词汇误译（如'呻吟'），B有时间转换错误"
+    ],
+    "final_summary": "虽然B在流畅性和轻小说风格把握上明显优于A，但B存在多处关键段落完全缺失的致命问题，导致译文不完整。A虽然部分表达生硬、有个别误译，但至少保证了译文的完整性，因此综合判定A胜出。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:43.999426",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "e01125b09376b7054ec0a141bd026d7ddabc4b9c764e9b843f79d5be3b6355e5",
+    "B": "896ad02b1f0979ad13d5e65d8d2aff3759095f26aa9e16a8f7338f88a42559c1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:42:03.534270",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89Dd5wTJprhAj2RhwTzwIz43AdQtm",
+      "judge_response": {
+        "id": "chatcmpl-89Dd5wTJprhAj2RhwTzwIz43AdQtm",
+        "object": "chat.completion",
+        "created": 1768426923,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 常见中文翻译术语 1LDK 是什么\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"Rampaging Darkness 轻小说 日文 狂暴黑暗 OR ランペイジングダークネス 中文翻译\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"轻小说 船旅 中文翻译 自然表达\"\n> 📊 **Results requested:** 5\n\n> 🔍 **5 results found**\n\n> [🔗 \"1R丶1K丶1DK丶1LDK有什么不同? 应该选择哪一种公寓？ - 博客\" resources.realestate.co.jp](https://resources.realestate.co.jp/zh_CN/2019/09/19/1r-1k-1dk-1ldk%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C-%E5%BA%94%E8%AF%A5%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%80%E7%A7%8D%E5%85%AC%E5%AF%93)\n> [🔗 \"1R、1K、1DK、1LDK有什麼不同? 應該選擇哪一種公寓？ - 部落格\" resources.realestate.co.jp](https://resources.realestate.co.jp/zh_TW/2019/09/19/1r-1k-1dk-1ldk%E6%9C%89%E4%BB%80%E9%BA%BC%E4%B8%8D%E5%90%8C-%E6%87%89%E8%A9%B2%E9%81%B8%E6%93%87%E5%93%AA%E4%B8%80%E7%A8%AE%E5%85%AC%E5%AF%93)\n> [🔗 \"神楽めあ的歷程 - 萌娘百科\" moegirl.uk](https://moegirl.uk/index.php?title=%E7%A5%9E%E4%B9%90Mea%2F%E5%8E%86%E7%A8%8B&variant=zh-hant)\n> [🔗 \"神楽めあ的历程 - 萌娘百科\" zh.moegirl.org.cn](https://zh.moegirl.org.cn/%E7%A5%9E%E4%B9%90Mea/%E5%8E%86%E7%A8%8B)\n> [🔗 \"關於ray white苦主，我們在網路上蒐集到這些相關的討論、資訊與評價\" hola.mediatagtw.com](https://hola.mediatagtw.com/article/ray+white%E8%8B%A6%E4%B8%BB)\n\n> 🔍 **5 results found**\n\n> [🔗 \"五月九號，是失落襪子紀念日。 坦白說 - Instagram\" www.instagram.com](https://www.instagram.com/p/CdVHECfJ49k)\n> [🔗 \"秦佐(@qin.zuo.2025)\" www.facebook.com](https://www.facebook.com/qin.zuo.2025)\n> [🔗 \"目錄 - 宜蘭縣政府\" www-ws.e-land.gov.tw](https://www-ws.e-land.gov.tw/001/2015yilan/177/ckfile/681e4c66-822d-48ba-95aa-2efd78b48a66.pdf)\n> [🔗 \"故都的邊緣人- 鍾理和文學中的1940年代北京日常\" db.nmtl.gov.tw](https://db.nmtl.gov.tw/site6/download?atype=1&id=146&type=F)\n> [🔗 \"日本奇妙知識不思議| PDF - Scribd\" www.scribd.com](https://www.scribd.com/document/881385033/%E6%97%A5%E6%9C%AC%E5%A5%87%E5%A6%99%E7%9F%A5%E8%AD%98%E4%B8%8D%E6%80%9D%E8%AD%B0)\n\n\n以下是对A和B两个翻译版本的详细比较分析。作为轻小说翻译评判，我重点关注中文（zh）作为目标语言的自然度、轻小说常见的轻松幽默/吐槽式叙述风格、对话的口语感，以及专有名词/术语的一致性与可读性。\n\n### 整体观察\n- **A**：整体更简洁直接，句子较短，叙述节奏快，带有较强的口语化和吐槽感（符合许多轻小说主角第一人称的“俺”视角自嘲风格）。在一些地方翻译更贴近日常中文表达，但偶尔出现小瑕疵（如人名音译不统一、个别句子稍显生硬）。\n- **B**：句子稍长，更注重描述的细腻和流畅，部分地方添加了更自然的连接词或修饰，读起来有时更优雅/文学化。但在某些口语对话和吐槽部分，显得略正式或不够“轻”，个别地方有轻微的赘述或不自然的表达。\n\n### 分段具体对比要点\n- 段落1：A“超级闲”更简洁贴合“超絶暇”的夸张感；B“超级闲的慌”稍多加了北方口语感，但“的慌”在轻小说语境中不算最常见，略显多余。\n- 段落2-4：B在对话中保留了原文的「」，更忠实格式；A省略了部分引号，但整体意思一致。B在段落3把“アレク”译为“亚历克斯”（更标准音译），A用“亚雷”较随意。\n- 人名/术语一致性：A和B在人名上都有小差异（如亚历克斯/亚雷、亚历克西斯/亚历克西斯、贝伦特/贝伦特、迪特里希/迪特里希等），但B整体更统一（亚历克斯、黛安娜、埃德尔加尔特等更接近常见译名）。1LDK：A多用“1LDK”或“一居室公寓”，B用“一室一厅”更接地气且常见于中文轻小说/日常语境（日本公寓术语在中文常译“一室一厅”）。\n- 段落5-6：B对房屋描述更细腻流畅（如“阶梯式住宅”“带有中庭的”），A的“联排别墅”“带庭院的联排别墅”稍显直译，但可读。\n- 段落7：高达模型（ガンプラ）部分，A“B”都处理不错，但B的“SOIL”保留原文大写更专业，A译“土壤魔法”更解释性。造型比喻“早すぎた巨神兵”A用“早了的巨神兵”，B“过于早产巨神兵”更生动贴合“早产”含义。\n- 段落8-12：女生对话部分，A更口语（如“吵吵闹闹”“JK那种感觉”），B用“姐妹茶话会”“女高中生一样起劲”稍文雅，但“ガールズトーク”译“姐妹茶话会”不算最自然（常见译“女生闲聊”“闺蜜聊天”）。\n- 段落13：A“跑腿的”，B“被使唤得团团转”——B更生动传神。\n- 段落15-19：贵族对话，B在语气上更贴近贵妇风格（如“呵呵呵、我还是更喜欢这边这件呢”），A稍平。\n- 段落21-22：房屋又称“テラスハウス”，A“联排别墅”，B“露台住宅”——B更接近“terrace house”原意。\n- 段落22：技能名“ランペイジングダークネス”，A直接“狂暴黑暗”，B“狂暴暗噬（Rampaging Darkness）”——B加了括号原文+更诗意译名，更专业。\n- 段落24-26：技能说明部分，B整体更连贯、句子更完整（如“浑浊的影子”对应“ドヨーンとした影”较贴切），A稍简但偶有不通顺（如“狂发黑暗暴走”）。\n- 段落27-31：船长对话和结尾，A更口语接地气，B稍正式但叙述更顺。\n\n### 综合评估\nA在轻小说核心的“轻松、吐槽、自嘲”风格上稍胜一筹，句子短促有力，读起来更有“主角内心OS”的感觉。B在流畅性、句子连贯性、部分术语专业度（如技能名带原文、房屋描述细腻）上更强，但偶尔丢失了一些轻快的口语节奏。\n\n准确性两者都很高，偶有细微偏差（如人名、细节点）。风格上A更贴轻小说，B更贴一般小说。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者意思保留均优秀，个别细微用词差异（如人名音译、1LDK表达）但无实质偏差\"},\n    \"fluency\": {\"A\": 8, \"B\": 9, \"notes\": \"B句子更连贯优雅，A更口语但偶有小磕绊\"},\n    \"style\": {\"A\": 9, \"B\": 8, \"notes\": \"A更符合轻小说第一人称吐槽、轻松幽默的语气；B稍偏正式叙述\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"B在技能名、房屋术语更统一专业（如Rampaging Darkness加原文、一室一厅更自然）；A人名偶不统一\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B整体段落衔接更顺，A节奏快但个别句子跳跃\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B更常保留原文「」引号，标点更规范；A部分省略但不影响\"}\n  },\n  \"key_differences\": [\n    \"A更短促口语化，贴近轻小说主角吐槽风格\",\n    \"B更流畅细腻，术语处理更专业统一（如技能名带原文、一室一厅）\",\n    \"人名音译B整体更标准一致\",\n    \"房屋/技能描述B更生动贴切，A更简洁直接\"\n  ],\n  \"final_summary\": \"整体而言，A在轻小说特有的轻松、自嘲、节奏感上更胜一筹，更适合该类型读者的阅读体验；B虽在流畅与专业度上略优，但风格稍偏沉稳。综合轻小说语境，A为优胜者。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10075,
+          "completion_tokens": 3386,
+          "total_tokens": 13461
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者意思保留均优秀，个别细微用词差异（如人名音译、1LDK表达）但无实质偏差"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B句子更连贯优雅，A更口语但偶有小磕绊"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更符合轻小说第一人称吐槽、轻松幽默的语气；B稍偏正式叙述"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在技能名、房屋术语更统一专业（如Rampaging Darkness加原文、一室一厅更自然）；A人名偶不统一"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B整体段落衔接更顺，A节奏快但个别句子跳跃"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B更常保留原文「」引号，标点更规范；A部分省略但不影响"
+      }
+    },
+    "key_differences": [
+      "A更短促口语化，贴近轻小说主角吐槽风格",
+      "B更流畅细腻，术语处理更专业统一（如技能名带原文、一室一厅）",
+      "人名音译B整体更标准一致",
+      "房屋/技能描述B更生动贴切，A更简洁直接"
+    ],
+    "final_summary": "整体而言，A在轻小说特有的轻松、自嘲、节奏感上更胜一筹，更适合该类型读者的阅读体验；B虽在流畅与专业度上略优，但风格稍偏沉稳。综合轻小说语境，A为优胜者。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

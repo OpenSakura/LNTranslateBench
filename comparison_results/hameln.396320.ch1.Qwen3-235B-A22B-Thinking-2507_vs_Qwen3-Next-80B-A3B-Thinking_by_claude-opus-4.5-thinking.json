@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:20:16.792610",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "1d39e6a7e911f3fc10ce107c69a82763ee8629bcf325a37e0cbcefee07e3e45a",
+    "B": "0a95b6eaf8b3b409a7abce1e2ba329037d970f35a9b5cd96c25eef93b29b64c7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:21:13.951291",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "75e43022-ee6a-4984-a6cc-21d55cc2762a",
+      "judge_response": {
+        "id": "75e43022-ee6a-4984-a6cc-21d55cc2762a",
+        "object": "chat.completion",
+        "created": 1768422073,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n- **段落5**: A\"全球各大城市突然冒出来这些建筑\"准确；B\"这座建筑突然出现在世界各地\"用单数不准确\n- **段落12**: A\"新能量\"应为\"新能源\"；B\"新能源\"正确\n- **段落81**: A\"空虚\"准确对应\"虚しさ\"；B\"难受\"略偏离原意（虚无感vs不舒服）\n\n### 术语一致性分析\n- A: 使用\"地下城\"和\"迷宫\"两个词交替（段落22用迷宫、31用迷宫）\n- B: 使用\"地下城\"、\"迷宫\"、**\"地牢\"**三个词（段落13、14、18用\"地牢\"）\n- \"地牢\"(dungeon作为监狱)与\"地下城\"(dungeon作为冒险场所)含义有偏差，B的术语混乱更严重\n\n### 流畅性与风格分析\n- B整体口语化更强：\"大伙儿\"、\"啥都\"、\"甭提了\"、\"没日没夜\"\n- **段落71**: A\"是？\"不如B\"啊？\"更能表达惊讶\n- **段落43**: B\"好哥们\"比A\"朋友\"更贴近原文的亲密感\n- **段落16**: B\"牛人先驱\"过于现代网络用语，A\"伟大的先驱者\"更符合原文敬意\n\n### 格式问题\n- A段落3缺少右引号；段落40用英文引号不统一\n- B段落76、80使用英文引号不一致\n- B段落3也缺少右引号\n\n### 关键差异\n- B风格更接地气但术语混乱（三种说法）\n- A更正式但偶有生硬处\n- A在关键概念（地下城/ダンジョン）上相对更一致\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体更精确；B段落5单复数错误、段落81'虚しさ'译为'难受'不够准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，符合轻小说对话风格；A部分地方略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"B整体更活泼但'牛人'等网络用语稍显违和；A较正式但稳定\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"A用两种术语(地下城/迷宫)；B用三种(地下城/迷宫/地牢)，地牢语义偏差明显\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都保持了叙事连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"双方都有引号问题；B多处引号风格不一致\"}\n  },\n  \"key_differences\": [\n    \"术语一致性：A用2种说法，B用3种且'地牢'语义偏差\",\n    \"语言风格：B更口语化但偶有网络用语突兀感\",\n    \"准确度：A在'虚しさ→空虚'等细节更精确\",\n    \"段落5：B单复数处理有误\"\n  ],\n  \"final_summary\": \"两个译本各有优劣。B在流畅性和轻小说对话感上略胜一筹，但在术语一致性上存在严重问题（将ダンジョン分别译为地下城、迷宫、地牢三种），且部分细节准确度不如A。A虽然风格略正式，但术语相对统一、关键概念翻译更准确。综合考虑轻小说翻译需要兼顾可读性和一致性，A的术语稳定性和准确度优势略微胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11367,
+          "completion_tokens": 2554,
+          "total_tokens": 13921
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体更精确；B段落5单复数错误、段落81'虚しさ'译为'难受'不够准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，符合轻小说对话风格；A部分地方略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "B整体更活泼但'牛人'等网络用语稍显违和；A较正式但稳定"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "A用两种术语(地下城/迷宫)；B用三种(地下城/迷宫/地牢)，地牢语义偏差明显"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都保持了叙事连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "双方都有引号问题；B多处引号风格不一致"
+      }
+    },
+    "key_differences": [
+      "术语一致性：A用2种说法，B用3种且'地牢'语义偏差",
+      "语言风格：B更口语化但偶有网络用语突兀感",
+      "准确度：A在'虚しさ→空虚'等细节更精确",
+      "段落5：B单复数处理有误"
+    ],
+    "final_summary": "两个译本各有优劣。B在流畅性和轻小说对话感上略胜一筹，但在术语一致性上存在严重问题（将ダンジョン分别译为地下城、迷宫、地牢三种），且部分细节准确度不如A。A虽然风格略正式，但术语相对统一、关键概念翻译更准确。综合考虑轻小说翻译需要兼顾可读性和一致性，A的术语稳定性和准确度优势略微胜出。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

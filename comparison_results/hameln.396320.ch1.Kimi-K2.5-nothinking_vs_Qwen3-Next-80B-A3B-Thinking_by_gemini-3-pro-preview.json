@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:34:31.108725",
+  "sample": "hameln.396320.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.396320.ch1.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.396320.ch1.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/hameln.396320.ch1.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "61278239b20eda190a383973459157d4b8334eba49aadc6ff8ef52ee2a09257d",
+    "A": "1d39e6a7e911f3fc10ce107c69a82763ee8629bcf325a37e0cbcefee07e3e45a",
+    "B": "3d69cc2f56e106d449de434e08cb7ba5f865454131003e60616472804d696276"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:35:25.531146",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128223431321619423u0uFpgX5",
+      "judge_response": {
+        "id": "chatcmpl-20260128223431321619423u0uFpgX5",
+        "object": "chat.completion",
+        "created": 1769610925,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对提供的两个翻译版本的详细分析，以下是最终评判结果：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译 A**：整体准确度较高，能够准确传达原文的含义。虽然在某些词汇的选择上比较口语化（例如将“しがない”译为“没用的”，实际上更偏向“不起眼的”或“卑微的”），但没有明显的误译。\n*   **翻译 B**：大部分准确，但在**第78段**出现了明显的**信息抢跑（Hallucination/Bleed）**。原文第78段并未提及“两个月”，该信息出现在第79段，但B在第78段就翻译出了“花了两个月”，导致第79段信息重复。此外，第21段“是非合法的”语序略显生硬（应为“是非法的”或“是非合法交易”）。\n\n**2. 流畅性 (Fluency)**\n*   **翻译 A**：**表现优异**。中文表达非常自然，符合中文读者的阅读习惯。句式灵活，没有明显的翻译腔。\n*   **翻译 B**：略显生硬，带有一定的“翻译腔”。例如第64段“编织出我所期望的话语”（原文：言葉を紡いでいきます），虽然直译了隐喻，但在中文语境下形容下属汇报工作显得过于文艺且不自然；第6段“读作...并加以利用”也略显刻板。\n\n**3. 风格/语气 (Style/Tone)**\n*   **翻译 A**：很好地把握了轻小说第一人称男主角的语气——带有一点玩世不恭、无奈和吐槽的口吻（例如“那事儿先放一边”、“快疯了”）。对话部分也很自然。\n*   **翻译 B**：语气偏向书面语，有时显得过于严肃，不够贴合轻小说通常的轻松或口语化叙述风格。例如第57段对话中直呼“梓”而省去了“san”（小姐/桑），虽然不是错误，但A保留“梓小姐”更符合原文体现的距离感和职场关系。\n\n**4. 格式/标点符号 (Formatting)**\n*   **翻译 A**：格式整洁，标点使用规范。\n*   **翻译 B**：存在明显的标点错误。**第13段**中出现了 `「迷宫『` 这种括号不匹配的情况。\n\n**5. 术语/名称一致性 (Terminology)**\n*   **翻译 A**：将“Dungeon”译为“地下城”，符合主流译法。\n*   **翻译 B**：将“Dungeon”译为“迷宫”，也是常见译法，但在第6段和第13段之间切换了称呼（第6段用了“地下城”的注音，后面主要用迷宫），且伴随标点错误。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"B在第78段出现了原文该段不存在的信息（提前翻译了第79段的'两个月'），属于过度增译。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A读起来非常顺畅，像原生中文小说；B存在明显的翻译腔（如'编织话语'、'是非合法的'）。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A完美捕捉了轻小说男主的吐槽役风格；B略显沉闷和书面化。\"\n    },\n    \"terminology\": {\n      \"A\": 10,\n      \"B\": 9,\n      \"notes\": \"两者术语均可接受，但A更统一。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"A的逻辑连接更自然。\"\n    },\n    \"formatting\": {\n      \"A\": 10,\n      \"B\": 8,\n      \"notes\": \"B在第13段有明显的标点符号错误（「迷宫『）。\"\n    }\n  },\n  \"key_differences\": [\n    \"语感差异：A更口语化、接地气（如'没用的'、'那事儿'），非常适合轻小说体裁；B偏向直译，有时显得生硬。\",\n    \"错误：B在第13段有标点错误，在第78段有信息抢跑（提前翻译下文内容）。\",\n    \"词汇选择：A用'地下城'，B用'迷宫'；A保留了'梓小姐'的称呼，B在对话中删去了敬称。\"\n  ],\n  \"final_summary\": \"翻译A是明显的胜者。它不仅准确传达了原文意思，更重要的是它精准地捕捉了轻小说的叙述风格，读起来轻松自然，人物性格鲜明。翻译B虽然在某些词汇（如'shiganai'译为'不起眼'）上可能比A（译为'没用'）更精准一点，但整体流畅度欠佳，存在明显的标点错误和信息处理失误（第78段），且文风略显生硬，不如A那样引人入胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7743,
+          "completion_tokens": 4549,
+          "total_tokens": 12292
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "B在第78段出现了原文该段不存在的信息（提前翻译了第79段的'两个月'），属于过度增译。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A读起来非常顺畅，像原生中文小说；B存在明显的翻译腔（如'编织话语'、'是非合法的'）。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A完美捕捉了轻小说男主的吐槽役风格；B略显沉闷和书面化。"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 9,
+        "notes": "两者术语均可接受，但A更统一。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的逻辑连接更自然。"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 8,
+        "notes": "B在第13段有明显的标点符号错误（「迷宫『）。"
+      }
+    },
+    "key_differences": [
+      "语感差异：A更口语化、接地气（如'没用的'、'那事儿'），非常适合轻小说体裁；B偏向直译，有时显得生硬。",
+      "错误：B在第13段有标点错误，在第78段有信息抢跑（提前翻译下文内容）。",
+      "词汇选择：A用'地下城'，B用'迷宫'；A保留了'梓小姐'的称呼，B在对话中删去了敬称。"
+    ],
+    "final_summary": "翻译A是明显的胜者。它不仅准确传达了原文意思，更重要的是它精准地捕捉了轻小说的叙述风格，读起来轻松自然，人物性格鲜明。翻译B虽然在某些词汇（如'shiganai'译为'不起眼'）上可能比A（译为'没用'）更精准一点，但整体流畅度欠佳，存在明显的标点错误和信息处理失误（第78段），且文风略显生硬，不如A那样引人入胜。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

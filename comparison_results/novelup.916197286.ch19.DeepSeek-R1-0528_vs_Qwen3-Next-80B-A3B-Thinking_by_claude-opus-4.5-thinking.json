@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:41:14.005853",
+  "sample": "novelup.916197286.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.916197286.ch19.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.916197286.ch19.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/novelup.916197286.ch19.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "555d1a41f6993dc9f3cb5fc90218bd40f549c3b95e2e9706edd270d42780783c",
+    "A": "842349f29f56abde5a87a3f20a72c47c3de26e148b1a9012e027c96f97e995e7",
+    "B": "1cf99f5b768a028a6ef62994a3f2366f61b16003038bd8c2df5a2eb332407ce3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:42:01.135136",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4761dfa9-576d-4c05-9bef-6dda7f6720bc",
+      "judge_response": {
+        "id": "4761dfa9-576d-4c05-9bef-6dda7f6720bc",
+        "object": "chat.completion",
+        "created": 1768423320,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n\n**翻译A的问题：**\n- 段落52：严重错误——\"公会的魔法\"应为\"克兰的魔法\"（クランの魔法）\n- 段落25：「そうだな」翻译成\"嗯\"丢失了同意的语气，应为\"是啊\"\n- 段落7：\"虽然有点开心\"丢失了原文\"但是\"的转折\n\n**翻译B的问题：**\n- 段落75：「ライザーグラギウス」未翻译，保留日文\n- 段落49：翻译略显生硬\n\n### 2. 流畅性分析\n\n- A整体更口语化、自然，对话感强\n- B更接近直译，部分地方略显生硬\n- 例如段落108：A\"有点能耐嘛\"vs B\"你挺有料的嘛\"——两者都可接受\n\n### 3. 格式/标点符号（关键差异）\n\n**翻译A严重问题：**\n- 大量对话丢失引号：段落25、27、28、29、30、32、33、34、38、40、42、69、70、71、72、73、74、77等\n- 叙述文本错加引号：段落117、121、124、127\n\n**翻译B：** 格式一致，引号使用正确\n\n### 4. 术语/名称一致性\n\n- **A**：名称统一（克兰、艾西亚、莉莉卡）\n- **B**：名称不一致（克兰/克朗/库兰、艾西亚/艾希娅）\n\n### 5. 风格表现\n\n- A更符合轻小说活泼风格\n- B较为正式，但也合理\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落52有严重翻译错误（公会→克兰）；B段落75未翻译专有名词\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语自然，B略显直译生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说对话风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A名称统一；B人名不一致（克兰/克朗/库兰）\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体连贯性更好\"},\n    \"formatting\": {\"A\": 4, \"B\": 9, \"notes\": \"A大量对话丢失引号，叙述错加引号；B格式规范一致\"}\n  },\n  \"key_differences\": [\n    \"A段落52重大翻译错误：'公会的魔法'应为'克兰的魔法'\",\n    \"A大量丢失对话引号（约20+处），严重影响可读性\",\n    \"B人名翻译不一致（克兰/克朗/库兰）\",\n    \"B段落75未翻译精灵名称\",\n    \"A整体更口语化，B更直译\"\n  ],\n  \"final_summary\": \"尽管A在流畅性和风格上表现更佳，但其格式问题极其严重（大量丢失引号）且存在关键翻译错误（段落52）。B虽有名称不一致问题，但格式规范、准确性更高。综合考虑，B的整体质量更可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11853,
+          "completion_tokens": 2074,
+          "total_tokens": 13927
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落52有严重翻译错误（公会→克兰）；B段落75未翻译专有名词"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语自然，B略显直译生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说对话风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A名称统一；B人名不一致（克兰/克朗/库兰）"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体连贯性更好"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 9,
+        "notes": "A大量对话丢失引号，叙述错加引号；B格式规范一致"
+      }
+    },
+    "key_differences": [
+      "A段落52重大翻译错误：'公会的魔法'应为'克兰的魔法'",
+      "A大量丢失对话引号（约20+处），严重影响可读性",
+      "B人名翻译不一致（克兰/克朗/库兰）",
+      "B段落75未翻译精灵名称",
+      "A整体更口语化，B更直译"
+    ],
+    "final_summary": "尽管A在流畅性和风格上表现更佳，但其格式问题极其严重（大量丢失引号）且存在关键翻译错误（段落52）。B虽有名称不一致问题，但格式规范、准确性更高。综合考虑，B的整体质量更可靠。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

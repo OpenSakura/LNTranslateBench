@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:29:30.893490",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "6a1c4994f62487e16b6148583d164fcb98bca6a8ebe4f80299f0dea432c46163",
+    "B": "3f7325072ffadb65edc0814e7c248cb384ec61667b0a276f4ca44dbd031f2fce"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:30:32.867068",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b9bb95cb-84c8-442c-9db2-4bb11f16646e",
+      "judge_response": {
+        "id": "b9bb95cb-84c8-442c-9db2-4bb11f16646e",
+        "object": "chat.completion",
+        "created": 1768422632,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段对比分析\n\n**段落1-4：开篇部分**\n- A的\"闲到发慌\"比B的\"超级无聊\"更生动\n- 但B的格式使用日式括号「」更符合轻小说风格\n- A在段落4\"都这时候了\"处理得比B\"现在说这个太迟了\"更口语化\n\n**段落5-6：场景描写**\n- A将\"例の\"译为\"老掉牙的\"属于过度添加\n- テラスハウス：A译\"露台屋\"，B译\"联排别墅\"——B更准确\n- A\"边境村庄\"vs B\"边境村庄附近\"——B更符合原文\"辺境の村の近く\"\n\n**段落7：关键问题段落**\n- ガンプラ：A译\"模型制作\"丢失了\"高达\"信息，B译\"高达模型\"更完整\n- A\"用土壤把土挖出来\"明显误译，B\"用土壤改良把泥土变成粘土\"正确\n\n**段落22：严重问题**\n- A保留未翻译日文：\"ランペイジングダークネス\"\n- B正确翻译为\"暴虐暗影\"\n\n**段落25：技能术语**\n- ファイアーランス：A译\"火浪\"错误，B译\"火焰枪\"正确\n\n**段落26-27：格式与完整性**\n- A再次出现未翻译日文\n- A段落27缺少引号包裹对话\n\n**段落31：致命错误**\n- A出现\"兰佩贾ing黑暗\"这种半翻译乱码\n- B译\"暴怒暗影\"完整正确\n\n### 名字一致性对比\n| 原文 | A | B |\n|------|---|---|\n| ディアナ | 迪安娜 | 戴安娜 |\n| エデルガルト | 埃德加尔特 | 埃德尔加德 |\n| ジャチント | 贾辛托 | 贾钦托 |\n| ディートヘルム | 迪特里希 | 迪特赫尔姆 |\n\nB的音译更贴近德语发音。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A有明显误译（土壤魔法、火浪）和多处未翻译日文残留；B准确度更高\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者口语表达各有千秋，A部分对话更自然，B整体更稳定\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B使用日式括号更符合轻小说风格；A偶尔过度口语化\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A缺失高达模型、技能名翻译不完整；B术语处理更专业\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A因未翻译内容导致阅读中断；B连贯性良好\"},\n    \"formatting\": {\"A\": 4, \"B\": 8, \"notes\": \"A有未翻译日文残留和乱码，段落27缺引号；B格式规范一致\"}\n  },\n  \"key_differences\": [\n    \"A在段落22、26、31出现未翻译日文或乱码（ランペイジングダークネス、兰佩贾ing黑暗），属于致命错误\",\n    \"术语翻译：A遗漏高达(ガンプラ)关键信息，火焰枪误译为火浪\",\n    \"テラスハウス：B译联排别墅更准确，A译露台屋不够精确\",\n    \"B使用日式括号统一格式，A使用中式双引号但不完全统一\"\n  ],\n  \"final_summary\": \"B整体质量明显优于A。A存在多处致命性问题：未翻译的日文原文残留、技能名乱码、关键术语误译（如火浪、土壤魔法的处理）。B虽然部分表达略显书面化，但翻译完整准确，术语处理得当，格式统一规范。对于轻小说翻译而言，完整性和准确性是基础要求，A的错误过于严重，B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9461,
+          "completion_tokens": 2820,
+          "total_tokens": 12281
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有明显误译（土壤魔法、火浪）和多处未翻译日文残留；B准确度更高"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者口语表达各有千秋，A部分对话更自然，B整体更稳定"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B使用日式括号更符合轻小说风格；A偶尔过度口语化"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A缺失高达模型、技能名翻译不完整；B术语处理更专业"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A因未翻译内容导致阅读中断；B连贯性良好"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 8,
+        "notes": "A有未翻译日文残留和乱码，段落27缺引号；B格式规范一致"
+      }
+    },
+    "key_differences": [
+      "A在段落22、26、31出现未翻译日文或乱码（ランペイジングダークネス、兰佩贾ing黑暗），属于致命错误",
+      "术语翻译：A遗漏高达(ガンプラ)关键信息，火焰枪误译为火浪",
+      "テラスハウス：B译联排别墅更准确，A译露台屋不够精确",
+      "B使用日式括号统一格式，A使用中式双引号但不完全统一"
+    ],
+    "final_summary": "B整体质量明显优于A。A存在多处致命性问题：未翻译的日文原文残留、技能名乱码、关键术语误译（如火浪、土壤魔法的处理）。B虽然部分表达略显书面化，但翻译完整准确，术语处理得当，格式统一规范。对于轻小说翻译而言，完整性和准确性是基础要求，A的错误过于严重，B胜出。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

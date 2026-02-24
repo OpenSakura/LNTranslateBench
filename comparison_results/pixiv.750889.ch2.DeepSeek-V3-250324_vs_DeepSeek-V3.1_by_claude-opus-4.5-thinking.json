@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:00:17.635865",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "DeepSeek-V3.1"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "db8150cd35a3bb089ece0bbd4a76b7ca22b6e85cd2af125d17c5eff7e18fe1c6",
+    "B": "4ba6ea54fd2db9acc8097392a98d451806a74ff000c0d11880932f09cc3b7b61"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:01:04.661711",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "316f67b9-77f4-4e4e-8c0f-1bd7c83bdfd5",
+      "judge_response": {
+        "id": "316f67b9-77f4-4e4e-8c0f-1bd7c83bdfd5",
+        "object": "chat.completion",
+        "created": 1768431664,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n两个翻译整体上都忠于原文，但有细微差异：\n- 段落6：A\"频繁跳跃\"更符合\"ぽんぽん\"的连续感，B\"突然跳跃\"略有偏差\n- 段落31：A\"鬼火目击证言\"准确翻译\"人魂\"，B\"幽灵\"稍有偏差\n- 段落47：A保留大量日语原文未翻译（サバゲー、アタッカー等），严重影响准确性\n\n### 2. 流畅性分析\n- 段落14：B\"时机也太巧了吧喂\"比A\"时机真准啊，喂\"更口语化自然\n- 段落12：B\"不知所措地想着'这该怎么办'\"添加引号更清晰\n- 段落35-36：B的\"呆若木鸡\"\"前所未有的强烈存在感\"表达更地道\n\n### 3. 风格/语气分析\n- B整体更符合轻小说风格，语言更活泼\n- A在部分对话处理上较为生硬\n- 段落49：B\"男子汉\"比A\"男生\"更符合小孩子说话的可爱感\n\n### 4. 术语一致性（关键问题）\n- **A的重大缺陷**：段落47-48保留大量未翻译日语（サバゲー、ポジション、アタッカー、ループ、プリティーキュートな小学生等）\n- 段落55：A未翻译\"クール少女\"，B正确译为\"高冷少女\"\n- B全文翻译一致，术语处理规范\n\n### 5. 连贯性/可读性\n- B的段落衔接更自然流畅\n- A在部分长句处理上略显生硬\n\n### 6. 格式/标点\n- A使用日式引号「」，B使用中式引号\"\"\n- 两种选择都可接受，但B更符合中文阅读习惯\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落6更准确，但B整体翻译完整度更高\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B语言更自然口语化，符合轻小说风格\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更好地保持了轻小说的活泼叙事风格\"},\n    \"terminology\": {\"A\": 4, \"B\": 9, \"notes\": \"A在段落47-48、55有大量未翻译日语，严重扣分\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B行文更流畅，段落衔接更自然\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B使用中式引号更符合目标语言习惯\"}\n  },\n  \"key_differences\": [\n    \"A在段落47-48保留大量未翻译日语原文，这是致命缺陷\",\n    \"B的口语化表达更符合轻小说风格\",\n    \"B的术语翻译更一致规范\",\n    \"A使用日式引号，B使用中式引号\"\n  ],\n  \"final_summary\": \"虽然A在个别词句翻译上略有优势，但A存在多处未翻译日语原文的严重问题（段落47-48的サバゲー系列术语、段落48整句未译、段落55的クール少女），这对翻译质量是致命打击。B在术语一致性、流畅性和风格把握上表现更佳，整体翻译完成度更高，是明显更优的译本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9703,
+          "completion_tokens": 2061,
+          "total_tokens": 11764
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落6更准确，但B整体翻译完整度更高"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B语言更自然口语化，符合轻小说风格"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更好地保持了轻小说的活泼叙事风格"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 9,
+        "notes": "A在段落47-48、55有大量未翻译日语，严重扣分"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B行文更流畅，段落衔接更自然"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B使用中式引号更符合目标语言习惯"
+      }
+    },
+    "key_differences": [
+      "A在段落47-48保留大量未翻译日语原文，这是致命缺陷",
+      "B的口语化表达更符合轻小说风格",
+      "B的术语翻译更一致规范",
+      "A使用日式引号，B使用中式引号"
+    ],
+    "final_summary": "虽然A在个别词句翻译上略有优势，但A存在多处未翻译日语原文的严重问题（段落47-48的サバゲー系列术语、段落48整句未译、段落55的クール少女），这对翻译质量是致命打击。B在术语一致性、流畅性和风格把握上表现更佳，整体翻译完成度更高，是明显更优的译本。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

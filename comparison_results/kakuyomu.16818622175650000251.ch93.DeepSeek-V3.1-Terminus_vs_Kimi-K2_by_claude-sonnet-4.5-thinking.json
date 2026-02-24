@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:06:07.849079",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "c889af880da602c22823cbddc8a6775c86aefff92440e9622b4bdec2260006d0",
+    "B": "8373d4a98d63ef24cca1a58651c3ada1866bdd82d20940976fdaa67b9558b212"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:07:10.901404",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "192385ef-8f5a-41f8-9123-cd122c05d7bf",
+      "judge_response": {
+        "id": "192385ef-8f5a-41f8-9123-cd122c05d7bf",
+        "object": "chat.completion",
+        "created": 1768486030,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我将详细分析这两个轻小说翻译的质量。\n\n## 详细分析\n\n### 1. 准确性\n**翻译A的问题：**\n- 段落54：\"我和小田姬\"突然出现新译名，前文从未使用过\n\n**翻译B的问题：**\n- 段落2：\"我早就看你不顺眼了\"过度意译，原文\"気になっていた\"是\"在意\"而非\"看不顺眼\"\n- 段落73：\"连尸体都能穿\"完全误译，原文\"おタヒでも\"指的是角色名，不是\"尸体\"\n\n### 2. 流畅性\n**翻译B明显更自然：**\n- \"补刀\"、\"破破烂烂\"、\"老子\"等口语化表达\n- \"刷刷地\"、\"哐啷哐啷\"等拟声词运用生动\n- 句式更符合中文习惯\n\n**翻译A相对生硬：**\n- \"若无其事地说出\"、\"饶有兴趣地看着\"较为书面\n- 整体偏向直译\n\n### 3. 风格/语气\n轻小说需要活泼、口语化的风格：\n- **B**：大量使用\"啥\"、\"嘛\"、\"呗\"等语气词，符合轻小说风格\n- **A**：较为正式，缺少轻小说的轻松感\n\n### 4. 术语一致性\n**重大问题：**\n- **A**：角色名混乱（御田妃→琪肯→おタヒ→小田姬），同一角色四个不同译名\n- **B**：相对统一（小田斐/小塔希），虽有两个译名但较为一致\n\n### 5. 连贯性\n两者都保持了基本连贯，但B的口语化表达使阅读更流畅。\n\n### 6. 格式\n两者格式基本相同，都正确处理了对话和叙述。\n\n## 关键差异\n1. **人名一致性**：A严重不一致，B相对较好\n2. **语言风格**：B更贴合轻小说，A过于书面\n3. **准确性**：B有个别误译（段落73最严重），A整体准确但段落2意译过度\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体准确但段落2意译问题；B段落73'尸体'为严重误译，但其他部分准确\"} ,\n    \"fluency\": {\"A\": 6, \"B\": 9, \"notes\": \"B口语化自然流畅，A较为生硬书面\"} ,\n    \"style\": {\"A\": 5, \"B\": 9, \"notes\": \"轻小说需要活泼口语风格，B明显更符合，A过于正式\"} ,\n    \"terminology\": {\"A\": 3, \"B\": 6, \"notes\": \"A人名混乱严重（4个不同译名），B相对统一\"} ,\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的口语化表达使连贯性更好\"} ,\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者格式处理都很好\"}\n  },\n  \"key_differences\": [\n    \"人名一致性：A出现4个不同译名（御田妃/琪肯/おタヒ/小田姬），B相对统一\",\n    \"语言风格：B使用'老子'、'啥'、'嘛'等口语，更符合轻小说；A偏书面\",\n    \"严重误译：B段落73将角色名'おタヒ'误译为'尸体'\",\n    \"流畅度：B使用'补刀'、'刷刷地'等生动表达，A较为直译\"\n  ],\n  \"final_summary\": \"虽然B在段落73存在严重误译（'尸体'应为角色名），但综合考虑轻小说的文体要求，B在流畅性、风格语气方面明显优于A。A最致命的问题是术语一致性极差，同一角色出现4个不同译名，这在长篇翻译中不可接受。B的口语化风格更贴合轻小说特点，虽有瑕疵但整体质量较高。信心度0.65反映了B存在的准确性问题。\" \n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10551,
+          "completion_tokens": 2799,
+          "total_tokens": 13350
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体准确但段落2意译问题；B段落73'尸体'为严重误译，但其他部分准确"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B口语化自然流畅，A较为生硬书面"
+      },
+      "style": {
+        "A": 5,
+        "B": 9,
+        "notes": "轻小说需要活泼口语风格，B明显更符合，A过于正式"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 6,
+        "notes": "A人名混乱严重（4个不同译名），B相对统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的口语化表达使连贯性更好"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式处理都很好"
+      }
+    },
+    "key_differences": [
+      "人名一致性：A出现4个不同译名（御田妃/琪肯/おタヒ/小田姬），B相对统一",
+      "语言风格：B使用'老子'、'啥'、'嘛'等口语，更符合轻小说；A偏书面",
+      "严重误译：B段落73将角色名'おタヒ'误译为'尸体'",
+      "流畅度：B使用'补刀'、'刷刷地'等生动表达，A较为直译"
+    ],
+    "final_summary": "虽然B在段落73存在严重误译（'尸体'应为角色名），但综合考虑轻小说的文体要求，B在流畅性、风格语气方面明显优于A。A最致命的问题是术语一致性极差，同一角色出现4个不同译名，这在长篇翻译中不可接受。B的口语化风格更贴合轻小说特点，虽有瑕疵但整体质量较高。信心度0.65反映了B存在的准确性问题。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

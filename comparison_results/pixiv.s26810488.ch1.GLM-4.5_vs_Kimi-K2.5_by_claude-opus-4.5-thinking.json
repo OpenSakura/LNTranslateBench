@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:23:07.290722",
+  "sample": "pixiv.s26810488.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26810488.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26810488.ch1.GLM-4.5.translated.txt",
+    "B": "translated_results/pixiv.s26810488.ch1.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "92db91e48665f24307285ee8df507a11e561d6aa20242dd51ddd1a73514e9a0b",
+    "A": "d7f441d6ee76b7b61fe7b9883bdbf91bb54789c2fb4d58e52e61ac8d3c500a54",
+    "B": "a97f1db5a6c8f1bbebf0416e3d1a188fd2a9ed93146c972bab635bc84c4b41cc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:24:11.187101",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f378f936-3c30-45b6-b93d-34582bef27e6",
+      "judge_response": {
+        "id": "f378f936-3c30-45b6-b93d-34582bef27e6",
+        "object": "chat.completion",
+        "created": 1769610251,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 段落对比分析\n\n**准确性方面：**\n- 段落7：A「偏偏只有那件事，我怎么也想不起来了」比B「只有这一点，缺失了」更准确地传达了原文「欠けてしまっていて」的遗憾感\n- 段落12：B「落空了」比A「已在空中划过」更准确地理解了「空を切って」的比喻义\n- 段落71：B「因为一直以来，这个时期都是我一个人度过的」比A「一直，一直，每到这个时候，我总是一个人」更完整\n\n**流畅性方面：**\n- 段落2：A「雪花簌簌飘落的雪夜」有「雪」字重复；B「纷纷扬扬飘雪堆积的夜晚」更自然\n- 段落74/75：A突然使用「艾玛女士」非常不协调，之前一直用「艾玛」\n- 段落93：A「艾玛桑」混用日语称呼，不当\n\n**风格/语气方面：**\n- A使用中文引号「\"\"」，B使用日式引号「「」」\n- 对于轻小说而言，两种选择各有道理，但B的选择更贴近原作感\n- 段落23：A「呼……哈……」比B「嘶……哈……」更自然地表达深呼吸\n\n**术语一致性：**\n- A在称呼上不一致（艾玛→艾玛女士→艾玛桑）\n- B全程保持「艾玛」统一\n\n**连贯性方面：**\n- 段落91：B「面对这样的我，艾玛握住了我的手」保留了「そんな私に」的呼应；A省略了\n- 段落106：A「这便是发生在深夜里的一件事」比B「就是这样的半夜发生的事」更通顺\n\n**格式方面：**\n- A在部分段落末尾出现多余句号（如段落41、44等）\n- B格式更整洁一致\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B对部分隐喻理解更准确（如段落12「落空」），A在段落7的情感传达略好\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"A有词汇重复和称呼混乱问题（艾玛女士/艾玛桑），B整体更流畅\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的简洁风格更贴合轻小说叙事，A部分表达偏正式\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"A称呼不一致（艾玛/艾玛女士/艾玛桑）是重大失误\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留了更多原文的结构呼应，A偶有省略\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"A有多余标点问题，B格式更统一\"}\n  },\n  \"key_differences\": [\n    \"A称呼不一致（艾玛→艾玛女士→艾玛桑），B保持统一\",\n    \"A使用中文引号，B使用日式引号\",\n    \"B对隐喻的理解更准确（如「空を切って」→「落空」）\",\n    \"A部分表达更详细但偶有冗余，B更简洁贴近原文\"\n  ],\n  \"final_summary\": \"两个翻译整体质量相近，但B在术语一致性上明显胜出（A的称呼混乱是严重问题），且B在准确性和流畅性上略占优势。A在部分情感表达上更细腻，但不足以弥补一致性问题。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10479,
+          "completion_tokens": 2471,
+          "total_tokens": 12950
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对部分隐喻理解更准确（如段落12「落空」），A在段落7的情感传达略好"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有词汇重复和称呼混乱问题（艾玛女士/艾玛桑），B整体更流畅"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的简洁风格更贴合轻小说叙事，A部分表达偏正式"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A称呼不一致（艾玛/艾玛女士/艾玛桑）是重大失误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留了更多原文的结构呼应，A偶有省略"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有多余标点问题，B格式更统一"
+      }
+    },
+    "key_differences": [
+      "A称呼不一致（艾玛→艾玛女士→艾玛桑），B保持统一",
+      "A使用中文引号，B使用日式引号",
+      "B对隐喻的理解更准确（如「空を切って」→「落空」）",
+      "A部分表达更详细但偶有冗余，B更简洁贴近原文"
+    ],
+    "final_summary": "两个翻译整体质量相近，但B在术语一致性上明显胜出（A的称呼混乱是严重问题），且B在准确性和流畅性上略占优势。A在部分情感表达上更细腻，但不足以弥补一致性问题。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

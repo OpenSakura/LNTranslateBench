@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:03.377872",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.Qwen3-30B-A3B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "61a5acb3601a813e4f6e3903be58b772fa278572794b262c6c84df93ab38f445",
+    "B": "dda90e51debc3838ac42d2727d65eba03369f0c5290a7d039d57484c6346f1cd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:26.802643",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DMYo3cD5tb9tAq1YAGxslWZh1NK",
+      "judge_response": {
+        "id": "chatcmpl-89DMYo3cD5tb9tAq1YAGxslWZh1NK",
+        "object": "chat.completion",
+        "created": 1768427065,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 松田陣平 萩原研二 4年前の爆弾事件\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"名探偵コナン 八神 諸伏 降谷\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"松田陣平 萩原研二 特殊犯係\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"松田陣平\" Pixiv](https://dic.pixiv.net/a/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3)\n> [🔗 \"松田 陣平｜キャラクター｜名探偵コナン｜読売テレビ\" YTV](https://www.ytv.co.jp/conan/character/matsuda)\n> [🔗 \"松田陣平 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3)\n> [🔗 \"松田陣平のキャラクター&エピソード情報 | 名探偵コナン\" Web Sunday](https://websunday.net/conan100/character?tid=457)\n> [🔗 \"松田陣平の登場回 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3%E3%81%AE%E7%99%BB%E5%A0%B4%E5%9B%9E)\n> [🔗 \"『名探偵コナン』松田陣平の情報まとめ｜登場回や重要エピソードも解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1748590068)\n> [🔗 \"名探偵コナン｜萩原刑事と松田刑事を殉職させた犯人は誰？揺れる警視庁編の動機と目的を徹底解説 - コナンマニア！名探偵コナンブログ\" Hatenablog](https://conanmania.hatenablog.com/entry/yurerukeishityou_1)\n> [🔗 \"松田陣平の活躍をプレイバック 初登場から『名探偵コナン ハロウィンの花嫁』に至るまで\" Real Sound](https://realsound.jp/movie/2022/04/post-1019207.html)\n> [🔗 \"松田陣平との約20年を振り返る｜げんきなにんげん\" Note](https://note.com/genkinaningen/n/ne74fd1a8929c)\n> [🔗 \"『名探偵コナン』萩原研二の情報まとめ｜登場回や重要エピソードも解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1749778454)\n\n> 🔍 **10 results found**\n\n> [🔗 \"【特集】降谷零から事前レポート「かけがのない仲間」｜警察学校編 Wild Police Story CASE. 諸伏景光 - YouTube\" YouTube](https://www.youtube.com/watch?v=OPrNXvkF008)\n> [🔗 \"諸伏景光\" Pixiv](https://dic.pixiv.net/a/%E8%AB%B8%E4%BC%8F%E6%99%AF%E5%85%89)\n> [🔗 \"『名探偵コナン』スコッチの正体は諸伏景光？死の真相が分かる登場回を徹底解説 | ciatr[シアター]\" CIATR](https://ciatr.jp/topics/315723)\n> [🔗 \"諸伏 景光｜キャラクター｜名探偵コナン｜読売テレビ\" YTV](https://www.ytv.co.jp/conan/character/hiromitsu)\n> [🔗 \"Virtualgorillaplus\" Virtualgorillaplus](https://virtualgorillaplus.com/anime/detective-conan-one-eyed-flashback-koumei-hiromitsu-amuro)\n> [🔗 \"『名探偵コナン』諸伏景光の情報まとめ｜登場回＆重要エピソードも解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1748495449)\n> [🔗 \"【名探偵コナン】諸伏景光は生きてる？スコッチの死因となぜバレた？アニメや映画の登場回＆警察学校組や兄との関係,声優情報も解説 | WALLOP VOD\" WALLOP VOD](https://www.wallop.tv/magazine/conan-hiromitsu-alive)\n> [🔗 \"降谷零 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E9%99%8D%E8%B0%B7%E9%9B%B6)\n> [🔗 \"諸伏景光 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E8%AB%B8%E4%BC%8F%E6%99%AF%E5%85%89)\n> [🔗 \"【特集】諸伏景光の15年前の真相に迫る?!｜『警察学校編 Wild Police Story CASE. 諸伏景光』 - YouTube\" YouTube](https://www.youtube.com/watch?v=q3xO7stShj0)\n\n> 🔍 **10 results found**\n\n> [🔗 \"松田陣平\" Pixiv](https://dic.pixiv.net/a/%E6%9D%BE%E7%94%B0%E9%99%A3%E5%B9%B3)\n> [🔗 \"松田陣平のキャラクター&エピソード情報 | 名探偵コナン\" Web Sunday](https://websunday.net/conan100/character?tid=457)\n> [🔗 \"松田 陣平｜キャラクター｜名探偵コナン｜読売テレビ\" YTV](https://www.ytv.co.jp/conan/character/matsuda)\n> [🔗 \"松田陣平_警察学校組\" Cocohp](https://cocohp.com/students/free2021/013/matuda.html)\n> [🔗 \"萩原 研二｜キャラクター｜名探偵コナン｜読売テレビ\" YTV](https://www.ytv.co.jp/conan/character/hagiwara)\n> [🔗 \"松田陣平の死因や爆弾で殺した犯人は？サングラスの理由やなぜ死んだか解説 | “ゼロ”のブログ\" Detective-conan-blog](https://detective-conan-blog.com/7166)\n> [🔗 \"『名探偵コナン』萩原研二の情報まとめ｜登場回や重要エピソードも解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1749778454)\n> [🔗 \"萩原研二の登場回 | 名探偵コナン Wiki | Fandom\" Fandom](https://meitantei-conan.fandom.com/ja/wiki/%E8%90%A9%E5%8E%9F%E7%A0%94%E4%BA%8C%E3%81%AE%E7%99%BB%E5%A0%B4%E5%9B%9E)\n> [🔗 \"『名探偵コナン』松田陣平の情報まとめ｜登場回や重要エピソードも解説 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/news/details.php?id=1748590068)\n> [🔗 \"松田陣平との約20年を振り返る｜げんきなにんげん\" Note](https://note.com/genkinaningen/n/ne74fd1a8929c)\n\n\n这是一个来自《名探偵コナン》粉丝向轻小说（或同人小说）的片段，叙述者是八神（可能是原创或衍生角色），涉及松田陣平、萩原研二、伊達航、佐藤美和子、目暮警部、諸伏景光（诸伏作）、降谷零等角色。故事设定在松田被调到目暮班后不久，围绕4年前爆弾事件（萩原殉职）、每年倒计时FAX、松田的复仇动机，以及警察学校组的友情。\n\n**整体分析**：\n\n- **准确性**：两者都基本忠实于原文。A在多处更贴近原文结构和词汇（如“死にかけたあの事件”→“差点死掉的那个案件”），B有时稍作改写但意思相同。少数地方B更精确（如段落1的“毎年送られてくるカウントダウンのFAXが0になる日”→B的“即将迎来0的那一天”捕捉到“近づいていた”的渐近感，A的“归零的日子快到了”也准确）。两者在关键情节点（如事件背景、动机）无误译。A略胜在直接对应，B偶尔润色但不失真。\n\n- **流畅性**：A整体更自然、口语化，像中文轻小说常见的叙述风格（例如“喂，伊达君……”的省略号使用自然）。B有时句子稍长或awkward（如段落4的“被派到这里来冷静一下。萩原就是个陪护的角色吧。”），但对话部分B更流畅（如段落10的引号使用）。A的叙述更连贯，读起来像母语者写的。\n\n- **风格/语气**：轻小说强调第一人称内心独白、吐槽感、轻松中带严肃的警匪友情。A保留了原文的随意、调侃语气（如“佐藤酱”“问题儿童”“大大咧咧”），更贴近轻小说“中二”“吐槽”风。B更正式、文学化（如“性格坚强的美人”“厚脸皮”），少了些轻快的“萌”感。A的语气更符合轻小说叙述者“我”的玩世不恭+深情。\n\n- **术语/名称一致性**：两者一致使用“松田阵平”“萩原研二”“目暮警部”“佐藤酱/小姐”“特殊犯系/组”“巡査部長”等。A统一用“佐藤酱”（可爱化，符合松田时代设定），B混用“佐藤酱/小姐/佐藤”（稍不统一）。A的“**事件”“**预告”处理一致（可能是censored“爆弾”）。两者均良好。\n\n- **连贯性/可读性**：A段落衔接更顺，叙述像流水账但节奏好（例如段落14的长段内心分析读来顺畅）。B有时句子结构复杂，读起来稍卡（如段落21、24）。A整体可读性更高。\n\n- **格式/标点符号**：A对话标点灵活但自然（省略号、引号使用贴合中文习惯）。B更严格使用全角引号，但部分地方多余（如段落9的「喂，八神！」）。A的省略号和破折号更符合轻小说节奏感。两者均无重大格式错误，A略胜。\n\n**关键差异**：\n- A更注重口语化、亲切感（“酱”多用、吐槽味重），适合轻小说读者。\n- B更注重文雅、精确，有时显得稍生硬或正式。\n- A在长段叙述上更流畅，B在某些对话上更精炼。\n- 整体A更贴合“轻小说”作为目标的轻松、代入感强的风格。\n\n**最终判决**：A整体更好，胜在流畅性、风格贴合度和可读性，准确性相当。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者意思保留均高，无重大偏差。A稍更直接对应原文词汇。\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A的中文更自然流畅，像日常叙述；B偶有awkward长句。\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A保留轻小说调侃、内心吐槽语气，更贴合ja→zh轻小说风格；B偏正式。\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"两者术语一致，A在昵称（如佐藤酱）更统一可爱化。\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A叙述连贯、可读性强；B部分段落稍显生硬。\"},\n    \"formatting\": {\"A\": 9, \"B\": 8, \"notes\": \"A标点节奏感好，省略号等符合中文轻小说习惯；B引号严格但略多余。\"}\n  },\n  \"key_differences\": [\n    \"A更口语化、亲切（如多用'酱'、吐槽风），B更文雅正式。\",\n    \"A叙述段落更顺滑连贯，B对话有时更精炼但整体节奏稍慢。\",\n    \"A风格更符合轻小说轻松+深情的叙述语气，B稍偏向标准小说。\"\n  ],\n  \"final_summary\": \"A在流畅性、轻小说风格贴合度、可读性上明显优于B，准确性相当，因此A整体胜出。B虽精炼但少了轻快的代入感。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12250,
+          "completion_tokens": 4215,
+          "total_tokens": 16465
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者意思保留均高，无重大偏差。A稍更直接对应原文词汇。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的中文更自然流畅，像日常叙述；B偶有awkward长句。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A保留轻小说调侃、内心吐槽语气，更贴合ja→zh轻小说风格；B偏正式。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者术语一致，A在昵称（如佐藤酱）更统一可爱化。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A叙述连贯、可读性强；B部分段落稍显生硬。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8,
+        "notes": "A标点节奏感好，省略号等符合中文轻小说习惯；B引号严格但略多余。"
+      }
+    },
+    "key_differences": [
+      "A更口语化、亲切（如多用'酱'、吐槽风），B更文雅正式。",
+      "A叙述段落更顺滑连贯，B对话有时更精炼但整体节奏稍慢。",
+      "A风格更符合轻小说轻松+深情的叙述语气，B稍偏向标准小说。"
+    ],
+    "final_summary": "A在流畅性、轻小说风格贴合度、可读性上明显优于B，准确性相当，因此A整体胜出。B虽精炼但少了轻快的代入感。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:33:42.614563",
+  "sample": "kakuyomu.16818622176303375188.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622176303375188.ch6.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622176303375188.ch6.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/kakuyomu.16818622176303375188.ch6.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2e0001678fabcbc42f80d57c706b1b7897e613da23a926f04d36b1f5b4ebed30",
+    "A": "8570f2fb157d236bfc5e3a9bcc47a375d470abd0dca924c87527cb99560b1b17",
+    "B": "6526f91d613a5f77284ac9ad1c51d2b009383f1bc02f6ea999747cda6ebfa8d4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:34:46.283101",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "927f9fba-50b1-4039-bf07-5534a978cba5",
+      "judge_response": {
+        "id": "927f9fba-50b1-4039-bf07-5534a978cba5",
+        "object": "chat.completion",
+        "created": 1768422886,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段分析关键差异\n\n### 准确性问题\n1. **段落14**：原文「5体編成」指5只老鼠\n   - A: \"五人一组\" ❌ 错误，老鼠不能用\"人\"\n   - B: \"5只一组\" ✓ 正确\n\n2. **段落3**：「ぽたぽた」是水滴声\n   - A: \"噼啪\" ❌ 不符合水滴声\n   - B: \"滴答滴答\" ✓ 准确\n\n3. **段落6**：「手数だけ多くて火力が低い」\n   - A: \"只会堆手速、输出低得要命\" - 过度演绎\n   - B: \"手多火力弱\" - 更忠实原文\n\n### 格式一致性问题\n**段落39-46**：A突然切换为繁体中文（這、們、來、裡等），严重影响阅读一致性。B保持全文简体一致。\n\n### 风格/语气\n- B更贴近游戏玩家口语：\"刷\"、\"搞到了\"、\"扛着\"、\"好耶\"\n- A部分表达更文学化但偶有生硬：\"昏暗昏沉\"重复\n\n### 术语处理\n- 「瘴気ネズミ」：A译\"瘴气鼠\"，B译\"瘴气老鼠\" - 两者皆可\n- 「毒」：A/B均译\"中毒\" ✓\n- 「再現度」：A\"还原度\"，B\"再现度\" - 两者皆可\n\n### 流畅性比较\n- 段落2：B的\"黑黢黢\"、\"嗡嗡响\"更口语自然\n- 段落54：「口をつける」A译\"塞进嘴里\"略奇怪，B译\"喝了一小口\"更自然\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 9, \"notes\": \"A在段落14将老鼠误译为'五人'，段落3水滴声拟声词错误；B整体更忠实原文\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的游戏口语更自然，A有'昏暗昏沉'等重复表达\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的轻小说/游戏风格更贴切，如'刷怪''好耶'等用语\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者游戏术语处理相近，各有选择\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体阅读更流畅连贯\"},\n    \"formatting\": {\"A\": 4, \"B\": 9, \"notes\": \"A在段落39-46突然变成繁体字，严重破坏一致性；B全文简体统一\"}\n  },\n  \"key_differences\": [\n    \"A在段落39-46出现繁简混用的严重格式问题\",\n    \"A将'5体'误译为'五人'（应为'五只'）\",\n    \"A将水滴声'ぽたぽた'误译为'噼啪'\",\n    \"B的游戏玩家用语更地道自然\",\n    \"A偶有过度演绎倾向\"\n  ],\n  \"final_summary\": \"B整体表现更优。A存在明显的繁简混用格式问题和'五人一组'等翻译错误，影响阅读体验和准确性。B在保持准确性的同时，游戏术语和轻小说语气把握更好，格式统一规范。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9960,
+          "completion_tokens": 2752,
+          "total_tokens": 12712
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "A在段落14将老鼠误译为'五人'，段落3水滴声拟声词错误；B整体更忠实原文"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的游戏口语更自然，A有'昏暗昏沉'等重复表达"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的轻小说/游戏风格更贴切，如'刷怪''好耶'等用语"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者游戏术语处理相近，各有选择"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体阅读更流畅连贯"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 9,
+        "notes": "A在段落39-46突然变成繁体字，严重破坏一致性；B全文简体统一"
+      }
+    },
+    "key_differences": [
+      "A在段落39-46出现繁简混用的严重格式问题",
+      "A将'5体'误译为'五人'（应为'五只'）",
+      "A将水滴声'ぽたぽた'误译为'噼啪'",
+      "B的游戏玩家用语更地道自然",
+      "A偶有过度演绎倾向"
+    ],
+    "final_summary": "B整体表现更优。A存在明显的繁简混用格式问题和'五人一组'等翻译错误，影响阅读体验和准确性。B在保持准确性的同时，游戏术语和轻小说语气把握更好，格式统一规范。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

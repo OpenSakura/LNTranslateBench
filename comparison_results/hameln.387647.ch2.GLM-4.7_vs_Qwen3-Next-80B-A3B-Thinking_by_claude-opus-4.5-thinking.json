@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:12:04.530161",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.GLM-4.7.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "d3bb281f14e4f0b458a2005f00d729245cdc268659c7d8b4f2bc1b3a7810e4d6",
+    "B": "7d046b7500b5d44d616ebdb237b9e24972b5f28f1488a2ed13e9f98765375c1d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:12:39.119792",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d272a856-92b7-4bf0-a61a-d0d04ab27ae0",
+      "judge_response": {
+        "id": "d272a856-92b7-4bf0-a61a-d0d04ab27ae0",
+        "object": "chat.completion",
+        "created": 1768421559,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n- **段落19/65/72**: B将男性角色「双葉蓮次」译为\"双叶小姐/双叶姐\"，性别错误严重\n- **段落27**: B将「教えてやれ」(教教他)误译为\"教我这些吧\"，主语完全错误\n- **段落6**: A的\"圈养起来\"比B的\"围住他\"更准确传达「囲ってやんだよ」的意思\n- **段落73**: B的\"不让他当跑卫\"主语理解有误\n\n### 流畅性分析\n- B整体口语化更强，读起来更自然\n- A部分表达略显书面化，如段落29\"不教教他不行的\"\n\n### 格式问题\n- **段落17、18、54、68**: B错误地给内心独白加了引号，原文是叙述/心理描写，不应有引号\n- A正确保留了原文的格式区分\n\n### 术语一致性\n- 两者美式足球术语处理相近\n- A用\"外接员\"，B用\"外接手\"，均可接受\n\n### 风格语气\n- **段落1**: A的\"唔——\"比B的\"嗯～\"更符合被绑住嘴的发音\n- **段落95**: A的\"天然呆忽悠家\"翻译不当，原文「天然人誑し」指天生善于骗人者\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B有严重性别错误和主语理解错误（段落19/27/65/72）\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，但错误影响阅读\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者轻小说风格把握相近\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"美式足球术语处理均可\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处给内心独白加引号破坏叙事结构\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"B错误添加引号（段落17/18/54/68）\"}\n  },\n  \"key_differences\": [\n    \"B将男性角色误译为女性（双叶小姐/双叶姐）\",\n    \"B段落27主语理解错误（教我→应为教他）\",\n    \"B多处内心独白错误添加引号\",\n    \"A整体更忠实原文格式和含义\"\n  ],\n  \"final_summary\": \"A虽然部分表达略显生硬，但准确性和格式保持明显优于B。B存在致命的性别错误、主语混淆和格式问题，这些错误严重影响阅读理解和角色辨识。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11523,
+          "completion_tokens": 1434,
+          "total_tokens": 12957
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B有严重性别错误和主语理解错误（段落19/27/65/72）"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，但错误影响阅读"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者轻小说风格把握相近"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "美式足球术语处理均可"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处给内心独白加引号破坏叙事结构"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "B错误添加引号（段落17/18/54/68）"
+      }
+    },
+    "key_differences": [
+      "B将男性角色误译为女性（双叶小姐/双叶姐）",
+      "B段落27主语理解错误（教我→应为教他）",
+      "B多处内心独白错误添加引号",
+      "A整体更忠实原文格式和含义"
+    ],
+    "final_summary": "A虽然部分表达略显生硬，但准确性和格式保持明显优于B。B存在致命的性别错误、主语混淆和格式问题，这些错误严重影响阅读理解和角色辨识。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

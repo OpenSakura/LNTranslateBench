@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:12:50.877941",
+  "sample": "syosetu.n5313ks.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5313ks.ch14.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5313ks.ch14.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n5313ks.ch14.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bf88588a1a5855615ef8d65c9b6c4af37e7a365094b338c25ea4e2c97eb1cf89",
+    "A": "ef71b99ccd0a49be58c3d68c87bb013b77e1e2e370a5882d13a908cf174e185e",
+    "B": "069e98a209d383cb83b2c44010ab240d3e2670f91c6e16a232102e43de4279d4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:13:35.928388",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "31a16d7e-4c28-4a3d-9bf0-dcd39b5697f6",
+      "judge_response": {
+        "id": "31a16d7e-4c28-4a3d-9bf0-dcd39b5697f6",
+        "object": "chat.completion",
+        "created": 1768432415,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性\n**翻译A**：\n- 段落1：\"懐かしい\"译为\"熟悉的\"略有偏差，原意更接近\"怀念的\"\n- 段落8：\"話しながら\"正确译出\"一边聊天\"\n- 段落38：\"顔合わせ\"译为\"见面之类的事情\"较准确\n\n**翻译B**：\n- 段落1：\"懐かしい\"正确译为\"怀念的\"\n- 段落8：漏译\"話しながら\"（聊天部分）\n- 段落119：\"霞\"译为\"霞光\"不准确，应为\"薄雾/烟霞\"\n\n### 2. 流畅性\n**翻译A**：整体更符合中文表达习惯，如\"只待在屋子里的生活实在不合我个性\"比B的\"光待在室内不合我的性子\"更自然。\n\n**翻译B**：部分句子略显生硬，如段落52\"受部下们爱戴的这位人的魅力\"表达不够流畅。\n\n### 3. 风格/语气\n两者都保持了轻小说的叙述风格，女主角的内心独白语气基本到位。A在对话的语气词处理上稍好。\n\n### 4. 术语/名称一致性\n- **翻译A**：称呼不一致，\"レオンさん\"有时译\"里昂\"有时译\"里昂先生\"；段落26出现\"雷昂\"的错误\n- **翻译B**：始终保持\"里昂先生\"，更一致；地名\"ガレト\"译为\"加莱特\"/\"加雷特\"\n\n### 5. 格式/标点符号（关键差异）\n**翻译B存在严重格式问题**：\n- 段落6、16、27、36、42-44、50、82、85、88-89、102等多处**缺失开头引号**\n- 这是系统性错误，严重影响阅读体验\n\n**翻译A**：格式完整，引号使用一致\n\n### 6. 连贯性\n两者都较好地保持了叙事连贯性，A的上下文衔接略胜一筹。\n\n---\n\n## 关键对比示例\n\n| 段落 | 问题 | A | B |\n|------|------|---|---|\n| 6 | 格式 | 「但还是有些东西...」✓ | 即便如此也有...」✗(缺引号) |\n| 26 | 名称 | \"雷昂\"✗(错误) | \"里昂先生\"✓ |\n| 8 | 准确 | \"一边聊天\"✓ | 漏译 |\n| 119 | 准确 | \"如薄雾般\"✓ | \"像霞光一样\"✗ |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A更完整保留原意，B有漏译和误译（如霞→霞光）\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A的中文表达更自然流畅\"},\n    \"style\": {\"A\": 8, \"B\": 8, \"notes\": \"两者都保持了轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"A有称呼不一致和错误（雷昂），B较一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A上下文衔接更顺畅\"},\n    \"formatting\": {\"A\": 9, \"B\": 4, \"notes\": \"B在多处对话缺失开头引号，存在系统性格式错误\"}\n  },\n  \"key_differences\": [\n    \"B存在严重的引号缺失问题（10+处）\",\n    \"A在称呼上有不一致（里昂/里昂先生/雷昂）\",\n    \"A对原文细节保留更完整\",\n    \"B的格式问题严重影响可读性\"\n  ],\n  \"final_summary\": \"翻译A虽然在术语一致性上存在小问题，但整体准确性、流畅性和格式规范性都优于B。翻译B的致命伤是多处对话缺失开头引号，这是严重的格式错误，显著降低了阅读体验。综合考量，A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14400,
+          "completion_tokens": 1852,
+          "total_tokens": 16252
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更完整保留原意，B有漏译和误译（如霞→霞光）"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的中文表达更自然流畅"
+      },
+      "style": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者都保持了轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有称呼不一致和错误（雷昂），B较一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A上下文衔接更顺畅"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B在多处对话缺失开头引号，存在系统性格式错误"
+      }
+    },
+    "key_differences": [
+      "B存在严重的引号缺失问题（10+处）",
+      "A在称呼上有不一致（里昂/里昂先生/雷昂）",
+      "A对原文细节保留更完整",
+      "B的格式问题严重影响可读性"
+    ],
+    "final_summary": "翻译A虽然在术语一致性上存在小问题，但整体准确性、流畅性和格式规范性都优于B。翻译B的致命伤是多处对话缺失开头引号，这是严重的格式错误，显著降低了阅读体验。综合考量，A胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

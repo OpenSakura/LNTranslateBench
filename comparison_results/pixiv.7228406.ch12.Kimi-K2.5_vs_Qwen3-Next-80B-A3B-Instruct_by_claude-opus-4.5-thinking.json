@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:22:13.154941",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Kimi-K2.5.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "ff6e68d78bc5ad6a8bd811181a3decf61a78782a1f60bae6737fdef59bd852a3",
+    "B": "14b5335bc673266f373e029b53e406f7b9113877155e9af46e26ac924bd4b108"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:22:57.920105",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c01affc4-cb93-4e4a-86ce-1453c8dc1ecc",
+      "judge_response": {
+        "id": "c01affc4-cb93-4e4a-86ce-1453c8dc1ecc",
+        "object": "chat.completion",
+        "created": 1769610177,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n**A版本**：整体较为准确，但段落59将「みのぶまんじゅう」误译为\"栗馒头\"是明显错误。\n**B版本**：存在多处误译问题：\n- 段落23/25翻译为\"峯武馒头\"（错误）\n- 段落30翻译为\"迷你馒头\"（错误）\n- 段落74翻译为\"米布馒头\"（错误）\n- 原文「みのぶ」是地名\"身延\"的假名\n\n### 2. 流畅性\n**B版本**更口语化自然，如：\n- \"使劲儿吹嘘\"vs\"极力阐述\"\n- \"铁定迟到\"vs\"肯定迟到\"\n- \"嗖一下就冲过去\"vs\"飞驰而过\"\n\n**A版本**部分表达较书面化、生硬。\n\n### 3. 风格/语气\n**B版本**更符合轻小说男主的口吻，对话更生动。\n**A版本**稍显正式，但也保持了基本风格。\n\n### 4. 术语一致性\n**A版本**：统一使用\"身延馒头\"（除段落59错误外）\n**B版本**：同一个词出现\"峯武\"\"迷你\"\"米布\"\"三峰\"四种错误译法，严重影响阅读\n\n### 5. 格式/标点\n**A版本**：对话统一使用「」，格式规范\n**B版本**：\n- 段落54出现英文\"just\"混入译文（严重错误）\n- 对话引号使用不一致（有时用\"\"，有时不用）\n- 段落17-20等处直接省略引号\n\n### 6. 连贯性\n两者基本持平，但B版本因术语混乱影响连贯阅读体验。\n\n## 关键问题汇总\n\n| 问题类型 | A版本 | B版本 |\n|---------|-------|-------|\n| 术语错误 | 1处（段落59栗馒头） | 4处以上（みのぶ多种错译） |\n| 英文混入 | 无 | 1处（段落54） |\n| 格式不统一 | 无 | 多处对话引号问题 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B版本将みのぶ（身延）误译为峯武/迷你/米布/三峰等多种错误形式；A版本仅段落59出现栗馒头错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B版本更口语化自然，符合男主独白风格\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都基本符合轻小说风格，B稍活泼但有瑕疵\"},\n    \"terminology\": {\"A\": 8, \"B\": 4, \"notes\": \"A版本术语统一；B版本同一专有名词出现4种以上不同译法，严重影响阅读\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B版本术语混乱破坏连贯性\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B版本段落54出现英文just混入，对话引号使用不一致\"}\n  },\n  \"key_differences\": [\n    \"みのぶまんじゅう翻译：A统一为身延馒头 vs B出现峯武/迷你/米布/三峰等多种错误\",\n    \"段落54 B版本混入英文just\",\n    \"对话格式：A版本统一用「」，B版本引号使用混乱\",\n    \"口语化程度：B版本更自然生动，A版本较书面\"\n  ],\n  \"final_summary\": \"虽然B版本在口语化表达和自然度上略胜一筹，但其核心专有名词（身延馒头）出现严重且反复的翻译错误，加上英文混入和格式不统一等问题，整体质量受到明显影响。A版本虽然语言稍显生硬，但术语统一、格式规范，整体更为可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11039,
+          "completion_tokens": 2270,
+          "total_tokens": 13309
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B版本将みのぶ（身延）误译为峯武/迷你/米布/三峰等多种错误形式；A版本仅段落59出现栗馒头错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B版本更口语化自然，符合男主独白风格"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都基本符合轻小说风格，B稍活泼但有瑕疵"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 4,
+        "notes": "A版本术语统一；B版本同一专有名词出现4种以上不同译法，严重影响阅读"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B版本术语混乱破坏连贯性"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B版本段落54出现英文just混入，对话引号使用不一致"
+      }
+    },
+    "key_differences": [
+      "みのぶまんじゅう翻译：A统一为身延馒头 vs B出现峯武/迷你/米布/三峰等多种错误",
+      "段落54 B版本混入英文just",
+      "对话格式：A版本统一用「」，B版本引号使用混乱",
+      "口语化程度：B版本更自然生动，A版本较书面"
+    ],
+    "final_summary": "虽然B版本在口语化表达和自然度上略胜一筹，但其核心专有名词（身延馒头）出现严重且反复的翻译错误，加上英文混入和格式不统一等问题，整体质量受到明显影响。A版本虽然语言稍显生硬，但术语统一、格式规范，整体更为可靠。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

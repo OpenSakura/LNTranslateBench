@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:34:07.447235",
+  "sample": "syosetu.n5313ks.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5313ks.ch14.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5313ks.ch14.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/syosetu.n5313ks.ch14.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bf88588a1a5855615ef8d65c9b6c4af37e7a365094b338c25ea4e2c97eb1cf89",
+    "A": "caa61c79c176566b0e5fc86150cb7814bd6a45da8c5135ac9ef47e5a3c6b0004",
+    "B": "f19cb5d1b71b590bfc7244e3cc08e011bada9083f09534ecf0aa7ef8f3f4747a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:35:00.199049",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "185b5763-15a6-4ed4-aa35-842b593d1dc3",
+      "judge_response": {
+        "id": "185b5763-15a6-4ed4-aa35-842b593d1dc3",
+        "object": "chat.completion",
+        "created": 1769610900,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段关键差异分析\n\n**段落 3（重要错误）：**\n- 原文：「レオンさんに...見せて回りながら」= 我带着里昂先生看\n- A：「我带着里昂先生在街上逛着」✓ 正确\n- B：「让里昂带我在这座城里看看」✗ 主客颠倒，谁带谁搞反了\n\n**段落 39（性别错误）：**\n- ユリウス是男性名字（尤利乌斯大人 = 丈夫）\n- A：「二十四岁来说显得很年轻...美丽」✓ 正确\n- B：「觉得**她**虽然才二十四岁」✗ 性别错误\n\n**段落 52（性别错误）：**\n- レオンさん是男性\n- A：「深受部下爱戴的**她**」✗ 性别错误\n- B：「下属们如此敬爱**他**」✓ 正确\n\n**段落 84（逻辑混乱）：**\n- 原文意为「你不是贵族，不知道我是贵族夫人」\n- A：「因为你不是贵族，不知道我是贵族的夫人」✓ \n- B：「就算你不是贵族，就算**我**不知道你身为贵族夫人」✗ 主语混乱\n\n**段落 111：**\n- 原文：「没有拒绝父母指定的婚约的是我」\n- A：正确表达 ✓\n- B：「拒绝了父母安排的婚姻的不是我」✗ 双重否定造成歧义\n\n### 流畅度与风格\n\n- A：偏向直译，有时略显生硬（如「义理上的家人」「暧昧的微笑」）\n- B：口语化更自然，但有过度意译（如「踏实」替代「诚实」）\n\n### 术语一致性\n\n- 两者对「レオンさん」的处理不同：A始终用「里昂先生」，B有时省略敬称\n- 「義理の家族」：A「婆家/义理上的家人」vs B「名义上的家人/亲戚」，A更准确\n\n### 格式标点\n\n- A：引号使用较规范\n- B：标点稍显随意，部分句子断句不够清晰\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落3主客颠倒、段落39性别错误、段落84逻辑混乱，均为重大翻译错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，A部分表达略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好保持了轻小说的叙述风格和内心独白感\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A对義理の家族等术语翻译更准确，敬称使用更一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处逻辑混乱影响理解，A整体连贯性更好\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"A引号和标点使用更规范\"}\n  },\n  \"key_differences\": [\n    \"段落3：A正确理解为主角带里昂参观，B错误理解为里昂带主角\",\n    \"段落39：B将男性角色尤利乌斯误用女性代词「她」\",\n    \"段落52：A将男性角色里昂误用女性代词「她」\",\n    \"段落84：B主语混乱导致逻辑不通\",\n    \"整体：A更忠实原文但稍显生硬，B更流畅但有多处理解错误\"\n  ],\n  \"final_summary\": \"A在准确性上明显优于B，虽然B的语言更流畅自然，但B存在多处关键性翻译错误（人物关系颠倒、性别错误、逻辑混乱），这些错误会直接影响读者对剧情的理解。A虽有一处性别错误（段落52），但整体翻译准确度更高，综合评判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14423,
+          "completion_tokens": 2304,
+          "total_tokens": 16727
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落3主客颠倒、段落39性别错误、段落84逻辑混乱，均为重大翻译错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，A部分表达略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好保持了轻小说的叙述风格和内心独白感"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对義理の家族等术语翻译更准确，敬称使用更一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处逻辑混乱影响理解，A整体连贯性更好"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "A引号和标点使用更规范"
+      }
+    },
+    "key_differences": [
+      "段落3：A正确理解为主角带里昂参观，B错误理解为里昂带主角",
+      "段落39：B将男性角色尤利乌斯误用女性代词「她」",
+      "段落52：A将男性角色里昂误用女性代词「她」",
+      "段落84：B主语混乱导致逻辑不通",
+      "整体：A更忠实原文但稍显生硬，B更流畅但有多处理解错误"
+    ],
+    "final_summary": "A在准确性上明显优于B，虽然B的语言更流畅自然，但B存在多处关键性翻译错误（人物关系颠倒、性别错误、逻辑混乱），这些错误会直接影响读者对剧情的理解。A虽有一处性别错误（段落52），但整体翻译准确度更高，综合评判A胜出。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

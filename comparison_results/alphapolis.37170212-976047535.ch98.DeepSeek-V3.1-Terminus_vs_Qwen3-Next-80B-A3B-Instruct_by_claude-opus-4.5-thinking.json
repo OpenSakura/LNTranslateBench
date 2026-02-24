@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:03:53.215692",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "a719b22a4620c541bc2fc571af2b82a7f18811d392be9ce90c2237212af28e91",
+    "B": "7b04d7fddffae09b34cf82c99fb725a5c79716f8c71b216435d12432ff9a52fa"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:04:49.386270",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b333f367-4145-475e-b14a-8a5b2c7c4c75",
+      "judge_response": {
+        "id": "b333f367-4145-475e-b14a-8a5b2c7c4c75",
+        "object": "chat.completion",
+        "created": 1768421089,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**关键问题：**\n- **段落31、48**：A保留了未翻译的\"lime-green\"/\"Lime Green\"，这是严重疏漏；B正确译为\"柠檬绿色\"\n- **段落84**：A将\"妖精から精霊に\"误译为\"从精灵进化\"（混淆了妖精/精灵概念）；B正确译为\"由妖精蜕变为精灵\"\n- **段落100**：ワラビー（小袋鼠）A保留日文未译，B误译为\"蕨菜\"——两者均有问题\n- **段落1**：ステア - A\"斯特亚\"更接近音译；B\"斯黛拉\"偏向Stella\n- **段落117**：アリス - A\"爱丽丝\"准确；B\"艾莉亚\"偏差较大\n- **段落151**：トーマ - A\"托马\"准确；B\"托马斯\"过度翻译\n\n### 2. 流畅性分析\n\n- A整体更口语化：如\"真希望客人能多起来啊\"、\"可吓人了\"\n- B稍显书面化但也通顺：如\"目前正在说服哥哥们\"\n- 段落45：A用逗号连接更流畅；B句号分隔略显生硬\n\n### 3. 风格/语气分析\n\n- A更符合轻小说轻松活泼的叙述风格：\"老是踢托马\"、\"超怕打\"\n- B略显正式：\"经常踢托马斯或用手扇他耳朵\"\n- 段落69：A\"一受委屈就闹别扭好久\"更生动\n\n### 4. 术语/名称一致性\n\n- A在段落1译\"斯特亚\"，段落36却用\"斯泰尔\"——存在不一致\n- B统一使用\"斯黛拉\"\n- 召唤兽名字：A用中文（黑曜、翡翠），B保留日文标注——两种处理各有优势\n\n### 5. 格式分析\n\n- A在段落75正确保留\"动物介绍\"；B误用\"绍介\"（日式汉字）\n- B在名字标注上更完整（如\"黑曜[黒曜]\"）\n- 段落31 A的格式混乱（英文夹杂）\n\n### 6. 其他差异\n\n- 段落19：\"シスコン\"（妹控→对象是妹妹）A译\"弟控\"、B也译\"弟控\"——但语境指哥哥们对妹妹，应为\"妹控\"，两者均误\n- 段落171：三日月熊 - A\"半月熊\"、B\"月牙熊\"——\"月牙\"更贴切三日月形状\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A有未翻译遗漏(31,48)和概念混淆(84)；B人名翻译偏差(117艾莉亚/151托马斯)但无硬伤\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语自然，符合轻小说风格；B略显书面化\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A活泼生动贴合轻小说调性；B偏正式\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A存在斯特亚/斯泰尔不一致；B术语统一性更好\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A连贯自然；B句号过多导致节奏稍碎\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A有英文未译问题；B段落75用'绍介'失误，但整体格式规范\"}\n  },\n  \"key_differences\": [\n    \"A在段落31/48保留英文未译是重大失误，但B在核心人名(アリス→艾莉亚)翻译偏差\",\n    \"A语言风格更贴合轻小说活泼调性，B偏书面化\",\n    \"A段落84概念混淆(妖精/精灵)，B准确区分\",\n    \"B名字标注更完整但部分音译偏离原文发音\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A的致命伤在于遗留未翻译英文和概念混淆，但整体风格更符合轻小说调性且核心人名译法准确；B术语处理更规范但风格偏正式，且主要角色名(爱丽丝→艾莉亚)偏差影响阅读体验。综合轻小说重视可读性和角色辨识度的特点，A在风格和核心人名上的优势略微胜出，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16338,
+          "completion_tokens": 2411,
+          "total_tokens": 18749
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有未翻译遗漏(31,48)和概念混淆(84)；B人名翻译偏差(117艾莉亚/151托马斯)但无硬伤"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语自然，符合轻小说风格；B略显书面化"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A活泼生动贴合轻小说调性；B偏正式"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A存在斯特亚/斯泰尔不一致；B术语统一性更好"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A连贯自然；B句号过多导致节奏稍碎"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A有英文未译问题；B段落75用'绍介'失误，但整体格式规范"
+      }
+    },
+    "key_differences": [
+      "A在段落31/48保留英文未译是重大失误，但B在核心人名(アリス→艾莉亚)翻译偏差",
+      "A语言风格更贴合轻小说活泼调性，B偏书面化",
+      "A段落84概念混淆(妖精/精灵)，B准确区分",
+      "B名字标注更完整但部分音译偏离原文发音"
+    ],
+    "final_summary": "两译本各有优劣。A的致命伤在于遗留未翻译英文和概念混淆，但整体风格更符合轻小说调性且核心人名译法准确；B术语处理更规范但风格偏正式，且主要角色名(爱丽丝→艾莉亚)偏差影响阅读体验。综合轻小说重视可读性和角色辨识度的特点，A在风格和核心人名上的优势略微胜出，但差距不大。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

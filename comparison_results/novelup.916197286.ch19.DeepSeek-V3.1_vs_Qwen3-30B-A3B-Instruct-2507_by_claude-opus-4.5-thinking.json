@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:41:28.635160",
+  "sample": "novelup.916197286.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.916197286.ch19.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.916197286.ch19.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/novelup.916197286.ch19.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "555d1a41f6993dc9f3cb5fc90218bd40f549c3b95e2e9706edd270d42780783c",
+    "A": "dcae7883eeb52d0e63f64c4bd132d7ab08ce17c18cd48be4b6657572aa6e444f",
+    "B": "98461bfa161128313dcb8016a7de32a89c4f8a4ca1758cacd71735864137d23a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:42:19.201198",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4a08808a-57b4-468d-b980-77e090d38b8f",
+      "judge_response": {
+        "id": "4a08808a-57b4-468d-b980-77e090d38b8f",
+        "object": "chat.completion",
+        "created": 1768423338,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**关键差异：**\n- **段落6**：「ｺﾞﾆｮｺﾞﾆｮ」是表示小声嘀咕的拟声词。A译\"揉呀揉\"不准确，B音译\"哥尼哥尼奥\"同样不妥。两者都有问题。\n- **段落12**：原文是\"把胸部按在（主角的）脸上\"。A正确，B\"把脸贴向胸部\"主客体颠倒，错误。\n- **段落20**：「力を使いすぎない」A译\"不要过度使用力量\"准确，B译\"别过度消耗体力\"有偏差。\n- **段落66**：A\"真货在哪里？那些家伙才不会摆出这种表情\"正确；B\"真正的我们到底在哪\"理解错误。\n- **段落112**：「ええ！」是肯定回应。A译\"好！\"正确，**B译\"不要啊！\"完全错误**，这是严重翻译失误。\n\n### 2. 流畅性分析\n\n- B整体更口语化、更接地气\n- A部分句子较生硬（如段落1、段落50）\n- 但B过度简化有时丢失信息（如段落90）\n\n### 3. 风格/语气\n\n- A保留\"欧派\"等日式轻小说用语，更贴合原作风格\n- B使用\"胸部/乳房\"更直白，但失去轻小说特有的俏皮感\n- 对话语气A略显平淡，B更活泼但有时过度\n\n### 4. 术语/名称一致性\n\n| 名称 | A | B |\n|------|---|---|\n| クラン | 库兰（但131段变\"克莲\"）| 克兰（一致）|\n| アイシア | 艾希娅/艾西亚（不一致）| 艾希亚/艾西亚/艾西娅（不一致）|\n| 精霊使い | 精灵使（一致）| 灵媒师/灵使（不一致）|\n| ファウスト | 浮士德 | 法乌斯特/福斯塔（不一致）|\n\n两者都存在名称不一致问题，A略好。\n\n### 5. 连贯性/可读性\n\n- 两者都保持了基本故事连贯\n- B段落112的错误严重破坏战斗场景逻辑\n- A叙述更完整，B有时过于简略\n\n### 6. 格式/标点\n\n- 两者基本规范\n- B段落47保留日文假名\"ん\"不妥\n- A标点使用更规范\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 5, \"notes\": \"B段落12主客体颠倒、段落66理解错误、段落112严重误译\"},\n    \"fluency\": {\"A\": 6, \"B\": 7, \"notes\": \"B更口语化流畅，但部分过度简化\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"A保留欧派等轻小说特色用语，B过于直白\"},\n    \"terminology\": {\"A\": 6, \"B\": 5, \"notes\": \"两者都有名称不一致，A的精灵使等核心术语更统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"B的112段错误严重影响战斗场景逻辑\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"B保留日文假名不妥\"}\n  },\n  \"key_differences\": [\n    \"B段落112将肯定回应「ええ！」误译为「不要啊！」，严重错误\",\n    \"B段落12主客体颠倒\",\n    \"A保留轻小说风格用语如欧派，B使用直译\",\n    \"A核心术语更一致，B精灵使译法不统一\"\n  ],\n  \"final_summary\": \"A在准确性方面明显优于B，虽然流畅度略逊，但B存在多处严重翻译错误（特别是段落112的致命失误），严重影响故事理解。A更好地保持了轻小说风格和术语一致性，综合评判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12295,
+          "completion_tokens": 2339,
+          "total_tokens": 14634
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 5,
+        "notes": "B段落12主客体颠倒、段落66理解错误、段落112严重误译"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 7,
+        "notes": "B更口语化流畅，但部分过度简化"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "A保留欧派等轻小说特色用语，B过于直白"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 5,
+        "notes": "两者都有名称不一致，A的精灵使等核心术语更统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "B的112段错误严重影响战斗场景逻辑"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "B保留日文假名不妥"
+      }
+    },
+    "key_differences": [
+      "B段落112将肯定回应「ええ！」误译为「不要啊！」，严重错误",
+      "B段落12主客体颠倒",
+      "A保留轻小说风格用语如欧派，B使用直译",
+      "A核心术语更一致，B精灵使译法不统一"
+    ],
+    "final_summary": "A在准确性方面明显优于B，虽然流畅度略逊，但B存在多处严重翻译错误（特别是段落112的致命失误），严重影响故事理解。A更好地保持了轻小说风格和术语一致性，综合评判A胜出。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

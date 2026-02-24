@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-13T21:52:33.047663",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "0ed49b0f11b5afbc64a84fb08cb08a46911cb331795d4823ba4e31c69c64d05f",
+    "B": "07dc0e8673b19b49ecef30ae09b468a38e02c2b0eb69a39d3520bf25ab65b990"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-13T21:54:14.595195",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026011405531040713175865bUV7Cu",
+      "judge_response": {
+        "id": "chatcmpl-2026011405531040713175865bUV7Cu",
+        "object": "chat.completion",
+        "created": 1768341254,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评测：\n\n### 详细分析\n\n**1. 准确性与术语 (Accuracy & Terminology)**\n*   **人名翻译（关键差异）：**\n    *   **雫 (Shizuku):** 原文中这是一个常见的日本名字（意为水滴）。\n        *   **翻译A** 始终将其翻译为“小雫”或“雫”，非常准确且符合中文轻小说习惯。\n        *   **翻译B** 在第3段翻译为“小雫”，但在第12段及之后突然变为“希兹库”或“希兹库酱”。这显然是音译（Shizuku -> Xi-zi-ku），且完全忽略了汉字含义。这种前后不一致和糟糕的音译是严重的质量问题。\n    *   **シュウゲン (Shuugen):**\n        *   **翻译A** 在第29段直接保留了罗马音“Shugen”，这是一个明显的漏翻/格式错误。\n        *   **翻译B** 翻译为“修源先生”，处理得当。\n    *   **セイ (Sei):**\n        *   **翻译A** 译为“诚”，符合日本人名习惯。\n        *   **翻译B** 译为“塞伊”，偏向西方奇幻风格的音译，不太贴合日本背景的角色，但算不上错误。\n*   **物品/技能：**\n    *   **従魔 (Juuma):** A译为“从魔”，B译为“使魔”。两者皆可，A更贴近原文汉字，B更通俗。\n    *   **反則技:** A译为“违规技能”，B译为“犯规技”。B略微自然一些。\n\n**2. 流畅性与句式 (Fluency)**\n*   **第1段:** 原文是“父から...反対され...”。A译为“被父亲反对...”，是被动句，略显生硬。B译为“爸爸反对我...”，改为主动句，读起来更自然。\n*   **第38段:** B使用了成语“庞然大物”来翻译“かなりの大物”，比A的“相当大的家伙”更有文采。\n*   尽管B在部分句子的润色上做得不错，但由于人名“希兹库”的突兀出现，严重破坏了阅读的流畅感和沉浸感。\n\n**3. 风格与语气 (Style & Tone)**\n*   两者的语气都比较符合轻小说风格。\n*   A在对话处理上比较稳健，符合角色身份（如姐姐、妹妹）。\n*   B在人名处理上的失误导致角色称呼显得非常奇怪（“希兹库酱”听起来像是在叫一个外国人，而不是之前的“小雫”）。\n\n**4. 一致性 (Consistency)**\n*   **翻译A** 在术语和人名上保持了高度一致（除了漏翻的一个名字）。\n*   **翻译B** 犯了翻译的大忌：**术语不一致**。同一个角色在第3段叫“小雫”，第12段变成了“希兹库”。这表明B可能使用了机器翻译辅助且后期校对非常粗糙，或者是由不同人分段翻译且未统一词表。\n\n### 总结判决\n**翻译A** 整体表现更好。虽然它在第29段有一个明显的漏翻（保留了英文名），但它正确处理了主要角色“雫”的名字，并保持了全文的一致性。\n**翻译B** 虽然在某些句子的润色上（如第1段、第38段）略胜一筹，但其在主要角色名字翻译上的严重不一致（从意译跳变为糟糕的音译）是致命伤，极大地影响了读者的阅读体验和对译文质量的信任。\n\n### 最终结果\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"A准确翻译了主要人名；B在主要角色名字上出现严重的前后不一致和音译错误。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"B的部分句式更自然，但人名问题严重破坏了阅读流。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 7,\n      \"notes\": \"A更符合轻小说惯例；B的人名音译（希兹库）不符合日系背景。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 4,\n      \"notes\": \"B将'雫'先后译为'小雫'和'希兹库'，属于严重失误。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B的角色名变更导致上下文脱节。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"A有一处漏翻（Shugen），B格式无误。\"\n    }\n  },\n  \"key_differences\": [\n    \"人名翻译：A始终使用'小雫'；B先用'小雫'后变为'希兹库'（音译），极不一致。\",\n    \"漏翻：A在第29段保留了'Shugen'未翻译；B正确译为'修源'。\",\n    \"句式：B在开篇的被动转主动处理上比A更自然。\"\n  ],\n  \"final_summary\": \"翻译A胜出。尽管A有一处单词未翻译（Shugen），但它在主要角色名称（雫）的处理上准确且一致。相比之下，翻译B出现了严重的术语不一致问题，将同一个角色先译为'小雫'后又改为糟糕的音译'希兹库'，这在长篇阅读中是无法接受的错误，表明校对缺失。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6874,
+          "completion_tokens": 5804,
+          "total_tokens": 12678
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "A准确翻译了主要人名；B在主要角色名字上出现严重的前后不一致和音译错误。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "B的部分句式更自然，但人名问题严重破坏了阅读流。"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说惯例；B的人名音译（希兹库）不符合日系背景。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 4,
+        "notes": "B将'雫'先后译为'小雫'和'希兹库'，属于严重失误。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 5,
+        "notes": "B的角色名变更导致上下文脱节。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "A有一处漏翻（Shugen），B格式无误。"
+      }
+    },
+    "key_differences": [
+      "人名翻译：A始终使用'小雫'；B先用'小雫'后变为'希兹库'（音译），极不一致。",
+      "漏翻：A在第29段保留了'Shugen'未翻译；B正确译为'修源'。",
+      "句式：B在开篇的被动转主动处理上比A更自然。"
+    ],
+    "final_summary": "翻译A胜出。尽管A有一处单词未翻译（Shugen），但它在主要角色名称（雫）的处理上准确且一致。相比之下，翻译B出现了严重的术语不一致问题，将同一个角色先译为'小雫'后又改为糟糕的音译'希兹库'，这在长篇阅读中是无法接受的错误，表明校对缺失。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

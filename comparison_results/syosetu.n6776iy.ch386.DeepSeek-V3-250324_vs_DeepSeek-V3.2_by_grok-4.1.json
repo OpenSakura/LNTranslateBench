@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:47:43.999045",
+  "sample": "syosetu.n6776iy.ch386",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6776iy.ch386.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6776iy.ch386.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/syosetu.n6776iy.ch386.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2bb7195d7ec1f474ffb77e11e9912b818e91c49fbc1fcd84cbf2ad9cb25860ec",
+    "A": "ebf13253832b0c04ac0be5f247165b8325df51b65c3e77d18861b641d0df702f",
+    "B": "cb6dc235d1cb2a95d019a32d71cdbd7a9256ba239cdb5ecfc24adfb0a29512b9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:48:17.287300",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DulRYGDhqqlzD98EnSsgcHMQVeT",
+      "judge_response": {
+        "id": "chatcmpl-89DulRYGDhqqlzD98EnSsgcHMQVeT",
+        "object": "chat.completion",
+        "created": 1768427296,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 日文到中文翻译 常见人名翻译 レイ マルク ヒナ カイ ベイン アーノルド\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"日文轻小说翻译 血属性 血属性魔术 中文怎么翻\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"日语 レイ 名字 中文翻译 蕾 还是 雷\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"如何从零开始翻译一本日语小说？ - 知乎\" Zhihu](https://www.zhihu.com/question/27047645)\n> [🔗 \"音译假名 - 萌娘百科 万物皆可萌的百科全书\" MoeGirl](https://zh.moegirl.org.cn/zh-hans/%E9%9F%B3%E8%AF%91%E5%81%87%E5%90%8D)\n> [🔗 \"轻小说 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-cn/%E8%BC%95%E5%B0%8F%E8%AA%AA)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"翻译日本所有轻小说-起点中文网手机端\" Qidian](https://m.qidian.com/ask/qqbamurtuosdy)\n> [🔗 \"日语原版轻小说 日文版-番茄小说\" Fanqienovel](https://fanqienovel.com/keyword/3707833)\n> [🔗 \"【学习工具】啃轻小说时用到的工具分享\" BGM](https://bgm.tv/group/topic/395456)\n> [🔗 \"GitHub - auto-novel/auto-novel: 轻小说机翻网站，支持网...\" GitHub](https://github.com/FishHawk/auto-novel)\n> [🔗 \"日文原版轻小说 - Top 100件日文原版轻小说 - ...\" Taobao](https://www.taobao.com/list/product/%E6%97%A5%E6%96%87%E5%8E%9F%E7%89%88%E8%BD%BB%E5%B0%8F%E8%AF%B4.htm)\n\n> 🔍 **10 results found**\n\n> [🔗 \"如何从零开始翻译一本日语小说？ - 知乎\" Zhihu](https://www.zhihu.com/question/27047645)\n> [🔗 \"GitHub - NEKOparapa/AiNiee: 一款专注于Ai翻译的工具，一键自动翻译RPG SLG游戏，Epub TXT小说，PDF Word MD文档，Srt Vtt Lrc字幕等等复杂长文本。\" GitHub](https://github.com/NEKOparapa/AiNiee)\n> [🔗 \"auto-novel - 自动生成和分享轻小说翻译的网站，支持浏览日本网络小说或上传EPUB/TXT文件生成多种机器翻译版本 - 懂AI\" Dongaigc](https://www.dongaigc.com/p/FishHawk/auto-novel)\n> [🔗 \"AiNiee - AI翻译工具，游戏爱好者和小说迷的翻译神器 | AI工具集\" AI工具集](https://ai-bot.cn/ainiee)\n> [🔗 \"翻译日本所有轻小说-起点中文网手机端\" Qidian](https://m.qidian.com/ask/qqbamurtuosdy)\n> [🔗 \"Light Novel Translator | Ehaschia's Blog\" Ehaschia's Blog](https://ehaschia.github.io/2019/03/24/blog20190324)\n> [🔗 \"有道翻译_文本、文档、网页、在线即时翻译\" Youdao Translate](https://fanyi.youdao.com/)\n> [🔗 \"官方翻译简直感人，你可能是正版软件的受害者（剧透） (讨论:Bloodborne)\" Bangumi](https://bangumi.tv/subject/topic/10251)\n> [🔗 \"百度翻译-您的超级翻译伙伴（文本、文档翻译）\" Baidu Fanyi](https://fanyi.baidu.com/)\n> [🔗 \"归还者的魔法要特别 - 萌娘百科 万物皆可萌的百...\" Moegirl](https://zh.moegirl.org.cn/%E5%BD%92%E8%BF%98%E8%80%85%E7%9A%84%E9%AD%94%E6%B3%95%E8%A6%81%E7%89%B9%E5%88%AB)\n\n> 🔍 **10 results found**\n\n> [🔗 \"蕾- 日文翻译中文\" HuiJiang](https://www.hujiang.com/jpciku/je895be)\n> [🔗 \"Rei - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/Rei)\n> [🔗 \"中文名字转日文名字生成器 姓名翻译日语 日本名字在线免费转换 日本通\" Ribentong](https://www.ribentong.com/mingzi)\n> [🔗 \"Dear native... 雷雷 as a name? : r/LearnJapanese\" Reddit](https://www.reddit.com/r/LearnJapanese/comments/13685qk/dear_native_%E9%9B%B7%E9%9B%B7_as_a_name)\n> [🔗 \"Ray - Translation into Chinese - examples English | Reverso Context\" Reverso Context](https://context.reverso.net/translation/english-chinese/Ray)\n> [🔗 \"Ray英文名 Ray名字含义 英文名\" Oicq88](https://en.oicq88.com/ray.html)\n> [🔗 \"蕾 - Translation into English - examples Chinese | Reverso Context\" Reverso Context](https://context.reverso.net/translation/chinese-english/%E8%95%BE)\n> [🔗 \"Ray - Translation into English - examples Chinese | Reverso Context\" Reverso Context](https://context.reverso.net/translation/chinese-english/Ray)\n> [🔗 \"音译假名 - 萌娘百科 万物皆可萌的百科全书\" MoeGirl](https://zh.moegirl.org.cn/zh-hans/%E9%9F%B3%E8%AF%91%E5%81%87%E5%90%8D)\n> [🔗 \"即时翻译文本&完整的文档文件。为个人和团队提供准确的翻译。每天有数百万人使用DeepL进行翻译。\" DeepL](https://www.deepl.com/zh/translator/l/ja/zh)\n\n\n这是一个非常情感激烈、内心独白与对话交织的轻小说高潮段落，涉及自我认知、记忆融合、虚假目标与真实愿望的冲突。整体上，两个翻译都努力保留了原文的戏剧性和情感张力，但存在明显差异。\n\n**准确性**：两者基本都忠实于原文意思。A在多数地方更贴近原文的细微表达（如段落4的“就现在，希望现在能稍微等一下。”更直接对应“ちょっと今は、今だけは少し待って欲しい。”的强调“现在、仅现在”；段落11的“如白纸上滴入一滴墨汁搅浑般”准确捕捉了“白に一滴の墨汁を撹拌したような”比喻的动态感）。B偶尔稍有偏差或简化（如段落2的“之后、拜托了”丢失了“後、お願い”的“剩下的”含义；段落16的“第二人格”将“二人目”过度解读为“人格”而非“第二个我”）。但整体两者准确性都很高，A略胜。\n\n**流畅性**：A的中文更接近自然口语和叙述体，轻小说常见的轻松但带情感的语气体现较好（如大量使用“啊”“呢”“吧”等语气助词，读起来亲切）。B常使用顿号分隔（如“现在稍微、就现在这一小会儿”），造成阅读卡顿感较强，部分句子显得生硬或日式结构残留（如段落9、10、66的表达）。A整体更顺滑自然。\n\n**风格/语气**：轻小说强调内心情感爆发、少女的纠结与倔强、热血式呐喊。A更好地保留了这种“轻”感与情感浓度（如段落51、59、63的长句爆发力强，语气激烈却不失少女感；段落67、69的喊话节奏感好）。B在高潮处语气稍显平淡或过于书面（如段落59的“大包大揽”虽生动但略带网络用语感，与整体氛围稍脱节；段落63的“给我适可而止啊”语气过硬）。A更贴合轻小说叙述/对话的青春、感性风格。\n\n**术语/名称一致性**：名称上，A统一使用“蕾”“马鲁克”“阳奈”，B用“蕾”“马克”“阳奈”。“マルク”在轻小说中常见音译为“马鲁克/马克”，两者都可接受，但A保持一致性更好。“血属性”两者一致使用，未见问题。“一人目/二人目”A坚持“第一个我/第二个我”，更忠实原文的自我指代感；B有时用“第一人格/第二人格”，稍有偏差（原文更偏向“另一个自己”而非临床人格分裂）。A在此更一致。\n\n**连贯性/可读性**：A的段落衔接更流畅，内心独白与对话过渡自然，整段阅读像一篇连贯的中文轻小说。B的部分分隔和重复（如多用顿号、重复“大概”“或许”）让节奏略显断裂，可读性稍逊。\n\n**格式/标点符号**：A的破折号、感叹号、省略号使用更符合中文小说习惯，且与原文情绪对应紧密。B的顿号使用过多（模仿日文逗号），中文阅读时稍显异样；部分标点位置微妙不同，但A整体更规范自然。\n\n**总体**：A在流畅性、风格贴合、语气爆发力、可读性上明显占优，准确性和一致性也更稳。B在某些描述（如段落11、79的景色描写）有自己特色，但整体不如A自然且富有轻小说感染力。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更忠实于原文细微强调和指代，B偶有小偏差或过度解读\"},\n    \"fluency\": {\"A\": 9, \"B\": 7, \"notes\": \"A中文自然流畅，B顿号过多、结构偶显生硬\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更好地捕捉轻小说情感爆发与少女内心纠结的语气，B稍平淡或偏书面\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"A在一人目/二人目指代和人名一致性上更严谨，B有轻微偏离\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体阅读连贯性强，B部分节奏被标点打断\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"A标点使用更符合中文章节习惯，B顿号滥用影响阅读\"}\n  },\n  \"key_differences\": [\n    \"A的语气词和助词使用更丰富自然，增强轻小说感；B偏向直译结构\",\n    \"A在高潮爆发句（如51、59、63、67）节奏与情感张力更强\",\n    \"B较多使用顿号分隔，中文阅读时卡顿感明显\",\n    \"A对一人目/二人目统一为“第一个我/第二个我”，更贴原文自我认知主题；B偶用“人格”稍偏\",\n    \"叙述描写（如段落11、79）A的比喻更生动流畅\"\n  ],\n  \"final_summary\": \"翻译A整体更胜一筹：准确传达原文情感的同时，中文表达更自然、富有轻小说特有的青春感性与节奏感，可读性和感染力明显优于B。B虽无重大错误，但在流畅度、语气贴合与中文习惯上稍逊，适合作为参考但非首选。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10394,
+          "completion_tokens": 3925,
+          "total_tokens": 14319
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更忠实于原文细微强调和指代，B偶有小偏差或过度解读"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A中文自然流畅，B顿号过多、结构偶显生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地捕捉轻小说情感爆发与少女内心纠结的语气，B稍平淡或偏书面"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A在一人目/二人目指代和人名一致性上更严谨，B有轻微偏离"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体阅读连贯性强，B部分节奏被标点打断"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A标点使用更符合中文章节习惯，B顿号滥用影响阅读"
+      }
+    },
+    "key_differences": [
+      "A的语气词和助词使用更丰富自然，增强轻小说感；B偏向直译结构",
+      "A在高潮爆发句（如51、59、63、67）节奏与情感张力更强",
+      "B较多使用顿号分隔，中文阅读时卡顿感明显",
+      "A对一人目/二人目统一为“第一个我/第二个我”，更贴原文自我认知主题；B偶用“人格”稍偏",
+      "叙述描写（如段落11、79）A的比喻更生动流畅"
+    ],
+    "final_summary": "翻译A整体更胜一筹：准确传达原文情感的同时，中文表达更自然、富有轻小说特有的青春感性与节奏感，可读性和感染力明显优于B。B虽无重大错误，但在流畅度、语气贴合与中文习惯上稍逊，适合作为参考但非首选。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

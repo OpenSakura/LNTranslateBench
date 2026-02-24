@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:44:01.727363",
+  "sample": "pixiv.1323866.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.1323866.ch5.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.1323866.ch5.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.1323866.ch5.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b2fb829d795c2d953fddc497398bdbc41182f1a9e96c4ccaf00de379426461ac",
+    "A": "d4a3ffa54dbb1086dae2a5cb30e4a8f3e5209cd1f9d93aacebe3d7ed10243a60",
+    "B": "eeeda9f474ef8a202a0b0c44de0cf97fb08b2d3abe5502d13263400ee3c274be"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:44:49.998113",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5d3602cc-44b7-49d1-9b82-77b74fb7b65a",
+      "judge_response": {
+        "id": "5d3602cc-44b7-49d1-9b82-77b74fb7b65a",
+        "object": "chat.completion",
+        "created": 1768423489,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n- **段落3**: A译\"爆破物\"，B译\"爆炸物\"。原文\"爆発物\"应为\"爆炸物\"，B更准确。\n- **段落21**: A\"被反侦察的警察盯上\"有误，B\"被警方逆向追踪\"更准确。\n- **段落27**: B出现严重错误\"他probably已经察觉了\"，混入英文单词。\n- **段落35**: A误译约定内容，B\"我绝不会让你忘记\"更贴合原文\"忘れさせない\"。\n- **段落37**: A\"冷静点一起被灌了脑子\"语义混乱，B更通顺准确。\n- **段落45**: A遗漏\"死相\"，B完整保留。\n\n### 流畅性分析\n- A整体更书面化、正式，B更口语化、自然。\n- B的口语表达如\"这大姐\"\"搞定\"\"打发\"更贴合轻小说对话风格。\n- 但B段落1定语过长，略显累赘。\n\n### 风格/语气分析\n- A风格统一但略显生硬，B更活泼但偶有过度口语化。\n- B的\"佐藤丫头\"\"这档子事\"等更符合角色语气。\n\n### 格式/标点分析\n- A全文统一使用「」引号。\n- B混用「」和\"\"（段落9-13、16-18等使用\"\"），**格式不一致是明显缺陷**。\n\n### 关键差异\n1. B在段落27出现未翻译的英文\"probably\"，严重错误\n2. B引号格式不统一\n3. A在部分段落（如37）翻译不通顺\n4. B整体口语化风格更适合轻小说\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落37等处有误译，B在段落27有未翻译英文；B在'死相'等细节更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语自然，但段落1定语过长\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说对话风格，A略显正式\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A'爆破物'不如B'爆炸物'准确，但B出现英文混入\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯性更好\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"A引号统一，B混用「」和\\\"\\\"严重不一致\"}\n  },\n  \"key_differences\": [\n    \"B在段落27出现未翻译英文'probably'，属严重错误\",\n    \"B引号格式不统一（「」与\\\"\\\"混用）\",\n    \"B口语化程度更高，更贴合轻小说风格\",\n    \"A在段落37等处存在语义不通问题\"\n  ],\n  \"final_summary\": \"两译本各有优劣：B在风格和部分细节准确性上更佳，但因段落27出现未翻译英文及全文引号格式严重不一致，整体专业性受损；A虽然部分翻译略显生硬，但格式规范、整体稳定性更高。综合考量，A以格式一致性和无明显硬伤胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11708,
+          "completion_tokens": 2028,
+          "total_tokens": 13736
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落37等处有误译，B在段落27有未翻译英文；B在'死相'等细节更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语自然，但段落1定语过长"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说对话风格，A略显正式"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A'爆破物'不如B'爆炸物'准确，但B出现英文混入"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯性更好"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "A引号统一，B混用「」和\"\"严重不一致"
+      }
+    },
+    "key_differences": [
+      "B在段落27出现未翻译英文'probably'，属严重错误",
+      "B引号格式不统一（「」与\"\"混用）",
+      "B口语化程度更高，更贴合轻小说风格",
+      "A在段落37等处存在语义不通问题"
+    ],
+    "final_summary": "两译本各有优劣：B在风格和部分细节准确性上更佳，但因段落27出现未翻译英文及全文引号格式严重不一致，整体专业性受损；A虽然部分翻译略显生硬，但格式规范、整体稳定性更高。综合考量，A以格式一致性和无明显硬伤胜出。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

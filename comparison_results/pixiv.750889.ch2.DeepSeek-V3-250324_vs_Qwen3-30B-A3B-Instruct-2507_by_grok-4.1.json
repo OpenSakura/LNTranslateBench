@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:44.267075",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "07f236595af87ba388fe9ef1fe6ff79c67d251ed3b7db18d70af9dc422944749",
+    "B": "4ba6ea54fd2db9acc8097392a98d451806a74ff000c0d11880932f09cc3b7b61"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:20.895635",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89D0HLANGRMd2lTH8ugFg7j4pkTJh",
+      "judge_response": {
+        "id": "chatcmpl-89D0HLANGRMd2lTH8ugFg7j4pkTJh",
+        "object": "chat.completion",
+        "created": 1768427120,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン キャラクター 吉田歩美 彼方\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"サザエさん時空 意味\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"オリ主 注意 意味 ラノベ\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"私設 意味 二次創作\"\n> 📊 **Results requested:** 5\n\n> 🔍 **5 results found**\n\n> [🔗 \"吉田歩美 | 名探偵コナン Wiki - Fandom\" meitantei-conan.fandom.com](https://meitantei-conan.fandom.com/ja/wiki/%E5%90%89%E7%94%B0%E6%AD%A9%E7%BE%8E)\n> [🔗 \"吉田歩美のキャラクター&エピソード情報 | 名探偵コナン - 少年サンデー\" websunday.net](https://websunday.net/conan100/character?tid=423)\n> [🔗 \"歩美ちゃんが黒い回まとめ【名探偵コナン】 - 至高のアニメ思考\" suzuki2018.hatenablog.com](https://suzuki2018.hatenablog.com/entry/ayumi-black)\n> [🔗 \"#名探偵コナン #吉田歩美 【コ歩】君と恋をするのなら - うねの小説 - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=9718726)\n> [🔗 \"吉田 歩美｜キャラクター｜名探偵コナン - 読売テレビ\" www.ytv.co.jp](https://www.ytv.co.jp/conan/character/ayumi)\n\n> 🔍 **5 results found**\n\n> [🔗 \"サザエさん時空 - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"サザエさん時空とは (サザエサンジクウとは) [単語記事] - ニコニコ大百科\" dic.nicovideo.jp](https://dic.nicovideo.jp/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"サザエさん時空 - アニヲタWiki(仮) - atwiki（アットウィキ）\" w.atwiki.jp](https://w.atwiki.jp/aniwotawiki/pages/7311.html)\n> [🔗 \"サザエさん時空 | ディクト - DiQt\" www.diqt.net](https://www.diqt.net/ja/words/2035509)\n> [🔗 \"サザエさん時空とは？ わかりやすく解説 - Weblio辞書\" www.weblio.jp](https://www.weblio.jp/content/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n\n> 🔍 **5 results found**\n\n> [🔗 \"オリ主 - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%AA%E3%83%AA%E4%B8%BB)\n> [🔗 \"夢小説における夢主の通称についての質問です。ゲーム内の主人公（プレイ... - Yahoo!知恵袋\" detail.chiebukuro.yahoo.co.jp](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14293539124)\n> [🔗 \"オリ主を使う利点・欠点とおすすめ二次創作5選\" suzustory.com](https://suzustory.com/2018/01/16/nizi-5)\n> [🔗 \"夢小説についての私の見解｜雑食獏 - note\" note.com](https://note.com/brave_lotus235/n/nde7c8b7db1f7)\n> [🔗 \"オリ主嫌われ (おりぬしきらわれ)とは【ピクシブ百科事典】\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%AA%E3%83%AA%E4%B8%BB%E5%AB%8C%E3%82%8F%E3%82%8C)\n\n> 🔍 **5 results found**\n\n> [🔗 \"法的に、二次創作は私的利用の範囲内(家庭内など)ならOKと知りました。あるアニメの二... - Yahoo!知恵袋\" detail.chiebukuro.yahoo.co.jp](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10291489630)\n> [🔗 \"二次創作と著作権(備忘録/2023.6.5更新)｜憂那 - note\" note.com](https://note.com/yuu719/n/na366c5780c0f)\n> [🔗 \"著作権侵害にならない「私的使用」の限界はどこか | イノベーションズアイ BtoBビジネスメディア\" www.innovations-i.com](https://www.innovations-i.com/copyright-info?id=27)\n> [🔗 \"二次創作ガイドライン - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E4%BA%8C%E6%AC%A1%E5%89%B5%E4%BD%9C%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)\n> [🔗 \"二次創作において考えていること - もりとみずうみ - はてなブログ\" jardindelis.hatenablog.com](https://jardindelis.hatenablog.com/entry/2023/12/30/223259)\n\n\n这是一个轻小说风格的同人作品（基于《名探偵コナン》），带有时间循环（ループ）元素，主角是原创角色吉田彼方（步美的哥哥，性别模糊设定）。翻译A和B都是从日文到中文的译本。\n\n### 详细分析\n\n**1. 准确性（意思保留）**  \n两者整体都忠实于原文，几乎没有重大误译。  \n- A在一些地方稍显直译，如段落8的“从吉田家天真无邪的天使、我深爱的美丽步美小姐转校而来，那个少年的故事，我早已听说很久以前的事了”显得啰嗦且结构awkward，原文是“聞いたのはもう大分前のことだが”强调“听说已经是很久前的事”。  \n- B更精炼自然，如“虽然听闻...已是许久之前”。  \n- 关键梗如“サザエさん時空”：A用“萨扎埃小姐时空”（音译+小姐），B用“《海螺小姐》时空”（常用中文名+书名号，更贴近中文圈认知）。B胜。  \n- 其他如“オリ主”：A“原主”（误导，原文是原创主角），B“原创角色”（准确）。  \n- “私設”：A“独创设定”，B“私设”（二次创作圈标准用语，更专业）。  \nB在术语准确性上明显更胜。\n\n**2. 流畅性（自然表达）**  \n- A经常出现生硬、冗长的句子，如段落8、13、18等，读起来有“翻译腔”，例如“即使春天过去，夏天过去，秋天与冬天也已流逝，我依然还在帝丹高中一年级就读”。  \n- B更简洁、符合中文小说阅读习惯，如“春去夏至秋过冬逝，我依然在帝丹高中读一年级”。对话和叙述都更顺。  \nB整体更流畅，像母语者写的轻小说。\n\n**3. 风格/语气（轻小说叙述/对话）**  \n轻小说常带吐槽、内心独白、轻松调侃。第一人称叙述需保持“オレ”粗鲁但不失幽默的语气。  \n- A有时过于文绉绉或夸张，如“敬请继续”“我深爱的美丽步美小姐”（原文“愛しのプリティー歩美ちゃん”亲昵但不那么正式）。  \n- B更贴近轻小说口吻：吐槽自然（如“时机也太巧了吧喂”），对话活泼（如“诶——真的假的？”）。  \n- 元ネタ处理（如サザエさん、meta、ネタ）B更轻松接地气。  \nB风格更符合轻小说读者预期。\n\n**4. 术语/名称一致性**  \n- 专有名词：两者都保持“帝丹高中”“江户川柯南”“灰原哀”等一致。  \n- 圈内词：B用“私设”“玩梗和meta要素”“轮回”（转生用“转生”也常见，但ループ对应“轮回”或“循环”都可）；A“元设定或梗”不够标准。  \n- “死神少年”一致，但B在叙述中更统一。  \nB更专业一致，尤其二次创作相关术语。\n\n**5. 连贯性/可读性**  \nA有些句子过长、结构复杂，阅读时需停顿；B段落节奏好，跳跃感（原文“ぽんぽん飛ばしている”）处理自然。整体B更易一口气读完。\n\n**6. 格式/标点符号**  \n两者标点使用相似，都用中文引号。  \n- A偶尔英文混用或标点不统一（如“ええーマジで？”译为“哎呀真的吗？”）。  \n- B更规范，如使用破折号、书名号处理作品名。  \n两者差距不大，但B稍优。\n\n**总体比较**  \nB在流畅性、风格贴合、术语专业度、可读性上全面领先。A虽准确，但翻译腔重、表达不够自然，适合字面理解但不适合沉浸式阅读轻小说。差异明显，无需判平局。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9, \"notes\": \"两者意思基本准确，但B在关键梗（如サザエさん時空、海螺小姐）和圈内词（如私设、原创角色）上更精准，避免误导。\"},\n    \"fluency\": {\"A\": 6, \"B\": 9, \"notes\": \"A有明显翻译腔，句子冗长生硬；B自然流畅，像中文原生轻小说。\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好保留了原文轻松吐槽、亲昵调侃的轻小说语气，对话活泼接地气。\"},\n    \"terminology\": {\"A\": 6, \"B\": 9, \"notes\": \"B熟练使用中文二次创作圈标准术语（私设、meta、玩梗），A部分生硬或错误（如原主）。\"},\n    \"coherence\": {\"A\": 7, \"B\": 9, \"notes\": \"B叙述节奏好，连贯性强；A有些句子结构复杂，影响阅读顺畅。\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者标点和格式相似，都规范使用中文引号，差距不大。\"}\n  },\n  \"key_differences\": [\n    \"B在中文轻小说/二次创作语境中更自然专业（如用《海螺小姐》、私设、玩梗等），A偏直译且部分术语不标准。\",\n    \"B叙述更简洁生动，减少赘述，增强可读性和沉浸感。\",\n    \"对话和内心吐槽的语气B更贴合原文轻松幽默风格。\"\n  ],\n  \"final_summary\": \"翻译B整体质量明显优于A，更适合轻小说读者：准确度高、表达自然、风格到位、术语专业，是更优秀的中文版本。A虽无大错，但流畅度和风格匹配度不足。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10306,
+          "completion_tokens": 3775,
+          "total_tokens": 14081
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "两者意思基本准确，但B在关键梗（如サザエさん時空、海螺小姐）和圈内词（如私设、原创角色）上更精准，避免误导。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "A有明显翻译腔，句子冗长生硬；B自然流畅，像中文原生轻小说。"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好保留了原文轻松吐槽、亲昵调侃的轻小说语气，对话活泼接地气。"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 9,
+        "notes": "B熟练使用中文二次创作圈标准术语（私设、meta、玩梗），A部分生硬或错误（如原主）。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B叙述节奏好，连贯性强；A有些句子结构复杂，影响阅读顺畅。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者标点和格式相似，都规范使用中文引号，差距不大。"
+      }
+    },
+    "key_differences": [
+      "B在中文轻小说/二次创作语境中更自然专业（如用《海螺小姐》、私设、玩梗等），A偏直译且部分术语不标准。",
+      "B叙述更简洁生动，减少赘述，增强可读性和沉浸感。",
+      "对话和内心吐槽的语气B更贴合原文轻松幽默风格。"
+    ],
+    "final_summary": "翻译B整体质量明显优于A，更适合轻小说读者：准确度高、表达自然、风格到位、术语专业，是更优秀的中文版本。A虽无大错，但流畅度和风格匹配度不足。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

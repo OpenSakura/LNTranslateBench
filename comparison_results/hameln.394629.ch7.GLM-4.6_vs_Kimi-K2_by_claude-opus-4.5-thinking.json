@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:18:18.458810",
+  "sample": "hameln.394629.ch7",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394629.ch7.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394629.ch7.Kimi-K2.translated.txt",
+    "B": "translated_results/hameln.394629.ch7.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "75794fdd92e580d793f2c60acda602fe251b03cd0f92019992c28c220903948f",
+    "A": "720b797fd8c17f6fdc26a1a3e2c07fe786e9aa19a9bf74b84325c5e4a53c26b9",
+    "B": "80d5fba3fef3869b492cf677df074def5a1636ef8541acc0b10dbb7231eedae7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:19:10.202980",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6c34d98b-35af-4524-86f2-36eacb837f3f",
+      "judge_response": {
+        "id": "6c34d98b-35af-4524-86f2-36eacb837f3f",
+        "object": "chat.completion",
+        "created": 1768421950,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 完整性检查\n首先，**翻译A缺失了多个段落**（32、33、36、38、41），这是非常严重的问题。翻译B则完整翻译了所有段落。\n\n### 逐项分析\n\n**1. 准确性**\n- A在段落11将「因縁」译为\"缘分\"较为准确；B译为\"姻缘\"略带浪漫色彩\n- A在段落19将「ボロボロ」译为\"遍体鳞伤\"稍显夸张；B的\"破破烂烂\"更贴近原意\n- B在段落41出现视角错误，使用\"他\"而非\"我\"（原文为第一人称叙述）\n\n**2. 流畅性**\n- A：\"运动学习样样行，外加还是个大美女\"口语化更自然\n- B：\"运动和功课都好，而且还长得漂亮\"较为书面\n- A段落75\"一脸懵逼\"过于网络化；B\"极为困惑的样子\"更稳妥\n\n**3. 风格/语气**\n- A整体更口语化、轻快，符合轻小说的对话风格\n- B较为正式，在对话中稍显生硬\n- A段落52\"到底要蠢到什么地步\"比B\"到底有多愚蠢\"更有角色气势\n\n**4. 术语/名称一致性**\n- A使用\"麻美前辈\"更符合魔法少女作品中的称呼习惯\n- B使用\"麻美小姐\"相对疏远\n- 两者对\"魔法少女\"\"灵魂宝石\"\"结界\"等核心术语翻译一致\n\n**5. 连贯性/可读性**\n- A因缺失5个段落，叙事出现断层，**严重影响阅读体验**\n- B完整连贯，但段落41的视角错误略有干扰\n\n**6. 格式/标点符号**\n- A多处段落末尾残留多余的引号（如77、78段的\"」\"）\n- B格式相对规范\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A部分表达更生动但有夸张，B整体更忠实原文但有一处视角错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化更自然，B略显书面化\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说活泼风格，B稍正式\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A的'麻美前辈'更贴合作品语境，B的'麻美小姐'略疏远\"},\n    \"coherence\": {\"A\": 3, \"B\": 9, \"notes\": \"A缺失5个段落导致叙事断裂，B完整连贯\"},\n    \"formatting\": {\"A\": 5, \"B\": 8, \"notes\": \"A有残留引号问题，B格式规范\"}\n  },\n  \"key_differences\": [\n    \"翻译A缺失段落32、33、36、38、41，严重影响完整性\",\n    \"A更口语化活泼，B更书面正式\",\n    \"A用'麻美前辈'，B用'麻美小姐'\",\n    \"B段落41有视角错误（他→我）\",\n    \"A段落75用'一脸懵逼'过于网络化\"\n  ],\n  \"final_summary\": \"尽管翻译A在流畅性和轻小说风格方面略有优势，但其缺失5个完整段落是致命缺陷，直接破坏了叙事连贯性和阅读体验。翻译B虽有个别小瑕疵（如视角错误、称谓选择），但保持了完整性和整体可读性，因此B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10207,
+          "completion_tokens": 2217,
+          "total_tokens": 12424
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A部分表达更生动但有夸张，B整体更忠实原文但有一处视角错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化更自然，B略显书面化"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说活泼风格，B稍正式"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的'麻美前辈'更贴合作品语境，B的'麻美小姐'略疏远"
+      },
+      "coherence": {
+        "A": 3,
+        "B": 9,
+        "notes": "A缺失5个段落导致叙事断裂，B完整连贯"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有残留引号问题，B格式规范"
+      }
+    },
+    "key_differences": [
+      "翻译A缺失段落32、33、36、38、41，严重影响完整性",
+      "A更口语化活泼，B更书面正式",
+      "A用'麻美前辈'，B用'麻美小姐'",
+      "B段落41有视角错误（他→我）",
+      "A段落75用'一脸懵逼'过于网络化"
+    ],
+    "final_summary": "尽管翻译A在流畅性和轻小说风格方面略有优势，但其缺失5个完整段落是致命缺陷，直接破坏了叙事连贯性和阅读体验。翻译B虽有个别小瑕疵（如视角错误、称谓选择），但保持了完整性和整体可读性，因此B胜出。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:19:02.952921",
+  "sample": "hameln.394639.ch5",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.394639.ch5.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.394639.ch5.Kimi-K2.5.translated.txt",
+    "B": "translated_results/hameln.394639.ch5.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "005e8426c22085c5d10d80df825359e7b7c85cb8c902d6ef47ecceef5edd88ad",
+    "A": "c6b8cb2e78ad26027da19483e90855e340efe0155f87b31f1e8784504d912da4",
+    "B": "32732df6ff1844c35e5420906269a6e9a13616c23c50f46beb43fe3d18280776"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:20:01.001342",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "status": "failed",
+      "error": "Error code: 503 - {'error': {'message': 'No capacity available for model claude-opus-4-5-thinking on the server', 'type': 'upstream_error', 'param': '', 'code': 503}}"
+    },
+    {
+      "attempt": 2,
+      "temperature": 0.3,
+      "judge_request_id": "483065d7-8c2d-470f-b573-f060ed9cce6a",
+      "judge_response": {
+        "id": "483065d7-8c2d-470f-b573-f060ed9cce6a",
+        "object": "chat.completion",
+        "created": 1769610000,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 1. 准确性分析\n- **段落8**: A的\"两大主力TOP2\"较忠实原文\"主力トップツー\"；B的\"主力锋线双人组\"添加了原文没有的\"锋线\"信息\n- **段落20**: B将\"ハル\"翻译为\"哈尔\"是**严重错误**，全文其他地方都正确译为\"晴\"\n- **段落37/38/50/54**: B保留\"凛先生\"对应\"リンさん\"更准确；A省略敬称\n- **段落44**: 原文\"取ってみせる\"(接到)，B译\"接到\"准确，A译\"拦下来\"略有偏差\n\n### 2. 流畅性分析\n- **段落4**: B\"完、完蛋了\"比A\"啊，完蛋了\"更好地还原口吃感\n- **段落7**: B\"当务之急是先制定应对...的策略\"比A更自然\n- **段落24**: B\"本该如此\"比A\"然而，并未到达\"更简洁有力\n- **段落31**: B\"软绵绵的远射\"比A\"天真的长距离射门\"更生动\n\n### 3. 风格/语气\n- **段落14**: B\"凛同学\"对应\"リン君\"更贴切；A省略敬称\n- **段落39**: B\"不好意思我可要拦下你了\"更符合轻小说对话风格\n- **段落48**: B\"有丶意思\"网络用语略显突兀\n\n### 4. 术语一致性\n- B在段落20出现名称翻译不一致的严重问题（哈尔vs晴）\n- 技能名称两者各有特色，均可接受\n\n### 5. 连贯性\n- 两者整体叙事流畅\n- B的段落67表达更清晰\n\n### 6. 格式\n- 两者处理相近，均可接受\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"B在段落20有严重名称错误(哈尔vs晴)，但B保留敬称更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体表达更自然流畅，口语化处理更好\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话风格更符合轻小说，但段落48网络用语略突兀\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"B的名称一致性有严重问题，技能名称两者相当\"},\n    \"coherence\": {\"A\": 8, \"B\": 8, \"notes\": \"两者叙事连贯性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式处理相近\"}\n  },\n  \"key_differences\": [\n    \"B在段落20将ハル错误译为'哈尔'而非全文一致的'晴'\",\n    \"B更好地保留了敬称(凛先生/凛同学)，A多处省略\",\n    \"B的口语和对话表达更自然流畅\",\n    \"A整体更稳定一致，B有更多亮点但也有明显失误\"\n  ],\n  \"final_summary\": \"B在流畅性和轻小说风格上略胜一筹，但段落20中将'ハル'错译为'哈尔'(应为'晴')是严重的术语一致性错误，在角色名称频繁出现的轻小说翻译中尤为致命。A虽然部分表达略显生硬，但整体准确稳定，无明显硬伤，因此A以较小优势胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10673,
+          "completion_tokens": 1804,
+          "total_tokens": 12477
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "B在段落20有严重名称错误(哈尔vs晴)，但B保留敬称更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体表达更自然流畅，口语化处理更好"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话风格更符合轻小说，但段落48网络用语略突兀"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "B的名称一致性有严重问题，技能名称两者相当"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者叙事连贯性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式处理相近"
+      }
+    },
+    "key_differences": [
+      "B在段落20将ハル错误译为'哈尔'而非全文一致的'晴'",
+      "B更好地保留了敬称(凛先生/凛同学)，A多处省略",
+      "B的口语和对话表达更自然流畅",
+      "A整体更稳定一致，B有更多亮点但也有明显失误"
+    ],
+    "final_summary": "B在流畅性和轻小说风格上略胜一筹，但段落20中将'ハル'错译为'哈尔'(应为'晴')是严重的术语一致性错误，在角色名称频繁出现的轻小说翻译中尤为致命。A虽然部分表达略显生硬，但整体准确稳定，无明显硬伤，因此A以较小优势胜出。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

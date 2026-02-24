@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:45:59.048529",
+  "sample": "pixiv.14074697.ch6",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.14074697.ch6.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.14074697.ch6.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.14074697.ch6.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2aaa1771168c77ee4570d21e2a44b5dc90fdfabb9a6cc3e628ed6bb3c8239389",
+    "A": "845edfcf8e5bd87d644e63885b171483ce517b90aaf8464a901be99ca6e65a00",
+    "B": "1e2905097807800579998c66106f06d7d4d6fae24b6ef1342f7b730353499df8"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:46:54.234413",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "60987e26-be2e-4a9c-befe-9503ae960bcd",
+      "judge_response": {
+        "id": "60987e26-be2e-4a9c-befe-9503ae960bcd",
+        "object": "chat.completion",
+        "created": 1768423612,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 详细对比分析\n\n### 1. 准确性问题\n\n**翻译A的问题：**\n- 段落12：\"我不小心把原作设定**了给**改了\"存在语病\n- 段落42：使用英文\"literally\"破坏沉浸感\n- 段落7：\"シリアル\"翻译为\"系列故事\"略显生硬\n\n**翻译B的问题：**\n- 段落35：\"姫ちゃん\"错译为\"那种大小姐\"，这是角色昵称不是描述\n- 段落36：\"組対\"错译为\"黑帮内斗\"，应为\"组织犯罪对策部\"\n- 段落77：\"腕の良さ\"（拆弹技术好）错译为\"枪法太好\"\n- 段落7：\"シリアル\"译为\"日常\"偏离原意（原文是serial/serious的谐音梗）\n\n### 2. 格式/标点一致性\n\n**翻译A：** 对话格式统一使用「」，保持一致性\n\n**翻译B：** 多处对话丢失引号标记（段落23、24、28、29、59、64、67-70、94、95等），格式混乱\n\n### 3. 术语一致性\n\n**翻译A：** \"組対\"译法不统一（组织对抗/组织对抗课）\n**翻译B：** \"组对\"简称一致，但存在误译\n\n### 4. 流畅性与风格\n\n两者都保持了轻小说的轻松口语化风格，但：\n- A的表达更正式规范\n- B的口语化更强，但有时过于随意（如\"你们不就是死人吗\"）\n\n### 5. 关键差异汇总\n\n| 段落 | 问题类型 | 影响 |\n|------|----------|------|\n| 35 | B误译昵称 | 严重影响理解 |\n| 36 | B误译部门名 | 严重误导 |\n| 77 | B误译技能 | 情节理解错误 |\n| 多处 | B丢失引号 | 格式混乱 |\n| 12 | A语病 | 轻微影响 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在关键术语和人称上有多处误译（姫ちゃん、組対、腕の良さ）\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相当，B口语感稍强但偶有过度口语化\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更贴合轻小说叙述风格，B部分译法过于随意\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A对組対译法不统一，B存在误译\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯性更好，B因误译影响上下文理解\"},\n    \"formatting\": {\"A\": 9, \"B\": 5, \"notes\": \"B大量对话丢失引号，格式严重不一致\"}\n  },\n  \"key_differences\": [\n    \"B将角色昵称'姫ちゃん'错译为'那种大小姐'\",\n    \"B将警察部门'組対'误译为'黑帮内斗'\",\n    \"B将'腕の良さ'(拆弹技术)误译为'枪法'\",\n    \"B大量对话缺少引号标记，格式混乱\",\n    \"A在段落12有轻微语病，段落42使用英文单词\"\n  ],\n  \"final_summary\": \"翻译A虽有个别小瑕疵，但整体准确性高、格式规范。翻译B存在多处关键性误译，尤其是人称和专业术语的错误会严重影响读者理解，且对话格式严重不一致。综合考虑，A明显优于B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13730,
+          "completion_tokens": 2310,
+          "total_tokens": 16040
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在关键术语和人称上有多处误译（姫ちゃん、組対、腕の良さ）"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相当，B口语感稍强但偶有过度口语化"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更贴合轻小说叙述风格，B部分译法过于随意"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A对組対译法不统一，B存在误译"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯性更好，B因误译影响上下文理解"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 5,
+        "notes": "B大量对话丢失引号，格式严重不一致"
+      }
+    },
+    "key_differences": [
+      "B将角色昵称'姫ちゃん'错译为'那种大小姐'",
+      "B将警察部门'組対'误译为'黑帮内斗'",
+      "B将'腕の良さ'(拆弹技术)误译为'枪法'",
+      "B大量对话缺少引号标记，格式混乱",
+      "A在段落12有轻微语病，段落42使用英文单词"
+    ],
+    "final_summary": "翻译A虽有个别小瑕疵，但整体准确性高、格式规范。翻译B存在多处关键性误译，尤其是人称和专业术语的错误会严重影响读者理解，且对话格式严重不一致。综合考虑，A明显优于B。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

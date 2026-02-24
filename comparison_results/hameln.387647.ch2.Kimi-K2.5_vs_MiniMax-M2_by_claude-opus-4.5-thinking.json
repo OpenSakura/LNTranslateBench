@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:18:04.712519",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.MiniMax-M2.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "ca67ac0f5a48408e4fae0e6eea57ea3d5bfc2bf3cf8d4e52bb2bddaf1702c412",
+    "B": "c665343e85f81d27b8cc317bc804f5107fc2e392e4c209aa686ea243878edfbc"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:18:59.036886",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6821fabd-e951-4498-801d-4dd5b78feab2",
+      "judge_response": {
+        "id": "6821fabd-e951-4498-801d-4dd5b78feab2",
+        "object": "chat.completion",
+        "created": 1769609938,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n#### 准确性问题\n- **段落10/11**: A遗漏\"我是\"，B完整保留自我介绍的句式\n- **段落27**: A译\"快把所有东西都教给我\"严重错误（主语搞反），B译\"你给他好好讲讲\"正确\n- **段落53**: A混淆了原文逻辑，B清晰准确\n- **段落65/72**: A译\"双叶小姐\"性别错误，B译\"双叶先生\"正确\n- **段落95-97**: A完全误解对话含义，如\"被骗得很惨吧？\"和\"这就是在骗你啊\"，B正确理解是蛭魔调侃双葉说服了小早川\n\n#### 格式问题\n- **段落2**: A添加不必要引号，B无引号更正确\n- **段落46/93/94/100**: A将内心独白/叙述加引号，B正确无引号\n\n#### 流畅性与风格\n- **段落3**: A\"绑着绳子的1年级学生在\"句子不通，B更自然流畅\n- **段落19**: B保留敬语层次\"双叶学长\"\"您\"，A省略敬称\n- **段落21-22**: B用\"线锋\"比A的\"线\"更准确的美式足球术语\n\n#### 术语一致性\n- A在段落11使用日文汉字\"瀬\"而非中文\"濑\"\n- B全程使用\"黄金之脚\"，A有时用\"金色腿/黄金的腿\"\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 9, \"notes\": \"A在段落27/65/72/95-97有严重理解错误，包括主语混淆和性别错误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B句式更自然流畅，A多处表达生硬或不通顺\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B较好保留轻小说对话风格和敬语层次\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"B美足术语更专业准确，名称统一；A使用日文汉字\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B可读性更好，逻辑更清晰\"},\n    \"formatting\": {\"A\": 5, \"B\": 9, \"notes\": \"A多处错误添加引号于叙述段落，B格式规范\"}\n  },\n  \"key_differences\": [\n    \"段落27: A严重翻译错误（主语搞反）\",\n    \"段落65/72: A性别错误（双叶小姐→双叶先生）\",\n    \"段落95-97: A完全误解对话含义\",\n    \"多处叙述段落: A错误添加引号，B格式正确\",\n    \"敬语处理: B保留敬称层次，A多省略\"\n  ],\n  \"final_summary\": \"翻译B在准确性、格式规范和术语使用上明显优于A。A存在多处关键性翻译错误（如性别错误、主语混淆、对话含义完全误解），且格式问题严重（内心独白加引号）。B整体更专业、流畅，符合轻小说翻译标准。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11752,
+          "completion_tokens": 2024,
+          "total_tokens": 13776
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A在段落27/65/72/95-97有严重理解错误，包括主语混淆和性别错误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B句式更自然流畅，A多处表达生硬或不通顺"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B较好保留轻小说对话风格和敬语层次"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "B美足术语更专业准确，名称统一；A使用日文汉字"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B可读性更好，逻辑更清晰"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A多处错误添加引号于叙述段落，B格式规范"
+      }
+    },
+    "key_differences": [
+      "段落27: A严重翻译错误（主语搞反）",
+      "段落65/72: A性别错误（双叶小姐→双叶先生）",
+      "段落95-97: A完全误解对话含义",
+      "多处叙述段落: A错误添加引号，B格式正确",
+      "敬语处理: B保留敬称层次，A多省略"
+    ],
+    "final_summary": "翻译B在准确性、格式规范和术语使用上明显优于A。A存在多处关键性翻译错误（如性别错误、主语混淆、对话含义完全误解），且格式问题严重（内心独白加引号）。B整体更专业、流畅，符合轻小说翻译标准。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

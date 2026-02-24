@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:01:39.053536",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "8504e1ce7b7fbaaf27e8f78e398bdb30490f439205254a3443aad0da8befca8e",
+    "B": "5c4bfb40589065acd83776cca8595f2a9f61f99ea454b42359c09161df97d92b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:02:25.489001",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "aa72c84c-495a-459c-b496-42eb7bafc90d",
+      "judge_response": {
+        "id": "aa72c84c-495a-459c-b496-42eb7bafc90d",
+        "object": "chat.completion",
+        "created": 1768431745,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**段落2**: A将\"ネームレス\"译为\"匿名\"，B译为\"无名\"。原文指主角无名设定，B更贴切。\n\n**段落3**: A用第三人称\"主角为\"，B用第一人称\"我是\"。原文是第三人称说明，A更准确。\n\n**段落6**: \"匂わせ程度の性的な表現\"，A译\"暗示性描写\"准确，B译\"露骨描写\"与\"匂わせ程度\"（暗示程度）矛盾。\n\n**段落13**: \"唸った\"意为沉吟/低吟，A\"发出沉吟\"正确，B\"啧啧有声\"偏离原意。\n\n**段落121**: ⚠️**A出现重大错误**——原文\"降谷さん\"被误译为\"安室先生\"。\n\n**段落116**: A将\"ゆりかもめ\"译为\"海鸥线\"，B保留日文未译，A更友好。\n\n### 2. 流畅性分析\n\nB的口语化表达更自然（如\"都这么晚了\"、\"太牛了\"），A较书面化但有时略显生硬（如\"发出沉吟\"）。\n\n### 3. 风格/语气分析\n\nB更贴合轻小说的轻松对话风格，A较为正式。但B在段落21、29等处出现多余的引号闭合，影响叙述连贯性。\n\n### 4. 术语/名称一致性\n\n- A保持\"诸伏先生、降谷先生\"等敬称一致\n- B时而省略敬称（如段落26\"诸伏\"、\"降谷\"）\n- A段落50保留日文未译，B正确翻译\n\n### 5. 连贯性/可读性\n\nB整体阅读更流畅，但A段落121的人名错误严重影响理解。\n\n### 6. 格式/标点\n\nA混用「」和\"\"，B主要用\"\"较统一，但B部分段落缺少引号开启。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落121人名重大错误（降谷→安室）；B段落6、13有小偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，A部分表达生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说轻松活泼的对话风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A敬称一致但段落50未译；B偶尔省略敬称\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的人名错误严重影响连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有引号使用不一致的问题\"}\n  },\n  \"key_differences\": [\n    \"A段落121将'降谷さん'误译为'安室先生'，属重大错误\",\n    \"B段落6将'匂わせ程度'误译为'露骨'，语义矛盾\",\n    \"B段落13将'唸った'译为'啧啧有声'，偏离原意\",\n    \"B整体语言风格更贴合轻小说调性\",\n    \"A翻译ゆりかもめ为海鸥线，B未译\"\n  ],\n  \"final_summary\": \"两译本各有优缺：A在大部分术语和细节翻译上较准确，但段落121的人名错误（降谷→安室）是致命失误；B虽有个别词义偏差，但整体风格更贴合轻小说特点，阅读体验更佳。综合考量，B的整体质量略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14246,
+          "completion_tokens": 2090,
+          "total_tokens": 16336
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A段落121人名重大错误（降谷→安室）；B段落6、13有小偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说轻松活泼的对话风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A敬称一致但段落50未译；B偶尔省略敬称"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的人名错误严重影响连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有引号使用不一致的问题"
+      }
+    },
+    "key_differences": [
+      "A段落121将'降谷さん'误译为'安室先生'，属重大错误",
+      "B段落6将'匂わせ程度'误译为'露骨'，语义矛盾",
+      "B段落13将'唸った'译为'啧啧有声'，偏离原意",
+      "B整体语言风格更贴合轻小说调性",
+      "A翻译ゆりかもめ为海鸥线，B未译"
+    ],
+    "final_summary": "两译本各有优缺：A在大部分术语和细节翻译上较准确，但段落121的人名错误（降谷→安室）是致命失误；B虽有个别词义偏差，但整体风格更贴合轻小说特点，阅读体验更佳。综合考量，B的整体质量略胜一筹。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

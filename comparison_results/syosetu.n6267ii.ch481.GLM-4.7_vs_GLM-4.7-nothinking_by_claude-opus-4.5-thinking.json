@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:15:48.699107",
+  "sample": "syosetu.n6267ii.ch481",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6267ii.ch481.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6267ii.ch481.GLM-4.7.translated.txt",
+    "B": "translated_results/syosetu.n6267ii.ch481.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f309a52414e2e175d574abffda59bec83b94bff3fbcfc345346bc89227d7cc17",
+    "A": "66746a585cb9e44d811b185ee3e3405b3ba68195aaf13b8c8060c48fc4f9df6a",
+    "B": "ca984540adcc90bbe85620766b98d2e3987735ec6c2ef0fe3ed3f3843c3e0e95"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:16:45.591629",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7f53a5b4-680a-4ec2-ab2b-e9ce97eeb08b",
+      "judge_response": {
+        "id": "7f53a5b4-680a-4ec2-ab2b-e9ce97eeb08b",
+        "object": "chat.completion",
+        "created": 1768432605,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n- **段落6**: 「ケーイ？」A译为「圭？」，B译为「凯？」。这是沙林用外国腔调叫圭的名字，A的处理更准确。\n- **段落7**: 「寝てていいよ」A译\"没事，你可以睡\"添加了原文没有的\"没事\"，B译\"你继续睡吧\"更贴切。\n- **段落11**: A译\"圭轻轻摸了摸头\"漏掉了宾语（谁的头），B译\"抚摸她的头\"更完整。\n- **段落57**: B译\"让他在魔界老实待着\"用了\"他\"，但沙林是女性，应为\"她\"。A正确使用\"她\"。\n- **段落74**: 「階段も崩壊」指的是地位/等级，A译\"楼梯\"错误，B译\"阶梯\"也不够准确，但B稍好。\n\n### 流畅性分析\n- A整体更口语化，如段落2\"无聊得发慌\"、段落30\"很费劲\"\n- B更接近书面语，如段落21\"竟然动了起来\"比A的\"露出了动静\"更自然\n- 段落43: A用\"分庭抗礼\"是更地道的中文表达\n\n### 术语/名称一致性\n- **A的严重问题**: シャリン在不同段落被译为\"沙林\"、\"莎琳\"、\"沙琳\"三种写法（段落11、43、52、57、86等）\n- **B基本一致**: 始终使用\"沙林\"\n\n### 格式分析\n- **A的问题**: 段落23、26、28、44、45等使用英文引号\"\"，与其他段落的「」不一致\n- **B的问题**: 段落41、44缺少开头引号「\n\n### 风格/语气\n- A更适合轻小说的轻松对话风格\n- B稍显生硬但更规范\n\n---\n\n```json\n{\n  \"winner\": \"tie\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落6更准确，B在段落7、11更准确；B在段落57有性别错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更口语化自然，B部分表达略生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说风格，用词更生动\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A人名不统一(沙林/莎琳/沙琳)是严重问题，B基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体可读性相当\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A引号格式不统一(中英混用)，B有少数引号遗漏\"}\n  },\n  \"key_differences\": [\n    \"A人名翻译不一致(沙林/莎琳/沙琳)，B统一为沙林\",\n    \"A引号格式混乱(中英文引号混用)，B基本使用日式引号\",\n    \"A语言更口语化流畅，B更书面规范\",\n    \"B在段落57出现性别代词错误(他→她)\",\n    \"段落6 ケーイ的处理：A译圭(正确)，B译凯(偏离)\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。A在流畅度和风格上更胜一筹，更符合轻小说的轻松语感，但人名统一性差和引号格式混乱是严重问题。B在术语一致性和格式上更好，但存在性别代词错误且语言稍显生硬。综合考虑，A的名称不一致和B的代词错误都是较严重的问题，两者整体质量接近，判定为平局。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9869,
+          "completion_tokens": 2403,
+          "total_tokens": 12272
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "tie",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落6更准确，B在段落7、11更准确；B在段落57有性别错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更口语化自然，B部分表达略生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说风格，用词更生动"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A人名不统一(沙林/莎琳/沙琳)是严重问题，B基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体可读性相当"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A引号格式不统一(中英混用)，B有少数引号遗漏"
+      }
+    },
+    "key_differences": [
+      "A人名翻译不一致(沙林/莎琳/沙琳)，B统一为沙林",
+      "A引号格式混乱(中英文引号混用)，B基本使用日式引号",
+      "A语言更口语化流畅，B更书面规范",
+      "B在段落57出现性别代词错误(他→她)",
+      "段落6 ケーイ的处理：A译圭(正确)，B译凯(偏离)"
+    ],
+    "final_summary": "两个翻译各有优劣。A在流畅度和风格上更胜一筹，更符合轻小说的轻松语感，但人名统一性差和引号格式混乱是严重问题。B在术语一致性和格式上更好，但存在性别代词错误且语言稍显生硬。综合考虑，A的名称不一致和B的代词错误都是较严重的问题，两者整体质量接近，判定为平局。"
+  },
+  "outcome": "tie",
+  "winner_model": null
+}

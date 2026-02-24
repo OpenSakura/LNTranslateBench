@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T22:59:57.569039",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "1ff2991dfa992b87f5b1b336b6615f8d66ab2ebc43ad619f023f7d52cbeb5632",
+    "B": "68fe27bb6fe49b3bdf5f8c992c96cf6cef85b9e4f21298acd32b1eaf141ded06"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:00:50.358219",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5f051c0d-b751-463a-b9c2-eae03d65e993",
+      "judge_response": {
+        "id": "5f051c0d-b751-463a-b9c2-eae03d65e993",
+        "object": "chat.completion",
+        "created": 1768431650,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**段落2 关键错误：**\n- 原文「オリ主」是「オリジナル主人公」（原创主角）的缩写\n- A译为\"奥里主\"是错误的音译，完全丢失原意\n- B正确译为\"注意原创角色\"\n\n**段落8：**\n- A：\"亲爱的漂亮步美从她那儿转学来的某个少年\"——句子结构混乱，难以理解是谁转学\n- B：\"从吉田家的天真天使、可爱的步美酱身边转学而来的少年\"——结构清晰\n\n**段落35：**\n- A的引号使用混乱，把叙述文混入对话中\n- B准确还原了原文的叙述结构\n\n### 2. 流畅性分析\n\n**段落12：**\n- A：\"这要咋整？还在懵的时候，季节嗖嗖溜走了\"——过于口语化\n- B：\"在'这该怎么办啊'的困惑期间，季节也正快速流逝而去\"——更符合轻小说叙述风格\n\n**段落30：**\n- A语序混乱：\"外表和性别太不搭了！太不搭了！\"感叹词位置怪异\n- B：\"他的外表与性别实在是、实在是太不匹配了！\"——更自然地还原了强调语气\n\n### 3. 格式/术语分析\n\n**对话标记：**\n- 段落26-28：A完全省略了「」对话标记\n- B完整保留对话格式\n\n**段落46：**\n- 原文叙述者性别模糊\n- A用\"我\"，B用\"ta\"——B更好地保持了原文的性别中立\n\n**专有名词：**\n- 段落42：A译\"吉田\"，B译\"吉田小姐\"——B更准确区分步美和哥哥\n\n### 4. 风格一致性\n\nB整体保持了轻小说的叙述语体，而A在某些地方过于随意（如\"咋整\"\"嗖嗖\"）。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 9, \"notes\": \"A在段落2出现关键术语误译（オリ主→奥里主），段落8句子结构混乱影响理解\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"A部分翻译过于口语化（嗖嗖、咋整），B更符合轻小说叙述风格\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更好地还原了原文语气和强调表达，如段落30的重复强调\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"B正确使用'ta'保持性别中立，正确区分人物称呼\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体叙述逻辑更清晰连贯\"},\n    \"formatting\": {\"A\": 5, \"B\": 9, \"notes\": \"A在段落26-28遗漏对话标记，段落35引号使用混乱；B格式规范\"}\n  },\n  \"key_differences\": [\n    \"A将'オリ主'误译为'奥里主'，B正确理解为'原创角色'\",\n    \"A多处省略对话标记「」，B保留完整格式\",\n    \"A在段落8的句子结构造成理解困难，B更清晰\",\n    \"B使用'ta'保持原文性别中立特点，A未注意此细节\",\n    \"A过度口语化影响文体一致性\"\n  ],\n  \"final_summary\": \"B在准确性、格式规范性和风格把握上明显优于A。A存在关键术语误译（オリ主）、对话标记缺失、句子结构混乱等问题，影响了整体阅读体验。B较好地保持了轻小说的叙述风格，并注意到了性别中立等细节处理。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9376,
+          "completion_tokens": 2407,
+          "total_tokens": 11783
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A在段落2出现关键术语误译（オリ主→奥里主），段落8句子结构混乱影响理解"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "A部分翻译过于口语化（嗖嗖、咋整），B更符合轻小说叙述风格"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地还原了原文语气和强调表达，如段落30的重复强调"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "B正确使用'ta'保持性别中立，正确区分人物称呼"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体叙述逻辑更清晰连贯"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A在段落26-28遗漏对话标记，段落35引号使用混乱；B格式规范"
+      }
+    },
+    "key_differences": [
+      "A将'オリ主'误译为'奥里主'，B正确理解为'原创角色'",
+      "A多处省略对话标记「」，B保留完整格式",
+      "A在段落8的句子结构造成理解困难，B更清晰",
+      "B使用'ta'保持原文性别中立特点，A未注意此细节",
+      "A过度口语化影响文体一致性"
+    ],
+    "final_summary": "B在准确性、格式规范性和风格把握上明显优于A。A存在关键术语误译（オリ主）、对话标记缺失、句子结构混乱等问题，影响了整体阅读体验。B较好地保持了轻小说的叙述风格，并注意到了性别中立等细节处理。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

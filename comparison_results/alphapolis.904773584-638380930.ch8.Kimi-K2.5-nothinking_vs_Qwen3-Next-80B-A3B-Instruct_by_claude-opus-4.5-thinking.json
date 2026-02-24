@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:27:43.997456",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "2ae3d8d2a6eace5fdea9f80dd5a142955da7dc24ffae85d11fc6ba108b7adc63",
+    "B": "02b13f135a70326c35fdd7b1fa81b2fb0ca6b692ab2e1e3aa9a4de97aa69c155"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:28:37.997439",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ed9cf711-4934-45e3-a638-4e2c3e03e9c1",
+      "judge_response": {
+        "id": "ed9cf711-4934-45e3-a638-4e2c3e03e9c1",
+        "object": "chat.completion",
+        "created": 1769610517,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐段关键差异分析\n\n### 专有名词翻译策略\n- **A** 倾向于意译：猫头鹰熊、棉绒狼、杀手猿、雪树精、无头骑士战马、斩首兔\n- **B** 倾向于音译：奥尔贝亚、寇特狼、杀手艾普、雪藤、杜拉汉盖洛普、巴尼\n\n### 严重错误\n1. **段落86** A出现复制错误：\"斩首兔斩首兔\"（ボーパルバーニィ译错）\n2. **段落102** B将「ボア」译为\"蟒蛇\"，这是严重错误——ボア是野猪(boar)，不是蟒蛇(boa)\n3. **段落106** B保留了英文\"slime\"未译：\"毒 slime\"\n4. **段落82** B前后不一致，前面译\"雪藤/冰藤\"，此处又音译\"斯诺特伦特/艾斯特伦特\"\n\n### 准确性比较\n- **段落15**：A\"很常见的魔物\"正确；B\"流行的魔物\"误解ポピュラー的语境含义\n- **段落45/46**：A\"雪树精\"正确理解トレント；B\"雪藤\"误译\n- **段落75**：A有笔误\"不认同比存在\"（应为\"不认同的存在\"）\n\n### 流畅性比较\n- B整体更口语化：\"简直就是白熊本熊\"、\"那就能堆得跟韭菜似的\"\n- A更书面化但偶有生硬：\"冬眠与否不一定\"\n\n### 风格一致性\n- A的魔物名称翻译风格统一（意译为主）\n- B混用音译和意译，一致性较差\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B在段落102将野猪误译为蟒蛇是致命错误；段落15误解语义；A段落86有复制错误但不影响理解\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"B更口语化自然，A更书面但偶有生硬处，整体持平\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的意译风格更符合轻小说怪物图鉴设定感；B的口语化有时过于随意\"},\n    \"terminology\": {\"A\": 8, \"B\": 4, \"notes\": \"A魔物名称翻译一致且有意义；B音译意译混用，段落82前后矛盾，段落106保留英文未译\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体连贯；B的名称不统一影响阅读体验\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式基本规范，A有一处笔误，B有英文残留\"}\n  },\n  \"key_differences\": [\n    \"B将ボア(野猪)误译为蟒蛇，是重大语义错误\",\n    \"A采用意译策略使魔物名称更具画面感，B音译失去原意\",\n    \"B在段落106保留英文slime未翻译\",\n    \"A在段落86出现复制粘贴错误\",\n    \"B对トレント的翻译前后不一致（雪藤vs斯诺特伦特）\"\n  ],\n  \"final_summary\": \"A虽有个别笔误，但整体翻译策略更适合轻小说怪物图鉴，意译的魔物名称既传达原意又便于读者理解。B存在致命的语义错误（野猪→蟒蛇）、术语不一致及英文残留问题，这些硬伤使其整体质量明显低于A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11964,
+          "completion_tokens": 2513,
+          "total_tokens": 14477
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B在段落102将野猪误译为蟒蛇是致命错误；段落15误解语义；A段落86有复制错误但不影响理解"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "B更口语化自然，A更书面但偶有生硬处，整体持平"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的意译风格更符合轻小说怪物图鉴设定感；B的口语化有时过于随意"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 4,
+        "notes": "A魔物名称翻译一致且有意义；B音译意译混用，段落82前后矛盾，段落106保留英文未译"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体连贯；B的名称不统一影响阅读体验"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式基本规范，A有一处笔误，B有英文残留"
+      }
+    },
+    "key_differences": [
+      "B将ボア(野猪)误译为蟒蛇，是重大语义错误",
+      "A采用意译策略使魔物名称更具画面感，B音译失去原意",
+      "B在段落106保留英文slime未翻译",
+      "A在段落86出现复制粘贴错误",
+      "B对トレント的翻译前后不一致（雪藤vs斯诺特伦特）"
+    ],
+    "final_summary": "A虽有个别笔误，但整体翻译策略更适合轻小说怪物图鉴，意译的魔物名称既传达原意又便于读者理解。B存在致命的语义错误（野猪→蟒蛇）、术语不一致及英文残留问题，这些硬伤使其整体质量明显低于A。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

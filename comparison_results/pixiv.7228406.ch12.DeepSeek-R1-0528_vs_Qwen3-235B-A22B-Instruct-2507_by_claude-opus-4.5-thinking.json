@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:48:01.710166",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "12cccd8e6fd00e5e88603c34a1363038402d73f3ebfe18d8d328dcfa9da4b338",
+    "B": "f9328854153c77ae183e7802910f7b1ab833eed160f6beb3fe4c8270d8cee56a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:48:50.190345",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "b87ba6ad-90fc-4d4f-ab3d-9182fe7fa362",
+      "judge_response": {
+        "id": "b87ba6ad-90fc-4d4f-ab3d-9182fe7fa362",
+        "object": "chat.completion",
+        "created": 1768423730,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n- **段落1**: B将\"甲斐常叶\"误写为\"开斐常叶\"，是明显的字符错误\n- **段落2**: \"マッ缶\"应指MAX咖啡等罐装饮料，A译为\"罐装马肉\"完全错误，B译为\"罐头\"过于笼统，两者都有问题\n- **段落23/25/30**: \"みのぶまんじゅう\"翻译不一致，A分别用\"美寿/美乃滋/实弥\"，B用\"实节/身延\"，应统一为\"身延馒头\"\n\n### 流畅性分析\n- A整体语言更加自然通顺，如\"噼里啪啦一口气说完\"比B的\"机关枪式说话\"更地道\n- B在多处保留日语原词未翻译：段落54\"スペース\"、段落55\"デート\"、段落59\"ベンチ/カップ\"、段落61\"帰宅提案\"，严重影响阅读流畅度\n\n### 风格/语气分析\n- A的对话更口语化，如\"这玩意真好吃啊\"、\"原来是现学现卖啊\"\n- B部分对话略显生硬，如段落6\"板上钉钉\"虽然地道但过于书面\n\n### 格式分析\n- A在段落17-20存在引号不一致问题（混用\"\"和「」）\n- B在段落51末尾有多余的」符号\n- B整体使用「」较统一\n\n### 术语一致性\n- A对\"齐藤/斋藤\"使用不完全一致\n- B对地名翻译有错误（开斐）\n- 两者对\"みのぶまんじゅう\"的译名都不统一\n\n### 关键问题\nB最严重的问题是多处日语词汇未翻译，这对中文读者造成阅读障碍，是翻译的重大缺陷。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A对マッ缶误译严重，但B有甲斐→开斐的错误且多处未翻译\"},\n    \"fluency\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处保留日语原词未翻译（スペース/デート/ベンチ等），严重影响流畅度\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话更口语化自然，B部分表达生硬\"},\n    \"terminology\": {\"A\": 6, \"B\": 5, \"notes\": \"两者对みのぶまんじゅう译名都不统一，B有地名错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A整体连贯，B因未翻译词汇导致阅读中断\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A引号不一致，B有多余符号\"}\n  },\n  \"key_differences\": [\n    \"B多处保留日语词汇未翻译（スペース、デート、ベンチ、カップ等）\",\n    \"B将甲斐误写为开斐\",\n    \"A对マッ缶误译为罐装马肉\",\n    \"A语言更自然流畅，对话更口语化\",\n    \"两者对身延馒头译名均不统一\"\n  ],\n  \"final_summary\": \"A翻译虽存在マッ缶误译和引号不一致等问题，但整体语言流畅自然，完成了基本的翻译工作。B翻译最大的问题是多处日语词汇未翻译直接保留原文，这对目标读者造成严重阅读障碍，加之有地名错误，整体质量低于A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11291,
+          "completion_tokens": 2029,
+          "total_tokens": 13320
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A对マッ缶误译严重，但B有甲斐→开斐的错误且多处未翻译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处保留日语原词未翻译（スペース/デート/ベンチ等），严重影响流畅度"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话更口语化自然，B部分表达生硬"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 5,
+        "notes": "两者对みのぶまんじゅう译名都不统一，B有地名错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A整体连贯，B因未翻译词汇导致阅读中断"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A引号不一致，B有多余符号"
+      }
+    },
+    "key_differences": [
+      "B多处保留日语词汇未翻译（スペース、デート、ベンチ、カップ等）",
+      "B将甲斐误写为开斐",
+      "A对マッ缶误译为罐装马肉",
+      "A语言更自然流畅，对话更口语化",
+      "两者对身延馒头译名均不统一"
+    ],
+    "final_summary": "A翻译虽存在マッ缶误译和引号不一致等问题，但整体语言流畅自然，完成了基本的翻译工作。B翻译最大的问题是多处日语词汇未翻译直接保留原文，这对目标读者造成严重阅读障碍，加之有地名错误，整体质量低于A。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

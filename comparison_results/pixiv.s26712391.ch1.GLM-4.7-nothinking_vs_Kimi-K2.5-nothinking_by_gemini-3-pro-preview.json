@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:40:51.166836",
+  "sample": "pixiv.s26712391.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26712391.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26712391.ch1.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/pixiv.s26712391.ch1.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f704bc6475e324efffb4fa390733d8170d454e4947204c1dc291d3ec83d24451",
+    "A": "d27d1154f663cdad7780efe36a71750cf482b9beda2c275bc0e812b060e51041",
+    "B": "362b40116f7da96f45ae1d7d0562c214536d15c5e99d46d146fad32b417e0bca"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:45:56.147364",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128224507999418311kTK005Kv",
+      "judge_response": {
+        "id": "chatcmpl-20260128224507999418311kTK005Kv",
+        "object": "chat.completion",
+        "created": 1769611556,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评测：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **翻译A** 存在严重的理解错误。\n    *   **关键错误 (段落 77):** 原文是「ヒロちゃんと本当に仲良くなることは**無かった**」（从未真正和希罗变得亲近）。翻译A译为「真的和希罗酱变得很亲近」，完全颠倒了原意。\n    *   **术语错误 (段落 85):** 原文「死に戻り」是轻小说/ACG文化中的特定术语（通常指《Re:0》中的“死亡回归”或类似的时间回溯能力）。翻译A译为「死而复生」（复活），这忽略了后文中提到的「過去に戻らせて」（回到过去）的时间循环含义。翻译B正确译为「死亡回归」。\n*   **翻译B** 准确理解了原文的否定句式和特定术语，对细节的把控（如段落2的“脸朝下”）也更精准。\n\n**2. 流畅性 (Fluency)**\n*   **翻译A** 的句子结构往往过于贴近日语语序，导致中文读起来生硬、拗口。\n    *   例如段落11：「连那颗温柔的她像人类一样的呼吸都夺走了」，定语修饰极其混乱。\n    *   段落84：「这样的话那样的话还不如就在床上睡觉就好了」，读起来非常累赘。\n*   **翻译B** 的中文表达非常自然、优美，使用了恰当的成语和四字词语（如“记忆犹新”、“不寒而栗”、“无可救药”、“芸芸众生”），大大提升了阅读体验。\n\n**3. 风格与语气 (Style/Tone)**\n*   **翻译A** 保留了「酱」（-chan）的后缀，这在一定程度上保留了角色的幼态和依赖感，但由于整体文笔干瘪，这种保留显得有些突兀。\n*   **翻译B** 虽然大部分时间去掉了「酱」（除了汉娜酱），但其文笔极具文学性，很好地渲染了原文那种悲伤、沉重、又带有某种扭曲爱意的独白氛围。段落5的描写（“充盈着希望的柔和光芒已消散殆尽”）远胜于A的直白翻译。\n\n**4. 格式与标点 (Formatting)**\n*   **翻译B** 在对话引用和心理活动的标点处理上更符合中文出版规范（如段落29使用双引号或直角引号区分对话）。\n\n### 结论\n翻译B在各个方面都碾压翻译A。翻译A不仅文笔生涩，还出现了致命的反义翻译错误，属于不合格的翻译。翻译B则达到了高质量的轻小说翻译水准。\n\n***\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 4,\n      \"B\": 10,\n      \"notes\": \"A在段落77将'从未亲近'错译为'变得亲近'，属严重失误；段落85术语翻译不准确。\"\n    },\n    \"fluency\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A的句式生硬，有明显的翻译腔；B使用了丰富的成语和优美的句式，阅读顺畅。\"\n    },\n    \"style\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的文笔更具文学性，很好地还原了轻小说的独白氛围。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"B正确识别了'死に戻り'（死亡回归）这一特定概念。\"\n    },\n    \"coherence\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"B的逻辑连接更紧密，A在长句处理上支离破碎。\"\n    },\n    \"formatting\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的标点使用更规范。\"\n    }\n  },\n  \"key_differences\": [\n    \"A存在致命的翻译错误（意思完全相反）。\",\n    \"B正确翻译了关键术语'死亡回归'，而A错译为'死而复生'。\",\n    \"B的中文造诣远高于A，使用了'不寒而栗'、'无可救药'等恰当词汇，而A多为直译。\",\n    \"A保留了'酱'的称呼，B大部分省略，但B的整体文笔优势完全掩盖了这一选择差异。\"\n  ],\n  \"final_summary\": \"翻译B在准确性、流畅度和文学性上均完胜。翻译A不仅文笔生涩、语序混乱（如段落11），更出现了严重的意义反转错误（段落77），误解了原文的核心剧情。翻译B则精准地传达了原文的悲剧色彩和情感深度，术语处理也十分专业。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7722,
+          "completion_tokens": 4194,
+          "total_tokens": 11916
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 10,
+        "notes": "A在段落77将'从未亲近'错译为'变得亲近'，属严重失误；段落85术语翻译不准确。"
+      },
+      "fluency": {
+        "A": 5,
+        "B": 9,
+        "notes": "A的句式生硬，有明显的翻译腔；B使用了丰富的成语和优美的句式，阅读顺畅。"
+      },
+      "style": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的文笔更具文学性，很好地还原了轻小说的独白氛围。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "B正确识别了'死に戻り'（死亡回归）这一特定概念。"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 9,
+        "notes": "B的逻辑连接更紧密，A在长句处理上支离破碎。"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的标点使用更规范。"
+      }
+    },
+    "key_differences": [
+      "A存在致命的翻译错误（意思完全相反）。",
+      "B正确翻译了关键术语'死亡回归'，而A错译为'死而复生'。",
+      "B的中文造诣远高于A，使用了'不寒而栗'、'无可救药'等恰当词汇，而A多为直译。",
+      "A保留了'酱'的称呼，B大部分省略，但B的整体文笔优势完全掩盖了这一选择差异。"
+    ],
+    "final_summary": "翻译B在准确性、流畅度和文学性上均完胜。翻译A不仅文笔生涩、语序混乱（如段落11），更出现了严重的意义反转错误（段落77），误解了原文的核心剧情。翻译B则精准地传达了原文的悲剧色彩和情感深度，术语处理也十分专业。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

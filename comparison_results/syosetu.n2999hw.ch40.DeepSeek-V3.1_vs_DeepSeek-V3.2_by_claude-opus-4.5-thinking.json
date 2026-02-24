@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:09:25.646679",
+  "sample": "syosetu.n2999hw.ch40",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n2999hw.ch40.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n2999hw.ch40.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/syosetu.n2999hw.ch40.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "0079a459039cdda13ea34d689cfca7de87ff96a9fa64f80dd9b17da4245047e9",
+    "A": "5f31a88b9b54af830342ff21f72a0ee30d87ffbbf292d228fe44cbc4e573a78f",
+    "B": "10d5c1f1201af1ce44e63937c29d77a761777addd50203e8419e8046b37500d1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:10:09.602487",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "04804308-4967-41dd-b7f2-68cb12f7cd63",
+      "judge_response": {
+        "id": "04804308-4967-41dd-b7f2-68cb12f7cd63",
+        "object": "chat.completion",
+        "created": 1768432209,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 名称/术语一致性问题\n\n**翻译A的问题：**\n- 「シロガネ」翻译不一致：多数为\"白银\"，但段落54、56、59、60出现\"白金银\"\n- 「プレゲトーン」翻译混乱：出现\"普雷格顿\"、\"普莱盖顿\"、\"普雷格通\"三种译法\n- 「エン」大多译为\"恩\"，但段落47、94出现\"焰\"\n\n**翻译B的问题：**\n- 多处保留日文原名未翻译（如プレゲトーン、エン等），这对中文读者不友好\n- 段落59**完全缺失翻译**，这是严重错误\n- 段落99错译为\"燕\"\n- 段落112出现多个未翻译名称\n\n### 2. 准确性对比\n\n- 段落1：「フェイズ」A译\"回合\"、B译\"阶段\"，在卡牌游戏中\"阶段\"更准确\n- 段落3：「俺のフェイズだ」A译\"我的回合\"更符合卡牌游戏习惯用语\n- 段落32：B译\"开枪射击\"错误，原文是弓箭而非枪\n- 段落95：A出现\"喵\"字完全错误\n\n### 3. 流畅性与风格\n\n- A的对话语气稍自然，如段落25\"被佐智子的影缝折磨得够呛\"\n- B部分表达较生硬，如段落91保留大量日文结构\n\n### 4. 格式问题\n\n- B在段落59完全缺失内容，严重影响阅读连贯性\n- A在段落23、26、28等处错用引号\"\"而非「」\n\n---\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"B段落32'开枪'误译，A段落95出现莫名的'喵'\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体流畅度相当\"},\n    \"style\": {\"A\": 7, \"B\": 6, \"notes\": \"A的轻小说对话语气更自然\"},\n    \"terminology\": {\"A\": 5, \"B\": 4, \"notes\": \"A名称翻译不一致，B大量保留日文原名未译\"},\n    \"coherence\": {\"A\": 7, \"B\": 4, \"notes\": \"B段落59完全缺失严重影响连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 5, \"notes\": \"A有引号混用问题，B有段落缺失\"}\n  },\n  \"key_differences\": [\n    \"B缺失段落59的全部翻译\",\n    \"B多处保留日文名称未翻译（プレゲトーン等）\",\n    \"A名称翻译不一致（白银/白金银、三种普雷格顿译法）\",\n    \"A段落23/26/28等错用引号类型\",\n    \"B段落32将弓箭误译为'开枪'\"\n  ],\n  \"final_summary\": \"两译本均有明显问题。A的主要问题是名称翻译不一致（シロガネ、プレゲトーン多种译法）和偶尔的引号错误；B的致命问题是段落59完全缺失、大量日文专名未翻译以及段落32的语义错误。尽管A的名称一致性较差，但B缺失整段翻译和保留日文名称对中文读者影响更大，故A整体略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13208,
+          "completion_tokens": 1903,
+          "total_tokens": 15111
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "B段落32'开枪'误译，A段落95出现莫名的'喵'"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体流畅度相当"
+      },
+      "style": {
+        "A": 7,
+        "B": 6,
+        "notes": "A的轻小说对话语气更自然"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 4,
+        "notes": "A名称翻译不一致，B大量保留日文原名未译"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 4,
+        "notes": "B段落59完全缺失严重影响连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 5,
+        "notes": "A有引号混用问题，B有段落缺失"
+      }
+    },
+    "key_differences": [
+      "B缺失段落59的全部翻译",
+      "B多处保留日文名称未翻译（プレゲトーン等）",
+      "A名称翻译不一致（白银/白金银、三种普雷格顿译法）",
+      "A段落23/26/28等错用引号类型",
+      "B段落32将弓箭误译为'开枪'"
+    ],
+    "final_summary": "两译本均有明显问题。A的主要问题是名称翻译不一致（シロガネ、プレゲトーン多种译法）和偶尔的引号错误；B的致命问题是段落59完全缺失、大量日文专名未翻译以及段落32的语义错误。尽管A的名称一致性较差，但B缺失整段翻译和保留日文名称对中文读者影响更大，故A整体略胜。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

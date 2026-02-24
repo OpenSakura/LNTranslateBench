@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:25:15.868192",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.MiniMax-M2.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "90c865eac52f16bcdea597ce71cb4ce602be227415f88176b55d2a03a77ffcc6",
+    "B": "7fa9a5a6b7325349e4db9033fe9999e3bc07121a8b482763109100d2583358f7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:25:57.477260",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2f042c13-d797-4508-aa86-159ae4a26d00",
+      "judge_response": {
+        "id": "2f042c13-d797-4508-aa86-159ae4a26d00",
+        "object": "chat.completion",
+        "created": 1768422357,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键差异分析\n\n**段落26-29的严重问题：**\n- A在段落26漏译了后半句（关于柳井劝说首相的描述）\n- A在段落29错误放置了本应在段落26的内容\n- B完整准确翻译了这两段\n\n**术语一致性问题：**\n- A部分保留日文（レヴィガータ）但不一致\n- B在段落8保留了日文\"インペラトリーツァ・エカテリーナ\"未翻译\n- B在段落47-48将\"ロベール\"(罗贝尔)错译为\"罗伯特\"\n\n**时间格式：**\n- A混用阿拉伯/汉字（\"十点零分\"、\"14点39分\"）\n- B混用格式（\"十时〇〇分\"保留日文符号、\"15时04分\"）\n\n**语感对比：**\n- 段落10「は……」：A译\"啊……\"不准确，B译\"是……\"更符合日语语境\n- 段落36「はっ！」：A译\"咦！\"，B译\"是！\"——B更准确（表示应承）\n- 段落49「はっ！」同样B更准确\n\n**流畅度：**\n- A整体更口语化\n- B部分句子较生硬，但结构完整\n\n**段落82人名不一致：**\n- B出现\"马尔滕施泰因\"与前文\"马尔滕斯坦\"不一致\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落26-29有严重错位/漏译问题；B段落8保留日文未译，但整体更完整\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A更口语化自然，B部分句子稍显生硬，两者各有优劣\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A对话感更强，B叙述更正式，均符合轻小说风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"A保留部分日文不一致；B人名翻译有错误（罗伯特/罗贝尔混用）和不一致（马尔滕斯坦/马尔滕施泰因）\"},\n    \"coherence\": {\"A\": 5, \"B\": 7, \"notes\": \"A段落26-29错位严重影响连贯性；B段落69-70末尾多余引号影响格式但不影响理解\"},\n    \"formatting\": {\"A\": 6, \"B\": 6, \"notes\": \"两者时间格式均不统一；A用阿拉伯数字混搭，B有日文符号残留\"}\n  },\n  \"key_differences\": [\n    \"A段落26漏译后半句，段落29内容错位，属于严重准确性问题\",\n    \"B段落8未翻译日文舰名，段落47-48人名错译为罗伯特\",\n    \"语气词翻译：「は」「はっ」A译为感叹词，B准确译为应答词\",\n    \"B在段落82人名出现不一致（马尔滕施泰因vs马尔滕斯坦）\"\n  ],\n  \"final_summary\": \"两个翻译各有问题，但A在段落26-29的漏译和错位属于严重结构性错误，导致叙事断裂。B虽有部分日文未译和人名不一致问题，但整体内容完整度更高。语气词翻译B更准确。综合考虑，B略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12016,
+          "completion_tokens": 1734,
+          "total_tokens": 13750
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落26-29有严重错位/漏译问题；B段落8保留日文未译，但整体更完整"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A更口语化自然，B部分句子稍显生硬，两者各有优劣"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A对话感更强，B叙述更正式，均符合轻小说风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "A保留部分日文不一致；B人名翻译有错误（罗伯特/罗贝尔混用）和不一致（马尔滕斯坦/马尔滕施泰因）"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 7,
+        "notes": "A段落26-29错位严重影响连贯性；B段落69-70末尾多余引号影响格式但不影响理解"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 6,
+        "notes": "两者时间格式均不统一；A用阿拉伯数字混搭，B有日文符号残留"
+      }
+    },
+    "key_differences": [
+      "A段落26漏译后半句，段落29内容错位，属于严重准确性问题",
+      "B段落8未翻译日文舰名，段落47-48人名错译为罗伯特",
+      "语气词翻译：「は」「はっ」A译为感叹词，B准确译为应答词",
+      "B在段落82人名出现不一致（马尔滕施泰因vs马尔滕斯坦）"
+    ],
+    "final_summary": "两个翻译各有问题，但A在段落26-29的漏译和错位属于严重结构性错误，导致叙事断裂。B虽有部分日文未译和人名不一致问题，但整体内容完整度更高。语气词翻译B更准确。综合考虑，B略胜。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

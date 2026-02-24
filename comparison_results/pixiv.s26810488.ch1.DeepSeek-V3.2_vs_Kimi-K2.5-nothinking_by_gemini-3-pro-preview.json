@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:42:09.287749",
+  "sample": "pixiv.s26810488.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26810488.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26810488.ch1.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/pixiv.s26810488.ch1.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "92db91e48665f24307285ee8df507a11e561d6aa20242dd51ddd1a73514e9a0b",
+    "A": "74476e7a7f99661bdea97b5d1eadd3be88625f6b60624d391fed04f8ead864e5",
+    "B": "3835138d9c59d87af2427cf2a3b106cb03d1ce7e68d70dbc40fbeb5aa2ca13b0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:42:56.105769",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260128224210222888128YEPsB6Rr",
+      "judge_response": {
+        "id": "chatcmpl-20260128224210222888128YEPsB6Rr",
+        "object": "chat.completion",
+        "created": 1769611375,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "基于对两份翻译的详细分析，以下是评判结果：\n\n### 详细分析\n\n1.  **准确性 (Accuracy)**:\n    *   **翻译A** 对原文的理解非常准确，能够正确处理日语的惯用语和语境。\n    *   **翻译B** 出现了**严重的致命错误**。在**段落 55**中，原文是“私の目の前に置かれた箱の蓋を取り上げ”（拿起放在我眼前的箱盖），翻译B竟然译为“**大叔我**拿起摆在眼前的盒子盖”。这里的“大叔我”完全是无中生有（原文主角是名为梅露露的女性），这极有可能是机器翻译的幻觉或复制粘贴错误。\n    *   在**段落 12**中，原文“空を切って”（意为扑空、落空、徒劳），翻译A译为“消散在空中”符合语境（声音未传达出去）；翻译B译为“划破天空”，这通常用于描写响亮的声音或物理攻击，在这里不符合梦境消散、意识模糊的语境。\n\n2.  **流畅性 (Fluency)**:\n    *   **翻译A** 的中文表达自然流畅，符合中文阅读习惯。例如段落28“不见踪影”比翻译B的“身影却不见踪影”（重复了“影”字）更通顺。\n    *   **翻译B** 存在一些生硬的直译痕迹，且部分句子读起来略显拗口（如段落83）。\n\n3.  **风格/语气 (Style/Tone)**:\n    *   **翻译A** 很好地把握了轻小说的叙述风格，情感细腻，代入感强。对于“～さん”的处理，A译为“小姐”或省略，符合中文语境。\n    *   **翻译B** 虽然也试图保持风格，但由于上述的错误和部分生硬的措辞，破坏了氛围。\n\n4.  **格式/标点 (Formatting/Punctuation)**:\n    *   **翻译A** 使用了直角引号「」，这是轻小说（尤其是台版或网络汉化）常见的格式。\n    *   **翻译B** 使用了双引号“”，这是大陆出版物的标准格式。两者皆可，但B在标点规范性上略胜一筹，不过这无法弥补其内容上的巨大缺陷。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 5,\n      \"notes\": \"B在段落55出现了'大叔我'的严重误译（幻觉），且在段落12误译了惯用语。\"\n    },\n    \"fluency\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A的语句更通顺自然；B在部分段落（如28）用词重复。\"\n    },\n    \"style\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A很好地还原了轻小说的氛围；B的错误破坏了沉浸感。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 8,\n      \"notes\": \"两者在人名术语上基本一致。\"\n    },\n    \"coherence\": {\n      \"A\": 9,\n      \"B\": 6,\n      \"notes\": \"B的致命错误导致上下文逻辑崩坏（主角性别/身份混乱）。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B使用标准中文引号，A使用日式/轻小说常用引号，均可接受。\"\n    }\n  },\n  \"key_differences\": [\n    \"段落55中，B错误地添加了第一人称代词'大叔我'，严重违背原文角色设定。\",\n    \"段落12中，A正确理解了'空を切って'为声音消散/徒劳，B误译为'划破天空'。\",\n    \"A的整体行文更具文学性，读起来更像是一个完整的故事。\"\n  ],\n  \"final_summary\": \"翻译A在各方面都优于翻译B。翻译A准确流畅，很好地传达了原文的情感。翻译B虽然在大部分段落表现尚可，但在段落55出现了一个不可原谅的致命错误（将女性主角自称译为'大叔我'），这表明B可能过度依赖不稳定的机器翻译或缺乏校对。因此，A是毫无疑问的胜者。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 6996,
+          "completion_tokens": 3816,
+          "total_tokens": 10812
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 5,
+        "notes": "B在段落55出现了'大叔我'的严重误译（幻觉），且在段落12误译了惯用语。"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 7,
+        "notes": "A的语句更通顺自然；B在部分段落（如28）用词重复。"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A很好地还原了轻小说的氛围；B的错误破坏了沉浸感。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者在人名术语上基本一致。"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "B的致命错误导致上下文逻辑崩坏（主角性别/身份混乱）。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B使用标准中文引号，A使用日式/轻小说常用引号，均可接受。"
+      }
+    },
+    "key_differences": [
+      "段落55中，B错误地添加了第一人称代词'大叔我'，严重违背原文角色设定。",
+      "段落12中，A正确理解了'空を切って'为声音消散/徒劳，B误译为'划破天空'。",
+      "A的整体行文更具文学性，读起来更像是一个完整的故事。"
+    ],
+    "final_summary": "翻译A在各方面都优于翻译B。翻译A准确流畅，很好地传达了原文的情感。翻译B虽然在大部分段落表现尚可，但在段落55出现了一个不可原谅的致命错误（将女性主角自称译为'大叔我'），这表明B可能过度依赖不稳定的机器翻译或缺乏校对。因此，A是毫无疑问的胜者。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

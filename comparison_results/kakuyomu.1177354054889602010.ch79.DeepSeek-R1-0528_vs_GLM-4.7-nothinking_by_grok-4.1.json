@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:04.427171",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "f44cba15fac3a65186941071b10343ec4ad23f0f150293b725055d93e3fc08aa",
+    "B": "f66edabb27bb55690b47b3a20b0e35f117d94fa6c83a773073a3817d46002ce7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:24.291981",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89D1vRjjAOraYXxaUnMVThnJEHjs2",
+      "judge_response": {
+        "id": "chatcmpl-89D1vRjjAOraYXxaUnMVThnJEHjs2",
+        "object": "chat.completion",
+        "created": 1768426883,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"ゴブラル ゴブリン 軽小说 OR 小说 OR なろう\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"sideゴブラル sideマゼル ゴブリン軍\"\n> 📊 **Results requested:** 5\n\n> 🔍 **5 results found**\n\n> [🔗 \"ゴブリン - 作品検索 | 小説を読もう！\" Syosetu](https://yomou.syosetu.com/search.php?word=%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3)\n> [🔗 \"作品検索 | 小説を読もう！\" Syosetu](https://yomou.syosetu.com/search.php?word=%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E8%BB%A2%E7%94%9F)\n> [🔗 \"Amazon.co.jp: ゴブリン令嬢と転生貴族が幸せになる...\" Amazon Japan](https://www.amazon.co.jp/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E4%BB%A4%E5%AC%A2%E3%81%A8%E8%BB%A2%E7%94%9F%E8%B2%B4%E6%97%8F%E3%81%8C%E5%B9%B8%E3%81%9B%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%BE%E3%81%A7-%E5%A9%9A%E7%B4%84%E8%80%85%E3%81%AE%E5%BD%BC%E5%A5%B3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E5%89%8D%E4%B8%96%E7%9F%A5%E8%AD%98%E3%81%AE%E4%B8%8A%E6%89%8B%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9-%E3%82%AB%E3%83%89%E3%82%AB%E3%83%AFBOOKS-%E6%96%B0%E5%A4%A9%E6%96%B0%E5%9C%B0/dp/4040744888)\n> [🔗 \"ゴブリンがメインキャラとして活躍する異世界漫画の注目作品5選！\" Wot](https://wot.red/2020/07/26/isekaiosusume-goburin)\n> [🔗 \"ニコニコ生放送リアルタイムランキング | ...\" Soraweb](https://niconama.soraweb.net/keyword/%E6%9C%A8%E6%9D%91%E6%B2%99%E7%B9%94?changeCategory=41&p=3)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ゴブリン突撃部隊 | カード詳細 | 遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース\" Yu-Gi-Oh! Card](https://www.db.yugioh-card.com/yugiohdb/card_search.action?cid=5145&ope=2&request_locale=ja)\n> [🔗 \"ゴブリン突撃部隊 - アニヲタWiki(仮)\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/14463.html)\n> [🔗 \"ゴブリン軍団 | オーバーロードWIKI第7版\" Matrix](https://overlordwiki.matrix.jp/post-1211)\n> [🔗 \"ゴブリン突撃部隊\" Pixiv](https://dic.pixiv.net/a/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E7%AA%81%E6%92%83%E9%83%A8%E9%9A%8A)\n> [🔗 \"ゴブリンスレイヤー | ガンガンONLINE\" Gangan Online](https://www.ganganonline.com/title/47)\n> [🔗 \"ゴブリンスレイヤー - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC)\n> [🔗 \"ガンガンONLINE\" Gangan Online](https://www.ganganonline.com/title/1716)\n> [🔗 \"【ゴブリン襲来】 - サガ用語辞典 Wiki*\" WikiWiki](https://wikiwiki.jp/sagadic/%E3%80%90%E3%82%B4%E3%83%96%E3%83%AA%E3%83%B3%E8%A5%B2%E6%9D%A5%E3%80%91)\n> [🔗 \"TVアニメ「ゴブリンスレイヤー」公式サイト\" Goblinslayer](https://goblinslayer.jp/)\n> [🔗 \"ゴブリン降下部隊 | カード詳細 | 遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース\" Yu-Gi-Oh! Card](https://www.db.yugioh-card.com/yugiohdb/card_search.action?cid=19485&ope=2&request_locale=ja)\n\n\n这是一个典型的轻小说片段，带有幽默、反转和战斗描写，涉及哥布林军从自大到崩溃的过程，以及人类方（以“雷”和“大贤者玛泽尔”的儿子为中心）的反杀。整体语气轻松、吐槽向，带有日式轻小说常见的叙述者内心独白和拟声词。\n\n**详细分析**（逐方面比较A和B）：\n\n1. **准确性（意思保留）**：\n   - A：在多数地方忠实原文，但有几处小偏差或遗漏。例如段落4“ゴブリン軍の大勝利”译为“哥布**的大胜利”（明显是“哥布林”的残缺，可能是打码或笔误）；段落9/10/17等多次“哥布**”不完整；段落14/19/24等“戈布拉”而非统一；段落34/43等“**掉”也是残缺。整体意思基本保留，但这些不完整影响理解。\n   - B：更完整保留原文意思，如始终用“ゴブリン”或“哥布林”一致；“牝”统一为“牝”或“女”（但倾向保留原文感）；“釣り野伏せ”译为“诱敌深入伏击”更贴近战术含义（钓り野伏せ≈钓野伏=诱敌伏击）。小地方如段落16的“能感觉到”稍添字但不歪曲。准确性更高，几乎无明显遗漏或残缺。\n   - A小胜于某些直译（如段落5“雌性”更直接对应“牝”），但整体B胜。\n\n2. **流畅性（中文自然表达）**：\n   - A：有些句子生硬或awkward，如段落3“看起来相当急，但比我想的还要早。”（自然但可更顺）；段落7“现在开始就让人期待呢。”稍书面；段落15“这个这个，请更正确地使用语言。”重复感强；段落42长句较啰嗦。\n   - B：整体更口语化、自然，如段落7“好了好了，到底什么样的战果会被报告，现在就开始期待了。”更像吐槽风；段落15“喂喂、请更正确地使用语言给。”带点粗鲁感贴合角色；段落16“啊、原来如此。确实刚才的感觉简直像我们部队全灭了一样能感觉到、但人类侧全灭吗。”调整后更连贯。B的中文阅读起来更顺滑，像本土轻小说。\n\n3. **风格/语气（轻小说叙述/对话）**：\n   - 轻小说核心：第一人称内心吐槽、夸张反应、搞笑反转、粗俗但不低俗的哥布林视角。\n   - A：保留了部分，但语气有时太平淡，如段落19“刚才的从容去哪了！　话说！”；段落45“人类们。干掉了5000士兵就得意忘形，也就现在了！”稍弱。\n   - B：更活泼、贴近轻小说调调，如段落19“刚才的从容去哪儿了！　或者说！”；段落20“全灭是什么意思！　不可能吧！”；段落45“人类们啊。因为打倒了5000兵就得意忘形，也只在现在了！”带点嘲讽味。哥布林的傲慢-震惊-强行乐观的语气更鲜明。对话更带感叹、重复强调（如“全、全灭！”）。\n\n4. **术语/名称一致性**：\n   - A：名称混乱——“戈布拉/戈布拉尔/哥布**/哥布林/哥布**团”等混用；“sideゴブラル”保持原样但后面变；“牝”有时“雌性”有时“女”。\n   - B：高度一致——“ゴブラル”统一音译为“ゴブラル”或上下文“哥布拉”；“ゴブリン”几乎全程“ゴブリン”或“哥布林”；“牝”统一倾向“女”或“牝”（但更稳定）；“side”部分也一致。术语如“全滅”统一“全灭/全军覆没”处理得当。B明显优。\n\n5. **连贯性/可读性**：\n   - A：因名称/词语残缺（如**），阅读时会卡顿；长句有时断裂感强。\n   - B：整体连贯，段落间过渡自然；内心独白和叙述流畅，战斗/反转节奏保持得好。可读性更高。\n\n6. **格式/标点符号**：\n   - A：标点基本正常，但有些地方缺空格或不统一（如对话内）。\n   - B：标点更细致，如使用“、”调整节奏（日式轻小说常见）；对话“！”“？”使用更夸张贴合情绪；整体格式整洁。\n\n**关键差异**：\n- A有较多笔误/残缺（哥布**、**掉），影响专业性。\n- B在语气生动性、自然中文、名称统一上全面占优，更符合“轻小说翻译”应有的娱乐性、可代入感。\n- A某些地方更直译（如“牝”→“雌性”），但牺牲了流畅；B适当意译但不失原意。\n- 整体B更像成熟的轻小说中译本，A像初稿或机翻润色不足。\n\n**最终判决**：B整体更好，差距明显（非极其接近），故无平局。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 9, \"notes\": \"A有残缺和不完整表达，B更忠实完整且少偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B的中文更自然口语化，阅读顺畅度高\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地捕捉轻小说吐槽、夸张、幽默的语气\"},\n    \"terminology\": {\"A\": 5, \"B\": 9, \"notes\": \"A名称/术语混乱不统一，B高度一致专业\"},\n    \"coherence\": {\"A\": 7, \"B\": 9, \"notes\": \"B段落连贯性强，无卡顿点\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点节奏感更强，整体整洁\"}\n  },\n  \"key_differences\": [\n    \"A存在明显残缺（如哥布**、**掉），严重影响可读性与专业度\",\n    \"B在名称一致性（如始终处理ゴブラル/ゴブリン）和语气生动度上全面优于A\",\n    \"B的对话与内心独白更具轻小说娱乐性，中文表达更本土自然\",\n    \"A部分直译生硬，B适当调整但保留原文精髓\"\n  ],\n  \"final_summary\": \"翻译B整体质量显著优于A，尤其在流畅性、风格再现、术语统一和可读性上表现出色，更符合轻小说翻译的标准；A虽意思基本到位，但笔误与不自然处较多。推荐B作为更好版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12958,
+          "completion_tokens": 3855,
+          "total_tokens": 16813
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 9,
+        "notes": "A有残缺和不完整表达，B更忠实完整且少偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文更自然口语化，阅读顺畅度高"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地捕捉轻小说吐槽、夸张、幽默的语气"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 9,
+        "notes": "A名称/术语混乱不统一，B高度一致专业"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B段落连贯性强，无卡顿点"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点节奏感更强，整体整洁"
+      }
+    },
+    "key_differences": [
+      "A存在明显残缺（如哥布**、**掉），严重影响可读性与专业度",
+      "B在名称一致性（如始终处理ゴブラル/ゴブリン）和语气生动度上全面优于A",
+      "B的对话与内心独白更具轻小说娱乐性，中文表达更本土自然",
+      "A部分直译生硬，B适当调整但保留原文精髓"
+    ],
+    "final_summary": "翻译B整体质量显著优于A，尤其在流畅性、风格再现、术语统一和可读性上表现出色，更符合轻小说翻译的标准；A虽意思基本到位，但笔误与不自然处较多。推荐B作为更好版本。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

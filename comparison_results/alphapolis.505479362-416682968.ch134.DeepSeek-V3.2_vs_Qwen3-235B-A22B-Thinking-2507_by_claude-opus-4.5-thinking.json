@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:04:49.387157",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "5258be2c9cef42b518a4915805f7a2187828570b3e10649a008607313e97e3ed",
+    "B": "f64d52c4b5fe46746883d9bd15ed4978307857e0487365a9a73c98fdeb3f0ca2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:05:32.216475",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "33801102-77dc-4d35-be4d-1000e49a6020",
+      "judge_response": {
+        "id": "33801102-77dc-4d35-be4d-1000e49a6020",
+        "object": "chat.completion",
+        "created": 1768421132,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评析\n\n### 准确性分析\n- **段落2**：B的\"明明告诉过她...却以辅导考试学习为交换条件\"更准确表达了原文的让步关系；A的\"菲利普说她...但为了能复习考试\"逻辑略混乱\n- **段落4**：A误译为\"菲利普明明是笨蛋\"，原文是\"扮演笨蛋\"；B正确\n- **段落23**：A的\"是，死了～\"更准确（表示\"你已经死了\"），B的\"那你就会死\"添加了解释\n- **段落48**：A的\"要是波耶尔不在就好了，想过多少次了\"更准确；B的\"庆幸波耶尔不在场\"理解有偏差\n\n### 流畅性分析\n- B整体更口语化、自然，如\"超强\"、\"玩意儿\"、\"糊弄\"\n- A部分表达较生硬，如段落1\"累趴了\"、段落32\"连影子都看不到\"\n\n### 风格/语气分析\n- B的轻小说对话感更强，如\"咯\"、\"嘛～\"、\"蛤？\"等语气词运用恰当\n- 段落79：B的\"装傻卖萌\"比A的\"嬉皮笑脸\"更贴近\"てへぺろ\"的萌系语感\n\n### 格式分析\n- A在段落3、8、10、12、13等多处缺失「」引号标记\n- B保持了与原文一致的引号格式\n\n### 术语一致性\n- \"アイテムボックス\"：A译\"物品框\"，B译\"道具箱\"，B更符合轻小说常见译法\n- 人名翻译两者基本一致\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在关键句式理解上更准确，但段落23和48 A略优\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，轻小说对话感更强\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B的语气词和俏皮表达更符合轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B的道具箱等译法更规范\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体阅读更流畅连贯\"},\n    \"formatting\": {\"A\": 5, \"B\": 9, \"notes\": \"A多处缺失对话引号，B格式规范一致\"}\n  },\n  \"key_differences\": [\n    \"格式规范性：B保持原文「」引号，A多处缺失\",\n    \"语气风格：B的俏皮轻松感更符合原作调性\",\n    \"句式理解：段落4等处B对让步/因果关系把握更准\",\n    \"个别句子A更准确如段落23、48\"\n  ],\n  \"final_summary\": \"B在格式规范、风格把握和整体流畅度上明显优于A，尤其是对话引号的保留使阅读体验更佳。虽然A在个别句子的直译上更准确，但B对轻小说语境的整体把握更到位，综合表现更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9927,
+          "completion_tokens": 1956,
+          "total_tokens": 11883
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在关键句式理解上更准确，但段落23和48 A略优"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，轻小说对话感更强"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的语气词和俏皮表达更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的道具箱等译法更规范"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体阅读更流畅连贯"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 9,
+        "notes": "A多处缺失对话引号，B格式规范一致"
+      }
+    },
+    "key_differences": [
+      "格式规范性：B保持原文「」引号，A多处缺失",
+      "语气风格：B的俏皮轻松感更符合原作调性",
+      "句式理解：段落4等处B对让步/因果关系把握更准",
+      "个别句子A更准确如段落23、48"
+    ],
+    "final_summary": "B在格式规范、风格把握和整体流畅度上明显优于A，尤其是对话引号的保留使阅读体验更佳。虽然A在个别句子的直译上更准确，但B对轻小说语境的整体把握更到位，综合表现更优。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

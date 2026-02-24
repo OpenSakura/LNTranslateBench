@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:27:58.123581",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "29522c59d31952329b51eadc94ffd76a11f738b171fdb737e69cc8795fd9e91e",
+    "B": "7e30bbacb349a60f02856f8aec98e0f1e46bf0f626cf0ddecf5b3586a756c650"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:28:49.876514",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "1652b8c8-80e5-4223-bc52-2ed950c79b8e",
+      "judge_response": {
+        "id": "1652b8c8-80e5-4223-bc52-2ed950c79b8e",
+        "object": "chat.completion",
+        "created": 1768422529,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性分析\n**翻译B存在严重的人名翻译错误：**\n- 段落11：B将「N：ブルの顔色」译为「N：布满脸色的缘故」，完全错误\n- 段落19、22、28、32、35：B多次将「N：ブル」误译为「葛琳」，这是不同角色\n- 段落102、104、105：B将「フェスタ」译为「庆典」，这是人名不是词汇\n- 段落153：B将「フェスタ」译为「祭典」\n\n翻译A在原文理解上更准确，如段落36中A正确理解「議論に掛ける所」为\"要讨论是否派调查队去\"，B理解为\"派遣调查部队去讨论\"有歧义。\n\n### 2. 术语/名称一致性\n**B的严重问题：**\n- N：ブル → 布鲁/葛琳/N：Blue/N：ブル（保留日文），极不一致\n- フェスタ → 菲斯塔/庆典/菲丝塔/祭典，四种译法\n\n**A保持一致：**\n- N：ブル → 始终为「N：布鲁」\n- フェスタ → 始终为「费斯塔」\n\n### 3. 流畅性与风格\n- 段落1：B的「诶～还有这种传闻？」比A的「嘿，这种传闻啊？」更自然\n- 段落8：B用「葛琳小姐」比A的「葛琳先生」更准确（葛琳是女性）\n- 段落5：B「音量很小，控制在其他职员听不见的程度」比A更完整\n- 但B的人名错误严重影响可读性\n\n### 4. 格式问题\n- 段落46：B末尾多余的」\n- 段落133、136：B保留了日文「N：ブル」未翻译\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处将N：ブル误译为葛琳，段落11完全误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相当，B部分句子更自然但被错误拖累\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"轻小说风格把握相近，A称呼用先生略显不当\"},\n    \"terminology\": {\"A\": 9, \"B\": 3, \"notes\": \"B人名翻译严重不一致：フェスタ有4种译法，N：ブル有4种译法\"},\n    \"coherence\": {\"A\": 8, \"B\": 4, \"notes\": \"B因人名混乱导致读者无法分清角色，严重影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B有未翻译的日文残留和多余标点\"}\n  },\n  \"key_differences\": [\n    \"B将N：ブル多次误译为葛琳（段落19、22、28、32、35），造成角色混淆\",\n    \"B将人名フェスタ译为庆典/祭典等词汇意译，破坏人物识别\",\n    \"A人名翻译始终保持一致（N：布鲁、费斯塔）\",\n    \"段落11：B完全误译为'N：布满脸色'\",\n    \"A用'先生'称呼女性角色略不妥，B用'小姐'更准确\"\n  ],\n  \"final_summary\": \"翻译A在人名一致性和准确性上明显优于B。B虽然在部分句子的自然度上略有优势，但其多处将N：ブル误译为葛琳、将人名フェスタ译为'庆典''祭典'等严重错误，以及人名翻译的极度不一致（同一人物出现4种不同译法），严重损害了译文的可读性和连贯性，属于致命缺陷。综合评判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13230,
+          "completion_tokens": 2409,
+          "total_tokens": 15639
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处将N：ブル误译为葛琳，段落11完全误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相当，B部分句子更自然但被错误拖累"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "轻小说风格把握相近，A称呼用先生略显不当"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 3,
+        "notes": "B人名翻译严重不一致：フェスタ有4种译法，N：ブル有4种译法"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 4,
+        "notes": "B因人名混乱导致读者无法分清角色，严重影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有未翻译的日文残留和多余标点"
+      }
+    },
+    "key_differences": [
+      "B将N：ブル多次误译为葛琳（段落19、22、28、32、35），造成角色混淆",
+      "B将人名フェスタ译为庆典/祭典等词汇意译，破坏人物识别",
+      "A人名翻译始终保持一致（N：布鲁、费斯塔）",
+      "段落11：B完全误译为'N：布满脸色'",
+      "A用'先生'称呼女性角色略不妥，B用'小姐'更准确"
+    ],
+    "final_summary": "翻译A在人名一致性和准确性上明显优于B。B虽然在部分句子的自然度上略有优势，但其多处将N：ブル误译为葛琳、将人名フェスタ译为'庆典''祭典'等严重错误，以及人名翻译的极度不一致（同一人物出现4种不同译法），严重损害了译文的可读性和连贯性，属于致命缺陷。综合评判A胜出。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

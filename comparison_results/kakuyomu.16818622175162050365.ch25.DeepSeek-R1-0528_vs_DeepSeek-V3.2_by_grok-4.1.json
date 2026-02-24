@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:46.150501",
+  "sample": "kakuyomu.16818622175162050365.ch25",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175162050365.ch25.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175162050365.ch25.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "fc46323168697d4d6b3fbab4ddb624a3721e2e9f66090bbc644d004822fc3cd0",
+    "A": "de8170d801d9e82991953f934a5d49fa6a746c00af4fb8be3946c10f4cb05f40",
+    "B": "7d055710bd62dc8b92cb7edecfb9926546cbabef7143552c9e60c72ad124c16a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:42:05.868724",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DoyruF6Q4U1J9PND5HYr7IAoEHE",
+      "judge_response": {
+        "id": "chatcmpl-89DoyruF6Q4U1J9PND5HYr7IAoEHE",
+        "object": "chat.completion",
+        "created": 1768426925,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"魔法少女 部活 勧誘 軽小说 OR ライトノベル 翻訳 比較\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"ルミナスリーグ ダイヤモンドリーグ 魔法少女 野球部 作品名\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"有為くん 奏多 陽菜乃 東雲 柚子 軽小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"【ダークファンタジー・魔法少女】おすすめWeb小説一覧（週間ランキング） - カクヨム\" Kakuyomu](https://kakuyomu.jp/search?q=%E3%83%80%E3%83%BC%E3%82%AF%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC+%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3)\n> [🔗 \"魔法少女ライトノベル特集～殺伐系から魔法少女(物理)まで～ | ブックオフ公式オンラインストア\" Bookoff](https://shopping.bookoff.co.jp/lightnovel/feature/mahoushoujo)\n> [🔗 \"このライトノベルがすごい！文庫\" Konorano](https://konorano.jp/bunko/new_bunko)\n> [🔗 \"MF文庫J(ライトノベル、画集)の作品一覧|電子書籍無料試し読みならBOOK☆WALKER\" BOOK WALKER](https://bookwalker.jp/label/97)\n> [🔗 \"【2025年版】おすすめのファンタジーラノベ｜王道からダークまで一気読み | 毎日が読書日和\" Yota-book](https://yota-book.com/fantasy-light-novel-best)\n> [🔗 \"Amazon.co.jp: 魔法少女育成計画 (このライトノベル...\" Amazon Japan](https://www.amazon.co.jp/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%A8%88%E7%94%BB-%E3%81%93%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%88%E3%83%8E%E3%83%99%E3%83%AB%E3%81%8C%E3%81%99%E3%81%94%E3%81%84-%E6%96%87%E5%BA%AB-%E9%81%A0%E8%97%A4-%E6%B5%85%E8%9C%8A/dp/479668039X)\n> [🔗 \"世界で2番目におもしろいライトノベル。\" BOOK WALKER](https://bookwalker.jp/deb9e8d81b-0000-481c-8144-0541dab16c62)\n> [🔗 \"【魔法少女・現代ファンタジー】おすすめWeb小説一覧（週間ランキング） - カクヨム\" Kakuyomu](https://kakuyomu.jp/search?q=%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3+%E7%8F%BE%E4%BB%A3%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC)\n> [🔗 \"魔法・魔術ライトノベル ／ ネットオフまとめ\" Netoff](https://www.netoff.co.jp/tag?tagid=3162)\n> [🔗 \"ライトノベル（ラノベ）、MF文庫Jの電子書籍無料試し読みならBOOK☆WALKER\" BOOK WALKER](https://bookwalker.jp/category/3?qlab=97)\n\n> 🔍 **10 results found**\n\n> [🔗 \"魔法少女育成計画 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E8%82%B2%E6%88%90%E8%A8%88%E7%94%BB)\n> [🔗 \"ダイヤモンドリーグ2025 - YouTube\" YouTube](https://www.youtube.com/playlist?list=PLeoQPDTGh03AJZvqR1Rpo1apCG8P8knlZ)\n> [🔗 \"ダイヤモンドリーグ | 月陸Online｜月刊陸上競技\" Rikujyokyogi](https://www.rikujyokyogi.co.jp/archives/tag/%E3%83%80%E3%82%A4%E3%83%A4%E3%83%A2%E3%83%B3%E3%83%89%E3%83%AA%E3%83%BC%E3%82%B0)\n> [🔗 \"魔法少女サイト - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E3%82%B5%E3%82%A4%E3%83%88)\n> [🔗 \"魔法少女にあこがれて - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E3%81%AB%E3%81%82%E3%81%93%E3%81%8C%E3%82%8C%E3%81%A6)\n> [🔗 \"アニメ作品における野球回の一覧とは (アニメサ...\" Niconico](https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%8B%E3%83%A1%E4%BD%9C%E5%93%81%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E9%87%8E%E7%90%83%E5%9B%9E%E3%81%AE%E4%B8%80%E8%A6%A7)\n> [🔗 \"野球部\" Pixiv](https://dic.pixiv.net/a/%E9%87%8E%E7%90%83%E9%83%A8)\n> [🔗 \"魔法少女アニメの一覧 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%81%AE%E4%B8%80%E8%A6%A7)\n> [🔗 \"【特集】みんな大好き魔法少女アニメ厳選20作品！ | CinemaStyle\" CinemaStyle](https://www.cinemastyle.jp/feature/12045)\n> [🔗 \"少女魔法学園\" Pixiv](https://dic.pixiv.net/a/%E5%B0%91%E5%A5%B3%E9%AD%94%E6%B3%95%E5%AD%A6%E5%9C%92)\n\n> 🔍 **10 results found**\n\n> [🔗 \"[Voice] - ☄️RELEASE☄️[260109][RJ01532477][一縷ICHIRU] 【繁體中文版】【純愛×主僕關係】幫助了被霸凌的小學妹“奏多”後，被她深深地愛戀著變得幸福了的故事【KU-100】 | Anime-Sharing Community\" Anime-Sharing](https://www.anime-sharing.com/threads/%E2%98%84%EF%B8%8Frelease%E2%98%84%EF%B8%8F-260109-rj01532477-%E4%B8%80%E7%B8%B7ichiru-%E3%80%90%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88%E3%80%91%E3%80%90%E7%B4%94%E6%84%9B%C3%97%E4%B8%BB%E5%83%95%E9%97%9C%E4%BF%82%E3%80%91%E5%B9%AB%E5%8A%A9%E4%BA%86%E8%A2%AB%E9%9C%B8%E5%87%8C%E7%9A%84%E5%B0%8F%E5%AD%B8%E5%A6%B9%E2%80%9C%E5%A5%8F%E5%A4%9A%E2%80%9D%E5%BE%8C%EF%BC%8C%E8%A2%AB%E5%A5%B9%E6%B7%B1%E6%B7%B1%E5%9C%B0%E6%84%9B%E6%88%80%E8%91%97%E8%AE%8A%E5%BE%97%E5%B9%B8%E7%A6%8F%E4%BA%86%E7%9A%84%E6%95%85%E4%BA%8B%E3%80%90ku-100%E3%80%91.1855681)\n> [🔗 \"有声小说(有声书)类漫画和动画全集 【第5页】- ACG漫画网\" ACG Manga](https://www.acgxmh.com/tags/audiobook-5.html)\n> [🔗 \"柚木凉香 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/%E6%9F%9A%E6%9C%A8%E5%87%89%E9%A6%99)\n> [🔗 \"Client Challenge\" Fandom](https://newkomica-kari.fandom.com/zh-tw/wiki/%E6%AD%BB%E5%BE%8C%E8%A6%81%E5%AD%90%E5%AD%AB%E7%87%92%E7%B5%A6%E8%87%AA%E5%B7%B1%E7%9C%8B%E7%9A%84%E5%90%8D%E5%96%AE)\n> [🔗 \"TW Pornstars - #有声漫画 videos and pics\" TW Pornstars](https://www.twpornstars.com/hashtag/%E6%9C%89%E5%A3%B0%E6%BC%AB%E7%94%BB)\n> [🔗 \"Gutenberg\" Project Gutenberg](https://www.gutenberg.org/files/24059/24059-0.txt)\n> [🔗 \"Readingroo\" Readingroo](https://readingroo.ms/2/5/3/9/25392/25392-0.txt)\n> [🔗 \"Pinterest\" Pinterest](https://www.pinterest.com/pin/455356212317086474)\n> [🔗 \"Docusky\" Docusky](https://docusky.org.tw/docusky/webApi/webpage-open-3in1.php?corpus=%5BALL%5D&db=DaoBudMed6D&page=182&pageSize=20&queryBase=.all&spType=search&target=OPEN)\n> [🔗 \"巴漢詞典 Concise Pali-English Dictionary A.P. Buddhadatta Mahāthera 原著 大馬比丘 漢譯\" Shineling](https://www.shineling.org/wp-content/uploads/2021/01/Concise-Palli-English-Dictionary.pdf)\n\n\n以下是对两个翻译版本（A与B）的详细比较分析。作为轻小说翻译评判，我会严格基于原文的日语语感、轻小说特有的轻松/吐槽/内心独白风格，以及中文自然流畅度进行评估。整体来看，这段文本是典型的校园轻小说开头，带有魔法少女设定下的日常+部活勧誘，叙述者（柚子）视角的第一人称，语气轻松、带点吐槽、少女感强。\n\n### 总体观察\n- **A版**：更倾向于直译+稍显生硬的表达，在某些地方保留了日语的语序和语气，但中文读起来偶尔不够顺滑，少女对话的活泼感稍弱。有些地方用词较为书面或中性。\n- **B版**：更注重中文的自然表达和轻小说常见的口语化、活泼感。对话更贴近现代中文网络轻小说读者习惯（例如更随意的语气词、俏皮吐槽），叙述也更流畅连贯，整体可读性强。一些地方对原文细微语气进行了适当润色，使其更符合“少女轻小说”的风格。\n- 准确性上两者都较高，基本没有明显误译，但B在语气再现、口语自然度上更胜一筹。\n- 术语一致性：两者都使用了“社团/部活”“宣传单/传单”“魔法少女”等较为一致的译法，无大问题（“チラシ”统一为宣传单/传单都可接受，B更倾向“宣传单”稍统一）。\n- 名字处理：两者都较统一（津津木/津木、奏多/有為等），但B在称呼上更细腻（如“东云同学”）。\n\n### 分段关键差异举例（重点段落）\n- 段落1：B的“听说从今天开始的一周内允许社团进行大规模招新”更符合中文表达习惯，A的“据说，从今天起社团的大规模招募被允许持续一周”稍被动、生硬。\n- 段落3：B“小圈子”比A“小组”更贴近日语“グループ”的校园轻小说语感（小团体/圈子）。\n- 段落4：B的“跨圈子”“不如前两位那么突出”更生动自然，A的“小组以外很多人”“不像前两个人那么厉害”稍直白。\n- 段落6：B的叙述更流畅且带轻小说常见的“——”破折号强调视角切换，A稍平。\n- 段落10：B的“关我屁事”非常生动、符合傲娇/毒舌少女的语气，A的“根本不重要”太中性，失去了原文的冲击力与可爱毒舌感。\n- 段落15：B的“真厉害啊……”更带感叹与内心吐槽味。\n- 段落25：B的“不是啦”“会不会被认为是来捣乱的而被骂呀？”更口语化、少女感强。\n- 段落31/32：B的“嘛”“啦”“甚至……还吓了一跳呢”更轻松俏皮，贴近第一人称少女叙述。\n- 段落71/78：奏多的毒舌+棒球厌恶感，B的“我当魔法少女可不是为了打什么棒球”“比赛我绝对不会再回去了”语气更强硬到位。\n- 段落81：B的长篇演说更激昂、热血，符合体育系前辈的“暑苦しい”感。\n- 段落82/83：B的“令人窒息地炽热”“上升了好几度”比A的“非常闷热”“上升了几度”更形象生动。\n\n### 最终评分与判决\n综合6个维度，B在流畅性、风格再现、可读性上明显占优，A在准确性上略稳但整体稍逊。两者没有严重误译，但轻小说最重要的是“读起来有趣、自然、带入感强”，B更胜一筹。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"两者都高度忠实原文，几乎无误译或增删，A稍直译但无错。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"A有些句子稍显生硬、书面化；B中文更自然流畅，口语感强。\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"轻小说需要活泼、吐槽、少女内心戏，B在毒舌、俏皮、热血再现上更到位（如“关我屁事”“令人窒息地炽热”）。\"\n    },\n    \"terminology\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"术语统一良好，无明显不一致（チラシ/宣传单/传单、ルミナスリーグ等皆可接受）。\"\n    },\n    \"coherence\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B段落衔接更丝滑，叙述节奏感更好。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B更善于使用破折号、语气词、省略号，符合中文轻小说标点习惯。\"\n    }\n  },\n  \"key_differences\": [\n    \"B更注重口语化与少女语气再现（如“关我屁事”“不是啦”“嘛～”），A偏直译中性。\",\n    \"B在对话和内心吐槽的生动度、冲击力上更强（如毒舌、热血演说）。\",\n    \"B整体可读性与轻小说“爽快感”更突出，A稍显平淡。\"\n  ],\n  \"final_summary\": \"B版在保留原文准确性的前提下，更好地再现了轻小说的轻松、吐槽、少女视角与节奏感，整体阅读体验明显优于A版，因此判定B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12672,
+          "completion_tokens": 5083,
+          "total_tokens": 17755
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者都高度忠实原文，几乎无误译或增删，A稍直译但无错。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "A有些句子稍显生硬、书面化；B中文更自然流畅，口语感强。"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "轻小说需要活泼、吐槽、少女内心戏，B在毒舌、俏皮、热血再现上更到位（如“关我屁事”“令人窒息地炽热”）。"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9,
+        "notes": "术语统一良好，无明显不一致（チラシ/宣传单/传单、ルミナスリーグ等皆可接受）。"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B段落衔接更丝滑，叙述节奏感更好。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B更善于使用破折号、语气词、省略号，符合中文轻小说标点习惯。"
+      }
+    },
+    "key_differences": [
+      "B更注重口语化与少女语气再现（如“关我屁事”“不是啦”“嘛～”），A偏直译中性。",
+      "B在对话和内心吐槽的生动度、冲击力上更强（如毒舌、热血演说）。",
+      "B整体可读性与轻小说“爽快感”更突出，A稍显平淡。"
+    ],
+    "final_summary": "B版在保留原文准确性的前提下，更好地再现了轻小说的轻松、吐槽、少女视角与节奏感，整体阅读体验明显优于A版，因此判定B胜出。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

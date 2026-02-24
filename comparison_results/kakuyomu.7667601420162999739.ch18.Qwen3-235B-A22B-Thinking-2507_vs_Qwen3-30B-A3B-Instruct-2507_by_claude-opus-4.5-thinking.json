@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:35:01.503866",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "043eab4add88ce444acc26708c5a6c04c8a0dcac91e738118f7ec8ff145ad3e2",
+    "B": "9705b8077073de518f4c794fba9d670a709d928efc45f4709f11c01f589caba9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:35:42.229060",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "98578dbe-e5a8-42c3-9b38-1dcf405f890c",
+      "judge_response": {
+        "id": "98578dbe-e5a8-42c3-9b38-1dcf405f890c",
+        "object": "chat.completion",
+        "created": 1768422942,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细对比分析\n\n### 1. 准确性问题\n\n**段落5 关键错误**：\n- 原文「焼きそばパン」\n- A译：「烤面包」❌ （完全错误，应为\"炒面面包\"）\n- B译：「炒面面包」✓\n\n**段落14 严重问题**：\n- A译：**完全缺失！** 这是致命错误\n- B译：完整翻译 ✓\n\n**段落6「現場ニキ」**：\n- A译：「现场尼基」（音译，意义不明）\n- B译：「现场达人」（意译，更好地传达网络梗含义）\n\n### 2. 流畅性与风格\n\n**对话格式**：\n- A：统一使用「」引号，格式规范\n- B：部分对话缺少引号（段落16-18等），格式不一致\n\n**语言风格**：\n- A：较为书面化，如「简直就像另一个世界」\n- B：更口语化，如「真的是另一个世界啊」「啥来着」\n\n### 3. 术语处理\n\n**「ライトブリンガー」**：\n- A：保留原文（不翻译）\n- B：译为「光之使者」（更易理解）\n\n**「ドラムバッグ」**：\n- A：「鼓形背包」\n- B：「鼓包」（更简洁）\n\n### 4. 其他问题\n\n- 段落25 B末尾多余引号「\"」\n- 段落29 B末尾多余引号「\"」\n- 段落60「モです」：A译「嗯」/ B译「摩斯」，两者都不理想，但B更接近音译\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A缺失段落14，且段落5'焼きそばパン'翻译错误；B完整且准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A较书面化，B更口语化，各有特色\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A更正式，B更贴近轻小说轻松语调\"},\n    \"terminology\": {\"A\": 6, \"B\": 8, \"notes\": \"A保留日文术语不翻译，B的'现场达人'比'现场尼基'更达意\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A因缺失段落影响连贯性\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A引号使用规范，B多处对话缺引号且有多余标点\"}\n  },\n  \"key_differences\": [\n    \"A完全缺失段落14的翻译，为致命错误\",\n    \"A将'焼きそばパン'误译为'烤面包'，B正确译为'炒面面包'\",\n    \"'現場ニキ'：A音译为'现场尼基'，B意译为'现场达人'\",\n    \"A格式更规范统一，B多处对话缺少引号\",\n    \"圣剑名：A保留日文，B译为'光之使者'\"\n  ],\n  \"final_summary\": \"虽然A在格式规范性上略胜一筹，但存在两个致命缺陷：完全遗漏段落14的翻译，以及将'焼きそばパン(炒面面包)'错译为'烤面包'。B虽有格式不一致问题，但内容完整、核心翻译准确，'现场达人'的译法也更好地传达了原文网络用语的含义。综合考虑，B的整体质量更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12018,
+          "completion_tokens": 1890,
+          "total_tokens": 13908
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A缺失段落14，且段落5'焼きそばパン'翻译错误；B完整且准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A较书面化，B更口语化，各有特色"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A更正式，B更贴近轻小说轻松语调"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 8,
+        "notes": "A保留日文术语不翻译，B的'现场达人'比'现场尼基'更达意"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A因缺失段落影响连贯性"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A引号使用规范，B多处对话缺引号且有多余标点"
+      }
+    },
+    "key_differences": [
+      "A完全缺失段落14的翻译，为致命错误",
+      "A将'焼きそばパン'误译为'烤面包'，B正确译为'炒面面包'",
+      "'現場ニキ'：A音译为'现场尼基'，B意译为'现场达人'",
+      "A格式更规范统一，B多处对话缺少引号",
+      "圣剑名：A保留日文，B译为'光之使者'"
+    ],
+    "final_summary": "虽然A在格式规范性上略胜一筹，但存在两个致命缺陷：完全遗漏段落14的翻译，以及将'焼きそばパン(炒面面包)'错译为'烤面包'。B虽有格式不一致问题，但内容完整、核心翻译准确，'现场达人'的译法也更好地传达了原文网络用语的含义。综合考虑，B的整体质量更优。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

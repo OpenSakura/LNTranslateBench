@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:34:41.597614",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "41da3a746bcd3ad2d213b1d8fefc457654e144622f6c7f0057ed4a37d788c316",
+    "B": "47c49b239cb5f95925ade835b7952599cebaa4cbe6a90ace5e25d19a8c5d4876"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:35:29.143389",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5a7081fc-125b-4705-9d02-0a422f37b94b",
+      "judge_response": {
+        "id": "5a7081fc-125b-4705-9d02-0a422f37b94b",
+        "object": "chat.completion",
+        "created": 1768422928,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性方面：**\n- 段落6：「現場ニキ」A译\"现场Niki\"保留了音译但意义不明，B译\"现场哥\"更准确（ニキ是\"兄贵\"的网络缩写）\n- 段落7：「サドヤマ」A译\"萨多亚马\"，B译\"佐佐山\"——这是角色念错的名字，B更符合日语误读习惯\n- 段落51：A错误地将内心独白加引号变成对话（\"透眯起眼睛说\"），B正确处理为心理活动\n- 段落24：B\"被佐渡山用低得惊人的姿态开口\"语法不通，A处理更准确\n\n**流畅性方面：**\n- B整体更口语化自然，如段落12\"太麻烦，我就婉拒了\"、段落42\"背锅\"\n- A部分句子生硬，如段落2\"敷衍地\"置于句末突兀\n- 段落41：B\"乱七八糟的事\"比A的直译更地道\n\n**风格/语气方面：**\n- B更贴合轻小说的轻松语调，角色对话个性化更强\n- A有时过于简练，丢失原文细腻的语气，如段落33的比喻\n\n**格式问题：**\n- A在段落31、32使用单引号而非标准对话格式\n- B在段落4、43结尾有多余引号「」」\n- 段落47：A误译\"刀使い\"为\"刀客\"，B译\"用刀的巫女\"更符合上下文（神楽坂是巫女设定）\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B对网络用语和日式误读处理更准确，A在段落51犯了致命错误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B更口语化自然，A部分表达生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说语境，对话更有人物个性\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者基本一致，B的'现场哥'更接地气\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体可读性更强，叙述更连贯\"},\n    \"formatting\": {\"A\": 6, \"B\": 6, \"notes\": \"A有引号格式不统一问题，B有多余标点符号\"}\n  },\n  \"key_differences\": [\n    \"网络用语处理：A保留音译'Niki'不明所以，B译'现场哥'更准确\",\n    \"段落51心理活动：A错误加引号变对话，B正确处理\",\n    \"整体语言风格：B更口语化贴合轻小说，A偏书面生硬\",\n    \"段落24语法：A更通顺，B'被...开口'语法有误\"\n  ],\n  \"final_summary\": \"B在流畅性、风格把握和关键术语翻译上表现更优，尤其是'现场哥'的处理和整体轻小说语感的还原。A在段落51将内心独白误处理为对话是较大失误。虽然B有个别标点错误和语法小问题，但整体阅读体验明显更佳。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11508,
+          "completion_tokens": 2064,
+          "total_tokens": 13572
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对网络用语和日式误读处理更准确，A在段落51犯了致命错误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更口语化自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说语境，对话更有人物个性"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者基本一致，B的'现场哥'更接地气"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体可读性更强，叙述更连贯"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 6,
+        "notes": "A有引号格式不统一问题，B有多余标点符号"
+      }
+    },
+    "key_differences": [
+      "网络用语处理：A保留音译'Niki'不明所以，B译'现场哥'更准确",
+      "段落51心理活动：A错误加引号变对话，B正确处理",
+      "整体语言风格：B更口语化贴合轻小说，A偏书面生硬",
+      "段落24语法：A更通顺，B'被...开口'语法有误"
+    ],
+    "final_summary": "B在流畅性、风格把握和关键术语翻译上表现更优，尤其是'现场哥'的处理和整体轻小说语感的还原。A在段落51将内心独白误处理为对话是较大失误。虽然B有个别标点错误和语法小问题，但整体阅读体验明显更佳。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

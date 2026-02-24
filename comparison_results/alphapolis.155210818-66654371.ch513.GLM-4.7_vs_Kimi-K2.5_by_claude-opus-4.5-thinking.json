@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:17:18.452823",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.Kimi-K2.5.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "a244ead8d8cb5da76409d93840ec5752e0cafea387f866b7c30c31f5df1bc8dd",
+    "B": "5ef60fc10c4578b82d4a80709372a8007b3a1ae882eb22b65586d5dfc7e46d9c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:18:04.712138",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "d7df1784-6369-43be-8d26-5ba64662bf97",
+      "judge_response": {
+        "id": "d7df1784-6369-43be-8d26-5ba64662bf97",
+        "object": "chat.completion",
+        "created": 1769609884,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项对比分析\n\n### 准确性\n- **段落1**: B的\"换层\"比A的\"转移阶层\"更符合游戏场景；B保留\"Lv\"更贴近原文\n- **段落9**: B\"原来…啊\"更好地传达了\"のか\"的感叹语气，A的\"就是雷本身吗\"语气略弱\n- **段落42**: A\"正常死掉\"正确；B\"像普通人那样死掉\"是误译\n- **段落45**: 原文是\"刺中魔物\"，两版都翻译成\"被魔物刺中\"，均有误\n- **段落53**: A\"真的好大啊\"准确传达了惊叹；B\"区别真的很大\"偏离原意\n\n### 流畅性\n- **段落37**: B\"一点一点地升级不合我性子\"比A\"慢慢悠悠地升级不符合我的性格\"更口语化\n- **段落39**: B\"露出一脸难色\"比A\"露出苦涩的表情\"更自然\n- **段落58**: B\"有点悬啊\"比A\"稍微有点不放心\"更符合口语\n\n### 风格/语气\n- **对话标点**: A使用「」，B使用\"\"，两者皆可接受\n- **段落4**: B\"啪地闪了一下光之后，就有雷从天上劈下来\"更有画面感\n- **段落38**: B\"姐\"、\"搞不定\"等更贴近轻小说的轻松风格\n\n### 术语一致性\n- A将Lv译为\"等级\"，B保留\"Lv\"——B更符合游戏/轻小说惯例\n- 人名：A\"戴安娜\"vs B\"黛安娜\"；A\"树叔叔\"vs B\"树大叔\"——各有所选但均一致\n- A\"道具箱\"vs B\"道具BOX\"——B更贴原文\n\n### 连贯性\n- 两者都保持了较好的阅读连贯性\n- B在某些段落过渡更自然（如段落51、64）\n\n### 格式\n- 两者格式处理基本相当\n- B保留更多原文符号格式（㎥、Lv）\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A在段落42更准确，但B在段落9、53等处更好；两者段落45均有误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B的口语化表达更自然流畅，如段落37、39、58\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话风格更贴近轻小说的轻松活泼语气\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留Lv、BOX等游戏术语更符合轻小说惯例\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B在段落衔接和语气传达上略胜一筹\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B保留更多原文格式如㎥、Lv\"}\n  },\n  \"key_differences\": [\n    \"B保留游戏术语(Lv/BOX)，A倾向汉化(等级/道具箱)\",\n    \"B对话风格更口语化轻松，A略显正式\",\n    \"A在段落42准确性更好，B在段落9、53语气把握更佳\",\n    \"B整体更贴近轻小说的轻快叙事风格\"\n  ],\n  \"final_summary\": \"两个译本整体质量接近，但B在轻小说风格把握、术语处理和口语化表达方面略胜一筹。A在个别段落（如42）更准确，但B在整体流畅性和风格一致性上表现更好。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10597,
+          "completion_tokens": 1973,
+          "total_tokens": 12570
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A在段落42更准确，但B在段落9、53等处更好；两者段落45均有误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的口语化表达更自然流畅，如段落37、39、58"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话风格更贴近轻小说的轻松活泼语气"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留Lv、BOX等游戏术语更符合轻小说惯例"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在段落衔接和语气传达上略胜一筹"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B保留更多原文格式如㎥、Lv"
+      }
+    },
+    "key_differences": [
+      "B保留游戏术语(Lv/BOX)，A倾向汉化(等级/道具箱)",
+      "B对话风格更口语化轻松，A略显正式",
+      "A在段落42准确性更好，B在段落9、53语气把握更佳",
+      "B整体更贴近轻小说的轻快叙事风格"
+    ],
+    "final_summary": "两个译本整体质量接近，但B在轻小说风格把握、术语处理和口语化表达方面略胜一筹。A在个别段落（如42）更准确，但B在整体流畅性和风格一致性上表现更好。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

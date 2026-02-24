@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:09:47.830953",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "15c73e9e1a324b8dca6020ad9e82998975609519a95dcf6a5ad2030382f56578",
+    "B": "f124491bcbef8e4c0e15d630d65659c0596c89d06b4ab36aa1ea7019356319f1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:10:48.494950",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "e884fbc1-a2a2-44fb-bf1e-53c89b4695cc",
+      "judge_response": {
+        "id": "e884fbc1-a2a2-44fb-bf1e-53c89b4695cc",
+        "object": "chat.completion",
+        "created": 1768421448,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 详细分析\n\n**准确性方面：**\n- 段落69：A译错主语，\"格蕾西雅不由得打了个寒颤\"应是\"我\"打寒颤，B正确\n- 段落14：A\"使劲敲门，让里面也能听见\"比B\"敲了敲事务所深处的门\"更准确\n- 段落16：B\"歪了歪头\"比A\"挠了挠头\"更准确译\"首をひねって\"\n- 段落66：B\"反正我现在还活着，所以无所谓\"比A\"能活到今天已经没什么大不了\"更准确\n\n**流畅性方面：**\n- 段落3：B\"沉默地凝视着这两位沉默不语的双亲\"冗余，A更简洁\n- 段落8：B结构更清晰流畅\n- 段落20：B\"视野开阔的原野\"优于A\"风景不错的原野\"\n\n**格式问题（关键差异）：**\n- A在多处出现严重格式错误：\n  - 段落36、40、42：叙述文字被错误加上引号「」\n  - 段落43、45、46、47、49、50、51、52、53、73、74、76、79：对话缺少引号\n- B格式规范一致\n\n**风格方面：**\n- 段落6：B\"勉强算是在死着\"更准确译\"曲がりなりにも死んでいる\"\n- 段落61：A\"欠揍的笑容\"比B\"顽皮的坏笑\"更传神译\"根性の悪そうな笑み\"\n- 段落11：A\"哎\"比B\"那个\"更适合译\"あれ\"的语气\n\n**术语一致性：**\n- 段落30：人名翻译不同（波嘉 vs 沃吉亚，鲁萨尔卡 vs 露萨尔卡），B加了书名号更规范\n- 两者\"事务所\"译法一致，但A段落19用了\"办公室\"，稍有不一致\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A在段落69译错主语；B整体更准确，但段落14略逊\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B结构更流畅，但段落3有冗余\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A部分口语化更好（如'欠揍'），B整体更符合轻小说风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 8, \"notes\": \"两者基本一致，B人名格式更规范\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A格式错误严重影响阅读连贯性\"},\n    \"formatting\": {\"A\": 4, \"B\": 9, \"notes\": \"A多处对话引号缺失或错误添加在叙述上，严重影响阅读\"}\n  },\n  \"key_differences\": [\n    \"A格式错误严重：多处对话缺引号、叙述被错加引号\",\n    \"A段落69主语译错（应是'我'打寒颤，非格蕾西雅）\",\n    \"B整体语言更流畅规范，结构清晰\",\n    \"A部分口语表达更地道（如'欠揍'、'哎'）\"\n  ],\n  \"final_summary\": \"B在格式规范性、准确性和流畅性方面明显优于A。A存在严重的格式问题（对话引号混乱）以及段落69的主语翻译错误，虽然A在部分口语化表达上更生动，但整体质量不及B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11275,
+          "completion_tokens": 2644,
+          "total_tokens": 13919
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A在段落69译错主语；B整体更准确，但段落14略逊"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B结构更流畅，但段落3有冗余"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A部分口语化更好（如'欠揍'），B整体更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者基本一致，B人名格式更规范"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A格式错误严重影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 9,
+        "notes": "A多处对话引号缺失或错误添加在叙述上，严重影响阅读"
+      }
+    },
+    "key_differences": [
+      "A格式错误严重：多处对话缺引号、叙述被错加引号",
+      "A段落69主语译错（应是'我'打寒颤，非格蕾西雅）",
+      "B整体语言更流畅规范，结构清晰",
+      "A部分口语表达更地道（如'欠揍'、'哎'）"
+    ],
+    "final_summary": "B在格式规范性、准确性和流畅性方面明显优于A。A存在严重的格式问题（对话引号混乱）以及段落69的主语翻译错误，虽然A在部分口语化表达上更生动，但整体质量不及B。"
+  },
+  "outcome": "Qwen3-30B-A3B-Instruct-2507_win",
+  "winner_model": "Qwen3-30B-A3B-Instruct-2507"
+}

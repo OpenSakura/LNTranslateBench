@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:21:45.675688",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.Kimi-K2.5.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "adae5772126ac6f2dc08b7f83888bba4788c5ea300e24f3935efc3566faea03a",
+    "B": "41046c95b893abc5be889906fc13067f278b25e2bf674e6ef546e368f642bbd7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:22:26.805676",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ff38aa75-e816-417e-8dac-90980fb304be",
+      "judge_response": {
+        "id": "ff38aa75-e816-417e-8dac-90980fb304be",
+        "object": "chat.completion",
+        "created": 1769610146,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性分析\n- **段落4**：\"面構えが違う\"指的是\"神情/面相与众不同\"，A译为\"神情都与众不同\"准确，B译为\"扮相各不相同\"偏离原意。\n- **段落26**：\"気が逸っている\"意为\"心急/迫不及待\"，A译\"心不在焉\"和B译法都有偏差，但B的\"心不在焉\"更接近后文\"そわそわ\"的呼应。\n- **段落70**：\"さらし\"是传统的缠胸布，B译\"缠胸布\"比A的\"缠绷带\"更准确。\n- **段落24**：\"キャリーカート\"是拉杆箱，A正确，B译\"手推车\"不够准确。\n- **段落35**：A对フェス的处理\"Fes……庆典\"比B的\"庙会\"\"音乐节\"更贴合原意。\n\n### 2. 流畅性分析\n- B整体更口语化，符合轻小说对话风格\n- 段落12：A\"异常频繁\"比B\"怪里怪气地频繁\"更自然\n- 段落28：B\"嘴上说着...人却已经\"的转折处理更流畅生动\n- 段落7：B\"吹牛不睡觉\"比A\"炫耀自己睡眠不足\"更口语化\n\n### 3. 风格/语气分析\n- B在对话中更活泼自然（如段落9、13、23）\n- A部分对话偏书面化（如段落6\"正在提醒\"）\n- 段落13：B\"最大的乐子\"\"最终日哦\"更贴合轻小说语气\n\n### 4. 术语一致性\n- A对\"前辈\"称呼一致，B在\"前辈\"\"学姐\"间切换不统一\n- 两者对作品名、人名处理基本一致\n- A的Cosplay相关术语更规范\n\n### 5. 连贯性/可读性\n- 段落94：两者都误用第一人称\"我\"（原文是第三人称叙述）\n- B段落73对内心活动的处理\"他产生了\"更清晰\n- 整体B的节奏感更好\n\n### 6. 格式/标点\n- 两者格式基本规范\n- B部分使用单引号'不符合中文规范\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A在关键词如'面構え''キャリーカート''フェス'上更准确；B在'さらし'上更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语流畅，但偶有过度意译\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更贴合轻小说活泼语气，A部分偏正式\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A称呼一致，术语规范；B在前辈/学姐间切换\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有人称视角小问题，整体相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"A标点规范；B偶用单引号不符中文习惯\"}\n  },\n  \"key_differences\": [\n    \"A更注重原文准确还原，B更注重目标语言自然表达\",\n    \"A术语和称呼一致性更好，B风格更活泼但有时过度意译\",\n    \"B部分关键词理解有偏差（如'面構え'译为'扮相'）\",\n    \"A格式更规范，B引号使用不统一\"\n  ],\n  \"final_summary\": \"两个译本各有优劣。A在准确性、术语一致性和格式规范上略胜一筹，尤其在关键词翻译和称呼统一方面表现更好。B在流畅性和轻小说语气把握上更出色，对话更生动自然。综合考虑轻小说翻译需要兼顾准确性与可读性，A在核心准确性上的优势使其整体略胜，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12229,
+          "completion_tokens": 1902,
+          "total_tokens": 14131
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在关键词如'面構え''キャリーカート''フェス'上更准确；B在'さらし'上更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语流畅，但偶有过度意译"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更贴合轻小说活泼语气，A部分偏正式"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A称呼一致，术语规范；B在前辈/学姐间切换"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有人称视角小问题，整体相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "A标点规范；B偶用单引号不符中文习惯"
+      }
+    },
+    "key_differences": [
+      "A更注重原文准确还原，B更注重目标语言自然表达",
+      "A术语和称呼一致性更好，B风格更活泼但有时过度意译",
+      "B部分关键词理解有偏差（如'面構え'译为'扮相'）",
+      "A格式更规范，B引号使用不统一"
+    ],
+    "final_summary": "两个译本各有优劣。A在准确性、术语一致性和格式规范上略胜一筹，尤其在关键词翻译和称呼统一方面表现更好。B在流畅性和轻小说语气把握上更出色，对话更生动自然。综合考虑轻小说翻译需要兼顾准确性与可读性，A在核心准确性上的优势使其整体略胜，但差距不大。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

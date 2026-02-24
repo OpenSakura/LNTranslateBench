@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:29:56.350823",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "80cbd1dde833765ef82ad2d3d6f5a0b1c028f179432472a5e8fe728e0c1ac411",
+    "B": "93484fb883bc86d3130b7f4ecf5843cffb11e1ab4e1e2b26160b3c2639e4c468"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:30:50.837078",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "cff0ad1a-1261-4127-b34a-8005da10bfdb",
+      "judge_response": {
+        "id": "cff0ad1a-1261-4127-b34a-8005da10bfdb",
+        "object": "chat.completion",
+        "created": 1769610650,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 1. 准确性分析\n\n**翻译A的问题：**\n- 段落9「感觉会有不祥的预感」语义重复，不够自然\n- 段落54「他垂头丧气」性别判断可能有误（N：ブル似乎是女性）\n- 段落130视角处理不当\n\n**翻译B的问题：**\n- 段落43「それって」未翻译，直接保留日文\n- 段落3「会变得很重要」与原文「大事になる」（变成大事）有偏差\n- 段落102将「フェスタ」翻译为「庆典」，将人名误译为普通名词\n\n### 2. 流畅性分析\n\n**翻译B更自然的例子：**\n- 段落13：B「总觉得有种要出事的气氛」vs A「明显漂浮着一股有什么事发生的空气」\n- 段落41：B「牵着鼻子走」vs A「所左右」\n- 段落91：B「那势头简直像是要把额头砸到柜台上一样」更生动\n\n**翻译A更自然的例子：**\n- 段落17：A「她确实会认真工作」vs B「业务方面还是很靠谱的」\n\n### 3. 术语一致性（关键问题）\n\n**翻译A：**\n- N：ブル：保留日文→布鲁→布尔（不一致但较稳定）\n- フェスタ：费斯塔→菲斯塔（轻微不一致）\n\n**翻译B（严重问题）：**\n- N：ブル：N：蓝→N：布鲁→N：Blue→N：布露露（极度混乱）\n- フェスタ：菲斯塔→庆典（将人名译为名词，严重错误）\n\n### 4. 格式问题\n\n**翻译A：**\n- 段落66：三人同时说话的引号处理有误（「「「」应保持）\n- 段落71：缺少开头引号\n\n**翻译B：**\n- 段落43：保留未翻译的日文\n\n### 5. 风格与语气\n\n两者都较好地保持了轻小说的对话风格，B的口语化程度略高。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A有少量语义重复；B有未翻译内容和人名误译为普通词\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语化自然，但部分地方过于随意\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都较好保持轻小说风格\"},\n    \"terminology\": {\"A\": 6, \"B\": 3, \"notes\": \"B的人名翻译极度混乱，N：蓝/布鲁/Blue/布露露，フェスタ译为庆典是严重错误\"},\n    \"coherence\": {\"A\": 7, \"B\": 5, \"notes\": \"B因名称不一致严重影响阅读连贯性\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"A有引号问题；B有未翻译片段\"}\n  },\n  \"key_differences\": [\n    \"人名一致性：A虽有轻微不一致但可接受，B的人名翻译极度混乱\",\n    \"フェスタ处理：A始终译为人名，B部分段落误译为「庆典」\",\n    \"流畅度：B整体更口语化自然\",\n    \"段落43：B有未翻译的日文残留\"\n  ],\n  \"final_summary\": \"虽然B在流畅性上略胜一筹，但其人名翻译的极度不一致（同一角色出现4种不同译法）以及将人名「フェスタ」误译为普通名词「庆典」，严重损害了文本的可读性和专业性。A虽有轻微格式问题，但术语处理相对稳定，整体质量更可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13141,
+          "completion_tokens": 2441,
+          "total_tokens": 15582
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有少量语义重复；B有未翻译内容和人名误译为普通词"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语化自然，但部分地方过于随意"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都较好保持轻小说风格"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 3,
+        "notes": "B的人名翻译极度混乱，N：蓝/布鲁/Blue/布露露，フェスタ译为庆典是严重错误"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 5,
+        "notes": "B因名称不一致严重影响阅读连贯性"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "A有引号问题；B有未翻译片段"
+      }
+    },
+    "key_differences": [
+      "人名一致性：A虽有轻微不一致但可接受，B的人名翻译极度混乱",
+      "フェスタ处理：A始终译为人名，B部分段落误译为「庆典」",
+      "流畅度：B整体更口语化自然",
+      "段落43：B有未翻译的日文残留"
+    ],
+    "final_summary": "虽然B在流畅性上略胜一筹，但其人名翻译的极度不一致（同一角色出现4种不同译法）以及将人名「フェスタ」误译为普通名词「庆典」，严重损害了文本的可读性和专业性。A虽有轻微格式问题，但术语处理相对稳定，整体质量更可靠。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

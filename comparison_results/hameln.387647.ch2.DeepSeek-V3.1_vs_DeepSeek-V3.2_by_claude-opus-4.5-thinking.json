@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:11:42.117828",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "be99c7f15924f83867df0d15c9539b4e5f14d0393a2666e41bc34547b0981802",
+    "B": "fc1b51c9ae8a780e1195ec49d70cce810609b84bd105de29d8f73aa380510d6c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:12:27.749474",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "59fe8cc0-52c2-4b74-99d0-11a1bfb1fbfe",
+      "judge_response": {
+        "id": "59fe8cc0-52c2-4b74-99d0-11a1bfb1fbfe",
+        "object": "chat.completion",
+        "created": 1768421547,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落13**: A译\"黄金跑锋\"有误，原文是\"黄金の脚を持つランニングバック\"（拥有黄金双脚的跑卫），B正确\n- **段落19**: A译\"双叶小姐\"错误，双叶莲次是男性，B译\"双叶同学\"正确\n- **段落29/73**: A用\"他\"，B用\"她\"——小早川濑那是男性，A正确\n- **段落106**: A译\"跑锋\"与前文\"跑卫\"不一致，B全文统一用\"跑卫\"\n\n### 流畅性分析\n- **段落3**: B\"五花大绑\"比A\"绑起来\"更生动形象\n- **段落8**: B\"松一口气的表情\"比A\"安心的表情\"更口语化\n- **段落25**: B\"杂工位置\"比A\"什么都做的位置\"更简洁传神\n- **段落68**: A\"自己挖坑自己跳还垂头丧气\"略显累赘\n\n### 风格/语气分析\n- **段落6**: B\"超猛\"比A\"很厉害\"更符合轻小说口语风格\n- **段落95**: A\"天然呆诱拐犯\"比B\"天然呆好骗鬼\"更贴近原文\"天然人誑し\"\n- **段落27**: \"ファッキンセカンド\"A译\"该死的替补\"、B译\"该死的二货\"，A更贴近角色设定\n\n### 术语一致性\n- A在段落13/106出现\"跑锋\"与\"跑卫\"混用\n- B全文统一使用\"跑卫\"、\"边锋\"等术语\n- 段落80: B用\"最后一档进攻\"比A\"最后一记进攻\"更专业\n\n### 重大错误\n- B在段落29将小早川性别搞错（用\"她\"）\n- A在段落13误译\"黄金跑锋\"\n- A术语不一致问题\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7.5, \"notes\": \"A有术语误译(黄金跑锋)和性别称谓错误(双叶小姐)；B有性别代词错误(她)\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B表达更口语化自然，如'五花大绑''松一口气''超猛'等\"},\n    \"style\": {\"A\": 7.5, \"B\": 7.5, \"notes\": \"两者轻小说风格把握相当，A的'天然呆诱拐犯'更佳，B的口语感更强\"},\n    \"terminology\": {\"A\": 6.5, \"B\": 8, \"notes\": \"A出现跑锋/跑卫混用；B术语统一规范\"},\n    \"coherence\": {\"A\": 7.5, \"B\": 8, \"notes\": \"B整体阅读更流畅连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式标点均规范\"}\n  },\n  \"key_differences\": [\n    \"术语一致性：B统一使用'跑卫'，A混用'跑锋/跑卫'\",\n    \"口语表达：B更生动自然（五花大绑、超猛、松一口气）\",\n    \"性别错误：A误称双叶为'小姐'，B误用'她'指代小早川\",\n    \"段落13翻译：A误译为'黄金跑锋'，B正确译为'黄金双脚的跑卫'\"\n  ],\n  \"final_summary\": \"两译本各有优劣。B在术语一致性、口语流畅度方面明显更好，整体阅读体验更佳；A在个别风格表达上略胜，但术语混乱和误译问题较严重。综合考虑，B略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11823,
+          "completion_tokens": 2045,
+          "total_tokens": 13868
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7.5,
+        "notes": "A有术语误译(黄金跑锋)和性别称谓错误(双叶小姐)；B有性别代词错误(她)"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B表达更口语化自然，如'五花大绑''松一口气''超猛'等"
+      },
+      "style": {
+        "A": 7.5,
+        "B": 7.5,
+        "notes": "两者轻小说风格把握相当，A的'天然呆诱拐犯'更佳，B的口语感更强"
+      },
+      "terminology": {
+        "A": 6.5,
+        "B": 8,
+        "notes": "A出现跑锋/跑卫混用；B术语统一规范"
+      },
+      "coherence": {
+        "A": 7.5,
+        "B": 8,
+        "notes": "B整体阅读更流畅连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式标点均规范"
+      }
+    },
+    "key_differences": [
+      "术语一致性：B统一使用'跑卫'，A混用'跑锋/跑卫'",
+      "口语表达：B更生动自然（五花大绑、超猛、松一口气）",
+      "性别错误：A误称双叶为'小姐'，B误用'她'指代小早川",
+      "段落13翻译：A误译为'黄金跑锋'，B正确译为'黄金双脚的跑卫'"
+    ],
+    "final_summary": "两译本各有优劣。B在术语一致性、口语流畅度方面明显更好，整体阅读体验更佳；A在个别风格表达上略胜，但术语混乱和误译问题较严重。综合考虑，B略胜一筹。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

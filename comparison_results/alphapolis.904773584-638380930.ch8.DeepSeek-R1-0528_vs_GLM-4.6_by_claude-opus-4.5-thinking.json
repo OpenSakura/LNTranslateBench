@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:07:14.105877",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "aedbaf9a04f5c2d6a97fbf7389ad215f9ca6acef5d3f0fa22aef93f858b558dd",
+    "B": "33a8adef5f0517b93c1a44852eaddf26e4665c6a6830201c9a82db5faeb7e280"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:08:04.355872",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5e274916-695f-4a32-a691-3855a8b9c97d",
+      "judge_response": {
+        "id": "5e274916-695f-4a32-a691-3855a8b9c97d",
+        "object": "chat.completion",
+        "created": 1768421283,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性分析\n\n**关键问题：**\n- **段落102**：原文「ボア」指野猪。A译为\"野猪\"✓，B译为\"蟒蛇\"✗（严重错误，后文明显讨论的是野猪类魔物）\n- **段落27**：「コートウルフ」结合后文\"羊のようなもこもこした毛\"，A译\"毛皮狼\"更贴切，B译\"外套狼\"略奇怪\n- **段落3**：「アウルベア」A译\"枭熊\"简洁优雅，B译\"猫头熊\"可接受\n\n### 流畅性分析\n\n- A整体偏口语化：\"还挺快的\"\"老大越猛\"\"一堆同族和小弟\"\n- B整体偏书面化：\"非常强大而且难缠\"\"统帅并率领着族群\"\n- 段落25：A的\"老大\"\"小弟\"过于口语化，轻小说设定集应更正式；B更得体\n\n### 术语一致性\n\n- A在段落82突然使用\"雪特伦特\"\"冰特伦特\"，与之前\"雪树精\"\"冰树精\"不统一\n- B在段落82使用\"雪怪树\"\"冰怪树\"，也与之前\"雪之树精\"不一致\n- 两者都存在术语不一致问题\n\n### 风格/语气\n\n- A部分译文过于随意：段落105\"在各种意义上\"vs B\"懂的都懂\"（B更传神）\n- 段落113：A\"狂种\" vs B\"爆产\"，两者都传达了原意\n\n### 格式\n\n两者格式处理相当，标点使用正确。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 6, \"notes\": \"B在段落102将ボア(野猪)错译为蟒蛇，是严重的理解错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相当，A偏口语，B偏书面\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的正式语气更适合设定集/百科形式，A部分过于口语化\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都存在术语不一致问题，如トレント系列的翻译\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体连贯性稍好，B的严重错误影响了上下文理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式处理相当\"}\n  },\n  \"key_differences\": [\n    \"B在段落102将ボア误译为蟒蛇(应为野猪)，严重影响准确性\",\n    \"A偏口语化(老大、小弟、狂种)，B偏书面化(首领、眷属、爆产)\",\n    \"怪物名称翻译策略不同：A多用意译(枭熊、毛皮狼)，B多用描述性译法(猫头熊、外套狼)\",\n    \"两者在トレント系列术语上都存在前后不一致的问题\"\n  ],\n  \"final_summary\": \"虽然B在整体语气上更适合轻小说设定集的正式风格，但B在段落102将「ボア」(野猪)严重误译为「蟒蛇」，这是一个无法忽视的重大错误，直接影响了整段内容的理解。A虽然部分用语过于口语化，但在准确性上明显更可靠，因此A整体更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12055,
+          "completion_tokens": 2046,
+          "total_tokens": 14101
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "B在段落102将ボア(野猪)错译为蟒蛇，是严重的理解错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相当，A偏口语，B偏书面"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的正式语气更适合设定集/百科形式，A部分过于口语化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都存在术语不一致问题，如トレント系列的翻译"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体连贯性稍好，B的严重错误影响了上下文理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式处理相当"
+      }
+    },
+    "key_differences": [
+      "B在段落102将ボア误译为蟒蛇(应为野猪)，严重影响准确性",
+      "A偏口语化(老大、小弟、狂种)，B偏书面化(首领、眷属、爆产)",
+      "怪物名称翻译策略不同：A多用意译(枭熊、毛皮狼)，B多用描述性译法(猫头熊、外套狼)",
+      "两者在トレント系列术语上都存在前后不一致的问题"
+    ],
+    "final_summary": "虽然B在整体语气上更适合轻小说设定集的正式风格，但B在段落102将「ボア」(野猪)严重误译为「蟒蛇」，这是一个无法忽视的重大错误，直接影响了整段内容的理解。A虽然部分用语过于口语化，但在准确性上明显更可靠，因此A整体更优。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

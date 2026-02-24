@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:48.626191",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.GLM-4.5.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "1734bd794dafac2907cfacaf2e7a2e401c843cee990e178f082d34e1e8611cd7",
+    "B": "140faaeec4ff483484f131c50c3fb4fed4f004d48922f940b5ee89db900948c7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:03:26.315597",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "79283266-ca01-48b0-99f6-734721cd4b5a",
+      "judge_response": {
+        "id": "79283266-ca01-48b0-99f6-734721cd4b5a",
+        "object": "chat.completion",
+        "created": 1768421006,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 1. 准确性分析\n- **段落3**: A译\"雫酱\"保留人名，B译\"小滴\"将人名当普通词翻译，错误\n- **段落42**: 原文\"普通に死ぬと思う\"指魔物会死，A译\"反正也就是普通地死掉\"语义混乱，B同样有问题\n- **段落45**: 原文\"魔物に刺さる\"是\"刺中魔物\"，AB都误译为\"被魔物刺\"\n- **段落9**: A译\"樵大叔\"应为\"树叔叔\"（樹=树），B正确\n\n### 2. 流畅性分析\n- B整体更口语化：\"老爸/妈妈\"vs A的\"父亲/母亲\"\n- 段落37: B\"慢慢悠悠刷等级太没劲了\"比A\"一点一点地Lv升级不合我的性子\"更自然\n- 段落54: B\"被冲过来再扔长矛\"语序有问题，A更清晰\n\n### 3. 风格/语气\n- B更符合轻小说少女主角口吻，对话更活泼\n- A部分对话略显书面化\n- B对话使用「」符号保留日式风格\n\n### 4. 术语一致性\n- A: 从魔/地牢/道具箱 vs B: 随从/地下城/物品箱\n- B\"随从\"比A\"从魔\"更易理解\n- 数字处理：A用阿拉伯数字，B用汉字，轻小说两种皆可\n\n### 5. 关键错误\n- B段落3人名错误（雫→小滴）是重大失误\n- A段落9人名错误（樹→樵）\n- 段落86: A\"用光所有召唤栏才召唤出来的\"语序更准确，B\"我干掉了\"主语混乱\n\n### 6. 格式\n- 两者格式基本规范\n- B对话使用日式括号「」，A使用中式引号\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落9人名错误(樵→树)；B段落3人名错误(雫→小滴)；段落42/45两者皆有误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语自然，符合轻小说风格；A部分表达较生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B对话更活泼有少女感，A偏书面化\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"A用'从魔'较生僻，B用'随从'更易懂；两者术语基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B行文更连贯流畅，A部分句子衔接略僵\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范，B保留日式对话符号\"}\n  },\n  \"key_differences\": [\n    \"称谓风格：A较正式(父亲/母亲)，B更口语(老爸/妈妈)\",\n    \"人名处理：A保留'雫酱'，B错译为'小滴'\",\n    \"对话语气：B更活泼自然，A偏书面\",\n    \"术语选择：A用'从魔/地牢'，B用'随从/地下城'\"\n  ],\n  \"final_summary\": \"B在流畅性和轻小说风格把握上更胜一筹，对话更自然生动。但B将人名'雫'译成'小滴'是明显错误。A虽然较为规矩但偏书面化。综合考虑，B在整体阅读体验上略优，但差距不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10539,
+          "completion_tokens": 1607,
+          "total_tokens": 12146
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A段落9人名错误(樵→树)；B段落3人名错误(雫→小滴)；段落42/45两者皆有误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语自然，符合轻小说风格；A部分表达较生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B对话更活泼有少女感，A偏书面化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "A用'从魔'较生僻，B用'随从'更易懂；两者术语基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B行文更连贯流畅，A部分句子衔接略僵"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范，B保留日式对话符号"
+      }
+    },
+    "key_differences": [
+      "称谓风格：A较正式(父亲/母亲)，B更口语(老爸/妈妈)",
+      "人名处理：A保留'雫酱'，B错译为'小滴'",
+      "对话语气：B更活泼自然，A偏书面",
+      "术语选择：A用'从魔/地牢'，B用'随从/地下城'"
+    ],
+    "final_summary": "B在流畅性和轻小说风格把握上更胜一筹，对话更自然生动。但B将人名'雫'译成'小滴'是明显错误。A虽然较为规矩但偏书面化。综合考虑，B在整体阅读体验上略优，但差距不大。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

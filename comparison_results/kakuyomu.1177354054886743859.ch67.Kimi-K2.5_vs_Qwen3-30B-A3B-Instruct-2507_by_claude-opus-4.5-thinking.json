@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:19:37.217098",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.Kimi-K2.5.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "30268d66937e24f3e2b6fd59a5b08eac3bb8d39fcccef633b5118cf396525eec",
+    "B": "e95168cb2a561d05e07c66020b94a8d9e7a460ca1ba2a42d00fb36f218567d8c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:20:14.134671",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "eb3f46f1-7d36-4c0c-85af-e437de7677ee",
+      "judge_response": {
+        "id": "eb3f46f1-7d36-4c0c-85af-e437de7677ee",
+        "object": "chat.completion",
+        "created": 1769610014,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 1. 准确性分析\n- **段落3**: B添加了原文没有的内容\"这回来居然这么快\"，属于过度诠释\n- **段落9**: B将\"西隣にある\"误译为\"领主馆应该在西边\"，实际应该是\"役场在领主馆西边\"\n- **段落16**: B出现严重数字错误——\"二〇〇〇～三〇〇〇人\"译成\"两到三万\"，而A正确译为\"两千到三千人\"\n- **段落56/59**: B将\"黄銅貨\"译为\"铜币\"，与\"銅貨\"混淆，A正确区分\n\n### 2. 流畅度分析\n- B整体口语化更强，如\"太好了\"\"得了\"\"挺好的\"\n- A更忠实原文语气，但部分句子略显生硬\n- 两者都基本流畅可读\n\n### 3. 风格/语气分析\n- B的对话更活泼，符合轻小说风格\n- A在叙述部分更稳当\n- 段落28: A\"真让人不好意思\"比B\"有点痒痒的\"更准确传达\"擽ったい\"的含义\n\n### 4. 术语一致性\n- A: \"魔像马\"\"官署\"全程一致\n- B: \"役场\"在不同段落译为\"役场/役所/衙门/事务所\"，不统一\n- 人名译法两者都基本一致\n\n### 5. 格式问题\n- A: 全程使用「」作为对话标记\n- B: 混用「」和\"\"（段落21-22、33-42等），格式不一致\n\n### 6. 关键优劣对比\n| 方面 | A | B |\n|------|---|---|\n| 数字准确性 | ✓正确 | ✗严重错误 |\n| 术语统一 | ✓统一 | ✗混乱 |\n| 格式规范 | ✓统一 | ✗混用 |\n| 口语自然度 | 一般 | 较好 |\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 6, \"notes\": \"B有严重数字错误(2000-3000→20000-30000)，段落9方位误译，段落3过度添加\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，A略显直译\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B对话更活泼符合轻小说风格，但A更稳当\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A术语统一(魔像马/官署)，B混用役场/役所/衙门/事务所，且混淆黄铜币/铜币\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者都可读，但B的数字错误影响逻辑理解\"},\n    \"formatting\": {\"A\": 9, \"B\": 6, \"notes\": \"A对话标记统一用「」，B混用「」和双引号\"}\n  },\n  \"key_differences\": [\n    \"B段落16军队人数翻译错误(2000-3000人→20000-30000人)，这是致命硬伤\",\n    \"B段落9方位关系理解错误\",\n    \"B格式不统一，对话标记混用\",\n    \"B术语翻译不一致(役场有多种译法)\",\n    \"B口语表达更自然流畅\"\n  ],\n  \"final_summary\": \"虽然B在口语流畅度和轻小说风格方面略胜一筹，但B存在严重的准确性问题：军队规模数字错误(差10倍)、方位误译、术语不统一、格式混乱。A虽然风格略显直译，但准确可靠，术语格式统一。对于翻译而言，准确性是根本，A在关键指标上明显优于B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11097,
+          "completion_tokens": 1892,
+          "total_tokens": 12989
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 6,
+        "notes": "B有严重数字错误(2000-3000→20000-30000)，段落9方位误译，段落3过度添加"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，A略显直译"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对话更活泼符合轻小说风格，但A更稳当"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A术语统一(魔像马/官署)，B混用役场/役所/衙门/事务所，且混淆黄铜币/铜币"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者都可读，但B的数字错误影响逻辑理解"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 6,
+        "notes": "A对话标记统一用「」，B混用「」和双引号"
+      }
+    },
+    "key_differences": [
+      "B段落16军队人数翻译错误(2000-3000人→20000-30000人)，这是致命硬伤",
+      "B段落9方位关系理解错误",
+      "B格式不统一，对话标记混用",
+      "B术语翻译不一致(役场有多种译法)",
+      "B口语表达更自然流畅"
+    ],
+    "final_summary": "虽然B在口语流畅度和轻小说风格方面略胜一筹，但B存在严重的准确性问题：军队规模数字错误(差10倍)、方位误译、术语不统一、格式混乱。A虽然风格略显直译，但准确可靠，术语格式统一。对于翻译而言，准确性是根本，A在关键指标上明显优于B。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

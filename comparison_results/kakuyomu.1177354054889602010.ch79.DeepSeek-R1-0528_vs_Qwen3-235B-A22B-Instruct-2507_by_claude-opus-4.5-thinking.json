@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:24:00.739039",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "f66edabb27bb55690b47b3a20b0e35f117d94fa6c83a773073a3817d46002ce7",
+    "B": "af4fe12414a71d8d216303a6dd93bcb632850921bee6a397c09be969ffc046d3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:24:34.914121",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "42af4bb0-2b76-4340-9ff5-6ab6fae67d37",
+      "judge_response": {
+        "id": "42af4bb0-2b76-4340-9ff5-6ab6fae67d37",
+        "object": "chat.completion",
+        "created": 1768422274,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性\n**翻译A存在严重问题**：\n- 段落3/4/5/9等：保留日文原文「ゴブリン」未翻译\n- 段落14：「哥布拉是、嗯、と摸了摸下巴」混入日文助词，完全错误\n- 段落15：「请更正确地使用语言给」语法混乱\n- 段落16/18：句子结构破碎，难以理解\n\n**翻译B**总体准确，但段落47保留「マゼル」未译，段落59翻译为「侧翼第二阵」略有误差（应为side视角标记）\n\n### 2. 流畅性\n- A：多处中日文混杂，句子生硬（如段落16、18）\n- B：整体流畅自然，符合中文表达习惯\n\n### 3. 风格/语气\n- B更贴合轻小说风格，如「此话怎讲？」「雕虫小技」等用词\n- A过于直译，缺乏轻小说特有的戏剧性语气\n\n### 4. 术语一致性\n- A：名称翻译极不一致（ゴブラル/戈布拉混用，ゴブリン时译时不译）\n- B：基本一致（戈布拉尔、哥布林），但段落47/94保留原文\n\n### 5. 连贯性\n- A：段落16、18等处断句混乱，可读性差\n- B：叙事连贯，对话自然\n\n### 6. 格式\n- 两者格式基本相同\n- B段落45末尾多了不必要的引号」\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\"A\": 4, \"B\": 8, \"notes\": \"A大量保留日文原文未译，段落14/15/16等出现严重翻译错误；B整体准确\"},\n    \"fluency\": {\"A\": 3, \"B\": 8, \"notes\": \"A中日文混杂严重，句子结构破碎；B流畅自然\"},\n    \"style\": {\"A\": 4, \"B\": 8, \"notes\": \"B更符合轻小说语气，用词生动；A过于机械直译\"},\n    \"terminology\": {\"A\": 3, \"B\": 7, \"notes\": \"A名称翻译极不一致；B基本一致但个别处保留原文\"},\n    \"coherence\": {\"A\": 4, \"B\": 8, \"notes\": \"A多处难以理解；B叙事连贯清晰\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式基本相同，B有一处多余引号\"}\n  },\n  \"key_differences\": [\n    \"A大量保留日文原文（ゴブリン、ゴブラル等），B基本完成翻译\",\n    \"A段落14/15/16等出现中日文混杂和语法错误\",\n    \"B语言更符合轻小说风格，A过于生硬直译\",\n    \"B对话更自然生动，A对话机械僵硬\"\n  ],\n  \"final_summary\": \"翻译B整体质量远超A。A存在大量未翻译的日文、中日文混杂、语法错误等严重问题，可读性很差；B翻译完整流畅，风格贴合轻小说特点，虽有个别小瑕疵但整体质量明显更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13082,
+          "completion_tokens": 1414,
+          "total_tokens": 14496
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 8,
+        "notes": "A大量保留日文原文未译，段落14/15/16等出现严重翻译错误；B整体准确"
+      },
+      "fluency": {
+        "A": 3,
+        "B": 8,
+        "notes": "A中日文混杂严重，句子结构破碎；B流畅自然"
+      },
+      "style": {
+        "A": 4,
+        "B": 8,
+        "notes": "B更符合轻小说语气，用词生动；A过于机械直译"
+      },
+      "terminology": {
+        "A": 3,
+        "B": 7,
+        "notes": "A名称翻译极不一致；B基本一致但个别处保留原文"
+      },
+      "coherence": {
+        "A": 4,
+        "B": 8,
+        "notes": "A多处难以理解；B叙事连贯清晰"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式基本相同，B有一处多余引号"
+      }
+    },
+    "key_differences": [
+      "A大量保留日文原文（ゴブリン、ゴブラル等），B基本完成翻译",
+      "A段落14/15/16等出现中日文混杂和语法错误",
+      "B语言更符合轻小说风格，A过于生硬直译",
+      "B对话更自然生动，A对话机械僵硬"
+    ],
+    "final_summary": "翻译B整体质量远超A。A存在大量未翻译的日文、中日文混杂、语法错误等严重问题，可读性很差；B翻译完整流畅，风格贴合轻小说特点，虽有个别小瑕疵但整体质量明显更优。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

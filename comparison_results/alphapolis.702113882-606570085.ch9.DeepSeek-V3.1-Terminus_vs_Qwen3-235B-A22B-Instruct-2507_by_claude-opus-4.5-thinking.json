@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:06:34.146249",
+  "sample": "alphapolis.702113882-606570085.ch9",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.702113882-606570085.ch9.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.702113882-606570085.ch9.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/alphapolis.702113882-606570085.ch9.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "94e0afca2a13b9ef3eb38a3006f8e43e09b053f57d4bf1e18799972cc381124c",
+    "A": "9acd1df74fbfe02a2561d7b219a68c31636d64fe1cf69517c714a88b897075bf",
+    "B": "3ce4943b33d238768331157dcbff9560d189ad79dbaf84ef9ddf26fbafaf0fed"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:07:15.475678",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a56f3f06-1f07-4fd8-b383-64d41cd16df3",
+      "judge_response": {
+        "id": "a56f3f06-1f07-4fd8-b383-64d41cd16df3",
+        "object": "chat.completion",
+        "created": 1768421235,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 格式与标点符号问题\n\n**翻译B存在严重的引号格式错误**：\n- 段落7: 「刚才那是怎么回事？缇娜『 ← 引号不匹配\n- 段落9: 「缇娜小姐...『 ← 同样错误\n- 段落64: 「啊呀～『 ← 混乱\n- 段落66: 「哈啊『 ← 混乱\n- 段落88: 残留未翻译的日文\"よ\"\n\n**翻译A格式一致**，保持了原文的『』符号体系。\n\n### 术语一致性\n\n| 术语 | A | B |\n|------|---|---|\n| 加護 | 加护（一致） | 守护/护佑/加护（不一致） |\n| 魂の器 | 灵魂容器/灵魂之器 | 魂之器/魂器 |\n| ちゃん | 部分保留日文 | 翻译为\"小姐/酱\"或省略 |\n\nB在\"加護\"翻译上出现严重不一致（段落97-100突然变成\"守护\"）。\n\n### 流畅性与风格\n\n- **A**：部分保留\"ちゃん\"（如\"咲子ちゃん\"）略显混杂，但整体语气贴合轻小说对话风格\n- **B**：翻译更彻底，但某些表达略显生硬，如\"唔呼呼\"vs A的\"嘻嘻\"\n\n### 准确性\n\n两者准确性相近，但有细微差异：\n- 段落34: \"写す場所\" - A译\"投影的地方\"更准确（投影显示），B译\"拍摄地点\"略有偏差\n- 段落37: \"男だった\" - A译\"男人\"不如B译\"男孩子\"准确（刚出生的婴儿）\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 8, \"notes\": \"两者准确性相近，各有小偏差\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A更自然流畅，B部分表达略生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说对话语气\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"B在'加護'翻译上严重不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体更连贯\"},\n    \"formatting\": {\"A\": 9, \"B\": 4, \"notes\": \"B存在多处引号不匹配的严重错误，还有残留未翻译日文\"}\n  },\n  \"key_differences\": [\n    \"B存在多处引号格式严重错误（『「混用不匹配）\",\n    \"B术语不一致（加護→守护/护佑/加护）\",\n    \"A保留部分日语称呼略显混杂但格式统一\",\n    \"B段落88残留未翻译的日文'よ'\"\n  ],\n  \"final_summary\": \"翻译A在格式一致性和术语统一性上明显优于B。B存在多处引号不匹配的严重格式错误，且'加護'一词翻译前后不一致。虽然A保留了部分日语称呼略显混杂，但整体可读性和专业性更高，故A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13604,
+          "completion_tokens": 1874,
+          "total_tokens": 15478
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者准确性相近，各有小偏差"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更自然流畅，B部分表达略生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说对话语气"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "B在'加護'翻译上严重不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体更连贯"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 4,
+        "notes": "B存在多处引号不匹配的严重错误，还有残留未翻译日文"
+      }
+    },
+    "key_differences": [
+      "B存在多处引号格式严重错误（『「混用不匹配）",
+      "B术语不一致（加護→守护/护佑/加护）",
+      "A保留部分日语称呼略显混杂但格式统一",
+      "B段落88残留未翻译的日文'よ'"
+    ],
+    "final_summary": "翻译A在格式一致性和术语统一性上明显优于B。B存在多处引号不匹配的严重格式错误，且'加護'一词翻译前后不一致。虽然A保留了部分日语称呼略显混杂，但整体可读性和专业性更高，故A胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

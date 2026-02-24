@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:43:42.371615",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "43c8033c2fc0fdf2c0b0fd39cbe4d8aaa43ffb4c8b35da215736ed1a0a894eaf",
+    "B": "c7a9f1dcab34d12ba1b3156317b96a82c2161d1e0be8c4426b45504a5a1c6985"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:03.376583",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DqPShEEbXvAYdkQ7LmGWc6Qycal",
+      "judge_response": {
+        "id": "chatcmpl-89DqPShEEbXvAYdkQ7LmGWc6Qycal",
+        "object": "chat.completion",
+        "created": 1768427042,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"コミックマーケット 白樺市駅 臨海副都心線 コミマ\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"超共神テスラダイン 作品名\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"ジャポニカ忍法帖 霧島ステラ\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"コミックマーケット\" Pixiv](https://dic.pixiv.net/a/%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88)\n> [🔗 \"コミックマーケット - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88)\n> [🔗 \"コミックマーケットが抱える問題 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88%E3%81%8C%E6%8A%B1%E3%81%88%E3%82%8B%E5%95%8F%E9%A1%8C)\n> [🔗 \"ComicMarketPR - YouTube\" YouTube](https://www.youtube.com/user/ComicMarketPR)\n> [🔗 \"ComicMarket コミックマーケット\" Facebook](https://www.facebook.com/ComicMarketOfficial?locale=ja_JP)\n> [🔗 \"Comiket\" Comiket](https://www.comiket.co.jp/archives)\n> [🔗 \"【世界最大規模】｢コミックマーケット｣始まる 同人誌即売 コスプレイヤーも - YouTube\" YouTube](https://www.youtube.com/watch?v=q7BEtJrIOhg)\n> [🔗 \"冬の「コミックマーケット」が開幕 - YouTube\" YouTube](https://www.youtube.com/watch?v=oBvK5zWDD2k)\n> [🔗 \"「コミックマーケット106」（2025年8月16〜17日開催！） | VEE公式サイト\" Vee-official](https://vee-official.jp/special/comic-market-106)\n> [🔗 \"＜今さら聞けない＞明日開幕の「コミックマーケット」って何？ 参加者が意識する三つのポイント #エキスパートトピ（河村鳴紘） - エキスパート - Yahoo!ニュース\" Yahoo!ニュース](https://news.yahoo.co.jp/expert/articles/714f1ab728068b5223f35536e1791fbdc335e902)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ニコラ・テスラ(Fate)\" Pixiv](https://dic.pixiv.net/a/%E3%83%8B%E3%82%B3%E3%83%A9%E3%83%BB%E3%83%86%E3%82%B9%E3%83%A9(Fate))\n> [🔗 \"テスラノート - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%B9%E3%83%A9%E3%83%8E%E3%83%BC%E3%83%88)\n> [🔗 \"テスラ・ライヒ研究所\" Pixiv](https://dic.pixiv.net/a/%E3%83%86%E3%82%B9%E3%83%A9%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%92%E7%A0%94%E7%A9%B6%E6%89%80)\n> [🔗 \"ニコラ・テスラ(終ワル)\" Pixiv](https://dic.pixiv.net/a/%E3%83%8B%E3%82%B3%E3%83%A9%E3%83%BB%E3%83%86%E3%82%B9%E3%83%A9(%E7%B5%82%E3%83%AF%E3%83%AB))\n> [🔗 \"テスラノート｜アニメ声優・キャラクター・登場人物・動画配信情報・2021秋アニメ最新情報一覧 | アニメイトタイムズ\" Anime Times](https://www.animatetimes.com/tag/details.php?id=12036)\n> [🔗 \"ニコラ・テスラ - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%B3%E3%83%A9%E3%83%BB%E3%83%86%E3%82%B9%E3%83%A9)\n> [🔗 \"フレデリカ・ニコラ・テスラ - may先輩の蕎麦がい...\" WikiWiki](https://wikiwiki.jp/bisyoujo_aji/%E3%83%95%E3%83%AC%E3%83%87%E3%83%AA%E3%82%AB%E3%83%BB%E3%83%8B%E3%82%B3%E3%83%A9%E3%83%BB%E3%83%86%E3%82%B9%E3%83%A9)\n> [🔗 \"テスラノート : 作品情報・声優・キャスト・あらすじ - アニメハック\" Eiga](https://anime.eiga.com/program/109377)\n> [🔗 \"Frederica Nikola Tesla is... - pixiv Encyclopedia\" Pixiv](https://dic.pixiv.net/en/a/Frederica%20Nikola%20Tesla)\n> [🔗 \"二コラ・テスラ\" Ragnarok-official](https://ragnarok-official.com/chara/nikolatesla.html)\n\n> 🔍 **10 results found**\n\n> [🔗 \"ジャプニカ暗殺帳 - アニヲタWiki(仮)\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/12902.html)\n> [🔗 \"忍法帖 ～舞の淫術伝承の道～ セーブデータ [RJ01473325] : 同人ゲーム セーブデータ\" Doujin-Savedata](https://doujin-savedata.blog.jp/archives/29659610.html)\n> [🔗 \"ジャポニカ忍法帖\" Hatenadiary](https://japo99.hatenadiary.org/)\n> [🔗 \"忍法帖 ～舞の淫術伝承の道～ [MofuMofuGames] | DLsite\" DLsite](https://www.dlsite.com/maniax/work/=/product_id/RJ01473325.html?locale=en_US)\n> [🔗 \"忍法帖 ～舞の淫術伝承の道～｜攻略レビュー – さっくりアヘろう通\" Sakuriahe](https://sakuriahe.com/archives/9595)\n> [🔗 \"2chの忍法帖の仕組みを理解しよう | Webトピッ\" Webtopi](https://webtopi.net/archives/25)\n> [🔗 \"【1話無料】あらくさ忍法帖 - めちゃコミック\" Mechacomic](https://mechacomic.jp/books/119677)\n> [🔗 \"”忍法帖 ～舞の淫術伝承の道～”を攻略＆レビューしてみた♪ - エロゲーマー(Ero Gamer)\" Adult-doujin-game](https://adult-doujin-game.com/doujin/ninja-scrolls)\n> [🔗 \"ジャポニカ復讐帳とは (ジャポニカフクシュウチ...\" Niconico](https://dic.nicovideo.jp/a/%E3%82%B8%E3%83%A3%E3%83%9D%E3%83%8B%E3%82%AB%E5%BE%A9%E8%AE%90%E5%B8%B3)\n> [🔗 \"忍法帖 - おんJwiki（3代目）\" STGR Wiki](https://w.atwiki.jp/openj3/pages/436.html)\n\n\n**详细分析：**\n\n整体来看，这两份翻译都是针对一部以Comic Market（コミケ）为舞台的轻小说风格文本，描述社团成员前往夏コミ（夏季Comic Market）的过程，包含大量日常对话、吐槽、宅文化元素和轻快的叙述语气。\n\n**段落1-3**：几乎完全相同，A和B都准确、自然。\n\n**段落4**：A「每个人的神情各不相同」更贴合“面構え”（神情、表情、架势）的含义，B「面貌」偏向外貌，稍有偏差。**A稍优**。\n\n**段落5**：A的「大家，都睡好了吗？天气热别搞坏身体，要好好喝水哦。要是感觉不妙就立刻休息。」更口语化、亲切，符合前辈叮嘱后辈的温柔但强势语气；B把「飲み物」统一成「饮料」略显生硬，且缺少一些可爱感。**A优**。\n\n**段落7**：A「平时总炫耀自己睡眠不足的男生们」「轻浮话」更精准传达自虐式轻口；B「不睡觉」「俏皮话」稍弱化了“自慢”的讽刺感。**A优**。\n\n**段落8**：A「推了推眼镜反着光」是经典的“メガネを光らせて”处理方式，非常自然；B「眼镜闪过一道光」也行，但A更符合轻小说常见描写。**A略优**。\n\n**段落9**：A的翻译更流畅，逻辑连贯（“或者说，你们会担心我们而没法好好享受对吧”）；B也很好，但A的表达稍显自然。**平手或A微优**。\n\n**段落13**：A用「Comic Market」，B用「Comima」——原作常用「コミケ」「コミマ」，但正式名称是「コミックマーケット」，A更准确正式。**A优**。\n\n**段落14-15**：A「同人志即卖会的王者」「除却奥运会与世博会」更典雅、符合叙述语气；B「销售会」「算是」稍口语。**A优**。\n\n**段落18**：A「灿烂耀眼」「沥青路面反射的光芒刺得眼睛发痛」更生动；B「炽烈闪耀」「刺得眼睛发疼」也很不错，但A的词汇选择更富有轻小说氛围。**A优**。\n\n**段落19**：A「睡了个饱，反而情绪比平时更高的杏奈」更贴合“たーっぷり眠る”的满足感；B「足足睡了一觉」「更加兴奋了」也准确，但A更自然。**A优**。\n\n**段落22-23**：A的口语处理（如「嘛~不是挺好的吗？」「女生的话分头行动应该就能逛得差不多了吧」）更活泼、符合女生间的随意对话；B稍显平直。**A优**。\n\n**段落24**：A「cosplay道具的拉杆箱」，B「Cosplay用品的拉杆车」——原文「キャリーカート」更接近手推车/拉杆箱，A更准确。**A优**。\n\n**段落31**：A「就像女王陛下新年问候时一样」更符合日本天皇/女王的新年致辞意象；B「女王的新年致辞」也可，但A加了「陛下」更贴合吐槽语气。**A优**。\n\n**段落50**：A「土里土气的黑泽前辈」生动传达「もっさい」；B「土气」也可，但A更口语化、贴合角色。**A优**。\n\n**段落66**：A「主人公、御神楽ゆらぎ的服装」；B「主角御神乐摇曳的Cosplay服装」——A更简洁自然。**A优**。\n\n**段落69**：A「对这个热门动画角色的还原度堪称完美」；B「超高」——A更夸张、符合轻小说吹捧语气。**A优**。\n\n**段落73**：B似乎有残缺，但A完整传达了“男の娘”路线的倒错感，处理得当。**A优**。\n\n**段落76**：A「《日本忍法帖》的雾岛星罗」；B「《大和忍法帖》中的雾岛史黛拉」——原作很可能是架空作品「ジャポニカ忍法帖」，A的「日本」更贴近“ジャポニカ”（Japonica）的音译意图，B的“大和”虽也合理但稍远。**A优**。\n\n**段落90-91**：A「エロ漫画岛」；B「色情漫画岛」——A保留了日式宅用语“エロ”的直白感，更符合原文风格。**A优**。\n\n**段落104**：A「『最近才稍微被认识到、现实世界中出现的魔法少女』的色情二次创作和研究书籍」更准确传达“ちょーっとだけ認知されてきた、現実に現れた魔法少女”的微妙语气。**A优**。\n\n**总体评价**：\n- **准确性**：A在专有名词（コミマ→Comic Market）、语气细节、宅用语保留上更胜一筹。\n- **流畅性/可读性**：A的中文更自然、口语化强，读起来像中文轻小说。\n- **风格/语气**：A很好地保留了原文的吐槽、自嘲、兴奋、轻浮的轻小说特色；B整体偏平稳、略显正经。\n- **术语一致性**：A在Cosplay、コミケ相关用语上更统一且贴近中文圈习惯。\n- **格式/标点**：两者都良好，但A的对话标点和省略号使用更符合中文轻小说习惯。\n\nA在绝大多数段落中都表现出更优的平衡，尤其在捕捉轻小说特有的“可爱+吐槽+宅味”方面明显更强。B也有不少优点（某些地方更简洁），但整体稍逊。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A在细节、专有名词和微妙语气上更忠实原文\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A的中文更自然流畅，口语感强\"},\n    \"style\": {\"A\": 9, \"B\": 7, \"notes\": \"A更好地保留了轻小说特有的吐槽、兴奋与宅文化语气\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"A对コミケ、cosplay、エロ等术语处理更一致且贴合习惯\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体连贯性强，可读性更高\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点与格式均规范，差距不大\"}\n  },\n  \"key_differences\": [\n    \"A在对话口语化、吐槽感、轻小说风格还原度上明显优于B\",\n    \"A对专有名词（如Comic Market、ジャポニカ忍法帖）和宅用语（エロ漫画岛等）处理更精准自然\",\n    \"B某些地方更简洁，但整体语气稍显平淡，缺少轻小说特有的活泼与趣味\"\n  ],\n  \"final_summary\": \"综合各方面，A的翻译在忠实度、风格再现和中文自然度上全面占优，更适合作为高质量的轻小说中译本。B虽合格，但整体逊色。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12248,
+          "completion_tokens": 4750,
+          "total_tokens": 16998
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A在细节、专有名词和微妙语气上更忠实原文"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的中文更自然流畅，口语感强"
+      },
+      "style": {
+        "A": 9,
+        "B": 7,
+        "notes": "A更好地保留了轻小说特有的吐槽、兴奋与宅文化语气"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A对コミケ、cosplay、エロ等术语处理更一致且贴合习惯"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体连贯性强，可读性更高"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点与格式均规范，差距不大"
+      }
+    },
+    "key_differences": [
+      "A在对话口语化、吐槽感、轻小说风格还原度上明显优于B",
+      "A对专有名词（如Comic Market、ジャポニカ忍法帖）和宅用语（エロ漫画岛等）处理更精准自然",
+      "B某些地方更简洁，但整体语气稍显平淡，缺少轻小说特有的活泼与趣味"
+    ],
+    "final_summary": "综合各方面，A的翻译在忠实度、风格再现和中文自然度上全面占优，更适合作为高质量的轻小说中译本。B虽合格，但整体逊色。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

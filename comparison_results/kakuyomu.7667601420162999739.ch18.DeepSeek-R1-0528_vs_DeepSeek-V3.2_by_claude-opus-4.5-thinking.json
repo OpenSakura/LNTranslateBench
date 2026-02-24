@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:33:56.918023",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "DeepSeek-V3.2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "b687f6c34f94761e84422cbbccb24919c54d93207668c9ed4c9dc9c6ce650793",
+    "B": "e935818b7938da3a9329a8496a076470b5d3853b22614b42e81d808d89ff6e08"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:34:41.596367",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "41f1d93a-6a9b-412e-8942-16d572905731",
+      "judge_response": {
+        "id": "41f1d93a-6a9b-412e-8942-16d572905731",
+        "object": "chat.completion",
+        "created": 1768422879,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 逐项对比分析\n\n**准确性方面：**\n- 段落2：A\"敷衍地应了一声'哦'\"准确传达原意；B\"啊，地敷衍地应和\"语法生硬\n- 段落4：A\"熟食面包\"正确翻译「惣菜パン」；B\"家常面包\"不够准确\n- 段落34：B严重错误，保留了日语\"这边へ\"未翻译\n- 段落7：A\"佐渡山\"比B\"萨多山\"更符合日本姓氏音译惯例\n\n**流畅性方面：**\n- 段落9：A\"要说故事的来龙去脉\"结构清晰；B\"故事的发展来说...就是这样\"较散乱\n- 段落33：A\"简直像在应付无礼推销电话的女大学生\"流畅；B稍显直译\n- 段落43：B\"透嘛...没啥坏心眼\"过于口语化，与整体文风不协调\n\n**风格/语气方面：**\n- A整体保持轻小说叙述的文学性与对话的自然感平衡\n- B部分对话过于随意（如段落43），部分又过于生硬\n\n**术语一致性：**\n- A\"圣剑光之使徒\"\"滚筒包/圆筒包\"较一致\n- B\"鼓包\"\"鼓形包\"表述略有变化\n\n**格式问题：**\n- A段落46末有多余引号\n- B段落34有未翻译的日语残留\n- 两者引号风格不同（A用直角引号，B混用）\n\n### 主要差异点\n1. 人名翻译：佐渡山(A) vs 萨多山(B)\n2. 专有名词：\"熟食面包\"(A) vs \"家常面包\"(B)\n3. B存在未翻译遗漏（段落34的\"へ\"）\n4. 整体文风：A较文学化且稳定，B时而口语化过度\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"A的惣菜パン等翻译更准确；B有未翻译遗漏\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A表达更自然；B部分句子结构生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A风格统一；B部分过于口语化\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A人名和专业术语更规范一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A段落衔接更流畅\"},\n    \"formatting\": {\"A\": 7, \"B\": 6, \"notes\": \"A有小瑕疵；B有未翻译的日语残留\"}\n  },\n  \"key_differences\": [\n    \"人名翻译：佐渡山(A) vs 萨多山(B)\",\n    \"段落34：B保留未翻译的日语'へ'\",\n    \"惣菜パン翻译：熟食面包(A) vs 家常面包(B)\",\n    \"整体文风稳定性：A更统一，B时有口语化波动\"\n  ],\n  \"final_summary\": \"翻译A整体表现更优，在准确性、流畅性和风格统一性上均略胜一筹。B的主要问题在于存在未翻译遗漏、部分用词不够精准以及语言风格不够统一。A虽有个别小瑕疵，但总体质量更高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12374,
+          "completion_tokens": 1912,
+          "total_tokens": 14286
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的惣菜パン等翻译更准确；B有未翻译遗漏"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A表达更自然；B部分句子结构生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A风格统一；B部分过于口语化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A人名和专业术语更规范一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A段落衔接更流畅"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 6,
+        "notes": "A有小瑕疵；B有未翻译的日语残留"
+      }
+    },
+    "key_differences": [
+      "人名翻译：佐渡山(A) vs 萨多山(B)",
+      "段落34：B保留未翻译的日语'へ'",
+      "惣菜パン翻译：熟食面包(A) vs 家常面包(B)",
+      "整体文风稳定性：A更统一，B时有口语化波动"
+    ],
+    "final_summary": "翻译A整体表现更优，在准确性、流畅性和风格统一性上均略胜一筹。B的主要问题在于存在未翻译遗漏、部分用词不够精准以及语言风格不够统一。A虽有个别小瑕疵，但总体质量更高。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:37:29.473389",
+  "sample": "novelup.259366131.ch150",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.259366131.ch150.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.259366131.ch150.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/novelup.259366131.ch150.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d878dca3fe760cefbd570a628037e982465873b02ae57f298e5be280f003d0db",
+    "A": "09e82a22695f3fc2163abe045075aa28404002aabe11a015720ba3a1c97f553b",
+    "B": "634186532d90ec2feb5026ad87ba732570e5d7f9132d788a7d3b28acd5e4dcc9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:38:31.064890",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f4b2b2d6-4f98-4bc2-a861-55cda4ec13be",
+      "judge_response": {
+        "id": "f4b2b2d6-4f98-4bc2-a861-55cda4ec13be",
+        "object": "chat.completion",
+        "created": 1768423110,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性方面：**\n- 段落23两版都有问题。A版\"我们可不会把克菈莉丝和克拉拉用上，还无限利用龙脉魔力的敌人\"语义不通；B版\"根本不是他的对手\"则意思反了（原文是\"它们不是我们的对手\"）\n- 段落66：A版\"虽说她这么说了\"主语错误（应为\"我\"说的话），B版正确\n- 段落9：ウエノ应为\"上野\"，A译为\"乌野\"明显错误，B正确\n- 段落16：ヤバい，A译\"完蛋了\"理解偏差，B译\"好危险\"更准确\n\n**流畅性方面：**\n- B版整体句式更自然，如段落19\"无法理解为什么克菈莉丝会害怕成这样\"比A版\"完全不明白克菈莉丝为什么怕成这样\"更通顺\n- A版部分表达偏口语化（如\"傻乎乎地冲上去\"），有时稍显突兀\n\n**术语一致性：**\n- マタタビ：A版混用\"麻猫/猫薄荷\"，B版混用\"又旅/木天蓼/又三郎\"——均不一致\n- サタニエル：两版都有拼写不一致问题\n- ワダツミ：A版保留日文，B版译为\"绵津见\"——B更佳\n\n**格式问题：**\n- 段落43-45：B版遗漏了对话的「」引号，这是明显的格式错误\n- A版引号使用更规范一致\n\n**风格方面：**\n- B版更贴近轻小说叙述风格，用词雅致\n- A版偶尔过于口语化（\"傻乎乎\"\"闹崩\"）\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.6,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A在段落66主语错误、段落9地名错误；B在段落23语义反转但其他整体更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更自然流畅，A部分句式略显生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说叙述风格，A偶有过于口语化\"},\n    \"terminology\": {\"A\": 5, \"B\": 6, \"notes\": \"两版名称都不够一致，但B地名翻译更准确\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两版连贯性相近\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落43-45遗漏引号是明显错误\"}\n  },\n  \"key_differences\": [\n    \"段落9地名：A错译为乌野，B正确译为上野\",\n    \"段落23：两版都有问题，A语法混乱，B语义反转\",\n    \"段落66：A主语误判为她，B正确识别为我\",\n    \"段落43-45：B遗漏对话引号\",\n    \"整体风格：B更文雅贴切，A偶有过于口语化\"\n  ],\n  \"final_summary\": \"两版各有明显缺陷。A版在地名翻译、主语判断上有关键性错误，部分表达不够自然；B版在段落23出现语义反转、段落43-45遗漏引号。综合考虑，B版在整体流畅度、风格把握和大部分准确性上略胜一筹，但优势不明显。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11700,
+          "completion_tokens": 2684,
+          "total_tokens": 14384
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.6,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A在段落66主语错误、段落9地名错误；B在段落23语义反转但其他整体更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更自然流畅，A部分句式略显生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说叙述风格，A偶有过于口语化"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 6,
+        "notes": "两版名称都不够一致，但B地名翻译更准确"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两版连贯性相近"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落43-45遗漏引号是明显错误"
+      }
+    },
+    "key_differences": [
+      "段落9地名：A错译为乌野，B正确译为上野",
+      "段落23：两版都有问题，A语法混乱，B语义反转",
+      "段落66：A主语误判为她，B正确识别为我",
+      "段落43-45：B遗漏对话引号",
+      "整体风格：B更文雅贴切，A偶有过于口语化"
+    ],
+    "final_summary": "两版各有明显缺陷。A版在地名翻译、主语判断上有关键性错误，部分表达不够自然；B版在段落23出现语义反转、段落43-45遗漏引号。综合考虑，B版在整体流畅度、风格把握和大部分准确性上略胜一筹，但优势不明显。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

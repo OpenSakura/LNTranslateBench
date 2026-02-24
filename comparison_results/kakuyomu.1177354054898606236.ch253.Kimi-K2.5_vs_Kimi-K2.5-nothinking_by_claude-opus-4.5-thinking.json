@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:19:56.181607",
+  "sample": "kakuyomu.1177354054898606236.ch253",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054898606236.ch253.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054898606236.ch253.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054898606236.ch253.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d738f43fb1401d6fa4ff85209561037b19956f09e032579887c0ae2aae20bf6d",
+    "A": "335a92bafc041338eac9d2ff39c02fced083ac285050b2819b3fc21b3b260d6d",
+    "B": "73785bf9e99986d526742944b69b9de4c87f038717cee3e15a0d26e10e45e647"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:20:51.156298",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f45c45c4-d970-487a-9ac4-3e08b7179b92",
+      "judge_response": {
+        "id": "f45c45c4-d970-487a-9ac4-3e08b7179b92",
+        "object": "chat.completion",
+        "created": 1769610045,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n- **段落13**: A译\"有些不安定\"不如B译\"有些令人担忧\"准确，原文「不安」指担忧情绪\n- **段落36**: A译\"哈……\"是误译，「はっ」应为敬语\"是\"，B正确\n- **段落65**: A译\"马尔腾施泰因作为祖国泛人类共和国的情况\"语法混乱，B译通顺准确\n- **段落16**: A译\"边境惑星连合\"有误，应为\"联合\"或\"联盟\"\n\n### 术语一致性分析（关键问题）\n- **A的严重问题**: 段落22译\"埃卡特琳娜\"与段落6的\"叶卡捷琳娜\"不一致\n- **A的人名混乱**: \"马尔腾施泰因\"(段落65/69)与\"马尔滕斯坦\"(段落60)不一致\n- **B保持一致**: 人名、舰名全文统一\n\n### 流畅性分析\n- **段落7**: A\"赐予当时担任近卫军司令长官的她的战舰\"更流畅；B用顿号分隔略显生硬\n- **段落35**: A\"政权尚未注定倒台\"更简洁；B\"政权还没有确定要垮台\"略冗余\n- **段落47**: A\"时隔许久终于能在专业领域工作\"优于B的\"好久没做\"\n\n### 风格/格式分析\n- **数字格式**: A保留日式\"一〇时\"较多，B偶有转换为阿拉伯数字\n- **段落39**: A译\"楡树间\"不妥，B译\"榆之间\"保留房间名感\n- **段落6**: A用『』标记舰名更清晰\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"A有误译(段36)和语法错误(段65)，B整体更准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A部分表达更流畅自然，B略显直译\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"两者风格相近，都适合轻小说\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A存在严重的舰名和人名不一致问题\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B全文一致性更好\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者格式处理各有取舍\"}\n  },\n  \"key_differences\": [\n    \"A舰名不一致(叶卡捷琳娜/埃卡特琳娜)是严重问题\",\n    \"A人名不一致(马尔滕斯坦/马尔腾施泰因)\",\n    \"A段落36误译「はっ」为'哈'而非'是'\",\n    \"A段落65语法错误\",\n    \"A部分表达更流畅优雅\"\n  ],\n  \"final_summary\": \"虽然A在部分段落的表达更加流畅优雅，但存在严重的术语一致性问题（舰名、人名前后不一）以及误译和语法错误。B虽然某些表达略显直译，但准确性更高、术语统一，作为轻小说翻译的整体质量更可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12265,
+          "completion_tokens": 2476,
+          "total_tokens": 14741
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "A有误译(段36)和语法错误(段65)，B整体更准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A部分表达更流畅自然，B略显直译"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者风格相近，都适合轻小说"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A存在严重的舰名和人名不一致问题"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B全文一致性更好"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者格式处理各有取舍"
+      }
+    },
+    "key_differences": [
+      "A舰名不一致(叶卡捷琳娜/埃卡特琳娜)是严重问题",
+      "A人名不一致(马尔滕斯坦/马尔腾施泰因)",
+      "A段落36误译「はっ」为'哈'而非'是'",
+      "A段落65语法错误",
+      "A部分表达更流畅优雅"
+    ],
+    "final_summary": "虽然A在部分段落的表达更加流畅优雅，但存在严重的术语一致性问题（舰名、人名前后不一）以及误译和语法错误。B虽然某些表达略显直译，但准确性更高、术语统一，作为轻小说翻译的整体质量更可靠。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

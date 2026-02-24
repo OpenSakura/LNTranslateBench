@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:13:16.335152",
+  "sample": "syosetu.n6113jz.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6113jz.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Thinking",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6113jz.ch1.Qwen3-Next-80B-A3B-Thinking.translated.txt",
+    "B": "translated_results/syosetu.n6113jz.ch1.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "202d88e951c365c1b6224fa97be1f2152793d07174bcd127ad73eaa546de66e6",
+    "A": "8e63920fa3bce3e9a01e118132a79ac3ec9ef49f22db812c1f2d85ac2605c3be",
+    "B": "2d3c77fe3e761b14f1284760f66e83291e4f1c1310ce8e27b3455c58ed70b909"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:14:03.323548",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c47f0f44-90bb-40e5-bb11-46bd51ac41ee",
+      "judge_response": {
+        "id": "c47f0f44-90bb-40e5-bb11-46bd51ac41ee",
+        "object": "chat.completion",
+        "created": 1768432443,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 详细分析\n\n### 准确性\n- **段落12**: A翻译\"连奴隶贩子都见他一次就烦\"用错了性别代词\"他\"（应为\"她\"），且漏掉了\"だからこそ安く買い叩けたんだな\"（所以才便宜买到）的关键因果信息。B完整保留。\n- **段落41**: B出现视角错误，\"我们通过发射\"将第三人称叙述变成第一人称。A保持了正确的第三人称。\n- **段落81**: 「一思いに」A译为\"再爽点\"完全错误，B译为\"请干脆地…吃掉我吧\"准确传达了\"痛快地（结束我）\"之意。\n\n### 流畅性\n- A整体更口语化、简洁，如\"几个家伙\"、\"真是够了\"\n- B句式更完整但偶有书面感过重，如\"未满十岁就有此机缘实属罕见\"\n\n### 风格/语气\n- **段落5**: \"うひひ\"A译\"嘿嘿\"，B译\"呜嘻嘻\"更贴近原文变态笑声的阴森感\n- **段落30**: B\"将他人惨状代入自身妄想后露出的恍惚神情\"比A\"她在脑补自己也会被烧\"更准确传达轻小说的病态氛围\n\n### 术语一致性\n- 凤凰叫声：A用了\"嘶\"、\"啾\"、\"轰\"、\"凯\"多种不一致译法；B统一用\"嘎啊啊啊\"\n- フェニックス两版都一致译为\"凤凰\"\n\n### 格式问题\n- **A**: 段落9、17、22将叙述文本错误加上「」引号\n- **B**: 段落34-45等处将「」改为\"\"西式引号，不一致\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落12性别错误、段落81意思错误；B在段落41视角错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A更口语化，B更完整但偶有书面感\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更好地传达了病态少女和黑暗氛围\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A凤凰叫声译法混乱，B较统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙事连贯性更佳\"},\n    \"formatting\": {\"A\": 5, \"B\": 6, \"notes\": \"A多处叙述文误加引号，B引号风格不统一\"}\n  },\n  \"key_differences\": [\n    \"A段落12性别代词错误且漏译因果关系\",\n    \"B段落41视角从第三人称误译为第一人称\",\n    \"A段落81关键词一思いに完全误译\",\n    \"B对病态角色的语气把握更到位（如うひひ的译法）\",\n    \"A凤凰叫声译法不统一，B相对一致\"\n  ],\n  \"final_summary\": \"B在准确性、风格传达和术语一致性方面整体更优，虽有段落41的视角错误，但A存在更多严重错误（性别代词、关键词误译、格式问题）。B更好地保留了轻小说的黑暗病态氛围。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12391,
+          "completion_tokens": 1891,
+          "total_tokens": 14282
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落12性别错误、段落81意思错误；B在段落41视角错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A更口语化，B更完整但偶有书面感"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更好地传达了病态少女和黑暗氛围"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A凤凰叫声译法混乱，B较统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙事连贯性更佳"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 6,
+        "notes": "A多处叙述文误加引号，B引号风格不统一"
+      }
+    },
+    "key_differences": [
+      "A段落12性别代词错误且漏译因果关系",
+      "B段落41视角从第三人称误译为第一人称",
+      "A段落81关键词一思いに完全误译",
+      "B对病态角色的语气把握更到位（如うひひ的译法）",
+      "A凤凰叫声译法不统一，B相对一致"
+    ],
+    "final_summary": "B在准确性、风格传达和术语一致性方面整体更优，虽有段落41的视角错误，但A存在更多严重错误（性别代词、关键词误译、格式问题）。B更好地保留了轻小说的黑暗病态氛围。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

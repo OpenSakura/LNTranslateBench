@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:20:15.860854",
+  "sample": "syosetu.n7886gf.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n7886gf.ch19.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n7886gf.ch19.MiniMax-M2.translated.txt",
+    "B": "translated_results/syosetu.n7886gf.ch19.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b7c5e5862caa77dd51ae9b11b2fafe158a804e9e40647a31c9450a6e682fc8dd",
+    "A": "5bb86d1a50f611a609e49385fe5231ac54bdbcaa023c00475255c8191aafe4dc",
+    "B": "b929c1381aaba3299a9826e475b741753d13e2f49f2dd254b805e791fcb39a33"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:21:03.503054",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "6ea1b040-4731-4cf2-9ddb-2927d3605c80",
+      "judge_response": {
+        "id": "6ea1b040-4731-4cf2-9ddb-2927d3605c80",
+        "object": "chat.completion",
+        "created": 1768432863,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**关键差异：**\n- **段落8**：\"どうも\" - A译\"哎呀\"，B译\"谢谢\"。B更准确。\n- **段落19/22/28/34**：梅尔的婴儿语\"わらし\"（我）、\"あめー\"（飴/糖果）、\"すうめ\"（スルメ/鱿鱼干）。A多处误译（\"雨天\"、\"酸梅\"），B正确理解。\n- **段落30**：\"ババさん\"指老婆婆，A译\"妈妈\"严重错误，B译\"奶奶\"正确。\n- **段落37**：\"ロルフに乗せてやろう\"意为让梅尔骑罗尔夫，A误译为\"把它放上\"。\n- **段落41**：\"ペロン\"是拟声词，A误译为人名\"佩隆\"。\n- **段落77**：原意是\"我不伟大，被叫'大人'很害羞\"，A理解错误。\n- **段落82**：\"囲炉裏\"是地炉，A译\"围炉\"正确，B译\"壁炉\"错误。\n\n### 2. 流畅性分析\nB整体更自然流畅，句式更符合中文表达习惯。A部分句子生硬（如段落5、12）。\n\n### 3. 风格/语气分析\nB对婴儿语的处理更统一自然（\"小家伙\"、\"吸吸鱿鱼脚\"），符合幼儿说话特点。A多处理解错误导致风格混乱。\n\n### 4. 术语/名称一致性\n- A的\"エミリオ\"翻译不一致（埃米里奥/埃米利奥混用）\n- \"スルメ\"：A译\"鱿鱼丝\"不够准确，B译\"干鱿鱼\"更贴切\n\n### 5. 格式问题\n- B在段落3、91、108、111、112、114、115、118等处缺少对话引号「」，格式不统一\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A多处严重误译婴儿语（飴→雨天、スルメ→酸梅、ババさん→妈妈、ペロン→佩隆），B仅囲炉裏译错\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B句式更自然流畅，A部分句子生硬\"},\n    \"style\": {\"A\": 5, \"B\": 8, \"notes\": \"B对婴儿语处理统一得当，A因误译导致风格混乱\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"A名字不一致，B囲炉裏译错但其他术语处理更好\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体阅读体验更连贯\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"B多处对话缺少引号，格式不统一\"}\n  },\n  \"key_differences\": [\n    \"婴儿语理解：B正确识别わらし、あめー、すうめ等，A多处误译\",\n    \"段落30 ババさん：A误译为妈妈，B正确译为奶奶\",\n    \"段落41 ペロン：A误译为人名，B正确译为拟声词\",\n    \"段落82 囲炉裏：A正确译为围炉，B误译为壁炉\",\n    \"格式：B多处缺少对话引号\"\n  ],\n  \"final_summary\": \"B在核心准确性上明显优于A，尤其在理解婴儿语和关键对话方面。A存在多处严重误译（飴→雨天、ババさん→妈妈、ペロン→佩隆等），严重影响阅读理解。B虽有格式问题和个别术语错误（壁炉），但整体翻译质量更高，流畅性和风格把握更好。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10905,
+          "completion_tokens": 2171,
+          "total_tokens": 13076
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A多处严重误译婴儿语（飴→雨天、スルメ→酸梅、ババさん→妈妈、ペロン→佩隆），B仅囲炉裏译错"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B句式更自然流畅，A部分句子生硬"
+      },
+      "style": {
+        "A": 5,
+        "B": 8,
+        "notes": "B对婴儿语处理统一得当，A因误译导致风格混乱"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "A名字不一致，B囲炉裏译错但其他术语处理更好"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体阅读体验更连贯"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "B多处对话缺少引号，格式不统一"
+      }
+    },
+    "key_differences": [
+      "婴儿语理解：B正确识别わらし、あめー、すうめ等，A多处误译",
+      "段落30 ババさん：A误译为妈妈，B正确译为奶奶",
+      "段落41 ペロン：A误译为人名，B正确译为拟声词",
+      "段落82 囲炉裏：A正确译为围炉，B误译为壁炉",
+      "格式：B多处缺少对话引号"
+    ],
+    "final_summary": "B在核心准确性上明显优于A，尤其在理解婴儿语和关键对话方面。A存在多处严重误译（飴→雨天、ババさん→妈妈、ペロン→佩隆等），严重影响阅读理解。B虽有格式问题和个别术语错误（壁炉），但整体翻译质量更高，流畅性和风格把握更好。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Thinking_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Thinking"
+}

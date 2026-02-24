@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:38.320484",
+  "sample": "pixiv.750889.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.750889.ch2.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.750889.ch2.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/pixiv.750889.ch2.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6c4d74a8736659f4eacb0a65db1d0c057f1a0a246b1efa4253c7de38bbad4b9e",
+    "A": "1d207c4156fff839a43b6e5c742ef2bde935a94cc9c24564d24dbd15056e7b08",
+    "B": "2b740a5422ec3b968b1cd0fa676217182aab5673caa89f50fcd11129068043c7"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:44:57.894753",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DzVZ33MmZO4qUkCzxnq0D4G734t",
+      "judge_response": {
+        "id": "chatcmpl-89DzVZ33MmZO4qUkCzxnq0D4G734t",
+        "object": "chat.completion",
+        "created": 1768427097,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン ループ 転生 fanfiction 吉田彼方\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"コナン オリ主 吉田彼方 性別不詳\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"サザエさん時空 意味\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"軽小说 中文翻译 常见术语 オリ主\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"掲示板（雑談）/ログ1894 - 機動戦士ガンダム バトルオペレーション2攻略Wiki 3rd Season\" w.atwiki.jp](https://w.atwiki.jp/battle-operation2/pages/5923.html)\n> [🔗 \"2025年9月 漫画コミック 発売日一覧 - ゲーム、アニメ\" calendar.gameiroiro.com](https://calendar.gameiroiro.com/manga.php?month=9&year=2025)\n> [🔗 \"Play.Gooseカバー 『46億年LOVE』アンジュルム Play.Goose streaming Live #May 2023 - TikTok\" www.tiktok.com](https://www.tiktok.com/@tokimeki4/video/7242953155493858567)\n> [🔗 \"2025年09月コミック（漫画）の新刊発売日【ベルアラート】\" alert.shop-bell.com](https://alert.shop-bell.com/books/monthly_comic/202509)\n> [🔗 \"[ISDN] 登録作品一覧 - 国際標準同人誌番号\" isdn.jp](https://isdn.jp/list.php?rating=nolimit)\n> [🔗 \"少年サンデー - ファンタジー一覧 - 漫画・ラノベ（小説）・無料試し読みなら - ブックライブ\" booklive.jp](https://booklive.jp/search/keyword/k_ids/1650/tag_ids/6)\n> [🔗 \"鷲北恭太 - 作画@wiki - atwiki（アットウィキ）\" w.atwiki.jp](https://w.atwiki.jp/sakuga/pages/589.html)\n> [🔗 \"2025年9月 漫画コミック発売日カレンダー\" bestcalendar.jp](https://bestcalendar.jp/release/manga/2025/9)\n> [🔗 \"西田正義 - 作画@wiki - atwiki（アットウィキ）\" w.atwiki.jp](https://w.atwiki.jp/sakuga/pages/1247.html)\n> [🔗 \"アツい一覧 - 漫画・ラノベ（小説）・無料試し読みなら、電子書籍・コミックストア ブックライブ\" booklive.jp](https://booklive.jp/search/keyword/emotions/3/sort/t4/page_no/74)\n\n> 🔍 **10 results found**\n\n> [🔗 \"#5 性別行方不明な青年が女子会に参加する話 | 透く花の彩を留め - Rize@イラスト依頼受付中の小 - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=7330362)\n> [🔗 \"#性転換 灰原くんと吉田くん - askのイラスト - pixiv\" www.pixiv.net](https://www.pixiv.net/artworks/21981919)\n> [🔗 \"名探偵コナン - ポケモン 作品なりきりネタWiki【1/6更新】 - atwiki（アットウィキ）\" w.atwiki.jp](https://w.atwiki.jp/pokecharaneta/pages/208.html)\n> [🔗 \"受賞作品 | 集英社『少年ジャンプ漫画賞ポータル』\" www.jump-mangasho.com](https://www.jump-mangasho.com/become/works)\n> [🔗 \"歴史文化財 ガイドブック - 湯梨浜町\" www.yurihama.jp](https://www.yurihama.jp/uploaded/life/5069_23835_misc.pdf)\n> [🔗 \"アーツカウンシル東京 平成30（2018）年度事業報告書\" www.artscouncil-tokyo.jp](https://www.artscouncil-tokyo.jp/uploads/2025/06/FY2018_annual-report.pdf)\n> [🔗 \"令和 7 年度 - 愛知学院大学 歯学部\" www.dent.aichi-gakuin.ac.jp](http://www.dent.aichi-gakuin.ac.jp/files/campusguide2025.pdf)\n> [🔗 \"京都府埋蔵文化財情報\" www.kyotofu-maibun.or.jp](https://www.kyotofu-maibun.or.jp/data/kankou/kankou-pdf/jyouhou/kyoutofu-J005.pdf)\n> [📚 \"岩居由希子 - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E5%B2%A9%E5%B1%85%E7%94%B1%E5%B8%8C%E5%AD%90)\n> [🔗 \"テレビ | 【公式】イッツコム\" www.itscom.co.jp](https://www.itscom.co.jp/service/cabletv)\n\n> 🔍 **10 results found**\n\n> [🔗 \"サザエさん時空 - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"サザエさん時空とは (サザエサンジクウとは) [単語記事] - ニコニコ大百科\" dic.nicovideo.jp](https://dic.nicovideo.jp/a/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"サザエさん時空 - アニヲタWiki(仮) - atwiki（アットウィキ）\" w.atwiki.jp](https://w.atwiki.jp/aniwotawiki/pages/7311.html)\n> [🔗 \"サザエさん時空 | ディクト - DiQt\" www.diqt.net](https://www.diqt.net/ja/words/2035509)\n> [🔗 \"「サザエさん時空」とは?～サザエさんは大正11年生まれだけれど、今も24歳。あの古めかしい茶の間のテレビは、デジタルハイビジョン対応 - 神崎のナナメ読み\" kanzaki.sub.jp](http://kanzaki.sub.jp/archives/002960.html)\n> [🔗 \"サザエさん時空以前を描く江莉チエミ版『サザエさん』 - もやもやレビュー｜BOOKSTAND映画部！\" bookstand.webdoku.jp](https://bookstand.webdoku.jp/cinema/review/202504/30113641.html)\n> [🔗 \"サザエさん時空とは？ わかりやすく解説 - Weblio辞書\" www.weblio.jp](https://www.weblio.jp/content/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E6%99%82%E7%A9%BA)\n> [🔗 \"サザエさん時空 - アニヲタWiki(仮) 非公式避難所wiki\" wiki3.jp](https://wiki3.jp/aniwotadata/page/7311)\n> [🔗 \"「サザエさん時空」に対しての妄想 - - 怪獣の溜息 - FC2\" mogera594.blog9.fc2.com](http://mogera594.blog9.fc2.com/blog-entry-784.html)\n> [🔗 \"サザエさん時空 - 若者言葉辞典～あなたはわかりますか？～\" bosesound.blog.fc2.com](https://bosesound.blog.fc2.com/blog-entry-799.html)\n\n> 🔍 **10 results found**\n\n> [🔗 \"新版标日第二版高级 上册 (高清无水印) | PDF - Scribd\" www.scribd.com](https://www.scribd.com/document/698269871/%E6%96%B0%E7%89%88%E6%A0%87%E6%97%A5%E7%AC%AC%E4%BA%8C%E7%89%88%E9%AB%98%E7%BA%A7-%E4%B8%8A%E5%86%8C-%E9%AB%98%E6%B8%85%E6%97%A0%E6%B0%B4%E5%8D%B0)\n> [🔗 \"中国語教育学会 第 23 回全国大会 予稿集\" www.jacle.org](https://www.jacle.org/wp-content/uploads/2025/05/proceedings23.pdf)\n> [🔗 \"我在中国的日子：40位日本人与你分享中国记忆 9787561172209 - DOKUMEN.PUB\" dokumen.pub](https://dokumen.pub/40-9787561172209.html)\n> [🔗 \"跑团盲盒 | 收藏夹 - 骰声回响\" www.dicecho.com](https://www.dicecho.com/collection/62d6fc30dca83f00268229f7)\n> [🔗 \"新编日语第3册(重排本) - tss john | 在线翻页PDF - FlipHTML5\" fliphtml5.com](https://fliphtml5.com/cialx/jmvu/%E6%96%B0%E7%BC%96%E6%97%A5%E8%AF%AD_%E7%AC%AC3%E5%86%8C(%E9%87%8D%E6%8E%92%E6%9C%AC))\n> [🔗 \"汉语公示语语言特征研究 - 大阪大学学術情報庫OUKA\" ir.library.osaka-u.ac.jp](https://ir.library.osaka-u.ac.jp/repo/ouka/all/88124/32752_Dissertation.pdf)\n> [🔗 \"日中の戦後世代を対象にした 新たな東アジア型歴史・ 平和教育プログラム開発\" www.ritsumeihuman.com](https://www.ritsumeihuman.com/uploads/publications/104/inclusive1all.pdf)\n> [🔗 \"当代外语教育 - 海南外国语职业学院\" hncfs.edu.cn](http://hncfs.edu.cn/__local/C/80/D9/827AF74E7D0AE1CFA2E5773490B_C1330968_3C0C8A.pdf?e=.pdf)\n> [🔗 \"モダンの衝撃とアジアの百年\" www.aisf.or.jp](https://www.aisf.or.jp/sgrareport/Report102.pdf)\n> [🔗 \"日本语便利店- 小春网- Powered by Discuz!\" www.incnjp.com](https://www.incnjp.com/forum.php?action=printable&mod=viewthread&tid=7647)\n\n\n这是一个轻小说风格的《名探偵コナン》同人/二次创作小说片段（带有原创主角“吉田彼方”的时间循环设定），叙述轻松、吐槽向，第一人称口语化，带有meta元素和角色互动的萌点。整体属于日常+轻喜剧+轻微悬疑的轻小说文体。\n\n### 详细分析\n\n**1. 准确性（意思保留）**  \nA在多数地方忠实于原文，但有时过于直译导致意思微妙偏差，例如段落5的「メタやネタ」译为“meta或话题”（应为meta和梗/ネタ），丢失了“玩梗”含义；段落6「ぽんぽん飛ばしている」→“故事被蹦蹦地跳过”（被动+奇怪表达），原文是叙述者主观抱怨剧情跳跃。  \nB更灵活意译，保留了原文意图和幽默感，如“剧情跳得飞快”“会有意识或无意识地加入Meta或玩梗”，更准确传达了吐槽语气。  \n**A: 8/10** | **B: 9.5/10**  \nnotes: B在关键吐槽句和网络用语上更精准，A有几处生硬。\n\n**2. 流畅性（目标语言自然表达）**  \nA的中文较为生硬、直译痕迹明显（如“季节被蹦蹦地跳过”“品质也稳定下来了”），读起来略卡顿。  \nB使用更口语化、自然的表达（如“剧情跳得飞快”“这该咋办啊”“没得怀疑了吧”），非常符合中文网络小说/轻小说读者的阅读习惯，读感顺滑。  \n**A: 7/10** | **B: 9.5/10**  \nnotes: B整体像母语者写的中文小说，A像日翻中常见的“翻译腔”。\n\n**3. 风格/语气（轻小说叙述/对话）**  \n轻小说核心是轻松、吐槽、自嘲、萌系第一人称内心独白。A保持了原文的冷淡吐槽，但语气偏正式/生涩（如“如果方便的话，请继续阅读”太客气）。  \nB很好地再现了“腹黑吐槽系”男主语气，如“真是巧妙的时机啊，喂”“时机真不错啊，喂”“这已经没得怀疑了吧”，对话也更活泼可爱（如“啊——，是彼方哥哥！”）。整体更符合中文轻小说社区常见的“沙雕/毒舌”风格。  \n**A: 7.5/10** | **B: 9/10**  \nnotes: B更抓住了轻小说“有趣的吐槽感”和角色魅力。\n\n**4. 术语/名称一致性**  \n两者基本一致（如人名“吉田彼方”“江户川柯南”“灰原哀”，专有名词“帝丹高校”“少年侦探团”）。  \n但A在“Pretty歩美ちゃん”→“Pretty步美酱”（保留英文），B→“亲爱的小美人步美酱”（意译更萌）；“サバゲー”统一为“生存游戏”。两者都稳定，无重大不一致。  \n**A: 9/10** | **B: 9/10**  \nnotes: 平分秋色，小差异不影响。\n\n**5. 连贯性/可读性**  \nA连贯但因翻译腔，长时间阅读容易疲劳。  \nB整体更连贯，句子节奏好，吐槽与叙述过渡自然，可读性极高，像在看中文原创轻小说。  \n**A: 7.5/10** | **B: 9.5/10**  \nnotes: B更适合长时间沉浸阅读。\n\n**6. 格式/标点符号**  \n两者标点基本正确，但B在对话的破折号、感叹号、省略号使用更符合中文小说习惯（如“欸——真的假的？”“啊——，是彼方哥哥！”），显得更生动。A有些地方标点较死板。  \n**A: 8/10** | **B: 9/10**  \nnotes: B更注重阅读时的语气感。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9.5, \"notes\": \"B在网络用语、吐槽意图上传达更准确，A有少量直译偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 9.5, \"notes\": \"B中文自然流畅，像母语级轻小说；A有明显翻译腔\"},\n    \"style\": {\"A\": 7.5, \"B\": 9, \"notes\": \"B更好捕捉轻小说口语化、吐槽萌系语气，A稍显生硬\"},\n    \"terminology\": {\"A\": 9, \"B\": 9, \"notes\": \"两者术语一致性均高，无明显问题\"},\n    \"coherence\": {\"A\": 7.5, \"B\": 9.5, \"notes\": \"B节奏更好，阅读连贯性强\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点与对话处理更生动自然\"}\n  },\n  \"key_differences\": [\n    \"B更口语化、自然，适合中文轻小说读者；A更直译，保留日文结构但流畅度不足\",\n    \"关键吐槽句（如サザエさん時空、剧情跳跃、手机变化）B处理更幽默生动\",\n    \"对话与内心独白B更活泼可爱，增强角色魅力\",\n    \"整体B像中文原创轻小说，A像典型机翻+润色版\"\n  ],\n  \"final_summary\": \"翻译B整体大幅优于A，在流畅性、风格再现、可读性和轻小说趣味性上表现出色，更适合作为中文轻小说发布/阅读。A忠实但缺乏中文语感，适合作为参考对照。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10197,
+          "completion_tokens": 4990,
+          "total_tokens": 15187
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B在网络用语、吐槽意图上传达更准确，A有少量直译偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9.5,
+        "notes": "B中文自然流畅，像母语级轻小说；A有明显翻译腔"
+      },
+      "style": {
+        "A": 7.5,
+        "B": 9,
+        "notes": "B更好捕捉轻小说口语化、吐槽萌系语气，A稍显生硬"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者术语一致性均高，无明显问题"
+      },
+      "coherence": {
+        "A": 7.5,
+        "B": 9.5,
+        "notes": "B节奏更好，阅读连贯性强"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点与对话处理更生动自然"
+      }
+    },
+    "key_differences": [
+      "B更口语化、自然，适合中文轻小说读者；A更直译，保留日文结构但流畅度不足",
+      "关键吐槽句（如サザエさん時空、剧情跳跃、手机变化）B处理更幽默生动",
+      "对话与内心独白B更活泼可爱，增强角色魅力",
+      "整体B像中文原创轻小说，A像典型机翻+润色版"
+    ],
+    "final_summary": "翻译B整体大幅优于A，在流畅性、风格再现、可读性和轻小说趣味性上表现出色，更适合作为中文轻小说发布/阅读。A忠实但缺乏中文语感，适合作为参考对照。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

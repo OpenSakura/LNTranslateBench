@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:17:54.800810",
+  "sample": "syosetu.n6776iy.ch386",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6776iy.ch386.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6776iy.ch386.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/syosetu.n6776iy.ch386.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2bb7195d7ec1f474ffb77e11e9912b818e91c49fbc1fcd84cbf2ad9cb25860ec",
+    "A": "cb6dc235d1cb2a95d019a32d71cdbd7a9256ba239cdb5ecfc24adfb0a29512b9",
+    "B": "7ef6bbd0b896d5179abfa66e022c395a7571d00550303f2d493004270c988bdb"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:18:41.795681",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "db8b851c-5c19-45f3-bbf5-4a9fb7781fc2",
+      "judge_response": {
+        "id": "db8b851c-5c19-45f3-bbf5-4a9fb7781fc2",
+        "object": "chat.completion",
+        "created": 1768432721,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**A的优势：**\n- 段落4：\"今は、今だけは少し待って欲しい\"中的双重强调\"今/今だけは\"被A准确保留为\"现在稍微、就现在这一小会儿\"\n- 段落51：\"後輩\"正确译为\"后辈\"，B误译为\"部下\"\n- 段落54：关键错误——B将\"一人目も、私も涙を流していた\"误译为\"第一滴泪也跟着流下来\"，完全曲解原意。A正确译为\"第一个人和我都流下了眼泪\"\n\n**B的问题：**\n- 段落52：\"言ってるんだよ\"的主语是说话者自己，B译为\"他在这么说\"完全错误\n- 段落70：逻辑混乱，原意是\"不想把身体交给已成傀儡的她\"，B的表述令人费解\n\n### 2. 流畅性分析\n\n**A更自然的表达：**\n- 段落11：A的\"无边无际的水平线\"比B的\"水平线一直延伸\"更符合中文表达\n- 段落59：A的\"赶紧公开信息寻求帮助啊\"流畅度更高\n- 段落67：A整体句式更通顺有力\n\n**B的问题：**\n- 段落6：\"在这里以我自己的身份\"句子不完整\n- 段落65：\"给我把它变成自己的东西看看\"较生硬\n\n### 3. 格式问题\n\n- **段落3：B缺少左引号「**，这是明显的格式错误\n\n### 4. 术语一致性\n\n- A在段落16/19中\"二人目\"译为\"第二人格\"与其他地方\"第一个我/第二个我\"不统一\n- B在段落22使用\"马尔库\"，与其他段落的\"马克\"不一致\n- 整体A的人名译法更稳定（马克）\n\n### 5. 风格把握\n\nA在情感高潮段落（如段落67）的表达更有轻小说的戏剧张力：\"我绝不允许你哭哭啼啼地浪费它们！\"比B的\"绝不会容忍你这样抱怨浪费\"更符合角色的激动情绪。\n\n### 6. 关键差异总结\n\n| 段落 | 问题类型 | A | B |\n|------|----------|---|---|\n| 3 | 格式 | ✓ | ✗缺引号 |\n| 51 | 准确性 | ✓后辈 | ✗部下 |\n| 52 | 准确性 | ✓ | ✗主语错误 |\n| 54 | 准确性 | ✓ | ✗严重误译 |\n| 70 | 连贯性 | ✓ | ✗逻辑混乱 |\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.88,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B在段落52/54有严重误译，段落51术语错误\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A整体更自然流畅，B多处表达生硬或不完整\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A在情感戏剧性场景表达更到位\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"两者都有小问题，但B人名不一致更明显\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落70逻辑混乱，多处上下文衔接不畅\"},\n    \"formatting\": {\"A\": 9, \"B\": 7, \"notes\": \"B段落3缺少左引号\"}\n  },\n  \"key_differences\": [\n    \"段落54：B严重误译'一人目'为'第一滴泪'\",\n    \"段落52：B错误添加主语'他'\",\n    \"段落51：B将'後輩'误译为'部下'\",\n    \"段落3：B缺少开头引号\",\n    \"段落70：B逻辑表述混乱\"\n  ],\n  \"final_summary\": \"A整体准确性明显更高，尤其在关键情感段落没有出现B的严重误译。A的中文表达更自然流畅，格式规范。B虽然部分句子更口语化，但多处理解错误和表达不完整严重影响质量。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10016,
+          "completion_tokens": 1932,
+          "total_tokens": 11948
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.88,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B在段落52/54有严重误译，段落51术语错误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A整体更自然流畅，B多处表达生硬或不完整"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A在情感戏剧性场景表达更到位"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "两者都有小问题，但B人名不一致更明显"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落70逻辑混乱，多处上下文衔接不畅"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "B段落3缺少左引号"
+      }
+    },
+    "key_differences": [
+      "段落54：B严重误译'一人目'为'第一滴泪'",
+      "段落52：B错误添加主语'他'",
+      "段落51：B将'後輩'误译为'部下'",
+      "段落3：B缺少开头引号",
+      "段落70：B逻辑表述混乱"
+    ],
+    "final_summary": "A整体准确性明显更高，尤其在关键情感段落没有出现B的严重误译。A的中文表达更自然流畅，格式规范。B虽然部分句子更口语化，但多处理解错误和表达不完整严重影响质量。"
+  },
+  "outcome": "DeepSeek-V3-250324_win",
+  "winner_model": "DeepSeek-V3-250324"
+}

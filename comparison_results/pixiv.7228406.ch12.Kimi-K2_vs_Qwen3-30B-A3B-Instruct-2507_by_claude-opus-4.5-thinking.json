@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:48:37.396683",
+  "sample": "pixiv.7228406.ch12",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.7228406.ch12.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.7228406.ch12.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/pixiv.7228406.ch12.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b1947f8e921c174f0ed044c07310e62a11cb8a7815ed21ae00e7ed6f810a8a7c",
+    "A": "6c09353eff3046f045276d09dc289f03487534c6b940e91b4708f34ee0f9f798",
+    "B": "6304fe89ff5d1aaad40d4c5b0fc50a42b30e8e861c6cf6ff291ee4b579d6adef"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:49:31.304955",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5b103cfc-87e0-4ce7-9178-823fefb9b50f",
+      "judge_response": {
+        "id": "5b103cfc-87e0-4ce7-9178-823fefb9b50f",
+        "object": "chat.completion",
+        "created": 1768423770,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量对比分析\n\n## 逐项分析\n\n### 1. 准确性\n**重大问题：**\n- **A段落30：** 将「みのぶまんじゅう」译为\"三日月馒头\"——完全错误，应为\"身延馒头\"\n- **A段落9：** \"地方法律出租车公司\"——明显误译，「地元」意为\"本地\"\n- **B段落59：** 将「みのぶまんじゅう」译为\"美浓馒头\"——错误（美浓≠身延）\n- **段落2：** 两者对「マッ缶」都有偏差（A译\"马卡风\"，B译\"罐装咖喱\"，实际指MAX罐装咖啡）\n\n### 2. 流畅性\nB整体更口语化自然：\n- B段落3：\"小不点志摩\" vs A\"小巧玲珑的志摩\"\n- B段落26：\"真香啊\" vs A\"味道不错啊\"\n- B段落10：\"复古氛围拉满\" vs A\"沉浸于复古氛围\"\n\n### 3. 风格/语气\nB更符合轻小说年轻人口吻：\n- B段落4：\"震撼\"、\"站站停\"\n- B段落13：\"蹬车狂飙\"\n- B段落38：\"懂行\"\n\n### 4. 术语一致性\n- **A问题：** 人名写法不一致（齐藤/斋藤混用，见段落8、16、21）\n- **A问题：** 对「みのぶまんじゅう」处理混乱（保留日文/译为错误名称）\n- **B相对一致：** 统一用\"齐藤\"和\"身延馒头\"（段落59除外）\n\n### 5. 连贯性/可读性\nB的句子更紧凑流畅，A部分段落略显冗长拖沓（如段落4、8）\n\n### 6. 格式\n- B段落51末尾多出一个」符号\n- 两者对引号处理不同（A用「」，B混用「」和\"\"）\n\n---\n\n## 关键差异总结\n| 方面 | A的问题 | B的问题 |\n|------|---------|---------|\n| 致命错误 | 段落30译名完全错误 | 段落59译名错误 |\n| 误译 | 段落9\"地方法律\" | — |\n| 名称一致性 | 齐藤/斋藤混用 | 较一致 |\n| 风格 | 偏书面 | 更口语化 |\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A段落30致命错误（三日月馒头）、段落9误译；B段落59错误（美浓馒头）\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语自然，A部分句子略显冗长\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说年轻人口吻，A偏书面\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A人名不一致（齐藤/斋藤），みのぶ处理混乱；B相对统一\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B句子更紧凑连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B段落51多出符号，引号风格不统一\"}\n  },\n  \"key_differences\": [\n    \"A段落30将身延馒头错译为'三日月馒头'，是严重错误\",\n    \"A段落9将'地元'误译为'地方法律'\",\n    \"B段落59将身延馒头误译为'美浓馒头'\",\n    \"A人名一致性差，齐藤/斋藤混用\",\n    \"B整体语气更符合轻小说风格，更口语化\"\n  ],\n  \"final_summary\": \"两个翻译都有明显失误，但A的错误更严重：段落30完全译错专有名词，段落9出现明显误译，人名一致性差。B虽在段落59也有译名错误，但整体准确性更高，且在流畅性和风格把握上明显优于A，更符合轻小说的叙事特点。综合评估B获胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10987,
+          "completion_tokens": 2522,
+          "total_tokens": 13509
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A段落30致命错误（三日月馒头）、段落9误译；B段落59错误（美浓馒头）"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语自然，A部分句子略显冗长"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说年轻人口吻，A偏书面"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A人名不一致（齐藤/斋藤），みのぶ处理混乱；B相对统一"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B句子更紧凑连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B段落51多出符号，引号风格不统一"
+      }
+    },
+    "key_differences": [
+      "A段落30将身延馒头错译为'三日月馒头'，是严重错误",
+      "A段落9将'地元'误译为'地方法律'",
+      "B段落59将身延馒头误译为'美浓馒头'",
+      "A人名一致性差，齐藤/斋藤混用",
+      "B整体语气更符合轻小说风格，更口语化"
+    ],
+    "final_summary": "两个翻译都有明显失误，但A的错误更严重：段落30完全译错专有名词，段落9出现明显误译，人名一致性差。B虽在段落59也有译名错误，但整体准确性更高，且在流畅性和风格把握上明显优于A，更符合轻小说的叙事特点。综合评估B获胜。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

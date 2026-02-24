@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:27:04.377439",
+  "sample": "kakuyomu.16817330663363294366.ch251",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16817330663363294366.ch251.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16817330663363294366.ch251.GLM-4.7.translated.txt",
+    "B": "translated_results/kakuyomu.16817330663363294366.ch251.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bd9f03a75ca8f065e6dd5ba17c13b46e3215cbfcee7d5edcc197e412dea210dc",
+    "A": "5a6ae739cc784d663cde8dcbcb8783bc60ff5271101068567dfb7c552958a58f",
+    "B": "24bb4b4682e91c4ee09d371cf54b0d2df8f23c6c0c5e2c4474e037fdd3759ede"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:27:58.122959",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c0c795d2-9c97-4b52-a774-738e4543074e",
+      "judge_response": {
+        "id": "c0c795d2-9c97-4b52-a774-738e4543074e",
+        "object": "chat.completion",
+        "created": 1768422477,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**段落10**：原文「険しい表情」\n- A译为\"险恶的表情\"——语义偏差，険しい在此处指严肃/凝重\n- B译为\"严肃的表情\"——准确\n\n**段落47**：原文「フェスタは単純明快」\n- A译为\"祭典却是简单明了\"——严重错误！フェスタ是角色名，不是\"祭典\"\n- B译为\"庆典本身却简单明了\"——同样误译为普通名词\n\n**段落76**：原文「N：ブルも黙っていない」\n- A译为\"不甘寂寞\"——意译但方向正确\n- B译为\"不吭声了\"——误译，原意是\"也不沉默\"\n\n### 2. 术语/名称一致性\n\n**N：ブル的翻译**：\n- A：段落2用\"N：蓝\"，后改为\"N：布鲁\"，段落97/100/107又变成\"N：布尔\"——严重不一致\n- B：始终使用\"N：布鲁\"——一致\n\n**フェスタ的翻译**：\n- A：多数用\"菲斯塔\"，但段落47误译为\"祭典\"\n- B：前半用\"费斯塔\"，段落109后变成\"Festa\"——不一致\n\n**アン：Ger的翻译**：\n- A：\"安：Ger\"\n- B：保留日文\"アン：Ger\"——未翻译\n\n### 3. 格式/标点\n\n- A：使用标准中文引号\"\"，格式完整\n- B：使用日式括号「」，多处缺少闭合括号（段落2、49等）\n\n### 4. 流畅性对比\n\n**段落13**：\n- A：\"总是弥漫着一股要发生什么的空气，让人没办法\"——稍显生硬\n- B：\"一股好像要出事的气氛怎么都无法散去\"——更自然\n\n**段落32**：\n- A：\"就连葛琳也忍不住大声喊叫\"\n- B：\"就连葛琳也不由提高了声音\"——更贴合原文的\"声を荒げる\"\n\n### 5. 风格/语气\n\n两者都基本保持了轻小说对话的轻松感，B在对话语气词处理上略显自然（如\"啊\"\"呢\"的运用）。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A误译险しい和角色名；B误译段落76的黙っていない，两者各有失误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体表达更自然流畅，A部分句子较生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话语气更贴近轻小说风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A的角色名严重不一致(蓝/布鲁/布尔)；B虽有Festa问题但核心角色一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相近\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"A格式完整；B多处括号未闭合\"}\n  },\n  \"key_differences\": [\n    \"A的N：ブル翻译严重不一致（蓝/布鲁/布尔三种写法）\",\n    \"A在段落47将角色名フェスタ误译为'祭典'\",\n    \"B在段落76误译黙っていない的意思\",\n    \"B格式问题：多处日式括号未闭合\",\n    \"B整体语言更流畅自然\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A的致命伤在于角色名称严重不一致，影响阅读连贯性；B虽有格式瑕疵和个别误译，但核心角色名称统一，整体流畅度更佳。综合考量，B在术语一致性和流畅性上的优势略胜于A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13406,
+          "completion_tokens": 2331,
+          "total_tokens": 15737
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A误译险しい和角色名；B误译段落76的黙っていない，两者各有失误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体表达更自然流畅，A部分句子较生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话语气更贴近轻小说风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A的角色名严重不一致(蓝/布鲁/布尔)；B虽有Festa问题但核心角色一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相近"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "A格式完整；B多处括号未闭合"
+      }
+    },
+    "key_differences": [
+      "A的N：ブル翻译严重不一致（蓝/布鲁/布尔三种写法）",
+      "A在段落47将角色名フェスタ误译为'祭典'",
+      "B在段落76误译黙っていない的意思",
+      "B格式问题：多处日式括号未闭合",
+      "B整体语言更流畅自然"
+    ],
+    "final_summary": "两译本各有优劣。A的致命伤在于角色名称严重不一致，影响阅读连贯性；B虽有格式瑕疵和个别误译，但核心角色名称统一，整体流畅度更佳。综合考量，B在术语一致性和流畅性上的优势略胜于A。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

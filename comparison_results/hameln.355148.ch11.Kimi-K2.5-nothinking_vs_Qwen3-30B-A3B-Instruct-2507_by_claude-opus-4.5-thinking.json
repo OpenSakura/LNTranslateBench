@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:27:43.998162",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "Kimi-K2.5-nothinking",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "Kimi-K2.5-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.Kimi-K2.5-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "f124491bcbef8e4c0e15d630d65659c0596c89d06b4ab36aa1ea7019356319f1",
+    "B": "69d320964c60c729fd13b71fe88b4b4040c585a76a2023255935ad9844cc74b0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:28:20.146972",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "0b923b10-5be1-4d53-894a-ae9712032d88",
+      "judge_response": {
+        "id": "0b923b10-5be1-4d53-894a-ae9712032d88",
+        "object": "chat.completion",
+        "created": 1769610500,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评析\n\n### 准确性分析\n- **段落2**: B的\"被别的灵魂占据\"比A的\"寄宿着\"更贴合「別の魂が入っていた」\n- **段落19**: A译\"城外\"有误，原文「町はずれ」应为\"城镇边缘\"（B正确）\n- **段落17**: 「腰を下ろし」意为\"坐下\"，B的\"准备坐下\"比A的\"蹲下\"更准确\n- **段落69**: A把「目を泳がせた」（目光游移）误译为\"眨眼\"，B的\"移开目光\"更准\n\n### 流畅性分析\n- **段落6**: B的\"好歹也算是死着\"比A更口语化自然\n- **段落11**: B的\"咦……锁着？\"比A的\"那个……锁上了？\"更自然\n- **段落81**: B的\"归途的彼端，传来了教堂的钟声\"文学感更强\n\n### 风格/语气分析\n- B的对话更符合轻小说口语风格，如段落13、74\n- A部分对话略显生硬，如段落73的\"我可没想过要这么做\"\n\n### 术语一致性\n- 两者人名翻译均一致\n- A用\"教堂\"/B用\"教会\"：B更贴近原文「教会」\n\n### 小问题\n- B段落30人名\"波嘉\"音译欠佳（A的\"沃吉亚\"更接近ヴォージャー）\n- A段落72\"微微眨了眨眼\"译错\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B在关键词如町はずれ、目を泳がせた等处更准确，A有几处明显误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B表达更简洁自然，A部分句子略显冗长\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话更符合轻小说口语风格，感叹词处理更地道\"},\n    \"terminology\": {\"A\": 8, \"B\": 8, \"notes\": \"两者人名一致性良好，B的教会用词更贴原文\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙事衔接更流畅，A部分段落过渡生硬\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范，标点使用得当\"}\n  },\n  \"key_differences\": [\n    \"町はずれ：A误译为城外，B正确译为城镇边缘\",\n    \"目を泳がせた：A误译为眨眼，B译为移开目光更准确\",\n    \"对话语气：B更口语化自然，A部分生硬\",\n    \"段落81结尾句：B更有文学美感\"\n  ],\n  \"final_summary\": \"B整体更优，准确性更高（尤其关键表达无误），对话风格更符合轻小说特点，叙事流畅度更好。A有几处明显误译（目を泳がせた、町はずれ），且部分句子表达不够简练。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11483,
+          "completion_tokens": 1604,
+          "total_tokens": 13087
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在关键词如町はずれ、目を泳がせた等处更准确，A有几处明显误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B表达更简洁自然，A部分句子略显冗长"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话更符合轻小说口语风格，感叹词处理更地道"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者人名一致性良好，B的教会用词更贴原文"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙事衔接更流畅，A部分段落过渡生硬"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范，标点使用得当"
+      }
+    },
+    "key_differences": [
+      "町はずれ：A误译为城外，B正确译为城镇边缘",
+      "目を泳がせた：A误译为眨眼，B译为移开目光更准确",
+      "对话语气：B更口语化自然，A部分生硬",
+      "段落81结尾句：B更有文学美感"
+    ],
+    "final_summary": "B整体更优，准确性更高（尤其关键表达无误），对话风格更符合轻小说特点，叙事流畅度更好。A有几处明显误译（目を泳がせた、町はずれ），且部分句子表达不够简练。"
+  },
+  "outcome": "Kimi-K2.5-nothinking_win",
+  "winner_model": "Kimi-K2.5-nothinking"
+}

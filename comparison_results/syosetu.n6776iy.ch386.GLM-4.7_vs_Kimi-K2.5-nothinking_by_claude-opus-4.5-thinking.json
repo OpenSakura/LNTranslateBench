@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:34:41.225252",
+  "sample": "syosetu.n6776iy.ch386",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6776iy.ch386.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "Kimi-K2.5-nothinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5-nothinking",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6776iy.ch386.Kimi-K2.5-nothinking.translated.txt",
+    "B": "translated_results/syosetu.n6776iy.ch386.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2bb7195d7ec1f474ffb77e11e9912b818e91c49fbc1fcd84cbf2ad9cb25860ec",
+    "A": "ccaa4bf89134220175fcf395297954c7e5eee3b5a821e839b48117c90d517774",
+    "B": "69bf1e3bda7e4bac7153533da63431d17e99c3bda863787a62bb37cb931b43fd"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:35:33.059803",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "7edbefe9-a9dd-4ca0-8ab2-1b89817d686a",
+      "judge_response": {
+        "id": "7edbefe9-a9dd-4ca0-8ab2-1b89817d686a",
+        "object": "chat.completion",
+        "created": 1769610932,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估\n\n### 详细分析\n\n**准确性问题：**\n- 段落2：B的「以后再说」误译，原文「後、お願い」意为\"后面拜托你了\"，A正确\n- 段落4：A的「请让我稍微等一下」理解有误，原意是\"请稍微等我一下\"，B更准确\n- 段落29：B将「転移者」译为\"转生者\"有误，应为\"转移者\"（A正确）\n- 段落59：B将「十五の少女」译为\"十五个少女\"严重错误，应为\"十五岁的少女\"（A正确）\n- **段落69：A完全未翻译，保留了原文日语，这是致命错误**\n\n**格式问题：**\n- B的引号格式严重不一致：段落1-15使用「」但缺失后引号，段落30-38突然改用\"\"\n- A在段落54-57出现引号错位问题\n- A段落69未翻译\n\n**风格与流畅度：**\n- A整体文风偏书面化，用词如\"如出一辙\"\"别无二致\"更典雅\n- B整体更口语化，对话感较强\n- A将「一人目」译为\"第一人格\"，有过度诠释之嫌；B译为\"一号/第一个我\"更贴近原文\n\n**关键差异：**\n- 名称翻译：A用\"马克\"，B用\"马尔克\"（マルク）；B更接近原音\n- 段落65：A译为\"给我证明自己配得上\"偏离原意，B的\"把它变成你自己的东西\"更准确\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A段落69完全未译是致命伤；B在段落59有严重误译（十五个少女），但A的未翻译问题更严重\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"两者流畅度相当，A偏书面，B偏口语\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A文风典雅但略显生硬，B口语化更贴合轻小说对话风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A的転移者译法正确；B误译为转生者\"},\n    \"coherence\": {\"A\": 6, \"B\": 7, \"notes\": \"A因段落69缺失导致连贯性严重受损\"},\n    \"formatting\": {\"A\": 5, \"B\": 4, \"notes\": \"B引号缺失和风格混乱问题严重；A段落69未译、54-57引号错乱\"}\n  },\n  \"key_differences\": [\n    \"A段落69完全未翻译，保留日语原文\",\n    \"B多处缺失引号并混用「」和\\\"\\\"\",\n    \"B将「十五の少女」误译为十五个少女\",\n    \"A将「転移者」正确译为转移者，B误译为转生者\",\n    \"名称处理不同：马克vs马尔克\"\n  ],\n  \"final_summary\": \"两个译本各有严重问题。A的段落69完全未翻译是重大失误，但B的格式问题（大量缺失引号、引号风格混乱）和关键误译（十五个少女）同样严重。综合考虑，A缺失一整段内容对阅读体验影响更大，故B以微弱优势胜出，但置信度不高。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10245,
+          "completion_tokens": 2429,
+          "total_tokens": 12674
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A段落69完全未译是致命伤；B在段落59有严重误译（十五个少女），但A的未翻译问题更严重"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者流畅度相当，A偏书面，B偏口语"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A文风典雅但略显生硬，B口语化更贴合轻小说对话风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A的転移者译法正确；B误译为转生者"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 7,
+        "notes": "A因段落69缺失导致连贯性严重受损"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 4,
+        "notes": "B引号缺失和风格混乱问题严重；A段落69未译、54-57引号错乱"
+      }
+    },
+    "key_differences": [
+      "A段落69完全未翻译，保留日语原文",
+      "B多处缺失引号并混用「」和\"\"",
+      "B将「十五の少女」误译为十五个少女",
+      "A将「転移者」正确译为转移者，B误译为转生者",
+      "名称处理不同：马克vs马尔克"
+    ],
+    "final_summary": "两个译本各有严重问题。A的段落69完全未翻译是重大失误，但B的格式问题（大量缺失引号、引号风格混乱）和关键误译（十五个少女）同样严重。综合考虑，A缺失一整段内容对阅读体验影响更大，故B以微弱优势胜出，但置信度不高。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

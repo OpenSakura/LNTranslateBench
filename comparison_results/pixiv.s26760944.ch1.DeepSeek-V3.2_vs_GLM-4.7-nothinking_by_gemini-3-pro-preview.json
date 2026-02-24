@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-13T21:54:11.342091",
+  "sample": "pixiv.s26760944.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.s26760944.ch1.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.s26760944.ch1.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/pixiv.s26760944.ch1.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b62d2dee0b0d4c2c27c0258356363d8446318cf09de64a0703feb4e4af158d5d",
+    "A": "3adf26a5b1aeace74171da3a70f44c5c9a403bea744fa07b208a1b863eac6fce",
+    "B": "fd83339657ffaa822cc48b189e26e768701bbd21aff149723d32118239bdf791"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-13T21:55:36.668538",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-2026011405542192675338TilqgV3y",
+      "judge_response": {
+        "id": "chatcmpl-2026011405542192675338TilqgV3y",
+        "object": "chat.completion",
+        "created": 1768341336,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **致命错误 (翻译A)**：\n    *   **角色身份/性别错误**：翻译A在第7段、第66段、第115段中自称“大叔”。然而原文中主角被称为“Hiro-chan”（希罗酱），且在第92段被汉娜骂作“女”（Onna）。这表明主角希罗应为女性（或至少是女性外貌/被视为女性），翻译A将其设定为“大叔”属于严重的理解错误，完全破坏了原文的人物设定（百合/轻百合氛围）。\n    *   **发言人混淆**：第7段原文是艾玛（Emma）说“那我出门了”，翻译A却翻译成“那大叔我……”，不仅搞错了说话人（如果是希罗自称大叔），还把艾玛的台词安上了奇怪的第一人称。\n    *   **术语幻觉**：第92段原文“スパダリモドキ”（Supadari-modoki，意为“伪·超级达令/伪·完美男友”），翻译A将其错译为“冒牌女**蜘蛛侠**”（Spider-Man）。这是将“Supadari”听错或看错为“Supaidaman”导致的严重误译。\n*   **翻译B的错误**：\n    *   **拟声词错误**：第99段原文“コッコッコッ”是切菜的声音（下文提到切胡萝卜），翻译B译为“咳咳咳”（咳嗽声），这是语境理解错误。\n    *   **术语处理**：第92段对“Supadari”译为“肌肉大猩猩”，虽然也不准确（丢失了“超级达令”的含义），但比“蜘蛛侠”的违和感稍低，可能是联系上下文的意译。\n\n**2. 流畅性与风格 (Fluency & Style)**\n*   **翻译A**：由于强行加入了“大叔”的口吻，导致整体风格非常割裂。一方面别人叫主角“希罗酱”，一方面主角自称“大叔”，读起来非常怪异。\n*   **翻译B**：整体语言更自然，符合轻小说的语感。例如第1段“踩得水坑乱飞”比A的“踩踏水洼”更有画面感。对话部分也更贴合角色性格（如艾玛的可爱语气）。\n\n**3. 格式与标点 (Formatting)**\n*   **翻译A**：使用中文引号“”，符合中文出版规范。\n*   **翻译B**：使用日式直角引号｢｣，这在中文正规出版物中不标准，但在网络轻小说翻译中常见。\n\n**4. 术语/名称 (Terminology)**\n*   **翻译A**：将“Supadari”译为“蜘蛛侠”是硬伤。\n*   **翻译B**：保留了“水曜日”（星期三）这种日式说法，虽然不完全本地化，但在ACG圈子可接受。保留了“酱”等称呼，更有二次元味道。\n\n### 总结\n翻译A存在**灾难性**的理解错误，将一名被称作“酱”和“女”的角色强行翻译为“大叔”，并且出现了“蜘蛛侠”这种离谱的误译。这表明译者（或机器翻译）完全没有搞清楚故事的语境和人物关系。\n翻译B虽然有一个拟声词错误（切菜变咳嗽），但整体准确把握了人物关系、性别和故事氛围，阅读体验远优于A。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 1.0,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 3,\n      \"B\": 8,\n      \"notes\": \"A存在严重的角色性别/身份误判（将女性主角译为'大叔'）及术语误译（'蜘蛛侠'）；B仅有少量拟声词错误。\"\n    },\n    \"fluency\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"B的表达更生动自然，符合轻小说语感。\"\n    },\n    \"style\": {\n      \"A\": 4,\n      \"B\": 8,\n      \"notes\": \"A的'大叔'口吻与原文氛围完全冲突。\"\n    },\n    \"terminology\": {\n      \"A\": 2,\n      \"B\": 7,\n      \"notes\": \"A将'Supadari'(超级达令)错译为'蜘蛛侠'是低级错误。\"\n    },\n    \"coherence\": {\n      \"A\": 4,\n      \"B\": 9,\n      \"notes\": \"A的人物设定前后矛盾（被叫'酱'却自称'大叔'）。\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 7,\n      \"notes\": \"A使用了标准的中文引号，B使用了日式引号。\"\n    }\n  },\n  \"key_differences\": [\n    \"角色身份错误：A将主角Hiro错译为自称'大叔'的男性，而原文语境（被称作Hiro-chan、被骂作女人）显示其应为女性或女性向角色。B处理正确。\",\n    \"严重误译：第92段原文'Supadari'（超级达令），A错译为'蜘蛛侠'，B意译为'肌肉大猩猩'（虽不准但好于A）。\",\n    \"拟声词：第99段切菜声，A译对（叩叩叩），B译错（咳咳咳）。\",\n    \"语感：B的描写更具动感（如第1段水坑描写）。\"\n  ],\n  \"final_summary\": \"翻译B在整体质量上完胜。翻译A犯了致命的理解错误，将主角的性别和身份完全搞错（自称'大叔'），导致故事逻辑崩坏，且包含'蜘蛛侠'等离谱的术语误译。翻译B虽然在个别拟声词上有小误，但准确还原了人物关系和轻小说氛围。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9555,
+          "completion_tokens": 5140,
+          "total_tokens": 14695
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 1.0,
+    "scores": {
+      "accuracy": {
+        "A": 3,
+        "B": 8,
+        "notes": "A存在严重的角色性别/身份误判（将女性主角译为'大叔'）及术语误译（'蜘蛛侠'）；B仅有少量拟声词错误。"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 9,
+        "notes": "B的表达更生动自然，符合轻小说语感。"
+      },
+      "style": {
+        "A": 4,
+        "B": 8,
+        "notes": "A的'大叔'口吻与原文氛围完全冲突。"
+      },
+      "terminology": {
+        "A": 2,
+        "B": 7,
+        "notes": "A将'Supadari'(超级达令)错译为'蜘蛛侠'是低级错误。"
+      },
+      "coherence": {
+        "A": 4,
+        "B": 9,
+        "notes": "A的人物设定前后矛盾（被叫'酱'却自称'大叔'）。"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 7,
+        "notes": "A使用了标准的中文引号，B使用了日式引号。"
+      }
+    },
+    "key_differences": [
+      "角色身份错误：A将主角Hiro错译为自称'大叔'的男性，而原文语境（被称作Hiro-chan、被骂作女人）显示其应为女性或女性向角色。B处理正确。",
+      "严重误译：第92段原文'Supadari'（超级达令），A错译为'蜘蛛侠'，B意译为'肌肉大猩猩'（虽不准但好于A）。",
+      "拟声词：第99段切菜声，A译对（叩叩叩），B译错（咳咳咳）。",
+      "语感：B的描写更具动感（如第1段水坑描写）。"
+    ],
+    "final_summary": "翻译B在整体质量上完胜。翻译A犯了致命的理解错误，将主角的性别和身份完全搞错（自称'大叔'），导致故事逻辑崩坏，且包含'蜘蛛侠'等离谱的术语误译。翻译B虽然在个别拟声词上有小误，但准确还原了人物关系和轻小说氛围。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

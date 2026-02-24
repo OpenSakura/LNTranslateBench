@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-13T21:52:33.048499",
+  "sample": "hameln.387647.ch2",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.387647.ch2.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.387647.ch2.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.387647.ch2.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "09ae168707b9343e0f7272188b5588c1e0c66ea157a03f55113be46f698ce1f5",
+    "A": "aedeef7098841724d5a8b199e0e58fee544f15d6705feab386864b29046dc63a",
+    "B": "319fa3e672e44d0c6a3c6f44e820b7022de32846170695c4cd40e10ba0c5da2c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-13T21:54:28.378243",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260114055310407002272i65oMnm6",
+      "judge_response": {
+        "id": "chatcmpl-20260114055310407002272i65oMnm6",
+        "object": "chat.completion",
+        "created": 1768341268,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是针对两份翻译（A和B）的详细评判：\n\n### 详细分析\n\n**1. 准确性 (Accuracy)**\n*   **性别判断 (关键差异):** 原文中叙述者名为“双葉蓮次”（Renji，男性名），自称“俺”（Ore，通常为男性），且被蛭魔称为“Fucking Second”。翻译A在第19段和65段将“双叶”称为“双叶小姐”，这是一个严重的误译，完全改变了角色性别设定。翻译B使用了“前辈”或“先生”，符合原文语境。\n*   **词义理解:**\n    *   第22段原文“ラインはクビ”（Line被炒了/不干了）。翻译B准确译出“被炒了”，翻译A仅译为“线？”，丢失了“不再担任该位置”的含义。\n    *   第6段“囲ってやんだよ”（圈起来/据为己有）。翻译B的“弄到手”比翻译A的“圈过来”更符合中文语境。\n*   **漏译/未翻译:** 翻译A在第25段直接保留了英文单词“position”，这是翻译未完成的表现。\n\n**2. 术语/名称一致性 (Terminology)**\n*   **美式足球术语:**\n    *   **Line (Position):** 原文指“Lineman”（线锋）。翻译B正确译为“线锋”。翻译A直译为“线”，在中文橄榄球语境中指代不清（通常指攻防线，但作为位置名称应为线锋）。\n    *   **Running Back:** 翻译A使用标准的“跑卫”。翻译B在第106段使用了“跑后卫”，这不符合通用术语习惯（通常为跑卫）。\n*   **称呼:** 翻译B对“San”的处理（桑/前辈）比翻译A（小姐）更准确。\n\n**3. 流畅性与风格 (Fluency & Style)**\n*   **对话自然度:** 翻译A的对话流利度普遍优于翻译B。例如第73段，A译为“我求之不得”，B译为“我表示欢迎”（过于生硬）。第13段A的语气更像轻小说中的吐槽，B则比较平淡。\n*   **语感:** 翻译A更贴近中文口语习惯，读起来更像小说。翻译B有时带有“翻译腔”，如第8段“那个一年级”（原文1年，指一年级生），A处理为“一年级生”更自然。\n\n**4. 格式与标点 (Formatting)**\n*   翻译A在第1段使用了日文长音符号“ー”，这在中文出版物中是不规范的。\n*   翻译B正确使用了中文破折号“——”。\n\n### 总结\n虽然翻译A在**流畅性**和**对话风格**上表现更好，读起来更顺畅，但它犯了几个**致命的准确性错误**：\n1.  错误判断主角性别（将男性角色译为“小姐”）。\n2.  术语翻译不到位（“线” vs “线锋”）。\n3.  保留未翻译的英文单词。\n4.  漏译关键动词（“Kubi”/被炒）。\n\n翻译B虽然文笔稍显生硬（如“我表示欢迎”），但在**准确性**和**术语**（除了一处“跑后卫”）上要严谨得多，没有出现改变故事设定的错误。作为翻译，准确传达原意是首要任务。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.9,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 5,\n      \"B\": 9,\n      \"notes\": \"A错误地将叙述者性别译为女性（小姐），且漏译了'kubi'（被炒）的含义。B准确理解了语境和性别。\"\n    },\n    \"fluency\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A的对话更自然、接地气。B略显生硬，有翻译腔（如'我表示欢迎'）。\"\n    },\n    \"style\": {\n      \"A\": 8,\n      \"B\": 6,\n      \"notes\": \"A更符合轻小说口语风格。B较为平铺直叙。\"\n    },\n    \"terminology\": {\n      \"A\": 5,\n      \"B\": 8,\n      \"notes\": \"A将'Line'直译为'线'且保留了英文'position'。B正确译为'线锋'，但在最后一段用了非标准的'跑后卫'。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"A因性别错误导致上下文逻辑（如'Ore'自称）在深层理解上产生违和感。\"\n    },\n    \"formatting\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A使用了日文长音符号。B使用了规范的中文标点。\"\n    }\n  },\n  \"key_differences\": [\n    \"性别错误：A将男性叙述者（Renji/Ore）译为'小姐'，B正确处理为男性/中性。\",\n    \"术语翻译：A将'Line'译为'线'并保留英文'position'；B译为'线锋'并翻译了所有词汇。\",\n    \"准确度：A漏译了'kubi'（被解雇/换位置）的具体含义。\",\n    \"标点：A使用日文长音符，B使用中文破折号。\"\n  ],\n  \"final_summary\": \"翻译B获胜。尽管翻译A的文笔更流畅、对话更生动，但它存在严重的准确性问题，最致命的是将叙述者（双叶莲次）误译为女性（小姐），这改变了角色设定。此外，A在术语翻译上过于草率（直译'线'、保留英文单词）。翻译B虽然文笔稍显生硬，但在理解原文意思、角色性别和专业术语（线锋）上都更加准确，是更可靠的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7992,
+          "completion_tokens": 6447,
+          "total_tokens": 14439
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.9,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A错误地将叙述者性别译为女性（小姐），且漏译了'kubi'（被炒）的含义。B准确理解了语境和性别。"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A的对话更自然、接地气。B略显生硬，有翻译腔（如'我表示欢迎'）。"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说口语风格。B较为平铺直叙。"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A将'Line'直译为'线'且保留了英文'position'。B正确译为'线锋'，但在最后一段用了非标准的'跑后卫'。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "A因性别错误导致上下文逻辑（如'Ore'自称）在深层理解上产生违和感。"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 9,
+        "notes": "A使用了日文长音符号。B使用了规范的中文标点。"
+      }
+    },
+    "key_differences": [
+      "性别错误：A将男性叙述者（Renji/Ore）译为'小姐'，B正确处理为男性/中性。",
+      "术语翻译：A将'Line'译为'线'并保留英文'position'；B译为'线锋'并翻译了所有词汇。",
+      "准确度：A漏译了'kubi'（被解雇/换位置）的具体含义。",
+      "标点：A使用日文长音符，B使用中文破折号。"
+    ],
+    "final_summary": "翻译B获胜。尽管翻译A的文笔更流畅、对话更生动，但它存在严重的准确性问题，最致命的是将叙述者（双叶莲次）误译为女性（小姐），这改变了角色设定。此外，A在术语翻译上过于草率（直译'线'、保留英文单词）。翻译B虽然文笔稍显生硬，但在理解原文意思、角色性别和专业术语（线锋）上都更加准确，是更可靠的翻译。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

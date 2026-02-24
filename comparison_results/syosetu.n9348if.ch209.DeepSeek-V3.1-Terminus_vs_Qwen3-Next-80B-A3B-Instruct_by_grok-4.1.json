@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:48:06.349776",
+  "sample": "syosetu.n9348if.ch209",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n9348if.ch209.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n9348if.ch209.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/syosetu.n9348if.ch209.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "2ee4572e196d1b7e3521befb802835947b674ae99366c490cc15fd14de0cd735",
+    "A": "e242f8b7d55f5cad77e6da903c864d0cfc76430a9d7470950e0036e16b12251b",
+    "B": "953de89c7cd83ca880b9197c9caa735cb7c6c3b20702becbaef74a45225cf76f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:48:25.585728",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DqbJh7aAm8Aom35aBxDTdsKWcDd",
+      "judge_response": {
+        "id": "chatcmpl-89DqbJh7aAm8Aom35aBxDTdsKWcDd",
+        "object": "chat.completion",
+        "created": 1768427305,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 角色名 パピィ〜 マミィ〜 三つ編みちゃん 幼女ちゃん 収穫物 領域畑\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"パピィ〜 マミィ〜 ピクニック プロポーズ 軽小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"site:twitter.com OR site:x.com \"パピィ〜\" \"マミィ〜\" \"三つ編みちゃん\"\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"\"本日二話更新　こっちは一話目\" 轻小说\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"巴マミの平凡な日常\" Comic Fuz](https://comic-fuz.com/manga/191)\n> [🔗 \"みいちゃんと山田さん\" Pixiv](https://dic.pixiv.net/a/%E3%81%BF%E3%81%84%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E5%B1%B1%E7%94%B0%E3%81%95%E3%82%93)\n> [🔗 \"巴マミの平凡な日常 1巻｜無料漫画（マンガ）ならコミックシーモア｜MagicaQuartet/あらたまい\" Cmoa](https://www.cmoa.jp/title/103626)\n> [🔗 \"轻小说合集目录【20180619更新】\" Wordpress](https://homeworkkun.wordpress.com/2018/01/01/lightnovelnames)\n> [🔗 \"Maimai系列/区域 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/Maimai%E7%B3%BB%E5%88%97/%E5%8C%BA%E5%9F%9F)\n> [🔗 \"物语系列 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E7%89%A9%E8%AF%AD%E7%B3%BB%E5%88%97)\n> [🔗 \"輕小說 - 萌娘百科 萬物皆可萌的百科全書\" MoeGirl](https://zh.moegirl.org.cn/zh-hant/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"藥師少女的獨語 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/wiki/%E8%97%A5%E5%B8%AB%E5%B0%91%E5%A5%B3%E7%9A%84%E7%8D%A8%E8%AA%9E)\n> [🔗 \"纸城境介 - 萌娘百科 万物皆可萌的百科全书\" MoeGirl](https://zh.moegirl.org.cn/zh-hans/%E7%BA%B8%E5%9F%8E%E5%A2%83%E4%BB%8B)\n> [🔗 \"Maimai系列/區域 - 萌娘百科 萬物皆可萌的百科全書\" Moegirl](https://zh.moegirl.org.cn/zh-hk/Maimai%E7%B3%BB%E5%88%97/%E5%8C%BA%E5%9F%9F)\n\n> 🔍 **10 results found**\n\n> [🔗 \"パピィ\" Pixiv](https://dic.pixiv.net/a/%E3%83%91%E3%83%94%E3%82%A3)\n> [🔗 \"『水曜日のダウンタウン』8/16(水) ザ･マミィ酒井 プロポーズした彼女の実家がどんなにヤバくてももう引き返せない説【TBS】 - YouTube\" YouTube](https://www.youtube.com/watch?v=h95GXpzTK_E)\n> [🔗 \"ザ・マミィ - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%9E%E3%83%9F%E3%82%A3)\n> [🔗 \"山田パピコおすすめ作品一覧 - 電子書籍ストア ブックライブ\" BookLive](https://booklive.jp/focus/author/a_id/18966)\n> [🔗 \"10年婚活理論 | マミィ |本 | 通販\" Amazon Japan](https://www.amazon.co.jp/10%E5%B9%B4%E5%A9%9A%E6%B4%BB%E7%90%86%E8%AB%96-%E3%83%9E%E3%83%9F%E3%82%A3/dp/4828207074)\n> [🔗 \"キラリ☆彡スター☆トゥインクルプリキュア/パ...\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A9%E3%83%AA%E2%98%86%E5%BD%A1%E3%82%B9%E3%82%BF%E3%83%BC%E2%98%86%E3%83%88%E3%82%A5%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AB%E3%83%97%E3%83%AA%E3%82%AD%E3%83%A5%E3%82%A2/%E3%83%91%E3%83%9A%E3%83%94%E3%83%97%E2%98%86%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%81%E3%83%83%E3%82%AF)\n> [🔗 \"パぺピプ☆ロマンチック\" Pixiv](https://dic.pixiv.net/a/%E3%83%91%E3%81%BA%E3%83%94%E3%83%97%E2%98%86%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%81%E3%83%83%E3%82%AF)\n> [🔗 \"パペピプ☆ロマンチックとは (パペピプロマンチ...\" Niconico](https://dic.nicovideo.jp/a/%E3%83%91%E3%83%9A%E3%83%94%E3%83%97%E2%98%86%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%81%E3%83%83%E3%82%AF)\n> [🔗 \"マミィ(どうぶつの森)\" Pixiv](https://dic.pixiv.net/a/%E3%83%9E%E3%83%9F%E3%82%A3(%E3%81%A9%E3%81%86%E3%81%B6%E3%81%A4%E3%81%AE%E6%A3%AE))\n> [🔗 \"ピピ美\" Pixiv](https://dic.pixiv.net/a/%E3%83%94%E3%83%94%E7%BE%8E)\n\n\n这是一个典型的**轻小说风格**文本，带有日常家庭喜剧+奇幻元素（妖怪/入侵者、領域畑、収穫物等设定），叙述者是第一人称的“入侵者”视角，语气轻松、吐槽向、带点腹黑与萌系可爱。对话多使用拖长音（〜）、叠词、口语化表达，角色昵称可爱化（パピィ〜、マミィ〜、幼女ちゃん、三つ編みちゃん）。\n\n**总体评价**：  \nA翻译更忠实于原文的**可爱、拖长音、口语俏皮感**，在保持轻小说“卖萌+吐槽”的核心风格上更胜一筹；用词更活泼，拟声/语气词处理更自然。  \nB翻译整体更“正经”、书面化一些，部分地方流畅但丢失了原文的**轻快萌味**，某些表达显得生硬或过于直白。\n\n### 详细逐项分析\n\n**准确性（意思保留）**  \n两者整体意思都基本准确，无重大误译。  \nA在一些细微语气（如「そうだ、明日仕事が休みになったんだ」→“突然放假”的惊讶感）和细节（如「ほとぼりもさめた」→“风波差不多也该平息了”更贴合隐瞒身份的语境）稍优。  \nB偶尔改写较多（如段落14把责任推给“爸比”而不是原文的“突然说这种话的パピィ〜が悪ぃ”），轻微损失原意。  \n**A略胜**。\n\n**流畅性（中文自然表达）**  \n两者中文都相当流畅，基本达到商业级轻小说翻译水准。  \nA的口语感更强（如「嚯？」「噢、咋啦？」「嘛，就那样吧」），读起来更像活泼的网络用语/年轻人对话。  \nB有些地方过于规整（如「所以我们去之前说过的附近公园野餐吧」少了点撒娇味；「估计这阵风也该过了吧」听起来略书面）。  \n**A胜出**。\n\n**风格/语气（轻小说叙述/对话）**  \n这是最关键的差异。  \n轻小说尤其是这类家庭+萌系奇幻作品，**语气可爱、拖长音、卖萌、腹黑吐槽**是灵魂。  \nA很好保留了这种感觉：  \n- 频繁使用「～」「呀」「啦」「呢」「咯」等软萌语气助词  \n- 昵称处理统一且可爱（啪吡～、玛咪～、爹地～、妈咪～）  \n- 叙述者吐槽味浓（如「真是恩爱夫妻呢……」「这下……看来是抢不成了……」带点怨念萌）  \n\nB很多地方把拖长音弱化、语气中性化（如「啊啦〜，真好呢〜」→比A的「哎呀～不错呢～」少了一分黏糊可爱；爹地/爸比/帕比等称呼不统一，丢失了原文全家统一用「〜」的卖萌体系）。  \n**A明显更符合轻小说风格**。\n\n**术语/名称一致性**  \n两者都基本保持一致（三股辫酱/三股辫酱、幼女酱、ティミット酱等）。  \n但B在「パピィ〜」「マミィ〜」的音译上不统一（有时帕比、帕皮、妈咪、玛米混用），A更稳定（基本啪吡～/爹地～、玛咪～/妈咪～）。  \n收穫物、領域畑等核心术语两者都保留。  \n**A稍胜**。\n\n**连贯性/可读性**  \n两者段落衔接都很好，阅读体验顺畅。  \nA因语气统一、萌度更高，整体读起来更“带感”、沉浸感强；B偶尔显得平淡。  \n**A胜**。\n\n**格式/标点符号**  \n两者都使用了合适的波浪号（〜）、感叹号、问号，拟声词处理得当。  \nA在拖长音、叠词（如「パタパタ」「啪嗒啪嗒」）上更细腻。  \n**几乎持平，A微胜**。\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"两者意思基本准确，A在语气细节保留上更细腻\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A的口语化更自然生动，B稍显规整\"},\n    \"style\": {\"A\": 10, \"B\": 7, \"notes\": \"A很好保留了轻小说特有的萌系、拖长音、吐槽风格；B丢失较多可爱感和卖萌语气，这是最大差距\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"A的角色昵称音译更统一稳定\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A整体语气连贯，阅读沉浸感更强\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点与格式处理都很到位，A在拖长音使用上更到位\"}\n  },\n  \"key_differences\": [\n    \"A更忠实保留原文的拖长音（〜）与可爱语气助词，B常弱化或省略，导致萌度下降\",\n    \"角色家庭昵称（パピィ〜/マミィ〜）A统一且卖萌，B出现多种写法较混乱\",\n    \"A的叙述者吐槽与内心OS更带腹黑萌味，B更平实中性\",\n    \"对话整体A更活泼撒娇，B更像普通家庭对话\"\n  ],\n  \"final_summary\": \"A在轻小说最重要的风格与语气捕捉上大幅领先，整体更贴近原作的萌系+吐槽氛围，可读性与代入感更强，是明显更好的翻译。B准确流畅但缺少灵魂，适合偏好正经文风的读者，但不符合典型轻小说爱好者的期待。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11260,
+          "completion_tokens": 3985,
+          "total_tokens": 15245
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "两者意思基本准确，A在语气细节保留上更细腻"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的口语化更自然生动，B稍显规整"
+      },
+      "style": {
+        "A": 10,
+        "B": 7,
+        "notes": "A很好保留了轻小说特有的萌系、拖长音、吐槽风格；B丢失较多可爱感和卖萌语气，这是最大差距"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A的角色昵称音译更统一稳定"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A整体语气连贯，阅读沉浸感更强"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点与格式处理都很到位，A在拖长音使用上更到位"
+      }
+    },
+    "key_differences": [
+      "A更忠实保留原文的拖长音（〜）与可爱语气助词，B常弱化或省略，导致萌度下降",
+      "角色家庭昵称（パピィ〜/マミィ〜）A统一且卖萌，B出现多种写法较混乱",
+      "A的叙述者吐槽与内心OS更带腹黑萌味，B更平实中性",
+      "对话整体A更活泼撒娇，B更像普通家庭对话"
+    ],
+    "final_summary": "A在轻小说最重要的风格与语气捕捉上大幅领先，整体更贴近原作的萌系+吐槽氛围，可读性与代入感更强，是明显更好的翻译。B准确流畅但缺少灵魂，适合偏好正经文风的读者，但不符合典型轻小说爱好者的期待。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:42:42.376588",
+  "sample": "kakuyomu.822139839692538850.ch10",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.822139839692538850.ch10.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.822139839692538850.ch10.GLM-4.6.translated.txt",
+    "B": "translated_results/kakuyomu.822139839692538850.ch10.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "b071349c418e1c88bee0cfcbe9f89a18797ee15c829b69c0b9a14b3a123a1cfe",
+    "A": "9da14f27e0ae131d2bd59205b61673cd7dc3bfcf4dc30e6692d8340a0f675f5b",
+    "B": "cfcc587ae46bfc5057aaa3a23484b9e28eeacd56da11db7a1d6752e9f985bf4d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:43:01.862277",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89D86WyRe8MePhLJla58bkto04DOq",
+      "judge_response": {
+        "id": "chatcmpl-89D86WyRe8MePhLJla58bkto04DOq",
+        "object": "chat.completion",
+        "created": 1768426981,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 日文到中文翻译 常见人名 ユーリア シオン ポプラ 翻译\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"轻小说翻译 席恩 尤莉娅 波普拉 标准译名\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [zh.wikipedia.org](https://zh.wikipedia.org/wiki/轻小说)\n> 📋 **Task:** 提取轻小说中文翻译中常见的翻译风格、语气要求、自然度与准确性平衡的说明，以及人名音译惯例，尤其是带有常见日式发音的名字如Yuria, Shion, Popura。\n\n> 🔍 **10 results found**\n\n> [📚 \"FAIRY TAIL魔導少年角色列表- 維基百科\" zh.wikipedia.org](https://zh.wikipedia.org/wiki/FAIRY_TAIL%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8)\n> [🔗 \"社会科学文本翻译指南\" www.acls.org](https://www.acls.org/wp-content/uploads/2022/04/Guidelines-for-the-Translation-of-Social-Science-Texts-Chinese.pdf)\n> [🔗 \"wikilex-20070908-zh-en.txt - CMU School of Computer Science\" www.cs.cmu.edu](https://www.cs.cmu.edu/afs/cs.cmu.edu/project/cmt-40/Nice/Transfer/Chinese/wikilex-20070908-zh-en.txt)\n> [🔗 \"复旦MPAcc 读书会简介 - 复旦大学管理学院\" www.fdsm.fudan.edu.cn](https://www.fdsm.fudan.edu.cn/_upload/article/files/28/65/cd1670844d8397a8bf984d9e36ed/78afe921-b887-4ef1-a354-3eb5fea4df7c.pdf)\n> [🔗 \"中欧误解辞典:中国和欧洲的视野 - EEAS\" www.eeas.europa.eu](https://www.eeas.europa.eu/sites/default/files/documents/2025/Dictionary%20of%20Misunderstandings_CN.pdf)\n> [🔗 \"[别点我]Web翻译，点击开彩蛋 - Re:Zero Wiki - Fandom\" rezero.fandom.com](https://rezero.fandom.com/zh/f?catId=4400000000000005617)\n> [🔗 \"鄂托克前旗第一中学采购图书目录明细表\" www.ccgp-neimenggu.gov.cn](https://www.ccgp-neimenggu.gov.cn/gpx-bid-file/150623/gpx-tender/2024/7/31/402881cc90b170830191080f220d5596.pdf?accessCode=6865116e113b43f2699c6c1588871534)\n> [🔗 \"2016年度需中检的一般项目一览表 - 教育部\" www.moe.gov.cn](http://www.moe.gov.cn/s78/A13/tongzhi/201606/W020160614343277036956.pdf)\n> [🔗 \"wch1de1.pdf.txt\" www.tdx.cat](https://www.tdx.cat/bitstream/10803/123206/2/wch1de1.pdf.txt)\n> [🔗 \"希尔瓦娜斯·风行者 - 魔兽世界中文维基- 灰机wiki\" warcraft.huijiwiki.com](https://warcraft.huijiwiki.com/wiki/%E5%B8%8C%E5%B0%94%E7%93%A6%E5%A8%9C%E6%96%AF%C2%B7%E9%A3%8E%E8%A1%8C%E8%80%85)\n\n> 🔍 **1 results found**\n\n> [📚 \"輕小說 - 维基百科，自由的百科全书\" zh.wikipedia.org](https://zh.wikipedia.org/wiki/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n\n\n**作为公正的轻小说翻译评判员，我将对A和B两个版本进行详细比较分析。**\n\n整体而言，这是一段典型的轻小说第一人称内心独白+对话叙述，带有强烈的少女情感纠葛、自我否定与轻微的戏剧张力。原文语气偏向口语化、内省、略带自嘲与苦涩，叙述节奏较快，句子短促，适合年轻读者。\n\n### 详细分析\n\n**1. 准确性（意思保留）**  \nA在绝大多数段落更贴近原文的字面意思和细微语气，例如段落2中「ことあるごとに」译为“动不动就”，比B的“总是时不时”更直接准确；段落6中「素知らぬ顔をして」A用“装作若无其事的样子”更符合原文的“装傻”感，B稍显平淡。段落15、21、50、91等关键情感爆发处，A的用词也更忠实（如“和平ボケした”→“和平安逸到麻木” vs B的“麻痹了的和平”）。  \nB偶尔有轻微改写或润色导致意思略偏，例如段落96中出现英文“somewhere”，属于明显失误。  \n**A略胜**。\n\n**2. 流畅性（中文自然表达）**  \n两者中文都很流畅，都属于合格的轻小说翻译水准。  \nA的句子有时稍显直译感（如段落3“只是随便留长、也没怎么打理的长长黑发”），但整体仍自然。  \nB在很多地方更注重中文阅读节奏，例如段落34的“诶～？我两只手都占着好麻烦啊，快吃一根啦”比A更口语、生动活泼，符合日常对话感；段落40、91等处的表达也更顺。B在对话部分的口语化处理整体更胜一筹。  \n**B略胜**。\n\n**3. 风格/语气（轻小说叙述/对话）**  \n轻小说强调“代入感强、情绪直接、少女内心戏细腻”。  \nA保留了原文较多的冷淡、自责、苦涩感（如段落7“我不爽”、段落17“我算什么啊”、段落81“吓得我浑身一僵”），更接近原文略带腹黑/自虐的叙述语气。  \nB倾向于稍作柔化或现代化（如段落7“真让人不爽”、段落21“根本什么都不懂”），有时会让语气显得更“可爱”或“中二”，但偶尔丢失原文的尖锐感（如段落50的怒吼部分，B稍显温和）。  \nA在保持轻小说“病娇/自毁倾向”风格上更到位。**A胜**。\n\n**4. 术语/名称一致性**  \n- 人名：ユーリア统一为“尤莉娅”（A）、“尤莉娅”（B），一致。  \n- シオン统一为“席恩”，一致。  \n- ポプラ统一为“波普拉”，一致。  \n- 其他：黑曜石刀刃A用“黑曜石的刀刃”，B用“黑曜之刃”（更轻小说风），但不影响一致性。  \n两者均无明显前后不一致问题。**平手**。\n\n**5. 连贯性/可读性**  \nA整体连贯性强，段落间情绪递进自然，读起来像连续的内心流。  \nB在某些段落（如15、34、50）通过更活泼的口语提升了节奏感与可读性，但少数地方（如段落96的英文残留）破坏连贯。  \n整体A的连贯性更好，B的可读性（尤其是对话）略高。**A微胜**。\n\n**6. 格式/标点符号**  \n两者格式基本一致，都很好地保留了原文的换行、引号、顿号等轻小说特色。  \nB在个别地方（如段落34的长对话）标点更符合中文习惯，读起来更舒服。**B微胜**。\n\n### 关键差异总结\n- A更忠实原文，语气更尖锐、苦涩，适合保留轻小说原汁原味的读者。\n- B更注重中文流畅与口语化，对话更生动，但个别地方牺牲了准确性与原文情绪强度（如段落96失误、部分情感柔化）。\n- 整体质量差距不大，但A在轻小说核心的“情绪真实度”与“准确性”上占优。\n\n**最终判决**\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 7, \"notes\": \"A整体更贴近原文字面与细微语气，B有少量改写/失误\"},\n    \"fluency\": {\"A\": 8, \"B\": 9, \"notes\": \"B对话更口语自然，A稍直译但仍流畅\"},\n    \"style\": {\"A\": 9, \"B\": 8, \"notes\": \"A更好地保留了原文的自责、苦涩与尖锐轻小说感，B略柔化\"},\n    \"terminology\": {\"A\": 10, \"B\": 9, \"notes\": \"两者名称一致，B个别地方如'黑曜之刃'更风格化但无大错\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A情绪连贯更自然，B个别失误影响阅读\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者格式均优秀，B对话标点稍优\"}\n  },\n  \"key_differences\": [\n    \"A更忠实原文语气与情绪强度（自责、苦涩感更强）\",\n    \"B对话更口语化、生动，但准确性与风格一致性稍逊\",\n    \"B存在个别明显失误（如英文残留），影响整体评价\"\n  ],\n  \"final_summary\": \"A在轻小说最重要的准确性、风格还原与情绪真实度上更胜一筹，虽然B的中文阅读流畅度更高，但综合来看A是更好的翻译版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14097,
+          "completion_tokens": 3103,
+          "total_tokens": 17200
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 7,
+        "notes": "A整体更贴近原文字面与细微语气，B有少量改写/失误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9,
+        "notes": "B对话更口语自然，A稍直译但仍流畅"
+      },
+      "style": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更好地保留了原文的自责、苦涩与尖锐轻小说感，B略柔化"
+      },
+      "terminology": {
+        "A": 10,
+        "B": 9,
+        "notes": "两者名称一致，B个别地方如'黑曜之刃'更风格化但无大错"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A情绪连贯更自然，B个别失误影响阅读"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式均优秀，B对话标点稍优"
+      }
+    },
+    "key_differences": [
+      "A更忠实原文语气与情绪强度（自责、苦涩感更强）",
+      "B对话更口语化、生动，但准确性与风格一致性稍逊",
+      "B存在个别明显失误（如英文残留），影响整体评价"
+    ],
+    "final_summary": "A在轻小说最重要的准确性、风格还原与情绪真实度上更胜一筹，虽然B的中文阅读流畅度更高，但综合来看A是更好的翻译版本。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

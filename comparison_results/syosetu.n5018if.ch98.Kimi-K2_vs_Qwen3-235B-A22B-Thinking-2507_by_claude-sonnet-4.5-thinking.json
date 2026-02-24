@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:46:55.618008",
+  "sample": "syosetu.n5018if.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5018if.ch98.txt",
+  "models": {
+    "model_1": "Kimi-K2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5018if.ch98.Kimi-K2.translated.txt",
+    "B": "translated_results/syosetu.n5018if.ch98.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "d020f0ab31cb7abcf39d996048b2420eaf97ce547df801cd9e7ded80e887496a",
+    "A": "f4b26e2ca94ba569f2d8113bead3f25972e7e6a1e727153311a389663f1d533b",
+    "B": "129ee2575df7bac308c6d5190c830a05eacead9398c995deeba4ef0a918fb90a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:47:52.319793",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "01746d2c-08fd-475b-bec1-9fc8f63c6c9e",
+      "judge_response": {
+        "id": "01746d2c-08fd-475b-bec1-9fc8f63c6c9e",
+        "object": "chat.completion",
+        "created": 1768488472,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 详细分析\n\n### 1. 准确性\n- **翻译A**：大部分意思保留准确，但在段落1将\"ラッシュガード\"译为\"防晒衣\"更精确；段落11\"脑袋被她这颜值炸得当场宕机\"是意译但传达了原意\n- **翻译B**：段落1将\"ラッシュガード\"译为\"泳衣\"不够精确；段落46\"即使后来也能看出来一样地显眼\"翻译混乱；段落78\"下体难受的声音\"表达不当\n\n### 2. 流畅性\n- **翻译A**：中文表达自然流畅，如\"脑袋被她这颜值炸得当场宕机\"、\"笑眯眯地在那边擦火花\"等都很符合现代中文口语习惯\n- **翻译B**：多处生硬直译，如\"被那个美丽迷住了，头脑不可能立刻运转起来\"、\"整个姿态都由美构成，仿佛在诉说\"等表达不够自然\n\n### 3. 风格/语气\n- **翻译A**：很好地把握了轻小说的轻松、活泼风格，用词生动，如\"蹦了出来\"、\"扭动的样子也超赞的\"、\"感觉会被骂死\"\n- **翻译B**：风格较为平淡，缺乏轻小说的趣味性，如\"露出了仿佛要溢出来的丰硕果实\"过于正式\n\n### 4. 术语一致性\n- **翻译A**：术语使用一致，\"防晒/乳液\"、\"泳装\"等\n- **翻译B**：术语使用一致，\"防晒霜/按摩油\"，但\"按摩油\"用于日焼け止めローション不太恰当\n\n### 5. 连贯性\n- **翻译A**：上下文衔接流畅，阅读体验好\n- **翻译B**：部分句子断句奇怪，如段落54、62等句末不完整\n\n### 6. 格式\n- **翻译A**：标点符号使用规范\n- **翻译B**：部分对话标点不完整（如段落54、55、56等）\n\n## 关键差异\n\n1. **口语化程度**：A更口语化自然，B较为书面生硬\n2. **轻小说风格**：A更贴合轻小说的活泼趣味，B过于直译\n3. **表达准确性**：A在意译时保持了准确性，B部分直译反而造成语义不清\n4. **完整性**：B有多处句子不完整的问题\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"A在关键词汇（如ラッシュガード）翻译更准确，B有部分语义混乱（如段落46、78）\"} ,\n    \"fluency\": {\"A\": 9, \"B\": 6, \"notes\": \"A表达自然流畅符合中文习惯，B多处生硬直译\"} ,\n    \"style\": {\"A\": 9, \"B\": 6, \"notes\": \"A很好把握轻小说轻松活泼风格，B过于平淡正式\"} ,\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A术语使用恰当一致，B将ローション译为按摩油不够准确\"} ,\n    \"coherence\": {\"A\": 9, \"B\": 6, \"notes\": \"A上下文连贯阅读流畅，B部分句子断句不完整影响可读性\"} ,\n    \"formatting\": {\"A\": 10, \"B\": 7, \"notes\": \"A标点完整规范，B多处对话标点不完整\"}\n  },\n  \"key_differences\": [\n    \"A采用更口语化、贴近轻小说风格的表达，B过于直译导致生硬\",\n    \"A在意译时保持准确性和趣味性，B部分直译反而造成语义不清\",\n    \"B存在多处句子不完整的格式问题，影响阅读体验\",\n    \"A对敏感内容的处理更符合语境和人物性格，B表达较为生硬\"\n  ],\n  \"final_summary\": \"翻译A在各方面都明显优于翻译B。A成功把握了轻小说的轻松活泼风格，使用口语化且自然的中文表达，同时保持了较高的准确性。相比之下，B过于依赖直译，导致表达生硬、缺乏趣味性，且存在多处句子不完整和语义混乱的问题。对于轻小说这一文体，A的翻译质量明显更适合目标读者群。\" \n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10861,
+          "completion_tokens": 2318,
+          "total_tokens": 13179
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "A在关键词汇（如ラッシュガード）翻译更准确，B有部分语义混乱（如段落46、78）"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 6,
+        "notes": "A表达自然流畅符合中文习惯，B多处生硬直译"
+      },
+      "style": {
+        "A": 9,
+        "B": 6,
+        "notes": "A很好把握轻小说轻松活泼风格，B过于平淡正式"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A术语使用恰当一致，B将ローション译为按摩油不够准确"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 6,
+        "notes": "A上下文连贯阅读流畅，B部分句子断句不完整影响可读性"
+      },
+      "formatting": {
+        "A": 10,
+        "B": 7,
+        "notes": "A标点完整规范，B多处对话标点不完整"
+      }
+    },
+    "key_differences": [
+      "A采用更口语化、贴近轻小说风格的表达，B过于直译导致生硬",
+      "A在意译时保持准确性和趣味性，B部分直译反而造成语义不清",
+      "B存在多处句子不完整的格式问题，影响阅读体验",
+      "A对敏感内容的处理更符合语境和人物性格，B表达较为生硬"
+    ],
+    "final_summary": "翻译A在各方面都明显优于翻译B。A成功把握了轻小说的轻松活泼风格，使用口语化且自然的中文表达，同时保持了较高的准确性。相比之下，B过于依赖直译，导致表达生硬、缺乏趣味性，且存在多处句子不完整和语义混乱的问题。对于轻小说这一文体，A的翻译质量明显更适合目标读者群。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

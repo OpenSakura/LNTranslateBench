@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:02:36.816572",
+  "sample": "pixiv.990872.ch3",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.990872.ch3.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.990872.ch3.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/pixiv.990872.ch3.Qwen3-235B-A22B-Thinking-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "8d7940ea295d91b11e26d2f774b31dc7bc886aa78e074932510058714d6d9304",
+    "A": "59564001075194fe8a25810479804d22f76a6a95dfcbacd04a3e936b3627c5bb",
+    "B": "19801d6f59ff105966449099a18b65eb7ead9c103dc633883dc03fd44ddfeef1"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:03:19.213162",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "183a4c0e-4490-4173-a6f8-50e6fbdf1bd4",
+      "judge_response": {
+        "id": "183a4c0e-4490-4173-a6f8-50e6fbdf1bd4",
+        "object": "chat.completion",
+        "created": 1768431799,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**段落2**：原文「某見た目は子供名探偵夢」\n- A「某位外表看似小孩的名侦探梦」- 理解正确，这是\"名侦探柯南\"的梗\n- B「某人外表是小孩名侦探的梦」- 语法理解有误\n\n**段落13**：原文「萩原」\n- A 错写为「荻原」，这是人名错误\n- B 正确保留「萩原」\n\n**段落45**：原文「おばさん」\n- A「阿姨」正确\n- B「姑姑」错误，这里指食堂工作人员\n\n**段落54**：原文「逆ムルシエラゴ」\n- A「逆穆尔西耶拉戈」正确（兰博基尼车型，与后文普锐斯、燃油效率呼应）\n- B「逆莫西干」完全错误\n\n**段落11**：原文「ゲストの時意外」应为「以外」\n- A「除了意外情况」理解有偏差\n- B「还意外地」同样误解\n\n### 流畅性与风格分析\n\nB的翻译整体更口语化：\n- 「好困啊」「盼星星盼月亮」「小意思」「靠」等表达更贴合轻小说风格\n- A较为书面化：「翘首以盼」「不胜感激」\n\n但B在某些段落丢失了对话引号（段落66-71），格式不一致。\n\n### 格式问题\n\n- B保留了日文「」『』的区分（用于区分不同角色或内心独白），但后半部分格式混乱\n- A统一使用\"\"，虽然丢失了原文格式特色，但保持一致\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A车名翻译正确，B将ムルシエラゴ误译为莫西干，おばさん误译为姑姑；但A将萩原误写为荻原\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，A部分表达较生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B的轻小说风格把握更好，用语活泼\"},\n    \"terminology\": {\"A\": 7, \"B\": 5, \"notes\": \"A专有名词（车名）正确，B关键术语错误影响理解\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者整体可读性相近\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"B后半段对话引号丢失严重，格式混乱\"}\n  },\n  \"key_differences\": [\n    \"车名ムルシエラゴ：A正确译为穆尔西耶拉戈，B误译为莫西干\",\n    \"A将萩原误写为荻原（人名错误）\",\n    \"B将おばさん误译为姑姑\",\n    \"B后半部分对话格式丢失\",\n    \"B整体语言风格更贴合轻小说\"\n  ],\n  \"final_summary\": \"A在关键术语（车名与上下文燃油效率讨论呼应）和格式一致性上更可靠，虽然有一处人名笔误。B风格更活泼但有重大翻译错误（车名、称谓）和格式问题。综合考虑准确性权重较高，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11838,
+          "completion_tokens": 1921,
+          "total_tokens": 13759
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A车名翻译正确，B将ムルシエラゴ误译为莫西干，おばさん误译为姑姑；但A将萩原误写为荻原"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，A部分表达较生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的轻小说风格把握更好，用语活泼"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 5,
+        "notes": "A专有名词（车名）正确，B关键术语错误影响理解"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者整体可读性相近"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "B后半段对话引号丢失严重，格式混乱"
+      }
+    },
+    "key_differences": [
+      "车名ムルシエラゴ：A正确译为穆尔西耶拉戈，B误译为莫西干",
+      "A将萩原误写为荻原（人名错误）",
+      "B将おばさん误译为姑姑",
+      "B后半部分对话格式丢失",
+      "B整体语言风格更贴合轻小说"
+    ],
+    "final_summary": "A在关键术语（车名与上下文燃油效率讨论呼应）和格式一致性上更可靠，虽然有一处人名笔误。B风格更活泼但有重大翻译错误（车名、称谓）和格式问题。综合考虑准确性权重较高，A略胜。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

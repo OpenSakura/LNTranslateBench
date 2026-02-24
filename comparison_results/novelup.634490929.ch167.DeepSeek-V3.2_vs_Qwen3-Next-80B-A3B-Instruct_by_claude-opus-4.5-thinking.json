@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:38:39.504169",
+  "sample": "novelup.634490929.ch167",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.634490929.ch167.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.634490929.ch167.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/novelup.634490929.ch167.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "32eb13be72e0747f319c67077645057ceb552d1d8f1248f9660d1a8d68e7f568",
+    "A": "bff505e242de0993f537359af5342818be789a811ede429006f5a51446dcde57",
+    "B": "f81fa62b38ce8c1ca5f8b551860add1fdc9931311db3b66f135acd6e34df030d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:39:26.689568",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4ff03958-79c3-483b-b559-c159db2407c1",
+      "judge_response": {
+        "id": "4ff03958-79c3-483b-b559-c159db2407c1",
+        "object": "chat.completion",
+        "created": 1768423166,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项分析\n\n### 1. 准确性\n- **段落7**：A完全缺失翻译，这是严重问题\n- **段落15**：A译为\"怎么能一直被观众的心夺走\"理解有误，原文是\"观众的心被对方夺走让人恼火\"，B理解正确\n- **段落34**：A将「ムラサキガール」译为\"杨村女孩\"是明显错误，B译为\"夜紫发少女\"更合理（紫=むらさき）\n- **段落64**：A\"故作镇定不下去了\"不如B\"沉不住气了\"准确\n\n### 2. 流畅性\n- A某些表达更口语化（如段落5\"都这种时候了\"）\n- B整体更贴近原文结构，有时略显生硬（如段落43\"关节技、只会被...\"）\n- 段落50：A\"简直像被弹飞一样\"不如B\"以滑稽的姿势被轰飞\"贴合原文「面白いほど」\n\n### 3. 风格/语气\n- B的\"的说\"（デス）保留了角色语癖特征\n- A段落51「呃，啊」不如B「咕、哈」更符合受击时的拟声\n\n### 4. 术语一致性\n- **Doctor**：A不一致（博士/Doctor混用），B基本统一为\"Doctor\"\n- **キバテビ**：A混用（基テ比/キバテビ），B也不一致（牙飞比组合/噬咬节拍）\n- **タツミ**：A\"塔茨米\"音译，B\"龙美\"意译，各有道理\n\n### 5. 格式问题\n- **段落2-3**：A出现严重格式错误「『拒绝！！「」，B正确「「拒绝！！」」\n- A在引号使用上不统一（有时「」有时\"\"）\n- B整体格式更规范\n\n### 6. 连贯性\n- A缺失段落7导致上下文断裂\n- B整体叙事连贯\n\n---\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A缺失段落7翻译，段落15、34有理解错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A口语化略好，B结构略生硬，总体持平\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"B更好保留角色语癖（デス→的说），拟声词处理更佳\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A专有名词不一致且有明显误译（杨村女孩），B较统一\"},\n    \"coherence\": {\"A\": 5, \"B\": 8, \"notes\": \"A缺失翻译导致断裂，B叙事完整\"},\n    \"formatting\": {\"A\": 4, \"B\": 8, \"notes\": \"A段落2-3格式严重错误，引号使用混乱\"}\n  },\n  \"key_differences\": [\n    \"A缺失段落7整段翻译\",\n    \"A段落2-3格式错误（括号不匹配）\",\n    \"A将ムラサキガール误译为「杨村女孩」\",\n    \"A对Doctor/博士称呼不统一\",\n    \"B更好地保留了角色语癖特征\"\n  ],\n  \"final_summary\": \"B在准确性、格式规范和术语一致性方面明显优于A。A存在严重的缺失翻译（段落7）、格式错误（段落2-3）和误译（杨村女孩）等问题。虽然A在某些口语化表达上略有优势，但无法弥补其结构性缺陷。综合评判B为更优翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10688,
+          "completion_tokens": 2100,
+          "total_tokens": 12788
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A缺失段落7翻译，段落15、34有理解错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A口语化略好，B结构略生硬，总体持平"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "B更好保留角色语癖（デス→的说），拟声词处理更佳"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A专有名词不一致且有明显误译（杨村女孩），B较统一"
+      },
+      "coherence": {
+        "A": 5,
+        "B": 8,
+        "notes": "A缺失翻译导致断裂，B叙事完整"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 8,
+        "notes": "A段落2-3格式严重错误，引号使用混乱"
+      }
+    },
+    "key_differences": [
+      "A缺失段落7整段翻译",
+      "A段落2-3格式错误（括号不匹配）",
+      "A将ムラサキガール误译为「杨村女孩」",
+      "A对Doctor/博士称呼不统一",
+      "B更好地保留了角色语癖特征"
+    ],
+    "final_summary": "B在准确性、格式规范和术语一致性方面明显优于A。A存在严重的缺失翻译（段落7）、格式错误（段落2-3）和误译（杨村女孩）等问题。虽然A在某些口语化表达上略有优势，但无法弥补其结构性缺陷。综合评判B为更优翻译。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

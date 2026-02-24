@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:07:52.260228",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-V3.1-Terminus"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Kimi-K2.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.DeepSeek-V3.1-Terminus.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "c2ef4892f4b0f38559dd10a5a07fb7bdf663c91c07bf1f813ee06ae7ed15fe98",
+    "B": "c6c4fd99df1fb22b164b793a7360eef74cc9ffce25d3ec7688d705e0ba4834f3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:09:33.350579",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "9696b60a-318d-4b15-82bb-889782975eda",
+      "judge_response": {
+        "id": "9696b60a-318d-4b15-82bb-889782975eda",
+        "object": "chat.completion",
+        "created": 1768421372,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 整体风格观察\n\n**翻译A** 采用较为口语化、活泼的风格，大量使用网络用语和俗语（如\"贼狡猾\"、\"人气爆棚\"、\"菜\"、\"这货\"等）。\n\n**翻译B** 采用较为正式、书面化的表达，语言更加规范标准。\n\n---\n\n### 逐项分析\n\n**1. 准确性**\n- A在部分地方存在意译过度：如段落26\"肉は食用に向いている\"译为\"肉很好吃\"（原意是\"适合食用\"）；段落111添加了\"秃顶\"\n- B整体更忠于原文，但段落44\"极其弱火\"表达不自然（应为\"怕火\"）\n\n**2. 流畅性**\n- A的口语化表达虽然活泼，但部分过于随意（如段落39\"皮可就是这货\"）\n- B较为流畅但有时略显生硬（如段落76\"试图被撕咬脖颈\"语法有问题）\n\n**3. 风格/语气**\n- A更符合轻小说的轻松氛围，如\"萌哒哒\"、\"超棘手\"等\n- B偏正式，有时缺乏轻小说应有的趣味性\n\n**4. 术语一致性**\n- A：トレント统一译为\"特伦特\"，但段落93\"デュラハンギャロップ\"突然译为\"无头骑士的疾驰\"与前文不一致\n- B：トレント译为\"树精\"，但段落82突然改用\"雪巨木/冰巨木\"，与前后文\"雪树精/冰树精\"不一致\n\n**5. 名称翻译**\n- 段落3：A\"猫头熊\" vs B\"枭熊\"——B更简洁文雅\n- 段落27：A\"披风狼\" vs B\"绵毛狼\"——B更贴合原文\"もこもこした毛\"\n- 段落77：A\"特伦特\" vs B\"树精\"——B意译更符合中文习惯\n- 段落98：A\"冰羽鹫\" vs B\"弗雷斯贝尔克\"——A意译更易理解\n\n---\n\n```json\n{\n  \"winner\": \"tie\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更忠实原文，A有过度意译现象\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化流畅，B部分表达略生硬如段落76\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说活泼风格，B偏正式\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"两者均有不一致问题，B段落82问题更突出\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范程度相近\"}\n  },\n  \"key_differences\": [\n    \"A口语化风格vs B书面化风格\",\n    \"A部分过度意译vs B偶有生硬表达\",\n    \"怪物名称翻译策略不同（音译vs意译）\",\n    \"两者均存在术语一致性问题\"\n  ],\n  \"final_summary\": \"两个翻译各有优劣。A在风格上更符合轻小说的轻松氛围，读起来更生动有趣，但存在过度意译和添加内容的问题；B在准确性上表现更好，但风格过于正式，且段落82出现明显的术语不一致问题。综合考虑轻小说文体特点与翻译准确性的平衡，两者的优缺点相互抵消，判定为平局。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11694,
+          "completion_tokens": 4329,
+          "total_tokens": 16023
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "tie",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更忠实原文，A有过度意译现象"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化流畅，B部分表达略生硬如段落76"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说活泼风格，B偏正式"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "两者均有不一致问题，B段落82问题更突出"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范程度相近"
+      }
+    },
+    "key_differences": [
+      "A口语化风格vs B书面化风格",
+      "A部分过度意译vs B偶有生硬表达",
+      "怪物名称翻译策略不同（音译vs意译）",
+      "两者均存在术语一致性问题"
+    ],
+    "final_summary": "两个翻译各有优劣。A在风格上更符合轻小说的轻松氛围，读起来更生动有趣，但存在过度意译和添加内容的问题；B在准确性上表现更好，但风格过于正式，且段落82出现明显的术语不一致问题。综合考虑轻小说文体特点与翻译准确性的平衡，两者的优缺点相互抵消，判定为平局。"
+  },
+  "outcome": "tie",
+  "winner_model": null
+}

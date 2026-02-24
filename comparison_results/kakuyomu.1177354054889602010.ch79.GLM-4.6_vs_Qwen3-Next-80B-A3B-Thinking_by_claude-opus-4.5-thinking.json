@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:24:37.246292",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.GLM-4.6.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "f29e68433b642fe156f22460238028f4103a2e6f3a4a95ae642ede721408a2a8",
+    "B": "e53e7b27d0bc402e18148fe2681605e88e811cfd7559bb3aba0ecb74109007db"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:25:24.191322",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "04379e0e-ac83-4728-a86b-dcfffffab4fe",
+      "judge_response": {
+        "id": "04379e0e-ac83-4728-a86b-dcfffffab4fe",
+        "object": "chat.completion",
+        "created": 1768422323,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 详细分析\n\n### 1. 准确性\n- **段落14**：B将「ゴーブラ」错译为\"哥布林\"，这是严重错误。ゴーブラ是专有名词（角色名），A正确译为\"戈布拉\"\n- **段落42**：「倍の一万」意为\"翻倍即一万\"，A正确译\"翻倍，足足一万\"，B错译为\"两万\"（数字错误）\n- **段落71**：「ゴブリンジャイアント」A译\"哥布林巨人\"准确，B译\"巨魔\"不准确\n- **段落49**：A保留了\"气\"的概念，B省略\n\n### 2. 流畅性\n- A整体句式更完整自然，如段落53的解释性翻译\n- B部分段落过于简略，如段落70出现奇怪断句\"就在这时、我们从背后偷袭、\"\n\n### 3. 风格/语气\n- A保持轻小说的叙述风格，语气词使用恰当（\"呵呵\"、\"啊\"）\n- B部分对话过于简短，如段落8「嗯，没事。说说看」缺少古风语气\n- 段落50：A译\"父亲大人\"vs B译\"老爸\"，A更符合幻想世界的语境\n\n### 4. 术语一致性\n- **角色名**：A将ゴブラル译为\"戈布兰\"（音译不够准确），B译\"哥布拉尔\"更接近原音\n- **段落47**：A未翻译マゼル保留原文，B正确译为\"玛泽尔\"\n- 但B在段落14的ゴーブラ翻译错误是致命伤\n\n### 5. 格式问题\n- B的段落70、74等多处出现不规范顿号「、」代替逗号\n- A格式统一规范\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B在段落14将专有名词ゴーブラ误译为哥布林，段落42数字翻译错误（一万vs两万）\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A句式完整自然，B部分段落过于简略且有断句问题\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A更符合轻小说幻想世界语境，B部分用语过于现代口语化\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A的戈布兰音译略有偏差但一致，B虽有更准确的哥布拉尔但出现严重专名错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A叙述连贯，B部分段落跳跃感强\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B多处使用不规范顿号断句\"}\n  },\n  \"key_differences\": [\n    \"段落14：A正确识别ゴーブラ为专有名词，B错译为哥布林\",\n    \"段落42：兵力数字A正确(一万)，B错误(两万)\",\n    \"段落47：A未翻译マゼル，B正确翻译为玛泽尔\",\n    \"整体风格：A更完整正式，B更简略口语化\"\n  ],\n  \"final_summary\": \"翻译A在准确性和流畅性上整体优于B。虽然A在角色名音译上略有偏差，但B出现了关键性错误（段落14专名误译、段落42数字错误），且多处格式不规范。A的轻小说叙述风格把握更好，是更可靠的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12598,
+          "completion_tokens": 2067,
+          "total_tokens": 14665
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B在段落14将专有名词ゴーブラ误译为哥布林，段落42数字翻译错误（一万vs两万）"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A句式完整自然，B部分段落过于简略且有断句问题"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A更符合轻小说幻想世界语境，B部分用语过于现代口语化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A的戈布兰音译略有偏差但一致，B虽有更准确的哥布拉尔但出现严重专名错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A叙述连贯，B部分段落跳跃感强"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B多处使用不规范顿号断句"
+      }
+    },
+    "key_differences": [
+      "段落14：A正确识别ゴーブラ为专有名词，B错译为哥布林",
+      "段落42：兵力数字A正确(一万)，B错误(两万)",
+      "段落47：A未翻译マゼル，B正确翻译为玛泽尔",
+      "整体风格：A更完整正式，B更简略口语化"
+    ],
+    "final_summary": "翻译A在准确性和流畅性上整体优于B。虽然A在角色名音译上略有偏差，但B出现了关键性错误（段落14专名误译、段落42数字错误），且多处格式不规范。A的轻小说叙述风格把握更好，是更可靠的翻译。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

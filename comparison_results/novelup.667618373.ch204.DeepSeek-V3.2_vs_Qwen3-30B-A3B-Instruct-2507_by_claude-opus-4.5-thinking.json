@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:40:22.637631",
+  "sample": "novelup.667618373.ch204",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.667618373.ch204.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.667618373.ch204.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/novelup.667618373.ch204.Qwen3-30B-A3B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "a7b9bc8920e64499b0c9853279cbb23c63b9a906b15bfa6f4389c678948cdad3",
+    "A": "022e70565d348a2a76e7d3e0274ec7dfd6af927cc7ea194191e67887922c472b",
+    "B": "c091f93f2de45ed3a795b287012ba4c3896a7bc33d2c715963d6249d3bba096c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:41:28.633444",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "eb9b1d8e-d97e-443c-a31a-886a598386f2",
+      "judge_response": {
+        "id": "eb9b1d8e-d97e-443c-a31a-886a598386f2",
+        "object": "chat.completion",
+        "created": 1768423288,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**段落4**: A翻译\"感謝しろ\"为\"感恩吧\"（命令式），B翻译为\"谢了\"（感谢语气），A更准确捕捉到了命令对方感谢的语气。\n\n**段落21**: \"あのにやけた顔を歪ませない\"——A理解为\"不扭曲那张猥亵的脸\"（指义兄），B理解为\"不让自己脸上露出扭曲的表情\"。原文指的是不让义兄的得意表情如愿变化，A更接近但用词\"猥亵\"不当。\n\n**段落38**: \"面を喰った\"——A译\"吓了一跳\"正确，B译\"被噎住了\"误译。\n\n**段落52**: \"臍を固める\"是固定表达意为\"下定决心\"，A译正确，B译\"扼杀意志的脐带\"属于误译。\n\n**段落53**: B末句\"恐怕早已成为实验台上的食物\"误译，原意是士兵会被迫吃这些东西。\n\n### 流畅性分析\n\nB整体中文更自然流畅，如段落7、10、14等处的表达更符合中文习惯。A部分句子较生硬，如\"美味非常\"（段落32）。\n\n### 风格/语气分析\n\nA对\"オレ様\"翻译为\"本大爷\"保持一致，符合轻小说傲慢角色的语气。B有时用\"老子\"\"我\"不够统一。对话引号方面，B使用「」更符合轻小说格式。\n\n### 术语一致性\n\nA的\"街\"/\"配膳台\"/\"魔獣\"等翻译一致；B在\"城\"与\"街\"之间有变化。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"A在关键处如'面を喰った''臍を固める'等翻译更准确；B有多处误译\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B的中文表达更自然流畅，A部分句子生硬\"},\n    \"style\": {\"A\": 7, \"B\": 7, \"notes\": \"A的'本大爷'等语气词一致性好；B的对话格式更规范\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A术语翻译更统一；B'城/街'不一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 7, \"notes\": \"两者可读性相当\"},\n    \"formatting\": {\"A\": 6, \"B\": 8, \"notes\": \"B使用「」更符合轻小说格式，A混用引号\"}\n  },\n  \"key_differences\": [\n    \"段落38'面を喰った': A正确译为'吓了一跳'，B误译为'被噎住了'\",\n    \"段落52'臍を固める': A正确理解为'下定决心'，B误译为'扼杀意志的脐带'\",\n    \"段落4'感謝しろ': A译为命令式'感恩吧'正确，B译为'谢了'语气错误\",\n    \"整体流畅度B更自然，但准确性A更胜一筹\"\n  ],\n  \"final_summary\": \"A在准确性方面明显优于B，尤其在关键表达和惯用语的翻译上更为精准，避免了B的多处误译。虽然B在中文流畅度和格式规范上表现更好，但翻译的首要任务是准确传达原意，因此A整体更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9590,
+          "completion_tokens": 2842,
+          "total_tokens": 12432
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "A在关键处如'面を喰った''臍を固める'等翻译更准确；B有多处误译"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B的中文表达更自然流畅，A部分句子生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 7,
+        "notes": "A的'本大爷'等语气词一致性好；B的对话格式更规范"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A术语翻译更统一；B'城/街'不一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者可读性相当"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 8,
+        "notes": "B使用「」更符合轻小说格式，A混用引号"
+      }
+    },
+    "key_differences": [
+      "段落38'面を喰った': A正确译为'吓了一跳'，B误译为'被噎住了'",
+      "段落52'臍を固める': A正确理解为'下定决心'，B误译为'扼杀意志的脐带'",
+      "段落4'感謝しろ': A译为命令式'感恩吧'正确，B译为'谢了'语气错误",
+      "整体流畅度B更自然，但准确性A更胜一筹"
+    ],
+    "final_summary": "A在准确性方面明显优于B，尤其在关键表达和惯用语的翻译上更为精准，避免了B的多处误译。虽然B在中文流畅度和格式规范上表现更好，但翻译的首要任务是准确传达原意，因此A整体更胜一筹。"
+  },
+  "outcome": "DeepSeek-V3.2_win",
+  "winner_model": "DeepSeek-V3.2"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:09:46.967520",
+  "sample": "hameln.355148.ch11",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.355148.ch11.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.355148.ch11.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/hameln.355148.ch11.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "76dd3b00d27413a99f68bb112391f59be2a39aa1de131eb0da0bc9696e85be1f",
+    "A": "9d5c65208d24119bfcbd5de26a93cc995cb569dc431f0122bb181ce89ed8589b",
+    "B": "743c2625e6dd5019a319781f36bb23150aedcbe07b262abd9b1577d70b131e61"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:10:22.683326",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "4af67679-98b4-4f4c-b010-b3bccef6d897",
+      "judge_response": {
+        "id": "4af67679-98b4-4f4c-b010-b3bccef6d897",
+        "object": "chat.completion",
+        "created": 1768421422,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 1. 准确性分析\n\n**段落2**: \n- A: \"被别的灵魂附身\" \n- B: \"寄宿着别的灵魂\"\n- B更准确，原文「別の魂が入っていた」是\"进入\"而非\"附身\"\n\n**段落23**:\n- A: \"蜷缩\"（しゃがみこみ是蹲下）\n- B: \"蹲\"更准确\n\n**段落67**:\n- A: \"不死者\"\n- B: \"undead\"（未翻译，明显失误）\n\n**段落71**:\n- A: \"是说能杀了我吗？\"（正确理解）\n- B: \"意思是……我能杀了你这件事吗？\"（主语搞错了）\n\n### 2. 流畅性分析\n\nB整体句子更流畅完整，如：\n- 段落12: B \"纹丝不动——门被锁上了\" 比A更自然\n- 段落37: B的表达更连贯通顺\n- 段落42: B \"妥妥地放进了自己心里该放的地方\" 更生动\n\n### 3. 风格/语气分析\n\n两者风格略有不同：\n- A更口语化、简洁\n- B更完整、稍正式但也保持了轻小说风格\n\n**段落27-28、31-32等处**：A漏掉了引号，格式不一致\n\n### 4. 术语一致性\n\n- 段落67: B使用\"undead\"未翻译是严重问题\n- 人名翻译两者基本一致\n- 段落30: \"ルサルカ\" A译\"露萨卡\"，B译\"露萨尔卡\"，B更接近原音\n\n### 5. 连贯性/可读性\n\nB的叙述更有节奏感，段落之间衔接更自然。\n\n### 6. 格式/标点\n\n- A在段落27-28、31-32、41等多处对话漏掉引号\n- B格式一致性更好\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 7, \"notes\": \"A段落23'蜷缩'不准确；B段落67'undead'未翻译、段落71主语错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体句子更流畅完整，表达更自然\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"两者都保持轻小说风格，B略胜一筹\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"B段落67'undead'未翻译是严重失误，A翻译为'不死者'更恰当\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B叙述节奏更好，衔接更自然\"},\n    \"formatting\": {\"A\": 5, \"B\": 8, \"notes\": \"A多处对话漏掉引号，格式不一致\"}\n  },\n  \"key_differences\": [\n    \"A多处对话缺少引号标记，格式不规范\",\n    \"B段落67使用未翻译的'undead'\",\n    \"B整体句子更完整流畅\",\n    \"A更口语化简洁，B更正式完整\",\n    \"B段落71主语理解错误\"\n  ],\n  \"final_summary\": \"B在流畅性、风格和格式方面整体更优，尽管存在'undead'未翻译和段落71主语错误等问题。A虽然口语化风格适合轻小说，但多处对话漏掉引号是明显的格式缺陷。综合考量，B的整体阅读体验更好，但优势不大。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11140,
+          "completion_tokens": 1548,
+          "total_tokens": 12688
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 7,
+        "notes": "A段落23'蜷缩'不准确；B段落67'undead'未翻译、段落71主语错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体句子更流畅完整，表达更自然"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者都保持轻小说风格，B略胜一筹"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "B段落67'undead'未翻译是严重失误，A翻译为'不死者'更恰当"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B叙述节奏更好，衔接更自然"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 8,
+        "notes": "A多处对话漏掉引号，格式不一致"
+      }
+    },
+    "key_differences": [
+      "A多处对话缺少引号标记，格式不规范",
+      "B段落67使用未翻译的'undead'",
+      "B整体句子更完整流畅",
+      "A更口语化简洁，B更正式完整",
+      "B段落71主语理解错误"
+    ],
+    "final_summary": "B在流畅性、风格和格式方面整体更优，尽管存在'undead'未翻译和段落71主语错误等问题。A虽然口语化风格适合轻小说，但多处对话漏掉引号是明显的格式缺陷。综合考量，B的整体阅读体验更好，但优势不大。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

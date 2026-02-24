@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:42:01.135860",
+  "sample": "novelup.916197286.ch19",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.916197286.ch19.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "DeepSeek-V3.2"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.916197286.ch19.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/novelup.916197286.ch19.DeepSeek-V3.2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "555d1a41f6993dc9f3cb5fc90218bd40f549c3b95e2e9706edd270d42780783c",
+    "A": "af5e900e66ef1dc2550ed8c2725f27c0b4981317ae5ec3c995ecc84c6a35ecd9",
+    "B": "4753fa6621231c7a8bf9ae855c006ae66e19114c7c90608658f430de115df40c"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:42:42.385014",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c2772e39-f3d8-4f10-9abb-f8493adf02c7",
+      "judge_response": {
+        "id": "c2772e39-f3d8-4f10-9abb-f8493adf02c7",
+        "object": "chat.completion",
+        "created": 1768423362,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 逐项详细分析\n\n### 1. 准确性分析\n- **段落6**: A译「咕哝咕哝」正确表达了「ｺﾞﾆｮｺﾞﾆｮ」的含糊说话声；B译「黏糊糊地蹭蹭」理解错误\n- **段落39**: 「えいえい」A译「诶诶」不如B译「嘿咻嘿咻」准确（表示用力动作）\n- **段落46/48**: 「ちゅーちゅー」表吸吮声，B译「吸溜吸溜」比A译「啾啾」更贴切\n- **段落91**: A出现严重错误，保留了未翻译的日文原文\n- **段落157**: B将人名「クラン」错译为「族人」\n\n### 2. 术语/名称一致性\n- **A版**: 克兰(稳定)，但艾西亚/爱西亚混用，法乌斯特/法乌斯托混用\n- **B版**: 库兰→克岚→克朗(严重不一致)，阿依西亚→艾希娅(不一致)\n\n### 3. 流畅性与风格\n- A倾向于增加语气词和补充说明，读起来更自然流畅\n- B某些地方较生硬（如段落7「心情是开心的啦」）\n- 「おっぱい」的处理：A统一用「胸部」，B混用「欧派/乳房」\n\n### 4. 对话语气\n- 段落4: A「说什么傻话呢，去我家啊」更口语化；B「说什么呢。是我家哦」略显生硬\n- 段落30: B「真拿你没办法呢」比A「没办法了」更符合语境\n\n### 5. 格式问题\n- 段落152-159、161-174: B使用了引号格式不一致（从「」变成\"\"）\n\n---\n\n## 评判结果\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A在段落6更准确，但段落91有致命翻译遗漏；B在段落6、157有明显误译\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A整体更通顺自然，添加的语气词恰到好处\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话语气更贴合轻小说风格，B部分对话生硬\"},\n    \"terminology\": {\"A\": 6, \"B\": 4, \"notes\": \"A人名基本稳定但有小问题；B人名严重不一致（库兰/克岚/克朗）\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"A可读性更强，B有些地方断句影响阅读\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"A格式统一但段落91有原文残留；B后半部分引号格式混乱\"}\n  },\n  \"key_differences\": [\n    \"人名一致性：A较稳定，B变化频繁（克兰/库兰/克岚/克朗）\",\n    \"段落6拟声词理解：A正确（咕哝咕哝=含糊说话），B错误\",\n    \"段落91：A有致命的未翻译错误\",\n    \"おっぱい翻译策略：A统一用胸部，B混用欧派/乳房\",\n    \"吸吮拟声词：B的「吸溜吸溜」比A的「啾啾」更准确\"\n  ],\n  \"final_summary\": \"A版在整体流畅性、风格把握和人名一致性上优于B版，虽然段落91存在严重遗漏，但B版的人名混乱问题更为严重且贯穿全文，加上段落6的理解错误和后半部分的格式问题，综合评判A版略胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12493,
+          "completion_tokens": 1808,
+          "total_tokens": 14301
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A在段落6更准确，但段落91有致命翻译遗漏；B在段落6、157有明显误译"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A整体更通顺自然，添加的语气词恰到好处"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话语气更贴合轻小说风格，B部分对话生硬"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 4,
+        "notes": "A人名基本稳定但有小问题；B人名严重不一致（库兰/克岚/克朗）"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "A可读性更强，B有些地方断句影响阅读"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "A格式统一但段落91有原文残留；B后半部分引号格式混乱"
+      }
+    },
+    "key_differences": [
+      "人名一致性：A较稳定，B变化频繁（克兰/库兰/克岚/克朗）",
+      "段落6拟声词理解：A正确（咕哝咕哝=含糊说话），B错误",
+      "段落91：A有致命的未翻译错误",
+      "おっぱい翻译策略：A统一用胸部，B混用欧派/乳房",
+      "吸吮拟声词：B的「吸溜吸溜」比A的「啾啾」更准确"
+    ],
+    "final_summary": "A版在整体流畅性、风格把握和人名一致性上优于B版，虽然段落91存在严重遗漏，但B版的人名混乱问题更为严重且贯穿全文，加上段落6的理解错误和后半部分的格式问题，综合评判A版略胜一筹。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-02-12T23:57:32.564650",
+  "sample": "alphapolis.37170212-976047535.ch98",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.37170212-976047535.ch98.txt",
+  "models": {
+    "model_1": "GLM-4.7",
+    "model_2": "GLM-5"
+  },
+  "presentation": {
+    "A": "GLM-4.7",
+    "B": "GLM-5"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.37170212-976047535.ch98.GLM-4.7.translated.txt",
+    "B": "translated_results/alphapolis.37170212-976047535.ch98.GLM-5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "06f09914594bc7e56277c07342b01f9e4d75d590ef28118a2cd2ac72b86cd612",
+    "A": "c50f081944d7a6b03630596749e55469118e7cab7f650ed38f521f01991ea066",
+    "B": "35bb016a7fec15820de354eed507462bad92fbd632e274e3f610324ad210fe52"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "gemini-3-pro-preview",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-02-12T23:58:32.035400",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-20260212235732997689549gPffZtlv",
+      "judge_response": {
+        "id": "chatcmpl-20260212235732997689549gPffZtlv",
+        "object": "chat.completion",
+        "created": 1770940711,
+        "model": "gemini-3-pro-preview",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这里是基于提供的分段文本对翻译A和翻译B的详细评判：\n\n### 详细分析\n\n**1. 准确性与完整性**\n*   **翻译A** 犯了一个严重的错误：在第98段（Tenga）、105段（Zakuro）、111段（Ruri）中，直接保留了原文的罗马音/英文拼写，没有翻译成中文（如“天河”、“柘榴”、“琉璃”）。这是翻译完成度上的重大缺失。\n*   **翻译B** 将所有名字都正确翻译了，且参考了原文括号内的汉字（如将Tenga译为天河，Zakuro译为柘榴）。\n*   **翻译A** 在第87段将名字“ホタル”译为“萤火虫”，作为名字略显累赘；**翻译B** 译为“萤”，更像是一个昵称/名字，处理得更好。\n\n**2. 流畅性与表达**\n*   **翻译B** 的中文表达通常更符合中文习惯，更地道。\n    *   例如第19段，原文“シスコンな兄たちにより”，A译为“因为妹控的哥哥们”，B译为“碍于妹控的哥哥们”，B更准确地传达了“由于哥哥们的阻碍”这一层意思。\n    *   第166段，原文“商売の何たるか”，A译为“生意究竟是何物”（生硬），B译为“生意之道”（地道）。\n    *   第5段，原文“使命を燃やす”，B的“燃烧着使命感”比A的“充满了使命感”更贴切原文的修辞。\n\n**3. 术语与用词**\n*   **肌肉 vs 筋肉**：在第42和50段，原文“筋肉”，A译为标准的中文“肌肉”，B保留了日式汉字词“筋肉”。虽然在二次元轻小说语境下“筋肉”尚可接受，但A的“肌肉”更符合标准中文规范。这是A唯一优于B的地方。\n*   **马可 vs 马尔科**：原文“マルコ”，A和B都在第60段、183段、189段中出现了前后不一致的情况（一会用马可，一会用马尔科）。这一点两者打平，都需要校对。\n\n**4. 风格**\n*   原文是角色介绍，语调轻松且带有轻小说特有的吐槽风格。B在处理这些吐槽（如第69段“闹起别扭来还特别久”、第159段“变态兮兮”）时，语感比A更自然生动。\n\n### 结论\n翻译B在整体完成度、流畅度和风格把握上都优于翻译A。翻译A保留罗马音未翻译是致命伤，表明缺乏最终校对。尽管B使用了“筋肉”这一日式词汇，但整体阅读体验远好于A。\n\n***\n\n### 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.95,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 6,\n      \"B\": 9,\n      \"notes\": \"A在第98、105、111段留有未翻译的罗马音（Tenga, Zakuro, Ruri），属于严重漏翻。\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的措辞更地道，如'生意之道'、'碍于'等表达优于A的直译。\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B更贴合轻小说的轻松吐槽风格；A略显生硬。\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"两者在'马可/马尔科'的人名一致性上都有失误。A使用了标准的'肌肉'，B使用了日式词'筋肉'，但考虑到A的漏翻，B整体术语处理（如名字翻译）更好。\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 9,\n      \"notes\": \"B的句子连接更自然。\"\n    },\n    \"formatting\": {\n      \"A\": 8,\n      \"B\": 9,\n      \"notes\": \"B对括号内的补充说明处理得更清晰。\"\n    }\n  },\n  \"key_differences\": [\n    \"A有严重的漏翻现象，保留了多个罗马音名字（Tenga, Zakuro, Ruri）。\",\n    \"B的语言组织更符合中文习惯（如'生意之道' vs '生意究竟是何物'）。\",\n    \"B将名字'ホタル'译为'萤'，比A的'萤火虫'更像人名。\"\n  ],\n  \"final_summary\": \"翻译B是明显的胜者。翻译A存在严重的质量控制问题，多处人名未从罗马音翻译成中文（如Tenga、Zakuro），这在翻译中是不可接受的。此外，翻译B在句子的流畅度和成语的使用上（如'生意之道'、'碍于'）也比A更加自然和地道。尽管B使用了'筋肉'这一日式词汇，但相比A的漏翻错误，B的整体质量高出很多。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11628,
+          "completion_tokens": 5587,
+          "total_tokens": 17215
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.95,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 9,
+        "notes": "A在第98、105、111段留有未翻译的罗马音（Tenga, Zakuro, Ruri），属于严重漏翻。"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的措辞更地道，如'生意之道'、'碍于'等表达优于A的直译。"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更贴合轻小说的轻松吐槽风格；A略显生硬。"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者在'马可/马尔科'的人名一致性上都有失误。A使用了标准的'肌肉'，B使用了日式词'筋肉'，但考虑到A的漏翻，B整体术语处理（如名字翻译）更好。"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的句子连接更自然。"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B对括号内的补充说明处理得更清晰。"
+      }
+    },
+    "key_differences": [
+      "A有严重的漏翻现象，保留了多个罗马音名字（Tenga, Zakuro, Ruri）。",
+      "B的语言组织更符合中文习惯（如'生意之道' vs '生意究竟是何物'）。",
+      "B将名字'ホタル'译为'萤'，比A的'萤火虫'更像人名。"
+    ],
+    "final_summary": "翻译B是明显的胜者。翻译A存在严重的质量控制问题，多处人名未从罗马音翻译成中文（如Tenga、Zakuro），这在翻译中是不可接受的。此外，翻译B在句子的流畅度和成语的使用上（如'生意之道'、'碍于'）也比A更加自然和地道。尽管B使用了'筋肉'这一日式词汇，但相比A的漏翻错误，B的整体质量高出很多。"
+  },
+  "outcome": "GLM-5_win",
+  "winner_model": "GLM-5"
+}

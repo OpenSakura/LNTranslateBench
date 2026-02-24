@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:42:12.429595",
+  "sample": "novelup.932498720.ch370",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.932498720.ch370.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.932498720.ch370.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/novelup.932498720.ch370.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "909d8d8edf510367fbfa20c4bf49d28eeadaf8a149aadfe9ea0d80c49cd1d84d",
+    "A": "9f8ea293cf57f767080b96e1994c83d932a78862538b3332a0b2d3e6e5d56092",
+    "B": "c7568302513f09dba2f658b8370d96e93b47a2cb554805cd71cf5b29392621cf"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:43:12.800349",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "db980884-23a0-4a88-b284-883de5667210",
+      "judge_response": {
+        "id": "db980884-23a0-4a88-b284-883de5667210",
+        "object": "chat.completion",
+        "created": 1768423392,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**关键错误：**\n- **段落17**：A将「ビッグサイト」译为\"大阪展馆\"，这是严重错误。Big Sight是东京国际展示场，与大阪无关。B正确译为\"Big Site\"。\n- **段落19**：A理解有误，原文是\"因为睡得好所以更兴奋\"，A译成\"反而更兴奋，睡了个天昏地暗\"，因果关系颠倒。B正确。\n- **段落52**：A译\"他带我去\"混淆了叙事视角，原文是第三人称描述黑泽被带去购物。B正确理解。\n- **段落42**：B将「そろい踏み」译为\"齐步走\"不准确，应为\"集体亮相\"。A正确。\n\n### 流畅性分析\n\nA的口语化更强，如\"奇怪成员\"、\"走路像僵尸似的\"较自然。但B整体句式更稳定，少有突兀感。\n\n### 风格/语气分析\n\n- A偶尔过度口语化，如\"干嘛摆一张苦瓜脸\"\n- B保持了轻小说叙述的适度轻松感\n- 段落108：A混入英文\"just\"，非常不专业\n\n### 术语一致性\n\n- A将「先輩」有时译\"学姐\"有时译\"前辈\"，不一致\n- B保留了部分日文（コミマ、コミカルマーケット），对中文读者不友好\n- A将作品名翻译为中文，B保留日文\n\n### 格式分析\n\n- A在对话引号使用上极不一致：段落20-23、25等缺少引号\n- B统一使用「」，格式一致\n- A有时用\"\"有时用「」\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.75,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A在段落17有致命错误（Big Sight译成大阪展馆），段落19、52理解有误；B偶有小误如段落42\"},\n    \"fluency\": {\"A\": 7, \"B\": 7, \"notes\": \"A口语化更强但有时过度；B较稳定但略显生硬\"},\n    \"style\": {\"A\": 6, \"B\": 7, \"notes\": \"A偶尔过度口语化且混入英文；B风格更统一\"},\n    \"terminology\": {\"A\": 6, \"B\": 6, \"notes\": \"A称呼不一致；B保留日文术语未翻译\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A有视角混乱问题；B叙述连贯\"},\n    \"formatting\": {\"A\": 4, \"B\": 8, \"notes\": \"A对话引号极不一致，多处缺失；B格式统一\"}\n  },\n  \"key_differences\": [\n    \"段落17：A将Big Sight错译为大阪展馆（致命错误）\",\n    \"段落19：A因果关系理解错误\",\n    \"格式：A对话引号严重不一致，B统一使用「」\",\n    \"段落108：A混入英文just\",\n    \"术语：B保留部分日文未翻译\"\n  ],\n  \"final_summary\": \"虽然A在某些地方口语化表达更自然，但存在致命的地名翻译错误（Big Sight→大阪展馆）、理解偏差（段落19、52）、格式严重不一致等问题。B虽然有保留日文术语的问题，但准确性更高、格式统一，整体质量更可靠。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11895,
+          "completion_tokens": 2800,
+          "total_tokens": 14695
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.75,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A在段落17有致命错误（Big Sight译成大阪展馆），段落19、52理解有误；B偶有小误如段落42"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 7,
+        "notes": "A口语化更强但有时过度；B较稳定但略显生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 7,
+        "notes": "A偶尔过度口语化且混入英文；B风格更统一"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 6,
+        "notes": "A称呼不一致；B保留日文术语未翻译"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有视角混乱问题；B叙述连贯"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 8,
+        "notes": "A对话引号极不一致，多处缺失；B格式统一"
+      }
+    },
+    "key_differences": [
+      "段落17：A将Big Sight错译为大阪展馆（致命错误）",
+      "段落19：A因果关系理解错误",
+      "格式：A对话引号严重不一致，B统一使用「」",
+      "段落108：A混入英文just",
+      "术语：B保留部分日文未翻译"
+    ],
+    "final_summary": "虽然A在某些地方口语化表达更自然，但存在致命的地名翻译错误（Big Sight→大阪展馆）、理解偏差（段落19、52）、格式严重不一致等问题。B虽然有保留日文术语的问题，但准确性更高、格式统一，整体质量更可靠。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:41:13.409652",
+  "sample": "novelup.667618373.ch204",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/novelup.667618373.ch204.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "GLM-4.7-nothinking",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/novelup.667618373.ch204.GLM-4.7-nothinking.translated.txt",
+    "B": "translated_results/novelup.667618373.ch204.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "a7b9bc8920e64499b0c9853279cbb23c63b9a906b15bfa6f4389c678948cdad3",
+    "A": "d692afde911f08c23da8b47b03e34d98c2e0418cda3288fe8d76d730766a0ebd",
+    "B": "f31b9b55b06576dc60938e0b4f7328a755f923fc246aca31f7e2f4afdd12ee9d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:42:12.616854",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "2172d974-c4aa-4c7a-9a2d-d13d0c3b830c",
+      "judge_response": {
+        "id": "2172d974-c4aa-4c7a-9a2d-d13d0c3b830c",
+        "object": "chat.completion",
+        "created": 1768423332,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐段对比分析\n\n**段落2-3（准确性关键点）**\n- 原文\"一か零か\"意为\"要么全有要么全无\"\n- A译为\"一半一半\"——**错误**\n- B译为\"要么吃要么不吃\"——**正确**\n\n**段落4（风格/语气）**\n- A：\"要感谢哦\"较平淡\n- B：\"给我感恩\"更有霸道傲慢感，符合角色\n\n**段落10（流畅性）**\n- A：\"以势要露出所有整齐牙齿的气势大笑\"——拗口\n- B：\"笑得像要把整齐的白牙全撒出来\"——更自然生动\n\n**段落19（准确性问题）**\n- 原文意思是\"本以为不会在愉快的场合喝酒\"（暗示第一次喝酒竟然在这种不愉快的场合）\n- A正确理解\n- B译为\"这么扫兴的场合\"有轻微理解偏差\n\n**段落21**\n- \"にやけた顔\"：A译\"令人不爽的脸\"；B译\"淫笑的脸\"\n- B的\"淫笑\"语气过重，原文只是嬉皮笑脸\n\n**段落29（流畅性）**\n- A：\"按一杯只能大概干掉一杯的量\"——表达混乱\n- B：\"默认一次只倒一小杯慢慢抿\"——更清晰\n\n**段落41（准确性）**\n- 原文只有一脚\n- A添加了\"紧接着又是一脚\"——**错误**\n- B准确\n\n**格式问题**\n- A在段落11、26、33等处缺少开头引号\n- B在部分段落使用日式引号「」，不统一\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有关键误译（一か零か译错、段落41多加一脚）；B在段落19有轻微理解偏差\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体更流畅自然，A有多处拗口表达如段落10、29\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话语气更贴合轻小说角色性格，但'淫笑''老子'等偶有过度\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者对魔兽、配膳台等术语处理相当\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B的叙述更连贯，情感递进更自然\"},\n    \"formatting\": {\"A\": 5, \"B\": 6, \"notes\": \"A多处缺少引号；B日式引号不统一，但问题较轻\"}\n  },\n  \"key_differences\": [\n    \"A将「一か零か」误译为'一半一半'，B正确译为'要么吃要么不吃'\",\n    \"A在段落41错误添加'又是一脚'\",\n    \"B整体语言更口语化、更符合轻小说风格\",\n    \"A多处缺少对话开头引号\",\n    \"B的角色语气塑造更鲜明但偶有过度（如'淫笑'）\"\n  ],\n  \"final_summary\": \"B在准确性和流畅性上明显优于A，尤其是关键词汇的翻译和整体行文的自然度。A存在明显误译和格式缺失问题。B虽在个别用词上略显过度，但整体更贴合轻小说叙事风格，阅读体验更佳。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9314,
+          "completion_tokens": 2699,
+          "total_tokens": 12013
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有关键误译（一か零か译错、段落41多加一脚）；B在段落19有轻微理解偏差"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体更流畅自然，A有多处拗口表达如段落10、29"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话语气更贴合轻小说角色性格，但'淫笑''老子'等偶有过度"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者对魔兽、配膳台等术语处理相当"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的叙述更连贯，情感递进更自然"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 6,
+        "notes": "A多处缺少引号；B日式引号不统一，但问题较轻"
+      }
+    },
+    "key_differences": [
+      "A将「一か零か」误译为'一半一半'，B正确译为'要么吃要么不吃'",
+      "A在段落41错误添加'又是一脚'",
+      "B整体语言更口语化、更符合轻小说风格",
+      "A多处缺少对话开头引号",
+      "B的角色语气塑造更鲜明但偶有过度（如'淫笑'）"
+    ],
+    "final_summary": "B在准确性和流畅性上明显优于A，尤其是关键词汇的翻译和整体行文的自然度。A存在明显误译和格式缺失问题。B虽在个别用词上略显过度，但整体更贴合轻小说叙事风格，阅读体验更佳。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

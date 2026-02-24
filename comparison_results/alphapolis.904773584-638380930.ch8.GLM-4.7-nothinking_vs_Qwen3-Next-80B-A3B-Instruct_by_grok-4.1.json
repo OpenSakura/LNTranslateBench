@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:39:04.634652",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "GLM-4.7-nothinking",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "02b13f135a70326c35fdd7b1fa81b2fb0ca6b692ab2e1e3aa9a4de97aa69c155",
+    "B": "2f786e951f141ce827d17042630398f9f7b5244f385c4b7e7e81afdcb31a341f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:22.823700",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DbNrirK4j8yXZPdkjfjTRnXdIyJ",
+      "judge_response": {
+        "id": "chatcmpl-89DbNrirK4j8yXZPdkjfjTRnXdIyJ",
+        "object": "chat.completion",
+        "created": 1768426762,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"アウルベア 魔物\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"アシッドスライム 魔物\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"キラーエイプ 魔物 OR killer ape monster light novel\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"軽小说 魔物 名词 中文翻译 常见\"\n> 📊 **Results requested:** 10\n\n> 🔍 **5 results found**\n\n> [🔗 \"アウルベア\" Pixiv](https://dic.pixiv.net/a/%E3%82%A2%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2)\n> [🔗 \"モンスター/【アウルベア】 - 旧版ダンジョンズ...\" WikiWiki](https://wikiwiki.jp/classicdnd/%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC/%E3%80%90%E3%82%A2%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2%E3%80%91)\n> [🔗 \"オウルベア - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%A6%E3%83%AB%E3%83%99%E3%82%A2)\n> [🔗 \"アウルベア - prdj @ ウィキ\" STGR Wiki](https://w.atwiki.jp/prdj/pages/186.html)\n> [🔗 \"【BG3】アウルベアの巣 | Spoilerブログ\" Spoiler](https://www.spoiler.jp/blog/baldurs-gate-3/locations/owlbear-nest)\n\n> 🔍 **5 results found**\n\n> [🔗 \"アシッドスライムＬ - Slay the Spire攻略 Wiki*\" WikiWiki](https://wikiwiki.jp/slaythespire/%E3%82%A2%E3%82%B7%E3%83%83%E3%83%89%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%A0%EF%BC%AC)\n> [🔗 \"アシッドスライム\" Piyosword](http://www.piyosword.com/sw2/monster?m=1585083152&mode=text)\n> [🔗 \"神達に拾われた男 - 第一章開始 異世界での生活\" Syosetu](https://ncode.syosetu.com/n5306by/5)\n> [🔗 \"ドラクエ10 | スライム系モンスターの一覧 | 経験値順\" D-quest-10](https://www.d-quest-10.com/list/t_slime/exp_1.html)\n> [🔗 \"モンスター：アシッドスライム - テイルズオブ用語辞典\" STGR Wiki](https://w.atwiki.jp/talesofdic/pages/16944.html)\n\n> 🔍 **5 results found**\n\n> [🔗 \"Amazon.co.jp: KILLER APE(1) (モーニングKC) : 河部 真道: ...\" Amazon Japan](https://www.amazon.co.jp/KILLER-APE-1-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-KC/dp/4065144337)\n> [🔗 \"KILLER APE（漫画） - マンガペディア\" MANGA PEDIA](https://mangapedia.com/KILLERAPE-u4su08ish)\n> [🔗 \"KILLER APE (全5巻) Kindle版\" Amazon Japan](https://www.amazon.co.jp/dp/B07WW8QG34)\n> [🔗 \"Killer Ape Novel, 17 Return To The Battlefield - Novel Cool - Best online light novel reading website\" Novel Cool](https://www.novelcool.com/novel/Killer-Ape.html)\n> [🔗 \"Killer Ape Vol. 1 Ch. 1 Monkey Business - Novel Cool - Best online light novel reading website\" Novel Cool](https://www.novelcool.com/chapter/Vol-1-Ch-1-Monkey-Business/5084363)\n\n> 🔍 **10 results found**\n\n> [🔗 \"魔物 - Translation into English - examples Chinese | Reverso Context\" Reverso Context](https://context.reverso.net/translation/chinese-english/%E9%AD%94%E7%89%A9)\n> [🔗 \"轻小说 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-hans/%E8%BC%95%E5%B0%8F%E8%AA%AA)\n> [🔗 \"观察 | 这些人是怎么把60万字的修仙游戏翻译成英文的 | 手游那点事\" Nadianshi](http://www.nadianshi.com/2020/11/280084)\n> [🔗 \"如何从零开始翻译一本日语小说？ - 知乎\" Zhihu](https://www.zhihu.com/question/27047645)\n> [🔗 \"GitHub - NEKOparapa/AiNiee: 一款专注于Ai翻译的工具，一键自动翻译RPG SLG游戏，Epub TXT小说，PDF Word MD文档，Srt Vtt Lrc字幕等等复杂长文本。\" GitHub](https://github.com/NEKOparapa/AiNiee)\n> [🔗 \"翻译方法 | 公司名称 VS 音译（transliteration）、意译（paraphrase）和综合译法 - 知乎\" Zhihu](https://zhuanlan.zhihu.com/p/137678093)\n> [🔗 \"魔 - Translation into English - examples Chinese | Reverso Context\" Reverso Context](https://context.reverso.net/translation/chinese-english/%E9%AD%94)\n> [🔗 \"这些普通中文词，连英文高手也难翻译！ - 知乎\" Zhihu](https://zhuanlan.zhihu.com/p/29950080)\n> [🔗 \"日语里有哪些汉字词汇让中国人完全找不到北？ - 知乎\" Zhihu](https://www.zhihu.com/question/29765729)\n> [🔗 \"有哪些有趣的日语谚语？ - 知乎\" Zhihu](https://www.zhihu.com/question/43827636)\n\n\n这是一个轻小说风格的魔物图鉴/备忘录翻译比较。原文是日语的个人笔记体，带有随意、口语化、带点吐槽或实用信息的语气，常见于异世界轻小说中对魔物的描述。\n\n**整体分析：**\n\n- **准确性**：两者都基本忠实于原文意思，没有重大误译。A在某些地方更贴近原文的 nuance，例如段落4的“意外と素早い”译为“意外地灵活”（更接近“意外地敏捷”但灵活也合适），B用“意外地敏捷”。段落43 A的“单调得很”对应“単調ではあるが”，带有轻微贬低感，更贴合原文的随意语气；B的“这货”更口语但稍带现代网络感。专有名词上，A多用直译或常见译名（如“酸性史莱姆”“杀人猿”），B有时更意译或调整（如“酸液史莱姆”“杀人蜂”）。从常见轻小说翻译实践看（如“アウルベア”常译“枭熊”或“猫头鹰熊”，A的“奥尔贝亚”是音译，B的“枭熊”是意译，更符合中文读者对owlbear的认知）。整体准确性A略胜在贴合原文表达，B在某些意译更自然。\n\n- **流畅性**：B的中文更自然、简洁、符合现代中文阅读习惯。例如段落2 B的“大多受大小、数量、技能影响”比A的“常常受体型、数量和技能影响”更顺（“体型”虽准但“大小”更直接）。段落5 B“其实挺好吃的”比A“其实还挺好吃的”少一“还”，更口语自然。段落18 B“比起巨大的猿猴更接近大猩猩”流畅。A有时稍显生硬或多字（如段落24 A的长句更详细但稍冗）。B整体阅读更顺滑。\n\n- **风格/语气**：原文是个人笔记，语气轻松、实用、带点调侃（如“好吃”“麻烦”“非常怕火”）。轻小说常见口语化、亲切感。B更接近这种风格：用“挺好吃的”“这家伙”“极弱火”等接地气的表达；A有时更正式或中规中矩（如“相当强壮又麻烦”“极其耐寒”）。B的语气更活泼、贴近轻小说叙述的“吐槽风”。\n\n- **术语/名称一致性**：两者内部一致性都高，但跨段落看：A多用“史莱姆”系列统一（如“酸性史莱姆”“毒 slime”有不一致），B更统一用“史莱姆”。魔物名：B的意译（如“枭熊”“杀人猿”“杀人蜂”“杀人猿”）更一致且符合中文幻想作品常见译法（owlbear→枭熊，killer ape→杀人猿等）；A多音译或直译（如“奥尔贝亚”“杀手艾普”“杀手黄蜂”），有时显得生涩或不统一（如“寇特狼”音译）。B在术语上更胜一筹，读者易懂且沉浸。\n\n- **连贯性/可读性**：作为笔记体，B的简洁让整体更连贯易读，少有赘述。A有时句子稍长或词语稍正式，影响快速浏览感。但两者都可读，B略优。\n\n- **格式/标点符号**：两者格式类似，基本使用·或（）一致，标点正常。A和B都偶有小问题（如A段落65“毒液史莱姆”统一性），但无大差别。平分。\n\n**关键差异总结**：\n- B在名称意译更符合中文轻小说/奇幻作品惯例（如“枭熊”而非音译、“杀人猿”而非“杀手艾普”），增强可读性和代入感。\n- B语言更口语、自然、轻快，贴合原文的个人备忘轻松语气。\n- A更忠实于字面，有时更详细，但牺牲了一些流畅与风格趣味。\n- 少数地方A更准（如某些描述的细腻），但整体B优势明显。\n\n**最终判决**：B整体更好。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8.5, \"notes\": \"两者准确性高，A稍贴原文字面，B偶有轻微意译调整但无误\"},\n    \"fluency\": {\"A\": 8, \"B\": 9.5, \"notes\": \"B中文更自然流畅，句子简洁符合现代阅读习惯\"},\n    \"style\": {\"A\": 8, \"B\": 9, \"notes\": \"B语气更轻松口语化，贴合轻小说个人笔记的随意调侃感\"},\n    \"terminology\": {\"A\": 7.5, \"B\": 9.5, \"notes\": \"B名称意译更一致且常见于中文奇幻作品，A多音译显得生硬\"},\n    \"coherence\": {\"A\": 8.5, \"B\": 9, \"notes\": \"B整体连贯性强，阅读节奏更好\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"格式标点相似，无明显差异\"}\n  },\n  \"key_differences\": [\n    \"魔物名称处理：B多用意译（如枭熊、杀人猿、杀人蜂），更符合中文读者预期和一致性；A多音译或直译，部分显得不自然\",\n    \"语言风格：B更口语、简洁、活泼（如‘挺好吃的’‘这家伙’‘极弱火’），贴近轻小说调侃风；A稍正式或冗长\",\n    \"流畅度：B句子更顺、少赘字，整体可读性更高\"\n  ],\n  \"final_summary\": \"翻译B在流畅性、风格贴合、术语自然度和整体轻小说阅读体验上明显优于A，虽然A在部分字面准确性略胜，但综合来看B是更出色的译本，适合作为轻小说中文读者阅读的版本。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12560,
+          "completion_tokens": 3801,
+          "total_tokens": 16361
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "两者准确性高，A稍贴原文字面，B偶有轻微意译调整但无误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 9.5,
+        "notes": "B中文更自然流畅，句子简洁符合现代阅读习惯"
+      },
+      "style": {
+        "A": 8,
+        "B": 9,
+        "notes": "B语气更轻松口语化，贴合轻小说个人笔记的随意调侃感"
+      },
+      "terminology": {
+        "A": 7.5,
+        "B": 9.5,
+        "notes": "B名称意译更一致且常见于中文奇幻作品，A多音译显得生硬"
+      },
+      "coherence": {
+        "A": 8.5,
+        "B": 9,
+        "notes": "B整体连贯性强，阅读节奏更好"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "格式标点相似，无明显差异"
+      }
+    },
+    "key_differences": [
+      "魔物名称处理：B多用意译（如枭熊、杀人猿、杀人蜂），更符合中文读者预期和一致性；A多音译或直译，部分显得不自然",
+      "语言风格：B更口语、简洁、活泼（如‘挺好吃的’‘这家伙’‘极弱火’），贴近轻小说调侃风；A稍正式或冗长",
+      "流畅度：B句子更顺、少赘字，整体可读性更高"
+    ],
+    "final_summary": "翻译B在流畅性、风格贴合、术语自然度和整体轻小说阅读体验上明显优于A，虽然A在部分字面准确性略胜，但综合来看B是更出色的译本，适合作为轻小说中文读者阅读的版本。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}

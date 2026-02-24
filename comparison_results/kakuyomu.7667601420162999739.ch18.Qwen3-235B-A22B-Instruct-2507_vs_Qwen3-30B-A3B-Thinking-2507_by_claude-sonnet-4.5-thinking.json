@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-15T14:10:19.764329",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "Qwen3-235B-A22B-Instruct-2507",
+    "model_2": "Qwen3-30B-A3B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.Qwen3-235B-A22B-Instruct-2507.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "078ca0539f628d98f66bb9f1977dc96a82f182e2f3399e94497332c2882b47bb",
+    "B": "899fc9a8ef1bf2d02e8b5acb2ac724a76a8cd27f3639b1ada258bdda1f72e18f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-sonnet-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-15T14:10:59.294492",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "22cb3368-1b4a-4267-aae4-1707df3c50ef",
+      "judge_response": {
+        "id": "22cb3368-1b4a-4267-aae4-1707df3c50ef",
+        "object": "chat.completion",
+        "created": 1768486259,
+        "model": "claude-sonnet-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 轻小说翻译质量对比分析\n\n## 详细分析\n\n### 准确性对比\n\n**翻译A的问题：**\n- **段落5：严重错误** - 将\"焼きそばパン\"（炒面面包）误译为\"章鱼烧面包\"\n- **段落2：** 句子结构混乱，\"蒂亚感叹道，驾驶中的早坂透――透'啊'\"缺少主语\n- **段落23：** \"昨天的事还没忙完，今天又累得不行\"误解了\"昨日の今日で\"的含义\n\n**翻译B的问题：**\n- **段落6：** \"也都像不像真的\"有明显语病，应为\"也都不像真的\"\n- **段落13：** \"女人\"相比\"女孩\"语气稍硬\n\n### 流畅性对比\n\n**翻译B优势：**\n- 句子结构更完整流畅（如段落2、9、41）\n- 语言衔接自然（如段落22、37）\n\n**翻译A问题：**\n- 多处句子成分残缺或不连贯\n- 部分表达过于简化，损失细节\n\n### 术语一致性\n\n**关键差异：**\n- **圣剑名称：** A用\"光之刃\"（意译），B用\"雷特布林格\"（音译）\n- **网络用语：** A用\"现场网红\"，B用\"现场尼基\"（保留原文ニキ的音译）\n\n轻小说通常倾向音译专有名词，B的处理更符合惯例。\n\n### 风格把握\n\n两个翻译都基本保持了轻小说的叙述风格，但：\n- A在某些地方过于口语化\n- B更好地平衡了叙述性和对话感\n\n### 致命错误\n\n**翻译A的段落5**将炒面面包误译为章鱼烧面包，这是**明显的事实性错误**，严重影响翻译质量。\n\n## 最终判决\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\n      \"A\": 6,\n      \"B\": 8,\n      \"notes\": \"A有严重错误（段落5章鱼烧/炒面面包混淆）和多处理解偏差；B仅有段落6的轻微语病\"\n    },\n    \"fluency\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B整体句子结构更完整流畅；A有多处句子成分残缺问题\"\n    },\n    \"style\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"两者都保持了轻小说风格，B在叙述和对话平衡上稍优\"\n    },\n    \"terminology\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B对专有名词的音译处理更符合轻小说惯例；A的意译虽然可读但不够专业\"\n    },\n    \"coherence\": {\n      \"A\": 7,\n      \"B\": 8,\n      \"notes\": \"B在长句处理和逻辑衔接上更优；A部分段落连贯性不足\"\n    },\n    \"formatting\": {\n      \"A\": 9,\n      \"B\": 9,\n      \"notes\": \"两者格式处理基本相同，都保持了良好的标点和段落结构\"\n    }\n  },\n  \"key_differences\": [\n    \"A在段落5犯了严重的事实性错误（章鱼烧面包 vs 炒面面包），这是决定性差异\",\n    \"B在专有名词处理上更专业（音译vs意译），更符合轻小说翻译规范\",\n    \"B的句子结构更完整，A有多处成分残缺或逻辑混乱\",\n    \"B虽有段落6的轻微语病，但整体瑕疵远少于A\",\n    \"A对某些日语表达理解有偏差（如段落23的'昨日の今日で'）\"\n  ],\n  \"final_summary\": \"翻译B整体质量明显优于A。虽然B有个别小瑕疵（段落6语病），但A存在段落5的严重事实性错误（食物名称混淆）、多处句子结构问题和理解偏差。在术语处理上，B的音译方式更符合轻小说翻译惯例。在准确性、流畅性和专业度方面，B都表现更佳，是更可靠的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12152,
+          "completion_tokens": 1883,
+          "total_tokens": 14035
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有严重错误（段落5章鱼烧/炒面面包混淆）和多处理解偏差；B仅有段落6的轻微语病"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体句子结构更完整流畅；A有多处句子成分残缺问题"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者都保持了轻小说风格，B在叙述和对话平衡上稍优"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 8,
+        "notes": "B对专有名词的音译处理更符合轻小说惯例；A的意译虽然可读但不够专业"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B在长句处理和逻辑衔接上更优；A部分段落连贯性不足"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者格式处理基本相同，都保持了良好的标点和段落结构"
+      }
+    },
+    "key_differences": [
+      "A在段落5犯了严重的事实性错误（章鱼烧面包 vs 炒面面包），这是决定性差异",
+      "B在专有名词处理上更专业（音译vs意译），更符合轻小说翻译规范",
+      "B的句子结构更完整，A有多处成分残缺或逻辑混乱",
+      "B虽有段落6的轻微语病，但整体瑕疵远少于A",
+      "A对某些日语表达理解有偏差（如段落23的'昨日の今日で'）"
+    ],
+    "final_summary": "翻译B整体质量明显优于A。虽然B有个别小瑕疵（段落6语病），但A存在段落5的严重事实性错误（食物名称混淆）、多处句子结构问题和理解偏差。在术语处理上，B的音译方式更符合轻小说翻译惯例。在准确性、流畅性和专业度方面，B都表现更佳，是更可靠的翻译。"
+  },
+  "outcome": "Qwen3-235B-A22B-Instruct-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Instruct-2507"
+}

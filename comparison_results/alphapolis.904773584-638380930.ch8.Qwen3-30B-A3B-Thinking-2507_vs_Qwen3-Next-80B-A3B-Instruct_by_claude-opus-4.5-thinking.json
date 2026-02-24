@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:08:25.412327",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "a15394bc58a0663cb3961233b7dd9c5c8afc9dba3c9836f7e77eefcd674971bf",
+    "B": "02b13f135a70326c35fdd7b1fa81b2fb0ca6b692ab2e1e3aa9a4de97aa69c155"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:09:21.688379",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "db4b4fd2-d593-42e5-ad4d-e1f2cd4f227b",
+      "judge_response": {
+        "id": "db4b4fd2-d593-42e5-ad4d-e1f2cd4f227b",
+        "object": "chat.completion",
+        "created": 1768421361,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 准确性分析\n\n**A的问题：**\n- 段落82-83：严重错误！将\"スノートレント/アイストレント\"译为\"雪兔/冰兔\"，\"ベジトレント\"译为\"蔬菜兔\"——原文明确是トレント（树精）系魔物\n- 段落102：\"ボア\"(Boar=野猪)译为\"貂\"，错误\n- 段落3：保留日文\"アウルベア\"未翻译\n\n**B的问题：**\n- 段落15：\"ポピュラー\"译为\"流行的\"不如\"常见的\"准确\n- 段落102：\"ボア\"译为\"蟒蛇\"也不准确（应为野猪）\n- 段落106：保留英文\"slime\"未翻译\n\n### 术语处理对比\n\n| 原文 | A | B | 更佳 |\n|------|---|---|------|\n| トレント | 特伦特(音译) | 树人(意译) | B |\n| マンドレイク | 曼德莱克 | 曼德拉草 | B |\n| キラーエイプ | 杀手猿 | 杀手艾普 | A |\n| コートウルフ | 长毛狼 | 寇特狼 | A |\n| マーダーウッド | 玛达伍德 | 杀人木 | B |\n\n### 流畅性对比\n- B整体更口语化自然，如段落113\"堆得跟韭菜似的\"生动形象\n- A某些表达略显生硬，如段落41\"适合制皮\"\n\n### 关键差异\n段落82-83的错误是致命的——A完全误解了魔物类型（树精→兔子），这会严重影响读者理解设定体系。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 7, \"notes\": \"A在段落82-83有严重误译(トレント→兔)；B在段落15、102有小错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B语言更自然口语化，A偏书面\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说设定集的活泼风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 7, \"notes\": \"A术语体系因82-83错误而混乱；B有106段未翻译但整体一致\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的トレント误译影响整体设定理解\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B段落106保留英文slime扣分\"}\n  },\n  \"key_differences\": [\n    \"A将トレント系魔物严重误译为'兔'系列(段落82-83)\",\n    \"B对专有名词采用意译更多(树人/曼德拉草)，A多用音译\",\n    \"B语言更口语化自然，A偏正式\",\n    \"两者对ボア都有误译（应为野猪）\"\n  ],\n  \"final_summary\": \"虽然两版翻译各有优缺，但A在段落82-83将トレント(树精)系魔物错译为'兔'系列是不可接受的重大错误，直接破坏了设定体系的完整性。B虽有个别小问题(如slime未译)，但整体准确性和可读性更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11770,
+          "completion_tokens": 2620,
+          "total_tokens": 14390
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 7,
+        "notes": "A在段落82-83有严重误译(トレント→兔)；B在段落15、102有小错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B语言更自然口语化，A偏书面"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说设定集的活泼风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 7,
+        "notes": "A术语体系因82-83错误而混乱；B有106段未翻译但整体一致"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的トレント误译影响整体设定理解"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B段落106保留英文slime扣分"
+      }
+    },
+    "key_differences": [
+      "A将トレント系魔物严重误译为'兔'系列(段落82-83)",
+      "B对专有名词采用意译更多(树人/曼德拉草)，A多用音译",
+      "B语言更口语化自然，A偏正式",
+      "两者对ボア都有误译（应为野猪）"
+    ],
+    "final_summary": "虽然两版翻译各有优缺，但A在段落82-83将トレント(树精)系魔物错译为'兔'系列是不可接受的重大错误，直接破坏了设定体系的完整性。B虽有个别小问题(如slime未译)，但整体准确性和可读性更胜一筹。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

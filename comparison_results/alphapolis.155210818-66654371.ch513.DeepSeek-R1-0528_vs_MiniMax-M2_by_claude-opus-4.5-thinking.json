@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:02:10.206880",
+  "sample": "alphapolis.155210818-66654371.ch513",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.155210818-66654371.ch513.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.155210818-66654371.ch513.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/alphapolis.155210818-66654371.ch513.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7f413423f5597a858a38fc09229d4014d8912c247c6d45cd4a600048bcbf3be3",
+    "A": "948fe3a4aaad16ce88de4d8727fc84a88109c605584eaea77c876d7821173a96",
+    "B": "c721447fcdad36dcfad31c331e2583423c37db431ffde2063c434c85ffd53699"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:02:51.585611",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "ba6534cd-bb8b-4341-bdb9-8bc81bd58827",
+      "judge_response": {
+        "id": "ba6534cd-bb8b-4341-bdb9-8bc81bd58827",
+        "object": "chat.completion",
+        "created": 1768420971,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键差异分析\n\n**段落1**: A完整翻译了\"3时间后に地下15階の安全地帯へ戻ってくる\"，B完全漏译了这半句。\n\n**段落5**: \"迷宮ナマズ\"中ナマズ是鲇鱼/鲶鱼，A译\"鲇鱼\"正确，B译\"泥鳅\"错误。\n\n**段落42-49**: A突然切换成繁体中文，严重格式问题。\n\n**段落75**: 原文是从道具箱取出\"被拔掉魔石的贝希摩斯尸体\"，A理解正确，B误解为\"取出魔石召唤贝希摩斯\"。\n\n**段落26**: A保留了日式引号「」，B改用中式引号\"\"，不一致。\n\n### 流畅性对比\n- B整体语句更通顺自然（如段落7、8、15、18）\n- A部分表达生硬（如\"听着话的老爸\"、\"使用了第一次魔法\"）\n\n### 风格对比\n- A用\"老爸\"\"老妈\"更口语化符合轻小说风格\n- B用\"父亲\"\"母亲\"略正式\n- A的\"雫酱\"vs B的\"小雫\"，前者更贴近原文\n\n### 术语一致性\n- A: 树叔叔、修根先生\n- B: 樹大叔、秀元先生\n- 两者人名处理各有特点\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.62,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 6, \"notes\": \"B漏译段落1后半句，段落5译错鲇鱼为泥鳅，段落75理解错误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更流畅自然，A部分表达生硬\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A口语化更符合轻小说风格，称呼更贴切\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者人名术语处理各有特点，基本一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B句子衔接更自然\"},\n    \"formatting\": {\"A\": 5, \"B\": 8, \"notes\": \"A段落42-49突然变繁体，严重格式问题\"}\n  },\n  \"key_differences\": [\n    \"段落1：B漏译后半句关于3小时后返回的内容\",\n    \"段落5：A正确译鲇鱼，B错译泥鳅\",\n    \"段落42-49：A出现繁简混用\",\n    \"段落75：B误解原文意思\",\n    \"整体语言风格：A更口语化，B更书面化\"\n  ],\n  \"final_summary\": \"A在准确性上有明显优势（无漏译、关键词汇正确、语义理解准确），但存在严重的繁简混用问题。B流畅性更好但有关键翻译错误。综合考虑，准确性是翻译的首要标准，A的格式问题可修复，而B的漏译和误译更难补救，因此A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10426,
+          "completion_tokens": 1647,
+          "total_tokens": 12073
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.62,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 6,
+        "notes": "B漏译段落1后半句，段落5译错鲇鱼为泥鳅，段落75理解错误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更流畅自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A口语化更符合轻小说风格，称呼更贴切"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者人名术语处理各有特点，基本一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B句子衔接更自然"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 8,
+        "notes": "A段落42-49突然变繁体，严重格式问题"
+      }
+    },
+    "key_differences": [
+      "段落1：B漏译后半句关于3小时后返回的内容",
+      "段落5：A正确译鲇鱼，B错译泥鳅",
+      "段落42-49：A出现繁简混用",
+      "段落75：B误解原文意思",
+      "整体语言风格：A更口语化，B更书面化"
+    ],
+    "final_summary": "A在准确性上有明显优势（无漏译、关键词汇正确、语义理解准确），但存在严重的繁简混用问题。B流畅性更好但有关键翻译错误。综合考虑，准确性是翻译的首要标准，A的格式问题可修复，而B的漏译和误译更难补救，因此A略胜。"
+  },
+  "outcome": "DeepSeek-R1-0528_win",
+  "winner_model": "DeepSeek-R1-0528"
+}

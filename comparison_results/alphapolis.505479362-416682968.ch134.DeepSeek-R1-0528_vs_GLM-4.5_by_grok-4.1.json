@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:38:39.998008",
+  "sample": "alphapolis.505479362-416682968.ch134",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.505479362-416682968.ch134.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "GLM-4.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-R1-0528",
+    "B": "GLM-4.5"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.505479362-416682968.ch134.DeepSeek-R1-0528.translated.txt",
+    "B": "translated_results/alphapolis.505479362-416682968.ch134.GLM-4.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "7798a12d0df9e0fecd9e87954665874bf1aefbf30106dc663e953b2e3995e1c1",
+    "A": "6cc1a0b3abe05bcaca081ef12ba7abeb36954d22782beb085070dbd272a658d3",
+    "B": "9b3607a63580f71f1535cf53dead97e79921a8c41f8886ee83d9577791ed57c9"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:39:22.537897",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DytZ5NY6uUTMhISXHut5az8er0M",
+      "judge_response": {
+        "id": "chatcmpl-89DytZ5NY6uUTMhISXHut5az8er0M",
+        "object": "chat.completion",
+        "created": 1768426755,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 菲利普 ダグマー ボエル フレドリク 辺境伯 原文 日本語 小説\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"フィリップ カミングアウト ボエル 侍女 暗殺 軽小説\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"フィリップの知人女性にカミングアウト 原文 小説\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [📚 \"アーシュラ・K・ル＝グウィン - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%BC%E3%82%B7%E3%83%A5%E3%83%A9%E3%83%BBK%E3%83%BB%E3%83%AB%EF%BC%9D%E3%82%B0%E3%82%A6%E3%82%A3%E3%83%B3)\n> [🔗 \"清水晶子 『フェミニズムってなんですか？』 ： 北村紗衣の代表的な盟友｜年間読書人 - note\" note.com](https://note.com/nenkandokusyojin/n/n415882457c78)\n> [🔗 \"中山修一著作集17 : ふたつの性——富本一枝伝 - Kobe University\" da.lib.kobe-u.ac.jp](https://da.lib.kobe-u.ac.jp/da/kernel/0100492140/nakayama_work17_full.pdf)\n> [🔗 \"この映画が面白い 八丁座・サロンシネマ 総支配人 住岡正明\" johakyu.co.jp](https://johakyu.co.jp/recommended.html)\n> [🔗 \"PROCEEDINGS - Princeton Japanese Pedagogy Forum\" pjpf.princeton.edu](https://pjpf.princeton.edu/sites/g/files/toruqf1151/files/documents/PJPF24_Proceedings_24.pdf)\n> [🔗 \"Ο Α.Π.Σ. Πρωτέα είναι στην ευχάριστη θέση να ανακοινώσει τη έναρξη εγγραφών της ακαδημίας του. - Πρωτεας Παλαιας Φωκαιας\" fcproteas.gr](https://fcproteas.gr/2019/07/18/%CE%B5%CE%BD%CE%B1%CF%81%CE%BE%CE%B7-%CE%B5%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CF%89%CE%BD-%CF%80%CE%B5%CF%81%CE%B9%CE%BF%CE%B4%CE%BF%CF%85-2019-2020)\n> [🔗 \"Zip Line & Rock Climbing Packages - Breckenridge Whitewater Rafting\" www.breckenridgewhitewater.com](https://www.breckenridgewhitewater.com/packages/zip-rock-climb)\n> [🔗 \"2022 年 7 月新聞書評に掲載された本 - ナレッジワーカー\" kw.maruzen.co.jp](https://kw.maruzen.co.jp/ln/doc/shohyo_202207.pdf)\n> [🔗 \"2022 - GRL 名古屋大学 ジェンダー・リサーチ・ライブラリ\" www.grl.kyodo-sankaku.provost.nagoya-u.ac.jp](http://www.grl.kyodo-sankaku.provost.nagoya-u.ac.jp/wp-content/uploads/2023/06/GRL-Studies_vol5.pdf)\n> [🔗 \"日本映画学会 - researchmap\" researchmap.jp](https://researchmap.jp/wyler/published_papers/43907656/attachment_file.pdf)\n\n\n**详细分析：**\n\n整体来看，这段轻小说文本属于典型的搞笑+吐槽+反转+爽点风格，叙述者（菲利普）以第一人称视角自嘲+炫耀+调侃，语气非常口语化、轻浮、带点傲娇和“屑”感。对话部分则充满夸张、吐槽、愤怒与反差萌。翻译需要同时兼顾**幽默感**、**节奏感**、网络轻小说常见的“亚文化萌点”（如～、じゃん、てへぺろ等语气词），以及中文读者熟悉的网络用语流畅度。\n\n**逐项比较：**\n\n1. **准确性（意思保留）**  \n   A在大多数地方忠实于原文，但偶尔有小误译或僵硬处，如段落2把“テスト勉強するのと引き換えに体の関係となった”译为“以辅导考试为交换，发生了身体关系”（主语/对象关系稍混乱，原文是菲利普主动）；段落9的“間違えたね”译为“搞错了呢”（第一人称视角丢失）。  \n   B整体更准确，尤其在人际关系、动作主语、视角保持上更严谨（如段落2明确“和我发生了肉体关系”，段落9“我告诉他物品箱的事”保持叙述者视角）。B在关键信息点失误更少。  \n   → B略胜。\n\n2. **流畅性（中文自然表达）**  \n   A的中文较为书面化，部分句子读起来稍显生硬、翻译腔明显（如“装傻充愣”“哗啦哗啦～”“狠狠嘲笑”）。  \n   B大量使用口语化、网络化表达（如“光是听到第二个女人…全都不行了”“真单纯”“吐舌头”“呃嘿”“大混乱”），更符合当下中文轻小说读者阅读习惯，读起来更顺、更活泼。  \n   → B明显更胜。\n\n3. **风格/语气（轻小说叙述/对话）**  \n   轻小说核心是“屑主角+反差+吐槽”，需要语气轻浮、可爱、欠揍又带点萌。  \n   A的～、嘛等语气词使用保守，整体偏“正经翻译”，少了那种“屑感”和卖萌味（如“对不起～啦”显得中规中矩）。  \n   B大量使用“啦～”“嘛～”“呃嘿”“てへぺろ式结尾”“大伙儿怒气冲冲”等，更贴近中文轻小说社区常见的夸张可爱风格，对话特别生动（如“吵死了！那剑又算什么啊！？”“我本来就是个右撇子啦～”）。  \n   → B大幅领先，这是决定性优势。\n\n4. **术语/名称一致性**  \n   两者基本一致（如ボエル→波耶尔，フレドリク→弗瑞德里克，ダンジョン→地下城/迷宫混用但无大碍）。  \n   B在“物品箱”“考卷”等日常用词更统一自然。  \n   → 平手或B微胜。\n\n5. **连贯性/可读性**  \n   B的段落衔接更丝滑，叙述部分口语感强，读起来像一口气看完的网络小说。  \n   A有些地方转折稍显突兀，叙述句偏长而书面。整体节奏B更好。  \n   → B胜。\n\n6. **格式/标点符号**  \n   两者都较规范。B在语气词后标点、破折号、省略号的使用更符合中文网络文习惯（如大量“～？？”“！！！”），视觉上更活泼。  \n   → B微胜。\n\n**关键差异总结：**\n- B在保留原文“屑萌”“口语炸裂”风格上远超A，这是轻小说翻译的灵魂。\n- A更忠于字面，但牺牲了大量趣味性和中文阅读快感。\n- B偶尔有轻微增译/改写（如“吐舌头”对应てへぺろ），但都在合理范围内，且大幅提升了娱乐性。\n\n**最终判决：**\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 9, \"notes\": \"B在主语关系、视角保持上更精准，A有少量小偏差\"},\n    \"fluency\": {\"A\": 7, \"B\": 9.5, \"notes\": \"B口语化、网络化表达极自然，A仍有翻译腔\"},\n    \"style\": {\"A\": 6.5, \"B\": 9.5, \"notes\": \"B完美捕捉轻小说屑萌+吐槽语气，A偏正经，风格损失严重\"},\n    \"terminology\": {\"A\": 9, \"B\": 9, \"notes\": \"两者术语基本一致，无重大问题\"},\n    \"coherence\": {\"A\": 7.5, \"B\": 9, \"notes\": \"B节奏更好，读起来更连贯流畅\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B的语气标点与网络文更契合\"}\n  },\n  \"key_differences\": [\n    \"B大量使用中文网络轻小说常用语气词与表达，极大提升了趣味性和代入感\",\n    \"A偏向直译，保留原文结构但丢失了大量轻小说特有的轻浮卖萌感\",\n    \"对话部分B明显更生动、更欠揍、更符合中文读者对屑主角的期待\"\n  ],\n  \"final_summary\": \"B在轻小说最重要的风格再现与中文阅读快感上全面碾压A，虽然准确性略有微调，但整体娱乐价值与可读性远胜，是更优秀的轻小说翻译。强烈推荐B。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10254,
+          "completion_tokens": 3012,
+          "total_tokens": 13266
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 9,
+        "notes": "B在主语关系、视角保持上更精准，A有少量小偏差"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9.5,
+        "notes": "B口语化、网络化表达极自然，A仍有翻译腔"
+      },
+      "style": {
+        "A": 6.5,
+        "B": 9.5,
+        "notes": "B完美捕捉轻小说屑萌+吐槽语气，A偏正经，风格损失严重"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者术语基本一致，无重大问题"
+      },
+      "coherence": {
+        "A": 7.5,
+        "B": 9,
+        "notes": "B节奏更好，读起来更连贯流畅"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B的语气标点与网络文更契合"
+      }
+    },
+    "key_differences": [
+      "B大量使用中文网络轻小说常用语气词与表达，极大提升了趣味性和代入感",
+      "A偏向直译，保留原文结构但丢失了大量轻小说特有的轻浮卖萌感",
+      "对话部分B明显更生动、更欠揍、更符合中文读者对屑主角的期待"
+    ],
+    "final_summary": "B在轻小说最重要的风格再现与中文阅读快感上全面碾压A，虽然准确性略有微调，但整体娱乐价值与可读性远胜，是更优秀的轻小说翻译。强烈推荐B。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

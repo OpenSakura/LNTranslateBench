@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:24:00.967242",
+  "sample": "kakuyomu.1177354054889602010.ch79",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054889602010.ch79.txt",
+  "models": {
+    "model_1": "MiniMax-M2",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054889602010.ch79.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054889602010.ch79.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "23d0ac80be5ea67011678f4b2f95e301162d4e5d719841c8ac7f3e1438276879",
+    "A": "e60a37eb75c4a2e02d2fa717db93b635ca64a9ec41ff5ba9056c6a50b285882e",
+    "B": "b57929c763c9fbd658ffd53c11c6ff203e779ccec65192f51d5ecbc195d991c4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:24:50.733849",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5d96f64c-93ce-4ee6-8c88-5b42e658afaa",
+      "judge_response": {
+        "id": "5d96f64c-93ce-4ee6-8c88-5b42e658afaa",
+        "object": "chat.completion",
+        "created": 1768422290,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 1. 准确性分析\n\n**段落4**：A漏译了「そうなってくるとやはり気になるのは戦利品だ」（\"这么一来，果然在意的还是战利品\"），B完整翻译。\n\n**段落5**：「牝」A译为\"女人\"，B译为\"雌性\"。原文用「牝」是刻意展示哥布林的粗野视角，B更准确。\n\n**段落42**：「倍の一万」A错译为\"两万\"，B正确译为\"双倍的一万\"。\n\n**段落77**：B严重漏译且错误——「鞭を打ち」应是\"鞭策\"，B译成\"不挨鞭子\"完全错误。\n\n**段落97**：B出现英文残留\"went well\"，严重错误。\n\n### 2. 流畅性分析\n\nA整体更自然流畅，如段落45\"自从打倒了5000士兵就得意忘形，也就现在而已\"比B的\"才把5000兵力打败，就自以为是，也只是一时的得意\"更口语化。\n\nB在段落32\"会上钩，被结果就是被伏兵给收拾了\"语序混乱。\n\n### 3. 风格/语气分析\n\nA的对话更符合轻小说口语风格，如\"话说！\"\"操啊啊！\"\nB部分对话较生硬。\n\n### 4. 术语一致性\n\n- 名字：A用\"戈布拉尔/戈布拉\"，B用\"哥布拉尔/哥布拉\"——两者都一致\n- 段落94：A译为\"纳莫奈\"，B保留日文\"ナモナイ\"——A更好\n\n### 5. 格式问题\n\n- A混用中文引号和日式括号，不够统一\n- B在段落70-72错误地给内心独白加了「」\n- B段落97出现英文残留\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A漏译段落4部分内容；B段落77严重误译、段落97出现英文残留\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A口语化更自然；B部分句子语序混乱\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话风格更符合轻小说；B'雌性'等词更贴近原文粗野语感\"},\n    \"terminology\": {\"A\": 8, \"B\": 7, \"notes\": \"A名字全部中文化；B段落94保留日文未译\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A可读性更高；B段落32、77等处理混乱\"},\n    \"formatting\": {\"A\": 7, \"B\": 5, \"notes\": \"A引号使用略不统一；B错误添加对话标记、英文残留\"}\n  },\n  \"key_differences\": [\n    \"B段落97出现英文残留'went well'，严重影响质量\",\n    \"B段落77'鞭を打ち'误译为'不挨鞭子'\",\n    \"A段落4漏译战利品相关内容\",\n    \"A段落42'倍の一万'误译为两万\",\n    \"B对'牝'译为'雌性'更贴合原文语气\"\n  ],\n  \"final_summary\": \"A整体质量更稳定，流畅性和可读性更好。B虽在部分术语上更准确，但存在严重的翻译错误（段落77误译、段落97英文残留）和格式问题，影响整体质量。A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12603,
+          "completion_tokens": 2034,
+          "total_tokens": 14637
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A漏译段落4部分内容；B段落77严重误译、段落97出现英文残留"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A口语化更自然；B部分句子语序混乱"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话风格更符合轻小说；B'雌性'等词更贴近原文粗野语感"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 7,
+        "notes": "A名字全部中文化；B段落94保留日文未译"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A可读性更高；B段落32、77等处理混乱"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 5,
+        "notes": "A引号使用略不统一；B错误添加对话标记、英文残留"
+      }
+    },
+    "key_differences": [
+      "B段落97出现英文残留'went well'，严重影响质量",
+      "B段落77'鞭を打ち'误译为'不挨鞭子'",
+      "A段落4漏译战利品相关内容",
+      "A段落42'倍の一万'误译为两万",
+      "B对'牝'译为'雌性'更贴合原文语气"
+    ],
+    "final_summary": "A整体质量更稳定，流畅性和可读性更好。B虽在部分术语上更准确，但存在严重的翻译错误（段落77误译、段落97英文残留）和格式问题，影响整体质量。A胜出。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

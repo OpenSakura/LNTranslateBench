@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:23:26.163192",
+  "sample": "syosetu.n1560fy.ch298",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n1560fy.ch298.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2.5"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n1560fy.ch298.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/syosetu.n1560fy.ch298.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9aeb6269094dc80681686c7ce43485d4644d7889a31862f13341d77dfc8671a9",
+    "A": "21498178d84e23c9028d47812e8e7dae2a002b8ae840ef27d29071f8ea7edabe",
+    "B": "630b8bd73acf54bbed8dbf99587085f89b1706b83d06d1457e72e10237fc7b94"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:24:17.623196",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "cd17b508-188b-4a00-bb29-58aecd054080",
+      "judge_response": {
+        "id": "cd17b508-188b-4a00-bb29-58aecd054080",
+        "object": "chat.completion",
+        "created": 1769610257,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n\n**段落44关键错误**：\n- 原文「お、みみです」是角色\"耳鬼\"的自称\"おみみ\"（咪咪）\n- A译为「这、这可不妙」——**完全误译**\n- B译为「我、是咪咪」——正确\n\n**段落46**同样问题：\n- A漏译了角色名\n- B保留了\"咪咪\"\n\n**段落51**：\n- 原文是反驳对方的话\"なんかしてんのかじゃねえ\"\n- A「你丫在搞什么」——理解错误\n- B「才不是在搞什么鬼」——正确\n\n**段落88**：\n- A「我做什么了吗？」——主语错误\n- B「你做了什么吗？」——正确\n\n### 流畅性与风格\n\n- A整体文学性更强，如「如断线木偶般轰然垮塌」vs B「像断了线的木偶一样咔嚓一声崩塌」\n- A「此乃吾之权能」较B「这正是，我的权能」更符合神秘种的语气\n\n### 格式问题\n\n- A段落33：引号混用（开头「结尾『）\n- B段落99、112：引号格式错误\n\n### 术语一致性\n\n- 两者对神名翻译不同：A\"阿斯塔禄\" vs B\"阿斯塔罗斯\"\n- A的\"阁下\"比B的\"大人\"更符合原文「閣下」\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A在段落44、46完全误译了おみみ，段落51、88理解错误；B基本准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A文学性更强，表达更优雅；B较直译但通顺\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的神秘种语气更庄重（吾、此乃）；B较口语化\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者神名翻译各有选择，A的阁下更准确\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A因おみみ误译导致段落44-46逻辑断裂；B保持连贯\"},\n    \"formatting\": {\"A\": 7, \"B\": 7, \"notes\": \"两者都有引号格式问题，A一处，B两处\"}\n  },\n  \"key_differences\": [\n    \"おみみ（咪咪）角色名翻译：A完全误译为语气词，B正确保留\",\n    \"段落51反驳语气：A理解错误，B正确\",\n    \"段落88主语判断：A错误，B正确\",\n    \"整体文学风格：A更雅致，B更直白\"\n  ],\n  \"final_summary\": \"虽然A在文学性和风格上表现更佳，但在关键角色名おみみ的翻译上完全误译（影响段落44、46的理解），加上段落51和88的理解错误，导致准确性和连贯性严重受损。B虽然表达较为直白，但准确传达了原文含义，特别是正确处理了角色名和对话逻辑。准确性是翻译的基础，因此B整体更优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10966,
+          "completion_tokens": 2351,
+          "total_tokens": 13317
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A在段落44、46完全误译了おみみ，段落51、88理解错误；B基本准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A文学性更强，表达更优雅；B较直译但通顺"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的神秘种语气更庄重（吾、此乃）；B较口语化"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者神名翻译各有选择，A的阁下更准确"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A因おみみ误译导致段落44-46逻辑断裂；B保持连贯"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者都有引号格式问题，A一处，B两处"
+      }
+    },
+    "key_differences": [
+      "おみみ（咪咪）角色名翻译：A完全误译为语气词，B正确保留",
+      "段落51反驳语气：A理解错误，B正确",
+      "段落88主语判断：A错误，B正确",
+      "整体文学风格：A更雅致，B更直白"
+    ],
+    "final_summary": "虽然A在文学性和风格上表现更佳，但在关键角色名おみみ的翻译上完全误译（影响段落44、46的理解），加上段落51和88的理解错误，导致准确性和连贯性严重受损。B虽然表达较为直白，但准确传达了原文含义，特别是正确处理了角色名和对话逻辑。准确性是翻译的基础，因此B整体更优。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

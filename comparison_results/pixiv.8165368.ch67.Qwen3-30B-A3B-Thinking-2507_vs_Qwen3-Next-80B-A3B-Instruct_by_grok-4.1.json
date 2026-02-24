@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:45:00.316512",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "Qwen3-30B-A3B-Thinking-2507",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Thinking-2507",
+    "B": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.Qwen3-30B-A3B-Thinking-2507.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Qwen3-Next-80B-A3B-Instruct.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "8ee8077ed764e56d23b095e9898b77e467b3ce435ecd150b9609f09d892f61ea",
+    "B": "5c4bfb40589065acd83776cca8595f2a9f61f99ea454b42359c09161df97d92b"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:17.699776",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DxjsarZ9WSIQqcIOr1kxpS0of2W",
+      "judge_response": {
+        "id": "chatcmpl-89DxjsarZ9WSIQqcIOr1kxpS0of2W",
+        "object": "chat.completion",
+        "created": 1768427117,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 警察学校組\"\n> 📊 **Results requested:** 10\n\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 トリプルフェイス\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"名探偵コナン 警察学校組 諸伏 降谷\"\n> 📊 **Results requested:** 5\n\n> 🔍 **10 results found**\n\n> [🔗 \"【警察学校組生存IF】純黒の悪夢【冒頭だけ】 - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=14991867)\n> [🔗 \"#1 純黒の悪夢 生存if３ | 警察学校組生存IF - むーぱーの小説シリーズ - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=19585630)\n> [🔗 \"名探偵コナン、警察学校組の登場回をまとめました 警察学校組が絡まない降谷零の登場回は除い ...\" x.com](https://x.com/dcscarlet1412/status/1921864461419221175)\n> [📚 \"名探偵コナン 純黒の悪夢 - Wikipedia\" ja.wikipedia.org](https://ja.wikipedia.org/wiki/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3_%E7%B4%94%E9%BB%92%E3%81%AE%E6%82%AA%E5%A4%A2)\n> [🔗 \"『名探偵コナン』警察学校組のメンバー一覧｜登場回や人物像、関係性など解説\" www.animatetimes.com](https://www.animatetimes.com/news/details.php?id=1747820329)\n> [🔗 \"名探偵コナンの警察学校組について質問です。降谷と松田の同期設定は純黒の悪夢...\" detail.chiebukuro.yahoo.co.jp](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12323768717)\n> [🔗 \"68 件の「警察学校組 漫画」のアイデアを今すぐ保存 | 漫画、コナン 警察\" jp.pinterest.com](https://jp.pinterest.com/sayanosuke9275/%E8%AD%A6%E5%AF%9F%E5%AD%A6%E6%A0%A1%E7%B5%84-%E6%BC%AB%E7%94%BB)\n> [🔗 \"「警察学校組」相関図＆時系列【降谷零・松田陣平・萩原研二・伊達航・諸伏景光】2026年映画最新ネタバレ - 名探偵コナン考察・図解\" conan-zukai.com](https://conan-zukai.com/2024keisatugakkou)\n> [▶️ \"『名探偵コナン 純黒の悪夢（ナイトメア）』90秒予告編 - YouTube\" www.youtube.com](https://www.youtube.com/watch?v=bXkzfhqEKa8)\n> [🔗 \"「劇場版名探偵コナン ハロウィンの花嫁」を警察学校組に狂った女が観に行った感想を書き殴る ※ネタバレ無し - note\" note.com](https://note.com/sannnna_h/n/n20f5dbe6b6b1)\n\n> 🔍 **5 results found**\n\n> [🔗 \"トリプルフェイス - ピクシブ百科事典\" dic.pixiv.net](https://dic.pixiv.net/a/%E3%83%88%E3%83%AA%E3%83%97%E3%83%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9)\n> [🔗 \"『名探偵コナン』安室透／バーボン／降谷零ーートリプルフェイスを持つ男、その底知れぬ魅力 - リアルサウンド\" realsound.jp](https://realsound.jp/book/2020/04/post-536204.html)\n> [🔗 \"劇場版「名探偵コナン」第22作目の情報解禁、“トリプルフェイス”安室透が登場！ - 映画ランド\" eigaland.com](https://eigaland.com/topics?p=60708)\n> [🔗 \"「名探偵コナン 純黒の悪夢」黒ずくめの組織キャラ一覧 キュラソー役やゲスト声優は誰？ コナン×安室×赤井の“神コラボ”も必見 - アニメハック\" anime.eiga.com](https://anime.eiga.com/news/column/animehack_editors/119609)\n> [🔗 \"安室透・バーボン・降谷零 徹底解剖！トリプルフェイスのすべて【名探偵コナン】 - eBookJapan\" ebookjapan.yahoo.co.jp](https://ebookjapan.yahoo.co.jp/content/title-119961/triple.html)\n\n> 🔍 **5 results found**\n\n> [🔗 \"「警察学校組」相関図＆時系列【降谷零・松田陣平・萩原研二・伊達航・諸伏景光】2026年映画最新ネタバレ - 名探偵コナン考察・図解\" conan-zukai.com](https://conan-zukai.com/2024keisatugakkou)\n> [🔗 \"『名探偵コナン』警察学校組のメンバー一覧｜登場回や人物像、関係性など解説\" www.animatetimes.com](https://www.animatetimes.com/news/details.php?id=1747820329)\n> [🔗 \"2 【IF注意！】景光と安室さんが爆処組にみつかってしまいました。 | 警察学校組生存IF - pixiv\" www.pixiv.net](https://www.pixiv.net/novel/show.php?id=10140288)\n> [🔗 \"警察学校編 Wild Police Story | 名探偵コナン - 読売テレビ\" www.ytv.co.jp](https://www.ytv.co.jp/conan/police)\n> [🔗 \"名探偵コナン 警察学校編～Wild Police Story～CASE.12「桜花爛漫」\" ameblo.jp](https://ameblo.jp/fuuyuu-xxx-sakurachan/entry-12637336658.html)\n\n\n这是一个轻小说风格的同人作品（二次创作梦小说），基于《名探偵コナン》（名侦探柯南），特别是剧场版《纯黑的恶梦》（纯黑の悪梦），涉及降谷零（安室透/波本/零）、诸伏景光（景光，已故但这里是救赎IF）、警察学校组等元素。原文是日文警告事项+叙述性正文，带有轻松、吐槽、自嘲的轻小说口吻，第一人称“我”作为原创女主（オリ主），有原作知识，对安室（降谷）有好感，讲述电影剧情并调侃角色。\n\n**详细分析：**\n\n整体上，两个翻译都试图传达原文的警告严肃+正文幽默吐槽的对比。A更倾向于直译+简洁，B更注重中文自然表达、口语化和轻小说常见的活泼语气。\n\n- **准确性**：A更忠实于原文词汇（如“ご都合主義”→“随意改动”，但原文是“ご都合主義”=方便主义/剧情方便；“匂わせ程度の性的な表現”→“略带性暗示的表达”接近；“Triple Face”→“Triple Face”保留）。B有时改写（如“二次創作のネームレス夢小説”→“无名的同人梦小说”，更贴合中文圈说法；“ご都合主義”→“方便主义的修改”，准确；但“匂わせ程度”→“暗示性质的露骨描写”稍夸张，原文是“匂わせ程度”=轻微暗示而非露骨）。A在关键处（如电影剧情描述）更精确，B偶有小改动但未严重失真。A略胜。\n\n- **流畅性**：B的中文更自然、口语化（如“唔……”“打扰啦——”“喂，hiro。你来这儿干嘛？”），读起来像中文轻小说。A有时生硬（如“一边看网络新闻一边喃喃自语”“知道诸伏要来，我做了放卤蛋的角煮”→角煮是日式，B改“红烧肉”更接地气；“物理性地投向卡车”→B“直接物理性地扔上卡车”更顺）。B整体阅读感更好。\n\n- **风格/语气**：轻小说特点是轻松、内心吐槽、卖萌、夸张反应。B更捕捉到（如“哈哈哈！”“哇哇！”“尤也，加油啊！”活泼；对话更带感叹）。A较平淡（如“唔……”“请～”）。正文部分B的调侃味更浓（如对降谷的“惨状”描写），贴合梦小说的自嗨调性。B胜。\n\n- **术语/名称一致性**：两者基本一致（如降谷零、诸伏景光、柯南君、RX-7、ゆりかもめ）。A保留“Triple Face”、B也一样；人名音译统一（hiro小写问题A/B都有，但不影响）。B在“诸伏”统一，A有时“诸伏さん”→“诸伏先生”。两者相当，B稍好（“白天鹅”对应“はくちょう”=白天鹅）。\n\n- **连贯性/可读性**：B句子更连贯，少awkward（如A的“降谷小姐用手掩着脸”明显误译性别，应为先生；B正确“降谷先生”）。B整体节奏更好，适合长篇阅读。B胜。\n\n- **格式/标点符号**：两者都使用中文标点，但B更灵活使用破折号、感叹号、波浪号（如“打扰啦——”“诶？！”），贴合日式轻小说对话的拖长音、强调。A较保守。B胜。\n\n**关键差异总结**：\n- A更忠实直译，但部分地方显得中文化不足、语气平。\n- B更注重中文读者体验，口语化强、语气活泼，但个别地方稍有改写/夸张（如“露骨描写”）。\n- 正文幽默部分B明显更生动，警告部分两者接近但B更自然。\n- 少数误译：A有性别错（降谷小姐）、B有轻微夸张。\n\n总体，B在轻小说翻译最核心的“读起来有趣、自然、带入感强”上占优，A更保守但流畅性/风格弱一些。无极端失误，但B更适合该类型。\n\n**最终判决**：\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更忠实原文词汇和结构，B有少量意译/微调但未严重偏离\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B的中文表达更自然流畅，口语感强；A偶有生硬句式\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地保留了轻小说幽默、吐槽、活泼语气；A较平淡\"},\n    \"terminology\": {\"A\": 9, \"B\": 9, \"notes\": \"两者术语/人名一致性高，B在部分专有名词（如白天鹅）更贴合中文习惯\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B整体连贯性强，少有awkward表达；A有少量性别/表述问题\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B标点更灵活生动，贴合对话拖长音与强调\"}\n  },\n  \"key_differences\": [\n    \"B更口语化、活泼（如对话语气、感叹），贴合轻小说风格\",\n    \"A更直译，准确但有时显得生硬或中文化不足（如食物名、性别误译）\",\n    \"B在幽默场景（如降谷崩溃描写）更生动夸张，增强可读性\",\n    \"警告事项部分两者接近，但正文B优势明显\"\n  ],\n  \"final_summary\": \"B整体更胜一筹，尤其在轻小说所需的流畅性、风格再现和读者代入感上表现出色，适合作为中文同人轻小说的翻译。A准确可靠但缺少一些趣味性。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14285,
+          "completion_tokens": 4049,
+          "total_tokens": 18334
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更忠实原文词汇和结构，B有少量意译/微调但未严重偏离"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文表达更自然流畅，口语感强；A偶有生硬句式"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地保留了轻小说幽默、吐槽、活泼语气；A较平淡"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者术语/人名一致性高，B在部分专有名词（如白天鹅）更贴合中文习惯"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B整体连贯性强，少有awkward表达；A有少量性别/表述问题"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B标点更灵活生动，贴合对话拖长音与强调"
+      }
+    },
+    "key_differences": [
+      "B更口语化、活泼（如对话语气、感叹），贴合轻小说风格",
+      "A更直译，准确但有时显得生硬或中文化不足（如食物名、性别误译）",
+      "B在幽默场景（如降谷崩溃描写）更生动夸张，增强可读性",
+      "警告事项部分两者接近，但正文B优势明显"
+    ],
+    "final_summary": "B整体更胜一筹，尤其在轻小说所需的流畅性、风格再现和读者代入感上表现出色，适合作为中文同人轻小说的翻译。A准确可靠但缺少一些趣味性。"
+  },
+  "outcome": "Qwen3-Next-80B-A3B-Instruct_win",
+  "winner_model": "Qwen3-Next-80B-A3B-Instruct"
+}

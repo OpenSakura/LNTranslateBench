@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:44:48.124985",
+  "sample": "pixiv.8165368.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/pixiv.8165368.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1-Terminus",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1-Terminus",
+    "B": "Kimi-K2"
+  },
+  "translation_files": {
+    "A": "translated_results/pixiv.8165368.ch67.DeepSeek-V3.1-Terminus.translated.txt",
+    "B": "translated_results/pixiv.8165368.ch67.Kimi-K2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "cac90ac86bddc6aa6ddbc98ff28a4f5076bedd813970424a07c3822455443461",
+    "A": "8504e1ce7b7fbaaf27e8f78e398bdb30490f439205254a3443aad0da8befca8e",
+    "B": "b8104f3080e1d4d08f104dcbba269d35c5fb34f02f8b1e58abc1ab5fd2d710c0"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:45:10.627212",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DaDx0wZEj8NSvjHa7z9AJfe1lDm",
+      "judge_response": {
+        "id": "chatcmpl-89DaDx0wZEj8NSvjHa7z9AJfe1lDm",
+        "object": "chat.completion",
+        "created": 1768427110,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 剧情 概要\"\n> 📊 **Results requested:** 5\n\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 トリプルフェイス\"\n> 📊 **Results requested:** 3\n\n> 🔍 **Searching for:** \"名探偵コナン 純黒の悪夢 安室透 降谷零 波本\"\n> 📊 **Results requested:** 3\n\n> 🔍 **5 results found**\n\n> [🔗 \"名探偵コナン 純黒の悪夢 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3_%E7%B4%94%E9%BB%92%E3%81%AE%E6%82%AA%E5%A4%A2)\n> [🔗 \"名探偵コナン 純黒の悪夢(ナイトメア) | 名探偵コナン | TMS作品一覧 | アニメーションの総合プロデュース会社 トムス・エンタテインメント\" TMS](https://www.tms-e.co.jp/alltitles/conan/087320.html)\n> [🔗 \"『名探偵コナン 純黒の悪夢(じゅんこくのナイトメア)』 - YouTube\" YouTube](https://www.youtube.com/playlist?list=PLmnMiSXtJEB2I40jRlvff5OU2jFngZwFt)\n> [🔗 \"Case Closed: The Darkest Nightmare (名探偵コナン 純黒の悪夢(ナイトメア)) | Anime Wiki\" Anibase](https://anibase.net/en/anime/10kdO/Case-Closed-The-Darkest-Nightmare)\n> [🔗 \"劇場版 名探偵コナン 純黒の悪夢（ナイトメア）を視聴 | Disney+(ディズニープラス)\" Disney+](https://www.disneyplus.com/ja-jp/browse/entity-6b873806-cbb6-4399-b86c-e196cf976712)\n\n> 🔍 **3 results found**\n\n> [🔗 \"名探偵コナン 純黒の悪夢 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3_%E7%B4%94%E9%BB%92%E3%81%AE%E6%82%AA%E5%A4%A2)\n> [🔗 \"名探偵コナン 純黒の悪夢(ナイトメア) | 名探偵コナン | TMS作品一覧 | アニメーションの総合プロデュース会社 トムス・エンタテインメント\" TMS](https://www.tms-e.co.jp/alltitles/conan/087320.html)\n> [🔗 \"『名探偵コナン』安室透をもっと知りたい！「トリプルフェイス」の謎に迫る本 - hontoブックツリー\" Honto](https://honto.jp/booktree/detail_00006518.html)\n\n> 🔍 **3 results found**\n\n> [🔗 \"名探偵コナン 純黒の悪夢 - Wikipedia\" Wikipedia](https://ja.wikipedia.org/wiki/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3_%E7%B4%94%E9%BB%92%E3%81%AE%E6%82%AA%E5%A4%A2)\n> [🔗 \"2大人気キャラ赤井秀一と安室透が激突！黒ずくめの組織の謎に迫る！シリーズ20作目「名探偵コナン 純黒の悪夢」ってどんな作品なの？｜金曜ロードシネマクラブ\" Kinro](https://kinro.ntv.co.jp/article/detail/20200409)\n> [🔗 \"名探偵コナン 純黒の悪夢(ナイトメア) | 名探偵コナン | TMS作品一覧 | アニメーションの総合プロデュース会社 トムス・エンタテインメント\" TMS](https://www.tms-e.co.jp/alltitles/conan/087320.html)\n\n\n这是一个典型的轻小说（或同人小说）前言+正文片段，源自《名探偵コナン》（名侦探柯南）的二次创作，焦点在安室透/降谷零/波本（Bourbon）这个角色上。原文是日文作者的注意事项+梦小说（读者代入式）叙述，带有幽默、自嘲、粉丝向的轻松吐槽语气，尤其在复述《纯黑的噩梦》（純黒の悪夢）电影剧情时，以夸张搞笑方式呈现安室透的“无敌”行动，制造喜剧效果。\n\n**整体分析：**\n\n- **准确性**：两者都基本忠实于原文意思。A在多数地方更逐字对应（如“ご都合主義”→“便利性改编”对应“ご都合主義”的“剧情方便主义”意味；“匂わせ程度の性的な表現”→“暗示性描写”准确捕捉“匂わせ”=轻微暗示）。B有时稍意译或改写，但未明显扭曲（如段落4 B的“按自己方便改得面目全非”夸张但传达了自嘲）。少数地方B稍偏（如段落3“お相手はトリプルフェイス”→B“对手是Triple Face”不准，“お相手”在梦小说语境常指“配对/恋爱对象”而非“对手”，A的“配对对象”更准）。A整体准确性略胜。\n\n- **流畅性**：A的中文更自然、书面化，读起来顺滑，像标准轻小说译文（e.g. 段落13 A“我浏览着网络新闻发出沉吟”自然；B“一边看网络新闻一边哼哼”口语但略随意）。B更口语化、网络用语多（如“好吧——”“雷点”“打圆场”“抠出金口玉言”），有时生动但偶尔生硬或不够优雅（如段落81 B未完整）。A在长句处理更流畅。\n\n- **风格/语气**：原文是轻松、吐槽、自黑、粉丝向的轻小说风格，对话活泼、带萌点/搞笑。A保持了较为中性、叙述流畅的轻小说调性，幽默点到位但不夸张。B更接地气、网络化、夸张（如“雷点”“离谱”“抱头崩溃”“真·真·”“帅爆了呀”），更贴近年輕中文读者/同人圈的“沙雕”“yyds”式语气，某些地方（如段落147 B的直白）更生动有趣，但偶尔过火让叙述显得不够“文雅”。轻小说偏好自然不失可爱的语气，A更均衡，B在对话活泼度上占优但整体稍乱。\n\n- **术语/名称一致性**：两者基本一致（降谷、诸伏、柯南君/柯南、公安等）。A更统一正式（如始终“降谷先生”“诸伏先生”）；B有时小写“hiro”“zero”（段落25,77），略随意，但不影响。专有名词如“トリプルフェイス”两者都音译“Triple Face”。A在“警校组”“卤蛋”“红烧肉”等文化适配稍自然（虽原文是“煮卵入り角煮”，但中文读者更懂“卤蛋角煮”≈红烧肉带蛋）。\n\n- **连贯性/可读性**：A句子结构更连贯，长段叙述顺畅，整体如一本轻小说章节。B口语强，短句多，读起来节奏快但某些地方跳跃（如段落81 B缺失），部分翻译断句怪异。可读性A更稳定。\n\n- **格式/标点符号**：两者都较好保留原文的・、引号、破折号等。A标点更规范（如中文引号使用一致，“——”使用得当）；B偶尔随意（如段落14 B用「」混用）。大致相当，但A稍整洁。\n\n**关键差异总结**：\n- A更忠实、流畅、规范，像专业轻小说翻译，适合广谱读者。\n- B更口语、活泼、网络风，某些吐槽/对话更“带感”、接地气，但准确性和连贯性偶有小瑕疵，风格稍偏“沙雕同人”而非标准轻小说。\n\n总体上，A在轻小说翻译的核心要求（准确+自然+保持可爱叙述语气）上更均衡稳定，B虽在某些幽默点更抓眼球，但整体质量略逊。\n\n**最终判决**：\n\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 8, \"notes\": \"A更精准捕捉部分关键词意涵（如配对对象），B偶有小偏差\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A中文更自然流畅，B口语强但部分生硬\"},\n    \"style\": {\"A\": 9, \"B\": 8.5, \"notes\": \"A保持轻小说均衡可爱调性，B更网络沙雕生动但稍过\"},\n    \"terminology\": {\"A\": 9, \"B\": 9, \"notes\": \"两者术语一致，A称呼更统一正式\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A叙述连贯性强，B个别地方跳跃/缺失\"},\n    \"formatting\": {\"A\": 9, \"B\": 8.5, \"notes\": \"A标点规范，B基本但偶混用\"}\n  },\n  \"key_differences\": [\"A更忠实逐字且书面自然，适合轻小说体裁\", \"B更口语化、网络风，幽默更夸张但准确/连贯稍弱\", \"关键剧情复述部分A更完整顺畅（如车战描述）\"],\n  \"final_summary\": \"A整体更胜一筹，在准确性、流畅性与轻小说风格的平衡上更优秀，是更好的翻译。B虽在对话活泼度有亮点，但不足以逆转整体差距。\" \n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14091,
+          "completion_tokens": 3299,
+          "total_tokens": 17390
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更精准捕捉部分关键词意涵（如配对对象），B偶有小偏差"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A中文更自然流畅，B口语强但部分生硬"
+      },
+      "style": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "A保持轻小说均衡可爱调性，B更网络沙雕生动但稍过"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者术语一致，A称呼更统一正式"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A叙述连贯性强，B个别地方跳跃/缺失"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 8.5,
+        "notes": "A标点规范，B基本但偶混用"
+      }
+    },
+    "key_differences": [
+      "A更忠实逐字且书面自然，适合轻小说体裁",
+      "B更口语化、网络风，幽默更夸张但准确/连贯稍弱",
+      "关键剧情复述部分A更完整顺畅（如车战描述）"
+    ],
+    "final_summary": "A整体更胜一筹，在准确性、流畅性与轻小说风格的平衡上更优秀，是更好的翻译。B虽在对话活泼度有亮点，但不足以逆转整体差距。"
+  },
+  "outcome": "DeepSeek-V3.1-Terminus_win",
+  "winner_model": "DeepSeek-V3.1-Terminus"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:17:18.456752",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "presentation": {
+    "A": "Kimi-K2.5",
+    "B": "Qwen3-Next-80B-A3B-Thinking"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.Kimi-K2.5.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.Qwen3-Next-80B-A3B-Thinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "c7e03d1519dbea2ca941d34f84a4249202c738fe7474b54f6cfb167ace1545fc",
+    "B": "06a630f6188c488b84233bd7041408146109f964990733912a90077400f6a00d"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:18:10.934482",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "5ee64d4b-5c8f-431e-9276-147abcaab86d",
+      "judge_response": {
+        "id": "5ee64d4b-5c8f-431e-9276-147abcaab86d",
+        "object": "chat.completion",
+        "created": 1769609890,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 准确性分析\n- **段落102-103**：B将「ボア」译为\"蟒蛇\"是严重错误。根据上下文（毛皮、肉、牙）以及「ウリボア」（幼猪）明显指野猪系魔物。A正确译为\"野猪\"。\n- **段落36**：A\"宝石角马\"完整；B\"宝石角\"遗漏了\"马\"的信息。\n- **段落27**：A\"绵毛狼\"译义，B\"科特狼\"音译，A更贴合原文描述毛发特征。\n- **段落77-78**：A统一译为\"树人\"便于理解；B用音译\"特伦特\"导致后续衍生名称混乱。\n\n### 流畅性分析\n- B整体更口语化，符合\"个人笔记\"的随意风格（如\"游泳不行\"\"肉能吃\"）\n- A更书面化，但有时略显生硬（如\"多栖息于山林\"）\n\n### 风格分析\n- B的口语化表达更贴合轻小说笔记体（\"个头超大\"\"贼香\"）\n- A的表达较正式，但对于非正式笔记显得过于严肃\n\n### 术语一致性\n- A对怪物名翻译策略统一（意译为主）\n- B混用音译/意译，且ボア误译导致段落102-105全线错误\n\n### 关键差异\n| 方面 | A的优势 | B的优势 |\n|------|---------|---------|\n| 准确性 | ボア正确译为野猪 | — |\n| 语感 | — | 更自然口语化 |\n| 专名 | 树人/雪狐等统一意译 | — |\n| 风格 | — | 更符合笔记体 |\n\n### 重大问题\nB的「ボア=蟒蛇」错误影响3-4个段落，这是致命的理解偏差。\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B将ボア误译为蟒蛇是致命错误，段落36遗漏信息\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B口语化更自然，A略显书面化\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合个人笔记的轻松风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 5, \"notes\": \"A专名翻译统一，B音译混乱且有重大错误\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"B部分句子过于碎片化\"},\n    \"formatting\": {\"A\": 8, \"B\": 7, \"notes\": \"B段落66有多余破折号\"}\n  },\n  \"key_differences\": [\n    \"ボア译法：A正确译为野猪，B错译为蟒蛇\",\n    \"专名策略：A统一意译(树人/雪狐)，B混用音译\",\n    \"语言风格：A正式书面，B口语轻松\",\n    \"完整性：A段落36完整，B遗漏'马'字\"\n  ],\n  \"final_summary\": \"尽管B在口语流畅性和轻小说风格上表现更佳，但其将ボア(野猪)误译为蟒蛇的严重错误直接影响读者对整个魔物类别的理解，属于核心概念错误。A虽语言风格较正式，但准确性和术语一致性明显占优，综合评判A胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11476,
+          "completion_tokens": 2168,
+          "total_tokens": 13644
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B将ボア误译为蟒蛇是致命错误，段落36遗漏信息"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B口语化更自然，A略显书面化"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合个人笔记的轻松风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 5,
+        "notes": "A专名翻译统一，B音译混乱且有重大错误"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "B部分句子过于碎片化"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 7,
+        "notes": "B段落66有多余破折号"
+      }
+    },
+    "key_differences": [
+      "ボア译法：A正确译为野猪，B错译为蟒蛇",
+      "专名策略：A统一意译(树人/雪狐)，B混用音译",
+      "语言风格：A正式书面，B口语轻松",
+      "完整性：A段落36完整，B遗漏'马'字"
+    ],
+    "final_summary": "尽管B在口语流畅性和轻小说风格上表现更佳，但其将ボア(野猪)误译为蟒蛇的严重错误直接影响读者对整个魔物类别的理解，属于核心概念错误。A虽语言风格较正式，但准确性和术语一致性明显占优，综合评判A胜出。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

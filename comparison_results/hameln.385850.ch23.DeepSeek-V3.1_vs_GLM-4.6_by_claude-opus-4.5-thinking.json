@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:10:48.495761",
+  "sample": "hameln.385850.ch23",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.385850.ch23.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.1",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.385850.ch23.DeepSeek-V3.1.translated.txt",
+    "B": "translated_results/hameln.385850.ch23.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "88e04003101cc58809290921e9db4f2fd3d2015def8768cab51efa0c44f446af",
+    "A": "5e37354eba608a8e48d0b5b41c955c88ccf28f161349ba0456e8ee3d8930629b",
+    "B": "6b027dd93f9882f5234c4dd47ea7ee0128ca8d0e953b1cc1e29762640266a3c3"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:11:19.806794",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "fc2400ad-e9fc-43cc-94a6-1f40aff6dacc",
+      "judge_response": {
+        "id": "fc2400ad-e9fc-43cc-94a6-1f40aff6dacc",
+        "object": "chat.completion",
+        "created": 1768421479,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 关键问题识别\n\n**翻译A的严重问题：**\n- **段落1、11、16、30**：存在大量未翻译的日文文本\n- **段落74**：完全缺失翻译\n- 部分句子生硬，如段落31标点缺失\n\n**翻译B的问题：**\n- **段落51**：\"ツボに入っている\"（笑点被戳中）被错误翻译为\"待在坛子里\"，这是严重的误译\n- **段落38**：将少女误用\"他\"而非\"她\"\n- 段落19\"害羞地露出害羞的表演\"有重复\n\n### 逐项分析\n\n**准确性**：A因多处未翻译严重失分；B除段落51的误译外基本准确\n\n**流畅性**：B更自然，如\"嘛\"\"呢\"等语气词运用得当；A部分句子较生硬\n\n**风格**：B更符合轻小说口语化风格；A有时过于书面化\n\n**术语一致性**：两者对人名（夏露米娜）、专有名词处理相近\n\n**连贯性**：A因缺失翻译严重影响阅读；B整体流畅\n\n**格式**：A使用「」，B混用\"\"和「」；A段落31有标点问题\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 4, \"B\": 7, \"notes\": \"A有多处未翻译；B段落51误译'ツボに入る'为'待在坛子里'\"},\n    \"fluency\": {\"A\": 5, \"B\": 8, \"notes\": \"B语气词运用自然，A部分句子生硬\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说口语化风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 7, \"notes\": \"两者人名术语处理相近\"},\n    \"coherence\": {\"A\": 3, \"B\": 8, \"notes\": \"A因缺失段落74等严重影响连贯性\"},\n    \"formatting\": {\"A\": 5, \"B\": 7, \"notes\": \"A标点问题较多，B引号使用不一致\"}\n  },\n  \"key_differences\": [\n    \"A存在多处未翻译的日文段落（段落1、11、16、30、74）\",\n    \"B段落51将俗语'ツボに入る'误译为字面意思\",\n    \"B整体语言更口语化自然，A部分表达较生硬\",\n    \"B段落38性别代词使用错误\"\n  ],\n  \"final_summary\": \"翻译B整体质量明显优于A。A最致命的问题是存在多处未翻译的日文文本和完全缺失的段落，这是翻译工作的基本失职。虽然B存在段落51的俗语误译问题，但其完整性、流畅性和风格把握都更胜一筹。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12154,
+          "completion_tokens": 1349,
+          "total_tokens": 13503
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 4,
+        "B": 7,
+        "notes": "A有多处未翻译；B段落51误译'ツボに入る'为'待在坛子里'"
+      },
+      "fluency": {
+        "A": 5,
+        "B": 8,
+        "notes": "B语气词运用自然，A部分句子生硬"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说口语化风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 7,
+        "notes": "两者人名术语处理相近"
+      },
+      "coherence": {
+        "A": 3,
+        "B": 8,
+        "notes": "A因缺失段落74等严重影响连贯性"
+      },
+      "formatting": {
+        "A": 5,
+        "B": 7,
+        "notes": "A标点问题较多，B引号使用不一致"
+      }
+    },
+    "key_differences": [
+      "A存在多处未翻译的日文段落（段落1、11、16、30、74）",
+      "B段落51将俗语'ツボに入る'误译为字面意思",
+      "B整体语言更口语化自然，A部分表达较生硬",
+      "B段落38性别代词使用错误"
+    ],
+    "final_summary": "翻译B整体质量明显优于A。A最致命的问题是存在多处未翻译的日文文本和完全缺失的段落，这是翻译工作的基本失职。虽然B存在段落51的俗语误译问题，但其完整性、流畅性和风格把握都更胜一筹。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

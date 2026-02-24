@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:43.912752",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.2",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3.2",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-V3.2.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "8eb83967d1281aa57e32200137d373fd8febc65ce156c24d661ab45821953c92",
+    "B": "63dc7784439aaf2354a63e352f07ba97dc8930d37f8182f8abb2a3a82f05290f"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:41:59.234076",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89DiL6nNRPjKHquKfYLG9a75fiCsx",
+      "judge_response": {
+        "id": "chatcmpl-89DiL6nNRPjKHquKfYLG9a75fiCsx",
+        "object": "chat.completion",
+        "created": 1768426918,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 1LDK 転移陣 ランペイジングダークネス\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"ランペイジングダークネス 闇属性\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"\"航海が始まって一週間。俺たちは、超絶暇である。\" site:syosetu.com OR site:kakuyomu.jp\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [ncode.syosetu.com](https://ncode.syosetu.com/)\n> 📋 **Task:** Search for light novel titles or excerpts containing phrases like 航海が始まって一週間 超絶暇 or ランペイジングダークネス or 1LDK 転移陣. Summarize if any relevant novel is found and extract key terms translation conventions if possible.\n\n> 🔍 **10 results found**\n\n> [🔗 \"本好きの下剋上 ～司書になるためには手段を選んでいられません～ - 転移陣\" Syosetu](https://ncode.syosetu.com/n4830bu/600)\n> [🔗 \"濡れ衣で追放された最強解呪士、幻の古代王国を再興させて無双する～呪破の王と奈落の姫～ 2／すかいふぁーむ／nns／蒼和伸\" Shueisha](https://www.shueisha.co.jp/books/items/contents.html?jdcn=08X10000000060942700)\n> [🔗 \"ランペイジ・バレット ～ソシャゲみたいな世界に転生した俺が必死で生き抜いていく話～ - 2 - ハーメルン\" Syosetu](https://syosetu.org/novel/358919/60.html)\n> [🔗 \"Litis's Adventure ~The Wand Maze and the Futanari Curse~ [kagurado] | DLsite\" DLsite](https://www.dlsite.com/maniax/work/=/product_id/RJ124138.html?locale=en_US)\n> [🔗 \"Download doujinshi, games, and ASMR on \"DLsite Doujin R18\"\" DLsite](https://www.dlsite.com/maniax/ranking/announce/week?locale=en_US)\n> [🔗 \"Mage Kanade's Futanari Dungeon Quest [dieselmine] | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax/work/=/product_id/RJ376981.html?locale=en_US)\n> [🔗 \"Game works | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax/works/type/=/work_type_category/game/page/3?locale=en_US)\n> [🔗 \"インランカンパ～淫魔VS天使VSショタ～ [Rebellion Dark] | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax/work/=/product_id/RJ01512978.html?locale=en_US)\n> [🔗 \"CG + Illustrations works | DLsite Doujin - For Adults\" DLsite](https://www.dlsite.com/maniax/works/type/=/work_type_category/illust/page/2?locale=en_US)\n> [🔗 \"にゃくろのみこん！ [KurogomaKnights] | DLsite\" DLsite](https://www.dlsite.com/maniax/work/=/product_id/RJ01519862.html?locale=en_US)\n\n> 🔍 **10 results found**\n\n> [🔗 \"【闇属性】属性テーマ一覧【遊戯王】 - 昔の遊戯王ブログ\" Oldyugiohblog](https://oldyugiohblog.com/blog-entry-list-attribute-dark.html)\n> [🔗 \"闇属性\" Pixiv](https://dic.pixiv.net/a/%E9%97%87%E5%B1%9E%E6%80%A7)\n> [🔗 \"闇属性(遊戯王)\" Pixiv](https://dic.pixiv.net/a/%E9%97%87%E5%B1%9E%E6%80%A7(%E9%81%8A%E6%88%AF%E7%8E%8B))\n> [🔗 \"【パズドラ】闇属性のおすすめキャラの一覧｜ゲームエイト\" Game8](https://game8.jp/pazudora/72169)\n> [🔗 \"闇属性／暗黒属性 - アニヲタWiki(仮)【1/10更新】\" ATWiki](https://w.atwiki.jp/aniwotawiki/pages/29052.html)\n> [🔗 \"【ファンタジーライフi】闇属性の武器一覧【ファンタジーライフアイ】｜ゲームエイト\" Game8](https://game8.jp/fantasylife-i/694429)\n> [🔗 \"【闇属性】 - ドラゴンクエスト大辞典を作ろうぜ...\" Wiki*](https://wikiwiki.jp/dqdic3rd/%E3%80%90%E9%97%87%E5%B1%9E%E6%80%A7%E3%80%91)\n> [🔗 \"【闇属性】汎用サポート集\" Vrains-Library](https://relibrary.xsrv.jp/attribute-dark)\n> [🔗 \"闇鋼龍 ダークネスメタル | カード詳細 | 遊戯王ニューロン(オフィシャルカードゲーム カードデータベース)\" Yu-Gi-Oh! Card](https://www.db.yugioh-card.com/yugiohdb/card_search.action?cid=13971&ope=2&request_locale=ja)\n> [🔗 \"【マスターデュエル】闇属性モンスターの一覧と入手方法【遊戯王】｜ゲームエイト\" Game8](https://game8.jp/yugioh-masterduel/437593)\n\n> 🔍 **10 results found**\n\n> [🔗 \"第六章「困難な航海」－０２３ - born to be free ～僕らは自由になるため生まれた（庄司卓） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16816927862861058555/episodes/16817330657170788656)\n> [🔗 \"第55話 ２０１８年 １月２６日 - 第３回カクヨムWeb小説コンテスト速報（romuni） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054884573793/episodes/1177354054885027007)\n> [🔗 \"第1話 - 盗作の異世界ファンタジー小説（@2321umoyukaku_2319） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/16817330665100345447/episodes/16817330665100498594)\n> [🔗 \"第36話 ２０１８年 １月 ７日 - 第３回カクヨムWeb小説コンテスト速報（romuni） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054884573793/episodes/1177354054884862811)\n> [🔗 \"第295話 異世界ファンタジー部門 (CSV形式：テスト投稿) - 本家ではないけど情報特盛りな第6回カクヨムWeb小説コンテスト＋短編賞速報（草薙 健（タケル）） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354055253900094/episodes/16816452218324579030)\n> [🔗 \"★をつけた小説（ITSUMONO） - カクヨム\" Kakuyomu](https://kakuyomu.jp/users/melonguma/reviews)\n> [🔗 \"★をつけた小説（結城藍人） - カクヨム\" Kakuyomu](https://kakuyomu.jp/users/aito-yu-ki/reviews)\n> [🔗 \"第8回カクヨムWeb小説コンテスト受賞作の商品情報を順次公開します！ - カクヨム特設ページ\" Kakuyomu](https://kakuyomu.jp/special/entry/web_novel_008)\n> [🔗 \"第379話 異世界ファンタジー部門 (CSV形式：テスト投稿) - 本家ではないけど情報特盛りな第6回カクヨムWeb小説コンテスト＋短編賞速報（草薙 健（タケル）） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354055253900094/episodes/16816452218514954209)\n> [🔗 \"第43話 ２０１８年 １月１４日 - 第３回カクヨムWeb小説コンテスト速報（romuni） - カクヨム\" Kakuyomu](https://kakuyomu.jp/works/1177354054884573793/episodes/1177354054884924338)\n\n> 🔍 **1 results found**\n\n> [🔗 \"小説家になろう - みんなのための小説投稿サイト\" ncode.syosetu.com](https://ncode.syosetu.com/)\n\n\n**整体评价：**\n\n这段轻小说文本带有典型的日式异世界/转生系风格，叙述者（俺）语气轻松吐槽、幽默自嘲，对话口语化，带有大量日常系闲聊和世界观解释。翻译需保留这种“轻小说味”：随意、亲切、带点中二和自黑的叙述感，同时对话要活泼自然。\n\n**详细分析（逐段重点比较）：**\n\n- **段落1**：原文“超絶暇である”强调极度无聊的夸张感。A的“超级无聊”直接、强烈；B的“超级闲”稍弱，感觉更像“很闲”而非“极度烦”。A更贴合原文夸张语气。\n\n- **段落2-4**：对话部分，B在标点和语气上更接近日文原作的自然口语（如「嘛，船旅就是这么回事啦」保留了原文的随意感），A有时显得生硬（如“嘛船旅就是这样的啦”缺少逗号，读起来卡顿）。\n\n- **段落5**：核心是“転移陣”翻译为A“转移阵”、B“传送阵”（B更常见自然）；“元1LDK”指原公寓，B“曾经的1LDK”+“基本上都是那个1LDK啦”更口语化、可爱，A稍正式。\n\n- **段落6**：描述房屋改造，B用“联排别墅”（terrace house的自然对应）+“赖在”“打个盹儿”等接地气表达，读来轻松有趣；A用“多层住宅”“小憩”较为书面，流畅性稍逊。\n\n- **段落7**：高达模型（ガンプラ）+巨神兵吐槽是典型宅梗。B翻译更活泼（如“整天赖在”“最沉迷的，就是做高达模型”“太超前的巨神兵”），语气贴合轻小说自嘲幽默；A准确但略显生涩（如“亲手制作高达模型”“过早出现的巨神兵”）。\n\n- **段落8-12**：女生对话部分，B的「欸」「哎呀，我还以为...更利落一些的款式呢」「呵呵呵」等更自然地传达了JK风的活泼、贵妇腔；A有些地方语气偏书面。\n\n- **段落13-21**：叙述+对话，B整体更口语（如“玩得正嗨”“跑腿的”“不妙”），读起来节奏感强；A稍显正式。\n\n- **段落22-26**：技能说明+吐槽部分，B的“猛地释放”“一个沉甸甸的影子”“空虚啊”更生动，结尾情感更到位；A准确但少了一些轻小说式的颓废感。\n\n- **段落27-31**：船长视角叙述，B用“大叔”“狂热信徒”等词更接地气，整体语气温暖又带点调侃，符合原文。\n\n**总体比较：**\n- **准确性**：两者都较高，基本没误译，但B在一些细微语气（如夸张、吐槽）上更到位。\n- **流畅性**：B明显更胜，使用大量中文网络/日常口语，读起来像母语写的轻小说。\n- **风格/语气**：B保留了原文的轻松、吐槽、自嘲和宅味，A稍显“翻译腔”。\n- **术语一致性**：B更统一自然（如“传送阵”“1LDK”处理更一致）。\n- **连贯性/可读性**：B整体节奏更好，像一本完整的中文轻小说。\n- **格式/标点**：B标点使用更符合中文小说习惯（对话更活泼）。\n\n**最终判决：**\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者准确度都很高，B在语气细微处更贴合原文\"},\n    \"fluency\": {\"A\": 7, \"B\": 9, \"notes\": \"B的中文表达更自然流畅，像原生中文轻小说\"},\n    \"style\": {\"A\": 7, \"B\": 9, \"notes\": \"B更好地保留了轻小说特有的轻松吐槽、口语化幽默感\"},\n    \"terminology\": {\"A\": 8, \"B\": 9, \"notes\": \"B的术语和名称处理更一致且符合中文读者习惯\"},\n    \"coherence\": {\"A\": 8, \"B\": 9, \"notes\": \"B段落衔接和整体可读性更强\"},\n    \"formatting\": {\"A\": 8, \"B\": 9, \"notes\": \"B的标点和对话格式更符合中文小说规范\"}\n  },\n  \"key_differences\": [\n    \"B使用更多口语表达（如‘赖在’‘玩得正嗨’‘猛放’），增强轻小说趣味性\",\n    \"A较为直译，部分地方显得生硬或书面化\",\n    \"B在幽默吐槽和角色语气上更生动贴切\"\n  ],\n  \"final_summary\": \"整体而言，翻译B在保留原文准确性的前提下，更好地实现了中文轻小说的自然流畅与风格还原，读起来更舒服、更有‘轻小说味’，因此判定B为优胜者。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10399,
+          "completion_tokens": 4309,
+          "total_tokens": 14708
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者准确度都很高，B在语气细微处更贴合原文"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 9,
+        "notes": "B的中文表达更自然流畅，像原生中文轻小说"
+      },
+      "style": {
+        "A": 7,
+        "B": 9,
+        "notes": "B更好地保留了轻小说特有的轻松吐槽、口语化幽默感"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 9,
+        "notes": "B的术语和名称处理更一致且符合中文读者习惯"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 9,
+        "notes": "B段落衔接和整体可读性更强"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 9,
+        "notes": "B的标点和对话格式更符合中文小说规范"
+      }
+    },
+    "key_differences": [
+      "B使用更多口语表达（如‘赖在’‘玩得正嗨’‘猛放’），增强轻小说趣味性",
+      "A较为直译，部分地方显得生硬或书面化",
+      "B在幽默吐槽和角色语气上更生动贴切"
+    ],
+    "final_summary": "整体而言，翻译B在保留原文准确性的前提下，更好地实现了中文轻小说的自然流畅与风格还原，读起来更舒服、更有‘轻小说味’，因此判定B为优胜者。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

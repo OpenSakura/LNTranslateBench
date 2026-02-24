@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:07:15.476287",
+  "sample": "alphapolis.904773584-638380930.ch8",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/alphapolis.904773584-638380930.ch8.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "GLM-4.7"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "GLM-4.7"
+  },
+  "translation_files": {
+    "A": "translated_results/alphapolis.904773584-638380930.ch8.GLM-4.5.translated.txt",
+    "B": "translated_results/alphapolis.904773584-638380930.ch8.GLM-4.7.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dc9ecc4bc3007f3b99c31b81c0acc8e9052df82287b7db41140a978c301e08d6",
+    "A": "d467733c9cf823b5b6ad04b442d2e6f2208c9b325bed1daa3de2996b1ca2baca",
+    "B": "984fc2d5108dfeaa091ee718c9f6471ada65f0dd58785951f4e2d9d6406a15b4"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:08:01.231521",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "084338aa-cb3e-40d8-bca9-ba213c512f0f",
+      "judge_response": {
+        "id": "084338aa-cb3e-40d8-bca9-ba213c512f0f",
+        "object": "chat.completion",
+        "created": 1768421281,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评估分析\n\n### 逐段关键差异分析\n\n**段落1：标题翻译**\n- A\"个人魔物・魔兽笔记\"较简洁\n- B\"个人关于魔物・魔兽的备忘录\"更完整体现\"メモ\"含义\n\n**段落11：地名翻译**\n- A\"廷潘\"、B\"廷派恩\"——音译差异，B更接近原音\n\n**段落25：术语选择**\n- A用\"头目\"，B用\"BOSS\"——A更符合中文习惯\n\n**段落44：关键错误**\n- A\"Snow＜Ice\"保留英文，B\"雪＜冰\"用中文——B更统一\n\n**段落66：语义差异**\n- A\"睡眠鹿\"、B\"催眠鹿\"——原文\"眠らせる\"是使役，B\"催眠\"更准确\n\n**段落82-83：严重错误**\n- A将\"トレント\"误译为\"激流\"（torrent的误译）\n- B正确译为\"树精\"——这是A的重大失误\n\n**段落102-103：严重错误**\n- A将\"ボア\"译为\"蟒蛇\"（误解为boa）\n- B正确译为\"野猪\"（boar）——这是A的致命错误\n- 连带\"ウリボア\"，A译\"瓜蟒\"完全错误，B译\"瓜波\"正确（うり坊=小野猪）\n\n**段落101：原文理解**\n- 原文\"買った\"（买的），A译\"捕获\"、B译\"买来\"——B更准确\n\n### 综合评价\n\nA译在专业术语上出现两处致命错误（トレント→激流，ボア→蟒蛇），严重影响整体质量。B译虽有小瑕疵但无重大错误。\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A有两处致命误译：トレント译为激流、ボア译为蟒蛇；B基本准确\"},\n    \"fluency\": {\"A\": 8, \"B\": 8, \"notes\": \"两者流畅度相当，都符合中文表达习惯\"},\n    \"style\": {\"A\": 8, \"B\": 8, \"notes\": \"轻小说风格把握相近，口语化程度适中\"},\n    \"terminology\": {\"A\": 5, \"B\": 8, \"notes\": \"A的BOSS用头目更好，但核心术语错误严重；B保持一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"A因术语错误导致上下文混乱（如野猪相关段落）\"},\n    \"formatting\": {\"A\": 8, \"B\": 8, \"notes\": \"两者格式规范，标点使用正确\"}\n  },\n  \"key_differences\": [\n    \"A将トレント误译为激流（段落82-83），B正确译为树精\",\n    \"A将ボア误译为蟒蛇（段落102-103），B正确译为野猪\",\n    \"A保留Snow/Ice英文，B统一译为雪/冰\",\n    \"段落101：A将買った误译为捕获，B正确译为买来\",\n    \"段落66：A译睡眠鹿，B译催眠鹿，B更准确体现使役含义\"\n  ],\n  \"final_summary\": \"B译整体更优。A译虽在部分表达上略显自然，但存在两处致命翻译错误：将トレント（树人/树精）误译为激流，将ボア（野猪）误译为蟒蛇，这两处错误严重影响了文本的准确性和可读性。B译虽有个别小瑕疵，但核心术语准确，整体质量明显高于A译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12197,
+          "completion_tokens": 2004,
+          "total_tokens": 14201
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有两处致命误译：トレント译为激流、ボア译为蟒蛇；B基本准确"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者流畅度相当，都符合中文表达习惯"
+      },
+      "style": {
+        "A": 8,
+        "B": 8,
+        "notes": "轻小说风格把握相近，口语化程度适中"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 8,
+        "notes": "A的BOSS用头目更好，但核心术语错误严重；B保持一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "A因术语错误导致上下文混乱（如野猪相关段落）"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 8,
+        "notes": "两者格式规范，标点使用正确"
+      }
+    },
+    "key_differences": [
+      "A将トレント误译为激流（段落82-83），B正确译为树精",
+      "A将ボア误译为蟒蛇（段落102-103），B正确译为野猪",
+      "A保留Snow/Ice英文，B统一译为雪/冰",
+      "段落101：A将買った误译为捕获，B正确译为买来",
+      "段落66：A译睡眠鹿，B译催眠鹿，B更准确体现使役含义"
+    ],
+    "final_summary": "B译整体更优。A译虽在部分表达上略显自然，但存在两处致命翻译错误：将トレント（树人/树精）误译为激流，将ボア（野猪）误译为蟒蛇，这两处错误严重影响了文本的准确性和可读性。B译虽有个别小瑕疵，但核心术语准确，整体质量明显高于A译。"
+  },
+  "outcome": "GLM-4.7_win",
+  "winner_model": "GLM-4.7"
+}

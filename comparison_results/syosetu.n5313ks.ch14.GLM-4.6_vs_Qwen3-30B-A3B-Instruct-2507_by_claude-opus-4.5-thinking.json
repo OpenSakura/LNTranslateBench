@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:12:31.638335",
+  "sample": "syosetu.n5313ks.ch14",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n5313ks.ch14.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-30B-A3B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-30B-A3B-Instruct-2507",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n5313ks.ch14.Qwen3-30B-A3B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n5313ks.ch14.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "bf88588a1a5855615ef8d65c9b6c4af37e7a365094b338c25ea4e2c97eb1cf89",
+    "A": "f19cb5d1b71b590bfc7244e3cc08e011bada9083f09534ecf0aa7ef8f3f4747a",
+    "B": "430a5beff1d50cff1ec4d5743d17cc3f8c35eab7869869717af5bba40a8adae5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:13:16.333967",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "8008e9af-da46-4e9c-b056-8f5233060d76",
+      "judge_response": {
+        "id": "8008e9af-da46-4e9c-b056-8f5233060d76",
+        "object": "chat.completion",
+        "created": 1768432395,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 逐项分析\n\n### 准确性\n- **段落3**：原文「レオンさんに...見せて回りながら」意为\"给里昂展示\"。A误解为\"让里昂带我看\"，B正确理解为\"我带里昂看/给他看\"\n- **段落21**：原文是女主说自己结婚，A翻译成\"你说结婚\"有歧义，B\"我说我们结婚了\"更清晰\n- **段落39**：原文描述的是丈夫（男性），A错用\"她\"，B正确用\"他\"——这是严重错误\n- **段落111**：原文「断らなかった」是\"没有拒绝\"，A翻译逻辑混乱，B正确\n- **段落115**：原文「蓋をした」是\"盖上盖子\"（压制感情），A正确，B误译为\"过上平凡安稳的一生\"\n\n### 流畅性\n- B整体更自然口语化，如\"老公\"\"啊哈哈\"等\n- A有些地方略显生硬，如段落61\"其表情略显尴尬\"\n\n### 风格\n- B更符合轻小说女性视角的叙述风格\n- A部分对话略显书面化\n\n### 格式问题\n- **B段落9**：引号错误「体弱多病、总爱待在房间里「的女儿\n- **B段落52**：整段误加引号\n- **B段落88-89**：使用英文引号\"\"而非中文「」\n\n### 术语一致性\n- 地名：A用\"加雷特\"，B用\"加雷\"/\"加雷托\"（不统一）\n- 敬称：B保留\"里昂先生\"更贴原文，A有时省略\n\n---\n\n## 关键差异总结\n1. A在段落39犯了性别错误（致命）\n2. B在段落115有语义误译\n3. B有多处格式问题\n4. B整体更流畅自然，A部分表达较生硬\n5. A段落3、111的理解有偏差\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.65,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 7, \"notes\": \"A段落39性别错误严重，段落3/111理解偏差；B段落115误译\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B更口语化自然，A部分表达生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B更符合轻小说女性叙事风格\"},\n    \"terminology\": {\"A\": 7, \"B\": 6, \"notes\": \"A地名统一，B地名不一致(加雷/加雷托)\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体阅读体验更连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B有引号错误(段落9/52/88-89)\"}\n  },\n  \"key_differences\": [\n    \"段落39：A性别翻译错误(她→他)\",\n    \"段落3：谁带谁看的主客体理解不同\",\n    \"段落115：A正确理解'盖上盖子'，B误译\",\n    \"B多处格式问题但整体更流畅自然\",\n    \"B保留敬称'里昂先生'更贴原文\"\n  ],\n  \"final_summary\": \"两译本各有优劣。A在段落39的性别错误属于严重硬伤，段落3/111理解也有偏差；B虽有格式问题和段落115的误译，但整体流畅度、风格把握和大部分语义准确性更胜一筹。综合考量，B略优。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14610,
+          "completion_tokens": 2020,
+          "total_tokens": 16630
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.65,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 7,
+        "notes": "A段落39性别错误严重，段落3/111理解偏差；B段落115误译"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更口语化自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B更符合轻小说女性叙事风格"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 6,
+        "notes": "A地名统一，B地名不一致(加雷/加雷托)"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体阅读体验更连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有引号错误(段落9/52/88-89)"
+      }
+    },
+    "key_differences": [
+      "段落39：A性别翻译错误(她→他)",
+      "段落3：谁带谁看的主客体理解不同",
+      "段落115：A正确理解'盖上盖子'，B误译",
+      "B多处格式问题但整体更流畅自然",
+      "B保留敬称'里昂先生'更贴原文"
+    ],
+    "final_summary": "两译本各有优劣。A在段落39的性别错误属于严重硬伤，段落3/111理解也有偏差；B虽有格式问题和段落115的误译，但整体流畅度、风格把握和大部分语义准确性更胜一筹。综合考量，B略优。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

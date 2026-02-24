@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:22:35.360428",
+  "sample": "kakuyomu.1177354054886743859.ch67",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.1177354054886743859.ch67.txt",
+  "models": {
+    "model_1": "DeepSeek-R1-0528",
+    "model_2": "Qwen3-235B-A22B-Thinking-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Thinking-2507",
+    "B": "DeepSeek-R1-0528"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.1177354054886743859.ch67.Qwen3-235B-A22B-Thinking-2507.translated.txt",
+    "B": "translated_results/kakuyomu.1177354054886743859.ch67.DeepSeek-R1-0528.translated.txt"
+  },
+  "input_sha256": {
+    "source": "dccc46e0dd07ae958d888a865e68d248238bf170b763e0cad5ee11ac3184ec60",
+    "A": "833822ddde3316b0be641c5127e22a10262a50d045d08171e360147d809dc656",
+    "B": "8efb22d265f547436682f063c871ba75f439593ac3699ddfcdd2a368a7101f8a"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:23:20.746914",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "f2ea387b-9224-410c-a54a-f8ac5dd42809",
+      "judge_response": {
+        "id": "f2ea387b-9224-410c-a54a-f8ac5dd42809",
+        "object": "chat.completion",
+        "created": 1768422200,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 详细分析\n\n### 准确性\n- **段落1**: B\"从王都迪亚赫尔特的路程\"语序略怪，A更自然\n- **段落5**: A\"得赶紧\"略显急迫，B\"差不多该\"更符合原文\"そろそろ\"\n- **段落19**: A将\"ゴーレムホース\"译为\"戈伦马\"，与前文\"魔像马\"不一致，明显失误\n- **段落20**: B\"黄色的声音\"是直译错误，\"黄色い声\"应译为\"尖叫声\"\n- **段落54**: 原文\"呆れた\"意为无奈/呆，A\"无语\"正确，B\"惊讶\"有误\n\n### 流畅性\n- A整体更口语化自然，如段落15\"小股魔兽可以找冒险者公会发任务搞定\"\n- B有时较生硬，如段落29\"步行者们仍几乎都驻足围观马车的景象毫无改变\"\n\n### 术语/名称一致性\n- **严重问题**: B在段落35、38、39、43保留了日文\"トリシア\"未翻译\n- B段落31保留\"ハリス\"未翻译\n- A段落19\"戈伦马\"与前文\"魔像马\"不一致\n- 役場: A统一译\"市政厅\"，B混用\"办事处\"\"市政厅\"\"办公楼\"\n\n### 风格/语气\n- A更符合轻小说对话风格，如段落44\"真是的……这位领主大人真麻烦啊\"\n- B部分对话较生硬\n\n### 格式/标点\n- B多处对话结尾缺少句号（段落2、3、4等）\n- B段落21保留了日文\"ぞ\"未翻译\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 7, \"B\": 6, \"notes\": \"A段落19术语失误；B段落20直译错误、段落54理解有误\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A更口语化自然；B部分语句生硬\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说风格；B部分对话僵硬\"},\n    \"terminology\": {\"A\": 7, \"B\": 4, \"notes\": \"B多处保留日文人名未翻译（トリシア、ハリス）是严重失误；A有一处术语不一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 6, \"notes\": \"A阅读流畅；B因未翻译问题影响阅读\"},\n    \"formatting\": {\"A\": 8, \"B\": 5, \"notes\": \"B多处对话缺句末标点，保留日文原文\"}\n  },\n  \"key_differences\": [\n    \"B多处保留日文人名未翻译（トリシア、ハリス）是严重质量问题\",\n    \"B段落20将'黄色い声'直译为'黄色的声音'是明显错误\",\n    \"A整体语言更流畅自然，符合轻小说风格\",\n    \"A段落19术语不一致（戈伦马vs魔像马）\",\n    \"B标点格式不完整\"\n  ],\n  \"final_summary\": \"虽然A在段落19有一处术语不一致的失误，但B存在多处严重问题：人名未翻译、直译错误、标点缺失等。A在流畅性、风格和整体可读性上明显优于B，更适合作为轻小说译文。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10922,
+          "completion_tokens": 2001,
+          "total_tokens": 12923
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 7,
+        "B": 6,
+        "notes": "A段落19术语失误；B段落20直译错误、段落54理解有误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更口语化自然；B部分语句生硬"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说风格；B部分对话僵硬"
+      },
+      "terminology": {
+        "A": 7,
+        "B": 4,
+        "notes": "B多处保留日文人名未翻译（トリシア、ハリス）是严重失误；A有一处术语不一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 6,
+        "notes": "A阅读流畅；B因未翻译问题影响阅读"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 5,
+        "notes": "B多处对话缺句末标点，保留日文原文"
+      }
+    },
+    "key_differences": [
+      "B多处保留日文人名未翻译（トリシア、ハリス）是严重质量问题",
+      "B段落20将'黄色い声'直译为'黄色的声音'是明显错误",
+      "A整体语言更流畅自然，符合轻小说风格",
+      "A段落19术语不一致（戈伦马vs魔像马）",
+      "B标点格式不完整"
+    ],
+    "final_summary": "虽然A在段落19有一处术语不一致的失误，但B存在多处严重问题：人名未翻译、直译错误、标点缺失等。A在流畅性、风格和整体可读性上明显优于B，更适合作为轻小说译文。"
+  },
+  "outcome": "Qwen3-235B-A22B-Thinking-2507_win",
+  "winner_model": "Qwen3-235B-A22B-Thinking-2507"
+}

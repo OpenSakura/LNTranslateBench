@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:14:03.324878",
+  "sample": "syosetu.n6113jz.ch1",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6113jz.ch1.txt",
+  "models": {
+    "model_1": "GLM-4.6",
+    "model_2": "Qwen3-235B-A22B-Instruct-2507"
+  },
+  "presentation": {
+    "A": "Qwen3-235B-A22B-Instruct-2507",
+    "B": "GLM-4.6"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6113jz.ch1.Qwen3-235B-A22B-Instruct-2507.translated.txt",
+    "B": "translated_results/syosetu.n6113jz.ch1.GLM-4.6.translated.txt"
+  },
+  "input_sha256": {
+    "source": "202d88e951c365c1b6224fa97be1f2152793d07174bcd127ad73eaa546de66e6",
+    "A": "870ecf27a7a2a04072312018e70c5ee57b79c487f2c66469adc062ed8ba16e13",
+    "B": "70bb84daffe60dcbcfe5cf248d7c55d08525fc7df6b01717394f37070ac6c131"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:14:46.871786",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "36bb139e-94fa-4dfb-bacc-4a3fe2794e88",
+      "judge_response": {
+        "id": "36bb139e-94fa-4dfb-bacc-4a3fe2794e88",
+        "object": "chat.completion",
+        "created": 1768432486,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量对比分析\n\n### 1. 准确性分析\n\n**A的严重问题：**\n- 段落10：出现英文\"somewhere\"混入——\"心里 somewhere 坏掉了\"\n- 段落33：**严重漏译**——丢失了\"神殿から溢れ出る炎は意志を持つかのように動き、やがて真の姿を現すのだった\"整句\n- 段落36：出现英文\"reminiscent\"混入\n- 段落57、64中鸟叫声翻译为\"KEEEEEEN\"，未处理\n\n**B的问题：**\n- 段落16：\"崇拝してる村の連中\"理解为\"崇拜我们的村里那帮人\"，应为\"崇拜（凤凰）的村民\"\n- 段落50、55：将\"フェニックス\"翻译为\"菲尼克斯\"而非\"凤凰\"，术语不一致\n\n### 2. 流畅性分析\n\nB整体更口语化自然：\n- 段落1：B\"下个不停\"比A\"倾盆而下\"更贴合原文持续感\n- 段落7：B\"叫人发毛\"比A\"让人恶心\"更准确（原文是\"気味が悪い\"）\n- 段落51：B\"啧\"比A\"真是的\"更符合语境\n\n### 3. 风格/语气\n\n- B的对话感更强，语气词使用更恰当\n- A部分地方过于书面化\n\n### 4. 术语一致性\n\n- A：始终使用\"凤凰\"✓\n- B：混用\"凤凰\"和\"菲尼克斯\"✗\n\n### 5. 格式\n\n- A：统一使用「」\n- B：混用「」和\"\"，不够统一\n- 鸟叫声：B的\"嘶\"\"唳\"\"叽\"等拟声更用心，A多处直接保留罗马音\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.72,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A有严重漏译（段落33）和英文混入（段落10、36），B仅有术语不一致问题\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更口语自然，A部分表达生硬\"},\n    \"style\": {\"A\": 7, \"B\": 8, \"notes\": \"B的对话语气更符合轻小说风格\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"A统一使用凤凰，B混用凤凰/菲尼克斯\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A漏译导致情节断裂，B更完整\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A鸟叫声处理不当（保留罗马音），B引号不统一但拟声词处理更好\"}\n  },\n  \"key_differences\": [\n    \"A存在严重漏译（段落33整句缺失）和英文混入错误（段落10、36）\",\n    \"B术语不一致（凤凰/菲尼克斯混用）\",\n    \"B整体流畅度和语气把握更好\",\n    \"A鸟叫声多处未翻译，B处理更用心\"\n  ],\n  \"final_summary\": \"虽然B在术语统一性上有瑕疵，但A存在致命硬伤：两处英文词汇混入和一处严重漏译，这些问题远比B的术语不一致更严重。B在完整性、流畅度和风格把握上整体优于A。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 13597,
+          "completion_tokens": 1899,
+          "total_tokens": 15496
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.72,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A有严重漏译（段落33）和英文混入（段落10、36），B仅有术语不一致问题"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更口语自然，A部分表达生硬"
+      },
+      "style": {
+        "A": 7,
+        "B": 8,
+        "notes": "B的对话语气更符合轻小说风格"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "A统一使用凤凰，B混用凤凰/菲尼克斯"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A漏译导致情节断裂，B更完整"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A鸟叫声处理不当（保留罗马音），B引号不统一但拟声词处理更好"
+      }
+    },
+    "key_differences": [
+      "A存在严重漏译（段落33整句缺失）和英文混入错误（段落10、36）",
+      "B术语不一致（凤凰/菲尼克斯混用）",
+      "B整体流畅度和语气把握更好",
+      "A鸟叫声多处未翻译，B处理更用心"
+    ],
+    "final_summary": "虽然B在术语统一性上有瑕疵，但A存在致命硬伤：两处英文词汇混入和一处严重漏译，这些问题远比B的术语不一致更严重。B在完整性、流畅度和风格把握上整体优于A。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-28T14:19:18.351228",
+  "sample": "hameln.397175.ch27",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.397175.ch27.txt",
+  "models": {
+    "model_1": "Kimi-K2.5",
+    "model_2": "Qwen3-Next-80B-A3B-Instruct"
+  },
+  "presentation": {
+    "A": "Qwen3-Next-80B-A3B-Instruct",
+    "B": "Kimi-K2.5"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.397175.ch27.Qwen3-Next-80B-A3B-Instruct.translated.txt",
+    "B": "translated_results/hameln.397175.ch27.Kimi-K2.5.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9e3d6a37ea65d8b759673ec215e5f01f65038c7c9c42d9aa02205902654ed6c0",
+    "A": "9b0e0a6915838d240b3d7f73b1274da48777d39ce6e765aac2dd1630227596c6",
+    "B": "c8c9920cc1c99bae874fa4911967d2a3051acb6e62724ffbb2e528216c5ea4a2"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": "high"
+  },
+  "status": "completed",
+  "completed_at": "2026-01-28T14:19:56.180825",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "c6888324-f502-4faf-a5e3-9eedb821ec71",
+      "judge_response": {
+        "id": "c6888324-f502-4faf-a5e3-9eedb821ec71",
+        "object": "chat.completion",
+        "created": 1769609996,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性\n**关键问题：** 段落50、53中，A将「すくなのゆび」翻译为\"缩之指\"，这是一个严重的误译。「宿儺」(Sukuna)是《咒术回战》的核心角色名，应译为\"宿傩\"。B正确翻译为\"宿傩的手指\"。\n\n其他差异：\n- 段落2：A译\"特级咒灵\"，原文是\"特級の圧\"（特级的压迫感），B译\"特级威压\"更准确\n- 段落4：「落ち武者呪霊」A先译\"落魄者\"后译\"落魄武士\"，B统一译为\"落魄武士\"\n- 段落36：A译\"远程移动\"有误，应为\"长距离移动\"（B正确）\n\n### 2. 流畅性\n- A使用更多口语化表达（\"牛逼\"、\"简直就是傻逼\"、\"老粪棍\"）\n- B更平稳自然，符合轻小说叙述风格\n- 两者整体都较流畅\n\n### 3. 风格/语气\n- A的粗俗用语（\"傻逼\"、\"老狗\"）过于激烈，与原文的轻小说调性有偏差\n- B保持了原文的幽默感但不过度夸张\n- 原文「糞爺」的称呼，B的\"粪爷/糟老头\"更贴切\n\n### 4. 术语一致性\n- **A的致命错误：** \"缩之指\"完全错误\n- A对糞爺的称呼不统一（粪爷/粪老头/老粪棍/老渣渣/老混蛋）\n- B相对统一（粪爷/糟老头/臭老头）\n\n### 5. 连贯性\n- 两者叙事连贯性相当\n- B的段落衔接更自然\n\n### 6. 格式\n- A使用西式引号'...'\n- B使用「...」更符合日系轻小说惯例\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.92,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 9, \"notes\": \"A将核心术语'宿傩的手指'误译为'缩之指'，属于致命错误；'远程移动'也有误\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"A部分表达过于粗俗影响流畅度，B更自然平稳\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"A的'傻逼''老狗'等用语过激，偏离轻小说风格；B语气把控更好\"},\n    \"terminology\": {\"A\": 4, \"B\": 9, \"notes\": \"A核心术语错误且称呼不统一；B术语准确一致\"},\n    \"coherence\": {\"A\": 7, \"B\": 8, \"notes\": \"两者叙事连贯，B略胜\"},\n    \"formatting\": {\"A\": 7, \"B\": 9, \"notes\": \"B使用「」符合日系轻小说惯例\"}\n  },\n  \"key_differences\": [\n    \"A将'宿傩的手指'(すくなのゆび)误译为'缩之指'，这是理解原作的关键术语\",\n    \"A的粗俗用语('傻逼''老狗')过度，B更符合原文语气\",\n    \"A对角色称呼不统一，B相对一致\",\n    \"B使用日式引号「」，A使用西式引号\"\n  ],\n  \"final_summary\": \"B在准确性上明显优于A，尤其是核心术语'宿傩的手指'的正确翻译。A的误译'缩之指'会严重影响读者对剧情的理解。此外，B在风格把控、术语一致性和格式规范上也更胜一筹。虽然A的某些口语化表达有活力，但过于粗俗的用词偏离了原作风格。综合评判，B是更优质的翻译。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 15623,
+          "completion_tokens": 1779,
+          "total_tokens": 17402
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.92,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 9,
+        "notes": "A将核心术语'宿傩的手指'误译为'缩之指'，属于致命错误；'远程移动'也有误"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "A部分表达过于粗俗影响流畅度，B更自然平稳"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的'傻逼''老狗'等用语过激，偏离轻小说风格；B语气把控更好"
+      },
+      "terminology": {
+        "A": 4,
+        "B": 9,
+        "notes": "A核心术语错误且称呼不统一；B术语准确一致"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 8,
+        "notes": "两者叙事连贯，B略胜"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 9,
+        "notes": "B使用「」符合日系轻小说惯例"
+      }
+    },
+    "key_differences": [
+      "A将'宿傩的手指'(すくなのゆび)误译为'缩之指'，这是理解原作的关键术语",
+      "A的粗俗用语('傻逼''老狗')过度，B更符合原文语气",
+      "A对角色称呼不统一，B相对一致",
+      "B使用日式引号「」，A使用西式引号"
+    ],
+    "final_summary": "B在准确性上明显优于A，尤其是核心术语'宿傩的手指'的正确翻译。A的误译'缩之指'会严重影响读者对剧情的理解。此外，B在风格把控、术语一致性和格式规范上也更胜一筹。虽然A的某些口语化表达有活力，但过于粗俗的用词偏离了原作风格。综合评判，B是更优质的翻译。"
+  },
+  "outcome": "Kimi-K2.5_win",
+  "winner_model": "Kimi-K2.5"
+}

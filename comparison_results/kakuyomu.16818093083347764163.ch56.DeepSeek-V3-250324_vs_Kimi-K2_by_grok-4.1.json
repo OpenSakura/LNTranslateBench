@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T21:41:44.007956",
+  "sample": "kakuyomu.16818093083347764163.ch56",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818093083347764163.ch56.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "Kimi-K2"
+  },
+  "presentation": {
+    "A": "Kimi-K2",
+    "B": "DeepSeek-V3-250324"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818093083347764163.ch56.Kimi-K2.translated.txt",
+    "B": "translated_results/kakuyomu.16818093083347764163.ch56.DeepSeek-V3-250324.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9136da809c46238d584026b7074989ec6069aa28fcf1f3bc045b137e19bf673b",
+    "A": "fccb4e3ab8230edbd2a7e3ec180ef20d5ecdd72160bea1a23e859c33b0ca3862",
+    "B": "3f7325072ffadb65edc0814e7c248cb384ec61667b0a276f4ca44dbd031f2fce"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "grok-4.1",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T21:42:03.959906",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "chatcmpl-89D9U4FKJceW8QURM14lhJ3v8aFEM",
+      "judge_response": {
+        "id": "chatcmpl-89D9U4FKJceW8QURM14lhJ3v8aFEM",
+        "object": "chat.completion",
+        "created": 1768426923,
+        "model": "grok-4.1",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "\n> 🔍 **Searching for:** \"轻小说 日文到中文翻译 常见术语 転移陣 魔法金属 ガンプラ ランペイジングダークネス\"\n> 📊 **Results requested:** 20\n\n> 🔍 **Searching for:** \"日文轻小说翻译风格 口语化 vs 书面化 中文\"\n> 📊 **Results requested:** 20\n\n> 📖 **Browsing:** [zh.wikipedia.org](https://zh.wikipedia.org/wiki/轻小说)\n> 📋 **Task:** 总结轻小说中文翻译的特点，特别是对话的口语化程度、语气活泼程度、第一人称叙述风格。\n\n> 🔍 **Searching for:** \"轻小说翻译 1LDK 中文怎么翻\"\n> 📊 **Results requested:** 20\n\n> 🔍 **10 results found**\n\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"【学习工具】啃轻小说时用到的工具分享\" BGM](https://bgm.tv/group/topic/395456)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://zh.moegirl.org.cn/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n> [🔗 \"GitHub - auto-novel/auto-novel: 轻小说机翻网站，支持网...\" GitHub](https://github.com/FishHawk/auto-novel)\n> [🔗 \"日文原版轻小说 - 京东\" JD.com](https://www.jd.com/hprm/1713f87688ecf95e6ca6.html)\n> [🔗 \"日文原版轻小说 - Top 100件日文原版轻小说 - ...\" Taobao](https://www.taobao.com/list/product/%E6%97%A5%E6%96%87%E5%8E%9F%E7%89%88%E8%BD%BB%E5%B0%8F%E8%AF%B4.htm)\n> [🔗 \"轻小说日文 - Top 500件轻小说日文 - 2025年4月更新 ...\" Taobao](https://www.taobao.com/list/product/%E8%BD%BB%E5%B0%8F%E8%AF%B4%E6%97%A5%E6%96%87.htm)\n> [🔗 \"轻小说 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/zh-cn/%E8%BC%95%E5%B0%8F%E8%AA%AA)\n> [🔗 \"鋼之鍊金術師 - 维基百科，自由的百科全书\" Wikipedia](https://zh.wikipedia.org/wiki/%E9%8B%BC%E4%B9%8B%E9%8D%8A%E9%87%91%E8%A1%93%E5%B8%AB)\n> [🔗 \"轻小说日语怎么说_轻小说用日语怎么说_中文翻译日文\" HuiJiang](https://www.hujiang.com/jpciku/ce8bdbbe5b08fe8afb4)\n\n> 🔍 **10 results found**\n\n> [🔗 \"日本轻小说汉译特征的相关研究_参考网\" Fx361](https://www.fx361.com/page/2019/0916/5547048.shtml)\n> [🔗 \"How do you say \"“口语化”和“书面化”\" in English (UK)? | HiNative\" HiNative](https://hinative.com/questions/90793)\n> [🔗 \"轻小说\" Baidu Baike](https://baike.baidu.com/item/%E8%BD%BB%E5%B0%8F%E8%AF%B4/69636)\n> [🔗 \"翻译作品中个性风格与再创造的融合--专题--中国作家网\" China Writer](http://www.chinawriter.com.cn/n1/2021/0106/c434900-31991242.html)\n> [🔗 \"如何从零开始翻译一本日语小说？ - 知乎\" Zhihu](https://www.zhihu.com/question/27047645)\n> [🔗 \"口语化和书面化的区别是什么? - 喜马拉雅手机版\" Ximalaya](https://m.ximalaya.com/ask/q6256105)\n> [🔗 \"总结了一些实操好用的prompt指令用于去AI化的文本交互： - 即刻App\" Blokada](https://m.okjike.com/originalPosts/67d69de11ab958e77e362dba)\n> [🔗 \"浅析日本轻小说的特色及汉译注意要点\" Wf](https://thesistopic.wf.pub/article:D370417)\n> [🔗 \"Zhihu\" Zhihu](https://www.zhihu.com/question/276758167)\n> [🔗 \"轻小说 - 萌娘百科 万物皆可萌的百科全书\" Moegirl](https://mzh.moegirl.org.cn/zh-hans/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n\n> 🔍 **1 results found**\n\n> [📚 \"輕小說 - 维基百科，自由的百科全书\" zh.wikipedia.org](https://zh.wikipedia.org/wiki/%E8%BD%BB%E5%B0%8F%E8%AF%B4)\n\n> 🔍 **10 results found**\n\n> [🔗 \"GitHub - SakuraLLM/SakuraLLM: 适配轻小说/Galgame的日中翻译大模型\" GitHub](https://github.com/SakuraLLM/SakuraLLM)\n> [🔗 \"GitHub - auto-novel/auto-novel: 轻小说机翻网站，支持网...\" GitHub](https://github.com/FishHawk/auto-novel)\n> [🔗 \"关于机翻轻小说的简单教程 - 知乎\" Zhihu](https://zhuanlan.zhihu.com/p/1887585362961995705)\n> [🔗 \"轻小说是官方翻译比较好还��网上的翻译比较好？ - 知乎\" Zhihu](https://www.zhihu.com/question/25835050)\n> [🔗 \"【亲测免费】 探索轻小说翻译新境界：Sakura-13B-LNovel 开源模型-CSDN博客\" CSDN](https://blog.csdn.net/gitblog_00061/article/details/139540029)\n> [🔗 \"我用600多本轻小说训练了中日翻译模型_哔哩哔哩_bilibili\" Bilibili](https://www.bilibili.com/video/BV1b44y1F7VL)\n> [🔗 \"轻小说翻译：解码二次元，金雨助力破壁之旅-金雨翻译\" Jinyutrans](https://www.jinyutrans.com/hotspot/translation_of_light_novels)\n> [🔗 \"有没有好用的轻小说翻译软件？ - 知乎\" Zhihu](https://www.zhihu.com/question/495645217/answer/3088203689)\n> [🔗 \"「日语轻小说翻译招聘信息」-BOSS直聘\" Zhipin](https://www.zhipin.com/zhaopin/afa08a86cdea1e3d1nRy39S1EQ~~)\n> [🔗 \"轻小说机翻机器人 - ACG盒子\" ACG盒子](https://www.acgbox.link/h/2398.html)\n\n\n作为一位公正的轻小说翻译质量评判员，我对提供的30段日→中翻译进行了逐段对比。轻小说中文翻译的核心在于**高度口语化、活泼、代入感强**，第一人称叙述要轻松吐槽风，对话要带语气词和JK风味，术语（如魔法技能、专有名词）要统一且贴合二次元习惯，同时保持整体节奏快、句子短、阅读无压力。\n\n### 详细分析\n\n**准确性**：两者整体意思保留都很好，几乎没有明显误译。A在个别地方更贴近原文语气（如段落1“超絶暇”→“超级闲”更直接对应“超絶”夸张感，B的“超级无聊”稍偏意译）。B偶尔更精确（如段落26“虚しい”→“空虚”更书面，但A“空落落的”更口语贴合主角丧气感）。差距不大。\n\n**流畅性**：A整体更口语、更接地气，用词大胆（如“超级闲”“嗨翻天”“命都砸”“轰了出去”“蔫了”），读起来像国内网文/弹幕风格，节奏快。B偏向稍书面、优雅的表达（如“超级无聊”“热热闹闹”“徒增心理负担”“咚隆作响”），流畅但少了一些轻小说特有的“贱萌”随意感。A在轻小说语境下更自然。\n\n**风格/语气**：轻小说第一人称叙述+对话要**吐槽感、轻浮、带自嘲**。A更到位：大量网络口语（“破事”“添堵”“狂轰”“蔫了”“呼啦呼啦揉”），女性对话“啦”“呀”“对不对？！”很JK。B更克制、端正（如“兴高采烈”“事无巨细”“勉强挤出”），少了那种“主角咸鱼吐槽”的轻快调调。A更符合轻小说风格。\n\n**术语/名称一致性**：两者都基本统一（如“转移阵/传送阵”“1LDK”“魔法金属”“ガンプラ”→“拼高达/高达模型”）。但A更统一且二次元化（如全程“转移阵”，技能名“狂躁黑暗”“暴走黑暗”较生动；B用“传送阵”“暴虐暗影”“狂暴暗影”稍有变化）。A在“迪特里希大人”等称呼也更一致。两者差距小，A略胜。\n\n**连贯性/可读性**：A句子更短、更碎，换行感强，阅读像刷手机小说，符合轻小说“轻松阅读”本质。B句子稍长、结构更完整，可读性也很高，但少了那种“一句一段吐槽”的快节奏感。A整体更吸引青少年读者。\n\n**格式/标点符号**：两者标点使用都规范。A更常用感叹号、问号、省略号强化语气（如“？！”“啦！”），更生动。B也很好，但语气稍弱。\n\n### 关键差异总结（举例）\n- 段落1：A“超级闲”更贴“超絶暇”的夸张无聊感，B“超级无聊”稍普通。\n- 段落6-7：A用“掏空”“联排别墅”“搓魔法金属”“上头”“早过头儿的巨神兵”非常网络化、活泼；B更规范（如“掏空”“联排别墅风格”“特训”“着迷”），但少了俏皮。\n- 段落8-12：A女性对话超JK（“喂喂”“超可爱吧？！”“呵呵呵，我还是中意这一件呀”）；B更含蓄。\n- 段落22/26：A技能名+吐槽更带感（“狂躁黑暗”“轰隆隆的黑影”）；B技能名较正式。\n- 段落25：A“啥属性都一样”“搞不清咋用”“练得老高”非常口语；B更像说明文。\n- 整体：A更像国内流行轻小说译本风格（参考常见台译/网译），B更接近传统小说翻译。\n\n**最终判决**：**A整体更好**。它在保持准确的前提下，更好地再现了轻小说的**口语化、吐槽风、活泼语气和快节奏**，阅读体验更轻松有趣，更符合目标读者（青少年/二次元爱好者）的期待。B质量也很高，但风格稍显正经，少了那股“贱萌咸鱼”味。\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.85,\n  \"scores\": {\n    \"accuracy\": {\"A\": 9, \"B\": 9, \"notes\": \"两者准确性都很高，个别夸张语气A稍胜\"},\n    \"fluency\": {\"A\": 9, \"B\": 8, \"notes\": \"A更口语自然，B稍书面但也流畅\"},\n    \"style\": {\"A\": 10, \"B\": 7, \"notes\": \"A完美捕捉轻小说吐槽+JK风，B偏正经\"},\n    \"terminology\": {\"A\": 9, \"B\": 8, \"notes\": \"A术语更统一且二次元化\"},\n    \"coherence\": {\"A\": 9, \"B\": 8, \"notes\": \"A节奏更快、更碎句，阅读爽快\"},\n    \"formatting\": {\"A\": 9, \"B\": 9, \"notes\": \"两者标点语气都很到位，A感叹号更生动\"}\n  },\n  \"key_differences\": [\n    \"A更口语、网络化、活泼（超级闲/嗨翻天/狂轰），B稍书面优雅\",\n    \"A对话/吐槽更JK、贱萌（啦/呀/？！/老高），B更克制\",\n    \"A节奏快、短句多，阅读像刷轻小说；B句子稍长，偏传统小说感\",\n    \"A技能/描述更生动二次元（狂躁黑暗/早过头儿的巨神兵），B更规范\"\n  ],\n  \"final_summary\": \"A在轻小说最核心的风格再现和阅读乐趣上明显占优，更适合作为轻小说译本。B质量稳定，但缺少那份专属的轻快与吐槽灵魂。推荐A作为优胜方。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9857,
+          "completion_tokens": 4231,
+          "total_tokens": 14088
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.85,
+    "scores": {
+      "accuracy": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者准确性都很高，个别夸张语气A稍胜"
+      },
+      "fluency": {
+        "A": 9,
+        "B": 8,
+        "notes": "A更口语自然，B稍书面但也流畅"
+      },
+      "style": {
+        "A": 10,
+        "B": 7,
+        "notes": "A完美捕捉轻小说吐槽+JK风，B偏正经"
+      },
+      "terminology": {
+        "A": 9,
+        "B": 8,
+        "notes": "A术语更统一且二次元化"
+      },
+      "coherence": {
+        "A": 9,
+        "B": 8,
+        "notes": "A节奏更快、更碎句，阅读爽快"
+      },
+      "formatting": {
+        "A": 9,
+        "B": 9,
+        "notes": "两者标点语气都很到位，A感叹号更生动"
+      }
+    },
+    "key_differences": [
+      "A更口语、网络化、活泼（超级闲/嗨翻天/狂轰），B稍书面优雅",
+      "A对话/吐槽更JK、贱萌（啦/呀/？！/老高），B更克制",
+      "A节奏快、短句多，阅读像刷轻小说；B句子稍长，偏传统小说感",
+      "A技能/描述更生动二次元（狂躁黑暗/早过头儿的巨神兵），B更规范"
+    ],
+    "final_summary": "A在轻小说最核心的风格再现和阅读乐趣上明显占优，更适合作为轻小说译本。B质量稳定，但缺少那份专属的轻快与吐槽灵魂。推荐A作为优胜方。"
+  },
+  "outcome": "Kimi-K2_win",
+  "winner_model": "Kimi-K2"
+}

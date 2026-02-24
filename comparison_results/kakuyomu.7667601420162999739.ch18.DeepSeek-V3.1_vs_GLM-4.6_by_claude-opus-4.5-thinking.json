@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:34:12.709914",
+  "sample": "kakuyomu.7667601420162999739.ch18",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.7667601420162999739.ch18.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "GLM-4.6"
+  },
+  "presentation": {
+    "A": "GLM-4.6",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.7667601420162999739.ch18.GLM-4.6.translated.txt",
+    "B": "translated_results/kakuyomu.7667601420162999739.ch18.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "423654a5c85ce0ef132d3c01b82047d3acdfc6cb9f52a8b4a63b0140e840a746",
+    "A": "d3fcbf4b9899695cfcce508563e6a8091f453b081ae5254c51aab2ece080f605",
+    "B": "4e9905a8f13202708aac0e6004dd34b2ff6b35f2ac3bccc0f8def9f3bf811eca"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:35:01.503174",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "3adecdc7-e3fa-4ca4-8b9e-7b0b702cf6ad",
+      "judge_response": {
+        "id": "3adecdc7-e3fa-4ca4-8b9e-7b0b702cf6ad",
+        "object": "chat.completion",
+        "created": 1768422901,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量评判分析\n\n### 逐项分析\n\n**1. 准确性**\n- 段落2：A译\"小汽车\"比B的\"轻自动车\"更自然地传达了\"軽自動車\"\n- 段落7：B将\"サドヤマ\"误译为\"佐土山\"，后文确认应为\"佐渡山\"，这是明显错误\n- 段落4：\"惣菜パン\"A译\"熟食面包\"比B的\"什锦面包\"更准确\n- 段落3：A保留\"ライトブリンガー\"，B译为\"光之使者\"，两种策略各有道理\n\n**2. 流畅性**\n- B整体句式更流畅，如段落20\"司空见惯\"等表达更地道\n- A部分句子略显生硬，如段落46\"更新驾照时参加培训的地方应该最接近了\"\n\n**3. 风格/语气**\n- A的对话更口语化，如\"叫啥来着\"\"嘛\"\"搞不太懂\"符合轻小说风格\n- B有时过于书面化，如\"这个念头在他心中短暂停留了片刻\"（段落20过度意译）\n\n**4. 术语/名称一致性**\n- B在段落7人名翻译错误是重大失误\n- A的\"鼓包\"vs B的\"圆筒包\"（ドラムバッグ），A更接近音译习惯\n- B段落47用《》书名号标注团队名不规范\n\n**5. 连贯性**\n- 段落19：B有错字\"漏出\"应为\"露出\"\n- 两者整体连贯性相近\n\n**6. 格式**\n- B在引号使用上更统一（「」），A偶有切换到\"\"\n- 段落60后记处理：A直译\"摩哦\"意义不明，B保留原文更妥\n\n---\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.68,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 7, \"notes\": \"B人名误译'佐土山'是重大失误；A'熟食面包'更准确\"},\n    \"fluency\": {\"A\": 7, \"B\": 8, \"notes\": \"B整体更流畅，但段落19有错字'漏出'\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A对话更口语化，符合轻小说风格；B偶有过度书面化\"},\n    \"terminology\": {\"A\": 8, \"B\": 6, \"notes\": \"B人名错误、书名号滥用扣分；A术语处理更一致\"},\n    \"coherence\": {\"A\": 8, \"B\": 7, \"notes\": \"两者相近，B有个别错字影响阅读\"},\n    \"formatting\": {\"A\": 7, \"B\": 8, \"notes\": \"B引号使用更统一，但A后记处理欠妥\"}\n  },\n  \"key_differences\": [\n    \"B在段落7将人名'佐渡山'误译为'佐土山'\",\n    \"A对话风格更口语化自然，B偶有书面化倾向\",\n    \"B段落19有错字'漏出'应为'露出'\",\n    \"A'軽自動車→小汽车'比B'轻自动车'更自然\",\n    \"A保留专有名词原文(ライトブリンガー)，B意译(光之使者)\"\n  ],\n  \"final_summary\": \"两译本各有千秋，但B在人名翻译上出现明显错误（佐土山→应为佐渡山），且有错字问题。A虽然部分句子流畅度稍逊，但准确性和术语一致性更可靠，对话风格也更符合轻小说调性。综合考量，A略胜。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 12394,
+          "completion_tokens": 2163,
+          "total_tokens": 14557
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.68,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 7,
+        "notes": "B人名误译'佐土山'是重大失误；A'熟食面包'更准确"
+      },
+      "fluency": {
+        "A": 7,
+        "B": 8,
+        "notes": "B整体更流畅，但段落19有错字'漏出'"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A对话更口语化，符合轻小说风格；B偶有过度书面化"
+      },
+      "terminology": {
+        "A": 8,
+        "B": 6,
+        "notes": "B人名错误、书名号滥用扣分；A术语处理更一致"
+      },
+      "coherence": {
+        "A": 8,
+        "B": 7,
+        "notes": "两者相近，B有个别错字影响阅读"
+      },
+      "formatting": {
+        "A": 7,
+        "B": 8,
+        "notes": "B引号使用更统一，但A后记处理欠妥"
+      }
+    },
+    "key_differences": [
+      "B在段落7将人名'佐渡山'误译为'佐土山'",
+      "A对话风格更口语化自然，B偶有书面化倾向",
+      "B段落19有错字'漏出'应为'露出'",
+      "A'軽自動車→小汽车'比B'轻自动车'更自然",
+      "A保留专有名词原文(ライトブリンガー)，B意译(光之使者)"
+    ],
+    "final_summary": "两译本各有千秋，但B在人名翻译上出现明显错误（佐土山→应为佐渡山），且有错字问题。A虽然部分句子流畅度稍逊，但准确性和术语一致性更可靠，对话风格也更符合轻小说调性。综合考量，A略胜。"
+  },
+  "outcome": "GLM-4.6_win",
+  "winner_model": "GLM-4.6"
+}

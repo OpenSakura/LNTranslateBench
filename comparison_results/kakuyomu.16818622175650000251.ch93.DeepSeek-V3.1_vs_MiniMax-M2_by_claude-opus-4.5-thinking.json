@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:31:51.355932",
+  "sample": "kakuyomu.16818622175650000251.ch93",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/kakuyomu.16818622175650000251.ch93.txt",
+  "models": {
+    "model_1": "DeepSeek-V3.1",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "MiniMax-M2",
+    "B": "DeepSeek-V3.1"
+  },
+  "translation_files": {
+    "A": "translated_results/kakuyomu.16818622175650000251.ch93.MiniMax-M2.translated.txt",
+    "B": "translated_results/kakuyomu.16818622175650000251.ch93.DeepSeek-V3.1.translated.txt"
+  },
+  "input_sha256": {
+    "source": "6b5549c010862f70d358bb20973f2a21a5b1f30c29a39c81e4722d6adc6cb7e5",
+    "A": "24319c02ac9d52fbdcce218c7e14eccde6b3e8867e458d6694ac6f50a79b1832",
+    "B": "131778c77f649ca7d3f70d928caf93d6e36ccc7886ec304e19806f529182b937"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:32:42.942119",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "59648d07-f42d-4365-b475-ee12189bdf94",
+      "judge_response": {
+        "id": "59648d07-f42d-4365-b475-ee12189bdf94",
+        "object": "chat.completion",
+        "created": 1768422762,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评估分析\n\n## 详细对比分析\n\n### 准确性问题\n\n**翻译A的主要问题：**\n- 段落1：\"像叠上来一样\"是「畳み掛けるように」的死译，正确应为\"乘胜追击/趁势追击\"\n- 段落9：\"聚会成员\"误译「パーティーメンバー」，应为\"队伍成员\"\n- 段落23：漏译\"根据事先获得的情报\"这一关键信息\n- 段落47：\"追赶抢夺\"严重误译「追い剥ぎ」（强盗/劫匪）\n- 段落48：\"相性不好\"理解反了，原文说暗杀术对低HP角色\"相性好\"即克制\n\n**翻译B的主要问题：**\n- 段落7：将主语误认为\"琪肯\"，实际应是\"奥塔希\"不考虑禁播用语\n- 段落44：再次出现主语错误，将\"おタヒ\"误写成\"琪肯\"\n\n### 流畅性对比\n\n翻译B整体更符合中文表达习惯：\n- \"乘胜追击般地\"vs\"像叠上来一样\"\n- \"破旧不堪\"vs\"太邋遢\"\n- \"喜悦让我差点笑逐颜开\"vs\"高兴得脸都快笑裂了\"\n- \"该咋办呢\"vs\"怎么办呢\"（更口语化）\n\n### 格式问题（重大差异）\n\n**翻译A严重问题：** 段落28-32、段落24等多处将内心独白错误地加上引号处理为对话，这是格式上的重大失误。\n\n**翻译B：** 正确保持了叙述与对话的区分。\n\n### 术语/名称一致性\n\n两者都存在问题：\n- A：欧塔希/小塔希/おタヒ 混用\n- B：奥塔希/タヒ/おタヒ 混用\n- 但A的\"小塔希\"作为昵称处理相对自然\n\n### 风格把握\n\n翻译B更符合轻小说风格：\n- \"真是平和啊\"vs\"真的很平静\"\n- \"这话真有分量\"vs\"说话很沉重\"\n- \"快住手\"vs\"别这样啊\"\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.82,\n  \"scores\": {\n    \"accuracy\": {\"A\": 6, \"B\": 8, \"notes\": \"A有多处关键误译(追い剥ぎ、パーティー、相性)；B有两处主语判断错误\"},\n    \"fluency\": {\"A\": 6, \"B\": 8, \"notes\": \"B整体更自然流畅，A多处生硬直译\"},\n    \"style\": {\"A\": 6, \"B\": 8, \"notes\": \"B更符合轻小说对话和叙述风格\"},\n    \"terminology\": {\"A\": 5, \"B\": 6, \"notes\": \"两者名称一致性都有问题，但A误译专业术语更多\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"B上下文衔接更顺畅\"},\n    \"formatting\": {\"A\": 4, \"B\": 8, \"notes\": \"A将大量内心独白错误标注为对话，格式问题严重\"}\n  },\n  \"key_differences\": [\n    \"A将内心独白错误加引号处理为对话(段落28-32等)，B正确区分\",\n    \"A误译「追い剥ぎ」为'追赶抢夺'，B正确译为'强盗'\",\n    \"A误译「パーティー」为'聚会'，B正确译为'队伍'\",\n    \"B在段落7和44将主语误判为琪肯\",\n    \"B整体语言更自然流畅，符合轻小说风格\"\n  ],\n  \"final_summary\": \"翻译B在准确性、流畅性和格式规范方面明显优于A。A存在多处关键术语误译和严重的格式问题（将叙述误标为对话），虽然B有个别主语判断失误，但整体质量更高，更适合轻小说的阅读体验。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10549,
+          "completion_tokens": 2209,
+          "total_tokens": 12758
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.82,
+    "scores": {
+      "accuracy": {
+        "A": 6,
+        "B": 8,
+        "notes": "A有多处关键误译(追い剥ぎ、パーティー、相性)；B有两处主语判断错误"
+      },
+      "fluency": {
+        "A": 6,
+        "B": 8,
+        "notes": "B整体更自然流畅，A多处生硬直译"
+      },
+      "style": {
+        "A": 6,
+        "B": 8,
+        "notes": "B更符合轻小说对话和叙述风格"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 6,
+        "notes": "两者名称一致性都有问题，但A误译专业术语更多"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "B上下文衔接更顺畅"
+      },
+      "formatting": {
+        "A": 4,
+        "B": 8,
+        "notes": "A将大量内心独白错误标注为对话，格式问题严重"
+      }
+    },
+    "key_differences": [
+      "A将内心独白错误加引号处理为对话(段落28-32等)，B正确区分",
+      "A误译「追い剥ぎ」为'追赶抢夺'，B正确译为'强盗'",
+      "A误译「パーティー」为'聚会'，B正确译为'队伍'",
+      "B在段落7和44将主语误判为琪肯",
+      "B整体语言更自然流畅，符合轻小说风格"
+    ],
+    "final_summary": "翻译B在准确性、流畅性和格式规范方面明显优于A。A存在多处关键术语误译和严重的格式问题（将叙述误标为对话），虽然B有个别主语判断失误，但整体质量更高，更适合轻小说的阅读体验。"
+  },
+  "outcome": "DeepSeek-V3.1_win",
+  "winner_model": "DeepSeek-V3.1"
+}

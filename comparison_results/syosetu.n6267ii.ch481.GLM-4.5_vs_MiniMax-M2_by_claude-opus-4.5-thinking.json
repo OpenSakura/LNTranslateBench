@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T23:15:25.478953",
+  "sample": "syosetu.n6267ii.ch481",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/syosetu.n6267ii.ch481.txt",
+  "models": {
+    "model_1": "GLM-4.5",
+    "model_2": "MiniMax-M2"
+  },
+  "presentation": {
+    "A": "GLM-4.5",
+    "B": "MiniMax-M2"
+  },
+  "translation_files": {
+    "A": "translated_results/syosetu.n6267ii.ch481.GLM-4.5.translated.txt",
+    "B": "translated_results/syosetu.n6267ii.ch481.MiniMax-M2.translated.txt"
+  },
+  "input_sha256": {
+    "source": "f309a52414e2e175d574abffda59bec83b94bff3fbcfc345346bc89227d7cc17",
+    "A": "fdbb6773c4fd660576189b76e53155172d7216603e485e51752cce83cedd3fd8",
+    "B": "e3f48199190368423025447915beee8434f4bd015d280f86d675c4e3bff64805"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T23:16:15.715892",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "3272dcbe-a2db-4184-882e-6aa9008d4927",
+      "judge_response": {
+        "id": "3272dcbe-a2db-4184-882e-6aa9008d4927",
+        "object": "chat.completion",
+        "created": 1768432575,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## 翻译质量分析\n\n### 准确性分析\n\n**段落5**: A保持第三人称\"圭\"，B错误使用第一人称\"我\"。原文是第三人称视角。\n\n**段落31**: B出现明显错误\"可是搬家，甚至搬家\"，重复且语义不通。A\"家，而且还是搬家\"更符合原文\"家、さらには移す\"的惊讶语气。\n\n**段落63**: 关键差异。原文\"何なら抱いてしまえ\"是性暗示（干脆睡了她）。A\"就上了她吧\"正确传达，B\"想要抱抱的话，我来抱你吧\"完全误解原意，且主语错误。\n\n**段落66**: A\"和恶魔搞可是相当爽的\"准确传达\"情交\"的含义，B\"与恶魔的这种事\"模糊化了。\n\n**段落83**: A\"我怎么阻止啊\"正确，B\"让我怎么别打\"翻译错误。\n\n### 术语/名字一致性\n\n**人名问题**：\n- シャリン: A混用莎琳/沙琳/夏琳；B混用沙琳/莎琳/夏琳/沙林——两者都不一致\n- ダンテ: A用\"但丁\"，B用\"丹特\"\n- サタン: A用\"萨坦\"，B用\"撒旦\"\n\n**段落42**: 原文\"車輪\"是シャリン的汉字写法，A翻译\"车轮\"是字面翻译（可能有意为之），B翻译\"轮子\"同样。\n\n### 流畅性与风格\n\nA的口语化表达更自然：\"闲得发慌\"、\"读读...看看\"、\"搞不明白\"\nB有些句子生硬：\"要么看些\"、语法问题较多\n\n### 格式问题\n\nA部分使用双引号\"\"而非「」，格式不完全统一\nB格式较统一，但段落65、68、73-74等出现多余的引号\n\n```json\n{\n  \"winner\": \"A\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 8, \"B\": 5, \"notes\": \"B在段落31、63、66、83有明显误译，特别是段落63完全误解了性暗示的含义\"},\n    \"fluency\": {\"A\": 8, \"B\": 6, \"notes\": \"A口语化自然，B部分句子语法混乱如段落53\"},\n    \"style\": {\"A\": 8, \"B\": 6, \"notes\": \"A更符合轻小说对话风格，B部分表达过于生硬\"},\n    \"terminology\": {\"A\": 5, \"B\": 4, \"notes\": \"两者都有名字不一致问题，A混用莎琳/沙琳/夏琳，B混用更多变体\"},\n    \"coherence\": {\"A\": 7, \"B\": 6, \"notes\": \"A整体叙事流畅，B段落5人称转换错误破坏连贯性\"},\n    \"formatting\": {\"A\": 6, \"B\": 7, \"notes\": \"A部分使用双引号不统一，B格式较规范但有多余引号\"}\n  },\n  \"key_differences\": [\n    \"段落63性暗示翻译：A正确理解为'上了她'，B误译为'我来抱你'\",\n    \"段落5人称视角：A保持第三人称，B错误转为第一人称\",\n    \"段落31：B出现'可是搬家，甚至搬家'重复错误\",\n    \"段落83：A'怎么阻止'正确，B'怎么别打'错误\",\n    \"整体口语化程度：A更自然流畅\"\n  ],\n  \"final_summary\": \"A在准确性上明显优于B，特别是在关键的性暗示段落和动作描写上。虽然两者都存在人名不一致的问题，但B的误译更为严重，包括人称错误、语义误解等。A的口语化表达也更符合轻小说风格。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10076,
+          "completion_tokens": 2275,
+          "total_tokens": 12351
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "A",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 8,
+        "B": 5,
+        "notes": "B在段落31、63、66、83有明显误译，特别是段落63完全误解了性暗示的含义"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 6,
+        "notes": "A口语化自然，B部分句子语法混乱如段落53"
+      },
+      "style": {
+        "A": 8,
+        "B": 6,
+        "notes": "A更符合轻小说对话风格，B部分表达过于生硬"
+      },
+      "terminology": {
+        "A": 5,
+        "B": 4,
+        "notes": "两者都有名字不一致问题，A混用莎琳/沙琳/夏琳，B混用更多变体"
+      },
+      "coherence": {
+        "A": 7,
+        "B": 6,
+        "notes": "A整体叙事流畅，B段落5人称转换错误破坏连贯性"
+      },
+      "formatting": {
+        "A": 6,
+        "B": 7,
+        "notes": "A部分使用双引号不统一，B格式较规范但有多余引号"
+      }
+    },
+    "key_differences": [
+      "段落63性暗示翻译：A正确理解为'上了她'，B误译为'我来抱你'",
+      "段落5人称视角：A保持第三人称，B错误转为第一人称",
+      "段落31：B出现'可是搬家，甚至搬家'重复错误",
+      "段落83：A'怎么阻止'正确，B'怎么别打'错误",
+      "整体口语化程度：A更自然流畅"
+    ],
+    "final_summary": "A在准确性上明显优于B，特别是在关键的性暗示段落和动作描写上。虽然两者都存在人名不一致的问题，但B的误译更为严重，包括人称错误、语义误解等。A的口语化表达也更符合轻小说风格。"
+  },
+  "outcome": "GLM-4.5_win",
+  "winner_model": "GLM-4.5"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-01-14T20:21:52.522235",
+  "sample": "hameln.397175.ch27",
+  "source_lang": "ja",
+  "target_lang": "zh",
+  "source_file": "samples/hameln.397175.ch27.txt",
+  "models": {
+    "model_1": "DeepSeek-V3-250324",
+    "model_2": "GLM-4.7-nothinking"
+  },
+  "presentation": {
+    "A": "DeepSeek-V3-250324",
+    "B": "GLM-4.7-nothinking"
+  },
+  "translation_files": {
+    "A": "translated_results/hameln.397175.ch27.DeepSeek-V3-250324.translated.txt",
+    "B": "translated_results/hameln.397175.ch27.GLM-4.7-nothinking.translated.txt"
+  },
+  "input_sha256": {
+    "source": "9e3d6a37ea65d8b759673ec215e5f01f65038c7c9c42d9aa02205902654ed6c0",
+    "A": "b10b4fdab0d450af7026fa61ff09d67c6ad5c17b5c4cc45be799ce22e6818dd9",
+    "B": "8336ff1e9e416587afb2642a06644904edd687be81b4cf11a54be3e53a423dd5"
+  },
+  "judge": {
+    "base_url": "[REDACTED]",
+    "model": "claude-opus-4.5-thinking",
+    "response_api": "chat_completions",
+    "reasoning_effort": null
+  },
+  "status": "completed",
+  "completed_at": "2026-01-14T20:22:55.497235",
+  "attempts": [
+    {
+      "attempt": 1,
+      "temperature": 0.0,
+      "judge_request_id": "a94bb9d5-a675-4ddd-af45-3371f497ae55",
+      "judge_response": {
+        "id": "a94bb9d5-a675-4ddd-af45-3371f497ae55",
+        "object": "chat.completion",
+        "created": 1768422175,
+        "model": "claude-opus-4-5-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "# 翻译质量评判分析\n\n## 详细分析\n\n### 1. 准确性分析\n\n**A的关键错误：**\n- **段落50、53**：将「すくなのゆび」（宿儺の指/宿傩的手指）错误翻译为\"少名毘古那\"——这是完全不同的概念，严重影响剧情理解\n- **段落61**：将「百葉箱」翻译为\"储物柜\"，实际应为\"百叶箱\"（气象观测箱）——这是《咒术回战》原作关键设定\n\n**B的错误：**\n- **段落18**：「ヘッドライト」未翻译，保留为\"headlights\"——虽然不专业，但不影响理解\n- **段落2**：「特級の圧」译为\"特级咒力\"，应为\"特级的压迫感\"\n\n### 2. 流畅性分析\n\n**A的优势**：文笔更优美，如\"咒力像被撕咬般急速流失\"、\"漆黑的水面将城市灯火撕碎后冲走\"\n**B的表达**：较为直白朴素，但自然通顺\n\n### 3. 术语一致性\n\n**A**：「糞爺」翻译不统一（粪爷/臭老头/糟老头/粪老头）\n**B**：同样不统一（粪爷/臭老爹/老不死的）\n\n「落ち武者」：A译\"落武者/败逃武士\"，B译\"败武士\"——A更准确\n\n### 4. 风格/语气\n\nA更偏文学化，B更口语化。对话部分B更自然（如段落88的吐槽语气）。\n\n### 5. 格式问题\n\nB在段落55、67、82、85有引号格式缺失问题。\n\n---\n\n```json\n{\n  \"winner\": \"B\",\n  \"confidence\": 0.78,\n  \"scores\": {\n    \"accuracy\": {\"A\": 5, \"B\": 8, \"notes\": \"A将'宿傩的手指'误译为'少名毘古那'、'百叶箱'误译为'储物柜'，为致命错误；B仅有headlights未译和少量小误\"},\n    \"fluency\": {\"A\": 8, \"B\": 7, \"notes\": \"A文笔更优美流畅，有文学性；B较直白但通顺自然\"},\n    \"style\": {\"A\": 8, \"B\": 7, \"notes\": \"A的叙述描写更有轻小说的氛围感；B对话更口语化自然\"},\n    \"terminology\": {\"A\": 6, \"B\": 7, \"notes\": \"两者对糞爺称呼都不统一；A的核心术语有严重错误\"},\n    \"coherence\": {\"A\": 6, \"B\": 8, \"notes\": \"A的术语错误影响故事连贯性（宿傩手指是核心剧情）；B整体连贯\"},\n    \"formatting\": {\"A\": 8, \"B\": 6, \"notes\": \"B有多处对话引号缺失；A格式规范\"}\n  },\n  \"key_differences\": [\n    \"A将「宿儺の指」误译为「少名毘古那」——致命性错误，完全改变剧情含义\",\n    \"A将「百葉箱」误译为「储物柜」——原作关键道具设定错误\",\n    \"B有「headlights」未翻译及部分引号格式问题\",\n    \"A文笔更优美有文学性，B更直白口语化\",\n    \"两者对「糞爺」的翻译均不统一\"\n  ],\n  \"final_summary\": \"虽然A在文笔优美度和格式规范性上优于B，但A犯了两个致命性翻译错误：将核心剧情道具「宿儺の指」（宿傩的手指）误译为完全无关的「少名毘古那」，以及将「百葉箱」误译为「储物柜」。这些错误直接影响读者对《咒术回战》世界观和剧情的理解。B虽有headlights未译和格式瑕疵，但核心剧情元素翻译准确，整体可读性更好。准确性是翻译的首要标准，因此B胜出。\"\n}\n```"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 15451,
+          "completion_tokens": 2700,
+          "total_tokens": 18151
+        }
+      },
+      "status": "success"
+    }
+  ],
+  "decision": {
+    "winner": "B",
+    "confidence": 0.78,
+    "scores": {
+      "accuracy": {
+        "A": 5,
+        "B": 8,
+        "notes": "A将'宿傩的手指'误译为'少名毘古那'、'百叶箱'误译为'储物柜'，为致命错误；B仅有headlights未译和少量小误"
+      },
+      "fluency": {
+        "A": 8,
+        "B": 7,
+        "notes": "A文笔更优美流畅，有文学性；B较直白但通顺自然"
+      },
+      "style": {
+        "A": 8,
+        "B": 7,
+        "notes": "A的叙述描写更有轻小说的氛围感；B对话更口语化自然"
+      },
+      "terminology": {
+        "A": 6,
+        "B": 7,
+        "notes": "两者对糞爺称呼都不统一；A的核心术语有严重错误"
+      },
+      "coherence": {
+        "A": 6,
+        "B": 8,
+        "notes": "A的术语错误影响故事连贯性（宿傩手指是核心剧情）；B整体连贯"
+      },
+      "formatting": {
+        "A": 8,
+        "B": 6,
+        "notes": "B有多处对话引号缺失；A格式规范"
+      }
+    },
+    "key_differences": [
+      "A将「宿儺の指」误译为「少名毘古那」——致命性错误，完全改变剧情含义",
+      "A将「百葉箱」误译为「储物柜」——原作关键道具设定错误",
+      "B有「headlights」未翻译及部分引号格式问题",
+      "A文笔更优美有文学性，B更直白口语化",
+      "两者对「糞爺」的翻译均不统一"
+    ],
+    "final_summary": "虽然A在文笔优美度和格式规范性上优于B，但A犯了两个致命性翻译错误：将核心剧情道具「宿儺の指」（宿傩的手指）误译为完全无关的「少名毘古那」，以及将「百葉箱」误译为「储物柜」。这些错误直接影响读者对《咒术回战》世界观和剧情的理解。B虽有headlights未译和格式瑕疵，但核心剧情元素翻译准确，整体可读性更好。准确性是翻译的首要标准，因此B胜出。"
+  },
+  "outcome": "GLM-4.7-nothinking_win",
+  "winner_model": "GLM-4.7-nothinking"
+}
